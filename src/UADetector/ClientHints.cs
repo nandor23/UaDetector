@@ -69,7 +69,7 @@ public sealed class ClientHints
                 "formfactors", "http-sec-ch-ua-form-factors", "sec-ch-ua-form-factors"
             }
             .ToFrozenSet();
-    
+
 
     /// <summary>
     /// Represents <c>Sec-CH-UA-Arch</c> header field: The underlying architecture's instruction set
@@ -197,7 +197,7 @@ public sealed class ClientHints
                 }
             }
         }
-        
+
         return clientHints;
     }
 }

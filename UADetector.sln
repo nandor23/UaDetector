@@ -4,11 +4,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{1E851ABF-02C
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "root", "root", "{7B48F27A-CD65-4A4F-A866-9FF86B37E480}"
 	ProjectSection(SolutionItems) = preProject
-		..\global.json = ..\global.json
-		..\LICENSE = ..\LICENSE
-		..\README.md = ..\README.md
-		..\.editorconfig = ..\.editorconfig
-		..\.gitignore = ..\.gitignore
+		README.md = README.md
+		LICENSE = LICENSE
+		global.json = global.json
+		.gitignore = .gitignore
+		.editorconfig = .editorconfig
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{F6E47448-C88D-42F9-99A7-2B7D21A95D32}"
