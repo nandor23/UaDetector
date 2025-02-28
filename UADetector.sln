@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{1E851ABF-02CC-4B98-BAF6-BB09268F763F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "root", "root", "{7B48F27A-CD65-4A4F-A866-9FF86B37E480}"
+	ProjectSection(SolutionItems) = preProject
+		..\global.json = ..\global.json
+		..\LICENSE = ..\LICENSE
+		..\README.md = ..\README.md
+		..\.editorconfig = ..\.editorconfig
+		..\.gitignore = ..\.gitignore
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{F6E47448-C88D-42F9-99A7-2B7D21A95D32}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UADetector", "src\UADetector\UADetector.csproj", "{5E88ECD0-C5B0-48AE-B8AB-312E5F17F115}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UADetector.Console", "samples\UADetector.Console\UADetector.Console.csproj", "{8DAD7792-EB25-4BEF-B393-6A3794D16C11}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5E88ECD0-C5B0-48AE-B8AB-312E5F17F115} = {1E851ABF-02CC-4B98-BAF6-BB09268F763F}
+		{8DAD7792-EB25-4BEF-B393-6A3794D16C11} = {F6E47448-C88D-42F9-99A7-2B7D21A95D32}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5E88ECD0-C5B0-48AE-B8AB-312E5F17F115}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E88ECD0-C5B0-48AE-B8AB-312E5F17F115}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E88ECD0-C5B0-48AE-B8AB-312E5F17F115}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E88ECD0-C5B0-48AE-B8AB-312E5F17F115}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DAD7792-EB25-4BEF-B393-6A3794D16C11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DAD7792-EB25-4BEF-B393-6A3794D16C11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DAD7792-EB25-4BEF-B393-6A3794D16C11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DAD7792-EB25-4BEF-B393-6A3794D16C11}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
