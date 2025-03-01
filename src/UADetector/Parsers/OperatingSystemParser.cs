@@ -313,9 +313,9 @@ public class OperatingSystemParser
         }.ToFrozenDictionary(StringComparer.OrdinalIgnoreCase);
 
     /// <summary>
-    /// Contains a list of mappings from OS names we use to known client hint values
+    /// Contains a list of mappings from our OS names to known client hint values
     /// </summary>
-    private static readonly FrozenDictionary<string, FrozenSet<string>> ClientHintMapping =
+    private static readonly FrozenDictionary<string, FrozenSet<string>> ClientHintPlatformMapping =
         new Dictionary<string, FrozenSet<string>>
         {
             { OsNames.GnuLinux, new[] { "Linux" }.ToFrozenSet(StringComparer.OrdinalIgnoreCase) },
@@ -373,6 +373,19 @@ public class OperatingSystemParser
         { "4.0.4", "9.1.0" }
     }.ToFrozenDictionary();
 
+    private string MapPlatformHintToOsName(string platform)
+    {
+        foreach (var clientHints in ClientHintPlatformMapping)
+        {
+            if (clientHints.Value.Contains(platform))
+            {
+                return clientHints.Key;
+            }
+        }
+        
+        return platform;
+    }
+    
     private bool TryParseOsFromClientHints(ClientHints? clientHints, out OsInfo? osInfo)
     {
         if (clientHints?.Platform is null)
@@ -380,7 +393,10 @@ public class OperatingSystemParser
             osInfo = null;
             return false;
         }
+        
+        var osName = MapPlatformHintToOsName(clientHints.Platform);
 
+        
 
 
         throw new NotImplementedException();
