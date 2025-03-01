@@ -9,6 +9,7 @@ public static class ParserExtensions
 {
     private static readonly IDeserializer Deserializer = new DeserializerBuilder()
         .WithNamingConvention(CamelCaseNamingConvention.Instance)
+        .WithTypeConverter(new YamlRegexConverter())
         .Build();
 
     public static IEnumerable<T> LoadRegexes<T>(string resourceName) where T : IRegexPattern

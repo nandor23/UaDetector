@@ -6,3 +6,4 @@ Console.WriteLine("Hello, World!");
 
 var result = ParserExtensions.LoadRegexes<OsRegex>("Regexes.Resources.operating_systems.yml");
 
+Console.WriteLine(result.First());

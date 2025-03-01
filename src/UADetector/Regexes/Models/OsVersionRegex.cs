@@ -1,7 +1,9 @@
+using System.Text.RegularExpressions;
+
 namespace UADetector.Regexes.Models;
 
-public class OsVersionRegex
+public sealed class OsVersionRegex
 {
-    public required string Regex { get; init; }
+    public required Regex Regex { get; init; }
     public required string Version { get; init; }
 }

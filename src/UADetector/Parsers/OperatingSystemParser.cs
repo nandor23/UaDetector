@@ -7,7 +7,7 @@ using UADetector.Utils;
 
 namespace UADetector.Parsers;
 
-public class OperatingSystemParser
+internal sealed class OperatingSystemParser
 {
     private const string ResourceName = "Regexes.Resources.operating_systems.yml";
 
@@ -439,14 +439,14 @@ public class OperatingSystemParser
 
     private bool TryParseOsFromUserAgent(string userAgent, out OsInfo? osInfo)
     {
-        
-        
-        
-        
-        
+
+
+
+
+
         throw new NotImplementedException();
     }
-    
+
     public OsInfo Parse(string userAgent, IDictionary<string, string>? clientHints = null)
     {
         var osInfo = new OsInfo();
