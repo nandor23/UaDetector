@@ -373,11 +373,24 @@ public class OperatingSystemParser
         { "4.0.4", "9.1.0" }
     }.ToFrozenDictionary();
 
+    private bool TryParseOsFromClientHints(ClientHints? clientHints, out OsInfo? osInfo)
+    {
+        if (clientHints?.Platform is null)
+        {
+            osInfo = null;
+            return false;
+        }
+
+
+
+        throw new NotImplementedException();
+    }
+
     public OsInfo Parse(string userAgent, IDictionary<string, string>? clientHints = null)
     {
         var osInfo = new OsInfo();
-        
-        
+
+
         return osInfo;
     }
 }

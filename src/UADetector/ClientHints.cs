@@ -9,8 +9,8 @@ public sealed partial class ClientHints
     private const string FormFactorsPattern = """
                                               "([a-zA-Z]+)"
                                               """;
-    
-    
+
+
 #if NET7_0_OR_GREATER
     [GeneratedRegex(FullVersionListPattern)]
     private static partial Regex FullVersionListRegex();
@@ -24,8 +24,8 @@ public sealed partial class ClientHints
     private static Regex FullVersionListRegex() => FullVersionListRegexInstance;
     private static Regex FormFactorsRegex() => FormFactorsRegexInstance;
 #endif
-    
-    
+
+
     private static readonly FrozenSet<string> ArchitectureHeaderNames =
         new HashSet<string>(StringComparer.OrdinalIgnoreCase)
             {

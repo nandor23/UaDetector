@@ -16,7 +16,7 @@ public partial class UADetector : IUADetector
 
     private const string LinuxDesktopFragmentPattern = "X11; Linux x86_64";
 
-    
+
 #if NET7_0_OR_GREATER
     [GeneratedRegex(ClientHintsFragmentPattern, RegexOptions.IgnoreCase)]
     private static partial Regex ClientHintsFragmentRegex();
@@ -43,12 +43,12 @@ public partial class UADetector : IUADetector
     private static Regex LinuxDesktopFragmentRegex() => LinuxDesktopFragmentRegexInstance;
 
 #endif
-    
+
     private static bool HasUserAgentClientHintsFragment(string userAgent)
     {
         return ClientHintsFragmentRegex().IsMatch(userAgent);
     }
-    
+
     private static bool HasUserAgentDesktopFragment(string userAgent)
     {
         return DesktopFragmentRegex().IsMatch(userAgent) && !ExcludeDesktopFragmentRegex().IsMatch(userAgent);
@@ -68,7 +68,7 @@ public partial class UADetector : IUADetector
         }
 
         if (HasUserAgentClientHintsFragment(userAgent))
-        { 
+        {
             userAgent =
                 $"Android {(string.IsNullOrEmpty(clientHints.PlatformVersion) ? "10" : clientHints.PlatformVersion)}; {clientHints.Model}";
         }
@@ -79,7 +79,7 @@ public partial class UADetector : IUADetector
                 .Replace(userAgent, $"{LinuxDesktopFragmentPattern}; {clientHints.Model}");
             return true;
         }
-        
+
         updatedUserAgent = null;
         return false;
     }
@@ -91,7 +91,7 @@ public partial class UADetector : IUADetector
         {
             userAgent = restoredUserAgent;
         }
-        
+
         throw new NotImplementedException();
     }
 }
