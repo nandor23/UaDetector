@@ -392,7 +392,7 @@ public class OperatingSystemParser
     }
 
     /// <summary>
-    /// Returns the OS that can be safely detected from client hints
+    /// Returns the OS that can be detected from client hints
     /// </summary>
     private bool TryParseOsFromClientHints(ClientHints? clientHints, out OsInfo? osInfo)
     {
@@ -437,6 +437,16 @@ public class OperatingSystemParser
         return osInfo.Version is not null;
     }
 
+    private bool TryParseOsFromUserAgent(string userAgent, out OsInfo? osInfo)
+    {
+        
+        
+        
+        
+        
+        throw new NotImplementedException();
+    }
+    
     public OsInfo Parse(string userAgent, IDictionary<string, string>? clientHints = null)
     {
         var osInfo = new OsInfo();

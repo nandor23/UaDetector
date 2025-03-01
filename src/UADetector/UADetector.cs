@@ -31,10 +31,15 @@ public partial class UADetector : IUADetector
     private static partial Regex LinuxDesktopFragmentRegex();
 #else
     private static readonly Regex ClientHintsFragmentRegexInstance =
-        new(ClientHintsFragmentPattern, RegexOptions.IgnoreCase);
-    private static readonly Regex DesktopFragmentRegexInstance = new(DesktopFragmentPattern);
-    private static readonly Regex ExcludeDesktopFragmentRegexInstance = new(ExcludeDesktopFragmentPattern);
-    private static readonly Regex LinuxDesktopFragmentRegexInstance = new(LinuxDesktopFragmentPattern);
+        new(ClientHintsFragmentPattern, RegexOptions.IgnoreCase | RegexOptions.Compiled);
+
+    private static readonly Regex DesktopFragmentRegexInstance = new(DesktopFragmentPattern, RegexOptions.Compiled);
+
+    private static readonly Regex ExcludeDesktopFragmentRegexInstance =
+        new(ExcludeDesktopFragmentPattern, RegexOptions.Compiled);
+
+    private static readonly Regex LinuxDesktopFragmentRegexInstance =
+        new(LinuxDesktopFragmentPattern, RegexOptions.Compiled);
 
 
     private static Regex ClientHintsFragmentRegex() => ClientHintsFragmentRegexInstance;

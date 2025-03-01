@@ -18,8 +18,8 @@ public sealed partial class ClientHints
     [GeneratedRegex(FormFactorsPattern)]
     private static partial Regex FormFactorsRegex();
 #else
-    private static readonly Regex FullVersionListRegexInstance = new(FullVersionListPattern);
-    private static readonly Regex FormFactorsRegexInstance = new(FormFactorsPattern);
+    private static readonly Regex FullVersionListRegexInstance = new(FullVersionListPattern, RegexOptions.Compiled);
+    private static readonly Regex FormFactorsRegexInstance = new(FormFactorsPattern, RegexOptions.Compiled);
 
     private static Regex FullVersionListRegex() => FullVersionListRegexInstance;
     private static Regex FormFactorsRegex() => FormFactorsRegexInstance;

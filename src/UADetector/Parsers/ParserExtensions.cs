@@ -27,4 +27,9 @@ public static class ParserExtensions
         using var reader = new StreamReader(stream);
         return Deserializer.Deserialize<IEnumerable<T>>(reader);
     }
+
+    public static string NormalizeVersion(string version, string[] matches)
+    {
+        throw new NotImplementedException();
+    }
 }
