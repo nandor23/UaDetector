@@ -330,5 +330,46 @@ public class OperatingSystemParser
         OsNames.AmigaOs, OsFamilies.Ibm, OsFamilies.GnuLinux, OsFamilies.Mac, OsFamilies.Unix, OsFamilies.Windows,
         OsFamilies.BeOs, OsFamilies.ChromeOs, OsFamilies.ChromiumOs,
     }.ToFrozenSet(StringComparer.OrdinalIgnoreCase);
+    
+    private static readonly FrozenDictionary<string, string> FireOsVersionMapping = new Dictionary<string, string>
+    {
+        { "11", "8" },
+        { "10", "8" },
+        { "9", "7" },
+        { "7", "6" },
+        { "5", "5" },
+        { "4.4.3", "4.5.1" },
+        { "4.4.2", "4" },
+        { "4.2.2", "3" },
+        { "4.0.3", "3" },
+        { "4.0.2", "3" },
+        { "4", "2" },
+        { "2", "1" },
+    }.ToFrozenDictionary();
 
+    private static readonly FrozenDictionary<string, string> LineageOsVersionMapping = new Dictionary<string, string>()
+    {
+        { "15", "22" },
+        { "14", "21" },
+        { "13", "20.0" },
+        { "12.1", "19.1" },
+        { "12", "19.0" },
+        { "11", "18.0" },
+        { "10", "17.0" },
+        { "9", "16.0" },
+        { "8.1.0", "15.1" },
+        { "8.0.0", "15.0" },
+        { "7.1.2", "14.1" },
+        { "7.1.1", "14.1" },
+        { "7.0", "14.0" },
+        { "6.0.1", "13.0" },
+        { "6.0", "13.0" },
+        { "5.1.1", "12.1" },
+        { "5.0.2", "12.0" },
+        { "5.0", "12.0" },
+        { "4.4.4", "11.0" },
+        { "4.3", "10.2" },
+        { "4.2.2", "10.1" },
+        { "4.0.4", "9.1.0" }
+    }.ToFrozenDictionary();
 }
