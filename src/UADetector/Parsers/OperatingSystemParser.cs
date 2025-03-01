@@ -11,8 +11,8 @@ internal sealed class OperatingSystemParser
 {
     private const string ResourceName = "Regexes.Resources.operating_systems.yml";
 
-    private static readonly IEnumerable<OsRegex> Regexes =
-        ParserExtensions.LoadRegexes<OsRegex>(ResourceName);
+    private static readonly IEnumerable<Os> OsRegexes =
+        ParserExtensions.LoadRegexes<Os>(ResourceName);
 
     private static readonly FrozenDictionary<OsCode, string?> OsCodeMapping =
         new Dictionary<OsCode, string?>
@@ -439,7 +439,10 @@ internal sealed class OperatingSystemParser
 
     private bool TryParseOsFromUserAgent(string userAgent, out OsInfo? osInfo)
     {
-
+        foreach (var os in OsRegexes)
+        {
+            var match = os.Regex.Match(userAgent);
+        }
 
 
 

@@ -2,7 +2,7 @@ using System.Text.RegularExpressions;
 
 namespace UADetector.Regexes.Models;
 
-public sealed class OsVersionRegex
+public sealed class OsVegirsion
 {
     public required Regex Regex { get; init; }
     public required string Version { get; init; }

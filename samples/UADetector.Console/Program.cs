@@ -4,6 +4,6 @@ using UADetector.Regexes.Models;
 
 Console.WriteLine("Hello, World!");
 
-var result = ParserExtensions.LoadRegexes<OsRegex>("Regexes.Resources.operating_systems.yml");
+var result = ParserExtensions.LoadRegexes<Os>("Regexes.Resources.operating_systems.yml");
 
 Console.WriteLine(result.First());
