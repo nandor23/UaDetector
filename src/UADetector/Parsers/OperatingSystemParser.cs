@@ -206,7 +206,7 @@ public class OperatingSystemParser
     private static readonly FrozenDictionary<string, OsShortName> OsFullNameToShortNameMapping =
         OsShortNameToFullNameMapping.ToDictionary(e => e.Value, e => e.Key)
             .ToFrozenDictionary(StringComparer.OrdinalIgnoreCase);
-
+    
     private static readonly FrozenDictionary<string, FrozenSet<OsShortName>> OsFamilyToShortNameMapping =
         new Dictionary<string, FrozenSet<OsShortName>>
         {
@@ -311,5 +311,24 @@ public class OperatingSystemParser
             },
             { OsFamilies.OtherSmartTv, new[] { OsShortName.WHS }.ToFrozenSet() }
         }.ToFrozenDictionary(StringComparer.OrdinalIgnoreCase);
+
+    /// <summary>
+    /// Contains a list of mappings from OS names we use to known client hint values
+    /// </summary>
+    private static readonly FrozenDictionary<string, FrozenSet<string>> ClientHintMapping =
+        new Dictionary<string, FrozenSet<string>>
+        {
+            { OsNames.GnuLinux, new[] { "Linux" }.ToFrozenSet(StringComparer.OrdinalIgnoreCase) },
+            { OsNames.Mac, new[] { "MacOS" }.ToFrozenSet(StringComparer.OrdinalIgnoreCase) }
+        }.ToFrozenDictionary(StringComparer.OrdinalIgnoreCase);
+
+    /// <summary>
+    /// Operating system families that are known as desktop only
+    /// </summary>
+    private static readonly FrozenSet<string> DesktopOsFamilies = new[]
+    {
+        OsNames.AmigaOs, OsFamilies.Ibm, OsFamilies.GnuLinux, OsFamilies.Mac, OsFamilies.Unix, OsFamilies.Windows,
+        OsFamilies.BeOs, OsFamilies.ChromeOs, OsFamilies.ChromiumOs,
+    }.ToFrozenSet(StringComparer.OrdinalIgnoreCase);
 
 }
