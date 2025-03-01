@@ -3,6 +3,7 @@ using System.Collections.Frozen;
 using UADetector.Models;
 using UADetector.Regexes.Models;
 using UADetector.Results;
+using UADetector.Utils;
 
 namespace UADetector.Parsers;
 
@@ -13,8 +14,8 @@ public class OperatingSystemParser
     private static readonly IEnumerable<OsRegex> Regexes =
         ParserExtensions.LoadRegexes<OsRegex>(ResourceName);
 
-    private static readonly FrozenDictionary<OsCode, string> OsCodeMapping =
-        new Dictionary<OsCode, string>
+    private static readonly FrozenDictionary<OsCode, string?> OsCodeMapping =
+        new Dictionary<OsCode, string?>
         {
             { OsCode.AIX, OsNames.Aix },
             { OsCode.AND, OsNames.Android },
@@ -204,8 +205,8 @@ public class OperatingSystemParser
             { OsCode.WOS, OsNames.WebOs },
         }.ToFrozenDictionary();
 
-    private static readonly FrozenDictionary<string, OsCode> OsNameMapping = OsCodeMapping
-        .ToDictionary(e => e.Value, e => e.Key).ToFrozenDictionary(StringComparer.OrdinalIgnoreCase);
+    private static readonly FrozenDictionary<string, OsCode?> OsNameMapping = OsCodeMapping
+        .ToDictionary(e => e.Value, e => (OsCode?)e.Key).ToFrozenDictionary(StringComparer.OrdinalIgnoreCase);
 
     private static readonly FrozenDictionary<string, FrozenSet<OsCode>> OsFamilyMapping =
         new Dictionary<string, FrozenSet<OsCode>>
@@ -373,6 +374,10 @@ public class OperatingSystemParser
         { "4.0.4", "9.1.0" }
     }.ToFrozenDictionary();
 
+    private static readonly FrozenDictionary<int, string> WindowsMinorVersionMapping =
+        new Dictionary<int, string>() { { 1, "7" }, { 2, "8" }, { 3, "8.1" } }.ToFrozenDictionary();
+
+
     private string MapPlatformHintToOsName(string platform)
     {
         foreach (var clientHints in ClientHintPlatformMapping)
@@ -382,10 +387,13 @@ public class OperatingSystemParser
                 return clientHints.Key;
             }
         }
-        
+
         return platform;
     }
-    
+
+    /// <summary>
+    /// Returns the OS that can be safely detected from client hints
+    /// </summary>
     private bool TryParseOsFromClientHints(ClientHints? clientHints, out OsInfo? osInfo)
     {
         if (clientHints?.Platform is null)
@@ -393,13 +401,40 @@ public class OperatingSystemParser
             osInfo = null;
             return false;
         }
-        
-        var osName = MapPlatformHintToOsName(clientHints.Platform);
 
-        
+        osInfo = new OsInfo
+        {
+            Name = MapPlatformHintToOsName(clientHints.Platform).CollapseSpaces(),
+            Version = clientHints.PlatformVersion
+        };
 
+        OsNameMapping.TryGetValue(osInfo.Name, out var code);
+        osInfo.Code = code;
 
-        throw new NotImplementedException();
+        if (osInfo.Name != OsNames.Windows || string.IsNullOrEmpty(osInfo.Version))
+        {
+            return false;
+        }
+
+        var versionParts = osInfo.Version?.Split('.');
+        int majorVersion = versionParts?.Length > 0 && int.TryParse(versionParts[0], out var major) ? major : 0;
+        int minorVersion = versionParts?.Length > 1 && int.TryParse(versionParts[1], out var minor) ? minor : 0;
+
+        switch (majorVersion)
+        {
+            case 0 when minorVersion != 0:
+                WindowsMinorVersionMapping.TryGetValue(minorVersion, out var version);
+                osInfo.Version = version;
+                break;
+            case > 0 and <= 10:
+                osInfo.Version = "10";
+                break;
+            case > 10:
+                osInfo.Version = "11";
+                break;
+        }
+
+        return osInfo.Version is not null;
     }
 
     public OsInfo Parse(string userAgent, IDictionary<string, string>? clientHints = null)
