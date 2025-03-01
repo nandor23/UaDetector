@@ -1,6 +1,6 @@
 namespace UADetector;
 
-public class UADetector
+public class UADetector : IUADetector
 {
 
 }

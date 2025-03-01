@@ -1,6 +1,6 @@
 namespace UADetector.Models;
 
-public enum OsShortName
+public enum OsCode
 {
     AIX,
     AND,
