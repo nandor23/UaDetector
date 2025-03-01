@@ -206,7 +206,7 @@ public class OperatingSystemParser
     private static readonly FrozenDictionary<string, OsShortName> OsFullNameToShortNameMapping =
         OsShortNameToFullNameMapping.ToDictionary(e => e.Value, e => e.Key)
             .ToFrozenDictionary(StringComparer.OrdinalIgnoreCase);
-    
+
     private static readonly FrozenDictionary<string, FrozenSet<OsShortName>> OsFamilyToShortNameMapping =
         new Dictionary<string, FrozenSet<OsShortName>>
         {
@@ -328,9 +328,9 @@ public class OperatingSystemParser
     private static readonly FrozenSet<string> DesktopOsFamilies = new[]
     {
         OsNames.AmigaOs, OsFamilies.Ibm, OsFamilies.GnuLinux, OsFamilies.Mac, OsFamilies.Unix, OsFamilies.Windows,
-        OsFamilies.BeOs, OsFamilies.ChromeOs, OsFamilies.ChromiumOs,
+        OsFamilies.BeOs, OsFamilies.ChromeOs,
     }.ToFrozenSet(StringComparer.OrdinalIgnoreCase);
-    
+
     private static readonly FrozenDictionary<string, string> FireOsVersionMapping = new Dictionary<string, string>
     {
         { "11", "8" },

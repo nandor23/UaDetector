@@ -26,5 +26,4 @@ public static class OsFamilies
     public const string Windows = "Windows";
     public const string WindowsMobile = "Windows Mobile";
     public const string OtherSmartTv = "Other Smart TV";
-    public const string ChromiumOs = "Chromium OS";
 }
