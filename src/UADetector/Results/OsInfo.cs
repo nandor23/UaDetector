@@ -4,6 +4,6 @@ namespace UADetector.Results;
 
 public class OsInfo
 {
-    public required string Name { get; init; }
-    public OsCode Code { get; init; }
+    public string? Name { get; internal set; }
+    public OsCode? Code { get; internal set; }
 }

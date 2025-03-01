@@ -3,8 +3,29 @@ using System.Text.RegularExpressions;
 
 namespace UADetector;
 
-public sealed class ClientHints
+public sealed partial class ClientHints
 {
+    private const string FullVersionListPattern = """^"([^"]+)"; ?v="([^"]+)"(?:, )?""";
+    private const string FormFactorsPattern = """
+                                              "([a-zA-Z]+)"
+                                              """;
+    
+    
+#if NET7_0_OR_GREATER
+    [GeneratedRegex(FullVersionListPattern)]
+    private static partial Regex FullVersionListRegex();
+    
+    [GeneratedRegex(FormFactorsPattern)]
+    private static partial Regex FormFactorsRegex();
+#else
+    private static readonly Regex FullVersionListRegexInstance = new(FullVersionListPattern);
+    private static readonly Regex FormFactorsRegexInstance = new(FormFactorsPattern);
+
+    private static Regex FullVersionListRegex() => FullVersionListRegexInstance;
+    private static Regex FormFactorsRegex() => FormFactorsRegexInstance;
+#endif
+    
+    
     private static readonly FrozenSet<string> ArchitectureHeaderNames =
         new HashSet<string>(StringComparer.OrdinalIgnoreCase)
             {
@@ -166,7 +187,7 @@ public sealed class ClientHints
                      (SecondaryFullVersionListHeaderNames.Contains(normalizedHeader) &&
                       clientHints.FullVersionList?.Count == 0))
             {
-                var regex = ClientHintsRegexes.FullVersionListRegex();
+                var regex = FullVersionListRegex();
 
                 foreach (Match match in regex.Matches(normalizedHeader))
                 {
@@ -188,7 +209,7 @@ public sealed class ClientHints
                 }
                 else
                 {
-                    var regex = ClientHintsRegexes.FormFactorsRegex();
+                    var regex = FormFactorsRegex();
 
                     foreach (Match match in regex.Matches(normalizedHeader))
                     {

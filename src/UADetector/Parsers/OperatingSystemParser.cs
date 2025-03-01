@@ -2,6 +2,7 @@ using System.Collections.Frozen;
 
 using UADetector.Models;
 using UADetector.Regexes.Models;
+using UADetector.Results;
 
 namespace UADetector.Parsers;
 
@@ -9,8 +10,8 @@ public class OperatingSystemParser
 {
     private const string ResourceName = "Regexes.Resources.operating_systems.yml";
 
-    private static readonly IEnumerable<OperatingSystemRegex> Regexes =
-        ParserExtensions.LoadRegexes<OperatingSystemRegex>(ResourceName);
+    private static readonly IEnumerable<OsRegex> Regexes =
+        ParserExtensions.LoadRegexes<OsRegex>(ResourceName);
 
     private static readonly FrozenDictionary<OsCode, string> OsCodeMapping =
         new Dictionary<OsCode, string>
@@ -371,4 +372,12 @@ public class OperatingSystemParser
         { "4.2.2", "10.1" },
         { "4.0.4", "9.1.0" }
     }.ToFrozenDictionary();
+
+    public OsInfo Parse(string userAgent, IDictionary<string, string>? clientHints = null)
+    {
+        var osInfo = new OsInfo();
+        
+        
+        return osInfo;
+    }
 }
