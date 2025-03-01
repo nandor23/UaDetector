@@ -1,6 +1,6 @@
 namespace UADetector.Models;
 
-public static class OsName
+public static class OsNames
 {
     public const string Aix = "AIX";
     public const string Android = "Android";
