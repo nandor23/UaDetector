@@ -7,12 +7,8 @@ namespace UADetector.Parsers;
 
 public static class ParserExtensions
 {
-    private static readonly IDeserializer Deserializer = new DeserializerBuilder()
-        .WithNamingConvention(CamelCaseNamingConvention.Instance)
-        .WithTypeConverter(new YamlRegexConverter())
-        .Build();
-
-    public static IEnumerable<T> LoadRegexes<T>(string resourceName) where T : IRegexPattern
+    public static IEnumerable<T> LoadRegexes<T>(string resourceName,
+        RegexPatternType patternType = RegexPatternType.None) where T : IRegexPattern
     {
         var assembly = typeof(UADetector).Assembly;
         var fullResourceName = $"{nameof(UADetector)}.{resourceName}";
@@ -26,7 +22,19 @@ public static class ParserExtensions
         }
 
         using var reader = new StreamReader(stream);
-        return Deserializer.Deserialize<IEnumerable<T>>(reader);
+
+        var deserializer = new DeserializerBuilder()
+            .WithNamingConvention(CamelCaseNamingConvention.Instance)
+            .WithTypeConverter(new YamlRegexConverter(patternType))
+            .Build();
+
+        return deserializer.Deserialize<IEnumerable<T>>(reader);
+    }
+
+    public static void MatchUserAgent(string userAgent)
+    {
+        //        string regexPattern = @"(?:^|[^A-Z0-9_-]|[^A-Z0-9-]_|sprd-|MZ-)(?:" + Regex.Escape(innerRegex) + ")";
+
     }
 
     public static string NormalizeVersion(string version, string[] matches)
