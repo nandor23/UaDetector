@@ -412,27 +412,31 @@ internal sealed class OsParser
         OsNameMapping.TryGetValue(osInfo.Name, out var code);
         osInfo.Code = code;
 
-        if (osInfo.Name != OsNames.Windows || string.IsNullOrEmpty(osInfo.Version))
+        if (osInfo.Name == OsNames.Windows && !string.IsNullOrEmpty(osInfo.Version))
         {
-            return osInfo;
+            var versionParts = osInfo.Version?.Split('.');
+            int majorVersion = versionParts?.Length > 0 && int.TryParse(versionParts[0], out var major) ? major : 0;
+            int minorVersion = versionParts?.Length > 1 && int.TryParse(versionParts[1], out var minor) ? minor : 0;
+
+            switch (majorVersion)
+            {
+                case 0 when minorVersion != 0:
+                    WindowsMinorVersionMapping.TryGetValue(minorVersion, out var version);
+                    osInfo.Version = version;
+                    break;
+                case > 0 and <= 10:
+                    osInfo.Version = "10";
+                    break;
+                case > 10:
+                    osInfo.Version = "11";
+                    break;
+            }
         }
 
-        var versionParts = osInfo.Version?.Split('.');
-        int majorVersion = versionParts?.Length > 0 && int.TryParse(versionParts[0], out var major) ? major : 0;
-        int minorVersion = versionParts?.Length > 1 && int.TryParse(versionParts[1], out var minor) ? minor : 0;
-
-        switch (majorVersion)
+        // On Windows, version 0.0.0 can represent either 7, 8, or 8.1, so the value is set to null.
+        if (osInfo.Name != OsNames.Android && osInfo.Version != "0.0.0" && !int.TryParse(osInfo.Version, out _))
         {
-            case 0 when minorVersion != 0:
-                WindowsMinorVersionMapping.TryGetValue(minorVersion, out var version);
-                osInfo.Version = version;
-                break;
-            case > 0 and <= 10:
-                osInfo.Version = "10";
-                break;
-            case > 10:
-                osInfo.Version = "11";
-                break;
+            osInfo.Version = null;
         }
 
         return osInfo;
