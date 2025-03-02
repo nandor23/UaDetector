@@ -4,5 +4,5 @@ namespace UADetector;
 
 public class UADetectorOptions
 {
-    public VersionTruncationLevel VersionTruncation { get; set; } = VersionTruncationLevel.None;
+    public VersionTruncation VersionTruncation { get; set; } = VersionTruncation.Minor;
 }

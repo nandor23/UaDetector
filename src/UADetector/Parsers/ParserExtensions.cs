@@ -1,7 +1,8 @@
-using System.Text;
 using System.Text.RegularExpressions;
 
+using UADetector.Models.Enums;
 using UADetector.Regexes.Models;
+using UADetector.Utils;
 
 using YamlDotNet.Serialization;
 using YamlDotNet.Serialization.NamingConventions;
@@ -49,7 +50,7 @@ public static class ParserExtensions
         return value.Trim();
     }
 
-    public static string? FormatVersionWithMatch(string? version, Match match)
+    public static string? FormatVersionWithMatch(string? version, Match match, VersionTruncation versionTruncation)
     {
         if (version is null)
         {
@@ -58,7 +59,17 @@ public static class ParserExtensions
 
         version = FormatWithMatch(version, match)?.Replace('_', '.');
 
-        throw new NotImplementedException();
+        if (versionTruncation != VersionTruncation.None && version is not null)
+        {
+            var index = version.IndexOfNthOccurrence('.', (int)versionTruncation);
+
+            if (index != -1)
+            {
+                version = version[..index];
+            }
+        }
+
+        return version?.Trim(' ', '.');
     }
 
     public static string NormalizeVersion(string version, string[] matches)
