@@ -1,7 +1,6 @@
 using System.Collections.Frozen;
 using System.Text.RegularExpressions;
 
-using UADetector.Models;
 using UADetector.Models.Constants;
 using UADetector.Models.Enums;
 using UADetector.Regexes.Models;
@@ -209,7 +208,8 @@ internal sealed class OsParser
         }.ToFrozenDictionary();
 
     private static readonly FrozenDictionary<string, OsCode?> OsNameMapping = OsCodeMapping
-        .ToDictionary(e => e.Value, e => (OsCode?)e.Key).ToFrozenDictionary(StringComparer.OrdinalIgnoreCase);
+        .ToDictionary(e => e.Value ?? String.Empty, e => (OsCode?)e.Key)
+        .ToFrozenDictionary(StringComparer.OrdinalIgnoreCase);
 
     private static readonly FrozenDictionary<string, FrozenSet<OsCode>> OsFamilyMapping =
         new Dictionary<string, FrozenSet<OsCode>>
@@ -381,17 +381,42 @@ internal sealed class OsParser
         new Dictionary<int, string>() { { 1, "7" }, { 2, "8" }, { 3, "8.1" } }.ToFrozenDictionary();
 
 
-    private string MapPlatformHintToOsName(string platform)
+    private static bool TryMapPlatformToOsName(string platform, out string? result)
     {
         foreach (var clientHints in ClientHintPlatformMapping)
         {
             if (clientHints.Value.Contains(platform))
             {
-                return clientHints.Key;
+                result = clientHints.Key;
+                return true;
             }
         }
 
-        return platform;
+        result = null;
+        return false;
+    }
+
+    private static bool TryMapOsNameToOsFamily(string name, out string? result)
+    {
+        OsNameMapping.TryGetValue(name, out var osCode);
+
+        if (osCode is null)
+        {
+            result = null;
+            return false;
+        }
+
+        foreach (var osFamily in OsFamilyMapping)
+        {
+            if (osFamily.Value.Contains(osCode.Value))
+            {
+                result = osFamily.Key;
+                return true;
+            }
+        }
+
+        result = null;
+        return false;
     }
 
     /// <summary>
@@ -399,22 +424,25 @@ internal sealed class OsParser
     /// </summary>
     private OsInfo ParseOsFromClientHints(ClientHints? clientHints)
     {
-        var osInfo = new OsInfo();
+        var result = new OsInfo();
 
         if (clientHints?.Platform is null)
         {
-            return osInfo;
+            return result;
         }
 
-        osInfo.Name = MapPlatformHintToOsName(clientHints.Platform).CollapseSpaces();
-        osInfo.Version = clientHints.PlatformVersion;
-
-        OsNameMapping.TryGetValue(osInfo.Name, out var code);
-        osInfo.Code = code;
-
-        if (osInfo.Name == OsNames.Windows && !string.IsNullOrEmpty(osInfo.Version))
+        if (TryMapPlatformToOsName(clientHints.Platform, out var name) && name is not null)
         {
-            var versionParts = osInfo.Version?.Split('.');
+            result.Name = name.CollapseSpaces();
+            OsNameMapping.TryGetValue(result.Name, out var code);
+            result.Code = code;
+        }
+
+        result.Version = clientHints.PlatformVersion;
+
+        if (result.Name == OsNames.Windows && !string.IsNullOrEmpty(result.Version))
+        {
+            var versionParts = result.Version?.Split('.');
             int majorVersion = versionParts?.Length > 0 && int.TryParse(versionParts[0], out var major) ? major : 0;
             int minorVersion = versionParts?.Length > 1 && int.TryParse(versionParts[1], out var minor) ? minor : 0;
 
@@ -422,29 +450,29 @@ internal sealed class OsParser
             {
                 case 0 when minorVersion != 0:
                     WindowsMinorVersionMapping.TryGetValue(minorVersion, out var version);
-                    osInfo.Version = version;
+                    result.Version = version;
                     break;
                 case > 0 and <= 10:
-                    osInfo.Version = "10";
+                    result.Version = "10";
                     break;
                 case > 10:
-                    osInfo.Version = "11";
+                    result.Version = "11";
                     break;
             }
         }
 
         // On Windows, version 0.0.0 can represent either 7, 8, or 8.1, so the value is set to null.
-        if (osInfo.Name != OsNames.Android && osInfo.Version != "0.0.0" && !int.TryParse(osInfo.Version, out _))
+        if (result.Name != OsNames.Windows && result.Version != "0.0.0" && !int.TryParse(result.Version, out _))
         {
-            osInfo.Version = null;
+            result.Version = null;
         }
 
-        return osInfo;
+        return result;
     }
 
     private OsInfo ParseOsFromUserAgent(string userAgent, VersionTruncation versionTruncation)
     {
-        var osInfo = new OsInfo();
+        var result = new OsInfo();
         Match? match = null;
         Os? os = null;
 
@@ -461,19 +489,19 @@ internal sealed class OsParser
 
         if (match is not null && match.Success)
         {
-            osInfo.Name = ParserExtensions.FormatWithMatch(os?.Name, match);
+            result.Name = ParserExtensions.FormatWithMatch(os?.Name, match);
 
-            if (osInfo.Name is not null && OsNameMapping.TryGetValue(osInfo.Name, out var code))
+            if (result.Name is not null && OsNameMapping.TryGetValue(result.Name, out var code))
             {
-                osInfo.Code = code;
+                result.Code = code;
             }
 
             if (!string.IsNullOrEmpty(os?.Version))
             {
-                osInfo.Version = ParserExtensions.FormatVersionWithMatch(os?.Version, match, versionTruncation);
+                result.Version = ParserExtensions.FormatVersionWithMatch(os?.Version, match, versionTruncation);
             }
 
-            if (!string.IsNullOrEmpty(osInfo.Version) && os?.Versions?.Count > 0)
+            if (!string.IsNullOrEmpty(result.Version) && os?.Versions?.Count > 0)
             {
                 foreach (var versionRegex in os.Versions)
                 {
@@ -481,7 +509,7 @@ internal sealed class OsParser
 
                     if (match.Success)
                     {
-                        osInfo.Version =
+                        result.Version =
                             ParserExtensions.FormatVersionWithMatch(versionRegex.Version, match, versionTruncation);
                         break;
                     }
@@ -489,14 +517,41 @@ internal sealed class OsParser
             }
         }
 
-        return osInfo;
+        return result;
     }
 
-    public OsInfo Parse(string userAgent, IDictionary<string, string>? clientHints = null)
+    public OsInfo Parse(string userAgent, ClientHints? clientHints, VersionTruncation versionTruncation)
     {
-        var osInfo = new OsInfo();
+        var result = new OsInfo();
+        var osFromClientHints = ParseOsFromClientHints(clientHints);
+        var osFromUserAgent = ParseOsFromUserAgent(userAgent, versionTruncation);
 
+        if (osFromClientHints.Name is not null)
+        {
+            result.Name = osFromClientHints.Name;
 
-        return osInfo;
+            // Use the version from the user agent if none was provided in the client hints, 
+            // but the OS family from the user agent matches.
+            if (string.IsNullOrEmpty(osFromClientHints.Version) && osFromUserAgent.Name is not null &&
+                TryMapOsNameToOsFamily(osFromClientHints.Name, out var osFamilyFromClientHints) &&
+                TryMapOsNameToOsFamily(osFromUserAgent.Name, out var osFamilyFromUserAgent) &&
+                osFamilyFromClientHints == osFamilyFromUserAgent)
+            {
+                result.Version = osFromUserAgent.Version;
+            }
+            else
+            {
+                result.Version = osFromClientHints.Version;
+            }
+
+            // On Windows, version 0.0.0 can represent either 7, 8, or 8.1
+            if (result is { Name: OsNames.Windows, Version: "0.0.0" })
+            {
+                result.Version = osFromUserAgent.Version == "10" ? null : osFromUserAgent.Version;
+            }
+
+        }
+
+        throw new NotImplementedException();
     }
 }

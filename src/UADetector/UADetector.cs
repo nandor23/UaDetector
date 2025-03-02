@@ -89,7 +89,7 @@ public partial class UADetector : IUADetector
         if (HasUserAgentClientHintsFragment(userAgent))
         {
             var platformVersion =
-                (string.IsNullOrEmpty(clientHints.PlatformVersion) ? "10" : clientHints.PlatformVersion);
+                string.IsNullOrEmpty(clientHints.PlatformVersion) ? "10" : clientHints.PlatformVersion;
 
             result = ClientHintsFragmentReplacementRegex()
                 .Replace(userAgent, $"Android {platformVersion}; {clientHints.Model}");
