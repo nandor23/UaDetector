@@ -438,7 +438,7 @@ internal sealed class OsParser
         return osInfo;
     }
 
-    private OsInfo ParseOsFromUserAgent(string userAgent)
+    private OsInfo ParseOsFromUserAgent(string userAgent, VersionTruncation versionTruncation)
     {
         var osInfo = new OsInfo();
         Match? match = null;
@@ -464,7 +464,25 @@ internal sealed class OsParser
                 osInfo.Code = code;
             }
 
+            if (!string.IsNullOrEmpty(os?.Version))
+            {
+                osInfo.Version = ParserExtensions.FormatVersionWithMatch(os?.Version, match, versionTruncation);
+            }
 
+            if (!string.IsNullOrEmpty(osInfo.Version) && os?.Versions?.Count > 0)
+            {
+                foreach (var versionRegex in os.Versions)
+                {
+                    match = versionRegex.Regex.Match(userAgent);
+
+                    if (match.Success)
+                    {
+                        osInfo.Version =
+                            ParserExtensions.FormatVersionWithMatch(versionRegex.Version, match, versionTruncation);
+                        break;
+                    }
+                }
+            }
         }
 
         return osInfo;
