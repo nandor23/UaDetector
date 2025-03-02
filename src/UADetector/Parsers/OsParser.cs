@@ -7,9 +7,9 @@ using UADetector.Utils;
 
 namespace UADetector.Parsers;
 
-internal sealed class OperatingSystemParser
+internal sealed class OsParser
 {
-    private const string ResourceName = "Regexes.Resources.operating_systems.yml";
+    private const string ResourceName = "Regexes.Resources.oss.yml";
 
     private static readonly IEnumerable<Os> OsRegexes =
         ParserExtensions.LoadRegexes<Os>(ResourceName, RegexPatternType.UserAgent);
