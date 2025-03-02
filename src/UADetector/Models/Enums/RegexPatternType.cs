@@ -1,4 +1,4 @@
-namespace UADetector.Parsers;
+namespace UADetector.Models.Enums;
 
 public enum RegexPatternType
 {
