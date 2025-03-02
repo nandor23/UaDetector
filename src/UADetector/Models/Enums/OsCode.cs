@@ -1,4 +1,4 @@
-namespace UADetector.Models;
+namespace UADetector.Models.Enums;
 
 public enum OsCode
 {

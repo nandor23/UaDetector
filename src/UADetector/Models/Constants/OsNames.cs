@@ -1,4 +1,4 @@
-namespace UADetector.Models;
+namespace UADetector.Models.Constants;
 
 public static class OsNames
 {

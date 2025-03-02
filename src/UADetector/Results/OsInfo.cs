@@ -1,4 +1,5 @@
 using UADetector.Models;
+using UADetector.Models.Enums;
 
 namespace UADetector.Results;
 

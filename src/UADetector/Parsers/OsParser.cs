@@ -1,6 +1,9 @@
 using System.Collections.Frozen;
+using System.Text.RegularExpressions;
 
 using UADetector.Models;
+using UADetector.Models.Constants;
+using UADetector.Models.Enums;
 using UADetector.Regexes.Models;
 using UADetector.Results;
 using UADetector.Utils;
@@ -394,26 +397,24 @@ internal sealed class OsParser
     /// <summary>
     /// Returns the OS that can be detected from client hints
     /// </summary>
-    private bool TryParseOsFromClientHints(ClientHints? clientHints, out OsInfo? osInfo)
+    private OsInfo ParseOsFromClientHints(ClientHints? clientHints)
     {
+        var osInfo = new OsInfo();
+
         if (clientHints?.Platform is null)
         {
-            osInfo = null;
-            return false;
+            return osInfo;
         }
 
-        osInfo = new OsInfo
-        {
-            Name = MapPlatformHintToOsName(clientHints.Platform).CollapseSpaces(),
-            Version = clientHints.PlatformVersion
-        };
+        osInfo.Name = MapPlatformHintToOsName(clientHints.Platform).CollapseSpaces();
+        osInfo.Version = clientHints.PlatformVersion;
 
         OsNameMapping.TryGetValue(osInfo.Name, out var code);
         osInfo.Code = code;
 
         if (osInfo.Name != OsNames.Windows || string.IsNullOrEmpty(osInfo.Version))
         {
-            return false;
+            return osInfo;
         }
 
         var versionParts = osInfo.Version?.Split('.');
@@ -434,27 +435,39 @@ internal sealed class OsParser
                 break;
         }
 
-        return osInfo.Version is not null;
+        return osInfo;
     }
 
-    private bool TryParseOsFromUserAgent(string userAgent, out OsInfo? osInfo)
+    private OsInfo ParseOsFromUserAgent(string userAgent)
     {
+        var osInfo = new OsInfo();
+        Match? match = null;
+        Os? os = null;
 
-
-        foreach (var os in OsRegexes)
+        foreach (var osRegex in OsRegexes)
         {
-            /*var match = os.Regex.Match(userAgent);
+            match = osRegex.Regex.Match(userAgent);
 
             if (match.Success)
             {
+                os = osRegex;
                 break;
-            }*/
+            }
         }
 
+        if (match is not null && match.Success)
+        {
+            osInfo.Name = ParserExtensions.FormatWithMatch(os?.Name, match);
+
+            if (osInfo.Name is not null && OsNameMapping.TryGetValue(osInfo.Name, out var code))
+            {
+                osInfo.Code = code;
+            }
 
 
+        }
 
-        throw new NotImplementedException();
+        return osInfo;
     }
 
     public OsInfo Parse(string userAgent, IDictionary<string, string>? clientHints = null)
