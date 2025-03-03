@@ -501,7 +501,7 @@ internal sealed class OsParser
                 result.Version = ParserExtensions.FormatVersionWithMatch(os?.Version, match, versionTruncation);
             }
 
-            if (!string.IsNullOrEmpty(result.Version) && os?.Versions?.Count > 0)
+            if (os?.Versions?.Count > 0)
             {
                 foreach (var versionRegex in os.Versions)
                 {
