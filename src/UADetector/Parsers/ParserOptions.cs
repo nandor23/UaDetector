@@ -1,8 +1,8 @@
 using UADetector.Models.Enums;
 
-namespace UADetector;
+namespace UADetector.Parsers;
 
-public class UADetectorOptions
+public class ParserOptions
 {
     public VersionTruncation VersionTruncation { get; set; } = VersionTruncation.Minor;
 }

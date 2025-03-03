@@ -6,7 +6,6 @@ namespace UADetector;
 
 public partial class UADetector : IUADetector
 {
-    private readonly UADetectorOptions _options;
     private const string ClientHintsFragmentMatchPattern = @"Android (?:10[.\d]*; K(?: Build/|[;)])|1[1-5]\)) AppleWebKit";
     private const string ClientHintsFragmentReplacementPattern = @"Android (?:10[\.\d]*; K|1[1-5])";
     private const string DesktopFragmentMatchPattern = "(?:Windows (?:NT|IoT)|X11; Linux x86_64)";
@@ -56,11 +55,6 @@ public partial class UADetector : IUADetector
     private static Regex DesktopFragmentExclusionRegex() => DesktopFragmentExclusionInstance;
 #endif
 
-
-    public UADetector(UADetectorOptions? options = null)
-    {
-        _options = options ?? new UADetectorOptions();
-    }
 
     private static bool HasUserAgentClientHintsFragment(string userAgent)
     {

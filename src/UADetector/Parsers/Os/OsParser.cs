@@ -3,18 +3,18 @@ using System.Text.RegularExpressions;
 
 using UADetector.Models.Constants;
 using UADetector.Models.Enums;
-using UADetector.Regexes.Models;
 using UADetector.Results;
 using UADetector.Utils;
 
-namespace UADetector.Parsers;
+namespace UADetector.Parsers.Os;
 
-internal sealed class OsParser
+public sealed class OsParser : IOsParser
 {
+    private readonly ParserOptions _parserOptions;
     private const string ResourceName = "Regexes.Resources.oss.yml";
 
-    private static readonly IEnumerable<Os> OsRegexes =
-        ParserExtensions.LoadRegexes<Os>(ResourceName, RegexPatternType.UserAgent);
+    private static readonly IEnumerable<Regexes.Models.Os> OsRegexes =
+        ParserExtensions.LoadRegexes<Regexes.Models.Os>(ResourceName, RegexPatternType.UserAgent);
 
     private static readonly FrozenDictionary<OsCode, string?> OsCodeMapping =
         new Dictionary<OsCode, string?>
@@ -380,6 +380,11 @@ internal sealed class OsParser
     private static readonly FrozenDictionary<int, string> WindowsMinorVersionMapping =
         new Dictionary<int, string>() { { 1, "7" }, { 2, "8" }, { 3, "8.1" } }.ToFrozenDictionary();
 
+    public OsParser(ParserOptions? parserOptions = null)
+    {
+        _parserOptions = parserOptions ?? new ParserOptions();
+    }
+
 
     private static bool TryMapPlatformToOsName(string platform, out string? result)
     {
@@ -470,11 +475,11 @@ internal sealed class OsParser
         return result;
     }
 
-    private OsInfo ParseOsFromUserAgent(string userAgent, VersionTruncation versionTruncation)
+    private OsInfo ParseOsFromUserAgent(string userAgent)
     {
         var result = new OsInfo();
         Match? match = null;
-        Os? os = null;
+        Regexes.Models.Os? os = null;
 
         foreach (var osRegex in OsRegexes)
         {
@@ -498,7 +503,9 @@ internal sealed class OsParser
 
             if (!string.IsNullOrEmpty(os?.Version))
             {
-                result.Version = ParserExtensions.FormatVersionWithMatch(os?.Version, match, versionTruncation);
+                result.Version = ParserExtensions.FormatVersionWithMatch(
+                    os?.Version, match,
+                    _parserOptions.VersionTruncation);
             }
 
             if (os?.Versions?.Count > 0)
@@ -509,8 +516,9 @@ internal sealed class OsParser
 
                     if (match.Success)
                     {
-                        result.Version =
-                            ParserExtensions.FormatVersionWithMatch(versionRegex.Version, match, versionTruncation);
+                        result.Version = ParserExtensions.FormatVersionWithMatch(
+                            versionRegex.Version, match,
+                            _parserOptions.VersionTruncation);
                         break;
                     }
                 }
@@ -520,11 +528,11 @@ internal sealed class OsParser
         return result;
     }
 
-    public OsInfo Parse(string userAgent, ClientHints? clientHints, VersionTruncation versionTruncation)
+    public OsInfo Parse(string userAgent, ClientHints? clientHints = null)
     {
         var result = new OsInfo();
         var osFromClientHints = ParseOsFromClientHints(clientHints);
-        var osFromUserAgent = ParseOsFromUserAgent(userAgent, versionTruncation);
+        var osFromUserAgent = ParseOsFromUserAgent(userAgent);
 
         if (osFromClientHints.Name is not null)
         {
