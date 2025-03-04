@@ -6,6 +6,6 @@ using UADetector.Regexes.Models;
 
 Console.WriteLine("Hello, World!");
 
-var result = ParserExtensions.LoadRegexes<Os>("Regexes.Resources.oss.yml", RegexPatternType.UserAgent);
+//var result = ParserExtensions.LoadRegexes<Os>("Regexes.Resources.oss.yml", RegexPatternType.UserAgent);
 
-Console.WriteLine(result.First());
+//Console.WriteLine(result.First());

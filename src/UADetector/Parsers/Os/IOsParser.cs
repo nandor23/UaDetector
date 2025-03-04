@@ -4,5 +4,6 @@ namespace UADetector.Parsers.Os;
 
 public interface IOsParser
 {
-    OsInfo Parse(string userAgent, ClientHints? clientHints);
+    bool TryParse(string userAgent, out OsInfo? result);
+    bool TryParse(string userAgent, ClientHints? clientHints, out OsInfo? result);
 }

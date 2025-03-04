@@ -528,15 +528,20 @@ public sealed class OsParser : IOsParser
         return result;
     }
 
-    public OsInfo Parse(string userAgent, ClientHints? clientHints = null)
+    public bool TryParse(string userAgent, out OsInfo? result)
     {
-        var result = new OsInfo();
+        return TryParse(userAgent, null, out result);
+    }
+
+    public bool TryParse(string userAgent, ClientHints? clientHints, out OsInfo? result)
+    {
         var osFromClientHints = ParseOsFromClientHints(clientHints);
         var osFromUserAgent = ParseOsFromUserAgent(userAgent);
+        string? name, version;
 
         if (osFromClientHints.Name is not null)
         {
-            result.Name = osFromClientHints.Name;
+            name = osFromClientHints.Name;
 
             // Use the version from the user agent if none was provided in the client hints, 
             // but the OS family from the user agent matches.
@@ -545,19 +550,18 @@ public sealed class OsParser : IOsParser
                 TryMapOsNameToOsFamily(osFromUserAgent.Name, out var osFamilyFromUserAgent) &&
                 osFamilyFromClientHints == osFamilyFromUserAgent)
             {
-                result.Version = osFromUserAgent.Version;
+                version = osFromUserAgent.Version;
             }
             else
             {
-                result.Version = osFromClientHints.Version;
+                version = osFromClientHints.Version;
             }
 
             // On Windows, version 0.0.0 can represent either 7, 8, or 8.1
-            if (result is { Name: OsNames.Windows, Version: "0.0.0" })
+            if (name == OsNames.Windows && version == "0.0.0")
             {
-                result.Version = osFromUserAgent.Version == "10" ? null : osFromUserAgent.Version;
+                version = osFromUserAgent.Version == "10" ? null : osFromUserAgent.Version;
             }
-
         }
 
         throw new NotImplementedException();
