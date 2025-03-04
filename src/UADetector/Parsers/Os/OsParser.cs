@@ -335,7 +335,7 @@ public sealed class OsParser : IOsParser
         OsFamilies.BeOs, OsFamilies.ChromeOs,
     }.ToFrozenSet(StringComparer.OrdinalIgnoreCase);
 
-    private static readonly FrozenDictionary<string, string> FireOsVersionMapping = new Dictionary<string, string>
+    private static readonly FrozenDictionary<string, string?> FireOsVersionMapping = new Dictionary<string, string?>
     {
         { "11", "8" },
         { "10", "8" },
@@ -538,23 +538,23 @@ public sealed class OsParser : IOsParser
         var osFromClientHints = ParseOsFromClientHints(clientHints);
         var osFromUserAgent = ParseOsFromUserAgent(userAgent);
         string? name, version;
+        OsCode? code;
 
         if (osFromClientHints.Name is not null)
-        {
-            name = osFromClientHints.Name;
+        { 
+            name = osFromClientHints.Name; 
+            version = osFromClientHints.Version;
+            code = osFromClientHints.Code;
+            string? osFamilyFromUserAgent = null;
 
             // Use the version from the user agent if none was provided in the client hints, 
             // but the OS family from the user agent matches.
             if (string.IsNullOrEmpty(osFromClientHints.Version) && osFromUserAgent.Name is not null &&
-                TryMapOsNameToOsFamily(osFromClientHints.Name, out var osFamilyFromClientHints) &&
-                TryMapOsNameToOsFamily(osFromUserAgent.Name, out var osFamilyFromUserAgent) &&
+                TryMapOsNameToOsFamily(osFromClientHints.Name, out string? osFamilyFromClientHints) &&
+                TryMapOsNameToOsFamily(osFromUserAgent.Name, out osFamilyFromUserAgent) &&
                 osFamilyFromClientHints == osFamilyFromUserAgent)
             {
                 version = osFromUserAgent.Version;
-            }
-            else
-            {
-                version = osFromClientHints.Version;
             }
 
             // On Windows, version 0.0.0 can represent either 7, 8, or 8.1
@@ -562,8 +562,71 @@ public sealed class OsParser : IOsParser
             {
                 version = osFromUserAgent.Version == "10" ? null : osFromUserAgent.Version;
             }
+
+            // If the OS name detected from client hints matches the OS family from user agent
+            // but the os name is another, we use the one from user agent, as it might be more detailed
+            if (osFamilyFromUserAgent == name && osFromUserAgent.Name != name)
+            {
+                name = osFromUserAgent.Name;
+
+                switch (name)
+                {
+                    case OsNames.LeafOs or OsNames.HarmonyOs:
+                        version = null;
+                        break;
+                    case OsNames.PicoOs:
+                        version = osFromUserAgent.Version;
+                        break;
+                    case OsNames.FireOs when version is not null:
+                        {
+                            var index = version.IndexOf('.');
+                            var majorVersion = index == -1 ? null : version[..index];
+
+                            if (majorVersion is not null)
+                            {
+                                version = FireOsVersionMapping[version] ?? FireOsVersionMapping[majorVersion];
+                            }
+
+                            break;
+                        }
+                }
+            }
+
+            switch (name)
+            {
+                // Chrome OS is in some cases reported as Linux in client hints, we fix this only if the version matches
+                case OsNames.GnuLinux when osFromUserAgent.Name == OsNames.ChromeOs &&
+                                           osFromClientHints.Version == osFromUserAgent.Version:
+                    name = osFromUserAgent.Name;
+                    code = osFromUserAgent.Code;
+                    break;
+                // Chrome OS is in some cases reported as Android in client hints
+                case OsNames.Android when osFromUserAgent.Name == OsNames.ChromeOs:
+                    name = osFromUserAgent.Name;
+                    code = osFromUserAgent.Code;
+                    version = null;
+                    break;
+                // Meta Horizon is reported as Linux in client hints
+                case OsNames.GnuLinux when osFromUserAgent.Name == OsNames.MetaHorizon:
+                    name = osFromUserAgent.Name;
+                    code = osFromUserAgent.Code;
+                    break;
+            }
+        }
+        else if (!string.IsNullOrEmpty(osFromUserAgent.Name))
+        {
+            name = osFromUserAgent.Name;
+            code = osFromUserAgent.Code;
+            version = osFromUserAgent.Version;
+        }
+        else
+        {
+            result = null;
+            return false;
         }
 
+
+        result = new OsInfo { Name = name, Code = code, Version = version, };
         throw new NotImplementedException();
     }
 }
