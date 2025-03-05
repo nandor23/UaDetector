@@ -488,121 +488,7 @@ public sealed class OsParser : IOsParser
         return result is not null;
     }
 
-    private bool TryParseOsFromClientHints(ClientHints clientHints, [NotNullWhen(true)] out OsInfo? result)
-    {
-        if (clientHints.Platform is null)
-        {
-            result = null;
-            return false;
-        }
-
-        OsCode? code = null;
-
-        if (TryMapPlatformToOsName(clientHints.Platform, out var name))
-        {
-            name.CollapseSpaces();
-
-            if (OsNameMapping.TryGetValue(name, out var osCode))
-            {
-                code = osCode;
-            }
-        }
-
-        string? version = clientHints.PlatformVersion;
-
-        if (name == OsNames.Windows && !string.IsNullOrEmpty(version))
-        {
-            var versionParts = version?.Split('.');
-            int majorVersion = versionParts?.Length > 0 && int.TryParse(versionParts[0], out var major) ? major : 0;
-            int minorVersion = versionParts?.Length > 1 && int.TryParse(versionParts[1], out var minor) ? minor : 0;
-
-            switch (majorVersion)
-            {
-                case 0 when minorVersion != 0:
-                    WindowsMinorVersionMapping.TryGetValue(minorVersion, out version);
-                    break;
-                case > 0 and <= 10:
-                    version = "10";
-                    break;
-                case > 10:
-                    version = "11";
-                    break;
-            }
-        }
-
-        // On Windows, version 0.0.0 can represent either 7, 8, or 8.1, so the value is set to null.
-        if (name != OsNames.Windows && version != "0.0.0" && !int.TryParse(version, out _))
-        {
-            version = null;
-        }
-
-        result = new OsInfo
-        {
-            Name = name,
-            Code = code,
-            Version = version,
-        };
-
-        return true;
-    }
-
-    private bool TryParseOsFromUserAgent(string userAgent, [NotNullWhen(true)] out OsInfo? result)
-    {
-        Match? match = null;
-        Os? os = null;
-
-        foreach (var osRegex in OsRegexes)
-        {
-            match = osRegex.Regex.Match(userAgent);
-
-            if (match.Success)
-            {
-                os = osRegex;
-                break;
-            }
-        }
-
-        if (os is null || match is null || !match.Success)
-        {
-            result = null;
-            return false;
-        }
-
-        string? name = ParserExtensions.FormatWithMatch(os.Name, match);
-        string? version = null;
-        OsCode? code = null;
-
-        if (name is not null && OsNameMapping.TryGetValue(name, out var osCode))
-        {
-            code = osCode;
-        }
-
-        if (!string.IsNullOrEmpty(os.Version))
-        {
-            version =
-                ParserExtensions.FormatVersionWithMatch(os.Version, match, _parserOptions.VersionTruncation);
-        }
-
-        if (os.Versions?.Count > 0)
-        {
-            foreach (var versionRegex in os.Versions)
-            {
-                match = versionRegex.Regex.Match(userAgent);
-
-                if (match.Success)
-                {
-                    version = ParserExtensions.FormatVersionWithMatch(versionRegex.Version, match,
-                        _parserOptions.VersionTruncation);
-                    break;
-                }
-            }
-        }
-
-        result = new OsInfo { Name = name, Code = code, Version = version, };
-        return true;
-    }
-
-    private bool TryParsePlatform(string userAgent, ClientHints? clientHints, [NotNullWhen(true)] out string? result)
+    private static bool TryParsePlatform(string userAgent, ClientHints? clientHints, [NotNullWhen(true)] out string? result)
     {
         result = null;
 
@@ -675,6 +561,120 @@ public sealed class OsParser : IOsParser
         }
 
         return result is not null;
+    }
+
+    private bool TryParseOsFromClientHints(ClientHints clientHints, [NotNullWhen(true)] out BaseOsInfo? result)
+    {
+        if (clientHints.Platform is null)
+        {
+            result = null;
+            return false;
+        }
+
+        OsCode? code = null;
+
+        if (TryMapPlatformToOsName(clientHints.Platform, out var name))
+        {
+            name.CollapseSpaces();
+
+            if (OsNameMapping.TryGetValue(name, out var osCode))
+            {
+                code = osCode;
+            }
+        }
+
+        string? version = clientHints.PlatformVersion;
+
+        if (name == OsNames.Windows && !string.IsNullOrEmpty(version))
+        {
+            var versionParts = version?.Split('.');
+            int majorVersion = versionParts?.Length > 0 && int.TryParse(versionParts[0], out var major) ? major : 0;
+            int minorVersion = versionParts?.Length > 1 && int.TryParse(versionParts[1], out var minor) ? minor : 0;
+
+            switch (majorVersion)
+            {
+                case 0 when minorVersion != 0:
+                    WindowsMinorVersionMapping.TryGetValue(minorVersion, out version);
+                    break;
+                case > 0 and <= 10:
+                    version = "10";
+                    break;
+                case > 10:
+                    version = "11";
+                    break;
+            }
+        }
+
+        // On Windows, version 0.0.0 can represent either 7, 8, or 8.1, so the value is set to null.
+        if (name != OsNames.Windows && version != "0.0.0" && !int.TryParse(version, out _))
+        {
+            version = null;
+        }
+
+        result = new BaseOsInfo
+        {
+            Name = name,
+            Code = code,
+            Version = version,
+        };
+
+        return true;
+    }
+
+    private bool TryParseOsFromUserAgent(string userAgent, [NotNullWhen(true)] out BaseOsInfo? result)
+    {
+        Match? match = null;
+        Os? os = null;
+
+        foreach (var osRegex in OsRegexes)
+        {
+            match = osRegex.Regex.Match(userAgent);
+
+            if (match.Success)
+            {
+                os = osRegex;
+                break;
+            }
+        }
+
+        if (os is null || match is null || !match.Success)
+        {
+            result = null;
+            return false;
+        }
+
+        string? name = ParserExtensions.FormatWithMatch(os.Name, match);
+        string? version = null;
+        OsCode? code = null;
+
+        if (name is not null && OsNameMapping.TryGetValue(name, out var osCode))
+        {
+            code = osCode;
+        }
+
+        if (!string.IsNullOrEmpty(os.Version))
+        {
+            version =
+                ParserExtensions.FormatVersionWithMatch(os.Version, match, _parserOptions.VersionTruncation);
+        }
+
+        if (os.Versions?.Count > 0)
+        {
+            foreach (var versionRegex in os.Versions)
+            {
+                match = versionRegex.Regex.Match(userAgent);
+
+                if (match.Success)
+                {
+                    version = ParserExtensions.FormatVersionWithMatch(versionRegex.Version, match,
+                        _parserOptions.VersionTruncation);
+                    break;
+                }
+            }
+        }
+
+        result = new BaseOsInfo { Name = name, Code = code, Version = version, };
+        return true;
     }
 
     public bool TryParse(string userAgent, [NotNullWhen(true)] out OsInfo? result)
@@ -782,51 +782,55 @@ public sealed class OsParser : IOsParser
             TryMapOsCodeToOsFamily(code.Value, out family);
         }
 
-        if (clientHints is not null)
+        if (clientHints?.App is not null)
         {
-            if (clientHints.App is not null)
+            if (name != OsNames.Android && AndroidApps.Contains(clientHints.App))
             {
-                if (name != OsNames.Android && AndroidApps.Contains(clientHints.App))
-                {
-                    name = OsNames.Android;
-                    family = OsFamilies.Android;
-                    code = OsCode.ADR;
-                    version = null;
-                }
-                else if (name != OsNames.LineageOs && clientHints.App == "org.lineageos.jelly")
-                {
-                    name = OsNames.LineageOs;
-                    family = OsFamilies.Android;
-                    code = OsCode.LEN;
+                name = OsNames.Android;
+                family = OsFamilies.Android;
+                code = OsCode.ADR;
+                version = null;
+            }
+            else if (name != OsNames.LineageOs && clientHints.App == "org.lineageos.jelly")
+            {
+                name = OsNames.LineageOs;
+                family = OsFamilies.Android;
+                code = OsCode.LEN;
 
-                    if (version is not null)
-                    {
-                        TryGetLineageOsVersion(version, out version);
-                    }
-                }
-                else if (name != OsNames.FireOs && clientHints.App == "org.mozilla.tv.firefox")
+                if (version is not null)
                 {
-                    name = OsNames.FireOs;
-                    family = OsFamilies.Android;
-                    code = OsCode.FIR;
+                    TryGetLineageOsVersion(version, out version);
+                }
+            }
+            else if (name != OsNames.FireOs && clientHints.App == "org.mozilla.tv.firefox")
+            {
+                name = OsNames.FireOs;
+                family = OsFamilies.Android;
+                code = OsCode.FIR;
 
-                    if (version is not null)
-                    {
-                        TryGetFireOsVersion(version, out version);
-                    }
+                if (version is not null)
+                {
+                    TryGetFireOsVersion(version, out version);
                 }
             }
         }
 
         result = new OsInfo
         {
-            Name = name,
-            Code = code,
+            Name = name ?? string.Empty,
+            Code = code ?? default(OsCode),
             Version = version,
             Platform = platform,
             Family = family
         };
 
         return true;
+    }
+
+    private sealed class BaseOsInfo
+    {
+        public string? Name { get; init; }
+        public OsCode? Code { get; init; }
+        public string? Version { get; init; }
     }
 }
