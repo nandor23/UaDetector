@@ -62,6 +62,12 @@ internal static partial class ParserExtensions
 #endif
 
 
+    public static Regex BuildUserAgentRegex(string pattern)
+    {
+        return new Regex($"(?:^|[^A-Z0-9_-]|[^A-Z0-9-]_|sprd-|MZ-)(?:{pattern})",
+            RegexOptions.IgnoreCase | RegexOptions.Compiled);
+    }
+
     private static bool HasUserAgentClientHintsFragment(string userAgent)
     {
         return ClientHintsFragmentMatchRegex().IsMatch(userAgent);

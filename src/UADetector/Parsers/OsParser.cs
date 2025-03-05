@@ -15,11 +15,11 @@ public sealed class OsParser : IOsParser
     private readonly ParserOptions _parserOptions;
     private const string ResourceName = "Regexes.Resources.oss.yml";
 
-    private static readonly IEnumerable<Regexes.Models.Os> OsRegexes =
-        ParserExtensions.LoadRegexes<Regexes.Models.Os>(ResourceName, RegexPatternType.UserAgent);
+    private static readonly IEnumerable<Os> OsRegexes =
+        ParserExtensions.LoadRegexes<Os>(ResourceName, RegexPatternType.UserAgent);
 
-    private static readonly FrozenDictionary<OsCode, string?> OsCodeMapping =
-        new Dictionary<OsCode, string?>
+    private static readonly FrozenDictionary<OsCode, string> OsCodeMapping =
+        new Dictionary<OsCode, string>
         {
             { OsCode.AIX, OsNames.Aix },
             { OsCode.AND, OsNames.Android },
@@ -209,8 +209,8 @@ public sealed class OsParser : IOsParser
             { OsCode.WOS, OsNames.WebOs },
         }.ToFrozenDictionary();
 
-    private static readonly FrozenDictionary<string, OsCode?> OsNameMapping = OsCodeMapping
-        .ToDictionary(e => e.Value ?? String.Empty, e => (OsCode?)e.Key)
+    private static readonly FrozenDictionary<string, OsCode> OsNameMapping = OsCodeMapping
+        .ToDictionary(e => e.Value, e => e.Key)
         .ToFrozenDictionary(StringComparer.OrdinalIgnoreCase);
 
     private static readonly FrozenDictionary<string, FrozenSet<OsCode>> OsFamilyMapping =
@@ -337,7 +337,7 @@ public sealed class OsParser : IOsParser
         OsFamilies.BeOs, OsFamilies.ChromeOs,
     }.ToFrozenSet(StringComparer.OrdinalIgnoreCase);
 
-    private static readonly FrozenDictionary<string, string?> FireOsVersionMapping = new Dictionary<string, string?>
+    private static readonly FrozenDictionary<string, string> FireOsVersionMapping = new Dictionary<string, string>
     {
         { "11", "8" },
         { "10", "8" },
@@ -382,6 +382,25 @@ public sealed class OsParser : IOsParser
     private static readonly FrozenDictionary<int, string> WindowsMinorVersionMapping =
         new Dictionary<int, string> { { 1, "7" }, { 2, "8" }, { 3, "8.1" } }.ToFrozenDictionary();
 
+    private static readonly FrozenDictionary<string, Regex> PlatformRegexes =
+        new Dictionary<string, Regex>
+        {
+            {
+                OsPlatforms.Arm,
+                ParserExtensions.BuildUserAgentRegex(
+                    "arm[ _;)ev]|.*arm$|.*arm64|aarch64|Apple ?TV|Watch ?OS|Watch1,[12]")
+            },
+            { OsPlatforms.LoongArch64, ParserExtensions.BuildUserAgentRegex("loongarch64") },
+            { OsPlatforms.Mips, ParserExtensions.BuildUserAgentRegex("mips") },
+            { OsPlatforms.SuperH, ParserExtensions.BuildUserAgentRegex("sh4") },
+            { OsPlatforms.Sparc64, ParserExtensions.BuildUserAgentRegex("sparc64") },
+            {
+                OsPlatforms.X64,
+                ParserExtensions.BuildUserAgentRegex("64-?bit|WOW64|(?:Intel)?x64|WINDOWS_64|win64|.*amd64|.*x86_?64")
+            },
+            { OsPlatforms.X86, ParserExtensions.BuildUserAgentRegex("32bit|win32|(?:i[0-9]|x)86|i86pc") }
+        }.ToFrozenDictionary();
+
     public OsParser(ParserOptions? parserOptions = null)
     {
         _parserOptions = parserOptions ?? new ParserOptions();
@@ -407,16 +426,14 @@ public sealed class OsParser : IOsParser
     {
         result = null;
 
-        OsNameMapping.TryGetValue(name, out var osCode);
-
-        if (osCode is null)
+        if (!OsNameMapping.TryGetValue(name, out var osCode))
         {
             return false;
         }
 
         foreach (var osFamily in OsFamilyMapping)
         {
-            if (osFamily.Value.Contains(osCode.Value))
+            if (osFamily.Value.Contains(osCode))
             {
                 result = osFamily.Key;
                 return true;
@@ -574,9 +591,36 @@ public sealed class OsParser : IOsParser
             }
         }
 
+        if (PlatformRegexes.TryGetValue(OsPlatforms.Arm, out var regex) && regex.IsMatch(userAgent))
+        {
+            result = OsPlatforms.Arm;
+        }
+        else if (PlatformRegexes.TryGetValue(OsPlatforms.LoongArch64, out regex) && regex.IsMatch(userAgent))
+        {
+            result = OsPlatforms.LoongArch64;
+        }
+        else if (PlatformRegexes.TryGetValue(OsPlatforms.Mips, out regex) && regex.IsMatch(userAgent))
+        {
+            result = OsPlatforms.Mips;
+        }
+        else if (PlatformRegexes.TryGetValue(OsPlatforms.SuperH, out regex) && regex.IsMatch(userAgent))
+        {
+            result = OsPlatforms.SuperH;
+        }
+        else if (PlatformRegexes.TryGetValue(OsPlatforms.Sparc64, out regex) && regex.IsMatch(userAgent))
+        {
+            result = OsPlatforms.Sparc64;
+        }
+        else if (PlatformRegexes.TryGetValue(OsPlatforms.X64, out regex) && regex.IsMatch(userAgent))
+        {
+            result = OsPlatforms.X64;
+        }
+        else if (PlatformRegexes.TryGetValue(OsPlatforms.X86, out regex) && regex.IsMatch(userAgent))
+        {
+            result = OsPlatforms.X86;
+        }
 
-
-        throw new NotImplementedException();
+        return result is not null;
     }
 
     public bool TryParse(string userAgent, [NotNullWhen(true)] out OsInfo? result)
@@ -641,7 +685,10 @@ public sealed class OsParser : IOsParser
 
                             if (majorVersion is not null)
                             {
-                                version = FireOsVersionMapping[version] ?? FireOsVersionMapping[majorVersion];
+                                if (!FireOsVersionMapping.TryGetValue(version, out version))
+                                {
+                                    FireOsVersionMapping.TryGetValue(majorVersion, out version);
+                                }
                             }
 
                             break;
@@ -681,7 +728,6 @@ public sealed class OsParser : IOsParser
             result = null;
             return false;
         }
-
 
         result = new OsInfo { Name = name, Code = code, Version = version, };
         throw new NotImplementedException();

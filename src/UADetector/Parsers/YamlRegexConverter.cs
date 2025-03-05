@@ -11,8 +11,6 @@ namespace UADetector.Parsers;
 internal sealed class YamlRegexConverter : IYamlTypeConverter
 {
     private readonly RegexPatternType _patternType;
-    private const RegexOptions Options = RegexOptions.Compiled | RegexOptions.IgnoreCase;
-    private const string UserAgentRegexPattern = "(?:^|[^A-Z0-9_-]|[^A-Z0-9-]_|sprd-|MZ-)(?:{0})";
 
 
     public YamlRegexConverter(RegexPatternType patternType)
@@ -33,8 +31,8 @@ internal sealed class YamlRegexConverter : IYamlTypeConverter
 
         return _patternType switch
         {
-            RegexPatternType.None => new Regex(scalar.Value, Options),
-            RegexPatternType.UserAgent => new Regex(string.Format(UserAgentRegexPattern, scalar.Value), Options),
+            RegexPatternType.None => new Regex(scalar.Value, RegexOptions.Compiled | RegexOptions.IgnoreCase),
+            RegexPatternType.UserAgent => ParserExtensions.BuildUserAgentRegex(scalar.Value),
             _ => throw new ArgumentOutOfRangeException()
         };
     }
