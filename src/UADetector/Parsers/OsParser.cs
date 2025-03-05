@@ -392,19 +392,19 @@ public sealed class OsParser : IOsParser
         new Dictionary<string, Regex>
         {
             {
-                OsPlatforms.Arm,
+                OsPlatformTypes.Arm,
                 ParserExtensions.BuildUserAgentRegex(
                     "arm[ _;)ev]|.*arm$|.*arm64|aarch64|Apple ?TV|Watch ?OS|Watch1,[12]")
             },
-            { OsPlatforms.LoongArch64, ParserExtensions.BuildUserAgentRegex("loongarch64") },
-            { OsPlatforms.Mips, ParserExtensions.BuildUserAgentRegex("mips") },
-            { OsPlatforms.SuperH, ParserExtensions.BuildUserAgentRegex("sh4") },
-            { OsPlatforms.Sparc64, ParserExtensions.BuildUserAgentRegex("sparc64") },
+            { OsPlatformTypes.LoongArch64, ParserExtensions.BuildUserAgentRegex("loongarch64") },
+            { OsPlatformTypes.Mips, ParserExtensions.BuildUserAgentRegex("mips") },
+            { OsPlatformTypes.SuperH, ParserExtensions.BuildUserAgentRegex("sh4") },
+            { OsPlatformTypes.Sparc64, ParserExtensions.BuildUserAgentRegex("sparc64") },
             {
-                OsPlatforms.X64,
+                OsPlatformTypes.X64,
                 ParserExtensions.BuildUserAgentRegex("64-?bit|WOW64|(?:Intel)?x64|WINDOWS_64|win64|.*amd64|.*x86_?64")
             },
-            { OsPlatforms.X86, ParserExtensions.BuildUserAgentRegex("32bit|win32|(?:i[0-9]|x)86|i86pc") }
+            { OsPlatformTypes.X86, ParserExtensions.BuildUserAgentRegex("32bit|win32|(?:i[0-9]|x)86|i86pc") }
         }.ToFrozenDictionary();
 
 
@@ -498,31 +498,31 @@ public sealed class OsParser : IOsParser
 
             if (architecture.Contains("arm"))
             {
-                result = OsPlatforms.Arm;
+                result = OsPlatformTypes.Arm;
             }
             else if (architecture.Contains("loongarch64"))
             {
-                result = OsPlatforms.LoongArch64;
+                result = OsPlatformTypes.LoongArch64;
             }
             else if (architecture.Contains("mips"))
             {
-                result = OsPlatforms.Mips;
+                result = OsPlatformTypes.Mips;
             }
             else if (architecture.Contains("sh4"))
             {
-                result = OsPlatforms.SuperH;
+                result = OsPlatformTypes.SuperH;
             }
             else if (architecture.Contains("sparc64"))
             {
-                result = OsPlatforms.Sparc64;
+                result = OsPlatformTypes.Sparc64;
             }
             else if (architecture.Contains("x64") || (architecture.Contains("x86") && clientHints.Bitness == "64"))
             {
-                result = OsPlatforms.X64;
+                result = OsPlatformTypes.X64;
             }
             else if (architecture.Contains("x86"))
             {
-                result = OsPlatforms.X86;
+                result = OsPlatformTypes.X86;
             }
 
             if (result is not null)
@@ -531,33 +531,33 @@ public sealed class OsParser : IOsParser
             }
         }
 
-        if (PlatformRegexes.TryGetValue(OsPlatforms.Arm, out var regex) && regex.IsMatch(userAgent))
+        if (PlatformRegexes.TryGetValue(OsPlatformTypes.Arm, out var regex) && regex.IsMatch(userAgent))
         {
-            result = OsPlatforms.Arm;
+            result = OsPlatformTypes.Arm;
         }
-        else if (PlatformRegexes.TryGetValue(OsPlatforms.LoongArch64, out regex) && regex.IsMatch(userAgent))
+        else if (PlatformRegexes.TryGetValue(OsPlatformTypes.LoongArch64, out regex) && regex.IsMatch(userAgent))
         {
-            result = OsPlatforms.LoongArch64;
+            result = OsPlatformTypes.LoongArch64;
         }
-        else if (PlatformRegexes.TryGetValue(OsPlatforms.Mips, out regex) && regex.IsMatch(userAgent))
+        else if (PlatformRegexes.TryGetValue(OsPlatformTypes.Mips, out regex) && regex.IsMatch(userAgent))
         {
-            result = OsPlatforms.Mips;
+            result = OsPlatformTypes.Mips;
         }
-        else if (PlatformRegexes.TryGetValue(OsPlatforms.SuperH, out regex) && regex.IsMatch(userAgent))
+        else if (PlatformRegexes.TryGetValue(OsPlatformTypes.SuperH, out regex) && regex.IsMatch(userAgent))
         {
-            result = OsPlatforms.SuperH;
+            result = OsPlatformTypes.SuperH;
         }
-        else if (PlatformRegexes.TryGetValue(OsPlatforms.Sparc64, out regex) && regex.IsMatch(userAgent))
+        else if (PlatformRegexes.TryGetValue(OsPlatformTypes.Sparc64, out regex) && regex.IsMatch(userAgent))
         {
-            result = OsPlatforms.Sparc64;
+            result = OsPlatformTypes.Sparc64;
         }
-        else if (PlatformRegexes.TryGetValue(OsPlatforms.X64, out regex) && regex.IsMatch(userAgent))
+        else if (PlatformRegexes.TryGetValue(OsPlatformTypes.X64, out regex) && regex.IsMatch(userAgent))
         {
-            result = OsPlatforms.X64;
+            result = OsPlatformTypes.X64;
         }
-        else if (PlatformRegexes.TryGetValue(OsPlatforms.X86, out regex) && regex.IsMatch(userAgent))
+        else if (PlatformRegexes.TryGetValue(OsPlatformTypes.X86, out regex) && regex.IsMatch(userAgent))
         {
-            result = OsPlatforms.X86;
+            result = OsPlatformTypes.X86;
         }
 
         return result is not null;

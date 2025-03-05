@@ -1,6 +1,6 @@
 namespace UADetector.Models.Constants;
 
-public static class OsPlatforms
+public static class OsPlatformTypes
 {
     public const string Arm = "ARM";
     public const string LoongArch64 = "LoongArch64";
