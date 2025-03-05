@@ -388,7 +388,7 @@ public sealed class OsParser : IOsParser
     }
 
 
-    private static bool TryMapPlatformToOsName(string platform, out string result)
+    private static bool TryMapPlatformToOsName(string platform, [NotNullWhen((true))] out string? result)
     {
         foreach (var clientHints in ClientHintPlatformMapping)
         {
@@ -399,13 +399,13 @@ public sealed class OsParser : IOsParser
             }
         }
 
-        result = String.Empty;
+        result = null;
         return false;
     }
 
-    private static bool TryMapOsNameToOsFamily(string name, out string result)
+    private static bool TryMapOsNameToOsFamily(string name, [NotNullWhen((true))] out string? result)
     {
-        result = string.Empty;
+        result = null;
 
         OsNameMapping.TryGetValue(name, out var osCode);
 
@@ -426,23 +426,24 @@ public sealed class OsParser : IOsParser
         return false;
     }
 
-    /// <summary>
-    /// Returns the OS that can be detected from client hints
-    /// </summary>
-    private OsInfo ParseOsFromClientHints(ClientHints? clientHints)
+    private bool TryParseOsFromClientHints(ClientHints clientHints, [NotNullWhen(true)] out OsInfo? result)
     {
-        var result = new OsInfo();
-
-        if (clientHints?.Platform is null)
+        if (clientHints.Platform is null)
         {
-            return result;
+            result = null;
+            return false;
         }
+
+        result = new OsInfo();
 
         if (TryMapPlatformToOsName(clientHints.Platform, out var name))
         {
             result.Name = name.CollapseSpaces();
-            OsNameMapping.TryGetValue(result.Name, out var code);
-            result.Code = code;
+
+            if (OsNameMapping.TryGetValue(result.Name, out var code))
+            {
+                result.Code = code;
+            }
         }
 
         result.Version = clientHints.PlatformVersion;
@@ -474,12 +475,11 @@ public sealed class OsParser : IOsParser
             result.Version = null;
         }
 
-        return result;
+        return true;
     }
 
-    private OsInfo ParseOsFromUserAgent(string userAgent)
+    private bool TryParseOsFromUserAgent(string userAgent, [NotNullWhen(true)] out OsInfo? result)
     {
-        var result = new OsInfo();
         Match? match = null;
         Os? os = null;
 
@@ -494,50 +494,51 @@ public sealed class OsParser : IOsParser
             }
         }
 
-        if (match is not null && match.Success)
+        if (os is null || match is null || !match.Success)
         {
-            result.Name = ParserExtensions.FormatWithMatch(os?.Name, match);
+            result = null;
+            return false;
+        }
 
-            if (result.Name is not null && OsNameMapping.TryGetValue(result.Name, out var code))
-            {
-                result.Code = code;
-            }
+        result = new OsInfo { Name = ParserExtensions.FormatWithMatch(os.Name, match) };
 
-            if (!string.IsNullOrEmpty(os?.Version))
-            {
-                result.Version = ParserExtensions.FormatVersionWithMatch(
-                    os?.Version, match,
-                    _parserOptions.VersionTruncation);
-            }
+        if (result.Name is not null && OsNameMapping.TryGetValue(result.Name, out var code))
+        {
+            result.Code = code;
+        }
 
-            if (os?.Versions?.Count > 0)
+        if (!string.IsNullOrEmpty(os.Version))
+        {
+            result.Version =
+                ParserExtensions.FormatVersionWithMatch(os.Version, match, _parserOptions.VersionTruncation);
+        }
+
+        if (os.Versions?.Count > 0)
+        {
+            foreach (var versionRegex in os.Versions)
             {
-                foreach (var versionRegex in os.Versions)
+                match = versionRegex.Regex.Match(userAgent);
+
+                if (match.Success)
                 {
-                    match = versionRegex.Regex.Match(userAgent);
-
-                    if (match.Success)
-                    {
-                        result.Version = ParserExtensions.FormatVersionWithMatch(
-                            versionRegex.Version, match,
-                            _parserOptions.VersionTruncation);
-                        break;
-                    }
+                    result.Version = ParserExtensions.FormatVersionWithMatch(versionRegex.Version, match,
+                        _parserOptions.VersionTruncation);
+                    break;
                 }
             }
         }
 
-        return result;
+        return true;
     }
 
     private bool TryParsePlatform(string userAgent, ClientHints? clientHints, [NotNullWhen(true)] out string? result)
     {
         result = null;
-        
+
         if (clientHints?.Architecture is not null)
         {
             var architecture = clientHints.Architecture.ToLower();
-            
+
             if (architecture.Contains("arm"))
             {
                 result = OsPlatforms.Arm;
@@ -566,13 +567,13 @@ public sealed class OsParser : IOsParser
             {
                 result = OsPlatforms.X86;
             }
-            
+
             if (result is not null)
             {
                 return true;
             }
         }
-        
+
 
 
         throw new NotImplementedException();
@@ -590,15 +591,15 @@ public sealed class OsParser : IOsParser
         {
             userAgent = restoredUserAgent;
         }
-        
-        var osFromClientHints = ParseOsFromClientHints(clientHints);
-        var osFromUserAgent = ParseOsFromUserAgent(userAgent);
+
         string? name, version;
         OsCode? code;
 
-        if (osFromClientHints.Name is not null)
-        { 
-            name = osFromClientHints.Name; 
+        if (TryParseOsFromUserAgent(userAgent, out var osFromUserAgent) && clientHints is not null &&
+            TryParseOsFromClientHints(clientHints, out var osFromClientHints) &&
+            osFromClientHints.Name is not null)
+        {
+            name = osFromClientHints.Name;
             version = osFromClientHints.Version;
             code = osFromClientHints.Code;
             string? osFamilyFromUserAgent = null;
@@ -669,7 +670,7 @@ public sealed class OsParser : IOsParser
                     break;
             }
         }
-        else if (!string.IsNullOrEmpty(osFromUserAgent.Name))
+        else if (osFromUserAgent?.Name is not null)
         {
             name = osFromUserAgent.Name;
             code = osFromUserAgent.Code;
