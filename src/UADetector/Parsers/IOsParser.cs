@@ -1,6 +1,6 @@
 using UADetector.Results;
 
-namespace UADetector.Parsers.Os;
+namespace UADetector.Parsers;
 
 public interface IOsParser
 {

@@ -1,12 +1,14 @@
 using System.Collections.Frozen;
+using System.Diagnostics.CodeAnalysis;
 using System.Text.RegularExpressions;
 
 using UADetector.Models.Constants;
 using UADetector.Models.Enums;
+using UADetector.Regexes.Models;
 using UADetector.Results;
 using UADetector.Utils;
 
-namespace UADetector.Parsers.Os;
+namespace UADetector.Parsers;
 
 public sealed class OsParser : IOsParser
 {
@@ -351,7 +353,7 @@ public sealed class OsParser : IOsParser
         { "2", "1" },
     }.ToFrozenDictionary();
 
-    private static readonly FrozenDictionary<string, string> LineageOsVersionMapping = new Dictionary<string, string>()
+    private static readonly FrozenDictionary<string, string> LineageOsVersionMapping = new Dictionary<string, string>
     {
         { "15", "22" },
         { "14", "21" },
@@ -378,7 +380,7 @@ public sealed class OsParser : IOsParser
     }.ToFrozenDictionary();
 
     private static readonly FrozenDictionary<int, string> WindowsMinorVersionMapping =
-        new Dictionary<int, string>() { { 1, "7" }, { 2, "8" }, { 3, "8.1" } }.ToFrozenDictionary();
+        new Dictionary<int, string> { { 1, "7" }, { 2, "8" }, { 3, "8.1" } }.ToFrozenDictionary();
 
     public OsParser(ParserOptions? parserOptions = null)
     {
@@ -386,7 +388,7 @@ public sealed class OsParser : IOsParser
     }
 
 
-    private static bool TryMapPlatformToOsName(string platform, out string? result)
+    private static bool TryMapPlatformToOsName(string platform, out string result)
     {
         foreach (var clientHints in ClientHintPlatformMapping)
         {
@@ -397,17 +399,18 @@ public sealed class OsParser : IOsParser
             }
         }
 
-        result = null;
+        result = String.Empty;
         return false;
     }
 
-    private static bool TryMapOsNameToOsFamily(string name, out string? result)
+    private static bool TryMapOsNameToOsFamily(string name, out string result)
     {
+        result = string.Empty;
+
         OsNameMapping.TryGetValue(name, out var osCode);
 
         if (osCode is null)
         {
-            result = null;
             return false;
         }
 
@@ -420,7 +423,6 @@ public sealed class OsParser : IOsParser
             }
         }
 
-        result = null;
         return false;
     }
 
@@ -436,7 +438,7 @@ public sealed class OsParser : IOsParser
             return result;
         }
 
-        if (TryMapPlatformToOsName(clientHints.Platform, out var name) && name is not null)
+        if (TryMapPlatformToOsName(clientHints.Platform, out var name))
         {
             result.Name = name.CollapseSpaces();
             OsNameMapping.TryGetValue(result.Name, out var code);
@@ -479,7 +481,7 @@ public sealed class OsParser : IOsParser
     {
         var result = new OsInfo();
         Match? match = null;
-        Regexes.Models.Os? os = null;
+        Os? os = null;
 
         foreach (var osRegex in OsRegexes)
         {
@@ -528,13 +530,67 @@ public sealed class OsParser : IOsParser
         return result;
     }
 
-    public bool TryParse(string userAgent, out OsInfo? result)
+    private bool TryParsePlatform(string userAgent, ClientHints? clientHints, [NotNullWhen(true)] out string? result)
+    {
+        result = null;
+        
+        if (clientHints?.Architecture is not null)
+        {
+            var architecture = clientHints.Architecture.ToLower();
+            
+            if (architecture.Contains("arm"))
+            {
+                result = OsPlatforms.Arm;
+            }
+            else if (architecture.Contains("loongarch64"))
+            {
+                result = OsPlatforms.LoongArch64;
+            }
+            else if (architecture.Contains("mips"))
+            {
+                result = OsPlatforms.Mips;
+            }
+            else if (architecture.Contains("sh4"))
+            {
+                result = OsPlatforms.SuperH;
+            }
+            else if (architecture.Contains("sparc64"))
+            {
+                result = OsPlatforms.Sparc64;
+            }
+            else if (architecture.Contains("x64") || (architecture.Contains("x86") && clientHints.Bitness == "64"))
+            {
+                result = OsPlatforms.X64;
+            }
+            else if (architecture.Contains("x86"))
+            {
+                result = OsPlatforms.X86;
+            }
+            
+            if (result is not null)
+            {
+                return true;
+            }
+        }
+        
+
+
+        throw new NotImplementedException();
+    }
+
+    public bool TryParse(string userAgent, [NotNullWhen(true)] out OsInfo? result)
     {
         return TryParse(userAgent, null, out result);
     }
 
-    public bool TryParse(string userAgent, ClientHints? clientHints, out OsInfo? result)
+    public bool TryParse(string userAgent, ClientHints? clientHints, [NotNullWhen(true)] out OsInfo? result)
     {
+        if (clientHints is not null &&
+            ParserExtensions.TryRestoreUserAgent(userAgent, clientHints, out var restoredUserAgent))
+        {
+            userAgent = restoredUserAgent;
+        }
+        
         var osFromClientHints = ParseOsFromClientHints(clientHints);
         var osFromUserAgent = ParseOsFromUserAgent(userAgent);
         string? name, version;
@@ -550,7 +606,7 @@ public sealed class OsParser : IOsParser
             // Use the version from the user agent if none was provided in the client hints, 
             // but the OS family from the user agent matches.
             if (string.IsNullOrEmpty(osFromClientHints.Version) && osFromUserAgent.Name is not null &&
-                TryMapOsNameToOsFamily(osFromClientHints.Name, out string? osFamilyFromClientHints) &&
+                TryMapOsNameToOsFamily(osFromClientHints.Name, out var osFamilyFromClientHints) &&
                 TryMapOsNameToOsFamily(osFromUserAgent.Name, out osFamilyFromUserAgent) &&
                 osFamilyFromClientHints == osFamilyFromUserAgent)
             {

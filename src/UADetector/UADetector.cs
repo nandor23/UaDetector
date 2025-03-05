@@ -1,5 +1,4 @@
 using UADetector.Parsers;
-using UADetector.Parsers.Os;
 using UADetector.Results;
 
 namespace UADetector;
@@ -16,9 +15,8 @@ public sealed class UADetector : IUADetector
 
     public UserAgentInfo Parse(string userAgent, ClientHints? clientHints = null)
     {
-        ParserExtensions.TryRestoreUserAgentFromClientHints(userAgent, clientHints, out var result);
-
-        if (result is not null)
+        if (clientHints is not null &&
+            ParserExtensions.TryRestoreUserAgent(userAgent, clientHints, out var result))
         {
             userAgent = result;
         }

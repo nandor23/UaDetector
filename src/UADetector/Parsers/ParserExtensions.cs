@@ -1,3 +1,4 @@
+using System.Diagnostics.CodeAnalysis;
 using System.Text.RegularExpressions;
 
 using UADetector.Models.Enums;
@@ -71,15 +72,15 @@ internal static partial class ParserExtensions
         return DesktopFragmentMatchRegex().IsMatch(userAgent) && !DesktopFragmentExclusionRegex().IsMatch(userAgent);
     }
 
-    public static bool TryRestoreUserAgentFromClientHints(
+    public static bool TryRestoreUserAgent(
         string userAgent,
-        ClientHints? clientHints,
-        out string? result
+        ClientHints clientHints,
+        [NotNullWhen(true)] out string? result
     )
     {
         result = null;
 
-        if (clientHints?.Model is null)
+        if (clientHints.Model is null)
         {
             return false;
         }
