@@ -20,4 +20,8 @@
     <EmbeddedResource Include="Regexes\**\*" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Parsers\Device\" />
+  </ItemGroup>
+
 </Project>

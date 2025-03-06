@@ -5,5 +5,4 @@ namespace UADetector.Regexes.Models;
 internal interface IRegexDefinition
 {
     public Regex Regex { get; init; }
-    public string Name { get; init; }
 }

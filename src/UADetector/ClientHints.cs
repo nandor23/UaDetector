@@ -146,7 +146,7 @@ public sealed partial class ClientHints
     /// <summary>
     /// Create a new ClientHints instance from a dictionary containing all available client hint headers.
     /// </summary>
-    public static ClientHints Create(Dictionary<string, string> headers)
+    public static ClientHints Create(IDictionary<string, string> headers)
     {
         var clientHints = new ClientHints();
 
