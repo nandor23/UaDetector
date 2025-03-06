@@ -1,3 +1,5 @@
+using System.Diagnostics.CodeAnalysis;
+
 using UADetector.Parsers;
 using UADetector.Results;
 
@@ -13,16 +15,19 @@ public sealed class UADetector : IUADetector
         _osParser = osParser;
     }
 
-    public UserAgentInfo Parse(string userAgent, ClientHints? clientHints = null)
+    public bool TryParse(string userAgent, [NotNullWhen(true)] out UserAgentInfo? result)
+    {
+        return TryParse(userAgent, null, out result);
+    }
+
+    public bool TryParse(string userAgent, ClientHints? clientHints, [NotNullWhen(true)] out UserAgentInfo? result)
     {
         if (clientHints is not null &&
-            ParserExtensions.TryRestoreUserAgent(userAgent, clientHints, out var result))
+            ParserExtensions.TryRestoreUserAgent(userAgent, clientHints, out var restoredUserAgent))
         {
-            userAgent = result;
+            userAgent = restoredUserAgent;
         }
 
-        //   _osParser.TryParse(userAgent, null);
-
-        return new UserAgentInfo();
+        throw new NotImplementedException();
     }
 }

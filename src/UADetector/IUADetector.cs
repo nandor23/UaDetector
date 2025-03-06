@@ -4,5 +4,6 @@ namespace UADetector;
 
 public interface IUADetector
 {
-    UserAgentInfo Parse(string userAgent, ClientHints clientHints);
+    bool TryParse(string userAgent, out UserAgentInfo? result);
+    bool TryParse(string userAgent, ClientHints? clientHints, out UserAgentInfo? result);
 }
