@@ -130,7 +130,7 @@ public sealed partial class ClientHints
     /// <summary>
     /// Represents <c>Sec-CH-UA-Full-Version-List</c> header field: the full version for each brand in its brand list
     /// </summary>
-    public Dictionary<string, string>? FullVersionList { get; } = new();
+    public Dictionary<string, string> FullVersionList { get; } = new();
 
     /// <summary>
     /// Represents <c>x-requested-with</c> header field: Android app id
@@ -148,7 +148,7 @@ public sealed partial class ClientHints
     /// </summary>
     public static ClientHints Create(IDictionary<string, string> headers)
     {
-        var clientHints = new ClientHints();
+        ClientHints clientHints = new();
 
         foreach (var header in headers.Where(h => !string.IsNullOrEmpty(h.Value)))
         {
@@ -185,13 +185,13 @@ public sealed partial class ClientHints
             }
             else if (PrimaryFullVersionListHeaderNames.Contains(normalizedHeader) ||
                      (SecondaryFullVersionListHeaderNames.Contains(normalizedHeader) &&
-                      clientHints.FullVersionList?.Count == 0))
+                      clientHints.FullVersionList.Count == 0))
             {
                 var regex = FullVersionListRegex();
 
                 foreach (Match match in regex.Matches(normalizedHeader))
                 {
-                    clientHints.FullVersionList?.Add(match.Groups[1].Value, match.Groups[2].Value);
+                    clientHints.FullVersionList.Add(match.Groups[1].Value, match.Groups[2].Value);
                 }
             }
             else if (AppHeaderNames.Contains(normalizedHeader) &&

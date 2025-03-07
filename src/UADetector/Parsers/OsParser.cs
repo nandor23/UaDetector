@@ -319,16 +319,6 @@ public sealed class OsParser : IOsParser
         }.ToFrozenDictionary(StringComparer.OrdinalIgnoreCase);
 
     /// <summary>
-    /// Contains a list of mappings from our OS names to known client hint values
-    /// </summary>
-    private static readonly FrozenDictionary<string, FrozenSet<string>> ClientHintPlatformMapping =
-        new Dictionary<string, FrozenSet<string>>
-        {
-            { OsNames.GnuLinux, new[] { "Linux" }.ToFrozenSet(StringComparer.OrdinalIgnoreCase) },
-            { OsNames.Mac, new[] { "MacOS" }.ToFrozenSet(StringComparer.OrdinalIgnoreCase) }
-        }.ToFrozenDictionary(StringComparer.OrdinalIgnoreCase);
-
-    /// <summary>
     /// Operating system families that are known as desktop only
     /// </summary>
     private static readonly FrozenSet<string> DesktopOsFamilies = new[]
@@ -413,20 +403,7 @@ public sealed class OsParser : IOsParser
         _parserOptions = parserOptions ?? new ParserOptions();
     }
 
-    private static bool TryMapPlatformToOsName(string platform, [NotNullWhen((true))] out string? result)
-    {
-        foreach (var clientHints in ClientHintPlatformMapping)
-        {
-            if (clientHints.Value.Contains(platform))
-            {
-                result = clientHints.Key;
-                return true;
-            }
-        }
 
-        result = null;
-        return false;
-    }
 
     private static bool TryMapOsNameToOsFamily(string name, [NotNullWhen((true))] out string? result)
     {
@@ -573,7 +550,7 @@ public sealed class OsParser : IOsParser
 
         OsCode? code = null;
 
-        if (TryMapPlatformToOsName(clientHints.Platform, out var name))
+        if (ParserExtensions.TryMapPlatformToOsName(clientHints.Platform, out var name))
         {
             name.CollapseSpaces();
 

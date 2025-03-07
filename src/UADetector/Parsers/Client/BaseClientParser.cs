@@ -5,13 +5,17 @@ using UADetector.Results;
 
 namespace UADetector.Parsers.Client;
 
-internal abstract class BaseClientParser<T> where T : IClientDefinition
+internal abstract class BaseClientParser<T> where T : IClient
 {
-    public abstract bool TryParse(string userAgent, [NotNullWhen(true)] out ClientInfo? result);
+    public abstract bool TryParse(
+        string userAgent,
+        ClientHints? clientHints,
+        [NotNullWhen(true)] out ClientInfo? result
+    );
 
     protected bool TryParse(
         string userAgent,
-        IEnumerable<T> clientDefinitions,
+        IEnumerable<T> clients,
         [NotNullWhen(true)] out ClientInfo? result
     )
     {
