@@ -2,7 +2,6 @@ using System.Diagnostics.CodeAnalysis;
 using System.Text.RegularExpressions;
 
 using UADetector.Models.Enums;
-using UADetector.Regexes.Models;
 using UADetector.Utils;
 
 using YamlDotNet.Serialization;
@@ -109,8 +108,10 @@ internal static partial class ParserExtensions
         return !string.IsNullOrEmpty(result);
     }
 
-    public static IEnumerable<T> LoadRegexes<T>(string resourceName,
-        RegexPatternType patternType = RegexPatternType.None) where T : IRegexDefinition
+    public static IEnumerable<T> LoadRegexes<T>(
+        string resourceName,
+        RegexPatternType patternType = RegexPatternType.None
+    )
     {
         var assembly = typeof(UADetector).Assembly;
         var fullResourceName = $"{nameof(UADetector)}.{resourceName}";
