@@ -698,7 +698,7 @@ internal class BrowserParser : BaseClientParser<Browser>
             { BrowserCode.ZOR, BrowserNames.ZordoBrowser },
             { BrowserCode.ZTE, BrowserNames.ZteBrowser },
         }.ToFrozenDictionary();
-    
+
     private bool TryParseBrowserFromClientHints(
         ClientHints clientHints,
         [NotNullWhen(true)] out ClientInfo? result
@@ -715,7 +715,7 @@ internal class BrowserParser : BaseClientParser<Browser>
             if (ParserExtensions.TryMapPlatformToOsName(fullVersion.Key, out var osName))
             {
                 osName.CollapseSpaces();
-                
+
             }
         }
 

@@ -792,10 +792,16 @@ public sealed class OsParser : IOsParser
             }
         }
 
+        if (name is null || code is null)
+        {
+            result = null;
+            return false;
+        }
+
         result = new OsInfo
         {
-            Name = name ?? string.Empty,
-            Code = code ?? default(OsCode),
+            Name = name,
+            Code = code.Value,
             Version = version,
             Platform = platform,
             Family = family

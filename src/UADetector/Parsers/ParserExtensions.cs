@@ -72,7 +72,7 @@ internal static partial class ParserExtensions
             { OsNames.GnuLinux, new[] { "Linux" }.ToFrozenSet(StringComparer.OrdinalIgnoreCase) },
             { OsNames.Mac, new[] { "MacOS" }.ToFrozenSet(StringComparer.OrdinalIgnoreCase) }
         }.ToFrozenDictionary(StringComparer.OrdinalIgnoreCase);
-    
+
     public static bool TryMapPlatformToOsName(string platform, [NotNullWhen((true))] out string? result)
     {
         foreach (var clientHints in ClientHintPlatformMapping)
@@ -87,7 +87,7 @@ internal static partial class ParserExtensions
         result = null;
         return false;
     }
-    
+
     public static Regex BuildUserAgentRegex(string pattern)
     {
         return new Regex($"(?:^|[^A-Z0-9_-]|[^A-Z0-9-]_|sprd-|MZ-)(?:{pattern})",
