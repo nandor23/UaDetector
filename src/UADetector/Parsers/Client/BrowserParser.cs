@@ -729,6 +729,11 @@ internal class BrowserParser : BaseClientParser<Browser>
         [NotNullWhen(true)] out ClientInfo? result
     )
     {
+        if (clientHints is not null)
+        {
+            TryParseBrowserFromClientHints(clientHints, out var browserFromClientHints);
+        }
+
         throw new NotImplementedException();
     }
 }

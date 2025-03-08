@@ -189,9 +189,10 @@ public sealed partial class ClientHints
             {
                 var regex = FullVersionListRegex();
 
-                foreach (Match match in regex.Matches(normalizedHeader))
+                while (regex.Match(value) is { Success: true } match)
                 {
                     clientHints.FullVersionList.Add(match.Groups[1].Value, match.Groups[2].Value);
+                    value = value[match.Length..];
                 }
             }
             else if (AppHeaderNames.Contains(normalizedHeader) &&
