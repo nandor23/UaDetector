@@ -699,6 +699,14 @@ internal class BrowserParser : BaseClientParser<Browser>
             { BrowserCode.ZTE, BrowserNames.ZteBrowser },
         }.ToFrozenDictionary();
 
+    private static readonly FrozenDictionary<string, FrozenSet<BrowserCode>> BrowserFamilyMapping =
+        new Dictionary<string, FrozenSet<BrowserCode>>()
+        {
+            { BrowserFamilies.AndroidBrowser, new[] { BrowserCode.AND }.ToFrozenSet() },
+            { BrowserNames.BlackBerryBrowser, new[] { BrowserCode.BLB }.ToFrozenSet() },
+            { BrowserFamilies.Baidu, new[] { BrowserCode.BAI, BrowserCode.BAS, BrowserCode.HON }.ToFrozenSet() }
+        }.ToFrozenDictionary();
+
     private bool TryParseBrowserFromClientHints(
         ClientHints clientHints,
         [NotNullWhen(true)] out ClientInfo? result
