@@ -703,8 +703,10 @@ internal class BrowserParser : BaseClientParser<Browser>
         new Dictionary<string, FrozenSet<BrowserCode>>()
         {
             { BrowserFamilies.AndroidBrowser, new[] { BrowserCode.AND }.ToFrozenSet() },
-            { BrowserNames.BlackBerryBrowser, new[] { BrowserCode.BLB }.ToFrozenSet() },
-            { BrowserFamilies.Baidu, new[] { BrowserCode.BAI, BrowserCode.BAS, BrowserCode.HON }.ToFrozenSet() }
+            { BrowserFamilies.BlackBerryBrowser, new[] { BrowserCode.BLB }.ToFrozenSet() },
+            { BrowserFamilies.Baidu, new[] { BrowserCode.BAI, BrowserCode.BAS, BrowserCode.HON }.ToFrozenSet() },
+            { BrowserFamilies.Amiga, new[] { BrowserCode.AMV, BrowserCode.AMW }.ToFrozenSet() },
+            { BrowserFamilies.Chrome, new[] { BrowserCode.CHR }.ToFrozenSet() }
         }.ToFrozenDictionary();
 
     private bool TryParseBrowserFromClientHints(
