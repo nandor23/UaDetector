@@ -699,6 +699,10 @@ internal class BrowserParser : BaseClientParser<Browser>
             { BrowserCode.ZteBrowser, BrowserNames.ZteBrowser },
         }.ToFrozenDictionary();
 
+    private static readonly FrozenDictionary<string, BrowserCode> BrowserNameMapping = BrowserCodeMapping
+        .ToDictionary(e => e.Value, e => e.Key)
+        .ToFrozenDictionary(StringComparer.OrdinalIgnoreCase);
+
     private static readonly FrozenDictionary<string, FrozenSet<BrowserCode>> BrowserFamilyMapping =
         new Dictionary<string, FrozenSet<BrowserCode>>()
         {
@@ -866,7 +870,7 @@ internal class BrowserParser : BaseClientParser<Browser>
             },
             { BrowserNames.SailfishBrowser, new[] { BrowserCode.SailfishBrowser, }.ToFrozenSet() },
 
-        }.ToFrozenDictionary();
+        }.ToFrozenDictionary(StringComparer.OrdinalIgnoreCase);
 
     private static readonly FrozenSet<BrowserCode> MobileOnlyBrowsers = new[]
     {
@@ -928,10 +932,35 @@ internal class BrowserParser : BaseClientParser<Browser>
         BrowserCode.PrivacyPioneerBrowser, BrowserCode.Pluma,
     }.ToFrozenSet();
 
+    private static readonly FrozenDictionary<string, FrozenSet<string>> ClientHintBrandMapping =
+        new Dictionary<string, FrozenSet<string>>
+        {
+            { BrowserNames.Chrome, new[] { "Google Chrome" }.ToFrozenSet() },
+            { BrowserNames.ChromeWebview, new[] { "Android WebView" }.ToFrozenSet() },
+            { BrowserNames.DuckDuckGoPrivacyBrowser, new[] { "DuckDuckGo" }.ToFrozenSet() },
+            { BrowserNames.EdgeWebView, new[] { "Microsoft Edge WebView2" }.ToFrozenSet() },
+            { BrowserNames.MiBrowser, new[] { "Miui Browser", "XiaoMiBrowser" }.ToFrozenSet() },
+            { BrowserNames.MicrosoftEdge, new[] { "Edge" }.ToFrozenSet() },
+            { BrowserNames.NortonPrivateBrowser, new[] { "Norton Secure Browser" }.ToFrozenSet() },
+            { BrowserNames.VewdBrowser, new[] { "Vewd Core" }.ToFrozenSet() },
+        }.ToFrozenDictionary();
+
+    private static string ApplyClientHintBrandMapping(string brand)
+    {
+        foreach (var clientHint in ClientHintBrandMapping)
+        {
+            if (clientHint.Value.Contains(brand))
+            {
+                return clientHint.Key;
+            }
+        }
+
+        return brand;
+    }
 
     private bool TryParseBrowserFromClientHints(
         ClientHints clientHints,
-        [NotNullWhen(true)] out ClientInfo? result
+        [NotNullWhen(true)] out BaseBrowserInfo? result
     )
     {
         if (clientHints.FullVersionList.Count == 0)
@@ -940,18 +969,38 @@ internal class BrowserParser : BaseClientParser<Browser>
             return false;
         }
 
-        foreach (var fullVersion in clientHints.FullVersionList)
-        {
-            if (ParserExtensions.TryMapPlatformToOsName(fullVersion.Key, out var osName))
-            {
-                osName.CollapseSpaces();
+        string? name = null, version = null;
+        BrowserCode? code = null;
 
+        foreach (var brand in clientHints.FullVersionList)
+        {
+            var browserName = ApplyClientHintBrandMapping(brand.Key);
+            browserName.CollapseSpaces();
+
+            if (BrowserNameMapping.TryGetValue(browserName, out var browserCode) ||
+                BrowserNameMapping.TryGetValue($"{browserName} Browser", out browserCode))
+            {
+                name = browserName;
+                code = browserCode;
+                version = brand.Value;
+            }
+
+            // Exit if the detected browser brand is not Chromium or Microsoft Edge, otherwise, continue searching.
+            if (!string.IsNullOrEmpty(name) && name != BrowserNames.Chromium && name != BrowserNames.MicrosoftEdge)
+            {
+                break;
             }
         }
 
-        throw new NotImplementedException();
-    }
+        result = new BaseBrowserInfo
+        {
+            Name = name,
+            Code = code,
+            Version = clientHints.UaFullVersion ?? version
+        };
 
+        return true;
+    }
 
     public override bool TryParse(
         string userAgent,
@@ -965,5 +1014,12 @@ internal class BrowserParser : BaseClientParser<Browser>
         }
 
         throw new NotImplementedException();
+    }
+
+    private sealed class BaseBrowserInfo
+    {
+        public string? Name { get; init; }
+        public BrowserCode? Code { get; init; }
+        public string? Version { get; init; }
     }
 }

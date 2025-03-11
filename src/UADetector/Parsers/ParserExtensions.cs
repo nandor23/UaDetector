@@ -63,31 +63,6 @@ internal static partial class ParserExtensions
 #endif
 
 
-    /// <summary>
-    /// Contains a list of mappings from our OS names to known client hint values
-    /// </summary>
-    private static readonly FrozenDictionary<string, FrozenSet<string>> ClientHintPlatformMapping =
-        new Dictionary<string, FrozenSet<string>>
-        {
-            { OsNames.GnuLinux, new[] { "Linux" }.ToFrozenSet(StringComparer.OrdinalIgnoreCase) },
-            { OsNames.Mac, new[] { "MacOS" }.ToFrozenSet(StringComparer.OrdinalIgnoreCase) }
-        }.ToFrozenDictionary(StringComparer.OrdinalIgnoreCase);
-
-    public static bool TryMapPlatformToOsName(string platform, [NotNullWhen((true))] out string? result)
-    {
-        foreach (var clientHints in ClientHintPlatformMapping)
-        {
-            if (clientHints.Value.Contains(platform))
-            {
-                result = clientHints.Key;
-                return true;
-            }
-        }
-
-        result = null;
-        return false;
-    }
-
     public static Regex BuildUserAgentRegex(string pattern)
     {
         return new Regex($"(?:^|[^A-Z0-9_-]|[^A-Z0-9-]_|sprd-|MZ-)(?:{pattern})",

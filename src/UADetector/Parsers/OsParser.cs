@@ -323,6 +323,16 @@ public sealed class OsParser : IOsParser
         OsFamilies.BeOs, OsFamilies.ChromeOs,
     }.ToFrozenSet(StringComparer.OrdinalIgnoreCase);
 
+    /// <summary>
+    /// Contains a list of mappings from our OS names to known client hint values
+    /// </summary>
+    private static readonly FrozenDictionary<string, FrozenSet<string>> ClientHintPlatformMapping =
+        new Dictionary<string, FrozenSet<string>>
+        {
+            { OsNames.GnuLinux, new[] { "Linux" }.ToFrozenSet(StringComparer.OrdinalIgnoreCase) },
+            { OsNames.Mac, new[] { "MacOS" }.ToFrozenSet(StringComparer.OrdinalIgnoreCase) }
+        }.ToFrozenDictionary(StringComparer.OrdinalIgnoreCase);
+
     private static readonly FrozenDictionary<string, string> FireOsVersionMapping = new Dictionary<string, string>
     {
         { "11", "8" },
@@ -399,7 +409,18 @@ public sealed class OsParser : IOsParser
         _parserOptions = parserOptions ?? new ParserOptions();
     }
 
+    private static string ApplyClientHintPlatformMapping(string platform)
+    {
+        foreach (var clientHint in ClientHintPlatformMapping)
+        {
+            if (clientHint.Value.Contains(platform))
+            {
+                return clientHint.Key;
+            }
+        }
 
+        return platform;
+    }
 
     private static bool TryMapOsNameToOsFamily(string name, [NotNullWhen((true))] out string? result)
     {
@@ -544,16 +565,16 @@ public sealed class OsParser : IOsParser
             return false;
         }
 
+        string? name = null;
         OsCode? code = null;
 
-        if (ParserExtensions.TryMapPlatformToOsName(clientHints.Platform, out var name))
-        {
-            name.CollapseSpaces();
+        var osName = ApplyClientHintPlatformMapping(clientHints.Platform);
+        osName.CollapseSpaces();
 
-            if (OsNameMapping.TryGetValue(name, out var osCode))
-            {
-                code = osCode;
-            }
+        if (OsNameMapping.TryGetValue(osName, out var osCode))
+        {
+            name = osName;
+            code = osCode;
         }
 
         string? version = clientHints.PlatformVersion;
