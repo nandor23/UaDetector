@@ -573,7 +573,7 @@ public sealed class OsParser : IOsParser
 
         if (OsNameMapping.TryGetValue(osName, out var osCode))
         {
-            name = osName;
+            name = OsCodeMapping[osCode];
             code = osCode;
         }
 

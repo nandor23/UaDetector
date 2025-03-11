@@ -980,7 +980,7 @@ internal class BrowserParser : BaseClientParser<Browser>
             if (BrowserNameMapping.TryGetValue(browserName, out var browserCode) ||
                 BrowserNameMapping.TryGetValue($"{browserName} Browser", out browserCode))
             {
-                name = browserName;
+                name = BrowserCodeMapping[browserCode];
                 code = browserCode;
                 version = brand.Value;
             }
@@ -1009,7 +1009,7 @@ internal class BrowserParser : BaseClientParser<Browser>
     {
         throw new NotImplementedException();
     }
-    
+
     public override bool TryParse(
         string userAgent,
         ClientHints? clientHints,
