@@ -4,7 +4,7 @@ using System.Diagnostics.CodeAnalysis;
 using UADetector.Models.Constants;
 using UADetector.Models.Enums;
 using UADetector.Regexes.Models.Client;
-using UADetector.Results;
+using UADetector.Results.Client;
 using UADetector.Utils;
 
 namespace UADetector.Parsers.Client;
@@ -960,7 +960,7 @@ internal class BrowserParser : BaseClientParser<Browser>
 
     private bool TryParseBrowserFromClientHints(
         ClientHints clientHints,
-        [NotNullWhen(true)] out BaseBrowserInfo? result
+        [NotNullWhen(true)] out BrowserInfo? result
     )
     {
         if (clientHints.FullVersionList.Count == 0)
@@ -992,7 +992,7 @@ internal class BrowserParser : BaseClientParser<Browser>
             }
         }
 
-        result = new BaseBrowserInfo
+        result = new BrowserInfo
         {
             Name = name,
             Code = code,
@@ -1002,10 +1002,18 @@ internal class BrowserParser : BaseClientParser<Browser>
         return true;
     }
 
+    private bool TryParseBrowserFromUserAgent(
+        string userAgent,
+        [NotNullWhen(true)] out BrowserInfo? result
+    )
+    {
+        throw new NotImplementedException();
+    }
+    
     public override bool TryParse(
         string userAgent,
         ClientHints? clientHints,
-        [NotNullWhen(true)] out ClientInfo? result
+        [NotNullWhen(true)] out IClientInfo? result
     )
     {
         if (clientHints is not null)
@@ -1014,12 +1022,5 @@ internal class BrowserParser : BaseClientParser<Browser>
         }
 
         throw new NotImplementedException();
-    }
-
-    private sealed class BaseBrowserInfo
-    {
-        public string? Name { get; init; }
-        public BrowserCode? Code { get; init; }
-        public string? Version { get; init; }
     }
 }

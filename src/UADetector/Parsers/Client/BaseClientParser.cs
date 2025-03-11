@@ -1,7 +1,7 @@
 using System.Diagnostics.CodeAnalysis;
 
 using UADetector.Regexes.Models.Client;
-using UADetector.Results;
+using UADetector.Results.Client;
 
 namespace UADetector.Parsers.Client;
 
@@ -10,13 +10,13 @@ internal abstract class BaseClientParser<T> where T : IClient
     public abstract bool TryParse(
         string userAgent,
         ClientHints? clientHints,
-        [NotNullWhen(true)] out ClientInfo? result
+        [NotNullWhen(true)] out IClientInfo? result
     );
 
     protected bool TryParse(
         string userAgent,
         IEnumerable<T> clients,
-        [NotNullWhen(true)] out ClientInfo? result
+        [NotNullWhen(true)] out IClientInfo? result
     )
     {
         result = null;
