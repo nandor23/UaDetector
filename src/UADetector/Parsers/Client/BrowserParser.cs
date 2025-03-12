@@ -1,5 +1,6 @@
 using System.Collections.Frozen;
 using System.Diagnostics.CodeAnalysis;
+using System.Text.RegularExpressions;
 
 using UADetector.Models.Constants;
 using UADetector.Models.Enums;
@@ -11,6 +12,8 @@ namespace UADetector.Parsers.Client;
 
 internal class BrowserParser : BaseClientParser<Browser>
 {
+    private readonly ParserOptions _parserOptions;
+    private readonly EngineParser _engineParser = new();
     private const string ResourceName = "Regexes.Resources.Client.browsers.yml";
 
     private static readonly IEnumerable<Browser> BrowserRegexes =
@@ -945,6 +948,11 @@ internal class BrowserParser : BaseClientParser<Browser>
             { BrowserNames.VewdBrowser, new[] { "Vewd Core" }.ToFrozenSet() },
         }.ToFrozenDictionary();
 
+    public BrowserParser(ParserOptions parserOptions)
+    {
+        _parserOptions = parserOptions;
+    }
+
     private static string ApplyClientHintBrandMapping(string brand)
     {
         foreach (var clientHint in ClientHintBrandMapping)
@@ -956,6 +964,33 @@ internal class BrowserParser : BaseClientParser<Browser>
         }
 
         return brand;
+    }
+
+    private string? BuildEngine(string userAgent, Engine? engineData, string? browserVersion)
+    {
+        var engine = engineData?.Default;
+
+        if (engineData?.Versions?.Count > 0 && browserVersion is not null &&
+            Version.TryParse(browserVersion, out var parsedBrowserVersion))
+        {
+            foreach (var version in engineData.Versions)
+            {
+                if (Version.TryParse(version.Key, out var parsedVersion) &&
+                    parsedBrowserVersion.CompareTo(parsedVersion) < 0)
+                {
+                    continue;
+                }
+
+                engine = version.Value;
+            }
+        }
+
+        if (engine is null)
+        {
+            _engineParser.TryParse(userAgent, out engine);
+        }
+
+        return engine;
     }
 
     private bool TryParseBrowserFromClientHints(
@@ -1007,7 +1042,41 @@ internal class BrowserParser : BaseClientParser<Browser>
         [NotNullWhen(true)] out BrowserInfo? result
     )
     {
-        throw new NotImplementedException();
+        Match? match = null;
+        Browser? browser = null;
+
+        foreach (var browserRegex in BrowserRegexes)
+        {
+            match = browserRegex.Regex.Match(userAgent);
+
+            if (match.Success)
+            {
+                browser = browserRegex;
+                break;
+            }
+        }
+
+        if (browser is null || match is null || !match.Success)
+        {
+            result = null;
+            return false;
+        }
+
+        string name = ParserExtensions.FormatWithMatch(browser.Name, match);
+
+        if (BrowserNameMapping.TryGetValue(name, out var code))
+        {
+            var version = browser.Version is not null
+                ? ParserExtensions.FormatVersionWithMatch(browser.Version, match, _parserOptions.VersionTruncation)
+                : null;
+
+            var engine = BuildEngine(userAgent, browser.Engine, version);
+
+        }
+
+
+        result = null;
+        return false;
     }
 
     public override bool TryParse(

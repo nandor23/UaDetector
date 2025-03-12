@@ -7,7 +7,12 @@ namespace UADetector.Parsers;
 
 public class ClientParser : IClientParser
 {
-    private readonly BrowserParser _browserParser = new();
+    private readonly BrowserParser _browserParser;
+
+    public ClientParser(ParserOptions parserOptions)
+    {
+        _browserParser = new BrowserParser(parserOptions);
+    }
 
     public bool TryParse(string userAgent, [NotNullWhen(true)] out IClientInfo? result)
     {

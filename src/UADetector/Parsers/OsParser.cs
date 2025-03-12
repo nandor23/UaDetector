@@ -637,20 +637,17 @@ public sealed class OsParser : IOsParser
             return false;
         }
 
-        string? name = ParserExtensions.FormatWithMatch(os.Name, match);
-        string? version = null;
+        string name = ParserExtensions.FormatWithMatch(os.Name, match);
         OsCode? code = null;
 
-        if (name is not null && OsNameMapping.TryGetValue(name, out var osCode))
+        if (OsNameMapping.TryGetValue(name, out var osCode))
         {
             code = osCode;
         }
 
-        if (!string.IsNullOrEmpty(os.Version))
-        {
-            version =
-                ParserExtensions.FormatVersionWithMatch(os.Version, match, _parserOptions.VersionTruncation);
-        }
+        var version = os.Version is not null
+            ? ParserExtensions.FormatVersionWithMatch(os.Version, match, _parserOptions.VersionTruncation)
+            : null;
 
         if (os.Versions?.Count > 0)
         {

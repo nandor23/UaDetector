@@ -136,13 +136,8 @@ internal static partial class ParserExtensions
         return deserializer.Deserialize<IEnumerable<T>>(reader);
     }
 
-    public static string? FormatWithMatch(string? value, Match match)
+    public static string FormatWithMatch(string value, Match match)
     {
-        if (value is null)
-        {
-            return null;
-        }
-
         for (int i = 1; i < match.Groups.Count; i++)
         {
             value = value.Replace($"${i}", match.Groups[i].Value);
@@ -151,16 +146,11 @@ internal static partial class ParserExtensions
         return value.Trim();
     }
 
-    public static string? FormatVersionWithMatch(string? version, Match match, VersionTruncation versionTruncation)
+    public static string FormatVersionWithMatch(string version, Match match, VersionTruncation versionTruncation)
     {
-        if (version is null)
-        {
-            return null;
-        }
+        version = FormatWithMatch(version, match).Replace('_', '.');
 
-        version = FormatWithMatch(version, match)?.Replace('_', '.');
-
-        if (versionTruncation != VersionTruncation.None && version is not null)
+        if (versionTruncation != VersionTruncation.None)
         {
             var index = version.IndexOfNthOccurrence('.', (int)versionTruncation);
 
@@ -170,7 +160,7 @@ internal static partial class ParserExtensions
             }
         }
 
-        return version?.Trim(' ', '.');
+        return version.Trim(' ', '.');
     }
 
     public static string NormalizeVersion(string version, string[] matches)
