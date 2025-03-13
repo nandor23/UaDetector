@@ -9,9 +9,10 @@ public class ClientParser : IClientParser
 {
     private readonly BrowserParser _browserParser;
 
-    public ClientParser(ParserOptions parserOptions)
+    public ClientParser(ParserOptions? parserOptions = null)
     {
-        _browserParser = new BrowserParser(parserOptions);
+        var options = parserOptions ?? new ParserOptions();
+        _browserParser = new BrowserParser(options);
     }
 
     public bool TryParse(string userAgent, [NotNullWhen(true)] out IClientInfo? result)

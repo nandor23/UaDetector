@@ -388,8 +388,7 @@ public sealed class OsParser : IOsParser
         new Dictionary<string, Regex>
         {
             {
-                OsPlatformTypes.Arm,
-                ParserExtensions.BuildUserAgentRegex(
+                OsPlatformTypes.Arm, ParserExtensions.BuildUserAgentRegex(
                     "arm[ _;)ev]|.*arm$|.*arm64|aarch64|Apple ?TV|Watch ?OS|Watch1,[12]")
             },
             { OsPlatformTypes.LoongArch64, ParserExtensions.BuildUserAgentRegex("loongarch64") },

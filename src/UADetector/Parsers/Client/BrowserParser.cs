@@ -14,6 +14,7 @@ internal class BrowserParser : BaseClientParser<Browser>
 {
     private readonly ParserOptions _parserOptions;
     private readonly EngineParser _engineParser = new();
+    private readonly EngineVersionParser _engineVersionParser = new();
     private const string ResourceName = "Regexes.Resources.Client.browsers.yml";
 
     private static readonly IEnumerable<Browser> BrowserRegexes =
@@ -1071,12 +1072,28 @@ internal class BrowserParser : BaseClientParser<Browser>
                 : null;
 
             var engine = BuildEngine(userAgent, browser.Engine, version);
+            string? engineVersion = null;
 
+            if (engine is not null)
+            {
+                _engineVersionParser.TryParse(userAgent, engine, out engineVersion);
+            }
+
+            result = new BrowserInfo
+            {
+                Name = name,
+                Code = code,
+                Version = version,
+                Engine = engine,
+                EngineVersion = engineVersion
+            };
+        }
+        else
+        {
+            result = null;
         }
 
-
-        result = null;
-        return false;
+        return result is not null;
     }
 
     public override bool TryParse(
@@ -1089,6 +1106,8 @@ internal class BrowserParser : BaseClientParser<Browser>
         {
             TryParseBrowserFromClientHints(clientHints, out var browserFromClientHints);
         }
+
+        TryParseBrowserFromUserAgent(userAgent, out var browserFromUserAgent);
 
         throw new NotImplementedException();
     }
