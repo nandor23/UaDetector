@@ -4,9 +4,9 @@ namespace UADetector.Results;
 
 public sealed class OsInfo
 {
-    public string Name { get; internal init; } = string.Empty;
-    public OsCode Code { get; internal init; }
-    public string? Version { get; internal init; }
-    public string? Platform { get; internal init; }
-    public string? Family { get; internal init; }
+    public required string Name { get; init; }
+    public required OsCode Code { get; init; }
+    public required string? Version { get; init; }
+    public required string? Platform { get; init; }
+    public required string? Family { get; init; }
 }

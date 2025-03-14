@@ -564,16 +564,17 @@ public sealed class OsParser : IOsParser
             return false;
         }
 
-        string? name = null;
-        OsCode? code = null;
+        string name = ApplyClientHintPlatformMapping(clientHints.Platform);
+        name.CollapseSpaces();
 
-        var osName = ApplyClientHintPlatformMapping(clientHints.Platform);
-        osName.CollapseSpaces();
-
-        if (OsNameMapping.TryGetValue(osName, out var osCode))
+        if (OsNameMapping.TryGetValue(name, out var code))
         {
-            name = OsCodeMapping[osCode];
-            code = osCode;
+            name = OsCodeMapping[code];
+        }
+        else
+        {
+            result = null;
+            return false;
         }
 
         string? version = clientHints.PlatformVersion;
@@ -637,11 +638,15 @@ public sealed class OsParser : IOsParser
         }
 
         string name = ParserExtensions.FormatWithMatch(os.Name, match);
-        OsCode? code = null;
 
-        if (OsNameMapping.TryGetValue(name, out var osCode))
+        if (OsNameMapping.TryGetValue(name, out var code))
         {
-            code = osCode;
+            name = OsCodeMapping[code];
+        }
+        else
+        {
+            result = null;
+            return false;
         }
 
         var version = os.Version is not null
@@ -680,12 +685,12 @@ public sealed class OsParser : IOsParser
             userAgent = restoredUserAgent;
         }
 
-        string? name, version;
-        OsCode? code;
+        string name;
+        OsCode code;
+        string? version;
 
         if (TryParseOsFromUserAgent(userAgent, out var osFromUserAgent) && clientHints is not null &&
-            TryParseOsFromClientHints(clientHints, out var osFromClientHints) &&
-            osFromClientHints.Name is not null)
+            TryParseOsFromClientHints(clientHints, out var osFromClientHints))
         {
             name = osFromClientHints.Name;
             version = osFromClientHints.Version;
@@ -694,7 +699,7 @@ public sealed class OsParser : IOsParser
 
             // Use the version from the user agent if none was provided in the client hints, 
             // but the OS family from the user agent matches.
-            if (string.IsNullOrEmpty(osFromClientHints.Version) && osFromUserAgent.Name is not null &&
+            if (string.IsNullOrEmpty(osFromClientHints.Version) &&
                 TryMapOsNameToOsFamily(osFromClientHints.Name, out var osFamilyFromClientHints) &&
                 TryMapOsNameToOsFamily(osFromUserAgent.Name, out osFamilyFromUserAgent) &&
                 osFamilyFromClientHints == osFamilyFromUserAgent)
@@ -764,13 +769,7 @@ public sealed class OsParser : IOsParser
         }
 
         TryParsePlatform(userAgent, clientHints, out var platform);
-
-        string? family = null;
-
-        if (code is not null)
-        {
-            TryMapOsCodeToOsFamily(code.Value, out family);
-        }
+        TryMapOsCodeToOsFamily(code, out var family);
 
         if (clientHints?.App is not null)
         {
@@ -805,16 +804,10 @@ public sealed class OsParser : IOsParser
             }
         }
 
-        if (name is null || code is null)
-        {
-            result = null;
-            return false;
-        }
-
         result = new OsInfo
         {
             Name = name,
-            Code = code.Value,
+            Code = code,
             Version = version,
             Platform = platform,
             Family = family
@@ -825,8 +818,8 @@ public sealed class OsParser : IOsParser
 
     private sealed class BaseOsInfo
     {
-        public string? Name { get; init; }
-        public OsCode? Code { get; init; }
-        public string? Version { get; init; }
+        public required string Name { get; init; }
+        public required OsCode Code { get; init; }
+        public required string? Version { get; init; }
     }
 }
