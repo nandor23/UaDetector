@@ -6,7 +6,7 @@ using UADetector.Models.Constants;
 
 namespace UADetector.Parsers.Client;
 
-internal sealed class EngineVersionParser
+internal static class EngineVersionParser
 {
     private static readonly Regex GeckoOrCleckoRegex = new("[ ](?:rv[: ]([0-9.]+)).*(?:g|cl)ecko/[0-9]{8,10}",
         RegexOptions.IgnoreCase | RegexOptions.Compiled);
@@ -24,7 +24,7 @@ internal sealed class EngineVersionParser
             RegexOptions.IgnoreCase | RegexOptions.Compiled);
     }
 
-    public bool TryParse(string userAgent, string engine, [NotNullWhen(true)] out string? result)
+    public static bool TryParse(string userAgent, string engine, [NotNullWhen(true)] out string? result)
     {
         if (string.IsNullOrEmpty(engine))
         {

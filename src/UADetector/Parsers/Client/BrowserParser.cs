@@ -13,8 +13,6 @@ namespace UADetector.Parsers.Client;
 internal class BrowserParser : BaseClientParser<Browser>
 {
     private readonly ParserOptions _parserOptions;
-    private readonly EngineParser _engineParser = new();
-    private readonly EngineVersionParser _engineVersionParser = new();
     private const string ResourceName = "Regexes.Resources.Client.browsers.yml";
 
     private static readonly IEnumerable<Browser> BrowserRegexes =
@@ -988,7 +986,7 @@ internal class BrowserParser : BaseClientParser<Browser>
 
         if (engine is null)
         {
-            _engineParser.TryParse(userAgent, out engine);
+            EngineParser.TryParse(userAgent, out engine);
         }
 
         return engine;
@@ -1076,7 +1074,7 @@ internal class BrowserParser : BaseClientParser<Browser>
 
             if (engine is not null)
             {
-                _engineVersionParser.TryParse(userAgent, engine, out engineVersion);
+                EngineVersionParser.TryParse(userAgent, engine, out engineVersion);
             }
 
             result = new BrowserInfo

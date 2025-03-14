@@ -8,7 +8,7 @@ using UADetector.Regexes.Models.Client;
 
 namespace UADetector.Parsers.Client;
 
-internal sealed class EngineParser
+internal static class EngineParser
 {
     private const string ResourceName = "Regexes.Resources.Client.browser_engines.yml";
 
@@ -24,7 +24,7 @@ internal sealed class EngineParser
         BrowserEngines.EkiohFlow, BrowserEngines.Arachne, BrowserEngines.LibWeb, BrowserEngines.Maple
     }.ToFrozenSet(StringComparer.OrdinalIgnoreCase);
 
-    public bool TryParse(string userAgent, [NotNullWhen(true)] out string? result)
+    public static bool TryParse(string userAgent, [NotNullWhen(true)] out string? result)
     {
         Match? match = null;
         BrowserEngine? engine = null;
