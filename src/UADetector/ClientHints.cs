@@ -146,12 +146,17 @@ public sealed partial class ClientHints
     /// <summary>
     /// Create a new ClientHints instance from a dictionary containing all available client hint headers.
     /// </summary>
-    public static ClientHints Create(IDictionary<string, string> headers)
+    public static ClientHints Create(IDictionary<string, string?> headers)
     {
         ClientHints clientHints = new();
 
-        foreach (var header in headers.Where(h => !string.IsNullOrEmpty(h.Value)))
+        foreach (var header in headers)
         {
+            if (header.Value is null)
+            {
+                continue;
+            }
+
             var normalizedHeader = header.Key.Replace('_', '-');
             var value = header.Value;
 
