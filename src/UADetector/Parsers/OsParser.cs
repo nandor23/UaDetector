@@ -556,7 +556,7 @@ public sealed class OsParser : IOsParser
         return result is not null;
     }
 
-    private bool TryParseOsFromClientHints(ClientHints clientHints, [NotNullWhen(true)] out BaseOsInfo? result)
+    private static bool TryParseOsFromClientHints(ClientHints clientHints, [NotNullWhen(true)] out BaseOsInfo? result)
     {
         if (clientHints.Platform is null)
         {
@@ -581,9 +581,9 @@ public sealed class OsParser : IOsParser
 
         if (name == OsNames.Windows && !string.IsNullOrEmpty(version))
         {
-            var versionParts = version?.Split('.');
-            int majorVersion = versionParts?.Length > 0 && int.TryParse(versionParts[0], out var major) ? major : 0;
-            int minorVersion = versionParts?.Length > 1 && int.TryParse(versionParts[1], out var minor) ? minor : 0;
+            var versionParts = version.Split('.');
+            int majorVersion = versionParts.Length > 0 && int.TryParse(versionParts[0], out var major) ? major : 0;
+            int minorVersion = versionParts.Length > 1 && int.TryParse(versionParts[1], out var minor) ? minor : 0;
 
             switch (majorVersion)
             {

@@ -965,7 +965,7 @@ internal class BrowserParser : BaseClientParser<Browser>
         return brand;
     }
 
-    private string? BuildEngine(string userAgent, Engine? engineData, string? browserVersion)
+    private static string? BuildEngine(string userAgent, Engine? engineData, string? browserVersion)
     {
         var engine = engineData?.Default;
 
@@ -992,9 +992,9 @@ internal class BrowserParser : BaseClientParser<Browser>
         return engine;
     }
 
-    private bool TryParseBrowserFromClientHints(
+    private static bool TryParseBrowserFromClientHints(
         ClientHints clientHints,
-        [NotNullWhen(true)] out BrowserInfo? result
+        [NotNullWhen(true)] out BaseBrowserInfo? result
     )
     {
         if (clientHints.FullVersionList.Count == 0)
@@ -1026,11 +1026,19 @@ internal class BrowserParser : BaseClientParser<Browser>
             }
         }
 
-        result = new BrowserInfo
+        if (name is null || code is null)
+        {
+            result = null;
+            return false;
+        }
+
+        result = new BaseBrowserInfo
         {
             Name = name,
-            Code = code,
-            Version = clientHints.UaFullVersion ?? version
+            Code = code.Value,
+            Version = clientHints.UaFullVersion ?? version,
+            Engine = null,
+            EngineVersion = null
         };
 
         return true;
@@ -1038,7 +1046,7 @@ internal class BrowserParser : BaseClientParser<Browser>
 
     private bool TryParseBrowserFromUserAgent(
         string userAgent,
-        [NotNullWhen(true)] out BrowserInfo? result
+        [NotNullWhen(true)] out BaseBrowserInfo? result
     )
     {
         Match? match = null;
@@ -1077,7 +1085,7 @@ internal class BrowserParser : BaseClientParser<Browser>
                 EngineVersionParser.TryParse(userAgent, engine, out engineVersion);
             }
 
-            result = new BrowserInfo
+            result = new BaseBrowserInfo
             {
                 Name = name,
                 Code = code,
@@ -1100,13 +1108,38 @@ internal class BrowserParser : BaseClientParser<Browser>
         [NotNullWhen(true)] out IClientInfo? result
     )
     {
-        if (clientHints is not null)
-        {
-            TryParseBrowserFromClientHints(clientHints, out var browserFromClientHints);
-        }
+        string name;
+        BrowserCode code;
+        string? version = null, engine = null, engineVersion = null;
 
         TryParseBrowserFromUserAgent(userAgent, out var browserFromUserAgent);
 
+        if (clientHints is not null && TryParseBrowserFromClientHints(clientHints, out var browserFromClientHints) &&
+            browserFromClientHints.Version is not null)
+        {
+            name = browserFromClientHints.Name;
+            code = browserFromClientHints.Code;
+            version = browserFromClientHints.Version;
+        }
+        else if (browserFromUserAgent?.Name is not null)
+        {
+            name = browserFromUserAgent.Name;
+            code = browserFromUserAgent.Code;
+            version = browserFromUserAgent.Version;
+            engine = browserFromUserAgent.Engine;
+            engineVersion = browserFromUserAgent.EngineVersion;
+        }
+
+
         throw new NotImplementedException();
+    }
+
+    private sealed class BaseBrowserInfo
+    {
+        public required string Name { get; init; }
+        public required BrowserCode Code { get; init; }
+        public required string? Version { get; init; }
+        public required string? Engine { get; init; }
+        public required string? EngineVersion { get; init; }
     }
 }
