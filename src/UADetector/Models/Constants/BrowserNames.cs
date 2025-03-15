@@ -30,8 +30,8 @@ public class BrowserNames
     public const string Browser1Dm = "1DM Browser";
     public const string Browser1DmPlus = "1DM+ Browser";
     public const string Browser2345 = "2345 Browser";
-    public const string Browser360Secure = "360 Secure Browser";
-    public const string Browser360Phone = "360 Phone Browser";
+    public const string SecureBrowser360 = "360 Secure Browser";
+    public const string PhoneBrowser360 = "360 Phone Browser";
     public const string Browser7654 = "7654 Browser";
     public const string AvantBrowser = "Avant Browser";
     public const string ABrowse = "ABrowse";

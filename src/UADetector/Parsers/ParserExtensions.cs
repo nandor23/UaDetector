@@ -25,7 +25,7 @@ internal static class ParserExtensions
 
     private static readonly Regex DesktopFragmentExclusionRegex = new(string.Join("|",
             "CE-HTML",
-            "Mozilla/|Andr[o0]id|Tablet|Mobile|iPhone|Windows Phone|ricoh|OculusBrowser",
+            " Mozilla/|Andr[o0]id|Tablet|Mobile|iPhone|Windows Phone|ricoh|OculusBrowser",
             "PicoBrowser|Lenovo|compatible; MSIE|Trident/|Tesla/|XBOX|FBMD/|ARM; ?([^)]+)"
         ),
         RegexOptions.Compiled

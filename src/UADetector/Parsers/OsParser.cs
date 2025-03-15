@@ -421,18 +421,18 @@ public sealed class OsParser : IOsParser
         return platform;
     }
 
-    private static bool TryMapOsNameToOsFamily(string name, [NotNullWhen((true))] out string? result)
+    private static bool TryMapNameToFamily(string name, [NotNullWhen((true))] out string? result)
     {
         if (OsNameMapping.TryGetValue(name, out var code))
         {
-            return TryMapOsCodeToOsFamily(code, out result);
+            return TryMapCodeToFamily(code, out result);
         }
 
         result = null;
         return false;
     }
 
-    private static bool TryMapOsCodeToOsFamily(OsCode code, [NotNullWhen((true))] out string? result)
+    private static bool TryMapCodeToFamily(OsCode code, [NotNullWhen((true))] out string? result)
     {
         foreach (var osFamily in OsFamilyMapping)
         {
@@ -699,14 +699,14 @@ public sealed class OsParser : IOsParser
 
             if (osFromUserAgent is not null)
             {
-                string? osFamilyFromUserAgent = null;
+                string? familyFromUserAgent = null;
 
                 // If no version is provided in the client hints, use the version from the user agent,
                 // provided the OS family matches.
                 if (string.IsNullOrEmpty(osFromClientHints.Version) &&
-                    TryMapOsNameToOsFamily(osFromClientHints.Name, out var osFamilyFromClientHints) &&
-                    TryMapOsNameToOsFamily(osFromUserAgent.Name, out osFamilyFromUserAgent) &&
-                    osFamilyFromClientHints == osFamilyFromUserAgent)
+                    TryMapNameToFamily(name, out var familyFromName) &&
+                    TryMapNameToFamily(osFromUserAgent.Name, out familyFromUserAgent) &&
+                    familyFromName == familyFromUserAgent)
                 {
                     version = osFromUserAgent.Version;
                 }
@@ -719,7 +719,7 @@ public sealed class OsParser : IOsParser
 
                 // If the OS name from client hints matches the OS family from the user agent but differs in detail,
                 // prefer the user agent's OS name for greater specificity.
-                if (osFamilyFromUserAgent == name && osFromUserAgent.Name != name)
+                if (familyFromUserAgent == name && osFromUserAgent.Name != name)
                 {
                     name = osFromUserAgent.Name;
 
@@ -775,7 +775,7 @@ public sealed class OsParser : IOsParser
         }
 
         TryParsePlatform(userAgent, clientHints, out var platform);
-        TryMapOsCodeToOsFamily(code, out var family);
+        TryMapCodeToFamily(code, out var family);
 
         if (clientHints is not null && !string.IsNullOrEmpty(clientHints.App))
         {

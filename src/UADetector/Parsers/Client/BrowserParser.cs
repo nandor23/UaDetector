@@ -49,8 +49,8 @@ internal class BrowserParser : BaseClientParser<Browser>
             { BrowserCode.Browser1Dm, BrowserNames.Browser1Dm },
             { BrowserCode.Browser1DmPlus, BrowserNames.Browser1DmPlus },
             { BrowserCode.Browser2345, BrowserNames.Browser2345 },
-            { BrowserCode.Browser360Secure, BrowserNames.Browser360Secure },
-            { BrowserCode.Browser360Phone, BrowserNames.Browser360Phone },
+            { BrowserCode.SecureBrowser360, BrowserNames.SecureBrowser360 },
+            { BrowserCode.PhoneBrowser360, BrowserNames.PhoneBrowser360 },
             { BrowserCode.Browser7654, BrowserNames.Browser7654 },
             { BrowserCode.AvantBrowser, BrowserNames.AvantBrowser },
             { BrowserCode.ABrowse, BrowserNames.ABrowse },
@@ -706,7 +706,7 @@ internal class BrowserParser : BaseClientParser<Browser>
         .ToFrozenDictionary(StringComparer.OrdinalIgnoreCase);
 
     private static readonly FrozenDictionary<string, FrozenSet<BrowserCode>> BrowserFamilyMapping =
-        new Dictionary<string, FrozenSet<BrowserCode>>()
+        new Dictionary<string, FrozenSet<BrowserCode>>
         {
             { BrowserFamilies.AndroidBrowser, new[] { BrowserCode.AndroidBrowser }.ToFrozenSet() },
             { BrowserFamilies.BlackBerryBrowser, new[] { BrowserCode.BlackBerryBrowser }.ToFrozenSet() },
@@ -876,7 +876,7 @@ internal class BrowserParser : BaseClientParser<Browser>
 
     private static readonly FrozenSet<BrowserCode> MobileOnlyBrowsers = new[]
     {
-        BrowserCode.Browser360Phone, BrowserCode.AlohaBrowserLite, BrowserCode.Arvin, BrowserCode.BLine,
+        BrowserCode.PhoneBrowser360, BrowserCode.AlohaBrowserLite, BrowserCode.Arvin, BrowserCode.BLine,
         BrowserCode.Coast, BrowserCode.CoolBrowser, BrowserCode.CosBrowser, BrowserCode.Cornowser,
         BrowserCode.Dbrowser, BrowserCode.Mises, BrowserCode.DeltaBrowser, BrowserCode.EuiBrowser,
         BrowserCode.EzBrowser, BrowserCode.FirefoxFocus, BrowserCode.FirefoxMobile, BrowserCode.FirefoxRocket,
@@ -947,6 +947,17 @@ internal class BrowserParser : BaseClientParser<Browser>
             { BrowserNames.VewdBrowser, new[] { "Vewd Core" }.ToFrozenSet() },
         }.ToFrozenDictionary();
 
+    private static readonly FrozenSet<BrowserCode> PriorityBrowsers = new[]
+    {
+        BrowserCode.Atom, BrowserCode.AlohaBrowser, BrowserCode.HuaweiBrowser, BrowserCode.OjrBrowser,
+        BrowserCode.MiBrowser, BrowserCode.OperaMobile, BrowserCode.Opera, BrowserCode.Veera,
+    }.ToFrozenSet();
+
+    private static readonly FrozenSet<BrowserCode> ChromiumBrowsers = new[]
+    {
+        BrowserCode.Chromium, BrowserCode.ChromeWebview, BrowserCode.AndroidBrowser,
+    }.ToFrozenSet();
+
     public BrowserParser(ParserOptions parserOptions)
     {
         _parserOptions = parserOptions;
@@ -965,14 +976,32 @@ internal class BrowserParser : BaseClientParser<Browser>
         return brand;
     }
 
-    private static string? BuildEngine(string userAgent, Engine? engineData, string? browserVersion)
+    private static bool TryMapNameToFamily(string name, [NotNullWhen((true))] out string? result)
     {
-        var engine = engineData?.Default;
+        if (BrowserNameMapping.TryGetValue(name, out var code))
+        {
+            foreach (var browserFamily in BrowserFamilyMapping)
+            {
+                if (browserFamily.Value.Contains(code))
+                {
+                    result = browserFamily.Key;
+                    return true;
+                }
+            }
+        }
 
-        if (engineData?.Versions?.Count > 0 && !string.IsNullOrEmpty(browserVersion) &&
+        result = null;
+        return false;
+    }
+
+    private static string? BuildEngine(string userAgent, Engine? engine, string? browserVersion)
+    {
+        var result = engine?.Default;
+
+        if (engine?.Versions?.Count > 0 && !string.IsNullOrEmpty(browserVersion) &&
             Version.TryParse(browserVersion, out var parsedBrowserVersion))
         {
-            foreach (var version in engineData.Versions)
+            foreach (var version in engine.Versions)
             {
                 if (Version.TryParse(version.Key, out var parsedVersion) &&
                     parsedBrowserVersion.CompareTo(parsedVersion) < 0)
@@ -980,16 +1009,16 @@ internal class BrowserParser : BaseClientParser<Browser>
                     continue;
                 }
 
-                engine = version.Value;
+                result = version.Value;
             }
         }
 
-        if (string.IsNullOrEmpty(engine))
+        if (string.IsNullOrEmpty(result))
         {
-            EngineParser.TryParse(userAgent, out engine);
+            EngineParser.TryParse(userAgent, out result);
         }
 
-        return engine;
+        return result;
     }
 
     private static bool TryParseBrowserFromClientHints(
@@ -1120,6 +1149,86 @@ internal class BrowserParser : BaseClientParser<Browser>
             name = browserFromClientHints.Name;
             code = browserFromClientHints.Code;
             version = browserFromClientHints.Version;
+
+            if (Regex.IsMatch(version, "^202[0-4]"))
+            {
+                name = BrowserNames.Iridium;
+                code = BrowserCode.Iridium;
+            }
+
+            if (browserFromUserAgent is not null)
+            {
+                if (!string.IsNullOrEmpty(browserFromUserAgent.Version) && version.StartsWith("15") &&
+                    browserFromUserAgent.Version.StartsWith("114"))
+                {
+                    name = BrowserNames.SecureBrowser360;
+                    code = BrowserCode.SecureBrowser360;
+                    engine = browserFromUserAgent.Engine;
+                    engineVersion = browserFromUserAgent.EngineVersion;
+                }
+
+                if (!string.IsNullOrEmpty(browserFromUserAgent.Version) && PriorityBrowsers.Contains(code))
+                {
+                    version = browserFromUserAgent.Version;
+                }
+
+                if (name == BrowserNames.VewdBrowser)
+                {
+                    engine = browserFromUserAgent.Engine;
+                    engineVersion = browserFromUserAgent.EngineVersion;
+                }
+
+                if (name is BrowserNames.Chromium or BrowserNames.ChromeWebview &&
+                    !ChromiumBrowsers.Contains(browserFromUserAgent.Code))
+                {
+                    name = browserFromUserAgent.Name;
+                    code = browserFromUserAgent.Code;
+                    version = browserFromUserAgent.Version;
+                }
+
+                // Use browser name from user agent if it already contains the "Mobile" suffix
+                if ($"{name} Mobile" == browserFromUserAgent.Name)
+                {
+                    name = browserFromUserAgent.Name;
+                    code = browserFromUserAgent.Code;
+                }
+
+                if (name != browserFromUserAgent.Name && TryMapNameToFamily(name, out var familyFromName) &&
+                    TryMapNameToFamily(browserFromUserAgent.Name, out var familyFromUserAgent) &&
+                    familyFromName == familyFromUserAgent)
+                {
+                    engine = browserFromUserAgent.Engine;
+                    engineVersion = browserFromUserAgent.EngineVersion;
+                }
+
+                if (name == browserFromUserAgent.Name)
+                {
+                    engine = browserFromUserAgent.Engine;
+                    engineVersion = browserFromUserAgent.EngineVersion;
+                }
+
+                if (!string.IsNullOrEmpty(browserFromUserAgent.Version) && !string.IsNullOrEmpty(version) &&
+                    browserFromUserAgent.Version.StartsWith(version) &&
+                    Version.TryParse(version, out var parsedVersion) &&
+                    Version.TryParse(browserFromUserAgent.Version, out var parsedVersionFromUserAgent) &&
+                    parsedVersion.CompareTo(parsedVersionFromUserAgent) < 0)
+                {
+                    version = browserFromUserAgent.Version;
+                }
+
+                if (name == BrowserNames.DuckDuckGoPrivacyBrowser)
+                {
+                    version = null;
+                }
+
+                if (!string.IsNullOrEmpty(engineVersion) && engine == BrowserEngines.Blink &&
+                    name != BrowserNames.Iridium && Version.TryParse(engineVersion, out var parsedEngineVersion) &&
+                    Version.TryParse(browserFromClientHints.Version, out var parsedVersionFromClientHints) &&
+                    parsedEngineVersion.CompareTo(parsedVersionFromClientHints) < 0)
+                {
+                    engineVersion = browserFromClientHints.Version;
+                }
+            }
         }
         else if (browserFromUserAgent is not null)
         {
