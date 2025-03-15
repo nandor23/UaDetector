@@ -3,28 +3,14 @@ using System.Text.RegularExpressions;
 
 namespace UADetector;
 
-public sealed partial class ClientHints
+public sealed class ClientHints
 {
-    private const string FullVersionListPattern = """^"([^"]+)"; ?v="([^"]+)"(?:, )?""";
-    private const string FormFactorsPattern = """
-                                              "([a-zA-Z]+)"
-                                              """;
+    private static readonly Regex FullVersionListRegex =
+        new("""^"([^"]+)"; ?v="([^"]+)"(?:, )?""", RegexOptions.Compiled);
 
-
-#if NET7_0_OR_GREATER
-    [GeneratedRegex(FullVersionListPattern)]
-    private static partial Regex FullVersionListRegex();
-    
-    [GeneratedRegex(FormFactorsPattern)]
-    private static partial Regex FormFactorsRegex();
-#else
-    private static readonly Regex FullVersionListRegexInstance = new(FullVersionListPattern, RegexOptions.Compiled);
-    private static readonly Regex FormFactorsRegexInstance = new(FormFactorsPattern, RegexOptions.Compiled);
-
-    private static Regex FullVersionListRegex() => FullVersionListRegexInstance;
-    private static Regex FormFactorsRegex() => FormFactorsRegexInstance;
-#endif
-
+    private static readonly Regex FormFactorsRegex = new("""
+                                                         "([a-zA-Z]+)"
+                                                         """, RegexOptions.Compiled);
 
     private static readonly FrozenSet<string> ArchitectureHeaderNames =
         new HashSet<string>(StringComparer.OrdinalIgnoreCase)
@@ -192,9 +178,7 @@ public sealed partial class ClientHints
                      (SecondaryFullVersionListHeaderNames.Contains(normalizedHeader) &&
                       clientHints.FullVersionList.Count == 0))
             {
-                var regex = FullVersionListRegex();
-
-                while (regex.Match(value) is { Success: true } match)
+                while (FullVersionListRegex.Match(value) is { Success: true } match)
                 {
                     clientHints.FullVersionList.Add(match.Groups[1].Value, match.Groups[2].Value);
                     value = value[match.Length..];
@@ -215,9 +199,7 @@ public sealed partial class ClientHints
                 }
                 else
                 {
-                    var regex = FormFactorsRegex();
-
-                    foreach (Match match in regex.Matches(normalizedHeader))
+                    foreach (Match match in FormFactorsRegex.Matches(normalizedHeader))
                     {
                         clientHints.FormFactors.Add(match.Value);
                     }
