@@ -969,7 +969,7 @@ internal class BrowserParser : BaseClientParser<Browser>
     {
         var engine = engineData?.Default;
 
-        if (engineData?.Versions?.Count > 0 && browserVersion is not null &&
+        if (engineData?.Versions?.Count > 0 && !string.IsNullOrEmpty(browserVersion) &&
             Version.TryParse(browserVersion, out var parsedBrowserVersion))
         {
             foreach (var version in engineData.Versions)
@@ -984,7 +984,7 @@ internal class BrowserParser : BaseClientParser<Browser>
             }
         }
 
-        if (engine is null)
+        if (string.IsNullOrEmpty(engine))
         {
             EngineParser.TryParse(userAgent, out engine);
         }
@@ -1009,7 +1009,7 @@ internal class BrowserParser : BaseClientParser<Browser>
         foreach (var brand in clientHints.FullVersionList)
         {
             var browserName = ApplyClientHintBrandMapping(brand.Key);
-            browserName.CollapseSpaces();
+            browserName = browserName.CollapseSpaces();
 
             if (BrowserNameMapping.TryGetValue(browserName, out var browserCode) ||
                 BrowserNameMapping.TryGetValue($"{browserName} Browser", out browserCode))
@@ -1073,14 +1073,14 @@ internal class BrowserParser : BaseClientParser<Browser>
 
         if (BrowserNameMapping.TryGetValue(name, out var code))
         {
-            var version = browser.Version is not null
+            var version = !string.IsNullOrEmpty(browser.Version)
                 ? ParserExtensions.FormatVersionWithMatch(browser.Version, match, _parserOptions.VersionTruncation)
                 : null;
 
             var engine = BuildEngine(userAgent, browser.Engine, version);
             string? engineVersion = null;
 
-            if (engine is not null)
+            if (!string.IsNullOrEmpty(engine))
             {
                 EngineVersionParser.TryParse(userAgent, engine, out engineVersion);
             }
@@ -1115,13 +1115,13 @@ internal class BrowserParser : BaseClientParser<Browser>
         TryParseBrowserFromUserAgent(userAgent, out var browserFromUserAgent);
 
         if (clientHints is not null && TryParseBrowserFromClientHints(clientHints, out var browserFromClientHints) &&
-            browserFromClientHints.Version is not null)
+            !string.IsNullOrEmpty(browserFromClientHints.Version))
         {
             name = browserFromClientHints.Name;
             code = browserFromClientHints.Code;
             version = browserFromClientHints.Version;
         }
-        else if (browserFromUserAgent?.Name is not null)
+        else if (browserFromUserAgent is not null)
         {
             name = browserFromUserAgent.Name;
             code = browserFromUserAgent.Code;

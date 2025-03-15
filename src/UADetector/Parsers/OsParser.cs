@@ -485,7 +485,7 @@ public sealed class OsParser : IOsParser
     {
         result = null;
 
-        if (clientHints?.Architecture is not null)
+        if (clientHints is not null && !string.IsNullOrEmpty(clientHints.Architecture))
         {
             var architecture = clientHints.Architecture.ToLower();
 
@@ -558,14 +558,14 @@ public sealed class OsParser : IOsParser
 
     private static bool TryParseOsFromClientHints(ClientHints clientHints, [NotNullWhen(true)] out BaseOsInfo? result)
     {
-        if (clientHints.Platform is null)
+        if (string.IsNullOrEmpty(clientHints.Platform))
         {
             result = null;
             return false;
         }
 
         string name = ApplyClientHintPlatformMapping(clientHints.Platform);
-        name.CollapseSpaces();
+        name = name.CollapseSpaces();
 
         if (OsNameMapping.TryGetValue(name, out var code))
         {
@@ -649,7 +649,7 @@ public sealed class OsParser : IOsParser
             return false;
         }
 
-        var version = os.Version is not null
+        var version = !string.IsNullOrEmpty(os.Version)
             ? ParserExtensions.FormatVersionWithMatch(os.Version, match, _parserOptions.VersionTruncation)
             : null;
 
@@ -731,7 +731,7 @@ public sealed class OsParser : IOsParser
                         case OsNames.PicoOs:
                             version = osFromUserAgent.Version;
                             break;
-                        case OsNames.FireOs when version is not null:
+                        case OsNames.FireOs when !string.IsNullOrEmpty(version):
                             {
                                 TryGetFireOsVersion(version, out version);
                                 break;
@@ -762,7 +762,7 @@ public sealed class OsParser : IOsParser
                 }
             }
         }
-        else if (osFromUserAgent?.Name is not null)
+        else if (osFromUserAgent is not null)
         {
             name = osFromUserAgent.Name;
             code = osFromUserAgent.Code;
@@ -777,7 +777,7 @@ public sealed class OsParser : IOsParser
         TryParsePlatform(userAgent, clientHints, out var platform);
         TryMapOsCodeToOsFamily(code, out var family);
 
-        if (clientHints?.App is not null)
+        if (clientHints is not null && !string.IsNullOrEmpty(clientHints.App))
         {
             if (name != OsNames.Android && AndroidApps.Contains(clientHints.App))
             {
@@ -792,7 +792,7 @@ public sealed class OsParser : IOsParser
                 code = OsCode.LineageOs;
                 family = OsFamilies.Android;
 
-                if (version is not null)
+                if (!string.IsNullOrEmpty(version))
                 {
                     TryGetLineageOsVersion(version, out version);
                 }
@@ -803,7 +803,7 @@ public sealed class OsParser : IOsParser
                 code = OsCode.FireOs;
                 family = OsFamilies.Android;
 
-                if (version is not null)
+                if (!string.IsNullOrEmpty(version))
                 {
                     TryGetFireOsVersion(version, out version);
                 }

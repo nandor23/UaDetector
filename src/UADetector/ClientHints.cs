@@ -152,7 +152,7 @@ public sealed partial class ClientHints
 
         foreach (var header in headers)
         {
-            if (header.Value is null)
+            if (string.IsNullOrEmpty(header.Value))
             {
                 continue;
             }

@@ -87,7 +87,7 @@ internal static partial class ParserExtensions
     {
         result = null;
 
-        if (clientHints.Model is null)
+        if (string.IsNullOrEmpty(clientHints.Model))
         {
             return false;
         }
