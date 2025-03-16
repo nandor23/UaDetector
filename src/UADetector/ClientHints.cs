@@ -3,28 +3,14 @@ using System.Text.RegularExpressions;
 
 namespace UADetector;
 
-public sealed partial class ClientHints
+public sealed class ClientHints
 {
-    private const string FullVersionListPattern = """^"([^"]+)"; ?v="([^"]+)"(?:, )?""";
-    private const string FormFactorsPattern = """
-                                              "([a-zA-Z]+)"
-                                              """;
+    private static readonly Regex FullVersionListRegex =
+        new("""^"([^"]+)"; ?v="([^"]+)"(?:, )?""", RegexOptions.Compiled);
 
-
-#if NET7_0_OR_GREATER
-    [GeneratedRegex(FullVersionListPattern)]
-    private static partial Regex FullVersionListRegex();
-    
-    [GeneratedRegex(FormFactorsPattern)]
-    private static partial Regex FormFactorsRegex();
-#else
-    private static readonly Regex FullVersionListRegexInstance = new(FullVersionListPattern, RegexOptions.Compiled);
-    private static readonly Regex FormFactorsRegexInstance = new(FormFactorsPattern, RegexOptions.Compiled);
-
-    private static Regex FullVersionListRegex() => FullVersionListRegexInstance;
-    private static Regex FormFactorsRegex() => FormFactorsRegexInstance;
-#endif
-
+    private static readonly Regex FormFactorsRegex = new("""
+                                                         "([a-zA-Z]+)"
+                                                         """, RegexOptions.Compiled);
 
     private static readonly FrozenSet<string> ArchitectureHeaderNames =
         new HashSet<string>(StringComparer.OrdinalIgnoreCase)
@@ -130,7 +116,7 @@ public sealed partial class ClientHints
     /// <summary>
     /// Represents <c>Sec-CH-UA-Full-Version-List</c> header field: the full version for each brand in its brand list
     /// </summary>
-    public Dictionary<string, string>? FullVersionList { get; } = new();
+    public Dictionary<string, string> FullVersionList { get; } = new();
 
     /// <summary>
     /// Represents <c>x-requested-with</c> header field: Android app id
@@ -146,12 +132,17 @@ public sealed partial class ClientHints
     /// <summary>
     /// Create a new ClientHints instance from a dictionary containing all available client hint headers.
     /// </summary>
-    public static ClientHints Create(Dictionary<string, string> headers)
+    public static ClientHints Create(IDictionary<string, string?> headers)
     {
-        var clientHints = new ClientHints();
+        ClientHints clientHints = new();
 
-        foreach (var header in headers.Where(h => !string.IsNullOrEmpty(h.Value)))
+        foreach (var header in headers)
         {
+            if (string.IsNullOrEmpty(header.Value))
+            {
+                continue;
+            }
+
             var normalizedHeader = header.Key.Replace('_', '-');
             var value = header.Value;
 
@@ -185,13 +176,12 @@ public sealed partial class ClientHints
             }
             else if (PrimaryFullVersionListHeaderNames.Contains(normalizedHeader) ||
                      (SecondaryFullVersionListHeaderNames.Contains(normalizedHeader) &&
-                      clientHints.FullVersionList?.Count == 0))
+                      clientHints.FullVersionList.Count == 0))
             {
-                var regex = FullVersionListRegex();
-
-                foreach (Match match in regex.Matches(normalizedHeader))
+                while (FullVersionListRegex.Match(value) is { Success: true } match)
                 {
-                    clientHints.FullVersionList?.Add(match.Groups[1].Value, match.Groups[2].Value);
+                    clientHints.FullVersionList.Add(match.Groups[1].Value, match.Groups[2].Value);
+                    value = value[match.Length..];
                 }
             }
             else if (AppHeaderNames.Contains(normalizedHeader) &&
@@ -209,9 +199,7 @@ public sealed partial class ClientHints
                 }
                 else
                 {
-                    var regex = FormFactorsRegex();
-
-                    foreach (Match match in regex.Matches(normalizedHeader))
+                    foreach (Match match in FormFactorsRegex.Matches(normalizedHeader))
                     {
                         clientHints.FormFactors.Add(match.Value);
                     }

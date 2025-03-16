@@ -2,7 +2,9 @@ using UADetector.Parsers;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddSingleton<IClientParser, ClientParser>();
 builder.Services.AddSingleton<IOsParser, OsParser>();
+
 
 builder.Services.AddOpenApi();
 builder.Services.AddControllers();

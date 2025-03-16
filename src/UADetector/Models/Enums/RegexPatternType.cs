@@ -1,6 +1,6 @@
 namespace UADetector.Models.Enums;
 
-public enum RegexPatternType
+internal enum RegexPatternType
 {
     /// <summary>
     /// No additional rules are applied. The regex is used as-is.

@@ -1,8 +1,8 @@
+using System.Collections.Frozen;
 using System.Diagnostics.CodeAnalysis;
 using System.Text.RegularExpressions;
 
 using UADetector.Models.Enums;
-using UADetector.Regexes.Models;
 using UADetector.Utils;
 
 using YamlDotNet.Serialization;
@@ -10,56 +10,27 @@ using YamlDotNet.Serialization.NamingConventions;
 
 namespace UADetector.Parsers;
 
-internal static partial class ParserExtensions
+internal static class ParserExtensions
 {
-    private const string ClientHintsFragmentMatchPattern = @"Android (?:10[.\d]*; K(?: Build/|[;)])|1[1-5]\)) AppleWebKit";
-    private const string ClientHintsFragmentReplacementPattern = @"Android (?:10[\.\d]*; K|1[1-5])";
-    private const string DesktopFragmentMatchPattern = "(?:Windows (?:NT|IoT)|X11; Linux x86_64)";
-    private const string DesktopFragmentReplacementPattern = "X11; Linux x86_64";
+    private static readonly Regex ClientHintsFragmentMatchRegex = new(
+        @"Android (?:10[.\d]*; K(?: Build/|[;)])|1[1-5]\)) AppleWebKit",
+        RegexOptions.IgnoreCase | RegexOptions.Compiled);
 
-    private const string DesktopFragmentExclusionPattern =
-        "CE-HTML|" +
-        "Mozilla/|Andr[o0]id|Tablet|Mobile|iPhone|Windows Phone|ricoh|OculusBrowser|" +
-        "PicoBrowser|Lenovo|compatible; MSIE|Trident/|Tesla/|XBOX|FBMD/|ARM; ?([^)]+)";
+    private static readonly Regex ClientHintsFragmentReplacementRegex =
+        new(@"Android (?:10[.\d]*; K|1[1-5])", RegexOptions.Compiled);
 
-#if NET7_0_OR_GREATER
-    [GeneratedRegex(ClientHintsFragmentMatchPattern, RegexOptions.IgnoreCase)]
-    private static partial Regex ClientHintsFragmentMatchRegex();
-    
-    [GeneratedRegex(ClientHintsFragmentReplacementPattern)]
-    private static partial Regex ClientHintsFragmentReplacementRegex();
+    private static readonly Regex DesktopFragmentMatchRegex =
+        new("(?:Windows (?:NT|IoT)|X11; Linux x86_64)", RegexOptions.Compiled);
 
-    [GeneratedRegex(DesktopFragmentMatchPattern)]
-    private static partial Regex DesktopFragmentMatchRegex();
-    
-    [GeneratedRegex(DesktopFragmentReplacementPattern)]
-    private static partial Regex DesktopFragmentReplacementRegex();
-    
-    [GeneratedRegex(DesktopFragmentExclusionPattern)]
-    private static partial Regex DesktopFragmentExclusionRegex();
-#else
-    private static readonly Regex ClientHintsFragmentMatchInstance =
-        new(ClientHintsFragmentMatchPattern, RegexOptions.IgnoreCase | RegexOptions.Compiled);
+    private static readonly Regex DesktopFragmentReplacementRegex = new("X11; Linux x86_64", RegexOptions.Compiled);
 
-    private static readonly Regex ClientHintsFragmentReplacementInstance =
-        new(ClientHintsFragmentReplacementPattern, RegexOptions.Compiled);
-
-    private static readonly Regex DesktopFragmentMatchInstance =
-        new(DesktopFragmentMatchPattern, RegexOptions.Compiled);
-
-    private static readonly Regex DesktopFragmentReplacementInstance =
-        new(DesktopFragmentReplacementPattern, RegexOptions.Compiled);
-
-    private static readonly Regex DesktopFragmentExclusionInstance =
-        new(DesktopFragmentExclusionPattern, RegexOptions.Compiled);
-
-
-    private static Regex ClientHintsFragmentMatchRegex() => ClientHintsFragmentMatchInstance;
-    private static Regex ClientHintsFragmentReplacementRegex() => ClientHintsFragmentReplacementInstance;
-    private static Regex DesktopFragmentMatchRegex() => DesktopFragmentMatchInstance;
-    private static Regex DesktopFragmentReplacementRegex() => DesktopFragmentReplacementInstance;
-    private static Regex DesktopFragmentExclusionRegex() => DesktopFragmentExclusionInstance;
-#endif
+    private static readonly Regex DesktopFragmentExclusionRegex = new(string.Join("|",
+            "CE-HTML",
+            " Mozilla/|Andr[o0]id|Tablet|Mobile|iPhone|Windows Phone|ricoh|OculusBrowser",
+            "PicoBrowser|Lenovo|compatible; MSIE|Trident/|Tesla/|XBOX|FBMD/|ARM; ?([^)]+)"
+        ),
+        RegexOptions.Compiled
+    );
 
 
     public static Regex BuildUserAgentRegex(string pattern)
@@ -70,12 +41,12 @@ internal static partial class ParserExtensions
 
     private static bool HasUserAgentClientHintsFragment(string userAgent)
     {
-        return ClientHintsFragmentMatchRegex().IsMatch(userAgent);
+        return ClientHintsFragmentMatchRegex.IsMatch(userAgent);
     }
 
     private static bool HasUserAgentDesktopFragment(string userAgent)
     {
-        return DesktopFragmentMatchRegex().IsMatch(userAgent) && !DesktopFragmentExclusionRegex().IsMatch(userAgent);
+        return DesktopFragmentMatchRegex.IsMatch(userAgent) && !DesktopFragmentExclusionRegex.IsMatch(userAgent);
     }
 
     public static bool TryRestoreUserAgent(
@@ -86,7 +57,7 @@ internal static partial class ParserExtensions
     {
         result = null;
 
-        if (clientHints.Model is null)
+        if (string.IsNullOrEmpty(clientHints.Model))
         {
             return false;
         }
@@ -96,21 +67,23 @@ internal static partial class ParserExtensions
             var platformVersion =
                 string.IsNullOrEmpty(clientHints.PlatformVersion) ? "10" : clientHints.PlatformVersion;
 
-            result = ClientHintsFragmentReplacementRegex()
+            result = ClientHintsFragmentReplacementRegex
                 .Replace(userAgent, $"Android {platformVersion}; {clientHints.Model}");
         }
 
         if (HasUserAgentDesktopFragment(userAgent))
         {
-            result = DesktopFragmentReplacementRegex()
-                .Replace(userAgent, $"{DesktopFragmentReplacementPattern}; {clientHints.Model}");
+            result = DesktopFragmentReplacementRegex
+                .Replace(userAgent, $"X11; Linux x86_64; {clientHints.Model}");
         }
 
         return !string.IsNullOrEmpty(result);
     }
 
-    public static IEnumerable<T> LoadRegexes<T>(string resourceName,
-        RegexPatternType patternType = RegexPatternType.None) where T : IRegexDefinition
+    public static IEnumerable<T> LoadRegexes<T>(
+        string resourceName,
+        RegexPatternType patternType = RegexPatternType.None
+    )
     {
         var assembly = typeof(UADetector).Assembly;
         var fullResourceName = $"{nameof(UADetector)}.{resourceName}";
@@ -133,13 +106,31 @@ internal static partial class ParserExtensions
         return deserializer.Deserialize<IEnumerable<T>>(reader);
     }
 
-    public static string? FormatWithMatch(string? value, Match match)
+    public static FrozenDictionary<string, string> LoadHints(string resourceName)
     {
-        if (value is null)
+        var assembly = typeof(UADetector).Assembly;
+        var fullResourceName = $"{nameof(UADetector)}.{resourceName}";
+
+        using var stream = assembly.GetManifestResourceStream(fullResourceName);
+
+        if (stream is null)
         {
-            return null;
+            throw new InvalidOperationException(
+                $"Embedded resource '{fullResourceName}' not found in assembly '{assembly.FullName}'.");
         }
 
+        using var reader = new StreamReader(stream);
+
+        var deserializer = new DeserializerBuilder()
+            .WithNamingConvention(CamelCaseNamingConvention.Instance)
+            .Build();
+
+        return deserializer.Deserialize<Dictionary<string, string>>(reader)
+            .ToFrozenDictionary();
+    }
+
+    public static string FormatWithMatch(string value, Match match)
+    {
         for (int i = 1; i < match.Groups.Count; i++)
         {
             value = value.Replace($"${i}", match.Groups[i].Value);
@@ -148,16 +139,11 @@ internal static partial class ParserExtensions
         return value.Trim();
     }
 
-    public static string? FormatVersionWithMatch(string? version, Match match, VersionTruncation versionTruncation)
+    public static string FormatVersionWithMatch(string version, Match match, VersionTruncation versionTruncation)
     {
-        if (version is null)
-        {
-            return null;
-        }
+        version = FormatWithMatch(version, match).Replace('_', '.');
 
-        version = FormatWithMatch(version, match)?.Replace('_', '.');
-
-        if (versionTruncation != VersionTruncation.None && version is not null)
+        if (versionTruncation != VersionTruncation.None)
         {
             var index = version.IndexOfNthOccurrence('.', (int)versionTruncation);
 
@@ -167,7 +153,7 @@ internal static partial class ParserExtensions
             }
         }
 
-        return version?.Trim(' ', '.');
+        return version.Trim(' ', '.');
     }
 
     public static string NormalizeVersion(string version, string[] matches)
