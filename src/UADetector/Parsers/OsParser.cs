@@ -556,7 +556,7 @@ public sealed class OsParser : IOsParser
         return result is not null;
     }
 
-    private static bool TryParseOsFromClientHints(ClientHints clientHints, [NotNullWhen(true)] out BaseOsInfo? result)
+    private static bool TryParseOsFromClientHints(ClientHints clientHints, [NotNullWhen(true)] out CommonOsInfo? result)
     {
         if (string.IsNullOrEmpty(clientHints.Platform))
         {
@@ -605,7 +605,7 @@ public sealed class OsParser : IOsParser
             version = null;
         }
 
-        result = new BaseOsInfo
+        result = new CommonOsInfo
         {
             Name = name,
             Code = code,
@@ -615,7 +615,7 @@ public sealed class OsParser : IOsParser
         return true;
     }
 
-    private bool TryParseOsFromUserAgent(string userAgent, [NotNullWhen(true)] out BaseOsInfo? result)
+    private bool TryParseOsFromUserAgent(string userAgent, [NotNullWhen(true)] out CommonOsInfo? result)
     {
         Match? match = null;
         Os? os = null;
@@ -668,7 +668,7 @@ public sealed class OsParser : IOsParser
             }
         }
 
-        result = new BaseOsInfo { Name = name, Code = code, Version = version, };
+        result = new CommonOsInfo { Name = name, Code = code, Version = version, };
         return true;
     }
 
@@ -822,7 +822,7 @@ public sealed class OsParser : IOsParser
         return true;
     }
 
-    private sealed class BaseOsInfo
+    private sealed class CommonOsInfo
     {
         public required string Name { get; init; }
         public required OsCode Code { get; init; }

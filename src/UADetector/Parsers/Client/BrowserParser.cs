@@ -980,13 +980,21 @@ internal class BrowserParser : BaseClientParser<Browser>
     {
         if (BrowserNameMapping.TryGetValue(name, out var code))
         {
-            foreach (var browserFamily in BrowserFamilyMapping)
+            return TryMapCodeToFamily(code, out result);
+        }
+
+        result = null;
+        return false;
+    }
+
+    private static bool TryMapCodeToFamily(BrowserCode code, [NotNullWhen((true))] out string? result)
+    {
+        foreach (var browserFamily in BrowserFamilyMapping)
+        {
+            if (browserFamily.Value.Contains(code))
             {
-                if (browserFamily.Value.Contains(code))
-                {
-                    result = browserFamily.Key;
-                    return true;
-                }
+                result = browserFamily.Key;
+                return true;
             }
         }
 
@@ -1023,7 +1031,7 @@ internal class BrowserParser : BaseClientParser<Browser>
 
     private static bool TryParseBrowserFromClientHints(
         ClientHints clientHints,
-        [NotNullWhen(true)] out BaseBrowserInfo? result
+        [NotNullWhen(true)] out ClientHintsBrowserInfo? result
     )
     {
         if (clientHints.FullVersionList.Count == 0)
@@ -1061,13 +1069,11 @@ internal class BrowserParser : BaseClientParser<Browser>
             return false;
         }
 
-        result = new BaseBrowserInfo
+        result = new ClientHintsBrowserInfo
         {
             Name = name,
             Code = code.Value,
             Version = clientHints.UaFullVersion ?? version,
-            Engine = null,
-            EngineVersion = null
         };
 
         return true;
@@ -1075,7 +1081,7 @@ internal class BrowserParser : BaseClientParser<Browser>
 
     private bool TryParseBrowserFromUserAgent(
         string userAgent,
-        [NotNullWhen(true)] out BaseBrowserInfo? result
+        [NotNullWhen(true)] out UserAgentBrowserInfo? result
     )
     {
         Match? match = null;
@@ -1114,7 +1120,7 @@ internal class BrowserParser : BaseClientParser<Browser>
                 EngineVersionParser.TryParse(userAgent, engine, out engineVersion);
             }
 
-            result = new BaseBrowserInfo
+            result = new UserAgentBrowserInfo
             {
                 Name = name,
                 Code = code,
@@ -1138,8 +1144,8 @@ internal class BrowserParser : BaseClientParser<Browser>
     )
     {
         string name;
-        BrowserCode code;
-        string? version = null, engine = null, engineVersion = null;
+        BrowserCode code = default;
+        string? version, engine = null, engineVersion = null;
 
         TryParseBrowserFromUserAgent(userAgent, out var browserFromUserAgent);
 
@@ -1221,8 +1227,9 @@ internal class BrowserParser : BaseClientParser<Browser>
                     version = null;
                 }
 
-                if (!string.IsNullOrEmpty(engineVersion) && engine == BrowserEngines.Blink &&
-                    name != BrowserNames.Iridium && Version.TryParse(engineVersion, out var parsedEngineVersion) &&
+                if (engine == BrowserEngines.Blink && name != BrowserNames.Iridium &&
+                    !string.IsNullOrEmpty(engineVersion) &&
+                    Version.TryParse(engineVersion, out var parsedEngineVersion) &&
                     Version.TryParse(browserFromClientHints.Version, out var parsedVersionFromClientHints) &&
                     parsedEngineVersion.CompareTo(parsedVersionFromClientHints) < 0)
                 {
@@ -1239,11 +1246,20 @@ internal class BrowserParser : BaseClientParser<Browser>
             engineVersion = browserFromUserAgent.EngineVersion;
         }
 
+        TryMapCodeToFamily(code, out var family);
+
 
         throw new NotImplementedException();
     }
 
-    private sealed class BaseBrowserInfo
+    private sealed class ClientHintsBrowserInfo
+    {
+        public required string Name { get; init; }
+        public required BrowserCode Code { get; init; }
+        public required string? Version { get; init; }
+    }
+
+    private sealed class UserAgentBrowserInfo
     {
         public required string Name { get; init; }
         public required BrowserCode Code { get; init; }
