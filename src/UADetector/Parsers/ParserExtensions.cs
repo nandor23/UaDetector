@@ -1,3 +1,4 @@
+using System.Collections.Frozen;
 using System.Diagnostics.CodeAnalysis;
 using System.Text.RegularExpressions;
 
@@ -103,6 +104,29 @@ internal static class ParserExtensions
             .Build();
 
         return deserializer.Deserialize<IEnumerable<T>>(reader);
+    }
+
+    public static FrozenDictionary<string, string> LoadHints(string resourceName)
+    {
+        var assembly = typeof(UADetector).Assembly;
+        var fullResourceName = $"{nameof(UADetector)}.{resourceName}";
+
+        using var stream = assembly.GetManifestResourceStream(fullResourceName);
+
+        if (stream is null)
+        {
+            throw new InvalidOperationException(
+                $"Embedded resource '{fullResourceName}' not found in assembly '{assembly.FullName}'.");
+        }
+
+        using var reader = new StreamReader(stream);
+
+        var deserializer = new DeserializerBuilder()
+            .WithNamingConvention(CamelCaseNamingConvention.Instance)
+            .Build();
+
+        return deserializer.Deserialize<Dictionary<string, string>>(reader)
+            .ToFrozenDictionary();
     }
 
     public static string FormatWithMatch(string value, Match match)

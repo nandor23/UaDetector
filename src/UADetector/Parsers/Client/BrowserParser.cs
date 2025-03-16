@@ -958,6 +958,13 @@ internal class BrowserParser : BaseClientParser<Browser>
         BrowserCode.Chromium, BrowserCode.ChromeWebview, BrowserCode.AndroidBrowser,
     }.ToFrozenSet();
 
+    private static readonly Regex ChromeSafariRegex =
+        new(@"Chrome/.+ Safari/537\.36", RegexOptions.IgnoreCase | RegexOptions.Compiled);
+
+    private static readonly Regex CypressOrPhantomJsRegex = new("Cypress|PhantomJS", RegexOptions.Compiled);
+    private static readonly Regex IridiumVersionRegex = new("^202[0-4]", RegexOptions.Compiled);
+
+
     public BrowserParser(ParserOptions parserOptions)
     {
         _parserOptions = parserOptions;
@@ -1024,6 +1031,18 @@ internal class BrowserParser : BaseClientParser<Browser>
         if (string.IsNullOrEmpty(result))
         {
             EngineParser.TryParse(userAgent, out result);
+        }
+
+        return result;
+    }
+
+    private static string? BuildEngineVersion(string userAgent, string? engine)
+    {
+        string? result = null;
+
+        if (!string.IsNullOrEmpty(engine))
+        {
+            EngineVersionParser.TryParse(userAgent, engine, out result);
         }
 
         return result;
@@ -1113,12 +1132,7 @@ internal class BrowserParser : BaseClientParser<Browser>
                 : null;
 
             var engine = BuildEngine(userAgent, browser.Engine, version);
-            string? engineVersion = null;
-
-            if (!string.IsNullOrEmpty(engine))
-            {
-                EngineVersionParser.TryParse(userAgent, engine, out engineVersion);
-            }
+            var engineVersion = BuildEngineVersion(userAgent, engine);
 
             result = new UserAgentBrowserInfo
             {
@@ -1143,9 +1157,11 @@ internal class BrowserParser : BaseClientParser<Browser>
         [NotNullWhen(true)] out IClientInfo? result
     )
     {
-        string name;
-        BrowserCode code = default;
-        string? version, engine = null, engineVersion = null;
+        string? name = null;
+        BrowserCode? code = null;
+        string? version = null;
+        string? engine = null;
+        string? engineVersion = null;
 
         TryParseBrowserFromUserAgent(userAgent, out var browserFromUserAgent);
 
@@ -1156,7 +1172,7 @@ internal class BrowserParser : BaseClientParser<Browser>
             code = browserFromClientHints.Code;
             version = browserFromClientHints.Version;
 
-            if (Regex.IsMatch(version, "^202[0-4]"))
+            if (IridiumVersionRegex.IsMatch(version))
             {
                 name = BrowserNames.Iridium;
                 code = BrowserCode.Iridium;
@@ -1173,7 +1189,7 @@ internal class BrowserParser : BaseClientParser<Browser>
                     engineVersion = browserFromUserAgent.EngineVersion;
                 }
 
-                if (!string.IsNullOrEmpty(browserFromUserAgent.Version) && PriorityBrowsers.Contains(code))
+                if (!string.IsNullOrEmpty(browserFromUserAgent.Version) && PriorityBrowsers.Contains(code.Value))
                 {
                     version = browserFromUserAgent.Version;
                 }
@@ -1246,10 +1262,80 @@ internal class BrowserParser : BaseClientParser<Browser>
             engineVersion = browserFromUserAgent.EngineVersion;
         }
 
-        TryMapCodeToFamily(code, out var family);
+        string? family = null;
+        string? appName = null;
 
+        if (code is not null)
+        {
+            TryMapCodeToFamily(code.Value, out family);
+        }
 
-        throw new NotImplementedException();
+        if (clientHints is not null)
+        {
+            BrowserHintParser.TryParse(clientHints, out appName);
+        }
+
+        if (!string.IsNullOrEmpty(appName) && name != appName)
+        {
+            name = appName;
+            version = null;
+
+            if (BrowserNameMapping.TryGetValue(name, out var browserCode))
+            {
+                code = browserCode;
+            }
+
+            if (ChromeSafariRegex.IsMatch(userAgent))
+            {
+                engine = BrowserEngines.Blink;
+                engineVersion = BuildEngineVersion(userAgent, engine);
+
+                if (code is not null)
+                {
+                    family = TryMapCodeToFamily(code.Value, out family) ? family : BrowserFamilies.Chrome;
+                }
+            }
+        }
+
+        if (string.IsNullOrEmpty(name) || CypressOrPhantomJsRegex.IsMatch(userAgent) || code is null)
+        {
+            result = null;
+            return false;
+        }
+
+        switch (name)
+        {
+            // Ignore "Blink" engine version for "Flow Browser".
+            case BrowserNames.FlowBrowser when engine == BrowserEngines.Blink:
+                engineVersion = null;
+                break;
+            // "Every Browser" mimics a Chrome user agent on Android.
+            // "TV-Browser Internet" mimics a Firefox user agent.
+            case BrowserNames.EveryBrowser:
+            case BrowserNames.TvBrowserInternet when engine == BrowserEngines.Gecko:
+                family = BrowserFamilies.Chrome;
+                engine = BrowserEngines.Blink;
+                engineVersion = null;
+                break;
+            case BrowserNames.Wolvic when engine == BrowserEngines.Blink:
+                family = BrowserFamilies.Chrome;
+                break;
+            case BrowserNames.Wolvic when engine == BrowserEngines.Gecko:
+                family = BrowserFamilies.Firefox;
+                break;
+        }
+
+        result = new BrowserInfo
+        {
+            Name = name,
+            Code = code.Value,
+            Family = family,
+            Version = version,
+            Engine = engine,
+            EngineVersion = engineVersion,
+        };
+
+        return true;
     }
 
     private sealed class ClientHintsBrowserInfo

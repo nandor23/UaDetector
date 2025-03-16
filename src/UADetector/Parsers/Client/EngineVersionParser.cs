@@ -26,12 +26,6 @@ internal static class EngineVersionParser
 
     public static bool TryParse(string userAgent, string engine, [NotNullWhen(true)] out string? result)
     {
-        if (string.IsNullOrEmpty(engine))
-        {
-            result = null;
-            return false;
-        }
-
         Match? match = null;
 
         if (engine is BrowserEngines.Gecko or BrowserEngines.Clecko)
