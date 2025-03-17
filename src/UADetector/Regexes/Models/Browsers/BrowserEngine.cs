@@ -1,6 +1,6 @@
 using System.Text.RegularExpressions;
 
-namespace UADetector.Regexes.Models.Client;
+namespace UADetector.Regexes.Models.Browsers;
 
 internal class BrowserEngine
 {

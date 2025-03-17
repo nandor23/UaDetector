@@ -4,13 +4,13 @@ using System.Text.RegularExpressions;
 
 using UADetector.Models.Constants;
 using UADetector.Models.Enums;
-using UADetector.Regexes.Models.Client;
+using UADetector.Regexes.Models.Browsers;
 
-namespace UADetector.Parsers.Client;
+namespace UADetector.Parsers.Browsers;
 
 internal static class EngineParser
 {
-    private const string ResourceName = "Regexes.Resources.Client.browser_engines.yml";
+    private const string ResourceName = "Regexes.Resources.Browsers.browser_engines.yml";
 
     private static readonly IEnumerable<BrowserEngine> EngineRegexes =
         ParserExtensions.LoadRegexes<BrowserEngine>(ResourceName, RegexPatternType.UserAgent);

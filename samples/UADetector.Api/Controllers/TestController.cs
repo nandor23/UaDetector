@@ -8,26 +8,23 @@ namespace UADetector.Api.Controllers;
 public class TestController : ControllerBase
 {
     private readonly IOsParser _osParser;
-    private readonly IClientParser _clientParser;
+    private readonly IBrowserParser _browserParser;
 
-
-    public TestController(IOsParser osParser, IClientParser clientParser)
+    public TestController(IOsParser osParser, IBrowserParser browserParser)
     {
         _osParser = osParser;
-        _clientParser = clientParser;
+        _browserParser = browserParser;
     }
 
     [Route("")]
     public IActionResult Get()
     {
         var userAgent = HttpContext.Request.Headers.UserAgent.ToString();
-        _osParser.TryParse(userAgent, out var result);
+        _osParser.TryParse(userAgent, out var os);
 
         var headers = Request.Headers.ToDictionary(a => a.Key, a => a.Value.ToArray().FirstOrDefault());
-        var clientHints = ClientHints.Create(headers);
+        _browserParser.TryParse(userAgent, out var browser);
 
-        _clientParser.TryParse(userAgent, clientHints, out var client);
-
-        return Ok(result);
+        return Ok(browser);
     }
 }

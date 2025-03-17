@@ -1,19 +1,21 @@
 using System.Collections.Frozen;
+using System.Collections.Immutable;
 using System.Diagnostics.CodeAnalysis;
 using System.Text.RegularExpressions;
 
 using UADetector.Models.Constants;
 using UADetector.Models.Enums;
-using UADetector.Regexes.Models.Client;
+using UADetector.Parsers.Browsers;
+using UADetector.Regexes.Models.Browsers;
 using UADetector.Results.Client;
 using UADetector.Utils;
 
-namespace UADetector.Parsers.Client;
+namespace UADetector.Parsers;
 
-internal class BrowserParser : BaseClientParser<Browser>
+public class BrowserParser : IBrowserParser
 {
-    private readonly ParserOptions _parserOptions;
-    private const string ResourceName = "Regexes.Resources.Client.browsers.yml";
+    private readonly VersionTruncation _versionTruncation;
+    private const string ResourceName = "Regexes.Resources.Browsers.browsers.yml";
 
     private static readonly IEnumerable<Browser> BrowserRegexes =
         ParserExtensions.LoadRegexes<Browser>(ResourceName);
@@ -965,9 +967,9 @@ internal class BrowserParser : BaseClientParser<Browser>
     private static readonly Regex IridiumVersionRegex = new("^202[0-4]", RegexOptions.Compiled);
 
 
-    public BrowserParser(ParserOptions parserOptions)
+    public BrowserParser(VersionTruncation versionTruncation = VersionTruncation.Minor)
     {
-        _parserOptions = parserOptions;
+        _versionTruncation = versionTruncation;
     }
 
     private static string ApplyClientHintBrandMapping(string brand)
@@ -1128,7 +1130,7 @@ internal class BrowserParser : BaseClientParser<Browser>
         if (BrowserNameMapping.TryGetValue(name, out var code))
         {
             var version = !string.IsNullOrEmpty(browser.Version)
-                ? ParserExtensions.FormatVersionWithMatch(browser.Version, match, _parserOptions.VersionTruncation)
+                ? ParserExtensions.FormatVersionWithMatch(browser.Version, match, _versionTruncation)
                 : null;
 
             var engine = BuildEngine(userAgent, browser.Engine, version);
@@ -1150,13 +1152,33 @@ internal class BrowserParser : BaseClientParser<Browser>
 
         return result is not null;
     }
+    
+    public bool TryParse(string userAgent, [NotNullWhen(true)] out BrowserInfo? result)
+    {
+        return TryParse(userAgent, ImmutableDictionary<string, string?>.Empty, out result);
+    }
 
-    public override bool TryParse(
+    public bool TryParse(
         string userAgent,
-        ClientHints? clientHints,
-        [NotNullWhen(true)] out IClientInfo? result
+        IDictionary<string, string?> headers,
+        [NotNullWhen(true)] out BrowserInfo? result
     )
     {
+        var clientHints = ClientHints.Create(headers);
+        return TryParse(userAgent, clientHints, out result);
+    }
+
+    internal bool TryParse(
+        string userAgent,
+        ClientHints clientHints,
+        [NotNullWhen(true)] out BrowserInfo? result
+    )
+    {
+        if (ParserExtensions.TryRestoreUserAgent(userAgent, clientHints, out var restoredUserAgent))
+        {
+            userAgent = restoredUserAgent;
+        }
+        
         string? name = null;
         BrowserCode? code = null;
         string? version = null;
@@ -1165,7 +1187,7 @@ internal class BrowserParser : BaseClientParser<Browser>
 
         TryParseBrowserFromUserAgent(userAgent, out var browserFromUserAgent);
 
-        if (clientHints is not null && TryParseBrowserFromClientHints(clientHints, out var browserFromClientHints) &&
+        if (TryParseBrowserFromClientHints(clientHints, out var browserFromClientHints) &&
             !string.IsNullOrEmpty(browserFromClientHints.Version))
         {
             name = browserFromClientHints.Name;
@@ -1263,18 +1285,14 @@ internal class BrowserParser : BaseClientParser<Browser>
         }
 
         string? family = null;
-        string? appName = null;
 
         if (code is not null)
         {
             TryMapCodeToFamily(code.Value, out family);
         }
 
-        if (clientHints is not null)
-        {
-            BrowserHintParser.TryParse(clientHints, out appName);
-        }
-
+        BrowserHintParser.TryParse(clientHints, out string? appName);
+        
         if (!string.IsNullOrEmpty(appName) && name != appName)
         {
             name = appName;

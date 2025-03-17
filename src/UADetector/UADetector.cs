@@ -1,3 +1,4 @@
+using System.Collections.Immutable;
 using System.Diagnostics.CodeAnalysis;
 
 using UADetector.Parsers;
@@ -7,23 +8,19 @@ namespace UADetector;
 
 public sealed class UADetector : IUADetector
 {
-    private readonly IOsParser _osParser;
+    private readonly OsParser _osParser = new();
 
-
-    public UADetector(IOsParser osParser)
-    {
-        _osParser = osParser;
-    }
 
     public bool TryParse(string userAgent, [NotNullWhen(true)] out UserAgentInfo? result)
     {
-        return TryParse(userAgent, null, out result);
+        return TryParse(userAgent, ImmutableDictionary<string, string?>.Empty, out result);
     }
 
-    public bool TryParse(string userAgent, ClientHints? clientHints, [NotNullWhen(true)] out UserAgentInfo? result)
+    public bool TryParse(string userAgent, IDictionary<string, string?> headers, [NotNullWhen(true)] out UserAgentInfo? result)
     {
-        if (clientHints is not null &&
-            ParserExtensions.TryRestoreUserAgent(userAgent, clientHints, out var restoredUserAgent))
+        var clientHints = ClientHints.Create(headers);
+        
+        if (ParserExtensions.TryRestoreUserAgent(userAgent, clientHints, out var restoredUserAgent))
         {
             userAgent = restoredUserAgent;
         }

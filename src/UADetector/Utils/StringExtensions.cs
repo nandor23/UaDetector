@@ -1,6 +1,6 @@
 namespace UADetector.Utils;
 
-public static class StringExtensions
+internal static class StringExtensions
 {
     /// <summary>
     /// Collapses multiple spaces in the input string into a single space and trims leading/trailing spaces.
@@ -28,7 +28,7 @@ public static class StringExtensions
             }
         }
 
-        return buffer[..(count - 1)].ToString();
+        return buffer[count - 1] == ' ' ? buffer[..(count - 1)].ToString() : buffer[..count].ToString();
     }
 
     /// <summary>

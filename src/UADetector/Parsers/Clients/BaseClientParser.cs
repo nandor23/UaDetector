@@ -1,9 +1,9 @@
 using System.Diagnostics.CodeAnalysis;
 
-using UADetector.Regexes.Models.Client;
+using UADetector.Regexes.Models.Clients;
 using UADetector.Results.Client;
 
-namespace UADetector.Parsers.Client;
+namespace UADetector.Parsers.Clients;
 
 internal abstract class BaseClientParser<T> where T : IClient
 {

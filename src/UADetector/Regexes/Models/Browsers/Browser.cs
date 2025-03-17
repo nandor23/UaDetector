@@ -1,6 +1,8 @@
 using System.Text.RegularExpressions;
 
-namespace UADetector.Regexes.Models.Client;
+using UADetector.Regexes.Models.Clients;
+
+namespace UADetector.Regexes.Models.Browsers;
 
 internal sealed class Browser : IClient
 {

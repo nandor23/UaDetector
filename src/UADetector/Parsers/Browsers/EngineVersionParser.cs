@@ -4,7 +4,7 @@ using System.Text.RegularExpressions;
 
 using UADetector.Models.Constants;
 
-namespace UADetector.Parsers.Client;
+namespace UADetector.Parsers.Browsers;
 
 internal static class EngineVersionParser
 {
