@@ -1038,16 +1038,16 @@ public class BrowserParser : IBrowserParser
         return result;
     }
 
-    private static string? BuildEngineVersion(string userAgent, string? engine)
+    private string? BuildEngineVersion(string userAgent, string? engine)
     {
-        string? result = null;
-
-        if (!string.IsNullOrEmpty(engine))
+        if (string.IsNullOrEmpty(engine))
         {
-            EngineVersionParser.TryParse(userAgent, engine, out result);
+            return null;
         }
 
-        return result;
+        EngineVersionParser.TryParse(userAgent, engine, out var result);
+        return ParserExtensions.BuildVersion(result, _versionTruncation);
+
     }
 
     private static bool TryParseBrowserFromClientHints(
@@ -1129,10 +1129,7 @@ public class BrowserParser : IBrowserParser
 
         if (BrowserNameMapping.TryGetValue(name, out var code))
         {
-            var version = !string.IsNullOrEmpty(browser.Version)
-                ? ParserExtensions.FormatVersionWithMatch(browser.Version, match, _versionTruncation)
-                : null;
-
+            var version = ParserExtensions.BuildVersion(browser.Version, match, _versionTruncation);
             var engine = BuildEngine(userAgent, browser.Engine, version);
             var engineVersion = BuildEngineVersion(userAgent, engine);
 
@@ -1152,7 +1149,7 @@ public class BrowserParser : IBrowserParser
 
         return result is not null;
     }
-    
+
     public bool TryParse(string userAgent, [NotNullWhen(true)] out BrowserInfo? result)
     {
         return TryParse(userAgent, ImmutableDictionary<string, string?>.Empty, out result);
@@ -1178,7 +1175,7 @@ public class BrowserParser : IBrowserParser
         {
             userAgent = restoredUserAgent;
         }
-        
+
         string? name = null;
         BrowserCode? code = null;
         string? version = null;
@@ -1292,7 +1289,7 @@ public class BrowserParser : IBrowserParser
         }
 
         BrowserHintParser.TryParse(clientHints, out string? appName);
-        
+
         if (!string.IsNullOrEmpty(appName) && name != appName)
         {
             name = appName;

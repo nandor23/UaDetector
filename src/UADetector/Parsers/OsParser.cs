@@ -650,9 +650,7 @@ public sealed class OsParser : IOsParser
             return false;
         }
 
-        var version = !string.IsNullOrEmpty(os.Version)
-            ? ParserExtensions.FormatVersionWithMatch(os.Version, match, _versionTruncation)
-            : null;
+        var version = ParserExtensions.BuildVersion(os.Version, match, _versionTruncation);
 
         if (os.Versions?.Count > 0)
         {
@@ -662,7 +660,7 @@ public sealed class OsParser : IOsParser
 
                 if (match.Success)
                 {
-                    version = ParserExtensions.FormatVersionWithMatch(versionRegex.Version, match, _versionTruncation);
+                    version = ParserExtensions.BuildVersion(versionRegex.Version, match, _versionTruncation);
                     break;
                 }
             }

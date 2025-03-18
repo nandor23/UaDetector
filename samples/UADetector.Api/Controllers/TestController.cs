@@ -23,7 +23,7 @@ public class TestController : ControllerBase
         _osParser.TryParse(userAgent, out var os);
 
         var headers = Request.Headers.ToDictionary(a => a.Key, a => a.Value.ToArray().FirstOrDefault());
-        _browserParser.TryParse(userAgent, out var browser);
+        _browserParser.TryParse(userAgent, headers, out var browser);
 
         return Ok(browser);
     }

@@ -19,7 +19,7 @@ public sealed class UADetector : IUADetector
     public bool TryParse(string userAgent, IDictionary<string, string?> headers, [NotNullWhen(true)] out UserAgentInfo? result)
     {
         var clientHints = ClientHints.Create(headers);
-        
+
         if (ParserExtensions.TryRestoreUserAgent(userAgent, clientHints, out var restoredUserAgent))
         {
             userAgent = restoredUserAgent;

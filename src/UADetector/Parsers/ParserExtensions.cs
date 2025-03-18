@@ -139,9 +139,14 @@ internal static class ParserExtensions
         return value.Trim();
     }
 
-    public static string FormatVersionWithMatch(string version, Match match, VersionTruncation versionTruncation)
+    public static string? BuildVersion(string? version, VersionTruncation versionTruncation)
     {
-        version = FormatWithMatch(version, match).Replace('_', '.');
+        version = version?.Replace('_', '.');
+
+        if (string.IsNullOrEmpty(version))
+        {
+            return null;
+        }
 
         if (versionTruncation != VersionTruncation.None)
         {
@@ -154,6 +159,17 @@ internal static class ParserExtensions
         }
 
         return version.Trim(' ', '.');
+    }
+
+    public static string? BuildVersion(string? version, Match match, VersionTruncation versionTruncation)
+    {
+        if (string.IsNullOrEmpty(version))
+        {
+            return null;
+        }
+
+        version = FormatWithMatch(version, match);
+        return BuildVersion(version, versionTruncation);
     }
 
     public static string NormalizeVersion(string version, string[] matches)
