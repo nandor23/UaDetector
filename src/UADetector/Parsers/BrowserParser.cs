@@ -1020,12 +1020,11 @@ public class BrowserParser : IBrowserParser
             foreach (var version in engine.Versions)
             {
                 if (ParserExtensions.TryCompareVersions(browserVersion, version.Key, out var comparisonResult) &&
-                    comparisonResult < 0)
+                    comparisonResult >= 0)
                 {
-                    continue;
+                    result = version.Value;
+                    break;
                 }
-
-                result = version.Value;
             }
         }
 
