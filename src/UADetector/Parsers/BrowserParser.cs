@@ -1015,13 +1015,12 @@ public class BrowserParser : IBrowserParser
     {
         var result = engine?.Default;
 
-        if (engine?.Versions?.Count > 0 && !string.IsNullOrEmpty(browserVersion) &&
-            Version.TryParse(browserVersion, out var parsedBrowserVersion))
+        if (engine?.Versions?.Count > 0 && !string.IsNullOrEmpty(browserVersion))
         {
             foreach (var version in engine.Versions)
             {
-                if (Version.TryParse(version.Key, out var parsedVersion) &&
-                    parsedBrowserVersion.CompareTo(parsedVersion) < 0)
+                if (ParserExtensions.TryCompareVersions(browserVersion, version.Key, out var comparisonResult) &&
+                    comparisonResult < 0)
                 {
                     continue;
                 }
@@ -1250,9 +1249,8 @@ public class BrowserParser : IBrowserParser
 
                 if (!string.IsNullOrEmpty(browserFromUserAgent.Version) && !string.IsNullOrEmpty(version) &&
                     browserFromUserAgent.Version.StartsWith(version) &&
-                    Version.TryParse(version, out var parsedVersion) &&
-                    Version.TryParse(browserFromUserAgent.Version, out var parsedVersionFromUserAgent) &&
-                    parsedVersion.CompareTo(parsedVersionFromUserAgent) < 0)
+                    ParserExtensions.TryCompareVersions(version, browserFromUserAgent.Version,
+                        out var comparisonResult) && comparisonResult < 0)
                 {
                     version = browserFromUserAgent.Version;
                 }
@@ -1264,9 +1262,8 @@ public class BrowserParser : IBrowserParser
 
                 if (engine == BrowserEngines.Blink && name != BrowserNames.Iridium &&
                     !string.IsNullOrEmpty(engineVersion) &&
-                    Version.TryParse(engineVersion, out var parsedEngineVersion) &&
-                    Version.TryParse(browserFromClientHints.Version, out var parsedVersionFromClientHints) &&
-                    parsedEngineVersion.CompareTo(parsedVersionFromClientHints) < 0)
+                    ParserExtensions.TryCompareVersions(engineVersion, browserFromClientHints.Version,
+                        out comparisonResult) && comparisonResult < 0)
                 {
                     engineVersion = browserFromClientHints.Version;
                 }

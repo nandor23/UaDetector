@@ -172,6 +172,55 @@ internal static class ParserExtensions
         return BuildVersion(version, versionTruncation);
     }
 
+    public static bool TryCompareVersions(string version1, string version2, [NotNullWhen(true)] out int? result)
+    {
+        string[] segments1 = version1.Split('.');
+        string[] segments2 = version2.Split('.');
+
+        int maxSegments = Math.Max(segments1.Length, segments2.Length);
+
+        for (int i = 0; i < maxSegments; i++)
+        {
+            int value1, value2;
+
+            if (i < segments1.Length)
+            {
+                if (!int.TryParse(segments1[i], out value1))
+                {
+                    result = null;
+                    return false;
+                }
+            }
+            else
+            {
+                value1 = 0;
+            }
+
+            if (i < segments2.Length)
+            {
+                if (!int.TryParse(segments2[i], out value2))
+                {
+                    result = null;
+                    return false;
+                }
+            }
+            else
+            {
+                value2 = 0;
+            }
+
+            result = value1.CompareTo(value2);
+
+            if (result != 0)
+            {
+                return true;
+            }
+        }
+
+        result = 0;
+        return true;
+    }
+
     public static string NormalizeVersion(string version, string[] matches)
     {
         throw new NotImplementedException();
