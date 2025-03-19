@@ -1,4 +1,4 @@
-namespace UADetector.Regexes.Models.Client;
+namespace UADetector.Regexes.Models.Browsers;
 
 public class Engine
 {

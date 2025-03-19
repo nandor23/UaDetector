@@ -1,6 +1,6 @@
 using System.Text.RegularExpressions;
 
-namespace UADetector.Regexes.Models.Client;
+namespace UADetector.Regexes.Models.Clients;
 
 internal interface IClient
 {

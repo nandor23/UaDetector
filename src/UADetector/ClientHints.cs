@@ -3,7 +3,7 @@ using System.Text.RegularExpressions;
 
 namespace UADetector;
 
-public sealed class ClientHints
+internal sealed class ClientHints
 {
     private static readonly Regex FullVersionListRegex =
         new("""^"([^"]+)"; ?v="([^"]+)"(?:, )?""", RegexOptions.Compiled);

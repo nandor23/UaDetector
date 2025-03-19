@@ -1,19 +1,21 @@
 using System.Collections.Frozen;
+using System.Collections.Immutable;
 using System.Diagnostics.CodeAnalysis;
 using System.Text.RegularExpressions;
 
 using UADetector.Models.Constants;
 using UADetector.Models.Enums;
-using UADetector.Regexes.Models.Client;
+using UADetector.Parsers.Browsers;
+using UADetector.Regexes.Models.Browsers;
 using UADetector.Results.Client;
 using UADetector.Utils;
 
-namespace UADetector.Parsers.Client;
+namespace UADetector.Parsers;
 
-internal class BrowserParser : BaseClientParser<Browser>
+public class BrowserParser : IBrowserParser
 {
-    private readonly ParserOptions _parserOptions;
-    private const string ResourceName = "Regexes.Resources.Client.browsers.yml";
+    private readonly VersionTruncation _versionTruncation;
+    private const string ResourceName = "Regexes.Resources.Browsers.browsers.yml";
 
     private static readonly IEnumerable<Browser> BrowserRegexes =
         ParserExtensions.LoadRegexes<Browser>(ResourceName);
@@ -965,9 +967,9 @@ internal class BrowserParser : BaseClientParser<Browser>
     private static readonly Regex IridiumVersionRegex = new("^202[0-4]", RegexOptions.Compiled);
 
 
-    public BrowserParser(ParserOptions parserOptions)
+    public BrowserParser(VersionTruncation versionTruncation = VersionTruncation.Minor)
     {
-        _parserOptions = parserOptions;
+        _versionTruncation = versionTruncation;
     }
 
     private static string ApplyClientHintBrandMapping(string brand)
@@ -1013,18 +1015,16 @@ internal class BrowserParser : BaseClientParser<Browser>
     {
         var result = engine?.Default;
 
-        if (engine?.Versions?.Count > 0 && !string.IsNullOrEmpty(browserVersion) &&
-            Version.TryParse(browserVersion, out var parsedBrowserVersion))
+        if (engine?.Versions?.Count > 0 && !string.IsNullOrEmpty(browserVersion))
         {
             foreach (var version in engine.Versions)
             {
-                if (Version.TryParse(version.Key, out var parsedVersion) &&
-                    parsedBrowserVersion.CompareTo(parsedVersion) < 0)
+                if (ParserExtensions.TryCompareVersions(browserVersion, version.Key, out var comparisonResult) &&
+                    comparisonResult >= 0)
                 {
-                    continue;
+                    result = version.Value;
+                    break;
                 }
-
-                result = version.Value;
             }
         }
 
@@ -1036,16 +1036,16 @@ internal class BrowserParser : BaseClientParser<Browser>
         return result;
     }
 
-    private static string? BuildEngineVersion(string userAgent, string? engine)
+    private string? BuildEngineVersion(string userAgent, string? engine)
     {
-        string? result = null;
-
-        if (!string.IsNullOrEmpty(engine))
+        if (string.IsNullOrEmpty(engine))
         {
-            EngineVersionParser.TryParse(userAgent, engine, out result);
+            return null;
         }
 
-        return result;
+        EngineVersionParser.TryParse(userAgent, engine, out var result);
+        return ParserExtensions.BuildVersion(result, _versionTruncation);
+
     }
 
     private static bool TryParseBrowserFromClientHints(
@@ -1127,10 +1127,7 @@ internal class BrowserParser : BaseClientParser<Browser>
 
         if (BrowserNameMapping.TryGetValue(name, out var code))
         {
-            var version = !string.IsNullOrEmpty(browser.Version)
-                ? ParserExtensions.FormatVersionWithMatch(browser.Version, match, _parserOptions.VersionTruncation)
-                : null;
-
+            var version = ParserExtensions.BuildVersion(browser.Version, match, _versionTruncation);
             var engine = BuildEngine(userAgent, browser.Engine, version);
             var engineVersion = BuildEngineVersion(userAgent, engine);
 
@@ -1151,12 +1148,32 @@ internal class BrowserParser : BaseClientParser<Browser>
         return result is not null;
     }
 
-    public override bool TryParse(
+    public bool TryParse(string userAgent, [NotNullWhen(true)] out BrowserInfo? result)
+    {
+        return TryParse(userAgent, ImmutableDictionary<string, string?>.Empty, out result);
+    }
+
+    public bool TryParse(
         string userAgent,
-        ClientHints? clientHints,
-        [NotNullWhen(true)] out IClientInfo? result
+        IDictionary<string, string?> headers,
+        [NotNullWhen(true)] out BrowserInfo? result
     )
     {
+        var clientHints = ClientHints.Create(headers);
+        return TryParse(userAgent, clientHints, out result);
+    }
+
+    internal bool TryParse(
+        string userAgent,
+        ClientHints clientHints,
+        [NotNullWhen(true)] out BrowserInfo? result
+    )
+    {
+        if (ParserExtensions.TryRestoreUserAgent(userAgent, clientHints, out var restoredUserAgent))
+        {
+            userAgent = restoredUserAgent;
+        }
+
         string? name = null;
         BrowserCode? code = null;
         string? version = null;
@@ -1165,7 +1182,7 @@ internal class BrowserParser : BaseClientParser<Browser>
 
         TryParseBrowserFromUserAgent(userAgent, out var browserFromUserAgent);
 
-        if (clientHints is not null && TryParseBrowserFromClientHints(clientHints, out var browserFromClientHints) &&
+        if (TryParseBrowserFromClientHints(clientHints, out var browserFromClientHints) &&
             !string.IsNullOrEmpty(browserFromClientHints.Version))
         {
             name = browserFromClientHints.Name;
@@ -1231,9 +1248,8 @@ internal class BrowserParser : BaseClientParser<Browser>
 
                 if (!string.IsNullOrEmpty(browserFromUserAgent.Version) && !string.IsNullOrEmpty(version) &&
                     browserFromUserAgent.Version.StartsWith(version) &&
-                    Version.TryParse(version, out var parsedVersion) &&
-                    Version.TryParse(browserFromUserAgent.Version, out var parsedVersionFromUserAgent) &&
-                    parsedVersion.CompareTo(parsedVersionFromUserAgent) < 0)
+                    ParserExtensions.TryCompareVersions(version, browserFromUserAgent.Version,
+                        out var comparisonResult) && comparisonResult < 0)
                 {
                     version = browserFromUserAgent.Version;
                 }
@@ -1245,9 +1261,8 @@ internal class BrowserParser : BaseClientParser<Browser>
 
                 if (engine == BrowserEngines.Blink && name != BrowserNames.Iridium &&
                     !string.IsNullOrEmpty(engineVersion) &&
-                    Version.TryParse(engineVersion, out var parsedEngineVersion) &&
-                    Version.TryParse(browserFromClientHints.Version, out var parsedVersionFromClientHints) &&
-                    parsedEngineVersion.CompareTo(parsedVersionFromClientHints) < 0)
+                    ParserExtensions.TryCompareVersions(engineVersion, browserFromClientHints.Version,
+                        out comparisonResult) && comparisonResult < 0)
                 {
                     engineVersion = browserFromClientHints.Version;
                 }
@@ -1263,17 +1278,13 @@ internal class BrowserParser : BaseClientParser<Browser>
         }
 
         string? family = null;
-        string? appName = null;
 
         if (code is not null)
         {
             TryMapCodeToFamily(code.Value, out family);
         }
 
-        if (clientHints is not null)
-        {
-            BrowserHintParser.TryParse(clientHints, out appName);
-        }
+        BrowserHintParser.TryParse(clientHints, out string? appName);
 
         if (!string.IsNullOrEmpty(appName) && name != appName)
         {

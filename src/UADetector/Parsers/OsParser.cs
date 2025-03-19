@@ -1,4 +1,5 @@
 using System.Collections.Frozen;
+using System.Collections.Immutable;
 using System.Diagnostics.CodeAnalysis;
 using System.Text.RegularExpressions;
 
@@ -12,7 +13,7 @@ namespace UADetector.Parsers;
 
 public sealed class OsParser : IOsParser
 {
-    private readonly ParserOptions _parserOptions;
+    private readonly VersionTruncation _versionTruncation;
     private const string ResourceName = "Regexes.Resources.oss.yml";
 
     private static readonly IEnumerable<Os> OsRegexes =
@@ -403,9 +404,9 @@ public sealed class OsParser : IOsParser
         }.ToFrozenDictionary();
 
 
-    public OsParser(ParserOptions? parserOptions = null)
+    public OsParser(VersionTruncation versionTruncation = VersionTruncation.Minor)
     {
-        _parserOptions = parserOptions ?? new ParserOptions();
+        _versionTruncation = versionTruncation;
     }
 
     private static string ApplyClientHintPlatformMapping(string platform)
@@ -649,9 +650,7 @@ public sealed class OsParser : IOsParser
             return false;
         }
 
-        var version = !string.IsNullOrEmpty(os.Version)
-            ? ParserExtensions.FormatVersionWithMatch(os.Version, match, _parserOptions.VersionTruncation)
-            : null;
+        var version = ParserExtensions.BuildVersion(os.Version, match, _versionTruncation);
 
         if (os.Versions?.Count > 0)
         {
@@ -661,8 +660,7 @@ public sealed class OsParser : IOsParser
 
                 if (match.Success)
                 {
-                    version = ParserExtensions.FormatVersionWithMatch(versionRegex.Version, match,
-                        _parserOptions.VersionTruncation);
+                    version = ParserExtensions.BuildVersion(versionRegex.Version, match, _versionTruncation);
                     break;
                 }
             }
@@ -674,13 +672,18 @@ public sealed class OsParser : IOsParser
 
     public bool TryParse(string userAgent, [NotNullWhen(true)] out OsInfo? result)
     {
-        return TryParse(userAgent, null, out result);
+        return TryParse(userAgent, ImmutableDictionary<string, string?>.Empty, out result);
     }
 
-    public bool TryParse(string userAgent, ClientHints? clientHints, [NotNullWhen(true)] out OsInfo? result)
+    public bool TryParse(string userAgent, IDictionary<string, string?> headers, [NotNullWhen(true)] out OsInfo? result)
     {
-        if (clientHints is not null &&
-            ParserExtensions.TryRestoreUserAgent(userAgent, clientHints, out var restoredUserAgent))
+        var clientHints = ClientHints.Create(headers);
+        return TryParse(userAgent, clientHints, out result);
+    }
+
+    internal bool TryParse(string userAgent, ClientHints clientHints, [NotNullWhen(true)] out OsInfo? result)
+    {
+        if (ParserExtensions.TryRestoreUserAgent(userAgent, clientHints, out var restoredUserAgent))
         {
             userAgent = restoredUserAgent;
         }
@@ -691,7 +694,7 @@ public sealed class OsParser : IOsParser
 
         TryParseOsFromUserAgent(userAgent, out var osFromUserAgent);
 
-        if (clientHints is not null && TryParseOsFromClientHints(clientHints, out var osFromClientHints))
+        if (TryParseOsFromClientHints(clientHints, out var osFromClientHints))
         {
             name = osFromClientHints.Name;
             code = osFromClientHints.Code;
@@ -777,7 +780,7 @@ public sealed class OsParser : IOsParser
         TryParsePlatform(userAgent, clientHints, out var platform);
         TryMapCodeToFamily(code, out var family);
 
-        if (clientHints is not null && !string.IsNullOrEmpty(clientHints.App))
+        if (!string.IsNullOrEmpty(clientHints.App))
         {
             if (name != OsNames.Android && AndroidApps.Contains(clientHints.App))
             {
