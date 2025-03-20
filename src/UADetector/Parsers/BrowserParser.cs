@@ -1148,6 +1148,17 @@ public class BrowserParser : IBrowserParser
         return result is not null;
     }
 
+    /// <summary>
+    /// Checks if the first version is a truncated form of the second version and still considered equal.
+    /// For example, version "1.2" would be considered equal to "1.2.0" or "1.2.0.0".
+    /// </summary>
+    private static bool IsSameTruncatedVersion(string shortVersion, string fullVersion)
+    {
+        return shortVersion.Length < fullVersion.Length &&
+               ParserExtensions.TryCompareVersions(shortVersion, fullVersion, out var comparisonResult) &&
+               comparisonResult == 0;
+    }
+
     public bool TryParse(string userAgent, [NotNullWhen(true)] out BrowserInfo? result)
     {
         return TryParse(userAgent, ImmutableDictionary<string, string?>.Empty, out result);
@@ -1206,7 +1217,9 @@ public class BrowserParser : IBrowserParser
                     engineVersion = browserFromUserAgent.EngineVersion;
                 }
 
-                if (!string.IsNullOrEmpty(browserFromUserAgent.Version) && PriorityBrowsers.Contains(code.Value))
+                if (!string.IsNullOrEmpty(browserFromUserAgent.Version) &&
+                    (PriorityBrowsers.Contains(code.Value) ||
+                     IsSameTruncatedVersion(version, browserFromUserAgent.Version)))
                 {
                     version = browserFromUserAgent.Version;
                 }

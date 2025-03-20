@@ -4,7 +4,7 @@ using UADetector.Regexes.Models.Clients;
 
 namespace UADetector.Regexes.Models.Browsers;
 
-internal sealed class Browser : IClient
+internal sealed class Browser
 {
     public required Regex Regex { get; init; }
     public required string Name { get; init; }
