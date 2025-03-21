@@ -7,17 +7,17 @@ using UADetector.Models.Constants;
 using UADetector.Models.Enums;
 using UADetector.Parsers.Browsers;
 using UADetector.Regexes.Models.Browsers;
-using UADetector.Results.Client;
+using UADetector.Results;
 using UADetector.Utils;
 
 namespace UADetector.Parsers;
 
 public class BrowserParser : IBrowserParser
 {
-    private readonly VersionTruncation _versionTruncation;
     private const string ResourceName = "Regexes.Resources.Browsers.browsers.yml";
+    private readonly VersionTruncation _versionTruncation;
 
-    private static readonly IEnumerable<Browser> BrowserRegexes =
+    private static readonly IEnumerable<Browser> Browsers =
         ParserExtensions.LoadRegexes<Browser>(ResourceName);
 
     private static readonly FrozenDictionary<BrowserCode, string> BrowserCodeMapping =
@@ -1106,13 +1106,13 @@ public class BrowserParser : IBrowserParser
         Match? match = null;
         Browser? browser = null;
 
-        foreach (var browserRegex in BrowserRegexes)
+        foreach (var browserPattern in Browsers)
         {
-            match = browserRegex.Regex.Match(userAgent);
+            match = browserPattern.Regex.Match(userAgent);
 
             if (match.Success)
             {
-                browser = browserRegex;
+                browser = browserPattern;
                 break;
             }
         }

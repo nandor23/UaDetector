@@ -13,10 +13,10 @@ namespace UADetector.Parsers;
 
 public sealed class OsParser : IOsParser
 {
-    private readonly VersionTruncation _versionTruncation;
     private const string ResourceName = "Regexes.Resources.oss.yml";
+    private readonly VersionTruncation _versionTruncation;
 
-    private static readonly IEnumerable<Os> OsRegexes =
+    private static readonly IEnumerable<Os> OperatingSystems =
         ParserExtensions.LoadRegexes<Os>(ResourceName, RegexPatternType.UserAgent);
 
     private static readonly FrozenDictionary<OsCode, string> OsCodeMapping =
@@ -621,13 +621,13 @@ public sealed class OsParser : IOsParser
         Match? match = null;
         Os? os = null;
 
-        foreach (var osRegex in OsRegexes)
+        foreach (var osPattern in OperatingSystems)
         {
-            match = osRegex.Regex.Match(userAgent);
+            match = osPattern.Regex.Match(userAgent);
 
             if (match.Success)
             {
-                os = osRegex;
+                os = osPattern;
                 break;
             }
         }

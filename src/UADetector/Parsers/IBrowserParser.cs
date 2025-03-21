@@ -1,4 +1,4 @@
-using UADetector.Results.Client;
+using UADetector.Results;
 
 namespace UADetector.Parsers;
 

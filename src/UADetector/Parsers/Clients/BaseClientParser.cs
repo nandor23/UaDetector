@@ -1,27 +1,54 @@
 using System.Diagnostics.CodeAnalysis;
+using System.Text.RegularExpressions;
 
-using UADetector.Regexes.Models.Clients;
-using UADetector.Results.Client;
+using UADetector.Models.Enums;
+using UADetector.Regexes.Models;
+using UADetector.Results;
 
 namespace UADetector.Parsers.Clients;
 
-internal abstract class BaseClientParser<T> where T : IClient
+internal abstract class BaseClientParser
 {
+    private readonly VersionTruncation _versionTruncation;
+
+
+    protected BaseClientParser(VersionTruncation versionTruncation)
+    {
+        _versionTruncation = versionTruncation;
+    }
+
     public abstract bool TryParse(
         string userAgent,
-        ClientHints? clientHints,
-        [NotNullWhen(true)] out IClientInfo? result
+        [NotNullWhen(true)] out ClientInfo? result
     );
 
     protected bool TryParse(
         string userAgent,
-        IEnumerable<T> clients,
-        [NotNullWhen(true)] out IClientInfo? result
+        IEnumerable<Client> clients,
+        Regex overallRegex,
+        [NotNullWhen(true)] out ClientInfo? result
     )
     {
+        if (overallRegex.IsMatch(userAgent))
+        {
+            foreach (var client in clients)
+            {
+                var match = client.Regex.Match(userAgent);
+
+                if (match.Success)
+                {
+                    result = new ClientInfo
+                    {
+                        Name = ParserExtensions.FormatWithMatch(client.Name, match),
+                        Version = ParserExtensions.BuildVersion(client.Version, match, _versionTruncation)
+                    };
+
+                    return true;
+                }
+            }
+        }
+
         result = null;
-
-
-        throw new NotImplementedException();
+        return false;
     }
 }

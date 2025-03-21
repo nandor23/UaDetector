@@ -80,15 +80,12 @@ internal static class ParserExtensions
         return !string.IsNullOrEmpty(result);
     }
 
-    public static IEnumerable<T> LoadRegexes<T>(
-        string resourceName,
-        RegexPatternType patternType = RegexPatternType.None
-    )
+    private static Stream GetEmbeddedResourceStream(string resourceName)
     {
         var assembly = typeof(UADetector).Assembly;
         var fullResourceName = $"{nameof(UADetector)}.{resourceName}";
 
-        using var stream = assembly.GetManifestResourceStream(fullResourceName);
+        var stream = assembly.GetManifestResourceStream(fullResourceName);
 
         if (stream is null)
         {
@@ -96,10 +93,42 @@ internal static class ParserExtensions
                 $"Embedded resource '{fullResourceName}' not found in assembly '{assembly.FullName}'.");
         }
 
+        return stream;
+    }
+
+    public static (IEnumerable<T>, Regex) LoadRegexesWithOverallRegex<T>(
+        string resourceName,
+        RegexPatternType patternType = RegexPatternType.None
+    )
+    {
+        var stream = GetEmbeddedResourceStream(resourceName);
+        using var reader = new StreamReader(stream);
+
+        var regexConverter = new YamlRegexConverter(patternType);
+
+        var deserializer = new DeserializerBuilder()
+            .WithNamingConvention(CamelCaseNamingConvention.Instance)
+            .IgnoreUnmatchedProperties()
+            .WithTypeConverter(regexConverter)
+            .Build();
+
+        var regexes = deserializer.Deserialize<IEnumerable<T>>(reader);
+        var overallRegex = regexConverter.GetOverallRegex();
+
+        return (regexes, overallRegex);
+    }
+
+    public static IEnumerable<T> LoadRegexes<T>(
+        string resourceName,
+        RegexPatternType patternType = RegexPatternType.None
+    )
+    {
+        var stream = GetEmbeddedResourceStream(resourceName);
         using var reader = new StreamReader(stream);
 
         var deserializer = new DeserializerBuilder()
             .WithNamingConvention(CamelCaseNamingConvention.Instance)
+            .IgnoreUnmatchedProperties()
             .WithTypeConverter(new YamlRegexConverter(patternType))
             .Build();
 
@@ -108,17 +137,7 @@ internal static class ParserExtensions
 
     public static FrozenDictionary<string, string> LoadHints(string resourceName)
     {
-        var assembly = typeof(UADetector).Assembly;
-        var fullResourceName = $"{nameof(UADetector)}.{resourceName}";
-
-        using var stream = assembly.GetManifestResourceStream(fullResourceName);
-
-        if (stream is null)
-        {
-            throw new InvalidOperationException(
-                $"Embedded resource '{fullResourceName}' not found in assembly '{assembly.FullName}'.");
-        }
-
+        var stream = GetEmbeddedResourceStream(resourceName);
         using var reader = new StreamReader(stream);
 
         var deserializer = new DeserializerBuilder()
