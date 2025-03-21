@@ -12,7 +12,7 @@ internal sealed class FeedReaderParser : BaseClientParser
     private const string ResourceName = "Regexes.Resources.Clients.feed_readers.yml";
     private static readonly IEnumerable<Client> FeedReaders;
     private static readonly Regex OverallRegex;
-    
+
 
     static FeedReaderParser()
     {

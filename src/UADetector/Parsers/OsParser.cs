@@ -519,7 +519,7 @@ public sealed class OsParser : IOsParser
                 result = OsPlatformTypes.X86;
             }
 
-            if (result is not null)
+            if (!string.IsNullOrEmpty(result))
             {
                 return true;
             }
@@ -557,7 +557,7 @@ public sealed class OsParser : IOsParser
         return result is not null;
     }
 
-    private static bool TryParseOsFromClientHints(ClientHints clientHints, [NotNullWhen(true)] out CommonOsInfo? result)
+    private bool TryParseOsFromClientHints(ClientHints clientHints, [NotNullWhen(true)] out CommonOsInfo? result)
     {
         if (string.IsNullOrEmpty(clientHints.Platform))
         {
@@ -610,7 +610,7 @@ public sealed class OsParser : IOsParser
         {
             Name = name,
             Code = code,
-            Version = version,
+            Version = ParserExtensions.BuildVersion(version, _versionTruncation),
         };
 
         return true;

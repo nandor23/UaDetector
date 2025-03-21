@@ -1048,7 +1048,7 @@ public class BrowserParser : IBrowserParser
 
     }
 
-    private static bool TryParseBrowserFromClientHints(
+    private bool TryParseBrowserFromClientHints(
         ClientHints clientHints,
         [NotNullWhen(true)] out ClientHintsBrowserInfo? result
     )
@@ -1082,17 +1082,22 @@ public class BrowserParser : IBrowserParser
             }
         }
 
-        if (name is null || code is null)
+        if (string.IsNullOrEmpty(name) || !code.HasValue)
         {
             result = null;
             return false;
+        }
+
+        if (!string.IsNullOrEmpty(clientHints.UaFullVersion))
+        {
+            version = clientHints.UaFullVersion;
         }
 
         result = new ClientHintsBrowserInfo
         {
             Name = name,
             Code = code.Value,
-            Version = clientHints.UaFullVersion ?? version,
+            Version = ParserExtensions.BuildVersion(version, _versionTruncation),
         };
 
         return true;
@@ -1292,7 +1297,7 @@ public class BrowserParser : IBrowserParser
 
         string? family = null;
 
-        if (code is not null)
+        if (code.HasValue)
         {
             TryMapCodeToFamily(code.Value, out family);
         }
@@ -1314,14 +1319,14 @@ public class BrowserParser : IBrowserParser
                 engine = BrowserEngines.Blink;
                 engineVersion = BuildEngineVersion(userAgent, engine);
 
-                if (code is not null)
+                if (code.HasValue)
                 {
                     family = TryMapCodeToFamily(code.Value, out family) ? family : BrowserFamilies.Chrome;
                 }
             }
         }
 
-        if (string.IsNullOrEmpty(name) || CypressOrPhantomJsRegex.IsMatch(userAgent) || code is null)
+        if (string.IsNullOrEmpty(name) || CypressOrPhantomJsRegex.IsMatch(userAgent) || !code.HasValue)
         {
             result = null;
             return false;
