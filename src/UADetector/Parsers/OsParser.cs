@@ -13,7 +13,7 @@ namespace UADetector.Parsers;
 
 public sealed class OsParser : IOsParser
 {
-    private const string ResourceName = "Regexes.Resources.oss.yml";
+    private const string ResourceName = "Regexes.Resources.operating_systems.yml";
     private readonly VersionTruncation _versionTruncation;
 
     private static readonly IEnumerable<Os> OperatingSystems =

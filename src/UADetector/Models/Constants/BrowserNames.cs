@@ -1,6 +1,6 @@
 namespace UADetector.Models.Constants;
 
-public class BrowserNames
+public static class BrowserNames
 {
     public const string Via = "Via";
     public const string PureMiniBrowser = "Pure Mini Browser";
