@@ -1358,8 +1358,9 @@ public sealed class BrowserParser : IBrowserParser
             Code = code.Value,
             Family = family,
             Version = version,
-            Engine = engine,
-            EngineVersion = engineVersion,
+            Engine = string.IsNullOrEmpty(engine) && string.IsNullOrEmpty(engineVersion)
+                ? null
+                : new EngineInfo { Name = engine, Version = engineVersion },
         };
 
         return true;
