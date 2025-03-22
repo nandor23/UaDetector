@@ -96,7 +96,7 @@ internal static class ParserExtensions
         return stream;
     }
 
-    public static (IEnumerable<T>, Regex) LoadRegexesWithOverallRegex<T>(
+    public static (IEnumerable<T>, Regex) LoadRegexesWithCombinedRegex<T>(
         string resourceName,
         RegexPatternType patternType = RegexPatternType.None
     )
@@ -113,9 +113,9 @@ internal static class ParserExtensions
             .Build();
 
         var regexes = deserializer.Deserialize<IEnumerable<T>>(reader);
-        var overallRegex = regexConverter.GetOverallRegex();
+        var combinedRegex = regexConverter.BuildCombinedRegex();
 
-        return (regexes, overallRegex);
+        return (regexes, combinedRegex);
     }
 
     public static IEnumerable<T> LoadRegexes<T>(

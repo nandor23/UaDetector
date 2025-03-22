@@ -11,13 +11,13 @@ internal sealed class FeedReaderParser : BaseClientParser
 {
     private const string ResourceName = "Regexes.Resources.Clients.feed_readers.yml";
     private static readonly IEnumerable<Client> FeedReaders;
-    private static readonly Regex OverallRegex;
+    private static readonly Regex CombinedRegex;
 
 
     static FeedReaderParser()
     {
-        (FeedReaders, OverallRegex) =
-            ParserExtensions.LoadRegexesWithOverallRegex<Client>(ResourceName, RegexPatternType.UserAgent);
+        (FeedReaders, CombinedRegex) =
+            ParserExtensions.LoadRegexesWithCombinedRegex<Client>(ResourceName, RegexPatternType.UserAgent);
     }
 
     public FeedReaderParser(VersionTruncation versionTruncation) : base(versionTruncation)
@@ -28,6 +28,6 @@ internal sealed class FeedReaderParser : BaseClientParser
 
     public override bool TryParse(string userAgent, ClientHints _, [NotNullWhen(true)] out ClientInfo? result)
     {
-        return TryParse(userAgent, FeedReaders, OverallRegex, out result);
+        return TryParse(userAgent, FeedReaders, CombinedRegex, out result);
     }
 }

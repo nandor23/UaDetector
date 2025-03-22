@@ -52,7 +52,7 @@ internal sealed class YamlRegexConverter : IYamlTypeConverter
         emitter.Emit(new Scalar(regex.ToString()));
     }
 
-    public Regex GetOverallRegex()
+    public Regex BuildCombinedRegex()
     {
         var sb = new StringBuilder();
 
