@@ -11,13 +11,13 @@ internal sealed class MobileAppParser : BaseClientParser
 {
     private const string ResourceName = "Regexes.Resources.Clients.mobile_apps.yml";
     private static readonly IEnumerable<Client> MobileApps;
-    private static readonly Regex OverallRegex;
+    private static readonly Regex CombinedRegex;
 
 
     static MobileAppParser()
     {
-        (MobileApps, OverallRegex) =
-            ParserExtensions.LoadRegexesWithOverallRegex<Client>(ResourceName, RegexPatternType.UserAgent);
+        (MobileApps, CombinedRegex) =
+            ParserExtensions.LoadRegexesWithCombinedRegex<Client>(ResourceName, RegexPatternType.UserAgent);
     }
 
     public MobileAppParser(VersionTruncation versionTruncation) : base(versionTruncation)
@@ -32,7 +32,7 @@ internal sealed class MobileAppParser : BaseClientParser
         [NotNullWhen(true)] out ClientInfo? result
     )
     {
-        if (TryParse(userAgent, MobileApps, OverallRegex, out result))
+        if (TryParse(userAgent, MobileApps, CombinedRegex, out result))
         {
             var name = result.Name;
             var version = result.Version;

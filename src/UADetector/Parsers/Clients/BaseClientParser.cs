@@ -28,11 +28,11 @@ internal abstract class BaseClientParser
     protected bool TryParse(
         string userAgent,
         IEnumerable<Client> clients,
-        Regex overallRegex,
+        Regex combinedRegex,
         [NotNullWhen(true)] out ClientInfo? result
     )
     {
-        if (overallRegex.IsMatch(userAgent))
+        if (combinedRegex.IsMatch(userAgent))
         {
             foreach (var client in clients)
             {

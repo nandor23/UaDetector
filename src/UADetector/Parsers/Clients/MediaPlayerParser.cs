@@ -11,13 +11,13 @@ internal sealed class MediaPlayerParser : BaseClientParser
 {
     private const string ResourceName = "Regexes.Resources.Clients.media_players.yml";
     private static readonly IEnumerable<Client> MediaPlayers;
-    private static readonly Regex OverallRegex;
+    private static readonly Regex CombinedRegex;
 
 
     static MediaPlayerParser()
     {
-        (MediaPlayers, OverallRegex) =
-            ParserExtensions.LoadRegexesWithOverallRegex<Client>(ResourceName, RegexPatternType.UserAgent);
+        (MediaPlayers, CombinedRegex) =
+            ParserExtensions.LoadRegexesWithCombinedRegex<Client>(ResourceName, RegexPatternType.UserAgent);
     }
 
     public MediaPlayerParser(VersionTruncation versionTruncation) : base(versionTruncation)
@@ -28,6 +28,6 @@ internal sealed class MediaPlayerParser : BaseClientParser
 
     public override bool TryParse(string userAgent, ClientHints _, [NotNullWhen(true)] out ClientInfo? result)
     {
-        return TryParse(userAgent, MediaPlayers, OverallRegex, out result);
+        return TryParse(userAgent, MediaPlayers, CombinedRegex, out result);
     }
 }

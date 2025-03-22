@@ -11,13 +11,13 @@ internal sealed class PimParser : BaseClientParser
 {
     private const string ResourceName = "Regexes.Resources.Clients.pims.yml";
     private static readonly IEnumerable<Client> PersonalInformationManagers;
-    private static readonly Regex OverallRegex;
+    private static readonly Regex CombinedRegex;
 
 
     static PimParser()
     {
-        (PersonalInformationManagers, OverallRegex) =
-            ParserExtensions.LoadRegexesWithOverallRegex<Client>(ResourceName, RegexPatternType.UserAgent);
+        (PersonalInformationManagers, CombinedRegex) =
+            ParserExtensions.LoadRegexesWithCombinedRegex<Client>(ResourceName, RegexPatternType.UserAgent);
     }
 
     public PimParser(VersionTruncation versionTruncation) : base(versionTruncation)
@@ -28,6 +28,6 @@ internal sealed class PimParser : BaseClientParser
 
     public override bool TryParse(string userAgent, ClientHints _, [NotNullWhen(true)] out ClientInfo? result)
     {
-        return TryParse(userAgent, PersonalInformationManagers, OverallRegex, out result);
+        return TryParse(userAgent, PersonalInformationManagers, CombinedRegex, out result);
     }
 }

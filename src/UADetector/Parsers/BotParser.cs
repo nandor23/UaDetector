@@ -11,23 +11,23 @@ public class BotParser : IBotParser
 {
     private const string ResourceName = "Regexes.Resources.bots.yml";
     private static readonly IEnumerable<Bot> Bots;
-    private static readonly Regex OverallRegex;
+    private static readonly Regex CombinedRegex;
 
 
     static BotParser()
     {
-        (Bots, OverallRegex) =
-            ParserExtensions.LoadRegexesWithOverallRegex<Bot>(ResourceName, RegexPatternType.UserAgent);
+        (Bots, CombinedRegex) =
+            ParserExtensions.LoadRegexesWithCombinedRegex<Bot>(ResourceName, RegexPatternType.UserAgent);
     }
 
     public bool IsBot(string userAgent)
     {
-        return OverallRegex.IsMatch(userAgent);
+        return CombinedRegex.IsMatch(userAgent);
     }
 
     public bool TryParse(string userAgent, [NotNullWhen(true)] out BotInfo? result)
     {
-        if (OverallRegex.IsMatch(userAgent))
+        if (CombinedRegex.IsMatch(userAgent))
         {
             foreach (var bot in Bots)
             {
