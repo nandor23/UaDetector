@@ -239,9 +239,4 @@ internal static class ParserExtensions
         result = 0;
         return true;
     }
-
-    public static string NormalizeVersion(string version, string[] matches)
-    {
-        throw new NotImplementedException();
-    }
 }

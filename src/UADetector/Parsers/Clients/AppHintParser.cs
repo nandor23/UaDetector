@@ -1,11 +1,11 @@
 using System.Collections.Frozen;
 using System.Diagnostics.CodeAnalysis;
 
-namespace UADetector.Parsers.Browsers;
+namespace UADetector.Parsers.Clients;
 
-internal static class BrowserHintParser
+internal static class AppHintParser
 {
-    private const string ResourceName = "Regexes.Resources.Browsers.browser_hints.yml";
+    private const string ResourceName = "Regexes.Resources.Clients.app_hints.yml";
     private static readonly FrozenDictionary<string, string> Hints = ParserExtensions.LoadHints(ResourceName);
 
     public static bool TryParseAppName(ClientHints clientHints, [NotNullWhen(true)] out string? result)

@@ -1,14 +1,25 @@
 using System.Diagnostics.CodeAnalysis;
 
+using UADetector.Models.Enums;
+using UADetector.Parsers.Clients;
 using UADetector.Results;
 
 namespace UADetector.Parsers;
 
-public class ClientParser : IClientParser
+public sealed class ClientParser : IClientParser
 {
-    public ClientParser(ParserOptions? parserOptions = null)
+    private readonly IEnumerable<BaseClientParser> _parsers;
+
+
+    public ClientParser(VersionTruncation versionTruncation = VersionTruncation.Minor)
     {
-        var options = parserOptions ?? new ParserOptions();
+        _parsers = [
+            new MobileAppParser(versionTruncation),
+            new MediaPlayerParser(versionTruncation),
+            new LibraryParser(versionTruncation),
+            new FeedReaderParser(versionTruncation),
+            new PimParser(versionTruncation)
+        ];
     }
 
     public bool TryParse(string userAgent, [NotNullWhen(true)] out ClientInfo? result)

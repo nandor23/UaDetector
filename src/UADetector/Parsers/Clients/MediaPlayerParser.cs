@@ -7,27 +7,27 @@ using UADetector.Results;
 
 namespace UADetector.Parsers.Clients;
 
-internal sealed class FeedReaderParser : BaseClientParser
+internal sealed class MediaPlayerParser : BaseClientParser
 {
-    private const string ResourceName = "Regexes.Resources.Clients.feed_readers.yml";
-    private static readonly IEnumerable<Client> FeedReaders;
+    private const string ResourceName = "Regexes.Resources.Clients.media_players.yml";
+    private static readonly IEnumerable<Client> MediaPlayers;
     private static readonly Regex OverallRegex;
 
 
-    static FeedReaderParser()
+    static MediaPlayerParser()
     {
-        (FeedReaders, OverallRegex) =
+        (MediaPlayers, OverallRegex) =
             ParserExtensions.LoadRegexesWithOverallRegex<Client>(ResourceName, RegexPatternType.UserAgent);
     }
 
-    public FeedReaderParser(VersionTruncation versionTruncation) : base(versionTruncation)
+    public MediaPlayerParser(VersionTruncation versionTruncation) : base(versionTruncation)
     {
     }
 
-    protected override ClientType Type => ClientType.FeedReader;
+    protected override ClientType Type => ClientType.MediaPlayer;
 
     public override bool TryParse(string userAgent, ClientHints? _, [NotNullWhen(true)] out ClientInfo? result)
     {
-        return TryParse(userAgent, FeedReaders, OverallRegex, out result);
+        return TryParse(userAgent, MediaPlayers, OverallRegex, out result);
     }
 }

@@ -12,7 +12,7 @@ using UADetector.Utils;
 
 namespace UADetector.Parsers;
 
-public class BrowserParser : IBrowserParser
+public sealed class BrowserParser : IBrowserParser
 {
     private const string ResourceName = "Regexes.Resources.Browsers.browsers.yml";
     private readonly VersionTruncation _versionTruncation;
@@ -1300,11 +1300,9 @@ public class BrowserParser : IBrowserParser
         if (code.HasValue)
         {
             TryMapCodeToFamily(code.Value, out family);
-        }
+        };
 
-        BrowserHintParser.TryParse(clientHints, out string? appName);
-
-        if (!string.IsNullOrEmpty(appName) && name != appName)
+        if (BrowserHintParser.TryParseAppName(clientHints, out var appName) && name != appName)
         {
             name = appName;
             version = null;

@@ -11,6 +11,8 @@ internal abstract class BaseClientParser
 {
     private readonly VersionTruncation _versionTruncation;
 
+    protected abstract ClientType Type { get; }
+
 
     protected BaseClientParser(VersionTruncation versionTruncation)
     {
@@ -19,6 +21,7 @@ internal abstract class BaseClientParser
 
     public abstract bool TryParse(
         string userAgent,
+        ClientHints? clientHints,
         [NotNullWhen(true)] out ClientInfo? result
     );
 
@@ -39,6 +42,7 @@ internal abstract class BaseClientParser
                 {
                     result = new ClientInfo
                     {
+                        Type = Type,
                         Name = ParserExtensions.FormatWithMatch(client.Name, match),
                         Version = ParserExtensions.BuildVersion(client.Version, match, _versionTruncation)
                     };
