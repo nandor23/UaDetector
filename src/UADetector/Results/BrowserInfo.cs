@@ -1,6 +1,6 @@
 using UADetector.Models.Enums;
 
-namespace UADetector.Results.Client;
+namespace UADetector.Results;
 
 public sealed class BrowserInfo
 {

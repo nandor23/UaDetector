@@ -7,17 +7,17 @@ using UADetector.Models.Constants;
 using UADetector.Models.Enums;
 using UADetector.Parsers.Browsers;
 using UADetector.Regexes.Models.Browsers;
-using UADetector.Results.Client;
+using UADetector.Results;
 using UADetector.Utils;
 
 namespace UADetector.Parsers;
 
-public class BrowserParser : IBrowserParser
+public sealed class BrowserParser : IBrowserParser
 {
-    private readonly VersionTruncation _versionTruncation;
     private const string ResourceName = "Regexes.Resources.Browsers.browsers.yml";
+    private readonly VersionTruncation _versionTruncation;
 
-    private static readonly IEnumerable<Browser> BrowserRegexes =
+    private static readonly IEnumerable<Browser> Browsers =
         ParserExtensions.LoadRegexes<Browser>(ResourceName);
 
     private static readonly FrozenDictionary<BrowserCode, string> BrowserCodeMapping =
@@ -1048,7 +1048,7 @@ public class BrowserParser : IBrowserParser
 
     }
 
-    private static bool TryParseBrowserFromClientHints(
+    private bool TryParseBrowserFromClientHints(
         ClientHints clientHints,
         [NotNullWhen(true)] out ClientHintsBrowserInfo? result
     )
@@ -1082,17 +1082,22 @@ public class BrowserParser : IBrowserParser
             }
         }
 
-        if (name is null || code is null)
+        if (string.IsNullOrEmpty(name) || !code.HasValue)
         {
             result = null;
             return false;
+        }
+
+        if (!string.IsNullOrEmpty(clientHints.UaFullVersion))
+        {
+            version = clientHints.UaFullVersion;
         }
 
         result = new ClientHintsBrowserInfo
         {
             Name = name,
             Code = code.Value,
-            Version = clientHints.UaFullVersion ?? version,
+            Version = ParserExtensions.BuildVersion(version, _versionTruncation),
         };
 
         return true;
@@ -1106,13 +1111,13 @@ public class BrowserParser : IBrowserParser
         Match? match = null;
         Browser? browser = null;
 
-        foreach (var browserRegex in BrowserRegexes)
+        foreach (var browserPattern in Browsers)
         {
-            match = browserRegex.Regex.Match(userAgent);
+            match = browserPattern.Regex.Match(userAgent);
 
             if (match.Success)
             {
-                browser = browserRegex;
+                browser = browserPattern;
                 break;
             }
         }
@@ -1146,6 +1151,17 @@ public class BrowserParser : IBrowserParser
         }
 
         return result is not null;
+    }
+
+    /// <summary>
+    /// Checks if the first version is a truncated form of the second version and still considered equal.
+    /// For example, version "1.2" would be considered equal to "1.2.0" or "1.2.0.0".
+    /// </summary>
+    private static bool IsSameTruncatedVersion(string shortVersion, string fullVersion)
+    {
+        return shortVersion.Length < fullVersion.Length &&
+               ParserExtensions.TryCompareVersions(shortVersion, fullVersion, out var comparisonResult) &&
+               comparisonResult == 0;
     }
 
     public bool TryParse(string userAgent, [NotNullWhen(true)] out BrowserInfo? result)
@@ -1206,7 +1222,9 @@ public class BrowserParser : IBrowserParser
                     engineVersion = browserFromUserAgent.EngineVersion;
                 }
 
-                if (!string.IsNullOrEmpty(browserFromUserAgent.Version) && PriorityBrowsers.Contains(code.Value))
+                if (!string.IsNullOrEmpty(browserFromUserAgent.Version) &&
+                    (PriorityBrowsers.Contains(code.Value) ||
+                     IsSameTruncatedVersion(version, browserFromUserAgent.Version)))
                 {
                     version = browserFromUserAgent.Version;
                 }
@@ -1279,14 +1297,12 @@ public class BrowserParser : IBrowserParser
 
         string? family = null;
 
-        if (code is not null)
+        if (code.HasValue)
         {
             TryMapCodeToFamily(code.Value, out family);
-        }
+        };
 
-        BrowserHintParser.TryParse(clientHints, out string? appName);
-
-        if (!string.IsNullOrEmpty(appName) && name != appName)
+        if (BrowserHintParser.TryParseAppName(clientHints, out var appName) && name != appName)
         {
             name = appName;
             version = null;
@@ -1301,14 +1317,14 @@ public class BrowserParser : IBrowserParser
                 engine = BrowserEngines.Blink;
                 engineVersion = BuildEngineVersion(userAgent, engine);
 
-                if (code is not null)
+                if (code.HasValue)
                 {
                     family = TryMapCodeToFamily(code.Value, out family) ? family : BrowserFamilies.Chrome;
                 }
             }
         }
 
-        if (string.IsNullOrEmpty(name) || CypressOrPhantomJsRegex.IsMatch(userAgent) || code is null)
+        if (string.IsNullOrEmpty(name) || CypressOrPhantomJsRegex.IsMatch(userAgent) || !code.HasValue)
         {
             result = null;
             return false;

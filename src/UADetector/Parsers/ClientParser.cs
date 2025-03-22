@@ -1,23 +1,54 @@
+using System.Collections.Immutable;
 using System.Diagnostics.CodeAnalysis;
 
-using UADetector.Results.Client;
+using UADetector.Models.Enums;
+using UADetector.Parsers.Clients;
+using UADetector.Results;
 
 namespace UADetector.Parsers;
 
-public class ClientParser : IClientParser
+public sealed class ClientParser : IClientParser
 {
-    public ClientParser(ParserOptions? parserOptions = null)
+    private readonly IEnumerable<BaseClientParser> _clientParsers;
+
+
+    public ClientParser(VersionTruncation versionTruncation = VersionTruncation.Minor)
     {
-        var options = parserOptions ?? new ParserOptions();
+        _clientParsers = [
+            new MobileAppParser(versionTruncation),
+            new MediaPlayerParser(versionTruncation),
+            new LibraryParser(versionTruncation),
+            new FeedReaderParser(versionTruncation),
+            new PimParser(versionTruncation)
+        ];
     }
 
-    public bool TryParse(string userAgent, [NotNullWhen(true)] out IClientInfo? result)
+    public bool TryParse(string userAgent, [NotNullWhen(true)] out ClientInfo? result)
     {
-        throw new NotImplementedException();
+        return TryParse(userAgent, ImmutableDictionary<string, string?>.Empty, out result);
     }
 
-    public bool TryParse(string userAgent, IDictionary<string, string?> headers, [NotNullWhen(true)] out IClientInfo? result)
+    public bool TryParse(
+        string userAgent,
+        IDictionary<string, string?> headers,
+        [NotNullWhen(true)] out ClientInfo? result
+    )
     {
-        throw new NotImplementedException();
+        var clientHints = ClientHints.Create(headers);
+        return TryParse(userAgent, clientHints, out result);
+    }
+
+    internal bool TryParse(string userAgent, ClientHints clientHints, [NotNullWhen(true)] out ClientInfo? result)
+    {
+        foreach (var parser in _clientParsers)
+        {
+            if (parser.TryParse(userAgent, clientHints, out result))
+            {
+                return true;
+            }
+        }
+
+        result = null;
+        return false;
     }
 }

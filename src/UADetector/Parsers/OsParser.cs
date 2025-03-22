@@ -13,10 +13,10 @@ namespace UADetector.Parsers;
 
 public sealed class OsParser : IOsParser
 {
-    private readonly VersionTruncation _versionTruncation;
     private const string ResourceName = "Regexes.Resources.oss.yml";
+    private readonly VersionTruncation _versionTruncation;
 
-    private static readonly IEnumerable<Os> OsRegexes =
+    private static readonly IEnumerable<Os> OperatingSystems =
         ParserExtensions.LoadRegexes<Os>(ResourceName, RegexPatternType.UserAgent);
 
     private static readonly FrozenDictionary<OsCode, string> OsCodeMapping =
@@ -482,11 +482,11 @@ public sealed class OsParser : IOsParser
         return result is not null;
     }
 
-    private static bool TryParsePlatform(string userAgent, ClientHints? clientHints, [NotNullWhen(true)] out string? result)
+    private static bool TryParsePlatform(string userAgent, ClientHints clientHints, [NotNullWhen(true)] out string? result)
     {
         result = null;
 
-        if (clientHints is not null && !string.IsNullOrEmpty(clientHints.Architecture))
+        if (!string.IsNullOrEmpty(clientHints.Architecture))
         {
             var architecture = clientHints.Architecture.ToLower();
 
@@ -519,7 +519,7 @@ public sealed class OsParser : IOsParser
                 result = OsPlatformTypes.X86;
             }
 
-            if (result is not null)
+            if (!string.IsNullOrEmpty(result))
             {
                 return true;
             }
@@ -557,7 +557,7 @@ public sealed class OsParser : IOsParser
         return result is not null;
     }
 
-    private static bool TryParseOsFromClientHints(ClientHints clientHints, [NotNullWhen(true)] out CommonOsInfo? result)
+    private bool TryParseOsFromClientHints(ClientHints clientHints, [NotNullWhen(true)] out CommonOsInfo? result)
     {
         if (string.IsNullOrEmpty(clientHints.Platform))
         {
@@ -610,7 +610,7 @@ public sealed class OsParser : IOsParser
         {
             Name = name,
             Code = code,
-            Version = version,
+            Version = ParserExtensions.BuildVersion(version, _versionTruncation),
         };
 
         return true;
@@ -621,13 +621,13 @@ public sealed class OsParser : IOsParser
         Match? match = null;
         Os? os = null;
 
-        foreach (var osRegex in OsRegexes)
+        foreach (var osPattern in OperatingSystems)
         {
-            match = osRegex.Regex.Match(userAgent);
+            match = osPattern.Regex.Match(userAgent);
 
             if (match.Success)
             {
-                os = osRegex;
+                os = osPattern;
                 break;
             }
         }
