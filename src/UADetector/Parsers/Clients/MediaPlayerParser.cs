@@ -26,7 +26,7 @@ internal sealed class MediaPlayerParser : BaseClientParser
 
     protected override ClientType Type => ClientType.MediaPlayer;
 
-    public override bool TryParse(string userAgent, ClientHints? _, [NotNullWhen(true)] out ClientInfo? result)
+    public override bool TryParse(string userAgent, ClientHints _, [NotNullWhen(true)] out ClientInfo? result)
     {
         return TryParse(userAgent, MediaPlayers, OverallRegex, out result);
     }

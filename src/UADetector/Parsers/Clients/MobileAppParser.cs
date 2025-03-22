@@ -28,7 +28,7 @@ internal sealed class MobileAppParser : BaseClientParser
 
     public override bool TryParse(
         string userAgent,
-        ClientHints? clientHints,
+        ClientHints clientHints,
         [NotNullWhen(true)] out ClientInfo? result
     )
     {
@@ -37,13 +37,10 @@ internal sealed class MobileAppParser : BaseClientParser
             var name = result.Name;
             var version = result.Version;
 
-            if (clientHints is not null)
+            if (AppHintParser.TryParseAppName(clientHints, out var appName) && appName != name)
             {
-                if (AppHintParser.TryParseAppName(clientHints, out var appName) && appName != name)
-                {
-                    name = appName;
-                    version = null;
-                }
+                name = appName;
+                version = null;
             }
 
             result = new ClientInfo { Type = result.Type, Name = name, Version = version, };

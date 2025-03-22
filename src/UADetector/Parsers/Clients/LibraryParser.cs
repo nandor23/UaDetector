@@ -26,7 +26,7 @@ internal sealed class LibraryParser : BaseClientParser
 
     protected override ClientType Type => ClientType.Library;
 
-    public override bool TryParse(string userAgent, ClientHints? _, [NotNullWhen(true)] out ClientInfo? result)
+    public override bool TryParse(string userAgent, ClientHints _, [NotNullWhen(true)] out ClientInfo? result)
     {
         return TryParse(userAgent, Libraries, OverallRegex, out result);
     }

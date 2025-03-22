@@ -21,7 +21,7 @@ internal abstract class BaseClientParser
 
     public abstract bool TryParse(
         string userAgent,
-        ClientHints? clientHints,
+        ClientHints clientHints,
         [NotNullWhen(true)] out ClientInfo? result
     );
 

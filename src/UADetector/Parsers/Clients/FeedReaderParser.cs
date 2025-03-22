@@ -26,7 +26,7 @@ internal sealed class FeedReaderParser : BaseClientParser
 
     protected override ClientType Type => ClientType.FeedReader;
 
-    public override bool TryParse(string userAgent, ClientHints? _, [NotNullWhen(true)] out ClientInfo? result)
+    public override bool TryParse(string userAgent, ClientHints _, [NotNullWhen(true)] out ClientInfo? result)
     {
         return TryParse(userAgent, FeedReaders, OverallRegex, out result);
     }
