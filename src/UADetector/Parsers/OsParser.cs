@@ -482,11 +482,11 @@ public sealed class OsParser : IOsParser
         return result is not null;
     }
 
-    private static bool TryParsePlatform(string userAgent, ClientHints? clientHints, [NotNullWhen(true)] out string? result)
+    private static bool TryParsePlatform(string userAgent, ClientHints clientHints, [NotNullWhen(true)] out string? result)
     {
         result = null;
 
-        if (clientHints is not null && !string.IsNullOrEmpty(clientHints.Architecture))
+        if (!string.IsNullOrEmpty(clientHints.Architecture))
         {
             var architecture = clientHints.Architecture.ToLower();
 
