@@ -1,6 +1,6 @@
 namespace UADetector.Models.Constants;
 
-public static class DeviceBrands
+public static class BrandNames
 {
     public const string TwoE = "2E";
     public const string FiveIve = "5IVE";
