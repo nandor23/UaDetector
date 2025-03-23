@@ -25,7 +25,7 @@ public enum BrowserCode
     EasyBrowser = 20,
     DarkWebBrowser = 21,
     DarkBrowser = 22,
-    PrivacyBrowser18 = 23,
+    PrivacyBrowser18Plus = 23,
     Browser115 = 24,
     Browser1Dm = 25,
     Browser1DmPlus = 26,

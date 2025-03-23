@@ -25,7 +25,7 @@ public static class BrowserNames
     public const string EasyBrowser = "Easy Browser";
     public const string DarkWebBrowser = "Dark Web Browser";
     public const string DarkBrowser = "Dark Browser";
-    public const string PrivacyBrowser18 = "18+ Privacy Browser";
+    public const string PrivacyBrowser18Plus = "18+ Privacy Browser";
     public const string Browser115 = "115 Browser";
     public const string Browser1Dm = "1DM Browser";
     public const string Browser1DmPlus = "1DM+ Browser";
