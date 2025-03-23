@@ -32,7 +32,7 @@ public sealed class OsParser : IOsParser
             { OsCode.Aros, OsNames.Aros },
             { OsCode.TvOs, OsNames.TvOs },
             { OsCode.ArchLinux, OsNames.ArchLinux },
-            { OsCode.AosCos, OsNames.AosCos },
+            { OsCode.AoscOs, OsNames.AoscOs },
             { OsCode.AspLinux, OsNames.AspLinux },
             { OsCode.AzureLinux, OsNames.AzureLinux },
             { OsCode.BackTrack, OsNames.BackTrack },
@@ -90,7 +90,7 @@ public sealed class OsParser : IOsParser
             { OsCode.KaiOs, OsNames.KaiOs },
             { OsCode.Kali, OsNames.Kali },
             { OsCode.Kanotix, OsNames.Kanotix },
-            { OsCode.Kinos, OsNames.Kinos },
+            { OsCode.KinOs, OsNames.KinOs },
             { OsCode.Knoppix, OsNames.Knoppix },
             { OsCode.KreaTv, OsNames.KreaTv },
             { OsCode.Kubuntu, OsNames.Kubuntu },
@@ -120,7 +120,7 @@ public sealed class OsParser : IOsParser
             { OsCode.NetBsd, OsNames.NetBsd },
             { OsCode.MtkNucleus, OsNames.MtkNucleus },
             { OsCode.Mre, OsNames.Mre },
-            { OsCode.NeXtStep, OsNames.NeXtStep },
+            { OsCode.NextStep, OsNames.NextStep },
             { OsCode.NewsOs, OsNames.NewsOs },
             { OsCode.Nintendo, OsNames.Nintendo },
             { OsCode.NintendoMobile, OsNames.NintendoMobile },
@@ -160,7 +160,7 @@ public sealed class OsParser : IOsParser
             { OsCode.ResurrectionRemixOs, OsNames.ResurrectionRemixOs },
             { OsCode.Rex, OsNames.Rex },
             { OsCode.RazoDroid, OsNames.RazoDroid },
-            { OsCode.RtosNext, OsNames.RtosNext },
+            { OsCode.RtosAndNext, OsNames.RtosAndNext },
             { OsCode.Sabayon, OsNames.Sabayon },
             { OsCode.Suse, OsNames.Suse },
             { OsCode.SailfishOs, OsNames.SailfishOs },
@@ -186,7 +186,7 @@ public sealed class OsParser : IOsParser
             { OsCode.Ubuntu, OsNames.Ubuntu },
             { OsCode.Ultrix, OsNames.Ultrix },
             { OsCode.Uos, OsNames.Uos },
-            { OsCode.Vidae, OsNames.Vidae },
+            { OsCode.Vidaa, OsNames.Vidaa },
             { OsCode.ViziOs, OsNames.ViziOs },
             { OsCode.WatchOs, OsNames.WatchOs },
             { OsCode.WearOs, OsNames.WearOs },
@@ -256,8 +256,8 @@ public sealed class OsParser : IOsParser
                     OsCode.ForesightLinux, OsCode.MoonOs, OsCode.Kanotix, OsCode.Zenwalk, OsCode.LindowsOs,
                     OsCode.Linspire, OsCode.ChinaOs, OsCode.AmazonLinux, OsCode.TencentOs, OsCode.CentOsStream,
                     OsCode.Nova, OsCode.RouterOs, OsCode.ZorinOs, OsCode.RedOs, OsCode.Kali, OsCode.OracleLinux,
-                    OsCode.Vidae, OsCode.TiVoOs, OsCode.BrightSignOs, OsCode.Raspbian, OsCode.Uos, OsCode.RaspberryPiOs,
-                    OsCode.FritzOs, OsCode.LiriOs, OsCode.Webian, OsCode.SerenityOs, OsCode.AspLinux, OsCode.AosCos,
+                    OsCode.Vidaa, OsCode.TiVoOs, OsCode.BrightSignOs, OsCode.Raspbian, OsCode.Uos, OsCode.RaspberryPiOs,
+                    OsCode.FritzOs, OsCode.LiriOs, OsCode.Webian, OsCode.SerenityOs, OsCode.AspLinux, OsCode.AoscOs,
                     OsCode.Loongnix, OsCode.EulerOs, OsCode.ScientificLinux, OsCode.AlpineLinux, OsCode.ClearLinuxOs,
                     OsCode.RockyLinux, OsCode.OpenVz, OsCode.ProxmoxVe, OsCode.RedStar, OsCode.MotorolaEzx,
                     OsCode.GNewSense, OsCode.JoliOs, OsCode.Turbolinux, OsCode.Qtopia, OsCode.WoPhone,
@@ -273,7 +273,7 @@ public sealed class OsParser : IOsParser
             {
                 OsFamilies.RealtimeOs, new[]
                     {
-                        OsCode.MtkNucleus, OsCode.ThreadX, OsCode.Mre, OsCode.JavaMe, OsCode.Rex, OsCode.RtosNext
+                        OsCode.MtkNucleus, OsCode.ThreadX, OsCode.Mre, OsCode.JavaMe, OsCode.Rex, OsCode.RtosAndNext
                     }
                     .ToFrozenSet()
             },
@@ -299,7 +299,7 @@ public sealed class OsParser : IOsParser
                 {
                     OsCode.Solaris, OsCode.Aix, OsCode.HpUx, OsCode.FreeBsd, OsCode.NetBsd, OsCode.OpenBsd,
                     OsCode.DragonFly, OsCode.Syllable, OsCode.Irix, OsCode.Osf1, OsCode.Inferno, OsCode.ElectroBsd,
-                    OsCode.Genix, OsCode.Ultrix, OsCode.NewsOs, OsCode.NeXtStep, OsCode.StarBladeOs
+                    OsCode.Genix, OsCode.Ultrix, OsCode.NewsOs, OsCode.NextStep, OsCode.StarBladeOs
                 }.ToFrozenSet()
             },
             { OsFamilies.WebTv, new[] { OsCode.WebTv }.ToFrozenSet() },
@@ -309,7 +309,7 @@ public sealed class OsParser : IOsParser
                 new[]
                 {
                     OsCode.WindowsPhone, OsCode.WindowsMobile, OsCode.WindowsCe, OsCode.WindowsRt, OsCode.WindowsIoT,
-                    OsCode.Kinos
+                    OsCode.KinOs
                 }.ToFrozenSet()
             },
             { OsFamilies.OtherSmartTv, new[] { OsCode.WhaleOs }.ToFrozenSet() }
