@@ -121,7 +121,7 @@ public static class BrowserNames
     public const string Catalyst = "Catalyst";
     public const string Catsxp = "Catsxp";
     public const string CaveBrowser = "Cave Browser";
-    public const string Ccleaner = "CCleaner";
+    public const string CCleaner = "CCleaner";
     public const string CgBrowser = "CG Browser";
     public const string ChanjetCloud = "ChanjetCloud";
     public const string Chedot = "Chedot";
@@ -165,8 +165,8 @@ public static class BrowserNames
     public const string Cunaguaro = "Cunaguaro";
     public const string ChromeWebview = "Chrome Webview";
     public const string CyBrowser = "CyBrowser";
-    public const string Dbrowser = "dbrowser";
-    public const string PeepsDbrowser = "Peeps dBrowser";
+    public const string DBrowser = "dbrowser";
+    public const string PeepsDBrowser = "Peeps dBrowser";
     public const string DarkWeb = "Dark Web";
     public const string DarkWebPrivate = "Dark Web Private";
     public const string DebuggableBrowser = "Debuggable Browser";
@@ -388,7 +388,7 @@ public static class BrowserNames
     public const string NokiaOviBrowser = "Nokia Ovi Browser";
     public const string NortonPrivateBrowser = "Norton Private Browser";
     public const string NoxBrowser = "Nox Browser";
-    public const string NomoneVrBrowser = "NOMone VR Browser";
+    public const string NomOneVrBrowser = "NOMone VR Browser";
     public const string NookBrowser = "NOOK Browser";
     public const string NetSurf = "NetSurf";
     public const string NetFront = "NetFront";
@@ -553,7 +553,7 @@ public static class BrowserNames
     public const string StampyBrowser = "Stampy Browser";
     public const string SevenStar = "7Star";
     public const string SmartBrowser = "Smart Browser";
-    public const string SmartSearchWebBrowser = "Smart Search & Web Browser";
+    public const string SmartSearchAndWebBrowser = "Smart Search & Web Browser";
     public const string SmartLenovoBrowser = "Smart Lenovo Browser";
     public const string Smooz = "Smooz";
     public const string Snowshoe = "Snowshoe";
@@ -628,13 +628,13 @@ public static class BrowserNames
     public const string VividBrowserMini = "Vivid Browser Mini";
     public const string VisionMobileBrowser = "Vision Mobile Browser";
     public const string VertexSurf = "Vertex Surf";
-    public const string VmwareAirWatch = "VMware AirWatch";
+    public const string VMwareAirWatch = "VMware AirWatch";
     public const string VmsMosaic = "VMS Mosaic";
     public const string Vonkeror = "Vonkeror";
     public const string Vuhuv = "Vuhuv";
     public const string WearInternetBrowser = "Wear Internet Browser";
     public const string WebExplorer = "Web Explorer";
-    public const string WebBrowserExplorer = "Web Browser & Explorer";
+    public const string WebBrowserAndExplorer = "Web Browser & Explorer";
     public const string WebianShell = "Webian Shell";
     public const string WebDiscover = "WebDiscover";
     public const string WebPositive = "WebPositive";
@@ -645,8 +645,8 @@ public static class BrowserNames
     public const string Wavebox = "Wavebox";
     public const string WhaleBrowser = "Whale Browser";
     public const string WhaleTvBrowser = "Whale TV Browser";
-    public const string WosBrowser = "wOSBrowser";
-    public const string W3m = "w3m";
+    public const string WOsBrowser = "wOSBrowser";
+    public const string W3M = "w3m";
     public const string WeTabBrowser = "WeTab Browser";
     public const string WorldBrowser = "World Browser";
     public const string Wolvic = "Wolvic";
