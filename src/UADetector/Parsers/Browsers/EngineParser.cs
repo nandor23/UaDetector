@@ -3,7 +3,6 @@ using System.Diagnostics.CodeAnalysis;
 using System.Text.RegularExpressions;
 
 using UADetector.Models.Constants;
-using UADetector.Models.Enums;
 using UADetector.Regexes.Models.Browsers;
 
 namespace UADetector.Parsers.Browsers;
@@ -12,10 +11,10 @@ internal static class EngineParser
 {
     private const string ResourceName = "Regexes.Resources.Browsers.browser_engines.yml";
 
-    private static readonly IEnumerable<BrowserEngine> EngineRegexes =
-        ParserExtensions.LoadRegexes<BrowserEngine>(ResourceName, RegexPatternType.UserAgent);
+    private static readonly IEnumerable<BrowserEngine> Engines =
+        ParserExtensions.LoadRegexes<BrowserEngine>(ResourceName);
 
-    private static readonly FrozenSet<string> Engines = new[]
+    private static readonly FrozenSet<string> EngineNames = new[]
     {
         BrowserEngines.WebKit, BrowserEngines.Blink, BrowserEngines.Trident, BrowserEngines.TextBased,
         BrowserEngines.Dillo, BrowserEngines.Icab, BrowserEngines.Elektra, BrowserEngines.Presto,
@@ -29,13 +28,13 @@ internal static class EngineParser
         Match? match = null;
         BrowserEngine? engine = null;
 
-        foreach (var engineRegex in EngineRegexes)
+        foreach (var enginePattern in Engines)
         {
-            match = engineRegex.Regex.Match(userAgent);
+            match = enginePattern.Regex.Match(userAgent);
 
             if (match.Success)
             {
-                engine = engineRegex;
+                engine = enginePattern;
                 break;
             }
         }
@@ -48,6 +47,6 @@ internal static class EngineParser
 
         var name = ParserExtensions.FormatWithMatch(engine.Name, match);
 
-        return Engines.TryGetValue(name, out result);
+        return EngineNames.TryGetValue(name, out result);
     }
 }

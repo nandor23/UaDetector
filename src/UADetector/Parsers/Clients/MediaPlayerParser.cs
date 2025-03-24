@@ -17,7 +17,7 @@ internal sealed class MediaPlayerParser : BaseClientParser
     static MediaPlayerParser()
     {
         (MediaPlayers, CombinedRegex) =
-            ParserExtensions.LoadRegexesWithCombinedRegex<Client>(ResourceName, RegexPatternType.UserAgent);
+            ParserExtensions.LoadRegexesWithCombinedRegex<Client>(ResourceName);
     }
 
     public MediaPlayerParser(VersionTruncation versionTruncation) : base(versionTruncation)

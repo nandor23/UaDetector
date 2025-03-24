@@ -16,8 +16,7 @@ public sealed class OsParser : IOsParser
     private const string ResourceName = "Regexes.Resources.operating_systems.yml";
     private readonly VersionTruncation _versionTruncation;
 
-    private static readonly IEnumerable<Os> OperatingSystems =
-        ParserExtensions.LoadRegexes<Os>(ResourceName, RegexPatternType.UserAgent);
+    private static readonly IEnumerable<Os> OperatingSystems = ParserExtensions.LoadRegexes<Os>(ResourceName);
 
     private static readonly FrozenDictionary<OsCode, string> OsCodeMapping =
         new Dictionary<OsCode, string>

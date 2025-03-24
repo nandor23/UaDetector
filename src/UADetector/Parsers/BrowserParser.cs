@@ -17,8 +17,7 @@ public sealed class BrowserParser : IBrowserParser
     private const string ResourceName = "Regexes.Resources.Browsers.browsers.yml";
     private readonly VersionTruncation _versionTruncation;
 
-    private static readonly IEnumerable<Browser> Browsers =
-        ParserExtensions.LoadRegexes<Browser>(ResourceName);
+    private static readonly IEnumerable<Browser> Browsers = ParserExtensions.LoadRegexes<Browser>(ResourceName);
 
     private static readonly FrozenDictionary<BrowserCode, string> BrowserCodeMapping =
         new Dictionary<BrowserCode, string>

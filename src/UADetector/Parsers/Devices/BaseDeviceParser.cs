@@ -2053,7 +2053,7 @@ internal abstract class BaseDeviceParser
         { BrandCode.WebTv, BrandNames.WebTv },
     }.ToFrozenDictionary();
 
-    
+
     public abstract bool TryParse(
         string userAgent,
         ClientHints clientHints,
