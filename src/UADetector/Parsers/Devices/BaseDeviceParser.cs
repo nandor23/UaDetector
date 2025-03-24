@@ -2053,7 +2053,7 @@ internal abstract class BaseDeviceParser
         { BrandCode.WS, BrandNames.WS },
         { BrandCode.WebTv, BrandNames.WebTv },
     }.ToFrozenDictionary();
-    
+
     private static readonly FrozenDictionary<string, BrandCode> BrandNameMapping = BrandCodeMapping
         .ToDictionary(e => e.Value, e => e.Key)
         .ToFrozenDictionary();
@@ -2115,11 +2115,11 @@ internal abstract class BaseDeviceParser
 
         DeviceType? deviceType = null;
 
-        foreach (var clientHint in ClientHintFormFactorsMapping)
+        foreach (var formFactor in ClientHintFormFactorsMapping)
         {
-            if (clientHints.FormFactors.Contains(clientHint.Key))
+            if (clientHints.FormFactors.Contains(formFactor.Key))
             {
-                deviceType = clientHint.Value;
+                deviceType = formFactor.Value;
                 break;
             }
         }
@@ -2136,7 +2136,7 @@ internal abstract class BaseDeviceParser
     )
     {
         TryParseDeviceFromClientHints(clientHints, out var deviceFromClientHints);
-        
+
         if (string.IsNullOrEmpty(deviceFromClientHints?.Model) &&
             (ParserExtensions.HasUserAgentClientHintsFragment(userAgent) ||
              ParserExtensions.HasUserAgentDesktopFragment(userAgent)))
@@ -2172,8 +2172,8 @@ internal abstract class BaseDeviceParser
                 result = new InternalDeviceInfo
                 {
                     Type = deviceFromClientHints.Type,
+                    Model = deviceFromClientHints.Model,
                     Brand = null,
-                    Model = null,
                 };
             }
 
@@ -2195,12 +2195,12 @@ internal abstract class BaseDeviceParser
         {
             model = BuildModel(device.Model, match);
         }
-        
+
         if (device?.ModelVariants is not null)
         {
             Match? modelMatch = null;
             DeviceModel? deviceModel = null;
-            
+
             foreach (var modelVariant in device.ModelVariants)
             {
                 modelMatch = modelVariant.Regex.Match(userAgent);
@@ -2235,7 +2235,7 @@ internal abstract class BaseDeviceParser
             }
 
             if (!string.IsNullOrEmpty(deviceModel?.Category))
-            { 
+            {
                 if (DeviceTypeMapping.TryGetValue(deviceModel.Category, out var deviceType))
                 {
                     type = deviceType;
@@ -2246,7 +2246,7 @@ internal abstract class BaseDeviceParser
         result = new InternalDeviceInfo { Type = type, Brand = brand, Model = model, };
         return true;
     }
-    
+
     private sealed class ClientHintsDeviceInfo
     {
         public required DeviceType? Type { get; init; }

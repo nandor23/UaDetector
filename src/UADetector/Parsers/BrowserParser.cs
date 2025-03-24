@@ -1061,9 +1061,9 @@ public sealed class BrowserParser : IBrowserParser
         string? name = null, version = null;
         BrowserCode? code = null;
 
-        foreach (var brand in clientHints.FullVersionList)
+        foreach (var fullVersion in clientHints.FullVersionList)
         {
-            var browserName = ApplyClientHintBrandMapping(brand.Key);
+            var browserName = ApplyClientHintBrandMapping(fullVersion.Key);
             browserName = browserName.CollapseSpaces();
 
             if (BrowserNameMapping.TryGetValue(browserName, out var browserCode) ||
@@ -1071,7 +1071,7 @@ public sealed class BrowserParser : IBrowserParser
             {
                 name = BrowserCodeMapping[browserCode];
                 code = browserCode;
-                version = brand.Value;
+                version = fullVersion.Value;
             }
 
             // Exit if the detected browser brand is not Chromium or Microsoft Edge, otherwise, continue searching.
