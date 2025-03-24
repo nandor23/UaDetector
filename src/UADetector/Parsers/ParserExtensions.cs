@@ -39,12 +39,12 @@ internal static class ParserExtensions
             RegexOptions.IgnoreCase | RegexOptions.Compiled);
     }
 
-    private static bool HasUserAgentClientHintsFragment(string userAgent)
+    public static bool HasUserAgentClientHintsFragment(string userAgent)
     {
         return ClientHintsFragmentMatchRegex.IsMatch(userAgent);
     }
 
-    private static bool HasUserAgentDesktopFragment(string userAgent)
+    public static bool HasUserAgentDesktopFragment(string userAgent)
     {
         return DesktopFragmentMatchRegex.IsMatch(userAgent) && !DesktopFragmentExclusionRegex.IsMatch(userAgent);
     }
@@ -96,15 +96,12 @@ internal static class ParserExtensions
         return stream;
     }
 
-    public static (IEnumerable<T>, Regex) LoadRegexesWithCombinedRegex<T>(
-        string resourceName,
-        RegexPatternType patternType = RegexPatternType.None
-    )
+    public static (IEnumerable<T>, Regex) LoadRegexesWithCombinedRegex<T>(string resourceName)
     {
         var stream = GetEmbeddedResourceStream(resourceName);
         using var reader = new StreamReader(stream);
 
-        var regexConverter = new YamlRegexConverter(patternType);
+        var regexConverter = new YamlRegexConverter();
 
         var deserializer = new DeserializerBuilder()
             .WithNamingConvention(CamelCaseNamingConvention.Instance)
@@ -118,10 +115,7 @@ internal static class ParserExtensions
         return (regexes, combinedRegex);
     }
 
-    public static IEnumerable<T> LoadRegexes<T>(
-        string resourceName,
-        RegexPatternType patternType = RegexPatternType.None
-    )
+    public static IEnumerable<T> LoadRegexes<T>(string resourceName)
     {
         var stream = GetEmbeddedResourceStream(resourceName);
         using var reader = new StreamReader(stream);
@@ -129,7 +123,7 @@ internal static class ParserExtensions
         var deserializer = new DeserializerBuilder()
             .WithNamingConvention(CamelCaseNamingConvention.Instance)
             .IgnoreUnmatchedProperties()
-            .WithTypeConverter(new YamlRegexConverter(patternType))
+            .WithTypeConverter(new YamlRegexConverter())
             .Build();
 
         return deserializer.Deserialize<IEnumerable<T>>(reader);

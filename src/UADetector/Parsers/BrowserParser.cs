@@ -17,8 +17,7 @@ public sealed class BrowserParser : IBrowserParser
     private const string ResourceName = "Regexes.Resources.Browsers.browsers.yml";
     private readonly VersionTruncation _versionTruncation;
 
-    private static readonly IEnumerable<Browser> Browsers =
-        ParserExtensions.LoadRegexes<Browser>(ResourceName);
+    private static readonly IEnumerable<Browser> Browsers = ParserExtensions.LoadRegexes<Browser>(ResourceName);
 
     private static readonly FrozenDictionary<BrowserCode, string> BrowserCodeMapping =
         new Dictionary<BrowserCode, string>
@@ -46,7 +45,7 @@ public sealed class BrowserParser : IBrowserParser
             { BrowserCode.EasyBrowser, BrowserNames.EasyBrowser },
             { BrowserCode.DarkWebBrowser, BrowserNames.DarkWebBrowser },
             { BrowserCode.DarkBrowser, BrowserNames.DarkBrowser },
-            { BrowserCode.PrivacyBrowser18, BrowserNames.PrivacyBrowser18 },
+            { BrowserCode.PrivacyBrowser18Plus, BrowserNames.PrivacyBrowser18Plus },
             { BrowserCode.Browser115, BrowserNames.Browser115 },
             { BrowserCode.Browser1Dm, BrowserNames.Browser1Dm },
             { BrowserCode.Browser1DmPlus, BrowserNames.Browser1DmPlus },
@@ -142,7 +141,7 @@ public sealed class BrowserParser : IBrowserParser
             { BrowserCode.Catalyst, BrowserNames.Catalyst },
             { BrowserCode.Catsxp, BrowserNames.Catsxp },
             { BrowserCode.CaveBrowser, BrowserNames.CaveBrowser },
-            { BrowserCode.Ccleaner, BrowserNames.Ccleaner },
+            { BrowserCode.CCleaner, BrowserNames.CCleaner },
             { BrowserCode.CgBrowser, BrowserNames.CgBrowser },
             { BrowserCode.ChanjetCloud, BrowserNames.ChanjetCloud },
             { BrowserCode.Chedot, BrowserNames.Chedot },
@@ -186,8 +185,8 @@ public sealed class BrowserParser : IBrowserParser
             { BrowserCode.Cunaguaro, BrowserNames.Cunaguaro },
             { BrowserCode.ChromeWebview, BrowserNames.ChromeWebview },
             { BrowserCode.CyBrowser, BrowserNames.CyBrowser },
-            { BrowserCode.Dbrowser, BrowserNames.Dbrowser },
-            { BrowserCode.PeepsDbrowser, BrowserNames.PeepsDbrowser },
+            { BrowserCode.DBrowser, BrowserNames.DBrowser },
+            { BrowserCode.PeepsDBrowser, BrowserNames.PeepsDBrowser },
             { BrowserCode.DarkWeb, BrowserNames.DarkWeb },
             { BrowserCode.DarkWebPrivate, BrowserNames.DarkWebPrivate },
             { BrowserCode.DebuggableBrowser, BrowserNames.DebuggableBrowser },
@@ -409,7 +408,7 @@ public sealed class BrowserParser : IBrowserParser
             { BrowserCode.NokiaOviBrowser, BrowserNames.NokiaOviBrowser },
             { BrowserCode.NortonPrivateBrowser, BrowserNames.NortonPrivateBrowser },
             { BrowserCode.NoxBrowser, BrowserNames.NoxBrowser },
-            { BrowserCode.NomoneVrBrowser, BrowserNames.NomoneVrBrowser },
+            { BrowserCode.NomOneVrBrowser, BrowserNames.NomOneVrBrowser },
             { BrowserCode.NookBrowser, BrowserNames.NookBrowser },
             { BrowserCode.NetSurf, BrowserNames.NetSurf },
             { BrowserCode.NetFront, BrowserNames.NetFront },
@@ -574,7 +573,7 @@ public sealed class BrowserParser : IBrowserParser
             { BrowserCode.StampyBrowser, BrowserNames.StampyBrowser },
             { BrowserCode.SevenStar, BrowserNames.SevenStar },
             { BrowserCode.SmartBrowser, BrowserNames.SmartBrowser },
-            { BrowserCode.SmartSearchWebBrowser, BrowserNames.SmartSearchWebBrowser },
+            { BrowserCode.SmartSearchAndWebBrowser, BrowserNames.SmartSearchAndWebBrowser },
             { BrowserCode.SmartLenovoBrowser, BrowserNames.SmartLenovoBrowser },
             { BrowserCode.Smooz, BrowserNames.Smooz },
             { BrowserCode.Snowshoe, BrowserNames.Snowshoe },
@@ -649,13 +648,13 @@ public sealed class BrowserParser : IBrowserParser
             { BrowserCode.VividBrowserMini, BrowserNames.VividBrowserMini },
             { BrowserCode.VisionMobileBrowser, BrowserNames.VisionMobileBrowser },
             { BrowserCode.VertexSurf, BrowserNames.VertexSurf },
-            { BrowserCode.VmwareAirWatch, BrowserNames.VmwareAirWatch },
+            { BrowserCode.VMwareAirWatch, BrowserNames.VMwareAirWatch },
             { BrowserCode.VmsMosaic, BrowserNames.VmsMosaic },
             { BrowserCode.Vonkeror, BrowserNames.Vonkeror },
             { BrowserCode.Vuhuv, BrowserNames.Vuhuv },
             { BrowserCode.WearInternetBrowser, BrowserNames.WearInternetBrowser },
             { BrowserCode.WebExplorer, BrowserNames.WebExplorer },
-            { BrowserCode.WebBrowserExplorer, BrowserNames.WebBrowserExplorer },
+            { BrowserCode.WebBrowserAndExplorer, BrowserNames.WebBrowserAndExplorer },
             { BrowserCode.WebianShell, BrowserNames.WebianShell },
             { BrowserCode.WebDiscover, BrowserNames.WebDiscover },
             { BrowserCode.WebPositive, BrowserNames.WebPositive },
@@ -666,8 +665,8 @@ public sealed class BrowserParser : IBrowserParser
             { BrowserCode.Wavebox, BrowserNames.Wavebox },
             { BrowserCode.WhaleBrowser, BrowserNames.WhaleBrowser },
             { BrowserCode.WhaleTvBrowser, BrowserNames.WhaleTvBrowser },
-            { BrowserCode.WosBrowser, BrowserNames.WosBrowser },
-            { BrowserCode.W3m, BrowserNames.W3m },
+            { BrowserCode.WOsBrowser, BrowserNames.WOsBrowser },
+            { BrowserCode.W3M, BrowserNames.W3M },
             { BrowserCode.WeTabBrowser, BrowserNames.WeTabBrowser },
             { BrowserCode.WorldBrowser, BrowserNames.WorldBrowser },
             { BrowserCode.Wolvic, BrowserNames.Wolvic },
@@ -727,7 +726,7 @@ public sealed class BrowserParser : IBrowserParser
                         BrowserCode.Brave, BrowserCode.Colibri, BrowserCode.ChimLac, BrowserCode.ChromiumGost,
                         BrowserCode.CoolBrowser, BrowserCode.Chedot, BrowserCode.CocCoc, BrowserCode.ComodoDragon,
                         BrowserCode.CmBrowser, BrowserCode.ChromeFrame, BrowserCode.CravingExplorer,
-                        BrowserCode.Browser115, BrowserCode.ChromeMobileIos, BrowserCode.Ccleaner,
+                        BrowserCode.Browser115, BrowserCode.ChromeMobileIos, BrowserCode.CCleaner,
                         BrowserCode.ChromeMobile, BrowserCode.CoolNovo, BrowserCode.ChromePlus,
                         BrowserCode.Chromium, BrowserCode.ChromeWebview, BrowserCode.Cornowser, BrowserCode.Deledao,
                         BrowserCode.DuckDuckGoPrivacyBrowser, BrowserCode.DegDegan, BrowserCode.DotBrowser,
@@ -750,11 +749,11 @@ public sealed class BrowserParser : IBrowserParser
                         BrowserCode.TentaBrowser, BrowserCode.ToGate, BrowserCode.TBrowser2, BrowserCode.TweakStyle,
                         BrowserCode.Tungsten, BrowserCode.TvBro, BrowserCode.UBrowser2, BrowserCode.UrBrowser,
                         BrowserCode.VenusBrowser, BrowserCode.AvgSecureBrowser, BrowserCode.Vivaldi,
-                        BrowserCode.VmwareAirWatch, BrowserCode.WebExplorer, BrowserCode.WhaleBrowser,
+                        BrowserCode.VMwareAirWatch, BrowserCode.WebExplorer, BrowserCode.WhaleBrowser,
                         BrowserCode.Xvast, BrowserCode.YahooJapanBrowser, BrowserCode.YaaniBrowser,
                         BrowserCode.FlashBrowser, BrowserCode.SpectreBrowser, BrowserCode.Bonsai,
                         BrowserCode.HarmanBrowser, BrowserCode.PsiSecureBrowser, BrowserCode.LagatosBrowser,
-                        BrowserCode.LtBrowser, BrowserCode.PeepsDbrowser, BrowserCode.SushiBrowser,
+                        BrowserCode.LtBrowser, BrowserCode.PeepsDBrowser, BrowserCode.SushiBrowser,
                         BrowserCode.HuaweiBrowserMobile, BrowserCode.HuaweiBrowser, BrowserCode.IBrowser,
                         BrowserCode.TBrowser, BrowserCode.ChanjetCloud, BrowserCode.HawkQuickBrowser,
                         BrowserCode.HiBrowser, BrowserCode.ApnBrowser, BrowserCode.AdBlockBrowser,
@@ -774,7 +773,7 @@ public sealed class BrowserParser : IBrowserParser
                         BrowserCode.VastBrowser, BrowserCode.XVpn, BrowserCode.NoxBrowser,
                         BrowserCode.OfficeBrowser, BrowserCode.RabbitPrivateBrowser, BrowserCode.Iridium,
                         BrowserCode.HolaBrowser, BrowserCode.Amerigo, BrowserCode.XBrowserProSuperFast,
-                        BrowserCode.PrivacyBrowser18, BrowserCode.BeyondPrivateBrowser,
+                        BrowserCode.PrivacyBrowser18Plus, BrowserCode.BeyondPrivateBrowser,
                         BrowserCode.BlackLionBrowser, BrowserCode.TucMiniBrowser, BrowserCode.AppBrowzer,
                         BrowserCode.SxBrowser, BrowserCode.FieryBrowser, BrowserCode.Yagi,
                         BrowserCode.NextWordBrowser, BrowserCode.NakedBrowserPro, BrowserCode.Browser1Dm,
@@ -880,7 +879,7 @@ public sealed class BrowserParser : IBrowserParser
     {
         BrowserCode.PhoneBrowser360, BrowserCode.AlohaBrowserLite, BrowserCode.Arvin, BrowserCode.BLine,
         BrowserCode.Coast, BrowserCode.CoolBrowser, BrowserCode.CosBrowser, BrowserCode.Cornowser,
-        BrowserCode.Dbrowser, BrowserCode.Mises, BrowserCode.DeltaBrowser, BrowserCode.EuiBrowser,
+        BrowserCode.DBrowser, BrowserCode.Mises, BrowserCode.DeltaBrowser, BrowserCode.EuiBrowser,
         BrowserCode.EzBrowser, BrowserCode.FirefoxFocus, BrowserCode.FirefoxMobile, BrowserCode.FirefoxRocket,
         BrowserCode.FauxBrowser, BrowserCode.GhosteryPrivacyBrowser, BrowserCode.GinxDroidBrowser,
         BrowserCode.GoBrowser, BrowserCode.HawkTurboBrowser, BrowserCode.HuaweiBrowserMobile, BrowserCode.Isivioo,
@@ -903,7 +902,7 @@ public sealed class BrowserParser : IBrowserParser
         BrowserCode.NovaVideoDownloaderPro, BrowserCode.PronHubBrowser, BrowserCode.FrostPlus,
         BrowserCode.DucBrowser, BrowserCode.DesiBrowser, BrowserCode.PhantomMe, BrowserCode.OpenBrowser,
         BrowserCode.XoolooInternet, BrowserCode.UBrowser, BrowserCode.Bloket, BrowserCode.VastBrowser,
-        BrowserCode.XVpn, BrowserCode.Amerigo, BrowserCode.XBrowserProSuperFast, BrowserCode.PrivacyBrowser18,
+        BrowserCode.XVpn, BrowserCode.Amerigo, BrowserCode.XBrowserProSuperFast, BrowserCode.PrivacyBrowser18Plus,
         BrowserCode.BeyondPrivateBrowser, BrowserCode.BlackLionBrowser, BrowserCode.TucMiniBrowser,
         BrowserCode.AppBrowzer, BrowserCode.SxBrowser, BrowserCode.FieryBrowser, BrowserCode.Yagi,
         BrowserCode.NextWordBrowser, BrowserCode.NakedBrowserPro, BrowserCode.Browser1Dm,
@@ -1062,9 +1061,9 @@ public sealed class BrowserParser : IBrowserParser
         string? name = null, version = null;
         BrowserCode? code = null;
 
-        foreach (var brand in clientHints.FullVersionList)
+        foreach (var fullVersion in clientHints.FullVersionList)
         {
-            var browserName = ApplyClientHintBrandMapping(brand.Key);
+            var browserName = ApplyClientHintBrandMapping(fullVersion.Key);
             browserName = browserName.CollapseSpaces();
 
             if (BrowserNameMapping.TryGetValue(browserName, out var browserCode) ||
@@ -1072,7 +1071,7 @@ public sealed class BrowserParser : IBrowserParser
             {
                 name = BrowserCodeMapping[browserCode];
                 code = browserCode;
-                version = brand.Value;
+                version = fullVersion.Value;
             }
 
             // Exit if the detected browser brand is not Chromium or Microsoft Edge, otherwise, continue searching.

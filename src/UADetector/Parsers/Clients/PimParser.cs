@@ -17,14 +17,14 @@ internal sealed class PimParser : BaseClientParser
     static PimParser()
     {
         (PersonalInformationManagers, CombinedRegex) =
-            ParserExtensions.LoadRegexesWithCombinedRegex<Client>(ResourceName, RegexPatternType.UserAgent);
+            ParserExtensions.LoadRegexesWithCombinedRegex<Client>(ResourceName);
     }
 
     public PimParser(VersionTruncation versionTruncation) : base(versionTruncation)
     {
     }
 
-    protected override ClientType Type => ClientType.PIM;
+    protected override ClientType Type => ClientType.PersonalInformationManager;
 
     public override bool TryParse(string userAgent, ClientHints _, [NotNullWhen(true)] out ClientInfo? result)
     {

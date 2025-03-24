@@ -17,7 +17,7 @@ internal sealed class FeedReaderParser : BaseClientParser
     static FeedReaderParser()
     {
         (FeedReaders, CombinedRegex) =
-            ParserExtensions.LoadRegexesWithCombinedRegex<Client>(ResourceName, RegexPatternType.UserAgent);
+            ParserExtensions.LoadRegexesWithCombinedRegex<Client>(ResourceName);
     }
 
     public FeedReaderParser(VersionTruncation versionTruncation) : base(versionTruncation)

@@ -12,7 +12,7 @@ public static class OsNames
     public const string Aros = "AROS";
     public const string TvOs = "tvOS";
     public const string ArchLinux = "Arch Linux";
-    public const string AosCos = "AOSC OS";
+    public const string AoscOs = "AOSC OS";
     public const string AspLinux = "ASPLinux";
     public const string AzureLinux = "Azure Linux";
     public const string BackTrack = "BackTrack";
@@ -70,7 +70,7 @@ public static class OsNames
     public const string KaiOs = "KaiOS";
     public const string Kali = "Kali";
     public const string Kanotix = "Kanotix";
-    public const string Kinos = "KIN OS";
+    public const string KinOs = "KIN OS";
     public const string Knoppix = "Knoppix";
     public const string KreaTv = "KreaTV";
     public const string Kubuntu = "Kubuntu";
@@ -100,7 +100,7 @@ public static class OsNames
     public const string NetBsd = "NetBSD";
     public const string MtkNucleus = "MTK / Nucleus";
     public const string Mre = "MRE";
-    public const string NeXtStep = "NeXTSTEP";
+    public const string NextStep = "NeXTSTEP";
     public const string NewsOs = "NEWS-OS";
     public const string Nintendo = "Nintendo";
     public const string NintendoMobile = "Nintendo Mobile";
@@ -140,7 +140,7 @@ public static class OsNames
     public const string ResurrectionRemixOs = "Resurrection Remix OS";
     public const string Rex = "REX";
     public const string RazoDroid = "RazoDroiD";
-    public const string RtosNext = "RTOS & Next";
+    public const string RtosAndNext = "RTOS & Next";
     public const string Sabayon = "Sabayon";
     public const string Suse = "SUSE";
     public const string SailfishOs = "Sailfish OS";
@@ -166,7 +166,7 @@ public static class OsNames
     public const string Ubuntu = "Ubuntu";
     public const string Ultrix = "ULTRIX";
     public const string Uos = "UOS";
-    public const string Vidae = "VIDAA";
+    public const string Vidaa = "VIDAA";
     public const string ViziOs = "ViziOS";
     public const string WatchOs = "watchOS";
     public const string WearOs = "Wear OS";

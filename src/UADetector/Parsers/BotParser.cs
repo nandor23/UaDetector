@@ -1,7 +1,6 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Text.RegularExpressions;
 
-using UADetector.Models.Enums;
 using UADetector.Regexes.Models;
 using UADetector.Results;
 
@@ -17,7 +16,7 @@ public class BotParser : IBotParser
     static BotParser()
     {
         (Bots, CombinedRegex) =
-            ParserExtensions.LoadRegexesWithCombinedRegex<Bot>(ResourceName, RegexPatternType.UserAgent);
+            ParserExtensions.LoadRegexesWithCombinedRegex<Bot>(ResourceName);
     }
 
     public bool IsBot(string userAgent)
