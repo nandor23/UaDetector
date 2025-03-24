@@ -39,12 +39,12 @@ internal static class ParserExtensions
             RegexOptions.IgnoreCase | RegexOptions.Compiled);
     }
 
-    private static bool HasUserAgentClientHintsFragment(string userAgent)
+    public static bool HasUserAgentClientHintsFragment(string userAgent)
     {
         return ClientHintsFragmentMatchRegex.IsMatch(userAgent);
     }
 
-    private static bool HasUserAgentDesktopFragment(string userAgent)
+    public static bool HasUserAgentDesktopFragment(string userAgent)
     {
         return DesktopFragmentMatchRegex.IsMatch(userAgent) && !DesktopFragmentExclusionRegex.IsMatch(userAgent);
     }

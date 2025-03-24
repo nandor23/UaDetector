@@ -10,4 +10,9 @@ internal sealed class DeviceModel
 
     [YamlMember(Alias = "model")]
     public required string Name { get; init; }
+
+    public string? Brand { get; init; }
+
+    [YamlMember(Alias = "device")]
+    public string? Category { get; init; }
 }

@@ -1,5 +1,6 @@
 using System.Collections.Frozen;
 using System.Diagnostics.CodeAnalysis;
+using System.Text.RegularExpressions;
 
 using UADetector.Models.Constants;
 using UADetector.Models.Enums;
@@ -2052,7 +2053,48 @@ internal abstract class BaseDeviceParser
         { BrandCode.WS, BrandNames.WS },
         { BrandCode.WebTv, BrandNames.WebTv },
     }.ToFrozenDictionary();
+    
+    private static readonly FrozenDictionary<string, BrandCode> BrandNameMapping = BrandCodeMapping
+        .ToDictionary(e => e.Value, e => e.Key)
+        .ToFrozenDictionary();
 
+    private static readonly FrozenDictionary<string, DeviceType> DeviceTypeMapping = new Dictionary<string, DeviceType>
+    {
+        { "desktop", DeviceType.Desktop },
+        { "smartphone", DeviceType.Smartphone },
+        { "tablet", DeviceType.Tablet },
+        { "feature phone", DeviceType.FeaturePhone },
+        { "console", DeviceType.Console },
+        { "tv", DeviceType.Tv },
+        { "car browser", DeviceType.CarBrowser },
+        { "smart display", DeviceType.SmartDisplay },
+        { "camera", DeviceType.Camera },
+        { "portable media player", DeviceType.PortableMediaPlayer },
+        { "phablet", DeviceType.Phablet },
+        { "smart speaker", DeviceType.SmartSpeaker },
+        { "wearable", DeviceType.Wearable },
+        { "peripheral", DeviceType.Peripheral },
+    }.ToFrozenDictionary();
+
+    private static readonly FrozenDictionary<string, DeviceType> ClientHintFormFactorsMapping =
+        new Dictionary<string, DeviceType>
+        {
+            { "automotive", DeviceType.CarBrowser },
+            { "xr", DeviceType.Wearable },
+            { "watch", DeviceType.Wearable },
+            { "mobile", DeviceType.Smartphone },
+            { "tablet", DeviceType.Tablet },
+            { "desktop", DeviceType.Desktop },
+            { "eink", DeviceType.Tablet },
+        }.ToFrozenDictionary();
+
+    private static string? BuildModel(string model, Match match)
+    {
+        model = ParserExtensions.FormatWithMatch(model, match).Replace('_', ' ');
+        model = Regex.Replace(model, " TD$", string.Empty, RegexOptions.IgnoreCase);
+
+        return model == "Build" ? null : model.Trim();
+    }
 
     public abstract bool TryParse(
         string userAgent,
@@ -2060,13 +2102,154 @@ internal abstract class BaseDeviceParser
         [NotNullWhen(true)] out DeviceInfo? result
     );
 
+    private static bool TryParseDeviceFromClientHints(
+        ClientHints clientHints,
+        [NotNullWhen(true)] out ClientHintsDeviceInfo? result
+    )
+    {
+        if (string.IsNullOrEmpty(clientHints.Model))
+        {
+            result = null;
+            return false;
+        }
+
+        DeviceType? deviceType = null;
+
+        foreach (var clientHint in ClientHintFormFactorsMapping)
+        {
+            if (clientHints.FormFactors.Contains(clientHint.Key))
+            {
+                deviceType = clientHint.Value;
+                break;
+            }
+        }
+
+        result = new ClientHintsDeviceInfo { Type = deviceType, Model = clientHints.Model, };
+        return true;
+    }
+
     protected bool TryParse(
         string userAgent,
         ClientHints clientHints,
         IDictionary<string, Device> devices,
-        [NotNullWhen(true)] out DeviceInfo? result
+        [NotNullWhen(true)] out InternalDeviceInfo? result
     )
     {
-        throw new NotImplementedException();
+        TryParseDeviceFromClientHints(clientHints, out var deviceFromClientHints);
+        
+        if (string.IsNullOrEmpty(deviceFromClientHints?.Model) &&
+            (ParserExtensions.HasUserAgentClientHintsFragment(userAgent) ||
+             ParserExtensions.HasUserAgentDesktopFragment(userAgent)))
+        {
+            result = null;
+            return false;
+        }
+
+        string? brand = null;
+        Match? match = null;
+        Device? device = null;
+
+        foreach (var devicePattern in devices)
+        {
+            match = devicePattern.Value.Regex.Match(userAgent);
+
+            if (match.Success)
+            {
+                brand = devicePattern.Key;
+                device = devicePattern.Value;
+                break;
+            }
+        }
+
+        if (match is null || !match.Success)
+        {
+            if (deviceFromClientHints?.Type is null)
+            {
+                result = null;
+            }
+            else
+            {
+                result = new InternalDeviceInfo
+                {
+                    Type = deviceFromClientHints.Type,
+                    Brand = null,
+                    Model = null,
+                };
+            }
+
+            return result is not null;
+        }
+
+        DeviceType? type = null;
+        string? model = null;
+
+        if (!string.IsNullOrEmpty(device?.Category))
+        {
+            if (DeviceTypeMapping.TryGetValue(device.Category, out var deviceType))
+            {
+                type = deviceType;
+            }
+        }
+
+        if (!string.IsNullOrEmpty(device?.Model))
+        {
+            model = BuildModel(device.Model, match);
+        }
+        
+        if (device?.ModelVariants is not null)
+        {
+            Match? modelMatch = null;
+            DeviceModel? deviceModel = null;
+            
+            foreach (var modelVariant in device.ModelVariants)
+            {
+                modelMatch = modelVariant.Regex.Match(userAgent);
+
+                if (modelMatch.Success)
+                {
+                    deviceModel = modelVariant;
+                    break;
+                }
+            }
+
+            if (modelMatch is null || !modelMatch.Success)
+            {
+                result = new InternalDeviceInfo
+                {
+                    Type = type,
+                    Brand = brand,
+                    Model = model,
+                };
+
+                return true;
+            }
+
+            if (!string.IsNullOrEmpty(deviceModel?.Name))
+            {
+                model = BuildModel(deviceModel.Name, modelMatch);
+            }
+
+            if (!string.IsNullOrEmpty(deviceModel?.Brand) && BrandNameMapping.ContainsKey(deviceModel.Brand))
+            {
+                brand = deviceModel.Brand;
+            }
+
+            if (!string.IsNullOrEmpty(deviceModel?.Category))
+            { 
+                if (DeviceTypeMapping.TryGetValue(deviceModel.Category, out var deviceType))
+                {
+                    type = deviceType;
+                }
+            }
+        }
+
+        result = new InternalDeviceInfo { Type = type, Brand = brand, Model = model, };
+        return true;
+    }
+    
+    private sealed class ClientHintsDeviceInfo
+    {
+        public required DeviceType? Type { get; init; }
+        public required string? Model { get; init; }
     }
 }

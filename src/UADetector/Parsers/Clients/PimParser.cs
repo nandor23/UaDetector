@@ -24,7 +24,7 @@ internal sealed class PimParser : BaseClientParser
     {
     }
 
-    protected override ClientType Type => ClientType.PIM;
+    protected override ClientType Type => ClientType.PersonalInformationManager;
 
     public override bool TryParse(string userAgent, ClientHints _, [NotNullWhen(true)] out ClientInfo? result)
     {

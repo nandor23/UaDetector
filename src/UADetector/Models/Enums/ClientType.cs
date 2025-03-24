@@ -6,9 +6,5 @@ public enum ClientType
     MediaPlayer = 1,
     Library = 2,
     FeedReader = 3,
-
-    /// <summary>
-    /// Personal Information Manager
-    /// </summary>
-    PIM = 4
+    PersonalInformationManager = 4
 }
