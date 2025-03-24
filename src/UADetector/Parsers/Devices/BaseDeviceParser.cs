@@ -1,7 +1,10 @@
 using System.Collections.Frozen;
+using System.Diagnostics.CodeAnalysis;
 
 using UADetector.Models.Constants;
 using UADetector.Models.Enums;
+using UADetector.Regexes.Models;
+using UADetector.Results;
 
 namespace UADetector.Parsers.Devices;
 
@@ -2050,4 +2053,20 @@ internal abstract class BaseDeviceParser
         { BrandCode.WebTv, BrandNames.WebTv },
     }.ToFrozenDictionary();
 
+    
+    public abstract bool TryParse(
+        string userAgent,
+        ClientHints clientHints,
+        [NotNullWhen(true)] out DeviceInfo? result
+    );
+
+    protected bool TryParse(
+        string userAgent,
+        ClientHints clientHints,
+        IDictionary<string, Device> devices,
+        [NotNullWhen(true)] out DeviceInfo? result
+    )
+    {
+        throw new NotImplementedException();
+    }
 }
