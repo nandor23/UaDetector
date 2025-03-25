@@ -13,6 +13,12 @@ namespace UADetector;
 
 public sealed class UADetector : IUADetector
 {
+    private readonly BotParser _botParser = new();
+    private readonly BrowserParser _browserParser = new();
+    private readonly ClientParser _clientParser = new();
+    private readonly OsParser _osParser = new();
+    
+    private static readonly Regex ContainsLetterRegex = new("[a-zA-Z]", RegexOptions.Compiled);
     private static readonly Regex AndroidVrFragment =
         ParserExtensions.BuildUserAgentRegex("Android( [.0-9]+)?; Mobile VR;| VR ");
 
@@ -60,9 +66,6 @@ public sealed class UADetector : IUADetector
 
     private static readonly FrozenSet<string> TvClients = new[] { "TiviMate" }.ToFrozenSet();
 
-    private readonly OsParser _osParser = new();
-    private readonly BrowserParser _browserParser = new();
-
     private readonly IEnumerable<BaseDeviceParser> _deviceParsers =
     [
         new MobileParser(),
@@ -81,7 +84,7 @@ public sealed class UADetector : IUADetector
                ParserExtensions.TryCompareVersions(os.Version, "8", out var comparisonResult) && comparisonResult >= 0;
     }
 
-    private bool IsDesktop(OsInfo os, BrowserInfo browser)
+    private static bool IsDesktop(OsInfo os, BrowserInfo browser)
     {
         return !BrowserParser.IsMobileOnlyBrowser(browser.Code) && OsParser.IsDesktopOs(os.Name);
     }
@@ -307,14 +310,37 @@ public sealed class UADetector : IUADetector
         return TryParse(userAgent, ImmutableDictionary<string, string?>.Empty, out result);
     }
 
-    public bool TryParse(string userAgent, IDictionary<string, string?> headers, [NotNullWhen(true)] out UserAgentInfo? result)
+    public bool TryParse(
+        string userAgent,
+        IDictionary<string, string?> headers,
+        [NotNullWhen(true)] out UserAgentInfo? result
+    )
     {
+        if (string.IsNullOrEmpty(userAgent) || !ContainsLetterRegex.IsMatch(userAgent))
+        {
+            result = null;
+            return false;
+        }
+        
         var clientHints = ClientHints.Create(headers);
 
         if (ParserExtensions.TryRestoreUserAgent(userAgent, clientHints, out var restoredUserAgent))
         {
             userAgent = restoredUserAgent;
         }
+
+        ClientInfo? client = null;
+
+        _botParser.TryParse(userAgent, out var bot);
+        _osParser.TryParse(userAgent, out var os);
+
+        if (!_browserParser.TryParse(userAgent, out var browser))
+        {
+            _clientParser.TryParse(userAgent, out client);
+        }
+        
+        TryParseDevice(userAgent, clientHints, os, browser, client, out var device);
+        
 
         throw new NotImplementedException();
     }
