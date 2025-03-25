@@ -96,12 +96,12 @@ internal static class ParserExtensions
         return stream;
     }
 
-    private static IDeserializer CreateDeserializer(YamlRegexConverter? regexConverter = null)
+    private static IDeserializer CreateDeserializer(YamlRegexConverter regexConverter)
     {
         return new DeserializerBuilder()
             .WithNamingConvention(CamelCaseNamingConvention.Instance)
             .IgnoreUnmatchedProperties()
-            .WithTypeConverter(regexConverter ?? new YamlRegexConverter())
+            .WithTypeConverter(regexConverter)
             .Build();
     }
 
@@ -124,7 +124,8 @@ internal static class ParserExtensions
         var stream = GetEmbeddedResourceStream(resourceName);
         using var reader = new StreamReader(stream);
 
-        var deserializer = CreateDeserializer();
+        var regexConverter = new YamlRegexConverter();
+        var deserializer = CreateDeserializer(regexConverter);
 
         return deserializer.Deserialize<IEnumerable<T>>(reader);
     }
@@ -143,12 +144,13 @@ internal static class ParserExtensions
         return (regexes.ToFrozenDictionary(), combinedRegex);
     }
 
-    public static FrozenDictionary<string, T> LoadRegexesDictionary<T>(string resourceName)
+    public static FrozenDictionary<string, T> LoadRegexesDictionary<T>(string resourceName, string patternSuffix)
     {
         var stream = GetEmbeddedResourceStream(resourceName);
         using var reader = new StreamReader(stream);
 
-        var deserializer = CreateDeserializer();
+        var regexConverter = new YamlRegexConverter(patternSuffix);
+        var deserializer = CreateDeserializer(regexConverter);
 
         return deserializer.Deserialize<Dictionary<string, T>>(reader).ToFrozenDictionary();
     }

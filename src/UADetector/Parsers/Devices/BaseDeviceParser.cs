@@ -2054,7 +2054,7 @@ internal abstract class BaseDeviceParser
         { BrandCode.WebTv, BrandNames.WebTv },
     }.ToFrozenDictionary();
 
-    private static readonly FrozenDictionary<string, BrandCode> BrandNameMapping = BrandCodeMapping
+    internal static readonly FrozenDictionary<string, BrandCode> BrandNameMapping = BrandCodeMapping
         .ToDictionary(e => e.Value, e => e.Key)
         .ToFrozenDictionary();
 

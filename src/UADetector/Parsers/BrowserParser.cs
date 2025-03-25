@@ -1365,6 +1365,11 @@ public sealed class BrowserParser : IBrowserParser
         return true;
     }
 
+    internal static bool IsMobileOnlyBrowser(BrowserCode browserCode)
+    {
+        return MobileOnlyBrowsers.Contains(browserCode);
+    }
+
     private sealed class ClientHintsBrowserInfo
     {
         public required string Name { get; init; }
