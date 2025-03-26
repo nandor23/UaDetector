@@ -15,8 +15,8 @@ public sealed class OsParser : IOsParser
 {
     private const string ResourceName = "Regexes.Resources.operating_systems.yml";
     private readonly VersionTruncation _versionTruncation;
-
-    private static readonly IEnumerable<Os> OperatingSystems = ParserExtensions.LoadRegexes<Os>(ResourceName);
+    private static readonly IEnumerable<Os> OperatingSystems;
+    private static readonly Regex CombinedRegex;
 
     private static readonly FrozenDictionary<OsCode, string> OsCodeMapping =
         new Dictionary<OsCode, string>
@@ -403,6 +403,12 @@ public sealed class OsParser : IOsParser
         }.ToFrozenDictionary();
 
 
+    static OsParser()
+    {
+        (OperatingSystems, CombinedRegex) =
+            ParserExtensions.LoadRegexes<Os>(ResourceName);
+    }
+
     public OsParser(VersionTruncation versionTruncation = VersionTruncation.Minor)
     {
         _versionTruncation = versionTruncation;
@@ -617,6 +623,12 @@ public sealed class OsParser : IOsParser
 
     private bool TryParseOsFromUserAgent(string userAgent, [NotNullWhen(true)] out CommonOsInfo? result)
     {
+        if (!CombinedRegex.IsMatch(userAgent))
+        {
+            result = null;
+            return false;
+        }
+
         Match? match = null;
         Os? os = null;
 
@@ -677,16 +689,17 @@ public sealed class OsParser : IOsParser
     public bool TryParse(string userAgent, IDictionary<string, string?> headers, [NotNullWhen(true)] out OsInfo? result)
     {
         var clientHints = ClientHints.Create(headers);
-        return TryParse(userAgent, clientHints, out result);
-    }
 
-    internal bool TryParse(string userAgent, ClientHints clientHints, [NotNullWhen(true)] out OsInfo? result)
-    {
         if (ParserExtensions.TryRestoreUserAgent(userAgent, clientHints, out var restoredUserAgent))
         {
             userAgent = restoredUserAgent;
         }
 
+        return TryParse(userAgent, clientHints, out result);
+    }
+
+    internal bool TryParse(string userAgent, ClientHints clientHints, [NotNullWhen(true)] out OsInfo? result)
+    {
         string name;
         OsCode code;
         string? version;

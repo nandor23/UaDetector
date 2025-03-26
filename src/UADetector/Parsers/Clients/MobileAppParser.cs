@@ -17,7 +17,7 @@ internal sealed class MobileAppParser : BaseClientParser
     static MobileAppParser()
     {
         (MobileApps, CombinedRegex) =
-            ParserExtensions.LoadRegexesWithCombinedRegex<Client>(ResourceName);
+            ParserExtensions.LoadRegexes<Client>(ResourceName);
     }
 
     public MobileAppParser(VersionTruncation versionTruncation) : base(versionTruncation)

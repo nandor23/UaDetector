@@ -16,7 +16,7 @@ public class BotParser : IBotParser
     static BotParser()
     {
         (Bots, CombinedRegex) =
-            ParserExtensions.LoadRegexesWithCombinedRegex<Bot>(ResourceName);
+            ParserExtensions.LoadRegexes<Bot>(ResourceName);
     }
 
     public bool IsBot(string userAgent)

@@ -21,7 +21,7 @@ internal sealed class ShellTvParser : BaseDeviceParser
     static ShellTvParser()
     {
         (ShellTelevisions, CombinedRegex) =
-            ParserExtensions.LoadRegexesDictionaryWithCombinedRegex<Device>(ResourceName);
+            ParserExtensions.LoadRegexesDictionary<Device>(ResourceName);
     }
 
     public override bool TryParse(

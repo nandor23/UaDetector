@@ -17,7 +17,7 @@ internal sealed class PimParser : BaseClientParser
     static PimParser()
     {
         (PersonalInformationManagers, CombinedRegex) =
-            ParserExtensions.LoadRegexesWithCombinedRegex<Client>(ResourceName);
+            ParserExtensions.LoadRegexes<Client>(ResourceName);
     }
 
     public PimParser(VersionTruncation versionTruncation) : base(versionTruncation)

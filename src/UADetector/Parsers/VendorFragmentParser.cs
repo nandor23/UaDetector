@@ -7,25 +7,33 @@ namespace UADetector.Parsers;
 internal static class VendorFragmentParser
 {
     private const string ResourceName = "Regexes.Resources.vendor_fragments.yml";
+    private static readonly FrozenDictionary<string, Regex[]> VendorFragments;
+    private static readonly Regex CombinedRegex;
 
-    private static readonly FrozenDictionary<string, Regex[]> VendorFragments =
-        ParserExtensions.LoadRegexesDictionary<Regex[]>(ResourceName, "[^a-z0-9]+");
-
+    
+    static VendorFragmentParser()
+    {
+        (VendorFragments, CombinedRegex) =
+            ParserExtensions.LoadRegexesDictionary<Regex[]>(ResourceName, "[^a-z0-9]+");
+    }
 
     public static bool TryParseBrand(string userAgent, [NotNullWhen(true)] out string? result)
     {
-        foreach (var vendor in VendorFragments)
+        if (CombinedRegex.IsMatch(userAgent))
         {
-            foreach (var regex in vendor.Value)
+            foreach (var vendorFragment in VendorFragments)
             {
-                if (regex.IsMatch(userAgent))
+                foreach (var regex in vendorFragment.Value)
                 {
-                    result = vendor.Key;
-                    return true;
+                    if (regex.IsMatch(userAgent))
+                    {
+                        result = vendorFragment.Key;
+                        return true;
+                    }
                 }
             }
         }
-
+        
         result = null;
         return false;
     }

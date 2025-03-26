@@ -105,7 +105,7 @@ internal static class ParserExtensions
             .Build();
     }
 
-    public static (IEnumerable<T>, Regex) LoadRegexesWithCombinedRegex<T>(string resourceName)
+    public static (IEnumerable<T>, Regex) LoadRegexes<T>(string resourceName)
     {
         var stream = GetEmbeddedResourceStream(resourceName);
         using var reader = new StreamReader(stream);
@@ -119,32 +119,10 @@ internal static class ParserExtensions
         return (regexes, combinedRegex);
     }
 
-    public static IEnumerable<T> LoadRegexes<T>(string resourceName)
-    {
-        var stream = GetEmbeddedResourceStream(resourceName);
-        using var reader = new StreamReader(stream);
-
-        var regexConverter = new YamlRegexConverter();
-        var deserializer = CreateDeserializer(regexConverter);
-
-        return deserializer.Deserialize<IEnumerable<T>>(reader);
-    }
-
-    public static (FrozenDictionary<string, T>, Regex) LoadRegexesDictionaryWithCombinedRegex<T>(string resourceName)
-    {
-        var stream = GetEmbeddedResourceStream(resourceName);
-        using var reader = new StreamReader(stream);
-
-        var regexConverter = new YamlRegexConverter();
-        var deserializer = CreateDeserializer(regexConverter);
-
-        var regexes = deserializer.Deserialize<Dictionary<string, T>>(reader);
-        var combinedRegex = regexConverter.BuildCombinedRegex();
-
-        return (regexes.ToFrozenDictionary(), combinedRegex);
-    }
-
-    public static FrozenDictionary<string, T> LoadRegexesDictionary<T>(string resourceName, string patternSuffix)
+    public static (FrozenDictionary<string, T>, Regex) LoadRegexesDictionary<T>(
+        string resourceName,
+        string? patternSuffix = null
+    )
     {
         var stream = GetEmbeddedResourceStream(resourceName);
         using var reader = new StreamReader(stream);
@@ -152,7 +130,10 @@ internal static class ParserExtensions
         var regexConverter = new YamlRegexConverter(patternSuffix);
         var deserializer = CreateDeserializer(regexConverter);
 
-        return deserializer.Deserialize<Dictionary<string, T>>(reader).ToFrozenDictionary();
+        var regexes = deserializer.Deserialize<Dictionary<string, T>>(reader);
+        var combinedRegex = regexConverter.BuildCombinedRegex();
+
+        return (regexes.ToFrozenDictionary(), combinedRegex);
     }
 
     public static FrozenDictionary<string, string> LoadHints(string resourceName)

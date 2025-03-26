@@ -16,8 +16,8 @@ public sealed class BrowserParser : IBrowserParser
 {
     private const string ResourceName = "Regexes.Resources.Browsers.browsers.yml";
     private readonly VersionTruncation _versionTruncation;
-
-    private static readonly IEnumerable<Browser> Browsers = ParserExtensions.LoadRegexes<Browser>(ResourceName);
+    private static readonly IEnumerable<Browser> Browsers;
+    private static readonly Regex CombinedRegex;
 
     private static readonly FrozenDictionary<BrowserCode, string> BrowserCodeMapping =
         new Dictionary<BrowserCode, string>
@@ -966,6 +966,12 @@ public sealed class BrowserParser : IBrowserParser
     private static readonly Regex IridiumVersionRegex = new("^202[0-4]", RegexOptions.Compiled);
 
 
+    static BrowserParser()
+    {
+        (Browsers, CombinedRegex) =
+            ParserExtensions.LoadRegexes<Browser>(ResourceName);
+    }
+
     public BrowserParser(VersionTruncation versionTruncation = VersionTruncation.Minor)
     {
         _versionTruncation = versionTruncation;
@@ -1107,6 +1113,12 @@ public sealed class BrowserParser : IBrowserParser
         [NotNullWhen(true)] out UserAgentBrowserInfo? result
     )
     {
+        if (!CombinedRegex.IsMatch(userAgent))
+        {
+            result = null;
+            return false;
+        }
+
         Match? match = null;
         Browser? browser = null;
 
@@ -1175,6 +1187,12 @@ public sealed class BrowserParser : IBrowserParser
     )
     {
         var clientHints = ClientHints.Create(headers);
+
+        if (ParserExtensions.TryRestoreUserAgent(userAgent, clientHints, out var restoredUserAgent))
+        {
+            userAgent = restoredUserAgent;
+        }
+
         return TryParse(userAgent, clientHints, out result);
     }
 
@@ -1184,11 +1202,6 @@ public sealed class BrowserParser : IBrowserParser
         [NotNullWhen(true)] out BrowserInfo? result
     )
     {
-        if (ParserExtensions.TryRestoreUserAgent(userAgent, clientHints, out var restoredUserAgent))
-        {
-            userAgent = restoredUserAgent;
-        }
-
         string? name = null;
         BrowserCode? code = null;
         string? version = null;

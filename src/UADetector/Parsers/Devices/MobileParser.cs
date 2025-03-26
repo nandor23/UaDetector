@@ -17,7 +17,7 @@ internal sealed class MobileParser : BaseDeviceParser
     static MobileParser()
     {
         (Mobiles, CombinedRegex) =
-            ParserExtensions.LoadRegexesDictionaryWithCombinedRegex<Device>(ResourceName);
+            ParserExtensions.LoadRegexesDictionary<Device>(ResourceName);
     }
 
     public override bool TryParse(
