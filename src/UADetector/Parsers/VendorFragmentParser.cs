@@ -10,7 +10,7 @@ internal static class VendorFragmentParser
     private static readonly FrozenDictionary<string, Regex[]> VendorFragments;
     private static readonly Regex CombinedRegex;
 
-    
+
     static VendorFragmentParser()
     {
         (VendorFragments, CombinedRegex) =
@@ -33,7 +33,7 @@ internal static class VendorFragmentParser
                 }
             }
         }
-        
+
         result = null;
         return false;
     }

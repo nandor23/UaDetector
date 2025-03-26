@@ -402,6 +402,12 @@ public sealed class OsParser : IOsParser
             { OsPlatformTypes.X86, ParserExtensions.BuildUserAgentRegex("32bit|win32|(?:i[0-9]|x)86|i86pc") }
         }.ToFrozenDictionary();
 
+    private static readonly IEnumerable<string> OsPlatforms =
+    [
+        OsPlatformTypes.Arm, OsPlatformTypes.LoongArch64, OsPlatformTypes.Mips, OsPlatformTypes.SuperH,
+        OsPlatformTypes.Sparc64, OsPlatformTypes.X64, OsPlatformTypes.X86
+    ];
+
 
     static OsParser()
     {
@@ -530,33 +536,13 @@ public sealed class OsParser : IOsParser
             }
         }
 
-        if (PlatformRegexes.TryGetValue(OsPlatformTypes.Arm, out var regex) && regex.IsMatch(userAgent))
+        foreach (var platform in OsPlatforms)
         {
-            result = OsPlatformTypes.Arm;
-        }
-        else if (PlatformRegexes.TryGetValue(OsPlatformTypes.LoongArch64, out regex) && regex.IsMatch(userAgent))
-        {
-            result = OsPlatformTypes.LoongArch64;
-        }
-        else if (PlatformRegexes.TryGetValue(OsPlatformTypes.Mips, out regex) && regex.IsMatch(userAgent))
-        {
-            result = OsPlatformTypes.Mips;
-        }
-        else if (PlatformRegexes.TryGetValue(OsPlatformTypes.SuperH, out regex) && regex.IsMatch(userAgent))
-        {
-            result = OsPlatformTypes.SuperH;
-        }
-        else if (PlatformRegexes.TryGetValue(OsPlatformTypes.Sparc64, out regex) && regex.IsMatch(userAgent))
-        {
-            result = OsPlatformTypes.Sparc64;
-        }
-        else if (PlatformRegexes.TryGetValue(OsPlatformTypes.X64, out regex) && regex.IsMatch(userAgent))
-        {
-            result = OsPlatformTypes.X64;
-        }
-        else if (PlatformRegexes.TryGetValue(OsPlatformTypes.X86, out regex) && regex.IsMatch(userAgent))
-        {
-            result = OsPlatformTypes.X86;
+            if (PlatformRegexes.TryGetValue(platform, out var regex) && regex.IsMatch(userAgent))
+            {
+                result = platform;
+                break;
+            }
         }
 
         return result is not null;

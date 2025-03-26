@@ -25,7 +25,7 @@ internal static class EngineParser
     static EngineParser()
     {
         (Engines, CombinedRegex) =
-            ParserExtensions.LoadRegexes<Browser>(ResourceName);
+            ParserExtensions.LoadRegexes<BrowserEngine>(ResourceName);
     }
 
     public static bool TryParse(string userAgent, [NotNullWhen(true)] out string? result)
