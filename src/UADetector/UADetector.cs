@@ -86,7 +86,8 @@ public sealed class UADetector : IUADetector
 
     private static bool IsDesktop(OsInfo os, BrowserInfo browser)
     {
-        return !BrowserParser.IsMobileOnlyBrowser(browser.Code) && OsParser.IsDesktopOs(os.Name);
+        return !BrowserParser.IsMobileOnlyBrowser(browser.Code) && !string.IsNullOrEmpty(os.Family) &&
+               OsParser.IsDesktopOs(os.Family);
     }
 
     private bool TryParseDevice(

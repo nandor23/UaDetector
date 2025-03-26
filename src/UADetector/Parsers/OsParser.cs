@@ -824,9 +824,9 @@ public sealed class OsParser : IOsParser
         return true;
     }
 
-    internal static bool IsDesktopOs(string osName)
+    internal static bool IsDesktopOs(string osFamily)
     {
-        return TryMapNameToFamily(osName, out var osFamily) && DesktopOsFamilies.Contains(osFamily);
+        return DesktopOsFamilies.Contains(osFamily);
     }
 
     private sealed class CommonOsInfo
