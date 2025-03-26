@@ -13,10 +13,11 @@ namespace UADetector;
 
 public sealed class UADetector : IUADetector
 {
-    private readonly BotParser _botParser = new();
-    private readonly BrowserParser _browserParser = new();
-    private readonly ClientParser _clientParser = new();
-    private readonly OsParser _osParser = new();
+    private readonly UADetectorOptions _uaDetectorOptions;
+    private readonly OsParser _osParser;
+    private readonly BrowserParser _browserParser;
+    private readonly ClientParser _clientParser;
+    private readonly BotParser _botParser;
 
     private static readonly Regex ContainsLetterRegex = new("[a-zA-Z]", RegexOptions.Compiled);
     private static readonly Regex AndroidVrFragment =
@@ -77,6 +78,15 @@ public sealed class UADetector : IUADetector
         new CameraParser(),
         new PortableMediaPlayerParser()
     ];
+
+    public UADetector(UADetectorOptions? uaDetectorOptions = null)
+    {
+        _uaDetectorOptions = uaDetectorOptions ?? new UADetectorOptions();
+        _osParser = new OsParser(_uaDetectorOptions.VersionTruncation);
+        _browserParser = new BrowserParser(_uaDetectorOptions.VersionTruncation);
+        _clientParser = new ClientParser(_uaDetectorOptions.VersionTruncation);
+        _botParser = new BotParser();
+    }
 
     private static bool IsWindows8OrLater(OsInfo os)
     {
@@ -331,18 +341,32 @@ public sealed class UADetector : IUADetector
         }
 
         ClientInfo? client = null;
+        BotInfo? bot = null;
+        bool isBot = false;
 
-        _botParser.TryParse(userAgent, out var bot);
-        _osParser.TryParse(userAgent, out var os);
-
-        if (!_browserParser.TryParse(userAgent, out var browser))
+        if (!_uaDetectorOptions.SkipBotParsing)
         {
-            _clientParser.TryParse(userAgent, out client);
+            if (_uaDetectorOptions.SkipBotDetails)
+            {
+                isBot = _botParser.IsBot(userAgent);
+            }
+            else
+            {
+                _botParser.TryParse(userAgent, out bot);
+            }
+        }
+
+        _osParser.TryParse(userAgent, clientHints, out var os);
+
+        if (!_browserParser.TryParse(userAgent, clientHints, out var browser))
+        {
+            _clientParser.TryParse(userAgent, clientHints, out client);
         }
 
         TryParseDevice(userAgent, clientHints, os, browser, client, out var device);
 
-        if (bot is null && os is null && browser is null && client is null && device is null)
+        if ((_uaDetectorOptions.SkipBotParsing || !_uaDetectorOptions.SkipBotParsing && bot is null) &&
+            os is null && browser is null && client is null && device is null)
         {
             result = null;
         }
@@ -350,6 +374,7 @@ public sealed class UADetector : IUADetector
         {
             result = new UserAgentInfo
             {
+                IsBot = isBot,
                 Device = device,
                 Os = os,
                 Browser = browser,
