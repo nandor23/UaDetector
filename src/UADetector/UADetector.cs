@@ -17,7 +17,7 @@ public sealed class UADetector : IUADetector
     private readonly BrowserParser _browserParser = new();
     private readonly ClientParser _clientParser = new();
     private readonly OsParser _osParser = new();
-    
+
     private static readonly Regex ContainsLetterRegex = new("[a-zA-Z]", RegexOptions.Compiled);
     private static readonly Regex AndroidVrFragment =
         ParserExtensions.BuildUserAgentRegex("Android( [.0-9]+)?; Mobile VR;| VR ");
@@ -92,9 +92,9 @@ public sealed class UADetector : IUADetector
     private bool TryParseDevice(
         string userAgent,
         ClientHints clientHints,
-        OsInfo os,
-        BrowserInfo browser,
-        ClientInfo client,
+        OsInfo? os,
+        BrowserInfo? browser,
+        ClientInfo? client,
         [NotNullWhen(true)] out DeviceInfo? result
     )
     {
@@ -131,7 +131,7 @@ public sealed class UADetector : IUADetector
         }
 
         // Assume all devices running iOS or macOS are manufactured by Apple.
-        if (string.IsNullOrEmpty(brand) && AppleOsNames.Contains(os.Name))
+        if (string.IsNullOrEmpty(brand) && os is not null && AppleOsNames.Contains(os.Name))
         {
             brand = BrandNames.Apple;
         }
@@ -147,7 +147,7 @@ public sealed class UADetector : IUADetector
         //
         // Note: The browser family is not checked, as some mobile apps may use Chrome without a detected browser.
         // Instead, the user agent is directly checked for the presence of 'Chrome'.
-        if (deviceType is null && os.Family == OsFamilies.Android && ChromeRegex.IsMatch(userAgent))
+        if (deviceType is null && os?.Family == OsFamilies.Android && ChromeRegex.IsMatch(userAgent))
         {
             deviceType = MobileRegex.IsMatch(userAgent) ? DeviceType.Smartphone : DeviceType.Tablet;
         }
@@ -179,7 +179,7 @@ public sealed class UADetector : IUADetector
         // - Devices running Android versions earlier than 2.0 are smartphones.
         // - Devices running Android 3.x are tablets.
         // - Devices running Android 2.x and 4.x+ have an unknown device type.
-        if (deviceType is null && os.Name == OsNames.Android && !string.IsNullOrEmpty(os.Version))
+        if (deviceType is null && os?.Name == OsNames.Android && !string.IsNullOrEmpty(os.Version))
         {
             if (ParserExtensions.TryCompareVersions(os.Version, "2.0", out var comparisonResult) &&
                 comparisonResult == -1)
@@ -196,19 +196,19 @@ public sealed class UADetector : IUADetector
         }
 
         // Android feature phones are likely to be smartphones.
-        if (deviceType == DeviceType.FeaturePhone && os.Family == OsFamilies.Android)
+        if (deviceType == DeviceType.FeaturePhone && os?.Family == OsFamilies.Android)
         {
             deviceType = DeviceType.Smartphone;
         }
 
         // Unknown devices running Java ME are likely feature phones.
-        if (deviceType is null && os.Name == OsNames.JavaMe)
+        if (deviceType is null && os?.Name == OsNames.JavaMe)
         {
             deviceType = DeviceType.FeaturePhone;
         }
 
         // Devices running KaiOS are likely to be feature phones.
-        if (os.Name == OsNames.KaiOs)
+        if (os?.Name == OsNames.KaiOs)
         {
             deviceType = DeviceType.FeaturePhone;
         }
@@ -220,7 +220,7 @@ public sealed class UADetector : IUADetector
         // 
         // Since most touch-enabled devices are tablets, with desktops and notebooks being the exception, 
         // it is assumed that all Windows 8 touch devices are tablets.
-        if (deviceType is null && (os.Name == OsNames.WindowsRt || IsWindows8OrLater(os)) &&
+        if (deviceType is null && os is not null && (os.Name == OsNames.WindowsRt || IsWindows8OrLater(os)) &&
             TouchEnabledRegex.IsMatch(userAgent))
         {
             deviceType = DeviceType.Tablet;
@@ -251,7 +251,7 @@ public sealed class UADetector : IUADetector
         }
 
         // Devices running Coolita OS are assumed to be TVs.
-        if (os.Name == OsNames.CoolitaOs)
+        if (os?.Name == OsNames.CoolitaOs)
         {
             deviceType = DeviceType.Tv;
         }
@@ -263,7 +263,7 @@ public sealed class UADetector : IUADetector
         }
 
         // Devices using these clients are assumed to be TVs.
-        if (TvBrowsers.Contains(browser.Name) || TvClients.Contains(client.Name))
+        if (browser is not null && TvBrowsers.Contains(browser.Name) || client is not null && TvClients.Contains(client.Name))
         {
             deviceType = DeviceType.Tv;
         }
@@ -280,7 +280,7 @@ public sealed class UADetector : IUADetector
             deviceType = DeviceType.Desktop;
         }
 
-        if (deviceType is null && IsDesktop(os, browser))
+        if (deviceType is null && os is not null && browser is not null && IsDesktop(os, browser))
         {
             deviceType = DeviceType.Desktop;
         }
@@ -321,7 +321,7 @@ public sealed class UADetector : IUADetector
             result = null;
             return false;
         }
-        
+
         var clientHints = ClientHints.Create(headers);
 
         if (ParserExtensions.TryRestoreUserAgent(userAgent, clientHints, out var restoredUserAgent))
@@ -338,10 +338,25 @@ public sealed class UADetector : IUADetector
         {
             _clientParser.TryParse(userAgent, out client);
         }
-        
-        TryParseDevice(userAgent, clientHints, os, browser, client, out var device);
-        
 
-        throw new NotImplementedException();
+        TryParseDevice(userAgent, clientHints, os, browser, client, out var device);
+
+        if (bot is null && os is null && browser is null && client is null && device is null)
+        {
+            result = null;
+        }
+        else
+        {
+            result = new UserAgentInfo
+            {
+                Device = device,
+                Os = os,
+                Browser = browser,
+                Client = client,
+                Bot = bot,
+            };
+        }
+
+        return result is not null;
     }
 }
