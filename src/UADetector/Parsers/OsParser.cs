@@ -319,7 +319,7 @@ public sealed class OsParser : IOsParser
     /// </summary>
     private static readonly FrozenSet<string> DesktopOsFamilies = new[]
     {
-        OsNames.AmigaOs, OsFamilies.Ibm, OsFamilies.GnuLinux, OsFamilies.Mac, OsFamilies.Unix, OsFamilies.Windows,
+        OsFamilies.AmigaOs, OsFamilies.Ibm, OsFamilies.GnuLinux, OsFamilies.Mac, OsFamilies.Unix, OsFamilies.Windows,
         OsFamilies.BeOs, OsFamilies.ChromeOs,
     }.ToFrozenSet(StringComparer.OrdinalIgnoreCase);
 
@@ -822,6 +822,11 @@ public sealed class OsParser : IOsParser
         };
 
         return true;
+    }
+
+    internal static bool IsDesktopOs(string osFamily)
+    {
+        return DesktopOsFamilies.Contains(osFamily);
     }
 
     private sealed class CommonOsInfo

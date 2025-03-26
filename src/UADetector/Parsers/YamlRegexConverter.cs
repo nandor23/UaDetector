@@ -10,6 +10,13 @@ namespace UADetector.Parsers;
 internal sealed class YamlRegexConverter : IYamlTypeConverter
 {
     private readonly List<string> _patterns = [];
+    private readonly string? _patternSuffix;
+
+
+    public YamlRegexConverter(string? patternSuffix = null)
+    {
+        _patternSuffix = patternSuffix;
+    }
 
     public bool Accepts(Type type) => type == typeof(Regex);
 
@@ -22,9 +29,11 @@ internal sealed class YamlRegexConverter : IYamlTypeConverter
             return null;
         }
 
-        _patterns.Add(scalar.Value);
+        var regex = string.IsNullOrEmpty(_patternSuffix) ? scalar.Value : scalar.Value + _patternSuffix;
 
-        return ParserExtensions.BuildUserAgentRegex(scalar.Value);
+        _patterns.Add(regex);
+
+        return ParserExtensions.BuildUserAgentRegex(regex);
     }
 
     public void WriteYaml(IEmitter emitter, object? value, Type type, ObjectSerializer serializer)

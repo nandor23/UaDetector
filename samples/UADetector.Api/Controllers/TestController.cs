@@ -20,11 +20,10 @@ public class TestController : ControllerBase
     public IActionResult Get()
     {
         var userAgent = HttpContext.Request.Headers.UserAgent.ToString();
-        _osParser.TryParse(userAgent, out var os);
-
         var headers = Request.Headers.ToDictionary(a => a.Key, a => a.Value.ToArray().FirstOrDefault());
-        _browserParser.TryParse(userAgent, headers, out var browser);
 
-        return Ok(browser);
+        var parser = new UADetector();
+        parser.TryParse(userAgent, headers, out var result);
+        return Ok(result);
     }
 }

@@ -2054,7 +2054,7 @@ internal abstract class BaseDeviceParser
         { BrandCode.WebTv, BrandNames.WebTv },
     }.ToFrozenDictionary();
 
-    private static readonly FrozenDictionary<string, BrandCode> BrandNameMapping = BrandCodeMapping
+    internal static readonly FrozenDictionary<string, BrandCode> BrandNameMapping = BrandCodeMapping
         .ToDictionary(e => e.Value, e => e.Key)
         .ToFrozenDictionary();
 
@@ -2099,7 +2099,7 @@ internal abstract class BaseDeviceParser
     public abstract bool TryParse(
         string userAgent,
         ClientHints clientHints,
-        [NotNullWhen(true)] out DeviceInfo? result
+        [NotNullWhen(true)] out InternalDeviceInfo? result
     );
 
     private static bool TryParseDeviceFromClientHints(
@@ -2128,7 +2128,7 @@ internal abstract class BaseDeviceParser
         return true;
     }
 
-    protected bool TryParse(
+    protected static bool TryParse(
         string userAgent,
         ClientHints clientHints,
         IDictionary<string, Device> devices,
