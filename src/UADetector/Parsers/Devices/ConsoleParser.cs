@@ -11,7 +11,7 @@ internal sealed class ConsoleParser : BaseDeviceParser
 {
     private const string ResourceName = "Regexes.Resources.Devices.consoles.yml";
     private static readonly FrozenDictionary<string, Device> Consoles;
-    private static readonly Lazy<Regex> CombinedRegex;
+    private static readonly Regex CombinedRegex;
 
 
     static ConsoleParser()
@@ -26,7 +26,7 @@ internal sealed class ConsoleParser : BaseDeviceParser
         [NotNullWhen(true)] out InternalDeviceInfo? result
     )
     {
-        if (CombinedRegex.Value.IsMatch(userAgent))
+        if (CombinedRegex.IsMatch(userAgent))
         {
             TryParse(userAgent, clientHints, Consoles, out result);
         }

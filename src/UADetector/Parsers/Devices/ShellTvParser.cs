@@ -12,9 +12,9 @@ internal sealed class ShellTvParser : BaseDeviceParser
 {
     private const string ResourceName = "Regexes.Resources.Devices.shell_televisions.yml";
     private static readonly FrozenDictionary<string, Device> ShellTelevisions;
-    private static readonly Lazy<Regex> CombinedRegex;
+    private static readonly Regex CombinedRegex;
 
-    private static readonly Lazy<Regex> ShellTvRegex =
+    private static readonly Regex ShellTvRegex =
         ParserExtensions.BuildUserAgentRegex(@"[a-z]+[ _]Shell[ _]\w{6}|tclwebkit(\d+[.\d]*)");
 
 
@@ -30,7 +30,7 @@ internal sealed class ShellTvParser : BaseDeviceParser
         [NotNullWhen(true)] out InternalDeviceInfo? result
     )
     {
-        if (ShellTvRegex.Value.IsMatch(userAgent) && CombinedRegex.Value.IsMatch(userAgent))
+        if (ShellTvRegex.IsMatch(userAgent) && CombinedRegex.IsMatch(userAgent))
         {
             TryParse(userAgent, clientHints, ShellTelevisions, out result);
 

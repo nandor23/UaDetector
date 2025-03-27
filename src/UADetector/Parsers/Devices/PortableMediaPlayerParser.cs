@@ -11,7 +11,7 @@ internal sealed class PortableMediaPlayerParser : BaseDeviceParser
 {
     private const string ResourceName = "Regexes.Resources.Devices.portable_media_players.yml";
     private static readonly FrozenDictionary<string, Device> PortableMediaPlayers;
-    private static readonly Lazy<Regex> CombinedRegex;
+    private static readonly Regex CombinedRegex;
 
 
     static PortableMediaPlayerParser()
@@ -26,7 +26,7 @@ internal sealed class PortableMediaPlayerParser : BaseDeviceParser
         [NotNullWhen(true)] out InternalDeviceInfo? result
     )
     {
-        if (CombinedRegex.Value.IsMatch(userAgent))
+        if (CombinedRegex.IsMatch(userAgent))
         {
             TryParse(userAgent, clientHints, PortableMediaPlayers, out result);
         }

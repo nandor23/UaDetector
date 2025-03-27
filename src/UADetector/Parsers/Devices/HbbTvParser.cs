@@ -12,9 +12,9 @@ internal sealed class HbbTvParser : BaseDeviceParser
 {
     private const string ResourceName = "Regexes.Resources.Devices.televisions.yml";
     private static readonly FrozenDictionary<string, Device> Televisions;
-    private static readonly Lazy<Regex> CombinedRegex;
+    private static readonly Regex CombinedRegex;
 
-    private static readonly Lazy<Regex>
+    private static readonly Regex
         HbbTvRegex = ParserExtensions.BuildUserAgentRegex(@"(?:HbbTV|SmartTvA)/([1-9](?:\.[0-9]){1,2})");
 
 
@@ -30,7 +30,7 @@ internal sealed class HbbTvParser : BaseDeviceParser
         [NotNullWhen(true)] out InternalDeviceInfo? result
     )
     {
-        if (HbbTvRegex.Value.IsMatch(userAgent) && CombinedRegex.Value.IsMatch(userAgent))
+        if (HbbTvRegex.IsMatch(userAgent) && CombinedRegex.IsMatch(userAgent))
         {
             TryParse(userAgent, clientHints, Televisions, out result);
 

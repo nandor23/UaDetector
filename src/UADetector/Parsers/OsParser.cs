@@ -383,8 +383,8 @@ public sealed class OsParser : IOsParser
         "every.browser.inc"
     }.ToFrozenSet();
 
-    private static readonly FrozenDictionary<string, Lazy<Regex>> PlatformRegexes =
-        new Dictionary<string, Lazy<Regex>>
+    private static readonly FrozenDictionary<string, Regex> PlatformRegexes =
+        new Dictionary<string, Regex>
         {
             {
                 OsPlatformTypes.Arm, ParserExtensions.BuildUserAgentRegex(
@@ -531,7 +531,7 @@ public sealed class OsParser : IOsParser
 
         foreach (var platform in OsPlatforms)
         {
-            if (PlatformRegexes.TryGetValue(platform, out var regex) && regex.Value.IsMatch(userAgent))
+            if (PlatformRegexes.TryGetValue(platform, out var regex) && regex.IsMatch(userAgent))
             {
                 result = platform;
                 break;
@@ -607,7 +607,7 @@ public sealed class OsParser : IOsParser
 
         foreach (var osPattern in OperatingSystems)
         {
-            match = osPattern.Regex.Value.Match(userAgent);
+            match = osPattern.Regex.Match(userAgent);
 
             if (match.Success)
             {
@@ -640,7 +640,7 @@ public sealed class OsParser : IOsParser
         {
             foreach (var versionRegex in os.Versions)
             {
-                match = versionRegex.Regex.Value.Match(userAgent);
+                match = versionRegex.Regex.Match(userAgent);
 
                 if (match.Success)
                 {

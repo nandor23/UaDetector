@@ -2151,7 +2151,7 @@ internal abstract class BaseDeviceParser
 
         foreach (var devicePattern in devices)
         {
-            match = devicePattern.Value.Regex.Value.Match(userAgent);
+            match = devicePattern.Value.Regex.Match(userAgent);
 
             if (match.Success)
             {
@@ -2203,7 +2203,7 @@ internal abstract class BaseDeviceParser
 
             foreach (var modelVariant in device.ModelVariants)
             {
-                modelMatch = modelVariant.Regex.Value.Match(userAgent);
+                modelMatch = modelVariant.Regex.Match(userAgent);
 
                 if (modelMatch.Success)
                 {

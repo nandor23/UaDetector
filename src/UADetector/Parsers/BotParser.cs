@@ -10,7 +10,7 @@ public class BotParser : IBotParser
 {
     private const string ResourceName = "Regexes.Resources.bots.yml";
     private static readonly IEnumerable<Bot> Bots;
-    private static readonly Lazy<Regex> CombinedRegex;
+    private static readonly Regex CombinedRegex;
 
 
     static BotParser()
@@ -21,16 +21,16 @@ public class BotParser : IBotParser
 
     public bool IsBot(string userAgent)
     {
-        return CombinedRegex.Value.IsMatch(userAgent);
+        return CombinedRegex.IsMatch(userAgent);
     }
 
     public bool TryParse(string userAgent, [NotNullWhen(true)] out BotInfo? result)
     {
-        if (CombinedRegex.Value.IsMatch(userAgent))
+        if (CombinedRegex.IsMatch(userAgent))
         {
             foreach (var bot in Bots)
             {
-                var match = bot.Regex.Value.Match(userAgent);
+                var match = bot.Regex.Match(userAgent);
 
                 if (match.Success)
                 {

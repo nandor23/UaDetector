@@ -11,7 +11,7 @@ internal sealed class CarBrowserParser : BaseDeviceParser
 {
     private const string ResourceName = "Regexes.Resources.Devices.car_browsers.yml";
     private static readonly FrozenDictionary<string, Device> CarBrowsers;
-    private static readonly Lazy<Regex> CombinedRegex;
+    private static readonly Regex CombinedRegex;
 
 
     static CarBrowserParser()
@@ -26,7 +26,7 @@ internal sealed class CarBrowserParser : BaseDeviceParser
         [NotNullWhen(true)] out InternalDeviceInfo? result
     )
     {
-        if (CombinedRegex.Value.IsMatch(userAgent))
+        if (CombinedRegex.IsMatch(userAgent))
         {
             TryParse(userAgent, clientHints, CarBrowsers, out result);
         }

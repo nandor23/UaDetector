@@ -7,18 +7,18 @@ using YamlDotNet.Serialization;
 
 namespace UADetector.Parsers;
 
-internal sealed class YamlLazyRegexConverter : IYamlTypeConverter
+internal sealed class YamlRegexConverter : IYamlTypeConverter
 {
     private readonly List<string> _patterns = [];
     private readonly string? _patternSuffix;
 
 
-    public YamlLazyRegexConverter(string? patternSuffix = null)
+    public YamlRegexConverter(string? patternSuffix = null)
     {
         _patternSuffix = patternSuffix;
     }
 
-    public bool Accepts(Type type) => type == typeof(Lazy<Regex>);
+    public bool Accepts(Type type) => type == typeof(Regex);
 
     public object? ReadYaml(IParser parser, Type type, ObjectDeserializer rootDeserializer)
     {
@@ -42,13 +42,13 @@ internal sealed class YamlLazyRegexConverter : IYamlTypeConverter
         emitter.Emit(new Scalar(regex.ToString()));
     }
 
-    public Lazy<Regex> BuildCombinedRegex()
+    public Regex BuildCombinedRegex()
     {
         var sb = new StringBuilder();
 
         if (_patterns.Count == 0)
         {
-            return new Lazy<Regex>(() => new Regex(string.Empty));
+            return new Regex(string.Empty);
         }
 
         for (int i = _patterns.Count - 1; i > 0; i--)

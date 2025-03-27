@@ -11,7 +11,7 @@ internal sealed class PimParser : BaseClientParser
 {
     private const string ResourceName = "Regexes.Resources.Clients.pims.yml";
     private static readonly IEnumerable<Client> PersonalInformationManagers;
-    private static readonly Lazy<Regex> CombinedRegex;
+    private static readonly Regex CombinedRegex;
 
 
     static PimParser()
@@ -28,6 +28,6 @@ internal sealed class PimParser : BaseClientParser
 
     public override bool TryParse(string userAgent, ClientHints _, [NotNullWhen(true)] out ClientInfo? result)
     {
-        return TryParse(userAgent, PersonalInformationManagers, CombinedRegex.Value, out result);
+        return TryParse(userAgent, PersonalInformationManagers, CombinedRegex, out result);
     }
 }

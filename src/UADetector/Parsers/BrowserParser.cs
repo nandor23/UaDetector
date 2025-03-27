@@ -958,13 +958,12 @@ public sealed class BrowserParser : IBrowserParser
         BrowserCode.Chromium, BrowserCode.ChromeWebview, BrowserCode.AndroidBrowser,
     }.ToFrozenSet();
 
-    private static readonly Lazy<Regex> ChromeSafariRegex = new(() =>
-        new Regex(@"Chrome/.+ Safari/537\.36", RegexOptions.IgnoreCase | RegexOptions.Compiled));
+    private static readonly Regex ChromeSafariRegex =
+        new(@"Chrome/.+ Safari/537\.36", RegexOptions.IgnoreCase | RegexOptions.Compiled);
 
-    private static readonly Lazy<Regex> CypressOrPhantomJsRegex =
-        new(() => new Regex("Cypress|PhantomJS", RegexOptions.Compiled));
+    private static readonly Regex CypressOrPhantomJsRegex = new Regex("Cypress|PhantomJS", RegexOptions.Compiled);
 
-    private static readonly Lazy<Regex> IridiumVersionRegex = new(() => new Regex("^202[0-4]", RegexOptions.Compiled));
+    private static readonly Regex IridiumVersionRegex = new Regex("^202[0-4]", RegexOptions.Compiled);
 
 
     public BrowserParser(VersionTruncation versionTruncation = VersionTruncation.Minor)
@@ -1113,7 +1112,7 @@ public sealed class BrowserParser : IBrowserParser
 
         foreach (var browserPattern in Browsers)
         {
-            match = browserPattern.Regex.Value.Match(userAgent);
+            match = browserPattern.Regex.Match(userAgent);
 
             if (match.Success)
             {
@@ -1206,7 +1205,7 @@ public sealed class BrowserParser : IBrowserParser
             code = browserFromClientHints.Code;
             version = browserFromClientHints.Version;
 
-            if (IridiumVersionRegex.Value.IsMatch(version))
+            if (IridiumVersionRegex.IsMatch(version))
             {
                 name = BrowserNames.Iridium;
                 code = BrowserCode.Iridium;
@@ -1313,7 +1312,7 @@ public sealed class BrowserParser : IBrowserParser
                 code = browserCode;
             }
 
-            if (ChromeSafariRegex.Value.IsMatch(userAgent))
+            if (ChromeSafariRegex.IsMatch(userAgent))
             {
                 engine = BrowserEngines.Blink;
                 engineVersion = BuildEngineVersion(userAgent, engine);
@@ -1325,7 +1324,7 @@ public sealed class BrowserParser : IBrowserParser
             }
         }
 
-        if (string.IsNullOrEmpty(name) || CypressOrPhantomJsRegex.Value.IsMatch(userAgent) || !code.HasValue)
+        if (string.IsNullOrEmpty(name) || CypressOrPhantomJsRegex.IsMatch(userAgent) || !code.HasValue)
         {
             result = null;
             return false;

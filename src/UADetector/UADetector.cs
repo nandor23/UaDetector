@@ -19,37 +19,37 @@ public sealed class UADetector : IUADetector
     private readonly ClientParser _clientParser;
     private readonly BotParser _botParser;
 
-    private static readonly Lazy<Regex> ContainsLetterRegex = new(() => new Regex("[a-zA-Z]", RegexOptions.Compiled));
-    private static readonly Lazy<Regex> AndroidVrFragment =
+    private static readonly Regex ContainsLetterRegex = new("[a-zA-Z]", RegexOptions.Compiled);
+    private static readonly Regex AndroidVrFragment =
         ParserExtensions.BuildUserAgentRegex("Android( [.0-9]+)?; Mobile VR;| VR ");
 
-    private static readonly Lazy<Regex> ChromeRegex = ParserExtensions.BuildUserAgentRegex("Chrome/[.0-9]*");
-    private static readonly Lazy<Regex> MobileRegex = ParserExtensions.BuildUserAgentRegex("(?:Mobile|eliboM)");
-    private static readonly Lazy<Regex> PadRegex = ParserExtensions.BuildUserAgentRegex("Pad/APad");
-    private static readonly Lazy<Regex> OperaTabletRegex = ParserExtensions.BuildUserAgentRegex("Opera Tablet");
-    private static readonly Lazy<Regex> OperaTvStoreRegex = ParserExtensions.BuildUserAgentRegex("Opera TV Store| OMI/");
-    private static readonly Lazy<Regex> TouchEnabledRegex = ParserExtensions.BuildUserAgentRegex("Touch");
-    private static readonly Lazy<Regex> TvFragmentRegex = ParserExtensions.BuildUserAgentRegex(@"\(TV;");
+    private static readonly Regex ChromeRegex = ParserExtensions.BuildUserAgentRegex("Chrome/[.0-9]*");
+    private static readonly Regex MobileRegex = ParserExtensions.BuildUserAgentRegex("(?:Mobile|eliboM)");
+    private static readonly Regex PadRegex = ParserExtensions.BuildUserAgentRegex("Pad/APad");
+    private static readonly Regex OperaTabletRegex = ParserExtensions.BuildUserAgentRegex("Opera Tablet");
+    private static readonly Regex OperaTvStoreRegex = ParserExtensions.BuildUserAgentRegex("Opera TV Store| OMI/");
+    private static readonly Regex TouchEnabledRegex = ParserExtensions.BuildUserAgentRegex("Touch");
+    private static readonly Regex TvFragmentRegex = ParserExtensions.BuildUserAgentRegex(@"\(TV;");
 
-    private static readonly Lazy<Regex> AndroidTabletFragmentRegex =
+    private static readonly Regex AndroidTabletFragmentRegex =
         ParserExtensions.BuildUserAgentRegex(@"Android( [.0-9]+)?; Tablet;|Tablet(?! PC)|.*\-tablet$");
 
-    private static readonly Lazy<Regex> AndroidMobileFragmentRegex =
+    private static readonly Regex AndroidMobileFragmentRegex =
         ParserExtensions.BuildUserAgentRegex(@"Android( [.0-9]+)?; Mobile;|.*\-mobile$");
 
-    private static readonly Lazy<Regex> PuffinSecureBrowserDesktopRegex =
+    private static readonly Regex PuffinSecureBrowserDesktopRegex =
         ParserExtensions.BuildUserAgentRegex(@"Puffin/(?:\d+[.\d]+)[LMW]D");
 
-    private static readonly Lazy<Regex> PuffinWebBrowserSmartphoneRegex =
+    private static readonly Regex PuffinWebBrowserSmartphoneRegex =
         ParserExtensions.BuildUserAgentRegex(@"Puffin/(?:\d+[.\d]+)[AIFLW]P");
 
-    private static readonly Lazy<Regex> PuffinWebBrowserTabletRegex =
+    private static readonly Regex PuffinWebBrowserTabletRegex =
         ParserExtensions.BuildUserAgentRegex(@"Puffin/(?:\d+[.\d]+)[AILW]T");
 
-    private static readonly Lazy<Regex> AndroidRegex =
+    private static readonly Regex AndroidRegex =
         ParserExtensions.BuildUserAgentRegex(@"Andr0id|(?:Android(?: UHD)?|Google) TV|\(lite\) TV|BRAVIA| TV$");
 
-    private static readonly Lazy<Regex> DesktopFragment =
+    private static readonly Regex DesktopFragment =
         ParserExtensions.BuildUserAgentRegex("Desktop(?: (x(?:32|64)|WOW64))?;");
 
     private static readonly FrozenSet<string> AppleOsNames = new[]
@@ -147,7 +147,7 @@ public sealed class UADetector : IUADetector
         }
 
         // User agents containing the fragment 'VR' are assumed to represent wearables.
-        if (deviceType is null && AndroidVrFragment.Value.IsMatch(userAgent))
+        if (deviceType is null && AndroidVrFragment.IsMatch(userAgent))
         {
             deviceType = DeviceType.Wearable;
         }
@@ -157,26 +157,26 @@ public sealed class UADetector : IUADetector
         //
         // Note: The browser family is not checked, as some mobile apps may use Chrome without a detected browser.
         // Instead, the user agent is directly checked for the presence of 'Chrome'.
-        if (deviceType is null && os?.Family == OsFamilies.Android && ChromeRegex.Value.IsMatch(userAgent))
+        if (deviceType is null && os?.Family == OsFamilies.Android && ChromeRegex.IsMatch(userAgent))
         {
-            deviceType = MobileRegex.Value.IsMatch(userAgent) ? DeviceType.Smartphone : DeviceType.Tablet;
+            deviceType = MobileRegex.IsMatch(userAgent) ? DeviceType.Smartphone : DeviceType.Tablet;
         }
 
         // User agents containing the fragment 'Pad' or 'APad' are assumed to represent tablets.
-        if (deviceType == DeviceType.Smartphone && PadRegex.Value.IsMatch(userAgent))
+        if (deviceType == DeviceType.Smartphone && PadRegex.IsMatch(userAgent))
         {
             deviceType = DeviceType.Tablet;
         }
 
         // User agents containing the fragments 'Android; Tablet;' or 'Opera Tablet' are assumed to represent tablets.
         if (deviceType is null &&
-            (AndroidTabletFragmentRegex.Value.IsMatch(userAgent) || OperaTabletRegex.Value.IsMatch(userAgent)))
+            (AndroidTabletFragmentRegex.IsMatch(userAgent) || OperaTabletRegex.IsMatch(userAgent)))
         {
             deviceType = DeviceType.Tablet;
         }
 
         // User agents containing the fragment 'Android; Mobile;' are assumed to represent smartphones.
-        if (deviceType is null && AndroidMobileFragmentRegex.Value.IsMatch(userAgent))
+        if (deviceType is null && AndroidMobileFragmentRegex.IsMatch(userAgent))
         {
             deviceType = DeviceType.Smartphone;
         }
@@ -231,31 +231,31 @@ public sealed class UADetector : IUADetector
         // Since most touch-enabled devices are tablets, with desktops and notebooks being the exception, 
         // it is assumed that all Windows 8 touch devices are tablets.
         if (deviceType is null && os is not null && (os.Name == OsNames.WindowsRt || IsWindows8OrLater(os)) &&
-            TouchEnabledRegex.Value.IsMatch(userAgent))
+            TouchEnabledRegex.IsMatch(userAgent))
         {
             deviceType = DeviceType.Tablet;
         }
 
         // Devices running Puffin Secure Browser that include the letter 'D' are assumed to be desktops.
-        if (deviceType is null && PuffinSecureBrowserDesktopRegex.Value.IsMatch(userAgent))
+        if (deviceType is null && PuffinSecureBrowserDesktopRegex.IsMatch(userAgent))
         {
             deviceType = DeviceType.Desktop;
         }
 
         // Devices running Puffin Web Browser that include the letter 'P' are assumed to be smartphones.
-        if (deviceType is null && PuffinWebBrowserSmartphoneRegex.Value.IsMatch(userAgent))
+        if (deviceType is null && PuffinWebBrowserSmartphoneRegex.IsMatch(userAgent))
         {
             deviceType = DeviceType.Smartphone;
         }
 
         // Devices running Puffin Web Browser that include the letter 'T' are assumed to be smartphones.
-        if (deviceType is null && PuffinWebBrowserTabletRegex.Value.IsMatch(userAgent))
+        if (deviceType is null && PuffinWebBrowserTabletRegex.IsMatch(userAgent))
         {
             deviceType = DeviceType.Tablet;
         }
 
         // Devices running Opera TV Store are assumed to be TVs.
-        if (OperaTvStoreRegex.Value.IsMatch(userAgent))
+        if (OperaTvStoreRegex.IsMatch(userAgent))
         {
             deviceType = DeviceType.Tv;
         }
@@ -267,7 +267,7 @@ public sealed class UADetector : IUADetector
         }
 
         // Devices containing "Andr0id" in the user agent string are assumed to be TVs.
-        if (deviceType != DeviceType.Tv && deviceType != DeviceType.Peripheral && AndroidRegex.Value.IsMatch(userAgent))
+        if (deviceType != DeviceType.Tv && deviceType != DeviceType.Peripheral && AndroidRegex.IsMatch(userAgent))
         {
             deviceType = DeviceType.Tv;
         }
@@ -280,14 +280,14 @@ public sealed class UADetector : IUADetector
         }
 
         // User agents containing the "TV" fragment are assumed to be TVs.
-        if (deviceType is null && TvFragmentRegex.Value.IsMatch(userAgent))
+        if (deviceType is null && TvFragmentRegex.IsMatch(userAgent))
         {
             deviceType = DeviceType.Tv;
         }
 
         // User agents containing the "Desktop" fragment are assumed to be desktops.
         if (deviceType != DeviceType.Desktop && !userAgent.Contains("Desktop") &&
-            DesktopFragment.Value.IsMatch(userAgent))
+            DesktopFragment.IsMatch(userAgent))
         {
             deviceType = DeviceType.Desktop;
         }
@@ -328,7 +328,7 @@ public sealed class UADetector : IUADetector
         [NotNullWhen(true)] out UserAgentInfo? result
     )
     {
-        if (string.IsNullOrEmpty(userAgent) || !ContainsLetterRegex.Value.IsMatch(userAgent))
+        if (string.IsNullOrEmpty(userAgent) || !ContainsLetterRegex.IsMatch(userAgent))
         {
             result = null;
             return false;
