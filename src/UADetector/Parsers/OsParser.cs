@@ -15,8 +15,7 @@ public sealed class OsParser : IOsParser
 {
     private const string ResourceName = "Regexes.Resources.operating_systems.yml";
     private readonly VersionTruncation _versionTruncation;
-    private static readonly IEnumerable<Os> OperatingSystems;
-    private static readonly Regex CombinedRegex;
+    private static readonly IEnumerable<Os> OperatingSystems = ParserExtensions.LoadRegexesWithoutCombinedRegex<Os>(ResourceName);
 
     private static readonly FrozenDictionary<OsCode, string> OsCodeMapping =
         new Dictionary<OsCode, string>
@@ -384,8 +383,8 @@ public sealed class OsParser : IOsParser
         "every.browser.inc"
     }.ToFrozenSet();
 
-    private static readonly FrozenDictionary<string, Regex> PlatformRegexes =
-        new Dictionary<string, Regex>
+    private static readonly FrozenDictionary<string, Lazy<Regex>> PlatformRegexes =
+        new Dictionary<string, Lazy<Regex>>
         {
             {
                 OsPlatformTypes.Arm, ParserExtensions.BuildUserAgentRegex(
@@ -408,13 +407,7 @@ public sealed class OsParser : IOsParser
         OsPlatformTypes.Sparc64, OsPlatformTypes.X64, OsPlatformTypes.X86
     ];
 
-
-    static OsParser()
-    {
-        (OperatingSystems, CombinedRegex) =
-            ParserExtensions.LoadRegexes<Os>(ResourceName);
-    }
-
+    
     public OsParser(VersionTruncation versionTruncation = VersionTruncation.Minor)
     {
         _versionTruncation = versionTruncation;
@@ -538,7 +531,7 @@ public sealed class OsParser : IOsParser
 
         foreach (var platform in OsPlatforms)
         {
-            if (PlatformRegexes.TryGetValue(platform, out var regex) && regex.IsMatch(userAgent))
+            if (PlatformRegexes.TryGetValue(platform, out var regex) && regex.Value.IsMatch(userAgent))
             {
                 result = platform;
                 break;
@@ -609,18 +602,12 @@ public sealed class OsParser : IOsParser
 
     private bool TryParseOsFromUserAgent(string userAgent, [NotNullWhen(true)] out CommonOsInfo? result)
     {
-        if (!CombinedRegex.IsMatch(userAgent))
-        {
-            result = null;
-            return false;
-        }
-
         Match? match = null;
         Os? os = null;
 
         foreach (var osPattern in OperatingSystems)
         {
-            match = osPattern.Regex.Match(userAgent);
+            match = osPattern.Regex.Value.Match(userAgent);
 
             if (match.Success)
             {
@@ -653,7 +640,7 @@ public sealed class OsParser : IOsParser
         {
             foreach (var versionRegex in os.Versions)
             {
-                match = versionRegex.Regex.Match(userAgent);
+                match = versionRegex.Regex.Value.Match(userAgent);
 
                 if (match.Success)
                 {

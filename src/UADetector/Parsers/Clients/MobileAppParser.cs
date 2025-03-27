@@ -11,7 +11,7 @@ internal sealed class MobileAppParser : BaseClientParser
 {
     private const string ResourceName = "Regexes.Resources.Clients.mobile_apps.yml";
     private static readonly IEnumerable<Client> MobileApps;
-    private static readonly Regex CombinedRegex;
+    private static readonly Lazy<Regex> CombinedRegex;
 
 
     static MobileAppParser()
@@ -32,7 +32,7 @@ internal sealed class MobileAppParser : BaseClientParser
         [NotNullWhen(true)] out ClientInfo? result
     )
     {
-        if (TryParse(userAgent, MobileApps, CombinedRegex, out result))
+        if (TryParse(userAgent, MobileApps, CombinedRegex.Value, out result))
         {
             var name = result.Name;
             var version = result.Version;

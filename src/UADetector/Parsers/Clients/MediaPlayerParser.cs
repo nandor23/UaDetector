@@ -11,7 +11,7 @@ internal sealed class MediaPlayerParser : BaseClientParser
 {
     private const string ResourceName = "Regexes.Resources.Clients.media_players.yml";
     private static readonly IEnumerable<Client> MediaPlayers;
-    private static readonly Regex CombinedRegex;
+    private static readonly Lazy<Regex> CombinedRegex;
 
 
     static MediaPlayerParser()
@@ -28,6 +28,6 @@ internal sealed class MediaPlayerParser : BaseClientParser
 
     public override bool TryParse(string userAgent, ClientHints _, [NotNullWhen(true)] out ClientInfo? result)
     {
-        return TryParse(userAgent, MediaPlayers, CombinedRegex, out result);
+        return TryParse(userAgent, MediaPlayers, CombinedRegex.Value, out result);
     }
 }

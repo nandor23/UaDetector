@@ -11,7 +11,7 @@ internal sealed class CameraParser : BaseDeviceParser
 {
     private const string ResourceName = "Regexes.Resources.Devices.cameras.yml";
     private static readonly FrozenDictionary<string, Device> Cameras;
-    private static readonly Regex CombinedRegex;
+    private static readonly Lazy<Regex> CombinedRegex;
 
 
     static CameraParser()
@@ -26,7 +26,7 @@ internal sealed class CameraParser : BaseDeviceParser
         [NotNullWhen(true)] out InternalDeviceInfo? result
     )
     {
-        if (CombinedRegex.IsMatch(userAgent))
+        if (CombinedRegex.Value.IsMatch(userAgent))
         {
             TryParse(userAgent, clientHints, Cameras, out result);
         }

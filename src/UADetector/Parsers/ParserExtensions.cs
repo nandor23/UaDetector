@@ -33,10 +33,10 @@ internal static class ParserExtensions
     );
 
 
-    public static Regex BuildUserAgentRegex(string pattern)
+    public static Lazy<Regex> BuildUserAgentRegex(string pattern)
     {
-        return new Regex($"(?:^|[^A-Z0-9_-]|[^A-Z0-9-]_|sprd-|MZ-)(?:{pattern})",
-            RegexOptions.IgnoreCase | RegexOptions.Compiled);
+        return new Lazy<Regex>(() => new Regex($"(?:^|[^A-Z0-9_-]|[^A-Z0-9-]_|sprd-|MZ-)(?:{pattern})",
+            RegexOptions.IgnoreCase | RegexOptions.Compiled));
     }
 
     public static bool HasUserAgentClientHintsFragment(string userAgent)
@@ -96,21 +96,32 @@ internal static class ParserExtensions
         return stream;
     }
 
-    private static IDeserializer CreateDeserializer(YamlRegexConverter regexConverter)
+    private static IDeserializer CreateDeserializer(YamlLazyRegexConverter lazyRegexConverter)
     {
         return new DeserializerBuilder()
             .WithNamingConvention(CamelCaseNamingConvention.Instance)
             .IgnoreUnmatchedProperties()
-            .WithTypeConverter(regexConverter)
+            .WithTypeConverter(lazyRegexConverter)
             .Build();
     }
 
-    public static (IEnumerable<T>, Regex) LoadRegexes<T>(string resourceName)
+    public static IEnumerable<T> LoadRegexesWithoutCombinedRegex<T>(string resourceName)
     {
         var stream = GetEmbeddedResourceStream(resourceName);
         using var reader = new StreamReader(stream);
 
-        var regexConverter = new YamlRegexConverter();
+        var regexConverter = new YamlLazyRegexConverter();
+        var deserializer = CreateDeserializer(regexConverter);
+
+        return deserializer.Deserialize<IEnumerable<T>>(reader);
+    }
+
+    public static (IEnumerable<T>, Lazy<Regex>) LoadRegexes<T>(string resourceName)
+    {
+        var stream = GetEmbeddedResourceStream(resourceName);
+        using var reader = new StreamReader(stream);
+
+        var regexConverter = new YamlLazyRegexConverter();
         var deserializer = CreateDeserializer(regexConverter);
 
         var regexes = deserializer.Deserialize<IEnumerable<T>>(reader);
@@ -119,7 +130,7 @@ internal static class ParserExtensions
         return (regexes, combinedRegex);
     }
 
-    public static (FrozenDictionary<string, T>, Regex) LoadRegexesDictionary<T>(
+    public static (FrozenDictionary<string, T>, Lazy<Regex>) LoadRegexesDictionary<T>(
         string resourceName,
         string? patternSuffix = null
     )
@@ -127,7 +138,7 @@ internal static class ParserExtensions
         var stream = GetEmbeddedResourceStream(resourceName);
         using var reader = new StreamReader(stream);
 
-        var regexConverter = new YamlRegexConverter(patternSuffix);
+        var regexConverter = new YamlLazyRegexConverter(patternSuffix);
         var deserializer = CreateDeserializer(regexConverter);
 
         var regexes = deserializer.Deserialize<Dictionary<string, T>>(reader);

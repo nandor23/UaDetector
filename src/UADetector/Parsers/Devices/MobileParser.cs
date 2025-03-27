@@ -11,7 +11,7 @@ internal sealed class MobileParser : BaseDeviceParser
 {
     private const string ResourceName = "Regexes.Resources.Devices.mobiles.yml";
     private static readonly FrozenDictionary<string, Device> Mobiles;
-    private static readonly Regex CombinedRegex;
+    private static readonly Lazy<Regex> CombinedRegex;
 
 
     static MobileParser()
@@ -26,7 +26,7 @@ internal sealed class MobileParser : BaseDeviceParser
         [NotNullWhen(true)] out InternalDeviceInfo? result
     )
     {
-        if (CombinedRegex.IsMatch(userAgent))
+        if (CombinedRegex.Value.IsMatch(userAgent))
         {
             TryParse(userAgent, clientHints, Mobiles, out result);
         }

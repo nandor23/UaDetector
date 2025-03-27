@@ -11,7 +11,7 @@ internal sealed class LibraryParser : BaseClientParser
 {
     private const string ResourceName = "Regexes.Resources.Clients.libraries.yml";
     private static readonly IEnumerable<Client> Libraries;
-    private static readonly Regex CombinedRegex;
+    private static readonly Lazy<Regex> CombinedRegex;
 
 
     static LibraryParser()
@@ -28,6 +28,6 @@ internal sealed class LibraryParser : BaseClientParser
 
     public override bool TryParse(string userAgent, ClientHints _, [NotNullWhen(true)] out ClientInfo? result)
     {
-        return TryParse(userAgent, Libraries, CombinedRegex, out result);
+        return TryParse(userAgent, Libraries, CombinedRegex.Value, out result);
     }
 }

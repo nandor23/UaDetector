@@ -11,7 +11,7 @@ internal static class EngineParser
 {
     private const string ResourceName = "Regexes.Resources.Browsers.browser_engines.yml";
     private static readonly IEnumerable<BrowserEngine> Engines;
-    private static readonly Regex CombinedRegex;
+    private static readonly Lazy<Regex> CombinedRegex;
 
     private static readonly FrozenSet<string> EngineNames = new[]
     {
@@ -31,7 +31,7 @@ internal static class EngineParser
     public static bool TryParse(string userAgent, [NotNullWhen(true)] out string? result)
     {
 
-        if (!CombinedRegex.IsMatch(userAgent))
+        if (!CombinedRegex.Value.IsMatch(userAgent))
         {
             result = null;
             return false;
@@ -42,7 +42,7 @@ internal static class EngineParser
 
         foreach (var enginePattern in Engines)
         {
-            match = enginePattern.Regex.Match(userAgent);
+            match = enginePattern.Regex.Value.Match(userAgent);
 
             if (match.Success)
             {

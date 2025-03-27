@@ -11,7 +11,7 @@ internal sealed class FeedReaderParser : BaseClientParser
 {
     private const string ResourceName = "Regexes.Resources.Clients.feed_readers.yml";
     private static readonly IEnumerable<Client> FeedReaders;
-    private static readonly Regex CombinedRegex;
+    private static readonly Lazy<Regex> CombinedRegex;
 
 
     static FeedReaderParser()
@@ -28,6 +28,6 @@ internal sealed class FeedReaderParser : BaseClientParser
 
     public override bool TryParse(string userAgent, ClientHints _, [NotNullWhen(true)] out ClientInfo? result)
     {
-        return TryParse(userAgent, FeedReaders, CombinedRegex, out result);
+        return TryParse(userAgent, FeedReaders, CombinedRegex.Value, out result);
     }
 }

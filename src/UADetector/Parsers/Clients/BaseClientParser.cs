@@ -36,7 +36,7 @@ internal abstract class BaseClientParser
         {
             foreach (var client in clients)
             {
-                var match = client.Regex.Match(userAgent);
+                var match = client.Regex.Value.Match(userAgent);
 
                 if (match.Success)
                 {

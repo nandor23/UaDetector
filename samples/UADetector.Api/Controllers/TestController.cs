@@ -22,7 +22,10 @@ public class TestController : ControllerBase
         var userAgent = HttpContext.Request.Headers.UserAgent.ToString();
         var headers = Request.Headers.ToDictionary(a => a.Key, a => a.Value.ToArray().FirstOrDefault());
 
-        var parser = new UADetector();
+        var parser = new UADetector(new UADetectorOptions
+        {
+            SkipBotDetails = true,
+        });
         parser.TryParse(userAgent, headers, out var result);
         return Ok(result);
     }

@@ -5,12 +5,12 @@ namespace UADetector;
 
 internal sealed class ClientHints
 {
-    private static readonly Regex FullVersionListRegex =
-        new("""^"([^"]+)"; ?v="([^"]+)"(?:, )?""", RegexOptions.Compiled);
+    private static readonly Lazy<Regex> FullVersionListRegex =
+        new(() => new Regex("""^"([^"]+)"; ?v="([^"]+)"(?:, )?""", RegexOptions.Compiled));
 
-    private static readonly Regex FormFactorsRegex = new("""
-                                                         "([a-zA-Z]+)"
-                                                         """, RegexOptions.Compiled);
+    private static readonly Lazy<Regex> FormFactorsRegex = new(() => new Regex("""
+                                                                               "([a-zA-Z]+)"
+                                                                               """, RegexOptions.Compiled));
 
     private static readonly FrozenSet<string> ArchitectureHeaderNames =
         new HashSet<string>(StringComparer.OrdinalIgnoreCase)
@@ -178,7 +178,7 @@ internal sealed class ClientHints
                      (SecondaryFullVersionListHeaderNames.Contains(normalizedHeader) &&
                       clientHints.FullVersionList.Count == 0))
             {
-                while (FullVersionListRegex.Match(value) is { Success: true } match)
+                while (FullVersionListRegex.Value.Match(value) is { Success: true } match)
                 {
                     clientHints.FullVersionList.Add(match.Groups[1].Value, match.Groups[2].Value);
                     value = value[match.Length..];
@@ -199,7 +199,7 @@ internal sealed class ClientHints
                 }
                 else
                 {
-                    foreach (Match match in FormFactorsRegex.Matches(normalizedHeader))
+                    foreach (Match match in FormFactorsRegex.Value.Matches(normalizedHeader))
                     {
                         clientHints.FormFactors.Add(match.Value);
                     }
