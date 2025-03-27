@@ -343,18 +343,10 @@ public sealed class UADetector : IUADetector
 
         ClientInfo? client = null;
         BotInfo? bot = null;
-        bool isBot = false;
 
         if (!_uaDetectorOptions.SkipBotParsing)
         {
-            if (_uaDetectorOptions.SkipBotDetails)
-            {
-                isBot = _botParser.IsBot(userAgent);
-            }
-            else
-            {
-                _botParser.TryParse(userAgent, out bot);
-            }
+            _botParser.TryParse(userAgent, out bot);
         }
 
         _osParser.TryParse(userAgent, clientHints, out var os);
@@ -375,7 +367,6 @@ public sealed class UADetector : IUADetector
         {
             result = new UserAgentInfo
             {
-                IsBot = isBot,
                 Device = device,
                 Os = os,
                 Browser = browser,
