@@ -407,7 +407,7 @@ public sealed class OsParser : IOsParser
         OsPlatformTypes.Sparc64, OsPlatformTypes.X64, OsPlatformTypes.X86
     ];
 
-    
+
     public OsParser(VersionTruncation versionTruncation = VersionTruncation.Minor)
     {
         _versionTruncation = versionTruncation;

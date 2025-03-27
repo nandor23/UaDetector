@@ -958,11 +958,13 @@ public sealed class BrowserParser : IBrowserParser
         BrowserCode.Chromium, BrowserCode.ChromeWebview, BrowserCode.AndroidBrowser,
     }.ToFrozenSet();
 
-    private static readonly Regex ChromeSafariRegex =
-        new(@"Chrome/.+ Safari/537\.36", RegexOptions.IgnoreCase | RegexOptions.Compiled);
+    private static readonly Lazy<Regex> ChromeSafariRegex = new(() =>
+        new Regex(@"Chrome/.+ Safari/537\.36", RegexOptions.IgnoreCase | RegexOptions.Compiled));
 
-    private static readonly Regex CypressOrPhantomJsRegex = new("Cypress|PhantomJS", RegexOptions.Compiled);
-    private static readonly Regex IridiumVersionRegex = new("^202[0-4]", RegexOptions.Compiled);
+    private static readonly Lazy<Regex> CypressOrPhantomJsRegex =
+        new(() => new Regex("Cypress|PhantomJS", RegexOptions.Compiled));
+
+    private static readonly Lazy<Regex> IridiumVersionRegex = new(() => new Regex("^202[0-4]", RegexOptions.Compiled));
 
 
     public BrowserParser(VersionTruncation versionTruncation = VersionTruncation.Minor)
@@ -1204,7 +1206,7 @@ public sealed class BrowserParser : IBrowserParser
             code = browserFromClientHints.Code;
             version = browserFromClientHints.Version;
 
-            if (IridiumVersionRegex.IsMatch(version))
+            if (IridiumVersionRegex.Value.IsMatch(version))
             {
                 name = BrowserNames.Iridium;
                 code = BrowserCode.Iridium;
@@ -1311,7 +1313,7 @@ public sealed class BrowserParser : IBrowserParser
                 code = browserCode;
             }
 
-            if (ChromeSafariRegex.IsMatch(userAgent))
+            if (ChromeSafariRegex.Value.IsMatch(userAgent))
             {
                 engine = BrowserEngines.Blink;
                 engineVersion = BuildEngineVersion(userAgent, engine);
@@ -1323,7 +1325,7 @@ public sealed class BrowserParser : IBrowserParser
             }
         }
 
-        if (string.IsNullOrEmpty(name) || CypressOrPhantomJsRegex.IsMatch(userAgent) || !code.HasValue)
+        if (string.IsNullOrEmpty(name) || CypressOrPhantomJsRegex.Value.IsMatch(userAgent) || !code.HasValue)
         {
             result = null;
             return false;

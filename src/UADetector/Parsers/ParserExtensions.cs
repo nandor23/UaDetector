@@ -12,26 +12,26 @@ namespace UADetector.Parsers;
 
 internal static class ParserExtensions
 {
-    private static readonly Regex ClientHintsFragmentMatchRegex = new(
-        @"Android (?:10[.\d]*; K(?: Build/|[;)])|1[1-5]\)) AppleWebKit",
-        RegexOptions.IgnoreCase | RegexOptions.Compiled);
+    private static readonly Lazy<Regex> ClientHintsFragmentMatchRegex = new(() =>
+        new Regex(@"Android (?:10[.\d]*; K(?: Build/|[;)])|1[1-5]\)) AppleWebKit",
+            RegexOptions.IgnoreCase | RegexOptions.Compiled));
 
-    private static readonly Regex ClientHintsFragmentReplacementRegex =
-        new(@"Android (?:10[.\d]*; K|1[1-5])", RegexOptions.Compiled);
+    private static readonly Lazy<Regex> ClientHintsFragmentReplacementRegex = new(() =>
+        new Regex(@"Android (?:10[.\d]*; K|1[1-5])", RegexOptions.Compiled));
 
-    private static readonly Regex DesktopFragmentMatchRegex =
-        new("(?:Windows (?:NT|IoT)|X11; Linux x86_64)", RegexOptions.Compiled);
+    private static readonly Lazy<Regex> DesktopFragmentMatchRegex =
+        new(() => new Regex("(?:Windows (?:NT|IoT)|X11; Linux x86_64)", RegexOptions.Compiled));
 
-    private static readonly Regex DesktopFragmentReplacementRegex = new("X11; Linux x86_64", RegexOptions.Compiled);
+    private static readonly Lazy<Regex> DesktopFragmentReplacementRegex =
+        new(() => new Regex("X11; Linux x86_64", RegexOptions.Compiled));
 
-    private static readonly Regex DesktopFragmentExclusionRegex = new(string.Join("|",
+    private static readonly Lazy<Regex> DesktopFragmentExclusionRegex = new(() => new Regex(string.Join("|",
             "CE-HTML",
             " Mozilla/|Andr[o0]id|Tablet|Mobile|iPhone|Windows Phone|ricoh|OculusBrowser",
             "PicoBrowser|Lenovo|compatible; MSIE|Trident/|Tesla/|XBOX|FBMD/|ARM; ?([^)]+)"
         ),
         RegexOptions.Compiled
-    );
-
+    ));
 
     public static Lazy<Regex> BuildUserAgentRegex(string pattern)
     {
@@ -41,12 +41,13 @@ internal static class ParserExtensions
 
     public static bool HasUserAgentClientHintsFragment(string userAgent)
     {
-        return ClientHintsFragmentMatchRegex.IsMatch(userAgent);
+        return ClientHintsFragmentMatchRegex.Value.IsMatch(userAgent);
     }
 
     public static bool HasUserAgentDesktopFragment(string userAgent)
     {
-        return DesktopFragmentMatchRegex.IsMatch(userAgent) && !DesktopFragmentExclusionRegex.IsMatch(userAgent);
+        return DesktopFragmentMatchRegex.Value.IsMatch(userAgent) &&
+               !DesktopFragmentExclusionRegex.Value.IsMatch(userAgent);
     }
 
     public static bool TryRestoreUserAgent(
@@ -68,13 +69,13 @@ internal static class ParserExtensions
                 string.IsNullOrEmpty(clientHints.PlatformVersion) ? "10" : clientHints.PlatformVersion;
 
             result = ClientHintsFragmentReplacementRegex
-                .Replace(userAgent, $"Android {platformVersion}; {clientHints.Model}");
+                .Value.Replace(userAgent, $"Android {platformVersion}; {clientHints.Model}");
         }
 
         if (HasUserAgentDesktopFragment(userAgent))
         {
             result = DesktopFragmentReplacementRegex
-                .Replace(userAgent, $"X11; Linux x86_64; {clientHints.Model}");
+                .Value.Replace(userAgent, $"X11; Linux x86_64; {clientHints.Model}");
         }
 
         return !string.IsNullOrEmpty(result);
