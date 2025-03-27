@@ -17,7 +17,7 @@ internal sealed class LibraryParser : BaseClientParser
     static LibraryParser()
     {
         (Libraries, CombinedRegex) =
-            ParserExtensions.LoadRegexesWithCombinedRegex<Client>(ResourceName);
+            ParserExtensions.LoadRegexes<Client>(ResourceName);
     }
 
     public LibraryParser(VersionTruncation versionTruncation) : base(versionTruncation)

@@ -11,12 +11,13 @@ internal static class EngineVersionParser
     private static readonly Regex GeckoOrCleckoRegex = new("[ ](?:rv[: ]([0-9.]+)).*(?:g|cl)ecko/[0-9]{8,10}",
         RegexOptions.IgnoreCase | RegexOptions.Compiled);
 
-    private static readonly FrozenDictionary<string, Regex> EngineVersionRegexes = new Dictionary<string, Regex>
-    {
-        { BrowserEngines.Blink, BuildRegex("Chr[o0]me|Chromium|Cronet") },
-        { BrowserEngines.Arachne, BuildRegex(@"Arachne/5\.") },
-        { BrowserEngines.LibWeb, BuildRegex(@"LibWeb\+LibJs") },
-    }.ToFrozenDictionary(StringComparer.OrdinalIgnoreCase);
+    private static readonly FrozenDictionary<string, Regex> EngineVersionRegexes =
+        new Dictionary<string, Regex>
+        {
+            { BrowserEngines.Blink, BuildRegex("Chr[o0]me|Chromium|Cronet") },
+            { BrowserEngines.Arachne, BuildRegex(@"Arachne/5\.") },
+            { BrowserEngines.LibWeb, BuildRegex(@"LibWeb\+LibJs") },
+        }.ToFrozenDictionary(StringComparer.OrdinalIgnoreCase);
 
     private static Regex BuildRegex(string pattern)
     {

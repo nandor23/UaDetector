@@ -17,7 +17,7 @@ internal sealed class PortableMediaPlayerParser : BaseDeviceParser
     static PortableMediaPlayerParser()
     {
         (PortableMediaPlayers, CombinedRegex) =
-            ParserExtensions.LoadRegexesDictionaryWithCombinedRegex<Device>(ResourceName);
+            ParserExtensions.LoadRegexesDictionary<Device>(ResourceName);
     }
 
     public override bool TryParse(

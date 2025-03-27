@@ -12,9 +12,9 @@ namespace UADetector.Parsers;
 
 internal static class ParserExtensions
 {
-    private static readonly Regex ClientHintsFragmentMatchRegex = new(
-        @"Android (?:10[.\d]*; K(?: Build/|[;)])|1[1-5]\)) AppleWebKit",
-        RegexOptions.IgnoreCase | RegexOptions.Compiled);
+    private static readonly Regex ClientHintsFragmentMatchRegex =
+        new(@"Android (?:10[.\d]*; K(?: Build/|[;)])|1[1-5]\)) AppleWebKit",
+            RegexOptions.IgnoreCase | RegexOptions.Compiled);
 
     private static readonly Regex ClientHintsFragmentReplacementRegex =
         new(@"Android (?:10[.\d]*; K|1[1-5])", RegexOptions.Compiled);
@@ -32,7 +32,6 @@ internal static class ParserExtensions
         RegexOptions.Compiled
     );
 
-
     public static Regex BuildUserAgentRegex(string pattern)
     {
         return new Regex($"(?:^|[^A-Z0-9_-]|[^A-Z0-9-]_|sprd-|MZ-)(?:{pattern})",
@@ -46,7 +45,8 @@ internal static class ParserExtensions
 
     public static bool HasUserAgentDesktopFragment(string userAgent)
     {
-        return DesktopFragmentMatchRegex.IsMatch(userAgent) && !DesktopFragmentExclusionRegex.IsMatch(userAgent);
+        return DesktopFragmentMatchRegex.IsMatch(userAgent) &&
+               !DesktopFragmentExclusionRegex.IsMatch(userAgent);
     }
 
     public static bool TryRestoreUserAgent(
@@ -67,14 +67,13 @@ internal static class ParserExtensions
             var platformVersion =
                 string.IsNullOrEmpty(clientHints.PlatformVersion) ? "10" : clientHints.PlatformVersion;
 
-            result = ClientHintsFragmentReplacementRegex
-                .Replace(userAgent, $"Android {platformVersion}; {clientHints.Model}");
+            result = ClientHintsFragmentReplacementRegex.Replace(userAgent,
+                $"Android {platformVersion}; {clientHints.Model}");
         }
 
         if (HasUserAgentDesktopFragment(userAgent))
         {
-            result = DesktopFragmentReplacementRegex
-                .Replace(userAgent, $"X11; Linux x86_64; {clientHints.Model}");
+            result = DesktopFragmentReplacementRegex.Replace(userAgent, $"X11; Linux x86_64; {clientHints.Model}");
         }
 
         return !string.IsNullOrEmpty(result);
@@ -105,7 +104,18 @@ internal static class ParserExtensions
             .Build();
     }
 
-    public static (IEnumerable<T>, Regex) LoadRegexesWithCombinedRegex<T>(string resourceName)
+    public static IEnumerable<T> LoadRegexesWithoutCombinedRegex<T>(string resourceName)
+    {
+        var stream = GetEmbeddedResourceStream(resourceName);
+        using var reader = new StreamReader(stream);
+
+        var regexConverter = new YamlRegexConverter();
+        var deserializer = CreateDeserializer(regexConverter);
+
+        return deserializer.Deserialize<IEnumerable<T>>(reader);
+    }
+
+    public static (IEnumerable<T>, Regex) LoadRegexes<T>(string resourceName)
     {
         var stream = GetEmbeddedResourceStream(resourceName);
         using var reader = new StreamReader(stream);
@@ -119,32 +129,10 @@ internal static class ParserExtensions
         return (regexes, combinedRegex);
     }
 
-    public static IEnumerable<T> LoadRegexes<T>(string resourceName)
-    {
-        var stream = GetEmbeddedResourceStream(resourceName);
-        using var reader = new StreamReader(stream);
-
-        var regexConverter = new YamlRegexConverter();
-        var deserializer = CreateDeserializer(regexConverter);
-
-        return deserializer.Deserialize<IEnumerable<T>>(reader);
-    }
-
-    public static (FrozenDictionary<string, T>, Regex) LoadRegexesDictionaryWithCombinedRegex<T>(string resourceName)
-    {
-        var stream = GetEmbeddedResourceStream(resourceName);
-        using var reader = new StreamReader(stream);
-
-        var regexConverter = new YamlRegexConverter();
-        var deserializer = CreateDeserializer(regexConverter);
-
-        var regexes = deserializer.Deserialize<Dictionary<string, T>>(reader);
-        var combinedRegex = regexConverter.BuildCombinedRegex();
-
-        return (regexes.ToFrozenDictionary(), combinedRegex);
-    }
-
-    public static FrozenDictionary<string, T> LoadRegexesDictionary<T>(string resourceName, string patternSuffix)
+    public static (FrozenDictionary<string, T>, Regex) LoadRegexesDictionary<T>(
+        string resourceName,
+        string? patternSuffix = null
+    )
     {
         var stream = GetEmbeddedResourceStream(resourceName);
         using var reader = new StreamReader(stream);
@@ -152,7 +140,10 @@ internal static class ParserExtensions
         var regexConverter = new YamlRegexConverter(patternSuffix);
         var deserializer = CreateDeserializer(regexConverter);
 
-        return deserializer.Deserialize<Dictionary<string, T>>(reader).ToFrozenDictionary();
+        var regexes = deserializer.Deserialize<Dictionary<string, T>>(reader);
+        var combinedRegex = regexConverter.BuildCombinedRegex();
+
+        return (regexes.ToFrozenDictionary(), combinedRegex);
     }
 
     public static FrozenDictionary<string, string> LoadHints(string resourceName)

@@ -16,8 +16,7 @@ public sealed class BrowserParser : IBrowserParser
 {
     private const string ResourceName = "Regexes.Resources.Browsers.browsers.yml";
     private readonly VersionTruncation _versionTruncation;
-
-    private static readonly IEnumerable<Browser> Browsers = ParserExtensions.LoadRegexes<Browser>(ResourceName);
+    private static readonly IEnumerable<Browser> Browsers = ParserExtensions.LoadRegexesWithoutCombinedRegex<Browser>(ResourceName);
 
     private static readonly FrozenDictionary<BrowserCode, string> BrowserCodeMapping =
         new Dictionary<BrowserCode, string>
@@ -962,8 +961,9 @@ public sealed class BrowserParser : IBrowserParser
     private static readonly Regex ChromeSafariRegex =
         new(@"Chrome/.+ Safari/537\.36", RegexOptions.IgnoreCase | RegexOptions.Compiled);
 
-    private static readonly Regex CypressOrPhantomJsRegex = new("Cypress|PhantomJS", RegexOptions.Compiled);
-    private static readonly Regex IridiumVersionRegex = new("^202[0-4]", RegexOptions.Compiled);
+    private static readonly Regex CypressOrPhantomJsRegex = new Regex("Cypress|PhantomJS", RegexOptions.Compiled);
+
+    private static readonly Regex IridiumVersionRegex = new Regex("^202[0-4]", RegexOptions.Compiled);
 
 
     public BrowserParser(VersionTruncation versionTruncation = VersionTruncation.Minor)
@@ -1175,6 +1175,12 @@ public sealed class BrowserParser : IBrowserParser
     )
     {
         var clientHints = ClientHints.Create(headers);
+
+        if (ParserExtensions.TryRestoreUserAgent(userAgent, clientHints, out var restoredUserAgent))
+        {
+            userAgent = restoredUserAgent;
+        }
+
         return TryParse(userAgent, clientHints, out result);
     }
 
@@ -1184,11 +1190,6 @@ public sealed class BrowserParser : IBrowserParser
         [NotNullWhen(true)] out BrowserInfo? result
     )
     {
-        if (ParserExtensions.TryRestoreUserAgent(userAgent, clientHints, out var restoredUserAgent))
-        {
-            userAgent = restoredUserAgent;
-        }
-
         string? name = null;
         BrowserCode? code = null;
         string? version = null;

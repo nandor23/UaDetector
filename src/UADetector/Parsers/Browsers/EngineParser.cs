@@ -10,9 +10,8 @@ namespace UADetector.Parsers.Browsers;
 internal static class EngineParser
 {
     private const string ResourceName = "Regexes.Resources.Browsers.browser_engines.yml";
-
-    private static readonly IEnumerable<BrowserEngine> Engines =
-        ParserExtensions.LoadRegexes<BrowserEngine>(ResourceName);
+    private static readonly IEnumerable<BrowserEngine> Engines;
+    private static readonly Regex CombinedRegex;
 
     private static readonly FrozenSet<string> EngineNames = new[]
     {
@@ -23,8 +22,21 @@ internal static class EngineParser
         BrowserEngines.EkiohFlow, BrowserEngines.Arachne, BrowserEngines.LibWeb, BrowserEngines.Maple
     }.ToFrozenSet(StringComparer.OrdinalIgnoreCase);
 
+    static EngineParser()
+    {
+        (Engines, CombinedRegex) =
+            ParserExtensions.LoadRegexes<BrowserEngine>(ResourceName);
+    }
+
     public static bool TryParse(string userAgent, [NotNullWhen(true)] out string? result)
     {
+
+        if (!CombinedRegex.IsMatch(userAgent))
+        {
+            result = null;
+            return false;
+        }
+
         Match? match = null;
         BrowserEngine? engine = null;
 

@@ -17,7 +17,7 @@ internal sealed class CameraParser : BaseDeviceParser
     static CameraParser()
     {
         (Cameras, CombinedRegex) =
-            ParserExtensions.LoadRegexesDictionaryWithCombinedRegex<Device>(ResourceName);
+            ParserExtensions.LoadRegexesDictionary<Device>(ResourceName);
     }
 
     public override bool TryParse(

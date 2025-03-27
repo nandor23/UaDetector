@@ -31,7 +31,6 @@ public sealed class UADetector : IUADetector
     private static readonly Regex TouchEnabledRegex = ParserExtensions.BuildUserAgentRegex("Touch");
     private static readonly Regex TvFragmentRegex = ParserExtensions.BuildUserAgentRegex(@"\(TV;");
 
-
     private static readonly Regex AndroidTabletFragmentRegex =
         ParserExtensions.BuildUserAgentRegex(@"Android( [.0-9]+)?; Tablet;|Tablet(?! PC)|.*\-tablet$");
 
@@ -274,7 +273,8 @@ public sealed class UADetector : IUADetector
         }
 
         // Devices using these clients are assumed to be TVs.
-        if (browser is not null && TvBrowsers.Contains(browser.Name) || client is not null && TvClients.Contains(client.Name))
+        if (browser is not null && TvBrowsers.Contains(browser.Name) ||
+            client is not null && TvClients.Contains(client.Name))
         {
             deviceType = DeviceType.Tv;
         }
@@ -286,7 +286,8 @@ public sealed class UADetector : IUADetector
         }
 
         // User agents containing the "Desktop" fragment are assumed to be desktops.
-        if (deviceType != DeviceType.Desktop && !userAgent.Contains("Desktop") && DesktopFragment.IsMatch(userAgent))
+        if (deviceType != DeviceType.Desktop && !userAgent.Contains("Desktop") &&
+            DesktopFragment.IsMatch(userAgent))
         {
             deviceType = DeviceType.Desktop;
         }
@@ -342,18 +343,10 @@ public sealed class UADetector : IUADetector
 
         ClientInfo? client = null;
         BotInfo? bot = null;
-        bool isBot = false;
 
         if (!_uaDetectorOptions.SkipBotParsing)
         {
-            if (_uaDetectorOptions.SkipBotDetails)
-            {
-                isBot = _botParser.IsBot(userAgent);
-            }
-            else
-            {
-                _botParser.TryParse(userAgent, out bot);
-            }
+            _botParser.TryParse(userAgent, out bot);
         }
 
         _osParser.TryParse(userAgent, clientHints, out var os);
@@ -374,7 +367,6 @@ public sealed class UADetector : IUADetector
         {
             result = new UserAgentInfo
             {
-                IsBot = isBot,
                 Device = device,
                 Os = os,
                 Browser = browser,

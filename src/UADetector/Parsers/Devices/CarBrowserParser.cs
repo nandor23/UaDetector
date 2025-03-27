@@ -17,7 +17,7 @@ internal sealed class CarBrowserParser : BaseDeviceParser
     static CarBrowserParser()
     {
         (CarBrowsers, CombinedRegex) =
-            ParserExtensions.LoadRegexesDictionaryWithCombinedRegex<Device>(ResourceName);
+            ParserExtensions.LoadRegexesDictionary<Device>(ResourceName);
     }
 
     public override bool TryParse(

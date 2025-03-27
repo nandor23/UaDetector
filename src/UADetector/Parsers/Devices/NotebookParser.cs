@@ -12,13 +12,12 @@ internal sealed class NotebookParser : BaseDeviceParser
     private const string ResourceName = "Regexes.Resources.Devices.notebooks.yml";
     private static readonly FrozenDictionary<string, Device> Notebooks;
     private static readonly Regex CombinedRegex;
-    private static readonly Regex FbmdRegex = ParserExtensions.BuildUserAgentRegex("FBMD/");
 
 
     static NotebookParser()
     {
         (Notebooks, CombinedRegex) =
-            ParserExtensions.LoadRegexesDictionaryWithCombinedRegex<Device>(ResourceName);
+            ParserExtensions.LoadRegexesDictionary<Device>(ResourceName);
     }
 
     public override bool TryParse(
@@ -27,7 +26,7 @@ internal sealed class NotebookParser : BaseDeviceParser
         [NotNullWhen(true)] out InternalDeviceInfo? result
     )
     {
-        if (FbmdRegex.IsMatch(userAgent) && CombinedRegex.IsMatch(userAgent))
+        if (CombinedRegex.IsMatch(userAgent))
         {
             TryParse(userAgent, clientHints, Notebooks, out result);
         }

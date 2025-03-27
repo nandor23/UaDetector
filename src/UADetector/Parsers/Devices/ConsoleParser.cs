@@ -17,7 +17,7 @@ internal sealed class ConsoleParser : BaseDeviceParser
     static ConsoleParser()
     {
         (Consoles, CombinedRegex) =
-            ParserExtensions.LoadRegexesDictionaryWithCombinedRegex<Device>(ResourceName);
+            ParserExtensions.LoadRegexesDictionary<Device>(ResourceName);
     }
 
     public override bool TryParse(
