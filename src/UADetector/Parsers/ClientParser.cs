@@ -35,6 +35,12 @@ public sealed class ClientParser : IClientParser
     )
     {
         var clientHints = ClientHints.Create(headers);
+
+        if (ParserExtensions.TryRestoreUserAgent(userAgent, clientHints, out var restoredUserAgent))
+        {
+            userAgent = restoredUserAgent;
+        }
+
         return TryParse(userAgent, clientHints, out result);
     }
 
