@@ -810,7 +810,7 @@ public sealed class OsParser : IOsParser
         return true;
     }
 
-    internal static bool IsDesktopOs(string osFamily)
+    internal bool IsDesktopOs(string osFamily)
     {
         return DesktopOsFamilies.Contains(osFamily);
     }
