@@ -1,6 +1,7 @@
 using System.Collections.Frozen;
 using System.Collections.Immutable;
 using System.Diagnostics.CodeAnalysis;
+using System.Runtime.CompilerServices;
 using System.Text.RegularExpressions;
 
 using UADetector.Models.Constants;
@@ -15,7 +16,7 @@ public sealed class OsParser : IOsParser
 {
     private const string ResourceName = "Regexes.Resources.operating_systems.yml";
     private readonly VersionTruncation _versionTruncation;
-    private static readonly IEnumerable<Os> OperatingSystems = ParserExtensions.LoadRegexesWithoutCombinedRegex<Os>(ResourceName);
+    internal static readonly IEnumerable<Os> OperatingSystems = ParserExtensions.LoadRegexesWithoutCombinedRegex<Os>(ResourceName);
 
     private static readonly FrozenDictionary<OsCode, string> OsCodeMapping =
         new Dictionary<OsCode, string>
@@ -208,7 +209,7 @@ public sealed class OsParser : IOsParser
             { OsCode.WebOs, OsNames.WebOs },
         }.ToFrozenDictionary();
 
-    private static readonly FrozenDictionary<string, OsCode> OsNameMapping = OsCodeMapping
+    internal static readonly FrozenDictionary<string, OsCode> OsNameMapping = OsCodeMapping
         .ToDictionary(e => e.Value, e => e.Key)
         .ToFrozenDictionary(StringComparer.OrdinalIgnoreCase);
 
