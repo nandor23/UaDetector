@@ -9,7 +9,7 @@ using UADetector.Tests.Helpers;
 
 namespace UADetector.Tests.Tests.Parsers;
 
-public class OsParserTests
+public sealed class OsParserTests
 {
     [Test]
     public void OsParser_Instantiation_ShouldNotThrowException()
@@ -66,6 +66,35 @@ public class OsParserTests
     }
 
     [Test]
+    public void OsCodeMapping_ShouldContainAllOsCodes()
+    {
+        foreach (OsCode osCode in Enum.GetValues(typeof(OsCode)))
+        {
+            OsParser.OsCodeMapping.ShouldContainKey(osCode);
+        }
+    }
+
+    [Test]
+    public void OsFamilyMapping_ShouldContainAllOsCodes()
+    {
+        foreach (OsCode osCode in Enum.GetValues(typeof(OsCode)))
+        {
+            bool contains = false;
+
+            foreach (var osFamily in OsParser.OsFamilyMapping)
+            {
+                if (osFamily.Value.Contains(osCode))
+                {
+                    contains = true;
+                    break;
+                }
+            }
+
+            contains.ShouldBeTrue();
+        }
+    }
+
+    [Test]
     public void TryParse_WithFixtureData_ShouldReturnCorrectOsInfo()
     {
         var fixturePath = Path.Combine("Fixtures", "Resources", "operating_systems.yml");
@@ -79,11 +108,11 @@ public class OsParserTests
 
             if (fixture.Headers is null)
             {
-                osParser.TryParse(fixture.UserAgent, out result);
+                osParser.TryParse(fixture.UserAgent, out result).ShouldBeTrue();
             }
             else
             {
-                osParser.TryParse(fixture.UserAgent, fixture.Headers, out result);
+                osParser.TryParse(fixture.UserAgent, fixture.Headers, out result).ShouldBeTrue();
             }
 
             result.ShouldNotBeNull();

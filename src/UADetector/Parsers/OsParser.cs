@@ -17,7 +17,7 @@ public sealed class OsParser : IOsParser
     private readonly VersionTruncation _versionTruncation;
     internal static readonly IEnumerable<Os> OperatingSystems = ParserExtensions.LoadRegexesWithoutCombinedRegex<Os>(ResourceName);
 
-    private static readonly FrozenDictionary<OsCode, string> OsCodeMapping =
+    internal static readonly FrozenDictionary<OsCode, string> OsCodeMapping =
         new Dictionary<OsCode, string>
         {
             { OsCode.Aix, OsNames.Aix },
@@ -212,7 +212,7 @@ public sealed class OsParser : IOsParser
         .ToDictionary(e => e.Value, e => e.Key)
         .ToFrozenDictionary(StringComparer.OrdinalIgnoreCase);
 
-    private static readonly FrozenDictionary<string, FrozenSet<OsCode>> OsFamilyMapping =
+    internal static readonly FrozenDictionary<string, FrozenSet<OsCode>> OsFamilyMapping =
         new Dictionary<string, FrozenSet<OsCode>>
         {
             {
