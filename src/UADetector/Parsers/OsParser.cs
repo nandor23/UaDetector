@@ -580,7 +580,8 @@ public sealed class OsParser : IOsParser
         }
 
         // On Windows, version 0.0.0 can represent 7, 8, or 8.1, so it is set to null.
-        if (name != OsNames.Windows && version != "0.0.0" && version == "0")
+        if (name != OsNames.Windows && !string.IsNullOrEmpty(version) && version != "0.0.0" &&
+            ParserExtensions.TryCompareVersions(version, "0", out var comparisonResult) && comparisonResult == 0)
         {
             version = null;
         }

@@ -200,10 +200,25 @@ internal static class ParserExtensions
         return BuildVersion(version, versionTruncation);
     }
 
-    public static bool TryCompareVersions(string version1, string version2, [NotNullWhen(true)] out int? result)
+    /// <summary>
+    /// Tries to compare <paramref name="first"/> and <paramref name="second"/>.
+    /// </summary>
+    /// <param name="first">The first version string to compare.</param>
+    /// <param name="second">The second version string to compare.</param>
+    /// <param name="result">
+    /// The comparison result:
+    /// - Less than zero if <paramref name="first"/> is less than <paramref name="second"/>.
+    /// - Zero if they are equal.
+    /// - Greater than zero if <paramref name="first"/> is greater than <paramref name="second"/>.
+    /// Only set if the comparison succeeds.
+    /// </param>
+    /// <returns>
+    /// True if the comparison was successful, false otherwise.
+    /// </returns>
+    public static bool TryCompareVersions(string first, string second, [NotNullWhen(true)] out int? result)
     {
-        string[] segments1 = version1.Split('.');
-        string[] segments2 = version2.Split('.');
+        string[] segments1 = first.Split('.');
+        string[] segments2 = second.Split('.');
 
         int maxSegments = Math.Max(segments1.Length, segments2.Length);
 
