@@ -7,7 +7,7 @@ using UADetector.Results;
 
 namespace UADetector.Parsers.Devices;
 
-internal sealed class MobileParser : BaseDeviceParser
+internal sealed class MobileParser : DeviceParserBase
 {
     private const string ResourceName = "Regexes.Resources.Devices.mobiles.yml";
     private static readonly FrozenDictionary<string, Device> Mobiles;

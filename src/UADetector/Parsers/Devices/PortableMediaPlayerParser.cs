@@ -7,7 +7,7 @@ using UADetector.Results;
 
 namespace UADetector.Parsers.Devices;
 
-internal sealed class PortableMediaPlayerParser : BaseDeviceParser
+internal sealed class PortableMediaPlayerParser : DeviceParserBase
 {
     private const string ResourceName = "Regexes.Resources.Devices.portable_media_players.yml";
     private static readonly FrozenDictionary<string, Device> PortableMediaPlayers;

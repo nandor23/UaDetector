@@ -7,7 +7,7 @@ using UADetector.Results;
 
 namespace UADetector.Parsers.Devices;
 
-internal sealed class CameraParser : BaseDeviceParser
+internal sealed class CameraParser : DeviceParserBase
 {
     private const string ResourceName = "Regexes.Resources.Devices.cameras.yml";
     private static readonly FrozenDictionary<string, Device> Cameras;

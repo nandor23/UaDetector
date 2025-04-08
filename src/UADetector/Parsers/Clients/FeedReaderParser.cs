@@ -7,7 +7,7 @@ using UADetector.Results;
 
 namespace UADetector.Parsers.Clients;
 
-internal sealed class FeedReaderParser : BaseClientParser
+internal sealed class FeedReaderParser : ClientParserBase
 {
     private const string ResourceName = "Regexes.Resources.Clients.feed_readers.yml";
     private static readonly IEnumerable<Client> FeedReaders;

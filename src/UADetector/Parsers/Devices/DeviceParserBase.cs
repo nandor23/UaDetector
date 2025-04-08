@@ -9,7 +9,7 @@ using UADetector.Results;
 
 namespace UADetector.Parsers.Devices;
 
-internal abstract class BaseDeviceParser
+internal abstract class DeviceParserBase
 {
     private static readonly FrozenDictionary<BrandCode, string> BrandCodeMapping = new Dictionary<BrandCode, string>
     {

@@ -8,7 +8,7 @@ using UADetector.Results;
 
 namespace UADetector.Parsers.Devices;
 
-internal sealed class ShellTvParser : BaseDeviceParser
+internal sealed class ShellTvParser : DeviceParserBase
 {
     private const string ResourceName = "Regexes.Resources.Devices.shell_televisions.yml";
     private static readonly FrozenDictionary<string, Device> ShellTelevisions;

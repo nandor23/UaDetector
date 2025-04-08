@@ -13,69 +13,69 @@ internal sealed class ClientHints
                                                          """, RegexOptions.Compiled);
 
     private static readonly FrozenSet<string> ArchitectureHeaderNames =
-        new HashSet<string>(StringComparer.OrdinalIgnoreCase)
+        new HashSet<string>
             {
                 "http-sec-ch-ua-arch", "sec-ch-ua-arch", "arch", "architecture"
             }
-            .ToFrozenSet();
+            .ToFrozenSet(StringComparer.OrdinalIgnoreCase);
 
     private static readonly FrozenSet<string> BitnessHeaderNames =
-        new HashSet<string>(StringComparer.OrdinalIgnoreCase)
+        new HashSet<string>
             {
                 "http-sec-ch-ua-bitness", "sec-ch-ua-bitness", "bitness"
             }
-            .ToFrozenSet();
+            .ToFrozenSet(StringComparer.OrdinalIgnoreCase);
 
     private static readonly FrozenSet<string> MobileHeaderNames =
-        new HashSet<string>(StringComparer.OrdinalIgnoreCase) { "http-sec-ch-ua-mobile", "sec-ch-ua-mobile", "mobile" }
-            .ToFrozenSet();
+        new HashSet<string> { "http-sec-ch-ua-mobile", "sec-ch-ua-mobile", "mobile" }
+            .ToFrozenSet(StringComparer.OrdinalIgnoreCase);
 
     private static readonly FrozenSet<string> ModelHeaderNames =
-        new HashSet<string>(StringComparer.OrdinalIgnoreCase) { "http-sec-ch-ua-model", "sec-ch-ua-model", "model" }
-            .ToFrozenSet();
+        new HashSet<string> { "http-sec-ch-ua-model", "sec-ch-ua-model", "model" }
+            .ToFrozenSet(StringComparer.OrdinalIgnoreCase);
 
     private static readonly FrozenSet<string> PlatformHeaderNames =
-        new HashSet<string>(StringComparer.OrdinalIgnoreCase)
+        new HashSet<string>
             {
                 "http-sec-ch-ua-platform", "sec-ch-ua-platform", "platform"
             }
-            .ToFrozenSet();
+            .ToFrozenSet(StringComparer.OrdinalIgnoreCase);
 
     private static readonly FrozenSet<string> PlatformVersionHeaderNames =
-        new HashSet<string>(StringComparer.OrdinalIgnoreCase)
+        new HashSet<string>
             {
                 "http-sec-ch-ua-platform-version", "sec-ch-ua-platform-version", "platformversion"
             }
-            .ToFrozenSet();
+            .ToFrozenSet(StringComparer.OrdinalIgnoreCase);
 
     private static readonly FrozenSet<string> UaFullVersionHeaderNames =
-        new HashSet<string>(StringComparer.OrdinalIgnoreCase)
+        new HashSet<string>
             {
                 "http-sec-ch-ua-full-version", "sec-ch-ua-full-version", "uafullversion"
             }
-            .ToFrozenSet();
+            .ToFrozenSet(StringComparer.OrdinalIgnoreCase);
 
     private static readonly FrozenSet<string> PrimaryFullVersionListHeaderNames =
-        new HashSet<string>(StringComparer.OrdinalIgnoreCase)
+        new HashSet<string>
             {
                 "fullversionlist", "http-sec-ch-ua-full-version-list", "sec-ch-ua-full-version-list"
             }
-            .ToFrozenSet();
+            .ToFrozenSet(StringComparer.OrdinalIgnoreCase);
 
     private static readonly FrozenSet<string> SecondaryFullVersionListHeaderNames =
-        new HashSet<string>(StringComparer.OrdinalIgnoreCase) { "brands", "http-sec-ch-ua", "sec-ch-ua" }
-            .ToFrozenSet();
+        new HashSet<string> { "brands", "http-sec-ch-ua", "sec-ch-ua" }
+            .ToFrozenSet(StringComparer.OrdinalIgnoreCase);
 
     private static readonly FrozenSet<string> AppHeaderNames =
-        new HashSet<string>(StringComparer.OrdinalIgnoreCase) { "http-x-requested-with", "x-requested-with" }
-            .ToFrozenSet();
+        new HashSet<string> { "http-x-requested-with", "x-requested-with" }
+            .ToFrozenSet(StringComparer.OrdinalIgnoreCase);
 
     private static readonly FrozenSet<string> FormFactorsHeaderNames =
-        new HashSet<string>(StringComparer.OrdinalIgnoreCase)
+        new HashSet<string>
             {
                 "formfactors", "http-sec-ch-ua-form-factors", "sec-ch-ua-form-factors"
             }
-            .ToFrozenSet();
+            .ToFrozenSet(StringComparer.OrdinalIgnoreCase);
 
 
     /// <summary>
@@ -185,7 +185,7 @@ internal sealed class ClientHints
                 }
             }
             else if (AppHeaderNames.Contains(normalizedHeader) &&
-                     value.Equals("xmlhttprequest", StringComparison.OrdinalIgnoreCase))
+                     !value.Equals("xmlhttprequest", StringComparison.OrdinalIgnoreCase))
             {
                 clientHints.App = value;
             }

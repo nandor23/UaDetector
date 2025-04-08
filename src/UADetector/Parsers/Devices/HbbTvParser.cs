@@ -8,7 +8,7 @@ using UADetector.Results;
 
 namespace UADetector.Parsers.Devices;
 
-internal sealed class HbbTvParser : BaseDeviceParser
+internal sealed class HbbTvParser : DeviceParserBase
 {
     private const string ResourceName = "Regexes.Resources.Devices.televisions.yml";
     private static readonly FrozenDictionary<string, Device> Televisions;

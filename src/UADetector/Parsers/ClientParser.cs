@@ -9,7 +9,7 @@ namespace UADetector.Parsers;
 
 public sealed class ClientParser : IClientParser
 {
-    private readonly IEnumerable<BaseClientParser> _clientParsers;
+    private readonly IEnumerable<ClientParserBase> _clientParsers;
 
 
     public ClientParser(VersionTruncation versionTruncation = VersionTruncation.Minor)

@@ -66,7 +66,7 @@ public sealed class UADetector : IUADetector
 
     private static readonly FrozenSet<string> TvClients = new[] { "TiviMate" }.ToFrozenSet();
 
-    private readonly IEnumerable<BaseDeviceParser> _deviceParsers =
+    private readonly IEnumerable<DeviceParserBase> _deviceParsers =
     [
         new MobileParser(),
         new NotebookParser(),
@@ -307,7 +307,7 @@ public sealed class UADetector : IUADetector
             {
                 Type = deviceType.Value,
                 Model = model,
-                Brand = brand is not null && BaseDeviceParser.BrandNameMapping.TryGetValue(brand, out var brandCode)
+                Brand = brand is not null && DeviceParserBase.BrandNameMapping.TryGetValue(brand, out var brandCode)
                     ? new BrandInfo { Name = brand, Code = brandCode, }
                     : null
             };

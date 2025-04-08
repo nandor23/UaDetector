@@ -7,7 +7,7 @@ using UADetector.Results;
 
 namespace UADetector.Parsers.Devices;
 
-internal sealed class ConsoleParser : BaseDeviceParser
+internal sealed class ConsoleParser : DeviceParserBase
 {
     private const string ResourceName = "Regexes.Resources.Devices.consoles.yml";
     private static readonly FrozenDictionary<string, Device> Consoles;

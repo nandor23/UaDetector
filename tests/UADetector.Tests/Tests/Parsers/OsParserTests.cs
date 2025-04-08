@@ -1,9 +1,13 @@
 using Shouldly;
 
 using UADetector.Models.Constants;
+using UADetector.Models.Enums;
 using UADetector.Parsers;
+using UADetector.Results;
+using UADetector.Tests.Fixtures.Models;
+using UADetector.Tests.Helpers;
 
-namespace UADetector.Tests.Parsers;
+namespace UADetector.Tests.Tests.Parsers;
 
 public class OsParserTests
 {
@@ -61,4 +65,33 @@ public class OsParserTests
         }
     }
 
+    [Test]
+    public void TryParse_WithFixtureData_ShouldReturnCorrectOsInfo()
+    {
+        var fixturePath = Path.Combine("Fixtures", "Resources", "operating_systems.yml");
+        var fixtures = FixtureLoader.Load<OsFixture>(fixturePath);
+
+        var osParser = new OsParser(VersionTruncation.None);
+        
+        foreach (var fixture in fixtures)
+        {
+            OsInfo? result;
+            
+            if (fixture.Headers is null)
+            { 
+                osParser.TryParse(fixture.UserAgent, out result);
+            }
+            else
+            {
+                osParser.TryParse(fixture.UserAgent, fixture.Headers, out result);
+            }
+            
+            result.ShouldNotBeNull();
+            result.Name.ShouldBe(fixture.Os.Name);
+            result.Code.ShouldBe(fixture.Os.Code);
+            result.Version.ShouldBe(fixture.Os.Version);
+            result.Platform.ShouldBe(fixture.Os.Platform);
+            result.Family.ShouldBe(fixture.Os.Family);
+        }
+    }
 }

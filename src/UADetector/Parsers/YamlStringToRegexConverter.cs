@@ -7,13 +7,13 @@ using YamlDotNet.Serialization;
 
 namespace UADetector.Parsers;
 
-internal sealed class YamlRegexConverter : IYamlTypeConverter
+internal sealed class YamlStringToRegexConverter : IYamlTypeConverter
 {
     private readonly List<string> _patterns = [];
     private readonly string? _patternSuffix;
 
 
-    public YamlRegexConverter(string? patternSuffix = null)
+    public YamlStringToRegexConverter(string? patternSuffix = null)
     {
         _patternSuffix = patternSuffix;
     }

@@ -95,12 +95,13 @@ internal static class ParserExtensions
         return stream;
     }
 
-    private static IDeserializer CreateDeserializer(YamlRegexConverter regexConverter)
+    private static IDeserializer CreateDeserializer(YamlStringToRegexConverter? regexConverter = null)
     {
         return new DeserializerBuilder()
-            .WithNamingConvention(CamelCaseNamingConvention.Instance)
+            .WithNamingConvention(UnderscoredNamingConvention.Instance)
             .IgnoreUnmatchedProperties()
-            .WithTypeConverter(regexConverter)
+            .WithTypeConverter(new YamlEmptyStringToNullConverter())
+            .WithTypeConverter(regexConverter ?? new YamlStringToRegexConverter())
             .Build();
     }
 
@@ -109,8 +110,7 @@ internal static class ParserExtensions
         var stream = GetEmbeddedResourceStream(resourceName);
         using var reader = new StreamReader(stream);
 
-        var regexConverter = new YamlRegexConverter();
-        var deserializer = CreateDeserializer(regexConverter);
+        var deserializer = CreateDeserializer();
 
         return deserializer.Deserialize<IEnumerable<T>>(reader);
     }
@@ -120,7 +120,7 @@ internal static class ParserExtensions
         var stream = GetEmbeddedResourceStream(resourceName);
         using var reader = new StreamReader(stream);
 
-        var regexConverter = new YamlRegexConverter();
+        var regexConverter = new YamlStringToRegexConverter();
         var deserializer = CreateDeserializer(regexConverter);
 
         var regexes = deserializer.Deserialize<IEnumerable<T>>(reader);
@@ -137,7 +137,7 @@ internal static class ParserExtensions
         var stream = GetEmbeddedResourceStream(resourceName);
         using var reader = new StreamReader(stream);
 
-        var regexConverter = new YamlRegexConverter(patternSuffix);
+        var regexConverter = new YamlStringToRegexConverter(patternSuffix);
         var deserializer = CreateDeserializer(regexConverter);
 
         var regexes = deserializer.Deserialize<Dictionary<string, T>>(reader);
@@ -148,12 +148,10 @@ internal static class ParserExtensions
 
     public static FrozenDictionary<string, string> LoadHints(string resourceName)
     {
-        var stream = GetEmbeddedResourceStream(resourceName);
+        using var stream = GetEmbeddedResourceStream(resourceName);
         using var reader = new StreamReader(stream);
 
-        var deserializer = new DeserializerBuilder()
-            .WithNamingConvention(CamelCaseNamingConvention.Instance)
-            .Build();
+        var deserializer = CreateDeserializer();
 
         return deserializer.Deserialize<Dictionary<string, string>>(reader)
             .ToFrozenDictionary();

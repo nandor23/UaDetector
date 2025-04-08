@@ -7,7 +7,7 @@ using UADetector.Results;
 
 namespace UADetector.Parsers.Clients;
 
-internal sealed class MobileAppParser : BaseClientParser
+internal sealed class MobileAppParser : ClientParserBase
 {
     private const string ResourceName = "Regexes.Resources.Clients.mobile_apps.yml";
     private static readonly IEnumerable<Client> MobileApps;
