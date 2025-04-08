@@ -11,7 +11,7 @@ internal sealed class YamlEmptyStringToNullConverter : IYamlTypeConverter
     public object? ReadYaml(IParser parser, Type type, ObjectDeserializer rootDeserializer)
     {
         parser.TryConsume<Scalar>(out var scalar);
-        
+
         return string.IsNullOrEmpty(scalar?.Value) ? null : scalar?.Value;
     }
 

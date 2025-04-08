@@ -450,7 +450,7 @@ public sealed class OsParser : IOsParser
         var index = version.IndexOf('.');
 
         if (index != -1)
-        { 
+        {
             FireOsVersionMapping.TryGetValue(version[..index], out result);
         }
 
@@ -468,7 +468,7 @@ public sealed class OsParser : IOsParser
         var index = version.IndexOf('.');
 
         if (index != -1)
-        { 
+        {
             LineageOsVersionMapping.TryGetValue(version[..index], out result);
         }
 
@@ -681,7 +681,7 @@ public sealed class OsParser : IOsParser
             if (osFromUserAgent is not null)
             {
                 TryMapNameToFamily(osFromUserAgent.Name, out string? familyFromUserAgent);
-                
+
                 // If no version is provided in the client hints, use the version from the user agent,
                 // provided the OS family matches.
                 if (string.IsNullOrEmpty(osFromClientHints.Version) &&

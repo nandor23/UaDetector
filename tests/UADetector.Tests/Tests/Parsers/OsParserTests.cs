@@ -72,20 +72,20 @@ public class OsParserTests
         var fixtures = FixtureLoader.Load<OsFixture>(fixturePath);
 
         var osParser = new OsParser(VersionTruncation.None);
-        
+
         foreach (var fixture in fixtures)
         {
             OsInfo? result;
-            
+
             if (fixture.Headers is null)
-            { 
+            {
                 osParser.TryParse(fixture.UserAgent, out result);
             }
             else
             {
                 osParser.TryParse(fixture.UserAgent, fixture.Headers, out result);
             }
-            
+
             result.ShouldNotBeNull();
             result.Name.ShouldBe(fixture.Os.Name);
             result.Code.ShouldBe(fixture.Os.Code);
