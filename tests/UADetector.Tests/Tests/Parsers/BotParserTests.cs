@@ -16,14 +16,14 @@ public class BotParserTests
     }
 
     [Test]
-    public void BotParser_ShouldImplement_IBotParserInterface()
+    public void BotParser_ShouldImplement_IBotParser()
     {
         var parser = new BotParser();
         parser.ShouldBeAssignableTo<IBotParser>();
     }
 
     [Test]
-    public void TryParse_WithFixtureData_ShouldReturnCorrectOsInfo()
+    public void TryParse_WithFixtureData_ShouldReturnCorrectBotInfo()
     {
         var fixturePath = Path.Combine("Fixtures", "Resources", "bots.yml");
         var fixtures = FixtureLoader.Load<BotFixture>(fixturePath)
@@ -43,7 +43,7 @@ public class BotParserTests
 
         foreach (var fixture in fixtures)
         {
-            osParser.TryParse(fixture.UserAgent, out BotInfo? result).ShouldBeTrue();
+            osParser.TryParse(fixture.UserAgent, out var result).ShouldBeTrue();
 
             result.ShouldNotBeNull();
             result.Name.ShouldBe(fixture.Bot.Name);

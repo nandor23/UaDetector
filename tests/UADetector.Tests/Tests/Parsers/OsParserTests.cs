@@ -9,7 +9,7 @@ using UADetector.Tests.Helpers;
 
 namespace UADetector.Tests.Tests.Parsers;
 
-public sealed class OsParserTests
+public class OsParserTests
 {
     [Test]
     public void OsParser_Instantiation_ShouldNotThrowException()
@@ -18,7 +18,7 @@ public sealed class OsParserTests
     }
 
     [Test]
-    public void OsParser_ShouldImplement_IOsParserInterface()
+    public void OsParser_ShouldImplement_IOsParser()
     {
         var parser = new OsParser();
         parser.ShouldBeAssignableTo<IOsParser>();

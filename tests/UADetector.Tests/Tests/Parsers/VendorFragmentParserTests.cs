@@ -6,17 +6,17 @@ using UADetector.Tests.Helpers;
 
 namespace UADetector.Tests.Tests.Parsers;
 
-public sealed class VendorFragmentParserTests
+public class VendorFragmentParserTests
 {
     [Test]
-    public void TryParse_WithFixtureData_ShouldReturnCorrectOsInfo()
+    public void TryParseBrand_WithFixtureData_ShouldReturnCorrectBrand()
     {
         var fixturePath = Path.Combine("Fixtures", "Resources", "vendor_fragments.yml");
         var fixtures = FixtureLoader.Load<VendorFragmentFixture>(fixturePath);
 
         foreach (var fixture in fixtures)
         {
-            VendorFragmentParser.TryParseBrand(fixture.UserAgent, out string? result).ShouldBeTrue();
+            VendorFragmentParser.TryParseBrand(fixture.UserAgent, out var result).ShouldBeTrue();
 
             result.ShouldNotBeNull();
             result.ShouldBe(fixture.Vendor);

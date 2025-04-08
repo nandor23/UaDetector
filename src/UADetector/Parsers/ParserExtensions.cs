@@ -19,17 +19,16 @@ internal static class ParserExtensions
     private static readonly Regex ClientHintsFragmentReplacementRegex =
         new(@"Android (?:10[.\d]*; K|1[1-5])", RegexOptions.Compiled);
 
-    private static readonly Regex DesktopFragmentMatchRegex =
-        new("(?:Windows (?:NT|IoT)|X11; Linux x86_64)", RegexOptions.Compiled);
-
     private static readonly Regex DesktopFragmentReplacementRegex = new("X11; Linux x86_64", RegexOptions.Compiled);
 
-    private static readonly Regex DesktopFragmentExclusionRegex = new(string.Join("|",
+    private static readonly Regex DesktopFragmentMatchRegex =
+        BuildUserAgentRegex("(?:Windows (?:NT|IoT)|X11; Linux x86_64)");
+
+    private static readonly Regex DesktopFragmentExclusionRegex = BuildUserAgentRegex(string.Join("|",
             "CE-HTML",
             " Mozilla/|Andr[o0]id|Tablet|Mobile|iPhone|Windows Phone|ricoh|OculusBrowser",
             "PicoBrowser|Lenovo|compatible; MSIE|Trident/|Tesla/|XBOX|FBMD/|ARM; ?([^)]+)"
-        ),
-        RegexOptions.Compiled
+        )
     );
 
     public static Regex BuildUserAgentRegex(string pattern)

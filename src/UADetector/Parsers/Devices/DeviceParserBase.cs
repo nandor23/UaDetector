@@ -2058,7 +2058,7 @@ internal abstract class DeviceParserBase
         .ToDictionary(e => e.Value, e => e.Key)
         .ToFrozenDictionary();
 
-    private static readonly FrozenDictionary<string, DeviceType> DeviceTypeMapping = new Dictionary<string, DeviceType>
+    internal static readonly FrozenDictionary<string, DeviceType> DeviceTypeMapping = new Dictionary<string, DeviceType>
     {
         { "desktop", DeviceType.Desktop },
         { "smartphone", DeviceType.Smartphone },

@@ -14,7 +14,7 @@ internal sealed class ShellTvParser : DeviceParserBase
     private static readonly FrozenDictionary<string, Device> ShellTelevisions;
     private static readonly Regex CombinedRegex;
 
-    private static readonly Regex ShellTvRegex =
+    internal static readonly Regex ShellTvRegex =
         ParserExtensions.BuildUserAgentRegex(@"[a-z]+[ _]Shell[ _]\w{6}|tclwebkit(\d+[.\d]*)");
 
 

@@ -14,7 +14,7 @@ internal sealed class HbbTvParser : DeviceParserBase
     private static readonly FrozenDictionary<string, Device> Televisions;
     private static readonly Regex CombinedRegex;
 
-    private static readonly Regex
+    internal static readonly Regex
         HbbTvRegex = ParserExtensions.BuildUserAgentRegex(@"(?:HbbTV|SmartTvA)/([1-9](?:\.[0-9]){1,2})");
 
 
