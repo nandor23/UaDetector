@@ -7,7 +7,7 @@ using UADetector.Tests.Helpers;
 
 namespace UADetector.Tests.Tests.Parsers;
 
-public sealed class BotParserTest
+public class BotParserTests
 {
     [Test]
     public void BotParser_Instantiation_ShouldNotThrowException()

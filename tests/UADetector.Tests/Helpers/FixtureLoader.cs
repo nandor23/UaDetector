@@ -5,7 +5,7 @@ using YamlDotNet.Serialization.NamingConventions;
 
 namespace UADetector.Tests.Helpers;
 
-internal static class FixtureLoader
+public static class FixtureLoader
 {
     public static IEnumerable<T> Load<T>(string fixturePath)
     {
@@ -21,7 +21,7 @@ internal static class FixtureLoader
         return deserializer.Deserialize<IEnumerable<T>>(reader);
     }
 
-    private sealed class YamlEmptyStringToNullConverter : IYamlTypeConverter
+    private class YamlEmptyStringToNullConverter : IYamlTypeConverter
     {
         public bool Accepts(Type type) => type == typeof(string);
 
