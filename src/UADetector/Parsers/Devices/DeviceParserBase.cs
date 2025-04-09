@@ -2074,7 +2074,7 @@ internal abstract class DeviceParserBase
         { "smart speaker", DeviceType.SmartSpeaker },
         { "wearable", DeviceType.Wearable },
         { "peripheral", DeviceType.Peripheral },
-    }.ToFrozenDictionary();
+    }.ToFrozenDictionary(StringComparer.OrdinalIgnoreCase);
 
     private static readonly FrozenDictionary<string, DeviceType> ClientHintFormFactorsMapping =
         new Dictionary<string, DeviceType>
@@ -2086,7 +2086,7 @@ internal abstract class DeviceParserBase
             { "tablet", DeviceType.Tablet },
             { "desktop", DeviceType.Desktop },
             { "eink", DeviceType.Tablet },
-        }.ToFrozenDictionary();
+        }.ToFrozenDictionary(StringComparer.OrdinalIgnoreCase);
 
     private static string? BuildModel(string model, Match match)
     {

@@ -180,7 +180,7 @@ internal sealed class ClientHints
             {
                 while (FullVersionListRegex.Match(value) is { Success: true } match)
                 {
-                    if (!clientHints.FullVersionList.ContainsKey(match.Groups[1].Value))
+                    if (match.Groups.Count == 3 && !clientHints.FullVersionList.ContainsKey(match.Groups[1].Value))
                     {
                         clientHints.FullVersionList.Add(match.Groups[1].Value, match.Groups[2].Value);
                     }
@@ -203,9 +203,16 @@ internal sealed class ClientHints
                 }
                 else
                 {
-                    foreach (Match match in FormFactorsRegex.Matches(normalizedHeader))
+                    var match = FormFactorsRegex.Match(value);
+
+                    while (match is { Success: true })
                     {
-                        clientHints.FormFactors.Add(match.Value);
+                        if (match.Groups.Count == 2)
+                        {
+                            clientHints.FormFactors.Add(match.Groups[1].Value);
+                        }
+
+                        match = match.NextMatch();
                     }
                 }
             }
