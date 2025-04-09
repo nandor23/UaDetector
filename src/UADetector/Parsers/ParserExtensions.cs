@@ -158,7 +158,7 @@ internal static class ParserExtensions
 
     public static string FormatWithMatch(string value, Match match)
     {
-        for (int i = 1; i < match.Groups.Count; i++)
+        for (int i = 1; i <= match.Groups.Count; i++)
         {
             value = value.Replace($"${i}", match.Groups[i].Value);
         }
@@ -168,12 +168,12 @@ internal static class ParserExtensions
 
     public static string? BuildVersion(string? version, VersionTruncation versionTruncation)
     {
-        version = version?.Replace('_', '.');
-
         if (string.IsNullOrEmpty(version))
         {
             return null;
         }
+
+        version = version.Replace('_', '.');
 
         if (versionTruncation != VersionTruncation.None)
         {

@@ -7,7 +7,6 @@ public class DeviceFixture
 
     public class DeviceInfo
     {
-        public required string Type { get; init; }
         public required string Brand { get; init; }
         public string? Model { get; init; }
     }

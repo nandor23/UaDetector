@@ -2,6 +2,7 @@ using System.Collections.Immutable;
 
 using Shouldly;
 
+using UADetector.Models.Enums;
 using UADetector.Parsers.Devices;
 using UADetector.Tests.Fixtures.Models;
 using UADetector.Tests.Helpers;
@@ -37,8 +38,7 @@ public class CameraParserTests
             parser.TryParse(fixture.UserAgent, clientHints, out var result).ShouldBeTrue();
 
             result.ShouldNotBeNull();
-            DeviceParserBase.DeviceTypeMapping.TryGetValue(fixture.Device.Type, out var deviceType).ShouldBeTrue();
-            result.Type.ShouldBe(deviceType);
+            result.Type.ShouldBe(DeviceType.Camera);
             result.Brand.ShouldBe(fixture.Device.Brand);
             result.Model.ShouldBe(fixture.Device.Model);
         }
