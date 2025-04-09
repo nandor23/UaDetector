@@ -11,7 +11,7 @@ namespace UADetector.Parsers.Devices;
 
 internal abstract class DeviceParserBase
 {
-    private static readonly FrozenDictionary<BrandCode, string> BrandCodeMapping = new Dictionary<BrandCode, string>
+    internal static readonly FrozenDictionary<BrandCode, string> BrandCodeMapping = new Dictionary<BrandCode, string>
     {
         { BrandCode.TwoE, BrandNames.TwoE },
         { BrandCode.FiveIve, BrandNames.FiveIve },
@@ -2096,12 +2096,6 @@ internal abstract class DeviceParserBase
         return model == "Build" ? null : model.Trim();
     }
 
-    public abstract bool TryParse(
-        string userAgent,
-        ClientHints clientHints,
-        [NotNullWhen(true)] out InternalDeviceInfo? result
-    );
-
     private static bool TryParseDeviceFromClientHints(
         ClientHints clientHints,
         [NotNullWhen(true)] out ClientHintsDeviceInfo? result
@@ -2127,6 +2121,12 @@ internal abstract class DeviceParserBase
         result = new ClientHintsDeviceInfo { Type = deviceType, Model = clientHints.Model, };
         return true;
     }
+
+    public abstract bool TryParse(
+        string userAgent,
+        ClientHints clientHints,
+        [NotNullWhen(true)] out InternalDeviceInfo? result
+    );
 
     protected static bool TryParse(
         string userAgent,

@@ -4,7 +4,7 @@ using UADetector.Parsers.Devices;
 
 namespace UADetector.Tests.Tests.Parsers.Devices;
 
-public class HbbTvParserTest
+public class HbbTvParserTests
 {
     [Test]
     public void HbbTvParserParser_Instantiation_ShouldNotThrowException()
