@@ -16,9 +16,9 @@ public sealed class BrowserParser : IBrowserParser
 {
     private const string ResourceName = "Regexes.Resources.Browsers.browsers.yml";
     private readonly VersionTruncation _versionTruncation;
-    private static readonly IEnumerable<Browser> Browsers = ParserExtensions.LoadRegexesWithoutCombinedRegex<Browser>(ResourceName);
+    internal static readonly IEnumerable<Browser> Browsers = ParserExtensions.LoadRegexesWithoutCombinedRegex<Browser>(ResourceName);
 
-    private static readonly FrozenDictionary<BrowserCode, string> BrowserCodeMapping =
+    internal static readonly FrozenDictionary<BrowserCode, string> BrowserCodeMapping =
         new Dictionary<BrowserCode, string>
         {
             { BrowserCode.Via, BrowserNames.Via },
@@ -463,6 +463,7 @@ public sealed class BrowserParser : IBrowserParser
             { BrowserCode.OwlBrowser, BrowserNames.OwlBrowser },
             { BrowserCode.OjrBrowser, BrowserNames.OjrBrowser },
             { BrowserCode.PalmBlazer, BrowserNames.PalmBlazer },
+            { BrowserCode.PocketInternetExplorer, BrowserNames.PocketInternetExplorer },
             { BrowserCode.PaleMoon, BrowserNames.PaleMoon },
             { BrowserCode.Polypane, BrowserNames.Polypane },
             { BrowserCode.Prism, BrowserNames.Prism },
@@ -701,11 +702,11 @@ public sealed class BrowserParser : IBrowserParser
             { BrowserCode.ZteBrowser, BrowserNames.ZteBrowser },
         }.ToFrozenDictionary();
 
-    private static readonly FrozenDictionary<string, BrowserCode> BrowserNameMapping = BrowserCodeMapping
+    internal static readonly FrozenDictionary<string, BrowserCode> BrowserNameMapping = BrowserCodeMapping
         .ToDictionary(e => e.Value, e => e.Key)
         .ToFrozenDictionary(StringComparer.OrdinalIgnoreCase);
 
-    private static readonly FrozenDictionary<string, FrozenSet<BrowserCode>> BrowserFamilyMapping =
+    internal static readonly FrozenDictionary<string, FrozenSet<BrowserCode>> BrowserFamilyMapping =
         new Dictionary<string, FrozenSet<BrowserCode>>
         {
             { BrowserFamilies.AndroidBrowser, new[] { BrowserCode.AndroidBrowser }.ToFrozenSet() },
@@ -839,7 +840,7 @@ public sealed class BrowserParser : IBrowserParser
                 {
                     BrowserCode.InternetExplorer, BrowserCode.CrazyBrowser, BrowserCode.Browzar,
                     BrowserCode.IeMobile, BrowserCode.MicrosoftEdge, BrowserCode.AolExplorer,
-                    BrowserCode.AcooBrowser, BrowserCode.GreenBrowser,
+                    BrowserCode.AcooBrowser, BrowserCode.GreenBrowser, BrowserCode.PocketInternetExplorer
                 }.ToFrozenSet()
             },
             { BrowserNames.Konqueror, new[] { BrowserCode.Konqueror, }.ToFrozenSet() },
@@ -931,7 +932,7 @@ public sealed class BrowserParser : IBrowserParser
         BrowserCode.ProxyFox, BrowserCode.ProxyMax, BrowserCode.KeepSolidBrowser, BrowserCode.OnionBrowser2,
         BrowserCode.AiBrowser, BrowserCode.HaloBrowser, BrowserCode.MmboxXBrowser, BrowserCode.XnBrowse,
         BrowserCode.OpenBrowserLite, BrowserCode.PuffinIncognitoBrowser, BrowserCode.PuffinCloudBrowser,
-        BrowserCode.PrivacyPioneerBrowser, BrowserCode.Pluma,
+        BrowserCode.PrivacyPioneerBrowser, BrowserCode.Pluma, BrowserCode.PocketInternetExplorer
     }.ToFrozenSet();
 
     private static readonly FrozenDictionary<string, FrozenSet<string>> ClientHintBrandMapping =

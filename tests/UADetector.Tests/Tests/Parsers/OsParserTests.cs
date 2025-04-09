@@ -38,7 +38,7 @@ public class OsParserTests
     }
 
     [Test]
-    public void OsNameMappings_ShouldMatchParsedOperatingSystems()
+    public void OsNameMappings_ShouldMatchParsedOsNames()
     {
         var ignoredNames = new List<string>
         {
