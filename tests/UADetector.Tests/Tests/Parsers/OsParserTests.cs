@@ -100,7 +100,7 @@ public class OsParserTests
         var fixturePath = Path.Combine("Fixtures", "Resources", "operating_systems.yml");
         var fixtures = FixtureLoader.Load<OsFixture>(fixturePath);
 
-        var osParser = new OsParser(VersionTruncation.None);
+        var parser = new OsParser(VersionTruncation.None);
 
         foreach (var fixture in fixtures)
         {
@@ -108,11 +108,11 @@ public class OsParserTests
 
             if (fixture.Headers is null)
             {
-                osParser.TryParse(fixture.UserAgent, out result).ShouldBeTrue();
+                parser.TryParse(fixture.UserAgent, out result).ShouldBeTrue();
             }
             else
             {
-                osParser.TryParse(fixture.UserAgent, fixture.Headers, out result).ShouldBeTrue();
+                parser.TryParse(fixture.UserAgent, fixture.Headers, out result).ShouldBeTrue();
             }
 
             result.ShouldNotBeNull();

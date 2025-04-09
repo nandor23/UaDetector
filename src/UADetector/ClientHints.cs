@@ -180,7 +180,11 @@ internal sealed class ClientHints
             {
                 while (FullVersionListRegex.Match(value) is { Success: true } match)
                 {
-                    clientHints.FullVersionList.Add(match.Groups[1].Value, match.Groups[2].Value);
+                    if (!clientHints.FullVersionList.ContainsKey(match.Groups[1].Value))
+                    {
+                        clientHints.FullVersionList.Add(match.Groups[1].Value, match.Groups[2].Value);
+                    }
+
                     value = value[match.Length..];
                 }
             }

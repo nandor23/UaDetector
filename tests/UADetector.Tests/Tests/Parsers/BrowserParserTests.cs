@@ -255,8 +255,27 @@ public class BrowserParserTests
     }
 
     [Test]
-    public void TryParse_WithFixtureData_ShouldReturnCorrectOsInfo()
+    public void TryParse_WithFixtureData_ShouldReturnCorrectBrowserInfo()
     {
+        var fixturePath = Path.Combine("Fixtures", "Resources", "browsers.yml");
+        var fixtures = FixtureLoader.Load<BrowserFixture>(fixturePath);
 
+        var parser = new BrowserParser(VersionTruncation.None);
+
+        foreach (var fixture in fixtures)
+        {
+            BrowserInfo? result;
+
+            if (fixture.Headers is null)
+            {
+                parser.TryParse(fixture.UserAgent, out result).ShouldBeTrue();
+            }
+            else
+            {
+                parser.TryParse(fixture.UserAgent, fixture.Headers, out result).ShouldBeTrue();
+            }
+
+            result.ShouldNotBeNull();
+        }
     }
 }

@@ -1,11 +1,10 @@
-using UADetector.Results;
-
 namespace UADetector.Tests.Fixtures.Models;
 
 public class BrowserFixture
 {
     public required string UserAgent { get; init; }
     public required BrowserInfo Browser { get; init; }
+    public Dictionary<string, string?>? Headers { get; init; }
 
     public sealed class BrowserInfo
     {
