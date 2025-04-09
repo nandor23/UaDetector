@@ -24,4 +24,30 @@ public class DeviceParserBaseTests
             DeviceParserBase.DeviceTypeMapping.Values.ShouldContain(deviceType);
         }
     }
+
+    [Test]
+    [MethodDataSource(nameof(DeviceTypeTestData))]
+
+    public void DeviceTypeMapping_ShouldContainKey(string deviceType)
+    {
+        DeviceParserBase.DeviceTypeMapping.ShouldContainKey(deviceType);
+    }
+
+    public static IEnumerable<Func<string>> DeviceTypeTestData()
+    {
+        yield return () => "desktop";
+        yield return () => "smartphone";
+        yield return () => "tablet";
+        yield return () => "feature phone";
+        yield return () => "console";
+        yield return () => "tv";
+        yield return () => "car browser";
+        yield return () => "smart display";
+        yield return () => "camera";
+        yield return () => "portable media player";
+        yield return () => "phablet";
+        yield return () => "smart speaker";
+        yield return () => "wearable";
+        yield return () => "peripheral";
+    }
 }
