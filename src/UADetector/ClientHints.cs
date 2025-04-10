@@ -12,65 +12,65 @@ internal sealed class ClientHints
                                                          "([a-zA-Z]+)"
                                                          """, RegexOptions.Compiled);
 
-    private static readonly FrozenSet<string> ArchitectureHeaderNames =
+    internal static readonly FrozenSet<string> ArchitectureHeaderNames =
         new HashSet<string>
             {
                 "http-sec-ch-ua-arch", "sec-ch-ua-arch", "arch", "architecture"
             }
             .ToFrozenSet(StringComparer.OrdinalIgnoreCase);
 
-    private static readonly FrozenSet<string> BitnessHeaderNames =
+    internal static readonly FrozenSet<string> BitnessHeaderNames =
         new HashSet<string>
             {
                 "http-sec-ch-ua-bitness", "sec-ch-ua-bitness", "bitness"
             }
             .ToFrozenSet(StringComparer.OrdinalIgnoreCase);
 
-    private static readonly FrozenSet<string> MobileHeaderNames =
+    internal static readonly FrozenSet<string> MobileHeaderNames =
         new HashSet<string> { "http-sec-ch-ua-mobile", "sec-ch-ua-mobile", "mobile" }
             .ToFrozenSet(StringComparer.OrdinalIgnoreCase);
 
-    private static readonly FrozenSet<string> ModelHeaderNames =
+    internal static readonly FrozenSet<string> ModelHeaderNames =
         new HashSet<string> { "http-sec-ch-ua-model", "sec-ch-ua-model", "model" }
             .ToFrozenSet(StringComparer.OrdinalIgnoreCase);
 
-    private static readonly FrozenSet<string> PlatformHeaderNames =
+    internal static readonly FrozenSet<string> PlatformHeaderNames =
         new HashSet<string>
             {
                 "http-sec-ch-ua-platform", "sec-ch-ua-platform", "platform"
             }
             .ToFrozenSet(StringComparer.OrdinalIgnoreCase);
 
-    private static readonly FrozenSet<string> PlatformVersionHeaderNames =
+    internal static readonly FrozenSet<string> PlatformVersionHeaderNames =
         new HashSet<string>
             {
                 "http-sec-ch-ua-platform-version", "sec-ch-ua-platform-version", "platformversion"
             }
             .ToFrozenSet(StringComparer.OrdinalIgnoreCase);
 
-    private static readonly FrozenSet<string> UaFullVersionHeaderNames =
+    internal static readonly FrozenSet<string> UaFullVersionHeaderNames =
         new HashSet<string>
             {
                 "http-sec-ch-ua-full-version", "sec-ch-ua-full-version", "uafullversion"
             }
             .ToFrozenSet(StringComparer.OrdinalIgnoreCase);
 
-    private static readonly FrozenSet<string> PrimaryFullVersionListHeaderNames =
+    internal static readonly FrozenSet<string> PrimaryFullVersionListHeaderNames =
         new HashSet<string>
             {
                 "fullversionlist", "http-sec-ch-ua-full-version-list", "sec-ch-ua-full-version-list"
             }
             .ToFrozenSet(StringComparer.OrdinalIgnoreCase);
 
-    private static readonly FrozenSet<string> SecondaryFullVersionListHeaderNames =
+    internal static readonly FrozenSet<string> SecondaryFullVersionListHeaderNames =
         new HashSet<string> { "brands", "http-sec-ch-ua", "sec-ch-ua" }
             .ToFrozenSet(StringComparer.OrdinalIgnoreCase);
 
-    private static readonly FrozenSet<string> AppHeaderNames =
+    internal static readonly FrozenSet<string> AppHeaderNames =
         new HashSet<string> { "http-x-requested-with", "x-requested-with" }
             .ToFrozenSet(StringComparer.OrdinalIgnoreCase);
 
-    private static readonly FrozenSet<string> FormFactorsHeaderNames =
+    internal static readonly FrozenSet<string> FormFactorsHeaderNames =
         new HashSet<string>
             {
                 "formfactors", "http-sec-ch-ua-form-factors", "sec-ch-ua-form-factors"

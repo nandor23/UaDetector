@@ -4,6 +4,21 @@ namespace UADetector.Tests.Tests;
 
 public class ClientHintsTests
 {
+    [Test]
+    public void AllHeaderNameSets_ShouldUseOrdinalIgnoreCaseComparer()
+    {
+        ClientHints.ArchitectureHeaderNames.Comparer.ShouldBe(StringComparer.OrdinalIgnoreCase);
+        ClientHints.BitnessHeaderNames.Comparer.ShouldBe(StringComparer.OrdinalIgnoreCase);
+        ClientHints.MobileHeaderNames.Comparer.ShouldBe(StringComparer.OrdinalIgnoreCase);
+        ClientHints.ModelHeaderNames.Comparer.ShouldBe(StringComparer.OrdinalIgnoreCase);
+        ClientHints.PlatformHeaderNames.Comparer.ShouldBe(StringComparer.OrdinalIgnoreCase);
+        ClientHints.PlatformVersionHeaderNames.Comparer.ShouldBe(StringComparer.OrdinalIgnoreCase);
+        ClientHints.UaFullVersionHeaderNames.Comparer.ShouldBe(StringComparer.OrdinalIgnoreCase);
+        ClientHints.PrimaryFullVersionListHeaderNames.Comparer.ShouldBe(StringComparer.OrdinalIgnoreCase);
+        ClientHints.SecondaryFullVersionListHeaderNames.Comparer.ShouldBe(StringComparer.OrdinalIgnoreCase);
+        ClientHints.AppHeaderNames.Comparer.ShouldBe(StringComparer.OrdinalIgnoreCase);
+        ClientHints.FormFactorsHeaderNames.Comparer.ShouldBe(StringComparer.OrdinalIgnoreCase);
+    }
 
     [Test]
     [MethodDataSource(nameof(HeadersTestData))]
@@ -17,6 +32,22 @@ public class ClientHintsTests
         clientHints.FullVersionList.ShouldBe(result.FullVersionList);
         clientHints.Model.ShouldBe(result.Model);
         clientHints.FormFactors.ShouldBe(result.FormFactors);
+    }
+
+    [Test]
+    public void Create_ShouldIgnoreInvalidVersionList()
+    {
+        var headers = new Dictionary<string, string?>
+        {
+            {
+                "fullVersionList", """
+                                   " Not A;Brand";v="99.0.0.0", "Chromium";v="99.0.4844.51", v="98.0.4758.109"
+                                   """
+            }
+        };
+
+        var clientHints = ClientHints.Create(headers);
+        clientHints.FullVersionList.ShouldBeEmpty();
     }
 
     public static IEnumerable<Func<(Dictionary<string, string?>, ClientHintsResult)>> HeadersTestData()
