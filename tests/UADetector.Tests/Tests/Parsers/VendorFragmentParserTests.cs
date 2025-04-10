@@ -9,7 +9,7 @@ namespace UADetector.Tests.Tests.Parsers;
 public class VendorFragmentParserTests
 {
     [Test]
-    public void TryParseBrand_WithFixtureData_ShouldReturnCorrectBrand()
+    public void TryParseBrand_WithFixtureData_ShouldReturnExpectedBrand()
     {
         var fixturePath = Path.Combine("Fixtures", "Resources", "vendor_fragments.yml");
         var fixtures = FixtureLoader.Load<VendorFragmentFixture>(fixturePath);

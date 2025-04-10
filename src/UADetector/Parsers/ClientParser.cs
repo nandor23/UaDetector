@@ -9,12 +9,12 @@ namespace UADetector.Parsers;
 
 public sealed class ClientParser : IClientParser
 {
-    private readonly IEnumerable<ClientParserBase> _clientParsers;
+    internal readonly IEnumerable<ClientParserBase> ClientParsers;
 
 
     public ClientParser(VersionTruncation versionTruncation = VersionTruncation.Minor)
     {
-        _clientParsers = [
+        ClientParsers = [
             new MobileAppParser(versionTruncation),
             new MediaPlayerParser(versionTruncation),
             new LibraryParser(versionTruncation),
@@ -40,7 +40,7 @@ public sealed class ClientParser : IClientParser
 
     internal bool TryParse(string userAgent, ClientHints clientHints, [NotNullWhen(true)] out ClientInfo? result)
     {
-        foreach (var parser in _clientParsers)
+        foreach (var parser in ClientParsers)
         {
             if (parser.TryParse(userAgent, clientHints, out result))
             {

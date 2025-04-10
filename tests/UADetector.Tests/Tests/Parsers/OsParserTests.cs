@@ -95,7 +95,7 @@ public class OsParserTests
     }
 
     [Test]
-    public void TryParse_WithFixtureData_ShouldReturnCorrectOsInfo()
+    public void TryParse_WithFixtureData_ShouldReturnExpectedOsInfo()
     {
         var fixturePath = Path.Combine("Fixtures", "Resources", "operating_systems.yml");
         var fixtures = FixtureLoader.Load<OsFixture>(fixturePath);

@@ -23,7 +23,7 @@ public class BotParserTests
     }
 
     [Test]
-    public void TryParse_WithFixtureData_ShouldReturnCorrectBotInfo()
+    public void TryParse_WithFixtureData_ShouldReturnExpectedBotInfo()
     {
         var fixturePath = Path.Combine("Fixtures", "Resources", "bots.yml");
         var fixtures = FixtureLoader.Load<BotFixture>(fixturePath)

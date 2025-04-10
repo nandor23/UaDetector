@@ -1303,13 +1303,13 @@ public sealed class BrowserParser : IBrowserParser
             TryMapCodeToFamily(code.Value, out family);
         };
 
-        if (BrowserHintParser.TryParseAppName(clientHints, out var appName) && name != appName)
+        if (BrowserHintParser.TryParseBrowserName(clientHints, out var browserName) && name != browserName)
         {
-            name = appName;
             version = null;
 
-            if (BrowserNameMapping.TryGetValue(name, out var browserCode))
+            if (BrowserNameMapping.TryGetValue(browserName, out var browserCode))
             {
+                name = browserName;
                 code = browserCode;
             }
 

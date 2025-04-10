@@ -25,7 +25,7 @@ public class CarBrowserParserTests
     }
 
     [Test]
-    public void TryParse_WithFixtureData_ShouldReturnCorrectInternalDeviceInfo()
+    public void TryParse_WithFixtureData_ShouldReturnExpectedInternalDeviceInfo()
     {
         var fixturePath = Path.Combine("Fixtures", "Resources", "Devices", "car_browsers.yml");
         var fixtures = FixtureLoader.Load<DeviceFixture>(fixturePath);

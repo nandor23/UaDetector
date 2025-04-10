@@ -255,7 +255,7 @@ public class BrowserParserTests
     }
 
     [Test]
-    public void TryParse_WithFixtureData_ShouldReturnCorrectBrowserInfo()
+    public void TryParse_WithFixtureData_ShouldReturnExpectedBrowserInfo()
     {
         var fixturePath = Path.Combine("Fixtures", "Resources", "browsers.yml");
         var fixtures = FixtureLoader.Load<BrowserFixture>(fixturePath);

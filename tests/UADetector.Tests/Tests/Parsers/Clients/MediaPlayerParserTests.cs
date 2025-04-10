@@ -25,7 +25,7 @@ public class MediaPlayerParserTests
     }
 
     [Test]
-    public void TryParse_WithFixtureData_ShouldReturnCorrectClientInfo()
+    public void TryParse_WithFixtureData_ShouldReturnExpectedClientInfo()
     {
         var fixturePath = Path.Combine("Fixtures", "Resources", "Clients", "media_players.yml");
         var fixtures = FixtureLoader.Load<ClientFixture>(fixturePath);

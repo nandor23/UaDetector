@@ -35,7 +35,7 @@ public class ClientHintsTests
     }
 
     [Test]
-    public void Create_ShouldIgnoreInvalidVersionList()
+    public void Create_ShouldIgnoreInvalidEntriesInVersionList()
     {
         var headers = new Dictionary<string, string?>
         {
@@ -47,7 +47,11 @@ public class ClientHintsTests
         };
 
         var clientHints = ClientHints.Create(headers);
-        clientHints.FullVersionList.ShouldBeEmpty();
+
+        clientHints.FullVersionList.ShouldBe(new Dictionary<string, string>
+        {
+            { " Not A;Brand", "99.0.0.0" }, { "Chromium", "99.0.4844.51" }
+        });
     }
 
     public static IEnumerable<Func<(Dictionary<string, string?>, ClientHintsResult)>> HeadersTestData()

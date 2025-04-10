@@ -25,7 +25,7 @@ public class FeedReaderParserTests
     }
 
     [Test]
-    public void TryParse_WithFixtureData_ShouldReturnCorrectClientInfo()
+    public void TryParse_WithFixtureData_ShouldReturnExpectedClientInfo()
     {
         var fixturePath = Path.Combine("Fixtures", "Resources", "Clients", "feed_readers.yml");
         var fixtures = FixtureLoader.Load<ClientFixture>(fixturePath);
