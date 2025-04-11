@@ -276,6 +276,10 @@ public class BrowserParserTests
             }
 
             result.ShouldNotBeNull();
+            result.Name.ShouldBe(fixture.Browser.Name);
+            result.Code.ShouldBe(fixture.Browser.Code);
+            result.Version.ShouldBe(fixture.Browser.Version);
+            result.Family.ShouldBe(fixture.Browser.Family);
         }
     }
 }

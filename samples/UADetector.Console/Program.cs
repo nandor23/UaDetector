@@ -3,6 +3,8 @@ using UADetector.Parsers;
 
 var parser = new BrowserParser(VersionTruncation.None);
 
-var userAgent = "Mozilla/5.0 (Linux; U; Android 2.3.3; ja-jp; COOLPIX S800c Build/CP01_WW) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1";
+var userAgent = "GoogleEarth/4.2.0184.9679(Windows;Microsoft Windows XP (Service Pack 2);en-US;kml:2.2;browser:Plus;type:default)";
 
 parser.TryParse(userAgent, out var result);
+
+Console.WriteLine(result);
