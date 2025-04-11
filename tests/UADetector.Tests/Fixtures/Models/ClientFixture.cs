@@ -8,6 +8,6 @@ public class ClientFixture
     public class ClientInfo
     {
         public required string Name { get; init; }
-        public string? Version { get; init; }
+        public required string? Version { get; init; }
     }
 }

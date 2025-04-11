@@ -9,10 +9,10 @@ namespace UADetector.Tests.Tests.Parsers;
 public class VendorFragmentParserTests
 {
     [Test]
-    public void TryParseBrand_WithFixtureData_ShouldReturnExpectedBrand()
+    public async Task TryParseBrand_WithFixtureData_ShouldReturnExpectedBrand()
     {
-        var fixturePath = Path.Combine("Fixtures", "Resources", "vendor_fragments.yml");
-        var fixtures = FixtureLoader.Load<VendorFragmentFixture>(fixturePath);
+        var fixturePath = Path.Combine("Fixtures", "Resources", "vendor_fragments.json");
+        var fixtures = await FixtureLoader.LoadAsync<VendorFragmentFixture>(fixturePath);
 
         foreach (var fixture in fixtures)
         {

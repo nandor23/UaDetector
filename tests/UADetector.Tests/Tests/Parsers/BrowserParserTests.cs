@@ -255,10 +255,10 @@ public class BrowserParserTests
     }
 
     [Test]
-    public void TryParse_WithFixtureData_ShouldReturnExpectedBrowserInfo()
+    public async Task TryParse_WithFixtureData_ShouldReturnExpectedBrowserInfo()
     {
-        var fixturePath = Path.Combine("Fixtures", "Resources", "browsers.yml");
-        var fixtures = FixtureLoader.Load<BrowserFixture>(fixturePath);
+        var fixturePath = Path.Combine("Fixtures", "Resources", "browsers.json");
+        var fixtures = await FixtureLoader.LoadAsync<BrowserFixture>(fixturePath);
 
         var parser = new BrowserParser(VersionTruncation.None);
 

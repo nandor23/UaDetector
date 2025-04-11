@@ -297,7 +297,7 @@ public sealed class UADetector : IUADetector
             deviceType = DeviceType.Desktop;
         }
 
-        if (deviceType is null)
+        if (deviceType is null && model is null && brand is null)
         {
             result = null;
         }
@@ -305,7 +305,7 @@ public sealed class UADetector : IUADetector
         {
             result = new DeviceInfo
             {
-                Type = deviceType.Value,
+                Type = deviceType,
                 Model = model,
                 Brand = brand is not null && DeviceParserBase.BrandNameMapping.TryGetValue(brand, out var brandCode)
                     ? new BrandInfo { Name = brand, Code = brandCode, }

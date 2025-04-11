@@ -25,10 +25,10 @@ public class ConsoleParserTests
     }
 
     [Test]
-    public void TryParse_WithFixtureData_ShouldReturnExpectedInternalDeviceInfo()
+    public async Task TryParse_WithFixtureData_ShouldReturnExpectedInternalDeviceInfo()
     {
-        var fixturePath = Path.Combine("Fixtures", "Resources", "Devices", "consoles.yml");
-        var fixtures = FixtureLoader.Load<DeviceFixture>(fixturePath);
+        var fixturePath = Path.Combine("Fixtures", "Resources", "Devices", "consoles.json");
+        var fixtures = await FixtureLoader.LoadAsync<DeviceFixture>(fixturePath);
 
         var clientHints = ClientHints.Create(ImmutableDictionary<string, string?>.Empty);
         var parser = new ConsoleParser();

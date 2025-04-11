@@ -25,10 +25,10 @@ public class FeedReaderParserTests
     }
 
     [Test]
-    public void TryParse_WithFixtureData_ShouldReturnExpectedClientInfo()
+    public async Task TryParse_WithFixtureData_ShouldReturnExpectedClientInfo()
     {
-        var fixturePath = Path.Combine("Fixtures", "Resources", "Clients", "feed_readers.yml");
-        var fixtures = FixtureLoader.Load<ClientFixture>(fixturePath);
+        var fixturePath = Path.Combine("Fixtures", "Resources", "Clients", "feed_readers.json");
+        var fixtures = await FixtureLoader.LoadAsync<ClientFixture>(fixturePath);
 
         var clientHints = ClientHints.Create(ImmutableDictionary<string, string?>.Empty);
         var parser = new FeedReaderParser(VersionTruncation.None);

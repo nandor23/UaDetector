@@ -23,10 +23,10 @@ public class BotParserTests
     }
 
     [Test]
-    public void TryParse_WithFixtureData_ShouldReturnExpectedBotInfo()
+    public async Task TryParse_WithFixtureData_ShouldReturnExpectedBotInfo()
     {
-        var fixturePath = Path.Combine("Fixtures", "Resources", "bots.yml");
-        var fixtures = FixtureLoader.Load<BotFixture>(fixturePath)
+        var fixturePath = Path.Combine("Fixtures", "Resources", "bots.json");
+        var fixtures = (await FixtureLoader.LoadAsync<BotFixture>(fixturePath))
             .Select(e => new BotFixture
             {
                 UserAgent = e.UserAgent,

@@ -95,10 +95,10 @@ public class OsParserTests
     }
 
     [Test]
-    public void TryParse_WithFixtureData_ShouldReturnExpectedOsInfo()
+    public async Task TryParse_WithFixtureData_ShouldReturnExpectedOsInfo()
     {
-        var fixturePath = Path.Combine("Fixtures", "Resources", "operating_systems.yml");
-        var fixtures = FixtureLoader.Load<OsFixture>(fixturePath);
+        var fixturePath = Path.Combine("Fixtures", "Resources", "operating_systems.json");
+        var fixtures = await FixtureLoader.LoadAsync<OsFixture>(fixturePath);
 
         var parser = new OsParser(VersionTruncation.None);
 

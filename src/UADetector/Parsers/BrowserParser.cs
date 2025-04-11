@@ -706,7 +706,7 @@ public sealed class BrowserParser : IBrowserParser
         .ToDictionary(e => e.Value, e => e.Key)
         .ToFrozenDictionary(StringComparer.OrdinalIgnoreCase);
 
-    internal static readonly FrozenDictionary<string, FrozenSet<BrowserCode>> BrowserFamilyMapping =
+    private static readonly FrozenDictionary<string, FrozenSet<BrowserCode>> BrowserFamilyMapping =
         new Dictionary<string, FrozenSet<BrowserCode>>
         {
             { BrowserFamilies.AndroidBrowser, new[] { BrowserCode.AndroidBrowser }.ToFrozenSet() },
