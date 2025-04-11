@@ -72,6 +72,7 @@ public class UADetectorTests
             }
 
             result?.Os.ShouldBeEquivalentTo(fixture.Os);
+            result?.Browser.ShouldBeEquivalentTo(fixture.Browser);
         }
     }
 
