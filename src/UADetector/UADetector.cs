@@ -93,10 +93,10 @@ public sealed class UADetector : IUADetector
                ParserExtensions.TryCompareVersions(os.Version, "8", out var comparisonResult) && comparisonResult >= 0;
     }
 
-    private static bool IsDesktop(OsInfo os, BrowserInfo browser)
+    private bool IsDesktop(OsInfo os, BrowserInfo browser)
     {
-        return !BrowserParser.IsMobileOnlyBrowser(browser.Code) && !string.IsNullOrEmpty(os.Family) &&
-               OsParser.IsDesktopOs(os.Family);
+        return !_browserParser.IsMobileOnlyBrowser(browser.Code) && !string.IsNullOrEmpty(os.Family) &&
+               _osParser.IsDesktopOs(os.Family);
     }
 
     private bool TryParseDevice(
@@ -377,6 +377,7 @@ public sealed class UADetector : IUADetector
         {
             result = new UserAgentInfo
             {
+                IsBot = isBot,
                 Device = device,
                 Os = os,
                 Browser = browser,
