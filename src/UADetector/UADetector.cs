@@ -328,10 +328,26 @@ public sealed class UADetector : IUADetector
         [NotNullWhen(true)] out UserAgentInfo? result
     )
     {
-        if (string.IsNullOrEmpty(userAgent) || !ContainsLetterRegex.IsMatch(userAgent))
+        if ((string.IsNullOrEmpty(userAgent) || !ContainsLetterRegex.IsMatch(userAgent)) && headers.Count == 0)
         {
             result = null;
             return false;
+        }
+
+        BotInfo? bot = null;
+
+        if (!_uaDetectorOptions.SkipBotParsing && _botParser.TryParse(userAgent, out bot))
+        {
+            result = new UserAgentInfo
+            {
+                Bot = bot,
+                Os = null,
+                Browser = null,
+                Client = null,
+                Device = null,
+            };
+
+            return true;
         }
 
         var clientHints = ClientHints.Create(headers);
@@ -341,19 +357,13 @@ public sealed class UADetector : IUADetector
             userAgent = restoredUserAgent;
         }
 
-        ClientInfo? client = null;
-        BotInfo? bot = null;
-
-        if (!_uaDetectorOptions.SkipBotParsing)
-        {
-            _botParser.TryParse(userAgent, out bot);
-        }
+        BrowserInfo? browser = null;
 
         _osParser.TryParse(userAgent, clientHints, out var os);
 
-        if (!_browserParser.TryParse(userAgent, clientHints, out var browser))
+        if (!_clientParser.TryParse(userAgent, clientHints, out ClientInfo? client))
         {
-            _clientParser.TryParse(userAgent, clientHints, out client);
+            _browserParser.TryParse(userAgent, clientHints, out browser);
         }
 
         TryParseDevice(userAgent, clientHints, os, browser, client, out var device);

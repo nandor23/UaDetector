@@ -332,6 +332,7 @@ public static class BrandNames
     public const string Clementoni = "Clementoni";
     public const string CreNova = "CreNova";
     public const string Crescent = "Crescent";
+    public const string Crestron = "Crestron";
     public const string Cricket = "Cricket";
     public const string CriusMea = "Crius Mea";
     public const string Cmf = "CMF";
@@ -613,8 +614,10 @@ public static class BrandNames
     public const string Gateway = "Gateway";
     public const string GalaxyInnovations = "Galaxy Innovations";
     public const string Galactic = "Galactic";
+    public const string Galatec = "Galatec";
     public const string Gamma = "Gamma";
     public const string Gazer = "Gazer";
+    public const string Gazal = "Gazal";
     public const string Geanee = "Geanee";
     public const string Geant = "Geant";
     public const string Gemini = "Gemini";
@@ -676,6 +679,7 @@ public static class BrandNames
     public const string Grundig = "Grundig";
     public const string Gtel = "Gtel";
     public const string Guophone = "Guophone";
+    public const string Cud = "CUD";
     public const string GvcPro = "GVC Pro";
     public const string H133 = "H133";
     public const string H96 = "H96";
@@ -781,6 +785,7 @@ public static class BrandNames
     public const string IBrit = "iBrit";
     public const string Ibowin = "ibowin";
     public const string IconBit = "IconBIT";
+    public const string IconeGold = "Icone Gold";
     public const string IDroid = "iDroid";
     public const string IDino = "iDino";
     public const string IData = "iData";
@@ -923,6 +928,7 @@ public static class BrandNames
     public const string Kodak = "Kodak";
     public const string Kogan = "Kogan";
     public const string Komu = "Komu";
+    public const string Kmc = "KMC";
     public const string Konka = "Konka";
     public const string Konrow = "Konrow";
     public const string Koobee = "Koobee";
@@ -1051,6 +1057,7 @@ public static class BrandNames
     public const string MazeSpeed = "Maze Speed";
     public const string Malata = "Malata";
     public const string Maunfeld = "Maunfeld";
+    public const string McLaut = "McLaut";
     public const string Mbox = "MBOX";
     public const string Mbi = "MBI";
     public const string Mbk = "MBK";
@@ -1367,6 +1374,7 @@ public static class BrandNames
     public const string PositivoBgh = "Positivo BGH";
     public const string Porsche = "Porsche";
     public const string Portfolio = "Portfolio";
+    public const string Ppds = "PPDS";
     public const string Pptv = "PPTV";
     public const string Premio = "Premio";
     public const string Premier = "Premier";
@@ -1414,6 +1422,7 @@ public static class BrandNames
     public const string Raspberry = "Raspberry";
     public const string Ravoz = "Ravoz";
     public const string Razer = "Razer";
+    public const string Razz = "RAZZ";
     public const string Rakuten = "Rakuten";
     public const string Raylandz = "Raylandz";
     public const string RcaTablets = "RCA Tablets";
@@ -1601,6 +1610,7 @@ public static class BrandNames
     public const string Sqool = "SQOOL";
     public const string Star = "Star";
     public const string Starlight = "Starlight";
+    public const string StarLight = "Star-Light";
     public const string Starmobile = "Starmobile";
     public const string Starway = "Starway";
     public const string Starwind = "Starwind";

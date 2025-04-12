@@ -32,22 +32,19 @@ internal sealed class MobileAppParser : ClientParserBase
         [NotNullWhen(true)] out ClientInfo? result
     )
     {
-        if (TryParse(userAgent, MobileApps, CombinedRegex, out result))
+        TryParse(userAgent, MobileApps, CombinedRegex, out result);
+
+        var name = result?.Name;
+        var version = result?.Version;
+
+        if (AppHintParser.TryParseAppName(clientHints, out var appName) && appName != name)
         {
-            var name = result.Name;
-            var version = result.Version;
-
-            if (AppHintParser.TryParseAppName(clientHints, out var appName) && appName != name)
-            {
-                name = appName;
-                version = null;
-            }
-
-            result = new ClientInfo { Type = result.Type, Name = name, Version = version, };
-            return true;
+            name = appName;
+            version = null;
         }
 
-        result = null;
-        return false;
+        result = string.IsNullOrEmpty(name) ? null : new ClientInfo { Type = Type, Name = name, Version = version, };
+
+        return result is not null;
     }
 }

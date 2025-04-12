@@ -1,17 +1,9 @@
-using System.Text.Encodings.Web;
-using System.Text.Json;
-
 using Shouldly;
 
 using UADetector.Models.Enums;
-using UADetector.Parsers;
-using UADetector.Parsers.Devices;
 using UADetector.Results;
 using UADetector.Tests.Fixtures.Models;
 using UADetector.Tests.Helpers;
-
-using YamlDotNet.Serialization;
-using YamlDotNet.Serialization.NamingConventions;
 
 namespace UADetector.Tests.Tests;
 
@@ -79,7 +71,7 @@ public class UADetectorTests
     public static IEnumerable<Func<string>> FixtureFileNames()
     {
         yield return () => "cameras";
-        /*yield return () => "car_browsers";
+        yield return () => "car_browsers";
         yield return () => "client_hints";
         yield return () => "client_hints_apps";
         yield return () => "consoles";
@@ -158,6 +150,6 @@ public class UADetectorTests
         yield return () => "televisions_5";
         yield return () => "televisions";
         yield return () => "wearables";
-        yield return () => "unknown";*/
+        yield return () => "unknown";
     }
 }
