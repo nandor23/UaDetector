@@ -7,14 +7,14 @@ using UADetector.Results;
 
 namespace UADetector.Parsers.Clients;
 
-internal abstract class BaseClientParser
+internal abstract class ClientParserBase
 {
     private readonly VersionTruncation _versionTruncation;
 
     protected abstract ClientType Type { get; }
 
 
-    protected BaseClientParser(VersionTruncation versionTruncation)
+    protected ClientParserBase(VersionTruncation versionTruncation)
     {
         _versionTruncation = versionTruncation;
     }

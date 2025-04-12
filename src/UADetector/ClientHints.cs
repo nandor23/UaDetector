@@ -12,70 +12,70 @@ internal sealed class ClientHints
                                                          "([a-zA-Z]+)"
                                                          """, RegexOptions.Compiled);
 
-    private static readonly FrozenSet<string> ArchitectureHeaderNames =
-        new HashSet<string>(StringComparer.OrdinalIgnoreCase)
+    internal static readonly FrozenSet<string> ArchitectureHeaderNames =
+        new HashSet<string>
             {
                 "http-sec-ch-ua-arch", "sec-ch-ua-arch", "arch", "architecture"
             }
-            .ToFrozenSet();
+            .ToFrozenSet(StringComparer.OrdinalIgnoreCase);
 
-    private static readonly FrozenSet<string> BitnessHeaderNames =
-        new HashSet<string>(StringComparer.OrdinalIgnoreCase)
+    internal static readonly FrozenSet<string> BitnessHeaderNames =
+        new HashSet<string>
             {
                 "http-sec-ch-ua-bitness", "sec-ch-ua-bitness", "bitness"
             }
-            .ToFrozenSet();
+            .ToFrozenSet(StringComparer.OrdinalIgnoreCase);
 
-    private static readonly FrozenSet<string> MobileHeaderNames =
-        new HashSet<string>(StringComparer.OrdinalIgnoreCase) { "http-sec-ch-ua-mobile", "sec-ch-ua-mobile", "mobile" }
-            .ToFrozenSet();
+    internal static readonly FrozenSet<string> MobileHeaderNames =
+        new HashSet<string> { "http-sec-ch-ua-mobile", "sec-ch-ua-mobile", "mobile" }
+            .ToFrozenSet(StringComparer.OrdinalIgnoreCase);
 
-    private static readonly FrozenSet<string> ModelHeaderNames =
-        new HashSet<string>(StringComparer.OrdinalIgnoreCase) { "http-sec-ch-ua-model", "sec-ch-ua-model", "model" }
-            .ToFrozenSet();
+    internal static readonly FrozenSet<string> ModelHeaderNames =
+        new HashSet<string> { "http-sec-ch-ua-model", "sec-ch-ua-model", "model" }
+            .ToFrozenSet(StringComparer.OrdinalIgnoreCase);
 
-    private static readonly FrozenSet<string> PlatformHeaderNames =
-        new HashSet<string>(StringComparer.OrdinalIgnoreCase)
+    internal static readonly FrozenSet<string> PlatformHeaderNames =
+        new HashSet<string>
             {
                 "http-sec-ch-ua-platform", "sec-ch-ua-platform", "platform"
             }
-            .ToFrozenSet();
+            .ToFrozenSet(StringComparer.OrdinalIgnoreCase);
 
-    private static readonly FrozenSet<string> PlatformVersionHeaderNames =
-        new HashSet<string>(StringComparer.OrdinalIgnoreCase)
+    internal static readonly FrozenSet<string> PlatformVersionHeaderNames =
+        new HashSet<string>
             {
                 "http-sec-ch-ua-platform-version", "sec-ch-ua-platform-version", "platformversion"
             }
-            .ToFrozenSet();
+            .ToFrozenSet(StringComparer.OrdinalIgnoreCase);
 
-    private static readonly FrozenSet<string> UaFullVersionHeaderNames =
-        new HashSet<string>(StringComparer.OrdinalIgnoreCase)
+    internal static readonly FrozenSet<string> UaFullVersionHeaderNames =
+        new HashSet<string>
             {
                 "http-sec-ch-ua-full-version", "sec-ch-ua-full-version", "uafullversion"
             }
-            .ToFrozenSet();
+            .ToFrozenSet(StringComparer.OrdinalIgnoreCase);
 
-    private static readonly FrozenSet<string> PrimaryFullVersionListHeaderNames =
-        new HashSet<string>(StringComparer.OrdinalIgnoreCase)
+    internal static readonly FrozenSet<string> PrimaryFullVersionListHeaderNames =
+        new HashSet<string>
             {
                 "fullversionlist", "http-sec-ch-ua-full-version-list", "sec-ch-ua-full-version-list"
             }
-            .ToFrozenSet();
+            .ToFrozenSet(StringComparer.OrdinalIgnoreCase);
 
-    private static readonly FrozenSet<string> SecondaryFullVersionListHeaderNames =
-        new HashSet<string>(StringComparer.OrdinalIgnoreCase) { "brands", "http-sec-ch-ua", "sec-ch-ua" }
-            .ToFrozenSet();
+    internal static readonly FrozenSet<string> SecondaryFullVersionListHeaderNames =
+        new HashSet<string> { "brands", "http-sec-ch-ua", "sec-ch-ua" }
+            .ToFrozenSet(StringComparer.OrdinalIgnoreCase);
 
-    private static readonly FrozenSet<string> AppHeaderNames =
-        new HashSet<string>(StringComparer.OrdinalIgnoreCase) { "http-x-requested-with", "x-requested-with" }
-            .ToFrozenSet();
+    internal static readonly FrozenSet<string> AppHeaderNames =
+        new HashSet<string> { "http-x-requested-with", "x-requested-with" }
+            .ToFrozenSet(StringComparer.OrdinalIgnoreCase);
 
-    private static readonly FrozenSet<string> FormFactorsHeaderNames =
-        new HashSet<string>(StringComparer.OrdinalIgnoreCase)
+    internal static readonly FrozenSet<string> FormFactorsHeaderNames =
+        new HashSet<string>
             {
                 "formfactors", "http-sec-ch-ua-form-factors", "sec-ch-ua-form-factors"
             }
-            .ToFrozenSet();
+            .ToFrozenSet(StringComparer.OrdinalIgnoreCase);
 
 
     /// <summary>
@@ -180,12 +180,16 @@ internal sealed class ClientHints
             {
                 while (FullVersionListRegex.Match(value) is { Success: true } match)
                 {
-                    clientHints.FullVersionList.Add(match.Groups[1].Value, match.Groups[2].Value);
+                    if (match.Groups.Count == 3 && !clientHints.FullVersionList.ContainsKey(match.Groups[1].Value))
+                    {
+                        clientHints.FullVersionList.Add(match.Groups[1].Value, match.Groups[2].Value);
+                    }
+
                     value = value[match.Length..];
                 }
             }
             else if (AppHeaderNames.Contains(normalizedHeader) &&
-                     value.Equals("xmlhttprequest", StringComparison.OrdinalIgnoreCase))
+                     !value.Equals("xmlhttprequest", StringComparison.OrdinalIgnoreCase))
             {
                 clientHints.App = value;
             }
@@ -199,9 +203,16 @@ internal sealed class ClientHints
                 }
                 else
                 {
-                    foreach (Match match in FormFactorsRegex.Matches(normalizedHeader))
+                    var match = FormFactorsRegex.Match(value);
+
+                    while (match is { Success: true })
                     {
-                        clientHints.FormFactors.Add(match.Value);
+                        if (match.Groups.Count == 2)
+                        {
+                            clientHints.FormFactors.Add(match.Groups[1].Value);
+                        }
+
+                        match = match.NextMatch();
                     }
                 }
             }

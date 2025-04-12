@@ -7,7 +7,7 @@ using UADetector.Results;
 
 namespace UADetector.Parsers.Devices;
 
-internal sealed class CarBrowserParser : BaseDeviceParser
+internal sealed class CarBrowserParser : DeviceParserBase
 {
     private const string ResourceName = "Regexes.Resources.Devices.car_browsers.yml";
     private static readonly FrozenDictionary<string, Device> CarBrowsers;

@@ -6,6 +6,10 @@
     <Nullable>enable</Nullable>
     <LangVersion>latest</LangVersion>
   </PropertyGroup>
+  
+  <ItemGroup>
+    <InternalsVisibleTo Include="UADetector.Tests"/>
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="PolySharp" Version="1.15.0">

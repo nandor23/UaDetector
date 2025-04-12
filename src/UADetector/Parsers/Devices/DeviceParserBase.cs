@@ -9,9 +9,9 @@ using UADetector.Results;
 
 namespace UADetector.Parsers.Devices;
 
-internal abstract class BaseDeviceParser
+internal abstract class DeviceParserBase
 {
-    private static readonly FrozenDictionary<BrandCode, string> BrandCodeMapping = new Dictionary<BrandCode, string>
+    internal static readonly FrozenDictionary<BrandCode, string> BrandCodeMapping = new Dictionary<BrandCode, string>
     {
         { BrandCode.TwoE, BrandNames.TwoE },
         { BrandCode.FiveIve, BrandNames.FiveIve },
@@ -343,6 +343,7 @@ internal abstract class BaseDeviceParser
         { BrandCode.Clementoni, BrandNames.Clementoni },
         { BrandCode.CreNova, BrandNames.CreNova },
         { BrandCode.Crescent, BrandNames.Crescent },
+        { BrandCode.Crestron, BrandNames.Crestron },
         { BrandCode.Cricket, BrandNames.Cricket },
         { BrandCode.CriusMea, BrandNames.CriusMea },
         { BrandCode.Cmf, BrandNames.Cmf },
@@ -624,8 +625,10 @@ internal abstract class BaseDeviceParser
         { BrandCode.Gateway, BrandNames.Gateway },
         { BrandCode.GalaxyInnovations, BrandNames.GalaxyInnovations },
         { BrandCode.Galactic, BrandNames.Galactic },
+        { BrandCode.Galatec, BrandNames.Galatec },
         { BrandCode.Gamma, BrandNames.Gamma },
         { BrandCode.Gazer, BrandNames.Gazer },
+        { BrandCode.Gazal, BrandNames.Gazal },
         { BrandCode.Geanee, BrandNames.Geanee },
         { BrandCode.Geant, BrandNames.Geant },
         { BrandCode.Gemini, BrandNames.Gemini },
@@ -687,6 +690,7 @@ internal abstract class BaseDeviceParser
         { BrandCode.Grundig, BrandNames.Grundig },
         { BrandCode.Gtel, BrandNames.Gtel },
         { BrandCode.Guophone, BrandNames.Guophone },
+        { BrandCode.Cud, BrandNames.Cud },
         { BrandCode.GvcPro, BrandNames.GvcPro },
         { BrandCode.H133, BrandNames.H133 },
         { BrandCode.H96, BrandNames.H96 },
@@ -792,6 +796,7 @@ internal abstract class BaseDeviceParser
         { BrandCode.IBrit, BrandNames.IBrit },
         { BrandCode.Ibowin, BrandNames.Ibowin },
         { BrandCode.IconBit, BrandNames.IconBit },
+        { BrandCode.IconeGold, BrandNames.IconeGold },
         { BrandCode.IDroid, BrandNames.IDroid },
         { BrandCode.IDino, BrandNames.IDino },
         { BrandCode.IData, BrandNames.IData },
@@ -934,6 +939,7 @@ internal abstract class BaseDeviceParser
         { BrandCode.Kodak, BrandNames.Kodak },
         { BrandCode.Kogan, BrandNames.Kogan },
         { BrandCode.Komu, BrandNames.Komu },
+        { BrandCode.Kmc, BrandNames.Kmc },
         { BrandCode.Konka, BrandNames.Konka },
         { BrandCode.Konrow, BrandNames.Konrow },
         { BrandCode.Koobee, BrandNames.Koobee },
@@ -1062,6 +1068,7 @@ internal abstract class BaseDeviceParser
         { BrandCode.MazeSpeed, BrandNames.MazeSpeed },
         { BrandCode.Malata, BrandNames.Malata },
         { BrandCode.Maunfeld, BrandNames.Maunfeld },
+        { BrandCode.McLaut, BrandNames.McLaut },
         { BrandCode.Mbox, BrandNames.Mbox },
         { BrandCode.Mbi, BrandNames.Mbi },
         { BrandCode.Mbk, BrandNames.Mbk },
@@ -1378,6 +1385,7 @@ internal abstract class BaseDeviceParser
         { BrandCode.PositivoBgh, BrandNames.PositivoBgh },
         { BrandCode.Porsche, BrandNames.Porsche },
         { BrandCode.Portfolio, BrandNames.Portfolio },
+        { BrandCode.Ppds, BrandNames.Ppds },
         { BrandCode.Pptv, BrandNames.Pptv },
         { BrandCode.Premio, BrandNames.Premio },
         { BrandCode.Premier, BrandNames.Premier },
@@ -1425,6 +1433,7 @@ internal abstract class BaseDeviceParser
         { BrandCode.Raspberry, BrandNames.Raspberry },
         { BrandCode.Ravoz, BrandNames.Ravoz },
         { BrandCode.Razer, BrandNames.Razer },
+        { BrandCode.Razz, BrandNames.Razz },
         { BrandCode.Rakuten, BrandNames.Rakuten },
         { BrandCode.Raylandz, BrandNames.Raylandz },
         { BrandCode.RcaTablets, BrandNames.RcaTablets },
@@ -1612,6 +1621,7 @@ internal abstract class BaseDeviceParser
         { BrandCode.Sqool, BrandNames.Sqool },
         { BrandCode.Star, BrandNames.Star },
         { BrandCode.Starlight, BrandNames.Starlight },
+        { BrandCode.StarLight, BrandNames.StarLight },
         { BrandCode.Starmobile, BrandNames.Starmobile },
         { BrandCode.Starway, BrandNames.Starway },
         { BrandCode.Starwind, BrandNames.Starwind },
@@ -2058,7 +2068,7 @@ internal abstract class BaseDeviceParser
         .ToDictionary(e => e.Value, e => e.Key)
         .ToFrozenDictionary();
 
-    private static readonly FrozenDictionary<string, DeviceType> DeviceTypeMapping = new Dictionary<string, DeviceType>
+    internal static readonly FrozenDictionary<string, DeviceType> DeviceTypeMapping = new Dictionary<string, DeviceType>
     {
         { "desktop", DeviceType.Desktop },
         { "smartphone", DeviceType.Smartphone },
@@ -2074,7 +2084,7 @@ internal abstract class BaseDeviceParser
         { "smart speaker", DeviceType.SmartSpeaker },
         { "wearable", DeviceType.Wearable },
         { "peripheral", DeviceType.Peripheral },
-    }.ToFrozenDictionary();
+    }.ToFrozenDictionary(StringComparer.OrdinalIgnoreCase);
 
     private static readonly FrozenDictionary<string, DeviceType> ClientHintFormFactorsMapping =
         new Dictionary<string, DeviceType>
@@ -2086,7 +2096,7 @@ internal abstract class BaseDeviceParser
             { "tablet", DeviceType.Tablet },
             { "desktop", DeviceType.Desktop },
             { "eink", DeviceType.Tablet },
-        }.ToFrozenDictionary();
+        }.ToFrozenDictionary(StringComparer.OrdinalIgnoreCase);
 
     private static string? BuildModel(string model, Match match)
     {
@@ -2095,12 +2105,6 @@ internal abstract class BaseDeviceParser
 
         return model == "Build" ? null : model.Trim();
     }
-
-    public abstract bool TryParse(
-        string userAgent,
-        ClientHints clientHints,
-        [NotNullWhen(true)] out InternalDeviceInfo? result
-    );
 
     private static bool TryParseDeviceFromClientHints(
         ClientHints clientHints,
@@ -2127,6 +2131,12 @@ internal abstract class BaseDeviceParser
         result = new ClientHintsDeviceInfo { Type = deviceType, Model = clientHints.Model, };
         return true;
     }
+
+    public abstract bool TryParse(
+        string userAgent,
+        ClientHints clientHints,
+        [NotNullWhen(true)] out InternalDeviceInfo? result
+    );
 
     protected static bool TryParse(
         string userAgent,

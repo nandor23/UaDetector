@@ -8,13 +8,13 @@ using UADetector.Results;
 
 namespace UADetector.Parsers.Devices;
 
-internal sealed class HbbTvParser : BaseDeviceParser
+internal sealed class HbbTvParser : DeviceParserBase
 {
     private const string ResourceName = "Regexes.Resources.Devices.televisions.yml";
     private static readonly FrozenDictionary<string, Device> Televisions;
     private static readonly Regex CombinedRegex;
 
-    private static readonly Regex
+    internal static readonly Regex
         HbbTvRegex = ParserExtensions.BuildUserAgentRegex(@"(?:HbbTV|SmartTvA)/([1-9](?:\.[0-9]){1,2})");
 
 

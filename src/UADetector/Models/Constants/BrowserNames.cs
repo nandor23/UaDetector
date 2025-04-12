@@ -444,6 +444,7 @@ public static class BrowserNames
     public const string OwlBrowser = "Owl Browser";
     public const string OjrBrowser = "OJR Browser";
     public const string PalmBlazer = "Palm Blazer";
+    public const string PocketInternetExplorer = "Pocket Internet Explorer";
     public const string PaleMoon = "Pale Moon";
     public const string Polypane = "Polypane";
     public const string Prism = "Prism";

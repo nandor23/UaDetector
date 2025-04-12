@@ -7,7 +7,7 @@ using UADetector.Results;
 
 namespace UADetector.Parsers.Clients;
 
-internal sealed class MediaPlayerParser : BaseClientParser
+internal sealed class MediaPlayerParser : ClientParserBase
 {
     private const string ResourceName = "Regexes.Resources.Clients.media_players.yml";
     private static readonly IEnumerable<Client> MediaPlayers;

@@ -8,13 +8,13 @@ using UADetector.Results;
 
 namespace UADetector.Parsers.Devices;
 
-internal sealed class ShellTvParser : BaseDeviceParser
+internal sealed class ShellTvParser : DeviceParserBase
 {
     private const string ResourceName = "Regexes.Resources.Devices.shell_televisions.yml";
     private static readonly FrozenDictionary<string, Device> ShellTelevisions;
     private static readonly Regex CombinedRegex;
 
-    private static readonly Regex ShellTvRegex =
+    internal static readonly Regex ShellTvRegex =
         ParserExtensions.BuildUserAgentRegex(@"[a-z]+[ _]Shell[ _]\w{6}|tclwebkit(\d+[.\d]*)");
 
 

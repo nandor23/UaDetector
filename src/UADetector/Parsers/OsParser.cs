@@ -15,9 +15,9 @@ public sealed class OsParser : IOsParser
 {
     private const string ResourceName = "Regexes.Resources.operating_systems.yml";
     private readonly VersionTruncation _versionTruncation;
-    private static readonly IEnumerable<Os> OperatingSystems = ParserExtensions.LoadRegexesWithoutCombinedRegex<Os>(ResourceName);
+    internal static readonly IEnumerable<Os> OperatingSystems = ParserExtensions.LoadRegexesWithoutCombinedRegex<Os>(ResourceName);
 
-    private static readonly FrozenDictionary<OsCode, string> OsCodeMapping =
+    internal static readonly FrozenDictionary<OsCode, string> OsCodeMapping =
         new Dictionary<OsCode, string>
         {
             { OsCode.Aix, OsNames.Aix },
@@ -208,11 +208,11 @@ public sealed class OsParser : IOsParser
             { OsCode.WebOs, OsNames.WebOs },
         }.ToFrozenDictionary();
 
-    private static readonly FrozenDictionary<string, OsCode> OsNameMapping = OsCodeMapping
+    internal static readonly FrozenDictionary<string, OsCode> OsNameMapping = OsCodeMapping
         .ToDictionary(e => e.Value, e => e.Key)
         .ToFrozenDictionary(StringComparer.OrdinalIgnoreCase);
 
-    private static readonly FrozenDictionary<string, FrozenSet<OsCode>> OsFamilyMapping =
+    internal static readonly FrozenDictionary<string, FrozenSet<OsCode>> OsFamilyMapping =
         new Dictionary<string, FrozenSet<OsCode>>
         {
             {
@@ -398,7 +398,7 @@ public sealed class OsParser : IOsParser
                 OsPlatformTypes.X64,
                 ParserExtensions.BuildUserAgentRegex("64-?bit|WOW64|(?:Intel)?x64|WINDOWS_64|win64|.*amd64|.*x86_?64")
             },
-            { OsPlatformTypes.X86, ParserExtensions.BuildUserAgentRegex("32bit|win32|(?:i[0-9]|x)86|i86pc") }
+            { OsPlatformTypes.X86, ParserExtensions.BuildUserAgentRegex(".*32bit|.*win32|(?:i[0-9]|x)86|i86pc") }
         }.ToFrozenDictionary();
 
     private static readonly IEnumerable<string> OsPlatforms =
@@ -430,21 +430,13 @@ public sealed class OsParser : IOsParser
     {
         if (OsNameMapping.TryGetValue(name, out var code))
         {
-            return TryMapCodeToFamily(code, out result);
-        }
-
-        result = null;
-        return false;
-    }
-
-    private static bool TryMapCodeToFamily(OsCode code, [NotNullWhen((true))] out string? result)
-    {
-        foreach (var osFamily in OsFamilyMapping)
-        {
-            if (osFamily.Value.Contains(code))
+            foreach (var osFamily in OsFamilyMapping)
             {
-                result = osFamily.Key;
-                return true;
+                if (osFamily.Value.Contains(code))
+                {
+                    result = osFamily.Key;
+                    return true;
+                }
             }
         }
 
@@ -454,16 +446,17 @@ public sealed class OsParser : IOsParser
 
     private static bool TryGetFireOsVersion(string version, [NotNullWhen((true))] out string? result)
     {
+        result = null;
         var index = version.IndexOf('.');
 
         if (index != -1)
         {
-            result = FireOsVersionMapping.TryGetValue(version, out result) ? result :
-                FireOsVersionMapping.TryGetValue(version[..index], out result) ? result : null;
+            FireOsVersionMapping.TryGetValue(version[..index], out result);
         }
-        else
+
+        if (result is null)
         {
-            result = null;
+            FireOsVersionMapping.TryGetValue(version, out result);
         }
 
         return result is not null;
@@ -471,16 +464,17 @@ public sealed class OsParser : IOsParser
 
     private static bool TryGetLineageOsVersion(string version, [NotNullWhen((true))] out string? result)
     {
+        result = null;
         var index = version.IndexOf('.');
 
         if (index != -1)
         {
-            result = LineageOsVersionMapping.TryGetValue(version, out result) ? result :
-                LineageOsVersionMapping.TryGetValue(version[..index], out result) ? result : null;
+            LineageOsVersionMapping.TryGetValue(version[..index], out result);
         }
-        else
+
+        if (result is null)
         {
-            result = null;
+            LineageOsVersionMapping.TryGetValue(version, out result);
         }
 
         return result is not null;
@@ -531,7 +525,8 @@ public sealed class OsParser : IOsParser
 
         foreach (var platform in OsPlatforms)
         {
-            if (PlatformRegexes.TryGetValue(platform, out var regex) && regex.IsMatch(userAgent))
+            PlatformRegexes.TryGetValue(platform, out var regex);
+            if (PlatformRegexes.TryGetValue(platform, out regex) && regex.IsMatch(userAgent))
             {
                 result = platform;
                 break;
@@ -585,7 +580,8 @@ public sealed class OsParser : IOsParser
         }
 
         // On Windows, version 0.0.0 can represent 7, 8, or 8.1, so it is set to null.
-        if (name != OsNames.Windows && version != "0.0.0" && !int.TryParse(version, out _))
+        if (name != OsNames.Windows && !string.IsNullOrEmpty(version) && version != "0.0.0" &&
+            ParserExtensions.TryCompareVersions(version, "0", out var comparisonResult) && comparisonResult == 0)
         {
             version = null;
         }
@@ -638,13 +634,13 @@ public sealed class OsParser : IOsParser
 
         if (os.Versions?.Count > 0)
         {
-            foreach (var versionRegex in os.Versions)
+            foreach (var osVersion in os.Versions)
             {
-                match = versionRegex.Regex.Match(userAgent);
+                match = osVersion.Regex.Match(userAgent);
 
                 if (match.Success)
                 {
-                    version = ParserExtensions.BuildVersion(versionRegex.Version, match, _versionTruncation);
+                    version = ParserExtensions.BuildVersion(osVersion.Version, match, _versionTruncation);
                     break;
                 }
             }
@@ -674,7 +670,6 @@ public sealed class OsParser : IOsParser
     internal bool TryParse(string userAgent, ClientHints clientHints, [NotNullWhen(true)] out OsInfo? result)
     {
         string name;
-        OsCode code;
         string? version;
 
         TryParseOsFromUserAgent(userAgent, out var osFromUserAgent);
@@ -682,18 +677,16 @@ public sealed class OsParser : IOsParser
         if (TryParseOsFromClientHints(clientHints, out var osFromClientHints))
         {
             name = osFromClientHints.Name;
-            code = osFromClientHints.Code;
             version = osFromClientHints.Version;
 
             if (osFromUserAgent is not null)
             {
-                string? familyFromUserAgent = null;
+                TryMapNameToFamily(osFromUserAgent.Name, out string? familyFromUserAgent);
 
                 // If no version is provided in the client hints, use the version from the user agent,
                 // provided the OS family matches.
                 if (string.IsNullOrEmpty(osFromClientHints.Version) &&
                     TryMapNameToFamily(name, out var familyFromName) &&
-                    TryMapNameToFamily(osFromUserAgent.Name, out familyFromUserAgent) &&
                     familyFromName == familyFromUserAgent)
                 {
                     version = osFromUserAgent.Version;
@@ -719,7 +712,8 @@ public sealed class OsParser : IOsParser
                         case OsNames.PicoOs:
                             version = osFromUserAgent.Version;
                             break;
-                        case OsNames.FireOs when !string.IsNullOrEmpty(version):
+                        case OsNames.FireOs when !string.IsNullOrEmpty(osFromClientHints.Version) &&
+                                                 !string.IsNullOrEmpty(version):
                             {
                                 TryGetFireOsVersion(version, out version);
                                 break;
@@ -734,18 +728,15 @@ public sealed class OsParser : IOsParser
                     case OsNames.GnuLinux when osFromUserAgent.Name == OsNames.ChromeOs &&
                                                osFromClientHints.Version == osFromUserAgent.Version:
                         name = osFromUserAgent.Name;
-                        code = osFromUserAgent.Code;
                         break;
                     // In some cases, Chrome OS is incorrectly reported as Android in client hints.
                     case OsNames.Android when osFromUserAgent.Name == OsNames.ChromeOs:
                         name = osFromUserAgent.Name;
-                        code = osFromUserAgent.Code;
                         version = null;
                         break;
                     // Meta Horizon is reported as Linux in client hints.
                     case OsNames.GnuLinux when osFromUserAgent.Name == OsNames.MetaHorizon:
                         name = osFromUserAgent.Name;
-                        code = osFromUserAgent.Code;
                         break;
                 }
             }
@@ -753,7 +744,6 @@ public sealed class OsParser : IOsParser
         else if (osFromUserAgent is not null)
         {
             name = osFromUserAgent.Name;
-            code = osFromUserAgent.Code;
             version = osFromUserAgent.Version;
         }
         else
@@ -763,21 +753,19 @@ public sealed class OsParser : IOsParser
         }
 
         TryParsePlatform(userAgent, clientHints, out var platform);
-        TryMapCodeToFamily(code, out var family);
+        TryMapNameToFamily(name, out var family);
 
         if (!string.IsNullOrEmpty(clientHints.App))
         {
             if (name != OsNames.Android && AndroidApps.Contains(clientHints.App))
             {
                 name = OsNames.Android;
-                code = OsCode.AndroidTv;
                 family = OsFamilies.Android;
                 version = null;
             }
             else if (name != OsNames.LineageOs && clientHints.App == "org.lineageos.jelly")
             {
                 name = OsNames.LineageOs;
-                code = OsCode.LineageOs;
                 family = OsFamilies.Android;
 
                 if (!string.IsNullOrEmpty(version))
@@ -788,7 +776,6 @@ public sealed class OsParser : IOsParser
             else if (name != OsNames.FireOs && clientHints.App == "org.mozilla.tv.firefox")
             {
                 name = OsNames.FireOs;
-                code = OsCode.FireOs;
                 family = OsFamilies.Android;
 
                 if (!string.IsNullOrEmpty(version))
@@ -801,7 +788,7 @@ public sealed class OsParser : IOsParser
         result = new OsInfo
         {
             Name = name,
-            Code = code,
+            Code = OsNameMapping[name],
             Version = version,
             Platform = platform,
             Family = family

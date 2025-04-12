@@ -16,9 +16,9 @@ public sealed class BrowserParser : IBrowserParser
 {
     private const string ResourceName = "Regexes.Resources.Browsers.browsers.yml";
     private readonly VersionTruncation _versionTruncation;
-    private static readonly IEnumerable<Browser> Browsers = ParserExtensions.LoadRegexesWithoutCombinedRegex<Browser>(ResourceName);
+    internal static readonly IEnumerable<Browser> Browsers = ParserExtensions.LoadRegexesWithoutCombinedRegex<Browser>(ResourceName);
 
-    private static readonly FrozenDictionary<BrowserCode, string> BrowserCodeMapping =
+    internal static readonly FrozenDictionary<BrowserCode, string> BrowserCodeMapping =
         new Dictionary<BrowserCode, string>
         {
             { BrowserCode.Via, BrowserNames.Via },
@@ -463,6 +463,7 @@ public sealed class BrowserParser : IBrowserParser
             { BrowserCode.OwlBrowser, BrowserNames.OwlBrowser },
             { BrowserCode.OjrBrowser, BrowserNames.OjrBrowser },
             { BrowserCode.PalmBlazer, BrowserNames.PalmBlazer },
+            { BrowserCode.PocketInternetExplorer, BrowserNames.PocketInternetExplorer },
             { BrowserCode.PaleMoon, BrowserNames.PaleMoon },
             { BrowserCode.Polypane, BrowserNames.Polypane },
             { BrowserCode.Prism, BrowserNames.Prism },
@@ -701,9 +702,11 @@ public sealed class BrowserParser : IBrowserParser
             { BrowserCode.ZteBrowser, BrowserNames.ZteBrowser },
         }.ToFrozenDictionary();
 
-    private static readonly FrozenDictionary<string, BrowserCode> BrowserNameMapping = BrowserCodeMapping
+    internal static readonly FrozenDictionary<string, BrowserCode> BrowserNameMapping = BrowserCodeMapping
         .ToDictionary(e => e.Value, e => e.Key)
         .ToFrozenDictionary(StringComparer.OrdinalIgnoreCase);
+
+    internal static readonly FrozenDictionary<string, string> CompactToFullNameMapping;
 
     private static readonly FrozenDictionary<string, FrozenSet<BrowserCode>> BrowserFamilyMapping =
         new Dictionary<string, FrozenSet<BrowserCode>>
@@ -839,7 +842,7 @@ public sealed class BrowserParser : IBrowserParser
                 {
                     BrowserCode.InternetExplorer, BrowserCode.CrazyBrowser, BrowserCode.Browzar,
                     BrowserCode.IeMobile, BrowserCode.MicrosoftEdge, BrowserCode.AolExplorer,
-                    BrowserCode.AcooBrowser, BrowserCode.GreenBrowser,
+                    BrowserCode.AcooBrowser, BrowserCode.GreenBrowser, BrowserCode.PocketInternetExplorer
                 }.ToFrozenSet()
             },
             { BrowserNames.Konqueror, new[] { BrowserCode.Konqueror, }.ToFrozenSet() },
@@ -931,7 +934,7 @@ public sealed class BrowserParser : IBrowserParser
         BrowserCode.ProxyFox, BrowserCode.ProxyMax, BrowserCode.KeepSolidBrowser, BrowserCode.OnionBrowser2,
         BrowserCode.AiBrowser, BrowserCode.HaloBrowser, BrowserCode.MmboxXBrowser, BrowserCode.XnBrowse,
         BrowserCode.OpenBrowserLite, BrowserCode.PuffinIncognitoBrowser, BrowserCode.PuffinCloudBrowser,
-        BrowserCode.PrivacyPioneerBrowser, BrowserCode.Pluma,
+        BrowserCode.PrivacyPioneerBrowser, BrowserCode.Pluma, BrowserCode.PocketInternetExplorer
     }.ToFrozenSet();
 
     private static readonly FrozenDictionary<string, FrozenSet<string>> ClientHintBrandMapping =
@@ -961,10 +964,34 @@ public sealed class BrowserParser : IBrowserParser
     private static readonly Regex ChromeSafariRegex =
         new(@"Chrome/.+ Safari/537\.36", RegexOptions.IgnoreCase | RegexOptions.Compiled);
 
-    private static readonly Regex CypressOrPhantomJsRegex = new Regex("Cypress|PhantomJS", RegexOptions.Compiled);
+    private static readonly Regex CypressOrPhantomJsRegex = new("Cypress|PhantomJS", RegexOptions.Compiled);
 
-    private static readonly Regex IridiumVersionRegex = new Regex("^202[0-4]", RegexOptions.Compiled);
+    private static readonly Regex IridiumVersionRegex = new("^202[0-4]", RegexOptions.Compiled);
 
+
+    static BrowserParser()
+    {
+        var duplicateCompactNames = BrowserCodeMapping.Values
+            .Select(x => x.RemoveSpaces())
+            .GroupBy(x => x)
+            .Where(group => group.Count() > 1)
+            .Select(group => group.Key)
+            .ToList();
+
+        var mapping = new Dictionary<string, string>();
+
+        foreach (var name in BrowserNameMapping.Keys)
+        {
+            var compactName = name.RemoveSpaces();
+
+            if (!duplicateCompactNames.Contains(compactName))
+            {
+                mapping.Add(compactName, name);
+            }
+        }
+
+        CompactToFullNameMapping = mapping.ToFrozenDictionary(StringComparer.OrdinalIgnoreCase);
+    }
 
     public BrowserParser(VersionTruncation versionTruncation = VersionTruncation.Minor)
     {
@@ -1019,11 +1046,12 @@ public sealed class BrowserParser : IBrowserParser
             foreach (var version in engine.Versions)
             {
                 if (ParserExtensions.TryCompareVersions(browserVersion, version.Key, out var comparisonResult) &&
-                    comparisonResult >= 0)
+                    comparisonResult < 0)
                 {
-                    result = version.Value;
-                    break;
+                    continue;
                 }
+
+                result = version.Value;
             }
         }
 
@@ -1047,6 +1075,27 @@ public sealed class BrowserParser : IBrowserParser
 
     }
 
+    private static bool TryGetBrowserCode(string browserName, [NotNullWhen(true)] out BrowserCode? result)
+    {
+        browserName = browserName.CollapseSpaces();
+        var hasBrowserSuffix = browserName.EndsWith("Browser");
+
+        if (BrowserNameMapping.TryGetValue(browserName, out var browserCode) ||
+            (hasBrowserSuffix && BrowserNameMapping.TryGetValue(browserName[..^7].TrimEnd(), out browserCode)) ||
+            (!hasBrowserSuffix && BrowserNameMapping.TryGetValue($"{browserName} Browser", out browserCode)) ||
+            (CompactToFullNameMapping.TryGetValue(browserName.RemoveSpaces(), out var fullName) &&
+             BrowserNameMapping.TryGetValue(fullName, out browserCode)))
+        {
+            result = browserCode;
+        }
+        else
+        {
+            result = null;
+        }
+
+        return result is not null;
+    }
+
     private bool TryParseBrowserFromClientHints(
         ClientHints clientHints,
         [NotNullWhen(true)] out ClientHintsBrowserInfo? result
@@ -1064,12 +1113,11 @@ public sealed class BrowserParser : IBrowserParser
         foreach (var fullVersion in clientHints.FullVersionList)
         {
             var browserName = ApplyClientHintBrandMapping(fullVersion.Key);
-            browserName = browserName.CollapseSpaces();
 
-            if (BrowserNameMapping.TryGetValue(browserName, out var browserCode) ||
-                BrowserNameMapping.TryGetValue($"{browserName} Browser", out browserCode))
+
+            if (TryGetBrowserCode(browserName, out var browserCode))
             {
-                name = BrowserCodeMapping[browserCode];
+                name = BrowserCodeMapping[browserCode.Value];
                 code = browserCode;
                 version = fullVersion.Value;
             }
@@ -1300,15 +1348,15 @@ public sealed class BrowserParser : IBrowserParser
         if (code.HasValue)
         {
             TryMapCodeToFamily(code.Value, out family);
-        };
+        }
 
-        if (BrowserHintParser.TryParseAppName(clientHints, out var appName) && name != appName)
+        if (BrowserHintParser.TryParseBrowserName(clientHints, out var browserName) && name != browserName)
         {
-            name = appName;
             version = null;
 
-            if (BrowserNameMapping.TryGetValue(name, out var browserCode))
+            if (BrowserNameMapping.TryGetValue(browserName, out var browserCode))
             {
+                name = browserName;
                 code = browserCode;
             }
 

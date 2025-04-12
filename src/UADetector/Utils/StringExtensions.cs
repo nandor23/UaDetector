@@ -32,6 +32,25 @@ internal static class StringExtensions
     }
 
     /// <summary>
+    /// Removes all spaces from the input string.
+    /// </summary>
+    public static string RemoveSpaces(this string text)
+    {
+        Span<char> buffer = new char[text.Length];
+        int count = 0;
+
+        foreach (char c in text)
+        {
+            if (c != ' ')
+            {
+                buffer[count++] = c;
+            }
+        }
+
+        return buffer[..count].ToString();
+    }
+
+    /// <summary>
     /// Reports the zero-based index of the n-th occurrence of the specified Unicode character in this string
     /// </summary>
     /// <returns>The zero-based index position of value if that character is found, or -1 if it is not.</returns>

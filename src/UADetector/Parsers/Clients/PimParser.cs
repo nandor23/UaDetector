@@ -7,7 +7,7 @@ using UADetector.Results;
 
 namespace UADetector.Parsers.Clients;
 
-internal sealed class PimParser : BaseClientParser
+internal sealed class PimParser : ClientParserBase
 {
     private const string ResourceName = "Regexes.Resources.Clients.pims.yml";
     private static readonly IEnumerable<Client> PersonalInformationManagers;

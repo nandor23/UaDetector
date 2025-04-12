@@ -7,7 +7,7 @@ using UADetector.Results;
 
 namespace UADetector.Parsers.Clients;
 
-internal sealed class LibraryParser : BaseClientParser
+internal sealed class LibraryParser : ClientParserBase
 {
     private const string ResourceName = "Regexes.Resources.Clients.libraries.yml";
     private static readonly IEnumerable<Client> Libraries;

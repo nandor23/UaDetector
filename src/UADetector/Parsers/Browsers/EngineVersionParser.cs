@@ -17,6 +17,23 @@ internal static class EngineVersionParser
             { BrowserEngines.Blink, BuildRegex("Chr[o0]me|Chromium|Cronet") },
             { BrowserEngines.Arachne, BuildRegex(@"Arachne/5\.") },
             { BrowserEngines.LibWeb, BuildRegex(@"LibWeb\+LibJs") },
+            { BrowserEngines.WebKit, BuildRegex(BrowserEngines.WebKit) },
+            { BrowserEngines.Trident, BuildRegex(BrowserEngines.Trident) },
+            { BrowserEngines.TextBased, BuildRegex(BrowserEngines.TextBased) },
+            { BrowserEngines.Dillo, BuildRegex(BrowserEngines.Dillo) },
+            { BrowserEngines.Icab, BuildRegex(BrowserEngines.Icab) },
+            { BrowserEngines.Elektra, BuildRegex(BrowserEngines.Elektra) },
+            { BrowserEngines.Presto, BuildRegex(BrowserEngines.Presto) },
+            { BrowserEngines.Clecko, BuildRegex(BrowserEngines.Clecko) },
+            { BrowserEngines.Gecko, BuildRegex(BrowserEngines.Gecko) },
+            { BrowserEngines.Khtml, BuildRegex(BrowserEngines.Khtml) },
+            { BrowserEngines.NetFront, BuildRegex(BrowserEngines.NetFront) },
+            { BrowserEngines.Edge, BuildRegex(BrowserEngines.Edge) },
+            { BrowserEngines.NetSurf, BuildRegex(BrowserEngines.NetSurf) },
+            { BrowserEngines.Servo, BuildRegex(BrowserEngines.Servo) },
+            { BrowserEngines.Goanna, BuildRegex(BrowserEngines.Goanna) },
+            { BrowserEngines.EkiohFlow, BuildRegex(BrowserEngines.EkiohFlow) },
+            { BrowserEngines.Maple, BuildRegex(BrowserEngines.Maple) },
         }.ToFrozenDictionary(StringComparer.OrdinalIgnoreCase);
 
     private static Regex BuildRegex(string pattern)
@@ -33,7 +50,8 @@ internal static class EngineVersionParser
         {
             match = GeckoOrCleckoRegex.Match(userAgent);
         }
-        else if (EngineVersionRegexes.TryGetValue(engine, out var regex))
+
+        if ((match is null || !match.Success) && EngineVersionRegexes.TryGetValue(engine, out var regex))
         {
             match = regex.Match(userAgent);
         }

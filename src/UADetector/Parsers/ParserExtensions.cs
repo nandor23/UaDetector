@@ -19,17 +19,16 @@ internal static class ParserExtensions
     private static readonly Regex ClientHintsFragmentReplacementRegex =
         new(@"Android (?:10[.\d]*; K|1[1-5])", RegexOptions.Compiled);
 
-    private static readonly Regex DesktopFragmentMatchRegex =
-        new("(?:Windows (?:NT|IoT)|X11; Linux x86_64)", RegexOptions.Compiled);
-
     private static readonly Regex DesktopFragmentReplacementRegex = new("X11; Linux x86_64", RegexOptions.Compiled);
 
-    private static readonly Regex DesktopFragmentExclusionRegex = new(string.Join("|",
+    private static readonly Regex DesktopFragmentMatchRegex =
+        BuildUserAgentRegex("(?:Windows (?:NT|IoT)|X11; Linux x86_64)");
+
+    private static readonly Regex DesktopFragmentExclusionRegex = BuildUserAgentRegex(string.Join("|",
             "CE-HTML",
             " Mozilla/|Andr[o0]id|Tablet|Mobile|iPhone|Windows Phone|ricoh|OculusBrowser",
             "PicoBrowser|Lenovo|compatible; MSIE|Trident/|Tesla/|XBOX|FBMD/|ARM; ?([^)]+)"
-        ),
-        RegexOptions.Compiled
+        )
     );
 
     public static Regex BuildUserAgentRegex(string pattern)
@@ -95,12 +94,13 @@ internal static class ParserExtensions
         return stream;
     }
 
-    private static IDeserializer CreateDeserializer(YamlRegexConverter regexConverter)
+    private static IDeserializer CreateDeserializer(YamlStringToRegexConverter? regexConverter = null)
     {
         return new DeserializerBuilder()
-            .WithNamingConvention(CamelCaseNamingConvention.Instance)
+            .WithNamingConvention(UnderscoredNamingConvention.Instance)
             .IgnoreUnmatchedProperties()
-            .WithTypeConverter(regexConverter)
+            .WithTypeConverter(new YamlEmptyStringToNullConverter())
+            .WithTypeConverter(regexConverter ?? new YamlStringToRegexConverter())
             .Build();
     }
 
@@ -109,8 +109,7 @@ internal static class ParserExtensions
         var stream = GetEmbeddedResourceStream(resourceName);
         using var reader = new StreamReader(stream);
 
-        var regexConverter = new YamlRegexConverter();
-        var deserializer = CreateDeserializer(regexConverter);
+        var deserializer = CreateDeserializer();
 
         return deserializer.Deserialize<IEnumerable<T>>(reader);
     }
@@ -120,7 +119,7 @@ internal static class ParserExtensions
         var stream = GetEmbeddedResourceStream(resourceName);
         using var reader = new StreamReader(stream);
 
-        var regexConverter = new YamlRegexConverter();
+        var regexConverter = new YamlStringToRegexConverter();
         var deserializer = CreateDeserializer(regexConverter);
 
         var regexes = deserializer.Deserialize<IEnumerable<T>>(reader);
@@ -137,7 +136,7 @@ internal static class ParserExtensions
         var stream = GetEmbeddedResourceStream(resourceName);
         using var reader = new StreamReader(stream);
 
-        var regexConverter = new YamlRegexConverter(patternSuffix);
+        var regexConverter = new YamlStringToRegexConverter(patternSuffix);
         var deserializer = CreateDeserializer(regexConverter);
 
         var regexes = deserializer.Deserialize<Dictionary<string, T>>(reader);
@@ -148,12 +147,10 @@ internal static class ParserExtensions
 
     public static FrozenDictionary<string, string> LoadHints(string resourceName)
     {
-        var stream = GetEmbeddedResourceStream(resourceName);
+        using var stream = GetEmbeddedResourceStream(resourceName);
         using var reader = new StreamReader(stream);
 
-        var deserializer = new DeserializerBuilder()
-            .WithNamingConvention(CamelCaseNamingConvention.Instance)
-            .Build();
+        var deserializer = CreateDeserializer();
 
         return deserializer.Deserialize<Dictionary<string, string>>(reader)
             .ToFrozenDictionary();
@@ -161,7 +158,7 @@ internal static class ParserExtensions
 
     public static string FormatWithMatch(string value, Match match)
     {
-        for (int i = 1; i < match.Groups.Count; i++)
+        for (int i = 1; i <= match.Groups.Count; i++)
         {
             value = value.Replace($"${i}", match.Groups[i].Value);
         }
@@ -171,12 +168,12 @@ internal static class ParserExtensions
 
     public static string? BuildVersion(string? version, VersionTruncation versionTruncation)
     {
-        version = version?.Replace('_', '.');
-
         if (string.IsNullOrEmpty(version))
         {
             return null;
         }
+
+        version = version.Replace('_', '.');
 
         if (versionTruncation != VersionTruncation.None)
         {
@@ -202,10 +199,25 @@ internal static class ParserExtensions
         return BuildVersion(version, versionTruncation);
     }
 
-    public static bool TryCompareVersions(string version1, string version2, [NotNullWhen(true)] out int? result)
+    /// <summary>
+    /// Tries to compare <paramref name="first"/> and <paramref name="second"/>.
+    /// </summary>
+    /// <param name="first">The first version string to compare.</param>
+    /// <param name="second">The second version string to compare.</param>
+    /// <param name="result">
+    /// The comparison result:
+    /// - Less than zero if <paramref name="first"/> is less than <paramref name="second"/>.
+    /// - Zero if they are equal.
+    /// - Greater than zero if <paramref name="first"/> is greater than <paramref name="second"/>.
+    /// Only set if the comparison succeeds.
+    /// </param>
+    /// <returns>
+    /// True if the comparison was successful, false otherwise.
+    /// </returns>
+    public static bool TryCompareVersions(string first, string second, [NotNullWhen(true)] out int? result)
     {
-        string[] segments1 = version1.Split('.');
-        string[] segments2 = version2.Split('.');
+        string[] segments1 = first.Split('.');
+        string[] segments2 = second.Split('.');
 
         int maxSegments = Math.Max(segments1.Length, segments2.Length);
 

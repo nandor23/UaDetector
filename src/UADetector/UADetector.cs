@@ -66,16 +66,16 @@ public sealed class UADetector : IUADetector
 
     private static readonly FrozenSet<string> TvClients = new[] { "TiviMate" }.ToFrozenSet();
 
-    private readonly IEnumerable<BaseDeviceParser> _deviceParsers =
+    private readonly IEnumerable<DeviceParserBase> _deviceParsers =
     [
-        new MobileParser(),
-        new NotebookParser(),
-        new ConsoleParser(),
         new HbbTvParser(),
         new ShellTvParser(),
+        new NotebookParser(),
+        new ConsoleParser(),
         new CarBrowserParser(),
         new CameraParser(),
-        new PortableMediaPlayerParser()
+        new PortableMediaPlayerParser(),
+        new MobileParser(),
     ];
 
     public UADetector(UADetectorOptions? uaDetectorOptions = null)
@@ -297,7 +297,7 @@ public sealed class UADetector : IUADetector
             deviceType = DeviceType.Desktop;
         }
 
-        if (deviceType is null)
+        if (deviceType is null && model is null && brand is null)
         {
             result = null;
         }
@@ -305,9 +305,9 @@ public sealed class UADetector : IUADetector
         {
             result = new DeviceInfo
             {
-                Type = deviceType.Value,
+                Type = deviceType,
                 Model = model,
-                Brand = brand is not null && BaseDeviceParser.BrandNameMapping.TryGetValue(brand, out var brandCode)
+                Brand = brand is not null && DeviceParserBase.BrandNameMapping.TryGetValue(brand, out var brandCode)
                     ? new BrandInfo { Name = brand, Code = brandCode, }
                     : null
             };
@@ -328,10 +328,26 @@ public sealed class UADetector : IUADetector
         [NotNullWhen(true)] out UserAgentInfo? result
     )
     {
-        if (string.IsNullOrEmpty(userAgent) || !ContainsLetterRegex.IsMatch(userAgent))
+        if ((string.IsNullOrEmpty(userAgent) || !ContainsLetterRegex.IsMatch(userAgent)) && headers.Count == 0)
         {
             result = null;
             return false;
+        }
+
+        BotInfo? bot = null;
+
+        if (!_uaDetectorOptions.SkipBotParsing && _botParser.TryParse(userAgent, out bot))
+        {
+            result = new UserAgentInfo
+            {
+                Bot = bot,
+                Os = null,
+                Browser = null,
+                Client = null,
+                Device = null,
+            };
+
+            return true;
         }
 
         var clientHints = ClientHints.Create(headers);
@@ -341,27 +357,13 @@ public sealed class UADetector : IUADetector
             userAgent = restoredUserAgent;
         }
 
-        ClientInfo? client = null;
-        BotInfo? bot = null;
-        bool isBot = false;
-
-        if (!_uaDetectorOptions.SkipBotParsing)
-        {
-            if (_uaDetectorOptions.SkipBotDetails)
-            {
-                isBot = _botParser.IsBot(userAgent);
-            }
-            else
-            {
-                _botParser.TryParse(userAgent, out bot);
-            }
-        }
+        BrowserInfo? browser = null;
 
         _osParser.TryParse(userAgent, clientHints, out var os);
 
-        if (!_browserParser.TryParse(userAgent, clientHints, out var browser))
+        if (!_clientParser.TryParse(userAgent, clientHints, out ClientInfo? client))
         {
-            _clientParser.TryParse(userAgent, clientHints, out client);
+            _browserParser.TryParse(userAgent, clientHints, out browser);
         }
 
         TryParseDevice(userAgent, clientHints, os, browser, client, out var device);
