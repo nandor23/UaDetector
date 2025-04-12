@@ -68,14 +68,14 @@ public sealed class UADetector : IUADetector
 
     private readonly IEnumerable<DeviceParserBase> _deviceParsers =
     [
-        new MobileParser(),
-        new NotebookParser(),
-        new ConsoleParser(),
         new HbbTvParser(),
         new ShellTvParser(),
+        new NotebookParser(),
+        new ConsoleParser(),
         new CarBrowserParser(),
         new CameraParser(),
-        new PortableMediaPlayerParser()
+        new PortableMediaPlayerParser(),
+        new MobileParser(),
     ];
 
     public UADetector(UADetectorOptions? uaDetectorOptions = null)

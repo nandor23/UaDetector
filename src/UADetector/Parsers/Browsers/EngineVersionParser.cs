@@ -24,6 +24,8 @@ internal static class EngineVersionParser
             { BrowserEngines.Icab, BuildRegex(BrowserEngines.Icab) },
             { BrowserEngines.Elektra, BuildRegex(BrowserEngines.Elektra) },
             { BrowserEngines.Presto, BuildRegex(BrowserEngines.Presto) },
+            { BrowserEngines.Clecko, BuildRegex(BrowserEngines.Clecko) },
+            { BrowserEngines.Gecko, BuildRegex(BrowserEngines.Gecko) },
             { BrowserEngines.Khtml, BuildRegex(BrowserEngines.Khtml) },
             { BrowserEngines.NetFront, BuildRegex(BrowserEngines.NetFront) },
             { BrowserEngines.Edge, BuildRegex(BrowserEngines.Edge) },
@@ -48,7 +50,8 @@ internal static class EngineVersionParser
         {
             match = GeckoOrCleckoRegex.Match(userAgent);
         }
-        else if (EngineVersionRegexes.TryGetValue(engine, out var regex))
+
+        if ((match is null || !match.Success) && EngineVersionRegexes.TryGetValue(engine, out var regex))
         {
             match = regex.Match(userAgent);
         }

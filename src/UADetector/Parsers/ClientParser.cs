@@ -15,11 +15,11 @@ public sealed class ClientParser : IClientParser
     public ClientParser(VersionTruncation versionTruncation = VersionTruncation.Minor)
     {
         ClientParsers = [
+            new FeedReaderParser(versionTruncation),
             new MobileAppParser(versionTruncation),
             new MediaPlayerParser(versionTruncation),
+            new PimParser(versionTruncation),
             new LibraryParser(versionTruncation),
-            new FeedReaderParser(versionTruncation),
-            new PimParser(versionTruncation)
         ];
     }
 
