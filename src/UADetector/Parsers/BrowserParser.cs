@@ -962,10 +962,36 @@ public sealed class BrowserParser : IBrowserParser
     private static readonly Regex ChromeSafariRegex =
         new(@"Chrome/.+ Safari/537\.36", RegexOptions.IgnoreCase | RegexOptions.Compiled);
 
-    private static readonly Regex CypressOrPhantomJsRegex = new Regex("Cypress|PhantomJS", RegexOptions.Compiled);
+    private static readonly Regex CypressOrPhantomJsRegex = new("Cypress|PhantomJS", RegexOptions.Compiled);
 
-    private static readonly Regex IridiumVersionRegex = new Regex("^202[0-4]", RegexOptions.Compiled);
+    private static readonly Regex IridiumVersionRegex = new("^202[0-4]", RegexOptions.Compiled);
 
+    internal static readonly FrozenDictionary<string, string> CompactToFullNameMapping;
+
+
+    static BrowserParser()
+    {
+        var duplicateCompactNames = BrowserCodeMapping.Values
+            .Select(x => x.RemoveSpaces())
+            .GroupBy(x => x)
+            .Where(group => group.Count() > 1)
+            .Select(group => group.Key)
+            .ToList();
+
+        var mapping = new Dictionary<string, string>();
+
+        foreach (var name in BrowserNameMapping.Keys)
+        {
+            var compactName = name.RemoveSpaces();
+
+            if (!duplicateCompactNames.Contains(compactName))
+            {
+                mapping.Add(compactName, name);
+            }
+        }
+
+        CompactToFullNameMapping = mapping.ToFrozenDictionary(StringComparer.OrdinalIgnoreCase);
+    }
 
     public BrowserParser(VersionTruncation versionTruncation = VersionTruncation.Minor)
     {
@@ -1067,8 +1093,14 @@ public sealed class BrowserParser : IBrowserParser
             var browserName = ApplyClientHintBrandMapping(fullVersion.Key);
             browserName = browserName.CollapseSpaces();
 
-            if (BrowserNameMapping.TryGetValue(browserName, out var browserCode) ||
-                BrowserNameMapping.TryGetValue($"{browserName} Browser", out browserCode))
+            var hasBrowserSuffix = browserName.EndsWith("Browser");
+
+            if (BrowserNameMapping.TryGetValue(browserName, out var browserCode) || (hasBrowserSuffix &&
+                    (BrowserNameMapping.TryGetValue(browserName[..^7].TrimEnd(), out browserCode) ||
+                     BrowserNameMapping.TryGetValue($"{browserName[..^7]} Browser", out browserCode))) ||
+                (!hasBrowserSuffix && BrowserNameMapping.TryGetValue($"{browserName} Browser", out browserCode)) ||
+                (CompactToFullNameMapping.TryGetValue(browserName.RemoveSpaces(), out var fullName) &&
+                 BrowserNameMapping.TryGetValue(fullName, out browserCode)))
             {
                 name = BrowserCodeMapping[browserCode];
                 code = browserCode;
