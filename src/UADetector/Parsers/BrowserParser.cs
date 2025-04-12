@@ -706,6 +706,8 @@ public sealed class BrowserParser : IBrowserParser
         .ToDictionary(e => e.Value, e => e.Key)
         .ToFrozenDictionary(StringComparer.OrdinalIgnoreCase);
 
+    internal static readonly FrozenDictionary<string, string> CompactToFullNameMapping;
+
     private static readonly FrozenDictionary<string, FrozenSet<BrowserCode>> BrowserFamilyMapping =
         new Dictionary<string, FrozenSet<BrowserCode>>
         {
@@ -966,8 +968,6 @@ public sealed class BrowserParser : IBrowserParser
 
     private static readonly Regex IridiumVersionRegex = new("^202[0-4]", RegexOptions.Compiled);
 
-    internal static readonly FrozenDictionary<string, string> CompactToFullNameMapping;
-
 
     static BrowserParser()
     {
@@ -1074,6 +1074,27 @@ public sealed class BrowserParser : IBrowserParser
 
     }
 
+    private static bool TryGetBrowserCode(string browserName, [NotNullWhen(true)] out BrowserCode? result)
+    {
+        browserName = browserName.CollapseSpaces();
+        var hasBrowserSuffix = browserName.EndsWith("Browser");
+
+        if (BrowserNameMapping.TryGetValue(browserName, out var browserCode) ||
+            (hasBrowserSuffix && BrowserNameMapping.TryGetValue(browserName[..^7].TrimEnd(), out browserCode)) ||
+            (!hasBrowserSuffix && BrowserNameMapping.TryGetValue($"{browserName} Browser", out browserCode)) ||
+            (CompactToFullNameMapping.TryGetValue(browserName.RemoveSpaces(), out var fullName) &&
+             BrowserNameMapping.TryGetValue(fullName, out browserCode)))
+        {
+            result = browserCode;
+        }
+        else
+        {
+            result = null;
+        }
+
+        return result is not null;
+    }
+
     private bool TryParseBrowserFromClientHints(
         ClientHints clientHints,
         [NotNullWhen(true)] out ClientHintsBrowserInfo? result
@@ -1091,18 +1112,11 @@ public sealed class BrowserParser : IBrowserParser
         foreach (var fullVersion in clientHints.FullVersionList)
         {
             var browserName = ApplyClientHintBrandMapping(fullVersion.Key);
-            browserName = browserName.CollapseSpaces();
 
-            var hasBrowserSuffix = browserName.EndsWith("Browser");
 
-            if (BrowserNameMapping.TryGetValue(browserName, out var browserCode) || (hasBrowserSuffix &&
-                    (BrowserNameMapping.TryGetValue(browserName[..^7].TrimEnd(), out browserCode) ||
-                     BrowserNameMapping.TryGetValue($"{browserName[..^7]} Browser", out browserCode))) ||
-                (!hasBrowserSuffix && BrowserNameMapping.TryGetValue($"{browserName} Browser", out browserCode)) ||
-                (CompactToFullNameMapping.TryGetValue(browserName.RemoveSpaces(), out var fullName) &&
-                 BrowserNameMapping.TryGetValue(fullName, out browserCode)))
+            if (TryGetBrowserCode(browserName, out var browserCode))
             {
-                name = BrowserCodeMapping[browserCode];
+                name = BrowserCodeMapping[browserCode.Value];
                 code = browserCode;
                 version = fullVersion.Value;
             }
@@ -1333,7 +1347,7 @@ public sealed class BrowserParser : IBrowserParser
         if (code.HasValue)
         {
             TryMapCodeToFamily(code.Value, out family);
-        };
+        }
 
         if (BrowserHintParser.TryParseBrowserName(clientHints, out var browserName) && name != browserName)
         {
