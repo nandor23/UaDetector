@@ -38,7 +38,7 @@ public class ConsoleParserTests
             parser.TryParse(fixture.UserAgent, clientHints, out var result).ShouldBeTrue();
 
             result.ShouldNotBeNull();
-            result.Type.ShouldBe(DeviceType.Console);
+            result.Type.ShouldBe(fixture.Device.Type);
             result.Brand.ShouldBe(fixture.Device.Brand);
             result.Model.ShouldBe(fixture.Device.Model);
         }
