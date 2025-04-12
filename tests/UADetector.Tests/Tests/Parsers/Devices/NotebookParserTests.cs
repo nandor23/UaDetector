@@ -2,7 +2,6 @@ using System.Collections.Immutable;
 
 using Shouldly;
 
-using UADetector.Models.Enums;
 using UADetector.Parsers.Devices;
 using UADetector.Tests.Fixtures.Models;
 using UADetector.Tests.Helpers;
