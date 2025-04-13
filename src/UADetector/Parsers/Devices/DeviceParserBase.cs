@@ -2167,7 +2167,11 @@ internal abstract class DeviceParserBase
             {
                 brand = devicePattern.Key;
                 device = devicePattern.Value;
-                break;
+
+                if (devicePattern.Key != "Unknown")
+                {
+                    break;
+                }
             }
         }
 

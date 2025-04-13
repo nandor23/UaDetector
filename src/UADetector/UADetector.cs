@@ -377,7 +377,6 @@ public sealed class UADetector : IUADetector
         {
             result = new UserAgentInfo
             {
-                IsBot = isBot,
                 Device = device,
                 Os = os,
                 Browser = browser,
