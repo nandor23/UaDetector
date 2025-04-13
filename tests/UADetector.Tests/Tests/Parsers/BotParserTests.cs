@@ -52,4 +52,11 @@ public class BotParserTests
             result.Producer.ShouldBeEquivalentTo(fixture.Bot.Producer);
         }
     }
+
+    [Test]
+    public void IsBot_ShouldReturnTrue()
+    {
+        var parser = new BotParser();
+        parser.IsBot("360spider-image").ShouldBeTrue();
+    }
 }

@@ -52,20 +52,72 @@ public class UADetectorTests
 
         foreach (var fixture in fixtures)
         {
-            UserAgentInfo? result;
+            bool isParsed = fixture.Headers is null
+                ? uaDetector.TryParse(fixture.UserAgent, out UserAgentInfo? result)
+                : uaDetector.TryParse(fixture.UserAgent, fixture.Headers, out result);
 
-            if (fixture.Headers is null)
+            if (fixture.Os is null && fixture.Browser is null && fixture.Client is null && fixture.Device is null &&
+                fixture.Bot is null)
             {
-                uaDetector.TryParse(fixture.UserAgent, out result).ShouldBeTrue();
+                isParsed.ShouldBeFalse();
+                result.ShouldBeNull();
             }
             else
             {
-                uaDetector.TryParse(fixture.UserAgent, fixture.Headers, out result).ShouldBeTrue();
+                isParsed.ShouldBeTrue();
+                result.ShouldNotBeNull();
+                result.Os.ShouldBeEquivalentTo(fixture.Os);
+                result.Browser.ShouldBeEquivalentTo(fixture.Browser);
+                result.Client.ShouldBeEquivalentTo(fixture.Client);
             }
-
-            result?.Os.ShouldBeEquivalentTo(fixture.Os);
-            result?.Browser.ShouldBeEquivalentTo(fixture.Browser);
         }
+    }
+
+    [Test]
+    public void TryParse_WithSkipBotParsing_ShouldReturnTrue()
+    {
+        var uaDetector = new UADetector(new UADetectorOptions { SkipBotParsing = true });
+        var userAgent =
+            "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/21.0.1180.89 Safari/537.1; 360Spider";
+
+        uaDetector.TryParse(userAgent, out var result).ShouldBeTrue();
+        result.ShouldNotBeNull();
+        result.IsBot.ShouldBeFalse();
+        result.Bot.ShouldBeNull();
+    }
+
+    [Test]
+    public void TryParse_WithoutSkipBotParsing_ShouldReturnTrue()
+    {
+        var uaDetector = new UADetector();
+        var userAgent =
+            "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/21.0.1180.89 Safari/537.1; 360Spider";
+
+        uaDetector.TryParse(userAgent, out var result).ShouldBeTrue();
+        result.ShouldNotBeNull();
+        result.IsBot.ShouldBeTrue();
+        result.Bot.ShouldNotBeNull();
+        result.Os.ShouldBeNull();
+        result.Browser.ShouldBeNull();
+        result.Client.ShouldBeNull();
+        result.Device.ShouldBeNull();
+    }
+
+    [Test]
+    public void TryParse_WithSkipBotDetails_ShouldReturnTrue()
+    {
+        var uaDetector = new UADetector(new UADetectorOptions { SkipBotDetails = true });
+        var userAgent =
+            "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/21.0.1180.89 Safari/537.1; 360Spider";
+
+        uaDetector.TryParse(userAgent, out var result).ShouldBeTrue();
+        result.ShouldNotBeNull();
+        result.IsBot.ShouldBeTrue();
+        result.Bot.ShouldBeNull();
+        result.Os.ShouldBeNull();
+        result.Browser.ShouldBeNull();
+        result.Client.ShouldBeNull();
+        result.Device.ShouldBeNull();
     }
 
     public static IEnumerable<Func<string>> FixtureFileNames()
@@ -143,12 +195,12 @@ public class UADetectorTests
         yield return () => "tablets_10";
         yield return () => "tablets_11";
         yield return () => "tablets_12";
+        yield return () => "televisions";
         yield return () => "televisions_1";
         yield return () => "televisions_2";
         yield return () => "televisions_3";
         yield return () => "televisions_4";
         yield return () => "televisions_5";
-        yield return () => "televisions";
         yield return () => "wearables";
         yield return () => "unknown";
     }

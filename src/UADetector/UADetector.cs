@@ -116,7 +116,9 @@ public sealed class UADetector : IUADetector
         {
             if (parser.TryParse(userAgent, clientHints, out var deviceInfo))
             {
+                deviceType = deviceInfo.Type;
                 model = deviceInfo.Model;
+                brand = deviceInfo.Brand;
                 break;
             }
         }
@@ -336,18 +338,33 @@ public sealed class UADetector : IUADetector
 
         BotInfo? bot = null;
 
-        if (!_uaDetectorOptions.SkipBotParsing && _botParser.TryParse(userAgent, out bot))
+        if (!_uaDetectorOptions.SkipBotParsing)
         {
-            result = new UserAgentInfo
-            {
-                Bot = bot,
-                Os = null,
-                Browser = null,
-                Client = null,
-                Device = null,
-            };
+            bool isBot = false;
 
-            return true;
+            if (_uaDetectorOptions.SkipBotDetails)
+            {
+                isBot = _botParser.IsBot(userAgent);
+            }
+            else
+            {
+                _botParser.TryParse(userAgent, out bot);
+            }
+
+            if (isBot || bot is not null)
+            {
+                result = new UserAgentInfo
+                {
+                    IsBot = true,
+                    Bot = bot,
+                    Os = null,
+                    Browser = null,
+                    Client = null,
+                    Device = null,
+                };
+
+                return true;
+            }
         }
 
         var clientHints = ClientHints.Create(headers);
@@ -368,8 +385,7 @@ public sealed class UADetector : IUADetector
 
         TryParseDevice(userAgent, clientHints, os, browser, client, out var device);
 
-        if ((_uaDetectorOptions.SkipBotParsing || !_uaDetectorOptions.SkipBotParsing && bot is null) &&
-            os is null && browser is null && client is null && device is null)
+        if (os is null && browser is null && client is null && device is null)
         {
             result = null;
         }
@@ -377,11 +393,12 @@ public sealed class UADetector : IUADetector
         {
             result = new UserAgentInfo
             {
-                Device = device,
+                IsBot = false,
                 Os = os,
                 Browser = browser,
                 Client = client,
-                Bot = bot,
+                Device = device,
+                Bot = null,
             };
         }
 
