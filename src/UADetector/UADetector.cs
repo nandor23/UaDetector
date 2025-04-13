@@ -47,7 +47,8 @@ public sealed class UADetector : IUADetector
         ParserExtensions.BuildUserAgentRegex(@"Puffin/(?:\d+[.\d]+)[AILW]T");
 
     private static readonly Regex AndroidRegex =
-        ParserExtensions.BuildUserAgentRegex(@"Andr0id|(?:Android(?: UHD)?|Google) TV|\(lite\) TV|BRAVIA| TV$");
+        ParserExtensions.BuildUserAgentRegex(
+            @"Andr0id|(?:Android(?: UHD)?|Google) TV|\(lite\) TV|BRAVIA|Firebolt| TV$");
 
     private static readonly Regex DesktopFragment =
         ParserExtensions.BuildUserAgentRegex("Desktop(?: (x(?:32|64)|WOW64))?;");
@@ -266,6 +267,7 @@ public sealed class UADetector : IUADetector
         if (os?.Name == OsNames.CoolitaOs)
         {
             deviceType = DeviceType.Tv;
+            brand = BrandNames.Coocaa;
         }
 
         // Devices containing "Andr0id" in the user agent string are assumed to be TVs.
