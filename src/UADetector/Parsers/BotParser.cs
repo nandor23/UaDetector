@@ -3,12 +3,13 @@ using System.Text.RegularExpressions;
 
 using UADetector.Regexes.Models;
 using UADetector.Results;
+using UADetector.Utils;
 
 namespace UADetector.Parsers;
 
 public class BotParser : IBotParser
 {
-    private const string ResourceName = "Regexes.Resources.bots.yml";
+    private const string ResourceName = "Regexes.Resources.bots.json";
     private static readonly IEnumerable<Bot> Bots;
     private static readonly Regex CombinedRegex;
 
@@ -16,7 +17,7 @@ public class BotParser : IBotParser
     static BotParser()
     {
         (Bots, CombinedRegex) =
-            ParserExtensions.LoadRegexes<Bot>(ResourceName);
+            RegexLoader.LoadRegexesWithCombined<Bot>(ResourceName);
     }
 
     public bool IsBot(string userAgent)

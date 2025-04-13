@@ -14,9 +14,9 @@ namespace UADetector.Parsers;
 
 public sealed class BrowserParser : IBrowserParser
 {
-    private const string ResourceName = "Regexes.Resources.Browsers.browsers.yml";
+    private const string ResourceName = "Regexes.Resources.Browsers.browsers.json";
     private readonly VersionTruncation _versionTruncation;
-    internal static readonly IEnumerable<Browser> Browsers = ParserExtensions.LoadRegexesWithoutCombinedRegex<Browser>(ResourceName);
+    internal static readonly IEnumerable<Browser> Browsers = RegexLoader.LoadRegexes<Browser>(ResourceName);
 
     internal static readonly FrozenDictionary<BrowserCode, string> BrowserCodeMapping =
         new Dictionary<BrowserCode, string>

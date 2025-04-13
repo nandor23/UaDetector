@@ -4,12 +4,13 @@ using System.Text.RegularExpressions;
 
 using UADetector.Models.Constants;
 using UADetector.Regexes.Models.Browsers;
+using UADetector.Utils;
 
 namespace UADetector.Parsers.Browsers;
 
 internal static class EngineParser
 {
-    private const string ResourceName = "Regexes.Resources.Browsers.browser_engines.yml";
+    private const string ResourceName = "Regexes.Resources.Browsers.browser_engines.json";
     private static readonly IEnumerable<BrowserEngine> Engines;
     private static readonly Regex CombinedRegex;
 
@@ -24,8 +25,7 @@ internal static class EngineParser
 
     static EngineParser()
     {
-        (Engines, CombinedRegex) =
-            ParserExtensions.LoadRegexes<BrowserEngine>(ResourceName);
+        (Engines, CombinedRegex) = RegexLoader.LoadRegexesWithCombined<BrowserEngine>(ResourceName);
     }
 
     public static bool TryParse(string userAgent, [NotNullWhen(true)] out string? result)

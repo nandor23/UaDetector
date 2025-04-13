@@ -2141,7 +2141,7 @@ internal abstract class DeviceParserBase
     protected static bool TryParse(
         string userAgent,
         ClientHints clientHints,
-        IDictionary<string, Device> devices,
+        IEnumerable<Device> devices,
         [NotNullWhen(true)] out InternalDeviceInfo? result
     )
     {
@@ -2157,19 +2157,19 @@ internal abstract class DeviceParserBase
 
         string? brand = null;
         Match? match = null;
-        Device? device = null;
+        Device? matchedDevice = null;
 
-        foreach (var devicePattern in devices)
+        foreach (var device in devices)
         {
-            var newMatch = devicePattern.Value.Regex.Match(userAgent);
+            var newMatch = device.Regex.Match(userAgent);
 
             if (newMatch.Success)
             {
                 match = newMatch;
-                brand = devicePattern.Key;
-                device = devicePattern.Value;
+                brand = device.Brand;
+                matchedDevice = device;
 
-                if (devicePattern.Key != "Unknown")
+                if (device.Brand != "Unknown")
                 {
                     break;
                 }
@@ -2198,25 +2198,25 @@ internal abstract class DeviceParserBase
         DeviceType? type = null;
         string? model = null;
 
-        if (!string.IsNullOrEmpty(device?.Category))
+        if (!string.IsNullOrEmpty(matchedDevice?.Type))
         {
-            if (DeviceTypeMapping.TryGetValue(device.Category, out var deviceType))
+            if (DeviceTypeMapping.TryGetValue(matchedDevice.Type, out var deviceType))
             {
                 type = deviceType;
             }
         }
 
-        if (!string.IsNullOrEmpty(device?.Model))
+        if (!string.IsNullOrEmpty(matchedDevice?.Model))
         {
-            model = BuildModel(device.Model, match);
+            model = BuildModel(matchedDevice.Model, match);
         }
 
-        if (device?.ModelVariants is not null)
+        if (matchedDevice?.ModelVariants is not null)
         {
             Match? modelMatch = null;
             DeviceModel? deviceModel = null;
 
-            foreach (var modelVariant in device.ModelVariants)
+            foreach (var modelVariant in matchedDevice.ModelVariants)
             {
                 modelMatch = modelVariant.Regex.Match(userAgent);
 
@@ -2249,9 +2249,9 @@ internal abstract class DeviceParserBase
                 brand = deviceModel.Brand;
             }
 
-            if (!string.IsNullOrEmpty(deviceModel?.Category))
+            if (!string.IsNullOrEmpty(deviceModel?.Type))
             {
-                if (DeviceTypeMapping.TryGetValue(deviceModel.Category, out var deviceType))
+                if (DeviceTypeMapping.TryGetValue(deviceModel.Type, out var deviceType))
                 {
                     type = deviceType;
                 }

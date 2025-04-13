@@ -1,18 +1,12 @@
 using System.Text.RegularExpressions;
 
-using YamlDotNet.Serialization;
-
 namespace UADetector.Regexes.Models;
 
 internal sealed class Device
 {
+    public required string Brand { get; init; }
     public required Regex Regex { get; init; }
-
-    [YamlMember(Alias = "device")]
-    public required string Category { get; init; }
-
-    public string? Model { get; init; }
-
-    [YamlMember(Alias = "models")]
-    public IEnumerable<DeviceModel>? ModelVariants { get; init; }
+    public required string Type { get; init; }
+    public required string? Model { get; init; }
+    public required IEnumerable<DeviceModel>? ModelVariants { get; init; }
 }

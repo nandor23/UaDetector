@@ -8,6 +8,7 @@ using UADetector.Models.Enums;
 using UADetector.Parsers;
 using UADetector.Parsers.Devices;
 using UADetector.Results;
+using UADetector.Utils;
 
 namespace UADetector;
 
@@ -21,37 +22,37 @@ public sealed class UADetector : IUADetector
 
     private static readonly Regex ContainsLetterRegex = new("[a-zA-Z]", RegexOptions.Compiled);
     private static readonly Regex AndroidVrFragment =
-        ParserExtensions.BuildUserAgentRegex("Android( [.0-9]+)?; Mobile VR;| VR ");
+        RegexUtility.BuildUserAgentRegex("Android( [.0-9]+)?; Mobile VR;| VR ");
 
-    private static readonly Regex ChromeRegex = ParserExtensions.BuildUserAgentRegex("Chrome/[.0-9]*");
-    private static readonly Regex MobileRegex = ParserExtensions.BuildUserAgentRegex("(?:Mobile|eliboM)");
-    private static readonly Regex PadRegex = ParserExtensions.BuildUserAgentRegex("Pad/APad");
-    private static readonly Regex OperaTabletRegex = ParserExtensions.BuildUserAgentRegex("Opera Tablet");
-    private static readonly Regex OperaTvStoreRegex = ParserExtensions.BuildUserAgentRegex("Opera TV Store| OMI/");
-    private static readonly Regex TouchEnabledRegex = ParserExtensions.BuildUserAgentRegex("Touch");
-    private static readonly Regex TvFragmentRegex = ParserExtensions.BuildUserAgentRegex(@"\(TV;");
+    private static readonly Regex ChromeRegex = RegexUtility.BuildUserAgentRegex("Chrome/[.0-9]*");
+    private static readonly Regex MobileRegex = RegexUtility.BuildUserAgentRegex("(?:Mobile|eliboM)");
+    private static readonly Regex PadRegex = RegexUtility.BuildUserAgentRegex("Pad/APad");
+    private static readonly Regex OperaTabletRegex = RegexUtility.BuildUserAgentRegex("Opera Tablet");
+    private static readonly Regex OperaTvStoreRegex = RegexUtility.BuildUserAgentRegex("Opera TV Store| OMI/");
+    private static readonly Regex TouchEnabledRegex = RegexUtility.BuildUserAgentRegex("Touch");
+    private static readonly Regex TvFragmentRegex = RegexUtility.BuildUserAgentRegex(@"\(TV;");
 
     private static readonly Regex AndroidTabletFragmentRegex =
-        ParserExtensions.BuildUserAgentRegex(@"Android( [.0-9]+)?; Tablet;|Tablet(?! PC)|.*\-tablet$");
+        RegexUtility.BuildUserAgentRegex(@"Android( [.0-9]+)?; Tablet;|Tablet(?! PC)|.*\-tablet$");
 
     private static readonly Regex AndroidMobileFragmentRegex =
-        ParserExtensions.BuildUserAgentRegex(@"Android( [.0-9]+)?; Mobile;|.*\-mobile$");
+        RegexUtility.BuildUserAgentRegex(@"Android( [.0-9]+)?; Mobile;|.*\-mobile$");
 
     private static readonly Regex PuffinSecureBrowserDesktopRegex =
-        ParserExtensions.BuildUserAgentRegex(@"Puffin/(?:\d+[.\d]+)[LMW]D");
+        RegexUtility.BuildUserAgentRegex(@"Puffin/(?:\d+[.\d]+)[LMW]D");
 
     private static readonly Regex PuffinWebBrowserSmartphoneRegex =
-        ParserExtensions.BuildUserAgentRegex(@"Puffin/(?:\d+[.\d]+)[AIFLW]P");
+        RegexUtility.BuildUserAgentRegex(@"Puffin/(?:\d+[.\d]+)[AIFLW]P");
 
     private static readonly Regex PuffinWebBrowserTabletRegex =
-        ParserExtensions.BuildUserAgentRegex(@"Puffin/(?:\d+[.\d]+)[AILW]T");
+        RegexUtility.BuildUserAgentRegex(@"Puffin/(?:\d+[.\d]+)[AILW]T");
 
     private static readonly Regex AndroidRegex =
-        ParserExtensions.BuildUserAgentRegex(
+        RegexUtility.BuildUserAgentRegex(
             @"Andr0id|(?:Android(?: UHD)?|Google) TV|\(lite\) TV|BRAVIA|Firebolt| TV$");
 
     private static readonly Regex DesktopFragment =
-        ParserExtensions.BuildUserAgentRegex("Desktop(?: (x(?:32|64)|WOW64))?;");
+        RegexUtility.BuildUserAgentRegex("Desktop(?: (x(?:32|64)|WOW64))?;");
 
     private static readonly FrozenSet<string> AppleOsNames = new[]
     {

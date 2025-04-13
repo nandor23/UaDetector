@@ -1,23 +1,23 @@
-using System.Collections.Frozen;
 using System.Diagnostics.CodeAnalysis;
 using System.Text.RegularExpressions;
 
 using UADetector.Regexes.Models;
 using UADetector.Results;
+using UADetector.Utils;
 
 namespace UADetector.Parsers.Devices;
 
 internal sealed class PortableMediaPlayerParser : DeviceParserBase
 {
-    private const string ResourceName = "Regexes.Resources.Devices.portable_media_players.yml";
-    private static readonly FrozenDictionary<string, Device> PortableMediaPlayers;
+    private const string ResourceName = "Regexes.Resources.Devices.portable_media_players.json";
+    private static readonly IEnumerable<Device> PortableMediaPlayers;
     private static readonly Regex CombinedRegex;
 
 
     static PortableMediaPlayerParser()
     {
         (PortableMediaPlayers, CombinedRegex) =
-            ParserExtensions.LoadRegexesDictionary<Device>(ResourceName);
+            RegexLoader.LoadRegexesWithCombined<Device>(ResourceName);
     }
 
     public override bool TryParse(

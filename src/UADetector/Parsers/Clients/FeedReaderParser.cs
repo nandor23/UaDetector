@@ -4,12 +4,13 @@ using System.Text.RegularExpressions;
 using UADetector.Models.Enums;
 using UADetector.Regexes.Models;
 using UADetector.Results;
+using UADetector.Utils;
 
 namespace UADetector.Parsers.Clients;
 
 internal sealed class FeedReaderParser : ClientParserBase
 {
-    private const string ResourceName = "Regexes.Resources.Clients.feed_readers.yml";
+    private const string ResourceName = "Regexes.Resources.Clients.feed_readers.json";
     private static readonly IEnumerable<Client> FeedReaders;
     private static readonly Regex CombinedRegex;
 
@@ -17,7 +18,7 @@ internal sealed class FeedReaderParser : ClientParserBase
     static FeedReaderParser()
     {
         (FeedReaders, CombinedRegex) =
-            ParserExtensions.LoadRegexes<Client>(ResourceName);
+            RegexLoader.LoadRegexesWithCombined<Client>(ResourceName);
     }
 
     public FeedReaderParser(VersionTruncation versionTruncation) : base(versionTruncation)

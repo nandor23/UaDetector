@@ -13,9 +13,9 @@ namespace UADetector.Parsers;
 
 public sealed class OsParser : IOsParser
 {
-    private const string ResourceName = "Regexes.Resources.operating_systems.yml";
+    private const string ResourceName = "Regexes.Resources.operating_systems.json";
     private readonly VersionTruncation _versionTruncation;
-    internal static readonly IEnumerable<Os> OperatingSystems = ParserExtensions.LoadRegexesWithoutCombinedRegex<Os>(ResourceName);
+    internal static readonly IEnumerable<Os> OperatingSystems = RegexLoader.LoadRegexes<Os>(ResourceName);
 
     internal static readonly FrozenDictionary<OsCode, string> OsCodeMapping =
         new Dictionary<OsCode, string>
@@ -387,18 +387,18 @@ public sealed class OsParser : IOsParser
         new Dictionary<string, Regex>
         {
             {
-                OsPlatformTypes.Arm, ParserExtensions.BuildUserAgentRegex(
+                OsPlatformTypes.Arm, RegexUtility.BuildUserAgentRegex(
                     "arm[ _;)ev]|.*arm$|.*arm64|aarch64|Apple ?TV|Watch ?OS|Watch1,[12]")
             },
-            { OsPlatformTypes.LoongArch64, ParserExtensions.BuildUserAgentRegex("loongarch64") },
-            { OsPlatformTypes.Mips, ParserExtensions.BuildUserAgentRegex("mips") },
-            { OsPlatformTypes.SuperH, ParserExtensions.BuildUserAgentRegex("sh4") },
-            { OsPlatformTypes.Sparc64, ParserExtensions.BuildUserAgentRegex("sparc64") },
+            { OsPlatformTypes.LoongArch64, RegexUtility.BuildUserAgentRegex("loongarch64") },
+            { OsPlatformTypes.Mips, RegexUtility.BuildUserAgentRegex("mips") },
+            { OsPlatformTypes.SuperH, RegexUtility.BuildUserAgentRegex("sh4") },
+            { OsPlatformTypes.Sparc64, RegexUtility.BuildUserAgentRegex("sparc64") },
             {
                 OsPlatformTypes.X64,
-                ParserExtensions.BuildUserAgentRegex("64-?bit|WOW64|(?:Intel)?x64|WINDOWS_64|win64|.*amd64|.*x86_?64")
+                RegexUtility.BuildUserAgentRegex("64-?bit|WOW64|(?:Intel)?x64|WINDOWS_64|win64|.*amd64|.*x86_?64")
             },
-            { OsPlatformTypes.X86, ParserExtensions.BuildUserAgentRegex(".*32bit|.*win32|(?:i[0-9]|x)86|i86pc") }
+            { OsPlatformTypes.X86, RegexUtility.BuildUserAgentRegex(".*32bit|.*win32|(?:i[0-9]|x)86|i86pc") }
         }.ToFrozenDictionary();
 
     private static readonly IEnumerable<string> OsPlatforms =

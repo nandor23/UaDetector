@@ -4,12 +4,13 @@ using System.Text.RegularExpressions;
 using UADetector.Models.Enums;
 using UADetector.Regexes.Models;
 using UADetector.Results;
+using UADetector.Utils;
 
 namespace UADetector.Parsers.Clients;
 
 internal sealed class PimParser : ClientParserBase
 {
-    private const string ResourceName = "Regexes.Resources.Clients.pims.yml";
+    private const string ResourceName = "Regexes.Resources.Clients.pims.json";
     private static readonly IEnumerable<Client> PersonalInformationManagers;
     private static readonly Regex CombinedRegex;
 
@@ -17,7 +18,7 @@ internal sealed class PimParser : ClientParserBase
     static PimParser()
     {
         (PersonalInformationManagers, CombinedRegex) =
-            ParserExtensions.LoadRegexes<Client>(ResourceName);
+            RegexLoader.LoadRegexesWithCombined<Client>(ResourceName);
     }
 
     public PimParser(VersionTruncation versionTruncation) : base(versionTruncation)

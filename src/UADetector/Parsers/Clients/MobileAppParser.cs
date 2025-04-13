@@ -4,12 +4,13 @@ using System.Text.RegularExpressions;
 using UADetector.Models.Enums;
 using UADetector.Regexes.Models;
 using UADetector.Results;
+using UADetector.Utils;
 
 namespace UADetector.Parsers.Clients;
 
 internal sealed class MobileAppParser : ClientParserBase
 {
-    private const string ResourceName = "Regexes.Resources.Clients.mobile_apps.yml";
+    private const string ResourceName = "Regexes.Resources.Clients.mobile_apps.json";
     private static readonly IEnumerable<Client> MobileApps;
     private static readonly Regex CombinedRegex;
 
@@ -17,7 +18,7 @@ internal sealed class MobileAppParser : ClientParserBase
     static MobileAppParser()
     {
         (MobileApps, CombinedRegex) =
-            ParserExtensions.LoadRegexes<Client>(ResourceName);
+            RegexLoader.LoadRegexesWithCombined<Client>(ResourceName);
     }
 
     public MobileAppParser(VersionTruncation versionTruncation) : base(versionTruncation)

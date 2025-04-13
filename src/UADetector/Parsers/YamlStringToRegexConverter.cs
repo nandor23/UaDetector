@@ -1,6 +1,8 @@
 using System.Text;
 using System.Text.RegularExpressions;
 
+using UADetector.Utils;
+
 using YamlDotNet.Core;
 using YamlDotNet.Core.Events;
 using YamlDotNet.Serialization;
@@ -33,7 +35,7 @@ internal sealed class YamlStringToRegexConverter : IYamlTypeConverter
 
         _patterns.Add(regex);
 
-        return ParserExtensions.BuildUserAgentRegex(regex);
+        return RegexUtility.BuildUserAgentRegex(regex);
     }
 
     public void WriteYaml(IEmitter emitter, object? value, Type type, ObjectSerializer serializer)
@@ -59,6 +61,6 @@ internal sealed class YamlStringToRegexConverter : IYamlTypeConverter
 
         sb.Append(_patterns[0]);
 
-        return ParserExtensions.BuildUserAgentRegex(sb.ToString());
+        return RegexUtility.BuildUserAgentRegex(sb.ToString());
     }
 }

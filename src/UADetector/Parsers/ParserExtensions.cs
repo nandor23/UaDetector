@@ -22,20 +22,14 @@ internal static class ParserExtensions
     private static readonly Regex DesktopFragmentReplacementRegex = new("X11; Linux x86_64", RegexOptions.Compiled);
 
     private static readonly Regex DesktopFragmentMatchRegex =
-        BuildUserAgentRegex("(?:Windows (?:NT|IoT)|X11; Linux x86_64)");
+        RegexUtility.BuildUserAgentRegex("(?:Windows (?:NT|IoT)|X11; Linux x86_64)");
 
-    private static readonly Regex DesktopFragmentExclusionRegex = BuildUserAgentRegex(string.Join("|",
+    private static readonly Regex DesktopFragmentExclusionRegex = RegexUtility.BuildUserAgentRegex(string.Join("|",
             "CE-HTML",
             " Mozilla/|Andr[o0]id|Tablet|Mobile|iPhone|Windows Phone|ricoh|OculusBrowser",
             "PicoBrowser|Lenovo|compatible; MSIE|Trident/|Tesla/|XBOX|FBMD/|ARM; ?([^)]+)"
         )
     );
-
-    public static Regex BuildUserAgentRegex(string pattern)
-    {
-        return new Regex($"(?:^|[^A-Z0-9_-]|[^A-Z0-9-]_|sprd-|MZ-)(?:{pattern})",
-            RegexOptions.IgnoreCase | RegexOptions.Compiled);
-    }
 
     public static bool HasUserAgentClientHintsFragment(string userAgent)
     {
@@ -76,84 +70,6 @@ internal static class ParserExtensions
         }
 
         return !string.IsNullOrEmpty(result);
-    }
-
-    private static Stream GetEmbeddedResourceStream(string resourceName)
-    {
-        var assembly = typeof(UADetector).Assembly;
-        var fullResourceName = $"{nameof(UADetector)}.{resourceName}";
-
-        var stream = assembly.GetManifestResourceStream(fullResourceName);
-
-        if (stream is null)
-        {
-            throw new InvalidOperationException(
-                $"Embedded resource '{fullResourceName}' not found in assembly '{assembly.FullName}'.");
-        }
-
-        return stream;
-    }
-
-    private static IDeserializer CreateDeserializer(YamlStringToRegexConverter? regexConverter = null)
-    {
-        return new DeserializerBuilder()
-            .WithNamingConvention(UnderscoredNamingConvention.Instance)
-            .IgnoreUnmatchedProperties()
-            .WithTypeConverter(new YamlEmptyStringToNullConverter())
-            .WithTypeConverter(regexConverter ?? new YamlStringToRegexConverter())
-            .Build();
-    }
-
-    public static IEnumerable<T> LoadRegexesWithoutCombinedRegex<T>(string resourceName)
-    {
-        var stream = GetEmbeddedResourceStream(resourceName);
-        using var reader = new StreamReader(stream);
-
-        var deserializer = CreateDeserializer();
-
-        return deserializer.Deserialize<IEnumerable<T>>(reader);
-    }
-
-    public static (IEnumerable<T>, Regex) LoadRegexes<T>(string resourceName)
-    {
-        var stream = GetEmbeddedResourceStream(resourceName);
-        using var reader = new StreamReader(stream);
-
-        var regexConverter = new YamlStringToRegexConverter();
-        var deserializer = CreateDeserializer(regexConverter);
-
-        var regexes = deserializer.Deserialize<IEnumerable<T>>(reader);
-        var combinedRegex = regexConverter.BuildCombinedRegex();
-
-        return (regexes, combinedRegex);
-    }
-
-    public static (FrozenDictionary<string, T>, Regex) LoadRegexesDictionary<T>(
-        string resourceName,
-        string? patternSuffix = null
-    )
-    {
-        var stream = GetEmbeddedResourceStream(resourceName);
-        using var reader = new StreamReader(stream);
-
-        var regexConverter = new YamlStringToRegexConverter(patternSuffix);
-        var deserializer = CreateDeserializer(regexConverter);
-
-        var regexes = deserializer.Deserialize<Dictionary<string, T>>(reader);
-        var combinedRegex = regexConverter.BuildCombinedRegex();
-
-        return (regexes.ToFrozenDictionary(), combinedRegex);
-    }
-
-    public static FrozenDictionary<string, string> LoadHints(string resourceName)
-    {
-        using var stream = GetEmbeddedResourceStream(resourceName);
-        using var reader = new StreamReader(stream);
-
-        var deserializer = CreateDeserializer();
-
-        return deserializer.Deserialize<Dictionary<string, string>>(reader)
-            .ToFrozenDictionary();
     }
 
     public static string FormatWithMatch(string value, Match match)

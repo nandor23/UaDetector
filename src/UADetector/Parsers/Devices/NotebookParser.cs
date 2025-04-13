@@ -1,23 +1,23 @@
-using System.Collections.Frozen;
 using System.Diagnostics.CodeAnalysis;
 using System.Text.RegularExpressions;
 
 using UADetector.Regexes.Models;
 using UADetector.Results;
+using UADetector.Utils;
 
 namespace UADetector.Parsers.Devices;
 
 internal sealed class NotebookParser : DeviceParserBase
 {
-    private const string ResourceName = "Regexes.Resources.Devices.notebooks.yml";
-    private static readonly FrozenDictionary<string, Device> Notebooks;
+    private const string ResourceName = "Regexes.Resources.Devices.notebooks.json";
+    private static readonly IEnumerable<Device> Notebooks;
     private static readonly Regex CombinedRegex;
 
 
     static NotebookParser()
     {
         (Notebooks, CombinedRegex) =
-            ParserExtensions.LoadRegexesDictionary<Device>(ResourceName);
+            RegexLoader.LoadRegexesWithCombined<Device>(ResourceName);
     }
 
     public override bool TryParse(

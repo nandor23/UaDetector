@@ -1,23 +1,23 @@
-using System.Collections.Frozen;
 using System.Diagnostics.CodeAnalysis;
 using System.Text.RegularExpressions;
 
 using UADetector.Regexes.Models;
 using UADetector.Results;
+using UADetector.Utils;
 
 namespace UADetector.Parsers.Devices;
 
 internal sealed class MobileParser : DeviceParserBase
 {
-    private const string ResourceName = "Regexes.Resources.Devices.mobiles.yml";
-    private static readonly FrozenDictionary<string, Device> Mobiles;
+    private const string ResourceName = "Regexes.Resources.Devices.mobiles.json";
+    private static readonly IEnumerable<Device> Mobiles;
     private static readonly Regex CombinedRegex;
 
 
     static MobileParser()
     {
         (Mobiles, CombinedRegex) =
-            ParserExtensions.LoadRegexesDictionary<Device>(ResourceName);
+            RegexLoader.LoadRegexesWithCombined<Device>(ResourceName);
     }
 
     public override bool TryParse(

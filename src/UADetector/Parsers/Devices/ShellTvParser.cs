@@ -1,27 +1,27 @@
-using System.Collections.Frozen;
 using System.Diagnostics.CodeAnalysis;
 using System.Text.RegularExpressions;
 
 using UADetector.Models.Enums;
 using UADetector.Regexes.Models;
 using UADetector.Results;
+using UADetector.Utils;
 
 namespace UADetector.Parsers.Devices;
 
 internal sealed class ShellTvParser : DeviceParserBase
 {
-    private const string ResourceName = "Regexes.Resources.Devices.shell_televisions.yml";
-    private static readonly FrozenDictionary<string, Device> ShellTelevisions;
+    private const string ResourceName = "Regexes.Resources.Devices.shell_televisions.json";
+    private static readonly IEnumerable<Device> ShellTelevisions;
     private static readonly Regex CombinedRegex;
 
     internal static readonly Regex ShellTvRegex =
-        ParserExtensions.BuildUserAgentRegex(@"[a-z]+[ _]Shell[ _]\w{6}|tclwebkit(\d+[.\d]*)");
+        RegexUtility.BuildUserAgentRegex(@"[a-z]+[ _]Shell[ _]\w{6}|tclwebkit(\d+[.\d]*)");
 
 
     static ShellTvParser()
     {
         (ShellTelevisions, CombinedRegex) =
-            ParserExtensions.LoadRegexesDictionary<Device>(ResourceName);
+            RegexLoader.LoadRegexesWithCombined<Device>(ResourceName);
     }
 
     public override bool TryParse(

@@ -4,12 +4,13 @@ using System.Text.RegularExpressions;
 using UADetector.Models.Enums;
 using UADetector.Regexes.Models;
 using UADetector.Results;
+using UADetector.Utils;
 
 namespace UADetector.Parsers.Clients;
 
 internal sealed class MediaPlayerParser : ClientParserBase
 {
-    private const string ResourceName = "Regexes.Resources.Clients.media_players.yml";
+    private const string ResourceName = "Regexes.Resources.Clients.media_players.json";
     private static readonly IEnumerable<Client> MediaPlayers;
     private static readonly Regex CombinedRegex;
 
@@ -17,7 +18,7 @@ internal sealed class MediaPlayerParser : ClientParserBase
     static MediaPlayerParser()
     {
         (MediaPlayers, CombinedRegex) =
-            ParserExtensions.LoadRegexes<Client>(ResourceName);
+            RegexLoader.LoadRegexesWithCombined<Client>(ResourceName);
     }
 
     public MediaPlayerParser(VersionTruncation versionTruncation) : base(versionTruncation)

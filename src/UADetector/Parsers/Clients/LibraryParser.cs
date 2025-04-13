@@ -4,12 +4,13 @@ using System.Text.RegularExpressions;
 using UADetector.Models.Enums;
 using UADetector.Regexes.Models;
 using UADetector.Results;
+using UADetector.Utils;
 
 namespace UADetector.Parsers.Clients;
 
 internal sealed class LibraryParser : ClientParserBase
 {
-    private const string ResourceName = "Regexes.Resources.Clients.libraries.yml";
+    private const string ResourceName = "Regexes.Resources.Clients.libraries.json";
     private static readonly IEnumerable<Client> Libraries;
     private static readonly Regex CombinedRegex;
 
@@ -17,7 +18,7 @@ internal sealed class LibraryParser : ClientParserBase
     static LibraryParser()
     {
         (Libraries, CombinedRegex) =
-            ParserExtensions.LoadRegexes<Client>(ResourceName);
+            RegexLoader.LoadRegexesWithCombined<Client>(ResourceName);
     }
 
     public LibraryParser(VersionTruncation versionTruncation) : base(versionTruncation)

@@ -1,23 +1,23 @@
-using System.Collections.Frozen;
 using System.Diagnostics.CodeAnalysis;
 using System.Text.RegularExpressions;
 
 using UADetector.Regexes.Models;
 using UADetector.Results;
+using UADetector.Utils;
 
 namespace UADetector.Parsers.Devices;
 
 internal sealed class ConsoleParser : DeviceParserBase
 {
-    private const string ResourceName = "Regexes.Resources.Devices.consoles.yml";
-    private static readonly FrozenDictionary<string, Device> Consoles;
+    private const string ResourceName = "Regexes.Resources.Devices.consoles.json";
+    private static readonly IEnumerable<Device> Consoles;
     private static readonly Regex CombinedRegex;
 
 
     static ConsoleParser()
     {
         (Consoles, CombinedRegex) =
-            ParserExtensions.LoadRegexesDictionary<Device>(ResourceName);
+            RegexLoader.LoadRegexesWithCombined<Device>(ResourceName);
     }
 
     public override bool TryParse(
