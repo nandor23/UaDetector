@@ -301,7 +301,7 @@ public sealed class UADetector : IUADetector
             deviceType = DeviceType.Desktop;
         }
 
-        if (IsDesktop(os, browser))
+        if (deviceType is null && IsDesktop(os, browser))
         {
             deviceType = DeviceType.Desktop;
         }

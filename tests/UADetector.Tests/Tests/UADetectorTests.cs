@@ -69,6 +69,7 @@ public class UADetectorTests
                 result.Os.ShouldBeEquivalentTo(fixture.Os);
                 result.Browser.ShouldBeEquivalentTo(fixture.Browser);
                 result.Client.ShouldBeEquivalentTo(fixture.Client);
+                result.Device.ShouldBeEquivalentTo(fixture.Device);
             }
         }
     }
