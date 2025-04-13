@@ -2161,10 +2161,11 @@ internal abstract class DeviceParserBase
 
         foreach (var devicePattern in devices)
         {
-            match = devicePattern.Value.Regex.Match(userAgent);
+            var newMatch = devicePattern.Value.Regex.Match(userAgent);
 
-            if (match.Success)
+            if (newMatch.Success)
             {
+                match = newMatch;
                 brand = devicePattern.Key;
                 device = devicePattern.Value;
 

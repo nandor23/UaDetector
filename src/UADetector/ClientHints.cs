@@ -56,14 +56,11 @@ internal sealed class ClientHints
             .ToFrozenSet(StringComparer.OrdinalIgnoreCase);
 
     internal static readonly FrozenSet<string> PrimaryFullVersionListHeaderNames =
-        new HashSet<string>
-            {
-                "fullversionlist", "http-sec-ch-ua-full-version-list", "sec-ch-ua-full-version-list"
-            }
+        new HashSet<string> { "http-sec-ch-ua-full-version-list", "sec-ch-ua-full-version-list" }
             .ToFrozenSet(StringComparer.OrdinalIgnoreCase);
 
     internal static readonly FrozenSet<string> SecondaryFullVersionListHeaderNames =
-        new HashSet<string> { "brands", "http-sec-ch-ua", "sec-ch-ua" }
+        new HashSet<string> { "http-sec-ch-ua", "sec-ch-ua" }
             .ToFrozenSet(StringComparer.OrdinalIgnoreCase);
 
     internal static readonly FrozenSet<string> AppHeaderNames =

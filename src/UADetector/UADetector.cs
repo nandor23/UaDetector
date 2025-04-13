@@ -94,10 +94,14 @@ public sealed class UADetector : IUADetector
                ParserExtensions.TryCompareVersions(os.Version, "8", out var comparisonResult) && comparisonResult >= 0;
     }
 
-    private bool IsDesktop(OsInfo os, BrowserInfo browser)
+    private bool IsDesktop(OsInfo? os, BrowserInfo? browser)
     {
-        return !_browserParser.IsMobileOnlyBrowser(browser.Code) && !string.IsNullOrEmpty(os.Family) &&
-               _osParser.IsDesktopOs(os.Family);
+        if (browser is not null && _browserParser.IsMobileOnlyBrowser(browser.Code))
+        {
+            return false;
+        }
+
+        return !string.IsNullOrEmpty(os?.Family) && _osParser.IsDesktopOs(os.Family);
     }
 
     private bool TryParseDevice(
@@ -125,7 +129,7 @@ public sealed class UADetector : IUADetector
         }
 
         // If the user agent does not specify a model, use the one from client hints.
-        if (string.IsNullOrEmpty(model))
+        if (string.IsNullOrEmpty(model) && !string.IsNullOrEmpty(clientHints.Model))
         {
             model = clientHints.Model;
         }
@@ -136,7 +140,7 @@ public sealed class UADetector : IUADetector
         }
 
         // Prevent misidentification of spoofed user agent as legitimate Apple.
-        if (brand == BrandNames.Apple && !AppleOsNames.Contains(brand))
+        if (brand == BrandNames.Apple && os is not null && !AppleOsNames.Contains(os.Name))
         {
             deviceType = null;
             brand = null;
@@ -296,7 +300,7 @@ public sealed class UADetector : IUADetector
             deviceType = DeviceType.Desktop;
         }
 
-        if (deviceType is null && os is not null && browser is not null && IsDesktop(os, browser))
+        if (IsDesktop(os, browser))
         {
             deviceType = DeviceType.Desktop;
         }

@@ -40,9 +40,9 @@ public class ClientHintsTests
         var headers = new Dictionary<string, string?>
         {
             {
-                "fullVersionList", """
-                                   " Not A;Brand";v="99.0.0.0", "Chromium";v="99.0.4844.51", v="98.0.4758.109"
-                                   """
+                "Sec-CH-UA-Full-Version-List", """
+                                               " Not A;Brand";v="99.0.0.0", "Chromium";v="99.0.4844.51", v="98.0.4758.109"
+                                               """
             }
         };
 
