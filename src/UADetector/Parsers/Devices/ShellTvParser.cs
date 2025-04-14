@@ -30,11 +30,12 @@ internal sealed class ShellTvParser : DeviceParserBase
         [NotNullWhen(true)] out InternalDeviceInfo? result
     )
     {
-        if (ShellTvRegex.IsMatch(userAgent) && CombinedRegex.IsMatch(userAgent))
+        if (ShellTvRegex.IsMatch(userAgent))
         {
-            TryParse(userAgent, clientHints, ShellTelevisions, out result);
-
-            result = new InternalDeviceInfo { Type = DeviceType.Tv, Brand = result?.Brand, Model = result?.Model, };
+            if (!TryParse(userAgent, clientHints, ShellTelevisions, out result))
+            {
+                result = new InternalDeviceInfo { Type = DeviceType.Tv, Brand = null, Model = null, };
+            }
         }
         else
         {

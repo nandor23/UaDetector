@@ -2103,7 +2103,7 @@ internal abstract class DeviceParserBase
         model = ParserExtensions.FormatWithMatch(model, match).Replace('_', ' ');
         model = Regex.Replace(model, " TD$", string.Empty, RegexOptions.IgnoreCase);
 
-        return model == "Build" ? null : model.Trim();
+        return string.IsNullOrEmpty(model) || model == "Build" ? null : model.Trim();
     }
 
     private static bool TryParseDeviceFromClientHints(
@@ -2160,39 +2160,28 @@ internal abstract class DeviceParserBase
         Device? matchedDevice = null;
 
         foreach (var device in devices)
-        {
-            var newMatch = device.Regex.Match(userAgent);
+        { 
+            match = device.Regex.Match(userAgent);
 
-            if (newMatch.Success)
+            if (match.Success)
             {
-                match = newMatch;
                 brand = device.Brand;
                 matchedDevice = device;
-
-                if (device.Brand != "Unknown")
-                {
-                    break;
-                }
+                break;
             }
         }
 
         if (match is null || !match.Success)
         {
-            if (deviceFromClientHints?.Type is null)
-            {
-                result = null;
-            }
-            else
-            {
-                result = new InternalDeviceInfo
-                {
-                    Type = deviceFromClientHints.Type,
-                    Model = deviceFromClientHints.Model,
-                    Brand = null,
-                };
-            }
 
-            return result is not null;
+            result = new InternalDeviceInfo
+            {
+                Type = deviceFromClientHints?.Type ?? null,
+                Model = deviceFromClientHints?.Model,
+                Brand = null,
+            };
+            
+            return true;
         }
 
         DeviceType? type = null;

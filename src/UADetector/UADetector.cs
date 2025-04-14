@@ -8,7 +8,6 @@ using UADetector.Models.Enums;
 using UADetector.Parsers;
 using UADetector.Parsers.Devices;
 using UADetector.Results;
-using UADetector.Utils;
 
 namespace UADetector;
 
@@ -22,37 +21,38 @@ public sealed class UADetector : IUADetector
 
     private static readonly Regex ContainsLetterRegex = new("[a-zA-Z]", RegexOptions.Compiled);
     private static readonly Regex AndroidVrFragment =
-        RegexUtility.BuildUserAgentRegex("Android( [.0-9]+)?; Mobile VR;| VR ");
+        BuildRegex("Android( [.0-9]+)?; Mobile VR;| VR ");
 
-    private static readonly Regex ChromeRegex = RegexUtility.BuildUserAgentRegex("Chrome/[.0-9]*");
-    private static readonly Regex MobileRegex = RegexUtility.BuildUserAgentRegex("(?:Mobile|eliboM)");
-    private static readonly Regex PadRegex = RegexUtility.BuildUserAgentRegex("Pad/APad");
-    private static readonly Regex OperaTabletRegex = RegexUtility.BuildUserAgentRegex("Opera Tablet");
-    private static readonly Regex OperaTvStoreRegex = RegexUtility.BuildUserAgentRegex("Opera TV Store| OMI/");
-    private static readonly Regex TouchEnabledRegex = RegexUtility.BuildUserAgentRegex("Touch");
-    private static readonly Regex TvFragmentRegex = RegexUtility.BuildUserAgentRegex(@"\(TV;");
+    private static readonly Regex ChromeRegex = BuildRegex("Chrome/[.0-9]*");
+    private static readonly Regex MobileRegex = BuildRegex("(?:Mobile|eliboM)");
+    private static readonly Regex PadRegex = BuildRegex("Pad/APad");
+    private static readonly Regex OperaTabletRegex = BuildRegex("Opera Tablet");
+    private static readonly Regex OperaTvStoreRegex = BuildRegex("Opera TV Store| OMI/");
+    private static readonly Regex TouchEnabledRegex = BuildRegex("Touch");
+    private static readonly Regex TizenOrSmartTvRegex = BuildRegex("SmartTV|Tizen.+ TV .+$");
+    private static readonly Regex TvFragmentRegex = BuildRegex(@"\(TV;");
 
     private static readonly Regex AndroidTabletFragmentRegex =
-        RegexUtility.BuildUserAgentRegex(@"Android( [.0-9]+)?; Tablet;|Tablet(?! PC)|.*\-tablet$");
+        BuildRegex(@"Android( [.0-9]+)?; Tablet;|Tablet(?! PC)|.*\-tablet$");
 
     private static readonly Regex AndroidMobileFragmentRegex =
-        RegexUtility.BuildUserAgentRegex(@"Android( [.0-9]+)?; Mobile;|.*\-mobile$");
+        BuildRegex(@"Android( [.0-9]+)?; Mobile;|.*\-mobile$");
 
     private static readonly Regex PuffinSecureBrowserDesktopRegex =
-        RegexUtility.BuildUserAgentRegex(@"Puffin/(?:\d+[.\d]+)[LMW]D");
+        BuildRegex(@"Puffin/(?:\d+[.\d]+)[LMW]D");
 
     private static readonly Regex PuffinWebBrowserSmartphoneRegex =
-        RegexUtility.BuildUserAgentRegex(@"Puffin/(?:\d+[.\d]+)[AIFLW]P");
+        BuildRegex(@"Puffin/(?:\d+[.\d]+)[AIFLW]P");
 
     private static readonly Regex PuffinWebBrowserTabletRegex =
-        RegexUtility.BuildUserAgentRegex(@"Puffin/(?:\d+[.\d]+)[AILW]T");
+        BuildRegex(@"Puffin/(?:\d+[.\d]+)[AILW]T");
 
     private static readonly Regex AndroidRegex =
-        RegexUtility.BuildUserAgentRegex(
+        BuildRegex(
             @"Andr0id|(?:Android(?: UHD)?|Google) TV|\(lite\) TV|BRAVIA|Firebolt| TV$");
 
     private static readonly Regex DesktopFragment =
-        RegexUtility.BuildUserAgentRegex("Desktop(?: (x(?:32|64)|WOW64))?;");
+        BuildRegex("Desktop(?: (x(?:32|64)|WOW64))?;");
 
     private static readonly FrozenSet<string> AppleOsNames = new[]
     {
@@ -87,6 +87,11 @@ public sealed class UADetector : IUADetector
         _browserParser = new BrowserParser(_uaDetectorOptions.VersionTruncation);
         _clientParser = new ClientParser(_uaDetectorOptions.VersionTruncation);
         _botParser = new BotParser();
+    }
+    
+    private static Regex BuildRegex(string pattern)
+    {
+        return new Regex($"(?:^|[^A-Z_-])(?:{pattern})", RegexOptions.IgnoreCase | RegexOptions.Compiled);
     }
 
     private static bool IsWindows8OrLater(OsInfo os)
@@ -293,10 +298,15 @@ public sealed class UADetector : IUADetector
         {
             deviceType = DeviceType.Tv;
         }
+        
+        // Devices running Tizen TV or SmartTV are assumed to be TVs.
+        if (deviceType is null && TizenOrSmartTvRegex.IsMatch(userAgent))
+        {
+            deviceType = DeviceType.Tv;
+        }
 
         // User agents containing the "Desktop" fragment are assumed to be desktops.
-        if (deviceType != DeviceType.Desktop && !userAgent.Contains("Desktop") &&
-            DesktopFragment.IsMatch(userAgent))
+        if (deviceType != DeviceType.Desktop && userAgent.Contains("Desktop") && DesktopFragment.IsMatch(userAgent))
         {
             deviceType = DeviceType.Desktop;
         }
