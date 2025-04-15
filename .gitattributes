@@ -1,2 +1,2 @@
-*.yml filter=lfs diff=lfs merge=lfs -text
-*.json filter=lfs diff=lfs merge=lfs -text
+src/**/*.json filter=lfs diff=lfs merge=lfs -text
+tests/**/*.json filter=lfs diff=lfs merge=lfs -text
