@@ -1,0 +1,18 @@
+﻿<Solution>
+  <Folder Name="/root/">
+    <File Path="README.md" />
+    <File Path="LICENSE" />
+    <File Path="global.json" />
+    <File Path=".gitignore" />
+    <File Path=".editorconfig" />
+  </Folder>
+  <Folder Name="/samples/">
+    <Project Path="samples\UaDetector.Api\UaDetector.Api.csproj" Type="Classic C#" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src\UaDetector\UaDetector.csproj" Type="Classic C#" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests\UaDetector.Tests\UaDetector.Tests.csproj" Type="Classic C#" />
+  </Folder>
+</Solution>
