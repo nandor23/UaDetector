@@ -177,7 +177,7 @@ internal sealed class ClientHints
             {
                 while (FullVersionListRegex.Match(value) is { Success: true } match)
                 {
-                    if (match.Groups.Count == 3 && !clientHints.FullVersionList.ContainsKey(match.Groups[1].Value))
+                    if (!clientHints.FullVersionList.ContainsKey(match.Groups[1].Value))
                     {
                         clientHints.FullVersionList.Add(match.Groups[1].Value, match.Groups[2].Value);
                     }
