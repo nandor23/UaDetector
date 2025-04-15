@@ -16,13 +16,12 @@ namespace UaDetector.Benchmarks;
 public class ParserComparisonBenchmark
 {
     private const string UserAgent = "Safari/9537.73.11 CFNetwork/673.0.3 Darwin/13.0.0 (x86_64) (MacBookAir6%2C2)";
-    private readonly UaDetector _uaDetector = new();
-    
     
     [Benchmark(Baseline = true)]
     public UserAgentInfo? UaDetector_TryParse()
     { 
-        _uaDetector.TryParse(UserAgent, out var result);
+        var uaDetector = new UaDetector();
+        uaDetector.TryParse(UserAgent, out var result);
         return result;
     }
     
@@ -36,7 +35,7 @@ public class ParserComparisonBenchmark
     
     [Benchmark]
     public ClientInfo UaParser_Parse()
-    { 
+    {
         var uaParser = Parser.GetDefault();
         return uaParser.Parse(UserAgent);
     }
