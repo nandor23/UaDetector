@@ -877,7 +877,7 @@ public sealed class BrowserParser : IBrowserParser
 
         }.ToFrozenDictionary(StringComparer.OrdinalIgnoreCase);
 
-    private static readonly FrozenSet<BrowserCode> MobileOnlyBrowsers = new[]
+    internal static readonly FrozenSet<BrowserCode> MobileOnlyBrowsers = new[]
     {
         BrowserCode.PhoneBrowser360, BrowserCode.AlohaBrowserLite, BrowserCode.Arvin, BrowserCode.BLine,
         BrowserCode.Coast, BrowserCode.CoolBrowser, BrowserCode.CosBrowser, BrowserCode.Cornowser,
@@ -1411,11 +1411,6 @@ public sealed class BrowserParser : IBrowserParser
         };
 
         return true;
-    }
-
-    internal bool IsMobileOnlyBrowser(BrowserCode browserCode)
-    {
-        return MobileOnlyBrowsers.Contains(browserCode);
     }
 
     private sealed class ClientHintsBrowserInfo

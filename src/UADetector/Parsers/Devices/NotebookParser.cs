@@ -16,13 +16,12 @@ internal sealed class NotebookParser : DeviceParserBase
 
     public override bool TryParse(
         string userAgent,
-        ClientHints clientHints,
         [NotNullWhen(true)] out InternalDeviceInfo? result
     )
     {
         if (FbmdRegex.IsMatch(userAgent))
         {
-            TryParse(userAgent, clientHints, Notebooks, out result);
+            TryParse(userAgent, Notebooks, out result);
         }
         else
         {

@@ -11,28 +11,20 @@ namespace UADetector.Parsers.Devices;
 internal sealed class ShellTvParser : DeviceParserBase
 {
     private const string ResourceName = "Regexes.Resources.Devices.shell_televisions.json";
-    private static readonly IEnumerable<Device> ShellTelevisions;
-    private static readonly Regex CombinedRegex;
+    private static readonly IEnumerable<Device> ShellTelevisions = RegexLoader.LoadRegexes<Device>(ResourceName);
 
     internal static readonly Regex ShellTvRegex =
         RegexUtility.BuildUserAgentRegex(@"[a-z]+[ _]Shell[ _]\w{6}|tclwebkit(\d+[.\d]*)");
 
 
-    static ShellTvParser()
-    {
-        (ShellTelevisions, CombinedRegex) =
-            RegexLoader.LoadRegexesWithCombined<Device>(ResourceName);
-    }
-
     public override bool TryParse(
         string userAgent,
-        ClientHints clientHints,
         [NotNullWhen(true)] out InternalDeviceInfo? result
     )
     {
         if (ShellTvRegex.IsMatch(userAgent))
         {
-            if (!TryParse(userAgent, clientHints, ShellTelevisions, out result))
+            if (!TryParse(userAgent, ShellTelevisions, out result))
             {
                 result = new InternalDeviceInfo { Type = DeviceType.Tv, Brand = null, Model = null, };
             }

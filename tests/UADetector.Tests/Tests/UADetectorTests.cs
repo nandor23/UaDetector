@@ -26,7 +26,8 @@ public class UADetectorTests
     {
         var uaDetector = new UADetector();
 
-        uaDetector.TryParse(string.Empty, out _).ShouldBeFalse();
+        uaDetector.TryParse(string.Empty, out var result).ShouldBeFalse();
+        result.ShouldBeNull();
     }
 
     [Test]
@@ -34,7 +35,8 @@ public class UADetectorTests
     {
         var uaDetector = new UADetector();
 
-        uaDetector.TryParse("12345", out _).ShouldBeFalse();
+        uaDetector.TryParse("12345", out var result).ShouldBeFalse();
+        result.ShouldBeNull();
     }
 
     [Test]

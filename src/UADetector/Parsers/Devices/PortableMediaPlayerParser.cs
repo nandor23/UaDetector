@@ -22,13 +22,12 @@ internal sealed class PortableMediaPlayerParser : DeviceParserBase
 
     public override bool TryParse(
         string userAgent,
-        ClientHints clientHints,
         [NotNullWhen(true)] out InternalDeviceInfo? result
     )
     {
         if (CombinedRegex.IsMatch(userAgent))
         {
-            TryParse(userAgent, clientHints, PortableMediaPlayers, out result);
+            TryParse(userAgent, PortableMediaPlayers, out result);
         }
         else
         {

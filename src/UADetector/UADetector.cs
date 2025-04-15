@@ -111,14 +111,14 @@ public sealed class UADetector : IUADetector
                ParserExtensions.TryCompareVersions(os.Version, "8", out var comparisonResult) && comparisonResult >= 0;
     }
 
-    private bool IsDesktop(OsInfo? os, BrowserInfo? browser)
+    private static bool IsDesktop(OsInfo? os, BrowserInfo? browser)
     {
-        if (browser is not null && _browserParser.IsMobileOnlyBrowser(browser.Code))
+        if (browser is not null && BrowserParser.MobileOnlyBrowsers.Contains(browser.Code))
         {
             return false;
         }
 
-        return !string.IsNullOrEmpty(os?.Family) && _osParser.IsDesktopOs(os.Family);
+        return !string.IsNullOrEmpty(os?.Family) && OsParser.DesktopOsFamilies.Contains(os.Family);
     }
 
     private static bool TryParseDeviceFromClientHints(
@@ -166,13 +166,12 @@ public sealed class UADetector : IUADetector
             model = deviceFromClientHints.Model;
         }
 
-        if (!string.IsNullOrEmpty(model) ||
-            (!ParserExtensions.HasUserAgentClientHintsFragment(userAgent) &&
-             !ParserExtensions.HasUserAgentDesktopFragment(userAgent)))
+        if (!string.IsNullOrEmpty(model) || (!ParserExtensions.HasUserAgentClientHintsFragment(userAgent) &&
+                                             !ParserExtensions.HasUserAgentDesktopFragment(userAgent)))
         {
             foreach (var parser in _deviceParsers)
             {
-                if (parser.TryParse(userAgent, clientHints, out var deviceInfo))
+                if (parser.TryParse(userAgent, out var deviceInfo))
                 {
                     deviceType = deviceInfo.Type;
                     model = deviceInfo.Model;

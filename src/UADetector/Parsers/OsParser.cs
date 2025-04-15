@@ -316,7 +316,7 @@ public sealed class OsParser : IOsParser
     /// <summary>
     /// Operating system families that are known as desktop only
     /// </summary>
-    private static readonly FrozenSet<string> DesktopOsFamilies = new[]
+    internal static readonly FrozenSet<string> DesktopOsFamilies = new[]
     {
         OsFamilies.AmigaOs, OsFamilies.Ibm, OsFamilies.GnuLinux, OsFamilies.Mac, OsFamilies.Unix, OsFamilies.Windows,
         OsFamilies.BeOs, OsFamilies.ChromeOs,
@@ -795,11 +795,6 @@ public sealed class OsParser : IOsParser
         };
 
         return true;
-    }
-
-    internal bool IsDesktopOs(string osFamily)
-    {
-        return DesktopOsFamilies.Contains(osFamily);
     }
 
     private sealed class CommonOsInfo

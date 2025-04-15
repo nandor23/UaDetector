@@ -22,13 +22,12 @@ internal sealed class CarBrowserParser : DeviceParserBase
 
     public override bool TryParse(
         string userAgent,
-        ClientHints clientHints,
         [NotNullWhen(true)] out InternalDeviceInfo? result
     )
     {
         if (CombinedRegex.IsMatch(userAgent))
         {
-            TryParse(userAgent, clientHints, CarBrowsers, out result);
+            TryParse(userAgent, CarBrowsers, out result);
         }
         else
         {

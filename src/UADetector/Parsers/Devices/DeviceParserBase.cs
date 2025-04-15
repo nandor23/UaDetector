@@ -2096,13 +2096,11 @@ internal abstract class DeviceParserBase
 
     public abstract bool TryParse(
         string userAgent,
-        ClientHints clientHints,
         [NotNullWhen(true)] out InternalDeviceInfo? result
     );
 
     protected static bool TryParse(
         string userAgent,
-        ClientHints clientHints,
         IEnumerable<Device> devices,
         [NotNullWhen(true)] out InternalDeviceInfo? result
     )

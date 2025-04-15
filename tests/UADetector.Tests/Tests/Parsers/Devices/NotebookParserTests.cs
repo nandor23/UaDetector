@@ -1,5 +1,3 @@
-using System.Collections.Immutable;
-
 using Shouldly;
 
 using UADetector.Parsers.Devices;
@@ -29,12 +27,11 @@ public class NotebookParserTests
         var fixturePath = Path.Combine("Fixtures", "Resources", "Devices", "notebooks.json");
         var fixtures = await FixtureLoader.LoadAsync<DeviceFixture>(fixturePath);
 
-        var clientHints = ClientHints.Create(ImmutableDictionary<string, string?>.Empty);
         var parser = new NotebookParser();
 
         foreach (var fixture in fixtures)
         {
-            parser.TryParse(fixture.UserAgent, clientHints, out var result).ShouldBeTrue();
+            parser.TryParse(fixture.UserAgent, out var result).ShouldBeTrue();
 
             result.ShouldNotBeNull();
             result.Type.ShouldBe(fixture.Device.Type);

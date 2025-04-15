@@ -22,13 +22,12 @@ internal sealed class ConsoleParser : DeviceParserBase
 
     public override bool TryParse(
         string userAgent,
-        ClientHints clientHints,
         [NotNullWhen(true)] out InternalDeviceInfo? result
     )
     {
         if (CombinedRegex.IsMatch(userAgent))
         {
-            TryParse(userAgent, clientHints, Consoles, out result);
+            TryParse(userAgent, Consoles, out result);
         }
         else
         {

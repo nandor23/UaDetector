@@ -22,13 +22,12 @@ internal sealed class CameraParser : DeviceParserBase
 
     public override bool TryParse(
         string userAgent,
-        ClientHints clientHints,
         [NotNullWhen(true)] out InternalDeviceInfo? result
     )
     {
         if (CombinedRegex.IsMatch(userAgent))
         {
-            TryParse(userAgent, clientHints, Cameras, out result);
+            TryParse(userAgent, Cameras, out result);
         }
         else
         {
