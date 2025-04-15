@@ -2,8 +2,6 @@ using System.Collections.Frozen;
 using System.Text.Json;
 using System.Text.RegularExpressions;
 
-using UADetector.Parsers;
-
 namespace UADetector.Utils;
 
 internal static class RegexLoader
@@ -24,19 +22,20 @@ internal static class RegexLoader
         return stream;
     }
 
-    private static JsonSerializerOptions CreateSerializerOptions(RegexJsonConverter? regexConverter = null)
+    private static JsonSerializerOptions CreateSerializerOptions(RegexJsonConverter regexConverter)
     {
         return new JsonSerializerOptions
         {
             PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
             RespectRequiredConstructorParameters = true,
-            Converters = { regexConverter ?? new RegexJsonConverter() }
+            Converters = { regexConverter }
         };
     }
 
-    public static IEnumerable<T> LoadRegexes<T>(string resourceName)
+    public static IEnumerable<T> LoadRegexes<T>(string resourceName, string? patternSuffix = null)
     {
-        var serializerOptions = CreateSerializerOptions();
+        var regexConverter = new RegexJsonConverter(patternSuffix);
+        var serializerOptions = CreateSerializerOptions(regexConverter);
         using var stream = GetEmbeddedResourceStream(resourceName);
         using var reader = new StreamReader(stream);
 
@@ -56,26 +55,10 @@ internal static class RegexLoader
         return (regexes ?? [], combinedRegex);
     }
 
-    public static (FrozenDictionary<string, T>, Regex) LoadRegexesDictionaryWithCombined<T>(
-        string resourceName,
-        string? patternSuffix = null
-    )
-    {
-        var regexConverter = new RegexJsonConverter(patternSuffix);
-        var serializerOptions = CreateSerializerOptions(regexConverter);
-        using var stream = GetEmbeddedResourceStream(resourceName);
-        using var reader = new StreamReader(stream);
-
-
-        var regexes = JsonSerializer.Deserialize<Dictionary<string, T>>(stream, serializerOptions);
-        var combinedRegex = regexConverter.BuildCombinedRegex();
-
-        return ((regexes ?? []).ToFrozenDictionary(), combinedRegex);
-    }
-
     public static FrozenDictionary<string, string> LoadHints(string resourceName)
     {
-        var serializerOptions = CreateSerializerOptions();
+        var regexConverter = new RegexJsonConverter();
+        var serializerOptions = CreateSerializerOptions(regexConverter);
         using var stream = GetEmbeddedResourceStream(resourceName);
         using var reader = new StreamReader(stream);
 
