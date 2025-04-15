@@ -2086,50 +2086,12 @@ internal abstract class DeviceParserBase
         { "peripheral", DeviceType.Peripheral },
     }.ToFrozenDictionary(StringComparer.OrdinalIgnoreCase);
 
-    private static readonly FrozenDictionary<string, DeviceType> ClientHintFormFactorsMapping =
-        new Dictionary<string, DeviceType>
-        {
-            { "automotive", DeviceType.CarBrowser },
-            { "xr", DeviceType.Wearable },
-            { "watch", DeviceType.Wearable },
-            { "mobile", DeviceType.Smartphone },
-            { "tablet", DeviceType.Tablet },
-            { "desktop", DeviceType.Desktop },
-            { "eink", DeviceType.Tablet },
-        }.ToFrozenDictionary(StringComparer.OrdinalIgnoreCase);
-
     private static string? BuildModel(string model, Match match)
     {
         model = ParserExtensions.FormatWithMatch(model, match).Replace('_', ' ');
         model = Regex.Replace(model, " TD$", string.Empty, RegexOptions.IgnoreCase);
 
         return string.IsNullOrEmpty(model) || model == "Build" ? null : model.Trim();
-    }
-
-    private static bool TryParseDeviceFromClientHints(
-        ClientHints clientHints,
-        [NotNullWhen(true)] out ClientHintsDeviceInfo? result
-    )
-    {
-        if (string.IsNullOrEmpty(clientHints.Model))
-        {
-            result = null;
-            return false;
-        }
-
-        DeviceType? deviceType = null;
-
-        foreach (var formFactor in ClientHintFormFactorsMapping)
-        {
-            if (clientHints.FormFactors.Contains(formFactor.Key))
-            {
-                deviceType = formFactor.Value;
-                break;
-            }
-        }
-
-        result = new ClientHintsDeviceInfo { Type = deviceType, Model = clientHints.Model, };
-        return true;
     }
 
     public abstract bool TryParse(
@@ -2145,22 +2107,12 @@ internal abstract class DeviceParserBase
         [NotNullWhen(true)] out InternalDeviceInfo? result
     )
     {
-        TryParseDeviceFromClientHints(clientHints, out var deviceFromClientHints);
-
-        if (string.IsNullOrEmpty(deviceFromClientHints?.Model) &&
-            (ParserExtensions.HasUserAgentClientHintsFragment(userAgent) ||
-             ParserExtensions.HasUserAgentDesktopFragment(userAgent)))
-        {
-            result = null;
-            return false;
-        }
-
         string? brand = null;
         Match? match = null;
         Device? matchedDevice = null;
 
         foreach (var device in devices)
-        { 
+        {
             match = device.Regex.Match(userAgent);
 
             if (match.Success)
@@ -2173,15 +2125,8 @@ internal abstract class DeviceParserBase
 
         if (match is null || !match.Success)
         {
-
-            result = new InternalDeviceInfo
-            {
-                Type = deviceFromClientHints?.Type ?? null,
-                Model = deviceFromClientHints?.Model,
-                Brand = null,
-            };
-            
-            return true;
+            result = null;
+            return false;
         }
 
         DeviceType? type = null;
@@ -2249,11 +2194,5 @@ internal abstract class DeviceParserBase
 
         result = new InternalDeviceInfo { Type = type, Brand = brand, Model = model, };
         return true;
-    }
-
-    private sealed class ClientHintsDeviceInfo
-    {
-        public required DeviceType? Type { get; init; }
-        public required string? Model { get; init; }
     }
 }

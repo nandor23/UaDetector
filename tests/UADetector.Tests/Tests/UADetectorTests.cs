@@ -1,7 +1,6 @@
 using Shouldly;
 
 using UADetector.Models.Enums;
-using UADetector.Results;
 using UADetector.Tests.Fixtures.Models;
 using UADetector.Tests.Helpers;
 
@@ -53,7 +52,7 @@ public class UADetectorTests
         foreach (var fixture in fixtures)
         {
             bool isParsed = fixture.Headers is null
-                ? uaDetector.TryParse(fixture.UserAgent, out UserAgentInfo? result)
+                ? uaDetector.TryParse(fixture.UserAgent, out var result)
                 : uaDetector.TryParse(fixture.UserAgent, fixture.Headers, out result);
 
             if (fixture.Os is null && fixture.Browser is null && fixture.Client is null && fixture.Device is null &&
@@ -70,6 +69,7 @@ public class UADetectorTests
                 result.Browser.ShouldBeEquivalentTo(fixture.Browser);
                 result.Client.ShouldBeEquivalentTo(fixture.Client);
                 result.Device.ShouldBeEquivalentTo(fixture.Device);
+                result.Bot.ShouldBeEquivalentTo(fixture.Bot);
             }
         }
     }

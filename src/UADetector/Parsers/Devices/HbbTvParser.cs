@@ -15,7 +15,7 @@ internal sealed class HbbTvParser : DeviceParserBase
 
     internal static readonly Regex
         HbbTvRegex = RegexUtility.BuildUserAgentRegex(@"(?:HbbTV|SmartTvA)/([1-9](?:\.[0-9]){1,2})");
-    
+
 
     public override bool TryParse(
         string userAgent,

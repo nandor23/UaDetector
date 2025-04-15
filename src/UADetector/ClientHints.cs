@@ -113,7 +113,7 @@ internal sealed class ClientHints
     /// <summary>
     /// Represents <c>Sec-CH-UA-Full-Version-List</c> header field: the full version for each brand in its brand list
     /// </summary>
-    public Dictionary<string, string> FullVersionList { get; } = new();
+    public Dictionary<string, string> FullVersionList { get; } = [];
 
     /// <summary>
     /// Represents <c>x-requested-with</c> header field: Android app id
@@ -123,7 +123,7 @@ internal sealed class ClientHints
     /// <summary>
     /// Represents <c>Sec-CH-UA-Form-Factors</c> header field: form factor device type name
     /// </summary>
-    public List<string> FormFactors { get; private set; } = [];
+    public HashSet<string> FormFactors { get; } = new(StringComparer.OrdinalIgnoreCase);
 
 
     /// <summary>
@@ -192,25 +192,12 @@ internal sealed class ClientHints
             }
             else if (FormFactorsHeaderNames.Contains(normalizedHeader))
             {
-                var formFactors = value.Split(',').ToList();
+                var match = FormFactorsRegex.Match(value);
 
-                if (formFactors.Count > 1)
+                while (match is { Success: true })
                 {
-                    clientHints.FormFactors = formFactors;
-                }
-                else
-                {
-                    var match = FormFactorsRegex.Match(value);
-
-                    while (match is { Success: true })
-                    {
-                        if (match.Groups.Count == 2)
-                        {
-                            clientHints.FormFactors.Add(match.Groups[1].Value);
-                        }
-
-                        match = match.NextMatch();
-                    }
+                    clientHints.FormFactors.Add(match.Groups[1].Value);
+                    match = match.NextMatch();
                 }
             }
         }

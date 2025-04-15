@@ -1114,7 +1114,6 @@ public sealed class BrowserParser : IBrowserParser
         {
             var browserName = ApplyClientHintBrandMapping(fullVersion.Key);
 
-
             if (TryGetBrowserCode(browserName, out var browserCode))
             {
                 name = BrowserCodeMapping[browserCode.Value];

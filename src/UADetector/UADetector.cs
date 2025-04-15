@@ -80,6 +80,17 @@ public sealed class UADetector : IUADetector
         new MobileParser(),
     ];
 
+    private static readonly List<KeyValuePair<string, DeviceType>> ClientHintFormFactorsMapping =
+    [
+        new("automotive", DeviceType.CarBrowser),
+        new("xr", DeviceType.Wearable),
+        new("watch", DeviceType.Wearable),
+        new("mobile", DeviceType.Smartphone),
+        new("tablet", DeviceType.Tablet),
+        new("desktop", DeviceType.Desktop),
+        new("eink", DeviceType.Tablet),
+    ];
+
     public UADetector(UADetectorOptions? uaDetectorOptions = null)
     {
         _uaDetectorOptions = uaDetectorOptions ?? new UADetectorOptions();
@@ -88,7 +99,7 @@ public sealed class UADetector : IUADetector
         _clientParser = new ClientParser(_uaDetectorOptions.VersionTruncation);
         _botParser = new BotParser();
     }
-    
+
     private static Regex BuildRegex(string pattern)
     {
         return new Regex($"(?:^|[^A-Z_-])(?:{pattern})", RegexOptions.IgnoreCase | RegexOptions.Compiled);
@@ -110,6 +121,32 @@ public sealed class UADetector : IUADetector
         return !string.IsNullOrEmpty(os?.Family) && _osParser.IsDesktopOs(os.Family);
     }
 
+    private static bool TryParseDeviceFromClientHints(
+        ClientHints clientHints,
+        [NotNullWhen(true)] out ClientHintsDeviceInfo? result
+    )
+    {
+        if (string.IsNullOrEmpty(clientHints.Model))
+        {
+            result = null;
+            return false;
+        }
+
+        DeviceType? deviceType = null;
+
+        foreach (var formFactor in ClientHintFormFactorsMapping)
+        {
+            if (clientHints.FormFactors.Contains(formFactor.Key))
+            {
+                deviceType = formFactor.Value;
+                break;
+            }
+        }
+
+        result = new ClientHintsDeviceInfo { Type = deviceType, Model = clientHints.Model, };
+        return true;
+    }
+
     private bool TryParseDevice(
         string userAgent,
         ClientHints clientHints,
@@ -123,14 +160,25 @@ public sealed class UADetector : IUADetector
         string? model = null;
         string? brand = null;
 
-        foreach (var parser in _deviceParsers)
+        if (TryParseDeviceFromClientHints(clientHints, out var deviceFromClientHints))
         {
-            if (parser.TryParse(userAgent, clientHints, out var deviceInfo))
+            deviceType = deviceFromClientHints.Type;
+            model = deviceFromClientHints.Model;
+        }
+
+        if (!string.IsNullOrEmpty(model) ||
+            (!ParserExtensions.HasUserAgentClientHintsFragment(userAgent) &&
+             !ParserExtensions.HasUserAgentDesktopFragment(userAgent)))
+        {
+            foreach (var parser in _deviceParsers)
             {
-                deviceType = deviceInfo.Type;
-                model = deviceInfo.Model;
-                brand = deviceInfo.Brand;
-                break;
+                if (parser.TryParse(userAgent, clientHints, out var deviceInfo))
+                {
+                    deviceType = deviceInfo.Type;
+                    model = deviceInfo.Model;
+                    brand = deviceInfo.Brand;
+                    break;
+                }
             }
         }
 
@@ -298,7 +346,7 @@ public sealed class UADetector : IUADetector
         {
             deviceType = DeviceType.Tv;
         }
-        
+
         // Devices running Tizen TV or SmartTV are assumed to be TVs.
         if (deviceType is null && TizenOrSmartTvRegex.IsMatch(userAgent))
         {
@@ -420,5 +468,12 @@ public sealed class UADetector : IUADetector
         }
 
         return result is not null;
+    }
+
+
+    private sealed class ClientHintsDeviceInfo
+    {
+        public required DeviceType? Type { get; init; }
+        public required string Model { get; init; }
     }
 }
