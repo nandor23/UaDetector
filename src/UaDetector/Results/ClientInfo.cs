@@ -1,0 +1,10 @@
+using UaDetector.Models.Enums;
+
+namespace UaDetector.Results;
+
+public sealed class ClientInfo
+{
+    public required ClientType Type { get; init; }
+    public required string Name { get; init; }
+    public required string? Version { get; init; }
+}
