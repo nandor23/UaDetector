@@ -1,6 +1,5 @@
 using Shouldly;
 
-using UaDetector;
 using UaDetector.Models.Enums;
 
 using UaDetector.Tests.Fixtures.Models;

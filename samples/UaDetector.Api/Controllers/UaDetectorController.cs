@@ -1,17 +1,16 @@
 using Microsoft.AspNetCore.Mvc;
 
-using UaDetector.Parsers;
-
 namespace UaDetector.Api.Controllers;
 
 [ApiController]
-public class TestController : ControllerBase
+public class UaDetectorController : ControllerBase
 {
-    [Route("")]
-    public IActionResult Get()
+    [HttpGet]
+    [Route("ua-detector")]
+    public IActionResult GetUserAgentInfo()
     {
         var userAgent = HttpContext.Request.Headers.UserAgent.ToString();
-        var headers = Request.Headers.ToDictionary(a => a.Key, a => a.Value.ToArray().FirstOrDefault());
+        var headers = Request.Headers.ToDictionary(h => h.Key, h => h.Value.ToArray().FirstOrDefault());
 
         var parser = new UaDetector();
         parser.TryParse(userAgent, headers, out var result);

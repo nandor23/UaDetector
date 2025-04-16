@@ -7,6 +7,7 @@ using UaDetector.Results;
 
 using UaDetector.Tests.Fixtures.Models;
 using UaDetector.Tests.Helpers;
+using UaDetector.Utils;
 
 namespace UaDetector.Tests.Tests.Parsers;
 
@@ -26,7 +27,7 @@ public class BrowserParserTests
     }
 
     [Test]
-    public void Browsers_ShouldHaveNameMapping()
+    public void Browsers_ShouldContainKeysForAllBrowserNames()
     {
         var browserNames = BrowserParser.Browsers
             .Select(browser => browser.Name);
@@ -252,6 +253,34 @@ public class BrowserParserTests
         foreach (BrowserCode browserCode in Enum.GetValues(typeof(BrowserCode)))
         {
             BrowserParser.BrowserCodeMapping.ShouldContainKey(browserCode);
+        }
+    }
+
+    [Test]
+    public void CompactToFullNameMapping_ShouldContainKeyForAllUniqueNames()
+    {
+        var duplicateCompactNames = BrowserParser.BrowserCodeMapping.Values
+            .Select(x => x.RemoveSpaces())
+            .GroupBy(x => x)
+            .Where(group => group.Count() > 1)
+            .Select(group => group.Key)
+            .ToList();
+
+        var browserNames = new List<string>();
+
+        foreach (var name in BrowserParser.BrowserNameMapping.Keys)
+        {
+            var compactName = name.RemoveSpaces();
+
+            if (!duplicateCompactNames.Contains(compactName))
+            {
+                browserNames.Add(compactName);
+            }
+        }
+
+        foreach (var name in browserNames)
+        {
+            BrowserParser.CompactToFullNameMapping.ShouldContainKey(name);
         }
     }
 

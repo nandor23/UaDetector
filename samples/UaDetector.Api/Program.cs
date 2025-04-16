@@ -1,3 +1,5 @@
+using Scalar.AspNetCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddOpenApi();
@@ -5,10 +7,13 @@ builder.Services.AddControllers();
 
 var app = builder.Build();
 
-if (app.Environment.IsDevelopment())
+app.MapOpenApi();
+app.MapScalarApiReference(cfg =>
 {
-    app.MapOpenApi();
-}
+    cfg.Title = "UaDetector";
+    cfg.Theme = ScalarTheme.BluePlanet;
+    cfg.ShowSidebar = true;
+});
 
 app.UseHttpsRedirection();
 app.MapControllers();

@@ -26,7 +26,7 @@ public class OsParserTests
     }
 
     [Test]
-    public void OperatingSystems_ShouldHaveNameMapping()
+    public void OperatingSystems_ShouldContainKeyForAllOsNames()
     {
         var osNames = OsParser.OperatingSystems
             .Where(os => os.Name != "$1")
@@ -76,7 +76,7 @@ public class OsParserTests
     }
 
     [Test]
-    public void OsFamilyMapping_ShouldContainAllOsCodes()
+    public void OsFamilyMapping_ShouldContainKeyForAllOsCodes()
     {
         foreach (OsCode osCode in Enum.GetValues(typeof(OsCode)))
         {
