@@ -27,6 +27,11 @@ internal sealed class PimParser : ClientParserBase
 
     protected override ClientType Type => ClientType.PersonalInformationManager;
 
+    public override bool IsClient(string userAgent, ClientHints _)
+    {
+        return CombinedRegex.IsMatch(userAgent);
+    }
+
     public override bool TryParse(string userAgent, ClientHints _, [NotNullWhen(true)] out ClientInfo? result)
     {
         return TryParse(userAgent, PersonalInformationManagers, CombinedRegex, out result);

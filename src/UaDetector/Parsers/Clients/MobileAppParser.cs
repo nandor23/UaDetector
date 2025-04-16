@@ -26,6 +26,11 @@ internal sealed class MobileAppParser : ClientParserBase
     }
 
     protected override ClientType Type => ClientType.MobileApp;
+    
+    public override bool IsClient(string userAgent, ClientHints clientHints)
+    {
+        return CombinedRegex.IsMatch(userAgent) || AppHintParser.IsMobileApp(clientHints);
+    }
 
     public override bool TryParse(
         string userAgent,

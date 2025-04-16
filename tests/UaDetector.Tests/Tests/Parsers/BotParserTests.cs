@@ -57,7 +57,6 @@ public class BotParserTests
     [Test]
     public void IsBot_ShouldReturnTrue()
     {
-        var parser = new BotParser();
-        parser.IsBot("360spider-image").ShouldBeTrue();
+        BotParser.IsBot("360spider-image").ShouldBeTrue();
     }
 }

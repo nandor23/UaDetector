@@ -57,4 +57,17 @@ public sealed class ClientParser : IClientParser
         result = null;
         return false;
     }
+
+    internal bool IsClient(string userAgent, ClientHints clientHints)
+    {
+        foreach (var parser in ClientParsers)
+        {
+            if (parser.IsClient(userAgent, clientHints))
+            {
+                return true;
+            }
+        }
+
+        return false;
+    }
 }

@@ -18,6 +18,8 @@ internal abstract class ClientParserBase
     {
         _versionTruncation = versionTruncation;
     }
+    
+    public abstract bool IsClient(string userAgent, ClientHints clientHints);
 
     public abstract bool TryParse(
         string userAgent,

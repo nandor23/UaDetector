@@ -94,8 +94,15 @@ public sealed class UaDetector : IUaDetector
     public UaDetector(UaDetectorOptions? uaDetectorOptions = null)
     {
         _uaDetectorOptions = uaDetectorOptions ?? new UaDetectorOptions();
+        
+        var parserOptions = new ParserOptions
+        {
+            VersionTruncation = _uaDetectorOptions.VersionTruncation,
+            SkipBotParsing = _uaDetectorOptions.SkipBotParsing,
+        };
+        
         _osParser = new OsParser(_uaDetectorOptions.VersionTruncation);
-        _browserParser = new BrowserParser(_uaDetectorOptions.VersionTruncation);
+        _browserParser = new BrowserParser(parserOptions);
         _clientParser = new ClientParser(_uaDetectorOptions.VersionTruncation);
         _botParser = new BotParser();
     }
@@ -408,7 +415,7 @@ public sealed class UaDetector : IUaDetector
 
             if (_uaDetectorOptions.SkipBotDetails)
             {
-                isBot = _botParser.IsBot(userAgent);
+                isBot = BotParser.IsBot(userAgent);
             }
             else
             {

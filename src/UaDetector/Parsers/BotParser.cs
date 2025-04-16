@@ -20,7 +20,7 @@ public class BotParser : IBotParser
             RegexLoader.LoadRegexesWithCombined<Bot>(ResourceName);
     }
 
-    public bool IsBot(string userAgent)
+    public static bool IsBot(string userAgent)
     {
         return CombinedRegex.IsMatch(userAgent);
     }
