@@ -103,7 +103,7 @@ public sealed class UaDetector : IUaDetector
         
         _osParser = new OsParser(parserOptions);
         _browserParser = new BrowserParser(parserOptions);
-        _clientParser = new ClientParser(_uaDetectorOptions.VersionTruncation);
+        _clientParser = new ClientParser(parserOptions);
         _botParser = new BotParser();
     }
 

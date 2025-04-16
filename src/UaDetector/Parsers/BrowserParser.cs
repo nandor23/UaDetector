@@ -997,7 +997,7 @@ public sealed class BrowserParser : IBrowserParser
     public BrowserParser(ParserOptions? parserOptions = null)
     {
         _parserOptions = parserOptions ?? new ParserOptions();
-        _clientParser = new ClientParser(_parserOptions.VersionTruncation);
+        _clientParser = new ClientParser(_parserOptions);
     }
 
     private static string ApplyClientHintBrandMapping(string brand)
