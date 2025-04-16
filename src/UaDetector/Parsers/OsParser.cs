@@ -14,7 +14,7 @@ namespace UaDetector.Parsers;
 public sealed class OsParser : IOsParser
 {
     private const string ResourceName = "Regexes.Resources.operating_systems.json";
-    private readonly VersionTruncation _versionTruncation;
+    private readonly ParserOptions _parserOptions;
     internal static readonly IEnumerable<Os> OperatingSystems = RegexLoader.LoadRegexes<Os>(ResourceName);
 
     internal static readonly FrozenDictionary<OsCode, string> OsCodeMapping =
@@ -408,9 +408,9 @@ public sealed class OsParser : IOsParser
     ];
 
 
-    public OsParser(VersionTruncation versionTruncation = VersionTruncation.Minor)
+    public OsParser(ParserOptions? parserOptions = null)
     {
-        _versionTruncation = versionTruncation;
+        _parserOptions = parserOptions ?? new ParserOptions();
     }
 
     private static string ApplyClientHintPlatformMapping(string platform)
@@ -590,7 +590,7 @@ public sealed class OsParser : IOsParser
         {
             Name = name,
             Code = code,
-            Version = ParserExtensions.BuildVersion(version, _versionTruncation),
+            Version = ParserExtensions.BuildVersion(version, _parserOptions.VersionTruncation),
         };
 
         return true;
@@ -630,7 +630,7 @@ public sealed class OsParser : IOsParser
             return false;
         }
 
-        var version = ParserExtensions.BuildVersion(os.Version, match, _versionTruncation);
+        var version = ParserExtensions.BuildVersion(os.Version, match, _parserOptions.VersionTruncation);
 
         if (os.Versions?.Count > 0)
         {
@@ -640,7 +640,7 @@ public sealed class OsParser : IOsParser
 
                 if (match.Success)
                 {
-                    version = ParserExtensions.BuildVersion(osVersion.Version, match, _versionTruncation);
+                    version = ParserExtensions.BuildVersion(osVersion.Version, match, _parserOptions.VersionTruncation);
                     break;
                 }
             }
@@ -658,6 +658,12 @@ public sealed class OsParser : IOsParser
     public bool TryParse(string userAgent, IDictionary<string, string?> headers, [NotNullWhen(true)] out OsInfo? result)
     {
         var clientHints = ClientHints.Create(headers);
+        
+        if (!_parserOptions.SkipBotParsing && BotParser.IsBot(userAgent))
+        {
+            result = null;
+            return false;
+        }
 
         if (ParserExtensions.TryRestoreUserAgent(userAgent, clientHints, out var restoredUserAgent))
         {

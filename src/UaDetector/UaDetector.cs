@@ -101,7 +101,7 @@ public sealed class UaDetector : IUaDetector
             SkipBotParsing = _uaDetectorOptions.SkipBotParsing,
         };
         
-        _osParser = new OsParser(_uaDetectorOptions.VersionTruncation);
+        _osParser = new OsParser(parserOptions);
         _browserParser = new BrowserParser(parserOptions);
         _clientParser = new ClientParser(_uaDetectorOptions.VersionTruncation);
         _botParser = new BotParser();
