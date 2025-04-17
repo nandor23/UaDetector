@@ -2,7 +2,7 @@ using UaDetector.Models.Enums;
 
 namespace UaDetector.Results;
 
-public class InternalDeviceInfo
+public class DeviceInfoInternal
 {
     public required DeviceType? Type { get; init; }
     public required string? Brand { get; init; }

@@ -5,6 +5,6 @@ namespace UaDetector;
 public sealed class UaDetectorOptions
 {
     public VersionTruncation VersionTruncation { get; set; } = VersionTruncation.Minor;
-    public bool SkipBotParsing { get; set; }
-    public bool SkipBotDetails { get; set; }
+    public bool DisableBotDetection { get; set; }
+    public bool ExcludeBotDetails { get; set; }
 }

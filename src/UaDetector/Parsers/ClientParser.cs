@@ -36,7 +36,7 @@ public sealed class ClientParser : IClientParser
         [NotNullWhen(true)] out ClientInfo? result
     )
     {
-        if (!_parserOptions.SkipBotParsing && BotParser.IsBot(userAgent))
+        if (!_parserOptions.DisableBotDetection && BotParser.IsBot(userAgent))
         {
             result = null;
             return false;

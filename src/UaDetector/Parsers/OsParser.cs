@@ -659,7 +659,7 @@ public sealed class OsParser : IOsParser
     {
         var clientHints = ClientHints.Create(headers);
         
-        if (!_parserOptions.SkipBotParsing && BotParser.IsBot(userAgent))
+        if (!_parserOptions.DisableBotDetection && BotParser.IsBot(userAgent))
         {
             result = null;
             return false;

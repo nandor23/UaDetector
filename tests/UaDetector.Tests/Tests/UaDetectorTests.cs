@@ -120,7 +120,7 @@ public class UaDetectorTests
     [Test]
     public void TryParse_WithSkipBotParsing_ShouldReturnTrue()
     {
-        var uaDetector = new UaDetector(new UaDetectorOptions { SkipBotParsing = true });
+        var uaDetector = new UaDetector(new UaDetectorOptions { DisableBotDetection = true });
         var userAgent =
             "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/21.0.1180.89 Safari/537.1; 360Spider";
 
@@ -150,7 +150,7 @@ public class UaDetectorTests
     [Test]
     public void TryParse_WithSkipBotDetails_ShouldReturnTrue()
     {
-        var uaDetector = new UaDetector(new UaDetectorOptions { SkipBotDetails = true });
+        var uaDetector = new UaDetector(new UaDetectorOptions { ExcludeBotDetails = true });
         var userAgent =
             "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/21.0.1180.89 Safari/537.1; 360Spider";
 

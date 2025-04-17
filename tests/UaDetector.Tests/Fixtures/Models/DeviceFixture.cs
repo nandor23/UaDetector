@@ -6,5 +6,5 @@ public class DeviceFixture
 {
     public required string UserAgent { get; init; }
 
-    public required InternalDeviceInfo Device { get; init; }
+    public required DeviceInfoInternal Device { get; init; }
 }

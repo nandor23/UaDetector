@@ -24,9 +24,7 @@ internal sealed class FeedReaderParser : ClientParserBase
     public FeedReaderParser(VersionTruncation versionTruncation) : base(versionTruncation)
     {
     }
-
-    protected override ClientType Type => ClientType.FeedReader;
-
+    
     public override bool IsClient(string userAgent, ClientHints _)
     {
         return CombinedRegex.IsMatch(userAgent);
@@ -34,6 +32,18 @@ internal sealed class FeedReaderParser : ClientParserBase
 
     public override bool TryParse(string userAgent, ClientHints _, [NotNullWhen(true)] out ClientInfo? result)
     {
-        return TryParse(userAgent, FeedReaders, CombinedRegex, out result);
+        result = null;
+        
+        if (TryParse(userAgent, FeedReaders, CombinedRegex, out var clientInfo))
+        {
+            result = new ClientInfo
+            {
+                Type = ClientType.FeedReader,
+                Name = clientInfo.Name,
+                Version = clientInfo.Version,
+            };
+        }
+        
+        return result is not null;
     }
 }

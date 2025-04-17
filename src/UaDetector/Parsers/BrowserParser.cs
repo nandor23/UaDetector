@@ -1223,7 +1223,7 @@ public sealed class BrowserParser : IBrowserParser
         [NotNullWhen(true)] out BrowserInfo? result
     )
     {
-        if (!_parserOptions.SkipBotParsing && BotParser.IsBot(userAgent))
+        if (!_parserOptions.DisableBotDetection && BotParser.IsBot(userAgent))
         {
             result = null;
             return false;

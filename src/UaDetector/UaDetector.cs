@@ -98,7 +98,7 @@ public sealed class UaDetector : IUaDetector
         var parserOptions = new ParserOptions
         {
             VersionTruncation = _uaDetectorOptions.VersionTruncation,
-            SkipBotParsing = _uaDetectorOptions.SkipBotParsing,
+            DisableBotDetection = _uaDetectorOptions.DisableBotDetection,
         };
         
         _osParser = new OsParser(parserOptions);
@@ -409,11 +409,11 @@ public sealed class UaDetector : IUaDetector
 
         BotInfo? bot = null;
 
-        if (!_uaDetectorOptions.SkipBotParsing)
+        if (!_uaDetectorOptions.DisableBotDetection)
         {
             bool isBot = false;
 
-            if (_uaDetectorOptions.SkipBotDetails)
+            if (_uaDetectorOptions.ExcludeBotDetails)
             {
                 isBot = BotParser.IsBot(userAgent);
             }
