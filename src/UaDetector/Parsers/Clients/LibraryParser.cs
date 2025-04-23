@@ -24,7 +24,7 @@ internal sealed class LibraryParser : ClientParserBase
     public LibraryParser(VersionTruncation versionTruncation) : base(versionTruncation)
     {
     }
-    
+
     public override bool IsClient(string userAgent, ClientHints _)
     {
         return CombinedRegex.IsMatch(userAgent);
@@ -33,7 +33,7 @@ internal sealed class LibraryParser : ClientParserBase
     public override bool TryParse(string userAgent, ClientHints _, [NotNullWhen(true)] out ClientInfo? result)
     {
         result = null;
-        
+
         if (TryParse(userAgent, Libraries, CombinedRegex, out var clientInfo))
         {
             result = new ClientInfo

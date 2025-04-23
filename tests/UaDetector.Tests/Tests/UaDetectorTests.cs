@@ -19,8 +19,8 @@ public class UaDetectorTests
     [Test]
     public void UaDetector_ShouldImplement_IUaDetector()
     {
-        var parser = new UaDetector();
-        parser.ShouldBeAssignableTo<IUaDetector>();
+        var uaDetector = new UaDetector();
+        uaDetector.ShouldBeAssignableTo<IUaDetector>();
     }
 
     [Test]
@@ -92,8 +92,8 @@ public class UaDetectorTests
             OsInfo? osInfo;
             BrowserInfo? browserInfo;
             ClientInfo? clientInfo;
-            
-            
+
+
 
 
             if (fixture.Headers is null)
@@ -110,7 +110,7 @@ public class UaDetectorTests
                 browserParser.TryParse(fixture.UserAgent, fixture.Headers, out browserInfo);
                 clientParser.TryParse(fixture.UserAgent, fixture.Headers, out clientInfo);
             }
-            
+
             userAgentInfo?.Os.ShouldBeEquivalentTo(osInfo);
             userAgentInfo?.Browser.ShouldBeEquivalentTo(browserInfo);
             userAgentInfo?.Client.ShouldBeEquivalentTo(clientInfo);

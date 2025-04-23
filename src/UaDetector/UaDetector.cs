@@ -94,13 +94,13 @@ public sealed class UaDetector : IUaDetector
     public UaDetector(UaDetectorOptions? uaDetectorOptions = null)
     {
         _uaDetectorOptions = uaDetectorOptions ?? new UaDetectorOptions();
-        
+
         var parserOptions = new ParserOptions
         {
             VersionTruncation = _uaDetectorOptions.VersionTruncation,
             DisableBotDetection = _uaDetectorOptions.DisableBotDetection,
         };
-        
+
         _osParser = new OsParser(parserOptions);
         _browserParser = new BrowserParser(parserOptions);
         _clientParser = new ClientParser(parserOptions);
@@ -415,7 +415,7 @@ public sealed class UaDetector : IUaDetector
 
             if (_uaDetectorOptions.ExcludeBotDetails)
             {
-                isBot = BotParser.IsBot(userAgent);
+                isBot = _botParser.IsBot(userAgent);
             }
             else
             {

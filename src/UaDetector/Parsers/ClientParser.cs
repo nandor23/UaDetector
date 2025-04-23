@@ -9,13 +9,14 @@ namespace UaDetector.Parsers;
 public sealed class ClientParser : IClientParser
 {
     private readonly ParserOptions _parserOptions;
+    private readonly BotParser _botParser;
     internal readonly IEnumerable<ClientParserBase> ClientParsers;
-    
+
 
     public ClientParser(ParserOptions? parserOptions = null)
     {
         _parserOptions = parserOptions ?? new ParserOptions();
-        
+
         ClientParsers = [
             new FeedReaderParser(_parserOptions.VersionTruncation),
             new MobileAppParser(_parserOptions.VersionTruncation),
@@ -23,6 +24,8 @@ public sealed class ClientParser : IClientParser
             new PimParser(_parserOptions.VersionTruncation),
             new LibraryParser(_parserOptions.VersionTruncation),
         ];
+
+        _botParser = new BotParser();
     }
 
     public bool TryParse(string userAgent, [NotNullWhen(true)] out ClientInfo? result)
@@ -36,12 +39,12 @@ public sealed class ClientParser : IClientParser
         [NotNullWhen(true)] out ClientInfo? result
     )
     {
-        if (!_parserOptions.DisableBotDetection && BotParser.IsBot(userAgent))
+        if (!_parserOptions.DisableBotDetection && _botParser.IsBot(userAgent))
         {
             result = null;
             return false;
         }
-        
+
         var clientHints = ClientHints.Create(headers);
 
         if (ParserExtensions.TryRestoreUserAgent(userAgent, clientHints, out var restoredUserAgent))

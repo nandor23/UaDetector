@@ -24,7 +24,7 @@ internal sealed class MobileAppParser : ClientParserBase
     public MobileAppParser(VersionTruncation versionTruncation) : base(versionTruncation)
     {
     }
-    
+
     public override bool IsClient(string userAgent, ClientHints clientHints)
     {
         return CombinedRegex.IsMatch(userAgent) || AppHintParser.IsMobileApp(clientHints);

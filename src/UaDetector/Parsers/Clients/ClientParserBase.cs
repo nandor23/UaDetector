@@ -10,13 +10,13 @@ namespace UaDetector.Parsers.Clients;
 internal abstract class ClientParserBase
 {
     private readonly VersionTruncation _versionTruncation;
-    
+
 
     protected ClientParserBase(VersionTruncation versionTruncation)
     {
         _versionTruncation = versionTruncation;
     }
-    
+
     public abstract bool IsClient(string userAgent, ClientHints clientHints);
 
     public abstract bool TryParse(

@@ -15,7 +15,7 @@ internal static class AppHintParser
     {
         return !string.IsNullOrEmpty(clientHints.App) && Hints.ContainsKey(clientHints.App);
     }
-    
+
     public static bool TryParseAppName(ClientHints clientHints, [NotNullWhen(true)] out string? result)
     {
         if (string.IsNullOrEmpty(clientHints.App))

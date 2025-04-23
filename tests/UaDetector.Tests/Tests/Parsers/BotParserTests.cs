@@ -40,11 +40,11 @@ public class BotParserTests
                 }
             });
 
-        var osParser = new BotParser();
+        var parser = new BotParser();
 
         foreach (var fixture in fixtures)
         {
-            osParser.TryParse(fixture.UserAgent, out var result).ShouldBeTrue();
+            parser.TryParse(fixture.UserAgent, out var result).ShouldBeTrue();
 
             result.ShouldNotBeNull();
             result.Name.ShouldBe(fixture.Bot.Name);
@@ -57,6 +57,7 @@ public class BotParserTests
     [Test]
     public void IsBot_ShouldReturnTrue()
     {
-        BotParser.IsBot("360spider-image").ShouldBeTrue();
+        var parser = new BotParser();
+        parser.IsBot("360spider-image").ShouldBeTrue();
     }
 }

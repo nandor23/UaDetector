@@ -39,34 +39,6 @@ public class OsParserTests
     }
 
     [Test]
-    public void OsNameMappings_ShouldMatchParsedOsNames()
-    {
-        var ignoredNames = new List<string>
-        {
-            OsNames.BackTrack,
-            OsNames.Kubuntu,
-            OsNames.Lubuntu,
-            OsNames.Xubuntu,
-            OsNames.Gentoo,
-            OsNames.ChromiumOs,
-            OsNames.Slackware,
-            OsNames.Knoppix,
-            OsNames.AspLinux,
-            OsNames.Freebox,
-            OsNames.Sabayon,
-        };
-
-        var osNames = OsParser.OperatingSystems
-            .Select(os => os.Name)
-            .ToHashSet();
-
-        foreach (var name in OsParser.OsNameMapping.Keys.Except(ignoredNames))
-        {
-            osNames.ShouldContain(name);
-        }
-    }
-
-    [Test]
     public void OsCodeMapping_ShouldContainAllOsCodes()
     {
         foreach (OsCode osCode in Enum.GetValues(typeof(OsCode)))

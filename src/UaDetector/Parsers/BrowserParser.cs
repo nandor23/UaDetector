@@ -17,6 +17,7 @@ public sealed class BrowserParser : IBrowserParser
     private const string ResourceName = "Regexes.Resources.Browsers.browsers.json";
     private readonly ParserOptions _parserOptions;
     private readonly ClientParser _clientParser;
+    private readonly BotParser _botParser;
     internal static readonly IEnumerable<Browser> Browsers = RegexLoader.LoadRegexes<Browser>(ResourceName);
 
     internal static readonly FrozenDictionary<BrowserCode, string> BrowserCodeMapping =
@@ -998,6 +999,7 @@ public sealed class BrowserParser : IBrowserParser
     {
         _parserOptions = parserOptions ?? new ParserOptions();
         _clientParser = new ClientParser(_parserOptions);
+        _botParser = new BotParser();
     }
 
     private static string ApplyClientHintBrandMapping(string brand)
@@ -1223,12 +1225,12 @@ public sealed class BrowserParser : IBrowserParser
         [NotNullWhen(true)] out BrowserInfo? result
     )
     {
-        if (!_parserOptions.DisableBotDetection && BotParser.IsBot(userAgent))
+        if (!_parserOptions.DisableBotDetection && _botParser.IsBot(userAgent))
         {
             result = null;
             return false;
         }
-        
+
         var clientHints = ClientHints.Create(headers);
 
         if (_clientParser.IsClient(userAgent, clientHints))
