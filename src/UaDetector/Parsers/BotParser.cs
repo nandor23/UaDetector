@@ -20,11 +20,6 @@ public class BotParser : IBotParser
             RegexLoader.LoadRegexesWithCombined<Bot>(ResourceName);
     }
 
-    public bool IsBot(string userAgent)
-    {
-        return CombinedRegex.IsMatch(userAgent);
-    }
-
     public bool TryParse(string userAgent, [NotNullWhen(true)] out BotInfo? result)
     {
         if (CombinedRegex.IsMatch(userAgent))
@@ -52,5 +47,10 @@ public class BotParser : IBotParser
 
         result = null;
         return false;
+    }
+
+    public bool IsBot(string userAgent)
+    {
+        return CombinedRegex.IsMatch(userAgent);
     }
 }

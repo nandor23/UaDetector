@@ -15,7 +15,9 @@ namespace UaDetector.Parsers;
 public sealed class BrowserParser : IBrowserParser
 {
     private const string ResourceName = "Regexes.Resources.Browsers.browsers.json";
-    private readonly VersionTruncation _versionTruncation;
+    private readonly ParserOptions _parserOptions;
+    private readonly ClientParser _clientParser;
+    private readonly BotParser _botParser;
     internal static readonly IEnumerable<Browser> Browsers = RegexLoader.LoadRegexes<Browser>(ResourceName);
 
     internal static readonly FrozenDictionary<BrowserCode, string> BrowserCodeMapping =
@@ -993,9 +995,11 @@ public sealed class BrowserParser : IBrowserParser
         CompactToFullNameMapping = mapping.ToFrozenDictionary(StringComparer.OrdinalIgnoreCase);
     }
 
-    public BrowserParser(VersionTruncation versionTruncation = VersionTruncation.Minor)
+    public BrowserParser(ParserOptions? parserOptions = null)
     {
-        _versionTruncation = versionTruncation;
+        _parserOptions = parserOptions ?? new ParserOptions();
+        _clientParser = new ClientParser(_parserOptions);
+        _botParser = new BotParser();
     }
 
     private static string ApplyClientHintBrandMapping(string brand)
@@ -1071,7 +1075,7 @@ public sealed class BrowserParser : IBrowserParser
         }
 
         EngineVersionParser.TryParse(userAgent, engine, out var result);
-        return ParserExtensions.BuildVersion(result, _versionTruncation);
+        return ParserExtensions.BuildVersion(result, _parserOptions.VersionTruncation);
 
     }
 
@@ -1143,7 +1147,7 @@ public sealed class BrowserParser : IBrowserParser
         {
             Name = name,
             Code = code.Value,
-            Version = ParserExtensions.BuildVersion(version, _versionTruncation),
+            Version = ParserExtensions.BuildVersion(version, _parserOptions.VersionTruncation),
         };
 
         return true;
@@ -1178,7 +1182,7 @@ public sealed class BrowserParser : IBrowserParser
 
         if (BrowserNameMapping.TryGetValue(name, out var code))
         {
-            var version = ParserExtensions.BuildVersion(browser.Version, match, _versionTruncation);
+            var version = ParserExtensions.BuildVersion(browser.Version, match, _parserOptions.VersionTruncation);
             var engine = BuildEngine(userAgent, browser.Engine, version);
             var engineVersion = BuildEngineVersion(userAgent, engine);
 
@@ -1221,7 +1225,19 @@ public sealed class BrowserParser : IBrowserParser
         [NotNullWhen(true)] out BrowserInfo? result
     )
     {
+        if (!_parserOptions.DisableBotDetection && _botParser.IsBot(userAgent))
+        {
+            result = null;
+            return false;
+        }
+
         var clientHints = ClientHints.Create(headers);
+
+        if (_clientParser.IsClient(userAgent, clientHints))
+        {
+            result = null;
+            return false;
+        }
 
         if (ParserExtensions.TryRestoreUserAgent(userAgent, clientHints, out var restoredUserAgent))
         {

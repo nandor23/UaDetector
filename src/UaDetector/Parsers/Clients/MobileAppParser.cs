@@ -25,7 +25,10 @@ internal sealed class MobileAppParser : ClientParserBase
     {
     }
 
-    protected override ClientType Type => ClientType.MobileApp;
+    public override bool IsClient(string userAgent, ClientHints clientHints)
+    {
+        return CombinedRegex.IsMatch(userAgent) || AppHintParser.IsMobileApp(clientHints);
+    }
 
     public override bool TryParse(
         string userAgent,
@@ -33,10 +36,12 @@ internal sealed class MobileAppParser : ClientParserBase
         [NotNullWhen(true)] out ClientInfo? result
     )
     {
-        TryParse(userAgent, MobileApps, CombinedRegex, out result);
+        result = null;
 
-        var name = result?.Name;
-        var version = result?.Version;
+        TryParse(userAgent, MobileApps, CombinedRegex, out var clientInfo);
+
+        var name = clientInfo?.Name;
+        var version = clientInfo?.Version;
 
         if (AppHintParser.TryParseAppName(clientHints, out var appName) && appName != name)
         {
@@ -44,7 +49,9 @@ internal sealed class MobileAppParser : ClientParserBase
             version = null;
         }
 
-        result = string.IsNullOrEmpty(name) ? null : new ClientInfo { Type = Type, Name = name, Version = version, };
+        result = string.IsNullOrEmpty(name)
+            ? null
+            : new ClientInfo { Type = ClientType.MobileApp, Name = name, Version = version, };
 
         return result is not null;
     }

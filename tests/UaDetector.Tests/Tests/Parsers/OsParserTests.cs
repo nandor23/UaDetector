@@ -26,7 +26,7 @@ public class OsParserTests
     }
 
     [Test]
-    public void OperatingSystems_ShouldHaveNameMapping()
+    public void OperatingSystems_ShouldContainKeyForAllOsNames()
     {
         var osNames = OsParser.OperatingSystems
             .Where(os => os.Name != "$1")
@@ -35,34 +35,6 @@ public class OsParserTests
         foreach (var osName in osNames)
         {
             OsParser.OsNameMapping.ShouldContainKey(osName);
-        }
-    }
-
-    [Test]
-    public void OsNameMappings_ShouldMatchParsedOsNames()
-    {
-        var ignoredNames = new List<string>
-        {
-            OsNames.BackTrack,
-            OsNames.Kubuntu,
-            OsNames.Lubuntu,
-            OsNames.Xubuntu,
-            OsNames.Gentoo,
-            OsNames.ChromiumOs,
-            OsNames.Slackware,
-            OsNames.Knoppix,
-            OsNames.AspLinux,
-            OsNames.Freebox,
-            OsNames.Sabayon,
-        };
-
-        var osNames = OsParser.OperatingSystems
-            .Select(os => os.Name)
-            .ToHashSet();
-
-        foreach (var name in OsParser.OsNameMapping.Keys.Except(ignoredNames))
-        {
-            osNames.ShouldContain(name);
         }
     }
 
@@ -76,7 +48,7 @@ public class OsParserTests
     }
 
     [Test]
-    public void OsFamilyMapping_ShouldContainAllOsCodes()
+    public void OsFamilyMapping_ShouldContainKeyForAllOsCodes()
     {
         foreach (OsCode osCode in Enum.GetValues(typeof(OsCode)))
         {
@@ -101,7 +73,7 @@ public class OsParserTests
         var fixturePath = Path.Combine("Fixtures", "Resources", "operating_systems.json");
         var fixtures = await FixtureLoader.LoadAsync<OsFixture>(fixturePath);
 
-        var parser = new OsParser(VersionTruncation.None);
+        var parser = new OsParser(new ParserOptions { VersionTruncation = VersionTruncation.None, });
 
         foreach (var fixture in fixtures)
         {

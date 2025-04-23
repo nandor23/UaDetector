@@ -1,4 +1,7 @@
 ﻿<Solution>
+  <Folder Name="/benchmarks/">
+    <Project Path="benchmarks\UaDetector.Benchmarks\UaDetector.Benchmarks.csproj" Type="Classic C#" />
+  </Folder>
   <Folder Name="/root/">
     <File Path="README.md" />
     <File Path="LICENSE" />

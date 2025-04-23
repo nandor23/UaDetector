@@ -1,10 +1,9 @@
 using UaDetector.Models.Enums;
 
-namespace UaDetector;
+namespace UaDetector.Parsers;
 
-public sealed class UaDetectorOptions
+public sealed class ParserOptions
 {
     public VersionTruncation VersionTruncation { get; set; } = VersionTruncation.Minor;
     public bool DisableBotDetection { get; set; }
-    public bool ExcludeBotDetails { get; set; }
 }

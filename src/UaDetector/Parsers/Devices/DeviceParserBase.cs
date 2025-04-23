@@ -2096,13 +2096,13 @@ internal abstract class DeviceParserBase
 
     public abstract bool TryParse(
         string userAgent,
-        [NotNullWhen(true)] out InternalDeviceInfo? result
+        [NotNullWhen(true)] out DeviceInfoInternal? result
     );
 
     protected static bool TryParse(
         string userAgent,
         IEnumerable<Device> devices,
-        [NotNullWhen(true)] out InternalDeviceInfo? result
+        [NotNullWhen(true)] out DeviceInfoInternal? result
     )
     {
         string? brand = null;
@@ -2161,7 +2161,7 @@ internal abstract class DeviceParserBase
 
             if (modelMatch is null || !modelMatch.Success)
             {
-                result = new InternalDeviceInfo
+                result = new DeviceInfoInternal
                 {
                     Type = type,
                     Brand = brand,
@@ -2190,7 +2190,7 @@ internal abstract class DeviceParserBase
             }
         }
 
-        result = new InternalDeviceInfo { Type = type, Brand = brand, Model = model, };
+        result = new DeviceInfoInternal { Type = type, Brand = brand, Model = model, };
         return true;
     }
 }

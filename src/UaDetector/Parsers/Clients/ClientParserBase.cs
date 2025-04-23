@@ -11,13 +11,13 @@ internal abstract class ClientParserBase
 {
     private readonly VersionTruncation _versionTruncation;
 
-    protected abstract ClientType Type { get; }
-
 
     protected ClientParserBase(VersionTruncation versionTruncation)
     {
         _versionTruncation = versionTruncation;
     }
+
+    public abstract bool IsClient(string userAgent, ClientHints clientHints);
 
     public abstract bool TryParse(
         string userAgent,
@@ -29,7 +29,7 @@ internal abstract class ClientParserBase
         string userAgent,
         IEnumerable<Client> clients,
         Regex combinedRegex,
-        [NotNullWhen(true)] out ClientInfo? result
+        [NotNullWhen(true)] out ClientInfoInternal? result
     )
     {
         if (combinedRegex.IsMatch(userAgent))
@@ -40,9 +40,8 @@ internal abstract class ClientParserBase
 
                 if (match.Success)
                 {
-                    result = new ClientInfo
+                    result = new ClientInfoInternal
                     {
-                        Type = Type,
                         Name = ParserExtensions.FormatWithMatch(client.Name, match),
                         Version = ParserExtensions.BuildVersion(client.Version, match, _versionTruncation)
                     };

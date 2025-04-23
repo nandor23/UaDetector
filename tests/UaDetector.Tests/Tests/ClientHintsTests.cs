@@ -1,7 +1,5 @@
 using Shouldly;
 
-using UaDetector;
-
 namespace UaDetector.Tests.Tests;
 
 public class ClientHintsTests

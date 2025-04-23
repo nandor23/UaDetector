@@ -25,10 +25,25 @@ internal sealed class MediaPlayerParser : ClientParserBase
     {
     }
 
-    protected override ClientType Type => ClientType.MediaPlayer;
+    public override bool IsClient(string userAgent, ClientHints _)
+    {
+        return CombinedRegex.IsMatch(userAgent);
+    }
 
     public override bool TryParse(string userAgent, ClientHints _, [NotNullWhen(true)] out ClientInfo? result)
     {
-        return TryParse(userAgent, MediaPlayers, CombinedRegex, out result);
+        result = null;
+
+        if (TryParse(userAgent, MediaPlayers, CombinedRegex, out var clientInfo))
+        {
+            result = new ClientInfo
+            {
+                Type = ClientType.MediaPlayer,
+                Name = clientInfo.Name,
+                Version = clientInfo.Version,
+            };
+        }
+
+        return result is not null;
     }
 }

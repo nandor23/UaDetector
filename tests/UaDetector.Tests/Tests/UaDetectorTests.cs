@@ -1,8 +1,8 @@
 using Shouldly;
 
-using UaDetector;
 using UaDetector.Models.Enums;
-
+using UaDetector.Parsers;
+using UaDetector.Results;
 using UaDetector.Tests.Fixtures.Models;
 using UaDetector.Tests.Helpers;
 
@@ -19,8 +19,8 @@ public class UaDetectorTests
     [Test]
     public void UaDetector_ShouldImplement_IUaDetector()
     {
-        var parser = new UaDetector();
-        parser.ShouldBeAssignableTo<IUaDetector>();
+        var uaDetector = new UaDetector();
+        uaDetector.ShouldBeAssignableTo<IUaDetector>();
     }
 
     [Test]
@@ -43,15 +43,11 @@ public class UaDetectorTests
 
     [Test]
     [MethodDataSource(nameof(FixtureFileNames))]
-    public async Task TryParse_WithFixtureData_ShouldReturnExpectedUserAgentInfo(string fileName)
+    public async Task TryParse_ShouldReturnExpectedUserAgentInfo(string fileName)
     {
         var fixturePath = Path.Combine("Fixtures", "Resources", "Collections", $"{fileName}.json");
         var fixtures = await FixtureLoader.LoadAsync<UserAgentFixture>(fixturePath);
-
-        var uaDetector = new UaDetector(new UaDetectorOptions
-        {
-            VersionTruncation = VersionTruncation.None
-        });
+        var uaDetector = new UaDetector(new UaDetectorOptions { VersionTruncation = VersionTruncation.None });
 
         foreach (var fixture in fixtures)
         {
@@ -79,9 +75,52 @@ public class UaDetectorTests
     }
 
     [Test]
+    [MethodDataSource(nameof(FixtureFileNames))]
+    public async Task TryParse_ShouldProduceConsistentResultsAcrossParsers(string fileName)
+    {
+        var fixturePath = Path.Combine("Fixtures", "Resources", "Collections", $"{fileName}.json");
+        var fixtures = await FixtureLoader.LoadAsync<UserAgentFixture>(fixturePath);
+        var parserOptions = new ParserOptions { VersionTruncation = VersionTruncation.None };
+        var uaDetector = new UaDetector(new UaDetectorOptions { VersionTruncation = VersionTruncation.None });
+        var osParser = new OsParser(parserOptions);
+        var browserParser = new BrowserParser(parserOptions);
+        var clientParser = new ClientParser(parserOptions);
+
+        foreach (var fixture in fixtures)
+        {
+            UserAgentInfo? userAgentInfo;
+            OsInfo? osInfo;
+            BrowserInfo? browserInfo;
+            ClientInfo? clientInfo;
+
+
+
+
+            if (fixture.Headers is null)
+            {
+                uaDetector.TryParse(fixture.UserAgent, out userAgentInfo);
+                osParser.TryParse(fixture.UserAgent, out osInfo);
+                browserParser.TryParse(fixture.UserAgent, out browserInfo);
+                clientParser.TryParse(fixture.UserAgent, out clientInfo);
+            }
+            else
+            {
+                uaDetector.TryParse(fixture.UserAgent, fixture.Headers, out userAgentInfo);
+                osParser.TryParse(fixture.UserAgent, fixture.Headers, out osInfo);
+                browserParser.TryParse(fixture.UserAgent, fixture.Headers, out browserInfo);
+                clientParser.TryParse(fixture.UserAgent, fixture.Headers, out clientInfo);
+            }
+
+            userAgentInfo?.Os.ShouldBeEquivalentTo(osInfo);
+            userAgentInfo?.Browser.ShouldBeEquivalentTo(browserInfo);
+            userAgentInfo?.Client.ShouldBeEquivalentTo(clientInfo);
+        }
+    }
+
+    [Test]
     public void TryParse_WithSkipBotParsing_ShouldReturnTrue()
     {
-        var uaDetector = new UaDetector(new UaDetectorOptions { SkipBotParsing = true });
+        var uaDetector = new UaDetector(new UaDetectorOptions { DisableBotDetection = true });
         var userAgent =
             "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/21.0.1180.89 Safari/537.1; 360Spider";
 
@@ -111,7 +150,7 @@ public class UaDetectorTests
     [Test]
     public void TryParse_WithSkipBotDetails_ShouldReturnTrue()
     {
-        var uaDetector = new UaDetector(new UaDetectorOptions { SkipBotDetails = true });
+        var uaDetector = new UaDetector(new UaDetectorOptions { ExcludeBotDetails = true });
         var userAgent =
             "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/21.0.1180.89 Safari/537.1; 360Spider";
 

@@ -1,7 +1,6 @@
 using System.Collections.Immutable;
 using System.Diagnostics.CodeAnalysis;
 
-using UaDetector.Models.Enums;
 using UaDetector.Parsers.Clients;
 using UaDetector.Results;
 
@@ -9,18 +8,24 @@ namespace UaDetector.Parsers;
 
 public sealed class ClientParser : IClientParser
 {
+    private readonly ParserOptions _parserOptions;
+    private readonly BotParser _botParser;
     internal readonly IEnumerable<ClientParserBase> ClientParsers;
 
 
-    public ClientParser(VersionTruncation versionTruncation = VersionTruncation.Minor)
+    public ClientParser(ParserOptions? parserOptions = null)
     {
+        _parserOptions = parserOptions ?? new ParserOptions();
+
         ClientParsers = [
-            new FeedReaderParser(versionTruncation),
-            new MobileAppParser(versionTruncation),
-            new MediaPlayerParser(versionTruncation),
-            new PimParser(versionTruncation),
-            new LibraryParser(versionTruncation),
+            new FeedReaderParser(_parserOptions.VersionTruncation),
+            new MobileAppParser(_parserOptions.VersionTruncation),
+            new MediaPlayerParser(_parserOptions.VersionTruncation),
+            new PimParser(_parserOptions.VersionTruncation),
+            new LibraryParser(_parserOptions.VersionTruncation),
         ];
+
+        _botParser = new BotParser();
     }
 
     public bool TryParse(string userAgent, [NotNullWhen(true)] out ClientInfo? result)
@@ -34,6 +39,12 @@ public sealed class ClientParser : IClientParser
         [NotNullWhen(true)] out ClientInfo? result
     )
     {
+        if (!_parserOptions.DisableBotDetection && _botParser.IsBot(userAgent))
+        {
+            result = null;
+            return false;
+        }
+
         var clientHints = ClientHints.Create(headers);
 
         if (ParserExtensions.TryRestoreUserAgent(userAgent, clientHints, out var restoredUserAgent))
@@ -55,6 +66,19 @@ public sealed class ClientParser : IClientParser
         }
 
         result = null;
+        return false;
+    }
+
+    internal bool IsClient(string userAgent, ClientHints clientHints)
+    {
+        foreach (var parser in ClientParsers)
+        {
+            if (parser.IsClient(userAgent, clientHints))
+            {
+                return true;
+            }
+        }
+
         return false;
     }
 }
