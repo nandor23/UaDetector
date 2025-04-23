@@ -14,7 +14,7 @@ internal static class EngineParser
     private static readonly IEnumerable<BrowserEngine> Engines;
     private static readonly Regex CombinedRegex;
 
-    private static readonly FrozenSet<string> EngineNames = new[]
+    internal static readonly FrozenSet<string> EngineNames = new[]
     {
         BrowserEngines.WebKit, BrowserEngines.Blink, BrowserEngines.Trident, BrowserEngines.TextBased,
         BrowserEngines.Dillo, BrowserEngines.Icab, BrowserEngines.Elektra, BrowserEngines.Presto,
