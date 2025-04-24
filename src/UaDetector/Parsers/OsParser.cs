@@ -16,10 +16,33 @@ public sealed class OsParser : IOsParser
     private const string ResourceName = "Regexes.Resources.operating_systems.json";
     private readonly ParserOptions _parserOptions;
     private readonly BotParser _botParser;
-    internal static readonly IEnumerable<Os> OperatingSystems = RegexLoader.LoadRegexes<Os>(ResourceName);
+    internal static readonly IEnumerable<Os> OperatingSystems;
+    internal static readonly FrozenDictionary<OsCode, string> OsCodeMapping;
+    internal static readonly FrozenDictionary<string, OsCode> OsNameMapping;
+    internal static readonly FrozenDictionary<string, FrozenSet<OsCode>> OsFamilyMapping;
 
-    internal static readonly FrozenDictionary<OsCode, string> OsCodeMapping =
-        new Dictionary<OsCode, string>
+    /// <summary>
+    /// Operating system families that are known as desktop only
+    /// </summary>
+    internal static readonly FrozenSet<string> DesktopOsFamilies;
+
+    /// <summary>
+    /// Contains a list of mappings from our OS names to known client hint values
+    /// </summary>
+    private static readonly FrozenDictionary<string, FrozenSet<string>> ClientHintPlatformMapping;
+
+    private static readonly FrozenDictionary<string, string> FireOsVersionMapping;
+    private static readonly FrozenDictionary<string, string> LineageOsVersionMapping;
+    private static readonly FrozenDictionary<int, string> WindowsMinorVersionMapping;
+    private static readonly FrozenSet<string> AndroidApps;
+    private static readonly FrozenDictionary<string, Regex> PlatformRegexes;
+    private static readonly IEnumerable<string> OsPlatforms;
+
+
+    static OsParser()
+    {
+        OperatingSystems = RegexLoader.LoadRegexes<Os>(ResourceName);
+        OsCodeMapping = new Dictionary<OsCode, string>
         {
             { OsCode.Aix, OsNames.Aix },
             { OsCode.Android, OsNames.Android },
@@ -209,12 +232,11 @@ public sealed class OsParser : IOsParser
             { OsCode.WebOs, OsNames.WebOs },
         }.ToFrozenDictionary();
 
-    internal static readonly FrozenDictionary<string, OsCode> OsNameMapping = OsCodeMapping
-        .ToDictionary(e => e.Value, e => e.Key)
-        .ToFrozenDictionary(StringComparer.OrdinalIgnoreCase);
+        OsNameMapping = OsCodeMapping
+            .ToDictionary(e => e.Value, e => e.Key)
+            .ToFrozenDictionary(StringComparer.OrdinalIgnoreCase);
 
-    internal static readonly FrozenDictionary<string, FrozenSet<OsCode>> OsFamilyMapping =
-        new Dictionary<string, FrozenSet<OsCode>>
+        OsFamilyMapping = new Dictionary<string, FrozenSet<OsCode>>
         {
             {
                 OsFamilies.Android,
@@ -314,78 +336,70 @@ public sealed class OsParser : IOsParser
             { OsFamilies.OtherSmartTv, new[] { OsCode.WhaleOs }.ToFrozenSet() }
         }.ToFrozenDictionary(StringComparer.OrdinalIgnoreCase);
 
-    /// <summary>
-    /// Operating system families that are known as desktop only
-    /// </summary>
-    internal static readonly FrozenSet<string> DesktopOsFamilies = new[]
-    {
-        OsFamilies.AmigaOs, OsFamilies.Ibm, OsFamilies.GnuLinux, OsFamilies.Mac, OsFamilies.Unix, OsFamilies.Windows,
-        OsFamilies.BeOs, OsFamilies.ChromeOs,
-    }.ToFrozenSet(StringComparer.OrdinalIgnoreCase);
+        DesktopOsFamilies = new[]
+        {
+            OsFamilies.AmigaOs, OsFamilies.Ibm, OsFamilies.GnuLinux, OsFamilies.Mac, OsFamilies.Unix,
+            OsFamilies.Windows, OsFamilies.BeOs, OsFamilies.ChromeOs,
+        }.ToFrozenSet(StringComparer.OrdinalIgnoreCase);
 
-    /// <summary>
-    /// Contains a list of mappings from our OS names to known client hint values
-    /// </summary>
-    private static readonly FrozenDictionary<string, FrozenSet<string>> ClientHintPlatformMapping =
-        new Dictionary<string, FrozenSet<string>>
+        ClientHintPlatformMapping = new Dictionary<string, FrozenSet<string>>
         {
             { OsNames.GnuLinux, new[] { "Linux" }.ToFrozenSet(StringComparer.OrdinalIgnoreCase) },
             { OsNames.Mac, new[] { "MacOS" }.ToFrozenSet(StringComparer.OrdinalIgnoreCase) }
         }.ToFrozenDictionary(StringComparer.OrdinalIgnoreCase);
 
-    private static readonly FrozenDictionary<string, string> FireOsVersionMapping = new Dictionary<string, string>
-    {
-        { "11", "8" },
-        { "10", "8" },
-        { "9", "7" },
-        { "7", "6" },
-        { "5", "5" },
-        { "4.4.3", "4.5.1" },
-        { "4.4.2", "4" },
-        { "4.2.2", "3" },
-        { "4.0.3", "3" },
-        { "4.0.2", "3" },
-        { "4", "2" },
-        { "2", "1" },
-    }.ToFrozenDictionary();
+        FireOsVersionMapping = new Dictionary<string, string>
+        {
+            { "11", "8" },
+            { "10", "8" },
+            { "9", "7" },
+            { "7", "6" },
+            { "5", "5" },
+            { "4.4.3", "4.5.1" },
+            { "4.4.2", "4" },
+            { "4.2.2", "3" },
+            { "4.0.3", "3" },
+            { "4.0.2", "3" },
+            { "4", "2" },
+            { "2", "1" },
+        }.ToFrozenDictionary();
 
-    private static readonly FrozenDictionary<string, string> LineageOsVersionMapping = new Dictionary<string, string>
-    {
-        { "15", "22" },
-        { "14", "21" },
-        { "13", "20.0" },
-        { "12.1", "19.1" },
-        { "12", "19.0" },
-        { "11", "18.0" },
-        { "10", "17.0" },
-        { "9", "16.0" },
-        { "8.1.0", "15.1" },
-        { "8.0.0", "15.0" },
-        { "7.1.2", "14.1" },
-        { "7.1.1", "14.1" },
-        { "7.0", "14.0" },
-        { "6.0.1", "13.0" },
-        { "6.0", "13.0" },
-        { "5.1.1", "12.1" },
-        { "5.0.2", "12.0" },
-        { "5.0", "12.0" },
-        { "4.4.4", "11.0" },
-        { "4.3", "10.2" },
-        { "4.2.2", "10.1" },
-        { "4.0.4", "9.1.0" }
-    }.ToFrozenDictionary();
+        LineageOsVersionMapping = new Dictionary<string, string>
+        {
+            { "15", "22" },
+            { "14", "21" },
+            { "13", "20.0" },
+            { "12.1", "19.1" },
+            { "12", "19.0" },
+            { "11", "18.0" },
+            { "10", "17.0" },
+            { "9", "16.0" },
+            { "8.1.0", "15.1" },
+            { "8.0.0", "15.0" },
+            { "7.1.2", "14.1" },
+            { "7.1.1", "14.1" },
+            { "7.0", "14.0" },
+            { "6.0.1", "13.0" },
+            { "6.0", "13.0" },
+            { "5.1.1", "12.1" },
+            { "5.0.2", "12.0" },
+            { "5.0", "12.0" },
+            { "4.4.4", "11.0" },
+            { "4.3", "10.2" },
+            { "4.2.2", "10.1" },
+            { "4.0.4", "9.1.0" }
+        }.ToFrozenDictionary();
 
-    private static readonly FrozenDictionary<int, string> WindowsMinorVersionMapping =
-        new Dictionary<int, string> { { 1, "7" }, { 2, "8" }, { 3, "8.1" } }.ToFrozenDictionary();
+        WindowsMinorVersionMapping =
+            new Dictionary<int, string> { { 1, "7" }, { 2, "8" }, { 3, "8.1" } }.ToFrozenDictionary();
 
-    private static readonly FrozenSet<string> AndroidApps = new[]
-    {
-        "com.hisense.odinbrowser", "com.seraphic.openinet.pre", "com.appssppa.idesktoppcbrowser",
-        "every.browser.inc"
-    }.ToFrozenSet();
+        AndroidApps = new[]
+        {
+            "com.hisense.odinbrowser", "com.seraphic.openinet.pre", "com.appssppa.idesktoppcbrowser",
+            "every.browser.inc"
+        }.ToFrozenSet();
 
-    private static readonly FrozenDictionary<string, Regex> PlatformRegexes =
-        new Dictionary<string, Regex>
+        PlatformRegexes = new Dictionary<string, Regex>
         {
             {
                 OsPlatformTypes.Arm, RegexUtility.BuildUserAgentRegex(
@@ -402,12 +416,12 @@ public sealed class OsParser : IOsParser
             { OsPlatformTypes.X86, RegexUtility.BuildUserAgentRegex(".*32bit|.*win32|(?:i[0-9]|x)86|i86pc") }
         }.ToFrozenDictionary();
 
-    private static readonly IEnumerable<string> OsPlatforms =
-    [
-        OsPlatformTypes.Arm, OsPlatformTypes.LoongArch64, OsPlatformTypes.Mips, OsPlatformTypes.SuperH,
-        OsPlatformTypes.Sparc64, OsPlatformTypes.X64, OsPlatformTypes.X86
-    ];
-
+        OsPlatforms =
+        [
+            OsPlatformTypes.Arm, OsPlatformTypes.LoongArch64, OsPlatformTypes.Mips, OsPlatformTypes.SuperH,
+            OsPlatformTypes.Sparc64, OsPlatformTypes.X64, OsPlatformTypes.X86
+        ];
+    }
 
     public OsParser(ParserOptions? parserOptions = null)
     {

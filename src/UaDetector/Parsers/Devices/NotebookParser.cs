@@ -10,9 +10,15 @@ namespace UaDetector.Parsers.Devices;
 internal sealed class NotebookParser : DeviceParserBase
 {
     private const string ResourceName = "Regexes.Resources.Devices.notebooks.json";
-    private static readonly IEnumerable<Device> Notebooks = RegexLoader.LoadRegexes<Device>(ResourceName);
-    private static readonly Regex FbmdRegex = RegexUtility.BuildUserAgentRegex("FBMD/");
+    private static readonly IEnumerable<Device> Notebooks;
+    private static readonly Regex FbmdRegex;
 
+
+    static NotebookParser()
+    {
+        Notebooks = RegexLoader.LoadRegexes<Device>(ResourceName);
+        FbmdRegex = RegexUtility.BuildUserAgentRegex("FBMD/");
+    }
 
     public override bool TryParse(
         string userAgent,

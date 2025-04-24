@@ -11,11 +11,15 @@ namespace UaDetector.Parsers.Devices;
 internal sealed class ShellTvParser : DeviceParserBase
 {
     private const string ResourceName = "Regexes.Resources.Devices.shell_televisions.json";
-    private static readonly IEnumerable<Device> ShellTelevisions = RegexLoader.LoadRegexes<Device>(ResourceName);
+    private static readonly IEnumerable<Device> ShellTelevisions;
+    internal static readonly Regex ShellTvRegex;
 
-    internal static readonly Regex ShellTvRegex =
-        RegexUtility.BuildUserAgentRegex(@"[a-z]+[ _]Shell[ _]\w{6}|tclwebkit(\d+[.\d]*)");
 
+    static ShellTvParser()
+    {
+        ShellTelevisions = RegexLoader.LoadRegexes<Device>(ResourceName);
+        ShellTvRegex = RegexUtility.BuildUserAgentRegex(@"[a-z]+[ _]Shell[ _]\w{6}|tclwebkit(\d+[.\d]*)");
+    }
 
     public override bool TryParse(
         string userAgent,

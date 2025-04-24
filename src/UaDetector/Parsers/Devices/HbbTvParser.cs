@@ -11,11 +11,15 @@ namespace UaDetector.Parsers.Devices;
 internal sealed class HbbTvParser : DeviceParserBase
 {
     private const string ResourceName = "Regexes.Resources.Devices.televisions.json";
-    private static readonly IEnumerable<Device> Televisions = RegexLoader.LoadRegexes<Device>(ResourceName);
+    private static readonly IEnumerable<Device> Televisions;
+    internal static readonly Regex HbbTvRegex;
 
-    internal static readonly Regex
+
+    static HbbTvParser()
+    {
+        Televisions = RegexLoader.LoadRegexes<Device>(ResourceName);
         HbbTvRegex = RegexUtility.BuildUserAgentRegex(@"(?:HbbTV|SmartTvA)/([1-9](?:\.[0-9]){1,2})");
-
+    }
 
     public override bool TryParse(
         string userAgent,

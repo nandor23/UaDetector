@@ -19,54 +19,27 @@ public sealed class UaDetector : IUaDetector
     private readonly ClientParser _clientParser;
     private readonly BotParser _botParser;
 
-    private static readonly Regex ContainsLetterRegex = new("[a-zA-Z]", RegexOptions.Compiled);
-    private static readonly Regex AndroidVrFragment =
-        BuildRegex("Android( [.0-9]+)?; Mobile VR;| VR ");
-
-    private static readonly Regex ChromeRegex = BuildRegex("Chrome/[.0-9]*");
-    private static readonly Regex MobileRegex = BuildRegex("(?:Mobile|eliboM)");
-    private static readonly Regex PadRegex = BuildRegex("Pad/APad");
-    private static readonly Regex OperaTabletRegex = BuildRegex("Opera Tablet");
-    private static readonly Regex OperaTvStoreRegex = BuildRegex("Opera TV Store| OMI/");
-    private static readonly Regex TouchEnabledRegex = BuildRegex("Touch");
-    private static readonly Regex TizenOrSmartTvRegex = BuildRegex("SmartTV|Tizen.+ TV .+$");
-    private static readonly Regex TvFragmentRegex = BuildRegex(@"\(TV;");
-
-    private static readonly Regex AndroidTabletFragmentRegex =
-        BuildRegex(@"Android( [.0-9]+)?; Tablet;|Tablet(?! PC)|.*\-tablet$");
-
-    private static readonly Regex AndroidMobileFragmentRegex =
-        BuildRegex(@"Android( [.0-9]+)?; Mobile;|.*\-mobile$");
-
-    private static readonly Regex PuffinSecureBrowserDesktopRegex =
-        BuildRegex(@"Puffin/(?:\d+[.\d]+)[LMW]D");
-
-    private static readonly Regex PuffinWebBrowserSmartphoneRegex =
-        BuildRegex(@"Puffin/(?:\d+[.\d]+)[AIFLW]P");
-
-    private static readonly Regex PuffinWebBrowserTabletRegex =
-        BuildRegex(@"Puffin/(?:\d+[.\d]+)[AILW]T");
-
-    private static readonly Regex AndroidRegex =
-        BuildRegex(
-            @"Andr0id|(?:Android(?: UHD)?|Google) TV|\(lite\) TV|BRAVIA|Firebolt| TV$");
-
-    private static readonly Regex DesktopFragment =
-        BuildRegex("Desktop(?: (x(?:32|64)|WOW64))?;");
-
-    private static readonly FrozenSet<string> AppleOsNames = new[]
-    {
-        OsNames.IPadOs, OsNames.TvOs, OsNames.WatchOs, OsNames.IOs, OsNames.Mac
-    }.ToFrozenSet();
-
-    private static readonly FrozenSet<string> TvBrowsers = new[]
-    {
-        BrowserNames.Kylo, BrowserNames.EspialTvBrowser, BrowserNames.LujoTvBrowser, BrowserNames.LogicUiTvBrowser,
-        BrowserNames.OpenTvBrowser, BrowserNames.SeraphicSraf, BrowserNames.OperaDevices, BrowserNames.CrowBrowser,
-        BrowserNames.VewdBrowser, BrowserNames.QuickSearchTv, BrowserNames.QjyTvBrowser, BrowserNames.TvBro,
-    }.ToFrozenSet();
-
-    private static readonly FrozenSet<string> TvClients = new[] { "TiviMate" }.ToFrozenSet();
+    private static readonly Regex ContainsLetterRegex;
+    private static readonly Regex AndroidVrFragment;
+    private static readonly Regex ChromeRegex;
+    private static readonly Regex MobileRegex;
+    private static readonly Regex PadRegex;
+    private static readonly Regex OperaTabletRegex;
+    private static readonly Regex OperaTvStoreRegex;
+    private static readonly Regex TouchEnabledRegex;
+    private static readonly Regex TizenOrSmartTvRegex;
+    private static readonly Regex TvFragmentRegex;
+    private static readonly Regex AndroidTabletFragmentRegex;
+    private static readonly Regex AndroidMobileFragmentRegex;
+    private static readonly Regex PuffinSecureBrowserDesktopRegex;
+    private static readonly Regex PuffinWebBrowserSmartphoneRegex;
+    private static readonly Regex PuffinWebBrowserTabletRegex;
+    private static readonly Regex AndroidRegex;
+    private static readonly Regex DesktopFragment;
+    private static readonly FrozenSet<string> AppleOsNames;
+    private static readonly FrozenSet<string> TvBrowsers;
+    private static readonly FrozenSet<string> TvClients;
+    private static readonly List<KeyValuePair<string, DeviceType>> ClientHintFormFactorsMapping;
 
     private readonly IEnumerable<DeviceParserBase> _deviceParsers =
     [
@@ -80,16 +53,50 @@ public sealed class UaDetector : IUaDetector
         new MobileParser(),
     ];
 
-    private static readonly List<KeyValuePair<string, DeviceType>> ClientHintFormFactorsMapping =
-    [
-        new("automotive", DeviceType.CarBrowser),
-        new("xr", DeviceType.Wearable),
-        new("watch", DeviceType.Wearable),
-        new("mobile", DeviceType.Smartphone),
-        new("tablet", DeviceType.Tablet),
-        new("desktop", DeviceType.Desktop),
-        new("eink", DeviceType.Tablet),
-    ];
+
+    static UaDetector()
+    {
+        ContainsLetterRegex = new Regex("[a-zA-Z]", RegexOptions.Compiled);
+        AndroidVrFragment = BuildRegex("Android( [.0-9]+)?; Mobile VR;| VR ");
+        ChromeRegex = BuildRegex("Chrome/[.0-9]*");
+        MobileRegex = BuildRegex("(?:Mobile|eliboM)");
+        PadRegex = BuildRegex("Pad/APad");
+        OperaTabletRegex = BuildRegex("Opera Tablet");
+        OperaTvStoreRegex = BuildRegex("Opera TV Store| OMI/");
+        TouchEnabledRegex = BuildRegex("Touch");
+        TizenOrSmartTvRegex = BuildRegex("SmartTV|Tizen.+ TV .+$");
+        TvFragmentRegex = BuildRegex(@"\(TV;");
+        AndroidTabletFragmentRegex = BuildRegex(@"Android( [.0-9]+)?; Tablet;|Tablet(?! PC)|.*\-tablet$");
+        AndroidMobileFragmentRegex = BuildRegex(@"Android( [.0-9]+)?; Mobile;|.*\-mobile$");
+        PuffinSecureBrowserDesktopRegex = BuildRegex(@"Puffin/(?:\d+[.\d]+)[LMW]D");
+        PuffinWebBrowserSmartphoneRegex = BuildRegex(@"Puffin/(?:\d+[.\d]+)[AIFLW]P");
+        PuffinWebBrowserTabletRegex = BuildRegex(@"Puffin/(?:\d+[.\d]+)[AILW]T");
+        AndroidRegex = BuildRegex(@"Andr0id|(?:Android(?: UHD)?|Google) TV|\(lite\) TV|BRAVIA|Firebolt| TV$");
+        DesktopFragment = BuildRegex("Desktop(?: (x(?:32|64)|WOW64))?;");
+
+        AppleOsNames = new[] { OsNames.IPadOs, OsNames.TvOs, OsNames.WatchOs, OsNames.IOs, OsNames.Mac }.ToFrozenSet();
+
+        TvBrowsers = new[]
+        {
+            BrowserNames.Kylo, BrowserNames.EspialTvBrowser, BrowserNames.LujoTvBrowser,
+            BrowserNames.LogicUiTvBrowser, BrowserNames.OpenTvBrowser, BrowserNames.SeraphicSraf,
+            BrowserNames.OperaDevices, BrowserNames.CrowBrowser, BrowserNames.VewdBrowser,
+            BrowserNames.QuickSearchTv, BrowserNames.QjyTvBrowser, BrowserNames.TvBro,
+        }.ToFrozenSet();
+
+        TvClients = new[] { "TiviMate" }.ToFrozenSet();
+
+        ClientHintFormFactorsMapping =
+        [
+            new KeyValuePair<string, DeviceType>("automotive", DeviceType.CarBrowser),
+            new KeyValuePair<string, DeviceType>("xr", DeviceType.Wearable),
+            new KeyValuePair<string, DeviceType>("watch", DeviceType.Wearable),
+            new KeyValuePair<string, DeviceType>("mobile", DeviceType.Smartphone),
+            new KeyValuePair<string, DeviceType>("tablet", DeviceType.Tablet),
+            new KeyValuePair<string, DeviceType>("desktop", DeviceType.Desktop),
+            new KeyValuePair<string, DeviceType>("eink", DeviceType.Tablet),
+        ];
+    }
 
     public UaDetector(UaDetectorOptions? uaDetectorOptions = null)
     {
