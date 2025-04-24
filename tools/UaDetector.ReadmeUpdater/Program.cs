@@ -49,7 +49,8 @@ var mobileApps = MobileAppParser.MobileApps
     .Distinct(StringComparer.OrdinalIgnoreCase);
 
 var deviceBrands = DeviceParserBase.BrandNameMapping.Keys
-    .Concat(VendorFragmentParser.VendorFragments.Select(x => x.Brand));
+    .Concat(VendorFragmentParser.VendorFragments.Select(x => x.Brand))
+    .Distinct(StringComparer.OrdinalIgnoreCase);
 
 var modifiedReadme = originalReadme
     .ReplaceBetweenMarkers("OPERATING-SYSTEMS", OsParser.OsNameMapping.Keys)
