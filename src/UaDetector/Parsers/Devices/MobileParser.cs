@@ -9,8 +9,13 @@ namespace UaDetector.Parsers.Devices;
 internal sealed class MobileParser : DeviceParserBase
 {
     private const string ResourceName = "Regexes.Resources.Devices.mobiles.json";
-    private static readonly IEnumerable<Device> Mobiles = RegexLoader.LoadRegexes<Device>(ResourceName);
+    private static readonly IEnumerable<Device> Mobiles;
 
+
+    static MobileParser()
+    {
+        Mobiles = RegexLoader.LoadRegexes<Device>(ResourceName);
+    }
 
     public override bool TryParse(
         string userAgent,
