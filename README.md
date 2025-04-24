@@ -1,8 +1,30 @@
 # UaDetector
 
+## ⚡ Benchmarks
+
+The following benchmark compares the performance of other user-agent parsing libraries.
+
+| Method         | Mean     | Error     | StdDev    | Ratio | Allocated   | Alloc Ratio |
+|--------------- |---------:|----------:|----------:|------:|------------:|------------:|
+| UaDetector     | 1.844 ms | 0.0229 ms | 0.0388 ms |  1.00 |     3.54 KB |        1.00 |
+| DeviceDetector | 6.084 ms | 0.0346 ms | 0.0307 ms |  3.30 |  4534.51 KB |    1,279.86 |
+| UaParser       | 6.783 ms | 0.0844 ms | 0.0789 ms |  3.68 | 10794.88 KB |    3,046.84 |
+
+
+The following benchmark measures the performance of different parsers within the library.
+
+| Method                 | Mean       | Error    | StdDev   | Allocated |
+|----------------------- |-----------:|---------:|---------:|----------:|
+| UaDetector_TryParse    | 1,587.8 us |  9.26 us |  8.21 us |    3628 B |
+| BrowserParser_TryParse | 1,174.1 us | 13.77 us | 12.88 us |    1320 B |
+| ClientParser_TryParse  |   176.1 us |  3.15 us |  2.95 us |    1024 B |
+| BotParser_TryParse     |   325.5 us |  3.41 us |  3.19 us |     353 B |
+| BotParser_IsBot        |   322.4 us |  3.33 us |  3.12 us |       1 B |
+
+
 ## 🔍 Detection Capabilities
 
-**Last updated: <!-- LAST-UPDATED -->2025-04-24<!-- LAST-UPDATED -->**
+**Last updated**: <!-- LAST-UPDATED -->2025-04-24<!-- LAST-UPDATED -->
 
 ### Operating Systems
 
