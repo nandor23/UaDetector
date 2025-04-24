@@ -21,17 +21,7 @@ public static class StringExtensions
     /// <exception cref="ArgumentException">Thrown when the specified markers are not found in the content</exception>
     public static string ReplaceBetweenMarkers(this string content, string markerName, string newContent)
     {
-        string sectionPattern =
-            $@"(<!--\s*{Regex.Escape(markerName)}\s*-->)(.*?)(<!--\s*{Regex.Escape(markerName)}\s*-->)";
-        var regex = new Regex(sectionPattern, RegexOptions.Singleline);
-
-        if (regex.IsMatch(content))
-        {
-            return regex.Replace(content,
-                m => $"{m.Groups[1].Value}{newContent}{m.Groups[3].Value}");
-        }
-
-        throw new ArgumentException($"Markers '<!-- {markerName} -->' not found in content");
+        return ReplaceContent(content, markerName, newContent);
     }
 
     /// <summary>
@@ -55,7 +45,15 @@ public static class StringExtensions
         IEnumerable<string> newContentItems
     )
     {
-        string newContent = string.Join(", ", newContentItems.Order(StringComparer.OrdinalIgnoreCase));
+        return ReplaceContent(
+            content,
+            markerName,
+            string.Join(", ", newContentItems.Order(StringComparer.OrdinalIgnoreCase))
+        );
+    }
+
+    private static string ReplaceContent(this string content, string markerName, string newContent)
+    {
         string sectionPattern =
             $@"(<!--\s*{Regex.Escape(markerName)}\s*-->)(.*?)(<!--\s*{Regex.Escape(markerName)}\s*-->)";
         var regex = new Regex(sectionPattern, RegexOptions.Singleline);

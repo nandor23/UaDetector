@@ -10,7 +10,7 @@ namespace UaDetector.Parsers;
 public class BotParser : IBotParser
 {
     private const string ResourceName = "Regexes.Resources.bots.json";
-    private static readonly IEnumerable<Bot> Bots;
+    internal static readonly IEnumerable<Bot> Bots;
     private static readonly Regex CombinedRegex;
 
 

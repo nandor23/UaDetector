@@ -11,7 +11,7 @@ namespace UaDetector.Parsers.Clients;
 internal sealed class LibraryParser : ClientParserBase
 {
     private const string ResourceName = "Regexes.Resources.Clients.libraries.json";
-    private static readonly IEnumerable<Client> Libraries;
+    internal static readonly IEnumerable<Client> Libraries;
     private static readonly Regex CombinedRegex;
 
 

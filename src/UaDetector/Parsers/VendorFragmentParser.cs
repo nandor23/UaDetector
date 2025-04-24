@@ -9,7 +9,7 @@ internal static class VendorFragmentParser
 {
     private const string ResourceName = "Regexes.Resources.vendor_fragments.json";
 
-    private static readonly IEnumerable<VendorFragment> VendorFragments =
+    internal static readonly IEnumerable<VendorFragment> VendorFragments =
         RegexLoader.LoadRegexes<VendorFragment>(ResourceName, "[^a-z0-9]+");
 
 
