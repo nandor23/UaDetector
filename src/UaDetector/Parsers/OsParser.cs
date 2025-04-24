@@ -527,8 +527,7 @@ public sealed class OsParser : IOsParser
 
         foreach (var platform in OsPlatforms)
         {
-            PlatformRegexes.TryGetValue(platform, out var regex);
-            if (PlatformRegexes.TryGetValue(platform, out regex) && regex.IsMatch(userAgent))
+            if (PlatformRegexes.TryGetValue(platform, out var regex) && regex.IsMatch(userAgent))
             {
                 result = platform;
                 break;

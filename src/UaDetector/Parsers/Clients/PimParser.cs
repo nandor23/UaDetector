@@ -11,7 +11,7 @@ namespace UaDetector.Parsers.Clients;
 internal sealed class PimParser : ClientParserBase
 {
     private const string ResourceName = "Regexes.Resources.Clients.pims.json";
-    private static readonly IEnumerable<Client> PersonalInformationManagers;
+    internal static readonly IEnumerable<Client> PersonalInformationManagers;
     private static readonly Regex CombinedRegex;
 
 
