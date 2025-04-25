@@ -13,8 +13,10 @@ UaDetector, is composed of several sub-parsers: `OsParser`, `BrowserParser`, `Cl
 ### Features
 
 - **Thread safety**: The parsers are stateless by design, so they are completely thread-safe and dependency-injection friendly.
-- **Predefined values**: Browser names, OS names, and other related information are exposed through static classes to provide access to all possible values.
-- **Standardized codes**: Predefined values are associated with enum values, making them ideal for database storage.
+- **Predefined values**: Browser names, OS names, and other related information are exposed through static classes to provide access to all possible values. These classes are:
+  - `OsNames`, `OsFamilies`, `OsPlatformTypes`, `BrowserNames`, `BrowserFamilies`, `BrowserEngines`, `BrandNames`
+- **Type-Safe values**: Certain values are represented by enums, making them suitable for database storage. These enums are:
+  - `OsCode`, `BrowserCode`, `BrandCode`, `ClientType`, `DeviceType`, `BotCategory`
 - **Try-Parse pattern**: Makes use of the  [Try-Parse Pattern](https://learn.microsoft.com/en-us/dotnet/standard/design-guidelines/exceptions-and-performance#try-parse-pattern), returning a `bool` status and setting the `out` parameter to `null` on failure.
 
 ## ⚙️ Configuration
