@@ -13,9 +13,14 @@
     <RepositoryUrl>https://github.com/UADetector/UADetector</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>UaDetector;UserAgent;parser;user-agent-parser;os-detection;browser-detection;client-detection;device-detection;bot-detection;</PackageTags>
-    <PackageLicenseUrl>https://github.com/UaDetector/UaDetector/blob/main/LICENSE</PackageLicenseUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\README.md" Pack="true" PackagePath="\"/>
+    <None Include="..\..\LICENSE" Pack="true" PackagePath="\"/>
+  </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Include="Regexes\**\*" />

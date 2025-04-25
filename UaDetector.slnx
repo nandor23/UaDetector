@@ -6,8 +6,6 @@
     <Project Path="samples\UaDetector.Api\UaDetector.Api.csproj" Type="Classic C#" />
   </Folder>
   <Folder Name="/Solution Items/">
-    <File Path="README.md" />
-    <File Path="LICENSE" />
     <File Path="global.json" />
     <File Path=".gitignore" />
     <File Path=".editorconfig" />

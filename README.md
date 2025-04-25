@@ -2,7 +2,7 @@
 
 UaDetector is a user-agent parsing library that identifies the browser, operating system, device type (desktop, tablet, mobile, TV, car, console, etc.), brand, model, and even detects bots. It is based on the PHP library [device-detector](https://github.com/matomo-org/device-detector),  but follows a different implementation approach.
 
-UaDetector, is composed of several sub-parsers: `OsParser`, `BrowserParser`, `ClientParser`, and `BotParser`. Each can be used independently when only specific information is needed from the user-agent string.
+UaDetector, is composed of several sub-parsers: `OsParser`, `BrowserParser`, `ClientParser`, and `BotParser`. Each can be used independently when only certain information is needed from the user-agent string.
 
 
 ### Differences from device-detector
