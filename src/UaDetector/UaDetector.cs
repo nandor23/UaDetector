@@ -18,7 +18,6 @@ public sealed class UaDetector : IUaDetector
     private readonly BrowserParser _browserParser;
     private readonly ClientParser _clientParser;
     private readonly BotParser _botParser;
-
     private static readonly Regex ContainsLetterRegex;
     private static readonly Regex AndroidVrFragment;
     private static readonly Regex ChromeRegex;
@@ -40,7 +39,6 @@ public sealed class UaDetector : IUaDetector
     private static readonly FrozenSet<string> TvBrowsers;
     private static readonly FrozenSet<string> TvClients;
     private static readonly List<KeyValuePair<string, DeviceType>> ClientHintFormFactorsMapping;
-
     private readonly IEnumerable<DeviceParserBase> _deviceParsers =
     [
         new HbbTvParser(),
