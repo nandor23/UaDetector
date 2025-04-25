@@ -5,6 +5,13 @@ namespace UaDetector.Api.Controllers;
 [ApiController]
 public class UaDetectorController : ControllerBase
 {
+    private readonly IUaDetector _uaDetector;
+
+    public UaDetectorController(IUaDetector uaDetector)
+    {
+        _uaDetector = uaDetector;
+    }
+
     [HttpGet]
     [Route("ua-detector")]
     public IActionResult GetUserAgentInfo()
@@ -12,8 +19,7 @@ public class UaDetectorController : ControllerBase
         var userAgent = HttpContext.Request.Headers.UserAgent.ToString();
         var headers = Request.Headers.ToDictionary(h => h.Key, h => h.Value.ToArray().FirstOrDefault());
 
-        var uaDetector = new UaDetector();
-        uaDetector.TryParse(userAgent, headers, out var result);
+        _uaDetector.TryParse(userAgent, headers, out var result);
         return Ok(result);
     }
 }
