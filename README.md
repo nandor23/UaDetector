@@ -1,4 +1,4 @@
-## UaDetector
+# UaDetector
 
 UaDetector is a user-agent parsing library that identifies the browser, operating system, device type (desktop, tablet, mobile, TV, car, console, etc.), brand, model, and even detects bots. It is based on the PHP library [device-detector](https://github.com/matomo-org/device-detector),  but follows a different implementation approach.
 
@@ -12,7 +12,7 @@ UaDetector, is composed of several sub-parsers: `OsParser`, `BrowserParser`, `Cl
 
 ### Features
 
-- **Thread safety**: The parsers are stateless by design, so they're completely thread-safe and dependency-injection friendly.
+- **Thread safety**: The parsers are stateless by design, so they are completely thread-safe and dependency-injection friendly.
 - **Predefined values**: Browser names, OS names, and other related information are exposed through static classes to provide access to all possible values.
 - **Standardized codes**: Predefined values are associated with enum values, making them ideal for database storage.
 - **Try-Parse pattern**: Makes use of the  [Try-Parse Pattern](https://learn.microsoft.com/en-us/dotnet/standard/design-guidelines/exceptions-and-performance#try-parse-pattern), returning a `bool` status and setting the `out` parameter to `null` on failure.
@@ -29,6 +29,8 @@ $ dotnet add package UaDetector
 To use UaDetector, register it in `Program.cs` with the `AddUaDetector` method.
 
 ```c#
+using UaDetector;
+
 builder.Services.AddUaDetector(x =>
 {
     // Custom configuration options
@@ -49,6 +51,8 @@ Configure the main parser by setting properties when calling the `AddUaDetector`
 To use a sub-parser, register it in `Program.cs` using its dedicated method: `AddOsParser`, `AddBrowserParser`, `AddClientParser`, or `AddBotParser`. All sub-parsers, except `AddBotParser`, can be configured with custom options.
 
 ```c#
+using UaDetector;
+
 // Configuration for AddBrowserParser and AddClientParser follows the same pattern
 builder.Services.AddOsParser(x =>
 {
@@ -64,8 +68,37 @@ Configure each sub-parser (except `BotParser`) by setting properties when callin
 | `VersionTruncation`   | `enum` | Controls how version numbers are shortened (e.g., `Major`, `Minor`, `None`) |
 | `DisableBotDetection` | `bool` | Disables bot detection entirely, skipping bot-related checks and parsing    |
 
-## 📋 Usage
+## 🚀 Quick Start
 
+Each parser provides two `TryParse` methods: one that accepts only the user-agent string and another that accepts both the user-agent string and a collection of HTTP headers. For more accurate detection, it is recommended to provide the HTTP headers.
+
+```c#
+[ApiController]
+public class UaDetectorController : ControllerBase
+{
+    private readonly IUaDetector _uaDetector;
+
+    public UaDetectorController(IUaDetector uaDetector)
+    {
+        _uaDetector = uaDetector;
+    }
+
+    [HttpGet]
+    [Route("ua-detector")]
+    public IActionResult GetUserAgentInfo()
+    {
+        var userAgent = HttpContext.Request.Headers.UserAgent.ToString();
+        var headers = Request.Headers.ToDictionary(h => h.Key, h => h.Value.ToArray().FirstOrDefault());
+
+        if (_uaDetector.TryParse(userAgent, headers, out var result))
+        {
+            return Ok(result);
+        }
+        
+        return BadRequest("No matching user-agent information was found");
+    }
+}
+```
 
 ## ⚡ Benchmarks
 
