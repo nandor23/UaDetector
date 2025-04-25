@@ -1,8 +1,19 @@
-# UaDetector
+## UaDetector
+
+UaDetector is a user-agent parsing library that identifies the browser, operating system, device type (desktop, tablet, mobile, TV, car, console, etc.), brand, model, and even detects bots. It is based on the PHP library [device-detector](https://github.com/matomo-org/device-detector),  but follows a different implementation approach.
+
+### Differences from device-detector
+- Browser parsing is separate from client parsing to make working with browser-specific properties easier.
+- Standardized codes like `SF` for `Safari` are represented as enums instead of strings, making them better suited for database storage.
+
+### Improvements over device-detector
+- **Thread safety**: The parsers do not store user-agent related state, so they can be safely reused with Dependency Injection.
+- **Predefined values**: Browser names, OS names, and other related information are exposed through static classes to provide all possible values.
+- **Standardized codes**: Predefined values are associated with enum values, making them ideal for database storage.
 
 ## ⚡ Benchmarks
 
-The following benchmark compares the performance of other user-agent parsing libraries.
+The following benchmark compares the performance of other .NET user-agent parsing libraries.
 
 | Method         | Mean     | Error     | StdDev    | Ratio | Allocated   | Alloc Ratio |
 |--------------- |---------:|----------:|----------:|------:|------------:|------------:|
@@ -15,12 +26,11 @@ The following benchmark measures the performance of different parsers within the
 
 | Method                 | Mean       | Error    | StdDev   | Allocated |
 |----------------------- |-----------:|---------:|---------:|----------:|
-| UaDetector_TryParse    | 1,587.8 us |  9.26 us |  8.21 us |    3628 B |
-| BrowserParser_TryParse | 1,174.1 us | 13.77 us | 12.88 us |    1320 B |
-| ClientParser_TryParse  |   176.1 us |  3.15 us |  2.95 us |    1024 B |
-| BotParser_TryParse     |   325.5 us |  3.41 us |  3.19 us |     353 B |
-| BotParser_IsBot        |   322.4 us |  3.33 us |  3.12 us |       1 B |
-
+| UaDetector_TryParse    | 1,725.3 us | 30.59 us | 30.05 us |    3627 B |
+| BrowserParser_TryParse | 1,266.7 us | 24.91 us | 66.06 us |    1320 B |
+| ClientParser_TryParse  |   170.2 us |  3.35 us |  3.59 us |    1024 B |
+| BotParser_TryParse     |   342.1 us |  4.30 us |  4.02 us |     353 B |
+| BotParser_IsBot        |   333.8 us |  3.63 us |  3.40 us |         - |
 
 ## 🔍 Detection Capabilities
 
