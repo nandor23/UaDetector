@@ -35,7 +35,7 @@ public class BotParser : IBotParser
                         Name = bot.Name,
                         Category = bot.Category,
                         Url = bot.Url,
-                        Producer = string.IsNullOrEmpty(bot.Producer?.Name) && string.IsNullOrEmpty(bot.Producer?.Url)
+                        Producer = bot.Producer is null
                             ? null
                             : new ProducerInfo { Name = bot.Producer?.Name, Url = bot.Producer?.Url, },
                     };
