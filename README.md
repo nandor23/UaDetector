@@ -3,13 +3,19 @@
 UaDetector is a user-agent parsing library that identifies the browser, operating system, device type (desktop, tablet, mobile, TV, car, console, etc.), brand, model, and even detects bots. It is based on the PHP library [device-detector](https://github.com/matomo-org/device-detector),  but follows a different implementation approach.
 
 ### Differences from device-detector
-- Browser parsing is separate from client parsing to make working with browser-specific properties easier.
+
+- Browser parsing is separate from client parsing to make it easier to work with browser-specific properties.
 - Standardized codes like `SF` for `Safari` are represented as enums instead of strings, making them better suited for database storage.
 
-### Improvements over device-detector
-- **Thread safety**: The parsers do not store user-agent related state, so they can be safely reused with Dependency Injection.
-- **Predefined values**: Browser names, OS names, and other related information are exposed through static classes to provide all possible values.
+### Features
+
+- **Thread safety**: The parsers are stateless by design, so they're completely thread-safe and dependency-injection friendly.
+- **Predefined values**: Browser names, OS names, and other related information are exposed through static classes to provide access to all possible values.
 - **Standardized codes**: Predefined values are associated with enum values, making them ideal for database storage.
+- **Try-Parse pattern**: Makes use of the  [Try-Parse Pattern](https://learn.microsoft.com/en-us/dotnet/standard/design-guidelines/exceptions-and-performance#try-parse-pattern), returning a `bool` status and setting the `out` parameter to `null` on failure.
+
+## 📋 Usage
+
 
 ## ⚡ Benchmarks
 

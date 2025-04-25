@@ -6,7 +6,20 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <LangVersion>latest</LangVersion>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Nandor Krizbai</Authors>
+    <Description>UaDetector is a user-agent parsing library that identifies the browser, operating system, device type (desktop, tablet, mobile, TV, car, console, etc.), brand, model, and even detects bots. It is based on the PHP library device-detector, but follows a different implementation approach.</Description>
+    <PackageProjectUrl>https://github.com/UADetector/UADetector</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/UADetector/UADetector</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>UaDetector;UserAgent;parser;user-agent-parser;os-detection;browser-detection;client-detection;device-detection;bot-detection;</PackageTags>
+    <PackageLicenseUrl>https://github.com/UaDetector/UaDetector/blob/main/LICENSE</PackageLicenseUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\README.md" Pack="true" PackagePath="\"/>
+  </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Include="Regexes\**\*" />
