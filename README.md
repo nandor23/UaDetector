@@ -2,6 +2,9 @@
 
 UaDetector is a user-agent parsing library that identifies the browser, operating system, device type (desktop, tablet, mobile, TV, car, console, etc.), brand, model, and even detects bots. It is based on the PHP library [device-detector](https://github.com/matomo-org/device-detector),  but follows a different implementation approach.
 
+UaDetector, is composed of several sub-parsers: `OsParser`, `BrowserParser`, `ClientParser`, and `BotParser`. Each can be used independently when only specific information is needed from the user-agent string.
+
+
 ### Differences from device-detector
 
 - Browser parsing is separate from client parsing to make it easier to work with browser-specific properties.
@@ -13,6 +16,53 @@ UaDetector is a user-agent parsing library that identifies the browser, operatin
 - **Predefined values**: Browser names, OS names, and other related information are exposed through static classes to provide access to all possible values.
 - **Standardized codes**: Predefined values are associated with enum values, making them ideal for database storage.
 - **Try-Parse pattern**: Makes use of the  [Try-Parse Pattern](https://learn.microsoft.com/en-us/dotnet/standard/design-guidelines/exceptions-and-performance#try-parse-pattern), returning a `bool` status and setting the `out` parameter to `null` on failure.
+
+## ⚙️ Configuration
+
+Add the *UaDetector* package (from NuGet) to the project.
+```bash
+$ dotnet add package UaDetector
+```
+
+### UaDetector configuration
+
+To use UaDetector, register it in `Program.cs` with the `AddUaDetector` method.
+
+```c#
+builder.Services.AddUaDetector(x =>
+{
+    // Custom configuration options
+    // e.g., x.VersionTruncation = VersionTruncation.Major;
+});
+```
+
+Configure the main parser by setting properties when calling the `AddUaDetector` method. The following options are available:
+
+| Property              | Type   | Description                                                                               |
+|-----------------------|--------|-------------------------------------------------------------------------------------------|
+| `VersionTruncation`   | `enum` | Controls how version numbers are shortened (e.g., `Major`, `Minor`, `None`)               |
+| `DisableBotDetection` | `bool` | Disables bot detection entirely, skipping bot-related checks and parsing                  |
+| `ExcludeBotDetails`   | `bool` | Skips parsing for bots, leaving the result as `null` while still performing bot detection |
+
+### Parser-Specific configuration
+
+To use a sub-parser, register it in `Program.cs` using its dedicated method: `AddOsParser`, `AddBrowserParser`, `AddClientParser`, or `AddBotParser`. All sub-parsers, except `AddBotParser`, can be configured with custom options.
+
+```c#
+// Configuration for AddBrowserParser and AddClientParser follows the same pattern
+builder.Services.AddOsParser(x =>
+{
+    // Custom configuration options
+    // e.g., x.VersionTruncation = VersionTruncation.Major;
+});
+```
+
+Configure each sub-parser (except `BotParser`) by setting properties when calling the respective method. The following options are available:
+
+| Property              | Type   | Description                                                                 |
+|-----------------------|--------|-----------------------------------------------------------------------------|
+| `VersionTruncation`   | `enum` | Controls how version numbers are shortened (e.g., `Major`, `Minor`, `None`) |
+| `DisableBotDetection` | `bool` | Disables bot detection entirely, skipping bot-related checks and parsing    |
 
 ## 📋 Usage
 
