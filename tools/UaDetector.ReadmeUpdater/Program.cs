@@ -4,7 +4,6 @@ using UaDetector.Parsers.Clients;
 using UaDetector.Parsers.Devices;
 using UaDetector.ReadmeUpdater;
 
-
 var readmePath = ReadmeLocator.GetReadmePath();
 var originalReadme = File.ReadAllText(readmePath);
 

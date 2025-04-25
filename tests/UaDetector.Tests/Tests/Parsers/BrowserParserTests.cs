@@ -3,7 +3,6 @@ using Shouldly;
 using UaDetector.Models.Enums;
 using UaDetector.Parsers;
 using UaDetector.Results;
-
 using UaDetector.Tests.Fixtures.Models;
 using UaDetector.Tests.Helpers;
 using UaDetector.Utils;
@@ -79,7 +78,6 @@ public class BrowserParserTests
     {
         var fixturePath = Path.Combine("Fixtures", "Resources", "browsers.json");
         var fixtures = await FixtureLoader.LoadAsync<BrowserFixture>(fixturePath);
-
         var parser = new BrowserParser(new ParserOptions { VersionTruncation = VersionTruncation.None, });
 
         foreach (var fixture in fixtures)

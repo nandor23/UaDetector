@@ -20,17 +20,8 @@ public sealed class OsParser : IOsParser
     internal static readonly FrozenDictionary<OsCode, string> OsCodeMapping;
     internal static readonly FrozenDictionary<string, OsCode> OsNameMapping;
     internal static readonly FrozenDictionary<string, FrozenSet<OsCode>> OsFamilyMapping;
-
-    /// <summary>
-    /// Operating system families that are known as desktop only
-    /// </summary>
     internal static readonly FrozenSet<string> DesktopOsFamilies;
-
-    /// <summary>
-    /// Contains a list of mappings from our OS names to known client hint values
-    /// </summary>
     private static readonly FrozenDictionary<string, FrozenSet<string>> ClientHintPlatformMapping;
-
     private static readonly FrozenDictionary<string, string> FireOsVersionMapping;
     private static readonly FrozenDictionary<string, string> LineageOsVersionMapping;
     private static readonly FrozenDictionary<int, string> WindowsMinorVersionMapping;

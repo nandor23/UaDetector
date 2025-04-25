@@ -1,8 +1,110 @@
 # UaDetector
 
+UaDetector is a user-agent parsing library that identifies the browser, operating system, device type (desktop, tablet, mobile, TV, car, console, etc.), brand, model, and even detects bots. It is based on the PHP library [device-detector](https://github.com/matomo-org/device-detector),  but follows a different implementation approach.
+
+UaDetector, is composed of several sub-parsers: `OsParser`, `BrowserParser`, `ClientParser`, and `BotParser`. Each can be used independently when only specific information is needed from the user-agent string.
+
+
+### Differences from device-detector
+
+- Browser parsing is separate from client parsing to make it easier to work with browser-specific properties.
+- Standardized codes like `SF` for `Safari` are represented as enums instead of strings, making them better suited for database storage.
+
+### Features
+
+- **Thread safety**: The parsers are stateless by design, so they are completely thread-safe and dependency-injection friendly.
+- **Predefined values**: Browser names, OS names, and other related information are exposed through static classes to provide access to all possible values. These classes are:
+  - `OsNames`, `OsFamilies`, `OsPlatformTypes`, `BrowserNames`, `BrowserFamilies`, `BrowserEngines`, `BrandNames`
+- **Type-Safe values**: Certain values are represented by enums, making them suitable for database storage. These enums are:
+  - `OsCode`, `BrowserCode`, `BrandCode`, `ClientType`, `DeviceType`, `BotCategory`
+- **Try-Parse pattern**: Makes use of the  [Try-Parse Pattern](https://learn.microsoft.com/en-us/dotnet/standard/design-guidelines/exceptions-and-performance#try-parse-pattern), returning a `bool` status and setting the `out` parameter to `null` on failure.
+
+## ⚙️ Configuration
+
+Add the *UaDetector* package (from NuGet) to the project.
+```bash
+$ dotnet add package UaDetector
+```
+
+### UaDetector configuration
+
+To use UaDetector, register it in `Program.cs` with the `AddUaDetector` method.
+
+```c#
+using UaDetector;
+
+builder.Services.AddUaDetector(x =>
+{
+    // Custom configuration options
+    // e.g., x.VersionTruncation = VersionTruncation.Major;
+});
+```
+
+Configure the main parser by setting properties when calling the `AddUaDetector` method. The following options are available:
+
+| Property              | Type   | Description                                                                               |
+|-----------------------|--------|-------------------------------------------------------------------------------------------|
+| `VersionTruncation`   | `enum` | Controls how version numbers are shortened (e.g., `Major`, `Minor`, `None`)               |
+| `DisableBotDetection` | `bool` | Disables bot detection entirely, skipping bot-related checks and parsing                  |
+| `ExcludeBotDetails`   | `bool` | Skips parsing for bots, leaving the result as `null` while still performing bot detection |
+
+### Parser-Specific configuration
+
+To use a sub-parser, register it in `Program.cs` using its dedicated method: `AddOsParser`, `AddBrowserParser`, `AddClientParser`, or `AddBotParser`. All sub-parsers, except `AddBotParser`, can be configured with custom options.
+
+```c#
+using UaDetector;
+
+// Configuration for AddBrowserParser and AddClientParser follows the same pattern
+builder.Services.AddOsParser(x =>
+{
+    // Custom configuration options
+    // e.g., x.VersionTruncation = VersionTruncation.Major;
+});
+```
+
+Configure each sub-parser (except `BotParser`) by setting properties when calling the respective method. The following options are available:
+
+| Property              | Type   | Description                                                                 |
+|-----------------------|--------|-----------------------------------------------------------------------------|
+| `VersionTruncation`   | `enum` | Controls how version numbers are shortened (e.g., `Major`, `Minor`, `None`) |
+| `DisableBotDetection` | `bool` | Disables bot detection entirely, skipping bot-related checks and parsing    |
+
+## 🚀 Quick Start
+
+Each parser provides two `TryParse` methods: one that accepts only the user-agent string and another that accepts both the user-agent string and a collection of HTTP headers. For more accurate detection, it is recommended to provide the HTTP headers.
+
+```c#
+[ApiController]
+public class UaDetectorController : ControllerBase
+{
+    private readonly IUaDetector _uaDetector;
+
+    public UaDetectorController(IUaDetector uaDetector)
+    {
+        _uaDetector = uaDetector;
+    }
+
+    [HttpGet]
+    [Route("ua-detector")]
+    public IActionResult GetUserAgentInfo()
+    {
+        var userAgent = HttpContext.Request.Headers.UserAgent.ToString();
+        var headers = Request.Headers.ToDictionary(h => h.Key, h => h.Value.ToArray().FirstOrDefault());
+
+        if (_uaDetector.TryParse(userAgent, headers, out var result))
+        {
+            return Ok(result);
+        }
+        
+        return BadRequest("No matching user-agent information was found");
+    }
+}
+```
+
 ## ⚡ Benchmarks
 
-The following benchmark compares the performance of other user-agent parsing libraries.
+The following benchmark compares the performance of other .NET user-agent parsing libraries.
 
 | Method         | Mean     | Error     | StdDev    | Ratio | Allocated   | Alloc Ratio |
 |--------------- |---------:|----------:|----------:|------:|------------:|------------:|
@@ -15,12 +117,11 @@ The following benchmark measures the performance of different parsers within the
 
 | Method                 | Mean       | Error    | StdDev   | Allocated |
 |----------------------- |-----------:|---------:|---------:|----------:|
-| UaDetector_TryParse    | 1,587.8 us |  9.26 us |  8.21 us |    3628 B |
-| BrowserParser_TryParse | 1,174.1 us | 13.77 us | 12.88 us |    1320 B |
-| ClientParser_TryParse  |   176.1 us |  3.15 us |  2.95 us |    1024 B |
-| BotParser_TryParse     |   325.5 us |  3.41 us |  3.19 us |     353 B |
-| BotParser_IsBot        |   322.4 us |  3.33 us |  3.12 us |       1 B |
-
+| UaDetector_TryParse    | 1,725.3 us | 30.59 us | 30.05 us |    3627 B |
+| BrowserParser_TryParse | 1,266.7 us | 24.91 us | 66.06 us |    1320 B |
+| ClientParser_TryParse  |   170.2 us |  3.35 us |  3.59 us |    1024 B |
+| BotParser_TryParse     |   342.1 us |  4.30 us |  4.02 us |     353 B |
+| BotParser_IsBot        |   333.8 us |  3.63 us |  3.40 us |         - |
 
 ## 🔍 Detection Capabilities
 

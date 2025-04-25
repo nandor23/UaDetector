@@ -7,7 +7,11 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddOpenApi();
 builder.Services.AddControllers();
 
-builder.Services.AddSingleton<IUaDetector>(new UaDetector.UaDetector());
+builder.Services.AddUaDetector(x =>
+{
+    // Custom configuration options
+    // e.g., x.VersionTruncation = VersionTruncation.Major;
+});
 
 var app = builder.Build();
 

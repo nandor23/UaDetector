@@ -1,8 +1,6 @@
 using Shouldly;
 
 using UaDetector.Parsers;
-using UaDetector.Results;
-
 using UaDetector.Tests.Fixtures.Models;
 using UaDetector.Tests.Helpers;
 
@@ -27,19 +25,7 @@ public class BotParserTests
     public async Task TryParse_WithFixtureData_ShouldReturnExpectedBotInfo()
     {
         var fixturePath = Path.Combine("Fixtures", "Resources", "bots.json");
-        var fixtures = (await FixtureLoader.LoadAsync<BotFixture>(fixturePath))
-            .Select(e => new BotFixture
-            {
-                UserAgent = e.UserAgent,
-                Bot = new BotInfo
-                {
-                    Name = e.Bot.Name,
-                    Category = e.Bot.Category,
-                    Url = e.Bot.Url,
-                    Producer = e.Bot.Producer?.Name is null && e.Bot.Producer?.Url is null ? null : e.Bot.Producer
-                }
-            });
-
+        var fixtures = (await FixtureLoader.LoadAsync<BotFixture>(fixturePath));
         var parser = new BotParser();
 
         foreach (var fixture in fixtures)

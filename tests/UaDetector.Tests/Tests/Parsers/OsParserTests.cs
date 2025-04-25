@@ -1,10 +1,8 @@
 using Shouldly;
 
-using UaDetector.Models.Constants;
 using UaDetector.Models.Enums;
 using UaDetector.Parsers;
 using UaDetector.Results;
-
 using UaDetector.Tests.Fixtures.Models;
 using UaDetector.Tests.Helpers;
 
@@ -72,7 +70,6 @@ public class OsParserTests
     {
         var fixturePath = Path.Combine("Fixtures", "Resources", "operating_systems.json");
         var fixtures = await FixtureLoader.LoadAsync<OsFixture>(fixturePath);
-
         var parser = new OsParser(new ParserOptions { VersionTruncation = VersionTruncation.None, });
 
         foreach (var fixture in fixtures)
