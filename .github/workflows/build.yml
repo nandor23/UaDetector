@@ -21,7 +21,7 @@ jobs:
         run: dotnet restore
 
       - name: Build
-        run: dotnet build --no-restore --configuration Release
+        run: dotnet build --no-restore
         
       - name: Test
-        run: dotnet test tests/UaDetector.Tests/UaDetector.Tests.csproj
+        run: dotnet test tests/UaDetector.Tests/UaDetector.Tests.csproj --no-build
