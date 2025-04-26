@@ -2,6 +2,10 @@
   <Folder Name="/benchmarks/">
     <Project Path="benchmarks\UaDetector.Benchmarks\UaDetector.Benchmarks.csproj" Type="Classic C#" />
   </Folder>
+  <Folder Name="/GitHub/">
+    <File Path=".github\workflows\build.yml" />
+    <File Path=".github\workflows\update-readme.yml" />
+  </Folder>
   <Folder Name="/samples/">
     <Project Path="samples\UaDetector.Api\UaDetector.Api.csproj" Type="Classic C#" />
   </Folder>
@@ -9,7 +13,6 @@
     <File Path="global.json" />
     <File Path=".gitignore" />
     <File Path=".editorconfig" />
-    <File Path=".github\workflows\build.yml" />
   </Folder>
   <Folder Name="/src/">
     <Project Path="src\UaDetector\UaDetector.csproj" Type="Classic C#" />
