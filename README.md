@@ -103,7 +103,7 @@ public class UaDetectorController : ControllerBase
 ```
 
 > [!TIP]
-> Avoid directly instantiating parsers. Creating the first instance of UaDetector (or similar parsers) takes 1–2 seconds due to internal regex compilation. To avoid this one-time cost during application startup, register the service with dependency injection, as shown earlier.
+> Avoid directly instantiating parsers. Creating the first instance of UaDetector (or similar parsers) takes 1–2 seconds due to internal regex compilation. To avoid this one-time cost during runtime, register the service with dependency injection, as shown earlier. This way, the instantiation will happen at application startup.
 
 ## ⚡ Benchmarks
 
