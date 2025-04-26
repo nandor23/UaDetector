@@ -52,5 +52,7 @@ jobs:
           
       - name: Create pull request
         if: ${{ steps.check_git_diff.outputs.changes_detected == 'true' }}
+        env:
+          GH_TOKEN: ${{ secrets.DOCS_MGMT_TOKEN }}
         run: gh pr create --base main --head docs --title "Update README" --body "Automated README update"
           
