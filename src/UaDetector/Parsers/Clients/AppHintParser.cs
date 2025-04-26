@@ -13,12 +13,12 @@ internal static class AppHintParser
 
     public static bool IsMobileApp(ClientHints clientHints)
     {
-        return !string.IsNullOrEmpty(clientHints.App) && Hints.ContainsKey(clientHints.App);
+        return clientHints.App is { Length: > 0 } && Hints.ContainsKey(clientHints.App);
     }
 
     public static bool TryParseAppName(ClientHints clientHints, [NotNullWhen(true)] out string? result)
     {
-        if (string.IsNullOrEmpty(clientHints.App))
+        if (clientHints.App is null or { Length: 0 })
         {
             result = null;
         }

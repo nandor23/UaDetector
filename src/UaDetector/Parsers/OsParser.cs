@@ -491,7 +491,7 @@ public sealed class OsParser : IOsParser
     {
         result = null;
 
-        if (!string.IsNullOrEmpty(clientHints.Architecture))
+        if (clientHints.Architecture is { Length: > 0 })
         {
             var architecture = clientHints.Architecture.ToLower();
 
@@ -524,7 +524,7 @@ public sealed class OsParser : IOsParser
                 result = OsPlatformTypes.X86;
             }
 
-            if (!string.IsNullOrEmpty(result))
+            if (result is {Length: > 0})
             {
                 return true;
             }
@@ -544,7 +544,7 @@ public sealed class OsParser : IOsParser
 
     private bool TryParseOsFromClientHints(ClientHints clientHints, [NotNullWhen(true)] out CommonOsInfo? result)
     {
-        if (string.IsNullOrEmpty(clientHints.Platform))
+        if (clientHints.Platform is null or { Length: 0 })
         {
             result = null;
             return false;
@@ -565,7 +565,7 @@ public sealed class OsParser : IOsParser
 
         string? version = clientHints.PlatformVersion;
 
-        if (name == OsNames.Windows && !string.IsNullOrEmpty(version))
+        if (name == OsNames.Windows && version is { Length: > 0 })
         {
             var versionParts = version.Split('.');
             int majorVersion = versionParts.Length > 0 && int.TryParse(versionParts[0], out var major) ? major : 0;
@@ -586,7 +586,7 @@ public sealed class OsParser : IOsParser
         }
 
         // On Windows, version 0.0.0 can represent 7, 8, or 8.1, so it is set to null.
-        if (name != OsNames.Windows && !string.IsNullOrEmpty(version) && version != "0.0.0" &&
+        if (name != OsNames.Windows && version is { Length: > 0 } && version != "0.0.0" &&
             ParserExtensions.TryCompareVersions(version, "0", out var comparisonResult) && comparisonResult == 0)
         {
             version = null;
@@ -723,8 +723,8 @@ public sealed class OsParser : IOsParser
                         case OsNames.PicoOs:
                             version = osFromUserAgent.Version;
                             break;
-                        case OsNames.FireOs when !string.IsNullOrEmpty(osFromClientHints.Version) &&
-                                                 !string.IsNullOrEmpty(version):
+                        case OsNames.FireOs when osFromClientHints.Version is { Length: > 0 } &&
+                                                 version is { Length: > 0 }:
                             {
                                 TryGetFireOsVersion(version, out version);
                                 break;
@@ -766,7 +766,7 @@ public sealed class OsParser : IOsParser
         TryParsePlatform(userAgent, clientHints, out var platform);
         TryMapNameToFamily(name, out var family);
 
-        if (!string.IsNullOrEmpty(clientHints.App))
+        if (clientHints.App is { Length: > 0 })
         {
             if (name != OsNames.Android && AndroidApps.Contains(clientHints.App))
             {
@@ -779,7 +779,7 @@ public sealed class OsParser : IOsParser
                 name = OsNames.LineageOs;
                 family = OsFamilies.Android;
 
-                if (!string.IsNullOrEmpty(version))
+                if (version is { Length: > 0 })
                 {
                     TryGetLineageOsVersion(version, out version);
                 }
@@ -789,7 +789,7 @@ public sealed class OsParser : IOsParser
                 name = OsNames.FireOs;
                 family = OsFamilies.Android;
 
-                if (!string.IsNullOrEmpty(version))
+                if (version is { Length: > 0 })
                 {
                     TryGetFireOsVersion(version, out version);
                 }

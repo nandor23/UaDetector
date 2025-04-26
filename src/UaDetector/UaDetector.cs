@@ -119,7 +119,7 @@ public sealed class UaDetector : IUaDetector
 
     private static bool IsWindows8OrLater(OsInfo os)
     {
-        return os.Name == OsNames.Windows && !string.IsNullOrEmpty(os.Version) &&
+        return os is { Name: OsNames.Windows, Version.Length: > 0 } &&
                ParserExtensions.TryCompareVersions(os.Version, "8", out var comparisonResult) && comparisonResult >= 0;
     }
 
@@ -130,7 +130,7 @@ public sealed class UaDetector : IUaDetector
             return false;
         }
 
-        return !string.IsNullOrEmpty(os?.Family) && OsParser.DesktopOsFamilies.Contains(os.Family);
+        return os?.Family is { Length: > 0 } && OsParser.DesktopOsFamilies.Contains(os.Family);
     }
 
     private static bool TryParseDeviceFromClientHints(
@@ -138,7 +138,7 @@ public sealed class UaDetector : IUaDetector
         [NotNullWhen(true)] out ClientHintsDeviceInfo? result
     )
     {
-        if (string.IsNullOrEmpty(clientHints.Model))
+        if (clientHints.Model is null or { Length: 0 })
         {
             result = null;
             return false;
@@ -261,7 +261,7 @@ public sealed class UaDetector : IUaDetector
         // - Devices running Android versions earlier than 2.0 are smartphones.
         // - Devices running Android 3.x are tablets.
         // - Devices running Android 2.x and 4.x+ have an unknown device type.
-        if (deviceType is null && os?.Name == OsNames.Android && !string.IsNullOrEmpty(os.Version))
+        if (deviceType is null && os is { Name: OsNames.Android, Version.Length: > 0 })
         {
             if (ParserExtensions.TryCompareVersions(os.Version, "2.0", out var comparisonResult) &&
                 comparisonResult == -1)

@@ -25,7 +25,7 @@ internal sealed class RegexJsonConverter : JsonConverter<Regex>
             throw new JsonException("Regex pattern cannot be null");
         }
 
-        var regex = string.IsNullOrEmpty(_patternSuffix) ? pattern : pattern + _patternSuffix;
+        var regex = _patternSuffix is null ? pattern : pattern + _patternSuffix;
 
         _patterns.Add(regex);
 

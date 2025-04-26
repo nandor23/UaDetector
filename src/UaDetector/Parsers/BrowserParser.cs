@@ -1050,7 +1050,7 @@ public sealed class BrowserParser : IBrowserParser
     {
         var result = engine?.Default;
 
-        if (engine?.Versions?.Count > 0 && !string.IsNullOrEmpty(browserVersion))
+        if (engine?.Versions?.Count > 0 && browserVersion is { Length: > 0 })
         {
             foreach (var version in engine.Versions)
             {
@@ -1074,7 +1074,7 @@ public sealed class BrowserParser : IBrowserParser
 
     private string? BuildEngineVersion(string userAgent, string? engine)
     {
-        if (string.IsNullOrEmpty(engine))
+        if (engine is null or { Length: 0 })
         {
             return null;
         }
@@ -1137,7 +1137,7 @@ public sealed class BrowserParser : IBrowserParser
             }
         }
 
-        if (string.IsNullOrEmpty(name) || !code.HasValue)
+        if (name is null or {Length: 0} || code is null)
         {
             result = null;
             return false;
@@ -1267,7 +1267,7 @@ public sealed class BrowserParser : IBrowserParser
         TryParseBrowserFromUserAgent(userAgent, out var browserFromUserAgent);
 
         if (TryParseBrowserFromClientHints(clientHints, out var browserFromClientHints) &&
-            !string.IsNullOrEmpty(browserFromClientHints.Version))
+            browserFromClientHints.Version is { Length: > 0 })
         {
             name = browserFromClientHints.Name;
             code = browserFromClientHints.Code;
@@ -1281,7 +1281,7 @@ public sealed class BrowserParser : IBrowserParser
 
             if (browserFromUserAgent is not null)
             {
-                if (!string.IsNullOrEmpty(browserFromUserAgent.Version) && version.StartsWith("15") &&
+                if (browserFromUserAgent.Version is { Length: > 0 } && version.StartsWith("15") &&
                     browserFromUserAgent.Version.StartsWith("114"))
                 {
                     name = BrowserNames.SecureBrowser360;
@@ -1290,7 +1290,7 @@ public sealed class BrowserParser : IBrowserParser
                     engineVersion = browserFromUserAgent.EngineVersion;
                 }
 
-                if (!string.IsNullOrEmpty(browserFromUserAgent.Version) &&
+                if (browserFromUserAgent.Version is { Length: > 0 } &&
                     (PriorityBrowsers.Contains(code.Value) ||
                      IsSameTruncatedVersion(version, browserFromUserAgent.Version)))
                 {
@@ -1332,7 +1332,7 @@ public sealed class BrowserParser : IBrowserParser
                     engineVersion = browserFromUserAgent.EngineVersion;
                 }
 
-                if (!string.IsNullOrEmpty(browserFromUserAgent.Version) && !string.IsNullOrEmpty(version) &&
+                if (browserFromUserAgent.Version is { Length: > 0 } && version is { Length: > 0 } &&
                     browserFromUserAgent.Version.StartsWith(version) &&
                     ParserExtensions.TryCompareVersions(version, browserFromUserAgent.Version,
                         out var comparisonResult) && comparisonResult < 0)
@@ -1346,7 +1346,7 @@ public sealed class BrowserParser : IBrowserParser
                 }
 
                 if (engine == BrowserEngines.Blink && name != BrowserNames.Iridium &&
-                    !string.IsNullOrEmpty(engineVersion) &&
+                    engineVersion is { Length: > 0 } &&
                     ParserExtensions.TryCompareVersions(engineVersion, browserFromClientHints.Version,
                         out comparisonResult) && comparisonResult < 0)
                 {
@@ -1365,7 +1365,7 @@ public sealed class BrowserParser : IBrowserParser
 
         string? family = null;
 
-        if (code.HasValue)
+        if (code is not null)
         {
             TryMapCodeToFamily(code.Value, out family);
         }
@@ -1385,14 +1385,14 @@ public sealed class BrowserParser : IBrowserParser
                 engine = BrowserEngines.Blink;
                 engineVersion = BuildEngineVersion(userAgent, engine);
 
-                if (code.HasValue)
+                if (code is not null)
                 {
                     family = TryMapCodeToFamily(code.Value, out family) ? family : BrowserFamilies.Chrome;
                 }
             }
         }
 
-        if (string.IsNullOrEmpty(name) || CypressOrPhantomJsRegex.IsMatch(userAgent) || !code.HasValue)
+        if (name is null or { Length: 0 } || CypressOrPhantomJsRegex.IsMatch(userAgent) || code is null)
         {
             result = null;
             return false;

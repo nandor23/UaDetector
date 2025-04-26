@@ -80,7 +80,7 @@ internal static class ParserExtensions
 
     public static string? BuildVersion(string? version, VersionTruncation versionTruncation)
     {
-        if (string.IsNullOrEmpty(version))
+        if (version is null or { Length: 0 })
         {
             return null;
         }
@@ -102,7 +102,7 @@ internal static class ParserExtensions
 
     public static string? BuildVersion(string? version, Match match, VersionTruncation versionTruncation)
     {
-        if (string.IsNullOrEmpty(version))
+        if (version is null or { Length: 0 })
         {
             return null;
         }

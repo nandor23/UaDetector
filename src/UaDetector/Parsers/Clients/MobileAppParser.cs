@@ -49,7 +49,7 @@ internal sealed class MobileAppParser : ClientParserBase
             version = null;
         }
 
-        result = string.IsNullOrEmpty(name)
+        result = name is null or { Length: 0 }
             ? null
             : new ClientInfo { Type = ClientType.MobileApp, Name = name, Version = version, };
 

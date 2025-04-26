@@ -135,7 +135,7 @@ internal sealed class ClientHints
 
         foreach (var header in headers)
         {
-            if (string.IsNullOrEmpty(header.Value))
+            if (header.Value is null or { Length: 0 })
             {
                 continue;
             }

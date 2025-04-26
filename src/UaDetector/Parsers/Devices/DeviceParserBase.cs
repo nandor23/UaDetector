@@ -2138,7 +2138,7 @@ internal abstract class DeviceParserBase
         DeviceType? type = null;
         string? model = null;
 
-        if (!string.IsNullOrEmpty(matchedDevice?.Type))
+        if (matchedDevice?.Type is { Length: > 0 })
         {
             if (DeviceTypeMapping.TryGetValue(matchedDevice.Type, out var deviceType))
             {
@@ -2146,7 +2146,7 @@ internal abstract class DeviceParserBase
             }
         }
 
-        if (!string.IsNullOrEmpty(matchedDevice?.Model))
+        if (matchedDevice?.Model is { Length: > 0 })
         {
             model = BuildModel(matchedDevice.Model, match);
         }
@@ -2179,17 +2179,17 @@ internal abstract class DeviceParserBase
                 return true;
             }
 
-            if (!string.IsNullOrEmpty(deviceModel?.Name))
+            if (deviceModel?.Name is { Length: > 0 })
             {
                 model = BuildModel(deviceModel.Name, modelMatch);
             }
 
-            if (!string.IsNullOrEmpty(deviceModel?.Brand) && BrandNameMapping.ContainsKey(deviceModel.Brand))
+            if (deviceModel?.Brand is { Length: > 0 } && BrandNameMapping.ContainsKey(deviceModel.Brand))
             {
                 brand = deviceModel.Brand;
             }
 
-            if (!string.IsNullOrEmpty(deviceModel?.Type))
+            if (deviceModel?.Type is { Length: > 0 })
             {
                 if (DeviceTypeMapping.TryGetValue(deviceModel.Type, out var deviceType))
                 {

@@ -12,7 +12,7 @@ internal static class BrowserHintParser
 
     public static bool TryParseBrowserName(ClientHints clientHints, [NotNullWhen(true)] out string? result)
     {
-        if (string.IsNullOrEmpty(clientHints.App))
+        if (clientHints.App is null or { Length: 0 })
         {
             result = null;
         }
