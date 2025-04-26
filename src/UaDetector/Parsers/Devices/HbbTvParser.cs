@@ -1,6 +1,5 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Text.RegularExpressions;
-
 using UaDetector.Models.Enums;
 using UaDetector.Regexes.Models;
 using UaDetector.Results;
@@ -14,11 +13,12 @@ internal sealed class HbbTvParser : DeviceParserBase
     private static readonly IEnumerable<Device> Televisions;
     internal static readonly Regex HbbTvRegex;
 
-
     static HbbTvParser()
     {
         Televisions = RegexLoader.LoadRegexes<Device>(ResourceName);
-        HbbTvRegex = RegexUtility.BuildUserAgentRegex(@"(?:HbbTV|SmartTvA)/([1-9](?:\.[0-9]){1,2})");
+        HbbTvRegex = RegexUtility.BuildUserAgentRegex(
+            @"(?:HbbTV|SmartTvA)/([1-9](?:\.[0-9]){1,2})"
+        );
     }
 
     public override bool TryParse(
@@ -30,7 +30,12 @@ internal sealed class HbbTvParser : DeviceParserBase
         {
             if (!TryParse(userAgent, Televisions, out result))
             {
-                result = new DeviceInfoInternal { Type = DeviceType.Tv, Brand = null, Model = null, };
+                result = new DeviceInfoInternal
+                {
+                    Type = DeviceType.Tv,
+                    Brand = null,
+                    Model = null,
+                };
             }
         }
         else

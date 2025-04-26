@@ -1,6 +1,5 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Text.RegularExpressions;
-
 using UaDetector.Models.Enums;
 using UaDetector.Regexes.Models;
 using UaDetector.Results;
@@ -14,16 +13,13 @@ internal sealed class MobileAppParser : ClientParserBase
     internal static readonly IEnumerable<Client> MobileApps;
     private static readonly Regex CombinedRegex;
 
-
     static MobileAppParser()
     {
-        (MobileApps, CombinedRegex) =
-            RegexLoader.LoadRegexesWithCombined<Client>(ResourceName);
+        (MobileApps, CombinedRegex) = RegexLoader.LoadRegexesWithCombined<Client>(ResourceName);
     }
 
-    public MobileAppParser(VersionTruncation versionTruncation) : base(versionTruncation)
-    {
-    }
+    public MobileAppParser(VersionTruncation versionTruncation)
+        : base(versionTruncation) { }
 
     public override bool IsClient(string userAgent, ClientHints clientHints)
     {
@@ -49,9 +45,14 @@ internal sealed class MobileAppParser : ClientParserBase
             version = null;
         }
 
-        result = string.IsNullOrEmpty(name)
+        result = name is null or { Length: 0 }
             ? null
-            : new ClientInfo { Type = ClientType.MobileApp, Name = name, Version = version, };
+            : new ClientInfo
+            {
+                Type = ClientType.MobileApp,
+                Name = name,
+                Version = version,
+            };
 
         return result is not null;
     }

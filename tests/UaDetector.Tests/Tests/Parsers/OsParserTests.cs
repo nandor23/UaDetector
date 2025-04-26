@@ -1,5 +1,4 @@
 using Shouldly;
-
 using UaDetector.Models.Enums;
 using UaDetector.Parsers;
 using UaDetector.Results;
@@ -26,9 +25,7 @@ public class OsParserTests
     [Test]
     public void OperatingSystems_ShouldContainKeyForAllOsNames()
     {
-        var osNames = OsParser.OperatingSystems
-            .Where(os => os.Name != "$1")
-            .Select(os => os.Name);
+        var osNames = OsParser.OperatingSystems.Where(os => os.Name != "$1").Select(os => os.Name);
 
         foreach (var osName in osNames)
         {
@@ -70,7 +67,7 @@ public class OsParserTests
     {
         var fixturePath = Path.Combine("Fixtures", "Resources", "operating_systems.json");
         var fixtures = await FixtureLoader.LoadAsync<OsFixture>(fixturePath);
-        var parser = new OsParser(new ParserOptions { VersionTruncation = VersionTruncation.None, });
+        var parser = new OsParser(new ParserOptions { VersionTruncation = VersionTruncation.None });
 
         foreach (var fixture in fixtures)
         {

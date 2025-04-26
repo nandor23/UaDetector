@@ -1,6 +1,5 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Text.RegularExpressions;
-
 using UaDetector.Models.Enums;
 using UaDetector.Utils;
 
@@ -8,19 +7,28 @@ namespace UaDetector.Parsers;
 
 internal static class ParserExtensions
 {
-    private static readonly Regex ClientHintsFragmentMatchRegex =
-        new(@"Android (?:10[.\d]*; K(?: Build/|[;)])|1[1-5]\)) AppleWebKit",
-            RegexOptions.IgnoreCase | RegexOptions.Compiled);
+    private static readonly Regex ClientHintsFragmentMatchRegex = new(
+        @"Android (?:10[.\d]*; K(?: Build/|[;)])|1[1-5]\)) AppleWebKit",
+        RegexOptions.IgnoreCase | RegexOptions.Compiled
+    );
 
-    private static readonly Regex ClientHintsFragmentReplacementRegex =
-        new(@"Android (?:10[.\d]*; K|1[1-5])", RegexOptions.Compiled);
+    private static readonly Regex ClientHintsFragmentReplacementRegex = new(
+        @"Android (?:10[.\d]*; K|1[1-5])",
+        RegexOptions.Compiled
+    );
 
-    private static readonly Regex DesktopFragmentReplacementRegex = new("X11; Linux x86_64", RegexOptions.Compiled);
+    private static readonly Regex DesktopFragmentReplacementRegex = new(
+        "X11; Linux x86_64",
+        RegexOptions.Compiled
+    );
 
-    private static readonly Regex DesktopFragmentMatchRegex =
-        RegexUtility.BuildUserAgentRegex("(?:Windows (?:NT|IoT)|X11; Linux x86_64)");
+    private static readonly Regex DesktopFragmentMatchRegex = RegexUtility.BuildUserAgentRegex(
+        "(?:Windows (?:NT|IoT)|X11; Linux x86_64)"
+    );
 
-    private static readonly Regex DesktopFragmentExclusionRegex = RegexUtility.BuildUserAgentRegex(string.Join("|",
+    private static readonly Regex DesktopFragmentExclusionRegex = RegexUtility.BuildUserAgentRegex(
+        string.Join(
+            "|",
             "CE-HTML",
             " Mozilla/|Andr[o0]id|Tablet|Mobile|iPhone|Windows Phone|ricoh|OculusBrowser",
             "PicoBrowser|Lenovo|compatible; MSIE|Trident/|Tesla/|XBOX|FBMD/|ARM; ?([^)]+)"
@@ -34,8 +42,8 @@ internal static class ParserExtensions
 
     public static bool HasUserAgentDesktopFragment(string userAgent)
     {
-        return DesktopFragmentMatchRegex.IsMatch(userAgent) &&
-               !DesktopFragmentExclusionRegex.IsMatch(userAgent);
+        return DesktopFragmentMatchRegex.IsMatch(userAgent)
+            && !DesktopFragmentExclusionRegex.IsMatch(userAgent);
     }
 
     public static bool TryRestoreUserAgent(
@@ -46,26 +54,32 @@ internal static class ParserExtensions
     {
         result = null;
 
-        if (string.IsNullOrEmpty(clientHints.Model))
+        if (clientHints.Model is null or { Length: 0 })
         {
             return false;
         }
 
         if (HasUserAgentClientHintsFragment(userAgent))
         {
-            var platformVersion =
-                string.IsNullOrEmpty(clientHints.PlatformVersion) ? "10" : clientHints.PlatformVersion;
+            var platformVersion = clientHints.PlatformVersion is null or { Length: 0 }
+                ? "10"
+                : clientHints.PlatformVersion;
 
-            result = ClientHintsFragmentReplacementRegex.Replace(userAgent,
-                $"Android {platformVersion}; {clientHints.Model}");
+            result = ClientHintsFragmentReplacementRegex.Replace(
+                userAgent,
+                $"Android {platformVersion}; {clientHints.Model}"
+            );
         }
 
         if (HasUserAgentDesktopFragment(userAgent))
         {
-            result = DesktopFragmentReplacementRegex.Replace(userAgent, $"X11; Linux x86_64; {clientHints.Model}");
+            result = DesktopFragmentReplacementRegex.Replace(
+                userAgent,
+                $"X11; Linux x86_64; {clientHints.Model}"
+            );
         }
 
-        return !string.IsNullOrEmpty(result);
+        return result is { Length: > 0 };
     }
 
     public static string FormatWithMatch(string value, Match match)
@@ -80,7 +94,7 @@ internal static class ParserExtensions
 
     public static string? BuildVersion(string? version, VersionTruncation versionTruncation)
     {
-        if (string.IsNullOrEmpty(version))
+        if (version is null or { Length: 0 })
         {
             return null;
         }
@@ -100,9 +114,13 @@ internal static class ParserExtensions
         return version.Trim(' ', '.');
     }
 
-    public static string? BuildVersion(string? version, Match match, VersionTruncation versionTruncation)
+    public static string? BuildVersion(
+        string? version,
+        Match match,
+        VersionTruncation versionTruncation
+    )
     {
-        if (string.IsNullOrEmpty(version))
+        if (version is null or { Length: 0 })
         {
             return null;
         }
@@ -126,7 +144,11 @@ internal static class ParserExtensions
     /// <returns>
     /// True if the comparison was successful, false otherwise.
     /// </returns>
-    public static bool TryCompareVersions(string first, string second, [NotNullWhen(true)] out int? result)
+    public static bool TryCompareVersions(
+        string first,
+        string second,
+        [NotNullWhen(true)] out int? result
+    )
     {
         string[] segments1 = first.Split('.');
         string[] segments2 = second.Split('.');
@@ -135,7 +157,8 @@ internal static class ParserExtensions
 
         for (int i = 0; i < maxSegments; i++)
         {
-            int value1, value2;
+            int value1,
+                value2;
 
             if (i < segments1.Length)
             {

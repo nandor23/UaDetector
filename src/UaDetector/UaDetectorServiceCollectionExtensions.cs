@@ -1,5 +1,4 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-
 using UaDetector.Parsers;
 
 namespace UaDetector;
@@ -17,7 +16,7 @@ public static class UaDetectorServiceCollectionExtensions
         services.AddSingleton<IUaDetector>(new UaDetector(options));
         return services;
     }
-    
+
     public static IServiceCollection AddOsParser(
         this IServiceCollection services,
         Action<ParserOptions>? configureOptions = null
@@ -29,7 +28,7 @@ public static class UaDetectorServiceCollectionExtensions
         services.AddSingleton<IOsParser>(new OsParser(options));
         return services;
     }
-    
+
     public static IServiceCollection AddBrowserParser(
         this IServiceCollection services,
         Action<ParserOptions>? configureOptions = null
@@ -41,7 +40,7 @@ public static class UaDetectorServiceCollectionExtensions
         services.AddSingleton<IBrowserParser>(new BrowserParser(options));
         return services;
     }
-    
+
     public static IServiceCollection AddClientParser(
         this IServiceCollection services,
         Action<ParserOptions>? configureOptions = null
@@ -53,7 +52,7 @@ public static class UaDetectorServiceCollectionExtensions
         services.AddSingleton<IClientParser>(new ClientParser(options));
         return services;
     }
-    
+
     public static IServiceCollection AddBotParser(this IServiceCollection services)
     {
         services.AddSingleton<IBotParser>(new BotParser());

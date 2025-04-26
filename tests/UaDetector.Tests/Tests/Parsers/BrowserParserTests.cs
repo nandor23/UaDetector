@@ -1,5 +1,4 @@
 using Shouldly;
-
 using UaDetector.Models.Enums;
 using UaDetector.Parsers;
 using UaDetector.Results;
@@ -27,8 +26,7 @@ public class BrowserParserTests
     [Test]
     public void Browsers_ShouldContainKeysForAllBrowserNames()
     {
-        var browserNames = BrowserParser.Browsers
-            .Select(browser => browser.Name);
+        var browserNames = BrowserParser.Browsers.Select(browser => browser.Name);
 
         foreach (var browserName in browserNames)
         {
@@ -48,8 +46,8 @@ public class BrowserParserTests
     [Test]
     public void CompactToFullNameMapping_ShouldContainKeyForAllUniqueNames()
     {
-        var duplicateCompactNames = BrowserParser.BrowserCodeMapping.Values
-            .Select(x => x.RemoveSpaces())
+        var duplicateCompactNames = BrowserParser
+            .BrowserCodeMapping.Values.Select(x => x.RemoveSpaces())
             .GroupBy(x => x)
             .Where(group => group.Count() > 1)
             .Select(group => group.Key)
@@ -78,7 +76,9 @@ public class BrowserParserTests
     {
         var fixturePath = Path.Combine("Fixtures", "Resources", "browsers.json");
         var fixtures = await FixtureLoader.LoadAsync<BrowserFixture>(fixturePath);
-        var parser = new BrowserParser(new ParserOptions { VersionTruncation = VersionTruncation.None, });
+        var parser = new BrowserParser(
+            new ParserOptions { VersionTruncation = VersionTruncation.None }
+        );
 
         foreach (var fixture in fixtures)
         {

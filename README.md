@@ -2,7 +2,7 @@
 
 UaDetector is a user-agent parsing library that identifies the browser, operating system, device type (desktop, tablet, mobile, TV, car, console, etc.), brand, model, and even detects bots. It is based on the PHP library [device-detector](https://github.com/matomo-org/device-detector),  but follows a different implementation approach.
 
-UaDetector, is composed of several sub-parsers: `OsParser`, `BrowserParser`, `ClientParser`, and `BotParser`. Each can be used independently when only specific information is needed from the user-agent string.
+UaDetector, is composed of several sub-parsers: `OsParser`, `BrowserParser`, `ClientParser`, and `BotParser`. Each can be used independently when only certain information is needed from the user-agent string.
 
 
 ### Differences from device-detector
@@ -15,9 +15,9 @@ UaDetector, is composed of several sub-parsers: `OsParser`, `BrowserParser`, `Cl
 - **Thread safety**: The parsers are stateless by design, so they are completely thread-safe and dependency-injection friendly.
 - **Predefined values**: Browser names, OS names, and other related information are exposed through static classes to provide access to all possible values. These classes are:
   - `OsNames`, `OsFamilies`, `OsPlatformTypes`, `BrowserNames`, `BrowserFamilies`, `BrowserEngines`, `BrandNames`
-- **Type-Safe values**: Certain values are represented by enums, making them suitable for database storage. These enums are:
+- **Type-safe values**: Certain values are represented by enums, making them suitable for database storage. These enums are:
   - `OsCode`, `BrowserCode`, `BrandCode`, `ClientType`, `DeviceType`, `BotCategory`
-- **Try-Parse pattern**: Makes use of the  [Try-Parse Pattern](https://learn.microsoft.com/en-us/dotnet/standard/design-guidelines/exceptions-and-performance#try-parse-pattern), returning a `bool` status and setting the `out` parameter to `null` on failure.
+- **Try-Parse pattern**: Parsers make use of the  [Try-Parse Pattern](https://learn.microsoft.com/en-us/dotnet/standard/design-guidelines/exceptions-and-performance#try-parse-pattern), returning a `bool` status and setting the `out` parameter to `null` on failure.
 
 ## ⚙️ Configuration
 
@@ -101,6 +101,9 @@ public class UaDetectorController : ControllerBase
     }
 }
 ```
+
+> [!TIP]
+> Avoid directly instantiating parsers. Creating the first instance of UaDetector (or similar parsers) takes 1–2 seconds due to internal regex compilation. To avoid this one-time cost during runtime, register the service with dependency injection, as shown earlier. This way, the instantiation will happen at application startup.
 
 ## ⚡ Benchmarks
 

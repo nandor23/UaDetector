@@ -1,5 +1,4 @@
 using Shouldly;
-
 using UaDetector.Parsers;
 using UaDetector.Tests.Fixtures.Models;
 using UaDetector.Tests.Helpers;

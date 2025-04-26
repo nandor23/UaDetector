@@ -2,7 +2,6 @@ using System.Collections.Frozen;
 using System.Collections.Immutable;
 using System.Diagnostics.CodeAnalysis;
 using System.Text.RegularExpressions;
-
 using UaDetector.Models.Constants;
 using UaDetector.Models.Enums;
 using UaDetector.Regexes.Models;
@@ -28,7 +27,6 @@ public sealed class OsParser : IOsParser
     private static readonly FrozenSet<string> AndroidApps;
     private static readonly FrozenDictionary<string, Regex> PlatformRegexes;
     private static readonly IEnumerable<string> OsPlatforms;
-
 
     static OsParser()
     {
@@ -233,85 +231,228 @@ public sealed class OsParser : IOsParser
                 OsFamilies.Android,
                 new[]
                 {
-                    OsCode.Android, OsCode.CyanogenMod, OsCode.FireOs, OsCode.RemixOs, OsCode.RazoDroid,
-                    OsCode.MildWild, OsCode.MocorDroid, OsCode.YunOs, OsCode.GridOs, OsCode.HarmonyOs, OsCode.AndroidTv,
-                    OsCode.ClearOsMobile, OsCode.BlissOs, OsCode.RevengeOs, OsCode.LineageOs, OsCode.SirinOs,
-                    OsCode.ResurrectionRemixOs, OsCode.WearOs, OsCode.PicoOs, OsCode.ArmadilloOs, OsCode.HelixOs,
-                    OsCode.BaiduYi, OsCode.RisingOs, OsCode.PuffinOs, OsCode.LeafOs, OsCode.MetaHorizon
+                    OsCode.Android,
+                    OsCode.CyanogenMod,
+                    OsCode.FireOs,
+                    OsCode.RemixOs,
+                    OsCode.RazoDroid,
+                    OsCode.MildWild,
+                    OsCode.MocorDroid,
+                    OsCode.YunOs,
+                    OsCode.GridOs,
+                    OsCode.HarmonyOs,
+                    OsCode.AndroidTv,
+                    OsCode.ClearOsMobile,
+                    OsCode.BlissOs,
+                    OsCode.RevengeOs,
+                    OsCode.LineageOs,
+                    OsCode.SirinOs,
+                    OsCode.ResurrectionRemixOs,
+                    OsCode.WearOs,
+                    OsCode.PicoOs,
+                    OsCode.ArmadilloOs,
+                    OsCode.HelixOs,
+                    OsCode.BaiduYi,
+                    OsCode.RisingOs,
+                    OsCode.PuffinOs,
+                    OsCode.LeafOs,
+                    OsCode.MetaHorizon,
                 }.ToFrozenSet()
             },
-            { OsFamilies.AmigaOs, new[] { OsCode.AmigaOs, OsCode.MorphOs, OsCode.Aros }.ToFrozenSet() },
-            { OsFamilies.BlackBerry, new[] { OsCode.BlackBerryOs, OsCode.BlackBerryTabletOs }.ToFrozenSet() },
+            {
+                OsFamilies.AmigaOs,
+                new[] { OsCode.AmigaOs, OsCode.MorphOs, OsCode.Aros }.ToFrozenSet()
+            },
+            {
+                OsFamilies.BlackBerry,
+                new[] { OsCode.BlackBerryOs, OsCode.BlackBerryTabletOs }.ToFrozenSet()
+            },
             { OsFamilies.Brew, new[] { OsCode.Brew }.ToFrozenSet() },
             { OsFamilies.BeOs, new[] { OsCode.BeOs, OsCode.HaikuOs }.ToFrozenSet() },
             {
                 OsFamilies.ChromeOs,
-                new[] { OsCode.ChromeOs, OsCode.ChromiumOs, OsCode.FydeOs, OsCode.SeewoOs }.ToFrozenSet()
+                new[]
+                {
+                    OsCode.ChromeOs,
+                    OsCode.ChromiumOs,
+                    OsCode.FydeOs,
+                    OsCode.SeewoOs,
+                }.ToFrozenSet()
             },
             { OsFamilies.FirefoxOs, new[] { OsCode.FirefoxOs, OsCode.KaiOs }.ToFrozenSet() },
-            { OsFamilies.GamingConsole, new[] { OsCode.Nintendo, OsCode.PlayStation }.ToFrozenSet() },
+            {
+                OsFamilies.GamingConsole,
+                new[] { OsCode.Nintendo, OsCode.PlayStation }.ToFrozenSet()
+            },
             { OsFamilies.GoogleTv, new[] { OsCode.GoogleTv }.ToFrozenSet() },
             { OsFamilies.Ibm, new[] { OsCode.Os2 }.ToFrozenSet() },
-            { OsFamilies.Ios, new[] { OsCode.IOs, OsCode.TvOs, OsCode.WatchOs, OsCode.IPadOs }.ToFrozenSet() },
+            {
+                OsFamilies.Ios,
+                new[] { OsCode.IOs, OsCode.TvOs, OsCode.WatchOs, OsCode.IPadOs }.ToFrozenSet()
+            },
             { OsFamilies.RiscOs, new[] { OsCode.RiscOs }.ToFrozenSet() },
             {
                 OsFamilies.GnuLinux,
                 new[]
                 {
-                    OsCode.GnuLinux, OsCode.ArchLinux, OsCode.Debian, OsCode.Knoppix, OsCode.Mint, OsCode.Ubuntu,
-                    OsCode.Kubuntu, OsCode.Xubuntu, OsCode.Lubuntu, OsCode.Fedora, OsCode.RedHat, OsCode.VectorLinux,
-                    OsCode.Mandriva, OsCode.Gentoo, OsCode.Sabayon, OsCode.Slackware, OsCode.Suse, OsCode.CentOs,
-                    OsCode.BackTrack, OsCode.SailfishOs, OsCode.Ordissimo, OsCode.TmaxOs, OsCode.Rosa, OsCode.Deepin,
-                    OsCode.Freebox, OsCode.Mageia, OsCode.Fenix, OsCode.CaixaMagica, OsCode.PcLinuxOs,
-                    OsCode.HasCodingOs, OsCode.LuminOs, OsCode.DvkBuntu, OsCode.RokuOs, OsCode.OpenWrt, OsCode.OperaTv,
-                    OsCode.KreaTv, OsCode.PureOs, OsCode.PlasmaMobile, OsCode.Fuchsia, OsCode.Pardus,
-                    OsCode.ForesightLinux, OsCode.MoonOs, OsCode.Kanotix, OsCode.Zenwalk, OsCode.LindowsOs,
-                    OsCode.Linspire, OsCode.ChinaOs, OsCode.AmazonLinux, OsCode.TencentOs, OsCode.CentOsStream,
-                    OsCode.Nova, OsCode.RouterOs, OsCode.ZorinOs, OsCode.RedOs, OsCode.Kali, OsCode.OracleLinux,
-                    OsCode.Vidaa, OsCode.TiVoOs, OsCode.BrightSignOs, OsCode.Raspbian, OsCode.Uos, OsCode.RaspberryPiOs,
-                    OsCode.FritzOs, OsCode.LiriOs, OsCode.Webian, OsCode.SerenityOs, OsCode.AspLinux, OsCode.AoscOs,
-                    OsCode.Loongnix, OsCode.EulerOs, OsCode.ScientificLinux, OsCode.AlpineLinux, OsCode.ClearLinuxOs,
-                    OsCode.RockyLinux, OsCode.OpenVz, OsCode.ProxmoxVe, OsCode.RedStar, OsCode.MotorolaEzx,
-                    OsCode.GNewSense, OsCode.JoliOs, OsCode.Turbolinux, OsCode.Qtopia, OsCode.WoPhone,
-                    OsCode.BlackPantherOs, OsCode.ViziOs, OsCode.AzureLinux, OsCode.CoolitaOs
+                    OsCode.GnuLinux,
+                    OsCode.ArchLinux,
+                    OsCode.Debian,
+                    OsCode.Knoppix,
+                    OsCode.Mint,
+                    OsCode.Ubuntu,
+                    OsCode.Kubuntu,
+                    OsCode.Xubuntu,
+                    OsCode.Lubuntu,
+                    OsCode.Fedora,
+                    OsCode.RedHat,
+                    OsCode.VectorLinux,
+                    OsCode.Mandriva,
+                    OsCode.Gentoo,
+                    OsCode.Sabayon,
+                    OsCode.Slackware,
+                    OsCode.Suse,
+                    OsCode.CentOs,
+                    OsCode.BackTrack,
+                    OsCode.SailfishOs,
+                    OsCode.Ordissimo,
+                    OsCode.TmaxOs,
+                    OsCode.Rosa,
+                    OsCode.Deepin,
+                    OsCode.Freebox,
+                    OsCode.Mageia,
+                    OsCode.Fenix,
+                    OsCode.CaixaMagica,
+                    OsCode.PcLinuxOs,
+                    OsCode.HasCodingOs,
+                    OsCode.LuminOs,
+                    OsCode.DvkBuntu,
+                    OsCode.RokuOs,
+                    OsCode.OpenWrt,
+                    OsCode.OperaTv,
+                    OsCode.KreaTv,
+                    OsCode.PureOs,
+                    OsCode.PlasmaMobile,
+                    OsCode.Fuchsia,
+                    OsCode.Pardus,
+                    OsCode.ForesightLinux,
+                    OsCode.MoonOs,
+                    OsCode.Kanotix,
+                    OsCode.Zenwalk,
+                    OsCode.LindowsOs,
+                    OsCode.Linspire,
+                    OsCode.ChinaOs,
+                    OsCode.AmazonLinux,
+                    OsCode.TencentOs,
+                    OsCode.CentOsStream,
+                    OsCode.Nova,
+                    OsCode.RouterOs,
+                    OsCode.ZorinOs,
+                    OsCode.RedOs,
+                    OsCode.Kali,
+                    OsCode.OracleLinux,
+                    OsCode.Vidaa,
+                    OsCode.TiVoOs,
+                    OsCode.BrightSignOs,
+                    OsCode.Raspbian,
+                    OsCode.Uos,
+                    OsCode.RaspberryPiOs,
+                    OsCode.FritzOs,
+                    OsCode.LiriOs,
+                    OsCode.Webian,
+                    OsCode.SerenityOs,
+                    OsCode.AspLinux,
+                    OsCode.AoscOs,
+                    OsCode.Loongnix,
+                    OsCode.EulerOs,
+                    OsCode.ScientificLinux,
+                    OsCode.AlpineLinux,
+                    OsCode.ClearLinuxOs,
+                    OsCode.RockyLinux,
+                    OsCode.OpenVz,
+                    OsCode.ProxmoxVe,
+                    OsCode.RedStar,
+                    OsCode.MotorolaEzx,
+                    OsCode.GNewSense,
+                    OsCode.JoliOs,
+                    OsCode.Turbolinux,
+                    OsCode.Qtopia,
+                    OsCode.WoPhone,
+                    OsCode.BlackPantherOs,
+                    OsCode.ViziOs,
+                    OsCode.AzureLinux,
+                    OsCode.CoolitaOs,
                 }.ToFrozenSet()
             },
             { OsFamilies.Mac, new[] { OsCode.Mac }.ToFrozenSet() },
             {
                 OsFamilies.MobileGamingConsole,
-                new[] { OsCode.PlayStationPortable, OsCode.NintendoMobile, OsCode.Xbox }.ToFrozenSet()
+                new[]
+                {
+                    OsCode.PlayStationPortable,
+                    OsCode.NintendoMobile,
+                    OsCode.Xbox,
+                }.ToFrozenSet()
             },
             { OsFamilies.OpenVms, new[] { OsCode.OpenVms }.ToFrozenSet() },
             {
-                OsFamilies.RealtimeOs, new[]
-                    {
-                        OsCode.MtkNucleus, OsCode.ThreadX, OsCode.Mre, OsCode.JavaMe, OsCode.Rex, OsCode.RtosAndNext
-                    }
-                    .ToFrozenSet()
+                OsFamilies.RealtimeOs,
+                new[]
+                {
+                    OsCode.MtkNucleus,
+                    OsCode.ThreadX,
+                    OsCode.Mre,
+                    OsCode.JavaMe,
+                    OsCode.Rex,
+                    OsCode.RtosAndNext,
+                }.ToFrozenSet()
             },
             {
-                OsFamilies.OtherMobile, new[]
-                    {
-                        OsCode.WebOs, OsCode.PalmOs, OsCode.Bada, OsCode.Tizen, OsCode.MeeGo, OsCode.Maemo,
-                        OsCode.LuneOs, OsCode.Geos
-                    }
-                    .ToFrozenSet()
+                OsFamilies.OtherMobile,
+                new[]
+                {
+                    OsCode.WebOs,
+                    OsCode.PalmOs,
+                    OsCode.Bada,
+                    OsCode.Tizen,
+                    OsCode.MeeGo,
+                    OsCode.Maemo,
+                    OsCode.LuneOs,
+                    OsCode.Geos,
+                }.ToFrozenSet()
             },
             {
-                OsFamilies.Symbian, new[]
-                    {
-                        OsCode.Symbian, OsCode.SymbianOs, OsCode.Symbian3, OsCode.SymbianOsSeries40,
-                        OsCode.SymbianOsSeries60,
-                    }
-                    .ToFrozenSet()
+                OsFamilies.Symbian,
+                new[]
+                {
+                    OsCode.Symbian,
+                    OsCode.SymbianOs,
+                    OsCode.Symbian3,
+                    OsCode.SymbianOsSeries40,
+                    OsCode.SymbianOsSeries60,
+                }.ToFrozenSet()
             },
             {
                 OsFamilies.Unix,
                 new[]
                 {
-                    OsCode.Solaris, OsCode.Aix, OsCode.HpUx, OsCode.FreeBsd, OsCode.NetBsd, OsCode.OpenBsd,
-                    OsCode.DragonFly, OsCode.Syllable, OsCode.Irix, OsCode.Osf1, OsCode.Inferno, OsCode.ElectroBsd,
-                    OsCode.Genix, OsCode.Ultrix, OsCode.NewsOs, OsCode.NextStep, OsCode.StarBladeOs
+                    OsCode.Solaris,
+                    OsCode.Aix,
+                    OsCode.HpUx,
+                    OsCode.FreeBsd,
+                    OsCode.NetBsd,
+                    OsCode.OpenBsd,
+                    OsCode.DragonFly,
+                    OsCode.Syllable,
+                    OsCode.Irix,
+                    OsCode.Osf1,
+                    OsCode.Inferno,
+                    OsCode.ElectroBsd,
+                    OsCode.Genix,
+                    OsCode.Ultrix,
+                    OsCode.NewsOs,
+                    OsCode.NextStep,
+                    OsCode.StarBladeOs,
                 }.ToFrozenSet()
             },
             { OsFamilies.WebTv, new[] { OsCode.WebTv }.ToFrozenSet() },
@@ -320,23 +461,33 @@ public sealed class OsParser : IOsParser
                 OsFamilies.WindowsMobile,
                 new[]
                 {
-                    OsCode.WindowsPhone, OsCode.WindowsMobile, OsCode.WindowsCe, OsCode.WindowsRt, OsCode.WindowsIoT,
-                    OsCode.KinOs
+                    OsCode.WindowsPhone,
+                    OsCode.WindowsMobile,
+                    OsCode.WindowsCe,
+                    OsCode.WindowsRt,
+                    OsCode.WindowsIoT,
+                    OsCode.KinOs,
                 }.ToFrozenSet()
             },
-            { OsFamilies.OtherSmartTv, new[] { OsCode.WhaleOs }.ToFrozenSet() }
+            { OsFamilies.OtherSmartTv, new[] { OsCode.WhaleOs }.ToFrozenSet() },
         }.ToFrozenDictionary(StringComparer.OrdinalIgnoreCase);
 
         DesktopOsFamilies = new[]
         {
-            OsFamilies.AmigaOs, OsFamilies.Ibm, OsFamilies.GnuLinux, OsFamilies.Mac, OsFamilies.Unix,
-            OsFamilies.Windows, OsFamilies.BeOs, OsFamilies.ChromeOs,
+            OsFamilies.AmigaOs,
+            OsFamilies.Ibm,
+            OsFamilies.GnuLinux,
+            OsFamilies.Mac,
+            OsFamilies.Unix,
+            OsFamilies.Windows,
+            OsFamilies.BeOs,
+            OsFamilies.ChromeOs,
         }.ToFrozenSet(StringComparer.OrdinalIgnoreCase);
 
         ClientHintPlatformMapping = new Dictionary<string, FrozenSet<string>>
         {
             { OsNames.GnuLinux, new[] { "Linux" }.ToFrozenSet(StringComparer.OrdinalIgnoreCase) },
-            { OsNames.Mac, new[] { "MacOS" }.ToFrozenSet(StringComparer.OrdinalIgnoreCase) }
+            { OsNames.Mac, new[] { "MacOS" }.ToFrozenSet(StringComparer.OrdinalIgnoreCase) },
         }.ToFrozenDictionary(StringComparer.OrdinalIgnoreCase);
 
         FireOsVersionMapping = new Dictionary<string, string>
@@ -378,23 +529,31 @@ public sealed class OsParser : IOsParser
             { "4.4.4", "11.0" },
             { "4.3", "10.2" },
             { "4.2.2", "10.1" },
-            { "4.0.4", "9.1.0" }
+            { "4.0.4", "9.1.0" },
         }.ToFrozenDictionary();
 
-        WindowsMinorVersionMapping =
-            new Dictionary<int, string> { { 1, "7" }, { 2, "8" }, { 3, "8.1" } }.ToFrozenDictionary();
+        WindowsMinorVersionMapping = new Dictionary<int, string>
+        {
+            { 1, "7" },
+            { 2, "8" },
+            { 3, "8.1" },
+        }.ToFrozenDictionary();
 
         AndroidApps = new[]
         {
-            "com.hisense.odinbrowser", "com.seraphic.openinet.pre", "com.appssppa.idesktoppcbrowser",
-            "every.browser.inc"
+            "com.hisense.odinbrowser",
+            "com.seraphic.openinet.pre",
+            "com.appssppa.idesktoppcbrowser",
+            "every.browser.inc",
         }.ToFrozenSet();
 
         PlatformRegexes = new Dictionary<string, Regex>
         {
             {
-                OsPlatformTypes.Arm, RegexUtility.BuildUserAgentRegex(
-                    "arm[ _;)ev]|.*arm$|.*arm64|aarch64|Apple ?TV|Watch ?OS|Watch1,[12]")
+                OsPlatformTypes.Arm,
+                RegexUtility.BuildUserAgentRegex(
+                    "arm[ _;)ev]|.*arm$|.*arm64|aarch64|Apple ?TV|Watch ?OS|Watch1,[12]"
+                )
             },
             { OsPlatformTypes.LoongArch64, RegexUtility.BuildUserAgentRegex("loongarch64") },
             { OsPlatformTypes.Mips, RegexUtility.BuildUserAgentRegex("mips") },
@@ -402,15 +561,25 @@ public sealed class OsParser : IOsParser
             { OsPlatformTypes.Sparc64, RegexUtility.BuildUserAgentRegex("sparc64") },
             {
                 OsPlatformTypes.X64,
-                RegexUtility.BuildUserAgentRegex("64-?bit|WOW64|(?:Intel)?x64|WINDOWS_64|win64|.*amd64|.*x86_?64")
+                RegexUtility.BuildUserAgentRegex(
+                    "64-?bit|WOW64|(?:Intel)?x64|WINDOWS_64|win64|.*amd64|.*x86_?64"
+                )
             },
-            { OsPlatformTypes.X86, RegexUtility.BuildUserAgentRegex(".*32bit|.*win32|(?:i[0-9]|x)86|i86pc") }
+            {
+                OsPlatformTypes.X86,
+                RegexUtility.BuildUserAgentRegex(".*32bit|.*win32|(?:i[0-9]|x)86|i86pc")
+            },
         }.ToFrozenDictionary();
 
         OsPlatforms =
         [
-            OsPlatformTypes.Arm, OsPlatformTypes.LoongArch64, OsPlatformTypes.Mips, OsPlatformTypes.SuperH,
-            OsPlatformTypes.Sparc64, OsPlatformTypes.X64, OsPlatformTypes.X86
+            OsPlatformTypes.Arm,
+            OsPlatformTypes.LoongArch64,
+            OsPlatformTypes.Mips,
+            OsPlatformTypes.SuperH,
+            OsPlatformTypes.Sparc64,
+            OsPlatformTypes.X64,
+            OsPlatformTypes.X86,
         ];
     }
 
@@ -451,7 +620,10 @@ public sealed class OsParser : IOsParser
         return false;
     }
 
-    private static bool TryGetFireOsVersion(string version, [NotNullWhen((true))] out string? result)
+    private static bool TryGetFireOsVersion(
+        string version,
+        [NotNullWhen((true))] out string? result
+    )
     {
         result = null;
         var index = version.IndexOf('.');
@@ -469,7 +641,10 @@ public sealed class OsParser : IOsParser
         return result is not null;
     }
 
-    private static bool TryGetLineageOsVersion(string version, [NotNullWhen((true))] out string? result)
+    private static bool TryGetLineageOsVersion(
+        string version,
+        [NotNullWhen((true))] out string? result
+    )
     {
         result = null;
         var index = version.IndexOf('.');
@@ -487,11 +662,15 @@ public sealed class OsParser : IOsParser
         return result is not null;
     }
 
-    private static bool TryParsePlatform(string userAgent, ClientHints clientHints, [NotNullWhen(true)] out string? result)
+    private static bool TryParsePlatform(
+        string userAgent,
+        ClientHints clientHints,
+        [NotNullWhen(true)] out string? result
+    )
     {
         result = null;
 
-        if (!string.IsNullOrEmpty(clientHints.Architecture))
+        if (clientHints.Architecture is { Length: > 0 })
         {
             var architecture = clientHints.Architecture.ToLower();
 
@@ -515,7 +694,10 @@ public sealed class OsParser : IOsParser
             {
                 result = OsPlatformTypes.Sparc64;
             }
-            else if (architecture.Contains("x64") || (architecture.Contains("x86") && clientHints.Bitness == "64"))
+            else if (
+                architecture.Contains("x64")
+                || (architecture.Contains("x86") && clientHints.Bitness == "64")
+            )
             {
                 result = OsPlatformTypes.X64;
             }
@@ -524,7 +706,7 @@ public sealed class OsParser : IOsParser
                 result = OsPlatformTypes.X86;
             }
 
-            if (!string.IsNullOrEmpty(result))
+            if (result is { Length: > 0 })
             {
                 return true;
             }
@@ -542,9 +724,12 @@ public sealed class OsParser : IOsParser
         return result is not null;
     }
 
-    private bool TryParseOsFromClientHints(ClientHints clientHints, [NotNullWhen(true)] out CommonOsInfo? result)
+    private bool TryParseOsFromClientHints(
+        ClientHints clientHints,
+        [NotNullWhen(true)] out CommonOsInfo? result
+    )
     {
-        if (string.IsNullOrEmpty(clientHints.Platform))
+        if (clientHints.Platform is null or { Length: 0 })
         {
             result = null;
             return false;
@@ -565,18 +750,21 @@ public sealed class OsParser : IOsParser
 
         string? version = clientHints.PlatformVersion;
 
-        if (name == OsNames.Windows && !string.IsNullOrEmpty(version))
+        if (name == OsNames.Windows && version is { Length: > 0 })
         {
             var versionParts = version.Split('.');
-            int majorVersion = versionParts.Length > 0 && int.TryParse(versionParts[0], out var major) ? major : 0;
-            int minorVersion = versionParts.Length > 1 && int.TryParse(versionParts[1], out var minor) ? minor : 0;
+            int majorVersion =
+                versionParts.Length > 0 && int.TryParse(versionParts[0], out var major) ? major : 0;
+            int minorVersion =
+                versionParts.Length > 1 && int.TryParse(versionParts[1], out var minor) ? minor : 0;
 
             switch (majorVersion)
             {
                 case 0 when minorVersion != 0:
                     WindowsMinorVersionMapping.TryGetValue(minorVersion, out version);
                     break;
-                case > 0 and <= 10:
+                case > 0
+                and <= 10:
                     version = "10";
                     break;
                 case > 10:
@@ -586,8 +774,13 @@ public sealed class OsParser : IOsParser
         }
 
         // On Windows, version 0.0.0 can represent 7, 8, or 8.1, so it is set to null.
-        if (name != OsNames.Windows && !string.IsNullOrEmpty(version) && version != "0.0.0" &&
-            ParserExtensions.TryCompareVersions(version, "0", out var comparisonResult) && comparisonResult == 0)
+        if (
+            name != OsNames.Windows
+            && version is { Length: > 0 }
+            && version != "0.0.0"
+            && ParserExtensions.TryCompareVersions(version, "0", out var comparisonResult)
+            && comparisonResult == 0
+        )
         {
             version = null;
         }
@@ -601,7 +794,10 @@ public sealed class OsParser : IOsParser
         return true;
     }
 
-    private bool TryParseOsFromUserAgent(string userAgent, [NotNullWhen(true)] out CommonOsInfo? result)
+    private bool TryParseOsFromUserAgent(
+        string userAgent,
+        [NotNullWhen(true)] out CommonOsInfo? result
+    )
     {
         Match? match = null;
         Os? os = null;
@@ -635,7 +831,11 @@ public sealed class OsParser : IOsParser
             return false;
         }
 
-        var version = ParserExtensions.BuildVersion(os.Version, match, _parserOptions.VersionTruncation);
+        var version = ParserExtensions.BuildVersion(
+            os.Version,
+            match,
+            _parserOptions.VersionTruncation
+        );
 
         if (os.Versions?.Count > 0)
         {
@@ -645,13 +845,17 @@ public sealed class OsParser : IOsParser
 
                 if (match.Success)
                 {
-                    version = ParserExtensions.BuildVersion(osVersion.Version, match, _parserOptions.VersionTruncation);
+                    version = ParserExtensions.BuildVersion(
+                        osVersion.Version,
+                        match,
+                        _parserOptions.VersionTruncation
+                    );
                     break;
                 }
             }
         }
 
-        result = new CommonOsInfo { Name = name, Version = version, };
+        result = new CommonOsInfo { Name = name, Version = version };
         return true;
     }
 
@@ -660,7 +864,11 @@ public sealed class OsParser : IOsParser
         return TryParse(userAgent, ImmutableDictionary<string, string?>.Empty, out result);
     }
 
-    public bool TryParse(string userAgent, IDictionary<string, string?> headers, [NotNullWhen(true)] out OsInfo? result)
+    public bool TryParse(
+        string userAgent,
+        IDictionary<string, string?> headers,
+        [NotNullWhen(true)] out OsInfo? result
+    )
     {
         var clientHints = ClientHints.Create(headers);
 
@@ -678,7 +886,11 @@ public sealed class OsParser : IOsParser
         return TryParse(userAgent, clientHints, out result);
     }
 
-    internal bool TryParse(string userAgent, ClientHints clientHints, [NotNullWhen(true)] out OsInfo? result)
+    internal bool TryParse(
+        string userAgent,
+        ClientHints clientHints,
+        [NotNullWhen(true)] out OsInfo? result
+    )
     {
         string name;
         string? version;
@@ -696,9 +908,11 @@ public sealed class OsParser : IOsParser
 
                 // If no version is provided in the client hints, use the version from the user agent,
                 // provided the OS family matches.
-                if (string.IsNullOrEmpty(osFromClientHints.Version) &&
-                    TryMapNameToFamily(name, out var familyFromName) &&
-                    familyFromName == familyFromUserAgent)
+                if (
+                    osFromClientHints.Version is null or { Length: 0 }
+                    && TryMapNameToFamily(name, out var familyFromName)
+                    && familyFromName == familyFromUserAgent
+                )
                 {
                     version = osFromUserAgent.Version;
                 }
@@ -717,18 +931,20 @@ public sealed class OsParser : IOsParser
 
                     switch (name)
                     {
-                        case OsNames.LeafOs or OsNames.HarmonyOs:
+                        case OsNames.LeafOs
+                        or OsNames.HarmonyOs:
                             version = null;
                             break;
                         case OsNames.PicoOs:
                             version = osFromUserAgent.Version;
                             break;
-                        case OsNames.FireOs when !string.IsNullOrEmpty(osFromClientHints.Version) &&
-                                                 !string.IsNullOrEmpty(version):
-                            {
-                                TryGetFireOsVersion(version, out version);
-                                break;
-                            }
+                        case OsNames.FireOs
+                            when osFromClientHints.Version is { Length: > 0 }
+                                && version is { Length: > 0 }:
+                        {
+                            TryGetFireOsVersion(version, out version);
+                            break;
+                        }
                     }
                 }
 
@@ -736,8 +952,9 @@ public sealed class OsParser : IOsParser
                 {
                     // In some cases, Chrome OS is reported as Linux in client hints.
                     // This is corrected only when the version matches.
-                    case OsNames.GnuLinux when osFromUserAgent.Name == OsNames.ChromeOs &&
-                                               osFromClientHints.Version == osFromUserAgent.Version:
+                    case OsNames.GnuLinux
+                        when osFromUserAgent.Name == OsNames.ChromeOs
+                            && osFromClientHints.Version == osFromUserAgent.Version:
                         name = osFromUserAgent.Name;
                         break;
                     // In some cases, Chrome OS is incorrectly reported as Android in client hints.
@@ -766,7 +983,7 @@ public sealed class OsParser : IOsParser
         TryParsePlatform(userAgent, clientHints, out var platform);
         TryMapNameToFamily(name, out var family);
 
-        if (!string.IsNullOrEmpty(clientHints.App))
+        if (clientHints.App is { Length: > 0 })
         {
             if (name != OsNames.Android && AndroidApps.Contains(clientHints.App))
             {
@@ -779,7 +996,7 @@ public sealed class OsParser : IOsParser
                 name = OsNames.LineageOs;
                 family = OsFamilies.Android;
 
-                if (!string.IsNullOrEmpty(version))
+                if (version is { Length: > 0 })
                 {
                     TryGetLineageOsVersion(version, out version);
                 }
@@ -789,7 +1006,7 @@ public sealed class OsParser : IOsParser
                 name = OsNames.FireOs;
                 family = OsFamilies.Android;
 
-                if (!string.IsNullOrEmpty(version))
+                if (version is { Length: > 0 })
                 {
                     TryGetFireOsVersion(version, out version);
                 }
@@ -802,7 +1019,7 @@ public sealed class OsParser : IOsParser
             Code = OsNameMapping[name],
             Version = version,
             Platform = platform,
-            Family = family
+            Family = family,
         };
 
         return true;

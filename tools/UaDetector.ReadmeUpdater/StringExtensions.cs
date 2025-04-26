@@ -19,7 +19,11 @@ public static class StringExtensions
     /// <param name="markerName">Name between comment markers (e.g. "VERSION")</param>
     /// <param name="newContent">Content to place between the markers</param>
     /// <exception cref="ArgumentException">Thrown when the specified markers are not found in the content</exception>
-    public static string ReplaceBetweenMarkers(this string content, string markerName, string newContent)
+    public static string ReplaceBetweenMarkers(
+        this string content,
+        string markerName,
+        string newContent
+    )
     {
         return ReplaceContent(content, markerName, newContent);
     }
@@ -60,8 +64,10 @@ public static class StringExtensions
 
         if (regex.IsMatch(content))
         {
-            return regex.Replace(content,
-                m => $"{m.Groups[1].Value}{newContent}{m.Groups[3].Value}");
+            return regex.Replace(
+                content,
+                m => $"{m.Groups[1].Value}{newContent}{m.Groups[3].Value}"
+            );
         }
 
         throw new ArgumentException($"Markers '<!-- {markerName} -->' not found in content");

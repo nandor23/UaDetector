@@ -1,6 +1,5 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Text.RegularExpressions;
-
 using UaDetector.Models.Enums;
 using UaDetector.Regexes.Models;
 using UaDetector.Results;
@@ -10,7 +9,6 @@ namespace UaDetector.Parsers.Clients;
 internal abstract class ClientParserBase
 {
     private readonly VersionTruncation _versionTruncation;
-
 
     protected ClientParserBase(VersionTruncation versionTruncation)
     {
@@ -43,7 +41,11 @@ internal abstract class ClientParserBase
                     result = new ClientInfoInternal
                     {
                         Name = ParserExtensions.FormatWithMatch(client.Name, match),
-                        Version = ParserExtensions.BuildVersion(client.Version, match, _versionTruncation)
+                        Version = ParserExtensions.BuildVersion(
+                            client.Version,
+                            match,
+                            _versionTruncation
+                        ),
                     };
 
                     return true;

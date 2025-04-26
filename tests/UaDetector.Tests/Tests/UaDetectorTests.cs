@@ -1,5 +1,4 @@
 using Shouldly;
-
 using UaDetector.Models.Enums;
 using UaDetector.Parsers;
 using UaDetector.Results;
@@ -47,7 +46,9 @@ public class UaDetectorTests
     {
         var fixturePath = Path.Combine("Fixtures", "Resources", "Collections", $"{fileName}.json");
         var fixtures = await FixtureLoader.LoadAsync<UserAgentFixture>(fixturePath);
-        var uaDetector = new UaDetector(new UaDetectorOptions { VersionTruncation = VersionTruncation.None });
+        var uaDetector = new UaDetector(
+            new UaDetectorOptions { VersionTruncation = VersionTruncation.None }
+        );
 
         foreach (var fixture in fixtures)
         {
@@ -55,8 +56,13 @@ public class UaDetectorTests
                 ? uaDetector.TryParse(fixture.UserAgent, out var result)
                 : uaDetector.TryParse(fixture.UserAgent, fixture.Headers, out result);
 
-            if (fixture.Os is null && fixture.Browser is null && fixture.Client is null && fixture.Device is null &&
-                fixture.Bot is null)
+            if (
+                fixture.Os is null
+                && fixture.Browser is null
+                && fixture.Client is null
+                && fixture.Device is null
+                && fixture.Bot is null
+            )
             {
                 isParsed.ShouldBeFalse();
                 result.ShouldBeNull();
@@ -81,7 +87,9 @@ public class UaDetectorTests
         var fixturePath = Path.Combine("Fixtures", "Resources", "Collections", $"{fileName}.json");
         var fixtures = await FixtureLoader.LoadAsync<UserAgentFixture>(fixturePath);
         var parserOptions = new ParserOptions { VersionTruncation = VersionTruncation.None };
-        var uaDetector = new UaDetector(new UaDetectorOptions { VersionTruncation = VersionTruncation.None });
+        var uaDetector = new UaDetector(
+            new UaDetectorOptions { VersionTruncation = VersionTruncation.None }
+        );
         var osParser = new OsParser(parserOptions);
         var browserParser = new BrowserParser(parserOptions);
         var clientParser = new ClientParser(parserOptions);
@@ -92,9 +100,6 @@ public class UaDetectorTests
             OsInfo? osInfo;
             BrowserInfo? browserInfo;
             ClientInfo? clientInfo;
-
-
-
 
             if (fixture.Headers is null)
             {

@@ -1,6 +1,5 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Text.RegularExpressions;
-
 using UaDetector.Regexes.Models;
 using UaDetector.Results;
 using UaDetector.Utils;
@@ -13,11 +12,9 @@ public class BotParser : IBotParser
     internal static readonly IEnumerable<Bot> Bots;
     private static readonly Regex CombinedRegex;
 
-
     static BotParser()
     {
-        (Bots, CombinedRegex) =
-            RegexLoader.LoadRegexesWithCombined<Bot>(ResourceName);
+        (Bots, CombinedRegex) = RegexLoader.LoadRegexesWithCombined<Bot>(ResourceName);
     }
 
     public bool TryParse(string userAgent, [NotNullWhen(true)] out BotInfo? result)
@@ -37,7 +34,11 @@ public class BotParser : IBotParser
                         Url = bot.Url,
                         Producer = bot.Producer is null
                             ? null
-                            : new ProducerInfo { Name = bot.Producer?.Name, Url = bot.Producer?.Url, },
+                            : new ProducerInfo
+                            {
+                                Name = bot.Producer?.Name,
+                                Url = bot.Producer?.Url,
+                            },
                     };
 
                     return true;

@@ -29,5 +29,5 @@ public enum VersionTruncation
     /// Truncates the version to include the build number.
     /// Examples: 3.4.0.12, 5.6.344.0, 6.234.2.3, 0.200.3.1, 1.2.3.0.
     /// </summary>
-    Build = 4
+    Build = 4,
 }

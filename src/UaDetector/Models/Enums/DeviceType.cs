@@ -15,5 +15,5 @@ public enum DeviceType
     Phablet = 10,
     SmartSpeaker = 11,
     Wearable = 12,
-    Peripheral = 13
+    Peripheral = 13,
 }

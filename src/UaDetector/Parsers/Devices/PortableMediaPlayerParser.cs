@@ -1,6 +1,5 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Text.RegularExpressions;
-
 using UaDetector.Regexes.Models;
 using UaDetector.Results;
 using UaDetector.Utils;
@@ -13,11 +12,11 @@ internal sealed class PortableMediaPlayerParser : DeviceParserBase
     private static readonly IEnumerable<Device> PortableMediaPlayers;
     private static readonly Regex CombinedRegex;
 
-
     static PortableMediaPlayerParser()
     {
-        (PortableMediaPlayers, CombinedRegex) =
-            RegexLoader.LoadRegexesWithCombined<Device>(ResourceName);
+        (PortableMediaPlayers, CombinedRegex) = RegexLoader.LoadRegexesWithCombined<Device>(
+            ResourceName
+        );
     }
 
     public override bool TryParse(
