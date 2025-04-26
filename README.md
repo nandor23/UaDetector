@@ -102,6 +102,9 @@ public class UaDetectorController : ControllerBase
 }
 ```
 
+> [!TIP]
+> Avoid directly instantiating parsers. Creating the first instance of UaDetector (or similar parsers) takes 1–2 seconds due to internal regex compilation. To avoid this one-time cost during application startup, register the service with dependency injection, as shown earlier.
+
 ## ⚡ Benchmarks
 
 The following benchmark compares the performance of other .NET user-agent parsing libraries.
