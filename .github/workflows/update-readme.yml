@@ -1,0 +1,52 @@
+name: Update README
+
+on:
+  push:
+    branches: [ "docs" ]
+  workflow_dispatch:
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: true
+          
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 9.0.x
+
+      - name: Restore dependencies
+        run: dotnet restore tools/UaDetector.ReadmeUpdater
+
+      - name: Run README updater
+        run: dotnet run --project tools/UaDetector.ReadmeUpdater --no-restore
+
+      - name: Check for changes in the README
+        id: check_git_diff
+        run: |
+          if git diff --exit-code README.md > /dev/null; then
+            echo "No changes detected"
+            echo "changes_detected=false" >> $GITHUB_OUTPUT
+          else
+            echo "Changes detected"
+            echo "changes_detected=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Configure Git
+        if: ${{ steps.check_git_diff.outputs.changes_detected == 'true' }}
+        run: |
+          git config --local user.name "$GITHUB_ACTOR"
+          git config --local user.email "$GITHUB_ACTOR@users.noreply.github.com"
+      
+      - name: Push changes
+        if: ${{ steps.check_git_diff.outputs.changes_detected == 'true' }}
+        run: |
+          git add README.md
+          git commit -m "Update README"
+          git push
