@@ -54,14 +54,14 @@ internal static class ParserExtensions
     {
         result = null;
 
-        if (string.IsNullOrEmpty(clientHints.Model))
+        if (clientHints.Model is null or { Length: 0 })
         {
             return false;
         }
 
         if (HasUserAgentClientHintsFragment(userAgent))
         {
-            var platformVersion = string.IsNullOrEmpty(clientHints.PlatformVersion)
+            var platformVersion = clientHints.PlatformVersion is null or { Length: 0 }
                 ? "10"
                 : clientHints.PlatformVersion;
 
@@ -79,7 +79,7 @@ internal static class ParserExtensions
             );
         }
 
-        return !string.IsNullOrEmpty(result);
+        return result is { Length: > 0 };
     }
 
     public static string FormatWithMatch(string value, Match match)

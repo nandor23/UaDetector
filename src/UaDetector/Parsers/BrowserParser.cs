@@ -1497,7 +1497,7 @@ public sealed class BrowserParser : IBrowserParser
             }
         }
 
-        if (string.IsNullOrEmpty(result))
+        if (result is null or { Length: 0 })
         {
             EngineParser.TryParse(userAgent, out result);
         }
@@ -1578,7 +1578,7 @@ public sealed class BrowserParser : IBrowserParser
 
             // Exit if the detected browser brand is not Chromium or Microsoft Edge, otherwise, continue searching.
             if (
-                !string.IsNullOrEmpty(name)
+                name is { Length: > 0 }
                 && name != BrowserNames.Chromium
                 && name != BrowserNames.MicrosoftEdge
             )
@@ -1593,7 +1593,7 @@ public sealed class BrowserParser : IBrowserParser
             return false;
         }
 
-        if (!string.IsNullOrEmpty(clientHints.UaFullVersion))
+        if (clientHints.UaFullVersion is { Length: > 0 })
         {
             version = clientHints.UaFullVersion;
         }
@@ -1922,7 +1922,7 @@ public sealed class BrowserParser : IBrowserParser
             Family = family,
             Version = version,
             Engine =
-                string.IsNullOrEmpty(engine) && string.IsNullOrEmpty(engineVersion)
+                engine is null or { Length: 0 } && engineVersion is null or { Length: 0 }
                     ? null
                     : new EngineInfo { Name = engine, Version = engineVersion },
         };

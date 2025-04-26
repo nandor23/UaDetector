@@ -200,7 +200,7 @@ public sealed class UaDetector : IUaDetector
         }
 
         if (
-            !string.IsNullOrEmpty(model)
+            model is { Length: > 0 }
             || (
                 !ParserExtensions.HasUserAgentClientHintsFragment(userAgent)
                 && !ParserExtensions.HasUserAgentDesktopFragment(userAgent)
@@ -220,12 +220,12 @@ public sealed class UaDetector : IUaDetector
         }
 
         // If the user agent does not specify a model, use the one from client hints.
-        if (string.IsNullOrEmpty(model) && !string.IsNullOrEmpty(clientHints.Model))
+        if (model is null or { Length: 0 } && clientHints.Model is { Length: > 0 })
         {
             model = clientHints.Model;
         }
 
-        if (string.IsNullOrEmpty(brand))
+        if (brand is null or { Length: 0 })
         {
             VendorFragmentParser.TryParseBrand(userAgent, out brand);
         }
@@ -239,7 +239,7 @@ public sealed class UaDetector : IUaDetector
         }
 
         // Assume all devices running iOS or macOS are manufactured by Apple.
-        if (string.IsNullOrEmpty(brand) && os is not null && AppleOsNames.Contains(os.Name))
+        if (brand is null or { Length: 0 } && os is not null && AppleOsNames.Contains(os.Name))
         {
             brand = BrandNames.Apple;
         }
@@ -460,7 +460,7 @@ public sealed class UaDetector : IUaDetector
     )
     {
         if (
-            (string.IsNullOrEmpty(userAgent) || !ContainsLetterRegex.IsMatch(userAgent))
+            (userAgent is { Length: 0 } || !ContainsLetterRegex.IsMatch(userAgent))
             && headers.Count == 0
         )
         {

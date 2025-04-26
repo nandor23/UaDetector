@@ -909,7 +909,7 @@ public sealed class OsParser : IOsParser
                 // If no version is provided in the client hints, use the version from the user agent,
                 // provided the OS family matches.
                 if (
-                    string.IsNullOrEmpty(osFromClientHints.Version)
+                    osFromClientHints.Version is null or { Length: 0 }
                     && TryMapNameToFamily(name, out var familyFromName)
                     && familyFromName == familyFromUserAgent
                 )

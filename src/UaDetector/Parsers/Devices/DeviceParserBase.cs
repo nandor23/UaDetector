@@ -2097,7 +2097,7 @@ internal abstract class DeviceParserBase
         model = ParserExtensions.FormatWithMatch(model, match).Replace('_', ' ');
         model = Regex.Replace(model, " TD$", string.Empty, RegexOptions.IgnoreCase);
 
-        return string.IsNullOrEmpty(model) || model == "Build" ? null : model.Trim();
+        return model is null or { Length: 0 } or "Build" ? null : model.Trim();
     }
 
     public abstract bool TryParse(
