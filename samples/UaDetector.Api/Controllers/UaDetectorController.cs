@@ -23,7 +23,7 @@ public class UaDetectorController : ControllerBase
         {
             return Ok(result);
         }
-        
+
         return BadRequest("No matching user-agent information was found");
     }
 }

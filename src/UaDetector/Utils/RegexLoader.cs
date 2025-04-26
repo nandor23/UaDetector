@@ -27,8 +27,11 @@ internal static class RegexLoader
         return new JsonSerializerOptions
         {
             PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
+            Converters = { regexConverter },
+
+#if NET7_0_OR_GREATER
             RespectRequiredConstructorParameters = true,
-            Converters = { regexConverter }
+#endif
         };
     }
 
