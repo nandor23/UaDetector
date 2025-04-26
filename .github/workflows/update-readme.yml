@@ -9,12 +9,13 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      pull-requests: write
     
     steps:
       - uses: actions/checkout@v4
         with:
           lfs: true
-          
+
       - name: Setup .NET
         uses: actions/setup-dotnet@v4
         with:
@@ -42,17 +43,17 @@ jobs:
         run: |
           git config --local user.name "$GITHUB_ACTOR"
           git config --local user.email "$GITHUB_ACTOR@users.noreply.github.com"
-      
+
       - name: Push changes
         if: ${{ steps.check_git_diff.outputs.changes_detected == 'true' }}
         run: |
           git add README.md
           git commit -m "Update README"
           git push
-          
+
       - name: Create pull request
         if: ${{ steps.check_git_diff.outputs.changes_detected == 'true' }}
-        env:
-          GH_TOKEN: ${{ secrets.DOCS_MGMT_TOKEN }}
         run: gh pr create --base main --head docs --title "Update README" --body "Automated README update"
+        env:
+          GH_TOKEN: ${{ github.token }}
           
