@@ -1,5 +1,4 @@
 ﻿using BenchmarkDotNet.Attributes;
-
 using UaDetector.Parsers;
 using UaDetector.Results;
 
@@ -12,7 +11,8 @@ public class UaDetectorBenchmark
     public UserAgentInfo? UaDetector_TryParse()
     {
         var uaDetector = new UaDetector();
-        var userAgent = "Safari/9537.73.11 CFNetwork/673.0.3 Darwin/13.0.0 (x86_64) (MacBookAir6%2C2)";
+        var userAgent =
+            "Safari/9537.73.11 CFNetwork/673.0.3 Darwin/13.0.0 (x86_64) (MacBookAir6%2C2)";
 
         uaDetector.TryParse(userAgent, out var result);
 
@@ -23,7 +23,8 @@ public class UaDetectorBenchmark
     public BrowserInfo? BrowserParser_TryParse()
     {
         var parser = new BrowserParser();
-        var userAgent = "Safari/9537.73.11 CFNetwork/673.0.3 Darwin/13.0.0 (x86_64) (MacBookAir6%2C2)";
+        var userAgent =
+            "Safari/9537.73.11 CFNetwork/673.0.3 Darwin/13.0.0 (x86_64) (MacBookAir6%2C2)";
 
         parser.TryParse(userAgent, out var result);
         return result;

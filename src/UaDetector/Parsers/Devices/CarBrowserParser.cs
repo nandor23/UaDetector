@@ -1,6 +1,5 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Text.RegularExpressions;
-
 using UaDetector.Regexes.Models;
 using UaDetector.Results;
 using UaDetector.Utils;
@@ -13,11 +12,9 @@ internal sealed class CarBrowserParser : DeviceParserBase
     private static readonly IEnumerable<Device> CarBrowsers;
     private static readonly Regex CombinedRegex;
 
-
     static CarBrowserParser()
     {
-        (CarBrowsers, CombinedRegex) =
-            RegexLoader.LoadRegexesWithCombined<Device>(ResourceName);
+        (CarBrowsers, CombinedRegex) = RegexLoader.LoadRegexesWithCombined<Device>(ResourceName);
     }
 
     public override bool TryParse(

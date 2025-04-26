@@ -1,5 +1,4 @@
 using Shouldly;
-
 using UaDetector.Models.Enums;
 using UaDetector.Parsers.Devices;
 
@@ -27,7 +26,6 @@ public class DeviceParserBaseTests
 
     [Test]
     [MethodDataSource(nameof(DeviceTypeTestData))]
-
     public void DeviceTypeMapping_ShouldContainKey(string deviceType)
     {
         DeviceParserBase.DeviceTypeMapping.ShouldContainKey(deviceType);

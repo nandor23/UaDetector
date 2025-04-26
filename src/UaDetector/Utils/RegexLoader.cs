@@ -16,7 +16,8 @@ internal static class RegexLoader
         if (stream is null)
         {
             throw new InvalidOperationException(
-                $"Embedded resource '{fullResourceName}' not found in assembly '{assembly.FullName}'.");
+                $"Embedded resource '{fullResourceName}' not found in assembly '{assembly.FullName}'."
+            );
         }
 
         return stream;
@@ -65,7 +66,8 @@ internal static class RegexLoader
         using var stream = GetEmbeddedResourceStream(resourceName);
         using var reader = new StreamReader(stream);
 
-        var hints = JsonSerializer.Deserialize<Dictionary<string, string>>(stream, serializerOptions) ?? [];
+        var hints =
+            JsonSerializer.Deserialize<Dictionary<string, string>>(stream, serializerOptions) ?? [];
 
         return hints.ToFrozenDictionary();
     }

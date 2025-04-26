@@ -1,6 +1,5 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Text.RegularExpressions;
-
 using UaDetector.Models.Enums;
 using UaDetector.Regexes.Models;
 using UaDetector.Results;
@@ -14,11 +13,12 @@ internal sealed class ShellTvParser : DeviceParserBase
     private static readonly IEnumerable<Device> ShellTelevisions;
     internal static readonly Regex ShellTvRegex;
 
-
     static ShellTvParser()
     {
         ShellTelevisions = RegexLoader.LoadRegexes<Device>(ResourceName);
-        ShellTvRegex = RegexUtility.BuildUserAgentRegex(@"[a-z]+[ _]Shell[ _]\w{6}|tclwebkit(\d+[.\d]*)");
+        ShellTvRegex = RegexUtility.BuildUserAgentRegex(
+            @"[a-z]+[ _]Shell[ _]\w{6}|tclwebkit(\d+[.\d]*)"
+        );
     }
 
     public override bool TryParse(
@@ -30,7 +30,12 @@ internal sealed class ShellTvParser : DeviceParserBase
         {
             if (!TryParse(userAgent, ShellTelevisions, out result))
             {
-                result = new DeviceInfoInternal { Type = DeviceType.Tv, Brand = null, Model = null, };
+                result = new DeviceInfoInternal
+                {
+                    Type = DeviceType.Tv,
+                    Brand = null,
+                    Model = null,
+                };
             }
         }
         else

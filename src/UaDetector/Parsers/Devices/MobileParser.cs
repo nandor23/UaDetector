@@ -1,5 +1,4 @@
 using System.Diagnostics.CodeAnalysis;
-
 using UaDetector.Regexes.Models;
 using UaDetector.Results;
 using UaDetector.Utils;
@@ -10,7 +9,6 @@ internal sealed class MobileParser : DeviceParserBase
 {
     private const string ResourceName = "Regexes.Resources.Devices.mobiles.json";
     private static readonly IEnumerable<Device> Mobiles;
-
 
     static MobileParser()
     {

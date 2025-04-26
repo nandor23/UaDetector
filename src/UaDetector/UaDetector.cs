@@ -2,7 +2,6 @@ using System.Collections.Frozen;
 using System.Collections.Immutable;
 using System.Diagnostics.CodeAnalysis;
 using System.Text.RegularExpressions;
-
 using UaDetector.Models.Constants;
 using UaDetector.Models.Enums;
 using UaDetector.Parsers;
@@ -51,7 +50,6 @@ public sealed class UaDetector : IUaDetector
         new MobileParser(),
     ];
 
-
     static UaDetector()
     {
         ContainsLetterRegex = new Regex("[a-zA-Z]", RegexOptions.Compiled);
@@ -64,22 +62,41 @@ public sealed class UaDetector : IUaDetector
         TouchEnabledRegex = BuildRegex("Touch");
         TizenOrSmartTvRegex = BuildRegex("SmartTV|Tizen.+ TV .+$");
         TvFragmentRegex = BuildRegex(@"\(TV;");
-        AndroidTabletFragmentRegex = BuildRegex(@"Android( [.0-9]+)?; Tablet;|Tablet(?! PC)|.*\-tablet$");
+        AndroidTabletFragmentRegex = BuildRegex(
+            @"Android( [.0-9]+)?; Tablet;|Tablet(?! PC)|.*\-tablet$"
+        );
         AndroidMobileFragmentRegex = BuildRegex(@"Android( [.0-9]+)?; Mobile;|.*\-mobile$");
         PuffinSecureBrowserDesktopRegex = BuildRegex(@"Puffin/(?:\d+[.\d]+)[LMW]D");
         PuffinWebBrowserSmartphoneRegex = BuildRegex(@"Puffin/(?:\d+[.\d]+)[AIFLW]P");
         PuffinWebBrowserTabletRegex = BuildRegex(@"Puffin/(?:\d+[.\d]+)[AILW]T");
-        AndroidRegex = BuildRegex(@"Andr0id|(?:Android(?: UHD)?|Google) TV|\(lite\) TV|BRAVIA|Firebolt| TV$");
+        AndroidRegex = BuildRegex(
+            @"Andr0id|(?:Android(?: UHD)?|Google) TV|\(lite\) TV|BRAVIA|Firebolt| TV$"
+        );
         DesktopFragment = BuildRegex("Desktop(?: (x(?:32|64)|WOW64))?;");
 
-        AppleOsNames = new[] { OsNames.IPadOs, OsNames.TvOs, OsNames.WatchOs, OsNames.IOs, OsNames.Mac }.ToFrozenSet();
+        AppleOsNames = new[]
+        {
+            OsNames.IPadOs,
+            OsNames.TvOs,
+            OsNames.WatchOs,
+            OsNames.IOs,
+            OsNames.Mac,
+        }.ToFrozenSet();
 
         TvBrowsers = new[]
         {
-            BrowserNames.Kylo, BrowserNames.EspialTvBrowser, BrowserNames.LujoTvBrowser,
-            BrowserNames.LogicUiTvBrowser, BrowserNames.OpenTvBrowser, BrowserNames.SeraphicSraf,
-            BrowserNames.OperaDevices, BrowserNames.CrowBrowser, BrowserNames.VewdBrowser,
-            BrowserNames.QuickSearchTv, BrowserNames.QjyTvBrowser, BrowserNames.TvBro,
+            BrowserNames.Kylo,
+            BrowserNames.EspialTvBrowser,
+            BrowserNames.LujoTvBrowser,
+            BrowserNames.LogicUiTvBrowser,
+            BrowserNames.OpenTvBrowser,
+            BrowserNames.SeraphicSraf,
+            BrowserNames.OperaDevices,
+            BrowserNames.CrowBrowser,
+            BrowserNames.VewdBrowser,
+            BrowserNames.QuickSearchTv,
+            BrowserNames.QjyTvBrowser,
+            BrowserNames.TvBro,
         }.ToFrozenSet();
 
         TvClients = new[] { "TiviMate" }.ToFrozenSet();
@@ -114,13 +131,17 @@ public sealed class UaDetector : IUaDetector
 
     private static Regex BuildRegex(string pattern)
     {
-        return new Regex($"(?:^|[^A-Z_-])(?:{pattern})", RegexOptions.IgnoreCase | RegexOptions.Compiled);
+        return new Regex(
+            $"(?:^|[^A-Z_-])(?:{pattern})",
+            RegexOptions.IgnoreCase | RegexOptions.Compiled
+        );
     }
 
     private static bool IsWindows8OrLater(OsInfo os)
     {
-        return os is { Name: OsNames.Windows, Version.Length: > 0 } &&
-               ParserExtensions.TryCompareVersions(os.Version, "8", out var comparisonResult) && comparisonResult >= 0;
+        return os is { Name: OsNames.Windows, Version.Length: > 0 }
+            && ParserExtensions.TryCompareVersions(os.Version, "8", out var comparisonResult)
+            && comparisonResult >= 0;
     }
 
     private static bool IsDesktop(OsInfo? os, BrowserInfo? browser)
@@ -155,7 +176,7 @@ public sealed class UaDetector : IUaDetector
             }
         }
 
-        result = new ClientHintsDeviceInfo { Type = deviceType, Model = clientHints.Model, };
+        result = new ClientHintsDeviceInfo { Type = deviceType, Model = clientHints.Model };
         return true;
     }
 
@@ -178,8 +199,13 @@ public sealed class UaDetector : IUaDetector
             model = deviceFromClientHints.Model;
         }
 
-        if (!string.IsNullOrEmpty(model) || (!ParserExtensions.HasUserAgentClientHintsFragment(userAgent) &&
-                                             !ParserExtensions.HasUserAgentDesktopFragment(userAgent)))
+        if (
+            !string.IsNullOrEmpty(model)
+            || (
+                !ParserExtensions.HasUserAgentClientHintsFragment(userAgent)
+                && !ParserExtensions.HasUserAgentDesktopFragment(userAgent)
+            )
+        )
         {
             foreach (var parser in _deviceParsers)
             {
@@ -229,7 +255,11 @@ public sealed class UaDetector : IUaDetector
         //
         // Note: The browser family is not checked, as some mobile apps may use Chrome without a detected browser.
         // Instead, the user agent is directly checked for the presence of 'Chrome'.
-        if (deviceType is null && os?.Family == OsFamilies.Android && ChromeRegex.IsMatch(userAgent))
+        if (
+            deviceType is null
+            && os?.Family == OsFamilies.Android
+            && ChromeRegex.IsMatch(userAgent)
+        )
         {
             deviceType = MobileRegex.IsMatch(userAgent) ? DeviceType.Smartphone : DeviceType.Tablet;
         }
@@ -241,8 +271,12 @@ public sealed class UaDetector : IUaDetector
         }
 
         // User agents containing the fragments 'Android; Tablet;' or 'Opera Tablet' are assumed to represent tablets.
-        if (deviceType is null &&
-            (AndroidTabletFragmentRegex.IsMatch(userAgent) || OperaTabletRegex.IsMatch(userAgent)))
+        if (
+            deviceType is null
+            && (
+                AndroidTabletFragmentRegex.IsMatch(userAgent) || OperaTabletRegex.IsMatch(userAgent)
+            )
+        )
         {
             deviceType = DeviceType.Tablet;
         }
@@ -256,22 +290,26 @@ public sealed class UaDetector : IUaDetector
         // Android versions up to 3.0 were designed exclusively for smartphones.
         // However, due to the late release of 3.0 (which was tablet-only), many tablets were running Android 2.x.
         // Starting with Android 4.0, the platform was unified, supporting both smartphones and tablets.
-        // 
+        //
         // Therefore, it is expected that:
         // - Devices running Android versions earlier than 2.0 are smartphones.
         // - Devices running Android 3.x are tablets.
         // - Devices running Android 2.x and 4.x+ have an unknown device type.
         if (deviceType is null && os is { Name: OsNames.Android, Version.Length: > 0 })
         {
-            if (ParserExtensions.TryCompareVersions(os.Version, "2.0", out var comparisonResult) &&
-                comparisonResult == -1)
+            if (
+                ParserExtensions.TryCompareVersions(os.Version, "2.0", out var comparisonResult)
+                && comparisonResult == -1
+            )
             {
                 deviceType = DeviceType.Smartphone;
             }
-            else if (ParserExtensions.TryCompareVersions(os.Version, "3.0", out comparisonResult) &&
-                     comparisonResult >= 0 &&
-                     ParserExtensions.TryCompareVersions(os.Version, "4.0", out comparisonResult) &&
-                     comparisonResult == -1)
+            else if (
+                ParserExtensions.TryCompareVersions(os.Version, "3.0", out comparisonResult)
+                && comparisonResult >= 0
+                && ParserExtensions.TryCompareVersions(os.Version, "4.0", out comparisonResult)
+                && comparisonResult == -1
+            )
             {
                 deviceType = DeviceType.Tablet;
             }
@@ -295,15 +333,19 @@ public sealed class UaDetector : IUaDetector
             deviceType = DeviceType.FeaturePhone;
         }
 
-        // According to http://msdn.microsoft.com/en-us/library/ie/hh920767(v=vs.85).aspx, 
-        // Internet Explorer 10 introduces the "Touch" UA string token. If this token appears at the end of the 
+        // According to http://msdn.microsoft.com/en-us/library/ie/hh920767(v=vs.85).aspx,
+        // Internet Explorer 10 introduces the "Touch" UA string token. If this token appears at the end of the
         // UA string, the device has touch capabilities and is running Windows 8 (or later).
         // This token is transmitted by touch-enabled systems running Windows 8 (or Windows RT).
-        // 
-        // Since most touch-enabled devices are tablets, with desktops and notebooks being the exception, 
+        //
+        // Since most touch-enabled devices are tablets, with desktops and notebooks being the exception,
         // it is assumed that all Windows 8 touch devices are tablets.
-        if (deviceType is null && os is not null && (os.Name == OsNames.WindowsRt || IsWindows8OrLater(os)) &&
-            TouchEnabledRegex.IsMatch(userAgent))
+        if (
+            deviceType is null
+            && os is not null
+            && (os.Name == OsNames.WindowsRt || IsWindows8OrLater(os))
+            && TouchEnabledRegex.IsMatch(userAgent)
+        )
         {
             deviceType = DeviceType.Tablet;
         }
@@ -340,14 +382,20 @@ public sealed class UaDetector : IUaDetector
         }
 
         // Devices containing "Andr0id" in the user agent string are assumed to be TVs.
-        if (deviceType != DeviceType.Tv && deviceType != DeviceType.Peripheral && AndroidRegex.IsMatch(userAgent))
+        if (
+            deviceType != DeviceType.Tv
+            && deviceType != DeviceType.Peripheral
+            && AndroidRegex.IsMatch(userAgent)
+        )
         {
             deviceType = DeviceType.Tv;
         }
 
         // Devices using these clients are assumed to be TVs.
-        if (browser is not null && TvBrowsers.Contains(browser.Name) ||
-            client is not null && TvClients.Contains(client.Name))
+        if (
+            browser is not null && TvBrowsers.Contains(browser.Name)
+            || client is not null && TvClients.Contains(client.Name)
+        )
         {
             deviceType = DeviceType.Tv;
         }
@@ -365,7 +413,11 @@ public sealed class UaDetector : IUaDetector
         }
 
         // User agents containing the "Desktop" fragment are assumed to be desktops.
-        if (deviceType != DeviceType.Desktop && userAgent.Contains("Desktop") && DesktopFragment.IsMatch(userAgent))
+        if (
+            deviceType != DeviceType.Desktop
+            && userAgent.Contains("Desktop")
+            && DesktopFragment.IsMatch(userAgent)
+        )
         {
             deviceType = DeviceType.Desktop;
         }
@@ -385,15 +437,16 @@ public sealed class UaDetector : IUaDetector
             {
                 Type = deviceType,
                 Model = model,
-                Brand = brand is not null && DeviceParserBase.BrandNameMapping.TryGetValue(brand, out var brandCode)
-                    ? new BrandInfo { Name = brand, Code = brandCode, }
-                    : null
+                Brand =
+                    brand is not null
+                    && DeviceParserBase.BrandNameMapping.TryGetValue(brand, out var brandCode)
+                        ? new BrandInfo { Name = brand, Code = brandCode }
+                        : null,
             };
         }
 
         return result is not null;
     }
-
 
     public bool TryParse(string userAgent, [NotNullWhen(true)] out UserAgentInfo? result)
     {
@@ -406,7 +459,10 @@ public sealed class UaDetector : IUaDetector
         [NotNullWhen(true)] out UserAgentInfo? result
     )
     {
-        if ((string.IsNullOrEmpty(userAgent) || !ContainsLetterRegex.IsMatch(userAgent)) && headers.Count == 0)
+        if (
+            (string.IsNullOrEmpty(userAgent) || !ContainsLetterRegex.IsMatch(userAgent))
+            && headers.Count == 0
+        )
         {
             result = null;
             return false;
@@ -480,7 +536,6 @@ public sealed class UaDetector : IUaDetector
 
         return result is not null;
     }
-
 
     private sealed class ClientHintsDeviceInfo
     {

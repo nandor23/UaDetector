@@ -6,5 +6,5 @@ public enum ClientType
     MediaPlayer = 1,
     Library = 2,
     FeedReader = 3,
-    PersonalInformationManager = 4
+    PersonalInformationManager = 4,
 }

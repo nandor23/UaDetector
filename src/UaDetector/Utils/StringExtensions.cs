@@ -28,7 +28,9 @@ internal static class StringExtensions
             }
         }
 
-        return buffer[count - 1] == ' ' ? buffer[..(count - 1)].ToString() : buffer[..count].ToString();
+        return buffer[count - 1] == ' '
+            ? buffer[..(count - 1)].ToString()
+            : buffer[..count].ToString();
     }
 
     /// <summary>

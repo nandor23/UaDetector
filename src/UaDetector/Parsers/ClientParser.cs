@@ -1,6 +1,5 @@
 using System.Collections.Immutable;
 using System.Diagnostics.CodeAnalysis;
-
 using UaDetector.Parsers.Clients;
 using UaDetector.Results;
 
@@ -12,12 +11,12 @@ public sealed class ClientParser : IClientParser
     private readonly BotParser _botParser;
     internal readonly IEnumerable<ClientParserBase> ClientParsers;
 
-
     public ClientParser(ParserOptions? parserOptions = null)
     {
         _parserOptions = parserOptions ?? new ParserOptions();
 
-        ClientParsers = [
+        ClientParsers =
+        [
             new FeedReaderParser(_parserOptions.VersionTruncation),
             new MobileAppParser(_parserOptions.VersionTruncation),
             new MediaPlayerParser(_parserOptions.VersionTruncation),
@@ -55,7 +54,11 @@ public sealed class ClientParser : IClientParser
         return TryParse(userAgent, clientHints, out result);
     }
 
-    internal bool TryParse(string userAgent, ClientHints clientHints, [NotNullWhen(true)] out ClientInfo? result)
+    internal bool TryParse(
+        string userAgent,
+        ClientHints clientHints,
+        [NotNullWhen(true)] out ClientInfo? result
+    )
     {
         foreach (var parser in ClientParsers)
         {

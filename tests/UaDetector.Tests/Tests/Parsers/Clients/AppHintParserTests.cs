@@ -1,5 +1,4 @@
 using Shouldly;
-
 using UaDetector.Parsers.Clients;
 
 namespace UaDetector.Tests.Tests.Parsers.Clients;
@@ -8,12 +7,13 @@ public class AppHintParserTests
 {
     [Test]
     [MethodDataSource(nameof(AppHintTestData))]
-    public void TryParseAppName_ShouldReturnExpectedAppName(string appHint, string? expectedAppName, bool result)
+    public void TryParseAppName_ShouldReturnExpectedAppName(
+        string appHint,
+        string? expectedAppName,
+        bool result
+    )
     {
-        var headers = new Dictionary<string, string?>
-        {
-            {"x-requested-with", appHint}
-        };
+        var headers = new Dictionary<string, string?> { { "x-requested-with", appHint } };
 
         var clientHints = ClientHints.Create(headers);
 
@@ -27,5 +27,4 @@ public class AppHintParserTests
         yield return () => ("com.instagram.android", "Instagram", true);
         yield return () => ("wrong.hint", null, false);
     }
-
 }

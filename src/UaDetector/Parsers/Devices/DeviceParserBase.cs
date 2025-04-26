@@ -1,7 +1,6 @@
 using System.Collections.Frozen;
 using System.Diagnostics.CodeAnalysis;
 using System.Text.RegularExpressions;
-
 using UaDetector.Models.Constants;
 using UaDetector.Models.Enums;
 using UaDetector.Regexes.Models;
@@ -14,7 +13,6 @@ internal abstract class DeviceParserBase
     internal static readonly FrozenDictionary<BrandCode, string> BrandCodeMapping;
     internal static readonly FrozenDictionary<string, BrandCode> BrandNameMapping;
     internal static readonly FrozenDictionary<string, DeviceType> DeviceTypeMapping;
-
 
     static DeviceParserBase()
     {
@@ -2184,7 +2182,10 @@ internal abstract class DeviceParserBase
                 model = BuildModel(deviceModel.Name, modelMatch);
             }
 
-            if (deviceModel?.Brand is { Length: > 0 } && BrandNameMapping.ContainsKey(deviceModel.Brand))
+            if (
+                deviceModel?.Brand is { Length: > 0 }
+                && BrandNameMapping.ContainsKey(deviceModel.Brand)
+            )
             {
                 brand = deviceModel.Brand;
             }
@@ -2198,7 +2199,12 @@ internal abstract class DeviceParserBase
             }
         }
 
-        result = new DeviceInfoInternal { Type = type, Brand = brand, Model = model, };
+        result = new DeviceInfoInternal
+        {
+            Type = type,
+            Brand = brand,
+            Model = model,
+        };
         return true;
     }
 }

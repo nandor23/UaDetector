@@ -5,75 +5,92 @@ namespace UaDetector;
 
 internal sealed class ClientHints
 {
-    private static readonly Regex FullVersionListRegex =
-        new("""^"([^"]+)"; ?v="([^"]+)"(?:, )?""", RegexOptions.Compiled);
+    private static readonly Regex FullVersionListRegex = new(
+        """^"([^"]+)"; ?v="([^"]+)"(?:, )?""",
+        RegexOptions.Compiled
+    );
 
-    private static readonly Regex FormFactorsRegex = new("""
-                                                         "([a-zA-Z]+)"
-                                                         """, RegexOptions.Compiled);
+    private static readonly Regex FormFactorsRegex = new(
+        """
+        "([a-zA-Z]+)"
+        """,
+        RegexOptions.Compiled
+    );
 
-    internal static readonly FrozenSet<string> ArchitectureHeaderNames =
-        new HashSet<string>
-            {
-                "http-sec-ch-ua-arch", "sec-ch-ua-arch", "arch", "architecture"
-            }
-            .ToFrozenSet(StringComparer.OrdinalIgnoreCase);
+    internal static readonly FrozenSet<string> ArchitectureHeaderNames = new HashSet<string>
+    {
+        "http-sec-ch-ua-arch",
+        "sec-ch-ua-arch",
+        "arch",
+        "architecture",
+    }.ToFrozenSet(StringComparer.OrdinalIgnoreCase);
 
-    internal static readonly FrozenSet<string> BitnessHeaderNames =
-        new HashSet<string>
-            {
-                "http-sec-ch-ua-bitness", "sec-ch-ua-bitness", "bitness"
-            }
-            .ToFrozenSet(StringComparer.OrdinalIgnoreCase);
+    internal static readonly FrozenSet<string> BitnessHeaderNames = new HashSet<string>
+    {
+        "http-sec-ch-ua-bitness",
+        "sec-ch-ua-bitness",
+        "bitness",
+    }.ToFrozenSet(StringComparer.OrdinalIgnoreCase);
 
-    internal static readonly FrozenSet<string> MobileHeaderNames =
-        new HashSet<string> { "http-sec-ch-ua-mobile", "sec-ch-ua-mobile", "mobile" }
-            .ToFrozenSet(StringComparer.OrdinalIgnoreCase);
+    internal static readonly FrozenSet<string> MobileHeaderNames = new HashSet<string>
+    {
+        "http-sec-ch-ua-mobile",
+        "sec-ch-ua-mobile",
+        "mobile",
+    }.ToFrozenSet(StringComparer.OrdinalIgnoreCase);
 
-    internal static readonly FrozenSet<string> ModelHeaderNames =
-        new HashSet<string> { "http-sec-ch-ua-model", "sec-ch-ua-model", "model" }
-            .ToFrozenSet(StringComparer.OrdinalIgnoreCase);
+    internal static readonly FrozenSet<string> ModelHeaderNames = new HashSet<string>
+    {
+        "http-sec-ch-ua-model",
+        "sec-ch-ua-model",
+        "model",
+    }.ToFrozenSet(StringComparer.OrdinalIgnoreCase);
 
-    internal static readonly FrozenSet<string> PlatformHeaderNames =
-        new HashSet<string>
-            {
-                "http-sec-ch-ua-platform", "sec-ch-ua-platform", "platform"
-            }
-            .ToFrozenSet(StringComparer.OrdinalIgnoreCase);
+    internal static readonly FrozenSet<string> PlatformHeaderNames = new HashSet<string>
+    {
+        "http-sec-ch-ua-platform",
+        "sec-ch-ua-platform",
+        "platform",
+    }.ToFrozenSet(StringComparer.OrdinalIgnoreCase);
 
-    internal static readonly FrozenSet<string> PlatformVersionHeaderNames =
-        new HashSet<string>
-            {
-                "http-sec-ch-ua-platform-version", "sec-ch-ua-platform-version", "platformversion"
-            }
-            .ToFrozenSet(StringComparer.OrdinalIgnoreCase);
+    internal static readonly FrozenSet<string> PlatformVersionHeaderNames = new HashSet<string>
+    {
+        "http-sec-ch-ua-platform-version",
+        "sec-ch-ua-platform-version",
+        "platformversion",
+    }.ToFrozenSet(StringComparer.OrdinalIgnoreCase);
 
-    internal static readonly FrozenSet<string> UaFullVersionHeaderNames =
-        new HashSet<string>
-            {
-                "http-sec-ch-ua-full-version", "sec-ch-ua-full-version", "uafullversion"
-            }
-            .ToFrozenSet(StringComparer.OrdinalIgnoreCase);
+    internal static readonly FrozenSet<string> UaFullVersionHeaderNames = new HashSet<string>
+    {
+        "http-sec-ch-ua-full-version",
+        "sec-ch-ua-full-version",
+        "uafullversion",
+    }.ToFrozenSet(StringComparer.OrdinalIgnoreCase);
 
     internal static readonly FrozenSet<string> PrimaryFullVersionListHeaderNames =
-        new HashSet<string> { "http-sec-ch-ua-full-version-list", "sec-ch-ua-full-version-list" }
-            .ToFrozenSet(StringComparer.OrdinalIgnoreCase);
+        new HashSet<string>
+        {
+            "http-sec-ch-ua-full-version-list",
+            "sec-ch-ua-full-version-list",
+        }.ToFrozenSet(StringComparer.OrdinalIgnoreCase);
 
     internal static readonly FrozenSet<string> SecondaryFullVersionListHeaderNames =
-        new HashSet<string> { "http-sec-ch-ua", "sec-ch-ua" }
-            .ToFrozenSet(StringComparer.OrdinalIgnoreCase);
+        new HashSet<string> { "http-sec-ch-ua", "sec-ch-ua" }.ToFrozenSet(
+            StringComparer.OrdinalIgnoreCase
+        );
 
-    internal static readonly FrozenSet<string> AppHeaderNames =
-        new HashSet<string> { "http-x-requested-with", "x-requested-with" }
-            .ToFrozenSet(StringComparer.OrdinalIgnoreCase);
+    internal static readonly FrozenSet<string> AppHeaderNames = new HashSet<string>
+    {
+        "http-x-requested-with",
+        "x-requested-with",
+    }.ToFrozenSet(StringComparer.OrdinalIgnoreCase);
 
-    internal static readonly FrozenSet<string> FormFactorsHeaderNames =
-        new HashSet<string>
-            {
-                "formfactors", "http-sec-ch-ua-form-factors", "sec-ch-ua-form-factors"
-            }
-            .ToFrozenSet(StringComparer.OrdinalIgnoreCase);
-
+    internal static readonly FrozenSet<string> FormFactorsHeaderNames = new HashSet<string>
+    {
+        "formfactors",
+        "http-sec-ch-ua-form-factors",
+        "sec-ch-ua-form-factors",
+    }.ToFrozenSet(StringComparer.OrdinalIgnoreCase);
 
     /// <summary>
     /// Represents <c>Sec-CH-UA-Arch</c> header field: The underlying architecture's instruction set
@@ -125,7 +142,6 @@ internal sealed class ClientHints
     /// </summary>
     public HashSet<string> FormFactors { get; } = new(StringComparer.OrdinalIgnoreCase);
 
-
     /// <summary>
     /// Create a new ClientHints instance from a dictionary containing all available client hint headers.
     /// </summary>
@@ -171,22 +187,31 @@ internal sealed class ClientHints
             {
                 clientHints.PlatformVersion = value.Trim('"');
             }
-            else if (PrimaryFullVersionListHeaderNames.Contains(normalizedHeader) ||
-                     (SecondaryFullVersionListHeaderNames.Contains(normalizedHeader) &&
-                      clientHints.FullVersionList.Count == 0))
+            else if (
+                PrimaryFullVersionListHeaderNames.Contains(normalizedHeader)
+                || (
+                    SecondaryFullVersionListHeaderNames.Contains(normalizedHeader)
+                    && clientHints.FullVersionList.Count == 0
+                )
+            )
             {
                 while (FullVersionListRegex.Match(value) is { Success: true } match)
                 {
                     if (!clientHints.FullVersionList.ContainsKey(match.Groups[1].Value))
                     {
-                        clientHints.FullVersionList.Add(match.Groups[1].Value, match.Groups[2].Value);
+                        clientHints.FullVersionList.Add(
+                            match.Groups[1].Value,
+                            match.Groups[2].Value
+                        );
                     }
 
                     value = value[match.Length..];
                 }
             }
-            else if (AppHeaderNames.Contains(normalizedHeader) &&
-                     !value.Equals("xmlhttprequest", StringComparison.OrdinalIgnoreCase))
+            else if (
+                AppHeaderNames.Contains(normalizedHeader)
+                && !value.Equals("xmlhttprequest", StringComparison.OrdinalIgnoreCase)
+            )
             {
                 clientHints.App = value;
             }

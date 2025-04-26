@@ -10,13 +10,16 @@ internal sealed class RegexJsonConverter : JsonConverter<Regex>
     private readonly List<string> _patterns = [];
     private readonly string? _patternSuffix;
 
-
     public RegexJsonConverter(string? patternSuffix = null)
     {
         _patternSuffix = patternSuffix;
     }
 
-    public override Regex Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
+    public override Regex Read(
+        ref Utf8JsonReader reader,
+        Type typeToConvert,
+        JsonSerializerOptions options
+    )
     {
         string? pattern = reader.GetString();
 

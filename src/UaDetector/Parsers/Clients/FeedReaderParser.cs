@@ -1,6 +1,5 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Text.RegularExpressions;
-
 using UaDetector.Models.Enums;
 using UaDetector.Regexes.Models;
 using UaDetector.Results;
@@ -14,23 +13,24 @@ internal sealed class FeedReaderParser : ClientParserBase
     internal static readonly IEnumerable<Client> FeedReaders;
     private static readonly Regex CombinedRegex;
 
-
     static FeedReaderParser()
     {
-        (FeedReaders, CombinedRegex) =
-            RegexLoader.LoadRegexesWithCombined<Client>(ResourceName);
+        (FeedReaders, CombinedRegex) = RegexLoader.LoadRegexesWithCombined<Client>(ResourceName);
     }
 
-    public FeedReaderParser(VersionTruncation versionTruncation) : base(versionTruncation)
-    {
-    }
+    public FeedReaderParser(VersionTruncation versionTruncation)
+        : base(versionTruncation) { }
 
     public override bool IsClient(string userAgent, ClientHints _)
     {
         return CombinedRegex.IsMatch(userAgent);
     }
 
-    public override bool TryParse(string userAgent, ClientHints _, [NotNullWhen(true)] out ClientInfo? result)
+    public override bool TryParse(
+        string userAgent,
+        ClientHints _,
+        [NotNullWhen(true)] out ClientInfo? result
+    )
     {
         result = null;
 

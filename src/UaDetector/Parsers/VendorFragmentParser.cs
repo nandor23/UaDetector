@@ -1,5 +1,4 @@
 using System.Diagnostics.CodeAnalysis;
-
 using UaDetector.Regexes.Models;
 using UaDetector.Utils;
 
@@ -11,7 +10,6 @@ internal static class VendorFragmentParser
 
     internal static readonly IEnumerable<VendorFragment> VendorFragments =
         RegexLoader.LoadRegexes<VendorFragment>(ResourceName, "[^a-z0-9]+");
-
 
     public static bool TryParseBrand(string userAgent, [NotNullWhen(true)] out string? result)
     {

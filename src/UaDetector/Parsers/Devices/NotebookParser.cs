@@ -1,6 +1,5 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Text.RegularExpressions;
-
 using UaDetector.Regexes.Models;
 using UaDetector.Results;
 using UaDetector.Utils;
@@ -12,7 +11,6 @@ internal sealed class NotebookParser : DeviceParserBase
     private const string ResourceName = "Regexes.Resources.Devices.notebooks.json";
     private static readonly IEnumerable<Device> Notebooks;
     private static readonly Regex FbmdRegex;
-
 
     static NotebookParser()
     {

@@ -1,6 +1,5 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Text.RegularExpressions;
-
 using UaDetector.Regexes.Models;
 using UaDetector.Results;
 using UaDetector.Utils;
@@ -13,11 +12,9 @@ internal sealed class CameraParser : DeviceParserBase
     private static readonly IEnumerable<Device> Cameras;
     private static readonly Regex CombinedRegex;
 
-
     static CameraParser()
     {
-        (Cameras, CombinedRegex) =
-            RegexLoader.LoadRegexesWithCombined<Device>(ResourceName);
+        (Cameras, CombinedRegex) = RegexLoader.LoadRegexesWithCombined<Device>(ResourceName);
     }
 
     public override bool TryParse(

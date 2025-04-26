@@ -1,7 +1,6 @@
 using System.Collections.Frozen;
 using System.Diagnostics.CodeAnalysis;
 using System.Text.RegularExpressions;
-
 using UaDetector.Models.Constants;
 using UaDetector.Regexes.Models.Browsers;
 using UaDetector.Utils;
@@ -16,11 +15,26 @@ internal static class EngineParser
 
     internal static readonly FrozenSet<string> EngineNames = new[]
     {
-        BrowserEngines.WebKit, BrowserEngines.Blink, BrowserEngines.Trident, BrowserEngines.TextBased,
-        BrowserEngines.Dillo, BrowserEngines.Icab, BrowserEngines.Elektra, BrowserEngines.Presto,
-        BrowserEngines.Clecko, BrowserEngines.Gecko, BrowserEngines.Khtml, BrowserEngines.NetFront,
-        BrowserEngines.Edge, BrowserEngines.NetSurf, BrowserEngines.Servo, BrowserEngines.Goanna,
-        BrowserEngines.EkiohFlow, BrowserEngines.Arachne, BrowserEngines.LibWeb, BrowserEngines.Maple
+        BrowserEngines.WebKit,
+        BrowserEngines.Blink,
+        BrowserEngines.Trident,
+        BrowserEngines.TextBased,
+        BrowserEngines.Dillo,
+        BrowserEngines.Icab,
+        BrowserEngines.Elektra,
+        BrowserEngines.Presto,
+        BrowserEngines.Clecko,
+        BrowserEngines.Gecko,
+        BrowserEngines.Khtml,
+        BrowserEngines.NetFront,
+        BrowserEngines.Edge,
+        BrowserEngines.NetSurf,
+        BrowserEngines.Servo,
+        BrowserEngines.Goanna,
+        BrowserEngines.EkiohFlow,
+        BrowserEngines.Arachne,
+        BrowserEngines.LibWeb,
+        BrowserEngines.Maple,
     }.ToFrozenSet(StringComparer.OrdinalIgnoreCase);
 
     static EngineParser()
@@ -30,7 +44,6 @@ internal static class EngineParser
 
     public static bool TryParse(string userAgent, [NotNullWhen(true)] out string? result)
     {
-
         if (!CombinedRegex.IsMatch(userAgent))
         {
             result = null;
