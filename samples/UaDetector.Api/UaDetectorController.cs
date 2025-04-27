@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace UaDetector.Api;
 
 [ApiController]
-public sealed class UaDetectorController : ControllerBase
+public class UaDetectorController : ControllerBase
 {
     private readonly IUaDetector _uaDetector;
 
