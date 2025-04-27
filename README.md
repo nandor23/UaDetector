@@ -25,46 +25,20 @@ Add the *UaDetector* package (from NuGet) to the project.
 $ dotnet add package UaDetector
 ```
 
-### UaDetector configuration
-
-To use UaDetector, register it in `Program.cs` with the `AddUaDetector` method.
-
-```c#
-using UaDetector;
-
-builder.Services.AddUaDetector(x =>
-{
-    // Custom configuration options
-    // e.g., x.VersionTruncation = VersionTruncation.Major;
-});
-```
-
-Configure the main parser by setting properties when calling the `AddUaDetector` method. The following options are available:
-
-| Property              | Type   | Description                                                                               |
-|-----------------------|--------|-------------------------------------------------------------------------------------------|
-| `VersionTruncation`   | `enum` | Controls how version numbers are shortened (e.g., `Major`, `Minor`, `None`)               |
-| `DisableBotDetection` | `bool` | Disables bot detection entirely, skipping bot-related checks and parsing                  |
-| `ExcludeBotDetails`   | `bool` | Skips parsing for bots, leaving the result as `null` while still performing bot detection |
-
-### Parser-Specific configuration
-
-To use a sub-parser, register it in `Program.cs` using its dedicated method: `AddOsParser`, `AddBrowserParser`, `AddClientParser`, or `AddBotParser`. All sub-parsers, except `AddBotParser`, can be configured with custom options.
+To use UaDetector, register it in *Program.cs* with the `AddUaDetector` method. To use a sub-parser, register it using its dedicated method: `AddOsParser`, `AddBrowserParser`, `AddClientParser`, or `AddBotParser`. 
+All sub-parsers, except `AddBotParser`, can be configured via *UaDetectorOptions* using the *Options* pattern as shown below.
 
 ```c#
 using UaDetector;
 
-// Configuration for AddBrowserParser and AddClientParser follows the same pattern
-builder.Services.AddOsParser(x =>
+builder.Services.AddUaDetector(options =>
 {
     // Custom configuration options
-    // e.g., x.VersionTruncation = VersionTruncation.Major;
+    // e.g., options.VersionTruncation = VersionTruncation.Major;
 });
 ```
 
-Configure each sub-parser (except `BotParser`) by setting properties when calling the respective method. The following options are available:
-
-| Property              | Type   | Description                                                                 |
+| Option                | Type   | Description                                                                 |
 |-----------------------|--------|-----------------------------------------------------------------------------|
 | `VersionTruncation`   | `enum` | Controls how version numbers are shortened (e.g., `Major`, `Minor`, `None`) |
 | `DisableBotDetection` | `bool` | Disables bot detection entirely, skipping bot-related checks and parsing    |
