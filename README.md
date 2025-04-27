@@ -74,6 +74,9 @@ Configure each sub-parser (except `BotParser`) by setting properties when callin
 
 Each parser provides two `TryParse` methods: one that accepts only the user-agent string and another that accepts both the user-agent string and a collection of HTTP headers. For more accurate detection, it is recommended to provide the HTTP headers.
 
+> [!TIP]
+> Avoid directly instantiating parsers. Creating the first instance of UaDetector (or similar parsers) takes 1–2 seconds due to internal regex compilation. To avoid this one-time cost during runtime, register the service with dependency injection, as shown earlier. This way, the instantiation will happen at application startup.
+
 ```c#
 [ApiController]
 public class UaDetectorController : ControllerBase
@@ -102,8 +105,25 @@ public class UaDetectorController : ControllerBase
 }
 ```
 
-> [!TIP]
-> Avoid directly instantiating parsers. Creating the first instance of UaDetector (or similar parsers) takes 1–2 seconds due to internal regex compilation. To avoid this one-time cost during runtime, register the service with dependency injection, as shown earlier. This way, the instantiation will happen at application startup.
+The `BotParser` class provides an `IsBot` method to determine whether a user-agent string represents a bot.
+This method only returns a `bool` result and does not extract or parse any bot details.
+
+```c#
+using UaDetector.Parsers;
+
+var botParser = new BotParser();
+const string userAgent = "Mozilla/5.0 (compatible; Discordbot/2.0; +https://discordapp.com)";
+
+// Check if it's a bot
+if (botParser.IsBot(userAgent))
+{
+    Console.WriteLine("Bot detected");
+}
+else
+{
+    Console.WriteLine("No bot detected");
+}
+```
 
 ## ⚡ Benchmarks
 
