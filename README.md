@@ -113,7 +113,6 @@ using UaDetector.Parsers;
 var botParser = new BotParser();
 const string userAgent = "Mozilla/5.0 (compatible; Discordbot/2.0; +https://discordapp.com)";
 
-// Check if it's a bot
 if (botParser.IsBot(userAgent))
 {
     Console.WriteLine("Bot detected");
