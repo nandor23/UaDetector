@@ -105,7 +105,7 @@ public class UaDetectorController : ControllerBase
 }
 ```
 
-The `BotParser` class provides an `IsBot` method to determine whether a user-agent string represents a bot.
+The `BotParser` class provides an additional `IsBot` method to determine whether a user-agent string represents a bot.
 
 ```c#
 using UaDetector.Parsers;
