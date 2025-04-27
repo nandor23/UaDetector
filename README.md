@@ -13,7 +13,7 @@ UaDetector, is composed of several sub-parsers: `OsParser`, `BrowserParser`, `Cl
 ### Key Features
 
 - **Thread Safety**: The parsers are stateless by design, so they are completely thread-safe and dependency-injection friendly.
-- **Optimized for Performance**: Uses compiled regular expressions and frozen dictionaries for improved efficiency.
+- **Optimized for Performance**: Uses compiled regular expressions and frozen dictionaries for faster pattern matching and lookup operations.
 - **Predefined Values**: Static classes provide access to browser, operating system, and other related metadata. These include: `OsNames`, `OsFamilies`, `OsPlatformTypes`, `BrowserNames`, `BrowserFamilies`, `BrowserEngines`, `BrandNames`.
 - **Type-Safe Values**: Certain values are represented by enums, making them suitable for database storage. These include: `OsCode`, `BrowserCode`, `BrandCode`, `ClientType`, `DeviceType`, `BotCategory`.
 - **Try-Parse Pattern**: Parsers make use of the  [Try-Parse Pattern](https://learn.microsoft.com/en-us/dotnet/standard/design-guidelines/exceptions-and-performance#try-parse-pattern), returning a `bool` status and setting the `out` parameter to `null` on failure.
