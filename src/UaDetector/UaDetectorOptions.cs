@@ -6,5 +6,4 @@ public sealed class UaDetectorOptions
 {
     public VersionTruncation VersionTruncation { get; set; } = VersionTruncation.Minor;
     public bool DisableBotDetection { get; set; }
-    public bool ExcludeBotDetails { get; set; }
 }

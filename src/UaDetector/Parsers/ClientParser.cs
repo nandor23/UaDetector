@@ -7,21 +7,21 @@ namespace UaDetector.Parsers;
 
 public sealed class ClientParser : IClientParser
 {
-    private readonly ParserOptions _parserOptions;
+    private readonly UaDetectorOptions _uaDetectorOptions;
     private readonly BotParser _botParser;
     internal readonly IEnumerable<ClientParserBase> ClientParsers;
 
-    public ClientParser(ParserOptions? parserOptions = null)
+    public ClientParser(UaDetectorOptions? uaDetectorOptions = null)
     {
-        _parserOptions = parserOptions ?? new ParserOptions();
+        _uaDetectorOptions = uaDetectorOptions ?? new UaDetectorOptions();
 
         ClientParsers =
         [
-            new FeedReaderParser(_parserOptions.VersionTruncation),
-            new MobileAppParser(_parserOptions.VersionTruncation),
-            new MediaPlayerParser(_parserOptions.VersionTruncation),
-            new PimParser(_parserOptions.VersionTruncation),
-            new LibraryParser(_parserOptions.VersionTruncation),
+            new FeedReaderParser(_uaDetectorOptions.VersionTruncation),
+            new MobileAppParser(_uaDetectorOptions.VersionTruncation),
+            new MediaPlayerParser(_uaDetectorOptions.VersionTruncation),
+            new PimParser(_uaDetectorOptions.VersionTruncation),
+            new LibraryParser(_uaDetectorOptions.VersionTruncation),
         ];
 
         _botParser = new BotParser();
@@ -38,7 +38,7 @@ public sealed class ClientParser : IClientParser
         [NotNullWhen(true)] out ClientInfo? result
     )
     {
-        if (!_parserOptions.DisableBotDetection && _botParser.IsBot(userAgent))
+        if (!_uaDetectorOptions.DisableBotDetection && _botParser.IsBot(userAgent))
         {
             result = null;
             return false;
