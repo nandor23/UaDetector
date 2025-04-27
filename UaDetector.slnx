@@ -8,6 +8,7 @@
   </Folder>
   <Folder Name="/samples/">
     <Project Path="samples\UaDetector.Api\UaDetector.Api.csproj" Type="Classic C#" />
+    <Project Path="samples\UaDetector.Console\UaDetector.Console.csproj" Type="Classic C#" />
   </Folder>
   <Folder Name="/Solution Items/">
     <File Path="global.json" />

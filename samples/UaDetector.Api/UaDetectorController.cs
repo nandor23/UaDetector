@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace UaDetector.Api.Controllers;
+namespace UaDetector.Api;
 
 [ApiController]
-public class UaDetectorController : ControllerBase
+public sealed class UaDetectorController : ControllerBase
 {
     private readonly IUaDetector _uaDetector;
 

@@ -10,14 +10,13 @@ UaDetector, is composed of several sub-parsers: `OsParser`, `BrowserParser`, `Cl
 - Browser parsing is separate from client parsing to make it easier to work with browser-specific properties.
 - Standardized codes like `SF` for `Safari` are represented as enums instead of strings, making them better suited for database storage.
 
-### Features
+### Key Features
 
-- **Thread safety**: The parsers are stateless by design, so they are completely thread-safe and dependency-injection friendly.
-- **Predefined values**: Browser names, OS names, and other related information are exposed through static classes to provide access to all possible values. These classes are:
-  - `OsNames`, `OsFamilies`, `OsPlatformTypes`, `BrowserNames`, `BrowserFamilies`, `BrowserEngines`, `BrandNames`
-- **Type-safe values**: Certain values are represented by enums, making them suitable for database storage. These enums are:
-  - `OsCode`, `BrowserCode`, `BrandCode`, `ClientType`, `DeviceType`, `BotCategory`
-- **Try-Parse pattern**: Parsers make use of the  [Try-Parse Pattern](https://learn.microsoft.com/en-us/dotnet/standard/design-guidelines/exceptions-and-performance#try-parse-pattern), returning a `bool` status and setting the `out` parameter to `null` on failure.
+- **Thread Safety**: The parsers are stateless by design, so they are completely thread-safe and dependency-injection friendly.
+- **Optimized for Performance**: Uses compiled regular expressions and frozen dictionaries for faster pattern matching and lookup operations.
+- **Predefined Values**: Static classes provide access to browser, operating system, and other related metadata. These include: `OsNames`, `OsFamilies`, `OsPlatformTypes`, `BrowserNames`, `BrowserFamilies`, `BrowserEngines`, `BrandNames`.
+- **Type-Safe Values**: Certain values are represented by enums, making them suitable for database storage. These include: `OsCode`, `BrowserCode`, `BrandCode`, `ClientType`, `DeviceType`, `BotCategory`.
+- **Try-Parse Pattern**: Parsers make use of the  [Try-Parse Pattern](https://learn.microsoft.com/en-us/dotnet/standard/design-guidelines/exceptions-and-performance#try-parse-pattern), returning a `bool` status and setting the `out` parameter to `null` on failure.
 
 ## ⚙️ Configuration
 
@@ -72,7 +71,11 @@ Configure each sub-parser (except `BotParser`) by setting properties when callin
 
 ## 🚀 Quick Start
 
-Each parser provides two `TryParse` methods: one that accepts only the user-agent string and another that accepts both the user-agent string and a collection of HTTP headers. For more accurate detection, it is recommended to provide the HTTP headers.
+Each parser provides two `TryParse` methods: one that accepts only the user-agent string and another that accepts both the user-agent string and a collection of HTTP headers. 
+For more accurate detection, it is recommended to provide the HTTP headers.
+
+> [!TIP]
+> Avoid directly instantiating parsers. The first initialization of UaDetector (or similar parsers) takes 1–2 seconds as regular expressions are compiled upfront. To avoid this one-time cost during runtime, register the service with dependency injection, as shown earlier. This way, the instantiation will happen at application startup.
 
 ```c#
 [ApiController]
@@ -102,8 +105,23 @@ public class UaDetectorController : ControllerBase
 }
 ```
 
-> [!TIP]
-> Avoid directly instantiating parsers. Creating the first instance of UaDetector (or similar parsers) takes 1–2 seconds due to internal regex compilation. To avoid this one-time cost during runtime, register the service with dependency injection, as shown earlier. This way, the instantiation will happen at application startup.
+The `BotParser` class provides an additional `IsBot` method to determine whether a user-agent string represents a bot.
+
+```c#
+using UaDetector.Parsers;
+
+var botParser = new BotParser();
+const string userAgent = "Mozilla/5.0 (compatible; Discordbot/2.0; +https://discordapp.com)";
+
+if (botParser.IsBot(userAgent))
+{
+    Console.WriteLine("Bot detected");
+}
+else
+{
+    Console.WriteLine("No bot detected");
+}
+```
 
 ## ⚡ Benchmarks
 
