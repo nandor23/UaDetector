@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>Library</OutputType>
-    <TargetFrameworks>netstandard2.0;netstandard2.1;net462;net6.0;net8.0;net9.0;</TargetFrameworks>
+    <TargetFrameworks>netstandard2.0;netstandard2.1;net462;net6.0;net8.0;</TargetFrameworks>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <LangVersion>latest</LangVersion>
@@ -33,13 +33,15 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
   </ItemGroup>
+  <!-- For now, package versions are the same, but starting with .NET 10, they will be upgraded to the latest versions. 
+  For .NET 6, the current versions will remain, as newer packages will no longer be tested on .NET 6. -->
   <ItemGroup Condition="'$(TargetFramework)' != 'net6.0'">
     <PackageReference
       Include="Microsoft.Extensions.DependencyInjection.Abstractions"
-      Version="9.0.4"
+      Version="8.0.2"
     />
-    <PackageReference Include="System.Collections.Immutable" Version="9.0.4" />
-    <PackageReference Include="System.Text.Json" Version="9.0.4" />
+    <PackageReference Include="System.Collections.Immutable" Version="8.0.0" />
+    <PackageReference Include="System.Text.Json" Version="8.0.5" />
   </ItemGroup>
   <ItemGroup Condition="'$(TargetFramework)' == 'net6.0'">
     <PackageReference

@@ -30,7 +30,7 @@ internal static class RegexLoader
             PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
             Converters = { regexConverter },
 
-#if NET7_0_OR_GREATER
+#if NET9_0_OR_GREATER
             RespectRequiredConstructorParameters = true,
 #endif
         };
