@@ -1,22 +1,28 @@
 # UaDetector
 
-UaDetector is a user-agent parsing library that identifies the browser, operating system, device type (desktop, tablet, mobile, TV, car, console, etc.), brand, model, and even detects bots. It is based on the PHP library [device-detector](https://github.com/matomo-org/device-detector),  but follows a different implementation approach.
+UaDetector is a user-agent parsing library that identifies the browser, operating system, device type 
+(desktop, tablet, mobile, TV, car, console, etc.), brand, model, and even detects bots. 
+It is based on the PHP library [device-detector](https://github.com/matomo-org/device-detector),  but follows a different implementation approach.
 
-UaDetector, is composed of several sub-parsers: `OsParser`, `BrowserParser`, `ClientParser`, and `BotParser`. Each can be used independently when only certain information is needed from the user-agent string.
-
+UaDetector, is composed of several sub-parsers: `OsParser`, `BrowserParser`, `ClientParser`, and `BotParser`. 
+Each can be used independently when only certain information is needed from the user-agent string.
 
 ### Differences from device-detector
 
 - Browser parsing is separate from client parsing to make it easier to work with browser-specific properties.
-- Standardized codes like `SF` for `Safari` are represented as enums instead of strings, making them better suited for database storage.
+- Standardized codes like `SF` for `Safari` are represented as enums instead of strings, 
+  making them better suited for database storage.
 
 ### Key Features
 
 - **Thread Safety**: The parsers are stateless by design, so they are completely thread-safe and dependency-injection friendly.
 - **Optimized for Performance**: Uses compiled regular expressions and frozen dictionaries for faster pattern matching and lookup operations.
-- **Predefined Values**: Static classes provide access to browser, operating system, and other related metadata. These include: `OsNames`, `OsFamilies`, `OsPlatformTypes`, `BrowserNames`, `BrowserFamilies`, `BrowserEngines`, `BrandNames`.
-- **Type-Safe Values**: Certain values are represented by enums, making them suitable for database storage. These include: `OsCode`, `BrowserCode`, `BrandCode`, `ClientType`, `DeviceType`, `BotCategory`.
-- **Try-Parse Pattern**: Parsers make use of the  [Try-Parse Pattern](https://learn.microsoft.com/en-us/dotnet/standard/design-guidelines/exceptions-and-performance#try-parse-pattern), returning a `bool` status and setting the `out` parameter to `null` on failure.
+- **Predefined Values**: Static classes provide access to browser, operating system, and other related metadata. 
+  These include: `OsNames`, `OsFamilies`, `OsPlatformTypes`, `BrowserNames`, `BrowserFamilies`, `BrowserEngines`, `BrandNames`.
+- **Type-Safe Values**: Certain values are represented by enums, making them suitable for database storage.
+  These include: `OsCode`, `BrowserCode`, `BrandCode`, `ClientType`, `DeviceType`, `BotCategory`.
+- **Try-Parse Pattern**: Parsers make use of the  [Try-Parse Pattern](https://learn.microsoft.com/en-us/dotnet/standard/design-guidelines/exceptions-and-performance#try-parse-pattern), returning a `bool` status 
+  and setting the `out` parameter to `null` on failure.
 
 ## ⚙️ Configuration
 
@@ -25,7 +31,8 @@ Add the *UaDetector* package (from NuGet) to the project.
 $ dotnet add package UaDetector
 ```
 
-To use UaDetector, register it in *Program.cs* with the `AddUaDetector` method. To use a sub-parser, register it using its dedicated method: `AddOsParser`, `AddBrowserParser`, `AddClientParser`, or `AddBotParser`. 
+To use UaDetector, register it in *Program.cs* with the `AddUaDetector` method. 
+To use a sub-parser, register it using its dedicated method: `AddOsParser`, `AddBrowserParser`, `AddClientParser`, or `AddBotParser`. 
 All sub-parsers, except `AddBotParser`, can be configured via *UaDetectorOptions* using the *Options* pattern as shown below.
 
 ```c#
@@ -45,11 +52,14 @@ builder.Services.AddUaDetector(options =>
 
 ## 🚀 Quick Start
 
-Each parser provides two `TryParse` methods: one that accepts only the user-agent string and another that accepts both the user-agent string and a collection of HTTP headers. 
+Each parser provides two `TryParse` methods: one that accepts only the user-agent string and another 
+that accepts both the user-agent string and a collection of HTTP headers. 
 For more accurate detection, it is recommended to provide the HTTP headers.
 
 > [!TIP]
-> Avoid directly instantiating parsers. The first initialization of UaDetector (or similar parsers) takes 1–2 seconds as regular expressions are compiled upfront. To avoid this one-time cost during runtime, register the service with dependency injection, as shown earlier. This way, the instantiation will happen at application startup.
+> Avoid directly instantiating parsers. The first initialization of UaDetector (or similar parsers) takes 1–2 seconds 
+> as regular expressions are compiled upfront. To avoid this one-time cost during runtime, register the service 
+> with dependency injection, as shown earlier. This way, the instantiation will happen at application startup.
 
 ```c#
 [ApiController]
