@@ -116,16 +116,9 @@ public sealed class UaDetector : IUaDetector
     public UaDetector(UaDetectorOptions? uaDetectorOptions = null)
     {
         _uaDetectorOptions = uaDetectorOptions ?? new UaDetectorOptions();
-
-        var parserOptions = new ParserOptions
-        {
-            VersionTruncation = _uaDetectorOptions.VersionTruncation,
-            DisableBotDetection = _uaDetectorOptions.DisableBotDetection,
-        };
-
-        _osParser = new OsParser(parserOptions);
-        _browserParser = new BrowserParser(parserOptions);
-        _clientParser = new ClientParser(parserOptions);
+        _osParser = new OsParser(uaDetectorOptions);
+        _browserParser = new BrowserParser(uaDetectorOptions);
+        _clientParser = new ClientParser(uaDetectorOptions);
         _botParser = new BotParser();
     }
 
@@ -468,35 +461,21 @@ public sealed class UaDetector : IUaDetector
             return false;
         }
 
-        BotInfo? bot = null;
-
-        if (!_uaDetectorOptions.DisableBotDetection)
+        if (
+            !_uaDetectorOptions.DisableBotDetection
+            && _botParser.TryParse(userAgent, out BotInfo? bot)
+        )
         {
-            bool isBot = false;
-
-            if (_uaDetectorOptions.ExcludeBotDetails)
+            result = new UserAgentInfo
             {
-                isBot = _botParser.IsBot(userAgent);
-            }
-            else
-            {
-                _botParser.TryParse(userAgent, out bot);
-            }
+                Bot = bot,
+                Os = null,
+                Browser = null,
+                Client = null,
+                Device = null,
+            };
 
-            if (isBot || bot is not null)
-            {
-                result = new UserAgentInfo
-                {
-                    IsBot = true,
-                    Bot = bot,
-                    Os = null,
-                    Browser = null,
-                    Client = null,
-                    Device = null,
-                };
-
-                return true;
-            }
+            return true;
         }
 
         var clientHints = ClientHints.Create(headers);
@@ -525,7 +504,6 @@ public sealed class UaDetector : IUaDetector
         {
             result = new UserAgentInfo
             {
-                IsBot = false,
                 Os = os,
                 Browser = browser,
                 Client = client,

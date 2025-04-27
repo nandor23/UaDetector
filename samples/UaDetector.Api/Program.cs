@@ -6,10 +6,10 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddOpenApi();
 builder.Services.AddControllers();
 
-builder.Services.AddUaDetector(x =>
+builder.Services.AddUaDetector(options =>
 {
     // Custom configuration options
-    // e.g., x.VersionTruncation = VersionTruncation.Major;
+    // e.g., options.VersionTruncation = VersionTruncation.Major;
 });
 
 var app = builder.Build();

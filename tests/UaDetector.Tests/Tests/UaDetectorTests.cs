@@ -86,13 +86,14 @@ public class UaDetectorTests
     {
         var fixturePath = Path.Combine("Fixtures", "Resources", "Collections", $"{fileName}.json");
         var fixtures = await FixtureLoader.LoadAsync<UserAgentFixture>(fixturePath);
-        var parserOptions = new ParserOptions { VersionTruncation = VersionTruncation.None };
-        var uaDetector = new UaDetector(
-            new UaDetectorOptions { VersionTruncation = VersionTruncation.None }
-        );
-        var osParser = new OsParser(parserOptions);
-        var browserParser = new BrowserParser(parserOptions);
-        var clientParser = new ClientParser(parserOptions);
+        var uaDetectorOptions = new UaDetectorOptions
+        {
+            VersionTruncation = VersionTruncation.None,
+        };
+        var uaDetector = new UaDetector(uaDetectorOptions);
+        var osParser = new OsParser(uaDetectorOptions);
+        var browserParser = new BrowserParser(uaDetectorOptions);
+        var clientParser = new ClientParser(uaDetectorOptions);
 
         foreach (var fixture in fixtures)
         {
@@ -123,7 +124,7 @@ public class UaDetectorTests
     }
 
     [Test]
-    public void TryParse_WithSkipBotParsing_ShouldReturnTrue()
+    public void TryParse_WhenBotDetectionIsDisabled_ShouldReturnTrue()
     {
         var uaDetector = new UaDetector(new UaDetectorOptions { DisableBotDetection = true });
         var userAgent =
@@ -131,12 +132,11 @@ public class UaDetectorTests
 
         uaDetector.TryParse(userAgent, out var result).ShouldBeTrue();
         result.ShouldNotBeNull();
-        result.IsBot.ShouldBeFalse();
         result.Bot.ShouldBeNull();
     }
 
     [Test]
-    public void TryParse_WithoutSkipBotParsing_ShouldReturnTrue()
+    public void TryParse_WhenBotDetectionIsEnabled_ShouldReturnTrue()
     {
         var uaDetector = new UaDetector();
         var userAgent =
@@ -144,25 +144,7 @@ public class UaDetectorTests
 
         uaDetector.TryParse(userAgent, out var result).ShouldBeTrue();
         result.ShouldNotBeNull();
-        result.IsBot.ShouldBeTrue();
         result.Bot.ShouldNotBeNull();
-        result.Os.ShouldBeNull();
-        result.Browser.ShouldBeNull();
-        result.Client.ShouldBeNull();
-        result.Device.ShouldBeNull();
-    }
-
-    [Test]
-    public void TryParse_WithSkipBotDetails_ShouldReturnTrue()
-    {
-        var uaDetector = new UaDetector(new UaDetectorOptions { ExcludeBotDetails = true });
-        var userAgent =
-            "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/21.0.1180.89 Safari/537.1; 360Spider";
-
-        uaDetector.TryParse(userAgent, out var result).ShouldBeTrue();
-        result.ShouldNotBeNull();
-        result.IsBot.ShouldBeTrue();
-        result.Bot.ShouldBeNull();
         result.Os.ShouldBeNull();
         result.Browser.ShouldBeNull();
         result.Client.ShouldBeNull();

@@ -14,7 +14,7 @@ namespace UaDetector.Parsers;
 public sealed class BrowserParser : IBrowserParser
 {
     private const string ResourceName = "Regexes.Resources.Browsers.browsers.json";
-    private readonly ParserOptions _parserOptions;
+    private readonly UaDetectorOptions _uaDetectorOptions;
     private readonly ClientParser _clientParser;
     private readonly BotParser _botParser;
     internal static readonly IEnumerable<Browser> Browsers;
@@ -1424,10 +1424,10 @@ public sealed class BrowserParser : IBrowserParser
         IridiumVersionRegex = new Regex("^202[0-4]", RegexOptions.Compiled);
     }
 
-    public BrowserParser(ParserOptions? parserOptions = null)
+    public BrowserParser(UaDetectorOptions? uaDetectorOptions = null)
     {
-        _parserOptions = parserOptions ?? new ParserOptions();
-        _clientParser = new ClientParser(_parserOptions);
+        _uaDetectorOptions = uaDetectorOptions ?? new UaDetectorOptions();
+        _clientParser = new ClientParser(_uaDetectorOptions);
         _botParser = new BotParser();
     }
 
@@ -1513,7 +1513,7 @@ public sealed class BrowserParser : IBrowserParser
         }
 
         EngineVersionParser.TryParse(userAgent, engine, out var result);
-        return ParserExtensions.BuildVersion(result, _parserOptions.VersionTruncation);
+        return ParserExtensions.BuildVersion(result, _uaDetectorOptions.VersionTruncation);
     }
 
     private static bool TryGetBrowserCode(
@@ -1602,7 +1602,7 @@ public sealed class BrowserParser : IBrowserParser
         {
             Name = name,
             Code = code.Value,
-            Version = ParserExtensions.BuildVersion(version, _parserOptions.VersionTruncation),
+            Version = ParserExtensions.BuildVersion(version, _uaDetectorOptions.VersionTruncation),
         };
 
         return true;
@@ -1640,7 +1640,7 @@ public sealed class BrowserParser : IBrowserParser
             var version = ParserExtensions.BuildVersion(
                 browser.Version,
                 match,
-                _parserOptions.VersionTruncation
+                _uaDetectorOptions.VersionTruncation
             );
             var engine = BuildEngine(userAgent, browser.Engine, version);
             var engineVersion = BuildEngineVersion(userAgent, engine);
@@ -1688,7 +1688,7 @@ public sealed class BrowserParser : IBrowserParser
         [NotNullWhen(true)] out BrowserInfo? result
     )
     {
-        if (!_parserOptions.DisableBotDetection && _botParser.IsBot(userAgent))
+        if (!_uaDetectorOptions.DisableBotDetection && _botParser.IsBot(userAgent))
         {
             result = null;
             return false;

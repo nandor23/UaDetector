@@ -13,7 +13,7 @@ namespace UaDetector.Parsers;
 public sealed class OsParser : IOsParser
 {
     private const string ResourceName = "Regexes.Resources.operating_systems.json";
-    private readonly ParserOptions _parserOptions;
+    private readonly UaDetectorOptions _uaDetectorOptions;
     private readonly BotParser _botParser;
     internal static readonly IEnumerable<Os> OperatingSystems;
     internal static readonly FrozenDictionary<OsCode, string> OsCodeMapping;
@@ -583,9 +583,9 @@ public sealed class OsParser : IOsParser
         ];
     }
 
-    public OsParser(ParserOptions? parserOptions = null)
+    public OsParser(UaDetectorOptions? uaDetectorOptions = null)
     {
-        _parserOptions = parserOptions ?? new ParserOptions();
+        _uaDetectorOptions = uaDetectorOptions ?? new UaDetectorOptions();
         _botParser = new BotParser();
     }
 
@@ -788,7 +788,7 @@ public sealed class OsParser : IOsParser
         result = new CommonOsInfo
         {
             Name = name,
-            Version = ParserExtensions.BuildVersion(version, _parserOptions.VersionTruncation),
+            Version = ParserExtensions.BuildVersion(version, _uaDetectorOptions.VersionTruncation),
         };
 
         return true;
@@ -834,7 +834,7 @@ public sealed class OsParser : IOsParser
         var version = ParserExtensions.BuildVersion(
             os.Version,
             match,
-            _parserOptions.VersionTruncation
+            _uaDetectorOptions.VersionTruncation
         );
 
         if (os.Versions?.Count > 0)
@@ -848,7 +848,7 @@ public sealed class OsParser : IOsParser
                     version = ParserExtensions.BuildVersion(
                         osVersion.Version,
                         match,
-                        _parserOptions.VersionTruncation
+                        _uaDetectorOptions.VersionTruncation
                     );
                     break;
                 }
@@ -872,7 +872,7 @@ public sealed class OsParser : IOsParser
     {
         var clientHints = ClientHints.Create(headers);
 
-        if (!_parserOptions.DisableBotDetection && _botParser.IsBot(userAgent))
+        if (!_uaDetectorOptions.DisableBotDetection && _botParser.IsBot(userAgent))
         {
             result = null;
             return false;

@@ -67,7 +67,9 @@ public class OsParserTests
     {
         var fixturePath = Path.Combine("Fixtures", "Resources", "operating_systems.json");
         var fixtures = await FixtureLoader.LoadAsync<OsFixture>(fixturePath);
-        var parser = new OsParser(new ParserOptions { VersionTruncation = VersionTruncation.None });
+        var parser = new OsParser(
+            new UaDetectorOptions { VersionTruncation = VersionTruncation.None }
+        );
 
         foreach (var fixture in fixtures)
         {

@@ -19,10 +19,10 @@ public static class UaDetectorServiceCollectionExtensions
 
     public static IServiceCollection AddOsParser(
         this IServiceCollection services,
-        Action<ParserOptions>? configureOptions = null
+        Action<UaDetectorOptions>? configureOptions = null
     )
     {
-        var options = new ParserOptions();
+        var options = new UaDetectorOptions();
         configureOptions?.Invoke(options);
 
         services.AddSingleton<IOsParser>(new OsParser(options));
@@ -31,10 +31,10 @@ public static class UaDetectorServiceCollectionExtensions
 
     public static IServiceCollection AddBrowserParser(
         this IServiceCollection services,
-        Action<ParserOptions>? configureOptions = null
+        Action<UaDetectorOptions>? configureOptions = null
     )
     {
-        var options = new ParserOptions();
+        var options = new UaDetectorOptions();
         configureOptions?.Invoke(options);
 
         services.AddSingleton<IBrowserParser>(new BrowserParser(options));
@@ -43,10 +43,10 @@ public static class UaDetectorServiceCollectionExtensions
 
     public static IServiceCollection AddClientParser(
         this IServiceCollection services,
-        Action<ParserOptions>? configureOptions = null
+        Action<UaDetectorOptions>? configureOptions = null
     )
     {
-        var options = new ParserOptions();
+        var options = new UaDetectorOptions();
         configureOptions?.Invoke(options);
 
         services.AddSingleton<IClientParser>(new ClientParser(options));

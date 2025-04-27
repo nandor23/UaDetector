@@ -77,7 +77,7 @@ public class BrowserParserTests
         var fixturePath = Path.Combine("Fixtures", "Resources", "browsers.json");
         var fixtures = await FixtureLoader.LoadAsync<BrowserFixture>(fixturePath);
         var parser = new BrowserParser(
-            new ParserOptions { VersionTruncation = VersionTruncation.None }
+            new UaDetectorOptions { VersionTruncation = VersionTruncation.None }
         );
 
         foreach (var fixture in fixtures)
