@@ -5,6 +5,7 @@
   <Folder Name="/GitHub/">
     <File Path=".github\workflows\build.yml" />
     <File Path=".github\workflows\update-readme.yml" />
+    <File Path=".github\workflows\publish.yml" />
   </Folder>
   <Folder Name="/samples/">
     <Project Path="samples\UaDetector.Api\UaDetector.Api.csproj" Type="Classic C#" />
