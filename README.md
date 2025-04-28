@@ -1,4 +1,4 @@
-# UaDetector
+# <img alt="UAD" src="uad-logo.png" width="32"/> UaDetector
 
 UaDetector is a user-agent parsing library that identifies the browser, operating system, device type 
 (desktop, tablet, mobile, TV, car, console, etc.), brand, model, and even detects bots. 
