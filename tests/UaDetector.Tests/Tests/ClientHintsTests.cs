@@ -1,5 +1,7 @@
 using Shouldly;
 
+using TUnit.Core;
+
 namespace UaDetector.Tests.Tests;
 
 public class ClientHintsTests

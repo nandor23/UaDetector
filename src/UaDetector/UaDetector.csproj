@@ -9,7 +9,7 @@
     <PackageId>UaDetector</PackageId>
     <PackageVersion>0.1.2</PackageVersion>
     <Authors>Nandor Krizbai</Authors>
-    <Description>UaDetector is a user-agent parsing library that identifies the browser, operating system, device type (desktop, tablet, mobile, TV, car, console, etc.), brand, model, and even detects bots. It is based on the PHP library device-detector, but follows a different implementation approach.</Description>
+    <Description>UaDetector is a user-agent parsing library that identifies the browser, operating system, device, client, and even detects bots.</Description>
     <Copyright>Copyright (c) Nandor Krizbai, Matomo</Copyright>
     <PackageProjectUrl>https://github.com/UaDetector/UaDetector</PackageProjectUrl>
     <PackageIcon>uad-logo.png</PackageIcon>

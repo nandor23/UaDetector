@@ -1,4 +1,7 @@
 using Shouldly;
+
+using TUnit.Core;
+
 using UaDetector.Parsers;
 using UaDetector.Parsers.Clients;
 
