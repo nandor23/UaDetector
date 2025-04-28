@@ -14,6 +14,7 @@
     <File Path="global.json" />
     <File Path=".gitignore" />
     <File Path=".editorconfig" />
+    <File Path=".gitattributes" />
   </Folder>
   <Folder Name="/src/">
     <Project Path="src\UaDetector\UaDetector.csproj" Type="Classic C#" />

@@ -1,3 +1,4 @@
 src/UaDetector/Regexes/Resources/**/*.json filter=lfs diff=lfs merge=lfs -text
 tests/UaDetector.Tests/Fixtures/Resources/**/*.json filter=lfs diff=lfs merge=lfs -text
 *.eps filter=lfs diff=lfs merge=lfs -text
+*.png filter=lfs diff=lfs merge=lfs -text
