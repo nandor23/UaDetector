@@ -1,0 +1,25 @@
+name: Publish to NuGet
+
+on:
+  workflow_dispatch: 
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 9.0.x
+
+      - name: Create NuGet Package
+        run: dotnet pack src/UaDetector --configuration Release --output packages
+
+      - name: Publish to NuGet
+        run: |
+          dotnet nuget push packages/*.nupkg \
+            --api-key ${{ secrets.UADETECTOR_API_KEY }} \
+            --source https://api.nuget.org/v3/index.json
