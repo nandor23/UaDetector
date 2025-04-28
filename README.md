@@ -6,7 +6,6 @@
 </h1>
 
 <h4 align="center">A powerful user-agent parsing library inspired by <a href="https://github.com/matomo-org/device-detector" target="_blank">device-detector</a>.</h4>
-<br>
 
 [![Build](https://github.com/UaDetector/UaDetector/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/UaDetector/UaDetector/actions/workflows/build.yml)
 [![License](https://img.shields.io/github/license/UaDetector/UaDetector)](https://www.gnu.org/licenses/lgpl-3.0.en.html)
