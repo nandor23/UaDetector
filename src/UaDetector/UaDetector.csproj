@@ -1,25 +1,24 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>Library</OutputType>
-    <TargetFrameworks>netstandard2.0;netstandard2.1;net462;net6.0;net8.0;</TargetFrameworks>
+    <TargetFrameworks>netstandard2.0;net462;net6.0;net8.0;</TargetFrameworks>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <LangVersion>latest</LangVersion>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageId>UaDetector</PackageId>
-    <Version>1.0.0-preview.1</Version>
+    <PackageVersion>1.0.0-preview.1</PackageVersion>
     <Authors>Nandor Krizbai</Authors>
     <Description>UaDetector is a user-agent parsing library that identifies the browser, operating system, device type (desktop, tablet, mobile, TV, car, console, etc.), brand, model, and even detects bots. It is based on the PHP library device-detector, but follows a different implementation approach.</Description>
     <Copyright>Copyright (c) Nandor Krizbai, Matomo</Copyright>
     <PackageProjectUrl>https://github.com/UaDetector/UaDetector</PackageProjectUrl>
+    <PackageIcon>uad-logo.png</PackageIcon>
+    <PackageIconUrl>https://github.com/UaDetector/UaDetector/blob/main/logo/uad-logo.png</PackageIconUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
     <RepositoryUrl>https://github.com/UaDetector/UaDetector</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>UaDetector;UserAgent;parser;user-agent-parser;os-detection;browser-detection;client-detection;device-detection;bot-detection;</PackageTags>
-    <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
-    <PackageIcon>uad-logo.png</PackageIcon>
-    <PackageIconUrl>https://github.com/nandor23/UaDetector/blob/chore/logo-update/uad-logo.png</PackageIconUrl>
   </PropertyGroup>
   <ItemGroup>
     <None Include="..\..\README.md" Pack="true" PackagePath="\" />
