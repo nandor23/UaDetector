@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="Logo" src="uad-logo.png" />
+    <img alt="Logo" src="logo/uad-logo.svg" width="256"/>
   <br>
   UaDetector
   <br>
