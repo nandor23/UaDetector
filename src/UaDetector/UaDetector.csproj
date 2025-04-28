@@ -17,10 +17,12 @@
     <PackageTags>UaDetector;UserAgent;parser;user-agent-parser;os-detection;browser-detection;client-detection;device-detection;bot-detection;</PackageTags>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageIcon>uad-logo.png</PackageIcon>
   </PropertyGroup>
   <ItemGroup>
     <None Include="..\..\README.md" Pack="true" PackagePath="\" />
     <None Include="..\..\LICENSE" Pack="true" PackagePath="\" />
+    <None Include="..\..\uad-logo.png" Pack="true" PackagePath="\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Regexes\**\*" />
