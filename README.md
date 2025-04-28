@@ -6,14 +6,10 @@
 </h1>
 
 <h4 align="center">A powerful user-agent parsing library inspired by <a href="https://github.com/matomo-org/device-detector" target="_blank">device-detector</a>.</h4>
-
-<div align="center">
-    <a href="https://github.com/UaDetector/UaDetector/actions/workflows/build.yml">
-        <img src="https://github.com/UaDetector/UaDetector/actions/workflows/build.yml/badge.svg?branch=main" alt="Build" />
-    </a>
-</div>
 <br>
 
+[![Build](https://github.com/UaDetector/UaDetector/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/UaDetector/UaDetector/actions/workflows/build.yml)
+[![License](https://img.shields.io/github/license/UaDetector/UaDetector)](https://www.gnu.org/licenses/lgpl-3.0.en.html)
 
 UaDetector is a user-agent parsing library that identifies the browser, operating system, device type 
 (desktop, tablet, mobile, TV, car, console, etc.), brand, model, and even detects bots.
