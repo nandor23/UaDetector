@@ -1,4 +1,5 @@
 using Shouldly;
+using TUnit.Core;
 using UaDetector.Parsers;
 using UaDetector.Tests.Fixtures.Models;
 using UaDetector.Tests.Helpers;

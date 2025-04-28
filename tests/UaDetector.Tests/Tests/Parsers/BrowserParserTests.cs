@@ -1,4 +1,5 @@
 using Shouldly;
+using TUnit.Core;
 using UaDetector.Models.Enums;
 using UaDetector.Parsers;
 using UaDetector.Results;
