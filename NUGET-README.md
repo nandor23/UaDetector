@@ -50,14 +50,11 @@ that accepts both the user-agent string and a collection of HTTP headers.
 For more accurate detection, it is recommended to provide the HTTP headers.
 
 
-<blockquote class="blockquote">
-<p>
-    <strong>Tip:</strong>
-    Avoid directly instantiating parsers. The first initialization of UaDetector (or similar parsers) takes 1–2 seconds
-    as regular expressions are compiled upfront. To avoid this one-time cost during runtime, register the service
-    with dependency injection, as shown earlier. This way, the instantiation will happen at application startup.
-</p>
-</blockquote>
+
+> **Tip**:
+> Avoid directly instantiating parsers. The first initialization of UaDetector (or similar parsers) takes 1–2 seconds
+> as regular expressions are compiled upfront. To avoid this one-time cost during runtime, register the service
+> with dependency injection, as shown earlier. This way, the instantiation will happen at application startup.
 
 ```c#
 [ApiController]
@@ -126,7 +123,4 @@ The following benchmark measures the performance of different parsers within the
 | BotParser_TryParse     |   342.1 us |  4.30 us |  4.02 us |     353 B |
 | BotParser_IsBot        |   333.8 us |  3.63 us |  3.40 us |         - |
 
-
-<blockquote class="blockquote">
-<p><strong>Note:</strong> For the full documentation check out the <a href="https://github.com/UaDetector/UaDetector" rel="noopener noreferrer nofollow">GitHub repository</a>.</p>
-</blockquote>
+> **Note**: For full documentation, visit the [GitHub repository](https://github.com/UaDetector/UaDetector).
