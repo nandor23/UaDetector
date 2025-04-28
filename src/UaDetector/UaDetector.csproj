@@ -18,6 +18,7 @@
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageIcon>uad-logo.png</PackageIcon>
+    <PackageIconUrl>https://github.com/nandor23/UaDetector/blob/chore/logo-update/uad-logo.png</PackageIconUrl>
   </PropertyGroup>
   <ItemGroup>
     <None Include="..\..\README.md" Pack="true" PackagePath="\" />
