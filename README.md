@@ -1,22 +1,25 @@
-<p style="text-align: center;">
+<h1 align="center">
     <img alt="Logo" src="uad-logo.png" />
-</p>
-<h1 style="text-align: center;">UaDetector</h1>
+  <br>
+  UaDetector
+  <br>
+</h1>
+
+<h4 align="center">A powerful user-agent parsing library inspired by <a href="https://github.com/matomo-org/device-detector" target="_blank">device-detector</a>.</h4>
+
+<div align="center">
+    <a href="https://github.com/UaDetector/UaDetector/actions/workflows/build.yml">
+        <img src="https://github.com/UaDetector/UaDetector/actions/workflows/build.yml/badge.svg?branch=main" alt="Build" />
+    </a>
+</div>
+<br>
+
 
 UaDetector is a user-agent parsing library that identifies the browser, operating system, device type 
-(desktop, tablet, mobile, TV, car, console, etc.), brand, model, and even detects bots. 
-It is based on the PHP library [device-detector](https://github.com/matomo-org/device-detector),  but follows a different implementation approach.
+(desktop, tablet, mobile, TV, car, console, etc.), brand, model, and even detects bots.
 
-UaDetector, is composed of several sub-parsers: `OsParser`, `BrowserParser`, `ClientParser`, and `BotParser`. 
-Each can be used independently when only certain information is needed from the user-agent string.
-
----
-
-## Differences from device-detector
-
-- Browser parsing is separate from client parsing to make it easier to work with browser-specific properties.
-- Standardized codes like `SF` for `Safari` are represented as enums instead of strings, 
-  making them better suited for database storage.
+It is composed of several sub-parsers: `OsParser`, `BrowserParser`, `ClientParser`, and `BotParser`. 
+Each can be used independently if only certain information is needed from the user-agent string.
 
 ## Key Features
 
