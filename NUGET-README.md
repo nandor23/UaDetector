@@ -24,11 +24,6 @@ Each can be used independently if only certain information is needed from the us
 
 ## ⚙️ Configuration
 
-Add the *UaDetector* package (from NuGet) to the project.
-```bash
-$ dotnet add package UaDetector
-```
-
 To use UaDetector, register it in *Program.cs* with the `AddUaDetector` method.
 To use a sub-parser, register it using its dedicated method: `AddOsParser`, `AddBrowserParser`, `AddClientParser`, or `AddBotParser`.
 All sub-parsers, except `AddBotParser`, can be configured via *UaDetectorOptions* using the *Options* pattern as shown below.
