@@ -59,7 +59,7 @@ that accepts both the user-agent string and a collection of HTTP headers.
 For more accurate detection, it is recommended to provide the HTTP headers.
 
 > [!TIP]
-> Avoid directly instantiating parsers. The first initialization of UaDetector (or similar parsers) takes 1–2 seconds 
+> Avoid directly instantiating parsers. The first initialization of UaDetector (or its sub-parsers) takes 1–2 seconds, 
 > as regular expressions are compiled upfront. To avoid this one-time cost during runtime, register the service 
 > with dependency injection, as shown earlier. This way, the instantiation will happen at application startup.
 
