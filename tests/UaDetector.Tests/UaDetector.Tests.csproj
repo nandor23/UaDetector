@@ -5,16 +5,19 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
+  
   <ItemGroup>
-    <PackageReference Include="Shouldly" Version="4.3.0" />
-    <PackageReference Include="TUnit" Version="0.19.86" />
+    <PackageReference Include="Shouldly"/>
+    <PackageReference Include="TUnit" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\src\UaDetector\UaDetector.csproj" />
-  </ItemGroup>
+  
   <ItemGroup>
     <None Update="Fixtures\Resources\**\*">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\UaDetector\UaDetector.csproj" />
   </ItemGroup>
 </Project>

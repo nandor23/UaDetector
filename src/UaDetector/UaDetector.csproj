@@ -1,59 +1,42 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>Library</OutputType>
-    <TargetFrameworks>netstandard2.0;net462;net6.0;net8.0;</TargetFrameworks>
+    <TargetFrameworks>netstandard2.0;net462;net8.0;net9.0;</TargetFrameworks>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <LangVersion>latest</LangVersion>
-    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
-    <PackageId>UaDetector</PackageId>
-    <PackageVersion>0.1.3</PackageVersion>
-    <Authors>Nandor Krizbai</Authors>
-    <Description>UaDetector is a user-agent parsing library that identifies the browser, operating system, device, client, and even detects bots.</Description>
-    <Copyright>Copyright (c) Nandor Krizbai, Matomo</Copyright>
-    <PackageProjectUrl>https://github.com/UaDetector/UaDetector</PackageProjectUrl>
-    <PackageIcon>uad-logo.png</PackageIcon>
-    <PackageIconUrl>https://github.com/UaDetector/UaDetector/blob/main/logo/uad-logo.png</PackageIconUrl>
-    <PackageReadmeFile>NUGET-README.md</PackageReadmeFile>
-    <RepositoryUrl>https://github.com/UaDetector/UaDetector</RepositoryUrl>
-    <RepositoryType>git</RepositoryType>
-    <PackageTags>UaDetector;UserAgent;parser;user-agent-parser;os-detection;browser-detection;client-detection;device-detection;bot-detection;</PackageTags>
-    <PackageLicenseFile>LICENSE</PackageLicenseFile>
   </PropertyGroup>
-  <ItemGroup>
-    <None Include="..\..\NUGET-README.md" Pack="true" PackagePath="\" />
-    <None Include="..\..\LICENSE" Pack="true" PackagePath="\" />
-    <None Include="..\..\logo\uad-logo.png" Pack="true" PackagePath="\" />
-  </ItemGroup>
+  
+  <PropertyGroup>
+    <PackageId>UaDetector</PackageId>
+    <PackageVersion>0.1.4</PackageVersion>
+    <PackageTags>UaDetector;UserAgent;parser;user-agent-parser;os-detection;browser-detection;client-detection;device-detection;bot-detection;</PackageTags>
+    <Description>UaDetector is a user-agent parsing library that identifies the browser, operating system, device, client, and even detects bots.</Description>
+  </PropertyGroup>
+  
   <ItemGroup>
     <EmbeddedResource Include="Regexes\**\*" />
   </ItemGroup>
+  
   <ItemGroup>
     <InternalsVisibleTo Include="UaDetector.Tests" />
     <InternalsVisibleTo Include="UaDetector.ReadmeUpdater" />
   </ItemGroup>
+
   <ItemGroup>
-    <PackageReference Include="PolySharp" Version="1.15.0">
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" />
+    <PackageReference Include="PolySharp">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
   </ItemGroup>
-  <!-- For now, package versions are the same, but starting with .NET 10, they will be upgraded to the latest versions. 
-  For .NET 6, the current versions will remain, as newer packages will no longer be tested on .NET 6. -->
-  <ItemGroup Condition="'$(TargetFramework)' != 'net6.0'">
-    <PackageReference
-      Include="Microsoft.Extensions.DependencyInjection.Abstractions"
-      Version="8.0.2"
-    />
-    <PackageReference Include="System.Collections.Immutable" Version="8.0.0" />
-    <PackageReference Include="System.Text.Json" Version="8.0.5" />
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'net462'">
+    <PackageReference Include="System.Collections.Immutable" />
+    <PackageReference Include="System.Text.Json" />
   </ItemGroup>
-  <ItemGroup Condition="'$(TargetFramework)' == 'net6.0'">
-    <PackageReference
-      Include="Microsoft.Extensions.DependencyInjection.Abstractions"
-      Version="8.0.2"
-    />
-    <PackageReference Include="System.Collections.Immutable" Version="8.0.0" />
-    <PackageReference Include="System.Text.Json" Version="8.0.5" />
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.0'">
+    <PackageReference Include="System.Collections.Immutable" />
+    <PackageReference Include="System.Text.Json" />
   </ItemGroup>
 </Project>
