@@ -5,18 +5,18 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
-  
+
   <PropertyGroup>
     <PackageId>UaDetector</PackageId>
     <PackageVersion>0.1.4</PackageVersion>
     <PackageTags>UaDetector;UserAgent;parser;user-agent-parser;os-detection;browser-detection;client-detection;device-detection;bot-detection;</PackageTags>
     <Description>UaDetector is a user-agent parsing library that identifies the browser, operating system, device, client, and even detects bots.</Description>
   </PropertyGroup>
-  
+
   <ItemGroup>
     <EmbeddedResource Include="Regexes\**\*" />
   </ItemGroup>
-  
+
   <ItemGroup>
     <InternalsVisibleTo Include="UaDetector.Tests" />
     <InternalsVisibleTo Include="UaDetector.ReadmeUpdater" />
@@ -30,12 +30,7 @@
     </PackageReference>
   </ItemGroup>
 
-  <ItemGroup Condition="'$(TargetFramework)' == 'net462'">
-    <PackageReference Include="System.Collections.Immutable" />
-    <PackageReference Include="System.Text.Json" />
-  </ItemGroup>
-
-  <ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.0'">
+  <ItemGroup Condition="!$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', 'net8.0'))">
     <PackageReference Include="System.Collections.Immutable" />
     <PackageReference Include="System.Text.Json" />
   </ItemGroup>
