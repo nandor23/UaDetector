@@ -17,7 +17,7 @@ Each can be used independently if only certain information is needed from the us
 
 ## Key Features
 
-- **Thread Safety**: The parsers are stateless by design, so they are completely thread-safe and dependency-injection friendly.
+- **Thread Safety**: The parsers are stateless by design, making them fully thread-safe and dependency-injection friendly.
 - **Optimized for Performance**: Uses compiled regular expressions and frozen dictionaries for faster pattern matching and lookup operations.
 - **Predefined Values**: Static classes provide access to browser, operating system, and other related metadata. 
   These include: `OsNames`, `OsFamilies`, `OsPlatformTypes`, `BrowserNames`, `BrowserFamilies`, `BrowserEngines`, `BrandNames`.
@@ -59,9 +59,9 @@ that accepts both the user-agent string and a collection of HTTP headers.
 For more accurate detection, it is recommended to provide the HTTP headers.
 
 > [!TIP]
-> Avoid directly instantiating parsers. The first initialization of UaDetector (or its sub-parsers) takes 1–2 seconds, 
-> as regular expressions are compiled upfront. To avoid this one-time cost during runtime, register the service 
-> with dependency injection, as shown earlier. This way, the instantiation will happen at application startup.
+> Avoid directly instantiating parsers. The first initialization of UaDetector (or its sub-parsers)
+> takes a few seconds (around 1-3s). To avoid this one-time cost during runtime, register the service with
+> dependency injection, as shown earlier. This way, the instantiation will happen at application startup.
 
 ```c#
 [ApiController]
