@@ -79,14 +79,17 @@ public class UaDetectorController : ControllerBase
     public IActionResult GetUserAgentInfo()
     {
         var userAgent = HttpContext.Request.Headers.UserAgent.ToString();
-        var headers = Request.Headers.ToDictionary(h => h.Key, h => h.Value.ToArray().FirstOrDefault());
+        var headers = Request.Headers.ToDictionary(
+            h => h.Key,
+            h => h.Value.ToArray().FirstOrDefault()
+        );
 
         if (_uaDetector.TryParse(userAgent, headers, out var result))
         {
             return Ok(result);
         }
-        
-        return BadRequest("No matching user-agent information was found");
+
+        return BadRequest("Unrecognized user-agent");
     }
 }
 ```

@@ -37,7 +37,7 @@ public class OsParserTests
     [Test]
     public void OsCodeMapping_ShouldContainAllOsCodes()
     {
-        foreach (OsCode osCode in Enum.GetValues(typeof(OsCode)))
+        foreach (OsCode osCode in Enum.GetValues<OsCode>())
         {
             OsParser.OsCodeMapping.ShouldContainKey(osCode);
         }
@@ -46,7 +46,7 @@ public class OsParserTests
     [Test]
     public void OsFamilyMapping_ShouldContainKeyForAllOsCodes()
     {
-        foreach (OsCode osCode in Enum.GetValues(typeof(OsCode)))
+        foreach (OsCode osCode in Enum.GetValues<OsCode>())
         {
             bool contains = false;
 
