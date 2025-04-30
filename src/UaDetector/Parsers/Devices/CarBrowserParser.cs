@@ -9,7 +9,7 @@ namespace UaDetector.Parsers.Devices;
 internal sealed class CarBrowserParser : DeviceParserBase
 {
     private const string ResourceName = "Regexes.Resources.Devices.car_browsers.json";
-    private static readonly IEnumerable<Device> CarBrowsers;
+    private static readonly IReadOnlyList<Device> CarBrowsers;
     private static readonly Regex CombinedRegex;
 
     static CarBrowserParser()

@@ -8,7 +8,7 @@ namespace UaDetector.Parsers.Devices;
 internal sealed class MobileParser : DeviceParserBase
 {
     private const string ResourceName = "Regexes.Resources.Devices.mobiles.json";
-    private static readonly IEnumerable<Device> Mobiles;
+    private static readonly IReadOnlyList<Device> Mobiles;
 
     static MobileParser()
     {

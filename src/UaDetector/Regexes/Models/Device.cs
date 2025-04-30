@@ -8,5 +8,5 @@ internal sealed class Device
     public required Regex Regex { get; init; }
     public required string Type { get; init; }
     public required string? Model { get; init; }
-    public required IEnumerable<DeviceModel>? ModelVariants { get; init; }
+    public required IReadOnlyList<DeviceModel>? ModelVariants { get; init; }
 }

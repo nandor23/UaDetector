@@ -9,7 +9,7 @@ public sealed class ClientParser : IClientParser
 {
     private readonly UaDetectorOptions _uaDetectorOptions;
     private readonly BotParser _botParser;
-    internal readonly IEnumerable<ClientParserBase> ClientParsers;
+    internal readonly IReadOnlyList<ClientParserBase> ClientParsers;
 
     public ClientParser(UaDetectorOptions? uaDetectorOptions = null)
     {

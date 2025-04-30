@@ -9,7 +9,7 @@ namespace UaDetector.Parsers.Devices;
 internal sealed class CameraParser : DeviceParserBase
 {
     private const string ResourceName = "Regexes.Resources.Devices.cameras.json";
-    private static readonly IEnumerable<Device> Cameras;
+    private static readonly IReadOnlyList<Device> Cameras;
     private static readonly Regex CombinedRegex;
 
     static CameraParser()

@@ -10,10 +10,9 @@ public static class FixtureLoader
         RespectRequiredConstructorParameters = true,
     };
 
-    public static async Task<IEnumerable<T>> LoadAsync<T>(string fileName)
+    public static async Task<List<T>> LoadAsync<T>(string fileName)
     {
         await using var stream = new FileStream(fileName, FileMode.Open);
-        return await JsonSerializer.DeserializeAsync<IEnumerable<T>>(stream, SerializerOptions)
-            ?? [];
+        return await JsonSerializer.DeserializeAsync<List<T>>(stream, SerializerOptions) ?? [];
     }
 }

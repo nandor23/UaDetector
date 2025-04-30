@@ -17,7 +17,7 @@ public sealed class BrowserParser : IBrowserParser
     private readonly UaDetectorOptions _uaDetectorOptions;
     private readonly ClientParser _clientParser;
     private readonly BotParser _botParser;
-    internal static readonly IEnumerable<Browser> Browsers;
+    internal static readonly IReadOnlyList<Browser> Browsers;
     internal static readonly FrozenDictionary<BrowserCode, string> BrowserCodeMapping;
     internal static readonly FrozenDictionary<string, BrowserCode> BrowserNameMapping;
     internal static readonly FrozenDictionary<string, string> CompactToFullNameMapping;
