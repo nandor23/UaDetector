@@ -104,25 +104,4 @@ else
 }
 ```
 
-## ⚡ Benchmarks
-
-The following benchmark compares the performance of other .NET user-agent parsing libraries.
-
-| Method         | Mean     | Error     | StdDev    | Ratio | Allocated   | Alloc Ratio |
-|--------------- |---------:|----------:|----------:|------:|------------:|------------:|
-| UaDetector     | 1.844 ms | 0.0229 ms | 0.0388 ms |  1.00 |     3.54 KB |        1.00 |
-| DeviceDetector | 6.084 ms | 0.0346 ms | 0.0307 ms |  3.30 |  4534.51 KB |    1,279.86 |
-| UaParser       | 6.783 ms | 0.0844 ms | 0.0789 ms |  3.68 | 10794.88 KB |    3,046.84 |
-
-
-The following benchmark measures the performance of different parsers within the library.
-
-| Method                 | Mean       | Error    | StdDev   | Allocated |
-|----------------------- |-----------:|---------:|---------:|----------:|
-| UaDetector_TryParse    | 1,725.3 us | 30.59 us | 30.05 us |    3627 B |
-| BrowserParser_TryParse | 1,266.7 us | 24.91 us | 66.06 us |    1320 B |
-| ClientParser_TryParse  |   170.2 us |  3.35 us |  3.59 us |    1024 B |
-| BotParser_TryParse     |   342.1 us |  4.30 us |  4.02 us |     353 B |
-| BotParser_IsBot        |   333.8 us |  3.63 us |  3.40 us |         - |
-
 > **Note**: For full documentation, visit the [GitHub repository](https://github.com/UaDetector/UaDetector).
