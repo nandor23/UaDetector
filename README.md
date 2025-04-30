@@ -23,8 +23,8 @@ Each can be used independently if only certain information is needed from the us
   These include: `OsNames`, `OsFamilies`, `OsPlatformTypes`, `BrowserNames`, `BrowserFamilies`, `BrowserEngines`, `BrandNames`.
 - **Type-Safe Values**: Certain values are represented by enums, making them suitable for database storage.
   These include: `OsCode`, `BrowserCode`, `BrandCode`, `ClientType`, `DeviceType`, `BotCategory`.
-- **Try-Parse Pattern**: Parsers make use of the  [Try-Parse Pattern](https://learn.microsoft.com/en-us/dotnet/standard/design-guidelines/exceptions-and-performance#try-parse-pattern), returning a `bool` status 
-  and setting the `out` parameter to `null` on failure.
+- **Try-Parse Pattern**: Parsers implement the [Try-Parse Pattern](https://learn.microsoft.com/en-us/dotnet/standard/design-guidelines/exceptions-and-performance#try-parse-pattern),
+  returning a **bool** to indicate success and assigning the result to an **out** parameter.
 
 ## ⚙️ Configuration
 

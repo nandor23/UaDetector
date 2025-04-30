@@ -19,7 +19,7 @@ public static class StringExtensions
     /// <param name="markerName">Name between comment markers (e.g. "VERSION")</param>
     /// <param name="newContent">Content to place between the markers</param>
     /// <exception cref="ArgumentException">Thrown when the specified markers are not found in the content</exception>
-    public static string ReplaceBetweenMarkers(
+    public static string ReplaceMarkerContent(
         this string content,
         string markerName,
         string newContent
@@ -43,7 +43,7 @@ public static class StringExtensions
     /// <param name="markerName">Name between comment markers (e.g. "BROWSERS")</param>
     /// <param name="newContentItems">Items to join and place between the markers</param>
     /// <exception cref="ArgumentException">Thrown when the specified markers are not found in the content</exception>
-    public static string ReplaceBetweenMarkers(
+    public static string ReplaceMarkerContent(
         this string content,
         string markerName,
         IEnumerable<string> newContentItems

@@ -52,24 +52,24 @@ var deviceBrands = DeviceParserBase
     .Distinct(StringComparer.OrdinalIgnoreCase);
 
 var modifiedReadme = originalReadme
-    .ReplaceBetweenMarkers("OPERATING-SYSTEMS", OsParser.OsNameMapping.Keys)
-    .ReplaceBetweenMarkers("BROWSERS", browsers)
-    .ReplaceBetweenMarkers("BROWSER-ENGINES", EngineParser.EngineNames)
-    .ReplaceBetweenMarkers("MOBILE-APPS", mobileApps)
-    .ReplaceBetweenMarkers("MEDIA-PLAYERS", MediaPlayerParser.MediaPlayers.Select(x => x.Name))
-    .ReplaceBetweenMarkers("LIBRARIES", LibraryParser.Libraries.Select(x => x.Name))
-    .ReplaceBetweenMarkers("FEED-READERS", FeedReaderParser.FeedReaders.Select(x => x.Name))
-    .ReplaceBetweenMarkers(
+    .ReplaceMarkerContent("OPERATING-SYSTEMS", OsParser.OsNameMapping.Keys)
+    .ReplaceMarkerContent("BROWSERS", browsers)
+    .ReplaceMarkerContent("BROWSER-ENGINES", EngineParser.EngineNames)
+    .ReplaceMarkerContent("MOBILE-APPS", mobileApps)
+    .ReplaceMarkerContent("MEDIA-PLAYERS", MediaPlayerParser.MediaPlayers.Select(x => x.Name))
+    .ReplaceMarkerContent("LIBRARIES", LibraryParser.Libraries.Select(x => x.Name))
+    .ReplaceMarkerContent("FEED-READERS", FeedReaderParser.FeedReaders.Select(x => x.Name))
+    .ReplaceMarkerContent(
         "PERSONAL-INFORMATION-MANAGERS",
         PimParser.PersonalInformationManagers.Select(x => x.Name)
     )
-    .ReplaceBetweenMarkers("MEDIA-PLAYERS", MediaPlayerParser.MediaPlayers.Select(x => x.Name))
-    .ReplaceBetweenMarkers("DEVICE-BRANDS", deviceBrands)
-    .ReplaceBetweenMarkers("BOTS", BotParser.Bots.Select(x => x.Name));
+    .ReplaceMarkerContent("MEDIA-PLAYERS", MediaPlayerParser.MediaPlayers.Select(x => x.Name))
+    .ReplaceMarkerContent("DEVICE-BRANDS", deviceBrands)
+    .ReplaceMarkerContent("BOTS", BotParser.Bots.Select(x => x.Name));
 
 if (originalReadme != modifiedReadme)
 {
-    modifiedReadme = modifiedReadme.ReplaceBetweenMarkers(
+    modifiedReadme = modifiedReadme.ReplaceMarkerContent(
         "LAST-UPDATED",
         DateTime.Today.ToString("yyyy-MM-dd")
     );
