@@ -8,7 +8,7 @@ internal static class VendorFragmentParser
 {
     private const string ResourceName = "Regexes.Resources.vendor_fragments.json";
 
-    internal static readonly IEnumerable<VendorFragment> VendorFragments =
+    internal static readonly IReadOnlyList<VendorFragment> VendorFragments =
         RegexLoader.LoadRegexes<VendorFragment>(ResourceName, "[^a-z0-9]+");
 
     public static bool TryParseBrand(string userAgent, [NotNullWhen(true)] out string? result)

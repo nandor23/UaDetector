@@ -15,7 +15,7 @@ public sealed class OsParser : IOsParser
     private const string ResourceName = "Regexes.Resources.operating_systems.json";
     private readonly UaDetectorOptions _uaDetectorOptions;
     private readonly BotParser _botParser;
-    internal static readonly IEnumerable<Os> OperatingSystems;
+    internal static readonly IReadOnlyList<Os> OperatingSystems;
     internal static readonly FrozenDictionary<OsCode, string> OsCodeMapping;
     internal static readonly FrozenDictionary<string, OsCode> OsNameMapping;
     internal static readonly FrozenDictionary<string, FrozenSet<OsCode>> OsFamilyMapping;
@@ -26,7 +26,7 @@ public sealed class OsParser : IOsParser
     private static readonly FrozenDictionary<int, string> WindowsMinorVersionMapping;
     private static readonly FrozenSet<string> AndroidApps;
     private static readonly FrozenDictionary<string, Regex> PlatformRegexes;
-    private static readonly IEnumerable<string> OsPlatforms;
+    private static readonly IReadOnlyList<string> OsPlatforms;
 
     static OsParser()
     {

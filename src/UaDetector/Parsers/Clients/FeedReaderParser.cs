@@ -10,7 +10,7 @@ namespace UaDetector.Parsers.Clients;
 internal sealed class FeedReaderParser : ClientParserBase
 {
     private const string ResourceName = "Regexes.Resources.Clients.feed_readers.json";
-    internal static readonly IEnumerable<Client> FeedReaders;
+    internal static readonly IReadOnlyList<Client> FeedReaders;
     private static readonly Regex CombinedRegex;
 
     static FeedReaderParser()

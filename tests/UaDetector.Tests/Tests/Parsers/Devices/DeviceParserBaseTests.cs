@@ -10,7 +10,7 @@ public class DeviceParserBaseTests
     [Test]
     public void BrandCodeMapping_ShouldContainAllBrandCodes()
     {
-        foreach (BrandCode brandCode in Enum.GetValues(typeof(BrandCode)))
+        foreach (BrandCode brandCode in Enum.GetValues<BrandCode>())
         {
             DeviceParserBase.BrandCodeMapping.ShouldContainKey(brandCode);
         }
@@ -19,7 +19,7 @@ public class DeviceParserBaseTests
     [Test]
     public void DeviceTypeMapping_ShouldContainAllDeviceTypes()
     {
-        foreach (DeviceType deviceType in Enum.GetValues(typeof(DeviceType)))
+        foreach (DeviceType deviceType in Enum.GetValues<DeviceType>())
         {
             DeviceParserBase.DeviceTypeMapping.Values.ShouldContain(deviceType);
         }

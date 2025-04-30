@@ -9,7 +9,7 @@ namespace UaDetector.Parsers.Devices;
 internal sealed class NotebookParser : DeviceParserBase
 {
     private const string ResourceName = "Regexes.Resources.Devices.notebooks.json";
-    private static readonly IEnumerable<Device> Notebooks;
+    private static readonly IReadOnlyList<Device> Notebooks;
     private static readonly Regex FbmdRegex;
 
     static NotebookParser()

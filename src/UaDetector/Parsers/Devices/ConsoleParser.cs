@@ -9,7 +9,7 @@ namespace UaDetector.Parsers.Devices;
 internal sealed class ConsoleParser : DeviceParserBase
 {
     private const string ResourceName = "Regexes.Resources.Devices.consoles.json";
-    private static readonly IEnumerable<Device> Consoles;
+    private static readonly IReadOnlyList<Device> Consoles;
     private static readonly Regex CombinedRegex;
 
     static ConsoleParser()

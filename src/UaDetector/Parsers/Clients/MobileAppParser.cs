@@ -10,7 +10,7 @@ namespace UaDetector.Parsers.Clients;
 internal sealed class MobileAppParser : ClientParserBase
 {
     private const string ResourceName = "Regexes.Resources.Clients.mobile_apps.json";
-    internal static readonly IEnumerable<Client> MobileApps;
+    internal static readonly IReadOnlyList<Client> MobileApps;
     private static readonly Regex CombinedRegex;
 
     static MobileAppParser()

@@ -10,7 +10,7 @@ namespace UaDetector.Parsers.Browsers;
 internal static class EngineParser
 {
     private const string ResourceName = "Regexes.Resources.Browsers.browser_engines.json";
-    private static readonly IEnumerable<BrowserEngine> Engines;
+    private static readonly IReadOnlyList<BrowserEngine> Engines;
     private static readonly Regex CombinedRegex;
 
     internal static readonly FrozenSet<string> EngineNames = new[]

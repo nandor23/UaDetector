@@ -9,7 +9,7 @@ namespace UaDetector.Parsers.Devices;
 internal sealed class PortableMediaPlayerParser : DeviceParserBase
 {
     private const string ResourceName = "Regexes.Resources.Devices.portable_media_players.json";
-    private static readonly IEnumerable<Device> PortableMediaPlayers;
+    private static readonly IReadOnlyList<Device> PortableMediaPlayers;
     private static readonly Regex CombinedRegex;
 
     static PortableMediaPlayerParser()

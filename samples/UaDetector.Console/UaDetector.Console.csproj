@@ -9,5 +9,4 @@
   <ItemGroup>
     <ProjectReference Include="..\..\src\UaDetector\UaDetector.csproj" />
   </ItemGroup>
-  
 </Project>

@@ -38,7 +38,7 @@ public class BrowserParserTests
     [Test]
     public void BrowserCodeMapping_ShouldContainAllBrowserCodes()
     {
-        foreach (BrowserCode browserCode in Enum.GetValues(typeof(BrowserCode)))
+        foreach (BrowserCode browserCode in Enum.GetValues<BrowserCode>())
         {
             BrowserParser.BrowserCodeMapping.ShouldContainKey(browserCode);
         }

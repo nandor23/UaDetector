@@ -36,24 +36,24 @@ internal static class RegexLoader
         };
     }
 
-    public static IEnumerable<T> LoadRegexes<T>(string resourceName, string? patternSuffix = null)
+    public static List<T> LoadRegexes<T>(string resourceName, string? patternSuffix = null)
     {
         var regexConverter = new RegexJsonConverter(patternSuffix);
         var serializerOptions = CreateSerializerOptions(regexConverter);
         using var stream = GetEmbeddedResourceStream(resourceName);
         using var reader = new StreamReader(stream);
 
-        return JsonSerializer.Deserialize<IEnumerable<T>>(stream, serializerOptions) ?? [];
+        return JsonSerializer.Deserialize<List<T>>(stream, serializerOptions) ?? [];
     }
 
-    public static (IEnumerable<T>, Regex) LoadRegexesWithCombined<T>(string resourceName)
+    public static (List<T>, Regex) LoadRegexesWithCombined<T>(string resourceName)
     {
         var regexConverter = new RegexJsonConverter();
         var serializerOptions = CreateSerializerOptions(regexConverter);
         using var stream = GetEmbeddedResourceStream(resourceName);
         using var reader = new StreamReader(stream);
 
-        var regexes = JsonSerializer.Deserialize<IEnumerable<T>>(stream, serializerOptions);
+        var regexes = JsonSerializer.Deserialize<List<T>>(stream, serializerOptions);
         var combinedRegex = regexConverter.BuildCombinedRegex();
 
         return (regexes ?? [], combinedRegex);

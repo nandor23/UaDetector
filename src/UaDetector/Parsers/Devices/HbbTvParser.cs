@@ -10,7 +10,7 @@ namespace UaDetector.Parsers.Devices;
 internal sealed class HbbTvParser : DeviceParserBase
 {
     private const string ResourceName = "Regexes.Resources.Devices.televisions.json";
-    private static readonly IEnumerable<Device> Televisions;
+    private static readonly IReadOnlyList<Device> Televisions;
     internal static readonly Regex HbbTvRegex;
 
     static HbbTvParser()

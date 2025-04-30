@@ -38,7 +38,7 @@ public sealed class UaDetector : IUaDetector
     private static readonly FrozenSet<string> TvBrowsers;
     private static readonly FrozenSet<string> TvClients;
     private static readonly List<KeyValuePair<string, DeviceType>> ClientHintFormFactorsMapping;
-    private readonly IEnumerable<DeviceParserBase> _deviceParsers =
+    private readonly IReadOnlyList<DeviceParserBase> _deviceParsers =
     [
         new HbbTvParser(),
         new ShellTvParser(),
