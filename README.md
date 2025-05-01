@@ -135,7 +135,7 @@ The following benchmark measures the performance of different parsers within the
 ## 🔍 Detection Capabilities
 
 > [!NOTE]
-> UaDetector matches device-detector's detection capabilities as of [commit 51519a5](https://github.com/matomo-org/device-detector/commit/51519a508a58a0b0b7fee930ec7010825058253f).
+> UaDetector matches device-detector's detection capabilities as of commit [51519a5](https://github.com/matomo-org/device-detector/commit/51519a508a58a0b0b7fee930ec7010825058253f).
 
 **Last updated**: <!-- LAST-UPDATED -->2025-05-01<!-- LAST-UPDATED -->
 
