@@ -1,5 +1,4 @@
 using Shouldly;
-
 using UaDetector.Models.Enums;
 
 namespace UaDetector.Tests.Tests.Models.Enums;
@@ -16,7 +15,7 @@ public class BrowserCodeTests
             values[i].ShouldBe(i);
         }
     }
-    
+
     [Test]
     public void BrowserCode_HasExpectedValues()
     {
@@ -704,7 +703,7 @@ public class BrowserCodeTests
         };
 
         expectedValues.Count.ShouldBe(Enum.GetValues<BrowserCode>().Length);
-        
+
         foreach (var browserCode in Enum.GetValues<BrowserCode>())
         {
             ((int)browserCode).ShouldBe(expectedValues[browserCode]);

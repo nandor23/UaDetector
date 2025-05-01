@@ -1,5 +1,4 @@
 using Shouldly;
-
 using UaDetector.Models.Enums;
 
 namespace UaDetector.Tests.Tests.Models.Enums;
@@ -16,7 +15,7 @@ public class DeviceTypeTests
             values[i].ShouldBe(i);
         }
     }
-    
+
     [Test]
     public void DeviceType_HasExpectedValues()
     {

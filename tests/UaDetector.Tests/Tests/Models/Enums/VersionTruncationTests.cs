@@ -1,5 +1,4 @@
 using Shouldly;
-
 using UaDetector.Models.Enums;
 
 namespace UaDetector.Tests.Tests.Models.Enums;
@@ -16,7 +15,7 @@ public class VersionTruncationTests
             values[i].ShouldBe(i);
         }
     }
-    
+
     [Test]
     public void VersionTruncation_HasExpectedValues()
     {
@@ -30,7 +29,7 @@ public class VersionTruncationTests
         };
 
         expectedValues.Count.ShouldBe(Enum.GetValues<VersionTruncation>().Length);
-        
+
         foreach (var versionTruncation in Enum.GetValues<VersionTruncation>())
         {
             ((int)versionTruncation).ShouldBe(expectedValues[versionTruncation]);

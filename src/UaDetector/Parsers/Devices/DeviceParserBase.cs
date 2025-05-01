@@ -1,7 +1,6 @@
 using System.Collections.Frozen;
 using System.Diagnostics.CodeAnalysis;
 using System.Text.RegularExpressions;
-
 using UaDetector.Models.Constants;
 using UaDetector.Models.Enums;
 using UaDetector.Regexes.Models;
@@ -13,7 +12,6 @@ internal abstract class DeviceParserBase
 {
     internal static readonly FrozenDictionary<BrandCode, string> BrandCodeMapping;
     internal static readonly FrozenDictionary<string, BrandCode> BrandNameMapping;
-    internal static readonly FrozenDictionary<string, DeviceType> DeviceTypeMapping;
 
     static DeviceParserBase()
     {
@@ -2086,24 +2084,6 @@ internal abstract class DeviceParserBase
         BrandNameMapping = BrandCodeMapping
             .ToDictionary(e => e.Value, e => e.Key)
             .ToFrozenDictionary();
-
-        DeviceTypeMapping = new Dictionary<string, DeviceType>
-        {
-            { "desktop", DeviceType.Desktop },
-            { "smartphone", DeviceType.Smartphone },
-            { "tablet", DeviceType.Tablet },
-            { "feature phone", DeviceType.FeaturePhone },
-            { "console", DeviceType.Console },
-            { "tv", DeviceType.Television },
-            { "car browser", DeviceType.CarBrowser },
-            { "smart display", DeviceType.SmartDisplay },
-            { "camera", DeviceType.Camera },
-            { "portable media player", DeviceType.PortableMediaPlayer },
-            { "phablet", DeviceType.Phablet },
-            { "smart speaker", DeviceType.SmartSpeaker },
-            { "wearable", DeviceType.Wearable },
-            { "peripheral", DeviceType.Peripheral },
-        }.ToFrozenDictionary(StringComparer.OrdinalIgnoreCase);
     }
 
     private static string? BuildModel(string model, Match match)
@@ -2147,16 +2127,8 @@ internal abstract class DeviceParserBase
             return false;
         }
 
-        DeviceType? type = null;
+        DeviceType? type = matchedDevice?.Type;
         string? model = null;
-
-        if (matchedDevice?.Type is { Length: > 0 })
-        {
-            if (DeviceTypeMapping.TryGetValue(matchedDevice.Type, out var deviceType))
-            {
-                type = deviceType;
-            }
-        }
 
         if (matchedDevice?.Model is { Length: > 0 })
         {
@@ -2204,12 +2176,9 @@ internal abstract class DeviceParserBase
                 brand = deviceModel.Brand;
             }
 
-            if (deviceModel?.Type is { Length: > 0 })
+            if (deviceModel?.Type is not null)
             {
-                if (DeviceTypeMapping.TryGetValue(deviceModel.Type, out var deviceType))
-                {
-                    type = deviceType;
-                }
+                type = deviceModel.Type;
             }
         }
 

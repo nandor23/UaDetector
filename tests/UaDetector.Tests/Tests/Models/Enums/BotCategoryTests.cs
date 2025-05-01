@@ -1,5 +1,4 @@
 using Shouldly;
-
 using UaDetector.Models.Enums;
 
 namespace UaDetector.Tests.Tests.Models.Enums;
@@ -16,7 +15,7 @@ public class BotCategoryTests
             values[i].ShouldBe(i);
         }
     }
-    
+
     [Test]
     public void BotCategory_HasExpectedValues()
     {
@@ -41,7 +40,7 @@ public class BotCategoryTests
         };
 
         expectedValues.Count.ShouldBe(Enum.GetValues<BotCategory>().Length);
-        
+
         foreach (var botCategory in Enum.GetValues<BotCategory>())
         {
             ((int)botCategory).ShouldBe(expectedValues[botCategory]);

@@ -1,5 +1,4 @@
 ﻿using BenchmarkDotNet.Attributes;
-
 using UaDetector.Parsers;
 using UaDetector.Results;
 
@@ -12,7 +11,7 @@ public class UaDetectorBenchmark
     public UserAgentInfo? UaDetector_TryParse()
     {
         var uaDetector = new UaDetector();
-        var userAgent =
+        const string userAgent =
             "Safari/9537.73.11 CFNetwork/673.0.3 Darwin/13.0.0 (x86_64) (MacBookAir6%2C2)";
 
         uaDetector.TryParse(userAgent, out var result);
@@ -24,7 +23,7 @@ public class UaDetectorBenchmark
     public BrowserInfo? BrowserParser_TryParse()
     {
         var parser = new BrowserParser();
-        var userAgent =
+        const string userAgent =
             "Safari/9537.73.11 CFNetwork/673.0.3 Darwin/13.0.0 (x86_64) (MacBookAir6%2C2)";
 
         parser.TryParse(userAgent, out var result);
@@ -35,7 +34,7 @@ public class UaDetectorBenchmark
     public ClientInfo? ClientParser_TryParse()
     {
         var parser = new ClientParser();
-        var userAgent = "Siri/1 CFNetwork/1128.0.1 Darwin/19.6.0";
+        const string userAgent = "Siri/1 CFNetwork/1128.0.1 Darwin/19.6.0";
 
         parser.TryParse(userAgent, out var result);
 
@@ -58,7 +57,7 @@ public class UaDetectorBenchmark
     public bool BotParser_IsBot()
     {
         var parser = new BotParser();
-        var userAgent =
+        const string userAgent =
             "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/21.0.1180.89 Safari/537.1; 360Spider";
 
         return parser.IsBot(userAgent);

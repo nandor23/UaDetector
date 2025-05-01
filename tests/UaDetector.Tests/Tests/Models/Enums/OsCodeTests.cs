@@ -1,5 +1,4 @@
 using Shouldly;
-
 using UaDetector.Models.Enums;
 
 namespace UaDetector.Tests.Tests.Models.Enums;
@@ -16,7 +15,7 @@ public class OsCodeTests
             values[i].ShouldBe(i);
         }
     }
-    
+
     [Test]
     public void OsCode_HasExpectedValues()
     {
@@ -211,7 +210,7 @@ public class OsCodeTests
         };
 
         expectedValues.Count.ShouldBe(Enum.GetValues<OsCode>().Length);
-        
+
         foreach (var osCode in Enum.GetValues<OsCode>())
         {
             ((int)osCode).ShouldBe(expectedValues[osCode]);

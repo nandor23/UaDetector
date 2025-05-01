@@ -1,5 +1,4 @@
 using System.Diagnostics.CodeAnalysis;
-
 using UaDetector.Regexes.Models;
 using UaDetector.Utils;
 

@@ -25,4 +25,3 @@ public sealed class YamlEmptyStringConverter : IYamlTypeConverter
         emitter.Emit(new Scalar(value?.ToString() ?? string.Empty));
     }
 }
-
