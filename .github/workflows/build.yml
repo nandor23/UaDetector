@@ -4,6 +4,11 @@ on:
   push:
     branches: [ "main" ]
   pull_request:
+    branches: [ "main" ]
+    paths-ignore:
+      - "**/*.md"
+      - "**/*.yaml"
+      - "**/*.yml"
 
 jobs:
   build:
@@ -11,19 +16,19 @@ jobs:
     
     steps:
       - uses: actions/checkout@v4
-        with: 
+        with:
           lfs: true
-      
+
       - name: Setup .NET
         uses: actions/setup-dotnet@v4
         with:
           dotnet-version: 9.0.x
-          
+
       - name: Restore dependencies
         run: dotnet restore
 
       - name: Build
         run: dotnet build --no-restore
-        
+
       - name: Test
         run: dotnet test tests/UaDetector.Tests --no-build
