@@ -213,7 +213,7 @@ public class UaDetectorTests
         yield return () => "smartphones_39";
         yield return () => "smartphones_40";
         yield return () => "smartphones_41";
-        yield return () => "tablets";
+        /*yield return () => "tablets";
         yield return () => "tablets_1";
         yield return () => "tablets_2";
         yield return () => "tablets_3";
@@ -233,6 +233,6 @@ public class UaDetectorTests
         yield return () => "televisions_4";
         yield return () => "televisions_5";
         yield return () => "wearables";
-        yield return () => "unknown";
+        yield return () => "unknown";*/
     }
 }

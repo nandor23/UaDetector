@@ -110,7 +110,7 @@ public static class YamlToJsonConverter
                     Name = x.Os.Name,
                     Code = OsParser.OsNameMapping[x.Os.Name],
                     Version = x.Os.Version,
-                    Platform = x.Os.Platform,
+                    CpuArchitecture = x.Os.Platform,
                     Family = x.OsFamily == "Unknown" ? null : x.OsFamily,
                 },
             Client =

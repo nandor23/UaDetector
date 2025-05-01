@@ -7,7 +7,7 @@ public sealed class OsInfo
     public required string Name { get; init; }
     public required OsCode Code { get; init; }
     public required string? Version { get; init; }
-    public required string? Platform { get; init; }
+    public required string? CpuArchitecture { get; init; }
     public required string? Family { get; init; }
 
     public override string ToString()
@@ -18,7 +18,9 @@ public sealed class OsInfo
             {
                 $"{nameof(Name)}: {Name}",
                 string.IsNullOrEmpty(Version) ? null : $"{nameof(Version)}: {Version}",
-                string.IsNullOrEmpty(Platform) ? null : $"{nameof(Platform)}: {Platform}",
+                string.IsNullOrEmpty(CpuArchitecture)
+                    ? null
+                    : $"{nameof(CpuArchitecture)}: {CpuArchitecture}",
                 string.IsNullOrEmpty(Family) ? null : $"{nameof(Family)}: {Family}",
             }.Where(x => !string.IsNullOrEmpty(x))
         );
