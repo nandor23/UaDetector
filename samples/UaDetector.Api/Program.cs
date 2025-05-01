@@ -1,4 +1,5 @@
 using Scalar.AspNetCore;
+
 using UaDetector;
 
 var builder = WebApplication.CreateBuilder(args);

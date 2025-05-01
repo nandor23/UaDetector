@@ -1,10 +1,22 @@
 using Shouldly;
+
 using UaDetector.Models.Enums;
 
 namespace UaDetector.Tests.Tests.Models.Enums;
 
 public class ClientTypeTests
 {
+    [Test]
+    public void ClientType_ValuesShouldBeSequential()
+    {
+        var values = Enum.GetValues<ClientType>().Cast<int>().ToList();
+
+        for (int i = 0; i < values.Count; i++)
+        {
+            values[i].ShouldBe(i);
+        }
+    }
+    
     [Test]
     public void ClientType_HasExpectedValues()
     {

@@ -1,10 +1,22 @@
 using Shouldly;
+
 using UaDetector.Models.Enums;
 
 namespace UaDetector.Tests.Tests.Models.Enums;
 
 public class BotCategoryTests
 {
+    [Test]
+    public void BotCategory_ValuesShouldBeSequential()
+    {
+        var values = Enum.GetValues<BotCategory>().Cast<int>().ToList();
+
+        for (int i = 0; i < values.Count; i++)
+        {
+            values[i].ShouldBe(i);
+        }
+    }
+    
     [Test]
     public void BotCategory_HasExpectedValues()
     {

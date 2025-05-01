@@ -1,5 +1,5 @@
 using Shouldly;
-using TUnit.Core;
+
 using UaDetector.Parsers.Devices;
 
 namespace UaDetector.Tests.Tests.Parsers.Devices;

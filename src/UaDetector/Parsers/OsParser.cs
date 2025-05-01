@@ -2,6 +2,7 @@ using System.Collections.Frozen;
 using System.Collections.Immutable;
 using System.Diagnostics.CodeAnalysis;
 using System.Text.RegularExpressions;
+
 using UaDetector.Models.Constants;
 using UaDetector.Models.Enums;
 using UaDetector.Regexes.Models;

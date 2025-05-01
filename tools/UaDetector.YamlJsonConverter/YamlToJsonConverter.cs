@@ -1,6 +1,7 @@
 using System.Collections.Frozen;
 using System.Text.Encodings.Web;
 using System.Text.Json;
+
 using UaDetector.Models.Enums;
 using UaDetector.Parsers;
 using UaDetector.Parsers.Devices;

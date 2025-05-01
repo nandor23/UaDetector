@@ -1,6 +1,7 @@
 using System.Collections.Immutable;
+
 using Shouldly;
-using TUnit.Core;
+
 using UaDetector.Models.Enums;
 using UaDetector.Parsers.Clients;
 using UaDetector.Tests.Fixtures.Models;

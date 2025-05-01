@@ -1,10 +1,22 @@
 using Shouldly;
+
 using UaDetector.Models.Enums;
 
 namespace UaDetector.Tests.Tests.Models.Enums;
 
 public class BrowserCodeTests
 {
+    [Test]
+    public void BrowserCode_ValuesShouldBeSequential()
+    {
+        var values = Enum.GetValues<BrowserCode>().Cast<int>().ToList();
+
+        for (int i = 0; i < values.Count; i++)
+        {
+            values[i].ShouldBe(i);
+        }
+    }
+    
     [Test]
     public void BrowserCode_HasExpectedValues()
     {
