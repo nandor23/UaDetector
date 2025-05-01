@@ -24,7 +24,7 @@ public class UaDetectorController : ControllerBase
 
         if (_uaDetector.TryParse(userAgent, headers, out var result))
         {
-            return Ok(result);
+            return Ok(result?.ToString());
         }
 
         return BadRequest("Unrecognized user-agent");
