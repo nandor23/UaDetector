@@ -25,8 +25,8 @@ public sealed class OsParser : IOsParser
     private static readonly FrozenDictionary<string, string> LineageOsVersionMapping;
     private static readonly FrozenDictionary<int, string> WindowsMinorVersionMapping;
     private static readonly FrozenSet<string> AndroidApps;
-    private static readonly FrozenDictionary<string, Regex> PlatformRegexes;
-    private static readonly IReadOnlyList<string> OsPlatforms;
+    private static readonly FrozenDictionary<string, Regex> CpuArchitectureRegexes;
+    private static readonly IReadOnlyList<string> ProcessorArchitectures;
 
     static OsParser()
     {
@@ -547,39 +547,39 @@ public sealed class OsParser : IOsParser
             "every.browser.inc",
         }.ToFrozenSet();
 
-        PlatformRegexes = new Dictionary<string, Regex>
+        CpuArchitectureRegexes = new Dictionary<string, Regex>
         {
             {
-                OsPlatformTypes.Arm,
+                CpuArchitectures.Arm,
                 RegexUtility.BuildUserAgentRegex(
                     "arm[ _;)ev]|.*arm$|.*arm64|aarch64|Apple ?TV|Watch ?OS|Watch1,[12]"
                 )
             },
-            { OsPlatformTypes.LoongArch64, RegexUtility.BuildUserAgentRegex("loongarch64") },
-            { OsPlatformTypes.Mips, RegexUtility.BuildUserAgentRegex("mips") },
-            { OsPlatformTypes.SuperH, RegexUtility.BuildUserAgentRegex("sh4") },
-            { OsPlatformTypes.Sparc64, RegexUtility.BuildUserAgentRegex("sparc64") },
+            { CpuArchitectures.LoongArch64, RegexUtility.BuildUserAgentRegex("loongarch64") },
+            { CpuArchitectures.Mips, RegexUtility.BuildUserAgentRegex("mips") },
+            { CpuArchitectures.SuperH, RegexUtility.BuildUserAgentRegex("sh4") },
+            { CpuArchitectures.Sparc64, RegexUtility.BuildUserAgentRegex("sparc64") },
             {
-                OsPlatformTypes.X64,
+                CpuArchitectures.X64,
                 RegexUtility.BuildUserAgentRegex(
                     "64-?bit|WOW64|(?:Intel)?x64|WINDOWS_64|win64|.*amd64|.*x86_?64"
                 )
             },
             {
-                OsPlatformTypes.X86,
+                CpuArchitectures.X86,
                 RegexUtility.BuildUserAgentRegex(".*32bit|.*win32|(?:i[0-9]|x)86|i86pc")
             },
         }.ToFrozenDictionary();
 
-        OsPlatforms =
+        ProcessorArchitectures =
         [
-            OsPlatformTypes.Arm,
-            OsPlatformTypes.LoongArch64,
-            OsPlatformTypes.Mips,
-            OsPlatformTypes.SuperH,
-            OsPlatformTypes.Sparc64,
-            OsPlatformTypes.X64,
-            OsPlatformTypes.X86,
+            CpuArchitectures.Arm,
+            CpuArchitectures.LoongArch64,
+            CpuArchitectures.Mips,
+            CpuArchitectures.SuperH,
+            CpuArchitectures.Sparc64,
+            CpuArchitectures.X64,
+            CpuArchitectures.X86,
         ];
     }
 
@@ -662,7 +662,7 @@ public sealed class OsParser : IOsParser
         return result is not null;
     }
 
-    private static bool TryParsePlatform(
+    private static bool TryParseCpuArchitecture(
         string userAgent,
         ClientHints clientHints,
         [NotNullWhen(true)] out string? result
@@ -676,34 +676,34 @@ public sealed class OsParser : IOsParser
 
             if (architecture.Contains("arm"))
             {
-                result = OsPlatformTypes.Arm;
+                result = CpuArchitectures.Arm;
             }
             else if (architecture.Contains("loongarch64"))
             {
-                result = OsPlatformTypes.LoongArch64;
+                result = CpuArchitectures.LoongArch64;
             }
             else if (architecture.Contains("mips"))
             {
-                result = OsPlatformTypes.Mips;
+                result = CpuArchitectures.Mips;
             }
             else if (architecture.Contains("sh4"))
             {
-                result = OsPlatformTypes.SuperH;
+                result = CpuArchitectures.SuperH;
             }
             else if (architecture.Contains("sparc64"))
             {
-                result = OsPlatformTypes.Sparc64;
+                result = CpuArchitectures.Sparc64;
             }
             else if (
                 architecture.Contains("x64")
                 || (architecture.Contains("x86") && clientHints.Bitness == "64")
             )
             {
-                result = OsPlatformTypes.X64;
+                result = CpuArchitectures.X64;
             }
             else if (architecture.Contains("x86"))
             {
-                result = OsPlatformTypes.X86;
+                result = CpuArchitectures.X86;
             }
 
             if (result is { Length: > 0 })
@@ -712,11 +712,14 @@ public sealed class OsParser : IOsParser
             }
         }
 
-        foreach (var platform in OsPlatforms)
+        foreach (var cpuArchitecture in ProcessorArchitectures)
         {
-            if (PlatformRegexes.TryGetValue(platform, out var regex) && regex.IsMatch(userAgent))
+            if (
+                CpuArchitectureRegexes.TryGetValue(cpuArchitecture, out var regex)
+                && regex.IsMatch(userAgent)
+            )
             {
-                result = platform;
+                result = cpuArchitecture;
                 break;
             }
         }
@@ -980,7 +983,6 @@ public sealed class OsParser : IOsParser
             return false;
         }
 
-        TryParsePlatform(userAgent, clientHints, out var platform);
         TryMapNameToFamily(name, out var family);
 
         if (clientHints.App is { Length: > 0 })
@@ -1013,12 +1015,14 @@ public sealed class OsParser : IOsParser
             }
         }
 
+        TryParseCpuArchitecture(userAgent, clientHints, out var cpuArchitecture);
+
         result = new OsInfo
         {
             Name = name,
             Code = OsNameMapping[name],
             Version = version,
-            Platform = platform,
+            CpuArchitecture = cpuArchitecture,
             Family = family,
         };
 

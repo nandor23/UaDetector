@@ -88,7 +88,7 @@ public class OsParserTests
             result.Name.ShouldBe(fixture.Os.Name);
             result.Code.ShouldBe(fixture.Os.Code);
             result.Version.ShouldBe(fixture.Os.Version);
-            result.Platform.ShouldBe(fixture.Os.Platform);
+            result.CpuArchitecture.ShouldBe(fixture.Os.CpuArchitecture);
             result.Family.ShouldBe(fixture.Os.Family);
         }
     }

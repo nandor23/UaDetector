@@ -20,7 +20,7 @@ Each can be used independently if only certain information is needed from the us
 - **Thread Safety**: The parsers are stateless by design, making them fully thread-safe and dependency-injection friendly.
 - **Optimized for Performance**: Uses compiled regular expressions and frozen dictionaries for faster pattern matching and lookup operations.
 - **Predefined Values**: Static classes provide access to browser, operating system, and other related metadata. 
-  These include: `OsNames`, `OsFamilies`, `OsPlatformTypes`, `BrowserNames`, `BrowserFamilies`, `BrowserEngines`, `BrandNames`.
+  These include: `OsNames`, `OsFamilies`, `CpuArchitectures`, `BrowserNames`, `BrowserFamilies`, `BrowserEngines`, `BrandNames`.
 - **Type-Safe Values**: Certain values are represented by enums, making them suitable for database storage.
   These include: `OsCode`, `BrowserCode`, `BrandCode`, `ClientType`, `DeviceType`, `BotCategory`.
 - **Try-Parse Pattern**: Parsers implement the [Try-Parse Pattern](https://learn.microsoft.com/en-us/dotnet/standard/design-guidelines/exceptions-and-performance#try-parse-pattern),
