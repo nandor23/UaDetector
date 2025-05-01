@@ -7,7 +7,7 @@ public enum DeviceType
     Tablet = 2,
     FeaturePhone = 3,
     Console = 4,
-    Tv = 5,
+    Television = 5,
     CarBrowser = 6,
     SmartDisplay = 7,
     Camera = 8,

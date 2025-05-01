@@ -6,7 +6,7 @@ using UaDetector.Utils;
 
 namespace UaDetector.Parsers;
 
-public class BotParser : IBotParser
+public sealed class BotParser : IBotParser
 {
     private const string ResourceName = "Regexes.Resources.bots.json";
     internal static readonly IReadOnlyList<Bot> Bots;

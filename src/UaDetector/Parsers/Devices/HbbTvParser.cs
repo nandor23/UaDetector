@@ -32,7 +32,7 @@ internal sealed class HbbTvParser : DeviceParserBase
             {
                 result = new DeviceInfoInternal
                 {
-                    Type = DeviceType.Tv,
+                    Type = DeviceType.Television,
                     Brand = null,
                     Model = null,
                 };

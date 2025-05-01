@@ -34,7 +34,5 @@
       Condition="$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', 'net9.0'))"
     />
     <PackageVersion Include="PolySharp" Version="1.15.0" />
-    <PackageVersion Include="Shouldly" Version="4.3.0" />
-    <PackageVersion Include="TUnit" Version="0.19.86" />
   </ItemGroup>
 </Project>

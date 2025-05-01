@@ -6,6 +6,17 @@ namespace UaDetector.Tests.Tests.Models.Enums;
 public class BrandCodeTests
 {
     [Test]
+    public void BrandCode_ValuesShouldBeSequential()
+    {
+        var values = Enum.GetValues<BrandCode>().Cast<int>().ToList();
+
+        for (int i = 0; i < values.Count; i++)
+        {
+            values[i].ShouldBe(i);
+        }
+    }
+
+    [Test]
     public void BrandCode_HasExpectedValues()
     {
         var expectedValues = new Dictionary<BrandCode, int>
@@ -2059,9 +2070,22 @@ public class BrandCodeTests
             { BrandCode.Webfleet, 2046 },
             { BrandCode.WS, 2047 },
             { BrandCode.WebTv, 2048 },
+            { BrandCode.Mortal, 2049 },
+            { BrandCode.Jusyea, 2050 },
+            { BrandCode.Caixun, 2051 },
+            { BrandCode.Cogeco, 2052 },
+            { BrandCode.Dawlance, 2053 },
+            { BrandCode.Denka, 2054 },
+            { BrandCode.EcoStar, 2055 },
+            { BrandCode.Fision, 2056 },
+            { BrandCode.Fresh, 2057 },
+            { BrandCode.Nesons, 2058 },
+            { BrandCode.Sambox, 2059 },
+            { BrandCode.Spider, 2060 },
+            { BrandCode.Trecfone, 2061 },
         };
 
-        Enum.GetValues<BrandCode>().Length.ShouldBe(expectedValues.Count);
+        expectedValues.Count.ShouldBe(Enum.GetValues<BrandCode>().Length);
 
         foreach (var brandCode in Enum.GetValues<BrandCode>())
         {

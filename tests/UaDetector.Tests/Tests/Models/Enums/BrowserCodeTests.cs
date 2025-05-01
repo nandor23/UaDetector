@@ -6,6 +6,17 @@ namespace UaDetector.Tests.Tests.Models.Enums;
 public class BrowserCodeTests
 {
     [Test]
+    public void BrowserCode_ValuesShouldBeSequential()
+    {
+        var values = Enum.GetValues<BrowserCode>().Cast<int>().ToList();
+
+        for (int i = 0; i < values.Count; i++)
+        {
+            values[i].ShouldBe(i);
+        }
+    }
+
+    [Test]
     public void BrowserCode_HasExpectedValues()
     {
         var expectedValues = new Dictionary<BrowserCode, int>
@@ -691,7 +702,7 @@ public class BrowserCodeTests
             { BrowserCode.ZteBrowser, 678 },
         };
 
-        Enum.GetValues<BrowserCode>().Length.ShouldBe(expectedValues.Count);
+        expectedValues.Count.ShouldBe(Enum.GetValues<BrowserCode>().Length);
 
         foreach (var browserCode in Enum.GetValues<BrowserCode>())
         {

@@ -1,5 +1,4 @@
 ﻿using Shouldly;
-using TUnit.Core;
 using UaDetector.Utils;
 
 namespace UaDetector.Tests.Utils;

@@ -6,6 +6,17 @@ namespace UaDetector.Tests.Tests.Models.Enums;
 public class OsCodeTests
 {
     [Test]
+    public void OsCode_ValuesShouldBeSequential()
+    {
+        var values = Enum.GetValues<OsCode>().Cast<int>().ToList();
+
+        for (int i = 0; i < values.Count; i++)
+        {
+            values[i].ShouldBe(i);
+        }
+    }
+
+    [Test]
     public void OsCode_HasExpectedValues()
     {
         var expectedValues = new Dictionary<OsCode, int>
@@ -198,7 +209,7 @@ public class OsCodeTests
             { OsCode.WebOs, 185 },
         };
 
-        Enum.GetValues<OsCode>().Length.ShouldBe(expectedValues.Count);
+        expectedValues.Count.ShouldBe(Enum.GetValues<OsCode>().Length);
 
         foreach (var osCode in Enum.GetValues<OsCode>())
         {

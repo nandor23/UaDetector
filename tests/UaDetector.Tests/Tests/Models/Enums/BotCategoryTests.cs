@@ -6,6 +6,17 @@ namespace UaDetector.Tests.Tests.Models.Enums;
 public class BotCategoryTests
 {
     [Test]
+    public void BotCategory_ValuesShouldBeSequential()
+    {
+        var values = Enum.GetValues<BotCategory>().Cast<int>().ToList();
+
+        for (int i = 0; i < values.Count; i++)
+        {
+            values[i].ShouldBe(i);
+        }
+    }
+
+    [Test]
     public void BotCategory_HasExpectedValues()
     {
         var expectedValues = new Dictionary<BotCategory, int>
@@ -28,7 +39,7 @@ public class BotCategoryTests
             { BotCategory.Benchmark, 15 },
         };
 
-        Enum.GetValues<BotCategory>().Length.ShouldBe(expectedValues.Count);
+        expectedValues.Count.ShouldBe(Enum.GetValues<BotCategory>().Length);
 
         foreach (var botCategory in Enum.GetValues<BotCategory>())
         {

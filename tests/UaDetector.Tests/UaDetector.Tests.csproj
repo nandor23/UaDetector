@@ -18,6 +18,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <InternalsVisibleTo Include="UaDetector.Tests" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\..\src\UaDetector\UaDetector.csproj" />
   </ItemGroup>
+
 </Project>

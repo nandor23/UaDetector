@@ -32,7 +32,7 @@ internal sealed class ShellTvParser : DeviceParserBase
             {
                 result = new DeviceInfoInternal
                 {
-                    Type = DeviceType.Tv,
+                    Type = DeviceType.Television,
                     Brand = null,
                     Model = null,
                 };

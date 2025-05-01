@@ -118,22 +118,24 @@ The following benchmark compares the performance of other .NET user-agent parsin
 
 | Method         | Mean     | Error     | StdDev    | Ratio | Allocated   | Alloc Ratio |
 |--------------- |---------:|----------:|----------:|------:|------------:|------------:|
-| UaDetector     | 1.844 ms | 0.0229 ms | 0.0388 ms |  1.00 |     3.54 KB |        1.00 |
-| DeviceDetector | 6.084 ms | 0.0346 ms | 0.0307 ms |  3.30 |  4534.51 KB |    1,279.86 |
-| UaParser       | 6.783 ms | 0.0844 ms | 0.0789 ms |  3.68 | 10794.88 KB |    3,046.84 |
-
+| UaDetector     | 2.093 ms | 0.0057 ms | 0.0051 ms |  1.00 |     3.58 KB |        1.00 |
+| DeviceDetector | 7.144 ms | 0.0368 ms | 0.0326 ms |  3.41 |  4534.55 KB |    1,264.88 |
+| UaParser       | 8.445 ms | 0.0671 ms | 0.0560 ms |  4.04 | 10794.89 KB |    3,011.16 |
 
 The following benchmark measures the performance of different parsers within the library.
 
-| Method                 | Mean       | Error    | StdDev   | Allocated |
-|----------------------- |-----------:|---------:|---------:|----------:|
-| UaDetector_TryParse    | 1,725.3 us | 30.59 us | 30.05 us |    3627 B |
-| BrowserParser_TryParse | 1,266.7 us | 24.91 us | 66.06 us |    1320 B |
-| ClientParser_TryParse  |   170.2 us |  3.35 us |  3.59 us |    1024 B |
-| BotParser_TryParse     |   342.1 us |  4.30 us |  4.02 us |     353 B |
-| BotParser_IsBot        |   333.8 us |  3.63 us |  3.40 us |         - |
+| Method                 | Mean       | Error   | StdDev  | Allocated |
+|----------------------- |-----------:|--------:|--------:|----------:|
+| UaDetector_TryParse    | 2,095.1 us | 6.57 us | 5.49 us |    3671 B |
+| BrowserParser_TryParse | 1,466.6 us | 9.16 us | 8.12 us |    1323 B |
+| ClientParser_TryParse  |   200.7 us | 1.83 us | 1.71 us |    1024 B |
+| BotParser_TryParse     |   395.2 us | 2.05 us | 1.81 us |     353 B |
+| BotParser_IsBot        |   392.9 us | 4.47 us | 4.18 us |       1 B |
 
 ## 🔍 Detection Capabilities
+
+> [!NOTE]
+> UaDetector matches device-detector's detection capabilities as of [commit 51519a5](https://github.com/matomo-org/device-detector/commit/51519a508a58a0b0b7fee930ec7010825058253f).
 
 **Last updated**: <!-- LAST-UPDATED -->2025-04-24<!-- LAST-UPDATED -->
 
