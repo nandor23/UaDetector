@@ -2067,6 +2067,19 @@ internal abstract class DeviceParserBase
             { BrandCode.Webfleet, BrandNames.Webfleet },
             { BrandCode.WS, BrandNames.WS },
             { BrandCode.WebTv, BrandNames.WebTv },
+            { BrandCode.Mortal, BrandNames.Mortal },
+            { BrandCode.Jusyea, BrandNames.Jusyea },
+            { BrandCode.Caixun, BrandNames.Caixun },
+            { BrandCode.Cogeco, BrandNames.Cogeco },
+            { BrandCode.Dawlance, BrandNames.Dawlance },
+            { BrandCode.Denka, BrandNames.Denka },
+            { BrandCode.EcoStar, BrandNames.EcoStar },
+            { BrandCode.Fision, BrandNames.Fision },
+            { BrandCode.Fresh, BrandNames.Fresh },
+            { BrandCode.Nesons, BrandNames.Nesons },
+            { BrandCode.Sambox, BrandNames.Sambox },
+            { BrandCode.Spider, BrandNames.Spider },
+            { BrandCode.Trecfone, BrandNames.Trecfone },
         }.ToFrozenDictionary();
 
         BrandNameMapping = BrandCodeMapping
@@ -2080,7 +2093,7 @@ internal abstract class DeviceParserBase
             { "tablet", DeviceType.Tablet },
             { "feature phone", DeviceType.FeaturePhone },
             { "console", DeviceType.Console },
-            { "tv", DeviceType.Tv },
+            { "tv", DeviceType.Television },
             { "car browser", DeviceType.CarBrowser },
             { "smart display", DeviceType.SmartDisplay },
             { "camera", DeviceType.Camera },

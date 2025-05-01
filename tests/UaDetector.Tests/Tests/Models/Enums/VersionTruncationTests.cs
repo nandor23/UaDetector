@@ -17,8 +17,8 @@ public class VersionTruncationTests
             { VersionTruncation.Build, 4 },
         };
 
-        Enum.GetValues<VersionTruncation>().Length.ShouldBe(expectedValues.Count);
-
+        expectedValues.Count.ShouldBe(Enum.GetValues<VersionTruncation>().Length);
+        
         foreach (var versionTruncation in Enum.GetValues<VersionTruncation>())
         {
             ((int)versionTruncation).ShouldBe(expectedValues[versionTruncation]);

@@ -691,8 +691,8 @@ public class BrowserCodeTests
             { BrowserCode.ZteBrowser, 678 },
         };
 
-        Enum.GetValues<BrowserCode>().Length.ShouldBe(expectedValues.Count);
-
+        expectedValues.Count.ShouldBe(Enum.GetValues<BrowserCode>().Length);
+        
         foreach (var browserCode in Enum.GetValues<BrowserCode>())
         {
             ((int)browserCode).ShouldBe(expectedValues[browserCode]);

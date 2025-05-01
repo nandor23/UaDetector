@@ -15,7 +15,7 @@ public class DeviceTypeTests
             { DeviceType.Tablet, 2 },
             { DeviceType.FeaturePhone, 3 },
             { DeviceType.Console, 4 },
-            { DeviceType.Tv, 5 },
+            { DeviceType.Television, 5 },
             { DeviceType.CarBrowser, 6 },
             { DeviceType.SmartDisplay, 7 },
             { DeviceType.Camera, 8 },
@@ -26,7 +26,7 @@ public class DeviceTypeTests
             { DeviceType.Peripheral, 13 },
         };
 
-        Enum.GetValues<DeviceType>().Length.ShouldBe(expectedValues.Count);
+        expectedValues.Count.ShouldBe(Enum.GetValues<DeviceType>().Length);
 
         foreach (var deviceType in Enum.GetValues<DeviceType>())
         {

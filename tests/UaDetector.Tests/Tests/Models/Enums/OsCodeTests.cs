@@ -198,8 +198,8 @@ public class OsCodeTests
             { OsCode.WebOs, 185 },
         };
 
-        Enum.GetValues<OsCode>().Length.ShouldBe(expectedValues.Count);
-
+        expectedValues.Count.ShouldBe(Enum.GetValues<OsCode>().Length);
+        
         foreach (var osCode in Enum.GetValues<OsCode>())
         {
             ((int)osCode).ShouldBe(expectedValues[osCode]);

@@ -2051,4 +2051,17 @@ public static class BrandNames
     public const string Webfleet = "Webfleet";
     public const string WS = "WS";
     public const string WebTv = "Web TV";
+    public const string Mortal = "MORTAL";
+    public const string Jusyea = "JUSYEA";
+    public const string Caixun = "Caixun";
+    public const string Cogeco = "Cogeco";
+    public const string Dawlance = "Dawlance";
+    public const string Denka = "Denka";
+    public const string EcoStar = "EcoStar";
+    public const string Fision = "Fision";
+    public const string Fresh = "FRESH";
+    public const string Nesons = "Nesons";
+    public const string Sambox = "Sambox";
+    public const string Spider = "Spider";
+    public const string Trecfone = "Trecfone";
 }

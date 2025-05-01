@@ -1,4 +1,5 @@
 using System.Collections.Frozen;
+using System.Text.Encodings.Web;
 using System.Text.Json;
 using System.Text.RegularExpressions;
 
@@ -27,6 +28,8 @@ internal static class RegexLoader
     {
         return new JsonSerializerOptions
         {
+            WriteIndented = true,
+            Encoder = JavaScriptEncoder.UnsafeRelaxedJsonEscaping,
             PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
             Converters = { regexConverter },
 

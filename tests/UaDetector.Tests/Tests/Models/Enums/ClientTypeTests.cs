@@ -16,6 +16,8 @@ public class ClientTypeTests
             { ClientType.FeedReader, 3 },
             { ClientType.PersonalInformationManager, 4 },
         };
+        
+        expectedValues.Count.ShouldBe(Enum.GetValues<ClientType>().Length);
 
         Enum.GetValues<ClientType>().Length.ShouldBe(expectedValues.Count);
 

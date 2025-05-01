@@ -364,24 +364,24 @@ public sealed class UaDetector : IUaDetector
         // Devices running Opera TV Store are assumed to be TVs.
         if (OperaTvStoreRegex.IsMatch(userAgent))
         {
-            deviceType = DeviceType.Tv;
+            deviceType = DeviceType.Television;
         }
 
         // Devices running Coolita OS are assumed to be TVs.
         if (os?.Name == OsNames.CoolitaOs)
         {
-            deviceType = DeviceType.Tv;
+            deviceType = DeviceType.Television;
             brand = BrandNames.Coocaa;
         }
 
         // Devices containing "Andr0id" in the user agent string are assumed to be TVs.
         if (
-            deviceType != DeviceType.Tv
+            deviceType != DeviceType.Television
             && deviceType != DeviceType.Peripheral
             && AndroidRegex.IsMatch(userAgent)
         )
         {
-            deviceType = DeviceType.Tv;
+            deviceType = DeviceType.Television;
         }
 
         // Devices using these clients are assumed to be TVs.
@@ -390,19 +390,19 @@ public sealed class UaDetector : IUaDetector
             || client is not null && TvClients.Contains(client.Name)
         )
         {
-            deviceType = DeviceType.Tv;
+            deviceType = DeviceType.Television;
         }
 
         // User agents containing the "TV" fragment are assumed to be TVs.
         if (deviceType is null && TvFragmentRegex.IsMatch(userAgent))
         {
-            deviceType = DeviceType.Tv;
+            deviceType = DeviceType.Television;
         }
 
         // Devices running Tizen TV or SmartTV are assumed to be TVs.
         if (deviceType is null && TizenOrSmartTvRegex.IsMatch(userAgent))
         {
-            deviceType = DeviceType.Tv;
+            deviceType = DeviceType.Television;
         }
 
         // User agents containing the "Desktop" fragment are assumed to be desktops.

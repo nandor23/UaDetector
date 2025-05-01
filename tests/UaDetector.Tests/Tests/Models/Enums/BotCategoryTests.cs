@@ -28,8 +28,8 @@ public class BotCategoryTests
             { BotCategory.Benchmark, 15 },
         };
 
-        Enum.GetValues<BotCategory>().Length.ShouldBe(expectedValues.Count);
-
+        expectedValues.Count.ShouldBe(Enum.GetValues<BotCategory>().Length);
+        
         foreach (var botCategory in Enum.GetValues<BotCategory>())
         {
             ((int)botCategory).ShouldBe(expectedValues[botCategory]);
