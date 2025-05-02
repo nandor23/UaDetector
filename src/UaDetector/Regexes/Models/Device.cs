@@ -7,7 +7,7 @@ internal sealed class Device
 {
     public required string Brand { get; init; }
     public required Regex Regex { get; init; }
-    public required DeviceType? Type { get; init; }
-    public required string? Model { get; init; }
-    public required IReadOnlyList<DeviceModel>? ModelVariants { get; init; }
+    public DeviceType? Type { get; init; }
+    public string? Model { get; init; }
+    public IReadOnlyList<DeviceModel>? ModelVariants { get; init; }
 }

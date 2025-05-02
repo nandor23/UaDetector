@@ -33,7 +33,6 @@ public sealed class BrowserParser : IBrowserParser
     static BrowserParser()
     {
         Browsers = RegexLoader.LoadRegexes<Browser>(ResourceName);
-
         BrowserCodeMapping = new Dictionary<BrowserCode, string>
         {
             { BrowserCode.Via, BrowserNames.Via },
