@@ -4,9 +4,9 @@ namespace UaDetector.Results;
 
 public sealed class DeviceInfo
 {
-    public required DeviceType? Type { get; init; }
-    public required string? Model { get; init; }
-    public required BrandInfo? Brand { get; init; }
+    public DeviceType? Type { get; init; }
+    public string? Model { get; init; }
+    public BrandInfo? Brand { get; init; }
 
     public override string ToString()
     {

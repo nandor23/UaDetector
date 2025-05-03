@@ -8,7 +8,7 @@
 
   <PropertyGroup>
     <PackageId>UaDetector</PackageId>
-    <PackageVersion>1.0.0</PackageVersion>
+    <PackageVersion>1.0.1</PackageVersion>
     <PackageTags>UaDetector;UserAgent;parser;user-agent-parser;os-detection;browser-detection;client-detection;device-detection;bot-detection;</PackageTags>
     <Description>UaDetector is a user-agent parsing library that identifies the browser, operating system, device, client, and even detects bots.</Description>
   </PropertyGroup>

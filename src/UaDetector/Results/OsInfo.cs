@@ -6,9 +6,9 @@ public sealed class OsInfo
 {
     public required string Name { get; init; }
     public required OsCode Code { get; init; }
-    public required string? Version { get; init; }
-    public required string? CpuArchitecture { get; init; }
-    public required string? Family { get; init; }
+    public string? Version { get; init; }
+    public string? CpuArchitecture { get; init; }
+    public string? Family { get; init; }
 
     public override string ToString()
     {
