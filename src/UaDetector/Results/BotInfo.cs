@@ -5,9 +5,9 @@ namespace UaDetector.Results;
 public sealed class BotInfo
 {
     public required string Name { get; init; }
-    public required BotCategory? Category { get; init; }
-    public required string? Url { get; init; }
-    public required ProducerInfo? Producer { get; init; }
+    public BotCategory? Category { get; init; }
+    public string? Url { get; init; }
+    public ProducerInfo? Producer { get; init; }
 
     public override string ToString()
     {

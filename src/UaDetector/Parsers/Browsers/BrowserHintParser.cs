@@ -7,6 +7,7 @@ namespace UaDetector.Parsers.Browsers;
 internal static class BrowserHintParser
 {
     private const string ResourceName = "Regexes.Resources.Browsers.browser_hints.json";
+
     internal static readonly FrozenDictionary<string, string> Hints = RegexLoader.LoadHints(
         ResourceName
     );

@@ -6,7 +6,7 @@ public sealed class ClientInfo
 {
     public required ClientType Type { get; init; }
     public required string Name { get; init; }
-    public required string? Version { get; init; }
+    public string? Version { get; init; }
 
     public override string ToString()
     {

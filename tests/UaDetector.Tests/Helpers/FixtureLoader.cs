@@ -7,7 +7,6 @@ public static class FixtureLoader
     private static readonly JsonSerializerOptions SerializerOptions = new()
     {
         PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
-        RespectRequiredConstructorParameters = true,
     };
 
     public static async Task<List<T>> LoadAsync<T>(string fileName)

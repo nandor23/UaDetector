@@ -4,7 +4,7 @@ namespace UaDetector.Results;
 
 public sealed class DeviceInfoInternal
 {
-    public required DeviceType? Type { get; init; }
-    public required string? Brand { get; init; }
-    public required string? Model { get; init; }
+    public DeviceType? Type { get; init; }
+    public string? Brand { get; init; }
+    public string? Model { get; init; }
 }

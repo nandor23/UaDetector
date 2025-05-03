@@ -1,6 +1,7 @@
 using System.Collections.Frozen;
 using System.Text.Encodings.Web;
 using System.Text.Json;
+using System.Text.Json.Serialization;
 using UaDetector.Models.Enums;
 using UaDetector.Parsers;
 using UaDetector.Parsers.Devices;
@@ -61,6 +62,7 @@ public static class YamlToJsonConverter
         RespectRequiredConstructorParameters = true,
         PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
         Encoder = JavaScriptEncoder.UnsafeRelaxedJsonEscaping,
+        DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull,
         Converters = { new RegexJsonConverter() },
     };
 
@@ -140,20 +142,22 @@ public static class YamlToJsonConverter
                                     Version = x.Client.EngineVersion,
                                 },
                     },
-            Device = x.Device is null
-                ? null
-                : new DeviceInfo
-                {
-                    Type = x.Device.Type is null ? null : DeviceTypeMapping[x.Device.Type],
-                    Brand = x.Device.Brand is null or "Unknown"
-                        ? null
-                        : new BrandInfo
-                        {
-                            Name = x.Device.Brand,
-                            Code = DeviceParserBase.BrandNameMapping[x.Device.Brand],
-                        },
-                    Model = x.Device.Model,
-                },
+            Device =
+                x.Device is null
+                || (x.Device.Brand is null && x.Device.Model is null && x.Device.Type is null)
+                    ? null
+                    : new DeviceInfo
+                    {
+                        Type = x.Device.Type is null ? null : DeviceTypeMapping[x.Device.Type],
+                        Brand = x.Device.Brand is null or "Unknown"
+                            ? null
+                            : new BrandInfo
+                            {
+                                Name = x.Device.Brand,
+                                Code = DeviceParserBase.BrandNameMapping[x.Device.Brand],
+                            },
+                        Model = x.Device.Model,
+                    },
             Bot = x.Bot is null
                 ? null
                 : new BotInfo
