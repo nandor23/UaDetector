@@ -19,7 +19,7 @@ public static class YamlLoader
     {
         var deserializer = CreateDeserializer();
 
-        using var reader = new StreamReader(Path.Combine(AppContext.BaseDirectory, fileName));
+        using var reader = new StreamReader(Path.Combine(Directory.GetCurrentDirectory(), fileName));
         var entries = deserializer.Deserialize<List<T>>(reader);
         return entries;
     }
@@ -28,7 +28,7 @@ public static class YamlLoader
     {
         var deserializer = CreateDeserializer();
 
-        using var reader = new StreamReader(Path.Combine(AppContext.BaseDirectory, fileName));
+        using var reader = new StreamReader(Path.Combine(Directory.GetCurrentDirectory(), fileName));
         var entries = deserializer.Deserialize<OrderedDictionary<string, T>>(reader);
         return entries;
     }

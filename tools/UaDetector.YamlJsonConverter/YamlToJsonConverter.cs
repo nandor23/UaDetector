@@ -1,6 +1,8 @@
 using System.Collections.Frozen;
 using System.Text.Encodings.Web;
 using System.Text.Json;
+using System.Text.Json.Serialization;
+
 using UaDetector.Models.Enums;
 using UaDetector.Parsers;
 using UaDetector.Parsers.Devices;
@@ -61,6 +63,7 @@ public static class YamlToJsonConverter
         RespectRequiredConstructorParameters = true,
         PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
         Encoder = JavaScriptEncoder.UnsafeRelaxedJsonEscaping,
+        DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull,
         Converters = { new RegexJsonConverter() },
     };
 
@@ -140,7 +143,7 @@ public static class YamlToJsonConverter
                                     Version = x.Client.EngineVersion,
                                 },
                     },
-            Device = x.Device is null
+            Device = x.Device is null || (x.Device.Brand is null && x.Device.Model is null && x.Device.Type is null)
                 ? null
                 : new DeviceInfo
                 {

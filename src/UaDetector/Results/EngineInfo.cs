@@ -2,8 +2,8 @@ namespace UaDetector.Results;
 
 public sealed class EngineInfo
 {
-    public required string? Name { get; init; }
-    public required string? Version { get; init; }
+    public string? Name { get; init; }
+    public string? Version { get; init; }
 
     public override string ToString()
     {
