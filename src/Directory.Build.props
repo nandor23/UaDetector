@@ -12,7 +12,6 @@
   </PropertyGroup>
   <PropertyGroup>
     <LangVersion>latest</LangVersion>
-    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
   </PropertyGroup>
   <ItemGroup>
     <None Include="..\..\NUGET-README.md" Pack="true" PackagePath="\" />

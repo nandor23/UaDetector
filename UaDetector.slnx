@@ -7,6 +7,7 @@
     <File Path="README.md" />
     <File Path="Directory.Packages.props" />
     <File Path=".csharpierignore" />
+    <File Path="Directory.Build.props" />
   </Folder>
   <Folder Name="/.solution/actions/">
     <File Path=".github\workflows\build.yml" />
