@@ -35,4 +35,8 @@
     <PackageReference Include="System.Collections.Immutable" />
     <PackageReference Include="System.Text.Json" />
   </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Options\" />
+  </ItemGroup>
 </Project>

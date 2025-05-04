@@ -11,14 +11,29 @@ public sealed class BotParser : IBotParser
     private const string ResourceName = "Regexes.Resources.bots.json";
     internal static readonly IReadOnlyList<Bot> Bots;
     private static readonly Regex CombinedRegex;
+    private readonly IUaDetectorCache? _cache;
+    private const string TryParseKeyPrefix = "bot";
+    private const string IsBotKeyPrefix = "isbot";
 
     static BotParser()
     {
         (Bots, CombinedRegex) = RegexLoader.LoadRegexesWithCombined<Bot>(ResourceName);
     }
 
+    public BotParser(BotParserOptions? botOptions = null)
+    {
+        _cache = botOptions?.Cache;
+    }
+
     public bool TryParse(string userAgent, [NotNullWhen(true)] out BotInfo? result)
     {
+        var cacheKey = $"{TryParseKeyPrefix}:{userAgent}";
+
+        if (_cache is not null && _cache.TryGet(cacheKey, out result))
+        {
+            return true;
+        }
+
         if (CombinedRegex.IsMatch(userAgent))
         {
             foreach (var bot in Bots)
@@ -41,17 +56,28 @@ public sealed class BotParser : IBotParser
                             },
                     };
 
+                    _cache?.Set(cacheKey, result);
                     return true;
                 }
             }
         }
 
         result = null;
+        _cache?.Set(cacheKey, result);
         return false;
     }
 
     public bool IsBot(string userAgent)
     {
-        return CombinedRegex.IsMatch(userAgent);
+        var cacheKey = $"{IsBotKeyPrefix}:{userAgent}";
+
+        if (_cache is not null && _cache.TryGet(cacheKey, out bool result))
+        {
+            return result;
+        }
+
+        result = CombinedRegex.IsMatch(userAgent);
+        _cache?.Set(cacheKey, result);
+        return result;
     }
 }

@@ -4,6 +4,6 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageVersion Include="Shouldly" Version="4.3.0" />
-    <PackageVersion Include="TUnit" Version="0.19.112" />
+    <PackageVersion Include="TUnit" Version="0.19.116" />
   </ItemGroup>
 </Project>

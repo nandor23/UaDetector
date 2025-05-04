@@ -7,55 +7,61 @@ public static class UaDetectorServiceCollectionExtensions
 {
     public static IServiceCollection AddUaDetector(
         this IServiceCollection services,
-        Action<UaDetectorOptions>? configureOptions = null
+        Action<UaDetectorOptionsBuilder>? optionsAction = null
     )
     {
-        var options = new UaDetectorOptions();
-        configureOptions?.Invoke(options);
+        var optionsBuilder = new UaDetectorOptionsBuilder();
+        optionsAction?.Invoke(optionsBuilder);
 
-        services.AddSingleton<IUaDetector>(new UaDetector(options));
+        services.AddSingleton<IUaDetector>(new UaDetector(optionsBuilder.Options));
         return services;
     }
 
     public static IServiceCollection AddOsParser(
         this IServiceCollection services,
-        Action<UaDetectorOptions>? configureOptions = null
+        Action<UaDetectorOptionsBuilder>? optionsAction = null
     )
     {
-        var options = new UaDetectorOptions();
-        configureOptions?.Invoke(options);
+        var optionsBuilder = new UaDetectorOptionsBuilder();
+        optionsAction?.Invoke(optionsBuilder);
 
-        services.AddSingleton<IOsParser>(new OsParser(options));
+        services.AddSingleton<IOsParser>(new OsParser(optionsBuilder.Options));
         return services;
     }
 
     public static IServiceCollection AddBrowserParser(
         this IServiceCollection services,
-        Action<UaDetectorOptions>? configureOptions = null
+        Action<UaDetectorOptionsBuilder>? optionsAction = null
     )
     {
-        var options = new UaDetectorOptions();
-        configureOptions?.Invoke(options);
+        var optionsBuilder = new UaDetectorOptionsBuilder();
+        optionsAction?.Invoke(optionsBuilder);
 
-        services.AddSingleton<IBrowserParser>(new BrowserParser(options));
+        services.AddSingleton<IBrowserParser>(new BrowserParser(optionsBuilder.Options));
         return services;
     }
 
     public static IServiceCollection AddClientParser(
         this IServiceCollection services,
-        Action<UaDetectorOptions>? configureOptions = null
+        Action<UaDetectorOptionsBuilder>? optionsAction = null
     )
     {
-        var options = new UaDetectorOptions();
-        configureOptions?.Invoke(options);
+        var optionsBuilder = new UaDetectorOptionsBuilder();
+        optionsAction?.Invoke(optionsBuilder);
 
-        services.AddSingleton<IClientParser>(new ClientParser(options));
+        services.AddSingleton<IClientParser>(new ClientParser(optionsBuilder.Options));
         return services;
     }
 
-    public static IServiceCollection AddBotParser(this IServiceCollection services)
+    public static IServiceCollection AddBotParser(
+        this IServiceCollection services,
+        Action<BotParserOptionsBuilder>? optionsAction = null
+    )
     {
-        services.AddSingleton<IBotParser>(new BotParser());
+        var optionsBuilder = new BotParserOptionsBuilder();
+        optionsAction?.Invoke(optionsBuilder);
+
+        services.AddSingleton<IBotParser>(new BotParser(optionsBuilder.ParserOptions));
         return services;
     }
 }
