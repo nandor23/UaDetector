@@ -36,11 +36,14 @@ public sealed class UaDetectorMemoryCache : IUaDetectorCache
         return value is not null;
     }
 
-    public void Set<T>(string key, T value)
+    public bool Set<T>(string key, T value)
     {
         if (key.Length <= _cacheOptions.MaxKeyLength)
         {
             _memoryCache.Set($"{_cacheOptions.KeyPrefix}:{key}", value, _entryOptions);
+            return true;
         }
+
+        return false;
     }
 }
