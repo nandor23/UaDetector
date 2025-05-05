@@ -12,6 +12,8 @@ namespace UaDetector;
 
 public sealed class UaDetector : IUaDetector
 {
+    private const string CacheKeyPrefix = "ua";
+    private readonly IUaDetectorCache? _cache;
     private readonly UaDetectorOptions _uaDetectorOptions;
     private readonly OsParser _osParser;
     private readonly BrowserParser _browserParser;
@@ -117,6 +119,7 @@ public sealed class UaDetector : IUaDetector
     public UaDetector(UaDetectorOptions? uaDetectorOptions = null)
     {
         _uaDetectorOptions = uaDetectorOptions ?? new UaDetectorOptions();
+        _cache = uaDetectorOptions?.Cache;
         _osParser = new OsParser(uaDetectorOptions);
         _browserParser = new BrowserParser(uaDetectorOptions);
         _clientParser = new ClientParser(uaDetectorOptions);
@@ -462,6 +465,20 @@ public sealed class UaDetector : IUaDetector
             return false;
         }
 
+        var clientHints = ClientHints.Create(headers);
+
+        if (ParserExtensions.TryRestoreUserAgent(userAgent, clientHints, out var restoredUserAgent))
+        {
+            userAgent = restoredUserAgent;
+        }
+
+        var cacheKey = $"{CacheKeyPrefix}:{userAgent}";
+
+        if (_cache is not null && _cache.TryGet(cacheKey, out result))
+        {
+            return true;
+        }
+
         if (
             !_uaDetectorOptions.DisableBotDetection
             && _botParser.TryParse(userAgent, out BotInfo? bot)
@@ -476,14 +493,8 @@ public sealed class UaDetector : IUaDetector
                 Device = null,
             };
 
+            _cache?.Set(cacheKey, result);
             return true;
-        }
-
-        var clientHints = ClientHints.Create(headers);
-
-        if (ParserExtensions.TryRestoreUserAgent(userAgent, clientHints, out var restoredUserAgent))
-        {
-            userAgent = restoredUserAgent;
         }
 
         BrowserInfo? browser = null;
@@ -513,6 +524,7 @@ public sealed class UaDetector : IUaDetector
             };
         }
 
+        _cache?.Set(cacheKey, result);
         return result is not null;
     }
 

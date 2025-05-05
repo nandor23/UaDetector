@@ -14,6 +14,8 @@ namespace UaDetector.Parsers;
 public sealed class BrowserParser : IBrowserParser
 {
     private const string ResourceName = "Regexes.Resources.Browsers.browsers.json";
+    private const string CacheKeyPrefix = "browser";
+    private readonly IUaDetectorCache? _cache;
     private readonly UaDetectorOptions _uaDetectorOptions;
     private readonly ClientParser _clientParser;
     private readonly BotParser _botParser;
@@ -1426,7 +1428,8 @@ public sealed class BrowserParser : IBrowserParser
     public BrowserParser(UaDetectorOptions? uaDetectorOptions = null)
     {
         _uaDetectorOptions = uaDetectorOptions ?? new UaDetectorOptions();
-        _clientParser = new ClientParser(_uaDetectorOptions);
+        _cache = uaDetectorOptions?.Cache;
+        _clientParser = new ClientParser();
         _botParser = new BotParser();
     }
 
@@ -1706,7 +1709,16 @@ public sealed class BrowserParser : IBrowserParser
             userAgent = restoredUserAgent;
         }
 
-        return TryParse(userAgent, clientHints, out result);
+        var cacheKey = $"{CacheKeyPrefix}:{userAgent}";
+
+        if (_cache is not null && _cache.TryGet(cacheKey, out result))
+        {
+            return true;
+        }
+
+        TryParse(userAgent, clientHints, out result);
+        _cache?.Set(cacheKey, result);
+        return result is not null;
     }
 
     internal bool TryParse(

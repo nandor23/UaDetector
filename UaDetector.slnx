@@ -22,10 +22,12 @@
     <Project Path="samples\UaDetector.Console\UaDetector.Console.csproj" Type="Classic C#" />
   </Folder>
   <Folder Name="/src/">
+    <Project Path="src\UaDetector.MemoryCache\UaDetector.MemoryCache.csproj" Type="Classic C#" />
     <Project Path="src\UaDetector\UaDetector.csproj" Type="Classic C#" />
     <File Path="src\Directory.Build.props" />
   </Folder>
   <Folder Name="/tests/">
+    <Project Path="tests\UaDetector.MemoryCache.Tests\UaDetector.MemoryCache.Tests.csproj" Type="Classic C#" />
     <Project Path="tests\UaDetector.Tests\UaDetector.Tests.csproj" Type="Classic C#" />
   </Folder>
   <Folder Name="/tools/">
