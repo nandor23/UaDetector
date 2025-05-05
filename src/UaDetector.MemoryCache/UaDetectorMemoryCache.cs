@@ -28,7 +28,7 @@ public sealed class UaDetectorMemoryCache : IUaDetectorCache
 
     public bool TryGet<T>(string key, [NotNullWhen(true)] out T? value)
     {
-        if (!_memoryCache.TryGetValue($"{_cacheOptions.KeyPrefix}:{key}", out value))
+        if (!_memoryCache.TryGetValue(key, out value))
         {
             value = default;
         }
@@ -40,7 +40,7 @@ public sealed class UaDetectorMemoryCache : IUaDetectorCache
     {
         if (key.Length <= _cacheOptions.MaxKeyLength)
         {
-            _memoryCache.Set($"{_cacheOptions.KeyPrefix}:{key}", value, _entryOptions);
+            _memoryCache.Set(key, value, _entryOptions);
             return true;
         }
 
