@@ -46,7 +46,7 @@ public class UaDetectorMemoryCacheTests
         cache.TryGet(key, out int? result).ShouldBeFalse();
         result.ShouldBe(null);
     }
-    
+
     [Test]
     public void TryGet_WhenSlidingExpirationHasElapsed_ShouldReturnNull()
     {

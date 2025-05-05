@@ -13,7 +13,7 @@ public static class UaDetectorServiceCollectionExtensions
         var optionsBuilder = new UaDetectorOptionsBuilder();
         optionsAction?.Invoke(optionsBuilder);
 
-        services.AddSingleton<IUaDetector>(new UaDetector(optionsBuilder.Options));
+        services.AddSingleton<IUaDetector>(new UaDetector(optionsBuilder.Build()));
         return services;
     }
 
@@ -25,7 +25,7 @@ public static class UaDetectorServiceCollectionExtensions
         var optionsBuilder = new UaDetectorOptionsBuilder();
         optionsAction?.Invoke(optionsBuilder);
 
-        services.AddSingleton<IOsParser>(new OsParser(optionsBuilder.Options));
+        services.AddSingleton<IOsParser>(new OsParser(optionsBuilder.Build()));
         return services;
     }
 
@@ -37,7 +37,7 @@ public static class UaDetectorServiceCollectionExtensions
         var optionsBuilder = new UaDetectorOptionsBuilder();
         optionsAction?.Invoke(optionsBuilder);
 
-        services.AddSingleton<IBrowserParser>(new BrowserParser(optionsBuilder.Options));
+        services.AddSingleton<IBrowserParser>(new BrowserParser(optionsBuilder.Build()));
         return services;
     }
 
@@ -49,7 +49,7 @@ public static class UaDetectorServiceCollectionExtensions
         var optionsBuilder = new UaDetectorOptionsBuilder();
         optionsAction?.Invoke(optionsBuilder);
 
-        services.AddSingleton<IClientParser>(new ClientParser(optionsBuilder.Options));
+        services.AddSingleton<IClientParser>(new ClientParser(optionsBuilder.Build()));
         return services;
     }
 
