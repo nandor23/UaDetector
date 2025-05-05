@@ -895,7 +895,7 @@ public sealed class OsParser : IOsParser
         {
             return true;
         }
-        
+
         TryParse(userAgent, clientHints, out result);
         _cache?.Set(cacheKey, result);
         return result is not null;

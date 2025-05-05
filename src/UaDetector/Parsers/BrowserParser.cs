@@ -1429,7 +1429,7 @@ public sealed class BrowserParser : IBrowserParser
     {
         _uaDetectorOptions = uaDetectorOptions ?? new UaDetectorOptions();
         _cache = uaDetectorOptions?.Cache;
-        _clientParser = new ClientParser(_uaDetectorOptions);
+        _clientParser = new ClientParser();
         _botParser = new BotParser();
     }
 
@@ -1708,14 +1708,14 @@ public sealed class BrowserParser : IBrowserParser
         {
             userAgent = restoredUserAgent;
         }
-        
+
         var cacheKey = $"{CacheKeyPrefix}:{userAgent}";
 
         if (_cache is not null && _cache.TryGet(cacheKey, out result))
         {
             return true;
         }
-        
+
         TryParse(userAgent, clientHints, out result);
         _cache?.Set(cacheKey, result);
         return result is not null;

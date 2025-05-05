@@ -52,14 +52,14 @@ public sealed class ClientParser : IClientParser
         {
             userAgent = restoredUserAgent;
         }
-        
+
         var cacheKey = $"{CacheKeyPrefix}:{userAgent}";
 
         if (_cache is not null && _cache.TryGet(cacheKey, out result))
         {
             return true;
         }
-        
+
         TryParse(userAgent, clientHints, out result);
         _cache?.Set(cacheKey, result);
         return result is not null;
