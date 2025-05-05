@@ -17,8 +17,11 @@ jobs:
         with:
           dotnet-version: 9.0.x
 
-      - name: Create NuGet Package
-        run: dotnet pack src/UaDetector --configuration Release --output packages
+      - name: Create NuGet Packages
+        run: |
+          for proj in src/*/*.csproj; do
+            dotnet pack "$proj" --configuration Release --output packages
+          done
 
       - name: Publish to NuGet
         run: |

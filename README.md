@@ -111,15 +111,29 @@ else
 }
 ```
 
+##  💾 Caching
+
+To enable caching, install the [UaDetector.MemoryCache](https://www.nuget.org/packages/UaDetector.MemoryCache) package and configure it using the `UseMemoryCache` extension method:
+
+```c#
+using UaDetector;
+using UaDetector.MemoryCache;
+
+builder.Services.AddUaDetector(options =>
+{
+    options.UseMemoryCache();
+});
+```
+
 ## ⚡ Benchmarks
 
-The following benchmark compares the performance of other .NET user-agent parsing libraries.
+The following benchmark compares the performance of other .NET user-agent parsing libraries, without caching enabled.
 
 | Method         | Mean     | Error     | StdDev    | Ratio | Allocated   | Alloc Ratio |
 |--------------- |---------:|----------:|----------:|------:|------------:|------------:|
 | UaDetector     | 2.093 ms | 0.0057 ms | 0.0051 ms |  1.00 |     3.58 KB |        1.00 |
 | DeviceDetector | 7.144 ms | 0.0368 ms | 0.0326 ms |  3.41 |  4534.55 KB |    1,264.88 |
-| UaParser       | 8.445 ms | 0.0671 ms | 0.0560 ms |  4.04 | 10794.89 KB |    3,011.16 |
+| UAParser       | 8.445 ms | 0.0671 ms | 0.0560 ms |  4.04 | 10794.89 KB |    3,011.16 |
 
 The following benchmark measures the performance of different parsers within the library.
 

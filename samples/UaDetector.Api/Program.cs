@@ -1,5 +1,6 @@
 using Scalar.AspNetCore;
 using UaDetector;
+using UaDetector.MemoryCache;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,6 +11,7 @@ builder.Services.AddUaDetector(options =>
 {
     // Custom configuration options
     // e.g., options.VersionTruncation = VersionTruncation.Major;
+    options.UseMemoryCache();
 });
 
 var app = builder.Build();

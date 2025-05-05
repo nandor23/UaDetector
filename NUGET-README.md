@@ -103,4 +103,18 @@ else
 }
 ```
 
+##  💾 Caching
+
+To enable caching, install the [UaDetector.MemoryCache](https://www.nuget.org/packages/UaDetector.MemoryCache) package and configure it using the `UseMemoryCache` extension method:
+
+```c#
+using UaDetector;
+using UaDetector.MemoryCache;
+
+builder.Services.AddUaDetector(options =>
+{
+    options.UseMemoryCache();
+});
+```
+
 > **Note**: For full documentation, visit the [GitHub repository](https://github.com/UaDetector/UaDetector).

@@ -31,7 +31,7 @@ public class LibraryComparisonBenchmark
     }
 
     [Benchmark]
-    public ClientInfo UaParser()
+    public ClientInfo UAParser()
     {
         var uaParser = Parser.GetDefault();
         return uaParser.Parse(UserAgent);

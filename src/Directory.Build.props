@@ -1,5 +1,6 @@
 <Project>
   <PropertyGroup>
+    <PackageVersion>1.1.0</PackageVersion>
     <Authors>Nandor Krizbai</Authors>
     <Copyright>Copyright (c) Nandor Krizbai, Matomo</Copyright>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
