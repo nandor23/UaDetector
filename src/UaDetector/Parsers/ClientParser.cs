@@ -7,6 +7,8 @@ namespace UaDetector.Parsers;
 
 public sealed class ClientParser : IClientParser
 {
+    private const string CacheKeyPrefix = "client";
+    private readonly IUaDetectorCache? _cache;
     private readonly UaDetectorOptions _uaDetectorOptions;
     private readonly BotParser _botParser;
     internal readonly IReadOnlyList<ClientParserBase> ClientParsers;
@@ -14,6 +16,8 @@ public sealed class ClientParser : IClientParser
     public ClientParser(UaDetectorOptions? uaDetectorOptions = null)
     {
         _uaDetectorOptions = uaDetectorOptions ?? new UaDetectorOptions();
+        _cache = uaDetectorOptions?.Cache;
+        _botParser = new BotParser();
 
         ClientParsers =
         [
@@ -23,8 +27,6 @@ public sealed class ClientParser : IClientParser
             new PimParser(_uaDetectorOptions.VersionTruncation),
             new LibraryParser(_uaDetectorOptions.VersionTruncation),
         ];
-
-        _botParser = new BotParser();
     }
 
     public bool TryParse(string userAgent, [NotNullWhen(true)] out ClientInfo? result)
@@ -50,8 +52,17 @@ public sealed class ClientParser : IClientParser
         {
             userAgent = restoredUserAgent;
         }
+        
+        var cacheKey = $"{CacheKeyPrefix}:{userAgent}";
 
-        return TryParse(userAgent, clientHints, out result);
+        if (_cache is not null && _cache.TryGet(cacheKey, out result))
+        {
+            return true;
+        }
+        
+        TryParse(userAgent, clientHints, out result);
+        _cache?.Set(cacheKey, result);
+        return result is not null;
     }
 
     internal bool TryParse(

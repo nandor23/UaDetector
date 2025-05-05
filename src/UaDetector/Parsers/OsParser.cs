@@ -13,6 +13,8 @@ namespace UaDetector.Parsers;
 public sealed class OsParser : IOsParser
 {
     private const string ResourceName = "Regexes.Resources.operating_systems.json";
+    private const string CacheKeyPrefix = "os";
+    private readonly IUaDetectorCache? _cache;
     private readonly UaDetectorOptions _uaDetectorOptions;
     private readonly BotParser _botParser;
     internal static readonly IReadOnlyList<Os> OperatingSystems;
@@ -586,6 +588,7 @@ public sealed class OsParser : IOsParser
     public OsParser(UaDetectorOptions? uaDetectorOptions = null)
     {
         _uaDetectorOptions = uaDetectorOptions ?? new UaDetectorOptions();
+        _cache = uaDetectorOptions?.Cache;
         _botParser = new BotParser();
     }
 
@@ -886,7 +889,16 @@ public sealed class OsParser : IOsParser
             userAgent = restoredUserAgent;
         }
 
-        return TryParse(userAgent, clientHints, out result);
+        var cacheKey = $"{CacheKeyPrefix}:{userAgent}";
+
+        if (_cache is not null && _cache.TryGet(cacheKey, out result))
+        {
+            return true;
+        }
+        
+        TryParse(userAgent, clientHints, out result);
+        _cache?.Set(cacheKey, result);
+        return result is not null;
     }
 
     internal bool TryParse(
