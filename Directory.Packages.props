@@ -33,6 +33,16 @@
       Version="9.0.4"
       Condition="$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', 'net9.0'))"
     />
+    <PackageVersion
+      Include="Microsoft.Extensions.Caching.Memory"
+      Version="8.0.1"
+      Condition="!$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', 'net9.0'))"
+    />
+    <PackageVersion
+      Include="Microsoft.Extensions.Caching.Memory"
+      Version="9.0.4"
+      Condition="$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', 'net9.0'))"
+    />
     <PackageVersion Include="PolySharp" Version="1.15.0" />
     <PackageVersion Include="Shouldly" Version="4.3.0" />
     <PackageVersion Include="TUnit" Version="0.19.116" />
