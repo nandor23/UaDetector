@@ -9,7 +9,8 @@ namespace UaDetector.Parsers;
 public sealed class BotParser : IBotParser
 {
     private const string ResourceName = "Regexes.Resources.bots.json";
-    private const string CacheKeyPrefix = "bot";
+    private const string ParseCacheKeyPrefix = "bot";
+    private const string IsBotCacheKeyPrefix = "isbot";
     private readonly IUaDetectorCache? _cache;
     internal static readonly IReadOnlyList<Bot> Bots;
     private static readonly Regex CombinedRegex;
@@ -26,7 +27,7 @@ public sealed class BotParser : IBotParser
 
     public bool TryParse(string userAgent, [NotNullWhen(true)] out BotInfo? result)
     {
-        var cacheKey = $"{CacheKeyPrefix}:{userAgent}";
+        var cacheKey = $"{ParseCacheKeyPrefix}:{userAgent}";
 
         if (_cache is not null && _cache.TryGet(cacheKey, out result))
         {
@@ -68,6 +69,15 @@ public sealed class BotParser : IBotParser
 
     public bool IsBot(string userAgent)
     {
-        return CombinedRegex.IsMatch(userAgent);
+        var cacheKey = $"{IsBotCacheKeyPrefix}:{userAgent}";
+
+        if (_cache is not null && _cache.TryGet(cacheKey, out bool result))
+        {
+            return result;
+        }
+
+        result = CombinedRegex.IsMatch(userAgent);
+        _cache?.Set(cacheKey, result);
+        return result;
     }
 }
