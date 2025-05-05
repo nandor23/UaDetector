@@ -2,11 +2,16 @@ namespace UaDetector;
 
 public sealed class BotParserOptionsBuilder
 {
-    internal readonly BotParserOptions ParserOptions = new();
+    private IUaDetectorCache? Cache { get; set; }
 
     public BotParserOptionsBuilder AddCache(IUaDetectorCache cache)
     {
-        ParserOptions.Cache = cache;
+        Cache = cache;
         return this;
+    }
+
+    internal BotParserOptions Build()
+    {
+        return new BotParserOptions { Cache = Cache };
     }
 }

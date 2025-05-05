@@ -61,7 +61,7 @@ public static class UaDetectorServiceCollectionExtensions
         var optionsBuilder = new BotParserOptionsBuilder();
         optionsAction?.Invoke(optionsBuilder);
 
-        services.AddSingleton<IBotParser>(new BotParser(optionsBuilder.ParserOptions));
+        services.AddSingleton<IBotParser>(new BotParser(optionsBuilder.Build()));
         return services;
     }
 }
