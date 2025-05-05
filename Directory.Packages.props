@@ -11,6 +11,7 @@
     <PackageVersion
       Include="Microsoft.Extensions.DependencyInjection.Abstractions"
       Version="9.0.4"
+      Condition="$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', 'net9.0'))"
     />
     <PackageVersion
       Include="System.Collections.Immutable"
