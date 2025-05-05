@@ -15,14 +15,14 @@ public sealed class UaDetectorMemoryCache : IUaDetectorCache
         _memoryCache = new Microsoft.Extensions.Caching.Memory.MemoryCache(
             new MemoryCacheOptions
             {
-                ExpirationScanFrequency = _cacheOptions.EntryExpirationScanFrequency,
+                ExpirationScanFrequency = _cacheOptions.ExpirationScanFrequency,
             }
         );
 
         _entryOptions = new MemoryCacheEntryOptions
         {
-            AbsoluteExpirationRelativeToNow = _cacheOptions.EntryExpiration,
-            SlidingExpiration = _cacheOptions.EntrySlidingExpiration,
+            AbsoluteExpirationRelativeToNow = _cacheOptions.Expiration,
+            SlidingExpiration = _cacheOptions.SlidingExpiration,
         };
     }
 

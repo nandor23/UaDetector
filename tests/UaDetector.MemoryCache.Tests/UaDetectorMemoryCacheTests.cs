@@ -35,8 +35,8 @@ public class UaDetectorMemoryCacheTests
         var cache = new UaDetectorMemoryCache(
             new UaDetectorMemoryCacheOptions
             {
-                EntryExpiration = TimeSpan.FromMilliseconds(150),
-                EntryExpirationScanFrequency = TimeSpan.FromMilliseconds(50),
+                Expiration = TimeSpan.FromMilliseconds(150),
+                ExpirationScanFrequency = TimeSpan.FromMilliseconds(50),
             }
         );
 
@@ -54,8 +54,8 @@ public class UaDetectorMemoryCacheTests
         var cache = new UaDetectorMemoryCache(
             new UaDetectorMemoryCacheOptions
             {
-                EntrySlidingExpiration = TimeSpan.FromMilliseconds(150),
-                EntryExpirationScanFrequency = TimeSpan.FromMilliseconds(50),
+                SlidingExpiration = TimeSpan.FromMilliseconds(150),
+                ExpirationScanFrequency = TimeSpan.FromMilliseconds(50),
             }
         );
 
