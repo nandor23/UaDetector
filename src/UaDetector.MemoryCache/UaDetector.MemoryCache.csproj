@@ -19,12 +19,8 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
   </ItemGroup>
-  
-  <ItemGroup Condition="'$(Configuration)' == 'Release'">
-    <PackageReference Include="UaDetector" />
-  </ItemGroup>
 
-  <ItemGroup Condition="'$(Configuration)' != 'Release'">
+  <ItemGroup>
     <ProjectReference Include="..\UaDetector\UaDetector.csproj" />
   </ItemGroup>
 </Project>

@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     
     env:
-      PACKAGES_OUTPUT_DIR: ${{ github.workspace }}/artifacts/packages
+      PACKAGES_OUTPUT_DIR: ${{ github.workspace }}/packages
     
     steps:
       - uses: actions/checkout@v4
@@ -26,10 +26,6 @@ jobs:
         id: extract_tag
         run: echo "tag=${GITHUB_REF#refs/tags/v}" >> $GITHUB_OUTPUT
 
-      - name: Check tag
-        run: |
-          echo ${{ steps.extract_tag.outputs.tag }}
-
       - name: Pack UaDetector
         run: |
           dotnet pack src/UaDetector \
@@ -37,12 +33,15 @@ jobs:
             --output "$PACKAGES_OUTPUT_DIR" \
             -p:PackageVersion=${{ steps.extract_tag.outputs.tag }}
           
-      - name: Add local NuGet feed
-        run: dotnet nuget add source "$PACKAGES_OUTPUT_DIR" --name local
-
       - name: Pack UaDetector.MemoryCache
         run: |
           dotnet pack src/UaDetector.MemoryCache \
             --configuration Release \
             --output "$PACKAGES_OUTPUT_DIR" \
             -p:PackageVersion=${{ steps.extract_tag.outputs.tag }}
+          
+      - name: Publish to NuGet
+        run: |
+          dotnet nuget push "$PACKAGES_OUTPUT_DIR"/UaDetector*.nupkg \
+            --api-key ${{ secrets.UADETECTOR_API_KEY }} \
+            --source https://api.nuget.org/v3/index.json
