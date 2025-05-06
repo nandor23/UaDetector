@@ -1,7 +1,7 @@
 name: Publish to NuGet
 
 on:
-  workflow_dispatch: 
+  workflow_dispatch:
 
 jobs:
   publish:
@@ -9,22 +9,11 @@ jobs:
     
     steps:
       - uses: actions/checkout@v4
-        with:
-          lfs: true
-      
-      - name: Setup .NET
-        uses: actions/setup-dotnet@v4
-        with:
-          dotnet-version: 9.0.x
 
-      - name: Create NuGet Packages
+      - name: Get version tag
+        id: extract_tag
+        run: echo "tag=${GITHUB_REF#refs/tags/}" >> $GITHUB_OUTPUT
+        
+      - name: Check output
         run: |
-          for proj in src/*/*.csproj; do
-            dotnet pack "$proj" --configuration Release --output packages
-          done
-
-      - name: Publish to NuGet
-        run: |
-          dotnet nuget push packages/*.nupkg \
-            --api-key ${{ secrets.UADETECTOR_API_KEY }} \
-            --source https://api.nuget.org/v3/index.json
+          echo ${{ steps.extract_tag.outputs.tag }}

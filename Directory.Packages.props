@@ -46,6 +46,10 @@
     <PackageVersion Include="PolySharp" Version="1.15.0" />
     <PackageVersion Include="Shouldly" Version="4.3.0" />
     <PackageVersion Include="TUnit" Version="0.19.116" />
-    <PackageVersion Include="UaDetector" Version="1.0.2" />
+    <PackageVersion
+      Include="UaDetector"
+      Version="$(PackageVersion)"
+      Condition="'$(Configuration)' == 'Release'"
+    />
   </ItemGroup>
 </Project>
