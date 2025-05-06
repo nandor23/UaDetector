@@ -24,7 +24,7 @@ jobs:
 
       - name: Get version tag
         id: extract_tag
-        run: echo "tag=${GITHUB_REF#refs/tags/}" >> $GITHUB_OUTPUT
+        run: echo "tag=${GITHUB_REF#refs/tags/v}" >> $GITHUB_OUTPUT
 
       - name: Check tag
         run: |
