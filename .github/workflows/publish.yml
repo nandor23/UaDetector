@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     
     env:
-      PACKAGES_OUTPUT_DIR: .artifacts/packages
+      PACKAGES_OUTPUT_DIR: ${{ github.workspace }}/artifacts/packages
     
     steps:
       - uses: actions/checkout@v4
