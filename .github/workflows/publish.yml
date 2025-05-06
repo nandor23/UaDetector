@@ -42,6 +42,6 @@ jobs:
           
       - name: Publish to NuGet
         run: |
-          dotnet nuget push "$PACKAGES_OUTPUT_DIR"/UaDetector*.nupkg \
+          dotnet nuget push "$PACKAGES_OUTPUT_DIR"/*.nupkg \
             --api-key ${{ secrets.UADETECTOR_API_KEY }} \
             --source https://api.nuget.org/v3/index.json
