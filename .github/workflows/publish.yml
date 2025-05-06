@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     
     env:
-      PACKAGES_OUTPUT_DIR: $HOME/.artifacts/packages
+      PACKAGES_OUTPUT_DIR: .artifacts/packages
     
     steps:
       - uses: actions/checkout@v4
@@ -29,9 +29,6 @@ jobs:
       - name: Check tag
         run: |
           echo ${{ steps.extract_tag.outputs.tag }}
-          
-      - name: Add local NuGet feed
-        run: dotnet nuget add source "$PACKAGES_OUTPUT_DIR" --name local
 
       - name: Pack UaDetector
         run: |
@@ -39,6 +36,9 @@ jobs:
             --configuration Release \
             --output "$PACKAGES_OUTPUT_DIR" \
             -p:PackageVersion=${{ steps.extract_tag.outputs.tag }}
+          
+      - name: Add local NuGet feed
+        run: dotnet nuget add source "$PACKAGES_OUTPUT_DIR" --name local
 
       - name: Pack UaDetector.MemoryCache
         run: |
