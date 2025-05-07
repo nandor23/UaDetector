@@ -123,7 +123,7 @@ public sealed class UaDetector : IUaDetector
         _osParser = new OsParser(uaDetectorOptions);
         _browserParser = new BrowserParser(uaDetectorOptions);
         _clientParser = new ClientParser(uaDetectorOptions);
-        _botParser = new BotParser();
+        _botParser = new BotParser(new BotParserOptions { Cache = _cache });
     }
 
     private static Regex BuildRegex(string pattern)

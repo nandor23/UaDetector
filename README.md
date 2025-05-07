@@ -131,19 +131,20 @@ The following benchmark compares the performance of other .NET user-agent parsin
 
 | Method         | Mean     | Error     | StdDev    | Ratio | Allocated   | Alloc Ratio |
 |--------------- |---------:|----------:|----------:|------:|------------:|------------:|
-| UaDetector     | 2.093 ms | 0.0057 ms | 0.0051 ms |  1.00 |     3.58 KB |        1.00 |
-| DeviceDetector | 7.144 ms | 0.0368 ms | 0.0326 ms |  3.41 |  4534.55 KB |    1,264.88 |
-| UAParser       | 8.445 ms | 0.0671 ms | 0.0560 ms |  4.04 | 10794.89 KB |    3,011.16 |
+| UaDetector     | 1.583 ms | 0.0146 ms | 0.0136 ms |  1.00 |     4.04 KB |        1.00 |
+| DeviceDetector | 5.595 ms | 0.0573 ms | 0.0536 ms |  3.53 |  4534.55 KB |    1,121.59 |
+| UAParser       | 6.597 ms | 0.0584 ms | 0.0547 ms |  4.17 | 10794.89 KB |    2,670.04 |
 
 The following benchmark measures the performance of different parsers within the library.
 
-| Method                 | Mean       | Error   | StdDev  | Allocated |
-|----------------------- |-----------:|--------:|--------:|----------:|
-| UaDetector_TryParse    | 2,095.1 us | 6.57 us | 5.49 us |    3671 B |
-| BrowserParser_TryParse | 1,466.6 us | 9.16 us | 8.12 us |    1323 B |
-| ClientParser_TryParse  |   200.7 us | 1.83 us | 1.71 us |    1024 B |
-| BotParser_TryParse     |   395.2 us | 2.05 us | 1.81 us |     353 B |
-| BotParser_IsBot        |   392.9 us | 4.47 us | 4.18 us |       1 B |
+| Method                 | Mean       | Error    | StdDev   | Allocated |
+|----------------------- |-----------:|---------:|---------:|----------:|
+| UaDetector_TryParse    | 1,567.5 us | 18.06 us | 16.89 us |    4140 B |
+| OsParser_TryParse      |   545.0 us |  3.99 us |  3.73 us |    1497 B |
+| BrowserParser_TryParse | 1,095.4 us | 12.78 us | 11.96 us |    1763 B |
+| ClientParser_TryParse  |   150.1 us |  2.17 us |  2.03 us |    1272 B |
+| BotParser_TryParse     |   294.9 us |  2.66 us |  2.49 us |     609 B |
+| BotParser_IsBot        |   289.4 us |  2.47 us |  2.31 us |     281 B |
 
 ## 🔍 Detection Capabilities
 

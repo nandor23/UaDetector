@@ -17,7 +17,7 @@ public sealed class ClientParser : IClientParser
     {
         _uaDetectorOptions = uaDetectorOptions ?? new UaDetectorOptions();
         _cache = uaDetectorOptions?.Cache;
-        _botParser = new BotParser();
+        _botParser = new BotParser(new BotParserOptions { Cache = _cache });
 
         ClientParsers =
         [
