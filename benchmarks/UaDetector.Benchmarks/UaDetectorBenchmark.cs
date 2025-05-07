@@ -20,6 +20,18 @@ public class UaDetectorBenchmark
     }
 
     [Benchmark]
+    public OsInfo? OsParser_TryParse()
+    {
+        var parser = new OsParser();
+        const string userAgent =
+            "Safari/9537.73.11 CFNetwork/673.0.3 Darwin/13.0.0 (x86_64) (MacBookAir6%2C2)";
+
+        parser.TryParse(userAgent, out var result);
+
+        return result;
+    }
+
+    [Benchmark]
     public BrowserInfo? BrowserParser_TryParse()
     {
         var parser = new BrowserParser();

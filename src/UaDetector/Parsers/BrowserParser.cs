@@ -1430,7 +1430,7 @@ public sealed class BrowserParser : IBrowserParser
         _uaDetectorOptions = uaDetectorOptions ?? new UaDetectorOptions();
         _cache = uaDetectorOptions?.Cache;
         _clientParser = new ClientParser();
-        _botParser = new BotParser();
+        _botParser = new BotParser(new BotParserOptions { Cache = _cache });
     }
 
     private static string ApplyClientHintBrandMapping(string brand)

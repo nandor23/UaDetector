@@ -17,6 +17,7 @@ namespace UaDetector.YamlJsonConverter;
 public static class YamlToJsonConverter
 {
     private const string BaseDirectory = "Inputs";
+    private const string ClientsFile = "clients";
     private const string DevicesFile = "devices";
     private const string CollectionFile = "collection";
 
@@ -65,6 +66,25 @@ public static class YamlToJsonConverter
         DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull,
         Converters = { new RegexJsonConverter() },
     };
+
+    public static void ConvertClientRegex()
+    {
+        var entries = YamlLoader.LoadList<ClientYaml>(
+            Path.Combine(BaseDirectory, ClientsFile + ".yml")
+        );
+
+        var result = entries.Select(x => new Client
+        {
+            Regex = x.Regex,
+            Name = x.Name,
+            Version = x.Version,
+        });
+
+        File.WriteAllText(
+            ClientsFile + ".json",
+            JsonSerializer.Serialize(result, JsonSerializerOptions)
+        );
+    }
 
     public static void ConvertDeviceRegex()
     {
