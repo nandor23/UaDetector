@@ -29,7 +29,7 @@ public class UaDetectorMemoryCacheTests
     }
 
     [Test]
-    public void TryGet_WhenEntryExpires_ShouldReturnNull()
+    public void TryGet_WhenEntryExpires_ShouldReturnFalse()
     {
         const string key = "123";
         var cache = new UaDetectorMemoryCache(
@@ -48,7 +48,7 @@ public class UaDetectorMemoryCacheTests
     }
 
     [Test]
-    public void TryGet_WhenSlidingExpirationHasElapsed_ShouldReturnNull()
+    public void TryGet_WhenSlidingExpirationHasElapsed_ShouldReturnFalse()
     {
         const string key = "123";
         var cache = new UaDetectorMemoryCache(
@@ -64,5 +64,18 @@ public class UaDetectorMemoryCacheTests
         Thread.Sleep(300);
         cache.TryGet(key, out int? result).ShouldBeFalse();
         result.ShouldBe(null);
+    }
+
+    [Test]
+    public void TryGet_WhenCachedValueIsNull_ShouldReturnTrue()
+    {
+        const string key = "123";
+        int? value = null;
+        var cache = new UaDetectorMemoryCache(new UaDetectorMemoryCacheOptions());
+
+        cache.Set(key, value);
+
+        cache.TryGet(key, out int? result).ShouldBeTrue();
+        result.ShouldBe(value);
     }
 }

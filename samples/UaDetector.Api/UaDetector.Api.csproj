@@ -12,5 +12,6 @@
   
   <ItemGroup>
     <ProjectReference Include="..\..\src\UaDetector\UaDetector.csproj" />
+    <ProjectReference Include="..\..\src\UaDetector.MemoryCache\UaDetector.MemoryCache.csproj" />
   </ItemGroup>
 </Project>

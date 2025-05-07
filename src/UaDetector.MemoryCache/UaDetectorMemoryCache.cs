@@ -1,4 +1,3 @@
-using System.Diagnostics.CodeAnalysis;
 using Microsoft.Extensions.Caching.Memory;
 
 namespace UaDetector.MemoryCache;
@@ -26,17 +25,18 @@ public sealed class UaDetectorMemoryCache : IUaDetectorCache
         };
     }
 
-    public bool TryGet<T>(string key, [NotNullWhen(true)] out T? value)
+    public bool TryGet<T>(string key, out T? value)
     {
-        if (!_memoryCache.TryGetValue(key, out value))
+        if (_memoryCache.TryGetValue(key, out value))
         {
-            value = default;
+            return true;
         }
 
-        return value is not null;
+        value = default;
+        return false;
     }
 
-    public bool Set<T>(string key, T value)
+    public bool Set<T>(string key, T? value)
     {
         if (key.Length <= _cacheOptions.MaxKeyLength)
         {

@@ -51,7 +51,7 @@ For more accurate detection, it is recommended to provide the HTTP headers.
 
 > **Tip**:
 > Avoid directly instantiating parsers. The first initialization of UaDetector (or its sub-parsers) 
-> takes a few seconds (around 1-3s). To avoid this one-time cost during runtime, register the service with 
+> takes a few seconds (around 1-3s). To prevent this one-time cost during runtime, register the service with 
 > dependency injection, as shown earlier. This way, the instantiation will happen at application startup.
 
 ```c#
@@ -101,6 +101,20 @@ else
 {
     Console.WriteLine("No bot detected");
 }
+```
+
+##  💾 Caching
+
+To enable caching, install the [UaDetector.MemoryCache](https://www.nuget.org/packages/UaDetector.MemoryCache) package and configure it using the `UseMemoryCache` extension method:
+
+```c#
+using UaDetector;
+using UaDetector.MemoryCache;
+
+builder.Services.AddUaDetector(options =>
+{
+    options.UseMemoryCache();
+});
 ```
 
 > **Note**: For full documentation, visit the [GitHub repository](https://github.com/UaDetector/UaDetector).
