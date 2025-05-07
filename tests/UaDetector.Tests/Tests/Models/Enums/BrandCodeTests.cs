@@ -2083,6 +2083,7 @@ public class BrandCodeTests
             { BrandCode.Sambox, 2059 },
             { BrandCode.Spider, 2060 },
             { BrandCode.Trecfone, 2061 },
+            { BrandCode.Multynet, 2062 },
         };
 
         expectedValues.Count.ShouldBe(Enum.GetValues<BrandCode>().Length);

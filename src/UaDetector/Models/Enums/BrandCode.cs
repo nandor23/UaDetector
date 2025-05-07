@@ -2064,4 +2064,5 @@ public enum BrandCode
     Sambox = 2059,
     Spider = 2060,
     Trecfone = 2061,
+    Multynet = 2062,
 }
