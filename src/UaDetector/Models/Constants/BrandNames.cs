@@ -2064,4 +2064,5 @@ public static class BrandNames
     public const string Sambox = "Sambox";
     public const string Spider = "Spider";
     public const string Trecfone = "Trecfone";
+    public const string Multynet = "MULTYNET";
 }
