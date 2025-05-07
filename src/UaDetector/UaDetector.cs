@@ -476,7 +476,7 @@ public sealed class UaDetector : IUaDetector
 
         if (_cache is not null && _cache.TryGet(cacheKey, out result))
         {
-            return true;
+            return result is not null;
         }
 
         if (

@@ -8,11 +8,10 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" />
     <PackageReference Include="Scalar.AspNetCore" />
-    <PackageReference Include="UaDetector" />
-    <PackageReference Include="UaDetector.MemoryCache" />
   </ItemGroup>
   
   <ItemGroup>
     <ProjectReference Include="..\..\src\UaDetector\UaDetector.csproj" />
+    <ProjectReference Include="..\..\src\UaDetector.MemoryCache\UaDetector.MemoryCache.csproj" />
   </ItemGroup>
 </Project>

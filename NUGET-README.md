@@ -51,7 +51,7 @@ For more accurate detection, it is recommended to provide the HTTP headers.
 
 > **Tip**:
 > Avoid directly instantiating parsers. The first initialization of UaDetector (or its sub-parsers) 
-> takes a few seconds (around 1-3s). To avoid this one-time cost during runtime, register the service with 
+> takes a few seconds (around 1-3s). To prevent this one-time cost during runtime, register the service with 
 > dependency injection, as shown earlier. This way, the instantiation will happen at application startup.
 
 ```c#

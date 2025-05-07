@@ -57,7 +57,7 @@ public sealed class ClientParser : IClientParser
 
         if (_cache is not null && _cache.TryGet(cacheKey, out result))
         {
-            return true;
+            return result is not null;
         }
 
         TryParse(userAgent, clientHints, out result);
