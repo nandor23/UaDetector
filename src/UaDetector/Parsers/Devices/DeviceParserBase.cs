@@ -2079,6 +2079,7 @@ internal abstract class DeviceParserBase
             { BrandCode.Sambox, BrandNames.Sambox },
             { BrandCode.Spider, BrandNames.Spider },
             { BrandCode.Trecfone, BrandNames.Trecfone },
+            { BrandCode.Multynet, BrandNames.Multynet },
         }.ToFrozenDictionary();
 
         BrandNameMapping = BrandCodeMapping
