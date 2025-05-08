@@ -58,22 +58,22 @@ public static class YamlToJsonConverter
     private static readonly FrozenDictionary<string, BotCategory> BotCategoryMapping =
         new Dictionary<string, BotCategory>
         {
-            {"Search bot", BotCategory.SearchBot},
-            {"Search tools", BotCategory.SearchTools},
-            {"Security search bot", BotCategory.SecuritySearchBot},
-            {"Crawler", BotCategory.Crawler},
-            {"Validator", BotCategory.Validator},
-            {"Security Checker", BotCategory.SecurityChecker},
-            {"Feed Fetcher", BotCategory.FeedFetcher},
-            {"Feed Reader", BotCategory.FeedReader},
-            {"Feed Parser", BotCategory.FeedParser},
-            {"Site Monitor", BotCategory.SiteMonitor},
-            {"Network Monitor", BotCategory.NetworkMonitor},
-            {"Service Agent", BotCategory.ServiceAgent},
-            {"Service bot", BotCategory.ServiceBot},
-            {"Social Media Agent", BotCategory.SocialMediaAgent},
-            {"Read-it-later Service", BotCategory.ReadItLaterService},
-            {"Benchmark", BotCategory.Benchmark},
+            { "Search bot", BotCategory.SearchBot },
+            { "Search tools", BotCategory.SearchTools },
+            { "Security search bot", BotCategory.SecuritySearchBot },
+            { "Crawler", BotCategory.Crawler },
+            { "Validator", BotCategory.Validator },
+            { "Security Checker", BotCategory.SecurityChecker },
+            { "Feed Fetcher", BotCategory.FeedFetcher },
+            { "Feed Reader", BotCategory.FeedReader },
+            { "Feed Parser", BotCategory.FeedParser },
+            { "Site Monitor", BotCategory.SiteMonitor },
+            { "Network Monitor", BotCategory.NetworkMonitor },
+            { "Service Agent", BotCategory.ServiceAgent },
+            { "Service bot", BotCategory.ServiceBot },
+            { "Social Media Agent", BotCategory.SocialMediaAgent },
+            { "Read-it-later Service", BotCategory.ReadItLaterService },
+            { "Benchmark", BotCategory.Benchmark },
         }.ToFrozenDictionary();
 
     private static readonly JsonSerializerOptions JsonSerializerOptions = new()
@@ -133,12 +133,10 @@ public static class YamlToJsonConverter
             JsonSerializer.Serialize(result, JsonSerializerOptions)
         );
     }
-    
+
     public static void ConvertBotRegex()
     {
-        var entries = YamlLoader.LoadList<BotYml>(
-            Path.Combine(BaseDirectory, BotsFile + ".yml")
-        );
+        var entries = YamlLoader.LoadList<BotYml>(Path.Combine(BaseDirectory, BotsFile + ".yml"));
 
         var result = entries.Select(x => new Bot
         {
@@ -146,11 +144,9 @@ public static class YamlToJsonConverter
             Name = x.Name,
             Category = x.Category is null ? null : BotCategoryMapping[x.Category],
             Url = x.Url,
-            Producer = x.Producer is null ? null : new BotProducer
-            {
-                Name = x.Producer.Name,
-                Url = x.Producer.Url,
-            }
+            Producer = x.Producer is null
+                ? null
+                : new BotProducer { Name = x.Producer.Name, Url = x.Producer.Url },
         });
 
         File.WriteAllText(

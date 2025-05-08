@@ -14,4 +14,12 @@ public class DeviceParserBaseTests
             DeviceParserBase.BrandCodeMapping.ShouldContainKey(brandCode);
         }
     }
+
+    [Test]
+    public void BrandCodeMapping_ShouldContainUniqueValues()
+    {
+        DeviceParserBase.BrandCodeMapping.Values.Length.ShouldBe(
+            DeviceParserBase.BrandCodeMapping.Values.Distinct().Count()
+        );
+    }
 }

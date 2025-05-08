@@ -2080,6 +2080,16 @@ internal abstract class DeviceParserBase
             { BrandCode.Spider, BrandNames.Spider },
             { BrandCode.Trecfone, BrandNames.Trecfone },
             { BrandCode.Multynet, BrandNames.Multynet },
+            { BrandCode.AileTv, BrandNames.AileTv },
+            { BrandCode.Bqeel, BrandNames.Bqeel },
+            { BrandCode.DuoTv, BrandNames.DuoTv },
+            { BrandCode.Indurama, BrandNames.Indurama },
+            { BrandCode.Homii, BrandNames.Homii },
+            { BrandCode.InfinityPro, BrandNames.InfinityPro },
+            { BrandCode.Magenta, BrandNames.Magenta },
+            { BrandCode.Nexar, BrandNames.Nexar },
+            { BrandCode.Qupi, BrandNames.Qupi },
+            { BrandCode.Sencrom, BrandNames.Sencrom },
         }.ToFrozenDictionary();
 
         BrandNameMapping = BrandCodeMapping
