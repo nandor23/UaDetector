@@ -1,3 +1,35 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ae8ee1249bef2814c6ea07dc0bfb91752f9869c173d9e6416a5646ed1653e60f
-size 624
+[
+  {
+    "brand": "Nikon",
+    "regex": "Coolpix S800c",
+    "type": 8,
+    "model": "Coolpix S800c"
+  },
+  {
+    "brand": "Samsung",
+    "regex": "EK-G[CN][0-9]{3}",
+    "type": 8,
+    "modelVariants": [
+      {
+        "regex": "EK-GN120",
+        "name": "Galaxy NX"
+      },
+      {
+        "regex": "EK-GC100",
+        "name": "Galaxy Camera"
+      },
+      {
+        "regex": "EK-GC110",
+        "name": "Galaxy Camera WiFi only"
+      },
+      {
+        "regex": "EK-GC200",
+        "name": "Galaxy Camera 2"
+      },
+      {
+        "regex": "EK-GC([0-9]{3})",
+        "name": "Galaxy Camera $1"
+      }
+    ]
+  }
+]

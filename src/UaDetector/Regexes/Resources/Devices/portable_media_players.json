@@ -1,3 +1,180 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4ab0f60ca6d7a83bdf552c5293c9715ccb453d95ff85ffd74190c9e15baa1748
-size 3356
+[
+  {
+    "brand": "Apple",
+    "regex": "(?:Apple-)?iPod",
+    "type": 9,
+    "modelVariants": [
+      {
+        "regex": "(?:Apple-)?iPod1[C,_]?1",
+        "name": "iPod Touch 1G"
+      },
+      {
+        "regex": "(?:Apple-)?iPod2[C,_]?1",
+        "name": "iPod Touch 2G"
+      },
+      {
+        "regex": "(?:Apple-)?iPod3[C,_]?1",
+        "name": "iPod Touch 3"
+      },
+      {
+        "regex": "(?:Apple-)?iPod4[C,_]?1",
+        "name": "iPod Touch 4"
+      },
+      {
+        "regex": "(?:Apple-)?iPod5[C,_]?1",
+        "name": "iPod Touch 5"
+      },
+      {
+        "regex": "(?:Apple-)?iPod7[C,_]?1",
+        "name": "iPod Touch 6"
+      },
+      {
+        "regex": "(?:Apple-)?iPod9[C,_]?1|iPodTouch7",
+        "name": "iPod Touch 7"
+      },
+      {
+        "regex": "(?:Apple-)?iPod",
+        "name": "iPod Touch"
+      }
+    ]
+  },
+  {
+    "brand": "Cowon",
+    "regex": "COWON ([^;/]+) Build",
+    "type": 9,
+    "model": "$1"
+  },
+  {
+    "brand": "FiiO",
+    "regex": "FiiO",
+    "type": 9,
+    "modelVariants": [
+      {
+        "regex": "M11 Plus LTD",
+        "name": "M11 Plus LTD"
+      },
+      {
+        "regex": "FiiO M(11S|1[157]|6)",
+        "name": "M$1"
+      }
+    ]
+  },
+  {
+    "brand": "Microsoft",
+    "regex": "Microsoft ZuneHD",
+    "type": 9,
+    "model": "Zune HD"
+  },
+  {
+    "brand": "Panasonic",
+    "regex": "(SV-MV100)",
+    "type": 9,
+    "model": "$1"
+  },
+  {
+    "brand": "Samsung",
+    "regex": "YP-(G[SIPB]?1|G[57]0|GB70D)",
+    "type": 9,
+    "modelVariants": [
+      {
+        "regex": "YP-G[B]?1",
+        "name": "Galaxy Player 4.0"
+      },
+      {
+        "regex": "YP-G70",
+        "name": "Galaxy Player 5.0"
+      },
+      {
+        "regex": "YP-GS1",
+        "name": "Galaxy Player 3.6"
+      },
+      {
+        "regex": "YP-GI1",
+        "name": "Galaxy Player 4.2"
+      },
+      {
+        "regex": "YP-GP1",
+        "name": "Galaxy Player 5.8"
+      },
+      {
+        "regex": "YP-G50",
+        "name": "Galaxy Player 50"
+      },
+      {
+        "regex": "YP-GB70D",
+        "name": "Galaxy Player 70 Plus"
+      }
+    ]
+  },
+  {
+    "brand": "Wizz",
+    "regex": "(DV-PTB1080)(?:[);/ ]|$)",
+    "type": 9,
+    "model": "$1"
+  },
+  {
+    "brand": "Shanling",
+    "regex": "Shanling M6",
+    "type": 9,
+    "modelVariants": [
+      {
+        "regex": "Shanling (M6\\(21\\))",
+        "name": "$1"
+      }
+    ]
+  },
+  {
+    "brand": "Sylvania",
+    "regex": "(SLTDVD102[34])",
+    "type": 9,
+    "model": "$1"
+  },
+  {
+    "brand": "KuGou",
+    "regex": "KuGou[_ -](P5)",
+    "type": 9,
+    "model": "$1"
+  },
+  {
+    "brand": "Surfans",
+    "regex": "(Y57A)(?:[);/ ]|$)",
+    "type": 9,
+    "model": "$1"
+  },
+  {
+    "brand": "Oilsky",
+    "regex": "Oilsky (M501|M303)(?:-Pro)?(?:[);/ ]|$)",
+    "type": 9,
+    "modelVariants": [
+      {
+        "regex": "M303-Pro",
+        "name": "M303 Pro"
+      },
+      {
+        "regex": "(M501|M303)",
+        "name": "$1"
+      }
+    ]
+  },
+  {
+    "brand": "Diofox",
+    "regex": "Diofox[ _](M8)(?:[);/ ]|$)",
+    "type": 9,
+    "model": "$1"
+  },
+  {
+    "brand": "MECHEN",
+    "regex": "MECHEN",
+    "type": 9,
+    "modelVariants": [
+      {
+        "regex": "MECHEN[- _]([^;/)]+)[- _]Pro(?: Build|[);])",
+        "name": "$1 Pro"
+      },
+      {
+        "regex": "MECHEN[- _]([^;/)]+)(?: Build|[);])",
+        "name": "$1"
+      }
+    ]
+  }
+]

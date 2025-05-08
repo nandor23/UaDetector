@@ -1,3 +1,2142 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e3de7507f1055f8b0eace50aa9eedac767c3e1d97cfdc26d18936d6545374343
-size 39578
+[
+  {
+    "brand": "Airties",
+    "regex": "Airties",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "Airties; ?([^);/]+)",
+        "name": "$1"
+      }
+    ]
+  },
+  {
+    "brand": "ALDI NORD",
+    "regex": "ALDINORD[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "ALDI SÜD",
+    "regex": "ALDISUED[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "ALDISUED, ([a-z0-9_ -]+), (?:wired|wireless)"
+      },
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "Altech UEC",
+    "regex": "Altech UEC",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "Altech UEC; ?([^);/]+)",
+        "name": "$1"
+      }
+    ]
+  },
+  {
+    "brand": "Altimo",
+    "regex": "ALTIMO[;,]",
+    "type": 5
+  },
+  {
+    "brand": "Altus",
+    "regex": "Altus[;,)]",
+    "type": 5
+  },
+  {
+    "brand": "Amazon",
+    "regex": "Amazon.+AMZ",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "Amazon.+AMZ-([a-z0-9_ -]+)_Build_",
+        "name": "$1"
+      }
+    ]
+  },
+  {
+    "brand": "andersson",
+    "regex": "ANDERSSON[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "AOC",
+    "regex": "AOC",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "(LE(?:32|43)S5970(?:s)?-(?:20|28|30)|LE55U7970-30|LE43S5977-20|U60856|S50856)",
+        "name": "$1"
+      },
+      {
+        "regex": "AOC;([a-z0-9_ \\-/]+);",
+        "name": "$1"
+      }
+    ]
+  },
+  {
+    "brand": "ARRIS",
+    "regex": "ARRIS[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "FS-ARS-01B",
+        "name": "FS-ARS-01B"
+      }
+    ]
+  },
+  {
+    "brand": "Atlantic Electrics",
+    "regex": "ATLANTIC[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "Atvio",
+    "regex": "ATVIO",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "55D1620",
+        "name": "55D1620"
+      }
+    ]
+  },
+  {
+    "brand": "AWOX",
+    "regex": "LGE/XianYou/AWOX",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "LGE/XianYou/AWOX; ([a-z0-9]+);",
+        "name": "$1"
+      }
+    ]
+  },
+  {
+    "brand": "AYA",
+    "regex": "AYA[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "BangOlufsen",
+    "regex": "Bangolufsen",
+    "type": 5,
+    "model": "BeoVision"
+  },
+  {
+    "brand": "Beko",
+    "regex": "Beko[;,)]",
+    "type": 5
+  },
+  {
+    "brand": "Blaupunkt",
+    "regex": "Blaupunkt_UMC[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "LC-65CUG8052E",
+        "name": "LC-65CUG8052E"
+      }
+    ]
+  },
+  {
+    "brand": "Botech",
+    "regex": "Botech[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "(ATV R[12])",
+        "name": "$1"
+      }
+    ]
+  },
+  {
+    "brand": "Bush",
+    "regex": "BUSH[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "Cecotec",
+    "regex": "CECOTEC[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "Celcus",
+    "regex": "CELCUS[;,)]",
+    "type": 5
+  },
+  {
+    "brand": "Changhong",
+    "regex": "Changhong",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "Changhong; ?([^);/]+)",
+        "name": "$1"
+      }
+    ]
+  },
+  {
+    "brand": "CLAYTON",
+    "regex": "CLAYTON[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "Continental Edison",
+    "regex": "CONTINENTAL_EDI[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "coocaa",
+    "regex": "coocaa[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "coocaa; ([a-z0-9]+);",
+        "name": "$1"
+      }
+    ]
+  },
+  {
+    "brand": "CreNova",
+    "regex": "CreNova",
+    "type": 5,
+    "model": "CNV001"
+  },
+  {
+    "brand": "Crown",
+    "regex": "CROWN[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "Cultraview",
+    "regex": "Cultraview690[;,]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "LaTivu_(?:\\d+[.\\d]+)_([0-9]{4})",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "Daewoo",
+    "regex": "Daewoo[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "Digihome",
+    "regex": "DIGIHOME[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "DIKOM",
+    "regex": "DIKOM[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "DIORA",
+    "regex": "DIORA[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "DMM",
+    "regex": "DMM",
+    "type": 5,
+    "model": "Dreambox"
+  },
+  {
+    "brand": "EGL",
+    "regex": "EGL[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "Elektroland",
+    "regex": "ELEKTROLAND[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "ELECTRONIA",
+    "regex": "ELECTRONIA[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "elit",
+    "regex": "ELIT[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "ENDURO",
+    "regex": "ENDURO[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "Essentielb",
+    "regex": "ESSENTIELB[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "Express LUCK",
+    "regex": "Expressluck[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "([24]K)TV",
+        "name": "$1 TV"
+      }
+    ]
+  },
+  {
+    "brand": "FINIX",
+    "regex": "FINIX[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "Finlux",
+    "regex": "FINLUX[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "FITCO",
+    "regex": "FITCO, ([a-z0-9_ -]+), (?:wired|wireless)",
+    "type": 5
+  },
+  {
+    "brand": "F&U",
+    "regex": "FU[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "Fuego",
+    "regex": "FUEGO[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "FUJICOM",
+    "regex": "FUJICOM[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "Funai",
+    "regex": "FUNAI[;,)]",
+    "type": 5
+  },
+  {
+    "brand": "GN Electronics",
+    "regex": "GN_ELECTRONICS[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "GoGEN",
+    "regex": "GOGEN[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "Graetz",
+    "regex": "GRAETZ[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "Grundig",
+    "regex": "(OWB|(?:Amazon.+)?Grundig)",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "G7",
+        "name": "G7"
+      },
+      {
+        "regex": "Amazon.+Grundig-([a-z0-9_ -]+)_Build_",
+        "name": "$1"
+      }
+    ]
+  },
+  {
+    "brand": "Haier",
+    "regex": "(?:HHW_)?HAIER",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "LE55X7000U",
+        "name": "LE55X7000U"
+      }
+    ]
+  },
+  {
+    "brand": "Hanseatic",
+    "regex": "HANSEATIC[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "Hi-Level",
+    "regex": "HI-LEVEL[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "HIGH1ONE",
+    "regex": "HIGH_ONE[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "Hisense",
+    "regex": "Hisense|Eurofins_Digital_Testing",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "32A35EEVS",
+        "name": "32A35EEVS"
+      },
+      {
+        "regex": "40A35EEVS",
+        "name": "40A35EEVS"
+      },
+      {
+        "regex": "50ADEVTOOL",
+        "name": "50ADEVTOOL"
+      },
+      {
+        "regex": "50A53FEVS",
+        "name": "50A53FEVS"
+      },
+      {
+        "regex": "50A6101EX",
+        "name": "50A6101EX"
+      },
+      {
+        "regex": "50A683FEVS",
+        "name": "50A683FEVS"
+      },
+      {
+        "regex": "55A6100EE",
+        "name": "55A6100EE"
+      },
+      {
+        "regex": "55A69FEVS",
+        "name": "55A69FEVS"
+      },
+      {
+        "regex": "55U62QGAVT",
+        "name": "55U62QGAVT"
+      },
+      {
+        "regex": "50A6502EA",
+        "name": "50A6502EA"
+      },
+      {
+        "regex": "50A60GEVS",
+        "name": "50A60GEVS"
+      },
+      {
+        "regex": "75U9KAAT",
+        "name": "75U9KAAT"
+      },
+      {
+        "regex": "MICALIDVB6886",
+        "name": "MICALIDVB6886"
+      },
+      {
+        "regex": "(L[A-Z]{2,3}[0-9]{2}[A-Z][0-9]{3,4}[A-Z]{0,6}[0-9]?[A-Z]?)",
+        "name": "$1"
+      },
+      {
+        "regex": "(H[A-Z]?[0-9]{2}[A-Z][0-9]{3,4}[A-Z]{0,4})",
+        "name": "$1"
+      },
+      {
+        "regex": "SmartTV_([0-9]{4})_",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "Hitachi",
+    "regex": "Hitachi[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "49D2900",
+        "name": "49D2900"
+      },
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "HOFER",
+    "regex": "HOFER[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "Horizon",
+    "regex": "HORIZON[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "HOTACK",
+    "regex": "HOTACK",
+    "type": 13
+  },
+  {
+    "brand": "Hotel",
+    "regex": "HOTEL[;,)]",
+    "type": 5
+  },
+  {
+    "brand": "Humax",
+    "regex": "Humax|hdr1000s",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "(HD-FOX C|HD (FOX\\+|NANO)|iCord (HD\\+|MINI|Cable)|(CX|IR)HD-5100(C|S)|HM9503HD)",
+        "name": "$1"
+      },
+      {
+        "regex": "HMS1000S",
+        "name": "HMS-1000S"
+      },
+      {
+        "regex": "FVP4000T",
+        "name": "FVP-4000T"
+      },
+      {
+        "regex": "HGS1000S",
+        "name": "HGS-1000S"
+      },
+      {
+        "regex": "HDR1000S",
+        "name": "HDR-1000S"
+      },
+      {
+        "regex": "HDR4000T",
+        "name": "HDR-4000T"
+      },
+      {
+        "regex": "Humax; ([^);/]+)",
+        "name": "$1"
+      }
+    ]
+  },
+  {
+    "brand": "HUMElab",
+    "regex": "HUMELAB[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "Hyundai",
+    "regex": "HYUNDAI[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "Ikea",
+    "regex": "Ikea",
+    "type": 5
+  },
+  {
+    "brand": "Intek",
+    "regex": "Intek",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "(Vantage|VT-100|VT-1)",
+        "name": "$1"
+      }
+    ]
+  },
+  {
+    "brand": "Inverto",
+    "regex": "Inverto",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "inverto; ([^);/]+)",
+        "name": "$1"
+      },
+      {
+        "regex": "(Volksbox Web Edition|Volksbox Essential|Volksbox II|Volksbox)",
+        "name": "$1"
+      }
+    ]
+  },
+  {
+    "brand": "JVC",
+    "regex": "AFTSO001|JVC[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "AFTSO001",
+        "name": "4K (2019)"
+      },
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "Kalley",
+    "regex": "KALLEY[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "32D1620",
+        "name": "32D1620"
+      }
+    ]
+  },
+  {
+    "brand": "Kendo",
+    "regex": "KENDO[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "KUBO",
+    "regex": "KUBO[;,)]",
+    "type": 5
+  },
+  {
+    "brand": "Laurus",
+    "regex": "LAURUS[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "Lenco",
+    "regex": "LENCO[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "Myros",
+    "regex": "MYROS[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "Navon",
+    "regex": "NAVON[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "NILAIT",
+    "regex": "NILAIT[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "Aiwa",
+    "regex": "LGE/SQY/RCA",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "LGE/SQY/RCA; ([a-z0-9]+);",
+        "name": "$1"
+      }
+    ]
+  },
+  {
+    "brand": "AXEN",
+    "regex": "LGE/ATMACA/AXEN",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "LGE/ATMACA/AXEN; ([a-z0-9]+)-",
+        "name": "$1"
+      }
+    ]
+  },
+  {
+    "brand": "Dyon",
+    "regex": "LGE/KONKA/DYON",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "SMART-32-X-EOS",
+        "name": "Smart 32 X-EOS"
+      }
+    ]
+  },
+  {
+    "brand": "EAS Electric",
+    "regex": "EAS_ELECTRIC[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "Edenwood",
+    "regex": "EDENWOOD[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "ONVO",
+    "regex": "(?:SILICONPLAYER|XianYou)/ONVO",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "(?:SILICONPLAYER|XianYou)/ONVO; ([a-z0-9]+);",
+        "name": "$1"
+      }
+    ]
+  },
+  {
+    "brand": "DIJITSU",
+    "regex": "LGE/SILICONPLAYER/DIJITSU",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "LGE/SILICONPLAYER/DIJITSU; ([a-z0-9]+);",
+        "name": "$1"
+      }
+    ]
+  },
+  {
+    "brand": "simfer",
+    "regex": "LGE/WALTON/SIMFER",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "LGE/WALTON/SIMFER; ([a-z0-9]+);",
+        "name": "$1"
+      }
+    ]
+  },
+  {
+    "brand": "Sunny",
+    "regex": "(?:ATMACA|XianYou)/SUNNY",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "(?:ATMACA|XianYou)/SUNNY; ([a-z0-9]+)-",
+        "name": "$1"
+      },
+      {
+        "regex": "(?:ATMACA|XianYou)/SUNNY.+(2018)\\)",
+        "name": "Smart TV ($1)"
+      },
+      {
+        "regex": "(?:ATMACA|XianYou)/SUNNY;",
+        "name": "Smart TV"
+      }
+    ]
+  },
+  {
+    "brand": "Kydos",
+    "regex": "KYDOS[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "Skytech",
+    "regex": "LGE/WALTON/SKYTECH",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "LGE/WALTON/SKYTECH; ([a-z0-9-]+);",
+        "name": "$1"
+      }
+    ]
+  },
+  {
+    "brand": "LG",
+    "regex": "LGE ?;",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "XU43WT180N",
+        "name": "XU43WT180N"
+      },
+      {
+        "regex": "43LJ614V-ZA",
+        "name": "43LJ614V-ZA"
+      },
+      {
+        "regex": "55SK850V-ZA",
+        "name": "55SK850V-ZA"
+      },
+      {
+        "regex": "KEY0000213F1z",
+        "name": "KEY0000213F1z"
+      },
+      {
+        "regex": "KEY0000213F",
+        "name": "KEY0000213F"
+      },
+      {
+        "regex": "KEY000000(2E|2F|3B|3F)",
+        "name": "KEY000000$1"
+      },
+      {
+        "regex": "(NetCast [0-9]{1}\\.[0-9]{1}|GLOBAL_PLAT3)",
+        "name": "$1"
+      },
+      {
+        "regex": "(OLED[0-9]{2}[A-Z0-9]{3}[A-Z]{2})",
+        "name": "$1"
+      },
+      {
+        "regex": "(OLED[0-9]{2}[A-Z][0-9][A-Z](?:-Z)?)",
+        "name": "$1"
+      },
+      {
+        "regex": "(OLED[0-9]{2}[A-Z0-9]{2})",
+        "name": "$1"
+      },
+      {
+        "regex": "([0-9]{2}[A-Z]{2}[0-9]{4}[A-Z0-9]{1}[A-Z]{2})",
+        "name": "$1"
+      },
+      {
+        "regex": "([0-9]{2}NANO[0-9]{3}[A-Z]{2})",
+        "name": "$1"
+      },
+      {
+        "regex": "([0-9]{2}NANO[0-9]{2})",
+        "name": "$1"
+      },
+      {
+        "regex": "LGE;? (?:HOTEL\\-TV; )?([0-9]{2}[a-z0-9]{4,9}(?:\\-[a-z]{2,3})?)",
+        "name": "$1"
+      },
+      {
+        "regex": "LGE;? ?([0-9]{2}[A-Z]{2}[0-9]{2,4}[A-Z]?)",
+        "name": "$1"
+      },
+      {
+        "regex": "LGE;? ?([0-9]{2}QNED[0-9]{3}[A-Z]{2})",
+        "name": "$1"
+      },
+      {
+        "regex": "LM21U",
+        "name": "LM21U"
+      },
+      {
+        "regex": "32LM",
+        "name": "32LM"
+      }
+    ]
+  },
+  {
+    "brand": "Lifemaxx",
+    "regex": "Lifemaxx[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "Linsar",
+    "regex": "LINSAR[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "Loewe",
+    "regex": "Loewe",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "40A35EEVS",
+        "name": "40A35EEVS"
+      },
+      {
+        "regex": "50A683FEVS",
+        "name": "50A683FEVS"
+      },
+      {
+        "regex": "([A-Z]{2}[0-9]{3})",
+        "name": "$1"
+      }
+    ]
+  },
+  {
+    "brand": "Logik",
+    "regex": "DIXONS-LOGIK[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "Luxor",
+    "regex": "LUXOR[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "Manhattan",
+    "regex": "Manhattan",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "T3",
+        "name": "T3"
+      }
+    ]
+  },
+  {
+    "brand": "Medion",
+    "regex": "Medion",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "MEDION, ([a-z0-9_ -]+), (?:wired|wireless)"
+      },
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "MEGA VISION",
+    "regex": "MEGA_VISION[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "Miray",
+    "regex": "MIRAY",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "LEDM-322NIP",
+        "name": "LEDM-322NIP"
+      }
+    ]
+  },
+  {
+    "brand": "Mitchell & Brown",
+    "regex": "MITCHELL_BROWN[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "MStar",
+    "regex": "MStar[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "([24])KTV18",
+        "name": "$1KTV18"
+      }
+    ]
+  },
+  {
+    "brand": "MTC",
+    "regex": "MTC[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "([24])K_Android_TV_V01",
+        "name": "$1K Android TV"
+      }
+    ]
+  },
+  {
+    "brand": "NABO",
+    "regex": "NABO[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "Neo",
+    "regex": "NEO, ([a-z0-9_ -]+), (?:wired|wireless)",
+    "type": 5
+  },
+  {
+    "brand": "NEXON",
+    "regex": "NEXON[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "NEXT",
+    "regex": "NEXT[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "Nokia",
+    "regex": "NOKIA[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "Nordmende",
+    "regex": "NORDMENDE[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "Metz",
+    "regex": "Metz",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "Metz; ([a-z0-9]+);",
+        "name": "$1"
+      }
+    ]
+  },
+  {
+    "brand": "NORMANDE",
+    "regex": "NORMANDE[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "OCEANIC",
+    "regex": "OCEANIC[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "ok.",
+    "regex": "OK[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "Orava",
+    "regex": "ORAVA[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "Panasonic",
+    "regex": "Panasonic",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "TX-50JX700E",
+        "name": "TX-50JX700E"
+      },
+      {
+        "regex": "VIERA (201[1-9])",
+        "name": "VIERA ($1)"
+      },
+      {
+        "regex": "(DIGA [A-Z]{1}[0-9]{4})",
+        "name": "$1"
+      },
+      {
+        "regex": "DIGA Webkit ([A-Z]{1}[0-9]{4})",
+        "name": "DIGA $1"
+      },
+      {
+        "regex": "SmartTV(201[89]|202[0-2])",
+        "name": "Smart TV ($1)"
+      },
+      {
+        "regex": "Panasonic\\..+\\.([0-9]{4})(?:[);/ ]|$)",
+        "name": "Smart TV ($1)"
+      },
+      {
+        "regex": "Panasonic;Viera([0-9]{4});",
+        "name": "Smart TV ($1)"
+      },
+      {
+        "regex": "_TV_[A-Z0-9_]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "PEAQ",
+    "regex": "PEAQ",
+    "type": 5
+  },
+  {
+    "brand": "TCL SCBC",
+    "regex": "SCBC[;,)]|_TV_[A-Z0-9_]+_TCL_SCBC",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "SCBC586",
+        "name": "SCBC586"
+      },
+      {
+        "regex": "43D1850",
+        "name": "43D1850"
+      },
+      {
+        "regex": "_TV_[A-Z0-9]+_TCL_SCBC_Tbrowser_2k20",
+        "name": "Smart TV (2020)"
+      }
+    ]
+  },
+  {
+    "brand": "PPDS",
+    "regex": "Philips.+([0-9]{2}H[FHOU][HKLST][0-9]{4}[^),;]+)",
+    "type": 5,
+    "model": "$1"
+  },
+  {
+    "brand": "Philips",
+    "regex": "(?:Philips|TPVision)|NETTV/",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "(?:Philips|TPVision)[,;](?: |Philips;)?((?! )[^),;]+)",
+        "name": "$1"
+      },
+      {
+        "regex": "NETTV/[0-9.]{5}",
+        "name": "NetTV Series"
+      }
+    ]
+  },
+  {
+    "brand": "Polaroid",
+    "regex": "POLAROID[;,)]",
+    "type": 5
+  },
+  {
+    "brand": "PROFiLO",
+    "regex": "PROFILO[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "Profilo[,;] ?((?! |HbbTV|MB130)[^),;/]+)",
+        "name": "$1"
+      },
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "PROSONIC",
+    "regex": "PROSONIC[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "Qilive",
+    "regex": "QILIVE[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "RCA Tablets",
+    "regex": "RCA;",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "RCA; ([a-z0-9]+);",
+        "name": "$1"
+      }
+    ]
+  },
+  {
+    "brand": "REGAL",
+    "regex": "REGAL[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "Saba",
+    "regex": "Saba[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "Salora",
+    "regex": "Salora(?:_cx)?[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "Samsung",
+    "regex": "Samsung|Maple_2011",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "SmartTV(201[2-9]|202[0-4]):([^);/]+)",
+        "name": "$2"
+      },
+      {
+        "regex": "SmartTV(201[2-9]|202[0-4])",
+        "name": "Smart TV ($1)"
+      },
+      {
+        "regex": "Maple_2011",
+        "name": "Smart TV (2011)"
+      }
+    ]
+  },
+  {
+    "brand": "SCHAUB LORENZ",
+    "regex": "SCHAUB_LORENZ[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "SCHONTECH",
+    "regex": "SCHONTECH[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "SEG",
+    "regex": "SEG[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "SEHMAX",
+    "regex": "SEHMAX[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "Selevision",
+    "regex": "Selevision",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "Selevision; (?:Selevision )?([^);/]+)",
+        "name": "$1"
+      },
+      {
+        "regex": "(EMC1000i)",
+        "name": "$1"
+      }
+    ]
+  },
+  {
+    "brand": "Sharp",
+    "regex": "(?:UMC-)?Sharp",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "SHARP, ([a-z0-9_ -]+), (?:wired|wireless)"
+      },
+      {
+        "regex": "Sharp-([^);/]+)",
+        "name": "$1"
+      },
+      {
+        "regex": "Sharp[,;] ?((?! |HbbTV|MB130)[^),;/]+)",
+        "name": "$1"
+      },
+      {
+        "regex": "(LE[0-9]{3}[A-Z]{0,3})",
+        "name": "$1"
+      },
+      {
+        "regex": "LC-([^);/,]+)",
+        "name": "LC-$1"
+      },
+      {
+        "regex": "BLA-43",
+        "name": "BLA-43"
+      },
+      {
+        "regex": "UMC_2KAndroidTV_2019",
+        "name": "2K Android TV"
+      },
+      {
+        "regex": "UMC_AndroidTV_2021",
+        "name": "Android TV"
+      },
+      {
+        "regex": "UMC_GoogleTV_2019",
+        "name": "Google TV"
+      }
+    ]
+  },
+  {
+    "brand": "Silva Schneider",
+    "regex": "SILVA_SCHNEIDER[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "Skyworth",
+    "regex": "Sky_?worth|SKW690|SWTV[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "SKWE20E21",
+        "name": "SKWE20E21"
+      },
+      {
+        "regex": "Sky_worth;([^);/]+)",
+        "name": "$1"
+      },
+      {
+        "regex": "LaTivu_(?:\\d+[.\\d]+)_([0-9]{4})",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "Smart Electronic",
+    "regex": "Smart[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "Smart; ([^);/]+)",
+        "name": "$1"
+      },
+      {
+        "regex": "([A-Z]{2}[0-9]{2}|ZAPPIX)",
+        "name": "$1"
+      }
+    ]
+  },
+  {
+    "brand": "Solas",
+    "regex": "SOLAS[;,]",
+    "type": 5
+  },
+  {
+    "brand": "Sony",
+    "regex": "Sony",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "(KDL-GR[12])",
+        "name": "$1"
+      },
+      {
+        "regex": "KDL-GN([56])",
+        "name": "KDL-GN$1"
+      },
+      {
+        "regex": "BRAVIA (VH1|4K VH2)",
+        "name": "BRAVIA $1"
+      },
+      {
+        "regex": "(K[DM]L?-?[0-9]{2}[A-Z]{1}[0-9]{4}[A-Z]{1})",
+        "name": "$1"
+      },
+      {
+        "regex": "(K[DM]L?-?[0-9]{2}[A-Z]{1}[0-9]{3}[A-Z]{1})",
+        "name": "$1"
+      },
+      {
+        "regex": "(K[DM]L?-?[0-9]{2}[A-Z]{1,2}[0-9]{1,5})",
+        "name": "$1"
+      }
+    ]
+  },
+  {
+    "brand": "Star-Light",
+    "regex": "STAR LIGHT[;,)]",
+    "type": 5
+  },
+  {
+    "brand": "SULPICE TV",
+    "regex": "SULPICE_TV[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "TALBERG",
+    "regex": "TALBERG[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "TD Systems",
+    "regex": "TDSystems[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "SmartTV(2019|2020)",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "Technicolor",
+    "regex": "Technicolor",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "uzw4054ttg",
+        "name": "UZW4054TTG"
+      }
+    ]
+  },
+  {
+    "brand": "Technika",
+    "regex": "TECHNIKA[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "TechniSat",
+    "regex": "TechniSat",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "((DigiCorder|MultyVision|Digit) (ISIO S|ISIO C|ISIO))",
+        "name": "$1"
+      },
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "TechnoTrend",
+    "regex": "TechnoTrend",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "([A-Z]{1}-[0-9]{3})",
+        "name": "$1"
+      }
+    ]
+  },
+  {
+    "brand": "Techwood",
+    "regex": "Techwood[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "Telefunken",
+    "regex": "Telefunken",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "TCL",
+    "regex": "(?:Amazon.+)?TCL",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "(32D1820|(?:39|55)D2900|32D2930|(?:32|43)S4900)",
+        "name": "$1"
+      },
+      {
+        "regex": "TCL[,;] ?((?! |HbbTV|MB130)[^),;/]+)",
+        "name": "$1"
+      },
+      {
+        "regex": "Amazon.+TCL-([a-z0-9_ -]+)_Build_",
+        "name": "$1"
+      }
+    ]
+  },
+  {
+    "brand": "Thomson",
+    "regex": "THOMSON[,]?|THOM",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "(TB28D19DHS-01|T28D18SFS-01B)",
+        "name": "$1 28.0\""
+      },
+      {
+        "regex": "(T32RTM5040|T32D18SFS-01B)",
+        "name": "$1 32.0\""
+      },
+      {
+        "regex": "(T43FSL5031|T43D18SFS-01B)",
+        "name": "$1 43.0\""
+      },
+      {
+        "regex": "(T40D18SFS-01B)",
+        "name": "$1 40.0\""
+      },
+      {
+        "regex": "(T49D18SFS-01B)",
+        "name": "$1 49.0\""
+      },
+      {
+        "regex": "(T55D18[SD]FS-01B)",
+        "name": "$1 55.0\""
+      },
+      {
+        "regex": "40FB5426",
+        "name": "40FB5426"
+      }
+    ]
+  },
+  {
+    "brand": "TOKYO",
+    "regex": "TOKYO[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "TOKTCLED32S",
+        "name": "TOKTCLED32S"
+      }
+    ]
+  },
+  {
+    "brand": "TUCSON",
+    "regex": "TUCSON[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "Turbo-X",
+    "regex": "TURBO-?X[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "Top-Tech",
+    "regex": "Toptech690[;,]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "LaTivu_(?:\\d+[.\\d]+)_([0-9]{4})",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "Toshiba",
+    "regex": "(?:Amazon.+)?Toshiba",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "40L2600",
+        "name": "40L2600"
+      },
+      {
+        "regex": "(([0-9]{2}|DTV_)[A-Z]{2}[0-9]{1,3})",
+        "name": "$1"
+      },
+      {
+        "regex": "Amazon.+Toshiba-([a-z0-9_ -]+)_Build_",
+        "name": "$1"
+      },
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "Tsinghua Tongfang",
+    "regex": "THTF_CVTE[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "LE40GY15",
+        "name": "LE40GY15"
+      }
+    ]
+  },
+  {
+    "brand": "UNITED",
+    "regex": "UNITED[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "VANGUARD",
+    "regex": "VANGUARD[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "Videoweb",
+    "regex": "videoweb|tv2n",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "(tv2n)",
+        "name": "$1"
+      },
+      {
+        "regex": "(videowebtv)",
+        "name": "VideoWeb TV"
+      }
+    ]
+  },
+  {
+    "brand": "Visitech",
+    "regex": "VISITECH[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "VORTEX (RO)",
+    "regex": "VORTEX[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "VOX",
+    "regex": "VOX[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "Walker",
+    "regex": "WALKER[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "Waltham",
+    "regex": "WALTHAM[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "We. by Loewe.",
+    "regex": "WeByLoewe[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "40A35EEVS",
+        "name": "40A35EEVS"
+      },
+      {
+        "regex": "43A71FEVS",
+        "name": "43A71FEVS"
+      },
+      {
+        "regex": "50A683FEVS",
+        "name": "50A683FEVS"
+      }
+    ]
+  },
+  {
+    "brand": "WELLINGTON",
+    "regex": "WELLINGTON[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "WONDER",
+    "regex": "WONDER[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "X.Vision",
+    "regex": "X-VISION[;,)]",
+    "type": 5
+  },
+  {
+    "brand": "Vestel",
+    "regex": "(?:Vestel.+VESTEL|(?:BBC_CUSTOMERS|VESTEL)[;,)])",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "brand": "Arçelik",
+    "regex": "Arcelik",
+    "type": 5
+  },
+  {
+    "brand": "XGEM",
+    "regex": "XGEM[;,)]",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "XGEM[;,)] ?([a-z0-9]+)(?:[);/ ]|$)",
+        "name": "$1"
+      }
+    ]
+  },
+  {
+    "brand": "Xiaomi",
+    "regex": "Amazon.+Xiaomi",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "AFTANNA0",
+        "name": "F2 4K (2022)"
+      },
+      {
+        "regex": "Amazon.+Xiaomi-([a-z0-9_ -]+)_Build_",
+        "name": "$1"
+      }
+    ]
+  },
+  {
+    "brand": "Unknown",
+    "regex": "OEM, ([a-z0-9_ -]+), (?:wired|wireless)|_TV_[A-Z0-9]+_([0-9]{4});|LaTivu_(?:\\d+[.\\d]+)_([0-9]{4})",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      },
+      {
+        "regex": "LaTivu_(?:\\d+[.\\d]+)_([0-9]{4})",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  }
+]

@@ -1,3 +1,60 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:31f1668195fdccd7b225d79099ed4fe5b44e43100f4c113be67cd99079c4a2f2
-size 1057
+[
+  {
+    "brand": "BMW",
+    "regex": "AFTLBT962E2(?:[);/ ]|$)",
+    "type": 6,
+    "modelVariants": [
+      {
+        "regex": "AFTLBT962E2(?:[);/ ]|$)",
+        "name": "Car (2022)"
+      }
+    ]
+  },
+  {
+    "brand": "Jeep",
+    "regex": "AFTLFT962X3(?:[);/ ]|$)",
+    "type": 6,
+    "modelVariants": [
+      {
+        "regex": "AFTLFT962X3(?:[);/ ]|$)",
+        "name": "Wagoneer"
+      }
+    ]
+  },
+  {
+    "brand": "Tesla",
+    "regex": "(?:Tesla/(?:(?:develop|feature|terminal-das-fsd-eap)-)?[0-9.]+|QtCarBrowser)",
+    "type": 6,
+    "modelVariants": [
+      {
+        "regex": "QtCarBrowser",
+        "name": "Model S"
+      },
+      {
+        "regex": "Tesla/[0-9.]+"
+      }
+    ]
+  },
+  {
+    "brand": "MAC AUDIO",
+    "regex": "Mac Audio Spro",
+    "type": 6,
+    "modelVariants": [
+      {
+        "regex": "Spro",
+        "name": "S Pro"
+      }
+    ]
+  },
+  {
+    "brand": "Topway",
+    "regex": "sp9853i_1h10_vmm",
+    "type": 6,
+    "modelVariants": [
+      {
+        "regex": "sp9853i_1h10_vmm",
+        "name": "TS9"
+      }
+    ]
+  }
+]

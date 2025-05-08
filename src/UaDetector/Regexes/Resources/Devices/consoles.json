@@ -1,3 +1,116 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c840ee186db4eb38bdcd978da1145ba66bdb732a9e3a55d439c80f603528fdce
-size 2145
+[
+  {
+    "brand": "Archos",
+    "regex": "Archos.*GAMEPAD([2]?)",
+    "type": 4,
+    "model": "Gamepad $1"
+  },
+  {
+    "brand": "Microsoft",
+    "regex": "Xbox",
+    "type": 4,
+    "modelVariants": [
+      {
+        "regex": "Xbox Series X",
+        "name": "Xbox Series X"
+      },
+      {
+        "regex": "Xbox One X",
+        "name": "Xbox One X"
+      },
+      {
+        "regex": "Xbox One",
+        "name": "Xbox One"
+      },
+      {
+        "regex": "XBOX_ONE_ED",
+        "name": "Xbox One S"
+      },
+      {
+        "regex": "Xbox",
+        "name": "Xbox 360"
+      }
+    ]
+  },
+  {
+    "brand": "Nintendo",
+    "regex": "Nintendo (([3]?DS[i]?)|Wii[U]?|Switch|GameBoy)",
+    "type": 4,
+    "model": "$1"
+  },
+  {
+    "brand": "OUYA",
+    "regex": "OUYA",
+    "type": 4,
+    "model": "OUYA"
+  },
+  {
+    "brand": "Sanyo",
+    "regex": "Aplix_SANYO",
+    "type": 4,
+    "model": "3DO TRY"
+  },
+  {
+    "brand": "Sega",
+    "regex": "Dreamcast|Aplix_SEGASATURN",
+    "type": 4,
+    "modelVariants": [
+      {
+        "regex": "Dreamcast",
+        "name": "Dreamcast"
+      },
+      {
+        "regex": "Aplix_SEGASATURN",
+        "name": "Saturn"
+      }
+    ]
+  },
+  {
+    "brand": "JXD",
+    "regex": "JXD_S601WIFI",
+    "type": 4,
+    "model": "S601 WiFi"
+  },
+  {
+    "brand": "Sony",
+    "regex": "(?:PlayStation ?(4 Pro|[2-5]|Portable|Vita)|sony_tv;ps5;|\\(PS3\\))",
+    "type": 4,
+    "modelVariants": [
+      {
+        "regex": "sony_tv;ps5;",
+        "name": "PlayStation 5"
+      },
+      {
+        "regex": "PlayStation 4 PRO",
+        "name": "PlayStation 4 Pro"
+      },
+      {
+        "regex": "\\(PS3\\)",
+        "name": "PlayStation 3"
+      },
+      {
+        "regex": "PlayStation ?(4 Pro|[2-5]|Portable|Vita)",
+        "name": "PlayStation $1"
+      }
+    ]
+  },
+  {
+    "brand": "Retroid Pocket",
+    "regex": "Retroid Pocket",
+    "type": 4,
+    "modelVariants": [
+      {
+        "regex": "Pocket ([23]) ?(?:Plus|\\+)",
+        "name": "$1 Plus"
+      },
+      {
+        "regex": "Pocket 4 Pro",
+        "name": "4 Pro"
+      },
+      {
+        "regex": "Pocket ([235])",
+        "name": "$1"
+      }
+    ]
+  }
+]

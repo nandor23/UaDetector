@@ -43,6 +43,14 @@ public class OsParserTests
     }
 
     [Test]
+    public void OsCodeMapping_ShouldContainUniqueValues()
+    {
+        OsParser.OsCodeMapping.Values.Length.ShouldBe(
+            OsParser.OsCodeMapping.Values.Distinct().Count()
+        );
+    }
+
+    [Test]
     public void OsFamilyMapping_ShouldContainKeyForAllOsCodes()
     {
         foreach (OsCode osCode in Enum.GetValues<OsCode>())

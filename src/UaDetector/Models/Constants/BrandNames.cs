@@ -2065,4 +2065,14 @@ public static class BrandNames
     public const string Spider = "Spider";
     public const string Trecfone = "Trecfone";
     public const string Multynet = "MULTYNET";
+    public const string AileTv = "AileTV";
+    public const string Bqeel = "Bqeel";
+    public const string DuoTv = "DuoTV";
+    public const string Indurama = "Indurama";
+    public const string Homii = "HOMII";
+    public const string InfinityPro = "InfinityPro";
+    public const string Magenta = "Magenta";
+    public const string Nexar = "Nexar";
+    public const string Qupi = "Qupi";
+    public const string Sencrom = "Sencrom";
 }

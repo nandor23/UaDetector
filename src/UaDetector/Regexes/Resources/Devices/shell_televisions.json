@@ -1,3 +1,117 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c6cff8fb6768a053a386d323129e9faef363d52d7eee2766016bb8188308f8e1
-size 1684
+[
+  {
+    "brand": "Telefunken",
+    "regex": "Telefunken Shell",
+    "type": 5
+  },
+  {
+    "brand": "JVC",
+    "regex": "JVC Shell",
+    "type": 5
+  },
+  {
+    "brand": "Leff",
+    "regex": "Leff Shell",
+    "type": 5
+  },
+  {
+    "brand": "Leben",
+    "regex": "Leben Shell",
+    "type": 5
+  },
+  {
+    "brand": "Lumus",
+    "regex": "LUMUS Shell",
+    "type": 5
+  },
+  {
+    "brand": "Erisson",
+    "regex": "Erisson[_ ]Shell",
+    "type": 5
+  },
+  {
+    "brand": "BBK",
+    "regex": "BBK shell",
+    "type": 5
+  },
+  {
+    "brand": "Novex",
+    "regex": "Novex shell",
+    "type": 5
+  },
+  {
+    "brand": "Digma",
+    "regex": "Digma Shell",
+    "type": 5
+  },
+  {
+    "brand": "AMCV",
+    "regex": "AMCV Shell",
+    "type": 5
+  },
+  {
+    "brand": "Mystery",
+    "regex": "Mystery Shell",
+    "type": 5
+  },
+  {
+    "brand": "ECON",
+    "regex": "ECON Shell",
+    "type": 5
+  },
+  {
+    "brand": "Starwind",
+    "regex": "Starwind Shell",
+    "type": 5
+  },
+  {
+    "brand": "Kvant",
+    "regex": "Kvant Shell",
+    "type": 5
+  },
+  {
+    "brand": "Hi",
+    "regex": "Hi Shell",
+    "type": 5
+  },
+  {
+    "brand": "AKIRA",
+    "regex": "AKIRA Shell",
+    "type": 5
+  },
+  {
+    "brand": "Loview",
+    "regex": "Loview Shell",
+    "type": 5
+  },
+  {
+    "brand": "Supra",
+    "regex": "Supra Shell",
+    "type": 5
+  },
+  {
+    "brand": "Yuno",
+    "regex": "Yuno Shell",
+    "type": 5
+  },
+  {
+    "brand": "TCL",
+    "regex": "TCL/TCL-",
+    "type": 5
+  },
+  {
+    "brand": "RCA Tablets",
+    "regex": "TCL/RCA-",
+    "type": 5
+  },
+  {
+    "brand": "Thomson",
+    "regex": "TCL/THOM-",
+    "type": 5
+  },
+  {
+    "brand": "DEXP",
+    "regex": "DEXP Shell",
+    "type": 5
+  }
+]

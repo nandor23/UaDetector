@@ -1,3 +1,116 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:68d5e6a0c7c401e84a1a05a35dcee2f3206cc8adc93383a7d639c68b1ea33c5a
-size 1502
+[
+  {
+    "brand": "Dell",
+    "regexes": [
+      "MDDR(JS)?",
+      "MDDC(JS)?",
+      "MDDS(JS)?"
+    ]
+  },
+  {
+    "brand": "Acer",
+    "regexes": [
+      "MAAR(JS)?"
+    ]
+  },
+  {
+    "brand": "Sony",
+    "regexes": [
+      "MASE(JS)?",
+      "MASP(JS)?",
+      "MASA(JS)?"
+    ]
+  },
+  {
+    "brand": "Asus",
+    "regexes": [
+      "MAAU",
+      "NP0[26789]",
+      "ASJB",
+      "ASU2(JS)?"
+    ]
+  },
+  {
+    "brand": "Samsung",
+    "regexes": [
+      "MASM(JS)?",
+      "SMJB"
+    ]
+  },
+  {
+    "brand": "Lenovo",
+    "regexes": [
+      "MALC(JS)?",
+      "MALE(JS)?",
+      "MALN(JS)?",
+      "LCJB",
+      "LEN2"
+    ]
+  },
+  {
+    "brand": "Toshiba",
+    "regexes": [
+      "MATM(JS)?",
+      "MATB(JS)?",
+      "MATP(JS)?",
+      "TNJB",
+      "TAJB"
+    ]
+  },
+  {
+    "brand": "Medion",
+    "regexes": [
+      "MAMD"
+    ]
+  },
+  {
+    "brand": "MSI",
+    "regexes": [
+      "MAMI(JS)?",
+      "MAM3"
+    ]
+  },
+  {
+    "brand": "Gateway",
+    "regexes": [
+      "MAGW(JS)?"
+    ]
+  },
+  {
+    "brand": "Fujitsu",
+    "regexes": [
+      "MAFS(JS)?",
+      "FSJB"
+    ]
+  },
+  {
+    "brand": "Compaq",
+    "regexes": [
+      "CPDTDF",
+      "CPNTDF(JS?)",
+      "CMNTDF(JS)?",
+      "CMDTDF(JS)?"
+    ]
+  },
+  {
+    "brand": "HP",
+    "regexes": [
+      "HPCMHP",
+      "HPNTDF(JS)?",
+      "HPDTDF(JS)?"
+    ]
+  },
+  {
+    "brand": "Hyrican",
+    "regexes": [
+      "MANM(JS)?"
+    ]
+  },
+  {
+    "brand": "Ordissimo",
+    "regexes": [
+      "Ordissimo",
+      "webissimo3"
+    ]
+  }
+]
