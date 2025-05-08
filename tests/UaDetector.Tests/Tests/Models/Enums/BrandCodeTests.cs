@@ -2084,6 +2084,16 @@ public class BrandCodeTests
             { BrandCode.Spider, 2060 },
             { BrandCode.Trecfone, 2061 },
             { BrandCode.Multynet, 2062 },
+            { BrandCode.AileTv, 2063 },
+            { BrandCode.Bqeel, 2064 },
+            { BrandCode.DuoTv, 2065 },
+            { BrandCode.Indurama, 2066 },
+            { BrandCode.Homii, 2067 },
+            { BrandCode.InfinityPro, 2068 },
+            { BrandCode.Magenta, 2069 },
+            { BrandCode.Nexar, 2070 },
+            { BrandCode.Qupi, 2071 },
+            { BrandCode.Sencrom, 2072 },
         };
 
         expectedValues.Count.ShouldBe(Enum.GetValues<BrandCode>().Length);

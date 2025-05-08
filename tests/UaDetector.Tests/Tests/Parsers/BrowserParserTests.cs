@@ -44,6 +44,14 @@ public class BrowserParserTests
     }
 
     [Test]
+    public void BrowserCodeMapping_ShouldContainUniqueValues()
+    {
+        BrowserParser.BrowserCodeMapping.Values.Length.ShouldBe(
+            BrowserParser.BrowserCodeMapping.Values.Distinct().Count()
+        );
+    }
+
+    [Test]
     public void CompactToFullNameMapping_ShouldContainKeyForAllUniqueNames()
     {
         var duplicateCompactNames = BrowserParser
