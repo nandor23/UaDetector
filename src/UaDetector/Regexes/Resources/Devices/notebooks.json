@@ -1,3 +1,213 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:dddb6a3ae19b185341df22f6683da3afcd8f26ba16e21680f13539e62f758fbb
-size 4499
+[
+  {
+    "brand": "Acer",
+    "regex": "FBMD/(?:Aspire E5-421G|Z5WAL|One S1003);",
+    "type": 0,
+    "modelVariants": [
+      {
+        "regex": "FBMD/Aspire E5-421G;",
+        "name": "Aspire E5-421G"
+      },
+      {
+        "regex": "FBMD/Z5WAL;",
+        "name": "Aspire E5-511"
+      },
+      {
+        "regex": "FBMD/One S1003;",
+        "name": "One 10"
+      }
+    ]
+  },
+  {
+    "brand": "Asus",
+    "regex": "FBMD/(?:K50IN|K54L|T100HAN|T103HAF|UX360CAK|X550LB|X553MA|X555LN|X556UQK);",
+    "type": 0,
+    "modelVariants": [
+      {
+        "regex": "FBMD/K50IN;",
+        "name": "K50IN"
+      },
+      {
+        "regex": "FBMD/K54L;",
+        "name": "K54L"
+      },
+      {
+        "regex": "FBMD/T100HAN;",
+        "name": "Transformer Book"
+      },
+      {
+        "regex": "FBMD/T103HAF;",
+        "name": "Transformer Mini"
+      },
+      {
+        "regex": "FBMD/UX360CAK;",
+        "name": "ZenBook Flip"
+      },
+      {
+        "regex": "FBMD/X550LB;",
+        "name": "X550LB"
+      },
+      {
+        "regex": "FBMD/X553MA;",
+        "name": "X553MA"
+      },
+      {
+        "regex": "FBMD/X555LN;",
+        "name": "X555LN"
+      },
+      {
+        "regex": "FBMD/X556UQK;",
+        "name": "X556UQK"
+      }
+    ]
+  },
+  {
+    "brand": "Alienware",
+    "regex": "FBMD/(?:Alienware [0-9]{2,3}R[0-9]{1,2}|Area-51m|R3|R4|Alienware Aurora R[0-9]+(:? [0-9]+)?);",
+    "type": 0,
+    "modelVariants": [
+      {
+        "regex": "Alienware 15R3;",
+        "name": "Alienware 15 R3"
+      },
+      {
+        "regex": "Alienware 17R4;",
+        "name": "Alienware 17 R4"
+      },
+      {
+        "regex": "Area-51m;",
+        "name": "Area-51m"
+      },
+      {
+        "regex": "Aurora (R[0-9]+)",
+        "name": "Aurora $1"
+      }
+    ]
+  },
+  {
+    "brand": "Dell",
+    "regex": "FBMD/(?:Latitude E4300|Inspiron 3541|XPS 15 95[35]0);",
+    "type": 0,
+    "modelVariants": [
+      {
+        "regex": "Latitude E4300",
+        "name": "Latitude E4300"
+      },
+      {
+        "regex": "Inspiron 3541",
+        "name": "Inspiron 3541"
+      },
+      {
+        "regex": "XPS 15 9530",
+        "name": "XPS 15 9530"
+      },
+      {
+        "regex": "XPS 15 9550",
+        "name": "XPS 15 9550"
+      }
+    ]
+  },
+  {
+    "brand": "HP",
+    "regex": "FBMD/((?:Compaq|HP) |23-f364)",
+    "type": 0,
+    "modelVariants": [
+      {
+        "regex": "Compaq Presario CQ61 Notebook PC",
+        "name": "Compaq Presario CQ61"
+      },
+      {
+        "regex": "HP Pavilion x2 Detachable",
+        "name": "Pavilion x2"
+      },
+      {
+        "regex": "HP Laptop 15-bs0xx",
+        "name": "15 Laptop PC"
+      },
+      {
+        "regex": "HP ENVY x360 Convertible 15-bp0xx",
+        "name": "ENVY x360 Convertible PC"
+      },
+      {
+        "regex": "HP EliteBook (25[67]0p)",
+        "name": "EliteBook $1"
+      },
+      {
+        "regex": "HP ProBook (440 G5|6[35]60b)",
+        "name": "ProBook $1"
+      },
+      {
+        "regex": "HP Pavilion dv6 Notebook PC",
+        "name": "Pavilion dv6"
+      },
+      {
+        "regex": "HP Pavilion Notebook",
+        "name": "Pavilion"
+      },
+      {
+        "regex": "HP Spectre x360 Convertible",
+        "name": "Spectre x360"
+      },
+      {
+        "regex": "HP Pavilion All-in-One 24-r0xx",
+        "type": 0,
+        "name": "Pavilion 24-r0xx All-in-One Desktop PC"
+      },
+      {
+        "regex": "23-f364",
+        "type": 0,
+        "name": "Pavilion TouchSmart 23-f364 All-in-One Desktop PC"
+      }
+    ]
+  },
+  {
+    "brand": "Lenovo",
+    "regex": "FBMD/(?:37021C5|80E5|80SM|80VR);",
+    "type": 0,
+    "modelVariants": [
+      {
+        "regex": "FBMD/37021C5;",
+        "name": "ThinkPad Helix 3702"
+      },
+      {
+        "regex": "FBMD/80E5;",
+        "name": "G50-80"
+      },
+      {
+        "regex": "FBMD/80SM;",
+        "name": "Ideapad 310-15ISK"
+      },
+      {
+        "regex": "FBMD/80VR;",
+        "name": "Legion Y720"
+      }
+    ]
+  },
+  {
+    "brand": "Schneider",
+    "regex": "FBMD/SCL141CTP;",
+    "type": 0,
+    "model": "Notebook 14\" Cherry Trail"
+  },
+  {
+    "brand": "Thomson",
+    "regex": "FBMD/TH360R12\\.32CTW;",
+    "type": 0,
+    "model": "Prestige TH-360R12.32CTW"
+  },
+  {
+    "brand": "Toshiba",
+    "regex": "FBMD/Satellite ",
+    "type": 0,
+    "modelVariants": [
+      {
+        "regex": "Satellite (A[25]00|C650|C855|L650|S855)",
+        "name": "Satellite $1"
+      },
+      {
+        "regex": "Satellite ([^;\\)]+);",
+        "name": "Satellite $1"
+      }
+    ]
+  }
+]
