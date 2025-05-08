@@ -2,3 +2,4 @@
 
 //YamlToJsonConverter.ConvertDeviceRegex();
 YamlToJsonConverter.ConvertCollectionFixture();
+//YamlToJsonConverter.ConvertBotRegex();
