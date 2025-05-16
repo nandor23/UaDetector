@@ -10,8 +10,9 @@ namespace UaDetector.Parsers.Clients;
 internal sealed class MobileAppParser : ClientParserBase
 {
     private const string ResourceName = "Regexes.Resources.Clients.mobile_apps.json";
-    internal static readonly IReadOnlyList<Client> MobileApps;
+    public static readonly IReadOnlyList<Client> MobileApps;
     private static readonly Regex CombinedRegex;
+    private readonly AppHintParser _appHintParser;
 
     static MobileAppParser()
     {
@@ -19,7 +20,10 @@ internal sealed class MobileAppParser : ClientParserBase
     }
 
     public MobileAppParser(VersionTruncation versionTruncation)
-        : base(versionTruncation) { }
+        : base(versionTruncation)
+    {
+        _appHintParser = new AppHintParser();
+    }
 
     public override bool IsClient(string userAgent, ClientHints clientHints)
     {
@@ -39,7 +43,7 @@ internal sealed class MobileAppParser : ClientParserBase
         var name = clientInfo?.Name;
         var version = clientInfo?.Version;
 
-        if (AppHintParser.TryParseAppName(clientHints, out var appName) && appName != name)
+        if (_appHintParser.TryParseAppName(clientHints, out var appName) && appName != name)
         {
             name = appName;
             version = null;

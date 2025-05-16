@@ -131,20 +131,20 @@ The following benchmark compares the performance of other .NET user-agent parsin
 
 | Method         | Mean     | Error     | StdDev    | Ratio | Allocated   | Alloc Ratio |
 |--------------- |---------:|----------:|----------:|------:|------------:|------------:|
-| UaDetector     | 1.583 ms | 0.0146 ms | 0.0136 ms |  1.00 |     4.04 KB |        1.00 |
-| DeviceDetector | 5.595 ms | 0.0573 ms | 0.0536 ms |  3.53 |  4534.55 KB |    1,121.59 |
-| UAParser       | 6.597 ms | 0.0584 ms | 0.0547 ms |  4.17 | 10794.89 KB |    2,670.04 |
+| UaDetector     | 1.560 ms | 0.0096 ms | 0.0085 ms |  1.00 |     4.91 KB |        1.00 |
+| DeviceDetector | 5.583 ms | 0.0477 ms | 0.0446 ms |  3.58 |  4534.55 KB |      923.50 |
+| UAParser       | 6.457 ms | 0.0372 ms | 0.0330 ms |  4.14 | 10794.89 KB |    2,198.48 |
 
 The following benchmark measures the performance of different parsers within the library.
 
 | Method                 | Mean       | Error    | StdDev   | Allocated |
 |----------------------- |-----------:|---------:|---------:|----------:|
-| UaDetector_TryParse    | 1,567.5 us | 18.06 us | 16.89 us |    4140 B |
-| OsParser_TryParse      |   545.0 us |  3.99 us |  3.73 us |    1497 B |
-| BrowserParser_TryParse | 1,095.4 us | 12.78 us | 11.96 us |    1763 B |
-| ClientParser_TryParse  |   150.1 us |  2.17 us |  2.03 us |    1272 B |
-| BotParser_TryParse     |   294.9 us |  2.66 us |  2.49 us |     609 B |
-| BotParser_IsBot        |   289.4 us |  2.47 us |  2.31 us |     281 B |
+| UaDetector_TryParse    | 1,551.0 us |  5.39 us |  4.50 us |    5027 B |
+| OsParser_TryParse      |   543.9 us |  4.67 us |  4.14 us |    1529 B |
+| BrowserParser_TryParse | 1,087.6 us | 12.81 us | 11.98 us |    2139 B |
+| ClientParser_TryParse  |   147.7 us |  0.89 us |  0.79 us |    1496 B |
+| BotParser_TryParse     |   293.4 us |  2.20 us |  2.06 us |     609 B |
+| BotParser_IsBot        |   290.8 us |  1.29 us |  1.14 us |     281 B |
 
 ## 🔍 Detection Capabilities
 

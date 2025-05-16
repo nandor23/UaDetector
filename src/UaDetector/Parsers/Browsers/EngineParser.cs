@@ -7,13 +7,14 @@ using UaDetector.Utils;
 
 namespace UaDetector.Parsers.Browsers;
 
-internal static class EngineParser
+internal sealed class EngineParser
 {
     private const string ResourceName = "Regexes.Resources.Browsers.browser_engines.json";
     private static readonly IReadOnlyList<BrowserEngine> Engines;
     private static readonly Regex CombinedRegex;
+    private readonly ParserHelper _parserHelper = new();
 
-    internal static readonly FrozenSet<string> EngineNames = new[]
+    public static readonly FrozenSet<string> EngineNames = new[]
     {
         BrowserEngines.WebKit,
         BrowserEngines.Blink,
@@ -42,7 +43,7 @@ internal static class EngineParser
         (Engines, CombinedRegex) = RegexLoader.LoadRegexesWithCombined<BrowserEngine>(ResourceName);
     }
 
-    public static bool TryParse(string userAgent, [NotNullWhen(true)] out string? result)
+    public bool TryParse(string userAgent, [NotNullWhen(true)] out string? result)
     {
         if (!CombinedRegex.IsMatch(userAgent))
         {
@@ -70,7 +71,7 @@ internal static class EngineParser
             return false;
         }
 
-        var name = ParserExtensions.FormatWithMatch(engine.Name, match);
+        var name = _parserHelper.FormatWithMatch(engine.Name, match);
 
         return EngineNames.TryGetValue(name, out result);
     }

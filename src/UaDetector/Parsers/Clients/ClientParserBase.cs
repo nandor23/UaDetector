@@ -9,10 +9,12 @@ namespace UaDetector.Parsers.Clients;
 internal abstract class ClientParserBase
 {
     private readonly VersionTruncation _versionTruncation;
+    private readonly ParserHelper _parserHelper;
 
     protected ClientParserBase(VersionTruncation versionTruncation)
     {
         _versionTruncation = versionTruncation;
+        _parserHelper = new ParserHelper();
     }
 
     public abstract bool IsClient(string userAgent, ClientHints clientHints);
@@ -40,8 +42,8 @@ internal abstract class ClientParserBase
                 {
                     result = new ClientInfoInternal
                     {
-                        Name = ParserExtensions.FormatWithMatch(client.Name, match),
-                        Version = ParserExtensions.BuildVersion(
+                        Name = _parserHelper.FormatWithMatch(client.Name, match),
+                        Version = _parserHelper.BuildVersion(
                             client.Version,
                             match,
                             _versionTruncation

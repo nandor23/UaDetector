@@ -11,7 +11,7 @@ internal sealed class ShellTvParser : DeviceParserBase
 {
     private const string ResourceName = "Regexes.Resources.Devices.shell_televisions.json";
     private static readonly IReadOnlyList<Device> ShellTelevisions;
-    internal static readonly Regex ShellTvRegex;
+    public static readonly Regex ShellTvRegex;
 
     static ShellTvParser()
     {

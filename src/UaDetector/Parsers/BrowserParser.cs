@@ -19,6 +19,10 @@ public sealed class BrowserParser : IBrowserParser
     private readonly UaDetectorOptions _uaDetectorOptions;
     private readonly ClientParser _clientParser;
     private readonly BotParser _botParser;
+    private readonly EngineParser _engineParser;
+    private readonly EngineVersionParser _engineVersionParser;
+    private readonly BrowserHintParser _browserHintParser;
+    private readonly ParserHelper _parserHelper;
     internal static readonly IReadOnlyList<Browser> Browsers;
     internal static readonly FrozenDictionary<BrowserCode, string> BrowserCodeMapping;
     internal static readonly FrozenDictionary<string, BrowserCode> BrowserNameMapping;
@@ -1431,6 +1435,10 @@ public sealed class BrowserParser : IBrowserParser
         _cache = uaDetectorOptions?.Cache;
         _clientParser = new ClientParser();
         _botParser = new BotParser(new BotParserOptions { Cache = _cache });
+        _engineParser = new EngineParser();
+        _engineVersionParser = new EngineVersionParser();
+        _browserHintParser = new BrowserHintParser();
+        _parserHelper = new ParserHelper();
     }
 
     private static string ApplyClientHintBrandMapping(string brand)
@@ -1475,7 +1483,7 @@ public sealed class BrowserParser : IBrowserParser
         return false;
     }
 
-    private static string? BuildEngine(string userAgent, Engine? engine, string? browserVersion)
+    private string? BuildEngine(string userAgent, Engine? engine, string? browserVersion)
     {
         var result = engine?.Default;
 
@@ -1484,7 +1492,7 @@ public sealed class BrowserParser : IBrowserParser
             foreach (var version in engine.Versions)
             {
                 if (
-                    ParserExtensions.TryCompareVersions(
+                    _parserHelper.TryCompareVersions(
                         browserVersion,
                         version.Key,
                         out var comparisonResult
@@ -1501,7 +1509,7 @@ public sealed class BrowserParser : IBrowserParser
 
         if (result is null or { Length: 0 })
         {
-            EngineParser.TryParse(userAgent, out result);
+            _engineParser.TryParse(userAgent, out result);
         }
 
         return result;
@@ -1514,8 +1522,8 @@ public sealed class BrowserParser : IBrowserParser
             return null;
         }
 
-        EngineVersionParser.TryParse(userAgent, engine, out var result);
-        return ParserExtensions.BuildVersion(result, _uaDetectorOptions.VersionTruncation);
+        _engineVersionParser.TryParse(userAgent, engine, out var result);
+        return _parserHelper.BuildVersion(result, _uaDetectorOptions.VersionTruncation);
     }
 
     private static bool TryGetBrowserCode(
@@ -1604,7 +1612,7 @@ public sealed class BrowserParser : IBrowserParser
         {
             Name = name,
             Code = code.Value,
-            Version = ParserExtensions.BuildVersion(version, _uaDetectorOptions.VersionTruncation),
+            Version = _parserHelper.BuildVersion(version, _uaDetectorOptions.VersionTruncation),
         };
 
         return true;
@@ -1635,11 +1643,11 @@ public sealed class BrowserParser : IBrowserParser
             return false;
         }
 
-        string name = ParserExtensions.FormatWithMatch(browser.Name, match);
+        string name = _parserHelper.FormatWithMatch(browser.Name, match);
 
         if (BrowserNameMapping.TryGetValue(name, out var code))
         {
-            var version = ParserExtensions.BuildVersion(
+            var version = _parserHelper.BuildVersion(
                 browser.Version,
                 match,
                 _uaDetectorOptions.VersionTruncation
@@ -1668,14 +1676,10 @@ public sealed class BrowserParser : IBrowserParser
     /// Checks if the first version is a truncated form of the second version and still considered equal.
     /// For example, version "1.2" would be considered equal to "1.2.0" or "1.2.0.0".
     /// </summary>
-    private static bool IsSameTruncatedVersion(string shortVersion, string fullVersion)
+    private bool IsSameTruncatedVersion(string shortVersion, string fullVersion)
     {
         return shortVersion.Length < fullVersion.Length
-            && ParserExtensions.TryCompareVersions(
-                shortVersion,
-                fullVersion,
-                out var comparisonResult
-            )
+            && _parserHelper.TryCompareVersions(shortVersion, fullVersion, out var comparisonResult)
             && comparisonResult == 0;
     }
 
@@ -1704,7 +1708,7 @@ public sealed class BrowserParser : IBrowserParser
             return false;
         }
 
-        if (ParserExtensions.TryRestoreUserAgent(userAgent, clientHints, out var restoredUserAgent))
+        if (_parserHelper.TryRestoreUserAgent(userAgent, clientHints, out var restoredUserAgent))
         {
             userAgent = restoredUserAgent;
         }
@@ -1819,7 +1823,7 @@ public sealed class BrowserParser : IBrowserParser
                     browserFromUserAgent.Version is { Length: > 0 }
                     && version is { Length: > 0 }
                     && browserFromUserAgent.Version.StartsWith(version)
-                    && ParserExtensions.TryCompareVersions(
+                    && _parserHelper.TryCompareVersions(
                         version,
                         browserFromUserAgent.Version,
                         out var comparisonResult
@@ -1839,7 +1843,7 @@ public sealed class BrowserParser : IBrowserParser
                     engine == BrowserEngines.Blink
                     && name != BrowserNames.Iridium
                     && engineVersion is { Length: > 0 }
-                    && ParserExtensions.TryCompareVersions(
+                    && _parserHelper.TryCompareVersions(
                         engineVersion,
                         browserFromClientHints.Version,
                         out comparisonResult
@@ -1868,7 +1872,7 @@ public sealed class BrowserParser : IBrowserParser
         }
 
         if (
-            BrowserHintParser.TryParseBrowserName(clientHints, out var browserName)
+            _browserHintParser.TryParseBrowserName(clientHints, out var browserName)
             && name != browserName
         )
         {

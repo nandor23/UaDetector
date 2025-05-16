@@ -10,12 +10,13 @@ public class VendorFragmentParserTests
     [Test]
     public async Task TryParseBrand_WithFixtureData_ShouldReturnExpectedBrand()
     {
+        var vendorFragmentParser = new VendorFragmentParser();
         var fixturePath = Path.Combine("Fixtures", "Resources", "vendor_fragments.json");
         var fixtures = await FixtureLoader.LoadAsync<VendorFragmentFixture>(fixturePath);
 
         foreach (var fixture in fixtures)
         {
-            VendorFragmentParser.TryParseBrand(fixture.UserAgent, out var result).ShouldBeTrue();
+            vendorFragmentParser.TryParseBrand(fixture.UserAgent, out var result).ShouldBeTrue();
 
             result.ShouldNotBeNull();
             result.ShouldBe(fixture.Vendor);

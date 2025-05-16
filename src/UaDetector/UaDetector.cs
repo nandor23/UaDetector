@@ -19,6 +19,8 @@ public sealed class UaDetector : IUaDetector
     private readonly BrowserParser _browserParser;
     private readonly ClientParser _clientParser;
     private readonly BotParser _botParser;
+    private readonly VendorFragmentParser _vendorFragmentParser;
+    private readonly ParserHelper _parserHelper;
     private static readonly Regex ContainsLetterRegex;
     private static readonly Regex AndroidVrFragment;
     private static readonly Regex ChromeRegex;
@@ -124,6 +126,8 @@ public sealed class UaDetector : IUaDetector
         _browserParser = new BrowserParser(uaDetectorOptions);
         _clientParser = new ClientParser(uaDetectorOptions);
         _botParser = new BotParser(new BotParserOptions { Cache = _cache });
+        _vendorFragmentParser = new VendorFragmentParser();
+        _parserHelper = new ParserHelper();
     }
 
     private static Regex BuildRegex(string pattern)
@@ -134,10 +138,10 @@ public sealed class UaDetector : IUaDetector
         );
     }
 
-    private static bool IsWindows8OrLater(OsInfo os)
+    private bool IsWindows8OrLater(OsInfo os)
     {
         return os is { Name: OsNames.Windows, Version.Length: > 0 }
-            && ParserExtensions.TryCompareVersions(os.Version, "8", out var comparisonResult)
+            && _parserHelper.TryCompareVersions(os.Version, "8", out var comparisonResult)
             && comparisonResult >= 0;
     }
 
@@ -199,8 +203,8 @@ public sealed class UaDetector : IUaDetector
         if (
             model is { Length: > 0 }
             || (
-                !ParserExtensions.HasUserAgentClientHintsFragment(userAgent)
-                && !ParserExtensions.HasUserAgentDesktopFragment(userAgent)
+                !_parserHelper.HasUserAgentClientHintsFragment(userAgent)
+                && !_parserHelper.HasUserAgentDesktopFragment(userAgent)
             )
         )
         {
@@ -224,7 +228,7 @@ public sealed class UaDetector : IUaDetector
 
         if (brand is null or { Length: 0 })
         {
-            VendorFragmentParser.TryParseBrand(userAgent, out brand);
+            _vendorFragmentParser.TryParseBrand(userAgent, out brand);
         }
 
         // Prevent misidentification of spoofed user agent as legitimate Apple.
@@ -295,16 +299,16 @@ public sealed class UaDetector : IUaDetector
         if (deviceType is null && os is { Name: OsNames.Android, Version.Length: > 0 })
         {
             if (
-                ParserExtensions.TryCompareVersions(os.Version, "2.0", out var comparisonResult)
+                _parserHelper.TryCompareVersions(os.Version, "2.0", out var comparisonResult)
                 && comparisonResult == -1
             )
             {
                 deviceType = DeviceType.Smartphone;
             }
             else if (
-                ParserExtensions.TryCompareVersions(os.Version, "3.0", out comparisonResult)
+                _parserHelper.TryCompareVersions(os.Version, "3.0", out comparisonResult)
                 && comparisonResult >= 0
-                && ParserExtensions.TryCompareVersions(os.Version, "4.0", out comparisonResult)
+                && _parserHelper.TryCompareVersions(os.Version, "4.0", out comparisonResult)
                 && comparisonResult == -1
             )
             {
@@ -467,7 +471,7 @@ public sealed class UaDetector : IUaDetector
 
         var clientHints = ClientHints.Create(headers);
 
-        if (ParserExtensions.TryRestoreUserAgent(userAgent, clientHints, out var restoredUserAgent))
+        if (_parserHelper.TryRestoreUserAgent(userAgent, clientHints, out var restoredUserAgent))
         {
             userAgent = restoredUserAgent;
         }

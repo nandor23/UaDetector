@@ -4,15 +4,17 @@ using UaDetector.Utils;
 
 namespace UaDetector.Parsers.Browsers;
 
-internal static class BrowserHintParser
+internal sealed class BrowserHintParser
 {
     private const string ResourceName = "Regexes.Resources.Browsers.browser_hints.json";
+    public static readonly FrozenDictionary<string, string> Hints;
 
-    internal static readonly FrozenDictionary<string, string> Hints = RegexLoader.LoadHints(
-        ResourceName
-    );
+    static BrowserHintParser()
+    {
+        Hints = RegexLoader.LoadHints(ResourceName);
+    }
 
-    public static bool TryParseBrowserName(
+    public bool TryParseBrowserName(
         ClientHints clientHints,
         [NotNullWhen(true)] out string? result
     )

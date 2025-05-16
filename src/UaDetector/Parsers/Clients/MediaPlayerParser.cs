@@ -10,7 +10,7 @@ namespace UaDetector.Parsers.Clients;
 internal sealed class MediaPlayerParser : ClientParserBase
 {
     private const string ResourceName = "Regexes.Resources.Clients.media_players.json";
-    internal static readonly IReadOnlyList<Client> MediaPlayers;
+    public static readonly IReadOnlyList<Client> MediaPlayers;
     private static readonly Regex CombinedRegex;
 
     static MediaPlayerParser()

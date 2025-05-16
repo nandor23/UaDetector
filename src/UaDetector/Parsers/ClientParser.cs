@@ -11,6 +11,7 @@ public sealed class ClientParser : IClientParser
     private readonly IUaDetectorCache? _cache;
     private readonly UaDetectorOptions _uaDetectorOptions;
     private readonly BotParser _botParser;
+    private readonly ParserHelper _parserHelper;
     internal readonly IReadOnlyList<ClientParserBase> ClientParsers;
 
     public ClientParser(UaDetectorOptions? uaDetectorOptions = null)
@@ -18,6 +19,7 @@ public sealed class ClientParser : IClientParser
         _uaDetectorOptions = uaDetectorOptions ?? new UaDetectorOptions();
         _cache = uaDetectorOptions?.Cache;
         _botParser = new BotParser(new BotParserOptions { Cache = _cache });
+        _parserHelper = new ParserHelper();
 
         ClientParsers =
         [
@@ -48,7 +50,7 @@ public sealed class ClientParser : IClientParser
 
         var clientHints = ClientHints.Create(headers);
 
-        if (ParserExtensions.TryRestoreUserAgent(userAgent, clientHints, out var restoredUserAgent))
+        if (_parserHelper.TryRestoreUserAgent(userAgent, clientHints, out var restoredUserAgent))
         {
             userAgent = restoredUserAgent;
         }

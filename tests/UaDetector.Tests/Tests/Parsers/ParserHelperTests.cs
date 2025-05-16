@@ -3,7 +3,7 @@ using UaDetector.Parsers;
 
 namespace UaDetector.Tests.Tests.Parsers;
 
-public class ParserExtensionsTests
+public class ParserHelperTests
 {
     [Test]
     [MethodDataSource(nameof(TryCompareVersionsValidTestData))]
@@ -13,9 +13,9 @@ public class ParserExtensionsTests
         int expectedResult
     )
     {
-        ParserExtensions
-            .TryCompareVersions(firstVersion, secondVersion, out var result)
-            .ShouldBe(true);
+        var parserHelper = new ParserHelper();
+
+        parserHelper.TryCompareVersions(firstVersion, secondVersion, out var result).ShouldBe(true);
 
         result.ShouldBe(expectedResult);
     }
@@ -27,7 +27,9 @@ public class ParserExtensionsTests
         string secondVersion
     )
     {
-        ParserExtensions
+        var parserHelper = new ParserHelper();
+
+        parserHelper
             .TryCompareVersions(firstVersion, secondVersion, out var result)
             .ShouldBe(false);
 

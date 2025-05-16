@@ -13,11 +13,12 @@ public class AppHintParserTests
         bool result
     )
     {
+        var appHintParser = new AppHintParser();
         var headers = new Dictionary<string, string?> { { "x-requested-with", appHint } };
 
         var clientHints = ClientHints.Create(headers);
 
-        AppHintParser.TryParseAppName(clientHints, out var appName).ShouldBe(result);
+        appHintParser.TryParseAppName(clientHints, out var appName).ShouldBe(result);
         appName.ShouldBe(expectedAppName);
     }
 

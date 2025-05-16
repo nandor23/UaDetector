@@ -17,6 +17,7 @@ public sealed class OsParser : IOsParser
     private readonly IUaDetectorCache? _cache;
     private readonly UaDetectorOptions _uaDetectorOptions;
     private readonly BotParser _botParser;
+    private readonly ParserHelper _parserHelper;
     internal static readonly IReadOnlyList<Os> OperatingSystems;
     internal static readonly FrozenDictionary<OsCode, string> OsCodeMapping;
     internal static readonly FrozenDictionary<string, OsCode> OsNameMapping;
@@ -590,6 +591,7 @@ public sealed class OsParser : IOsParser
         _uaDetectorOptions = uaDetectorOptions ?? new UaDetectorOptions();
         _cache = uaDetectorOptions?.Cache;
         _botParser = new BotParser(new BotParserOptions { Cache = _cache });
+        _parserHelper = new ParserHelper();
     }
 
     private static string ApplyClientHintPlatformMapping(string platform)
@@ -784,7 +786,7 @@ public sealed class OsParser : IOsParser
             name != OsNames.Windows
             && version is { Length: > 0 }
             && version != "0.0.0"
-            && ParserExtensions.TryCompareVersions(version, "0", out var comparisonResult)
+            && _parserHelper.TryCompareVersions(version, "0", out var comparisonResult)
             && comparisonResult == 0
         )
         {
@@ -794,7 +796,7 @@ public sealed class OsParser : IOsParser
         result = new CommonOsInfo
         {
             Name = name,
-            Version = ParserExtensions.BuildVersion(version, _uaDetectorOptions.VersionTruncation),
+            Version = _parserHelper.BuildVersion(version, _uaDetectorOptions.VersionTruncation),
         };
 
         return true;
@@ -825,7 +827,7 @@ public sealed class OsParser : IOsParser
             return false;
         }
 
-        string name = ParserExtensions.FormatWithMatch(os.Name, match);
+        string name = _parserHelper.FormatWithMatch(os.Name, match);
 
         if (OsNameMapping.TryGetValue(name, out var code))
         {
@@ -837,7 +839,7 @@ public sealed class OsParser : IOsParser
             return false;
         }
 
-        var version = ParserExtensions.BuildVersion(
+        var version = _parserHelper.BuildVersion(
             os.Version,
             match,
             _uaDetectorOptions.VersionTruncation
@@ -851,7 +853,7 @@ public sealed class OsParser : IOsParser
 
                 if (match.Success)
                 {
-                    version = ParserExtensions.BuildVersion(
+                    version = _parserHelper.BuildVersion(
                         osVersion.Version,
                         match,
                         _uaDetectorOptions.VersionTruncation
@@ -884,7 +886,7 @@ public sealed class OsParser : IOsParser
             return false;
         }
 
-        if (ParserExtensions.TryRestoreUserAgent(userAgent, clientHints, out var restoredUserAgent))
+        if (_parserHelper.TryRestoreUserAgent(userAgent, clientHints, out var restoredUserAgent))
         {
             userAgent = restoredUserAgent;
         }

@@ -10,8 +10,9 @@ namespace UaDetector.Parsers.Devices;
 
 internal abstract class DeviceParserBase
 {
-    internal static readonly FrozenDictionary<BrandCode, string> BrandCodeMapping;
-    internal static readonly FrozenDictionary<string, BrandCode> BrandNameMapping;
+    public static readonly FrozenDictionary<BrandCode, string> BrandCodeMapping;
+    public static readonly FrozenDictionary<string, BrandCode> BrandNameMapping;
+    private readonly ParserHelper _parserHelper = new();
 
     static DeviceParserBase()
     {
@@ -2097,9 +2098,9 @@ internal abstract class DeviceParserBase
             .ToFrozenDictionary();
     }
 
-    private static string? BuildModel(string model, Match match)
+    private string? BuildModel(string model, Match match)
     {
-        model = ParserExtensions.FormatWithMatch(model, match).Replace('_', ' ');
+        model = _parserHelper.FormatWithMatch(model, match).Replace('_', ' ');
         model = Regex.Replace(model, " TD$", string.Empty, RegexOptions.IgnoreCase);
 
         return model is null or { Length: 0 } or "Build" ? null : model.Trim();
@@ -2110,7 +2111,7 @@ internal abstract class DeviceParserBase
         [NotNullWhen(true)] out DeviceInfoInternal? result
     );
 
-    protected static bool TryParse(
+    protected bool TryParse(
         string userAgent,
         IEnumerable<Device> devices,
         [NotNullWhen(true)] out DeviceInfoInternal? result
