@@ -47,12 +47,10 @@ Each parser provides two `TryParse` methods: one that accepts only the user-agen
 that accepts both the user-agent string and a collection of HTTP headers.
 For more accurate detection, it is recommended to provide the HTTP headers.
 
-
-
-> **Tip**:
-> Avoid directly instantiating parsers. The first initialization of UaDetector (or its sub-parsers) 
-> takes a few seconds (around 1-3s). To prevent this one-time cost during runtime, register the service with 
-> dependency injection, as shown earlier. This way, the instantiation will happen at application startup.
+> [!TIP]
+> Avoid directly instantiating parsers. The first call to *TryParse* causes a noticeable delay as it triggers
+> the compilation of regular expressions. To prevent this one-time cost during runtime, register the service
+> with dependency injection, as shown earlier.
 
 ```c#
 [ApiController]

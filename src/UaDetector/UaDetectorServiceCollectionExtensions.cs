@@ -5,6 +5,8 @@ namespace UaDetector;
 
 public static class UaDetectorServiceCollectionExtensions
 {
+    private const string WarmupUserAgent = "service-warmup";
+
     public static IServiceCollection AddUaDetector(
         this IServiceCollection services,
         Action<UaDetectorOptionsBuilder>? optionsAction = null
@@ -13,7 +15,10 @@ public static class UaDetectorServiceCollectionExtensions
         var optionsBuilder = new UaDetectorOptionsBuilder();
         optionsAction?.Invoke(optionsBuilder);
 
-        services.AddSingleton<IUaDetector>(new UaDetector(optionsBuilder.Build()));
+        var uaDetector = new UaDetector(optionsBuilder.Build());
+        uaDetector.TryParse(WarmupUserAgent, out _);
+
+        services.AddSingleton<IUaDetector>(uaDetector);
         return services;
     }
 
@@ -25,7 +30,10 @@ public static class UaDetectorServiceCollectionExtensions
         var optionsBuilder = new UaDetectorOptionsBuilder();
         optionsAction?.Invoke(optionsBuilder);
 
-        services.AddSingleton<IOsParser>(new OsParser(optionsBuilder.Build()));
+        var osParser = new OsParser(optionsBuilder.Build());
+        osParser.TryParse(WarmupUserAgent, out _);
+
+        services.AddSingleton<IOsParser>(osParser);
         return services;
     }
 
@@ -37,7 +45,10 @@ public static class UaDetectorServiceCollectionExtensions
         var optionsBuilder = new UaDetectorOptionsBuilder();
         optionsAction?.Invoke(optionsBuilder);
 
-        services.AddSingleton<IBrowserParser>(new BrowserParser(optionsBuilder.Build()));
+        var browserParser = new BrowserParser(optionsBuilder.Build());
+        browserParser.TryParse(WarmupUserAgent, out _);
+
+        services.AddSingleton<IBrowserParser>(browserParser);
         return services;
     }
 
@@ -49,7 +60,10 @@ public static class UaDetectorServiceCollectionExtensions
         var optionsBuilder = new UaDetectorOptionsBuilder();
         optionsAction?.Invoke(optionsBuilder);
 
-        services.AddSingleton<IClientParser>(new ClientParser(optionsBuilder.Build()));
+        var clientParser = new ClientParser(optionsBuilder.Build());
+        clientParser.TryParse(WarmupUserAgent, out _);
+
+        services.AddSingleton<IClientParser>(clientParser);
         return services;
     }
 
@@ -61,7 +75,10 @@ public static class UaDetectorServiceCollectionExtensions
         var optionsBuilder = new BotParserOptionsBuilder();
         optionsAction?.Invoke(optionsBuilder);
 
-        services.AddSingleton<IBotParser>(new BotParser(optionsBuilder.Build()));
+        var botParser = new BotParser(optionsBuilder.Build());
+        botParser.TryParse(WarmupUserAgent, out _);
+
+        services.AddSingleton<IBotParser>(botParser);
         return services;
     }
 }
