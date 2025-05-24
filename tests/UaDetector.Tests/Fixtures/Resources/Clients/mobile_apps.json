@@ -1,3 +1,3093 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:48c3a3e6eb1aacce98427fb48b8a191eae804681aaf7c6b4d81189cdbff4095c
-size 90393
+[
+  {
+    "userAgent": "Pulse/4.0.5 (iPhone; iOS 7.0.6; Scale/2.00)",
+    "client": {
+      "type": 0,
+      "name": "Pulse",
+      "version": "4.0.5"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 4.4.4; SM-G7509 Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36 MicroMessenger/6.0.2.56_r958800.520 NetType/WIFI",
+    "client": {
+      "type": 0,
+      "name": "WeChat",
+      "version": "6.0.2.56"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPad; CPU OS 11_2_6 like Mac OS X) AppleWebKit/604.5.6 (KHTML, like Gecko) Mobile/15D100 AliApp(DingTalk/5.1.12) com.laiwang.DingTalk/13441885 Channel/201200 Pad/iPad language/zh-Hans-CN UT4Aplus/0.0.6 WK",
+    "client": {
+      "type": 0,
+      "name": "DingTalk",
+      "version": "5.1.12"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.4; en-us; ZTE U807N Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 Weibo (ZTE-ZTE U807N__weibo__5.0.0__android__android4.0.4)",
+    "client": {
+      "type": 0,
+      "name": "Sina Weibo",
+      "version": "5.0.0"
+    }
+  },
+  {
+    "userAgent": "FeedR/1.0 (Android)",
+    "client": {
+      "type": 0,
+      "name": "FeedR",
+      "version": "1.0"
+    }
+  },
+  {
+    "userAgent": "Pinterest/3.3.3 CFNetwork/609.1.4 Darwin/13.0.0",
+    "client": {
+      "type": 0,
+      "name": "Pinterest",
+      "version": "3.3.3"
+    }
+  },
+  {
+    "userAgent": "Instacast/5.0a8 CFNetwork/711.1.11 Darwin/13.4.0",
+    "client": {
+      "type": 0,
+      "name": "Instacast",
+      "version": "5.0a8"
+    }
+  },
+  {
+    "userAgent": "InstacastHD/1.1.2 CFNetwork/711.0.6 Darwin/14.0.0",
+    "client": {
+      "type": 0,
+      "name": "Instacast",
+      "version": "1.1.2"
+    }
+  },
+  {
+    "userAgent": "Podcasts/2.1.2",
+    "client": {
+      "type": 0,
+      "name": "Apple Podcasts",
+      "version": "2.1.2"
+    }
+  },
+  {
+    "userAgent": "Shifty Jelly Pocket Casts, Android v4.4.3.1",
+    "client": {
+      "type": 0,
+      "name": "Pocket Casts",
+      "version": "4.4.3.1"
+    }
+  },
+  {
+    "userAgent": "Pocket Casts",
+    "client": {
+      "type": 0,
+      "name": "Pocket Casts"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; U; en-us; BeyondPod)",
+    "client": {
+      "type": 0,
+      "name": "BeyondPod"
+    }
+  },
+  {
+    "userAgent": "AntennaPod/0.9.9.1",
+    "client": {
+      "type": 0,
+      "name": "AntennaPod",
+      "version": "0.9.9.1"
+    }
+  },
+  {
+    "userAgent": "AntennaPod/",
+    "client": {
+      "type": 0,
+      "name": "AntennaPod"
+    }
+  },
+  {
+    "userAgent": "Overcast/1.0 (+http://overcast.fm/; iOS podcast app)",
+    "client": {
+      "type": 0,
+      "name": "Overcast",
+      "version": "1.0"
+    }
+  },
+  {
+    "userAgent": "Podkicker/1.9.4",
+    "client": {
+      "type": 0,
+      "name": "Podkicker",
+      "version": "1.9.4"
+    }
+  },
+  {
+    "userAgent": "Podkicker Pro/1.9.4",
+    "client": {
+      "type": 0,
+      "name": "Podkicker Pro",
+      "version": "1.9.4"
+    }
+  },
+  {
+    "userAgent": "Castro/64 CFNetwork/672.1.15 Darwin/14.0.0",
+    "client": {
+      "type": 0,
+      "name": "Castro",
+      "version": "64"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; U; Windows NT 6.1; en-us; dream) DoggCatcher",
+    "client": {
+      "type": 0,
+      "name": "DoggCatcher"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; U; Android 4.2.2; ja-jp; SOL22 Build/10.3.1.D.0.257) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 YJApp-ANDROID jp.co.yahoo.android.yjtop/3.15.1",
+    "client": {
+      "type": 0,
+      "name": "Yahoo! Japan",
+      "version": "3.15.1"
+    }
+  },
+  {
+    "userAgent": "RSSRadio/9220 (iPad;iOS;12.3.1)",
+    "client": {
+      "type": 0,
+      "name": "RSSRadio",
+      "version": "9220"
+    }
+  },
+  {
+    "userAgent": "RSSRadio/9252",
+    "client": {
+      "type": 0,
+      "name": "RSSRadio",
+      "version": "9252"
+    }
+  },
+  {
+    "userAgent": "RSSRadio/",
+    "client": {
+      "type": 0,
+      "name": "RSSRadio"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 7.0; JMM-AL00 Build/HONORJMM-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/62.0.3202.84 Mobile Safari/537.36 SogouSearch Android1.0 version3.0 AppVersion/6002",
+    "client": {
+      "type": 0,
+      "name": "SogouSearch App",
+      "version": "3.0"
+    }
+  },
+  {
+    "userAgent": "Dalvik/2.1.0 (Linux; U; Android 6.0.1; MI 4LTE MIUI/V7.3.2.0.MXDCNDD) NewsArticle/5.1.3",
+    "client": {
+      "type": 0,
+      "name": "NewsArticle App",
+      "version": "5.1.3"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 5.1; m2 note) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36 baidubrowser/5.3.4.0 (Baidu; P1 4.3.1) tieba/6.7.2 BMW",
+    "client": {
+      "type": 0,
+      "name": "tieba",
+      "version": "6.7.2"
+    }
+  },
+  {
+    "userAgent": "com.douban.group/2.2.0(220) Mozilla/5.0 (Linux; U; Android 4.1.1; zh-cn; MI 2A Build/JRO03L) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30",
+    "client": {
+      "type": 0,
+      "name": "douban App",
+      "version": "2.2.0"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 7.0; VIE-L09 Build/HUAWEIVIE-L09; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/59.0.3071.125 Mobile Safari/537.36 BingWeb/6.9.25207603",
+    "client": {
+      "type": 0,
+      "name": "Microsoft Bing",
+      "version": "6.9.25207603"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; U; Android 4.1.2; fr-ca; LT30a Build/9.1.A.0.489) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 GSA/3.3.11.1069658.arm",
+    "client": {
+      "type": 0,
+      "name": "Google Search App",
+      "version": "3.3.11.1069658"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; U; Android 2.3.4; ru-ru; WT19i Build/4.0.2.A.0.58) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1 Flipboard/2.1.2/854,2.1.2.854,2013-12-05 11:59, +0300",
+    "client": {
+      "type": 0,
+      "name": "Flipboard App",
+      "version": "2.1.2"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 6.0.1; ASUS_Z011D Build/MMB29P; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/67.0.3396.87 Mobile Safari/537.36 Instagram 53.0.0.13.84 Android (23/6.0.1; 480dpi; 1080x1920; asus; ASUS_Z011D; ASUS_Z011; qcom; fr_FR; 116756948)",
+    "client": {
+      "type": 0,
+      "name": "Instagram",
+      "version": "53.0.0.13.84"
+    }
+  },
+  {
+    "userAgent": "TCL J706T_TD/1.0 Linux/3.4.5 Android/4.1.2 Release/08.27.2013 Browser/AppleWebKit534.30 Profile/MIDP-2.0 Configuration/CLDC-1.1 baiduboxapp/4.2 (Baidu; P1 4.1.2)",
+    "client": {
+      "type": 0,
+      "name": "Baidu Box App",
+      "version": "4.2"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 4.4.4; GT-I9195I Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.130 Crosswalk/14.43.343.17 Mobile Safari/537.36",
+    "client": {
+      "type": 0,
+      "name": "CrosswalkApp",
+      "version": "14.43.343.17"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.2.10 (KHTML, like Gecko) Mobile/15A372 Twitter for iPhone/7.52",
+    "client": {
+      "type": 0,
+      "name": "Twitter",
+      "version": "7.52"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 7_0 like Mac OS X; en-us) AppleWebKit/537.51.1 (KHTML, like Gecko) Mobile/11A465 Twitter for iPhone",
+    "client": {
+      "type": 0,
+      "name": "Twitter"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 5.1; HTC Desire 628 Build/LMY47D; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.108 Mobile Safari/537.36 JsSdk/2 TopBuzz/10.2.1 NetType/3G",
+    "client": {
+      "type": 0,
+      "name": "TopBuzz",
+      "version": "10.2.1"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.5 Mobile/15E148 Snapchat/10.77.0.54 (like Safari/604.1)",
+    "client": {
+      "type": 0,
+      "name": "Snapchat",
+      "version": "10.77.0.54"
+    }
+  },
+  {
+    "userAgent": "Siri/1 CFNetwork/1128.0.1 Darwin/19.6.0",
+    "client": {
+      "type": 0,
+      "name": "Siri",
+      "version": "1.0"
+    }
+  },
+  {
+    "userAgent": "LinkedIn/9.7.1681 CFNetwork/808.1.4 Darwin/16.1.0",
+    "client": {
+      "type": 0,
+      "name": "LinkedIn",
+      "version": "9.7.1681"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; Redmi Note 8 Pro Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/87.0.4280.141 Mobile Safari/537.36 [LinkedInApp]",
+    "client": {
+      "type": 0,
+      "name": "LinkedIn"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 [LinkedInApp]",
+    "client": {
+      "type": 0,
+      "name": "LinkedIn"
+    }
+  },
+  {
+    "userAgent": "Twitter/7.57 CFNetwork/978.0.7 Darwin/18.7.0",
+    "client": {
+      "type": 0,
+      "name": "Twitter",
+      "version": "7.57"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 9; SM-G950F Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/80.0.3987.117 Mobile Safari/537.36 TwitterAndroid",
+    "client": {
+      "type": 0,
+      "name": "Twitter"
+    }
+  },
+  {
+    "userAgent": "Instapaper/7.8.3.3; CFNetwork/1128.0.1; Darwin/19.6.0",
+    "client": {
+      "type": 0,
+      "name": "Instapaper",
+      "version": "7.8.3.3"
+    }
+  },
+  {
+    "userAgent": "Keeper/14.11.1.8605; CFNetwork/978.0.7; Darwin/18.7.0",
+    "client": {
+      "type": 0,
+      "name": "Keeper Password Manager",
+      "version": "14.11.1.8605"
+    }
+  },
+  {
+    "userAgent": "WeChatShareExtensionNew/7.0.15.33; CFNetwork/1128.0.1; Darwin/19.6.0",
+    "client": {
+      "type": 0,
+      "name": "WeChat Share Extension",
+      "version": "7.0.15.33"
+    }
+  },
+  {
+    "userAgent": "Skyeng Teachers/17; CFNetwork/1128.0.1; Darwin/19.6.0",
+    "client": {
+      "type": 0,
+      "name": "Skyeng Teachers",
+      "version": "17"
+    }
+  },
+  {
+    "userAgent": "Kik/15.15.0.21560 (Android 10) Mozilla/5.0 (Linux; Android 10; Pixel 2 Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/74.0.3729.186 Mobile Safari/537.36",
+    "client": {
+      "type": 0,
+      "name": "Kik",
+      "version": "15.15.0.21560"
+    }
+  },
+  {
+    "userAgent": "DeviantArt/167 CFNetwork/811.5.4 Darwin/16.7.0",
+    "client": {
+      "type": 0,
+      "name": "DeviantArt"
+    }
+  },
+  {
+    "userAgent": "com.google.GoogleMobile/23.1.0 iPhone/11.4.1 hw/iPhone6_2",
+    "client": {
+      "type": 0,
+      "name": "Google Search App",
+      "version": "23.1.0"
+    }
+  },
+  {
+    "userAgent": "Discord/966 CFNetwork/758.5.3 Darwin/15.6.0",
+    "client": {
+      "type": 0,
+      "name": "Discord"
+    }
+  },
+  {
+    "userAgent": "Covenant%20Eyes/5.3.8.0 CFNetwork/1121.2.2 Darwin/19.3.0",
+    "client": {
+      "type": 0,
+      "name": "Covenant Eyes",
+      "version": "5.3.8.0"
+    }
+  },
+  {
+    "userAgent": "HP%20Smart/519 CFNetwork/894 Darwin/17.4.0",
+    "client": {
+      "type": 0,
+      "name": "HP Smart"
+    }
+  },
+  {
+    "userAgent": "Bitsboard/33.0.1 CFNetwork/894 Darwin/17.4.0",
+    "client": {
+      "type": 0,
+      "name": "Bitsboard",
+      "version": "33.0.1"
+    }
+  },
+  {
+    "userAgent": "Betbull/2155 CFNetwork/978.0.7 Darwin/18.7.0",
+    "client": {
+      "type": 0,
+      "name": "BetBull"
+    }
+  },
+  {
+    "userAgent": "U-Cursos/132 CFNetwork/811.5.4 Darwin/16.7.0",
+    "client": {
+      "type": 0,
+      "name": "U-Cursos"
+    }
+  },
+  {
+    "userAgent": "1PasswordThumbs/1 CFNetwork/596.5 Darwin/12.5.0 (x86_64) (MacBookAir4%2C1)",
+    "client": {
+      "type": 0,
+      "name": "1Password",
+      "version": "1"
+    }
+  },
+  {
+    "userAgent": "Word/15.22.506 (Mac OS/10.11.5; Desktop; en-US; NonAppStore; Apple/MacBookAir7,1)",
+    "client": {
+      "type": 0,
+      "name": "Microsoft Office Word",
+      "version": "15.22.506"
+    }
+  },
+  {
+    "userAgent": "Microsoft Office PowerPoint/15.29.1215 (Mac OS/10.11.5; Desktop; en-US; NonAppStore; Apple/MacBookAir7,2)",
+    "client": {
+      "type": 0,
+      "name": "Microsoft Office PowerPoint",
+      "version": "15.29.1215"
+    }
+  },
+  {
+    "userAgent": "Microsoft Office Word/16.11.319 (Mac OS/10.10.5; Desktop; en-US; NonAppStore; Apple/MacBookAir6,1)",
+    "client": {
+      "type": 0,
+      "name": "Microsoft Office Word",
+      "version": "16.11.319"
+    }
+  },
+  {
+    "userAgent": "Microsoft Office Excel/16.44.1213 (Mac OS/11.1; Desktop; en-US; AppStore; Apple/MacBookAir10,1)",
+    "client": {
+      "type": 0,
+      "name": "Microsoft Office Excel",
+      "version": "16.44.1213"
+    }
+  },
+  {
+    "userAgent": "Microsoft Office OneNote/16.43/201106 (iOS/14.0.1; Tablet; es-MX; AppStore; Apple/iPad11,6)",
+    "client": {
+      "type": 0,
+      "name": "Microsoft Office OneNote",
+      "version": "16.43"
+    }
+  },
+  {
+    "userAgent": "Microsoft Office Mobile/2.44.1211 (iOS/14.4; Phone; en-US; AppStore; Apple/iPhone8,4)",
+    "client": {
+      "type": 0,
+      "name": "Microsoft Office Mobile",
+      "version": "2.44.1211"
+    }
+  },
+  {
+    "userAgent": "OneDriveiOSApp/11.42.4 (iOS/13.3.1; en_CA; Apple/iPad)",
+    "client": {
+      "type": 0,
+      "name": "Microsoft OneDrive",
+      "version": "11.42.4"
+    }
+  },
+  {
+    "userAgent": "ShopeeVN/2.40.11 CFNetwork/978.0.7 Darwin/18.6.0",
+    "client": {
+      "type": 0,
+      "name": "Shopee",
+      "version": "2.40.11"
+    }
+  },
+  {
+    "userAgent": "SPORT1/6315 CFNetwork/808.2.16 Darwin/16.3.0",
+    "client": {
+      "type": 0,
+      "name": "SPORT1"
+    }
+  },
+  {
+    "userAgent": "Clovia/3.3.1 CFNetwork/1206 Darwin/20.1.0",
+    "client": {
+      "type": 0,
+      "name": "Clovia",
+      "version": "3.3.1"
+    }
+  },
+  {
+    "userAgent": "ShowMe/1.2 CFNetwork/758.5.3 Darwin/15.6.0",
+    "client": {
+      "type": 0,
+      "name": "ShowMe",
+      "version": "1.2"
+    }
+  },
+  {
+    "userAgent": "Wattpad/8.42.2.0 CFNetwork/1120 Darwin/19.0.0",
+    "client": {
+      "type": 0,
+      "name": "Wattpad",
+      "version": "8.42.2.0"
+    }
+  },
+  {
+    "userAgent": "WSJ/31581 CFNetwork/1120 Darwin/19.0.0",
+    "client": {
+      "type": 0,
+      "name": "The Wall Street Journal"
+    }
+  },
+  {
+    "userAgent": "WH%20Questions/2.2 CFNetwork/887 Darwin/17.0.0",
+    "client": {
+      "type": 0,
+      "name": "WH Questions",
+      "version": "2.2"
+    }
+  },
+  {
+    "userAgent": "whisper/201807171247 CFNetwork/901.1 Darwin/17.6.0",
+    "client": {
+      "type": 0,
+      "name": "Whisper"
+    }
+  },
+  {
+    "userAgent": "Opal/6.54.1.0 CFNetwork/1206 Darwin/20.1.0",
+    "client": {
+      "type": 0,
+      "name": "Opal Travel",
+      "version": "6.54.1.0"
+    }
+  },
+  {
+    "userAgent": "Zalo/205.0 CFNetwork/889.9 Darwin/17.2.0",
+    "client": {
+      "type": 0,
+      "name": "Zalo",
+      "version": "205.0"
+    }
+  },
+  {
+    "userAgent": "Yandex/9692 CFNetwork/1121.2.2 Darwin/19.3.0",
+    "client": {
+      "type": 0,
+      "name": "Yandex"
+    }
+  },
+  {
+    "userAgent": "Zoho%20Chat/4.4.9.11 CFNetwork/1121.2.2 Darwin/19.2.0",
+    "client": {
+      "type": 0,
+      "name": "Zoho Chat",
+      "version": "4.4.9.11"
+    }
+  },
+  {
+    "userAgent": "Microsoft Office/16.0 (Windows NT 10.0; Microsoft PowerPoint 16.0.10730; Pro)",
+    "client": {
+      "type": 0,
+      "name": "Microsoft Office PowerPoint",
+      "version": "16.0.10730"
+    }
+  },
+  {
+    "userAgent": "Microsoft Office/16.0 (Windows NT 10.0; Microsoft OneDrive for Business 16.0.4266; Pro)",
+    "client": {
+      "type": 0,
+      "name": "Microsoft Office OneDrive for Business",
+      "version": "16.0.4266"
+    }
+  },
+  {
+    "userAgent": "Microsoft Office/16.0 (Windows NT 6.1; Microsoft Publisher 16.0.12527; Pro)",
+    "client": {
+      "type": 0,
+      "name": "Microsoft Office Publisher",
+      "version": "16.0.12527"
+    }
+  },
+  {
+    "userAgent": "Microsoft Office/16.0 (Windows NT 10.0; Microsoft Access 16.0.12827; Pro)",
+    "client": {
+      "type": 0,
+      "name": "Microsoft Office Access",
+      "version": "16.0.12827"
+    }
+  },
+  {
+    "userAgent": "Microsoft Office/16.0 (Windows NT 10.0; Microsoft Visio 16.0.13231; Pro)",
+    "client": {
+      "type": 0,
+      "name": "Microsoft Office Visio",
+      "version": "16.0.13231"
+    }
+  },
+  {
+    "userAgent": "Microsoft Office/16.0 (Windows NT 6.1; Microsoft Project 16.0.12527; Pro)",
+    "client": {
+      "type": 0,
+      "name": "Microsoft Office Project",
+      "version": "16.0.12527"
+    }
+  },
+  {
+    "userAgent": "OC/16.0.13231.20390 (Skype for Business)",
+    "client": {
+      "type": 0,
+      "name": "Skype for Business",
+      "version": "16.0.13231.20390"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36 TBC/1.1.0.28 Thunder/10.1.31.740",
+    "client": {
+      "type": 0,
+      "name": "Thunder",
+      "version": "10.1.31.740"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 CGNBrowser/1.3.93.10 Safari/537.36",
+    "client": {
+      "type": 0,
+      "name": "CGN",
+      "version": "1.3.93.10"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Rocket.Chat+/2.9.0 Chrome/58.0.3029.110 Electron/1.7.6 Safari/537.36",
+    "client": {
+      "type": 0,
+      "name": "Rocket Chat",
+      "version": "2.9.0"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Rocket.Chat/2.17.11 Chrome/78.0.3904.130 Electron/7.1.14 Safari/537.36",
+    "client": {
+      "type": 0,
+      "name": "Rocket Chat",
+      "version": "2.17.11"
+    }
+  },
+  {
+    "userAgent": "Pandora Audio/2101.1 (Linux;Android 10) ExoPlayerLib/2.9.6",
+    "client": {
+      "type": 0,
+      "name": "Pandora"
+    }
+  },
+  {
+    "userAgent": "NPROneAndroid",
+    "client": {
+      "type": 0,
+      "name": "NPR"
+    }
+  },
+  {
+    "userAgent": "WirtschaftsWoche-iOS-1.1.14-20200824.1315",
+    "client": {
+      "type": 0,
+      "name": "Wirtschafts Woche",
+      "version": "1.1.14"
+    }
+  },
+  {
+    "userAgent": "TVirl/0.3.2.2 (Linux;Android 7.0)",
+    "client": {
+      "type": 0,
+      "name": "TVirl",
+      "version": "0.3.2.2"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; JNY-LX1 Build/HUAWEIJNY-L21; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.108 Mobile Safari/537.36 BNC/1.7.0 (Android 1.39.4)",
+    "client": {
+      "type": 0,
+      "name": "Binance",
+      "version": "1.39.4"
+    }
+  },
+  {
+    "userAgent": "ru.mail.my/2.8.15 (iOS 14.4; iPhone; Scale/2); mmMobileClient",
+    "client": {
+      "type": 0,
+      "name": "My World",
+      "version": "2.8.15"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 8.1.0; C1 Build/O11019; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/69.0.3497.100 Mobile Safari/537.36 OKAndroid/19.11.26 b577 OkApp",
+    "client": {
+      "type": 0,
+      "name": "Odnoklassniki",
+      "version": "19.11.26"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPad; CPU iPhone OS 10_3_3 like Mac OS X) AppleWebKit/602.3.12 (KHTML, like Gecko) Mobile/14C92 (iPad3,4) OKiOS/6.10.2 OKApp",
+    "client": {
+      "type": 0,
+      "name": "Odnoklassniki",
+      "version": "6.10.2"
+    }
+  },
+  {
+    "userAgent": "com.netflix.mediaclient/35245 (Linux; U; Android 5.1.1; es_ES; KFDOWI; Build/LVY48F; Cronet/76.0.3809.111)",
+    "client": {
+      "type": 0,
+      "name": "Netflix"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) yakyak/1.5.0 Chrome/58.0.3029.110 Electron/1.7.10 Safari/537.36",
+    "client": {
+      "type": 0,
+      "name": "YakYak",
+      "version": "1.5.0"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Teams/1.3.00.362 Chrome/66.0.3359.181 Electron/3.1.13 Safari/537.36",
+    "client": {
+      "type": 0,
+      "name": "Teams",
+      "version": "1.3.00.362"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) StreamlabsOBS/0.23.2 Chrome/76.0.3809.146 Electron/6.1.11 Safari/537.36",
+    "client": {
+      "type": 0,
+      "name": "Streamlabs OBS",
+      "version": "0.23.2"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) TuneIn/1.20.0 Chrome/69.0.3497.128 Electron/4.2.8 Safari/537.36",
+    "client": {
+      "type": 0,
+      "name": "TuneIn Radio",
+      "version": "1.20.0"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) strimio-desktop/2.33.10 Chrome/87.0.4280.141 Electron/11.4.3 Safari/537.36",
+    "client": {
+      "type": 0,
+      "name": "Strimio",
+      "version": "2.33.10"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Blitz/1.14.3 Chrome/87.0.4280.141 Electron/11.2.1 Safari/537.36",
+    "client": {
+      "type": 0,
+      "name": "Blitz",
+      "version": "1.14.3"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 11;) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.210 Mobile Safari/537.36 Vuhuv/2.1.0519",
+    "client": {
+      "type": 0,
+      "name": "Vuhuv",
+      "version": "2.1.0519"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; U; Android 8.0.0; en-us) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/53.0.2785.146 Mobile Safari/537.36 QuickCast",
+    "client": {
+      "type": 0,
+      "name": "QuickCast"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; U; Android 11; zh-CN; SM-A515F Build/RP1A.200720.012) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/69.0.3497.100 UWS/3.22.1.117 Mobile Safari/537.36 AliApp(AliexpressAndroid/8.28.0) UCBS/2.11.1.1",
+    "client": {
+      "type": 0,
+      "name": "AliExpress",
+      "version": "8.28.0"
+    }
+  },
+  {
+    "userAgent": "M2003J15SC(Android/11) AliApp(AliExpress/8.5.1) Weex/0.26.4.9-ae vercode/307 1080x2110",
+    "client": {
+      "type": 0,
+      "name": "AliExpress",
+      "version": "8.5.1"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 5.1.1) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Blue Proxy/1.0.18 Chrome/74.0.3729.157 Mobile Safari/537.36",
+    "client": {
+      "type": 0,
+      "name": "Blue Proxy",
+      "version": "1.0.18"
+    }
+  },
+  {
+    "userAgent": "COAF%20SMART%20Citizen/3331 CFNetwork/1206 Darwin/20.1.0",
+    "client": {
+      "type": 0,
+      "name": "COAF SMART Citizen"
+    }
+  },
+  {
+    "userAgent": "Podkicker Classic/1.2.9",
+    "client": {
+      "type": 0,
+      "name": "Podkicker Classic",
+      "version": "1.2.9"
+    }
+  },
+  {
+    "userAgent": "iTunes/10.7 Downcast/2.8.24.1002",
+    "client": {
+      "type": 0,
+      "name": "Downcast",
+      "version": "2.8.24.1002"
+    }
+  },
+  {
+    "userAgent": "Pocket Casts",
+    "client": {
+      "type": 0,
+      "name": "Pocket Casts"
+    }
+  },
+  {
+    "userAgent": "devcasts/1.0.3.24 CFNetwork/1240.0.4 Darwin/20.5.0",
+    "client": {
+      "type": 0,
+      "name": "DevCasts",
+      "version": "1.0.3.24"
+    }
+  },
+  {
+    "userAgent": "GaanaAndroid-8.27.3/Dalvik/2.1.0 (Linux; U; Android 9; Redmi Note 8 MIUI/V11.0.6.0.PCOINXM)",
+    "client": {
+      "type": 0,
+      "name": "Gaana",
+      "version": "8.27.3"
+    }
+  },
+  {
+    "userAgent": "AhaRadio2/8.12.3 CFNetwork/976 Darwin/18.2.0",
+    "client": {
+      "type": 0,
+      "name": "Aha Radio 2",
+      "version": "8.12.3"
+    }
+  },
+  {
+    "userAgent": "Unibox/428 CFNetwork/811.5.4 Darwin/16.6.0 (x86_64)",
+    "client": {
+      "type": 0,
+      "name": "Unibox"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 12_5_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 musical_ly_21.0.0 JsSdk/2.0 NetType/WIFI Channel/App Store ByteLocale/ru Region/UA ByteFullLocale/ru-RU isDarkMode/0 WKWebView/1",
+    "client": {
+      "type": 0,
+      "name": "TikTok",
+      "version": "21.0.0"
+    }
+  },
+  {
+    "userAgent": "HikConnect/200717 (iPhone; iOS 14.4; Scale/2.00)",
+    "client": {
+      "type": 0,
+      "name": "Hik-Connect"
+    }
+  },
+  {
+    "userAgent": "Pinterest for Android Tablet/9.32.1 (gta4xlwifi; 11)",
+    "client": {
+      "type": 0,
+      "name": "Pinterest",
+      "version": "9.32.1"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; Cortana 1.14.2.19041; 10.0.0.0.19042.1288) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 Edge/18.19042",
+    "client": {
+      "type": 0,
+      "name": "Cortana",
+      "version": "1.14.2.19041"
+    }
+  },
+  {
+    "userAgent": "Opera News/8.3.2254.55686/52.0.2743.10 (Android 11)",
+    "client": {
+      "type": 0,
+      "name": "Opera News",
+      "version": "8.3.2254.55686"
+    }
+  },
+  {
+    "userAgent": "CreativeCloud/5.6.0.788/Mac-11.4",
+    "client": {
+      "type": 0,
+      "name": "Adobe Creative Cloud",
+      "version": "5.6.0.788"
+    }
+  },
+  {
+    "userAgent": "iPhoneLync/6.28.1.8 (iPhone iOS 14.7.1)",
+    "client": {
+      "type": 0,
+      "name": "Skype for Business",
+      "version": "6.28.1.8"
+    }
+  },
+  {
+    "userAgent": "Flipp-iOS/775 CFNetwork/1240.0.4 Darwin/20.6.0",
+    "client": {
+      "type": 0,
+      "name": "Flipp"
+    }
+  },
+  {
+    "userAgent": "Flipp-iOS/19.0.0 (iPhone; iOS 14.8; Scale/2.00)",
+    "client": {
+      "type": 0,
+      "name": "Flipp",
+      "version": "19.0.0"
+    }
+  },
+  {
+    "userAgent": "rekordbox/5.8.6.0004 Windows 10(64bit)",
+    "client": {
+      "type": 0,
+      "name": "rekordbox",
+      "version": "5.8.6.0004"
+    }
+  },
+  {
+    "userAgent": "GoogleSoftwareUpdate/1.3.16.180 CFNetwork/1325.0.1 Darwin/21.1.0",
+    "client": {
+      "type": 0,
+      "name": "Chrome Update",
+      "version": "1.3.16.180"
+    }
+  },
+  {
+    "userAgent": "Google Update/1.3.36.112;winhttp",
+    "client": {
+      "type": 0,
+      "name": "Chrome Update",
+      "version": "1.3.36.112"
+    }
+  },
+  {
+    "userAgent": "Microsoft-WNS/10.0",
+    "client": {
+      "type": 0,
+      "name": "Windows Push Notification Services",
+      "version": "10.0"
+    }
+  },
+  {
+    "userAgent": "Microsoft BITS/7.8",
+    "client": {
+      "type": 0,
+      "name": "Background Intelligent Transfer Service",
+      "version": "7.8"
+    }
+  },
+  {
+    "userAgent": "ERA Agent Update (Windows; U; 64bit; BPC 8.0.1238.0; OS: 10.0.19042 SP 0.0 NT; x64c; APP era; HWF: 0100CC8A-BE80-F512-E058-0DE202DAC0CB; PLOC en_US; PCODE 901.0.0; PX 0)",
+    "client": {
+      "type": 0,
+      "name": "ESET Remote Administrator"
+    }
+  },
+  {
+    "userAgent": "EpicGamesLauncher/12.0.8-15573162   Portal Release-Live Windows/10.0.19041.1.768.64bit",
+    "client": {
+      "type": 0,
+      "name": "Epic Games Launcher",
+      "version": "12.0.8"
+    }
+  },
+  {
+    "userAgent": "Microsoft-WebDAV-MiniRedir/10.0.19042",
+    "client": {
+      "type": 0,
+      "name": "WebDAV"
+    }
+  },
+  {
+    "userAgent": "Battle.net/2.6.0.13147 (retail)",
+    "client": {
+      "type": 0,
+      "name": "Battle.net",
+      "version": "2.6.0.13147"
+    }
+  },
+  {
+    "userAgent": "Bookshelf-Android/10.0.3 (Android OS/9; Samsung Chromebook 3) vitalsource",
+    "client": {
+      "type": 0,
+      "name": "Bookshelf",
+      "version": "10.0.3"
+    }
+  },
+  {
+    "userAgent": "RaveSocial/3.8.5;Android/10;Density/1.96875;Device/SM-A705FN;Manufacturer/samsung;ScreenWidth/810;ScreenHeight/1649",
+    "client": {
+      "type": 0,
+      "name": "Rave Social",
+      "version": "3.8.5"
+    }
+  },
+  {
+    "userAgent": "wordcookies/21.0930.01 CFNetwork/1240.0.4 Darwin/20.6.0",
+    "client": {
+      "type": 0,
+      "name": "Word Cookies!",
+      "version": "21.0930.01"
+    }
+  },
+  {
+    "userAgent": "iOS/14.8 com.meevii.bibleKJV/2.83.0",
+    "client": {
+      "type": 0,
+      "name": "Bible KJV",
+      "version": "2.83.0"
+    }
+  },
+  {
+    "userAgent": "MetaTrader 5 Terminal/5.2981 (Windows NT 10.0.19042; x64)",
+    "client": {
+      "type": 0,
+      "name": "MetaTrader",
+      "version": "5.2981"
+    }
+  },
+  {
+    "userAgent": "ios/14.8 com.paint.bynumber/2.72.0",
+    "client": {
+      "type": 0,
+      "name": "Paint by Number",
+      "version": "2.72.0"
+    }
+  },
+  {
+    "userAgent": "ios.zepeto_global/3.6.2 (ios; U; iOS 14.7.1; en-CA; occ-CA; iPhone 11);ZEPETO",
+    "client": {
+      "type": 0,
+      "name": "ZEPETO",
+      "version": "3.6.2"
+    }
+  },
+  {
+    "userAgent": "Jungle Disk Workgroup HTTP/110 (Windows 10.0 64-bit)",
+    "client": {
+      "type": 0,
+      "name": "Jungle Disk"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Android) Nextcloud-android/3.17.1",
+    "client": {
+      "type": 0,
+      "name": "Nextcloud",
+      "version": "3.17.1"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPad; CPU OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 TeamsMobile-iOS",
+    "client": {
+      "type": 0,
+      "name": "Teams"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 GoNativeIOS/1.0 gonative",
+    "client": {
+      "type": 0,
+      "name": "GoNative",
+      "version": "1.0"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_4_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Pandora/2108.1.1",
+    "client": {
+      "type": 0,
+      "name": "Pandora",
+      "version": "2108.1.1"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Safari/605.1 Blackboard/6.9",
+    "client": {
+      "type": 0,
+      "name": "Blackboard",
+      "version": "6.9"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_8 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Mobile/12A365 QQMusic/10.18.0 Mskin/white Mcolor/22d59cff Bcolor/00000000 skinid[902] NetType/2G WebView/UIWebView Released[1] zh-Hans-JP DeviceModel/iPhone13,4 skin_css/skin2_1_902 Pixel/1284 FreeFlow/0 teenMode/0 nft_released/[1] FontMode/0]  pixel/1284 model/iPhone13,4",
+    "client": {
+      "type": 0,
+      "name": "QQMusic",
+      "version": "10.18.0"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148  etoro-cordova-app",
+    "client": {
+      "type": 0,
+      "name": "eToro"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_16_0) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.11.1 Chrome/65.0.3325.230 Safari/537.36 Avid Link Desktop App/20.4.0.1302",
+    "client": {
+      "type": 0,
+      "name": "Avid Link",
+      "version": "20.4.0.1302"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 11; SM-N981U Build/RP1A.200720.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/95.0.4638.50 Mobile Safari/537.36 Blackboard/unspecified",
+    "client": {
+      "type": 0,
+      "name": "Blackboard"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 11; SM-G973F Build/RP1A.200720.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/95.0.4638.74 Mobile Safari/537.36 [FBAN/AudienceNetworkForAndroid;FBSN/Android;FBSV/11;FBAB/com.dopuz.klotski.riddle;FBAV/5.1701;FBBV/51701;FBVS/6.7.0;FBLC/en_GB]",
+    "client": {
+      "type": 0,
+      "name": "Facebook Audience Network",
+      "version": "5.1701"
+    }
+  },
+  {
+    "userAgent": "Gibbon/2020.2.2.0/2020.2.2.0: Netflix/2020.2.2.0 (DEVTYPE=NFANDROID2-PRV-FIRETVSTICK2018; CERTVER=0)",
+    "client": {
+      "type": 0,
+      "name": "Netflix",
+      "version": "2020.2.2.0"
+    }
+  },
+  {
+    "userAgent": "GoogleTagManager/4.00 (Linux; U; Android 9; en-us; U693CL Build/U693CL_01.02.03)",
+    "client": {
+      "type": 0,
+      "name": "Google Tag Manager",
+      "version": "4.00"
+    }
+  },
+  {
+    "userAgent": "Mozilla/3.0 (compatible; Adobe Synchronizer 21.7.20095)",
+    "client": {
+      "type": 0,
+      "name": "Adobe Synchronizer",
+      "version": "21.7.20095"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux) mirall/2.5.1",
+    "client": {
+      "type": 0,
+      "name": "Nextcloud",
+      "version": "2.5.1"
+    }
+  },
+  {
+    "userAgent": "BlueStacks/4.260.0.1020/87750099-46c9-43c0-8eb9-90c8687934ce gzip",
+    "client": {
+      "type": 0,
+      "name": "BlueStacks",
+      "version": "4.260.0.1020"
+    }
+  },
+  {
+    "userAgent": "BlueStacks 5/5.0.230.1001/a86919c0-9431-426e-8862-c346ce1e4f38 gzip",
+    "client": {
+      "type": 0,
+      "name": "BlueStacks",
+      "version": "5.0.230.1001"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.18362.1714",
+    "client": {
+      "type": 0,
+      "name": "PowerShell",
+      "version": "5.1.18362.1714"
+    }
+  },
+  {
+    "userAgent": "PAN GlobalProtect/5.2.6-87 (Microsoft Windows 10 Enterprise , 64-bit) Mozilla/5.0 (Windows NT 6.2; Win64; x64; Trident/7.0; rv:11.0) like Gecko",
+    "client": {
+      "type": 0,
+      "name": "GlobalProtect",
+      "version": "5.2.6"
+    }
+  },
+  {
+    "userAgent": "Theyub v7.4.8 IOS iPhoneXSMax CA en",
+    "client": {
+      "type": 0,
+      "name": "Theyub",
+      "version": "7.4.8"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) discord/1.0.9003 Chrome/91.0.4472.164 Electron/13.4.0 Safari/537.36",
+    "client": {
+      "type": 0,
+      "name": "Discord",
+      "version": "1.0.9003"
+    }
+  },
+  {
+    "userAgent": "Discord-Updater/1",
+    "client": {
+      "type": 0,
+      "name": "Discord"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) TradingView/1.0.0-beta.15 Chrome/96.0.4664.55 Safari/537.36 TVDesktop/1.0.0-beta.15",
+    "client": {
+      "type": 0,
+      "name": "TradingView",
+      "version": "1.0.0"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 11) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.127 Mobile Safari/537.36 Instabridge",
+    "client": {
+      "type": 0,
+      "name": "Instabridge"
+    }
+  },
+  {
+    "userAgent": "Be Focused/104 CFNetwork/976 Darwin/18.2.0",
+    "client": {
+      "type": 0,
+      "name": "Be Focused"
+    }
+  },
+  {
+    "userAgent": "Focuskeeper/2.0.15.4 CFNetwork/1240.0.4 Darwin/20.5.0",
+    "client": {
+      "type": 0,
+      "name": "Focus Keeper",
+      "version": "2.0.15.4"
+    }
+  },
+  {
+    "userAgent": "Focus Matrix/155 CFNetwork/976 Darwin/18.2.0",
+    "client": {
+      "type": 0,
+      "name": "Focus Matrix"
+    }
+  },
+  {
+    "userAgent": "WindowsStoreSDK",
+    "client": {
+      "type": 0,
+      "name": "Microsoft Store"
+    }
+  },
+  {
+    "userAgent": "Asus Update/1.3.107.67;winhttp;cup-ecdsa",
+    "client": {
+      "type": 0,
+      "name": "ASUS Updater",
+      "version": "1.3.107.67"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Skype/8.79.0.95 Chrome/91.0.4472.164 Electron/13.6.0 Safari/537.36",
+    "client": {
+      "type": 0,
+      "name": "Skype",
+      "version": "8.79.0.95"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; M2004J19C Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/80.0.3987.99 Mobile Safari/537.36 imoAndroid/2020.07.3051; 10; REL; M2004J19C; Redmi; play; phone; arm64-v8a; galahad; 2000MHz;",
+    "client": {
+      "type": 0,
+      "name": "IMO HD Video Calls & Chat",
+      "version": "2020.07.3051"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; M2006C3LG Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/87.0.4280.101 Mobile Safari/537.36 imoAndroid/9.8.000000012091; 10; REL; M2006C3LG; Redmi; pl",
+    "client": {
+      "type": 0,
+      "name": "IMO International Calls & Chat",
+      "version": "9.8.000000012091"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 8.1.0; DUB-LX1 Build/HUAWEIDUB-LX1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.83 Mobile Safari/537.36 [FB_IAB/Orca-Android;FBAV/267.0.0.15.119;]",
+    "client": {
+      "type": 0,
+      "name": "Facebook Messenger",
+      "version": "267.0.0.15.119"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 9; SM-J415F Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.101 Mobile Safari/537.36[FBAN/EMA;FBLC/ar_AR;FBAV/201.0.0.7.119;]",
+    "client": {
+      "type": 0,
+      "name": "Facebook Lite",
+      "version": "201.0.0.7.119"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; NEN-L22 Build/HUAWEINEN-L22; ) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.106 Mobile Safari/537.36 BingSapphire/21.6.390910305",
+    "client": {
+      "type": 0,
+      "name": "Microsoft Bing",
+      "version": "21.6.390910305"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; JNY-LX1 Build/HUAWEIJNY-L21; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.93 Mobile Safari/537.36HiSearch/21.1.11.300",
+    "client": {
+      "type": 0,
+      "name": "HiSearch",
+      "version": "21.1.11.300"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.5 Mobile/15E148 Safari/604.1 RDDocuments/8.1.8.826",
+    "client": {
+      "type": 0,
+      "name": "RDDocuments",
+      "version": "8.1.8.826"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/FSCDCSafe 18.5.274700 18.5.274700 15.0 Safari/605.1.15",
+    "client": {
+      "type": 0,
+      "name": "F-Secure SAFE",
+      "version": "18.5.274700"
+    }
+  },
+  {
+    "userAgent": "Twitterrific/977 CFNetwork/1128.0.1 Darwin/19.6.0",
+    "client": {
+      "type": 0,
+      "name": "Twitterrific"
+    }
+  },
+  {
+    "userAgent": "UconnectLive/2 CFNetwork/1197 Darwin/20.0.0",
+    "client": {
+      "type": 0,
+      "name": "Uconnect LIVE"
+    }
+  },
+  {
+    "userAgent": "WeChat/7.0.12.33 CFNetwork/1125.2 Darwin/19.4.0",
+    "client": {
+      "type": 0,
+      "name": "WeChat",
+      "version": "7.0.12.33"
+    }
+  },
+  {
+    "userAgent": "Wayback%20Machine%20Extension/16 CFNetwork/978.2 Darwin/18.7.0 (x86_64)",
+    "client": {
+      "type": 0,
+      "name": "Wayback Machine"
+    }
+  },
+  {
+    "userAgent": "Google.DriveExtension/4.2020.46208 (OS=iOS;OSVer=13.6;Manufacturer=Apple;Model=iPhone_11_Pro_Max) gzip",
+    "client": {
+      "type": 0,
+      "name": "Google Drive",
+      "version": "4.2020.46208"
+    }
+  },
+  {
+    "userAgent": "H10P/com.Nanoteq.QmunicateH10p;os=Apple-iOS;model=iPhone9,3;osversion=13.6/3.1.0 (belle-sip/1.6.1)",
+    "client": {
+      "type": 0,
+      "name": "Q-municate",
+      "version": "3.1.0"
+    }
+  },
+  {
+    "userAgent": "LightSpeed [FBAN/mLite;FBAV/171.0.0.53.116;FBBV/227057459;FBDV/iPhone7,1;FBMD/iPhone;FBSN/iOS;FBSV/12.4.9;FBSS/3;FBCR/;FBID/phone;FBLC/vi_VN;FBOP/0]",
+    "client": {
+      "type": 0,
+      "name": "Facebook Messenger Lite",
+      "version": "171.0.0.53.116"
+    }
+  },
+  {
+    "userAgent": "Dalvik/2.1.0 (Linux; U; Android 10; SM-G970U1 Build/QP1A.190711.020) [FBAN/MessengerLite;FBAV/78.0.1.18.236;FBPN/com.facebook.mlite;FBLC/es_MX;FBBV/201616056;FBCR/TELCEL;FBMF/samsung;FBBD/samsung;FBDV/SM-G970U1;FBSV/10;FBCA/arm64-v8a:null;FBDM/{density=3.0,width=1080,height=2020};]",
+    "client": {
+      "type": 0,
+      "name": "Facebook Messenger Lite",
+      "version": "78.0.1.18.236"
+    }
+  },
+  {
+    "userAgent": "NET.mede/1 CFNetwork/897.15 Darwin/17.5.0",
+    "client": {
+      "type": 0,
+      "name": "NET.mede"
+    }
+  },
+  {
+    "userAgent": "My%20Bentley/23349.201118110633 CFNetwork/1197 Darwin/20.0.0",
+    "client": {
+      "type": 0,
+      "name": "My Bentley"
+    }
+  },
+  {
+    "userAgent": "Skyeng%20App/774 CFNetwork/1126 Darwin/19.5.0",
+    "client": {
+      "type": 0,
+      "name": "Skyeng"
+    }
+  },
+  {
+    "userAgent": "Skyeng%20Teachers/17 CFNetwork/1121.2.2 Darwin/19.2.0",
+    "client": {
+      "type": 0,
+      "name": "Skyeng Teachers"
+    }
+  },
+  {
+    "userAgent": "MBolsa/20170720 CFNetwork/889.9 Darwin/17.4.0",
+    "client": {
+      "type": 0,
+      "name": "MBolsa"
+    }
+  },
+  {
+    "userAgent": "MEmpresas/20180605 CFNetwork/902.2 Darwin/17.7.0",
+    "client": {
+      "type": 0,
+      "name": "MEmpresas"
+    }
+  },
+  {
+    "userAgent": "Millennium%20Empresas/20170526.2 CFNetwork/711.1.12 Darwin/14.0.0",
+    "client": {
+      "type": 0,
+      "name": "MEmpresas"
+    }
+  },
+  {
+    "userAgent": "Millennium%20Corp/20170328.3 CFNetwork/902.2 Darwin/17.7.0",
+    "client": {
+      "type": 0,
+      "name": "Bank Millenium"
+    }
+  },
+  {
+    "userAgent": "Millennium/20170412 CFNetwork/902.2 Darwin/17.7.0",
+    "client": {
+      "type": 0,
+      "name": "Bank Millenium"
+    }
+  },
+  {
+    "userAgent": "OrangeRadio/3.3.5 CFNetwork/1197 Darwin/20.0.0",
+    "client": {
+      "type": 0,
+      "name": "Orange Radio",
+      "version": "3.3.5"
+    }
+  },
+  {
+    "userAgent": "Radio%20Italiane/1.0 CFNetwork/1126 Darwin/19.5.0",
+    "client": {
+      "type": 0,
+      "name": "Radio Italiane",
+      "version": "1.0"
+    }
+  },
+  {
+    "userAgent": "com.apple.Safari.SearchHelper/14608.5.12 CFNetwork/978.3 Darwin/18.7.0 (x86_64)",
+    "client": {
+      "type": 0,
+      "name": "Safari Search Helper",
+      "version": "14608.5.12"
+    }
+  },
+  {
+    "userAgent": "Citrix%20Viewer/700020.06.0.7 CFNetwork/1120 Darwin/19.0.0 (x86_64)",
+    "client": {
+      "type": 0,
+      "name": "Citrix Workspace"
+    }
+  },
+  {
+    "userAgent": "com.mercbank.s1mobileipad/108 CFNetwork/1128.0.1 Darwin/19.6.0",
+    "client": {
+      "type": 0,
+      "name": "Mercantile Bank of Michigan"
+    }
+  },
+  {
+    "userAgent": "D-Stream%20Air/1 CFNetwork/1206 Darwin/20.1.0",
+    "client": {
+      "type": 0,
+      "name": "DStream Air"
+    }
+  },
+  {
+    "userAgent": "ExpediaBookings/3612 CFNetwork/1125.2 Darwin/19.4.0",
+    "client": {
+      "type": 0,
+      "name": "Expedia"
+    }
+  },
+  {
+    "userAgent": "GroupMe/5.39.0.2 CFNetwork/1121.2.2 Darwin/19.2.0",
+    "client": {
+      "type": 0,
+      "name": "GroupMe",
+      "version": "5.39.0.2"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_2 like Mac OS X) AppleWebKit/602.3.12 (KHTML, like Gecko) Mobile/14C92 [FBAN/FBPageAdmin;FBAV/63.0;FBBV/47727787;FBRV/0;FBDV/iPhone7,1;FBMD/iPhone;FBSN/iOS;FBSV/10.2;FBSS/3;FBCR/Sprint;FBID/phone;FBLC/en_US;FBOP/5]",
+    "client": {
+      "type": 0,
+      "name": "Meta Business Suite",
+      "version": "63.0"
+    }
+  },
+  {
+    "userAgent": "Windows Antivirus 21.11.2500",
+    "client": {
+      "type": 0,
+      "name": "Windows Antivirus",
+      "version": "21.11.2500"
+    }
+  },
+  {
+    "userAgent": "Reflect",
+    "client": {
+      "type": 0,
+      "name": "Macrium Reflect"
+    }
+  },
+  {
+    "userAgent": "Opera autoupdate agent",
+    "client": {
+      "type": 0,
+      "name": "Opera Updater"
+    }
+  },
+  {
+    "userAgent": "Ballz/2.7.1 CFNetwork/1327.0.4 Darwin/21.2.0",
+    "client": {
+      "type": 0,
+      "name": "Ballz",
+      "version": "2.7.1"
+    }
+  },
+  {
+    "userAgent": "rnps-action-cards/4.2.0+45353 RNPS/4.50 (PlayStation 5)",
+    "client": {
+      "type": 0,
+      "name": "RNPS Action Cards",
+      "version": "4.2.0"
+    }
+  },
+  {
+    "userAgent": "PlexMediaServer/1.21.1.3830-6c22540d5",
+    "client": {
+      "type": 0,
+      "name": "Plex Media Server",
+      "version": "1.21.1.3830"
+    }
+  },
+  {
+    "userAgent": "com.tinyspeck.chatlyio/22.01.10; iPhone; iOS 15.2; Scale/3.00",
+    "client": {
+      "type": 0,
+      "name": "Slack",
+      "version": "22.01.10"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 8.1.0; SM-T595 Build/M1AJQ; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 Safari/537.36 TeamsMobile-Android",
+    "client": {
+      "type": 0,
+      "name": "Teams"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Randomized by FreeSafeIP.com/upgrade-to-remove; compatible; MSIE 8.0; Windows NT 5.0) Chrome/22.0.1229.79",
+    "client": {
+      "type": 0,
+      "name": "SafeIP"
+    }
+  },
+  {
+    "userAgent": "Chrome/Soldier_0.3.0 (Windows NT 10.0)",
+    "client": {
+      "type": 0,
+      "name": "Soldier",
+      "version": "0.3.0"
+    }
+  },
+  {
+    "userAgent": "SurfsharkAndroid/2.7.7.5 com.surfshark.vpnclient.android/release/playStore/207070500 Dalvik/2.1.0 (Linux; U; Android 11; SM-T290 Build/RP1A.200720.012) Version/4.0 Chrome/43.0.2357.65 Mobile Safari/537.36",
+    "client": {
+      "type": 0,
+      "name": "Surfshark",
+      "version": "2.7.7.5"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 11; SM-A326U Build/RP1A.200720.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/98.0.4758.101 Mobile Safari/537.36 Platform/Android11 APP/yym-hago-and4.14.1 Channel/(official) Model/SM-A326U Browser/Default Language/es_us  Environment/Online NetType/4g UserMode/Registered",
+    "client": {
+      "type": 0,
+      "name": "Hago",
+      "version": "4.14.1"
+    }
+  },
+  {
+    "userAgent": "Azureus 5.7.6.0;Windows 7;Java 1.8.0_281",
+    "client": {
+      "type": 0,
+      "name": "Vuze",
+      "version": "5.7.6.0"
+    }
+  },
+  {
+    "userAgent": "com.google.android.apps.photos/43276487 (Linux; U; Android 11; Redmi Note 9S; Build/RKQ1.200826.002; Cronet/102.0.4973.2) (gzip)",
+    "client": {
+      "type": 0,
+      "name": "Google Photos"
+    }
+  },
+  {
+    "userAgent": "IPM",
+    "client": {
+      "type": 0,
+      "name": "Adobe IPM"
+    }
+  },
+  {
+    "userAgent": "NGL Client/1.28.0.10 (WINDOWS_64/10.0.19044.1) [2022-04-28T01:01:27.003 0200]",
+    "client": {
+      "type": 0,
+      "name": "Adobe NGL",
+      "version": "1.28.0.10"
+    }
+  },
+  {
+    "userAgent": "/Satoshi:22.0.0/",
+    "client": {
+      "type": 0,
+      "name": "Bitcoin Core",
+      "version": "22.0.0"
+    }
+  },
+  {
+    "userAgent": "/Shibetoshi:1.14.6/",
+    "client": {
+      "type": 0,
+      "name": "Dogecoin Core",
+      "version": "1.14.6"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 11; Build/RKQ1.201217.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/75.0.3770.156 Mobile Safari/537.36 WpsMoffice/13.23.1/armeabi-v7a/1310",
+    "client": {
+      "type": 0,
+      "name": "WPS Office",
+      "version": "13.23.1"
+    }
+  },
+  {
+    "userAgent": "jitsi-meet/168 CFNetwork/1329 Darwin/21.3.0",
+    "client": {
+      "type": 0,
+      "name": "Jitsi Meet"
+    }
+  },
+  {
+    "userAgent": "Don't Waste My Time! Extension/1.0 (skavans.dont-waste-my-time.extension; build:2; macOS 10.15.7) Alamofire/5.0.4",
+    "client": {
+      "type": 0,
+      "name": "Don't Waste My Time!",
+      "version": "1.0"
+    }
+  },
+  {
+    "userAgent": "Surfshark/3.0.2 ;(Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1 Mobile/15E148 Safari/604.1);(com.surfshark.vpnclient.ios; build:6; iOS 15.3.1) sshark.app.ios",
+    "client": {
+      "type": 0,
+      "name": "Surfshark",
+      "version": "3.0.2"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPhone; CPU OS 15_1_1 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) 1Password/7.9.5 (like Version/15.1.1 Mobile/19B81 Safari/600.1.4)",
+    "client": {
+      "type": 0,
+      "name": "1Password",
+      "version": "7.9.5"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 iOSStartsidenApp",
+    "client": {
+      "type": 0,
+      "name": "Startsiden"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPad; CPU OS 5_1 like Mac OS X; en-us) AppleWebKit/534.46 (KHTML, like Gecko) Version/5.1 Mobile/9B176 Safari/7534.48.3 HisThumbnail/1",
+    "client": {
+      "type": 0,
+      "name": "HisThumbnail"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.3.1 Mobile/15E148 Safari/605.1.15 NewsSapphire/1.0.400324001",
+    "client": {
+      "type": 0,
+      "name": "Microsoft Start",
+      "version": "1.0.400324001"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPhone13,4; CPU iPhone13,4 OS 15_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 YahooMobileSearch/1.0 OneSearch/2.3.2.0",
+    "client": {
+      "type": 0,
+      "name": "Yahoo OneSearch",
+      "version": "2.3.2.0"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPad; CPU OS 12_5_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Safari/601.1 bingipadclient BingWeb",
+    "client": {
+      "type": 0,
+      "name": "Microsoft Bing"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; rv:80.0) Gecko/20100101 Firefox/80.0 anonymized by Abelssoft 1003141044",
+    "client": {
+      "type": 0,
+      "name": "AntiBrowserSpy"
+    }
+  },
+  {
+    "userAgent": "Viber",
+    "client": {
+      "type": 0,
+      "name": "Viber"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 12; 2107113SG Build/SKQ1.211006.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/103.0.5060.129 Mobile Safari/537.36 Reddit/Version 2022.28.0/Build 533235/Android 12",
+    "client": {
+      "type": 0,
+      "name": "Reddit",
+      "version": "2022.28.0"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 12; SM-G991B Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/100.0.4896.127 Mobile Safari/537.36 TuyaSmart/3.38.1 TuyaSmartH5/1.0.0 TuyaHybrid/1.0.0 For Android/31",
+    "client": {
+      "type": 0,
+      "name": "Tuya Smart Life",
+      "version": "3.38.1"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; PRODUCT Build/MANUFACTURERJNY-L21; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.93 Mobile Safari/537.36 JsKit/1.0 (Android) (Android)SohuNews/6.7.8 BuildCode/795 JsKit/1.0 Chrome/88.0.4324.93",
+    "client": {
+      "type": 0,
+      "name": "SohuNews",
+      "version": "6.7.8"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_2 like Mac OS X) AppleWebKit/603.2.4 (KHTML, like Gecko) Mobile/14F89 JsKit/1.0 (iOS) /SohuNews SohuNews/5.9.2",
+    "client": {
+      "type": 0,
+      "name": "SohuNews",
+      "version": "5.9.2"
+    }
+  },
+  {
+    "userAgent": "Spotify/8.7.70 iOS/16.0 (iPhone15,2)",
+    "client": {
+      "type": 0,
+      "name": "Spotify",
+      "version": "8.7.70"
+    }
+  },
+  {
+    "userAgent": "AmazonMusic/22.11.0 iPhone12,5 CFNetwork/1335.0.3 Darwin/21.6.0",
+    "client": {
+      "type": 0,
+      "name": "Amazon Music",
+      "version": "22.11.0"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_5_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Klarna/21.19.146",
+    "client": {
+      "type": 0,
+      "name": "Klarna",
+      "version": "21.19.146"
+    }
+  },
+  {
+    "userAgent": "YoWhatsApp2Plus/2.22.10.73 A",
+    "client": {
+      "type": 0,
+      "name": "WhatsApp+2",
+      "version": "2.22.10.73"
+    }
+  },
+  {
+    "userAgent": "R/3.6.0 (ubuntu-16.04) R (3.6.0 x86_64-pc-linux-gnu x86_64 linux-gnu)",
+    "client": {
+      "type": 0,
+      "name": "R",
+      "version": "3.6.0"
+    }
+  },
+  {
+    "userAgent": "Microsoft Office Existence Discovery",
+    "client": {
+      "type": 0,
+      "name": "Microsoft Office"
+    }
+  },
+  {
+    "userAgent": "TinyTap/4.2.4 (iPad; iPadOS 15.4.1; Scale/2.00)",
+    "client": {
+      "type": 0,
+      "name": "TinyTap",
+      "version": "4.2.4"
+    }
+  },
+  {
+    "userAgent": "RadioAppFree/1948 CFNetwork/1312 Darwin/21.0.0",
+    "client": {
+      "type": 0,
+      "name": "RadioApp"
+    }
+  },
+  {
+    "userAgent": "com.audible.playersdk.player/3.13.0 (Linux;Android 11) ExoPlayerLib/2.12.1",
+    "client": {
+      "type": 0,
+      "name": "Audible",
+      "version": "3.13.0"
+    }
+  },
+  {
+    "userAgent": "Audible, Android, 3.42.0, samsung, SM-S908E, b0qxxx, 13, 1.0, WIFI",
+    "client": {
+      "type": 0,
+      "name": "Audible",
+      "version": "3.42.0"
+    }
+  },
+  {
+    "userAgent": "Audible/659 CFNetwork/1220.1 Darwin/20.3.0",
+    "client": {
+      "type": 0,
+      "name": "Audible"
+    }
+  },
+  {
+    "userAgent": "Overcast/3.0 (+http://overcast.fm/; iOS podcast app)",
+    "client": {
+      "type": 0,
+      "name": "Overcast",
+      "version": "3.0"
+    }
+  },
+  {
+    "userAgent": "Overcast (+http://overcast.fm/; Apple Watch podcast app)",
+    "client": {
+      "type": 0,
+      "name": "Overcast"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; U; Android 10; zh-CN; M2006C3LG Build/QP1A.190711.020) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/69.0.3497.100 UWS/3.22.1.227 Mobile Safari/537.36 AliApp(LA/7.12.0) UCBS/2.11.1.1 TTID/600000@lazada_android_7.12.0 WindVane/8.5.0 720X1449",
+    "client": {
+      "type": 0,
+      "name": "Lazada",
+      "version": "7.12.0"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; U; Android 7.1.1; zh-CN; OPPO R11st Build/NMF26X) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.108 UCBrowser/11.9.4.974 UWS/2.14.0.3 Mobile Safari/537.36 AliApp(TB/7.8.3) UCBS/2.11.1.1 TTID/600000@taobao_android_7.8.3 WindVane/8.3.0 1080X2016",
+    "client": {
+      "type": 0,
+      "name": "Taobao",
+      "version": "7.8.3"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; U; Android 12; zh-CN; KB2000 Build/RKQ1.211119.001) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/69.0.3497.100 UWS/3.22.2.43 Mobile Safari/537.36 UCBS/3.22.2.43_220223200704 NebulaSDK/1.8.100112 Nebula AlipayDefined(nt:WIFI,ws:360|0|3.0) AliApp(AP/10.3.0.8000) AlipayClient/10.3.0.8000 Language/zh-Hans useStatusBar/true isConcaveScreen/true Region/CNAriver/1.0.0",
+    "client": {
+      "type": 0,
+      "name": "Alipay",
+      "version": "10.3.0.8000"
+    }
+  },
+  {
+    "userAgent": "HTTPrequestmaker",
+    "client": {
+      "type": 0,
+      "name": "HTTP request maker"
+    }
+  },
+  {
+    "userAgent": "GBWhatsApp/2.22.10.73 A",
+    "client": {
+      "type": 0,
+      "name": "GBWhatsApp",
+      "version": "2.22.10.73"
+    }
+  },
+  {
+    "userAgent": "Dalvik/2.1.0 (Linux; U; Android 11; SM-A125F Build/RP1A.200720.012) MyWatchParty/2.0.6",
+    "client": {
+      "type": 0,
+      "name": "My Watch Party",
+      "version": "2.0.6"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4668.2 Mobile Safari/537.36 Zalo android/12100580",
+    "client": {
+      "type": 0,
+      "name": "Zalo"
+    }
+  },
+  {
+    "userAgent": "otg/1.5.1 (AppleTv Apple TV 4; tvOS16.2; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56",
+    "client": {
+      "type": 0,
+      "name": "Apple TV"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPad; CPU OS 12_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148;WeRead/4.1.3 (iPad; iOS 12.3.1; Scale/2.00)",
+    "client": {
+      "type": 0,
+      "name": "WeRead",
+      "version": "4.1.3"
+    }
+  },
+  {
+    "userAgent": "Spotify/120800923 OSX/0 (MacBookPro6,2)",
+    "client": {
+      "type": 0,
+      "name": "Spotify",
+      "version": "120800923"
+    }
+  },
+  {
+    "userAgent": "TiviMate/4.7.0 (Onn. 4K Streaming Box; Android 12)",
+    "client": {
+      "type": 0,
+      "name": "TiviMate",
+      "version": "4.7.0"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 8.0.0; Sagemcom DIW387_UHD_OOR Build/21.4.60) IPTV/6.1.11",
+    "client": {
+      "type": 0,
+      "name": "IPTV",
+      "version": "6.1.11"
+    }
+  },
+  {
+    "userAgent": "Klarna/1 CFNetwork/1404.0.5 Darwin/22.3.0",
+    "client": {
+      "type": 0,
+      "name": "Klarna"
+    }
+  },
+  {
+    "userAgent": "MetaMask/1230 CFNetwork/1492.0.1 Darwin/23.3.0",
+    "client": {
+      "type": 0,
+      "name": "MetaMask"
+    }
+  },
+  {
+    "userAgent": "com.zhiliaoapp.musically/2023203040 (Linux; U; Android 13; en_US; SM-G990U; Build/TP1A.220624.014; Cronet/TTNetVersion:e8c372ba 2023-11-06 QuicVersion:0d108adb 2023-07-19)",
+    "client": {
+      "type": 0,
+      "name": "TikTok"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPad; CPU OS 16_5_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FSCDCSafe/20.1.291705 Mobile/15E148 Version/16.5.1 Safari/605.1.15",
+    "client": {
+      "type": 0,
+      "name": "F-Secure SAFE",
+      "version": "20.1.291705"
+    }
+  },
+  {
+    "userAgent": "+Simple Browser",
+    "client": {
+      "type": 0,
+      "name": "+Simple"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 11; JLN-LX3 Build/HUAWEIJLN-LX3; ) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.93 Mobile Safari/537.36 Sapphire/23.3.401205602",
+    "client": {
+      "type": 0,
+      "name": "Microsoft Bing",
+      "version": "23.3.401205602"
+    }
+  },
+  {
+    "userAgent": "Bitwarden_Mobile/2023.1.0 (Android 13; SDK 33; Model SM-F926B)",
+    "client": {
+      "type": 0,
+      "name": "Bitwarden",
+      "version": "2023.1.0"
+    }
+  },
+  {
+    "userAgent": "MXPlayer/1.73.3/2001002183; Android/33",
+    "client": {
+      "type": 0,
+      "name": "MX Player",
+      "version": "1.73.3"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Macintosh; PPC Mac OS X; en) AppleWebKit/537.75.14 (KHTML, like Gecko) HistoryHound/1.9",
+    "client": {
+      "type": 0,
+      "name": "HistoryHound",
+      "version": "1.9"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 7.1.2; Amlogic Alvatech GT1 Build/NHG47L) IPTV Pro/7.1.3",
+    "client": {
+      "type": 0,
+      "name": "IPTV Pro",
+      "version": "7.1.3"
+    }
+  },
+  {
+    "userAgent": "Quicksilver (Blacktree,MacOSX)",
+    "client": {
+      "type": 0,
+      "name": "Quicksilver"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 9; SM-A530F Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.58 Mobile Safari/537.36 CamScanner/6.27.0.2210170000",
+    "client": {
+      "type": 0,
+      "name": "CamScanner",
+      "version": "6.27.0.2210170000"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.134 OBS/29.0.2 Safari/537.3",
+    "client": {
+      "type": 0,
+      "name": "OBS Studio",
+      "version": "29.0.2"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 XSplitBroadcaster/4.4.2304.1201 Safari/537.36",
+    "client": {
+      "type": 0,
+      "name": "XSplit Broadcaster",
+      "version": "4.4.2304.1201"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) twitch-desktop-electron-platform/1.0.0 Chrome/100.0.4896.160 Electron/18.3.9 Safari/537.36 spotlight/0.115.7",
+    "client": {
+      "type": 0,
+      "name": "Twitch Studio",
+      "version": "0.115.7"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Safari/537.36 Stream Master",
+    "client": {
+      "type": 0,
+      "name": "Stream Master"
+    }
+  },
+  {
+    "userAgent": "WhatsApp/2.22.9.76 i",
+    "client": {
+      "type": 0,
+      "name": "WhatsApp",
+      "version": "2.22.9.76"
+    }
+  },
+  {
+    "userAgent": "YoFMWhatsApp/2.22.17.76 A",
+    "client": {
+      "type": 0,
+      "name": "FM WhatsApp",
+      "version": "2.22.17.76"
+    }
+  },
+  {
+    "userAgent": "YoGBWhatsApp/2.22.10.73 A",
+    "client": {
+      "type": 0,
+      "name": "GBWhatsApp",
+      "version": "2.22.10.73"
+    }
+  },
+  {
+    "userAgent": "YoYoWhatsApp/2.22.10.73 A",
+    "client": {
+      "type": 0,
+      "name": "Yo WhatsApp",
+      "version": "2.22.10.73"
+    }
+  },
+  {
+    "userAgent": "WhatsApp",
+    "client": {
+      "type": 0,
+      "name": "Signal"
+    }
+  },
+  {
+    "userAgent": "WhatsApp/2",
+    "client": {
+      "type": 0,
+      "name": "Signal"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Windows NT 6.2) AppleWebKit/537.36 (KHTML, like Gecko) WhatsAppElectron/1.0.3 Chrome/108.0.5359.215 Electron/22.3.27 Safari/537.36",
+    "client": {
+      "type": 0,
+      "name": "WhatsApp",
+      "version": "1.0.3"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) whatsapp-linux-app/1.0.0 Chrome/120.0.6099.216 Electron/28.1.4 Safari/537.36",
+    "client": {
+      "type": 0,
+      "name": "WhatsApp",
+      "version": "1.0.0"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) whatsapp-app/1.0.1 Chrome/91.0.4472.124 Electron/13.1.6 Safari/537.36",
+    "client": {
+      "type": 0,
+      "name": "WhatsApp",
+      "version": "1.0.1"
+    }
+  },
+  {
+    "userAgent": "WhatsApp/2.22.2 CloudAPI/99.99.99 Device/x86_64",
+    "client": {
+      "type": 0,
+      "name": "WhatsApp Business",
+      "version": "2.22.2"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Android 13; Mobile; rv:109.0) Gecko/112.0 Firefox/112.0 Freespoke/2.0.0",
+    "client": {
+      "type": 0,
+      "name": "Freespoke",
+      "version": "2.0.0"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/113.1 Mobile/15E148 Safari/605.1.15 Freespoke/2.0.0",
+    "client": {
+      "type": 0,
+      "name": "Freespoke",
+      "version": "2.0.0"
+    }
+  },
+  {
+    "userAgent": "Google/303.0.605094169 CFNetwork/1410.1 Darwin/22.6.0",
+    "client": {
+      "type": 0,
+      "name": "Google Search App",
+      "version": "303.0.605094169"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_2_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GoogleLens/303.0 Mobile/21C66 Safari/604.1 [WebViewInline]",
+    "client": {
+      "type": 0,
+      "name": "Google Lens",
+      "version": "303.0"
+    }
+  },
+  {
+    "userAgent": "SearchWithLens/289.0.577695730 CFNetwork/1404.0.5 Darwin/22.3.0",
+    "client": {
+      "type": 0,
+      "name": "Google Lens",
+      "version": "289.0.577695730"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.3.1 Mobile/15E148 Safari/605.1.15 CopilotSapphire/1.0.180000000",
+    "client": {
+      "type": 0,
+      "name": "Microsoft Copilot",
+      "version": "1.0.180000000"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 11; BV4900Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.127 Mobile Safari/537.36 Instabridge/21.9.0",
+    "client": {
+      "type": 0,
+      "name": "Instabridge",
+      "version": "21.9.0"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 11; MI 9 Build/RKQ1.200826.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/106.0.5249.126 Mobile Safari/537.36 Whatplay",
+    "client": {
+      "type": 0,
+      "name": "Whatplay"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_0_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 WebView MetaMaskMobile",
+    "client": {
+      "type": 0,
+      "name": "MetaMask"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.3.1 Mobile/15E148 Safari/604.1 Lark/5.29.6 LarkLocale/en_US ChannelName/Lark LKBrowserIdentifier/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+    "client": {
+      "type": 0,
+      "name": "Lark",
+      "version": "5.29.6"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0  App/2000002 Plu/2012 channel/0main  (Linux; Android 12; LIO-AN00) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.2526.83 Mobile Safari/537.36 SearchCraft/2.6.1 (Baidu; P2 11.3.1)",
+    "client": {
+      "type": 0,
+      "name": "SearchCraft",
+      "version": "2.6.1"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 DeFiWallet/1.43.0",
+    "client": {
+      "type": 0,
+      "name": "Crypto.com DeFi Wallet",
+      "version": "1.43.0"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.1 Mobile/15E148 Safari/605.1.15/Clipbox+/2.2.8",
+    "client": {
+      "type": 0,
+      "name": "Clipbox+",
+      "version": "2.2.8"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_1_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 [LinkedInApp]/9.24.1488",
+    "client": {
+      "type": 0,
+      "name": "LinkedIn",
+      "version": "9.24.1488"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPhone; CPU OS 16.3.1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GoogleWv/1.0 (WKWebView) OPA/1.9.78001 CoreAssistant/com.google.OPA",
+    "client": {
+      "type": 0,
+      "name": "Google Assistant",
+      "version": "1.9.78001"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; Redmi Y3 Build/QKQ1.191008.001) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/121.0.6167.178 Mobile Safari/537.36 appname/HideX appverc/30517004",
+    "client": {
+      "type": 0,
+      "name": "HideX"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; MAR-LX1M Build/HUAWEIMAR-L01MEA; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.6167.143 Mobile Safari/537.36 HMSCore/6.13.0.302",
+    "client": {
+      "type": 0,
+      "name": "Huawei Mobile Services",
+      "version": "6.13.0.302"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 12; moto g(30) Build/S0RCS32.41-10-19-14) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/121.0.6167.178 Mobile Safari/537.36 appname/PLAYit appverc/20714015",
+    "client": {
+      "type": 0,
+      "name": "PLAYit"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 Autopliuslt/7.8.0 EmbeddedBrowser (iPhone; CPU iPhone OS 16_6_1 like Mac OS X) AppleWebKit (KHTML, like Gecko) Mobile DeviceUID:  VendorUID:  AppPkgID: lt.plius.auto",
+    "client": {
+      "type": 0,
+      "name": "Autoplius.lt",
+      "version": "7.8.0"
+    }
+  },
+  {
+    "userAgent": "HCom/2024.5.0 Dalvik/2.1.0 (Linux; U; Android 9; FIG-LX1 Build/HUAWEIFIG-L11)",
+    "client": {
+      "type": 0,
+      "name": "Hotels.com",
+      "version": "2024.5.0"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 CoinbaseRetail/11.10.8 (build:11100008; iOS 15.2)",
+    "client": {
+      "type": 0,
+      "name": "Coinbase",
+      "version": "11.10.8"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 YJApp-IOS jp.co.yahoo.ipn.appli/4.107.0",
+    "client": {
+      "type": 0,
+      "name": "Yahoo! Japan",
+      "version": "4.107.0"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; WOW64; rv:41.0) Gecko/20100101 Firefox/105.0.3 (x64 de) Anonymisiert durch AlMiSoft Browser-Anonymisierer 2477101",
+    "client": {
+      "type": 0,
+      "name": "Browser-Anonymizer"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPad; CPU OS 9_3_5 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G36 Safari/601.1 bingipadclient",
+    "client": {
+      "type": 0,
+      "name": "Microsoft Bing"
+    }
+  },
+  {
+    "userAgent": "De Telegraaf/6.8.11 (Android 11; en_US)",
+    "client": {
+      "type": 0,
+      "name": "De Telegraaf",
+      "version": "6.8.11"
+    }
+  },
+  {
+    "userAgent": "waipu/2023.25.0-40b5976d4b (Phone; CUBOT; NOTE 7; waipu; Android 10)",
+    "client": {
+      "type": 0,
+      "name": "waipu.tv",
+      "version": "2023.25.0"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 8.1.0; C12 Pro Build/O11019; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/73.0.3683.90 Mobile Safari/537.36 ZenKit/1.40.1.0-internalNewdesign-Zen",
+    "client": {
+      "type": 0,
+      "name": "Zen",
+      "version": "1.40.1.0"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 11; IN2010) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.216 BroPP/1.0 SA/3 YaSearchBrowser/21.53.1 YaApp_Android/21.53.1 ru.yandex.searchplugin/21.53.210503023 (OnePlus IN2010; Android 11) ZenKit/21.5.3",
+    "client": {
+      "type": 0,
+      "name": "Zen",
+      "version": "21.5.3"
+    }
+  },
+  {
+    "userAgent": "Redditor/152 CFNetwork/1331.0.7 Darwin/21.4.0",
+    "client": {
+      "type": 0,
+      "name": "Redditor"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 TopBuzz com.topbuzz.videoen/8.8.8 (iPhone; iOS 15.1; en; WIFI)",
+    "client": {
+      "type": 0,
+      "name": "BuzzVideo",
+      "version": "8.8.8"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/KPN_Veilig 18.5.274904 18.5.274904 16.0 Safari/605.1.15",
+    "client": {
+      "type": 0,
+      "name": "KPN Veilig",
+      "version": "18.5.274904"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 Safari/ NAVER(inapp; naverdicapp; 100; 2.1.1) iphoneVersion/iPhone6s",
+    "client": {
+      "type": 0,
+      "name": "NAVER Dictionary",
+      "version": "2.1.1"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 CSDNApp/5.7.1(iOS)",
+    "client": {
+      "type": 0,
+      "name": "CSDN",
+      "version": "5.7.1"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 CaDevice/1.0 (iPhone11,8) CaWebApp/1.0(jpameblo;13.8.0;ja;)",
+    "client": {
+      "type": 0,
+      "name": "Ameba",
+      "version": "13.8.0"
+    }
+  },
+  {
+    "userAgent": "Microsoft.Data.Mashup (https://go.microsoft.com/fwlink/?LinkID=304225)",
+    "client": {
+      "type": 0,
+      "name": "Microsoft Power Query"
+    }
+  },
+  {
+    "userAgent": "PAN GlobalProtect",
+    "client": {
+      "type": 0,
+      "name": "GlobalProtect"
+    }
+  },
+  {
+    "userAgent": "ANWhatsApp/2.23.21.88",
+    "client": {
+      "type": 0,
+      "name": "AN WhatsApp",
+      "version": "2.23.21.88"
+    }
+  },
+  {
+    "userAgent": "Trade Me/163.0 (Android: samsung (SM-S9210)); API 14",
+    "client": {
+      "type": 0,
+      "name": "Trade Me",
+      "version": "163.0"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 KajabiMobileApp",
+    "client": {
+      "type": 0,
+      "name": "Kajabi"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 12; RMX3491 Build/RKQ1.211119.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/109.0.5414.118 Mobile Safari/537.36 KajabiMobileApp",
+    "client": {
+      "type": 0,
+      "name": "Kajabi"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) ; iPhone/13.6 XING/8.15.2 ttt_webview_iosm",
+    "client": {
+      "type": 0,
+      "name": "XING",
+      "version": "8.15.2"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) XING-iPhone/23.10.2 (iOS; Light; de) iPhone/16.4.1 (iOS; Device) ttt_webview_iosm",
+    "client": {
+      "type": 0,
+      "name": "XING",
+      "version": "23.10.2"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) xmoonvidget/1.0.0 Chrome/94.0.4606.81 Electron/15.5.7 Safari/537.36",
+    "client": {
+      "type": 0,
+      "name": "xmoonvidget",
+      "version": "1.0.0"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Bridge/2020.3.2 Chrome/69.0.3497.128 Electron/4.2.12 Safari/537.36",
+    "client": {
+      "type": 0,
+      "name": "Bridge",
+      "version": "2020.3.2"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) webscraping/1.0.0 Chrome/122.0.6261.130 Electron/29.1.5 Safari/537.36",
+    "client": {
+      "type": 0,
+      "name": "webscraping",
+      "version": "1.0.0"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_16_0) AppleWebKit/537.36 (KHTML, like Gecko) VidJuiceUniTube/5.0.3 Chrome/85.0.4183.121 Electron/10.4.7 Safari/537.36",
+    "client": {
+      "type": 0,
+      "name": "VidJuiceUniTube",
+      "version": "5.0.3"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML, like Gecko) opgg-electron-app/1.4.1 Chrome/108.0.5359.215 Electron/22.3.27 Safari/537.36",
+    "client": {
+      "type": 0,
+      "name": "opgg",
+      "version": "1.4.1"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) anythingllm-desktop/1.4.1 Chrome/116.0.5845.228 Electron/26.6.1 Safari/537.36",
+    "client": {
+      "type": 0,
+      "name": "anythingllm",
+      "version": "1.4.1"
+    }
+  },
+  {
+    "userAgent": "iPlayTV/3.3.9 (Apple TV; iOS 16.1; Scale/1.00)",
+    "client": {
+      "type": 0,
+      "name": "iPlayTV",
+      "version": "3.3.9"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 momoWebView/9.6.7 ios/5168(iPhone13,2;iOS 15.6.1;zh_CN;S1;netType/0)",
+    "client": {
+      "type": 0,
+      "name": "MOMO",
+      "version": "9.6.7"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 9; SM-G950N Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/116.0.0.0 Mobile Safari/537.36;ref:nate_app;appver:5.6.2;ndruk:201709200847194045040;skai:kotlin.Unit;provider:TS;darkMode:light",
+    "client": {
+      "type": 0,
+      "name": "nate",
+      "version": "5.6.2"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 14; SM-S928W Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/122.0.6261.119 Mobile Safari/537.36 Barcelona 324.0.0.25.109 Android (34/14; 600dpi; 495x1082; samsung; SM-S928W; e3q; qcom; en_CA; 581020806)",
+    "client": {
+      "type": 0,
+      "name": "Threads",
+      "version": "324.0.0.25.109"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 14; SM-S928U1 Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/122.0.6261.120 Mobile Safari/537.36 SoFi Mobile/119330322 (com.sofi.mobile android-flutter; build:2.194.0; Android SDK 34; webview); SOFI_APP_ID=sofi-android; SOFI_APP_VERSION=2.194.0; FEATURE_ID=authWebView;",
+    "client": {
+      "type": 0,
+      "name": "SoFi",
+      "version": "2.194.0"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 Edg/119.0.0.0 maglev/24004.1304.2655.7488/50",
+    "client": {
+      "type": 0,
+      "name": "Teams",
+      "version": "24004.1304.2655.7488"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Zalo iOS/448 ZaloTheme/light ZaloLanguage/en",
+    "client": {
+      "type": 0,
+      "name": "Zalo"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; moto g(7) Build/QP6_S30.52-23-13-4; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/108.0.5359.128 Mobile Safari/537.36 musical_ly_2022704050 JsSdk/1.0 NetType/WIFI Channel/googleplay AppName/musical_ly app_version/27.4.5 ByteLocale/en ByteFullLocale/en Region/US Spark/1.2.4-alpha.5 AppVersion/27.4.5 PIA/1.5.10 BytedanceWebview/d8a21c6",
+    "client": {
+      "type": 0,
+      "name": "TikTok",
+      "version": "27.4.5"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 BytedanceWebview/d8a21c6 trill_34.9.0 JsSdk/2.0 NetType/4G Channel/App Store ByteLocale/en Region/MY FalconTag/31CFA6E0-CAE5-4ECF-A13A-ADFCAFC2428F",
+    "client": {
+      "type": 0,
+      "name": "TikTok",
+      "version": "34.9.0"
+    }
+  },
+  {
+    "userAgent": "com.theepochtimes.mobile/2.37.1 b1 (iphoneos17.2; iPhone13,1; en-US; America/Phoenix); Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1",
+    "client": {
+      "type": 0,
+      "name": "The Epoch Times",
+      "version": "2.37.1"
+    }
+  },
+  {
+    "userAgent": "ReutersNews/6.0.3 iPad14,4 iPadOS/17.5.1 CFNetwork/1.0 Darwin/23.5.0",
+    "client": {
+      "type": 0,
+      "name": "Reuters News",
+      "version": "6.0.3"
+    }
+  },
+  {
+    "userAgent": "VIZIO V655M-K04 ViziOS/1.4.512.847.1 WatchFree/24.06.13.2 FancyPlayer/1.1.30-qa",
+    "client": {
+      "type": 0,
+      "name": "WatchFree+",
+      "version": "24.06.13.2"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) obsidian/1.4.16 Chrome/114.0.5735.289 Electron/25.8.1 Safari/537.36",
+    "client": {
+      "type": 0,
+      "name": "Obsidian",
+      "version": "1.4.16"
+    }
+  },
+  {
+    "userAgent": "Perplexity/5280 CFNetwork/1408.0.4 Darwin/22.5.0",
+    "client": {
+      "type": 0,
+      "name": "Perplexity"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/14G60 QQ/103.3 TIM/3.3.5.545 V1_IPH_SQ_8.4.8_335_TIM_D Pixel/750 MiniAppEnable SimpleUISwitch/1 QQTheme/1015712 Core/WKWebView Device/Apple(iPhone 6) NetType/4G QBWebViewType/1 WKType/1",
+    "client": {
+      "type": 0,
+      "name": "TIM",
+      "version": "3.3.5.545"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPad; CPU OS 17_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 QQ/7.2.0.0 TencentDocs/3.1.7 Pixel/1668 Core/WKWebView Device/Apple(iPad Pro (11-inch) (4th generation)) NetType/undefined _tdocFlag/2 exkb/1 QBWebViewType/1 WKType/1",
+    "client": {
+      "type": 0,
+      "name": "Tencent Docs",
+      "version": "3.1.7"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 QQ/9.0.85.612 V1_IPH_SQ_9.0.85_1_APP_A Pixel/1179 MiniAppEnable SimpleUISwitch/0 StudyMode/0 CurrentMode/0 CurrentFontScale/1.000000 QQTheme/1000 AppId/537235392 Core/WKWebView Device/Apple(iPhone X) NetType/WIFI QBWebViewType/1 WKType/1",
+    "client": {
+      "type": 0,
+      "name": "QQ",
+      "version": "9.0.85.612"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 11; Infinix X688B Build/RP1A.200720.011) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/110.0.5481.153 Mobile Safari/537.36 XShare/330003",
+    "client": {
+      "type": 0,
+      "name": "XShare"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 12; Infinix X665E Build/SP1A.210812.016) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/118.0.0.0 Mobile Safari/537.36; VISHAAPP 4.1.1.1501",
+    "client": {
+      "type": 0,
+      "name": "Visha",
+      "version": "4.1.1.1501"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 13; SM-A136U1 Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/124.0.6367.123 Mobile Safari/537.36 nyt_android/5.5.0",
+    "client": {
+      "type": 0,
+      "name": "The Crossword",
+      "version": "5.5.0"
+    }
+  },
+  {
+    "userAgent": "mojeek-app",
+    "client": {
+      "type": 0,
+      "name": "Mojeek"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 ZONApp/iOS/2.5.6;build:3000000110",
+    "client": {
+      "type": 0,
+      "name": "ZEIT ONLINE",
+      "version": "2.5.6"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 14; XQ-CC54 Build/65.2.A.2.179; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/128.0.6613.146 Mobile Safari/537.36 ZONApp/Android/2.2.7",
+    "client": {
+      "type": 0,
+      "name": "ZEIT ONLINE",
+      "version": "2.2.7"
+    }
+  },
+  {
+    "userAgent": "VSCode 1.94.2 (Code)",
+    "client": {
+      "type": 0,
+      "name": "Visual Studio Code",
+      "version": "1.94.2"
+    }
+  },
+  {
+    "userAgent": "git/2.45.1.windows.1 (GitHub Desktop/3.4.6; win32 x64)",
+    "client": {
+      "type": 0,
+      "name": "GitHub Desktop",
+      "version": "3.4.6"
+    }
+  },
+  {
+    "userAgent": "Mozilla / 3.0 (compatible; Adobe NGL; Windows)",
+    "client": {
+      "type": 0,
+      "name": "Adobe NGL"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) ReaderServices/24.3.20180 Chrome/105.0.0.0 Safari/537.36",
+    "client": {
+      "type": 0,
+      "name": "Adobe Acrobat Reader",
+      "version": "24.3.20180"
+    }
+  },
+  {
+    "userAgent": "Acrobat/24.3.20180.6 NGL Client/1.38.0.10 (WINDOWS_64/10.0.19045.1)",
+    "client": {
+      "type": 0,
+      "name": "Adobe Acrobat Reader",
+      "version": "24.3.20180.6"
+    }
+  },
+  {
+    "userAgent": "Fiddler/5.0.20244.10953 (.NET 4.8; WinNT 10.0.19045.0; en-US; 8xAMD64; Auto Update; Full Instance; Extensions: APITesting, AutoSaveExt, EventLog, FiddlerOrchestraAddon, HostsFile, RulesTab2, SAZClipboardFactory, SimpleFilter, Timeline)",
+    "client": {
+      "type": 0,
+      "name": "Fiddler Classic",
+      "version": "5.0.20244.10953"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 12; Pixel 5 Build/SQ1A.220205.002) AppleWebKit/537.36 (KHTML, like Gecko) Version/99.0 Chrome/99.0.4844.84 Mobile Safari/537.36 Android/tracepal.app/1.1.0",
+    "client": {
+      "type": 0,
+      "name": "TracePal",
+      "version": "1.1.0"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/605.1.15 iOS/TracePal/1.2.0",
+    "client": {
+      "type": 0,
+      "name": "TracePal",
+      "version": "1.2.0"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 12; Pixel 5 Build/SQ1A.220205.002) AppleWebKit/537.36 (KHTML, like Gecko) Version/99.0 Chrome/99.0.4844.84 Mobile Safari/537.36 Android/topsecret.chat/1.1.0",
+    "client": {
+      "type": 0,
+      "name": "TopSecret Chat",
+      "version": "1.1.0"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/605.1.15 iOS/TopSecret.Chat/1.2.0",
+    "client": {
+      "type": 0,
+      "name": "TopSecret Chat",
+      "version": "1.2.0"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 aweme_31.9.0 Region/CN AppTheme/light NetType/WIFI JsSdk/2.0 Channel/App ByteLocale/zh ByteFullLocale/zh-Hans-CN WKWebView/1 Bullet/1 aweme/31.9.0 BulletTag/C4F7B8CE-DCC0-492D-934F-923A3909D158 BytedanceWebview/d8a21c6 FalconTag/D8105CFD-2385-4C85-AB6C-7A3DF31B9ACE",
+    "client": {
+      "type": 0,
+      "name": "Douyin",
+      "version": "31.9.0"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; HD1900 Build/QKQ1.190716.003; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/75.0.3770.156 Mobile Safari/537.36 aweme_230400 JsSdk/1.0 NetType/WIFI AppName/aweme app_version/23.4.0 ByteLocale/zh-CN Region/CN AppSkin/white AppTheme/light BytedanceWebview/d8a21c6 WebView/075113004008",
+    "client": {
+      "type": 0,
+      "name": "Douyin",
+      "version": "23.4.0"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 8.1.0; Twist Tab Build/OC; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/70.0.3538.110 Safari/537.36trill_400 JsSdk/1.0 NetType/WIFI Channel/googleplay AppName/musically_go app_version/4.0.0 ByteLocale/pt-BR Region/BR",
+    "client": {
+      "type": 0,
+      "name": "TikTok Lite",
+      "version": "4.0.0"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 11; SM-A107M Build/RP1A.200720.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/129.0.6668.100 Mobile Safari/537.36 Yoda/oversea-3.1.1-rc6-cache ISDR/0 Kwai_Pro/10.9.10.537204 NetScore/53 NST/F deviceScore/16 webviewPreloaded/false WebViewPreAlloc/1 StatusHT/32 TitleHT/50 NetType/WIFI ISLP/1 ISDM/0 ISLB/0 locale/pt-br evaSupported/false kwaiPixelAd",
+    "client": {
+      "type": 0,
+      "name": "Kwai Pro",
+      "version": "10.9.10.537204"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPad; CPU OS 18_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Kwai/12.9.10.8962 ISLP/0 StatusHT/24 KDT/PAD ISDM/1 TitleHT/44 NetType/WIFI ICFO/0 locale/zh-Hans CT/0 Yoda/3.0.3.1 ISLB/0 CoIS/0 ISLM/0 WebViewType/WK BHT/50 AZPREFIX/az2",
+    "client": {
+      "type": 0,
+      "name": "Kwai",
+      "version": "12.9.10.8962"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Sooplive Webview/8.0.4 device_id=f55b74fd2f6a7dfa83e52512038c7053; adid=ADID_DISABLED;",
+    "client": {
+      "type": 0,
+      "name": "SOOP",
+      "version": "8.0.4"
+    }
+  },
+  {
+    "userAgent": "GoEuroAndroid/9.39.3 (Realme RMX3366; Android 14; okhttp/4.9.3) WebView",
+    "client": {
+      "type": 0,
+      "name": "GoEuro",
+      "version": "9.39.3"
+    }
+  },
+  {
+    "userAgent": "GoEuroIOS /9.41.0 (iPhone; iOS 17.5.1; Scale/2.00) WebView",
+    "client": {
+      "type": 0,
+      "name": "GoEuro",
+      "version": "9.41.0"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 8.1.0; CPH1901 Build/OPM1.171019.026; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/91.0.4472.120 Mobile Safari/537.36  trill_200005 JsSdk/1.0 NetType/WIFI Channel/googleplay AppName/trill app_version/20.0.5 ByteLocale/id-ID ByteFullLocale/id-ID Region/ID BytedanceWebview/d8a21c6",
+    "client": {
+      "type": 0,
+      "name": "TikTok",
+      "version": "20.0.5"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 8.1.0; CPH1909 Build/O11019; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/70.0.3538.110 Mobile Safari/537.36 Channel/release AppName/ultralite app_version/26.4.4 Region/EG ByteLocale/ar ByteFullLocale/ar",
+    "client": {
+      "type": 0,
+      "name": "TikTok Lite",
+      "version": "26.4.4"
+    }
+  },
+  {
+    "userAgent": "iOS 16.3.1, iPhone, BOOM v12.6.98, webview",
+    "client": {
+      "type": 0,
+      "name": "Boom360",
+      "version": "12.6.98"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 WebViewApp WallaNews/9.8.2/IOS",
+    "client": {
+      "type": 0,
+      "name": "Walla News",
+      "version": "9.8.2"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_7_10 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 WebViewApp TRP_iPhone_App/8.0.3",
+    "client": {
+      "type": 0,
+      "name": "TRP Retail Locator",
+      "version": "8.0.3"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPad; CPU OS 17_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 WebViewApp Townnews-Now/4.0",
+    "client": {
+      "type": 0,
+      "name": "TownNews Now",
+      "version": "4.0"
+    }
+  },
+  {
+    "userAgent": "Klara/1 CFNetwork/1128.0.1 Darwin/19.6.0",
+    "client": {
+      "type": 0,
+      "name": "Klara"
+    }
+  },
+  {
+    "userAgent": "Dalvik/2.1.0 (Linux; U; Android 11; SM-A725M Build/RP1A.200720.012) EdmodoAndroid/10.43.5(69a222)",
+    "client": {
+      "type": 0,
+      "name": "Edmodo",
+      "version": "10.43.5"
+    }
+  },
+  {
+    "userAgent": "HFEducationIOS/1.0.6+g5a01fc39-dirty (iOS; 18.1.1; iPad13,18)",
+    "client": {
+      "type": 0,
+      "name": "HeartFocus Education",
+      "version": "1.0.6"
+    }
+  },
+  {
+    "userAgent": "HFIOS/1.0.8+ab701 (iOS; 18.1.1; iPad13,18)",
+    "client": {
+      "type": 0,
+      "name": "HeartFocus",
+      "version": "1.0.8"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Mobile; LYF/F10Q/LYF-F10Q-000-01-31-071119; Android; rv:48.0) Gecko/48.0 Firefox/48.0 KAIOS/2.5 YouTube/1.92.52.J",
+    "client": {
+      "type": 0,
+      "name": "YouTube",
+      "version": "1.92.52"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Mobile; ALCATEL A406DL; rv:48.0) Gecko/48.0 Firefox/48.0 KAIOS/2.5.4 YouTube/1.92.52.K",
+    "client": {
+      "type": 0,
+      "name": "YouTube",
+      "version": "1.92.52"
+    }
+  },
+  {
+    "userAgent": "WebexTeams",
+    "client": {
+      "type": 0,
+      "name": "Webex Teams"
+    }
+  },
+  {
+    "userAgent": "Telegram/29835 CFNetwork/1333.0.4 Darwin/21.5.0",
+    "client": {
+      "type": 0,
+      "name": "Telegram"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 [en] (X11, U; OpenVAS-VT 9.0.3)",
+    "client": {
+      "type": 0,
+      "name": "OpenVAS",
+      "version": "9.0.3"
+    }
+  },
+  {
+    "userAgent": "appdb/1.4.4 (com.4sh2812.32u1982378; build:2875; iOS 18.3.0) Alamofire/3.5.0",
+    "client": {
+      "type": 0,
+      "name": "appdb",
+      "version": "1.4.4"
+    }
+  },
+  {
+    "userAgent": "Apache/2.2.2 (Fedora) (internal dummy connection)",
+    "client": {
+      "type": 0,
+      "name": "Apache",
+      "version": "2.2.2"
+    }
+  },
+  {
+    "userAgent": "Apache/2.4.34 (Ubuntu) OpenSSL/1.1.1 (internal dummy connection)",
+    "client": {
+      "type": 0,
+      "name": "Apache",
+      "version": "2.4.34"
+    }
+  },
+  {
+    "userAgent": "com.google.ios.youtube/17.39.4 (iPad4,2; U; CPU iOS 12_5_7 like Mac OS X; zh-Hans_US)",
+    "client": {
+      "type": 0,
+      "name": "YouTube",
+      "version": "17.39.4"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 7_1 like Mac OS X) AppleWebKit/537.51.2 (KHTML, like Gecko) Mobile/11D167 iPhone6,1/N51AP Zite/2.6",
+    "client": {
+      "type": 0,
+      "name": "Zite",
+      "version": "2.6"
+    }
+  },
+  {
+    "userAgent": "DeepL/1627620 CFNetwork/3826.400.101 Darwin/24.3.0",
+    "client": {
+      "type": 0,
+      "name": "DeepL"
+    }
+  }
+]

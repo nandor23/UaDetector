@@ -1,3 +1,3757 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5124164669f92624b67792f8622a95328c15f99deacc36224805fb20372ce990
-size 93693
+[
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 11; Pixel 3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Mobile Safari/537.36",
+    "headers": {
+      "X-Requested-With": "org.telegram.messenger"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "11",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Telegram"
+    },
+    "device": {
+      "type": 1,
+      "model": "Pixel 3",
+      "brand": {
+        "name": "Google",
+        "code": 655
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; M2006C3LG Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/96.0.4664.104 Mobile Safari/537.36Snapchat11.59.0.35 (M2006C3LG; Android 10#V12.0.17.0.QCDMIXM#29; gzip)",
+    "headers": {
+      "X-Requested-With": "com.snapchat.android"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "10",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Snapchat",
+      "version": "11.59.0.35"
+    },
+    "device": {
+      "type": 1,
+      "model": "Redmi 9A",
+      "brand": {
+        "name": "Xiaomi",
+        "code": 1973
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; SM-A605G Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/96.0.4664.104 Mobile Safari/537.36 Instagram 202.0.0.37.124 Android (29/10; 420dpi; 1080x2094; samsung; SM-A605G; a6plte; qcom; en_US; 313224438)",
+    "headers": {
+      "X-Requested-With": "info.sunista.app"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "10",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Sanista Persian Instagram"
+    },
+    "device": {
+      "type": 1,
+      "model": "Galaxy A6+",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; Redmi Note 7 Build/QKQ1.190910.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.87 Mobile Safari/537.36 Instagram 215.0.0.27.359 Android (29/10; 440dpi; 2048x2048; Xiaomi/xiaomi; Redmi Note 7; la",
+    "headers": {
+      "X-Requested-With": "com.instapro.app"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "10",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "InstaPro"
+    },
+    "device": {
+      "type": 10,
+      "model": "Redmi Note 7",
+      "brand": {
+        "name": "Xiaomi",
+        "code": 1973
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 9; SM-G965F Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.62 XWEB/2889 MMWEBSDK/20210902 Mobile Safari/537.36 MMWEBID/4096 MicroMessenger/8.0.15.2001(0x28000F41) Process/toolsmp WeChat/arm64 Weixin GPVersion/1 NetType/WIFI Language/en ABI/arm64",
+    "headers": {
+      "X-Requested-With": "com.tencent.mm"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "9",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "WeChat",
+      "version": "8.0.15.2001"
+    },
+    "device": {
+      "type": 1,
+      "model": "Galaxy S9+",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 11; SM-F926N Build/RP1A.200720.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/94.0.4606.85 Safari/537.36",
+    "headers": {
+      "X-Requested-With": "com.kakao.talk"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "11",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "KakaoTalk"
+    },
+    "device": {
+      "type": 10,
+      "model": "Galaxy Z Fold 3 5G",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 9; SM-J600L Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/99.0.4844.58 Mobile Safari/537.36",
+    "headers": {
+      "X-Requested-With": "org.torproject.android"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "9",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Orbot"
+    },
+    "device": {
+      "type": 1,
+      "model": "Galaxy J6",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; PPA-LX2 Build/HUAWEIPPA-LX2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.108 Mobile Safari/537.36",
+    "headers": {
+      "X-Requested-With": "com.ayoba.ayoba"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "10",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Ayoba"
+    },
+    "device": {
+      "type": 1,
+      "model": "P smart (2021)",
+      "brand": {
+        "name": "Huawei",
+        "code": 757
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 11; SM-A217F Build/RP1A.200720.012) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/98.0.4758.101 Mobile Safari/537.36",
+    "headers": {
+      "X-Requested-With": "snapu2b.com"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "11",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "SnapU2B"
+    },
+    "device": {
+      "type": 1,
+      "model": "Galaxy A21s",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; SM-A105M Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/95.0.4638.50 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/357.0.0.23.115;]",
+    "headers": {
+      "http-x-requested-with": "com.facebook.katana"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "10",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Facebook",
+      "version": "357.0.0.23.115"
+    },
+    "device": {
+      "type": 1,
+      "model": "Galaxy A10",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 11; SM-A525M Build/RP1A.200720.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/87.0.4280.141 Mobile Safari/537.36 [FB_IAB/Orca-Android;FBAV/349.0.0.7.108;]",
+    "headers": {
+      "http-x-requested-with": "com.facebook.orca"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "11",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Facebook Messenger",
+      "version": "349.0.0.7.108"
+    },
+    "device": {
+      "type": 1,
+      "model": "Galaxy A52",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 7.1.1; SM-T550 Build/NMF26X; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/99.0.4844.73 Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.yahoo.onesearch"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "7.1.1",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Yahoo OneSearch"
+    },
+    "device": {
+      "type": 2,
+      "model": "Galaxy Tab A 9.7\" WiFi",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 12; Pixel 4a (5G) Build/SQ1A.220205.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/98.0.4758.101 Mobile Safari/537.36 YJApp-ANDROID jp.co.yahoo.android.yjtop/3.114.0",
+    "headers": {
+      "http-x-requested-with": "jp.co.yahoo.android.yjtop"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "12",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Yahoo! Japan",
+      "version": "3.114.0"
+    },
+    "device": {
+      "type": 1,
+      "model": "Pixel 4a (5G)",
+      "brand": {
+        "name": "Google",
+        "code": 655
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 11; SM-A705GM Build/RP1A.200720.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/91.0.4472.164 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "free.vpn.unblock.proxy.vpnmonster"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "11",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "VPN Monster"
+    },
+    "device": {
+      "type": 1,
+      "model": "Galaxy A70",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 7.0; SM-G610F Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/99.0.4844.73 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.udicorn.proxy"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "7.0",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Blue Proxy"
+    },
+    "device": {
+      "type": 1,
+      "model": "Galaxy J7 Prime",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; VOG-L04 Build/HUAWEIVOG-L04; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/99.0.4844.73 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "it.ideasolutions.kyms"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "10",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "KYMS - Keep Your Media Safe"
+    },
+    "device": {
+      "type": 1,
+      "model": "P30 Pro",
+      "brand": {
+        "name": "Huawei",
+        "code": 757
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 9; Mi A1 Build/PKQ1.180917.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/99.0.4844.58 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "it.tolelab.fvd"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "9",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "FVD - Free Video Downloader"
+    },
+    "device": {
+      "type": 1,
+      "model": "Mi A1",
+      "brand": {
+        "name": "Xiaomi",
+        "code": 1973
+      }
+    }
+  },
+  {
+    "userAgent": "Kik/15.41.0.25917 (Android 10) Kik/15.41.0.25917 (Android 10) Mozilla/5.0 (Linux; Android 10; VOG-L29 Build/HUAWEIVOG-L29; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/99.0.4844.73 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "kik.android"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "10",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Kik",
+      "version": "15.41.0.25917"
+    },
+    "device": {
+      "type": 1,
+      "model": "P30 Pro",
+      "brand": {
+        "name": "Huawei",
+        "code": 757
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 11; SM-A307FN Build/RP1A.200720.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/99.0.4844.88 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.tinder"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "11",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Tinder"
+    },
+    "device": {
+      "type": 1,
+      "model": "Galaxy A30s",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 11; SM-A127F Build/RP1A.200720.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/98.0.4758.101 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.videochat.livu"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "11",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "LivU"
+    },
+    "device": {
+      "type": 1,
+      "model": "Galaxy A12",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; Android SDK built for x86 Build/OSM1.180201.023) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.92 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "io.metamask"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "10",
+      "cpuArchitecture": "x86",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "MetaMask"
+    },
+    "device": {
+      "type": 1
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 11; SM-A326B Build/RP1A.200720.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/87.0.4280.141 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.totalav.android"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "11",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "TotalAV"
+    },
+    "device": {
+      "type": 1,
+      "model": "Galaxy A32 5G",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 11; ONEPLUS A6013 Build/RKQ1.201217.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.101 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.fsecure.ms.saunalahti_m"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "11",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Elisa Turvapaketti"
+    },
+    "device": {
+      "type": 1,
+      "model": "6T",
+      "brand": {
+        "name": "OnePlus",
+        "code": 1259
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 11; POCO F2 Pro Build/RKQ1.200826.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.101 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.fsecure.ms.ziggo"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "11",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Ziggo Safe Online"
+    },
+    "device": {
+      "type": 1,
+      "model": "F2 Pro",
+      "brand": {
+        "name": "POCO",
+        "code": 1356
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 6.0.1; SM-S727VL Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/98.0.4758.101 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.aol.mobile.aolapp"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "6.0.1",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "AOL"
+    },
+    "device": {
+      "type": 1,
+      "model": "Galaxy J7 Sky Pro",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 12; SM-G975U Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/96.0.4664.61 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.fancyclean.security.antivirus"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "12",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Fancy Security"
+    },
+    "device": {
+      "type": 1,
+      "model": "Galaxy S10+",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; moto e(7i) power Build/QOJ30.303-8; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/87.0.4280.101 Mobile Safari/537.36 MinuteMaid",
+    "headers": {
+      "http-x-requested-with": "com.google.android.gms"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "10",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Google Play"
+    },
+    "device": {
+      "type": 1,
+      "model": "Moto E7i Power",
+      "brand": {
+        "name": "Motorola",
+        "code": 1120
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; MAR-LX3A Build/HUAWEIMAR-L23A; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/99.0.4844.88 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.appsinnova.android.keepclean"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "10",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "KeepClean"
+    },
+    "device": {
+      "type": 1,
+      "model": "P30 Lite",
+      "brand": {
+        "name": "Huawei",
+        "code": 757
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; MAR-LX1A Build/HUAWEIMAR-L21MEB; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/98.0.4758.101 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.v2.vpn.security.free"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "10",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "V2Free"
+    },
+    "device": {
+      "type": 1,
+      "model": "P30 Lite",
+      "brand": {
+        "name": "Huawei",
+        "code": 757
+      }
+    }
+  },
+  {
+    "userAgent": "SurfsharkAndroid/2.7.7.5 com.surfshark.vpnclient.android/release/playStore/207070500 Dalvik/2.1.0 (Linux; U; Android 11; SM-T290 Build/RP1A.200720.012) Version/4.0 Chrome/43.0.2357.65 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.surfshark.vpnclient.android"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "11",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Surfshark",
+      "version": "2.7.7.5"
+    },
+    "device": {
+      "type": 2,
+      "model": "Galaxy Tab A 8.0\" (2019) WiFi",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 8.0; Pixel 2 Build/OPD3.170816.012) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.82 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.turtc"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "8.0",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "TurTc"
+    },
+    "device": {
+      "type": 1,
+      "model": "Pixel 2",
+      "brand": {
+        "name": "Google",
+        "code": 655
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 12; SM-G990B Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/98.0.4758.101 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.sony.nfx.app.sfrc"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "12",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "News Suite by Sony"
+    },
+    "device": {
+      "type": 1,
+      "model": "Galaxy S21 FE 5G",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 9; SM-G950F Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/98.0.4758.101 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.rcplatform.livechat"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "9",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Tumile"
+    },
+    "device": {
+      "type": 1,
+      "model": "Galaxy S8",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 8.0.0; SM-G930P Build/R16NW; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.70 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "jp.gocro.smartnews.android"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "8.0.0",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "SmartNews"
+    },
+    "device": {
+      "type": 1,
+      "model": "Galaxy S7",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 8.0.0; SM-A750FN Build/R16NW; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/67.0.3396.87 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.lenovo.anyshare.gps"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "8.0.0",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "SHAREit"
+    },
+    "device": {
+      "type": 1,
+      "model": "Galaxy A7 (2018)",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 9; SM-G950U1 Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/74.0.3729.136 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.espn.score_center"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "9",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "ESPN"
+    },
+    "device": {
+      "type": 1,
+      "model": "Galaxy S8",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 6.0; MYA-L03 Build/HUAWEIMYA-L03; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/98.0.4758.101 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.active.cleaner"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "6.0",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Active Cleaner"
+    },
+    "device": {
+      "type": 1,
+      "model": "Y5 (2017)",
+      "brand": {
+        "name": "Huawei",
+        "code": 757
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; SM-G965U1 Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/100.0.4844.73 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.hld.anzenbokusucal"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "10",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Calculator Photo Vault"
+    },
+    "device": {
+      "type": 1,
+      "model": "Galaxy S9+",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; M2006C3LG Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/99.0.4844.88 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.hld.anzenbokusufake"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "10",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Calculator Hide Photos"
+    },
+    "device": {
+      "type": 1,
+      "model": "Redmi 9A",
+      "brand": {
+        "name": "Xiaomi",
+        "code": 1973
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 11; Infinix X697 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/99.0.4844.88 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.hld.anzenbokusu"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "11",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Sgallery"
+    },
+    "device": {
+      "type": 10,
+      "model": "Note 11 Pro",
+      "brand": {
+        "name": "Infinix",
+        "code": 813
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; JNY-LX1 Build/HUAWEIJNY-L21; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.93 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.huawei.appmarket"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "10",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "AppGallery"
+    },
+    "device": {
+      "type": 1,
+      "model": "P40 Lite",
+      "brand": {
+        "name": "Huawei",
+        "code": 757
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; CPH2185 Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/96.0.4664.104 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.michatapp.im"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "10",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "MiChat"
+    },
+    "device": {
+      "type": 1,
+      "model": "A15",
+      "brand": {
+        "name": "OPPO",
+        "code": 1273
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 11; Redmi Note 9 Pro Build/RKQ1.200826.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/98.0.4758.101 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.michatapp.im.lite"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "11",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "MiChat Lite"
+    },
+    "device": {
+      "type": 10,
+      "model": "Redmi Note 9 Pro",
+      "brand": {
+        "name": "Xiaomi",
+        "code": 1973
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g play (2021) Build/RZAS31.Q2-146-14-1-1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/99.0.4844.73 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.noxgroup.app.security"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "11",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Nox Security"
+    },
+    "device": {
+      "type": 1,
+      "model": "Moto G Play (2021)",
+      "brand": {
+        "name": "Motorola",
+        "code": 1120
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 12; SM-S908B Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/99.0.4844.88 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "phone.cleaner.antivirus.speed.booster"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "12",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Super Cleaner"
+    },
+    "device": {
+      "type": 1,
+      "model": "Galaxy S22 Ultra",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 11; SM-A326U Build/RP1A.200720.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/98.0.4758.101 Mobile Safari/537.36 Platform/Android11 APP/yym-hago-and4.14.1 Channel/(official) Model/SM-A326U Browser/Default Language/es_us  Environment/Online NetType/4g UserMode/Registered",
+    "headers": {
+      "http-x-requested-with": "com.yy.hiyo"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "11",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Hago",
+      "version": "4.14.1"
+    },
+    "device": {
+      "type": 1,
+      "model": "Galaxy A32 5G",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 11; SM-A325M Build/RP1A.200720.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/98.0.4758.101 Mobile Safari/537.36 Instagram 222.0.0.15.114 Android (30/11; 420dpi; 1080x2195; samsung; SM-A325M; a32; mt6769t; es_US; 350971657)",
+    "headers": {
+      "http-x-requested-with": "com.instagram.android"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "11",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Instagram",
+      "version": "222.0.0.15.114"
+    },
+    "device": {
+      "type": 1,
+      "model": "Galaxy A32",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 11; SM-A307G Build/RP1A.200720.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/99.0.4844.88 Mobile Safari/537.36 EdgW/1.0",
+    "headers": {
+      "http-x-requested-with": "com.microsoft.office.outlook"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "11",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Microsoft Outlook"
+    },
+    "device": {
+      "type": 1,
+      "model": "Galaxy A30s",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 9; SM-S260DL Build/PPR1.180610.011; ) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.166 Mobile Safari/537.36 BingSapphire/22.2.400225301",
+    "headers": {
+      "http-x-requested-with": "com.microsoft.bing"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "9",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Microsoft Bing",
+      "version": "22.2.400225301"
+    },
+    "device": {
+      "type": 1,
+      "model": "Galaxy J2 Core",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; ART-L29N Build/HUAWEIART-L29N; ) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.108 Mobile Safari/537.36 BingSapphire/21.9.400310302",
+    "headers": {
+      "http-x-requested-with": "com.microsoft.bingintl"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "10",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Microsoft Bing",
+      "version": "21.9.400310302"
+    },
+    "device": {
+      "type": 1,
+      "model": "P40 Lite E NFC",
+      "brand": {
+        "name": "Huawei",
+        "code": 757
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 11; SM-A102N Build/RP1A.200720.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/90.0.4430.232 Whale/1.0.0.0 Crosswalk/26.90.3.16 Mobile Safari/537.36 NAVER(inapp; search; 1000; 11.10.5)",
+    "headers": {
+      "http-x-requested-with": "com.nhn.android.search"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "11",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Naver",
+      "version": "11.10.5"
+    },
+    "device": {
+      "type": 1,
+      "model": "Galaxy A10e",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 11; A509DL Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/99.0.4844.88 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.jb.security"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "11",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "GO Security"
+    },
+    "device": {
+      "type": 1,
+      "model": "A3",
+      "brand": {
+        "name": "TCL",
+        "code": 1667
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 12; Nokia X20 Build/SKQ1.210821.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.100.4844.88 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.fsecure.ms.safe"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "12",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "F-Secure SAFE"
+    },
+    "device": {
+      "type": 1,
+      "model": "X20",
+      "brand": {
+        "name": "Nokia",
+        "code": 1219
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 8.1.0; vivo 1816 Build/O11019; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/80.0.3987.149 Mobile Safari/537.36",
+    "headers": {
+      "x-requested-with": "com.jaumo"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "8.1.0",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Jaumo"
+    },
+    "device": {
+      "type": 1,
+      "model": "Y91i",
+      "brand": {
+        "name": "Vivo",
+        "code": 1864
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 6.0.1; vivo 1606 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/81.0.4044.111 Mobile Safari/537.36",
+    "headers": {
+      "x-requested-with": "com.skout.android"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "6.0.1",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "SKOUT"
+    },
+    "device": {
+      "type": 1,
+      "model": "Y53i",
+      "brand": {
+        "name": "Vivo",
+        "code": 1864
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 9; CPH1821 Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/74.0.3729.136 Mobile Safari/537.36",
+    "headers": {
+      "x-requested-with": "com.hornet.android"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "9",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Hornet"
+    },
+    "device": {
+      "type": 1,
+      "model": "F7",
+      "brand": {
+        "name": "OPPO",
+        "code": 1273
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 9; vivo 1910 Build/PKQ1.190302.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/81.0.4044.111 Mobile Safari/537.36",
+    "headers": {
+      "x-requested-with": "com.jaumo.prime"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "9",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Jaumo Prime"
+    },
+    "device": {
+      "type": 1,
+      "model": "V17 Pro",
+      "brand": {
+        "name": "Vivo",
+        "code": 1864
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36",
+    "headers": {
+      "x-requested-with": "com.appssppa.idesktoppcbrowser"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "cpuArchitecture": "x64",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "iDesktop PC Browser",
+      "code": 270,
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "52.0.2743.116"
+      }
+    },
+    "device": {
+      "type": 2
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; EML-L29 Build/HUAWEIEML-L29; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.78 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.fsecure.ms.darty"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "10",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Darty Sécurité"
+    },
+    "device": {
+      "type": 1,
+      "model": "P20",
+      "brand": {
+        "name": "Huawei",
+        "code": 757
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 12; SM-A528B Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.125 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.fsecure.ms.dc"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "12",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "F-Secure Mobile Security"
+    },
+    "device": {
+      "type": 1,
+      "model": "Galaxy A52s 5G",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 12; SM-G973F Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.125 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.fsecure.ms.swisscom.sa"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "12",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Swisscom Internet Security"
+    },
+    "device": {
+      "type": 1,
+      "model": "Galaxy S10",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 9; Redmi Note 8 Pro Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/101.0.4951.61 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.andrewshu.android.reddit"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "9",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Reddit is fun"
+    },
+    "device": {
+      "type": 10,
+      "model": "Redmi Note 8 Pro",
+      "brand": {
+        "name": "Xiaomi",
+        "code": 1973
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 8.0.0; SM-G930F Build/R16NW; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.152 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.andrewshu.android.redditdonation"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "8.0.0",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Reddit is fun"
+    },
+    "device": {
+      "type": 1,
+      "model": "Galaxy S7",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; SM-A750FN Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/84.0.4147.89 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "org.quantumbadger.redreader"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "10",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "RedReader"
+    },
+    "device": {
+      "type": 1,
+      "model": "Galaxy A7 (2018)",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 6.0; HUAWEI MLA-AL10 Build/HUAWEIMLA-AL10; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/73.0.3683.90 Mobile Safari/537.36 Weibo (HUAWEI-HUAWEI MLA-AL10__weibo__9.4.3__android__android6.0)",
+    "headers": {
+      "http-x-requested-with": "com.sina.weibo"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "6.0",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Sina Weibo",
+      "version": "9.4.3"
+    },
+    "device": {
+      "type": 1,
+      "model": "Maimang 5",
+      "brand": {
+        "name": "Huawei",
+        "code": 757
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 12; SM-G973F Build/SP1A.210812.016) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/103.0.5060.129 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.wiseplay"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "12",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Wiseplay"
+    },
+    "device": {
+      "type": 1,
+      "model": "Galaxy S10",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 12; Pixel 5 Build/SQ3A.220605.009.A1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.129 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.fsecure.ms.nifty"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "12",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Always Safe Security 24"
+    },
+    "device": {
+      "type": 1,
+      "model": "Pixel 5",
+      "brand": {
+        "name": "Google",
+        "code": 655
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 11; SM-A217F Build/RP1A.200720.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/91.0.4472.164 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.zeebusiness.news"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "11",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Zee Business"
+    },
+    "device": {
+      "type": 1,
+      "model": "Galaxy A21s",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 9; KYV46 Build/1.070PR.0099.a; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/103.0.5060.71 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.awesapp.isp"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "9",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "iSafePlay"
+    },
+    "device": {
+      "type": 1,
+      "model": "Torque G04",
+      "brand": {
+        "name": "Kyocera",
+        "code": 949
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; CLT-AL01 Build/HUAWEICLT-AL01; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/76.0.3809.89 Mobile Safari/537.36 T7/12.24 BDOS/1.0 (HarmonyOS 2.2.0) SP-engine/2.36.0 baiduboxapp/12.25.0.10 (Baidu; P1 10) NABar/1.0",
+    "headers": {
+      "http-x-requested-with": "com.baidu.searchbox"
+    },
+    "os": {
+      "name": "HarmonyOS",
+      "code": 58,
+      "version": "2.2.0",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Baidu Box App",
+      "version": "12.25.0.10"
+    },
+    "device": {
+      "type": 1,
+      "model": "P20 Pro",
+      "brand": {
+        "name": "Huawei",
+        "code": 757
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 9; SM-A505FN Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/101.0.4951.61 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "hesoft.T2S"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "9",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "T2S"
+    },
+    "device": {
+      "type": 1,
+      "model": "Galaxy A50",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 11; M2004J19C Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/102.0.5005.125 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "hippeis.com.photochecker"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "11",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Photo Sherlock"
+    },
+    "device": {
+      "type": 1,
+      "model": "Redmi 9",
+      "brand": {
+        "name": "Xiaomi",
+        "code": 1973
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 12; SM-A326U Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/102.0.5005.125 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.thinkfree.searchbyimage"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "12",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Reverse Image Search"
+    },
+    "device": {
+      "type": 1,
+      "model": "Galaxy A32 5G",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 7.0; 5086A Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/64.0.3282.137 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.tct.launcher"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "7.0",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Joy Launcher"
+    },
+    "device": {
+      "type": 1,
+      "model": "5",
+      "brand": {
+        "name": "Alcatel",
+        "code": 48
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 5.1.1; 5054S Build/LMY47V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/43.0.2357.121 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.tcl.live"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "5.1.1",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "TCL Live"
+    },
+    "device": {
+      "type": 1,
+      "model": "One Touch Pop 3 5.5\"",
+      "brand": {
+        "name": "Alcatel",
+        "code": 48
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g stylus Build/RPRS31.Q1-56-9-15; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/101.0.4951.61 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.harshad.someto"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "11",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Social Media Explorer"
+    },
+    "device": {
+      "type": 1,
+      "model": "Moto G Stylus",
+      "brand": {
+        "name": "Motorola",
+        "code": 1120
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 12; 2107113SG Build/SKQ1.211006.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/103.0.5060.129 Mobile Safari/537.36 Reddit/Version 2022.28.0/Build 533235/Android 12",
+    "headers": {
+      "http-x-requested-with": "com.reddit.frontpage"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "12",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Reddit",
+      "version": "2022.28.0"
+    },
+    "device": {
+      "type": 1,
+      "model": "Mi 11T Pro",
+      "brand": {
+        "name": "Xiaomi",
+        "code": 1973
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 12; CPH2251 Build/SP1A.210812.003; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/104.0.5112.69 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.omshyapps.vpn"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "12",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Omshy VPN"
+    },
+    "device": {
+      "type": 1,
+      "model": "Reno 6",
+      "brand": {
+        "name": "OPPO",
+        "code": 1273
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; U; Android 8.1.0; TECNO KA6 Build/O11019; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/98.0.4758.101 Mobile Safari/537.36 OPR/8.4.2254.56514",
+    "headers": {
+      "http-x-requested-with": "com.opera.app.news"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "8.1.0",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Opera News"
+    },
+    "device": {
+      "type": 1,
+      "model": "Spark Youth",
+      "brand": {
+        "name": "Tecno Mobile",
+        "code": 1684
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 11; moto g(20) Build/RTAS31.68-34-2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/102.0.5005.78 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.palmteam.imagesearch"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "11",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Search By Image"
+    },
+    "device": {
+      "type": 1,
+      "model": "Moto G20",
+      "brand": {
+        "name": "Motorola",
+        "code": 1120
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 11; CPH2001 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/100.0.4896.127 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.sharekaro.app"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "11",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "ShareKaro"
+    },
+    "device": {
+      "type": 1,
+      "model": "A91",
+      "brand": {
+        "name": "OPPO",
+        "code": 1273
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; CPH1933 Build/QKQ1.200209.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/81.0.4044.138 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.til.timesnews"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "10",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "NewsPoint"
+    },
+    "device": {
+      "type": 1,
+      "model": "A5 (2020)",
+      "brand": {
+        "name": "OPPO",
+        "code": 1273
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 11; Infinix X658E Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/101.0.4951.61 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.transsion.XOSLauncher"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "11",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "XOS Launcher"
+    },
+    "device": {
+      "type": 1,
+      "model": "Hot 10i",
+      "brand": {
+        "name": "Infinix",
+        "code": 813
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 9; TECNO LC6 Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/79.0.3945.116 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.transsion.hilauncher"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "9",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "HiOS Launcher"
+    },
+    "device": {
+      "type": 1,
+      "model": "Pouvoir 3 Air",
+      "brand": {
+        "name": "Tecno Mobile",
+        "code": 1684
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; itel A571L Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.transsion.itel.launcher"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "10",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "itel Launcher"
+    },
+    "device": {
+      "type": 1,
+      "model": "A26",
+      "brand": {
+        "name": "iTel",
+        "code": 853
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 6.0.1; SM-G532F Build/MMB29T; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36 TwitterAndroid",
+    "headers": {
+      "http-x-requested-with": "com.twitter.android"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "6.0.1",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Twitter"
+    },
+    "device": {
+      "type": 10,
+      "model": "Galaxy Grand Prime Plus",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 5.1.1; SM-J320H Build/LMY47V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/49.0.2623.105 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.waze"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "5.1.1",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Waze"
+    },
+    "device": {
+      "type": 1,
+      "model": "Galaxy J3 (2016)",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 12; SM-G991B Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/100.0.4896.127 Mobile Safari/537.36 TuyaSmart/3.38.1 TuyaSmartH5/1.0.0 TuyaHybrid/1.0.0 For Android/31",
+    "headers": {
+      "http-x-requested-with": "com.tuya.smartlife"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "12",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Tuya Smart Life",
+      "version": "3.38.1"
+    },
+    "device": {
+      "type": 1,
+      "model": "Galaxy S21 5G",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 5.1.1; Alcatel_4060A Build/LMY47V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/69.0.3497.100 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.cleanmaster.mguard"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "5.1.1",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Clean Master"
+    },
+    "device": {
+      "type": 1,
+      "model": "4060A",
+      "brand": {
+        "name": "Alcatel",
+        "code": 48
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; SCM-AL09 Build/HUAWEISCM-AL09; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.93 Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.cleanmaster.mguard.huawei"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "10",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Clean Master"
+    },
+    "device": {
+      "type": 2,
+      "model": "MediaPad M6 10.8\"",
+      "brand": {
+        "name": "Huawei",
+        "code": 757
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 12; SM-A135F Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/103.0.5060.71 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "de.twokit.castbrowsernexusplayer"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "12",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "TV Cast"
+    },
+    "device": {
+      "type": 1,
+      "model": "Galaxy A13",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 9; SM-G950W Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/100.0.4896.88 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "de.twokit.video.tv.cast.browser.firetv"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "9",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "TV Cast"
+    },
+    "device": {
+      "type": 1,
+      "model": "Galaxy S8",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; Redmi 8A Build/QKQ1.191014.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/87.0.4280.101 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "de.twokit.video.tv.cast.browser.lg"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "10",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "TV Cast"
+    },
+    "device": {
+      "type": 1,
+      "model": "Redmi 8A",
+      "brand": {
+        "name": "Xiaomi",
+        "code": 1973
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; SM-T835 Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/102.0.5005.125 Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "de.twokit.video.tv.cast.browser.samsung"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "10",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "TV Cast"
+    },
+    "device": {
+      "type": 2,
+      "model": "Galaxy Tab S4 10.5\"",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 11; M2101K7BL Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/44.0.2403.119 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.cleanmaster.security"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "11",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "CM Security"
+    },
+    "device": {
+      "type": 10,
+      "model": "Redmi Note 10S",
+      "brand": {
+        "name": "Xiaomi",
+        "code": 1973
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; U; Android 4.3; Google Nexus 4 Build/JLS36G) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30",
+    "headers": {
+      "http-x-requested-with": "idm.video.free"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "4.3",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "IDM Video Download Manager"
+    },
+    "device": {
+      "type": 1,
+      "model": "Nexus 4",
+      "brand": {
+        "name": "Google",
+        "code": 655
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 12; SM-A326U Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/101.0.4951.61 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "mobi.deallauncher.coupons.shopping"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "12",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Coupons & Deals"
+    },
+    "device": {
+      "type": 1,
+      "model": "Galaxy A32 5G",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; U; Android 7.0; en-us) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/53.0.2785.146 Mobile Safari/537.36 QuickCast",
+    "headers": {
+      "http-x-requested-with": "com.wukongtv.wkcast.intl"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "7.0",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Quick Cast"
+    },
+    "device": {
+      "type": 1
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 8.1; Y27 Build/LMY47I; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/43.0.2357.121 Mobile Safari/537.36/4.05d.1002.m75.10.14003",
+    "headers": {
+      "http-x-requested-with": "com.tt.android.dm.view"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "8.1",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Download Manager"
+    },
+    "device": {
+      "type": 1
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 12; SM-A326B Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.5195.79 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.fsecure.ms.kpn.veilig"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "12",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "KPN Veilig"
+    },
+    "device": {
+      "type": 1,
+      "model": "Galaxy A32 5G",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 11; Redmi Note 8 Build/RKQ1.201004.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.5359.128 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.fsecure.ms.actshield"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "11",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "ACT Shield"
+    },
+    "device": {
+      "type": 10,
+      "model": "Redmi Note 8",
+      "brand": {
+        "name": "Xiaomi",
+        "code": 1973
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 12; SM-A125F Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.5615.101 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.fsecure.ms.talktalksa"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "12",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "TalkTalk SuperSafe"
+    },
+    "device": {
+      "type": 1,
+      "model": "Galaxy A12",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 13; SM-A715F Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/114.0.5735.196 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.bifrostwallet.app"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "13",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Bifrost Wallet"
+    },
+    "device": {
+      "type": 1,
+      "model": "Galaxy A71",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 12; Lenovo TB128XU Build/SKQ1.220119.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/114.0.5735.196 Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.anydesk.anydeskandroid"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "12",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "AnyDesk Remote Desktop"
+    },
+    "device": {
+      "type": 2,
+      "model": "Tab M10 Plus (Gen 3)",
+      "brand": {
+        "name": "Lenovo",
+        "code": 976
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 9; en-gb; MRD-LX1 Build/HUAWEIMRD-LX1;) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.116 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.kuto.vpn"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "9",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "KUTO VPN"
+    },
+    "device": {
+      "type": 1,
+      "model": "Y6 (2019)",
+      "brand": {
+        "name": "Huawei",
+        "code": 757
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 13; SM-G998B Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/114.0.5735.60 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.google.android.youtube"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "13",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "YouTube"
+    },
+    "device": {
+      "type": 1,
+      "model": "Galaxy S21 Ultra 5G",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 13; SM-A336B Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/107.0.5304.141 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "io.bluewallet.bluewallet"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "13",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "BlueWallet"
+    },
+    "device": {
+      "type": 1,
+      "model": "Galaxy A33 5G",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; moto e(7i) power Build/QOJS30.506-7-18) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.166 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.google.android.apps.searchlite"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "10",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Google Go"
+    },
+    "device": {
+      "type": 1,
+      "model": "Moto E7i Power",
+      "brand": {
+        "name": "Motorola",
+        "code": 1120
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 12; SM-A115AZ Build/SP1A.210812.016) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/115.0.5790.166 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.snaptube.premium"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "12",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "SnapTube"
+    },
+    "device": {
+      "type": 1,
+      "model": "Galaxy A11",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; SM-G960U Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/115.0.5790.166 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.myhomescreen.sms"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "10",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Messenger Home"
+    },
+    "device": {
+      "type": 1,
+      "model": "Galaxy S9",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 13; SM-A037U Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/106.0.5249.126 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.myhomescreen.email"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "13",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Email Home"
+    },
+    "device": {
+      "type": 1,
+      "model": "Galaxy A03s",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 13; SM-S911U Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.myhomescreen.weather"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "13",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Weather Home"
+    },
+    "device": {
+      "type": 1,
+      "model": "Galaxy S23",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 13; SM-A536U Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/108.0.5359.128 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.myhomescreen.access"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "13",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Big Keyboard"
+    },
+    "device": {
+      "type": 1,
+      "model": "Galaxy A53 5G",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 9; SM-A530W Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/115.0.5790.166 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.myhomescreen.messenger.home.emoji.lite"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "9",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Messenger Lite"
+    },
+    "device": {
+      "type": 1,
+      "model": "Galaxy A8 (2018)",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 11; SM-A326U Build/RP1A.200720.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/100.0.4896.79 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.myhomescreen.fitness"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "11",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Fit Home"
+    },
+    "device": {
+      "type": 1,
+      "model": "Galaxy A32 5G",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 13; SM-S901U1 Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/115.0.5790.138 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.myhomescreen.news"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "13",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "News Home"
+    },
+    "device": {
+      "type": 1,
+      "model": "Galaxy S22",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 9; KFMAWI Build/PS7327.3329N; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/112.0.5615.197 Mobile Safari/537.36 cordova-amazon-fireos/3.4.0 AmazonWebAppPlatform/3.4.0;2.0",
+    "headers": {
+      "http-x-requested-with": "com.amazon.webapps.gms.search"
+    },
+    "os": {
+      "name": "Fire OS",
+      "code": 42,
+      "version": "7",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Google Search App"
+    },
+    "device": {
+      "type": 2,
+      "model": "Fire HD 10 (2019)",
+      "brand": {
+        "name": "Amazon",
+        "code": 72
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; BND-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.116 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.huawei.fastapp"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "10",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Huawei Quick App Center"
+    },
+    "device": {
+      "type": 1,
+      "model": "Honor 7X",
+      "brand": {
+        "name": "Huawei",
+        "code": 757
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 11; M2006C3LG Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/94.0.4606.85 Mobile Safari/537.36 appname/HideX appverc/30405011 appname/HideX appverc/30405011 appname/HideX appverc/30405011 appname/HideX appverc/30405011 appname/HideX appverc/30405011 appname/HideX appverc/30405011",
+    "headers": {
+      "http-x-requested-with": "com.flatfish.cal.privacy"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "11",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "HideX"
+    },
+    "device": {
+      "type": 1,
+      "model": "Redmi 9A",
+      "brand": {
+        "name": "Xiaomi",
+        "code": 1973
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; M2006C3LG Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/109.0.5414.117 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.sweep.cleaner.trash.junk"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "10",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Sweep"
+    },
+    "device": {
+      "type": 1,
+      "model": "Redmi 9A",
+      "brand": {
+        "name": "Xiaomi",
+        "code": 1973
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 6.0; BG2-W09 Build/HuaweiBAGGIO2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/55.0.2883.91 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.google.android.apps.maps"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "6.0",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Google Maps"
+    },
+    "device": {
+      "type": 2,
+      "model": "MediaPad T3 7",
+      "brand": {
+        "name": "Huawei",
+        "code": 757
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; SM-T865 Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.110 Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.box.video.downloader"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "10",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "BOX Video Downloader"
+    },
+    "device": {
+      "type": 2,
+      "model": "Galaxy Tab S6 10.5\"",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 12; M2010J19SY Build/SKQ1.211202.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/119.0.6045.163 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.oxoo.kinogo"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "12",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Kinogo.ge"
+    },
+    "device": {
+      "type": 1,
+      "model": "Redmi 9T",
+      "brand": {
+        "name": "Xiaomi",
+        "code": 1973
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.tradron.hdvideodownloader"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "11",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Download Hub"
+    },
+    "device": {
+      "type": 1,
+      "model": "Pixel 5",
+      "brand": {
+        "name": "Google",
+        "code": 655
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 14; SM-A536B Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.231 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.fsecure.ms.dnafi"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "14",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "DNA Digiturva"
+    },
+    "device": {
+      "type": 1,
+      "model": "Galaxy A53 5G",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; STK-LX1 Build/HUAWEISTK-LX1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.144 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.fsecure.ms.teliasweden"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "10",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Telia Trygg"
+    },
+    "device": {
+      "type": 1,
+      "model": "P smart Z",
+      "brand": {
+        "name": "Huawei",
+        "code": 757
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 5.0; SM-N9005 Build/LRX21V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.74 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.fsecure.ms.upc.ch"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "5.0",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "UPC Internet Security"
+    },
+    "device": {
+      "type": 10,
+      "model": "Galaxy Note 3",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 12; SM-G975F Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.fsecure.ms.sfr"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "12",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "SFR Sécurité"
+    },
+    "device": {
+      "type": 1,
+      "model": "Galaxy S10+",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 11; SM-A202F Build/RP1A.200720.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.43 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.fsecure.ms.sonera"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "11",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Telia Turvapaketti"
+    },
+    "device": {
+      "type": 1,
+      "model": "Galaxy A20e",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; SM-G965U Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/99.0.4844.88 Mobile Safari/537.36 DaumApps/6.9.27 DaumDevice/mobile",
+    "headers": {
+      "http-x-requested-with": "net.daum.android.daum"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "10",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Daum",
+      "version": "6.9.27"
+    },
+    "device": {
+      "type": 1,
+      "model": "Galaxy S9+",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; U; Android 4.4; en-us; Nexus 4 Build/JOP24G) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30",
+    "headers": {
+      "http-x-requested-with": "com.ezt.vpn"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "4.4",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "EZVPN"
+    },
+    "device": {
+      "type": 1,
+      "model": "Nexus 4",
+      "brand": {
+        "name": "Google",
+        "code": 655
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; 5007G Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.nocardteam.nocardvpn"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "10",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "NoCard VPN"
+    },
+    "device": {
+      "type": 1,
+      "model": "1V (2020)",
+      "brand": {
+        "name": "Alcatel",
+        "code": 48
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; 5007G Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.nocardteam.nocardvpn.lite"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "10",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "NoCard VPN Lite"
+    },
+    "device": {
+      "type": 1,
+      "model": "1V (2020)",
+      "brand": {
+        "name": "Alcatel",
+        "code": 48
+      }
+    }
+  },
+  {
+    "userAgent": "+Simple Browser",
+    "headers": {
+      "http-x-requested-with": "com.massimple.nacion.parana.es"
+    },
+    "client": {
+      "type": 0,
+      "name": "+Simple"
+    }
+  },
+  {
+    "userAgent": "+Simple Browser",
+    "headers": {
+      "http-x-requested-with": "com.massimple.nacion.gcba.es"
+    },
+    "client": {
+      "type": 0,
+      "name": "+Simple"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; SM-G965U Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.162 Mobile Safari/537.36 mkBrowser/1.5.1",
+    "headers": {
+      "http-x-requested-with": "com.antivirus.master.cmsecurity"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "10",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "CM Security"
+    },
+    "device": {
+      "type": 1,
+      "model": "Galaxy S9+",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 11; JLN-LX3 Build/HUAWEIJLN-LX3; ) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.93 Mobile Safari/537.36 Sapphire/23.3.401205602",
+    "headers": {
+      "http-x-requested-with": "com.microsoft.math"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "11",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Microsoft Math Solver"
+    },
+    "device": {
+      "type": 1,
+      "model": "Nova 9 SE",
+      "brand": {
+        "name": "Huawei",
+        "code": 757
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 11; ZTE 8010) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.127 Mobile Safari/537.36 Instabridge/21.9.0",
+    "headers": {
+      "http-x-requested-with": "com.instabridge.android"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "11",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Instabridge",
+      "version": "21.9.0"
+    },
+    "device": {
+      "type": 10,
+      "model": "Blade V2020 Smart",
+      "brand": {
+        "name": "ZTE",
+        "code": 2039
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 11; MI 9 Build/RKQ1.200826.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/106.0.5249.126 Mobile Safari/537.36 Whatplay",
+    "headers": {
+      "http-x-requested-with": "com.repotools.whatplay"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "11",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Whatplay"
+    },
+    "device": {
+      "type": 1,
+      "model": "Mi 9",
+      "brand": {
+        "name": "Xiaomi",
+        "code": 1973
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0  App/2000002 Plu/3013 channel/0main  (Linux; Android 12; CET-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.2526.83 Mobile Safari/537.36 SearchCraft/2.6.1 (Baidu; P2 11.3.1)",
+    "headers": {
+      "http-x-requested-with": "com.saf.seca"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "12",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "SearchCraft",
+      "version": "2.6.1"
+    },
+    "device": {
+      "type": 1,
+      "model": "Mate 50",
+      "brand": {
+        "name": "Huawei",
+        "code": 757
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; HMA-L29 Build/HUAWEIHMA-L29; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.125 Mobile Safari/537.36 HMSCore/6.5.1.302",
+    "headers": {
+      "http-x-requested-with": "com.huawei.hwsearch"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "10",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Petal Search"
+    },
+    "device": {
+      "type": 1,
+      "model": "Mate 20",
+      "brand": {
+        "name": "Huawei",
+        "code": 757
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; Redmi 8A Dual Build/QKQ1.191014.001) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/96.0.4664.45 Mobile Safari/537.36 appname/PLAYit appverc/20602004 appname/PLAYit appverc/20602004 appname/PLAYit appverc/20602004 appname/PLAYit appverc/20602004",
+    "headers": {
+      "http-x-requested-with": "com.playit.videoplayer"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "10",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "PLAYit"
+    },
+    "device": {
+      "type": 1,
+      "model": "Redmi 8A Dual",
+      "brand": {
+        "name": "Xiaomi",
+        "code": 1973
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 11.0; Orange TV Box Build/QTG1.200615.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/102.0.5005.22 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.droidlogic.xlauncher"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "11.0",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "X Launcher"
+    },
+    "device": {
+      "type": 5,
+      "model": "TV Box",
+      "brand": {
+        "name": "Orange",
+        "code": 1277
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 12; SM-A032F Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/119.0.6045.193 Mobile Safari/537.36 binu/7441 (5b9a75f88345479c)",
+    "headers": {
+      "http-x-requested-with": "nu.bi.moya"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "12",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Moya"
+    },
+    "device": {
+      "type": 1,
+      "model": "Galaxy A03 Core",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 14; Pixel 6 Build/UQ1A.240105.002; ) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36 EdgA/119.0.0.0",
+    "headers": {
+      "http-x-requested-with": "com.microsoft.copilot"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "14",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Microsoft Copilot"
+    },
+    "device": {
+      "type": 1,
+      "model": "Pixel 6",
+      "brand": {
+        "name": "Google",
+        "code": 655
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 9; SM-G950N Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/116.0.0.0 Mobile Safari/537.36;ref:nate_app;appver:5.6.2;ndruk:201709200847194045040;skai:kotlin.Unit;provider:TS;darkMode:light",
+    "headers": {
+      "http-x-requested-with": "com.nate.android.portalmini"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "9",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "nate",
+      "version": "5.6.2"
+    },
+    "device": {
+      "type": 1,
+      "model": "Galaxy S8",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; SM-J105H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.164 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "za.co.tracker.consumer"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "10",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Tracker Connect"
+    },
+    "device": {
+      "type": 1,
+      "model": "Galaxy J1 Mini",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 12; VNE-LX3 Build/HONORVNE-L43CM; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.larus.wolf"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "12",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Cici"
+    },
+    "device": {
+      "type": 1,
+      "model": "Honor X6",
+      "brand": {
+        "name": "Huawei",
+        "code": 757
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 11; SM-A505FN Build/RP1A.200720.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.79 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.qihoo.security"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "11",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "360 Security"
+    },
+    "device": {
+      "type": 1,
+      "model": "Galaxy A50",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 11; Infinix X688B Build/RP1A.200720.011) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/110.0.5481.153 Mobile Safari/537.36 XShare/330003",
+    "headers": {
+      "http-x-requested-with": "com.infinix.xshare"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "11",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "XShare"
+    },
+    "device": {
+      "type": 1,
+      "model": "Hot 10 Play",
+      "brand": {
+        "name": "Infinix",
+        "code": 813
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 12; Infinix X665E Build/SP1A.210812.016) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/118.0.0.0 Mobile Safari/537.36; VISHAAPP 4.1.1.1501",
+    "headers": {
+      "http-x-requested-with": "com.transsion.magicshow"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "12",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Visha",
+      "version": "4.1.1.1501"
+    },
+    "device": {
+      "type": 1,
+      "model": "Hot 20i",
+      "brand": {
+        "name": "Infinix",
+        "code": 813
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; M2007J3SG Build/QKQ1.200419.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/114.0.5735.130 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.bigqsys.photosearch.searchbyimage2020"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "10",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Photo Search"
+    },
+    "device": {
+      "type": 1,
+      "model": "Mi 10T Pro 5G",
+      "brand": {
+        "name": "Xiaomi",
+        "code": 1973
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 14; SM-S918W Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/122.0.6261.119 Mobile Safari/537.36/122.0.6261.119",
+    "headers": {
+      "http-x-requested-with": "com.stickypassword.android"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "14",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Sticky Password"
+    },
+    "device": {
+      "type": 1,
+      "model": "Galaxy S23 Ultra",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 13; SM-A136U1 Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/124.0.6367.123 Mobile Safari/537.36 nyt_android/5.5.0",
+    "headers": {
+      "http-x-requested-with": "com.nytimes.crossword"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "13",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "The Crossword",
+      "version": "5.5.0"
+    },
+    "device": {
+      "type": 1,
+      "model": "Galaxy A13 5G",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/121.0",
+    "headers": {
+      "Sec-CH-UA-Platform": "Android",
+      "http-x-requested-with": "castify.roku"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "cpuArchitecture": "x64",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Castify"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 12; SM-T503 Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/120.0.6099.193 Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.castify"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "12",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Castify"
+    },
+    "device": {
+      "type": 2,
+      "model": "Galaxy Tab A7 10.4\" (2020) WiFi",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "mojeek-app",
+    "headers": {
+      "Sec-CH-UA": "\"Chromium\";v=\"128\", \"Not;A=Brand\";v=\"24\", \"Android WebView\";v=\"128\"",
+      "Sec-CH-UA-Platform": "Android",
+      "Sec-CH-UA-Mobile": "?1",
+      "http-x-requested-with": "mojeek.app"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Mojeek"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 14; K) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/127.0.6533.103 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "org.telegram.messenger.web"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "14",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Telegram"
+    },
+    "device": {
+      "type": 1
+    }
+  }
+]

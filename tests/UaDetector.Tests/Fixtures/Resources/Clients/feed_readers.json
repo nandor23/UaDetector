@@ -1,3 +1,240 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:381961c6f3bf101094f4b98ab06decdc5717855c0878e9d6918b5e72bb664d14
-size 5347
+[
+  {
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.21 (KHTML, like Gecko) akregator/4.11.5 Safari/537.21",
+    "client": {
+      "type": 3,
+      "name": "Akregator",
+      "version": "4.11.5"
+    }
+  },
+  {
+    "userAgent": "Akregator/4.12.3; syndication SUSE",
+    "client": {
+      "type": 3,
+      "name": "Akregator",
+      "version": "4.12.3"
+    }
+  },
+  {
+    "userAgent": "Akregator/1.2.9; librss/remnants",
+    "client": {
+      "type": 3,
+      "name": "Akregator",
+      "version": "1.2.9"
+    }
+  },
+  {
+    "userAgent": "Apple-PubSub/65.28",
+    "client": {
+      "type": 3,
+      "name": "Apple PubSub",
+      "version": "65.28"
+    }
+  },
+  {
+    "userAgent": "FeedDemon/4.5 (http://www.feeddemon.com/; Microsoft Windows)",
+    "client": {
+      "type": 3,
+      "name": "FeedDemon",
+      "version": "4.5"
+    }
+  },
+  {
+    "userAgent": "FeedDemon/4.5 (http://www.feeddemon.com/; Microsoft Windows XP)",
+    "client": {
+      "type": 3,
+      "name": "FeedDemon",
+      "version": "4.5"
+    }
+  },
+  {
+    "userAgent": "FeeddlerPro/2.4 CFNetwork/672.0.8 Darwin/14.0.0",
+    "client": {
+      "type": 3,
+      "name": "Feeddler RSS Reader",
+      "version": "2.4"
+    }
+  },
+  {
+    "userAgent": "FeeddlerRSS/2.4 CFNetwork/548.1.4 Darwin/11.0.0",
+    "client": {
+      "type": 3,
+      "name": "Feeddler RSS Reader",
+      "version": "2.4"
+    }
+  },
+  {
+    "userAgent": "FeeddlerRSS 2.4 (iPad; iPhone OS 5.1.1; en_US)",
+    "client": {
+      "type": 3,
+      "name": "Feeddler RSS Reader",
+      "version": "2.4"
+    }
+  },
+  {
+    "userAgent": "JetBrains Omea Reader 2.2 (http://www.jetbrains.com/omea/reader/)",
+    "client": {
+      "type": 3,
+      "name": "JetBrains Omea Reader",
+      "version": "2.2"
+    }
+  },
+  {
+    "userAgent": "Liferea/1.6.4 (Linux; en_US.UTF-8; http://liferea.sf.net/)",
+    "client": {
+      "type": 3,
+      "name": "Liferea",
+      "version": "1.6.4"
+    }
+  },
+  {
+    "userAgent": "Liferea/1.10-RC1 (Linux; en_GB.UTF-8; http://liferea.sf.net/)",
+    "client": {
+      "type": 3,
+      "name": "Liferea",
+      "version": "1.10"
+    }
+  },
+  {
+    "userAgent": "Liferea/1.10.6 (Linux; en_US.UTF8; http://liferea.sf.net/) AppleWebKit (KHTML, like Gecko)",
+    "client": {
+      "type": 3,
+      "name": "Liferea",
+      "version": "1.10.6"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.74.9 (KHTML, like Gecko) Version/6.0 NetNewsWire/4.0.0",
+    "client": {
+      "type": 3,
+      "name": "NetNewsWire",
+      "version": "4.0.0"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.74.9 (KHTML, like Gecko) NetNewsWire/3.3.2",
+    "client": {
+      "type": 3,
+      "name": "NetNewsWire",
+      "version": "3.3.2"
+    }
+  },
+  {
+    "userAgent": "NetNewsWire/4.0.0 (Mac OS X; http://netnewswireapp.com/mac/; gzip-happy)",
+    "client": {
+      "type": 3,
+      "name": "NetNewsWire",
+      "version": "4.0.0"
+    }
+  },
+  {
+    "userAgent": "newsbeuter/2.7 (Linux x86_64)",
+    "client": {
+      "type": 3,
+      "name": "Newsbeuter",
+      "version": "2.7"
+    }
+  },
+  {
+    "userAgent": "NewsBlur iPhone App v3.6",
+    "client": {
+      "type": 3,
+      "name": "NewsBlur Mobile App",
+      "version": "3.6"
+    }
+  },
+  {
+    "userAgent": "NewsBlur iPad App v3.6",
+    "client": {
+      "type": 3,
+      "name": "NewsBlur Mobile App",
+      "version": "3.6"
+    }
+  },
+  {
+    "userAgent": "NewsBlur/4.0.1 CFNetwork/672.1.13 Darwin/14.0.0",
+    "client": {
+      "type": 3,
+      "name": "NewsBlur",
+      "version": "4.0.1"
+    }
+  },
+  {
+    "userAgent": "newsbeuter/2.4 (Linux 3.2.0-23-generic; i686; http://www.newsbeuter.org/) libcurl/7.22.0 GnuTLS/2.12.14 zlib/1.2.3.4 libidn/1.23 librtmp/2.3",
+    "client": {
+      "type": 3,
+      "name": "Newsbeuter",
+      "version": "2.4"
+    }
+  },
+  {
+    "userAgent": "Pulp/1.5.2 (iPad; http://www.acrylicapps.com/pulp/)",
+    "client": {
+      "type": 3,
+      "name": "Pulp",
+      "version": "1.5.2"
+    }
+  },
+  {
+    "userAgent": "ReadKit/2.4.0 (Mac OS X Version 10.9.2 (Build 13C64))",
+    "client": {
+      "type": 3,
+      "name": "ReadKit",
+      "version": "2.4.0"
+    }
+  },
+  {
+    "userAgent": "ReadKit/7017 CFNetwork/673.2.1 Darwin/13.1.0 (x86_64) (MacBookPro10%2C1)",
+    "client": {
+      "type": 3,
+      "name": "ReadKit",
+      "version": "7017"
+    }
+  },
+  {
+    "userAgent": "Reeder/3.2 CFNetwork/672.1.12 Darwin/14.0.0",
+    "client": {
+      "type": 3,
+      "name": "Reeder",
+      "version": "3.2"
+    }
+  },
+  {
+    "userAgent": "RssBandit/1.9.0.1002",
+    "client": {
+      "type": 3,
+      "name": "RSS Bandit",
+      "version": "1.9.0.1002"
+    }
+  },
+  {
+    "userAgent": "RssBandit/1.9.0.1002 (.NET CLR 2.0.50727.7512; WinNT 6.2.9200.0; http://www.rssbandit.org)",
+    "client": {
+      "type": 3,
+      "name": "RSS Bandit",
+      "version": "1.9.0.1002"
+    }
+  },
+  {
+    "userAgent": "RSS Junkie Daemon",
+    "client": {
+      "type": 3,
+      "name": "RSS Junkie"
+    }
+  },
+  {
+    "userAgent": "RSSOwl/2.2.1.201312301314 (Windows; U; en)",
+    "client": {
+      "type": 3,
+      "name": "RSSOwl",
+      "version": "2.2.1.201312301314"
+    }
+  },
+  {
+    "userAgent": "Stringer (https://github.com/swanson/stringer)",
+    "client": {
+      "type": 3,
+      "name": "Stringer"
+    }
+  }
+]

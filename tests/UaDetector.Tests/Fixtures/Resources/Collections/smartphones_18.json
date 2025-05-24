@@ -1,3 +1,5532 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:49beb026ec04b8a7ffa532527cf3a532c738c775349ba10d32be785f4a7539b8
-size 128345
+[
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 9; CPH1925) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.136 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "9",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "74.0.3729.136",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "74.0.3729.136"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "A1s",
+      "brand": {
+        "name": "OPPO",
+        "code": 1273
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; SO-41A) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.101 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "10",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "85.0.4183.101",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "85.0.4183.101"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Xperia 10 II",
+      "brand": {
+        "name": "Sony",
+        "code": 1588
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; XIG01) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.127 Mobile Safari/537.36173",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "10",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "85.0.4183.127",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "85.0.4183.127"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Mi 10 Lite 5G",
+      "brand": {
+        "name": "Xiaomi",
+        "code": 1973
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; ASUS_I003D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.127 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "10",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "85.0.4183.127",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "85.0.4183.127"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "ROG Phone 3",
+      "brand": {
+        "name": "Asus",
+        "code": 118
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; SOG01) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.127 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "10",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "85.0.4183.127",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "85.0.4183.127"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Xperia 1 II",
+      "brand": {
+        "name": "Sony",
+        "code": 1588
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; 801FJ) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.101 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "10",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "85.0.4183.101",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "85.0.4183.101"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Arrows U 801FJ",
+      "brand": {
+        "name": "Fujitsu",
+        "code": 594
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; SH-RM12) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.101 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "10",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "85.0.4183.101",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "85.0.4183.101"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Aquos S3 Lite",
+      "brand": {
+        "name": "Sharp",
+        "code": 1532
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 5.0.2; 404SH) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.127 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "5.0.2",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "85.0.4183.127",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "85.0.4183.127"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Aquos Xx",
+      "brand": {
+        "name": "Sharp",
+        "code": 1532
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; SCV47) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.127 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "10",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "85.0.4183.127",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "85.0.4183.127"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Galaxy Z Flip",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; SCV48) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.99 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "10",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "80.0.3987.99",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "80.0.3987.99"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Galaxy A41",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; SO-51A) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.111 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "10",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "84.0.4147.111",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "84.0.4147.111"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Xperia 1 II",
+      "brand": {
+        "name": "Sony",
+        "code": 1588
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; KYV48) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.127 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "10",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "85.0.4183.127",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "85.0.4183.127"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Gratina KYV48",
+      "brand": {
+        "name": "Kyocera",
+        "code": 949
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 8.1.0; SHV43-u) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "8.1.0",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "84.0.4147.125",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "84.0.4147.125"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Aquos S2",
+      "brand": {
+        "name": "Sharp",
+        "code": 1532
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 7.1.1; arrowsM04-PREMIUM) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "7.1.1",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "84.0.4147.125",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "84.0.4147.125"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Arrows M04 Premium",
+      "brand": {
+        "name": "Fujitsu",
+        "code": 594
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; F-51A) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.101 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "10",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "85.0.4183.101",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "85.0.4183.101"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Arrows 5G F-51A",
+      "brand": {
+        "name": "Fujitsu",
+        "code": 594
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 9; 704HW) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.99 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "9",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "86.0.4240.99",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "86.0.4240.99"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Nova 2 Lite",
+      "brand": {
+        "name": "Huawei",
+        "code": 757
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 7.0; 608HW) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.120 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "7.0",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "85.0.4183.120",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "85.0.4183.120"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Nova Lite",
+      "brand": {
+        "name": "Huawei",
+        "code": 757
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; LIO-N29) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "10",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "86.0.4240.75",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "86.0.4240.75"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Mate 30 Pro 5G",
+      "brand": {
+        "name": "Huawei",
+        "code": 757
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; A001LG) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.83 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "10",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "83.0.4103.83",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "83.0.4103.83"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "V60 ThinQ 5G",
+      "brand": {
+        "name": "LG",
+        "code": 984
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; SOV43) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Mobile Safari/537.361",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "10",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "83.0.4103.106",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "83.0.4103.106"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Xperia 10 II",
+      "brand": {
+        "name": "Sony",
+        "code": 1588
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; KYV47) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "10",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "83.0.4103.106",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "83.0.4103.106"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Basio 4",
+      "brand": {
+        "name": "Kyocera",
+        "code": 949
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 9; KYV44_u) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.101 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "9",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "85.0.4183.101",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "85.0.4183.101"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Qua Phone QZ",
+      "brand": {
+        "name": "Kyocera",
+        "code": 949
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 7.0; KYV40) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.81 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "7.0",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "85.0.4183.81",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "85.0.4183.81"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Rafre",
+      "brand": {
+        "name": "Kyocera",
+        "code": 949
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; SH-RM11) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "10",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "84.0.4147.125",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "84.0.4147.125"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Aquos S3 Plus",
+      "brand": {
+        "name": "Sharp",
+        "code": 1532
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; M2006C3MG) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.99 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "10",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "86.0.4240.99",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "86.0.4240.99"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Redmi 9C",
+      "brand": {
+        "name": "Xiaomi",
+        "code": 1973
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; M2006C3MNG Build/QP1A.190711.020) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.127 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "10",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "85.0.4183.127",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "85.0.4183.127"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Redmi 9C NFC",
+      "brand": {
+        "name": "Xiaomi",
+        "code": 1973
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; MED-LX9) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.127 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "10",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "85.0.4183.127",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "85.0.4183.127"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Y6p",
+      "brand": {
+        "name": "Huawei",
+        "code": 757
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; ELS-N39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.101 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "10",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "85.0.4183.101",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "85.0.4183.101"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "P40 Pro Plus",
+      "brand": {
+        "name": "Huawei",
+        "code": 757
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; ELS-N04) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.111 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "10",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "84.0.4147.111",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "84.0.4147.111"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "P40 Pro",
+      "brand": {
+        "name": "Huawei",
+        "code": 757
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; ELS-AN10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.127 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "10",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "85.0.4183.127",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "85.0.4183.127"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "P40 Pro Plus",
+      "brand": {
+        "name": "Huawei",
+        "code": 757
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 8.0.0; ASUS_X00PS) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.101 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "8.0.0",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "83.0.4103.101",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "83.0.4103.101"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "ZenFone Max M1",
+      "brand": {
+        "name": "Asus",
+        "code": 118
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 8.0.0; ASUS_Z01GS) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.79 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "8.0.0",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "79.0.3945.79",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "79.0.3945.79"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "ZenFone 4 Pro",
+      "brand": {
+        "name": "Asus",
+        "code": 118
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 8.0.0; OUKITEL WP2 Build/NMF26F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.111 Mobile Safari/537.36 AlohaBrowser/2.20.3",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "8.0.0",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Aloha Browser",
+      "code": 40,
+      "version": "2.20.3",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "76.0.3809.111"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "WP2",
+      "brand": {
+        "name": "Oukitel",
+        "code": 1292
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; ASUS_X00T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.110 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "10",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "86.0.4240.110",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "86.0.4240.110"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "ZenFone Max Pro M1",
+      "brand": {
+        "name": "Asus",
+        "code": 118
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 8.1.0; PAR-LX1M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "8.1.0",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "84.0.4147.125",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "84.0.4147.125"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Nova 3",
+      "brand": {
+        "name": "Huawei",
+        "code": 757
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 8.1.0; Vox_5S) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "8.1.0",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "84.0.4147.89",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "84.0.4147.89"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Vox 5S",
+      "brand": {
+        "name": "Iris",
+        "code": 844
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 8.1.0; VOX Alpha Plus) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "8.1.0",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "84.0.4147.89",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "84.0.4147.89"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Vox Alpha Plus",
+      "brand": {
+        "name": "Iris",
+        "code": 844
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 8.1.0; VOX Alpha) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "8.1.0",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "70.0.3538.110",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "70.0.3538.110"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Vox Alpha",
+      "brand": {
+        "name": "Iris",
+        "code": 844
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 8.1.0; VOX POP plus Build/O11019) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.126 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "8.1.0",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "66.0.3359.126",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "66.0.3359.126"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Vox Pop Plus",
+      "brand": {
+        "name": "Iris",
+        "code": 844
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 8.1.0; VOX POP Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "8.1.0",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "84.0.4147.89",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "84.0.4147.89"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Vox Pop Pro",
+      "brand": {
+        "name": "Iris",
+        "code": 844
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 8.1.0; VIVAX_PRO3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.101 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "8.1.0",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "83.0.4103.101",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "83.0.4103.101"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Pro 3",
+      "brand": {
+        "name": "Vivax",
+        "code": 1861
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Android 8.1.0; OUKITEL K7) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36 SurfBrowser/3.0",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "8.1.0",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Surf Browser",
+      "code": 567,
+      "version": "3.0",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "30.0.0.0"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "K7",
+      "brand": {
+        "name": "Oukitel",
+        "code": 1292
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; U; Android 9; Neffos A5 Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.96 Mobile Safari/537.36 OPR/50.0.2254.149182",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "9",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Opera Mobile",
+      "code": 419,
+      "version": "50.0.2254.149182",
+      "family": "Opera",
+      "engine": {
+        "name": "Blink",
+        "version": "78.0.3904.96"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "A5",
+      "brand": {
+        "name": "Neffos",
+        "code": 1168
+      }
+    }
+  },
+  {
+    "userAgent": "Dalvik/1.6.0 (Linux; U; Android 4.2.2; Andy 3.5EH Build/JDQ39)",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "4.2.2",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Android Browser",
+      "code": 48,
+      "family": "Android Browser",
+      "engine": {
+        "name": "WebKit"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Andy 3.5EH",
+      "brand": {
+        "name": "Yezz",
+        "code": 1992
+      }
+    }
+  },
+  {
+    "userAgent": "Dalvik/1.6.0 (Linux; U; Android 4.2.2; ANDY_A3.5EP Build/JDQ39)",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "4.2.2",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Android Browser",
+      "code": 48,
+      "family": "Android Browser",
+      "engine": {
+        "name": "WebKit"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Andy A3.5EP",
+      "brand": {
+        "name": "Yezz",
+        "code": 1992
+      }
+    }
+  },
+  {
+    "userAgent": "Dalvik/1.6.0 (Linux; U; Android 4.2.2; Andy C3.5EI Build/JDQ39",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "4.2.2",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Android Browser",
+      "code": 48,
+      "family": "Android Browser",
+      "engine": {
+        "name": "WebKit"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Andy C3.5EI",
+      "brand": {
+        "name": "Yezz",
+        "code": 1992
+      }
+    }
+  },
+  {
+    "userAgent": "Dalvik/1.6.0 (Linux; U; Android 4.2.2; Andy 4EI Build/JDQ39)",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "4.2.2",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Android Browser",
+      "code": 48,
+      "family": "Android Browser",
+      "engine": {
+        "name": "WebKit"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Andy 4EI",
+      "brand": {
+        "name": "Yezz",
+        "code": 1992
+      }
+    }
+  },
+  {
+    "userAgent": "Dalvik/1.6.0 (Linux; U; Android 4.2.2; Yezz Andy AC4E Build/JDQ39)",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "4.2.2",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Android Browser",
+      "code": 48,
+      "family": "Android Browser",
+      "engine": {
+        "name": "WebKit"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Andy AC4E",
+      "brand": {
+        "name": "Yezz",
+        "code": 1992
+      }
+    }
+  },
+  {
+    "userAgent": "Dalvik/1.6.0 (Linux; U; Android 4.4.2; Andy_3.5E2I Build/KOT49H)",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "4.4.2",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Android Browser",
+      "code": 48,
+      "family": "Android Browser",
+      "engine": {
+        "name": "WebKit"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Andy 3.5E2I",
+      "brand": {
+        "name": "Yezz",
+        "code": 1992
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 11; V2025 Build/RP1A.200709.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.198 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "11",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Webview",
+      "code": 161,
+      "version": "86.0.4240.198",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "86.0.4240.198"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "V20",
+      "brand": {
+        "name": "Vivo",
+        "code": 1864
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 4.4; Titanium S360 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "4.4",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Webview",
+      "code": 161,
+      "version": "30.0.0.0",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "30.0.0.0"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Titanium S360",
+      "brand": {
+        "name": "Karbonn",
+        "code": 893
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 5.1; 8676-M01 Build/LMY47D) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/39.0.0.0 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "5.1",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Webview",
+      "code": 161,
+      "version": "39.0.0.0",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "39.0.0.0"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "8676-M01",
+      "brand": {
+        "name": "Coolpad",
+        "code": 317
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 4.4; Titanium S19 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "4.4",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Webview",
+      "code": 161,
+      "version": "30.0.0.0",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "30.0.0.0"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Titanium S19",
+      "brand": {
+        "name": "Karbonn",
+        "code": 893
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 4.4; Titanium S10 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "4.4",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Webview",
+      "code": 161,
+      "version": "30.0.0.0",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "30.0.0.0"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Titanium S10",
+      "brand": {
+        "name": "Karbonn",
+        "code": 893
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 5.1; Titanium S35 Build/LMY47D;) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/42.0.2311.137 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "5.1",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Webview",
+      "code": 161,
+      "version": "42.0.2311.137",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "42.0.2311.137"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Titanium S35",
+      "brand": {
+        "name": "Karbonn",
+        "code": 893
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 4.4; Titanium S201 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "4.4",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "36.0.1985.135",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "36.0.1985.135"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Titanium S201",
+      "brand": {
+        "name": "Karbonn",
+        "code": 893
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 4.4; Titanium S22 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "4.4",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Webview",
+      "code": 161,
+      "version": "30.0.0.0",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "30.0.0.0"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Titanium S22",
+      "brand": {
+        "name": "Karbonn",
+        "code": 893
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 4.4; Titanium S109 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.83 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "4.4",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "47.0.2526.83",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "47.0.2526.83"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Titanium S109",
+      "brand": {
+        "name": "Karbonn",
+        "code": 893
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 4.4; Titanium S203 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.109 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "4.4",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "40.0.2214.109",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "40.0.2214.109"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Titanium S203",
+      "brand": {
+        "name": "Karbonn",
+        "code": 893
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 4.4; Titanium S15 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "4.4",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Webview",
+      "code": 161,
+      "version": "30.0.0.0",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "30.0.0.0"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Titanium S15",
+      "brand": {
+        "name": "Karbonn",
+        "code": 893
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; U; Android 4.1; Titanium S1 Build/JZO54K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "4.1",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Android Browser",
+      "code": 48,
+      "family": "Android Browser",
+      "engine": {
+        "name": "WebKit",
+        "version": "534.30"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Titanium S1",
+      "brand": {
+        "name": "Karbonn",
+        "code": 893
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 4.4; Titanium S200 HD Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "4.4",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Webview",
+      "code": 161,
+      "version": "30.0.0.0",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "30.0.0.0"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Titanium S200 HD",
+      "brand": {
+        "name": "Karbonn",
+        "code": 893
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 4.4; Titanium Octane Plus Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "4.4",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Webview",
+      "code": 161,
+      "version": "30.0.0.0",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "30.0.0.0"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Titanium Octane Plus",
+      "brand": {
+        "name": "Karbonn",
+        "code": 893
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 6.0; Titanium_3D-Plex Build/6.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "6.0",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "50.0.2661.89",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "50.0.2661.89"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Titanium 3D Plex",
+      "brand": {
+        "name": "Karbonn",
+        "code": 893
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 7.0; YU5011 Build/NRD90M;) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "7.0",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Webview",
+      "code": 161,
+      "version": "56.0.2924.87",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "56.0.2924.87"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Yunique 2",
+      "brand": {
+        "name": "Yu",
+        "code": 2002
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 4.3; R8001 Build/JLS36C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "4.3",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "49.0.2623.105",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "49.0.2623.105"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "R1K",
+      "brand": {
+        "name": "OPPO",
+        "code": 1273
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0; W5510 Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "4.0",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Android Browser",
+      "code": 48,
+      "family": "Android Browser",
+      "engine": {
+        "name": "WebKit",
+        "version": "534.30"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "W5510",
+      "brand": {
+        "name": "Philips",
+        "code": 1336
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 5.1.1; Z00SD Build/LMY49J; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/45.0.2454.87 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "5.1.1",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Webview",
+      "code": 161,
+      "version": "45.0.2454.87",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "45.0.2454.87"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "ZenFone Go",
+      "brand": {
+        "name": "Asus",
+        "code": 118
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 4.2.2; TF-SP4002 Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.99 Mobile Safari/537.36 OPR/50.3.2426.136976",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "4.2.2",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Opera Mobile",
+      "code": 419,
+      "version": "50.3.2426.136976",
+      "family": "Opera",
+      "engine": {
+        "name": "Blink",
+        "version": "71.0.3578.99"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "TF-SP4002",
+      "brand": {
+        "name": "Telefunken",
+        "code": 1689
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 4.2.2; TF-SP5002) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 YaBrowser/18.11.1.1011.00 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "4.2.2",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "18.11.1.1011.00",
+      "engine": {
+        "name": "Blink",
+        "version": "70.0.3538.102"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "TF-SP5002",
+      "brand": {
+        "name": "Telefunken",
+        "code": 1689
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 4.2.2; teXet_X-medium_plus Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.99 Mobile Safari/537.36 OPR/50.3.2426.136976",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "4.2.2",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Opera Mobile",
+      "code": 419,
+      "version": "50.3.2426.136976",
+      "family": "Opera",
+      "engine": {
+        "name": "Blink",
+        "version": "71.0.3578.99"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "X-Medium Plus",
+      "brand": {
+        "name": "teXet",
+        "code": 1703
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 4.2.2; TEXET_IX-MINI Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.99 Mobile Safari/537.36 OPR/50.3.2426.136976",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "4.2.2",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Opera Mobile",
+      "code": 419,
+      "version": "50.3.2426.136976",
+      "family": "Opera",
+      "engine": {
+        "name": "Blink",
+        "version": "71.0.3578.99"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "iX-Mini",
+      "brand": {
+        "name": "teXet",
+        "code": 1703
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 5.1.1; VIBE C Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/38.0.0.0 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "5.1.1",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Webview",
+      "code": 161,
+      "version": "38.0.0.0",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "38.0.0.0"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Vibe C",
+      "brand": {
+        "name": "Lenovo",
+        "code": 976
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 5.1.1; x5_doogee) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.111 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "5.1.1",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "76.0.3809.111",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "76.0.3809.111"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "X5",
+      "brand": {
+        "name": "Doogee",
+        "code": 407
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 5.1; TiNMO-A11 Build/LMY47I) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/39.0.0.0 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "5.1",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Webview",
+      "code": 161,
+      "version": "39.0.0.0",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "39.0.0.0"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "A11",
+      "brand": {
+        "name": "Tinmo",
+        "code": 1717
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 7.0; TINMO K3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.90 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "7.0",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "78.0.3904.90",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "78.0.3904.90"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "K3",
+      "brand": {
+        "name": "Tinmo",
+        "code": 1717
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 5.1; TSD Quadra A0505P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.101 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "5.1",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "75.0.3770.101",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "75.0.3770.101"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "TSD Quadra A0505P",
+      "brand": {
+        "name": "ArmPhone",
+        "code": 103
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 5.1; 8298-M02 Build/LMY47D; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/73.0.3683.121 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "5.1",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Webview",
+      "code": 161,
+      "version": "73.0.3683.121",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "73.0.3683.121"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "8298-M02",
+      "brand": {
+        "name": "Coolpad",
+        "code": 317
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 4.2.2; TROOPER 4.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.99 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "4.2.2",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "71.0.3578.99",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "71.0.3578.99"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Trooper X4.0",
+      "brand": {
+        "name": "Kazam",
+        "code": 897
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 4.2.2; UZTE V808) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "4.2.2",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "70.0.3538.110",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "70.0.3538.110"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "V808",
+      "brand": {
+        "name": "ZTE",
+        "code": 2039
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 4.4.2; Ginzzu ST6010) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.62 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "4.4.2",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "78.0.3904.62",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "78.0.3904.62"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "ST6010",
+      "brand": {
+        "name": "Ginzzu",
+        "code": 633
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 4.4.2; IGO L1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.79 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "4.4.2",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "79.0.3945.79",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "79.0.3945.79"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "IGO L1",
+      "brand": {
+        "name": "Jinga",
+        "code": 871
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 4.4.2; IGO_L4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.92 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "4.4.2",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "77.0.3865.92",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "77.0.3865.92"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "IGO L4",
+      "brand": {
+        "name": "Jinga",
+        "code": 871
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 4.4.2; IxionML4.7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 YaBrowser/18.11.1.1011.00 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "4.4.2",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "18.11.1.1011.00",
+      "engine": {
+        "name": "Blink",
+        "version": "70.0.3538.102"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Ixion ML 4.7\"",
+      "brand": {
+        "name": "DEXP",
+        "code": 368
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 7.0; Touch4G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.93 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "7.0",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "79.0.3945.93",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "79.0.3945.93"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Touch 4G",
+      "brand": {
+        "name": "Jinga",
+        "code": 871
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 7.0; TRENDY PLUS) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "7.0",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "76.0.3809.132",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "76.0.3809.132"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Trendy Plus",
+      "brand": {
+        "name": "Mobicel",
+        "code": 1107
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 7.0; S5002) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.93 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "7.0",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "79.0.3945.93",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "79.0.3945.93"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "S5002",
+      "brand": {
+        "name": "Ginzzu",
+        "code": 633
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 7.0; S5021) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.93 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "7.0",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "79.0.3945.93",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "79.0.3945.93"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "S5021",
+      "brand": {
+        "name": "Ginzzu",
+        "code": 633
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 7.0; S5230) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.93 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "7.0",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "79.0.3945.93",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "79.0.3945.93"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "S5230",
+      "brand": {
+        "name": "Ginzzu",
+        "code": 633
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 7.0; SH-A01 Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.136 Mobile Safari/537.36 YaApp_Android/9.99 YaSearchBrowser/9.99",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "7.0",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "9.99",
+      "engine": {
+        "name": "Blink",
+        "version": "79.0.3945.136"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "B10",
+      "brand": {
+        "name": "Sharp",
+        "code": 1532
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 7.0; Shoot_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.93 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "7.0",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "79.0.3945.93",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "79.0.3945.93"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Shoot 1",
+      "brand": {
+        "name": "Doogee",
+        "code": 407
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 7.0; Shoot_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.87 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "7.0",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "80.0.3987.87",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "80.0.3987.87"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Shoot 2",
+      "brand": {
+        "name": "Doogee",
+        "code": 407
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 7.1.2; FLOW5PLUS) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.92 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "7.1.2",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "77.0.3865.92",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "77.0.3865.92"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "FLOW 5 Plus",
+      "brand": {
+        "name": "Krüger&Matz",
+        "code": 937
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 8.0.0; W_C860) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.93 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "8.0.0",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "79.0.3945.93",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "79.0.3945.93"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "View 2 Pro",
+      "brand": {
+        "name": "Wiko",
+        "code": 1936
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 5.1.1; EVOLVEO_StrongPhone_Q7_LTE) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.90 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "5.1.1",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "78.0.3904.90",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "78.0.3904.90"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "StrongPhone Q7 LTE",
+      "brand": {
+        "name": "Evolveo",
+        "code": 517
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 5.1.1; F52_09) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.93 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "5.1.1",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "79.0.3945.93",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "79.0.3945.93"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "F52",
+      "brand": {
+        "name": "BenQ",
+        "code": 171
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 6.0; EX29i) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.136 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "6.0",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "74.0.3729.136",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "74.0.3729.136"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "EX 29i",
+      "brand": {
+        "name": "ExMobile",
+        "code": 522
+      }
+    }
+  },
+  {
+    "userAgent": "UCWEB/2.0 (MIDP-2.0; U; Adr 4.2.2; id; Ex45i) U2/1.0.0 UCBrowser/10.4.2.659 U2/1.0.0 Mobile",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "4.2.2",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "code": 604,
+      "version": "10.4.2.659"
+    },
+    "device": {
+      "type": 1,
+      "model": "EX 45i",
+      "brand": {
+        "name": "ExMobile",
+        "code": 522
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 5.1.1; JY_G4C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.96 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "5.1.1",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "78.0.3904.96",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "78.0.3904.96"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "JY-G4C",
+      "brand": {
+        "name": "Jiayu",
+        "code": 870
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 5.1.1; M150Storm) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "5.1.1",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "77.0.3865.116",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "77.0.3865.116"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Ixion M150 Storm",
+      "brand": {
+        "name": "DEXP",
+        "code": 368
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 4.4.2; 6042D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "4.4.2",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "81.0.4044.138",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "81.0.4044.138"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "One Touch Flash",
+      "brand": {
+        "name": "Alcatel",
+        "code": 48
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 4.4.2; 5560S) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.96 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "4.4.2",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "78.0.3904.96",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "78.0.3904.96"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Arise",
+      "brand": {
+        "name": "Coolpad",
+        "code": 317
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 4.4.2; 401SH) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.162 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "4.4.2",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "80.0.3987.162",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "80.0.3987.162"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Aquos 401SH",
+      "brand": {
+        "name": "Sharp",
+        "code": 1532
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 4.4.2; 306SH) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "4.4.2",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "81.0.4044.138",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "81.0.4044.138"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Aquos Crystal",
+      "brand": {
+        "name": "Sharp",
+        "code": 1532
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 4.4.2; 302KC) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.96 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "4.4.2",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "81.0.4044.96",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "81.0.4044.96"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Digno T",
+      "brand": {
+        "name": "Kyocera",
+        "code": 949
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 7.0; LIVE_6plus) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.93 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "7.0",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "79.0.3945.93",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "79.0.3945.93"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "LIVE 6 Plus",
+      "brand": {
+        "name": "Krüger&Matz",
+        "code": 937
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 7.0; LAVAA1 Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/64.0.3282.137 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "7.0",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Webview",
+      "code": 161,
+      "version": "64.0.3282.137",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "64.0.3282.137"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "A1",
+      "brand": {
+        "name": "Lava",
+        "code": 961
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 7.0; KLIPAD_V355B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "7.0",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "76.0.3809.132",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "76.0.3809.132"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "V355B",
+      "brand": {
+        "name": "Klipad",
+        "code": 920
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 7.0; KLIPAD_V355) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.116 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "7.0",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "79.0.3945.116",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "79.0.3945.116"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "V355",
+      "brand": {
+        "name": "Klipad",
+        "code": 920
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 7.0; KLIPAD_KL600) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.101 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "7.0",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "75.0.3770.101",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "75.0.3770.101"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "KL600",
+      "brand": {
+        "name": "Klipad",
+        "code": 920
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 7.0; lephoneP1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "7.0",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "77.0.3865.116",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "77.0.3865.116"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "P1",
+      "brand": {
+        "name": "Lephone",
+        "code": 980
+      }
+    }
+  },
+  {
+    "userAgent": "Dalvik/2.1.0 (Linux; U; Android 5.1; SLADE_X55 Build/LMY47D)",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "5.1",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Android Browser",
+      "code": 48,
+      "family": "Android Browser",
+      "engine": {
+        "name": "WebKit"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Slade X55",
+      "brand": {
+        "name": "Odys",
+        "code": 1246
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; PCHM10 Build/QKQ1.200209.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/77.0.3865.92 Mobile Safari/537.36 SP-engine/0.0.0 matrixstyle/0 lite baiduboxapp/4.22.0.11 (Baidu; P1 10)",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "10",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Baidu Box App",
+      "version": "4.22.0.11"
+    },
+    "device": {
+      "type": 1,
+      "model": "A11",
+      "brand": {
+        "name": "OPPO",
+        "code": 1273
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 7.0; LIVE 5 PLUS) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.93 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "7.0",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "79.0.3945.93",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "79.0.3945.93"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "LIVE 5 Plus",
+      "brand": {
+        "name": "Krüger&Matz",
+        "code": 937
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 7.0; M-PPxG7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.93 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "7.0",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "79.0.3945.93",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "79.0.3945.93"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "PhonePad Duo G7",
+      "brand": {
+        "name": "Mediacom",
+        "code": 1067
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 7.0; M-PPxS5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.136 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "7.0",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "79.0.3945.136",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "79.0.3945.136"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "PhonePad Duo S5",
+      "brand": {
+        "name": "Mediacom",
+        "code": 1067
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 7.0; M-PPxS5P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "7.0",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "78.0.3904.108",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "78.0.3904.108"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "PhonePad Duo S5P",
+      "brand": {
+        "name": "Mediacom",
+        "code": 1067
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 7.0; M-PPxG5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.136 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "7.0",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "79.0.3945.136",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "79.0.3945.136"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "PhonePad Duo G5",
+      "brand": {
+        "name": "Mediacom",
+        "code": 1067
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 7.0; M-PPxG4P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "7.0",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "76.0.3809.132",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "76.0.3809.132"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "PhonePad Duo G4P",
+      "brand": {
+        "name": "Mediacom",
+        "code": 1067
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 7.0; M-PPxG5M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.92 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "7.0",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "77.0.3865.92",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "77.0.3865.92"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "PhonePad Duo G5M",
+      "brand": {
+        "name": "Mediacom",
+        "code": 1067
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 7.0; Start3G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.93 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "7.0",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "79.0.3945.93",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "79.0.3945.93"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Start 3G",
+      "brand": {
+        "name": "Jinga",
+        "code": 871
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 7.0; Pocket_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.93 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "7.0",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "79.0.3945.93",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "79.0.3945.93"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Pocket 2",
+      "brand": {
+        "name": "myPhone (PL)",
+        "code": 1140
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 7.0; MARS TOUCH) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.96 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "7.0",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "78.0.3904.96",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "78.0.3904.96"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Mars Touch",
+      "brand": {
+        "name": "Vsun",
+        "code": 1904
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 6.0.1; ZVIII) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "6.0.1",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "83.0.4103.106",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "83.0.4103.106"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "ZVIII",
+      "brand": {
+        "name": "Symphony",
+        "code": 1652
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; BQ-6045L Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/81.0.4044.138 Mobile Safari/537.36 YandexSearch/7.52 YandexSearchBrowser/7.52",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "10",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "7.52",
+      "engine": {
+        "name": "Blink",
+        "version": "81.0.4044.138"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Nice",
+      "brand": {
+        "name": "bq",
+        "code": 227
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; M2007J3SY) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.66 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "10",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "87.0.4280.66",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "87.0.4280.66"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Mi 10T 5G",
+      "brand": {
+        "name": "Xiaomi",
+        "code": 1973
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 6.0; Boost 3 SE) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.66 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "6.0",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "87.0.4280.66",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "87.0.4280.66"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Boost 3 SE",
+      "brand": {
+        "name": "Highscreen",
+        "code": 713
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 6.0; UNIWA X5 Build/MRA58K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.198 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "6.0",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Webview",
+      "code": 161,
+      "version": "86.0.4240.198",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "86.0.4240.198"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "X5",
+      "brand": {
+        "name": "UNIWA",
+        "code": 1794
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; T770H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.110 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "10",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "86.0.4240.110",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "86.0.4240.110"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "10L",
+      "brand": {
+        "name": "TCL",
+        "code": 1667
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 5.1; BRAVIS NEO) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.99 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "5.1",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "86.0.4240.99",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "86.0.4240.99"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "A401 Neo",
+      "brand": {
+        "name": "Bravis",
+        "code": 230
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 8.1.0; Lion_DC) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.66 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "8.1.0",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "87.0.4280.66",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "87.0.4280.66"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Lion DC",
+      "brand": {
+        "name": "Vertex",
+        "code": 1833
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 4.4.2; ZOPO 9xxQuad Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "4.4.2",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Webview",
+      "code": 161,
+      "version": "30.0.0.0",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "30.0.0.0"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "9XX Quad",
+      "brand": {
+        "name": "Zopo",
+        "code": 2036
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 5.1; Millennia Hero Build/LMY47D) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/39.0.0.0 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "5.1",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Webview",
+      "code": 161,
+      "version": "39.0.0.0",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "39.0.0.0"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Millennia Hero",
+      "brand": {
+        "name": "Celkon",
+        "code": 270
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm; Android 9; BL350) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.127 YaApp_Android/20.94.0 YaSearchBrowser/20.94.0 BroPP/1.0 SA/3 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "9",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "20.94.0",
+      "engine": {
+        "name": "Blink",
+        "version": "85.0.4183.127"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "BL350",
+      "brand": {
+        "name": "DEXP",
+        "code": 368
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 7.0; Fest-Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.66 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "7.0",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "87.0.4280.66",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "87.0.4280.66"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Fest Pro",
+      "brand": {
+        "name": "Highscreen",
+        "code": 713
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 9; myX12) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.111 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "9",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "84.0.4147.111",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "84.0.4147.111"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "myX12",
+      "brand": {
+        "name": "MyPhone (PH)",
+        "code": 1141
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 9; myXI1 Plus) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.81 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "9",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "85.0.4183.81",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "85.0.4183.81"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "myXI1 Plus",
+      "brand": {
+        "name": "MyPhone (PH)",
+        "code": 1141
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 9; myXI1 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.101 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "9",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "85.0.4183.101",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "85.0.4183.101"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "myXI1 Pro",
+      "brand": {
+        "name": "MyPhone (PH)",
+        "code": 1141
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 9; myXI3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "9",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "84.0.4147.89",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "84.0.4147.89"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "myXI3",
+      "brand": {
+        "name": "MyPhone (PH)",
+        "code": 1141
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 7.1.2; Nomu s10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.143 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "7.1.2",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "75.0.3770.143",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "75.0.3770.143"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "S10",
+      "brand": {
+        "name": "Nomu",
+        "code": 1221
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 7.1.2; Oukitel U15pro Build/NJH47B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "7.1.2",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "62.0.3202.84",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "62.0.3202.84"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "U15 Pro",
+      "brand": {
+        "name": "Oukitel",
+        "code": 1292
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 7.1.2; Oukitel U20Plus) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.101 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "7.1.2",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "75.0.3770.101",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "75.0.3770.101"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "U20 Plus",
+      "brand": {
+        "name": "Oukitel",
+        "code": 1292
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 9; W-V800-TIM) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "9",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "84.0.4147.89",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "84.0.4147.89"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "View 3 Lite",
+      "brand": {
+        "name": "Wiko",
+        "code": 1936
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 9; W-V800-DU) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "9",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "84.0.4147.89",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "84.0.4147.89"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "View 3 Lite",
+      "brand": {
+        "name": "Wiko",
+        "code": 1936
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 9; W-V720-SUN) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "9",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "80.0.3987.149",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "80.0.3987.149"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Y80",
+      "brand": {
+        "name": "Wiko",
+        "code": 1936
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 9; W-P611-OPE) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.90 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "9",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "78.0.3904.90",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "78.0.3904.90"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "View 3 Pro",
+      "brand": {
+        "name": "Wiko",
+        "code": 1936
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 9; W-P311-TVM) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "9",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "80.0.3987.149",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "80.0.3987.149"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "View 3",
+      "brand": {
+        "name": "Wiko",
+        "code": 1936
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 9; W-K420-TVM) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "9",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "84.0.4147.125",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "84.0.4147.125"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Jerry 4",
+      "brand": {
+        "name": "Wiko",
+        "code": 1936
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 9; W-K510-BYT) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.83 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "9",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "83.0.4103.83",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "83.0.4103.83"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Y60",
+      "brand": {
+        "name": "Wiko",
+        "code": 1936
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 9; W-K510-TH) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.81 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "9",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "85.0.4183.81",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "85.0.4183.81"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Y60",
+      "brand": {
+        "name": "Wiko",
+        "code": 1936
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 9; W-K510S-SWI) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "9",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "84.0.4147.89",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "84.0.4147.89"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Y60",
+      "brand": {
+        "name": "Wiko",
+        "code": 1936
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; U; Android 8.1.0; tr-tr; GM 6 d Build/O11019) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/73.0.3683.90 Mobile Safari/537.36 Hawk/QuickBrowser/2.4.21.22910",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "8.1.0",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Hawk Quick Browser",
+      "code": 253,
+      "version": "2.4.21.22910",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "73.0.3683.90"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "GM 6D",
+      "brand": {
+        "name": "General Mobile",
+        "code": 619
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; U; Android 7.1.1; tr-tr; General Mobile 4G Dual Build/N0F27E) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/74.0.3729.157 Mobile Safari/537.36 Hawk/QuickBrowser/1.1.8",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "7.1.1",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Hawk Quick Browser",
+      "code": 253,
+      "version": "1.1.8",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "74.0.3729.157"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "4G Dual",
+      "brand": {
+        "name": "General Mobile",
+        "code": 619
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; U; Android 7.0; tr-tr; Venus E3 Build/VR1061) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/74.0.3729.157 Mobile Safari/537.36 Hawk/QuickBrowser/1.1.8",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "7.0",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Hawk Quick Browser",
+      "code": 253,
+      "version": "1.1.8",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "74.0.3729.157"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Venus E3",
+      "brand": {
+        "name": "Vestel",
+        "code": 1841
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; U; Android 6.0.1; en-us; Vestel_5530 Build/JOP24G) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Chrome/43.0.2357.65 Mobile Safari/534.30",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "6.0.1",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Webview",
+      "code": 161,
+      "version": "43.0.2357.65",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "43.0.2357.65"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "5530",
+      "brand": {
+        "name": "Vestel",
+        "code": 1841
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; U; Android 7.0; en-gb; Forme R7 Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/62.0.3202.84 Mobile Safari/537.36 Hawk/QuickBrowser/2.4.18.22855",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "7.0",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Hawk Quick Browser",
+      "code": 253,
+      "version": "2.4.18.22855",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "62.0.3202.84"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "R7",
+      "brand": {
+        "name": "FORME",
+        "code": 575
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 7.1.1; General Mobile 4G Build/NMF26F; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/53.0.2785.135 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "7.1.1",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Webview",
+      "code": 161,
+      "version": "53.0.2785.135",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "53.0.2785.135"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "4G",
+      "brand": {
+        "name": "General Mobile",
+        "code": 619
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 7.1.2; Apollo_Lite) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "7.1.2",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "74.0.3729.157",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "74.0.3729.157"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Apollo Lite",
+      "brand": {
+        "name": "Vernee",
+        "code": 1832
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 7.1.2; Apollo_X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.136 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "7.1.2",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "74.0.3729.136",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "74.0.3729.136"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Apollo X",
+      "brand": {
+        "name": "Vernee",
+        "code": 1832
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 7.1.2; Blackview A7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.89 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "7.1.2",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "75.0.3770.89",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "75.0.3770.89"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "A7",
+      "brand": {
+        "name": "Blackview",
+        "code": 201
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 7.1.2; Boost 3 Pro SE Build/NJH47F; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/63.0.3239.111 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "7.1.2",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Webview",
+      "code": 161,
+      "version": "63.0.3239.111",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "63.0.3239.111"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Boost 3 Pro SE",
+      "brand": {
+        "name": "Highscreen",
+        "code": 713
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 7.1.2; SCL-U31) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "7.1.2",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "77.0.3865.116",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "77.0.3865.116"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Y6",
+      "brand": {
+        "name": "Huawei",
+        "code": 757
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 7.1.2; Seoul S8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "7.1.2",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "84.0.4147.125",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "84.0.4147.125"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Seoul S8",
+      "brand": {
+        "name": "Hyundai",
+        "code": 765
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 7.1.2; SUGAR C11s) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.111 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "7.1.2",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "84.0.4147.111",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "84.0.4147.111"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "C11s",
+      "brand": {
+        "name": "Sugar",
+        "code": 1622
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 7.1.2; SUGAR S11) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.120 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "7.1.2",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "85.0.4183.120",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "85.0.4183.120"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "S11",
+      "brand": {
+        "name": "Sugar",
+        "code": 1622
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 8.0.0; LON-AL00-PD) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.90 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "8.0.0",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "73.0.3683.90",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "73.0.3683.90"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Mate 9 Pro",
+      "brand": {
+        "name": "Huawei",
+        "code": 757
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 8.0.0; Plume L2 Build/O00623) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.98 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "8.0.0",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "61.0.3163.98",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "61.0.3163.98"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Plume L2",
+      "brand": {
+        "name": "Condor",
+        "code": 305
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 8.0.0; SH-D01) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "8.0.0",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "80.0.3987.149",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "80.0.3987.149"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Aquos D10",
+      "brand": {
+        "name": "Sharp",
+        "code": 1532
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 8.0.0; SH-M06) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "8.0.0",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "78.0.3904.108",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "78.0.3904.108"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Aquos R Compact",
+      "brand": {
+        "name": "Sharp",
+        "code": 1532
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; SH-M14) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.99 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "10",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "86.0.4240.99",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "86.0.4240.99"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Aquos R5G",
+      "brand": {
+        "name": "Sharp",
+        "code": 1532
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; M2006J10C Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/76.0.3809.89 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "10",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Webview",
+      "code": 161,
+      "version": "76.0.3809.89",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "76.0.3809.89"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Redmi K30 Ultra",
+      "brand": {
+        "name": "Xiaomi",
+        "code": 1973
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; MOA-AL20 Build/HONORMOA-AL20; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/76.0.3809.89 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "10",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Webview",
+      "code": 161,
+      "version": "76.0.3809.89",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "76.0.3809.89"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Honor Play 9A",
+      "brand": {
+        "name": "Huawei",
+        "code": 757
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; F-42A Build/V15R053B; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/81.0.4044.138 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "10",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Webview",
+      "code": 161,
+      "version": "81.0.4044.138",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "81.0.4044.138"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Easy Phone F-42A",
+      "brand": {
+        "name": "Fujitsu",
+        "code": 594
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; A001SH) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "10",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "81.0.4044.138",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "81.0.4044.138"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Simple Sumaho 5",
+      "brand": {
+        "name": "Sharp",
+        "code": 1532
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.4; ja-jp; P-02D Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "4.0.4",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Android Browser",
+      "code": 48,
+      "family": "Android Browser",
+      "engine": {
+        "name": "WebKit",
+        "version": "534.30"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Lumix Phone P-02D",
+      "brand": {
+        "name": "Panasonic",
+        "code": 1312
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 9; 901KC) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.136 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "9",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "74.0.3729.136",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "74.0.3729.136"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Digno BX",
+      "brand": {
+        "name": "Kyocera",
+        "code": 949
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; SO-52A Build/58.0.B.14.28; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.198 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "10",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Webview",
+      "code": 161,
+      "version": "86.0.4240.198",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "86.0.4240.198"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Xperia 5 II",
+      "brand": {
+        "name": "Sony",
+        "code": 1588
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; SCG07) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/11.0 Chrome/75.0.3770.143 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "10",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Samsung Browser",
+      "code": 512,
+      "version": "11.0",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "75.0.3770.143"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Galaxy A51 5G",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 8.1.0; SUGAR C12) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.101 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "8.1.0",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "85.0.4183.101",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "85.0.4183.101"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "C12",
+      "brand": {
+        "name": "Sugar",
+        "code": 1622
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 9; 801LG Build/PKQ1.190522.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/85.0.4183.127 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "9",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Webview",
+      "code": 161,
+      "version": "85.0.4183.127",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "85.0.4183.127"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Q Stylus",
+      "brand": {
+        "name": "LG",
+        "code": 984
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; DVC-TN20 Build/HUAWEIDVC-TN20; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.108 Mobile Safari/537.36 LieBaoFast/5.23.1",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "10",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "LieBaoFast",
+      "code": 326,
+      "version": "5.23.1",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "78.0.3904.108"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Enjoy 20 Pro 5G",
+      "brand": {
+        "name": "Huawei",
+        "code": 757
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 5.1.1; SHF34 Build/S8071) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/39.0.0.0 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "5.1.1",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Webview",
+      "code": 161,
+      "version": "39.0.0.0",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "39.0.0.0"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Aquos K SHF34",
+      "brand": {
+        "name": "Sharp",
+        "code": 1532
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 8.1.0; KWSA80K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "8.1.0",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "103.0.0.0",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "103.0.0.0"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "KWSA80K",
+      "brand": {
+        "name": "KENWOOD",
+        "code": 904
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 9; GNE-N001S) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "9",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "108.0.0.0",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "108.0.0.0"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "A3",
+      "brand": {
+        "name": "G-PLUS",
+        "code": 660
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 9; Earn2 CL) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "9",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "102.0.0.0",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "102.0.0.0"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Earn2 CL",
+      "brand": {
+        "name": "CellAllure",
+        "code": 268
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 12; LIV 3S LTE) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "12",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "105.0.0.0",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "105.0.0.0"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "LIV 3S LTE",
+      "brand": {
+        "name": "Yezz",
+        "code": 1992
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 11; LIV 3 LTE) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.62 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "11",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "93.0.4577.62",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "93.0.4577.62"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "LIV 3 LTE",
+      "brand": {
+        "name": "Yezz",
+        "code": 1992
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 11; LS5018FP) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "11",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "105.0.0.0",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "105.0.0.0"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Inizio Plus",
+      "brand": {
+        "name": "Senwa",
+        "code": 1526
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 11; Milan_Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "11",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "107.0.0.0",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "107.0.0.0"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Milan Pro",
+      "brand": {
+        "name": "Starlight",
+        "code": 1607
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 8.0.0; MobileMapper60) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "8.0.0",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "107.0.0.0",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "107.0.0.0"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "MobileMapper 60",
+      "brand": {
+        "name": "Trimble",
+        "code": 1751
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; EC55) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "10",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "104.0.0.0",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "104.0.0.0"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "EC55",
+      "brand": {
+        "name": "Zebra",
+        "code": 2018
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 7.1.2; EA602) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.62 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "7.1.2",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "93.0.4577.62",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "93.0.4577.62"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "EA602",
+      "brand": {
+        "name": "Unitech",
+        "code": 1787
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 11; Elite L55) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.85 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "11",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "94.0.4606.85",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "94.0.4606.85"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Elite L55",
+      "brand": {
+        "name": "Sky",
+        "code": 1554
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 12; Elite C63) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "12",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "113.0.0.0",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "113.0.0.0"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Elite C63",
+      "brand": {
+        "name": "Sky",
+        "code": 1554
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 11; Elite A6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.41 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "11",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "101.0.4951.41",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "101.0.4951.41"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Elite A6",
+      "brand": {
+        "name": "Sky",
+        "code": 1554
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 12; Elite Max) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "12",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "102.0.0.0",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "102.0.0.0"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Elite Max",
+      "brand": {
+        "name": "Sky",
+        "code": 1554
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 8.1.0; MP5184G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.88 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "8.1.0",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "99.0.4844.88",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "99.0.4844.88"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "MP5184G",
+      "brand": {
+        "name": "Maze Speed",
+        "code": 1052
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 9; iQ&T N8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "9",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "106.0.0.0",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "106.0.0.0"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "N8",
+      "brand": {
+        "name": "iQ&T",
+        "code": 826
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 9; LEX L11a) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "9",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "103.0.0.0",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "103.0.0.0"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "LEX L11a",
+      "brand": {
+        "name": "Motorola Solutions",
+        "code": 1121
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 9; LEX L11e) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "9",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "104.0.0.0",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "104.0.0.0"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "LEX L11e",
+      "brand": {
+        "name": "Motorola Solutions",
+        "code": 1121
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 9; S20iQ19) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "9",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "104.0.0.0",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "104.0.0.0"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "S20i",
+      "brand": {
+        "name": "GlocalMe",
+        "code": 639
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 8.1.0; IKALL) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "8.1.0",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "104.0.0.0",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "104.0.0.0"
+      }
+    },
+    "device": {
+      "type": 1,
+      "brand": {
+        "name": "I KALL",
+        "code": 770
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 11; SS5314G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.98 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "11",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "97.0.4692.98",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "97.0.4692.98"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "SS5314G",
+      "brand": {
+        "name": "Soho Style",
+        "code": 1594
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 11; SS5424G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "11",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "109.0.0.0",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "109.0.0.0"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "SS5424G",
+      "brand": {
+        "name": "Soho Style",
+        "code": 1594
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 8.1.0; MS571) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "8.1.0",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "103.0.0.0",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "103.0.0.0"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "MS571",
+      "brand": {
+        "name": "Maxcom",
+        "code": 1043
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 9; MS572) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "9",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "108.0.0.0",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "108.0.0.0"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "MS572",
+      "brand": {
+        "name": "Maxcom",
+        "code": 1043
+      }
+    }
+  }
+]

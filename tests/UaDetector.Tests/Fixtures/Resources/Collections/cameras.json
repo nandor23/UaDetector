@@ -1,3 +1,189 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:46edefeb20e7f27f0195666a3ef0670ce9d64a346c5e119e8b517e2f934f7f33
-size 4477
+[
+  {
+    "userAgent": "Mozilla/5.0 (Linux; U; Android 2.3.3; ja-jp; COOLPIX S800c Build/CP01_WW) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "2.3.3",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Android Browser",
+      "code": 48,
+      "family": "Android Browser",
+      "engine": {
+        "name": "WebKit",
+        "version": "533.1"
+      }
+    },
+    "device": {
+      "type": 8,
+      "model": "Coolpix S800c",
+      "brand": {
+        "name": "Nikon",
+        "code": 1203
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 5.0.2; DMC-CM1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.92 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "5.0.2",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "77.0.3865.92",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "77.0.3865.92"
+      }
+    },
+    "device": {
+      "type": 8,
+      "model": "Lumix DMC-CM1",
+      "brand": {
+        "name": "Panasonic",
+        "code": 1312
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0; de-DE; EK-GC100 Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "4.0",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Android Browser",
+      "code": 48,
+      "family": "Android Browser",
+      "engine": {
+        "name": "WebKit",
+        "version": "534.30"
+      }
+    },
+    "device": {
+      "type": 8,
+      "model": "Galaxy Camera",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 4.1.2; EK-GC100 Build/JZO54K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.63 Mobile Safari/537.36 OPR/15.0.1162.60140",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "4.1.2",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Opera Mobile",
+      "code": 419,
+      "version": "15.0.1162.60140",
+      "family": "Opera",
+      "engine": {
+        "name": "Blink",
+        "version": "28.0.1500.63"
+      }
+    },
+    "device": {
+      "type": 8,
+      "model": "Galaxy Camera",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 4.3; EK-GC200 Build/JSS15J) AppleWebKit/537.36 (KHTML like Gecko) Chrome/35.0.1916.141 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "4.3",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "35.0.1916.141",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "35.0.1916.141"
+      }
+    },
+    "device": {
+      "type": 8,
+      "model": "Galaxy Camera 2",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 4.1.2; EK-GC110 Build/JZO54K) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166 Mobile Safari/535.19",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "4.1.2",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "18.0.1025.166",
+      "family": "Chrome",
+      "engine": {
+        "name": "WebKit",
+        "version": "535.19"
+      }
+    },
+    "device": {
+      "type": 8,
+      "model": "Galaxy Camera WiFi only",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 4.2.2; en-nz; SAMSUNG EK-GN120 Build/JDQ39) AppleWebKit/535.19 (KHTML, like Gecko) Version/1.0 Chrome/18.0.1025.308 Mobile Safari/535.19",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "4.2.2",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Webview",
+      "code": 161,
+      "version": "18.0.1025.308",
+      "family": "Chrome",
+      "engine": {
+        "name": "WebKit",
+        "version": "535.19"
+      }
+    },
+    "device": {
+      "type": 8,
+      "model": "Galaxy NX",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  }
+]
