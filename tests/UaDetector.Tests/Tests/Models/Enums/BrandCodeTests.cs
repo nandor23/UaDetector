@@ -2100,7 +2100,6 @@ public class BrandCodeTests
             { BrandCode.Novis, 2076 },
             { BrandCode.Qiuwoky, 2077 },
             { BrandCode.V7, 2078 },
-
         };
 
         expectedValues.Count.ShouldBe(Enum.GetValues<BrandCode>().Length);

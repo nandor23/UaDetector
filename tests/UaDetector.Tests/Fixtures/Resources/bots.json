@@ -11459,6 +11459,18 @@
     }
   },
   {
+    "userAgent": "Mozilla/5.0 (compatible; OpenGraph.io/1.1; +https://opengraph.io/;) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36",
+    "bot": {
+      "name": "OpenGraph.io",
+      "category": 3,
+      "url": "https://www.opengraph.io",
+      "producer": {
+        "name": "OpenGraph.io",
+        "url": "https://www.opengraph.io"
+      }
+    }
+  },
+  {
     "userAgent": "Mozilla/5.0 OnlyScans",
     "bot": {
       "name": "Generic Bot"
