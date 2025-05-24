@@ -2075,4 +2075,10 @@ public static class BrandNames
     public const string Nexar = "Nexar";
     public const string Qupi = "Qupi";
     public const string Sencrom = "Sencrom";
+    public const string ApoloSign = "ApoloSign";
+    public const string Kgtel = "KGTEL";
+    public const string Lunnen = "LUNNEN";
+    public const string Novis = "NOVIS";
+    public const string Qiuwoky = "Qiuwoky";
+    public const string V7 = "V7";
 }
