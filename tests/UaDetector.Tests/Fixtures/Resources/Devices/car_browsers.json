@@ -1,3 +1,33 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e4b16e96fdab69ec7b7eae1debb5de482afe4d3e21eb6abcff3cadc6508c663d
-size 897
+[
+  {
+    "userAgent": "Mozilla/5.0 (X11; u; Linux; C) AppleWebKit /533.3 (Khtml, like Gheko) QtCarBrowser Safari/533.3",
+    "device": {
+      "type": 6,
+      "brand": "Tesla",
+      "model": "Model S"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (X11; GNU/Linux) AppleWebKit/537.36 (KHTML, like Gecko) Chromium/75.0.3770.100 Chrome/75.0.3770.100 Safari/537.36 Tesla/2019.40.50.7-ad132c7b057e",
+    "device": {
+      "type": 6,
+      "brand": "Tesla"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 9; AFTLBT962E2) AppleWebKit/537.36 (KHTML, like Gecko) Silk/118.3.1 like Chrome/118.0.5993.155 Safari/537.36",
+    "device": {
+      "type": 6,
+      "brand": "BMW",
+      "model": "Car (2022)"
+    }
+  },
+  {
+    "userAgent": "Dalvik/2.1.0 (Linux; U; Android 9; AFTLFT962X3 Build/PMAIN1)",
+    "device": {
+      "type": 6,
+      "brand": "Jeep",
+      "model": "Wagoneer"
+    }
+  }
+]

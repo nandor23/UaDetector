@@ -2090,6 +2090,12 @@ internal abstract class DeviceParserBase
             { BrandCode.Nexar, BrandNames.Nexar },
             { BrandCode.Qupi, BrandNames.Qupi },
             { BrandCode.Sencrom, BrandNames.Sencrom },
+            { BrandCode.ApoloSign, BrandNames.ApoloSign },
+            { BrandCode.Kgtel, BrandNames.Kgtel },
+            { BrandCode.Lunnen, BrandNames.Lunnen },
+            { BrandCode.Novis, BrandNames.Novis },
+            { BrandCode.Qiuwoky, BrandNames.Qiuwoky },
+            { BrandCode.V7, BrandNames.V7 },
         }.ToFrozenDictionary();
 
         BrandNameMapping = BrandCodeMapping

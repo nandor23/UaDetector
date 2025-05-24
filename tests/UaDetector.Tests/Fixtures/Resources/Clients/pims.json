@@ -1,3 +1,389 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e2779347a89bee6a1552b69ce395f0b2c2ade7622995737178fb232a21f06dbe
-size 10430
+[
+  {
+    "userAgent": "Outlook-Express/7.0 (MSIE 7.0; Windows NT 6.1; WOW64; Trident/6.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; AskTbORJ/5.15.9.29495; .NET4.0E; TmstmpExt)",
+    "client": {
+      "type": 4,
+      "name": "Outlook Express",
+      "version": "7.0"
+    }
+  },
+  {
+    "userAgent": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Win64; x64; Trident/7.0; .NET CLR 2.0.50727; SLCC2; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; InfoPath.3; .NET CLR 1.1.4322; FDM; Tablet PC 2.0; .NET4.0E; Microsoft Outlook 14.0.7113; ms-office; MSOffice 14)",
+    "client": {
+      "type": 4,
+      "name": "Microsoft Outlook",
+      "version": "14.0.7113"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (X11; Linux i686; rv:17.0) Gecko/20130330 Thunderbird/17.0.5",
+    "client": {
+      "type": 4,
+      "name": "Thunderbird",
+      "version": "17.0.5"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64; rv:24.0) Gecko/20100101 Thunderbird/24.4.0 Lightning/2.6.4",
+    "client": {
+      "type": 4,
+      "name": "Thunderbird",
+      "version": "24.4.0"
+    }
+  },
+  {
+    "userAgent": "Airmail 1.4 rv:238 (Macintosh; Mac OS X 10.9.2; hr_HR)",
+    "client": {
+      "type": 4,
+      "name": "Airmail",
+      "version": "1.4"
+    }
+  },
+  {
+    "userAgent": "Airmail 1.3.3 rv:237 (Macintosh; Mac OS X 10.9.2; en_US)",
+    "client": {
+      "type": 4,
+      "name": "Airmail",
+      "version": "1.3.3"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64; rv:24.0) Gecko/20100101 Icedove/24.4.0",
+    "client": {
+      "type": 4,
+      "name": "Thunderbird",
+      "version": "24.4.0"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64; rv:24.0) Gecko/20100101 Icedove/24.4.0 Lightning/2.6.5",
+    "client": {
+      "type": 4,
+      "name": "Thunderbird",
+      "version": "24.4.0"
+    }
+  },
+  {
+    "userAgent": "Mozilla/4.0 (compatible; Lotus-Notes/6.0; Windows-NT)",
+    "client": {
+      "type": 4,
+      "name": "Lotus Notes",
+      "version": "6.0"
+    }
+  },
+  {
+    "userAgent": "Barca/2.8.4400",
+    "client": {
+      "type": 4,
+      "name": "Barca",
+      "version": "2.8.4400"
+    }
+  },
+  {
+    "userAgent": "BarcaPro/1.4 L.1001",
+    "client": {
+      "type": 4,
+      "name": "Barca",
+      "version": "1.4"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.6; en-US; rv:1.9.1.8) Gecko/20100317 Postbox/1.1.3",
+    "client": {
+      "type": 4,
+      "name": "Postbox",
+      "version": "1.1.3"
+    }
+  },
+  {
+    "userAgent": "Postbox 1.0b14 (Windows/2009072715)",
+    "client": {
+      "type": 4,
+      "name": "Postbox",
+      "version": "1.0"
+    }
+  },
+  {
+    "userAgent": "MailBar/1.3.2 (Mac OS X Version 10.11.1 (Build 15B42))",
+    "client": {
+      "type": 4,
+      "name": "MailBar",
+      "version": "1.3.2"
+    }
+  },
+  {
+    "userAgent": "The Bat! 4.0.0.22",
+    "client": {
+      "type": 4,
+      "name": "The Bat!",
+      "version": "4.0.0.22"
+    }
+  },
+  {
+    "userAgent": "The Bat! Voyager 4.0.18.4",
+    "client": {
+      "type": 4,
+      "name": "The Bat!",
+      "version": "4.0.18.4"
+    }
+  },
+  {
+    "userAgent": "DAVdroid/1.6.2-ose (2017/06/23; dav4android; okhttp3) Android/7.0",
+    "client": {
+      "type": 4,
+      "name": "DAVdroid",
+      "version": "1.6.2"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64; rv:10.0.12) Gecko/20130823 Firefox/10.0.11esrpre Iceape/2.7.12",
+    "client": {
+      "type": 4,
+      "name": "SeaMonkey",
+      "version": "2.7.12"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64; rv:29.0) Gecko/20100101 Firefox/29.0 SeaMonkey/2.26a1 Lightning/3.1a1",
+    "client": {
+      "type": 4,
+      "name": "SeaMonkey",
+      "version": "2.26"
+    }
+  },
+  {
+    "userAgent": "Monazilla/1.00 Live5ch/1.52 Windows/10.0.17134",
+    "client": {
+      "type": 4,
+      "name": "Live5ch",
+      "version": "1.52"
+    }
+  },
+  {
+    "userAgent": "Monazilla/1.00 (JaneView/1501150412)",
+    "client": {
+      "type": 4,
+      "name": "JaneView"
+    }
+  },
+  {
+    "userAgent": "Monazilla/1.00 BathyScaphe/1057 Mac OS X/10.11.6",
+    "client": {
+      "type": 4,
+      "name": "BathyScaphe"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Raindrop.io/5.2.0 Chrome/82.0.4048.0 Electron/9.0.0-beta.3 Safari/537.36",
+    "client": {
+      "type": 4,
+      "name": "Raindrop.io",
+      "version": "5.2.0"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Franz/5.4.1 Chrome/76.0.3809.146 Electron/6.0.10 Safari/537.36",
+    "client": {
+      "type": 4,
+      "name": "Franz",
+      "version": "5.4.1"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Mailspring/1.7.4 Chrome/69.0.3497.128 Electron/4.2.2 Safari/537.36",
+    "client": {
+      "type": 4,
+      "name": "Mailspring",
+      "version": "1.7.4"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Notion/2.0.8 Chrome/76.0.3809.146 Electron/6.1.5 Safari/537.36",
+    "client": {
+      "type": 4,
+      "name": "Notion",
+      "version": "2.0.8"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Basecamp3/2.1.0 Chrome/78.0.3904.130 Electron/7.1.5 Safari/537.36",
+    "client": {
+      "type": 4,
+      "name": "Basecamp",
+      "version": "2.1.0"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Evernote/10.8.5 Chrome/87.0.4280.88 Electron/11.1.1 Safari/537.36",
+    "client": {
+      "type": 4,
+      "name": "Evernote",
+      "version": "10.8.5"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) ramboxpro/1.5.2 Chrome/83.0.4103.122 Electron/9.4.4 Safari/537.36",
+    "client": {
+      "type": 4,
+      "name": "Rambox Pro",
+      "version": "1.5.2"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36 Mailbird/2.4.30.0/",
+    "client": {
+      "type": 4,
+      "name": "Mailbird",
+      "version": "2.4.30.0"
+    }
+  },
+  {
+    "userAgent": "MacOutlook/16.46.21021202 (Intelx64 Mac OS X 11.2.2 (Build 20D80))",
+    "client": {
+      "type": 4,
+      "name": "Microsoft Outlook",
+      "version": "16.46.21021202"
+    }
+  },
+  {
+    "userAgent": "WindowsMail/17.5.9600.22013",
+    "client": {
+      "type": 4,
+      "name": "Windows Mail",
+      "version": "17.5.9600.22013"
+    }
+  },
+  {
+    "userAgent": "Outlook-iOS/709.2042344.prod.iphone (3.21.0)",
+    "client": {
+      "type": 4,
+      "name": "Microsoft Outlook",
+      "version": "3.21.0"
+    }
+  },
+  {
+    "userAgent": "Outlook-iOS/711.3061168.prod.iphone",
+    "client": {
+      "type": 4,
+      "name": "Microsoft Outlook"
+    }
+  },
+  {
+    "userAgent": "Outlook/16.16.18071205 CFNetwork/902.1 Darwin/17.7.0 (x86_64)",
+    "client": {
+      "type": 4,
+      "name": "Microsoft Outlook",
+      "version": "16.16.18071205"
+    }
+  },
+  {
+    "userAgent": "Yahoo%20Mail/49268 CFNetwork/1121.2.2 Darwin/19.3.0",
+    "client": {
+      "type": 4,
+      "name": "Yahoo Mail"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36 eM Client/8.2.1659.0",
+    "client": {
+      "type": 4,
+      "name": "eM Client",
+      "version": "8.2.1659.0"
+    }
+  },
+  {
+    "userAgent": "NaverMailApp/2.2.2 (Android 10; SM-G986N)",
+    "client": {
+      "type": 4,
+      "name": "NAVER Mail",
+      "version": "2.2.2"
+    }
+  },
+  {
+    "userAgent": "Microsoft Office/16.0 (Microsoft Outlook 16.0.12329; Pro), Mozilla/4.0 (compatible; ms-office; MSOffice 16)",
+    "client": {
+      "type": 4,
+      "name": "Microsoft Outlook",
+      "version": "16.0.12329"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36 Foxmail/7.2.25.213",
+    "client": {
+      "type": 4,
+      "name": "Foxmail",
+      "version": "7.2.25.213"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.110 MailMasterPC/4.15.6.1016 Safari/537.36",
+    "client": {
+      "type": 4,
+      "name": "Mail Master",
+      "version": "4.15.6.1016"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15F79 MailMaster/6.5.3.1210",
+    "client": {
+      "type": 4,
+      "name": "Mail Master",
+      "version": "6.5.3.1210"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_3_1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Mobile/9B176 YJApp-IOS jp.co.yahoo.ymail/7.4.1",
+    "client": {
+      "type": 4,
+      "name": "Yahoo! Mail",
+      "version": "7.4.1"
+    }
+  },
+  {
+    "userAgent": "eMClient/9.3.6041.0",
+    "client": {
+      "type": 4,
+      "name": "eM Client",
+      "version": "9.3.6041.0"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) BlueMail/0.10.31 Chrome/61.0.3163.100 Electron/2.0.18 Safari/537.36",
+    "client": {
+      "type": 4,
+      "name": "BlueMail",
+      "version": "0.10.31"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 mailapp/6.5.0",
+    "client": {
+      "type": 4,
+      "name": "mailapp",
+      "version": "6.5.0"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.0.2pre) Gecko/2009031304 Spicebird/0.7.1",
+    "client": {
+      "type": 4,
+      "name": "Spicebird",
+      "version": "0.7.1"
+    }
+  },
+  {
+    "userAgent": "Android-Gmail/64562652 (sw411dp; 420dpi) (r7 TP1A.220624.014)",
+    "client": {
+      "type": 4,
+      "name": "Gmail"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; LIO-AL00 Build/HUAWEILIO-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.108 Mobile Safari/537.36 MailMaster_Android_Mobile/6.22.1",
+    "client": {
+      "type": 4,
+      "name": "Mail Master",
+      "version": "6.22.1"
+    }
+  }
+]

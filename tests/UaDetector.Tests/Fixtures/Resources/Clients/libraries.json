@@ -1,3 +1,1033 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:eb0a225c41672bf71a559bf8b9fcdb13dc9716db5cfb2a63fcd3bb7c1810049d
-size 19498
+[
+  {
+    "userAgent": "Wget/1.10+devel",
+    "client": {
+      "type": 2,
+      "name": "Wget",
+      "version": "1.10"
+    }
+  },
+  {
+    "userAgent": "Wget/1.11.4 Red Hat modified",
+    "client": {
+      "type": 2,
+      "name": "Wget",
+      "version": "1.11.4"
+    }
+  },
+  {
+    "userAgent": "Wget/ (linux-gnu)",
+    "client": {
+      "type": 2,
+      "name": "Wget"
+    }
+  },
+  {
+    "userAgent": "curl/7.21.0 (i386-redhat-linux-gnu) libcurl/7.21.0 NSS/3.12.10.0 zlib/1.2.5 libidn/1.18 libssh2/1.2.4",
+    "client": {
+      "type": 2,
+      "name": "curl",
+      "version": "7.21.0"
+    }
+  },
+  {
+    "userAgent": "PycURL/7.19.3.1 libcurl/7.26.0 GnuTLS/2.12.20 zlib/1.2.7 libidn/1.25 libssh2/1.4.2 librtmp/2.3",
+    "client": {
+      "type": 2,
+      "name": "curl",
+      "version": "7.26.0"
+    }
+  },
+  {
+    "userAgent": "python-requests/1.2.0 CPython/2.7.3 Linux/3.8.0-33-generic",
+    "client": {
+      "type": 2,
+      "name": "Python Requests",
+      "version": "1.2.0"
+    }
+  },
+  {
+    "userAgent": "python-requests/1.2.0 CPython/2.7.5 Windows/7",
+    "client": {
+      "type": 2,
+      "name": "Python Requests",
+      "version": "1.2.0"
+    }
+  },
+  {
+    "userAgent": "Python-urllib/2.6",
+    "client": {
+      "type": 2,
+      "name": "Python urllib",
+      "version": "2.6"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Python-urllib2)",
+    "client": {
+      "type": 2,
+      "name": "Python urllib"
+    }
+  },
+  {
+    "userAgent": "Java/1.7.0_51",
+    "client": {
+      "type": 2,
+      "name": "Java",
+      "version": "1.7.0"
+    }
+  },
+  {
+    "userAgent": "Java1.1.4",
+    "client": {
+      "type": 2,
+      "name": "Java",
+      "version": "1.1.4"
+    }
+  },
+  {
+    "userAgent": "libwww-perl/5.69",
+    "client": {
+      "type": 2,
+      "name": "Perl",
+      "version": "5.69"
+    }
+  },
+  {
+    "userAgent": "perlclient/1.0",
+    "client": {
+      "type": 2,
+      "name": "Perl",
+      "version": "1.0"
+    }
+  },
+  {
+    "userAgent": "Guzzle/3.9.3 curl/7.38.0 PHP/5.6.14-0+deb8u1",
+    "client": {
+      "type": 2,
+      "name": "Guzzle (PHP HTTP Client)",
+      "version": "3.9.3"
+    }
+  },
+  {
+    "userAgent": "HTTP_Request2/2.3.0 (http://pear.php.net/package/http_request2) PHP/5.3.3",
+    "client": {
+      "type": 2,
+      "name": "HTTP_Request2",
+      "version": "2.3.0"
+    }
+  },
+  {
+    "userAgent": "Mechanize/2.7.3 Ruby/1.9.3p551 (http://github.com/sparklemotion/mechanize/)",
+    "client": {
+      "type": 2,
+      "name": "Mechanize",
+      "version": "2.7.3"
+    }
+  },
+  {
+    "userAgent": "Python/3.5 aiohttp/1.0.5",
+    "client": {
+      "type": 2,
+      "name": "aiohttp",
+      "version": "1.0.5"
+    }
+  },
+  {
+    "userAgent": "Google-HTTP-Java-Client/1.17.0-rc (gzip)",
+    "client": {
+      "type": 2,
+      "name": "Google HTTP Java Client",
+      "version": "1.17.0-rc"
+    }
+  },
+  {
+    "userAgent": "WWW-Mechanize/1.73",
+    "client": {
+      "type": 2,
+      "name": "WWW-Mechanize",
+      "version": "1.73"
+    }
+  },
+  {
+    "userAgent": "Faraday v0.9.1",
+    "client": {
+      "type": 2,
+      "name": "Faraday",
+      "version": "0.9.1"
+    }
+  },
+  {
+    "userAgent": "Go-http-client/1.1",
+    "client": {
+      "type": 2,
+      "name": "Go-http-client",
+      "version": "1.1"
+    }
+  },
+  {
+    "userAgent": "Go-http-client/2.0",
+    "client": {
+      "type": 2,
+      "name": "Go-http-client",
+      "version": "2.0"
+    }
+  },
+  {
+    "userAgent": "Go 1.1 package http",
+    "client": {
+      "type": 2,
+      "name": "Go-http-client",
+      "version": "1.1"
+    }
+  },
+  {
+    "userAgent": "urlgrabber/3.9.1 yum/3.2.29",
+    "client": {
+      "type": 2,
+      "name": "urlgrabber (yum)",
+      "version": "3.9.1"
+    }
+  },
+  {
+    "userAgent": "urlgrabber/3.10 yum/3.4.3",
+    "client": {
+      "type": 2,
+      "name": "urlgrabber (yum)",
+      "version": "3.10"
+    }
+  },
+  {
+    "userAgent": "libdnf/0.11.1",
+    "client": {
+      "type": 2,
+      "name": "libdnf",
+      "version": "0.11.1"
+    }
+  },
+  {
+    "userAgent": "HTTPie/1.0.2",
+    "client": {
+      "type": 2,
+      "name": "HTTPie",
+      "version": "1.0.2"
+    }
+  },
+  {
+    "userAgent": "rest-client/2.0.2 (linux-gnu x86_64) ruby/2.5.3p105",
+    "client": {
+      "type": 2,
+      "name": "REST Client for Ruby",
+      "version": "2.0.2"
+    }
+  },
+  {
+    "userAgent": "RestSharp/106.2.1.0",
+    "client": {
+      "type": 2,
+      "name": "RestSharp",
+      "version": "106.2.1.0"
+    }
+  },
+  {
+    "userAgent": "scalaj-http/2.4.0",
+    "client": {
+      "type": 2,
+      "name": "ScalaJ HTTP",
+      "version": "2.4.0"
+    }
+  },
+  {
+    "userAgent": "REST::Client/273",
+    "client": {
+      "type": 2,
+      "name": "Perl REST::Client",
+      "version": "273"
+    }
+  },
+  {
+    "userAgent": "node-fetch/1.0 (+https://github.com/bitinn/node-fetch)",
+    "client": {
+      "type": 2,
+      "name": "Node Fetch",
+      "version": "1.0"
+    }
+  },
+  {
+    "userAgent": "ReactorNetty/0.9.10.RELEASE",
+    "client": {
+      "type": 2,
+      "name": "ReactorNetty",
+      "version": "0.9.10"
+    }
+  },
+  {
+    "userAgent": "PostmanRuntime/7.9.1",
+    "client": {
+      "type": 2,
+      "name": "Postman Desktop",
+      "version": "7.9.1"
+    }
+  },
+  {
+    "userAgent": "insomnia/2022.6.0",
+    "client": {
+      "type": 2,
+      "name": "Insomnia REST Client",
+      "version": "2022.6.0"
+    }
+  },
+  {
+    "userAgent": "Jakarta Commons-HttpClient/3.1",
+    "client": {
+      "type": 2,
+      "name": "Jakarta Commons HttpClient",
+      "version": "3.1"
+    }
+  },
+  {
+    "userAgent": "Mozilla/4.0 (compatible; Win32; WinHttp.WinHttpRequest.5)",
+    "client": {
+      "type": 2,
+      "name": "WinHttp WinHttpRequest",
+      "version": "5"
+    }
+  },
+  {
+    "userAgent": "Embarcadero URI Client/1.0",
+    "client": {
+      "type": 2,
+      "name": "Embarcadero URI Client",
+      "version": "1.0"
+    }
+  },
+  {
+    "userAgent": "Mikrotik/6.x Fetch",
+    "client": {
+      "type": 2,
+      "name": "Mikrotik Fetch",
+      "version": "6"
+    }
+  },
+  {
+    "userAgent": "akka-http/10.1.11",
+    "client": {
+      "type": 2,
+      "name": "Akka HTTP",
+      "version": "10.1.11"
+    }
+  },
+  {
+    "userAgent": "BTWebClient/2020(19648)",
+    "client": {
+      "type": 2,
+      "name": "uTorrent"
+    }
+  },
+  {
+    "userAgent": "aria2/1.33.1",
+    "client": {
+      "type": 2,
+      "name": "Aria2",
+      "version": "1.33.1"
+    }
+  },
+  {
+    "userAgent": "gvfs/1.34.1",
+    "client": {
+      "type": 2,
+      "name": "gvfs",
+      "version": "1.34.1"
+    }
+  },
+  {
+    "userAgent": "uclient-fetch",
+    "client": {
+      "type": 2,
+      "name": "uclient-fetch"
+    }
+  },
+  {
+    "userAgent": "cpprestsdk/2.8.0",
+    "client": {
+      "type": 2,
+      "name": "C++ REST SDK",
+      "version": "2.8.0"
+    }
+  },
+  {
+    "userAgent": "lua-resty-http/0.10 (Lua) ngx_lua/10019",
+    "client": {
+      "type": 2,
+      "name": "LUA OpenResty NGINX",
+      "version": "0.10"
+    }
+  },
+  {
+    "userAgent": "unirest-java/3.1.00",
+    "client": {
+      "type": 2,
+      "name": "Unirest for Java",
+      "version": "3.1.00"
+    }
+  },
+  {
+    "userAgent": "GuzzleHttp/6.5.5 curl/7.58.0 PHP/7.4.21",
+    "client": {
+      "type": 2,
+      "name": "Guzzle (PHP HTTP Client)",
+      "version": "6.5.5"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64; rv:21.0) Gecko/20100101 SlimerJS/0.7",
+    "client": {
+      "type": 2,
+      "name": "SlimerJS",
+      "version": "0.7"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (win32) AppleWebKit/537.36 (KHTML, like Gecko) jsdom/15.2.1",
+    "client": {
+      "type": 2,
+      "name": "jsdom",
+      "version": "15.2.1"
+    }
+  },
+  {
+    "userAgent": "Java-http-client/11.0.13",
+    "client": {
+      "type": 2,
+      "name": "Java HTTP Client",
+      "version": "11.0.13"
+    }
+  },
+  {
+    "userAgent": "WinHTTP",
+    "client": {
+      "type": 2,
+      "name": "Windows HTTP"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (compatible; U; AnyEvent-HTTP/2.21;  http://software.schmorp.de/pkg/AnyEvent)",
+    "client": {
+      "type": 2,
+      "name": "AnyEvent HTTP",
+      "version": "2.21"
+    }
+  },
+  {
+    "userAgent": "Apache-HttpClient/4.5.3 (Java/1.8.0_292)",
+    "client": {
+      "type": 2,
+      "name": "Apache HTTP Client",
+      "version": "4.5.3"
+    }
+  },
+  {
+    "userAgent": "Cpanel-HTTP-Client/1.0",
+    "client": {
+      "type": 2,
+      "name": "cPanel HTTP Client",
+      "version": "1.0"
+    }
+  },
+  {
+    "userAgent": "PHP-Curl-Class/9.5.1 (+https://github.com/php-curl-class/php-curl-class)",
+    "client": {
+      "type": 2,
+      "name": "PHP cURL Class",
+      "version": "9.5.1"
+    }
+  },
+  {
+    "userAgent": "geoipupdate/4.9.0",
+    "client": {
+      "type": 2,
+      "name": "GeoIP Update",
+      "version": "4.9.0"
+    }
+  },
+  {
+    "userAgent": "fasthttp",
+    "client": {
+      "type": 2,
+      "name": "fasthttp"
+    }
+  },
+  {
+    "userAgent": "python-httpx/0.19.0",
+    "client": {
+      "type": 2,
+      "name": "HTTPX",
+      "version": "0.19.0"
+    }
+  },
+  {
+    "userAgent": "Python-httplib2/0.18.1 (gzip)",
+    "client": {
+      "type": 2,
+      "name": "httplib2",
+      "version": "0.18.1"
+    }
+  },
+  {
+    "userAgent": "hackney/1.7.1",
+    "client": {
+      "type": 2,
+      "name": "hackney",
+      "version": "1.7.1"
+    }
+  },
+  {
+    "userAgent": "network-okhttp3/3.12.10.301",
+    "client": {
+      "type": 2,
+      "name": "OkHttp",
+      "version": "3.12.10.301"
+    }
+  },
+  {
+    "userAgent": "okhttp3-3.12.1.hw.191202",
+    "client": {
+      "type": 2,
+      "name": "OkHttp",
+      "version": "3.12.1"
+    }
+  },
+  {
+    "userAgent": "grpc-java-okhttp/1.32.2",
+    "client": {
+      "type": 2,
+      "name": "gRPC-Java",
+      "version": "1.32.2"
+    }
+  },
+  {
+    "userAgent": "go-resty/2.7.0 (https://github.com/go-resty/resty)",
+    "client": {
+      "type": 2,
+      "name": "Resty",
+      "version": "2.7.0"
+    }
+  },
+  {
+    "userAgent": "pa11y/6.1.1",
+    "client": {
+      "type": 2,
+      "name": "Pa11y",
+      "version": "6.1.1"
+    }
+  },
+  {
+    "userAgent": "ultimate_sitemap_parser/0.5",
+    "client": {
+      "type": 2,
+      "name": "Ultimate Sitemap Parser",
+      "version": "0.5"
+    }
+  },
+  {
+    "userAgent": "Artifactory/7.21.5 72105900",
+    "client": {
+      "type": 2,
+      "name": "Artifactory",
+      "version": "7.21.5"
+    }
+  },
+  {
+    "userAgent": "containers/5.17.0 (github.com/containers/image)",
+    "client": {
+      "type": 2,
+      "name": "containers",
+      "version": "5.17.0"
+    }
+  },
+  {
+    "userAgent": "containerd/v1.4.13-k3s1",
+    "client": {
+      "type": 2,
+      "name": "Containerd",
+      "version": "1.4.13"
+    }
+  },
+  {
+    "userAgent": "containerd/1.5.11+azure-1",
+    "client": {
+      "type": 2,
+      "name": "Containerd",
+      "version": "1.5.11"
+    }
+  },
+  {
+    "userAgent": "cri-o/1.16.1 go/go1.12.17 os/linux arch/amd64",
+    "client": {
+      "type": 2,
+      "name": "cri-o",
+      "version": "1.16.1"
+    }
+  },
+  {
+    "userAgent": "go-containerregistry/v0.11.0",
+    "client": {
+      "type": 2,
+      "name": "go-container registry",
+      "version": "0.11.0"
+    }
+  },
+  {
+    "userAgent": "Buildah/1.23.1",
+    "client": {
+      "type": 2,
+      "name": "Buildah",
+      "version": "1.23.1"
+    }
+  },
+  {
+    "userAgent": "buildkit/0.10",
+    "client": {
+      "type": 2,
+      "name": "BuildKit",
+      "version": "0.10"
+    }
+  },
+  {
+    "userAgent": "buildkit/v0.10",
+    "client": {
+      "type": 2,
+      "name": "BuildKit",
+      "version": "0.10"
+    }
+  },
+  {
+    "userAgent": "BSRPC 0.9.1",
+    "client": {
+      "type": 2,
+      "name": "Open Build Service",
+      "version": "0.9.1"
+    }
+  },
+  {
+    "userAgent": "skopeo/1.7.0",
+    "client": {
+      "type": 2,
+      "name": "Skopeo",
+      "version": "1.7.0"
+    }
+  },
+  {
+    "userAgent": "Helm/3.9.2",
+    "client": {
+      "type": 2,
+      "name": "Helm",
+      "version": "3.9.2"
+    }
+  },
+  {
+    "userAgent": "harbor-registry-client",
+    "client": {
+      "type": 2,
+      "name": "Harbor registry client"
+    }
+  },
+  {
+    "userAgent": "libcurl/7.79.1 r-curl/4.3.2 httr/1.4.3",
+    "client": {
+      "type": 2,
+      "name": "r-curl",
+      "version": "4.3.2"
+    }
+  },
+  {
+    "userAgent": "Dart/2.16 (dart:io)",
+    "client": {
+      "type": 2,
+      "name": "Dart",
+      "version": "2.16"
+    }
+  },
+  {
+    "userAgent": "req/v3 (https://github.com/imroc/req)",
+    "client": {
+      "type": 2,
+      "name": "req",
+      "version": "3"
+    }
+  },
+  {
+    "userAgent": "azure-data-factory/2.0",
+    "client": {
+      "type": 2,
+      "name": "Azure Data Factory",
+      "version": "2.0"
+    }
+  },
+  {
+    "userAgent": "quic-go-HTTP/3",
+    "client": {
+      "type": 2,
+      "name": "quic-go"
+    }
+  },
+  {
+    "userAgent": "Typhoeus - https://github.com/typhoeus/typhoeus",
+    "client": {
+      "type": 2,
+      "name": "Typhoeus"
+    }
+  },
+  {
+    "userAgent": "got (https://github.com/sindresorhus/got)",
+    "client": {
+      "type": 2,
+      "name": "got"
+    }
+  },
+  {
+    "userAgent": "axios/1.2.0",
+    "client": {
+      "type": 2,
+      "name": "Axios",
+      "version": "1.2.0"
+    }
+  },
+  {
+    "userAgent": "HTMLParser/1.6",
+    "client": {
+      "type": 2,
+      "name": "HTML Parser",
+      "version": "1.6"
+    }
+  },
+  {
+    "userAgent": "python-urllib3/1.26.9",
+    "client": {
+      "type": 2,
+      "name": "Python urllib",
+      "version": "1.26.9"
+    }
+  },
+  {
+    "userAgent": "msray-plus",
+    "client": {
+      "type": 2,
+      "name": "Msray-Plus"
+    }
+  },
+  {
+    "userAgent": "Slim Framework",
+    "client": {
+      "type": 2,
+      "name": "Slim Framework"
+    }
+  },
+  {
+    "userAgent": "Fuzz Faster U Fool v1.5.0-dev",
+    "client": {
+      "type": 2,
+      "name": "FFUF",
+      "version": "1.5.0"
+    }
+  },
+  {
+    "userAgent": "cpp-httplib/0.10.9",
+    "client": {
+      "type": 2,
+      "name": "cpp-httplib",
+      "version": "0.10.9"
+    }
+  },
+  {
+    "userAgent": "Definitely-Not-Requests",
+    "client": {
+      "type": 2,
+      "name": "Requests"
+    }
+  },
+  {
+    "userAgent": "Stealer 0.2.0",
+    "client": {
+      "type": 2,
+      "name": "Stealer",
+      "version": "0.2.0"
+    }
+  },
+  {
+    "userAgent": "Mandrill-PHP/1.0.55",
+    "client": {
+      "type": 2,
+      "name": "Mandrill PHP",
+      "version": "1.0.55"
+    }
+  },
+  {
+    "userAgent": "babashka.http-client/0.4.14",
+    "client": {
+      "type": 2,
+      "name": "Babashka HTTP Client",
+      "version": "0.4.14"
+    }
+  },
+  {
+    "userAgent": "http.rb/4.0.0",
+    "client": {
+      "type": 2,
+      "name": "http.rb",
+      "version": "4.0.0"
+    }
+  },
+  {
+    "userAgent": "node-superagent/3.8.2",
+    "client": {
+      "type": 2,
+      "name": "superagent",
+      "version": "3.8.2"
+    }
+  },
+  {
+    "userAgent": "CakePHP",
+    "client": {
+      "type": 2,
+      "name": "CakePHP"
+    }
+  },
+  {
+    "userAgent": "request.js",
+    "client": {
+      "type": 2,
+      "name": "request"
+    }
+  },
+  {
+    "userAgent": "qbhttp/1.0.0",
+    "client": {
+      "type": 2,
+      "name": "QbHttp",
+      "version": "1.0.0"
+    }
+  },
+  {
+    "userAgent": "kiwi-tcms/13.0",
+    "client": {
+      "type": 2,
+      "name": "Kiwi TCMS",
+      "version": "13.0"
+    }
+  },
+  {
+    "userAgent": "kiwi-tcms/12.6.1-Enterprise",
+    "client": {
+      "type": 2,
+      "name": "Kiwi TCMS",
+      "version": "12.6.1"
+    }
+  },
+  {
+    "userAgent": "tcms-api/12.9.1/Python 3.11.8 (main, Feb  7 2024, 04:02:05) [GCC 11.4.0]",
+    "client": {
+      "type": 2,
+      "name": "Kiwi TCMS API",
+      "version": "12.9.1"
+    }
+  },
+  {
+    "userAgent": "tcms-api/12.7/Java",
+    "client": {
+      "type": 2,
+      "name": "Kiwi TCMS API",
+      "version": "12.7"
+    }
+  },
+  {
+    "userAgent": "electron-fetch/1.0 electron (+https://github.com/arantes555/electron-fetch)",
+    "client": {
+      "type": 2,
+      "name": "Electron Fetch",
+      "version": "1.0"
+    }
+  },
+  {
+    "userAgent": "httprs/0.1.0",
+    "client": {
+      "type": 2,
+      "name": "httprs",
+      "version": "0.1.0"
+    }
+  },
+  {
+    "userAgent": "Boto3/1.17.18 Python/3.8.5 Darwin/19.6.0 Botocore/1.20.18",
+    "client": {
+      "type": 2,
+      "name": "Boto3",
+      "version": "1.17.18"
+    }
+  },
+  {
+    "userAgent": "Python-xmlrpc/3.12",
+    "client": {
+      "type": 2,
+      "name": "XML-RPC",
+      "version": "3.12"
+    }
+  },
+  {
+    "userAgent": "ICAP-Client-Library/2.3",
+    "client": {
+      "type": 2,
+      "name": "ICAP Client",
+      "version": "2.3"
+    }
+  },
+  {
+    "userAgent": "IPinfoClient/PHP/3.1.2",
+    "client": {
+      "type": 2,
+      "name": "IPinfo",
+      "version": "3.1.2"
+    }
+  },
+  {
+    "userAgent": "IPinfoClient/Ruby/2.2.1",
+    "client": {
+      "type": 2,
+      "name": "IPinfo",
+      "version": "2.2.1"
+    }
+  },
+  {
+    "userAgent": "IPinfoClient/Java/3.0.0",
+    "client": {
+      "type": 2,
+      "name": "IPinfo",
+      "version": "3.0.0"
+    }
+  },
+  {
+    "userAgent": "quic-go HTTP/3",
+    "client": {
+      "type": 2,
+      "name": "quic-go"
+    }
+  },
+  {
+    "userAgent": "Jaunt/1.5",
+    "client": {
+      "type": 2,
+      "name": "Jaunt",
+      "version": "1.5"
+    }
+  },
+  {
+    "userAgent": "Android.LVLDM",
+    "client": {
+      "type": 2,
+      "name": "Android License Verification Library"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (X11; Linux aarch64) AppleWebKit/537.36 (KHTML, like Gecko) Cypress/12.1.0 Chrome/106.0.5249.51 Electron/21.0.0 Safari/537.36",
+    "client": {
+      "type": 2,
+      "name": "Cypress",
+      "version": "12.1.0"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1",
+    "client": {
+      "type": 2,
+      "name": "PhantomJS",
+      "version": "2.1.1"
+    }
+  },
+  {
+    "userAgent": "Cygwin-Setup/2.932 (Windows NT 10.0.20348;x86_64;0409;SymLinkPriv)",
+    "client": {
+      "type": 2,
+      "name": "Cygwin",
+      "version": "2.932"
+    }
+  },
+  {
+    "userAgent": "azsdk-python-storage-blob/12.23.0 Python/3.12.5 (Windows-2022Server-10.0.20348-SP0)",
+    "client": {
+      "type": 2,
+      "name": "Azure Blob Storage",
+      "version": "12.23.0"
+    }
+  },
+  {
+    "userAgent": "trafilatura/1.5.0 (+https://github.com/adbar/trafilatura)",
+    "client": {
+      "type": 2,
+      "name": "trafilatura",
+      "version": "1.5.0"
+    }
+  },
+  {
+    "userAgent": "sqlmap/1.8.10.1#dev (https://sqlmap.org)",
+    "client": {
+      "type": 2,
+      "name": "sqlmap",
+      "version": "1.8.10.1"
+    }
+  },
+  {
+    "userAgent": "vimeo.php 3.0.8; (http://developer.vimeo.com/api/docs)",
+    "client": {
+      "type": 2,
+      "name": "vimeo.php",
+      "version": "3.0.8"
+    }
+  },
+  {
+    "userAgent": "php7.4",
+    "client": {
+      "type": 2,
+      "name": "PHP",
+      "version": "7.4"
+    }
+  },
+  {
+    "userAgent": "PHP/5.3.93",
+    "client": {
+      "type": 2,
+      "name": "PHP",
+      "version": "5.3.93"
+    }
+  },
+  {
+    "userAgent": "localhost.localdomain/go-network-v2.0.1",
+    "client": {
+      "type": 2,
+      "name": "go-network",
+      "version": "2.0.1"
+    }
+  },
+  {
+    "userAgent": "Bun/1.2.10",
+    "client": {
+      "type": 2,
+      "name": "Bun",
+      "version": "1.2.10"
+    }
+  },
+  {
+    "userAgent": "Apidog/1.0.0 (https://apidog.com)",
+    "client": {
+      "type": 2,
+      "name": "Apidog",
+      "version": "1.0.0"
+    }
+  },
+  {
+    "userAgent": "webchk v1.2.0",
+    "client": {
+      "type": 2,
+      "name": "webchk",
+      "version": "1.2.0"
+    }
+  }
+]

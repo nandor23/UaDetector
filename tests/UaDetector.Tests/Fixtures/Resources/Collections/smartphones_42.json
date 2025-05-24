@@ -1,0 +1,132 @@
+[
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 15; 25028PC03G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "15",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "130.0.0.0",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "130.0.0.0"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "C71",
+      "brand": {
+        "name": "POCO",
+        "code": 1356
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 15; 2412DPC0AI) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "15",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "135.0.0.0",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "135.0.0.0"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "X7 Pro",
+      "brand": {
+        "name": "POCO",
+        "code": 1356
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 15; 2412DPC0AG-art) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "15",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "134.0.0.0",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "134.0.0.0"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "X7 Pro",
+      "brand": {
+        "name": "POCO",
+        "code": 1356
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 14; SM-S711W Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/135.0.7049.111 Mobile Safari/537.36 Barcelona 377.0.0.41.112 Android (34/14; 450dpi; 1080x2125; samsung; SM-S711W; r11q; qcom; en_CA; 724359173; IABMV/1)",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "14",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Threads",
+      "version": "377.0.0.41.112"
+    },
+    "device": {
+      "type": 1,
+      "model": "Galaxy S23 FE",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 14; NEXG N26 Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/135.0.7049.100 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "14",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Webview",
+      "code": 161,
+      "version": "135.0.7049.100",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "135.0.7049.100"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Nexg N26",
+      "brand": {
+        "name": "Walton",
+        "code": 1911
+      }
+    }
+  }
+]

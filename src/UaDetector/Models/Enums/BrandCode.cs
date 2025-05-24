@@ -2075,4 +2075,10 @@ public enum BrandCode
     Nexar = 2070,
     Qupi = 2071,
     Sencrom = 2072,
+    ApoloSign = 2073,
+    Kgtel = 2074,
+    Lunnen = 2075,
+    Novis = 2076,
+    Qiuwoky = 2077,
+    V7 = 2078,
 }

@@ -1,3 +1,77 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:08e3b51cfeb3aa4c17e8d061019ba43e4e325268e5067854ca25362402fef252
-size 1754
+[
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 13; 20JJS0CU1M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.6422.113 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "13",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome",
+      "code": 137,
+      "version": "125.0.6422.113",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "125.0.6422.113"
+      }
+    },
+    "device": {
+      "type": 0,
+      "model": "ThinkPad Yoga 370",
+      "brand": {
+        "name": "Lenovo",
+        "code": 976
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1 DuckDuckGo/7 Safari/605.1.15",
+    "os": {
+      "name": "Mac",
+      "code": 83,
+      "version": "10.15",
+      "family": "Mac"
+    },
+    "browser": {
+      "name": "DuckDuckGo Privacy Browser",
+      "code": 185,
+      "version": "7",
+      "family": "Chrome",
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15"
+      }
+    },
+    "device": {
+      "type": 0,
+      "brand": {
+        "name": "Apple",
+        "code": 97
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (X11; U; Linux aarch64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 Puffin/8.2.4.705LD",
+    "os": {
+      "name": "GNU/Linux",
+      "code": 72,
+      "cpuArchitecture": "ARM",
+      "family": "GNU/Linux"
+    },
+    "browser": {
+      "name": "Puffin Secure Browser",
+      "code": 451,
+      "version": "8.2.4.705",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "69.0.3497.100"
+      }
+    },
+    "device": {
+      "type": 0
+    }
+  }
+]

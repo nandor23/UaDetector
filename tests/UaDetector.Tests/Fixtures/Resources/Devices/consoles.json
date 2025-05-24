@@ -1,3 +1,130 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:40bbf0ee287e18c52726f8cee134da3a524d8faa17e7f50c60851cbb0feae7eb
-size 3453
+[
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 4.1.1; ARCHOS GAMEPAD Build/JRO03H) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166 Safari/535.19",
+    "device": {
+      "type": 4,
+      "brand": "Archos",
+      "model": "Gamepad"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0; Xbox)",
+    "device": {
+      "type": 4,
+      "brand": "Microsoft",
+      "model": "Xbox 360"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0; Xbox; Xbox One)",
+    "device": {
+      "type": 4,
+      "brand": "Microsoft",
+      "model": "Xbox One"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; Xbox; Xbox One) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2486.0 Safari/537.36 Edge/13.10586",
+    "device": {
+      "type": 4,
+      "brand": "Microsoft",
+      "model": "Xbox One"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Nintendo 3DS; U; ; en) Version/1.7498.EU",
+    "device": {
+      "type": 4,
+      "brand": "Nintendo",
+      "model": "3DS"
+    }
+  },
+  {
+    "userAgent": "Bunjalloo/0.7.6(Nintendo DS;U;en)",
+    "device": {
+      "type": 4,
+      "brand": "Nintendo",
+      "model": "DS"
+    }
+  },
+  {
+    "userAgent": "Opera/9.30 (Nintendo Wii; U; ; 3642; en)",
+    "device": {
+      "type": 4,
+      "brand": "Nintendo",
+      "model": "Wii"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Nintendo WiiU) AppleWebKit/534.52 (KHTML, like Gecko) NX/2.1.0.8.21 NintendoBrowser/1.0.0.7494.US",
+    "device": {
+      "type": 4,
+      "brand": "Nintendo",
+      "model": "WiiU"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; U; Android OUYA 4.1.2; en-us; OUYA Build/JZO54L-OUYA) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30",
+    "device": {
+      "type": 4,
+      "brand": "OUYA",
+      "model": "OUYA"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (PLAYSTATION 3 4.46) AppleWebKit/531.22.8 (KHTML, like Gecko)",
+    "device": {
+      "type": 4,
+      "brand": "Sony",
+      "model": "PlayStation 3"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (PlayStation 4 1.52) AppleWebKit/536.26 (KHTML, like Gecko)",
+    "device": {
+      "type": 4,
+      "brand": "Sony",
+      "model": "PlayStation 4"
+    }
+  },
+  {
+    "userAgent": "Mozilla/4.0 (PlayStation Portable); 2.00)",
+    "device": {
+      "type": 4,
+      "brand": "Sony",
+      "model": "PlayStation Portable"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (PlayStation Vita 3.01) AppleWebKit/536.26 (KHTML, like Gecko) Silk/3.2",
+    "device": {
+      "type": 4,
+      "brand": "Sony",
+      "model": "PlayStation Vita"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; XBOX_ONE_ED) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.79 Safari/537.36 Edge/14.14393",
+    "device": {
+      "type": 4,
+      "brand": "Microsoft",
+      "model": "Xbox One S"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; Xbox; Xbox One X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.82 Safari/537.36 Edge/20.02",
+    "device": {
+      "type": 4,
+      "brand": "Microsoft",
+      "model": "Xbox One X"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; Xbox; Xbox Series X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.82 Safari/537.36 Edge/20.02",
+    "device": {
+      "type": 4,
+      "brand": "Microsoft",
+      "model": "Xbox Series X"
+    }
+  }
+]

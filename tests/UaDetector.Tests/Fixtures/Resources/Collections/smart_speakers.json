@@ -1,3 +1,1470 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bbb4ae917126c7abf30dbd5fa6a9429de8d4fcb02ddbab408bf1a1840ab56359
-size 29452
+[
+  {
+    "userAgent": "AppleCoreMedia/1.0.0.15F80 (HomePod; U; CPU OS 11_4 like Mac OS X; fr_fr)",
+    "os": {
+      "name": "iOS",
+      "code": 182,
+      "version": "11.4",
+      "family": "iOS"
+    },
+    "client": {
+      "type": 2,
+      "name": "iOS Application"
+    },
+    "device": {
+      "type": 11,
+      "model": "HomePod",
+      "brand": {
+        "name": "Apple",
+        "code": 97
+      }
+    }
+  },
+  {
+    "userAgent": "Dalvik/2.1.0 (Linux; U; Android 5.1.1; AEOBC Build/LVY48F)",
+    "os": {
+      "name": "Fire OS",
+      "code": 42,
+      "version": "5",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Android Browser",
+      "code": 48,
+      "family": "Android Browser",
+      "engine": {
+        "name": "WebKit"
+      }
+    },
+    "device": {
+      "type": 11,
+      "model": "Echo",
+      "brand": {
+        "name": "Amazon",
+        "code": 72
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 5.1.1; AEOKN Build/LVY48F; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/59.0.3071.125 Safari/537.36",
+    "os": {
+      "name": "Fire OS",
+      "code": 42,
+      "version": "5",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Webview",
+      "code": 161,
+      "version": "59.0.3071.125",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "59.0.3071.125"
+      }
+    },
+    "device": {
+      "type": 11,
+      "model": "Echo",
+      "brand": {
+        "name": "Amazon",
+        "code": 72
+      }
+    }
+  },
+  {
+    "userAgent": "Echo/1.0(APNG)",
+    "client": {
+      "type": 1,
+      "name": "Alexa",
+      "version": "1.0"
+    },
+    "device": {
+      "type": 11,
+      "model": "Echo",
+      "brand": {
+        "name": "Amazon",
+        "code": 72
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 7.1.2; AEOCH Build/NS6548; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.115 Mobile Safari/537.36",
+    "os": {
+      "name": "Fire OS",
+      "code": 42,
+      "version": "6",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Webview",
+      "code": 161,
+      "version": "92.0.4515.115",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "92.0.4515.115"
+      }
+    },
+    "device": {
+      "type": 11,
+      "model": "Echo Show 8",
+      "brand": {
+        "name": "Amazon",
+        "code": 72
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 7.1.2; AEOCW Build/NS6543; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.152 Safari/537.36",
+    "os": {
+      "name": "Fire OS",
+      "code": 42,
+      "version": "6",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Webview",
+      "code": 161,
+      "version": "88.0.4324.152",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "88.0.4324.152"
+      }
+    },
+    "device": {
+      "type": 11,
+      "model": "Echo Show 8",
+      "brand": {
+        "name": "Amazon",
+        "code": 72
+      }
+    }
+  },
+  {
+    "userAgent": "AirPlay/540.31",
+    "os": {
+      "name": "iOS",
+      "code": 182,
+      "family": "iOS"
+    },
+    "device": {
+      "type": 11,
+      "brand": {
+        "name": "Apple",
+        "code": 97
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 9; AEOHY) AppleWebKit/537.36 (KHTML, like Gecko) Silk/94.3.10 like Chrome/94.0.4606.126 Safari/537.36",
+    "os": {
+      "name": "Fire OS",
+      "code": 42,
+      "version": "7",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Mobile Silk",
+      "code": 361,
+      "version": "94.3.10",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "94.0.4606.126"
+      }
+    },
+    "device": {
+      "type": 11,
+      "model": "Echo Show 15 (2021)",
+      "brand": {
+        "name": "Amazon",
+        "code": 72
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 7.1.2; AEOCN) AppleWebKit/537.36 (KHTML, like Gecko) Silk/110.6.7 like Chrome/110.0.5481.212 Safari/537.36",
+    "os": {
+      "name": "Fire OS",
+      "code": 42,
+      "version": "6",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Mobile Silk",
+      "code": 361,
+      "version": "110.6.7",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "110.0.5481.212"
+      }
+    },
+    "device": {
+      "type": 11,
+      "model": "Echo",
+      "brand": {
+        "name": "Amazon",
+        "code": 72
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 9; AEOAT) AppleWebKit/537.36 (KHTML, like Gecko) Silk/112.6.3 like Chrome/112.0.5615.213 Safari/537.36",
+    "os": {
+      "name": "Fire OS",
+      "code": 42,
+      "version": "7",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Mobile Silk",
+      "code": 361,
+      "version": "112.6.3",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "112.0.5615.213"
+      }
+    },
+    "device": {
+      "type": 11,
+      "model": "Echo",
+      "brand": {
+        "name": "Amazon",
+        "code": 72
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 9; AEOTA) AppleWebKit/537.36 (KHTML, like Gecko) Silk/106.4.3 like Chrome/106.0.5249.190 Safari/537.36",
+    "os": {
+      "name": "Fire OS",
+      "code": 42,
+      "version": "7",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Mobile Silk",
+      "code": 361,
+      "version": "106.4.3",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "106.0.5249.190"
+      }
+    },
+    "device": {
+      "type": 11,
+      "model": "Echo",
+      "brand": {
+        "name": "Amazon",
+        "code": 72
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 5.1.1; AEOBP) AppleWebKit/537.36 (KHTML, like Gecko) Silk/100.1.158 like Chrome/100.0.4896.127 Safari/537.36",
+    "os": {
+      "name": "Fire OS",
+      "code": 42,
+      "version": "5",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Mobile Silk",
+      "code": 361,
+      "version": "100.1.158",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "100.0.4896.127"
+      }
+    },
+    "device": {
+      "type": 11,
+      "model": "Echo Show (Gen 2)",
+      "brand": {
+        "name": "Amazon",
+        "code": 72
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 11; YNDX-00055 Build/RQ3A.210805.001.A1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.77 Safari/537.36 centaur/1100",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "11",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Webview",
+      "code": 161,
+      "version": "113.0.5672.77",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "113.0.5672.77"
+      }
+    },
+    "device": {
+      "type": 11,
+      "model": "SmartSpeak Duo Max",
+      "brand": {
+        "name": "Yandex",
+        "code": 1988
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (X11; Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.225 Safari/537.36 CrKey/1.56.500000 DeviceType/SmartSpeaker",
+    "os": {
+      "name": "GNU/Linux",
+      "code": 72,
+      "cpuArchitecture": "ARM",
+      "family": "GNU/Linux"
+    },
+    "browser": {
+      "name": "Chrome",
+      "code": 137,
+      "version": "90.0.4430.225",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "90.0.4430.225"
+      }
+    },
+    "device": {
+      "type": 11,
+      "model": "Chromecast",
+      "brand": {
+        "name": "Google",
+        "code": 655
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 9; AEOHY) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.126 Safari/537.36",
+    "os": {
+      "name": "Fire OS",
+      "code": 42,
+      "version": "7",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome",
+      "code": 137,
+      "version": "94.0.4606.126",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "94.0.4606.126"
+      }
+    },
+    "device": {
+      "type": 11,
+      "model": "Echo Show 15 (2021)",
+      "brand": {
+        "name": "Amazon",
+        "code": 72
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 7.1.2; AEOCN) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.5481.212 Safari/537.36",
+    "os": {
+      "name": "Fire OS",
+      "code": 42,
+      "version": "6",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome",
+      "code": 137,
+      "version": "110.0.5481.212",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "110.0.5481.212"
+      }
+    },
+    "device": {
+      "type": 11,
+      "model": "Echo",
+      "brand": {
+        "name": "Amazon",
+        "code": 72
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 9; AEOAT) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.5615.213 Safari/537.36",
+    "os": {
+      "name": "Fire OS",
+      "code": 42,
+      "version": "7",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome",
+      "code": 137,
+      "version": "112.0.5615.213",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "112.0.5615.213"
+      }
+    },
+    "device": {
+      "type": 11,
+      "model": "Echo",
+      "brand": {
+        "name": "Amazon",
+        "code": 72
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 9; AEOTA) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.5249.190 Safari/537.36",
+    "os": {
+      "name": "Fire OS",
+      "code": 42,
+      "version": "7",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome",
+      "code": 137,
+      "version": "106.0.5249.190",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "106.0.5249.190"
+      }
+    },
+    "device": {
+      "type": 11,
+      "model": "Echo",
+      "brand": {
+        "name": "Amazon",
+        "code": 72
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 5.1.1; AEOBP) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36",
+    "os": {
+      "name": "Fire OS",
+      "code": 42,
+      "version": "5",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome",
+      "code": 137,
+      "version": "100.0.4896.127",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "100.0.4896.127"
+      }
+    },
+    "device": {
+      "type": 11,
+      "model": "Echo Show (Gen 2)",
+      "brand": {
+        "name": "Amazon",
+        "code": 72
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm; Android 9; yandexstation_2 Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/118.0.5993.550 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "9",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Webview",
+      "code": 161,
+      "version": "118.0.5993.550",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "118.0.5993.550"
+      }
+    },
+    "device": {
+      "type": 11,
+      "model": "Station 2",
+      "brand": {
+        "name": "Yandex",
+        "code": 1988
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 9; AEORH) AppleWebKit/537.36 (KHTML, like Gecko) Silk/130.5.2 like Chrome/130.0.6723.142 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "9",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Mobile Silk",
+      "code": 361,
+      "version": "130.5.2",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "130.0.6723.142"
+      }
+    },
+    "device": {
+      "type": 11,
+      "model": "Echo Show 8",
+      "brand": {
+        "name": "Amazon",
+        "code": 72
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 7.1.2; AEOHP Build/NS6546;) AppleWebKit/537.36 (KHTML, like Gecko) Silk/126.3.601 like Chrome/126.0.6478.242 Safari/537.36",
+    "os": {
+      "name": "Fire OS",
+      "code": 42,
+      "version": "6",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Mobile Silk",
+      "code": 361,
+      "version": "126.3.601",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "126.0.6478.242"
+      }
+    },
+    "device": {
+      "type": 11,
+      "model": "Echo Show 5",
+      "brand": {
+        "name": "Amazon",
+        "code": 72
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; OS 1.1; AEOHP user/43; wv) AppleWebKit/537.36 (KHTML, like Gecko) Mobile Chrome/118.0.5993.159 Safari/537.36",
+    "os": {
+      "name": "Fire OS",
+      "code": 42,
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Webview",
+      "code": 161,
+      "version": "118.0.5993.159",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "118.0.5993.159"
+      }
+    },
+    "device": {
+      "type": 11,
+      "model": "Echo Show 5",
+      "brand": {
+        "name": "Amazon",
+        "code": 72
+      }
+    }
+  },
+  {
+    "userAgent": "Linux UPnP/1.0 Sonos/61.1-83170 (ZPS1)",
+    "os": {
+      "name": "GNU/Linux",
+      "code": 72,
+      "family": "GNU/Linux"
+    },
+    "client": {
+      "type": 1,
+      "name": "SONOS",
+      "version": "61.1"
+    },
+    "device": {
+      "type": 11,
+      "model": "ZPS1",
+      "brand": {
+        "name": "SONOS",
+        "code": 1593
+      }
+    }
+  },
+  {
+    "userAgent": "Linux UPnP/1.0 Sonos/53.2-70100 (ZPS9)",
+    "os": {
+      "name": "GNU/Linux",
+      "code": 72,
+      "family": "GNU/Linux"
+    },
+    "client": {
+      "type": 1,
+      "name": "SONOS",
+      "version": "53.2"
+    },
+    "device": {
+      "type": 11,
+      "model": "ZPS9",
+      "brand": {
+        "name": "SONOS",
+        "code": 1593
+      }
+    }
+  },
+  {
+    "userAgent": "Linux UPnP/1.0 Sonos/54.2-72031 (ZP90)",
+    "os": {
+      "name": "GNU/Linux",
+      "code": 72,
+      "family": "GNU/Linux"
+    },
+    "client": {
+      "type": 1,
+      "name": "SONOS",
+      "version": "54.2"
+    },
+    "device": {
+      "type": 11,
+      "model": "ZP90",
+      "brand": {
+        "name": "SONOS",
+        "code": 1593
+      }
+    }
+  },
+  {
+    "userAgent": "Linux UPnP/1.0 Sonos/61.1-83170 (ZPS17)",
+    "os": {
+      "name": "GNU/Linux",
+      "code": 72,
+      "family": "GNU/Linux"
+    },
+    "client": {
+      "type": 1,
+      "name": "SONOS",
+      "version": "61.1"
+    },
+    "device": {
+      "type": 11,
+      "model": "ZPS17",
+      "brand": {
+        "name": "SONOS",
+        "code": 1593
+      }
+    }
+  },
+  {
+    "userAgent": "Linux UPnP/1.0 Sonos/54.2-72160 (ZPS5)",
+    "os": {
+      "name": "GNU/Linux",
+      "code": 72,
+      "family": "GNU/Linux"
+    },
+    "client": {
+      "type": 1,
+      "name": "SONOS",
+      "version": "54.2"
+    },
+    "device": {
+      "type": 11,
+      "model": "ZPS5",
+      "brand": {
+        "name": "SONOS",
+        "code": 1593
+      }
+    }
+  },
+  {
+    "userAgent": "Linux UPnP/1.0 Sonos/56.0-76060 (ZPS6)",
+    "os": {
+      "name": "GNU/Linux",
+      "code": 72,
+      "family": "GNU/Linux"
+    },
+    "client": {
+      "type": 1,
+      "name": "SONOS",
+      "version": "56.0"
+    },
+    "device": {
+      "type": 11,
+      "model": "ZPS6",
+      "brand": {
+        "name": "SONOS",
+        "code": 1593
+      }
+    }
+  },
+  {
+    "userAgent": "Linux UPnP/1.0 Sonos/61.1-83170 (ZPS23)",
+    "os": {
+      "name": "GNU/Linux",
+      "code": 72,
+      "family": "GNU/Linux"
+    },
+    "client": {
+      "type": 1,
+      "name": "SONOS",
+      "version": "61.1"
+    },
+    "device": {
+      "type": 11,
+      "model": "ZPS23",
+      "brand": {
+        "name": "SONOS",
+        "code": 1593
+      }
+    }
+  },
+  {
+    "userAgent": "Linux UPnP/1.0 Sonos/53.3-71050 (ZPS11)",
+    "os": {
+      "name": "GNU/Linux",
+      "code": 72,
+      "family": "GNU/Linux"
+    },
+    "client": {
+      "type": 1,
+      "name": "SONOS",
+      "version": "53.3"
+    },
+    "device": {
+      "type": 11,
+      "model": "ZPS11",
+      "brand": {
+        "name": "SONOS",
+        "code": 1593
+      }
+    }
+  },
+  {
+    "userAgent": "Linux UPnP/1.0 Sonos/57.3-81090 (ZPS18)",
+    "os": {
+      "name": "GNU/Linux",
+      "code": 72,
+      "family": "GNU/Linux"
+    },
+    "client": {
+      "type": 1,
+      "name": "SONOS",
+      "version": "57.3"
+    },
+    "device": {
+      "type": 11,
+      "model": "ZPS18",
+      "brand": {
+        "name": "SONOS",
+        "code": 1593
+      }
+    }
+  },
+  {
+    "userAgent": "Linux UPnP/1.0 Sonos/54.2-72031 (ZPS20)",
+    "os": {
+      "name": "GNU/Linux",
+      "code": 72,
+      "family": "GNU/Linux"
+    },
+    "client": {
+      "type": 1,
+      "name": "SONOS",
+      "version": "54.2"
+    },
+    "device": {
+      "type": 11,
+      "model": "ZPS20",
+      "brand": {
+        "name": "SONOS",
+        "code": 1593
+      }
+    }
+  },
+  {
+    "userAgent": "Linux UPnP/1.0 Sonos/54.2-72160 (ZPS14)",
+    "os": {
+      "name": "GNU/Linux",
+      "code": 72,
+      "family": "GNU/Linux"
+    },
+    "client": {
+      "type": 1,
+      "name": "SONOS",
+      "version": "54.2"
+    },
+    "device": {
+      "type": 11,
+      "model": "ZPS14",
+      "brand": {
+        "name": "SONOS",
+        "code": 1593
+      }
+    }
+  },
+  {
+    "userAgent": "Linux UPnP/1.0 Sonos/58.1-79200 (ZPS12)",
+    "os": {
+      "name": "GNU/Linux",
+      "code": 72,
+      "family": "GNU/Linux"
+    },
+    "client": {
+      "type": 1,
+      "name": "SONOS",
+      "version": "58.1"
+    },
+    "device": {
+      "type": 11,
+      "model": "ZPS12",
+      "brand": {
+        "name": "SONOS",
+        "code": 1593
+      }
+    }
+  },
+  {
+    "userAgent": "Linux UPnP/1.0 Sonos/56.0-76060 (ZPS3)",
+    "os": {
+      "name": "GNU/Linux",
+      "code": 72,
+      "family": "GNU/Linux"
+    },
+    "client": {
+      "type": 1,
+      "name": "SONOS",
+      "version": "56.0"
+    },
+    "device": {
+      "type": 11,
+      "model": "ZPS3",
+      "brand": {
+        "name": "SONOS",
+        "code": 1593
+      }
+    }
+  },
+  {
+    "userAgent": "Linux UPnP/1.0 Sonos/54.2-72160 (ZPS15)",
+    "os": {
+      "name": "GNU/Linux",
+      "code": 72,
+      "family": "GNU/Linux"
+    },
+    "client": {
+      "type": 1,
+      "name": "SONOS",
+      "version": "54.2"
+    },
+    "device": {
+      "type": 11,
+      "model": "ZPS15",
+      "brand": {
+        "name": "SONOS",
+        "code": 1593
+      }
+    }
+  },
+  {
+    "userAgent": "Linux UPnP/1.0 Sonos/55.1-74250 (ZPS13)",
+    "os": {
+      "name": "GNU/Linux",
+      "code": 72,
+      "family": "GNU/Linux"
+    },
+    "client": {
+      "type": 1,
+      "name": "SONOS",
+      "version": "55.1"
+    },
+    "device": {
+      "type": 11,
+      "model": "ZPS13",
+      "brand": {
+        "name": "SONOS",
+        "code": 1593
+      }
+    }
+  },
+  {
+    "userAgent": "Sonos;Play5;9b377073ea334637b1406f329ce005de;;tpapi;3.81.91",
+    "device": {
+      "type": 11,
+      "model": "Play:5",
+      "brand": {
+        "name": "SONOS",
+        "code": 1593
+      }
+    }
+  },
+  {
+    "userAgent": "Sonos;One;9b377073ea334637b1406f329ce005de;;tpapi;3.81.91",
+    "device": {
+      "type": 11,
+      "model": "One",
+      "brand": {
+        "name": "SONOS",
+        "code": 1593
+      }
+    }
+  },
+  {
+    "userAgent": "Linux UPnP/1.0 Sonos/79.0-52294 (ZPS16)",
+    "os": {
+      "name": "GNU/Linux",
+      "code": 72,
+      "family": "GNU/Linux"
+    },
+    "client": {
+      "type": 1,
+      "name": "SONOS",
+      "version": "79.0"
+    },
+    "device": {
+      "type": 11,
+      "model": "ZPS16",
+      "brand": {
+        "name": "SONOS",
+        "code": 1593
+      }
+    }
+  },
+  {
+    "userAgent": "Linux UpnP/1.0 Sonos/82.-60160 (ZPS33)",
+    "os": {
+      "name": "GNU/Linux",
+      "code": 72,
+      "family": "GNU/Linux"
+    },
+    "client": {
+      "type": 1,
+      "name": "SONOS",
+      "version": "82"
+    },
+    "device": {
+      "type": 11,
+      "model": "ZPS33",
+      "brand": {
+        "name": "SONOS",
+        "code": 1593
+      }
+    }
+  },
+  {
+    "userAgent": "Linux UPnP/1.0 Sonos/80.1-55240 (ZPS19)",
+    "os": {
+      "name": "GNU/Linux",
+      "code": 72,
+      "family": "GNU/Linux"
+    },
+    "client": {
+      "type": 1,
+      "name": "SONOS",
+      "version": "80.1"
+    },
+    "device": {
+      "type": 11,
+      "model": "ZPS19",
+      "brand": {
+        "name": "SONOS",
+        "code": 1593
+      }
+    }
+  },
+  {
+    "userAgent": "Linux UPnP/1.0 Sonos/81.1-58074 (ZPS31)",
+    "os": {
+      "name": "GNU/Linux",
+      "code": 72,
+      "family": "GNU/Linux"
+    },
+    "client": {
+      "type": 1,
+      "name": "SONOS",
+      "version": "81.1"
+    },
+    "device": {
+      "type": 11,
+      "model": "ZPS31",
+      "brand": {
+        "name": "SONOS",
+        "code": 1593
+      }
+    }
+  },
+  {
+    "userAgent": "Linux UPnP/1.0 Sonos/81.1-58074 (ZPS39)",
+    "os": {
+      "name": "GNU/Linux",
+      "code": 72,
+      "family": "GNU/Linux"
+    },
+    "client": {
+      "type": 1,
+      "name": "SONOS",
+      "version": "81.1"
+    },
+    "device": {
+      "type": 11,
+      "model": "ZPS39",
+      "brand": {
+        "name": "SONOS",
+        "code": 1593
+      }
+    }
+  },
+  {
+    "userAgent": "Linux UPnP/1.0 Sonos/81.1-58074 (ZP120)",
+    "os": {
+      "name": "GNU/Linux",
+      "code": 72,
+      "family": "GNU/Linux"
+    },
+    "client": {
+      "type": 1,
+      "name": "SONOS",
+      "version": "81.1"
+    },
+    "device": {
+      "type": 11,
+      "model": "ZP120",
+      "brand": {
+        "name": "SONOS",
+        "code": 1593
+      }
+    }
+  },
+  {
+    "userAgent": "Linux UPnP/1.0 Sonos/79.0-52294 (ZPS22)",
+    "os": {
+      "name": "GNU/Linux",
+      "code": 72,
+      "family": "GNU/Linux"
+    },
+    "client": {
+      "type": 1,
+      "name": "SONOS",
+      "version": "79.0"
+    },
+    "device": {
+      "type": 11,
+      "model": "ZPS22",
+      "brand": {
+        "name": "SONOS",
+        "code": 1593
+      }
+    }
+  },
+  {
+    "userAgent": "Linux UPnP/1.0 Sonos/81.1-58074 (ZPS27)",
+    "os": {
+      "name": "GNU/Linux",
+      "code": 72,
+      "family": "GNU/Linux"
+    },
+    "client": {
+      "type": 1,
+      "name": "SONOS",
+      "version": "81.1"
+    },
+    "device": {
+      "type": 11,
+      "model": "ZPS27",
+      "brand": {
+        "name": "SONOS",
+        "code": 1593
+      }
+    }
+  },
+  {
+    "userAgent": "Linux UPnP/1.0 Sonos/57.21-51190 (ANVIL)",
+    "os": {
+      "name": "GNU/Linux",
+      "code": 72,
+      "family": "GNU/Linux"
+    },
+    "client": {
+      "type": 1,
+      "name": "SONOS",
+      "version": "57.21"
+    },
+    "device": {
+      "type": 11,
+      "model": "Sub",
+      "brand": {
+        "name": "SONOS",
+        "code": 1593
+      }
+    }
+  },
+  {
+    "userAgent": "Linux UPnP/1.0 Sonos/81.1-58074 (ZPS24)",
+    "os": {
+      "name": "GNU/Linux",
+      "code": 72,
+      "family": "GNU/Linux"
+    },
+    "client": {
+      "type": 1,
+      "name": "SONOS",
+      "version": "81.1"
+    },
+    "device": {
+      "type": 11,
+      "model": "ZPS24",
+      "brand": {
+        "name": "SONOS",
+        "code": 1593
+      }
+    }
+  },
+  {
+    "userAgent": "Linux UPnP/1.0 Sonos/81.1-58074 (ZPS30)",
+    "os": {
+      "name": "GNU/Linux",
+      "code": 72,
+      "family": "GNU/Linux"
+    },
+    "client": {
+      "type": 1,
+      "name": "SONOS",
+      "version": "81.1"
+    },
+    "device": {
+      "type": 11,
+      "model": "ZPS30",
+      "brand": {
+        "name": "SONOS",
+        "code": 1593
+      }
+    }
+  },
+  {
+    "userAgent": "Linux UPnP/1.0 Sonos/80.1-56190 (ZPS44)",
+    "os": {
+      "name": "GNU/Linux",
+      "code": 72,
+      "family": "GNU/Linux"
+    },
+    "client": {
+      "type": 1,
+      "name": "SONOS",
+      "version": "80.1"
+    },
+    "device": {
+      "type": 11,
+      "model": "ZPS44",
+      "brand": {
+        "name": "SONOS",
+        "code": 1593
+      }
+    }
+  },
+  {
+    "userAgent": "Linux UPnP/1.0 Sonos/80.1-56190 (ZPS34)",
+    "os": {
+      "name": "GNU/Linux",
+      "code": 72,
+      "family": "GNU/Linux"
+    },
+    "client": {
+      "type": 1,
+      "name": "SONOS",
+      "version": "80.1"
+    },
+    "device": {
+      "type": 11,
+      "model": "ZPS34",
+      "brand": {
+        "name": "SONOS",
+        "code": 1593
+      }
+    }
+  },
+  {
+    "userAgent": "Linux UPnP/1.0 Sonos/81.0-54109-manufacturing (ZPS45)",
+    "os": {
+      "name": "GNU/Linux",
+      "code": 72,
+      "family": "GNU/Linux"
+    },
+    "client": {
+      "type": 1,
+      "name": "SONOS",
+      "version": "81.0"
+    },
+    "device": {
+      "type": 11,
+      "model": "ZPS45",
+      "brand": {
+        "name": "SONOS",
+        "code": 1593
+      }
+    }
+  },
+  {
+    "userAgent": "Linux UPnP/1.0 Sonos/81.1-58074 (BR200)",
+    "os": {
+      "name": "GNU/Linux",
+      "code": 72,
+      "family": "GNU/Linux"
+    },
+    "client": {
+      "type": 1,
+      "name": "SONOS",
+      "version": "81.1"
+    },
+    "device": {
+      "type": 11,
+      "model": "BOOST",
+      "brand": {
+        "name": "SONOS",
+        "code": 1593
+      }
+    }
+  },
+  {
+    "userAgent": "Linux UPnP/1.0 Sonos/83.1-61240 (ZPS26)",
+    "os": {
+      "name": "GNU/Linux",
+      "code": 72,
+      "family": "GNU/Linux"
+    },
+    "client": {
+      "type": 1,
+      "name": "SONOS",
+      "version": "83.1"
+    },
+    "device": {
+      "type": 11,
+      "model": "ZPS26",
+      "brand": {
+        "name": "SONOS",
+        "code": 1593
+      }
+    }
+  },
+  {
+    "userAgent": "Linux UPnP/1.0 Sonos/83.1-61240 (ZPS37)",
+    "os": {
+      "name": "GNU/Linux",
+      "code": 72,
+      "family": "GNU/Linux"
+    },
+    "client": {
+      "type": 1,
+      "name": "SONOS",
+      "version": "83.1"
+    },
+    "device": {
+      "type": 11,
+      "model": "ZPS37",
+      "brand": {
+        "name": "SONOS",
+        "code": 1593
+      }
+    }
+  },
+  {
+    "userAgent": "Linux UPnP/1.0 Sonos/83.1-61240 (ZPS35)",
+    "os": {
+      "name": "GNU/Linux",
+      "code": 72,
+      "family": "GNU/Linux"
+    },
+    "client": {
+      "type": 1,
+      "name": "SONOS",
+      "version": "83.1"
+    },
+    "device": {
+      "type": 11,
+      "model": "ZPS35",
+      "brand": {
+        "name": "SONOS",
+        "code": 1593
+      }
+    }
+  },
+  {
+    "userAgent": "Linux UPnP/1.0 Sonos/83.1-61240 (ZPS36)",
+    "os": {
+      "name": "GNU/Linux",
+      "code": 72,
+      "family": "GNU/Linux"
+    },
+    "client": {
+      "type": 1,
+      "name": "SONOS",
+      "version": "83.1"
+    },
+    "device": {
+      "type": 11,
+      "model": "ZPS36",
+      "brand": {
+        "name": "SONOS",
+        "code": 1593
+      }
+    }
+  },
+  {
+    "userAgent": "Linux UPnP/1.0 Sonos/83.1-61210 (ZPS41)",
+    "os": {
+      "name": "GNU/Linux",
+      "code": 72,
+      "family": "GNU/Linux"
+    },
+    "client": {
+      "type": 1,
+      "name": "SONOS",
+      "version": "83.1"
+    },
+    "device": {
+      "type": 11,
+      "model": "ZPS41",
+      "brand": {
+        "name": "SONOS",
+        "code": 1593
+      }
+    }
+  },
+  {
+    "userAgent": "Linux UPnP/1.0 Sonos/83.1-61210 (ZPS38)",
+    "os": {
+      "name": "GNU/Linux",
+      "code": 72,
+      "family": "GNU/Linux"
+    },
+    "client": {
+      "type": 1,
+      "name": "SONOS",
+      "version": "83.1"
+    },
+    "device": {
+      "type": 11,
+      "model": "ZPS38",
+      "brand": {
+        "name": "SONOS",
+        "code": 1593
+      }
+    }
+  },
+  {
+    "userAgent": "Linux UPnP/1.0 Sonos/83.1-61210 (ZPS21)",
+    "os": {
+      "name": "GNU/Linux",
+      "code": 72,
+      "family": "GNU/Linux"
+    },
+    "client": {
+      "type": 1,
+      "name": "SONOS",
+      "version": "83.1"
+    },
+    "device": {
+      "type": 11,
+      "model": "ZPS21",
+      "brand": {
+        "name": "SONOS",
+        "code": 1593
+      }
+    }
+  },
+  {
+    "userAgent": "Linux UPnP/1.0 Sonos/82.3-60160 (ZPS55)",
+    "os": {
+      "name": "GNU/Linux",
+      "code": 72,
+      "family": "GNU/Linux"
+    },
+    "client": {
+      "type": 1,
+      "name": "SONOS",
+      "version": "82.3"
+    },
+    "device": {
+      "type": 11,
+      "model": "ZPS55",
+      "brand": {
+        "name": "SONOS",
+        "code": 1593
+      }
+    }
+  },
+  {
+    "userAgent": "Linux UPnP/1.0 Sonos/82.2-59204 (ZPS43)",
+    "os": {
+      "name": "GNU/Linux",
+      "code": 72,
+      "family": "GNU/Linux"
+    },
+    "client": {
+      "type": 1,
+      "name": "SONOS",
+      "version": "82.2"
+    },
+    "device": {
+      "type": 11,
+      "model": "ZPS43",
+      "brand": {
+        "name": "SONOS",
+        "code": 1593
+      }
+    }
+  },
+  {
+    "userAgent": "Linux UPnP/1.0 Sonos/82.2-59204 (ZPS54)",
+    "os": {
+      "name": "GNU/Linux",
+      "code": 72,
+      "family": "GNU/Linux"
+    },
+    "client": {
+      "type": 1,
+      "name": "SONOS",
+      "version": "82.2"
+    },
+    "device": {
+      "type": 11,
+      "model": "ZPS54",
+      "brand": {
+        "name": "SONOS",
+        "code": 1593
+      }
+    }
+  },
+  {
+    "userAgent": "Sonos/71.0-37271 (Play:3)",
+    "client": {
+      "type": 1,
+      "name": "SONOS",
+      "version": "71.0"
+    },
+    "device": {
+      "type": 11,
+      "model": "Play:3",
+      "brand": {
+        "name": "SONOS",
+        "code": 1593
+      }
+    }
+  }
+]

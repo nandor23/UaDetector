@@ -2094,6 +2094,12 @@ public class BrandCodeTests
             { BrandCode.Nexar, 2070 },
             { BrandCode.Qupi, 2071 },
             { BrandCode.Sencrom, 2072 },
+            { BrandCode.ApoloSign, 2073 },
+            { BrandCode.Kgtel, 2074 },
+            { BrandCode.Lunnen, 2075 },
+            { BrandCode.Novis, 2076 },
+            { BrandCode.Qiuwoky, 2077 },
+            { BrandCode.V7, 2078 },
         };
 
         expectedValues.Count.ShouldBe(Enum.GetValues<BrandCode>().Length);
