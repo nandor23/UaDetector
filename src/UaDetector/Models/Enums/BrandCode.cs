@@ -2081,4 +2081,8 @@ public enum BrandCode
     Novis = 2076,
     Qiuwoky = 2077,
     V7 = 2078,
+    Ktc = 2079,
+    Tricolor = 2080,
+    XB = 2081,
+    Ziovo = 2082,
 }

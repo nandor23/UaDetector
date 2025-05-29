@@ -2081,4 +2081,8 @@ public static class BrandNames
     public const string Novis = "NOVIS";
     public const string Qiuwoky = "Qiuwoky";
     public const string V7 = "V7";
+    public const string Ktc = "KTC";
+    public const string Tricolor = "Tricolor";
+    public const string XB = "XB";
+    public const string Ziovo = "ZIOVO";
 }

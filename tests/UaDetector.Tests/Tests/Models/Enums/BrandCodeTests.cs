@@ -2100,6 +2100,10 @@ public class BrandCodeTests
             { BrandCode.Novis, 2076 },
             { BrandCode.Qiuwoky, 2077 },
             { BrandCode.V7, 2078 },
+            { BrandCode.Ktc, 2079 },
+            { BrandCode.Tricolor, 2080 },
+            { BrandCode.XB, 2081 },
+            { BrandCode.Ziovo, 2082 },
         };
 
         expectedValues.Count.ShouldBe(Enum.GetValues<BrandCode>().Length);
