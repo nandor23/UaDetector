@@ -158,7 +158,7 @@
   },
   {
     "brand": "Diofox",
-    "regex": "Diofox[ _](M8)(?:[);/ ]|$)",
+    "regex": "Diofox[ _](M8|M10|M508)(?:[);/ ]|$)",
     "type": 9,
     "model": "$1"
   },
