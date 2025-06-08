@@ -3781,5 +3781,77 @@
         "code": 1116
       }
     }
+  },
+  {
+    "userAgent": "Darwin/24.5.0 (Watch7,8; watchOS 11.4) MatomoTrackerSDK/7.7.0",
+    "os": {
+      "name": "watchOS",
+      "code": 166,
+      "version": "11.4",
+      "cpuArchitecture": "ARM",
+      "family": "iOS"
+    },
+    "device": {
+      "type": 12,
+      "model": "Watch Series 10 42mm",
+      "brand": {
+        "name": "Apple",
+        "code": 97
+      }
+    }
+  },
+  {
+    "userAgent": "Darwin/24.5.0 (Watch7,10; watchOS 11.4) MatomoTrackerSDK/7.7.0",
+    "os": {
+      "name": "watchOS",
+      "code": 166,
+      "version": "11.4",
+      "cpuArchitecture": "ARM",
+      "family": "iOS"
+    },
+    "device": {
+      "type": 12,
+      "model": "Watch Series 10 42mm",
+      "brand": {
+        "name": "Apple",
+        "code": 97
+      }
+    }
+  },
+  {
+    "userAgent": "Darwin/24.5.0 (Watch7,9; watchOS 11.4) MatomoTrackerSDK/7.7.0",
+    "os": {
+      "name": "watchOS",
+      "code": 166,
+      "version": "11.4",
+      "cpuArchitecture": "ARM",
+      "family": "iOS"
+    },
+    "device": {
+      "type": 12,
+      "model": "Watch Series 10 46mm",
+      "brand": {
+        "name": "Apple",
+        "code": 97
+      }
+    }
+  },
+  {
+    "userAgent": "Darwin/24.5.0 (Watch7,11; watchOS 11.4) MatomoTrackerSDK/7.7.0",
+    "os": {
+      "name": "watchOS",
+      "code": 166,
+      "version": "11.4",
+      "cpuArchitecture": "ARM",
+      "family": "iOS"
+    },
+    "device": {
+      "type": 12,
+      "model": "Watch Series 10 46mm",
+      "brand": {
+        "name": "Apple",
+        "code": 97
+      }
+    }
   }
 ]
