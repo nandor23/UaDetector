@@ -3791,6 +3791,11 @@
       "cpuArchitecture": "ARM",
       "family": "iOS"
     },
+    "client": {
+      "type": 2,
+      "name": "MatomoTracker",
+      "version": "7.7.0"
+    },
     "device": {
       "type": 12,
       "model": "Watch Series 10 42mm",
@@ -3808,6 +3813,11 @@
       "version": "11.4",
       "cpuArchitecture": "ARM",
       "family": "iOS"
+    },
+    "client": {
+      "type": 2,
+      "name": "MatomoTracker",
+      "version": "7.7.0"
     },
     "device": {
       "type": 12,
@@ -3827,6 +3837,11 @@
       "cpuArchitecture": "ARM",
       "family": "iOS"
     },
+    "client": {
+      "type": 2,
+      "name": "MatomoTracker",
+      "version": "7.7.0"
+    },
     "device": {
       "type": 12,
       "model": "Watch Series 10 46mm",
@@ -3844,6 +3859,11 @@
       "version": "11.4",
       "cpuArchitecture": "ARM",
       "family": "iOS"
+    },
+    "client": {
+      "type": 2,
+      "name": "MatomoTracker",
+      "version": "7.7.0"
     },
     "device": {
       "type": 12,

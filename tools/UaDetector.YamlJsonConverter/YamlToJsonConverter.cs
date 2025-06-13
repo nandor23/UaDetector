@@ -6,6 +6,7 @@ using UaDetector.Models.Enums;
 using UaDetector.Parsers;
 using UaDetector.Parsers.Devices;
 using UaDetector.Regexes.Models;
+using UaDetector.Regexes.Models.Browsers;
 using UaDetector.Results;
 using UaDetector.Tests.Fixtures.Models;
 using UaDetector.YamlJsonConverter.Fixtures;
@@ -17,6 +18,7 @@ namespace UaDetector.YamlJsonConverter;
 public static class YamlToJsonConverter
 {
     private const string BaseDirectory = "Inputs";
+    private const string BrowsersFile = "browsers";
     private const string ClientsFile = "clients";
     private const string DevicesFile = "devices";
     private const string BotsFile = "bots";
@@ -85,6 +87,35 @@ public static class YamlToJsonConverter
         DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull,
         Converters = { new RegexJsonConverter() },
     };
+
+    public static void ConvertBrowserRegex()
+    {
+        var entries = YamlLoader.LoadList<BrowserYml>(
+            Path.Combine(BaseDirectory, BrowsersFile + ".yml")
+        );
+
+        var result = entries.Select(x => new Browser
+        {
+            Regex = x.Regex,
+            Name = x.Name,
+            Version = x.Version,
+            Engine = x.Engine is null
+                ? null
+                : new Engine
+                {
+                    Default = x.Engine.Default ?? string.Empty,
+                    Versions = x.Engine.Versions?.ToDictionary(
+                        kvp => kvp.Key,
+                        kvp => string.IsNullOrEmpty(kvp.Value) ? string.Empty : kvp.Value
+                    ),
+                },
+        });
+
+        File.WriteAllText(
+            BrowsersFile + ".json",
+            JsonSerializer.Serialize(result, JsonSerializerOptions)
+        );
+    }
 
     public static void ConvertClientRegex()
     {
@@ -155,6 +186,7 @@ public static class YamlToJsonConverter
         );
     }
 
+    // Use this for client browser_type conversion as well.
     public static void ConvertCollectionFixture()
     {
         var entries = YamlLoader.LoadList<UserAgentFixtureYaml>(
@@ -192,7 +224,7 @@ public static class YamlToJsonConverter
                         Name = x.Client.Name,
                         Code = BrowserParser.BrowserNameMapping[x.Client.Name],
                         Version = x.Client.Version,
-                        Family = x.BrowserFamily == "Unknown" ? null : x.BrowserFamily,
+                        Family = x.BrowserFamily == "Unknown" ? null : x.BrowserFamily ?? x.Client.Family,
                         Engine =
                             x.Client.Engine is null && x.Client.EngineVersion is null
                                 ? null
