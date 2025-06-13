@@ -2664,6 +2664,11 @@
         "name": "iPhone 16 Plus"
       },
       {
+        "regex": "(?:MDCR_|ICRU_|Apple-)?iPh(?:one)?17[C,_]5|(?:iPhone[ _]?16e| 16e)(?:[);/ ]|$)",
+        "type": 10,
+        "name": "iPhone 16e"
+      },
+      {
         "regex": "(?:MDCR_|ICRU_|Apple-)?iPh(?:one)?17[C,_]3|(?:iPhone[ _]?16| 16)(?:[);/ ]|$)",
         "type": 10,
         "name": "iPhone 16"
