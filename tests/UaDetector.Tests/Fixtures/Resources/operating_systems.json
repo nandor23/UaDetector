@@ -6908,5 +6908,23 @@
       "version": "1.5.2.0",
       "family": "Android"
     }
+  },
+  {
+    "userAgent": "MobileSafari/8621.2.1.10.3 CFNetwork/3826.500.121 Darwin/24.5.0",
+    "os": {
+      "name": "iOS",
+      "code": 182,
+      "version": "18.5",
+      "family": "iOS"
+    }
+  },
+  {
+    "userAgent": "NetworkingExtension/8622.1.10.1 CFNetwork/3848.100.2 Darwin/25.0.0",
+    "os": {
+      "name": "Mac",
+      "code": 83,
+      "version": "26",
+      "family": "Mac"
+    }
   }
 ]

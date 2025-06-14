@@ -13,6 +13,8 @@ using UaDetector.YamlJsonConverter.Fixtures;
 using UaDetector.YamlJsonConverter.Models;
 using UaDetector.YamlJsonConverter.Utils;
 
+using Os = UaDetector.Regexes.Models.Os;
+
 namespace UaDetector.YamlJsonConverter;
 
 public static class YamlToJsonConverter
@@ -20,6 +22,7 @@ public static class YamlToJsonConverter
     private const string BaseDirectory = "Inputs";
     private const string BrowsersFile = "browsers";
     private const string ClientsFile = "clients";
+    private const string OsFile = "os";
     private const string DevicesFile = "devices";
     private const string BotsFile = "bots";
     private const string CollectionFile = "collection";
@@ -90,7 +93,7 @@ public static class YamlToJsonConverter
 
     public static void ConvertBrowserRegex()
     {
-        var entries = YamlLoader.LoadList<BrowserYml>(
+        var entries = YamlLoader.LoadList<BrowserYaml>(
             Path.Combine(BaseDirectory, BrowsersFile + ".yml")
         );
 
@@ -167,7 +170,7 @@ public static class YamlToJsonConverter
 
     public static void ConvertBotRegex()
     {
-        var entries = YamlLoader.LoadList<BotYml>(Path.Combine(BaseDirectory, BotsFile + ".yml"));
+        var entries = YamlLoader.LoadList<BotYaml>(Path.Combine(BaseDirectory, BotsFile + ".yml"));
 
         var result = entries.Select(x => new Bot
         {
@@ -185,8 +188,53 @@ public static class YamlToJsonConverter
             JsonSerializer.Serialize(result, JsonSerializerOptions)
         );
     }
+    
+    public static void ConvertOsRegex()
+    {
+        var entries = YamlLoader.LoadList<OsYaml>(Path.Combine(BaseDirectory, OsFile + ".yml"));
 
-    // Use this for client browser_type conversion as well.
+        var result = entries.Select(x => new Os
+        {
+            Regex = x.Regex,
+            Name = x.Name,
+            Version = x.Version,
+            Versions = x.Versions?.Select(item => new OsVersion
+            {
+                Regex = item.Regex,
+                Version = item.Version
+            }).ToList()
+        });
+
+        File.WriteAllText(
+            OsFile + ".json",
+            JsonSerializer.Serialize(result, JsonSerializerOptions)
+        );
+    }
+
+    public static void ConvertOsFixture()
+    {
+        var entries = YamlLoader.LoadList<OsFixtureYaml>(Path.Combine(BaseDirectory, OsFile + ".yml"));
+
+        var result = entries.Select(x => new OsFixture
+        {
+            UserAgent = x.UserAgent,
+            Os = new OsInfo
+            {
+                Name = x.Os.Name,
+                Code = OsParser.OsNameMapping[x.Os.Name],
+                Version = x.Os.Version,
+                CpuArchitecture = x.Os.Platform,
+                Family = x.Os.Family
+            }
+        });
+
+        File.WriteAllText(
+            OsFile + ".json",
+            JsonSerializer.Serialize(result, JsonSerializerOptions)
+        );
+    }
+
+    // Use this for client browser type conversion as well.
     public static void ConvertCollectionFixture()
     {
         var entries = YamlLoader.LoadList<UserAgentFixtureYaml>(

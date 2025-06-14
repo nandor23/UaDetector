@@ -3,7 +3,7 @@ using UaDetector.Regexes.Models.Browsers;
 
 namespace UaDetector.YamlJsonConverter.Models;
 
-public class BrowserYml
+public class BrowserYaml
 {
     public required Regex Regex { get; init; }
     public required string Name { get; init; }
