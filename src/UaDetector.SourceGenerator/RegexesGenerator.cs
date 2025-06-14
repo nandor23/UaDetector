@@ -42,9 +42,11 @@ public class RegexesGenerator : IIncrementalGenerator
             foreach (var attribute in attributeList.Attributes)
             {
                 var symbolInfo = context.SemanticModel.GetSymbolInfo(attribute);
+
                 if (symbolInfo.Symbol is IMethodSymbol attributeSymbol)
                 {
                     var attributeName = attributeSymbol.ContainingType.Name;
+
                     if (attributeName is "RegexesAttribute" or "Regexes")
                     {
                         if (attribute.ArgumentList?.Arguments.Count > 0)
@@ -59,8 +61,14 @@ public class RegexesGenerator : IIncrementalGenerator
                                 var resourcePath = literalExpression.Token.ValueText;
                                 var variable = fieldDeclaration.Declaration.Variables.First();
                                 var fieldName = variable.Identifier.ValueText;
-                                var containingClass = GetContainingClassName(fieldDeclaration);
-                                var namespaceName = GetNamespaceName(fieldDeclaration);
+                                var containingClass =
+                                    GetContainingClassName(fieldDeclaration)
+                                    ?? throw new InvalidOperationException(
+                                        "Containing class not found"
+                                    );
+                                var namespaceName =
+                                    GetNamespaceName(fieldDeclaration)
+                                    ?? throw new InvalidOperationException("Namespace not found");
                                 var isStaticClass = IsContainingClassStatic(fieldDeclaration);
 
                                 var fieldSymbol =
@@ -69,7 +77,10 @@ public class RegexesGenerator : IIncrementalGenerator
                                 var fieldType =
                                     fieldSymbol?.Type.ToDisplayString(
                                         SymbolDisplayFormat.FullyQualifiedFormat
-                                    ) ?? "unknown";
+                                    )
+                                    ?? throw new InvalidOperationException(
+                                        "Unable to determine field type"
+                                    );
 
                                 return new FieldDeclarationInfo
                                 {
@@ -90,22 +101,22 @@ public class RegexesGenerator : IIncrementalGenerator
         return null;
     }
 
-    private static string GetContainingClassName(FieldDeclarationSyntax fieldDeclaration)
+    private static string? GetContainingClassName(FieldDeclarationSyntax fieldDeclaration)
     {
         var classDeclaration = fieldDeclaration
             .Ancestors()
             .OfType<ClassDeclarationSyntax>()
             .FirstOrDefault();
-        return classDeclaration?.Identifier.ValueText ?? "UnknownClass";
+        return classDeclaration?.Identifier.ValueText;
     }
 
-    private static string GetNamespaceName(FieldDeclarationSyntax fieldDeclaration)
+    private static string? GetNamespaceName(FieldDeclarationSyntax fieldDeclaration)
     {
         var namespaceDeclaration = fieldDeclaration
             .Ancestors()
             .OfType<BaseNamespaceDeclarationSyntax>()
             .FirstOrDefault();
-        return namespaceDeclaration?.Name.ToString() ?? "Global";
+        return namespaceDeclaration?.Name.ToString();
     }
 
     private static bool IsContainingClassStatic(FieldDeclarationSyntax fieldDeclaration)
@@ -118,8 +129,9 @@ public class RegexesGenerator : IIncrementalGenerator
         if (classDeclaration == null)
             return false;
 
-        return classDeclaration.Modifiers.Any(modifier => 
-            modifier.IsKind(SyntaxKind.StaticKeyword));
+        return classDeclaration.Modifiers.Any(modifier =>
+            modifier.IsKind(SyntaxKind.StaticKeyword)
+        );
     }
 
     private static void Execute(
@@ -152,24 +164,26 @@ public class RegexesGenerator : IIncrementalGenerator
         }
         else
         {
-            throw new NotSupportedException($"Unsupported field type: {field.FieldType} for field {field.FieldName}");
+            throw new NotSupportedException(
+                $"Unsupported field type: {field.FieldType} for field {field.FieldName}"
+            );
         }
 
         var classModifiers = field.IsStaticClass ? "static " : String.Empty;
 
         return $$"""
-                 using System.Collections.Frozen;
+            using System.Collections.Frozen;
 
-                 namespace {{field.Namespace}};
+            namespace {{field.Namespace}};
 
-                 internal {{classModifiers}}partial class {{field.ContainingClass}}
-                 {
-                     static {{field.ContainingClass}}()
-                     {
-                         {{field.FieldName}} = {{valueExpr}};
-                     }
-                 }
-                 """;
+            internal {{classModifiers}}partial class {{field.ContainingClass}}
+            {
+                static {{field.ContainingClass}}()
+                {
+                    {{field.FieldName}} = {{valueExpr}};
+                }
+            }
+            """;
     }
 
     private sealed class FieldDeclarationInfo
