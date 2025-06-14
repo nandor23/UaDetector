@@ -12,7 +12,6 @@ using UaDetector.Tests.Fixtures.Models;
 using UaDetector.YamlJsonConverter.Fixtures;
 using UaDetector.YamlJsonConverter.Models;
 using UaDetector.YamlJsonConverter.Utils;
-
 using Os = UaDetector.Regexes.Models.Os;
 
 namespace UaDetector.YamlJsonConverter;
@@ -20,12 +19,15 @@ namespace UaDetector.YamlJsonConverter;
 public static class YamlToJsonConverter
 {
     private const string BaseDirectory = "Inputs";
+
     private const string BrowsersFile = "browsers";
     private const string ClientsFile = "clients";
     private const string OsFile = "os";
     private const string DevicesFile = "devices";
     private const string BotsFile = "bots";
-    private const string CollectionFile = "collection";
+
+    private const string CollectionFixturesFile = "collection_fixtures";
+    private const string OsFixturesFile = "os_fixtures";
 
     private static readonly FrozenDictionary<string, ClientType> ClientTypeMapping = new Dictionary<
         string,
@@ -188,7 +190,7 @@ public static class YamlToJsonConverter
             JsonSerializer.Serialize(result, JsonSerializerOptions)
         );
     }
-    
+
     public static void ConvertOsRegex()
     {
         var entries = YamlLoader.LoadList<OsYaml>(Path.Combine(BaseDirectory, OsFile + ".yml"));
@@ -198,11 +200,13 @@ public static class YamlToJsonConverter
             Regex = x.Regex,
             Name = x.Name,
             Version = x.Version,
-            Versions = x.Versions?.Select(item => new OsVersion
-            {
-                Regex = item.Regex,
-                Version = item.Version
-            }).ToList()
+            Versions = x
+                .Versions?.Select(item => new OsVersion
+                {
+                    Regex = item.Regex,
+                    Version = item.Version,
+                })
+                .ToList(),
         });
 
         File.WriteAllText(
@@ -213,7 +217,9 @@ public static class YamlToJsonConverter
 
     public static void ConvertOsFixture()
     {
-        var entries = YamlLoader.LoadList<OsFixtureYaml>(Path.Combine(BaseDirectory, OsFile + ".yml"));
+        var entries = YamlLoader.LoadList<OsFixtureYaml>(
+            Path.Combine(BaseDirectory, OsFixturesFile + ".yml")
+        );
 
         var result = entries.Select(x => new OsFixture
         {
@@ -224,12 +230,12 @@ public static class YamlToJsonConverter
                 Code = OsParser.OsNameMapping[x.Os.Name],
                 Version = x.Os.Version,
                 CpuArchitecture = x.Os.Platform,
-                Family = x.Os.Family
-            }
+                Family = x.Os.Family,
+            },
         });
 
         File.WriteAllText(
-            OsFile + ".json",
+            OsFixturesFile + ".json",
             JsonSerializer.Serialize(result, JsonSerializerOptions)
         );
     }
@@ -238,7 +244,7 @@ public static class YamlToJsonConverter
     public static void ConvertCollectionFixture()
     {
         var entries = YamlLoader.LoadList<UserAgentFixtureYaml>(
-            Path.Combine(BaseDirectory, CollectionFile + ".yml")
+            Path.Combine(BaseDirectory, CollectionFixturesFile + ".yml")
         );
 
         var result = entries.Select(x => new UserAgentFixture
@@ -272,7 +278,10 @@ public static class YamlToJsonConverter
                         Name = x.Client.Name,
                         Code = BrowserParser.BrowserNameMapping[x.Client.Name],
                         Version = x.Client.Version,
-                        Family = x.BrowserFamily == "Unknown" ? null : x.BrowserFamily ?? x.Client.Family,
+                        Family =
+                            x.BrowserFamily == "Unknown"
+                                ? null
+                                : x.BrowserFamily ?? x.Client.Family,
                         Engine =
                             x.Client.Engine is null && x.Client.EngineVersion is null
                                 ? null
@@ -318,7 +327,7 @@ public static class YamlToJsonConverter
         });
 
         File.WriteAllText(
-            CollectionFile + ".json",
+            CollectionFixturesFile + ".json",
             JsonSerializer.Serialize(result, JsonSerializerOptions)
         );
     }
