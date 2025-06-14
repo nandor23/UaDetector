@@ -8758,5 +8758,27 @@
         "code": 1684
       }
     }
+  },
+  {
+    "userAgent": "TuneIn Radio/31.9.0; iPhone17,5; iOS/18.4",
+    "os": {
+      "name": "iOS",
+      "code": 182,
+      "version": "18.4",
+      "family": "iOS"
+    },
+    "client": {
+      "type": 0,
+      "name": "TuneIn Radio",
+      "version": "31.9.0"
+    },
+    "device": {
+      "type": 10,
+      "model": "iPhone 16e",
+      "brand": {
+        "name": "Apple",
+        "code": 97
+      }
+    }
   }
 ]

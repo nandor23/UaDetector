@@ -14008,5 +14008,16 @@
         "version": "605.1.15"
       }
     }
+  },
+  {
+    "userAgent": "OperaGX/2825 CFNetwork/1568.300.101 Darwin/24.2.0",
+    "browser": {
+      "name": "Opera GX",
+      "code": 415,
+      "family": "Opera",
+      "engine": {
+        "name": "WebKit"
+      }
+    }
   }
 ]
