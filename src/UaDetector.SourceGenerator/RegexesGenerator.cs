@@ -61,6 +61,7 @@ public class RegexesGenerator : IIncrementalGenerator
                                 var fieldName = variable.Identifier.ValueText;
                                 var containingClass = GetContainingClassName(fieldDeclaration);
                                 var namespaceName = GetNamespaceName(fieldDeclaration);
+                                var isStaticClass = IsContainingClassStatic(fieldDeclaration);
 
                                 var fieldSymbol =
                                     context.SemanticModel.GetDeclaredSymbol(variable)
@@ -77,6 +78,7 @@ public class RegexesGenerator : IIncrementalGenerator
                                     ContainingClass = containingClass,
                                     Namespace = namespaceName,
                                     FieldType = fieldType,
+                                    IsStaticClass = isStaticClass,
                                 };
                             }
                         }
@@ -106,6 +108,20 @@ public class RegexesGenerator : IIncrementalGenerator
         return namespaceDeclaration?.Name.ToString() ?? "Global";
     }
 
+    private static bool IsContainingClassStatic(FieldDeclarationSyntax fieldDeclaration)
+    {
+        var classDeclaration = fieldDeclaration
+            .Ancestors()
+            .OfType<ClassDeclarationSyntax>()
+            .FirstOrDefault();
+
+        if (classDeclaration == null)
+            return false;
+
+        return classDeclaration.Modifiers.Any(modifier => 
+            modifier.IsKind(SyntaxKind.StaticKeyword));
+    }
+
     private static void Execute(
         Compilation compilation,
         ImmutableArray<FieldDeclarationInfo> fields,
@@ -124,21 +140,29 @@ public class RegexesGenerator : IIncrementalGenerator
 
     private static string GenerateSource(FieldDeclarationInfo field)
     {
-        var collectionKind = GetCollectionKind(field.FieldType);
+        string valueExpr;
 
-        var valueExpr = collectionKind switch
+        if (field.FieldType.StartsWith("global::System.Collections.Frozen.FrozenDictionary<"))
         {
-            CollectionKind.FrozenDictionary => "FrozenDictionary<string, string>.Empty",
-            CollectionKind.List => "new List<string>()",
-            _ => "throw new NotSupportedException()",
-        };
+            valueExpr = "FrozenDictionary<string, string>.Empty";
+        }
+        else if (field.FieldType.StartsWith("global::System.Collections.Generic.IReadOnlyList<"))
+        {
+            valueExpr = "Array.Empty<string>()";
+        }
+        else
+        {
+            throw new NotSupportedException($"Unsupported field type: {field.FieldType} for field {field.FieldName}");
+        }
+
+        var classModifiers = field.IsStaticClass ? "static " : String.Empty;
 
         return $$"""
                  using System.Collections.Frozen;
 
                  namespace {{field.Namespace}};
 
-                 internal static partial class {{field.ContainingClass}}
+                 internal {{classModifiers}}partial class {{field.ContainingClass}}
                  {
                      static {{field.ContainingClass}}()
                      {
@@ -148,24 +172,6 @@ public class RegexesGenerator : IIncrementalGenerator
                  """;
     }
 
-    private static CollectionKind GetCollectionKind(string fieldType)
-    {
-        if (fieldType.StartsWith("global::System.Collections.Frozen.FrozenDictionary<"))
-            return CollectionKind.FrozenDictionary;
-
-        if (fieldType.StartsWith("global::System.Collections.Generic.List<"))
-            return CollectionKind.List;
-
-        return CollectionKind.Unknown;
-    }
-
-    private enum CollectionKind
-    {
-        FrozenDictionary,
-        List,
-        Unknown,
-    }
-
     private sealed class FieldDeclarationInfo
     {
         public required string FieldName { get; init; }
@@ -173,5 +179,6 @@ public class RegexesGenerator : IIncrementalGenerator
         public required string ContainingClass { get; init; }
         public required string Namespace { get; init; }
         public required string FieldType { get; init; }
+        public required bool IsStaticClass { get; init; }
     }
 }
