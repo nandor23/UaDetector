@@ -32,7 +32,7 @@ internal static class RegexLoader
         };
     }
 
-    public static List<T> LoadRegexes<T>(string resourceName, string? patternSuffix = null)
+    public static IReadOnlyList<T> LoadRegexes<T>(string resourceName, string? patternSuffix = null)
     {
         var regexConverter = new RegexJsonConverter(patternSuffix);
         var serializerOptions = CreateSerializerOptions(regexConverter);
@@ -42,7 +42,7 @@ internal static class RegexLoader
         return JsonSerializer.Deserialize<List<T>>(stream, serializerOptions) ?? [];
     }
 
-    public static (List<T>, Regex) LoadRegexesWithCombined<T>(string resourceName)
+    public static (IReadOnlyList<T>, Regex) LoadRegexesWithCombined<T>(string resourceName)
     {
         var regexConverter = new RegexJsonConverter();
         var serializerOptions = CreateSerializerOptions(regexConverter);
