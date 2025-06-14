@@ -1,5 +1,8 @@
 <Project>
   <PropertyGroup>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(MSBuildProjectName)' != 'UaDetector.SourceGenerator'">
     <TargetFrameworks>netstandard2.0;net462;net8.0;net9.0;</TargetFrameworks>
     <Authors>Nandor Krizbai</Authors>
     <Copyright>Copyright (c) Nandor Krizbai, Matomo</Copyright>
@@ -11,10 +14,7 @@
     <RepositoryUrl>https://github.com/UaDetector/UaDetector</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
   </PropertyGroup>
-  <PropertyGroup>
-    <LangVersion>latest</LangVersion>
-  </PropertyGroup>
-  <ItemGroup>
+  <ItemGroup Condition="'$(MSBuildProjectName)' != 'UaDetector.SourceGenerator'">
     <None Include="..\..\NUGET-README.md" Pack="true" PackagePath="\" />
     <None Include="..\..\LICENSE" Pack="true" PackagePath="\" Visible="false" />
     <None Include="..\..\logo\uad-logo.png" Pack="true" PackagePath="\" Visible="false" />
