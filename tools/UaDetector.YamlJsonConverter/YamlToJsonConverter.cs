@@ -100,30 +100,28 @@ public static class YamlToJsonConverter
         );
 
         var result = entries.Select(x => new Browser
-            {
-                Regex = x.Regex,
-                Name = x.Name,
-                Version = x.Version,
-                Engine =
-                    x.Engine is null
-                    || (
-                        string.IsNullOrEmpty(x.Engine.Default)
-                        && (x.Engine.Versions is null || x.Engine.Versions.Count == 0)
-                    )
-                        ? null
-                        : new Engine
-                        {
-                            Default = string.IsNullOrEmpty(x.Engine.Default) ? null : x.Engine.Default,
-                            Versions = x.Engine.Versions == null || 
-                                       x.Engine.Versions.Values.All(string.IsNullOrEmpty)
+        {
+            Regex = x.Regex,
+            Name = x.Name,
+            Version = x.Version,
+            Engine =
+                x.Engine is null
+                || (
+                    string.IsNullOrEmpty(x.Engine.Default)
+                    && (x.Engine.Versions is null || x.Engine.Versions.Count == 0)
+                )
+                    ? null
+                    : new Engine
+                    {
+                        Default = string.IsNullOrEmpty(x.Engine.Default) ? null : x.Engine.Default,
+                        Versions =
+                            x.Engine.Versions == null
+                            || x.Engine.Versions.Values.All(string.IsNullOrEmpty)
                                 ? null
-                                : x.Engine.Versions?
-                                    .Where(kvp => !string.IsNullOrEmpty(kvp.Value))
-                                    .ToDictionary(
-                                        kvp => kvp.Key,
-                                        kvp => kvp.Value
-                                    ),
-                        }
+                                : x
+                                    .Engine.Versions?.Where(kvp => !string.IsNullOrEmpty(kvp.Value))
+                                    .ToDictionary(kvp => kvp.Key, kvp => kvp.Value),
+                    },
         });
 
         File.WriteAllText(

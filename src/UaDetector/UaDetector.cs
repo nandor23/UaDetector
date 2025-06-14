@@ -148,7 +148,7 @@ public sealed class UaDetector : IUaDetector
             return false;
         }
 
-        return os?.Family is { Length: > 0 } && OsParser.DesktopOsFamilies.Contains(os.Family);
+        return os?.Family?.Length > 0 && OsParser.DesktopOsFamilies.Contains(os.Family);
     }
 
     private static bool TryParseDeviceFromClientHints(
@@ -197,7 +197,7 @@ public sealed class UaDetector : IUaDetector
         }
 
         if (
-            model is { Length: > 0 }
+            model?.Length > 0
             || (
                 !ParserExtensions.HasUserAgentClientHintsFragment(userAgent)
                 && !ParserExtensions.HasUserAgentDesktopFragment(userAgent)
@@ -217,7 +217,7 @@ public sealed class UaDetector : IUaDetector
         }
 
         // If the user agent does not specify a model, use the one from client hints.
-        if (model is null or { Length: 0 } && clientHints.Model is { Length: > 0 })
+        if (model is null or { Length: 0 } && clientHints.Model?.Length > 0)
         {
             model = clientHints.Model;
         }
@@ -457,7 +457,7 @@ public sealed class UaDetector : IUaDetector
     )
     {
         if (
-            (userAgent is { Length: 0 } || !ContainsLetterRegex.IsMatch(userAgent))
+            (userAgent.Length == 0 || !ContainsLetterRegex.IsMatch(userAgent))
             && headers.Count == 0
         )
         {

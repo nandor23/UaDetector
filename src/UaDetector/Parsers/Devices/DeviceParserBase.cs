@@ -2151,7 +2151,7 @@ internal abstract class DeviceParserBase
         DeviceType? type = matchedDevice?.Type;
         string? model = null;
 
-        if (matchedDevice?.Model is { Length: > 0 })
+        if (matchedDevice?.Model?.Length > 0)
         {
             model = BuildModel(matchedDevice.Model, match);
         }
@@ -2184,15 +2184,12 @@ internal abstract class DeviceParserBase
                 return true;
             }
 
-            if (deviceModel?.Name is { Length: > 0 })
+            if (deviceModel?.Name?.Length > 0)
             {
                 model = BuildModel(deviceModel.Name, modelMatch);
             }
 
-            if (
-                deviceModel?.Brand is { Length: > 0 }
-                && BrandNameMapping.ContainsKey(deviceModel.Brand)
-            )
+            if (deviceModel?.Brand?.Length > 0 && BrandNameMapping.ContainsKey(deviceModel.Brand))
             {
                 brand = deviceModel.Brand;
             }

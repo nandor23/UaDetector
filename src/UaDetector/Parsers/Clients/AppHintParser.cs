@@ -13,7 +13,7 @@ internal static class AppHintParser
 
     public static bool IsMobileApp(ClientHints clientHints)
     {
-        return clientHints.App is { Length: > 0 } && Hints.ContainsKey(clientHints.App);
+        return clientHints.App?.Length > 0 && Hints.ContainsKey(clientHints.App);
     }
 
     public static bool TryParseAppName(
