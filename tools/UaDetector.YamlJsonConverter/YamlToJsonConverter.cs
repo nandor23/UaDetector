@@ -104,16 +104,24 @@ public static class YamlToJsonConverter
             Regex = x.Regex,
             Name = x.Name,
             Version = x.Version,
-            Engine = x.Engine is null
-                ? null
-                : new Engine
-                {
-                    Default = x.Engine.Default ?? string.Empty,
-                    Versions = x.Engine.Versions?.ToDictionary(
-                        kvp => kvp.Key,
-                        kvp => string.IsNullOrEmpty(kvp.Value) ? string.Empty : kvp.Value
-                    ),
-                },
+            Engine =
+                x.Engine is null
+                || (
+                    string.IsNullOrEmpty(x.Engine.Default)
+                    && (x.Engine.Versions is null || x.Engine.Versions.Count == 0)
+                )
+                    ? null
+                    : new Engine
+                    {
+                        Default = string.IsNullOrEmpty(x.Engine.Default) ? null : x.Engine.Default,
+                        Versions =
+                            x.Engine.Versions == null
+                            || x.Engine.Versions.Values.All(string.IsNullOrEmpty)
+                                ? null
+                                : x
+                                    .Engine.Versions?.Where(kvp => !string.IsNullOrEmpty(kvp.Value))
+                                    .ToDictionary(kvp => kvp.Key, kvp => kvp.Value),
+                    },
         });
 
         File.WriteAllText(
@@ -240,7 +248,6 @@ public static class YamlToJsonConverter
         );
     }
 
-    // Use this for client browser type conversion as well.
     public static void ConvertCollectionFixture()
     {
         var entries = YamlLoader.LoadList<UserAgentFixtureYaml>(
@@ -283,7 +290,8 @@ public static class YamlToJsonConverter
                                 ? null
                                 : x.BrowserFamily ?? x.Client.Family,
                         Engine =
-                            x.Client.Engine is null && x.Client.EngineVersion is null
+                            string.IsNullOrEmpty(x.Client.Engine)
+                            && string.IsNullOrEmpty(x.Client.EngineVersion)
                                 ? null
                                 : new EngineInfo
                                 {

@@ -1479,7 +1479,7 @@ public sealed class BrowserParser : IBrowserParser
     {
         var result = engine?.Default;
 
-        if (engine?.Versions?.Count > 0 && browserVersion is { Length: > 0 })
+        if (engine?.Versions?.Count > 0 && browserVersion?.Length > 0)
         {
             foreach (var version in engine.Versions)
             {
@@ -1580,7 +1580,7 @@ public sealed class BrowserParser : IBrowserParser
 
             // Exit if the detected browser brand is not Chromium or Microsoft Edge, otherwise, continue searching.
             if (
-                name is { Length: > 0 }
+                name?.Length > 0
                 && name != BrowserNames.Chromium
                 && name != BrowserNames.MicrosoftEdge
             )
@@ -1595,7 +1595,7 @@ public sealed class BrowserParser : IBrowserParser
             return false;
         }
 
-        if (clientHints.UaFullVersion is { Length: > 0 })
+        if (clientHints.UaFullVersion?.Length > 0)
         {
             version = clientHints.UaFullVersion;
         }
@@ -1737,7 +1737,7 @@ public sealed class BrowserParser : IBrowserParser
 
         if (
             TryParseBrowserFromClientHints(clientHints, out var browserFromClientHints)
-            && browserFromClientHints.Version is { Length: > 0 }
+            && browserFromClientHints.Version?.Length > 0
         )
         {
             name = browserFromClientHints.Name;
@@ -1753,7 +1753,7 @@ public sealed class BrowserParser : IBrowserParser
             if (browserFromUserAgent is not null)
             {
                 if (
-                    browserFromUserAgent.Version is { Length: > 0 }
+                    browserFromUserAgent.Version?.Length > 0
                     && version.StartsWith("15")
                     && browserFromUserAgent.Version.StartsWith("114")
                 )
@@ -1765,7 +1765,7 @@ public sealed class BrowserParser : IBrowserParser
                 }
 
                 if (
-                    browserFromUserAgent.Version is { Length: > 0 }
+                    browserFromUserAgent.Version?.Length > 0
                     && (
                         PriorityBrowsers.Contains(code.Value)
                         || IsSameTruncatedVersion(version, browserFromUserAgent.Version)
@@ -1816,8 +1816,8 @@ public sealed class BrowserParser : IBrowserParser
                 }
 
                 if (
-                    browserFromUserAgent.Version is { Length: > 0 }
-                    && version is { Length: > 0 }
+                    browserFromUserAgent.Version?.Length > 0
+                    && version?.Length > 0
                     && browserFromUserAgent.Version.StartsWith(version)
                     && ParserExtensions.TryCompareVersions(
                         version,
@@ -1838,7 +1838,7 @@ public sealed class BrowserParser : IBrowserParser
                 if (
                     engine == BrowserEngines.Blink
                     && name != BrowserNames.Iridium
-                    && engineVersion is { Length: > 0 }
+                    && engineVersion?.Length > 0
                     && ParserExtensions.TryCompareVersions(
                         engineVersion,
                         browserFromClientHints.Version,

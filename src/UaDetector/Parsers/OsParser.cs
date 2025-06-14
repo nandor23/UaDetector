@@ -673,7 +673,7 @@ public sealed class OsParser : IOsParser
     {
         result = null;
 
-        if (clientHints.Architecture is { Length: > 0 })
+        if (clientHints.Architecture?.Length > 0)
         {
             var architecture = clientHints.Architecture.ToLower();
 
@@ -709,7 +709,7 @@ public sealed class OsParser : IOsParser
                 result = CpuArchitectures.X86;
             }
 
-            if (result is { Length: > 0 })
+            if (result?.Length > 0)
             {
                 return true;
             }
@@ -756,7 +756,7 @@ public sealed class OsParser : IOsParser
 
         string? version = clientHints.PlatformVersion;
 
-        if (name == OsNames.Windows && version is { Length: > 0 })
+        if (name == OsNames.Windows && version?.Length > 0)
         {
             var versionParts = version.Split('.');
             int majorVersion =
@@ -782,7 +782,7 @@ public sealed class OsParser : IOsParser
         // On Windows, version 0.0.0 can represent 7, 8, or 8.1, so it is set to null.
         if (
             name != OsNames.Windows
-            && version is { Length: > 0 }
+            && version?.Length > 0
             && version != "0.0.0"
             && ParserExtensions.TryCompareVersions(version, "0", out var comparisonResult)
             && comparisonResult == 0
@@ -954,8 +954,7 @@ public sealed class OsParser : IOsParser
                             version = osFromUserAgent.Version;
                             break;
                         case OsNames.FireOs
-                            when osFromClientHints.Version is { Length: > 0 }
-                                && version is { Length: > 0 }:
+                            when osFromClientHints.Version?.Length > 0 && version?.Length > 0:
                         {
                             TryGetFireOsVersion(version, out version);
                             break;
@@ -997,7 +996,7 @@ public sealed class OsParser : IOsParser
 
         TryMapNameToFamily(name, out var family);
 
-        if (clientHints.App is { Length: > 0 })
+        if (clientHints.App?.Length > 0)
         {
             if (name != OsNames.Android && AndroidApps.Contains(clientHints.App))
             {
@@ -1010,7 +1009,7 @@ public sealed class OsParser : IOsParser
                 name = OsNames.LineageOs;
                 family = OsFamilies.Android;
 
-                if (version is { Length: > 0 })
+                if (version?.Length > 0)
                 {
                     TryGetLineageOsVersion(version, out version);
                 }
@@ -1020,7 +1019,7 @@ public sealed class OsParser : IOsParser
                 name = OsNames.FireOs;
                 family = OsFamilies.Android;
 
-                if (version is { Length: > 0 })
+                if (version?.Length > 0)
                 {
                     TryGetFireOsVersion(version, out version);
                 }

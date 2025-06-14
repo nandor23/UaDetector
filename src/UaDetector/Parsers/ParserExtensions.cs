@@ -79,7 +79,7 @@ internal static class ParserExtensions
             );
         }
 
-        return result is { Length: > 0 };
+        return result?.Length > 0;
     }
 
     public static string FormatWithMatch(string value, Match match)

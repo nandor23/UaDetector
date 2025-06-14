@@ -1412,10 +1412,7 @@
   {
     "regex": "i?Lunascape(?:[/ ](\\d+\\.[.\\d]+))?",
     "name": "Lunascape",
-    "version": "$1",
-    "engine": {
-      "default": ""
-    }
+    "version": "$1"
   },
   {
     "regex": "Polypane/(?:(\\d+[.\\d]+))?",
@@ -1822,10 +1819,7 @@
   {
     "regex": "QwantMobile(?:/(\\d+[.\\d]+))?",
     "name": "Qwant Mobile",
-    "version": "$1",
-    "engine": {
-      "default": ""
-    }
+    "version": "$1"
   },
   {
     "regex": "Qwant/(\\d+[.\\d]+)",
@@ -1909,10 +1903,7 @@
   {
     "regex": "SailfishBrowser(?:/(\\d+[.\\d]+))?",
     "name": "Sailfish Browser",
-    "version": "$1",
-    "engine": {
-      "default": ""
-    }
+    "version": "$1"
   },
   {
     "regex": "IceCat(?:/(\\d+[.\\d]+))?",
@@ -2025,10 +2016,7 @@
   },
   {
     "regex": "Avant ?Browser",
-    "name": "Avant Browser",
-    "engine": {
-      "default": ""
-    }
+    "name": "Avant Browser"
   },
   {
     "regex": "OppoBrowser(?:/(\\d+[.\\d]+))?",
@@ -2185,10 +2173,7 @@
   {
     "regex": "Kazehakase(?:/(\\d+[.\\d]+))?",
     "name": "Kazehakase",
-    "version": "$1",
-    "engine": {
-      "default": ""
-    }
+    "version": "$1"
   },
   {
     "regex": "ArcticFox(?:/(\\d+[.\\d]+))?",
@@ -2388,10 +2373,7 @@
   {
     "regex": "(?:Navigator|Netscape6?)(?:/(\\d+[.\\d]+))?",
     "name": "Netscape",
-    "version": "$1",
-    "engine": {
-      "default": ""
-    }
+    "version": "$1"
   },
   {
     "regex": "(?:Polarity)(?:[/ ](\\d+[.\\d]+))?",
@@ -2565,7 +2547,6 @@
     "name": "Opera",
     "version": "$1",
     "engine": {
-      "default": "",
       "versions": {
         "3.5": "Elektra",
         "7": "Presto",
@@ -2598,10 +2579,7 @@
   {
     "regex": "CoolNovo(?:/(\\d+[.\\d]+))?",
     "name": "CoolNovo",
-    "version": "$1",
-    "engine": {
-      "default": ""
-    }
+    "version": "$1"
   },
   {
     "regex": "(?:Comodo[ _])?Dragon/(\\d+[.\\d]+)",
@@ -2617,10 +2595,7 @@
   {
     "regex": "ChromePlus(?:/(\\d+[.\\d]+))?",
     "name": "ChromePlus",
-    "version": "$1",
-    "engine": {
-      "default": ""
-    }
+    "version": "$1"
   },
   {
     "regex": "Conkeror(?:/(\\d+[.\\d]+))?",
@@ -2635,10 +2610,7 @@
     "name": "Konqueror",
     "version": "$1",
     "engine": {
-      "default": "KHTML",
-      "versions": {
-        "4": ""
-      }
+      "default": "KHTML"
     }
   },
   {
@@ -2764,7 +2736,6 @@
     "name": "Maxthon",
     "version": "$1",
     "engine": {
-      "default": "",
       "versions": {
         "3": "WebKit"
       }
@@ -2772,10 +2743,7 @@
   },
   {
     "regex": "(?:Maxthon|MyIE2)",
-    "name": "Maxthon",
-    "engine": {
-      "default": ""
-    }
+    "name": "Maxthon"
   },
   {
     "regex": "Puffin/(\\d+[.\\d]+)FP",
@@ -2829,7 +2797,6 @@
     "engine": {
       "default": "Gecko",
       "versions": {
-        "2.9.16": "",
         "2.28": "WebKit"
       }
     }
@@ -2857,26 +2824,17 @@
   {
     "regex": "M?QQBrowser/Mini([.\\d]+)?",
     "name": "QQ Browser Mini",
-    "version": "$1",
-    "engine": {
-      "default": ""
-    }
+    "version": "$1"
   },
   {
     "regex": "M?QQ(?:Browser|浏览器)(?:/([.\\d]+))?",
     "name": "QQ Browser",
-    "version": "$1",
-    "engine": {
-      "default": ""
-    }
+    "version": "$1"
   },
   {
     "regex": "(?:MIUIBrowser|MiuiBrowser)(?:/(\\d+[.\\d]+))?",
     "name": "Mi Browser",
-    "version": "$1",
-    "engine": {
-      "default": ""
-    }
+    "version": "$1"
   },
   {
     "regex": "(?:coc_coc_browser|coccocbrowser|CocCoc)(?:/(\\d+[.\\d]+))?",
@@ -2933,17 +2891,11 @@
   {
     "regex": "Streamy(?:/(\\d+[.\\d]+))?",
     "name": "Streamy",
-    "version": "$1",
-    "engine": {
-      "default": ""
-    }
+    "version": "$1"
   },
   {
     "regex": "isivioo",
-    "name": "Isivioo",
-    "engine": {
-      "default": ""
-    }
+    "name": "Isivioo"
   },
   {
     "regex": "Chrome/.+Tenta/(\\d+[.\\d]+)",
@@ -2980,10 +2932,7 @@
   {
     "regex": "webexplorer/(\\d+)",
     "name": "Web Explorer",
-    "version": "$1",
-    "engine": {
-      "default": ""
-    }
+    "version": "$1"
   },
   {
     "regex": "Chrome.+SznProhlizec/(\\d+[.\\d]+)",
@@ -3004,25 +2953,18 @@
   {
     "regex": "SogouMobileBrowser/(\\d+[.\\d]+)",
     "name": "Sogou Mobile Browser",
-    "version": "$1",
-    "engine": {
-      "default": ""
-    }
+    "version": "$1"
   },
   {
     "regex": "Mint Browser/(\\d+[.\\d]+)",
     "name": "Mint Browser",
-    "version": "$1",
-    "engine": {
-      "default": ""
-    }
+    "version": "$1"
   },
   {
     "regex": "Ecosia (?:android|ios)@(\\d+[.\\d]+)",
     "name": "Ecosia",
     "version": "$1",
     "engine": {
-      "default": "",
       "versions": {
         "28": "Blink"
       }
@@ -3030,10 +2972,7 @@
   },
   {
     "regex": "ACHEETAHI",
-    "name": "CM Browser",
-    "engine": {
-      "default": ""
-    }
+    "name": "CM Browser"
   },
   {
     "regex": "Chrome/.+ (?:LeBrowser|MobileLenovoBrowser)(?:/(\\d+[.\\d]+))?",
@@ -3053,18 +2992,12 @@
   },
   {
     "regex": "Kiwi Chrome",
-    "name": "Kiwi",
-    "engine": {
-      "default": ""
-    }
+    "name": "Kiwi"
   },
   {
     "regex": "Mb2345Browser/(\\d+[.\\d]+)",
     "name": "2345 Browser",
-    "version": "$1",
-    "engine": {
-      "default": ""
-    }
+    "version": "$1"
   },
   {
     "regex": "Silk/(\\d+[.\\d]+) like Chrome",
@@ -3147,10 +3080,7 @@
   {
     "regex": "Sleipnir(?:(?:%20Browser)?[ /](\\d+[.\\d]+))?",
     "name": "Sleipnir",
-    "version": "$1",
-    "engine": {
-      "default": ""
-    }
+    "version": "$1"
   },
   {
     "regex": "NTENTBrowser(?:/(\\d+[.\\d]+))?",
@@ -3225,10 +3155,7 @@
   {
     "regex": "QtWebEngine/(\\d+[.\\d]+)",
     "name": "QtWebEngine",
-    "version": "$1",
-    "engine": {
-      "default": ""
-    }
+    "version": "$1"
   },
   {
     "regex": "(?: wv\\)|Version/).* Chrome(?:/(\\d+[.\\d]+))?",
