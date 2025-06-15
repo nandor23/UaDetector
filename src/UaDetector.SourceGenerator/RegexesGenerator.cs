@@ -109,20 +109,17 @@ public class RegexesGenerator : IIncrementalGenerator
     {
         foreach (var modifier in propertyDeclaration.Modifiers)
         {
-            switch (modifier.Kind())
+            return modifier.Kind() switch
             {
-                case SyntaxKind.PublicKeyword:
-                    return "public";
-                case SyntaxKind.InternalKeyword:
-                    return "internal";
-                case SyntaxKind.PrivateKeyword:
-                    return "private";
-                case SyntaxKind.ProtectedKeyword:
-                    return "protected";
-            }
+                SyntaxKind.PublicKeyword => "public",
+                SyntaxKind.InternalKeyword => "internal",
+                SyntaxKind.PrivateKeyword => "private",
+                SyntaxKind.ProtectedKeyword => "protected",
+                _ => "internal"
+            };
         }
 
-        return "internal"; // Default for properties
+        return "internal";
     }
 
     private static string? GetContainingClassName(SyntaxNode node)
@@ -148,17 +145,14 @@ public class RegexesGenerator : IIncrementalGenerator
 
         foreach (var modifier in classDeclaration.Modifiers)
         {
-            switch (modifier.Kind())
+            return modifier.Kind() switch
             {
-                case SyntaxKind.PublicKeyword:
-                    return "public";
-                case SyntaxKind.InternalKeyword:
-                    return "internal";
-                case SyntaxKind.PrivateKeyword:
-                    return "private";
-                case SyntaxKind.ProtectedKeyword:
-                    return "protected";
-            }
+                SyntaxKind.PublicKeyword => "public",
+                SyntaxKind.InternalKeyword => "internal",
+                SyntaxKind.PrivateKeyword => "private",
+                SyntaxKind.ProtectedKeyword => "protected",
+                _ => "internal"
+            };
         }
 
         return "internal";
