@@ -1,6 +1,6 @@
 namespace UaDetector.Attributes;
 
-[AttributeUsage(AttributeTargets.Field)]
+[AttributeUsage(AttributeTargets.Property)]
 public sealed class RegexesAttribute : Attribute
 {
     public string ResourcePath { get; }

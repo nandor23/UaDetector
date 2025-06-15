@@ -11,6 +11,8 @@ public class RegexesGenerator : IIncrementalGenerator
 {
     public void Initialize(IncrementalGeneratorInitializationContext context)
     {
+        Debugger.Launch();
+
         var provider = context
             .SyntaxProvider.CreateSyntaxProvider(
                 predicate: static (s, _) => IsSyntaxTargetForGeneration(s),
@@ -29,16 +31,27 @@ public class RegexesGenerator : IIncrementalGenerator
 
     private static bool IsSyntaxTargetForGeneration(SyntaxNode node)
     {
-        return node is FieldDeclarationSyntax { AttributeLists.Count: > 0 };
+        // Only support properties with attributes
+        return node is PropertyDeclarationSyntax { AttributeLists.Count: > 0 };
     }
 
-    private static FieldDeclarationInfo? GetSemanticTargetForGeneration(
+    private static PropertyDeclarationInfo? GetSemanticTargetForGeneration(
         GeneratorSyntaxContext context
     )
     {
-        var fieldDeclaration = (FieldDeclarationSyntax)context.Node;
+        if (context.Node is not PropertyDeclarationSyntax propertyDeclaration)
+            return null;
 
-        foreach (var attributeList in fieldDeclaration.AttributeLists)
+        var propertyName = propertyDeclaration.Identifier.ValueText;
+        var propertyAccessibility = GetPropertyAccessibility(propertyDeclaration);
+
+        var propertySymbol =
+            context.SemanticModel.GetDeclaredSymbol(propertyDeclaration) as IPropertySymbol;
+        var propertyType =
+            propertySymbol?.Type.ToDisplayString(SymbolDisplayFormat.FullyQualifiedFormat)
+            ?? throw new InvalidOperationException("Unable to determine property type");
+
+        foreach (var attributeList in propertyDeclaration.AttributeLists)
         {
             foreach (var attribute in attributeList.Attributes)
             {
@@ -60,37 +73,25 @@ public class RegexesGenerator : IIncrementalGenerator
                             )
                             {
                                 var resourcePath = literalExpression.Token.ValueText;
-                                var variable = fieldDeclaration.Declaration.Variables.First();
-                                var fieldName = variable.Identifier.ValueText;
                                 var containingClass =
-                                    GetContainingClassName(fieldDeclaration)
+                                    GetContainingClassName(propertyDeclaration)
                                     ?? throw new InvalidOperationException(
                                         "Containing class not found"
                                     );
                                 var namespaceName =
-                                    GetNamespaceName(fieldDeclaration)
+                                    GetNamespaceName(propertyDeclaration)
                                     ?? throw new InvalidOperationException("Namespace not found");
-                                var classAccessibility = GetClassAccessibility(fieldDeclaration);
-                                var isStaticClass = IsContainingClassStatic(fieldDeclaration);
+                                var classAccessibility = GetClassAccessibility(propertyDeclaration);
+                                var isStaticClass = IsContainingClassStatic(propertyDeclaration);
 
-                                var fieldSymbol =
-                                    context.SemanticModel.GetDeclaredSymbol(variable)
-                                    as IFieldSymbol;
-                                var fieldType =
-                                    fieldSymbol?.Type.ToDisplayString(
-                                        SymbolDisplayFormat.FullyQualifiedFormat
-                                    )
-                                    ?? throw new InvalidOperationException(
-                                        "Unable to determine field type"
-                                    );
-
-                                return new FieldDeclarationInfo
+                                return new PropertyDeclarationInfo
                                 {
-                                    FieldName = fieldName,
+                                    PropertyName = propertyName,
                                     ResourcePath = resourcePath,
                                     ContainingClass = containingClass,
                                     Namespace = namespaceName,
-                                    FieldType = fieldType,
+                                    PropertyType = propertyType,
+                                    PropertyAccessibility = propertyAccessibility,
                                     ClassAccessibility = classAccessibility,
                                     IsStaticClass = isStaticClass,
                                 };
@@ -104,30 +105,43 @@ public class RegexesGenerator : IIncrementalGenerator
         return null;
     }
 
-    private static string? GetContainingClassName(FieldDeclarationSyntax fieldDeclaration)
+    private static string GetPropertyAccessibility(PropertyDeclarationSyntax propertyDeclaration)
     {
-        var classDeclaration = fieldDeclaration
-            .Ancestors()
-            .OfType<ClassDeclarationSyntax>()
-            .FirstOrDefault();
+        foreach (var modifier in propertyDeclaration.Modifiers)
+        {
+            switch (modifier.Kind())
+            {
+                case SyntaxKind.PublicKeyword:
+                    return "public";
+                case SyntaxKind.InternalKeyword:
+                    return "internal";
+                case SyntaxKind.PrivateKeyword:
+                    return "private";
+                case SyntaxKind.ProtectedKeyword:
+                    return "protected";
+            }
+        }
+
+        return "internal"; // Default for properties
+    }
+
+    private static string? GetContainingClassName(SyntaxNode node)
+    {
+        var classDeclaration = node.Ancestors().OfType<ClassDeclarationSyntax>().FirstOrDefault();
         return classDeclaration?.Identifier.ValueText;
     }
 
-    private static string? GetNamespaceName(FieldDeclarationSyntax fieldDeclaration)
+    private static string? GetNamespaceName(SyntaxNode node)
     {
-        var namespaceDeclaration = fieldDeclaration
-            .Ancestors()
+        var namespaceDeclaration = node.Ancestors()
             .OfType<BaseNamespaceDeclarationSyntax>()
             .FirstOrDefault();
         return namespaceDeclaration?.Name.ToString();
     }
 
-    private static string GetClassAccessibility(FieldDeclarationSyntax fieldDeclaration)
+    private static string GetClassAccessibility(SyntaxNode node)
     {
-        var classDeclaration = fieldDeclaration
-            .Ancestors()
-            .OfType<ClassDeclarationSyntax>()
-            .FirstOrDefault();
+        var classDeclaration = node.Ancestors().OfType<ClassDeclarationSyntax>().FirstOrDefault();
 
         if (classDeclaration == null)
             return "internal";
@@ -150,12 +164,9 @@ public class RegexesGenerator : IIncrementalGenerator
         return "internal";
     }
 
-    private static bool IsContainingClassStatic(FieldDeclarationSyntax fieldDeclaration)
+    private static bool IsContainingClassStatic(SyntaxNode node)
     {
-        var classDeclaration = fieldDeclaration
-            .Ancestors()
-            .OfType<ClassDeclarationSyntax>()
-            .FirstOrDefault();
+        var classDeclaration = node.Ancestors().OfType<ClassDeclarationSyntax>().FirstOrDefault();
 
         if (classDeclaration == null)
             return false;
@@ -167,49 +178,55 @@ public class RegexesGenerator : IIncrementalGenerator
 
     private static void Execute(
         Compilation compilation,
-        ImmutableArray<FieldDeclarationInfo> fields,
+        ImmutableArray<PropertyDeclarationInfo> properties,
         SourceProductionContext context
     )
     {
-        if (fields.IsDefaultOrEmpty)
+        if (properties.IsDefaultOrEmpty)
             return;
 
-        foreach (var field in fields)
+        foreach (var property in properties)
         {
-            var sourceCode = GenerateSource(field);
-            context.AddSource($"{field.ContainingClass}_{field.FieldName}.g.cs", sourceCode);
+            var sourceCode = GenerateSource(property);
+            context.AddSource(
+                $"{property.ContainingClass}_{property.PropertyName}.g.cs",
+                sourceCode
+            );
         }
     }
 
-    private static string GenerateSource(FieldDeclarationInfo field)
+    private static string GenerateSource(PropertyDeclarationInfo property)
     {
         string valueExpr;
+        var innerType = ExtractGenericTypeArgument(property.PropertyType);
 
-        if (field.FieldType.StartsWith("global::System.Collections.Generic.IReadOnlyList<"))
+        if (property.PropertyType.StartsWith("global::System.Collections.Generic.IReadOnlyList<"))
         {
-            var innerType = ExtractGenericTypeArgument(field.FieldType);
-
             valueExpr = $"System.Array.Empty<{innerType}>()";
         }
         else
         {
             throw new NotSupportedException(
-                $"Unsupported field type: {field.FieldType} for field {field.FieldName}"
+                $"Unsupported property type: {property.PropertyType} for property {property.PropertyName}"
             );
         }
 
-        var staticModifier = field.IsStaticClass ? "static " : string.Empty;
+        var staticModifier = property.IsStaticClass ? "static " : string.Empty;
+
+        var fieldName = $"_{property.PropertyName.ToLower()}";
 
         return $$"""
             using System.Collections.Frozen;
 
-            namespace {{field.Namespace}};
+            namespace {{property.Namespace}};
 
-            {{field.ClassAccessibility}} {{staticModifier}}partial class {{field.ContainingClass}}
+            {{property.ClassAccessibility}} {{staticModifier}}partial class {{property.ContainingClass}}
             {
-                static {{field.ContainingClass}}()
+                private readonly static {{property.PropertyType}} {{fieldName}} = Array.Empty<{{innerType}}>();
+
+                {{property.PropertyAccessibility}} static partial {{property.PropertyType}} {{property.PropertyName}}
                 {
-                    {{field.FieldName}} = {{valueExpr}};
+                    get => {{fieldName}}; 
                 }
             }
             """;
@@ -228,13 +245,14 @@ public class RegexesGenerator : IIncrementalGenerator
         throw new ArgumentException($"Cannot extract generic type argument from: {genericType}");
     }
 
-    private sealed class FieldDeclarationInfo
+    private sealed class PropertyDeclarationInfo
     {
-        public required string FieldName { get; init; }
+        public required string PropertyName { get; init; }
         public required string ResourcePath { get; init; }
         public required string ContainingClass { get; init; }
         public required string Namespace { get; init; }
-        public required string FieldType { get; init; }
+        public required string PropertyType { get; init; }
+        public required string PropertyAccessibility { get; init; }
         public required string ClassAccessibility { get; init; }
         public required bool IsStaticClass { get; init; }
     }
