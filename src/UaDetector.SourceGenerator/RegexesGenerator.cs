@@ -1,4 +1,5 @@
 using System.Collections.Immutable;
+using System.Diagnostics;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
@@ -69,6 +70,7 @@ public class RegexesGenerator : IIncrementalGenerator
                                 var namespaceName =
                                     GetNamespaceName(fieldDeclaration)
                                     ?? throw new InvalidOperationException("Namespace not found");
+                                var classAccessibility = GetClassAccessibility(fieldDeclaration);
                                 var isStaticClass = IsContainingClassStatic(fieldDeclaration);
 
                                 var fieldSymbol =
@@ -89,6 +91,7 @@ public class RegexesGenerator : IIncrementalGenerator
                                     ContainingClass = containingClass,
                                     Namespace = namespaceName,
                                     FieldType = fieldType,
+                                    ClassAccessibility = classAccessibility,
                                     IsStaticClass = isStaticClass,
                                 };
                             }
@@ -117,6 +120,34 @@ public class RegexesGenerator : IIncrementalGenerator
             .OfType<BaseNamespaceDeclarationSyntax>()
             .FirstOrDefault();
         return namespaceDeclaration?.Name.ToString();
+    }
+
+    private static string GetClassAccessibility(FieldDeclarationSyntax fieldDeclaration)
+    {
+        var classDeclaration = fieldDeclaration
+            .Ancestors()
+            .OfType<ClassDeclarationSyntax>()
+            .FirstOrDefault();
+
+        if (classDeclaration == null)
+            return "internal";
+
+        foreach (var modifier in classDeclaration.Modifiers)
+        {
+            switch (modifier.Kind())
+            {
+                case SyntaxKind.PublicKeyword:
+                    return "public";
+                case SyntaxKind.InternalKeyword:
+                    return "internal";
+                case SyntaxKind.PrivateKeyword:
+                    return "private";
+                case SyntaxKind.ProtectedKeyword:
+                    return "protected";
+            }
+        }
+
+        return "internal";
     }
 
     private static bool IsContainingClassStatic(FieldDeclarationSyntax fieldDeclaration)
@@ -154,13 +185,11 @@ public class RegexesGenerator : IIncrementalGenerator
     {
         string valueExpr;
 
-        if (field.FieldType.StartsWith("global::System.Collections.Frozen.FrozenDictionary<"))
+        if (field.FieldType.StartsWith("global::System.Collections.Generic.IReadOnlyList<"))
         {
-            valueExpr = "FrozenDictionary<string, string>.Empty";
-        }
-        else if (field.FieldType.StartsWith("global::System.Collections.Generic.IReadOnlyList<"))
-        {
-            valueExpr = "Array.Empty<string>()";
+            var innerType = ExtractGenericTypeArgument(field.FieldType);
+
+            valueExpr = $"System.Array.Empty<{innerType}>()";
         }
         else
         {
@@ -169,14 +198,14 @@ public class RegexesGenerator : IIncrementalGenerator
             );
         }
 
-        var classModifiers = field.IsStaticClass ? "static " : String.Empty;
+        var staticModifier = field.IsStaticClass ? "static " : string.Empty;
 
         return $$"""
             using System.Collections.Frozen;
 
             namespace {{field.Namespace}};
 
-            internal {{classModifiers}}partial class {{field.ContainingClass}}
+            {{field.ClassAccessibility}} {{staticModifier}}partial class {{field.ContainingClass}}
             {
                 static {{field.ContainingClass}}()
                 {
@@ -186,6 +215,19 @@ public class RegexesGenerator : IIncrementalGenerator
             """;
     }
 
+    private static string ExtractGenericTypeArgument(string genericType)
+    {
+        var startIndex = genericType.IndexOf('<') + 1;
+        var endIndex = genericType.LastIndexOf('>');
+
+        if (startIndex > 0 && startIndex < endIndex)
+        {
+            return genericType.Substring(startIndex, endIndex - startIndex);
+        }
+
+        throw new ArgumentException($"Cannot extract generic type argument from: {genericType}");
+    }
+
     private sealed class FieldDeclarationInfo
     {
         public required string FieldName { get; init; }
@@ -193,6 +235,7 @@ public class RegexesGenerator : IIncrementalGenerator
         public required string ContainingClass { get; init; }
         public required string Namespace { get; init; }
         public required string FieldType { get; init; }
+        public required string ClassAccessibility { get; init; }
         public required bool IsStaticClass { get; init; }
     }
 }

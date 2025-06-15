@@ -2,6 +2,7 @@ using System.Collections.Frozen;
 using System.Collections.Immutable;
 using System.Diagnostics.CodeAnalysis;
 using System.Text.RegularExpressions;
+using UaDetector.Attributes;
 using UaDetector.Models.Constants;
 using UaDetector.Models.Enums;
 using UaDetector.Parsers.Browsers;
@@ -11,31 +12,18 @@ using UaDetector.Utils;
 
 namespace UaDetector.Parsers;
 
-public sealed class BrowserParser : IBrowserParser
+public sealed partial class BrowserParser : IBrowserParser
 {
-    private const string ResourceName = "Regexes.Resources.Browsers.browsers.json";
     private const string CacheKeyPrefix = "browser";
     private readonly IUaDetectorCache? _cache;
     private readonly UaDetectorOptions _uaDetectorOptions;
     private readonly ClientParser _clientParser;
     private readonly BotParser _botParser;
-    internal static readonly IReadOnlyList<Browser> Browsers;
-    internal static readonly FrozenDictionary<BrowserCode, string> BrowserCodeMapping;
-    internal static readonly FrozenDictionary<string, BrowserCode> BrowserNameMapping;
-    internal static readonly FrozenDictionary<string, string> CompactToFullNameMapping;
-    private static readonly FrozenDictionary<string, FrozenSet<BrowserCode>> BrowserFamilyMapping;
-    internal static readonly FrozenSet<BrowserCode> MobileOnlyBrowsers;
-    private static readonly FrozenDictionary<string, FrozenSet<string>> ClientHintBrandMapping;
-    private static readonly FrozenSet<BrowserCode> PriorityBrowsers;
-    private static readonly FrozenSet<BrowserCode> ChromiumBrowsers;
-    private static readonly Regex ChromeSafariRegex;
-    private static readonly Regex CypressOrPhantomJsRegex;
-    private static readonly Regex IridiumVersionRegex;
 
-    static BrowserParser()
-    {
-        Browsers = RegexLoader.LoadRegexes<Browser>(ResourceName);
-        BrowserCodeMapping = new Dictionary<BrowserCode, string>
+    [Regexes("Regexes.Resources.Browsers.browsers.json")]
+    internal static readonly IReadOnlyList<Browser> Browsers;
+    internal static readonly FrozenDictionary<BrowserCode, string> BrowserCodeMapping =
+        new Dictionary<BrowserCode, string>
         {
             { BrowserCode.Via, BrowserNames.Via },
             { BrowserCode.PureMiniBrowser, BrowserNames.PureMiniBrowser },
@@ -718,32 +706,15 @@ public sealed class BrowserParser : IBrowserParser
             { BrowserCode.ZteBrowser, BrowserNames.ZteBrowser },
         }.ToFrozenDictionary();
 
-        BrowserNameMapping = BrowserCodeMapping
+    internal static readonly FrozenDictionary<string, BrowserCode> BrowserNameMapping =
+        BrowserCodeMapping
             .ToDictionary(e => e.Value, e => e.Key)
             .ToFrozenDictionary(StringComparer.OrdinalIgnoreCase);
 
-        var duplicateCompactNames = BrowserCodeMapping
-            .Values.Select(x => x.RemoveSpaces())
-            .GroupBy(x => x)
-            .Where(group => group.Count() > 1)
-            .Select(group => group.Key)
-            .ToList();
-
-        var mapping = new Dictionary<string, string>();
-
-        foreach (var name in BrowserNameMapping.Keys)
-        {
-            var compactName = name.RemoveSpaces();
-
-            if (!duplicateCompactNames.Contains(compactName))
-            {
-                mapping.Add(compactName, name);
-            }
-        }
-
-        CompactToFullNameMapping = mapping.ToFrozenDictionary(StringComparer.OrdinalIgnoreCase);
-
-        BrowserFamilyMapping = new Dictionary<string, FrozenSet<BrowserCode>>
+    internal static readonly FrozenDictionary<string, string> CompactToFullNameMapping =
+        CreateCompactToFullNameMapping();
+    private static readonly FrozenDictionary<string, FrozenSet<BrowserCode>> BrowserFamilyMapping =
+        new Dictionary<string, FrozenSet<BrowserCode>>
         {
             { BrowserFamilies.AndroidBrowser, new[] { BrowserCode.AndroidBrowser }.ToFrozenSet() },
             {
@@ -1171,222 +1142,223 @@ public sealed class BrowserParser : IBrowserParser
             { BrowserNames.SailfishBrowser, new[] { BrowserCode.SailfishBrowser }.ToFrozenSet() },
         }.ToFrozenDictionary(StringComparer.OrdinalIgnoreCase);
 
-        MobileOnlyBrowsers = new[]
-        {
-            BrowserCode.PhoneBrowser360,
-            BrowserCode.AlohaBrowserLite,
-            BrowserCode.Arvin,
-            BrowserCode.BLine,
-            BrowserCode.Coast,
-            BrowserCode.CoolBrowser,
-            BrowserCode.CosBrowser,
-            BrowserCode.Cornowser,
-            BrowserCode.DBrowser,
-            BrowserCode.Mises,
-            BrowserCode.DeltaBrowser,
-            BrowserCode.EuiBrowser,
-            BrowserCode.EzBrowser,
-            BrowserCode.FirefoxFocus,
-            BrowserCode.FirefoxMobile,
-            BrowserCode.FirefoxRocket,
-            BrowserCode.FauxBrowser,
-            BrowserCode.GhosteryPrivacyBrowser,
-            BrowserCode.GinxDroidBrowser,
-            BrowserCode.GoBrowser,
-            BrowserCode.HawkTurboBrowser,
-            BrowserCode.HuaweiBrowserMobile,
-            BrowserCode.Isivioo,
-            BrowserCode.JapanBrowser,
-            BrowserCode.KodeBrowser,
-            BrowserCode.MCent,
-            BrowserCode.MobileSafari,
-            BrowserCode.Minimo,
-            BrowserCode.MeizuBrowser,
-            BrowserCode.NoxBrowser,
-            BrowserCode.OculusBrowser,
-            BrowserCode.OperaMini,
-            BrowserCode.OperaMobile,
-            BrowserCode.Smooz,
-            BrowserCode.PuffinWebBrowser,
-            BrowserCode.PrivacyWall,
-            BrowserCode.PerfectBrowser,
-            BrowserCode.Quark,
-            BrowserCode.RealmeBrowser,
-            BrowserCode.StartInternetBrowser,
-            BrowserCode.SpBrowser,
-            BrowserCode.SailfishBrowser,
-            BrowserCode.SamsungBrowser,
-            BrowserCode.Stargon,
-            BrowserCode.Skyfire,
-            BrowserCode.Streamy,
-            BrowserCode.SuperFastBrowser,
-            BrowserCode.StampyBrowser,
-            BrowserCode.UcBrowserHd,
-            BrowserCode.UcBrowserMini,
-            BrowserCode.UcBrowserTurbo,
-            BrowserCode.VenusBrowser,
-            BrowserCode.VivoBrowser,
-            BrowserCode.WearInternetBrowser,
-            BrowserCode.WebExplorer,
-            BrowserCode.YaaniBrowser,
-            BrowserCode.IBrowser,
-            BrowserCode.IBrowserMini,
-            BrowserCode.HawkQuickBrowser,
-            BrowserCode.ReqwirelessWebViewer,
-            BrowserCode.HiBrowser,
-            BrowserCode.ApnBrowser,
-            BrowserCode.AdBlockBrowser,
-            BrowserCode.YouCare,
-            BrowserCode.PocketBookBrowser,
-            BrowserCode.MonumentBrowser,
-            BrowserCode.ApusBrowser,
-            BrowserCode.AskCom,
-            BrowserCode.UiBrowserMini,
-            BrowserCode.SavySoda,
-            BrowserCode.SavannahBrowser,
-            BrowserCode.SurfBrowser,
-            BrowserCode.SotiSurf,
-            BrowserCode.LexiBrowser,
-            BrowserCode.SmartBrowser,
-            BrowserCode.BelvaBrowser,
-            BrowserCode.Lilo,
-            BrowserCode.FloatBrowser,
-            BrowserCode.KidsSafeBrowser,
-            BrowserCode.VBrowser,
-            BrowserCode.CgBrowser,
-            BrowserCode.AzkaBrowser,
-            BrowserCode.MmxBrowser,
-            BrowserCode.BitchuteBrowser,
-            BrowserCode.NovaVideoDownloaderPro,
-            BrowserCode.PronHubBrowser,
-            BrowserCode.FrostPlus,
-            BrowserCode.DucBrowser,
-            BrowserCode.DesiBrowser,
-            BrowserCode.PhantomMe,
-            BrowserCode.OpenBrowser,
-            BrowserCode.XoolooInternet,
-            BrowserCode.UBrowser,
-            BrowserCode.Bloket,
-            BrowserCode.VastBrowser,
-            BrowserCode.XVpn,
-            BrowserCode.Amerigo,
-            BrowserCode.XBrowserProSuperFast,
-            BrowserCode.PrivacyBrowser18Plus,
-            BrowserCode.BeyondPrivateBrowser,
-            BrowserCode.BlackLionBrowser,
-            BrowserCode.TucMiniBrowser,
-            BrowserCode.AppBrowzer,
-            BrowserCode.SxBrowser,
-            BrowserCode.FieryBrowser,
-            BrowserCode.Yagi,
-            BrowserCode.NextWordBrowser,
-            BrowserCode.NakedBrowserPro,
-            BrowserCode.Browser1Dm,
-            BrowserCode.Browser1DmPlus,
-            BrowserCode.AdultBrowser,
-            BrowserCode.XnxBrowser,
-            BrowserCode.XtremeCast,
-            BrowserCode.XBrowserLite,
-            BrowserCode.SweetBrowser,
-            BrowserCode.HtcBrowser,
-            BrowserCode.Browlser,
-            BrowserCode.BanglaBrowser,
-            BrowserCode.SoundyBrowser,
-            BrowserCode.IvviBrowser,
-            BrowserCode.OddBrowser,
-            BrowserCode.Pawxy,
-            BrowserCode.OrNetBrowser,
-            BrowserCode.BrowsBit,
-            BrowserCode.Alva,
-            BrowserCode.PicoBrowser,
-            BrowserCode.WorldBrowser,
-            BrowserCode.EveryBrowser,
-            BrowserCode.InBrowser,
-            BrowserCode.InstaBrowser,
-            BrowserCode.VertexSurf,
-            BrowserCode.HollaWebBrowser,
-            BrowserCode.MarsLabWebBrowser,
-            BrowserCode.SunflowerBrowser,
-            BrowserCode.CaveBrowser,
-            BrowserCode.ZordoBrowser,
-            BrowserCode.DarkBrowser,
-            BrowserCode.FreedomBrowser,
-            BrowserCode.PrivateInternetBrowser,
-            BrowserCode.Frost,
-            BrowserCode.AirfindSecureBrowser,
-            BrowserCode.SecureX,
-            BrowserCode.Nuviu,
-            BrowserCode.FGet,
-            BrowserCode.Thor,
-            BrowserCode.IncognitoBrowser,
-            BrowserCode.GodzillaBrowser,
-            BrowserCode.OceanBrowser,
-            BrowserCode.Qmamu,
-            BrowserCode.BfBrowser,
-            BrowserCode.BroKeepBrowser,
-            BrowserCode.OnionBrowser,
-            BrowserCode.ProxyBrowser,
-            BrowserCode.HotBrowser,
-            BrowserCode.VdBrowser,
-            BrowserCode.GoBrowser2,
-            BrowserCode.Bang,
-            BrowserCode.OnBrowserLite,
-            BrowserCode.DiigoBrowser,
-            BrowserCode.TrueLocationBrowser,
-            BrowserCode.MixerBoxAi,
-            BrowserCode.YouBrowser,
-            BrowserCode.MaxBrowser,
-            BrowserCode.LeganBrowser,
-            BrowserCode.OjrBrowser,
-            BrowserCode.InvoltaGo,
-            BrowserCode.HabitBrowser,
-            BrowserCode.OwlBrowser,
-            BrowserCode.Orbitum,
-            BrowserCode.Photon,
-            BrowserCode.KeyboardBrowser,
-            BrowserCode.StealthBrowser,
-            BrowserCode.TalkTo,
-            BrowserCode.Proxynet,
-            BrowserCode.GoodBrowser,
-            BrowserCode.Proxyium,
-            BrowserCode.Vuhuv,
-            BrowserCode.FireBrowser,
-            BrowserCode.LightningBrowserPlus,
-            BrowserCode.DarkWeb,
-            BrowserCode.DarkWebPrivate,
-            BrowserCode.SkyLeap,
-            BrowserCode.Kitt,
-            BrowserCode.NookBrowser,
-            BrowserCode.Kun,
-            BrowserCode.WukongBrowser,
-            BrowserCode.MotorolaInternetBrowser,
-            BrowserCode.UPhoneBrowser,
-            BrowserCode.ZteBrowser,
-            BrowserCode.Presearch,
-            BrowserCode.Ninesky,
-            BrowserCode.Veera,
-            BrowserCode.PintarBrowser,
-            BrowserCode.BrowserMini,
-            BrowserCode.FossBrowser,
-            BrowserCode.PeachBrowser,
-            BrowserCode.AppTecSecureBrowser,
-            BrowserCode.ProxyFox,
-            BrowserCode.ProxyMax,
-            BrowserCode.KeepSolidBrowser,
-            BrowserCode.OnionBrowser2,
-            BrowserCode.AiBrowser,
-            BrowserCode.HaloBrowser,
-            BrowserCode.MmboxXBrowser,
-            BrowserCode.XnBrowse,
-            BrowserCode.OpenBrowserLite,
-            BrowserCode.PuffinIncognitoBrowser,
-            BrowserCode.PuffinCloudBrowser,
-            BrowserCode.PrivacyPioneerBrowser,
-            BrowserCode.Pluma,
-            BrowserCode.PocketInternetExplorer,
-        }.ToFrozenSet();
+    internal static readonly FrozenSet<BrowserCode> MobileOnlyBrowsers = new[]
+    {
+        BrowserCode.PhoneBrowser360,
+        BrowserCode.AlohaBrowserLite,
+        BrowserCode.Arvin,
+        BrowserCode.BLine,
+        BrowserCode.Coast,
+        BrowserCode.CoolBrowser,
+        BrowserCode.CosBrowser,
+        BrowserCode.Cornowser,
+        BrowserCode.DBrowser,
+        BrowserCode.Mises,
+        BrowserCode.DeltaBrowser,
+        BrowserCode.EuiBrowser,
+        BrowserCode.EzBrowser,
+        BrowserCode.FirefoxFocus,
+        BrowserCode.FirefoxMobile,
+        BrowserCode.FirefoxRocket,
+        BrowserCode.FauxBrowser,
+        BrowserCode.GhosteryPrivacyBrowser,
+        BrowserCode.GinxDroidBrowser,
+        BrowserCode.GoBrowser,
+        BrowserCode.HawkTurboBrowser,
+        BrowserCode.HuaweiBrowserMobile,
+        BrowserCode.Isivioo,
+        BrowserCode.JapanBrowser,
+        BrowserCode.KodeBrowser,
+        BrowserCode.MCent,
+        BrowserCode.MobileSafari,
+        BrowserCode.Minimo,
+        BrowserCode.MeizuBrowser,
+        BrowserCode.NoxBrowser,
+        BrowserCode.OculusBrowser,
+        BrowserCode.OperaMini,
+        BrowserCode.OperaMobile,
+        BrowserCode.Smooz,
+        BrowserCode.PuffinWebBrowser,
+        BrowserCode.PrivacyWall,
+        BrowserCode.PerfectBrowser,
+        BrowserCode.Quark,
+        BrowserCode.RealmeBrowser,
+        BrowserCode.StartInternetBrowser,
+        BrowserCode.SpBrowser,
+        BrowserCode.SailfishBrowser,
+        BrowserCode.SamsungBrowser,
+        BrowserCode.Stargon,
+        BrowserCode.Skyfire,
+        BrowserCode.Streamy,
+        BrowserCode.SuperFastBrowser,
+        BrowserCode.StampyBrowser,
+        BrowserCode.UcBrowserHd,
+        BrowserCode.UcBrowserMini,
+        BrowserCode.UcBrowserTurbo,
+        BrowserCode.VenusBrowser,
+        BrowserCode.VivoBrowser,
+        BrowserCode.WearInternetBrowser,
+        BrowserCode.WebExplorer,
+        BrowserCode.YaaniBrowser,
+        BrowserCode.IBrowser,
+        BrowserCode.IBrowserMini,
+        BrowserCode.HawkQuickBrowser,
+        BrowserCode.ReqwirelessWebViewer,
+        BrowserCode.HiBrowser,
+        BrowserCode.ApnBrowser,
+        BrowserCode.AdBlockBrowser,
+        BrowserCode.YouCare,
+        BrowserCode.PocketBookBrowser,
+        BrowserCode.MonumentBrowser,
+        BrowserCode.ApusBrowser,
+        BrowserCode.AskCom,
+        BrowserCode.UiBrowserMini,
+        BrowserCode.SavySoda,
+        BrowserCode.SavannahBrowser,
+        BrowserCode.SurfBrowser,
+        BrowserCode.SotiSurf,
+        BrowserCode.LexiBrowser,
+        BrowserCode.SmartBrowser,
+        BrowserCode.BelvaBrowser,
+        BrowserCode.Lilo,
+        BrowserCode.FloatBrowser,
+        BrowserCode.KidsSafeBrowser,
+        BrowserCode.VBrowser,
+        BrowserCode.CgBrowser,
+        BrowserCode.AzkaBrowser,
+        BrowserCode.MmxBrowser,
+        BrowserCode.BitchuteBrowser,
+        BrowserCode.NovaVideoDownloaderPro,
+        BrowserCode.PronHubBrowser,
+        BrowserCode.FrostPlus,
+        BrowserCode.DucBrowser,
+        BrowserCode.DesiBrowser,
+        BrowserCode.PhantomMe,
+        BrowserCode.OpenBrowser,
+        BrowserCode.XoolooInternet,
+        BrowserCode.UBrowser,
+        BrowserCode.Bloket,
+        BrowserCode.VastBrowser,
+        BrowserCode.XVpn,
+        BrowserCode.Amerigo,
+        BrowserCode.XBrowserProSuperFast,
+        BrowserCode.PrivacyBrowser18Plus,
+        BrowserCode.BeyondPrivateBrowser,
+        BrowserCode.BlackLionBrowser,
+        BrowserCode.TucMiniBrowser,
+        BrowserCode.AppBrowzer,
+        BrowserCode.SxBrowser,
+        BrowserCode.FieryBrowser,
+        BrowserCode.Yagi,
+        BrowserCode.NextWordBrowser,
+        BrowserCode.NakedBrowserPro,
+        BrowserCode.Browser1Dm,
+        BrowserCode.Browser1DmPlus,
+        BrowserCode.AdultBrowser,
+        BrowserCode.XnxBrowser,
+        BrowserCode.XtremeCast,
+        BrowserCode.XBrowserLite,
+        BrowserCode.SweetBrowser,
+        BrowserCode.HtcBrowser,
+        BrowserCode.Browlser,
+        BrowserCode.BanglaBrowser,
+        BrowserCode.SoundyBrowser,
+        BrowserCode.IvviBrowser,
+        BrowserCode.OddBrowser,
+        BrowserCode.Pawxy,
+        BrowserCode.OrNetBrowser,
+        BrowserCode.BrowsBit,
+        BrowserCode.Alva,
+        BrowserCode.PicoBrowser,
+        BrowserCode.WorldBrowser,
+        BrowserCode.EveryBrowser,
+        BrowserCode.InBrowser,
+        BrowserCode.InstaBrowser,
+        BrowserCode.VertexSurf,
+        BrowserCode.HollaWebBrowser,
+        BrowserCode.MarsLabWebBrowser,
+        BrowserCode.SunflowerBrowser,
+        BrowserCode.CaveBrowser,
+        BrowserCode.ZordoBrowser,
+        BrowserCode.DarkBrowser,
+        BrowserCode.FreedomBrowser,
+        BrowserCode.PrivateInternetBrowser,
+        BrowserCode.Frost,
+        BrowserCode.AirfindSecureBrowser,
+        BrowserCode.SecureX,
+        BrowserCode.Nuviu,
+        BrowserCode.FGet,
+        BrowserCode.Thor,
+        BrowserCode.IncognitoBrowser,
+        BrowserCode.GodzillaBrowser,
+        BrowserCode.OceanBrowser,
+        BrowserCode.Qmamu,
+        BrowserCode.BfBrowser,
+        BrowserCode.BroKeepBrowser,
+        BrowserCode.OnionBrowser,
+        BrowserCode.ProxyBrowser,
+        BrowserCode.HotBrowser,
+        BrowserCode.VdBrowser,
+        BrowserCode.GoBrowser2,
+        BrowserCode.Bang,
+        BrowserCode.OnBrowserLite,
+        BrowserCode.DiigoBrowser,
+        BrowserCode.TrueLocationBrowser,
+        BrowserCode.MixerBoxAi,
+        BrowserCode.YouBrowser,
+        BrowserCode.MaxBrowser,
+        BrowserCode.LeganBrowser,
+        BrowserCode.OjrBrowser,
+        BrowserCode.InvoltaGo,
+        BrowserCode.HabitBrowser,
+        BrowserCode.OwlBrowser,
+        BrowserCode.Orbitum,
+        BrowserCode.Photon,
+        BrowserCode.KeyboardBrowser,
+        BrowserCode.StealthBrowser,
+        BrowserCode.TalkTo,
+        BrowserCode.Proxynet,
+        BrowserCode.GoodBrowser,
+        BrowserCode.Proxyium,
+        BrowserCode.Vuhuv,
+        BrowserCode.FireBrowser,
+        BrowserCode.LightningBrowserPlus,
+        BrowserCode.DarkWeb,
+        BrowserCode.DarkWebPrivate,
+        BrowserCode.SkyLeap,
+        BrowserCode.Kitt,
+        BrowserCode.NookBrowser,
+        BrowserCode.Kun,
+        BrowserCode.WukongBrowser,
+        BrowserCode.MotorolaInternetBrowser,
+        BrowserCode.UPhoneBrowser,
+        BrowserCode.ZteBrowser,
+        BrowserCode.Presearch,
+        BrowserCode.Ninesky,
+        BrowserCode.Veera,
+        BrowserCode.PintarBrowser,
+        BrowserCode.BrowserMini,
+        BrowserCode.FossBrowser,
+        BrowserCode.PeachBrowser,
+        BrowserCode.AppTecSecureBrowser,
+        BrowserCode.ProxyFox,
+        BrowserCode.ProxyMax,
+        BrowserCode.KeepSolidBrowser,
+        BrowserCode.OnionBrowser2,
+        BrowserCode.AiBrowser,
+        BrowserCode.HaloBrowser,
+        BrowserCode.MmboxXBrowser,
+        BrowserCode.XnBrowse,
+        BrowserCode.OpenBrowserLite,
+        BrowserCode.PuffinIncognitoBrowser,
+        BrowserCode.PuffinCloudBrowser,
+        BrowserCode.PrivacyPioneerBrowser,
+        BrowserCode.Pluma,
+        BrowserCode.PocketInternetExplorer,
+    }.ToFrozenSet();
 
-        ClientHintBrandMapping = new Dictionary<string, FrozenSet<string>>
+    private static readonly FrozenDictionary<string, FrozenSet<string>> ClientHintBrandMapping =
+        new Dictionary<string, FrozenSet<string>>
         {
             { BrowserNames.Chrome, new[] { "Google Chrome" }.ToFrozenSet() },
             { BrowserNames.ChromeWebview, new[] { "Android WebView" }.ToFrozenSet() },
@@ -1398,31 +1370,57 @@ public sealed class BrowserParser : IBrowserParser
             { BrowserNames.VewdBrowser, new[] { "Vewd Core" }.ToFrozenSet() },
         }.ToFrozenDictionary();
 
-        PriorityBrowsers = new[]
-        {
-            BrowserCode.Atom,
-            BrowserCode.AlohaBrowser,
-            BrowserCode.HuaweiBrowser,
-            BrowserCode.OjrBrowser,
-            BrowserCode.MiBrowser,
-            BrowserCode.OperaMobile,
-            BrowserCode.Opera,
-            BrowserCode.Veera,
-        }.ToFrozenSet();
+    private static readonly FrozenSet<BrowserCode> PriorityBrowsers = new[]
+    {
+        BrowserCode.Atom,
+        BrowserCode.AlohaBrowser,
+        BrowserCode.HuaweiBrowser,
+        BrowserCode.OjrBrowser,
+        BrowserCode.MiBrowser,
+        BrowserCode.OperaMobile,
+        BrowserCode.Opera,
+        BrowserCode.Veera,
+    }.ToFrozenSet();
 
-        ChromiumBrowsers = new[]
-        {
-            BrowserCode.Chromium,
-            BrowserCode.ChromeWebview,
-            BrowserCode.AndroidBrowser,
-        }.ToFrozenSet();
+    private static readonly FrozenSet<BrowserCode> ChromiumBrowsers = new[]
+    {
+        BrowserCode.Chromium,
+        BrowserCode.ChromeWebview,
+        BrowserCode.AndroidBrowser,
+    }.ToFrozenSet();
 
-        ChromeSafariRegex = new Regex(
-            @"Chrome/.+ Safari/537\.36",
-            RegexOptions.IgnoreCase | RegexOptions.Compiled
-        );
-        CypressOrPhantomJsRegex = new Regex("Cypress|PhantomJS", RegexOptions.Compiled);
-        IridiumVersionRegex = new Regex("^202[0-4]", RegexOptions.Compiled);
+    private static readonly Regex ChromeSafariRegex = new(
+        @"Chrome/.+ Safari/537\.36",
+        RegexOptions.IgnoreCase | RegexOptions.Compiled
+    );
+    private static readonly Regex CypressOrPhantomJsRegex = new(
+        "Cypress|PhantomJS",
+        RegexOptions.Compiled
+    );
+    private static readonly Regex IridiumVersionRegex = new("^202[0-4]", RegexOptions.Compiled);
+
+    private static FrozenDictionary<string, string> CreateCompactToFullNameMapping()
+    {
+        var duplicateCompactNames = BrowserCodeMapping
+            .Values.Select(x => x.RemoveSpaces())
+            .GroupBy(x => x)
+            .Where(group => group.Count() > 1)
+            .Select(group => group.Key)
+            .ToList();
+
+        var mapping = new Dictionary<string, string>();
+
+        foreach (var name in BrowserNameMapping.Keys)
+        {
+            var compactName = name.RemoveSpaces();
+
+            if (!duplicateCompactNames.Contains(compactName))
+            {
+                mapping.Add(compactName, name);
+            }
+        }
+
+        return mapping.ToFrozenDictionary(StringComparer.OrdinalIgnoreCase);
     }
 
     public BrowserParser(UaDetectorOptions? uaDetectorOptions = null)
