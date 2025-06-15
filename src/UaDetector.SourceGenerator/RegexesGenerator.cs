@@ -222,7 +222,7 @@ public class RegexesGenerator : IIncrementalGenerator
 
             {{property.ClassAccessibility}} {{staticModifier}}partial class {{property.ContainingClass}}
             {
-                private readonly static {{property.PropertyType}} {{fieldName}} = Array.Empty<{{innerType}}>();
+                private readonly static {{property.PropertyType}} {{fieldName}} = {{valueExpr}};
 
                 {{property.PropertyAccessibility}} static partial {{property.PropertyType}} {{property.PropertyName}}
                 {

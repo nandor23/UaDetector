@@ -1,5 +1,4 @@
 using System.Text.RegularExpressions;
-using UaDetector.Regexes.Models.Browsers;
 
 namespace UaDetector.YamlJsonConverter.Models;
 

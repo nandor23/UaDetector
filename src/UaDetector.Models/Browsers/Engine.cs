@@ -1,6 +1,6 @@
-namespace UaDetector.Regexes.Models.Browsers;
+namespace UaDetector.Models.Browsers;
 
-internal sealed class Engine
+public sealed class Engine
 {
     public string? Default { get; init; }
     public IReadOnlyDictionary<string, string>? Versions { get; init; }

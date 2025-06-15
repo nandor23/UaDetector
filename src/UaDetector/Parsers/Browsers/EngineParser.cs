@@ -1,8 +1,8 @@
 using System.Collections.Frozen;
 using System.Diagnostics.CodeAnalysis;
 using System.Text.RegularExpressions;
+using UaDetector.Models.Browsers;
 using UaDetector.Models.Constants;
-using UaDetector.Regexes.Models.Browsers;
 using UaDetector.Utils;
 
 namespace UaDetector.Parsers.Browsers;

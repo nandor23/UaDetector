@@ -1,8 +1,8 @@
 using System.Text.RegularExpressions;
 
-namespace UaDetector.Regexes.Models.Browsers;
+namespace UaDetector.Models.Browsers;
 
-internal sealed class Browser
+public class Browser
 {
     public required Regex Regex { get; init; }
     public required string Name { get; init; }

@@ -3,10 +3,10 @@ using System.Collections.Immutable;
 using System.Diagnostics.CodeAnalysis;
 using System.Text.RegularExpressions;
 using UaDetector.Attributes;
+using UaDetector.Models.Browsers;
 using UaDetector.Models.Constants;
 using UaDetector.Models.Enums;
 using UaDetector.Parsers.Browsers;
-using UaDetector.Regexes.Models.Browsers;
 using UaDetector.Results;
 using UaDetector.Utils;
 
