@@ -14,7 +14,7 @@ namespace UaDetector.Parsers;
 
 public sealed partial class BrowserParser : IBrowserParser
 {
-    [Regexes("Regexes.Resources.Browsers.browsers.json")]
+    [Regexes("Regexes/Resources/Browsers/browsers.json")]
     internal static partial IReadOnlyList<Browser> Browsers { get; }
 
     private const string CacheKeyPrefix = "browser";
