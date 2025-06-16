@@ -7,6 +7,7 @@ using UaDetector.Models.Browsers;
 using UaDetector.Models.Constants;
 using UaDetector.Models.Enums;
 using UaDetector.Parsers.Browsers;
+using UaDetector.Regexes.Models;
 using UaDetector.Results;
 using UaDetector.Utils;
 
@@ -15,7 +16,7 @@ namespace UaDetector.Parsers;
 public sealed partial class BrowserParser : IBrowserParser
 {
     [Regexes("Regexes/Resources/Browsers/browsers.json")]
-    internal static partial IReadOnlyList<Browser> Browsers { get; }
+    internal static partial IReadOnlyList<RegexRule<Browser>> Browsers { get; }
 
     private const string CacheKeyPrefix = "browser";
     private readonly IUaDetectorCache? _cache;
@@ -1620,13 +1621,13 @@ public sealed partial class BrowserParser : IBrowserParser
         Match? match = null;
         Browser? browser = null;
 
-        foreach (var browserPattern in Browsers)
+        foreach (var rule in Browsers)
         {
-            match = browserPattern.Regex.Match(userAgent);
+            match = rule.Regex.Match(userAgent);
 
             if (match.Success)
             {
-                browser = browserPattern;
+                browser = rule.Result;
                 break;
             }
         }

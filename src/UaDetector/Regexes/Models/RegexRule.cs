@@ -1,6 +1,6 @@
 using System.Text.RegularExpressions;
 
-namespace UaDetector.Models;
+namespace UaDetector.Regexes.Models;
 
 public sealed class RegexRule<T>
 {

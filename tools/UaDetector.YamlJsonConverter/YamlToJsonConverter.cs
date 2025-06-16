@@ -99,7 +99,7 @@ public static class YamlToJsonConverter
             Path.Combine(BaseDirectory, BrowsersFile + ".yml")
         );
 
-        var result = entries.Select(x => new Browser
+        var result = entries.Select(x => new BrowserRegex
         {
             Regex = x.Regex,
             Name = x.Name,

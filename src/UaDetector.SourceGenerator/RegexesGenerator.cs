@@ -1,8 +1,11 @@
 using System.Collections.Immutable;
 using System.Diagnostics;
+using System.Text.Json;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
+
+using UaDetector.Models.Browsers;
 
 namespace UaDetector.SourceGenerator;
 
@@ -21,13 +24,12 @@ public class RegexesGenerator : IIncrementalGenerator
             .Where(static m => m is not null)
             .Select(static (m, _) => m!);
 
-        var additionalFiles = context
-            .AdditionalTextsProvider.Where(file =>
-                file.Path.EndsWith(".json")
-            );
+        var additionalFiles = context.AdditionalTextsProvider.Where(file =>
+            file.Path.EndsWith(".json")
+        );
 
-        var compilation = context.CompilationProvider
-            .Combine(provider.Collect())
+        var compilation = context
+            .CompilationProvider.Combine(provider.Collect())
             .Combine(additionalFiles.Collect());
 
         context.RegisterSourceOutput(
@@ -52,8 +54,7 @@ public class RegexesGenerator : IIncrementalGenerator
         var propertyName = propertyDeclaration.Identifier.ValueText;
         var propertyAccessibility = GetPropertyAccessibility(propertyDeclaration);
 
-        var propertySymbol =
-            context.SemanticModel.GetDeclaredSymbol(propertyDeclaration);
+        var propertySymbol = context.SemanticModel.GetDeclaredSymbol(propertyDeclaration);
         var propertyType =
             propertySymbol?.Type.ToDisplayString(SymbolDisplayFormat.FullyQualifiedFormat)
             ?? throw new InvalidOperationException("Unable to determine property type");
@@ -122,7 +123,7 @@ public class RegexesGenerator : IIncrementalGenerator
                 SyntaxKind.InternalKeyword => "internal",
                 SyntaxKind.PrivateKeyword => "private",
                 SyntaxKind.ProtectedKeyword => "protected",
-                _ => "internal"
+                _ => "internal",
             };
         }
 
@@ -158,7 +159,7 @@ public class RegexesGenerator : IIncrementalGenerator
                 SyntaxKind.InternalKeyword => "internal",
                 SyntaxKind.PrivateKeyword => "private",
                 SyntaxKind.ProtectedKeyword => "protected",
-                _ => "internal"
+                _ => "internal",
             };
         }
 
@@ -197,8 +198,8 @@ public class RegexesGenerator : IIncrementalGenerator
 
             if (jsonContent is not null)
             {
-                var sourceCode = GenerateSource(property, jsonContent);
-                
+                var sourceCode = GenerateSource(compilation, property, jsonContent);
+
                 context.AddSource(
                     $"{property.ContainingClass}_{property.PropertyName}.g.cs",
                     sourceCode
@@ -207,13 +208,25 @@ public class RegexesGenerator : IIncrementalGenerator
         }
     }
 
-    private static string GenerateSource(PropertyDeclarationInfo property, string jsonContent)    {
+    private static string GenerateSource(
+        Compilation compilation,
+        PropertyDeclarationInfo property,
+        string json
+    )
+    {
         string valueExpr;
-        var innerType = ExtractGenericTypeArgument(property.PropertyType);
 
         if (property.PropertyType.StartsWith("global::System.Collections.Generic.IReadOnlyList<"))
         {
-            valueExpr = $"System.Array.Empty<{innerType}>()";
+            var regexRuleType = ExtractGenericTypeArgument(property.PropertyType);
+            var innerType = ExtractRegexRuleInnerType(regexRuleType);
+
+            if (innerType.EndsWith(nameof(Browser)))
+            {
+                var values = JsonSerializer.Deserialize<BrowserRegex>(json);
+            }
+
+            valueExpr = $"System.Array.Empty<{regexRuleType}>()";
         }
         else
         {
@@ -224,7 +237,7 @@ public class RegexesGenerator : IIncrementalGenerator
 
         var staticModifier = property.IsStaticClass ? "static " : string.Empty;
 
-        var fieldName = $"_{property.PropertyName.ToLower()}";
+        var fieldName = $"_{property.PropertyName}";
 
         return $$"""
             using System.Collections.Frozen;
@@ -254,6 +267,20 @@ public class RegexesGenerator : IIncrementalGenerator
         }
 
         throw new ArgumentException($"Cannot extract generic type argument from: {genericType}");
+    }
+
+    private static string ExtractRegexRuleInnerType(string regexRuleType)
+    {
+        // For RegexRule<Browser>, extract Browser
+        var startIndex = regexRuleType.IndexOf('<') + 1;
+        var endIndex = regexRuleType.LastIndexOf('>');
+
+        if (startIndex > 0 && startIndex < endIndex)
+        {
+            return regexRuleType.Substring(startIndex, endIndex - startIndex);
+        }
+
+        throw new ArgumentException($"Cannot extract inner type from RegexRule: {regexRuleType}");
     }
 
     private sealed class PropertyDeclarationInfo
