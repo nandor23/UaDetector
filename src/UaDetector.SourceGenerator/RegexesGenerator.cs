@@ -21,11 +21,18 @@ public class RegexesGenerator : IIncrementalGenerator
             .Where(static m => m is not null)
             .Select(static (m, _) => m!);
 
-        var compilation = context.CompilationProvider.Combine(provider.Collect());
+        var additionalFiles = context
+            .AdditionalTextsProvider.Where(file =>
+                file.Path.EndsWith(".json")
+            );
+
+        var compilation = context.CompilationProvider
+            .Combine(provider.Collect())
+            .Combine(additionalFiles.Collect());
 
         context.RegisterSourceOutput(
             compilation,
-            static (spc, source) => Execute(source.Left, source.Right, spc)
+            static (spc, source) => Execute(source.Left.Left, source.Left.Right, source.Right, spc)
         );
     }
 
@@ -46,7 +53,7 @@ public class RegexesGenerator : IIncrementalGenerator
         var propertyAccessibility = GetPropertyAccessibility(propertyDeclaration);
 
         var propertySymbol =
-            context.SemanticModel.GetDeclaredSymbol(propertyDeclaration) as IPropertySymbol;
+            context.SemanticModel.GetDeclaredSymbol(propertyDeclaration);
         var propertyType =
             propertySymbol?.Type.ToDisplayString(SymbolDisplayFormat.FullyQualifiedFormat)
             ?? throw new InvalidOperationException("Unable to determine property type");
@@ -173,6 +180,7 @@ public class RegexesGenerator : IIncrementalGenerator
     private static void Execute(
         Compilation compilation,
         ImmutableArray<PropertyDeclarationInfo> properties,
+        ImmutableArray<AdditionalText> additionalFiles,
         SourceProductionContext context
     )
     {
@@ -181,16 +189,25 @@ public class RegexesGenerator : IIncrementalGenerator
 
         foreach (var property in properties)
         {
-            var sourceCode = GenerateSource(property);
-            context.AddSource(
-                $"{property.ContainingClass}_{property.PropertyName}.g.cs",
-                sourceCode
+            var matchingFile = additionalFiles.FirstOrDefault(file =>
+                file.Path.EndsWith(property.ResourcePath, StringComparison.OrdinalIgnoreCase)
             );
+
+            var jsonContent = matchingFile?.GetText(context.CancellationToken)?.ToString();
+
+            if (jsonContent is not null)
+            {
+                var sourceCode = GenerateSource(property, jsonContent);
+                
+                context.AddSource(
+                    $"{property.ContainingClass}_{property.PropertyName}.g.cs",
+                    sourceCode
+                );
+            }
         }
     }
 
-    private static string GenerateSource(PropertyDeclarationInfo property)
-    {
+    private static string GenerateSource(PropertyDeclarationInfo property, string jsonContent)    {
         string valueExpr;
         var innerType = ExtractGenericTypeArgument(property.PropertyType);
 
