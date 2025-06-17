@@ -12,6 +12,12 @@ namespace UaDetector.SourceGenerator;
 [Generator]
 public class RegexesGenerator : IIncrementalGenerator
 {
+    private static readonly JsonSerializerOptions SerializerOptions = new()
+    {
+        PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
+    };
+    
+    
     public void Initialize(IncrementalGeneratorInitializationContext context)
     {
         Debugger.Launch();
@@ -220,12 +226,14 @@ public class RegexesGenerator : IIncrementalGenerator
         {
             var regexRuleType = ExtractGenericTypeArgument(property.PropertyType);
             var innerType = ExtractRegexRuleInnerType(regexRuleType);
+            
+            
+            // This works
+            // using var doc = JsonDocument.Parse(json);
 
-            if (innerType.EndsWith(nameof(Browser)))
-            {
-                var values = JsonSerializer.Deserialize<BrowserRegex>(json);
-            }
-
+            // This does not work
+            JsonSerializer.Deserialize<List<BrowserRegex>>(json, SerializerOptions);
+            
             valueExpr = $"System.Array.Empty<{regexRuleType}>()";
         }
         else
