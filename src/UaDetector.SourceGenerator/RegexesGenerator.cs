@@ -1,8 +1,9 @@
 using System.Collections.Immutable;
 using System.Text.Json;
+
 using Microsoft.CodeAnalysis;
-using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
+
 using UaDetector.Models.Browsers;
 
 namespace UaDetector.SourceGenerator;
@@ -17,272 +18,126 @@ public class RegexesGenerator : IIncrementalGenerator
 
     public void Initialize(IncrementalGeneratorInitializationContext context)
     {
-        var provider = context
-            .SyntaxProvider.CreateSyntaxProvider(
-                predicate: static (s, _) => IsSyntaxTargetForGeneration(s),
-                transform: static (ctx, _) => GetSemanticTargetForGeneration(ctx)
+        var provider = context.SyntaxProvider
+            .ForAttributeWithMetadataName(
+                "UaDetector.Attributes.RegexesAttribute",
+                predicate: static (node, _) => node is PropertyDeclarationSyntax,
+                transform: GetSemanticTargetForGeneration
             )
             .Where(static m => m is not null)
             .Select(static (m, _) => m!);
 
-        var additionalFiles = context.AdditionalTextsProvider.Where(file =>
-            file.Path.EndsWith(".json")
-        );
+        var additionalFiles = context.AdditionalTextsProvider
+            .Where(file =>
+                file.Path.EndsWith(".json", StringComparison.OrdinalIgnoreCase)
+            )
+            .Select((file, ct) =>
+            {
+                var path = file.Path.Replace('\\', '/');
+                var json = file.GetText(ct)?.ToString();
 
-        var compilation = context
-            .CompilationProvider.Combine(provider.Collect())
-            .Combine(additionalFiles.Collect());
+                if (json is not null)
+                {
+                    try
+                    {
+                        var list = JsonSerializer.Deserialize<List<BrowserRegex>>(json, SerializerOptions);
+                        return (path, List: list!.ToEquatableReadOnlyList());
+                    }
+                    catch { }
+                }
+
+                return (path, []);
+            })
+            .Collect();
 
         context.RegisterSourceOutput(
-            compilation,
-            static (spc, source) => Execute(source.Left.Left, source.Left.Right, source.Right, spc)
+            provider.Combine(additionalFiles),
+            static (spc, source) => Execute(source.Left, source.Right, spc)
         );
-    }
-
-    private static bool IsSyntaxTargetForGeneration(SyntaxNode node)
-    {
-        // Only support properties with attributes
-        return node is PropertyDeclarationSyntax { AttributeLists.Count: > 0 };
     }
 
     private static PropertyDeclarationInfo? GetSemanticTargetForGeneration(
-        GeneratorSyntaxContext context
+        GeneratorAttributeSyntaxContext context,
+        CancellationToken cancellationToken
     )
     {
-        if (context.Node is not PropertyDeclarationSyntax propertyDeclaration)
+        cancellationToken.ThrowIfCancellationRequested();
+
+        var attribute = context.Attributes[0];
+        var path = attribute.ConstructorArguments.FirstOrDefault().Value?.ToString()?.Replace('\\', '/');
+
+        if (path is null)
             return null;
 
-        var propertyName = propertyDeclaration.Identifier.ValueText;
-        var propertyAccessibility = GetPropertyAccessibility(propertyDeclaration);
+        cancellationToken.ThrowIfCancellationRequested();
 
-        var propertySymbol = context.SemanticModel.GetDeclaredSymbol(propertyDeclaration);
-        var propertyType =
-            propertySymbol?.Type.ToDisplayString(SymbolDisplayFormat.FullyQualifiedFormat)
-            ?? throw new InvalidOperationException("Unable to determine property type");
+        var propertySymbol = (IPropertySymbol)context.TargetSymbol;
+        var propertyType = propertySymbol.Type;
 
-        foreach (var attributeList in propertyDeclaration.AttributeLists)
-        {
-            foreach (var attribute in attributeList.Attributes)
+        if (propertyType is not INamedTypeSymbol
             {
-                var symbolInfo = context.SemanticModel.GetSymbolInfo(attribute);
-
-                if (symbolInfo.Symbol is IMethodSymbol attributeSymbol)
-                {
-                    var attributeName = attributeSymbol.ContainingType.Name;
-
-                    if (attributeName is "RegexesAttribute" or "Regexes")
-                    {
-                        if (attribute.ArgumentList?.Arguments.Count > 0)
-                        {
-                            var firstArgument = attribute.ArgumentList.Arguments[0];
-                            if (
-                                firstArgument.Expression
-                                    is LiteralExpressionSyntax literalExpression
-                                && literalExpression.Token.IsKind(SyntaxKind.StringLiteralToken)
-                            )
-                            {
-                                var resourcePath = literalExpression.Token.ValueText;
-                                var containingClass =
-                                    GetContainingClassName(propertyDeclaration)
-                                    ?? throw new InvalidOperationException(
-                                        "Containing class not found"
-                                    );
-                                var namespaceName =
-                                    GetNamespaceName(propertyDeclaration)
-                                    ?? throw new InvalidOperationException("Namespace not found");
-                                var classAccessibility = GetClassAccessibility(propertyDeclaration);
-                                var isStaticClass = IsContainingClassStatic(propertyDeclaration);
-
-                                return new PropertyDeclarationInfo
-                                {
-                                    PropertyName = propertyName,
-                                    ResourcePath = resourcePath,
-                                    ContainingClass = containingClass,
-                                    Namespace = namespaceName,
-                                    PropertyType = propertyType,
-                                    PropertyAccessibility = propertyAccessibility,
-                                    ClassAccessibility = classAccessibility,
-                                    IsStaticClass = isStaticClass,
-                                };
-                            }
-                        }
-                    }
-                }
-            }
+                OriginalDefinition.SpecialType: SpecialType.System_Collections_Generic_IReadOnlyList_T,
+                TypeArguments: [{ } elementType],
+            })
+        {
+            return null;
         }
 
-        return null;
-    }
+        var containingClass = propertyType.ContainingSymbol;
+        var @namespace = containingClass.ContainingNamespace.ToString().NullIf("<global namespace>");
 
-    private static string GetPropertyAccessibility(PropertyDeclarationSyntax propertyDeclaration)
-    {
-        foreach (var modifier in propertyDeclaration.Modifiers)
+        return new PropertyDeclarationInfo
         {
-            return modifier.Kind() switch
-            {
-                SyntaxKind.PublicKeyword => "public",
-                SyntaxKind.InternalKeyword => "internal",
-                SyntaxKind.PrivateKeyword => "private",
-                SyntaxKind.ProtectedKeyword => "protected",
-                _ => "internal",
-            };
-        }
-
-        return "internal";
-    }
-
-    private static string? GetContainingClassName(SyntaxNode node)
-    {
-        var classDeclaration = node.Ancestors().OfType<ClassDeclarationSyntax>().FirstOrDefault();
-        return classDeclaration?.Identifier.ValueText;
-    }
-
-    private static string? GetNamespaceName(SyntaxNode node)
-    {
-        var namespaceDeclaration = node.Ancestors()
-            .OfType<BaseNamespaceDeclarationSyntax>()
-            .FirstOrDefault();
-        return namespaceDeclaration?.Name.ToString();
-    }
-
-    private static string GetClassAccessibility(SyntaxNode node)
-    {
-        var classDeclaration = node.Ancestors().OfType<ClassDeclarationSyntax>().FirstOrDefault();
-
-        if (classDeclaration == null)
-            return "internal";
-
-        foreach (var modifier in classDeclaration.Modifiers)
-        {
-            return modifier.Kind() switch
-            {
-                SyntaxKind.PublicKeyword => "public",
-                SyntaxKind.InternalKeyword => "internal",
-                SyntaxKind.PrivateKeyword => "private",
-                SyntaxKind.ProtectedKeyword => "protected",
-                _ => "internal",
-            };
-        }
-
-        return "internal";
-    }
-
-    private static bool IsContainingClassStatic(SyntaxNode node)
-    {
-        var classDeclaration = node.Ancestors().OfType<ClassDeclarationSyntax>().FirstOrDefault();
-
-        if (classDeclaration == null)
-            return false;
-
-        return classDeclaration.Modifiers.Any(modifier =>
-            modifier.IsKind(SyntaxKind.StaticKeyword)
-        );
+            PropertyName = propertySymbol.Name,
+            ResourcePath = path,
+            ContainingClass = containingClass.Name,
+            Namespace = @namespace != null ? $"namespace {@namespace};" : "",
+            ElementType = elementType.ToDisplayString(SymbolDisplayFormat.FullyQualifiedFormat),
+            PropertyAccessibility = propertySymbol.DeclaredAccessibility,
+        };
     }
 
     private static void Execute(
-        Compilation compilation,
-        ImmutableArray<PropertyDeclarationInfo> properties,
-        ImmutableArray<AdditionalText> additionalFiles,
+        PropertyDeclarationInfo property,
+        ImmutableArray<(string Path, EquatableReadOnlyList<BrowserRegex> List)> additionalFiles,
         SourceProductionContext context
     )
     {
-        if (properties.IsDefaultOrEmpty)
-            return;
+        var (_, list) = additionalFiles.FirstOrDefault(file =>
+            file.Path.EndsWith(property.ResourcePath, StringComparison.OrdinalIgnoreCase)
+        );
 
-        foreach (var property in properties)
+        if (list.Count > 0)
         {
-            var matchingFile = additionalFiles.FirstOrDefault(file =>
-                file.Path.EndsWith(property.ResourcePath, StringComparison.OrdinalIgnoreCase)
+            var sourceCode = GenerateSource(property, list);
+
+            context.AddSource(
+                $"{property.ContainingClass}_{property.PropertyName}.g.cs",
+                sourceCode
             );
-
-            var jsonContent = matchingFile?.GetText(context.CancellationToken)?.ToString();
-
-            if (jsonContent is not null)
-            {
-                var sourceCode = GenerateSource(compilation, property, jsonContent);
-
-                context.AddSource(
-                    $"{property.ContainingClass}_{property.PropertyName}.g.cs",
-                    sourceCode
-                );
-            }
         }
     }
 
     private static string GenerateSource(
-        Compilation compilation,
         PropertyDeclarationInfo property,
-        string json
+        EquatableReadOnlyList<BrowserRegex> list
     )
     {
-        string valueExpr;
-
-        if (property.PropertyType.StartsWith("global::System.Collections.Generic.IReadOnlyList<"))
-        {
-            var regexRuleType = ExtractGenericTypeArgument(property.PropertyType);
-            var innerType = ExtractRegexRuleInnerType(regexRuleType);
-
-            // This works
-            // using var doc = JsonDocument.Parse(json);
-
-            // This does not work
-            JsonSerializer.Deserialize<List<BrowserRegex>>(json, SerializerOptions);
-
-            valueExpr = $"System.Array.Empty<{regexRuleType}>()";
-        }
-        else
-        {
-            throw new NotSupportedException(
-                $"Unsupported property type: {property.PropertyType} for property {property.PropertyName}"
-            );
-        }
-
-        var staticModifier = property.IsStaticClass ? "static " : string.Empty;
-
+        // TODO: convert `list` to a C# string
+        var valueExpr = "[]";
         var fieldName = $"_{property.PropertyName}";
 
         return $$"""
-            using System.Collections.Frozen;
+            {{property.Namespace}}
 
-            namespace {{property.Namespace}};
-
-            {{property.ClassAccessibility}} {{staticModifier}}partial class {{property.ContainingClass}}
+            partial class {{property.ContainingClass}}
             {
-                private readonly static {{property.PropertyType}} {{fieldName}} = {{valueExpr}};
+                private readonly static global::System.Collections.Generic.IReadOnlyList<{{property.ElementType}}> {{fieldName}} = {{valueExpr}};
 
-                {{property.PropertyAccessibility}} static partial {{property.PropertyType}} {{property.PropertyName}}
-                {
-                    get => {{fieldName}}; 
-                }
+                {{property.PropertyAccessibility}} static partial global::System.Collections.Generic.IReadOnlyList<{{property.ElementType}}> {{property.PropertyName}} =>
+                    {{fieldName}}; 
             }
             """;
-    }
-
-    private static string ExtractGenericTypeArgument(string genericType)
-    {
-        var startIndex = genericType.IndexOf('<') + 1;
-        var endIndex = genericType.LastIndexOf('>');
-
-        if (startIndex > 0 && startIndex < endIndex)
-        {
-            return genericType.Substring(startIndex, endIndex - startIndex);
-        }
-
-        throw new ArgumentException($"Cannot extract generic type argument from: {genericType}");
-    }
-
-    private static string ExtractRegexRuleInnerType(string regexRuleType)
-    {
-        // For RegexRule<Browser>, extract Browser
-        var startIndex = regexRuleType.IndexOf('<') + 1;
-        var endIndex = regexRuleType.LastIndexOf('>');
-
-        if (startIndex > 0 && startIndex < endIndex)
-        {
-            return regexRuleType.Substring(startIndex, endIndex - startIndex);
-        }
-
-        throw new ArgumentException($"Cannot extract inner type from RegexRule: {regexRuleType}");
     }
 
     private sealed class PropertyDeclarationInfo
@@ -290,10 +145,14 @@ public class RegexesGenerator : IIncrementalGenerator
         public required string PropertyName { get; init; }
         public required string ResourcePath { get; init; }
         public required string ContainingClass { get; init; }
-        public required string Namespace { get; init; }
-        public required string PropertyType { get; init; }
-        public required string PropertyAccessibility { get; init; }
-        public required string ClassAccessibility { get; init; }
-        public required bool IsStaticClass { get; init; }
+        public required string? Namespace { get; init; }
+        public required string ElementType { get; init; }
+        public required Accessibility PropertyAccessibility { get; init; }
     }
+}
+
+file static class Extensions
+{
+    public static string? NullIf(this string value, string check) =>
+        value.Equals(check, StringComparison.Ordinal) ? null : value;
 }
