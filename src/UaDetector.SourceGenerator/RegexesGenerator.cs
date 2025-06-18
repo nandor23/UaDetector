@@ -3,7 +3,6 @@ using System.Text.Json;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
-
 using UaDetector.Models.Browsers;
 
 namespace UaDetector.SourceGenerator;
@@ -15,8 +14,7 @@ public class RegexesGenerator : IIncrementalGenerator
     {
         PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
     };
-    
-    
+
     public void Initialize(IncrementalGeneratorInitializationContext context)
     {
         var provider = context
@@ -223,14 +221,13 @@ public class RegexesGenerator : IIncrementalGenerator
         {
             var regexRuleType = ExtractGenericTypeArgument(property.PropertyType);
             var innerType = ExtractRegexRuleInnerType(regexRuleType);
-            
-            
+
             // This works
             // using var doc = JsonDocument.Parse(json);
 
             // This does not work
             JsonSerializer.Deserialize<List<BrowserRegex>>(json, SerializerOptions);
-            
+
             valueExpr = $"System.Array.Empty<{regexRuleType}>()";
         }
         else
