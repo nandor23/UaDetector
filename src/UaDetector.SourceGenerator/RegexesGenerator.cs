@@ -83,7 +83,7 @@ public class RegexesGenerator : IIncrementalGenerator
             return null;
         }
 
-        var containingClass = propertyType.ContainingSymbol;
+        var containingClass = propertySymbol.ContainingSymbol;
         var @namespace = containingClass.ContainingNamespace.ToString().NullIf("<global namespace>");
 
         return new PropertyDeclarationInfo
@@ -134,7 +134,7 @@ public class RegexesGenerator : IIncrementalGenerator
             {
                 private readonly static global::System.Collections.Generic.IReadOnlyList<{{property.ElementType}}> {{fieldName}} = {{valueExpr}};
 
-                {{property.PropertyAccessibility}} static partial global::System.Collections.Generic.IReadOnlyList<{{property.ElementType}}> {{property.PropertyName}} =>
+                {{property.PropertyAccessibility.ToSyntaxString()}} static partial global::System.Collections.Generic.IReadOnlyList <{{property.ElementType}}> {{property.PropertyName}} =>
                     {{fieldName}}; 
             }
             """;
@@ -155,4 +155,14 @@ file static class Extensions
 {
     public static string? NullIf(this string value, string check) =>
         value.Equals(check, StringComparison.Ordinal) ? null : value;
+
+    public static string ToSyntaxString(this Accessibility accessibility) =>
+        accessibility switch
+        {
+            Accessibility.Public => "public",
+            Accessibility.Private => "private",
+            Accessibility.Internal => "internal",
+            Accessibility.Protected => "protected",
+            _ => throw new NotSupportedException(),
+        };
 }
