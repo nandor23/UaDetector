@@ -132,7 +132,7 @@ public class RegexesGenerator : IIncrementalGenerator
 
             partial class {{property.ContainingClass}}
             {
-                private readonly static global::System.Collections.Generic.IReadOnlyList<{{property.ElementType}}> {{fieldName}} = {{valueExpr}};
+                private static readonly global::System.Collections.Generic.IReadOnlyList<{{property.ElementType}}> {{fieldName}} = {{valueExpr}};
 
                 {{property.PropertyAccessibility.ToSyntaxString()}} static partial global::System.Collections.Generic.IReadOnlyList <{{property.ElementType}}> {{property.PropertyName}} =>
                     {{fieldName}}; 
