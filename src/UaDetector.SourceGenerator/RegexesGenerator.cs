@@ -33,6 +33,7 @@ public class RegexesGenerator : IIncrementalGenerator
             )
             .Select((file, ct) =>
             {
+                // TODO: handle the deserialization for each file separately
                 var path = file.Path.Replace('\\', '/');
                 var json = file.GetText(ct)?.ToString();
 
