@@ -201,22 +201,13 @@ public class RegexesGenerator : IIncrementalGenerator
 
         for (int i = 0; i < list.Count; i++)
         {
-            sb.AppendLine(BuildRegexFieldDeclaration(list[i].Regex, i));
+            sb.AppendLine(
+                RegexHelper.BuildRegexFieldDeclaration($"{RegexMethodPrefix}{i}", list[i].Regex)
+            );
             sb.AppendLine();
         }
 
         return sb.ToString();
-    }
-
-    private static string BuildRegexFieldDeclaration(string pattern, int number)
-    {
-        return $"""
-            public static readonly global::System.Text.RegularExpressions.Regex {RegexMethodPrefix}{number} = 
-                new global::System.Text.RegularExpressions.Regex(
-                    @"{RegexHelper.BuildRegexPattern(pattern)}", 
-                    global::System.Text.RegularExpressions.RegexOptions.IgnoreCase | 
-                    global::System.Text.RegularExpressions.RegexOptions.Compiled);
-            """;
     }
 
     private static string GenerateCollectionInitializer(

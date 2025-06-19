@@ -13,7 +13,7 @@ internal static class RegexHelper
             """;
     }
 
-    public static string BuildRegexPattern(string pattern)
+    private static string BuildRegexPattern(string pattern)
     {
         return $"(?:^|[^A-Z0-9_-]|[^A-Z0-9-]_|sprd-|MZ-)(?:{pattern})";
     }
