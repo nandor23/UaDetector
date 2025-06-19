@@ -3,11 +3,11 @@ using System.Collections.Immutable;
 using System.Diagnostics.CodeAnalysis;
 using System.Text.RegularExpressions;
 using UaDetector.Attributes;
+using UaDetector.Models;
 using UaDetector.Models.Browsers;
 using UaDetector.Models.Constants;
 using UaDetector.Models.Enums;
 using UaDetector.Parsers.Browsers;
-using UaDetector.Regexes.Models;
 using UaDetector.Results;
 using UaDetector.Utils;
 
@@ -16,7 +16,7 @@ namespace UaDetector.Parsers;
 public sealed partial class BrowserParser : IBrowserParser
 {
     [Regexes("Regexes/Resources/Browsers/browsers.json")]
-    internal static partial IReadOnlyList<RegexRule<Browser>> Browsers { get; }
+    internal static partial IReadOnlyList<RuleDefinition<Browser>> Browsers { get; }
 
     private const string CacheKeyPrefix = "browser";
     private readonly IUaDetectorCache? _cache;
@@ -1621,13 +1621,13 @@ public sealed partial class BrowserParser : IBrowserParser
         Match? match = null;
         Browser? browser = null;
 
-        foreach (var rule in Browsers)
+        foreach (var browserRule in Browsers)
         {
-            match = rule.Regex.Match(userAgent);
+            match = browserRule.Regex.Match(userAgent);
 
             if (match.Success)
             {
-                browser = rule.Result;
+                browser = browserRule.Result;
                 break;
             }
         }

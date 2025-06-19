@@ -13,7 +13,7 @@
 
   <ItemGroup>
     <EmbeddedResource Include="Regexes\**\*.json" />
-    <AdditionalFiles Include="Regexes\**\*.json" />
+    <AdditionalFiles Include="Regexes\**\browsers.json" />
   </ItemGroup>
 
   <ItemGroup>

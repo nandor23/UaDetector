@@ -1,9 +1,9 @@
 using System.Collections.Immutable;
+using System.Text;
 using System.Text.Json;
-
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
-
+using UaDetector.Models;
 using UaDetector.Models.Browsers;
 
 namespace UaDetector.SourceGenerator;
@@ -11,6 +11,7 @@ namespace UaDetector.SourceGenerator;
 [Generator]
 public class RegexesGenerator : IIncrementalGenerator
 {
+    private const string RegexMethodPrefix = "Regex";
     private static readonly JsonSerializerOptions SerializerOptions = new()
     {
         PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
@@ -18,8 +19,8 @@ public class RegexesGenerator : IIncrementalGenerator
 
     public void Initialize(IncrementalGeneratorInitializationContext context)
     {
-        var provider = context.SyntaxProvider
-            .ForAttributeWithMetadataName(
+        var provider = context
+            .SyntaxProvider.ForAttributeWithMetadataName(
                 "UaDetector.Attributes.RegexesAttribute",
                 predicate: static (node, _) => node is PropertyDeclarationSyntax,
                 transform: GetSemanticTargetForGeneration
@@ -27,28 +28,18 @@ public class RegexesGenerator : IIncrementalGenerator
             .Where(static m => m is not null)
             .Select(static (m, _) => m!);
 
-        var additionalFiles = context.AdditionalTextsProvider
-            .Where(file =>
+        var additionalFiles = context
+            .AdditionalTextsProvider.Where(file =>
                 file.Path.EndsWith(".json", StringComparison.OrdinalIgnoreCase)
             )
-            .Select((file, ct) =>
-            {
-                // TODO: handle the deserialization for each file separately
-                var path = file.Path.Replace('\\', '/');
-                var json = file.GetText(ct)?.ToString();
-
-                if (json is not null)
+            .Select(
+                (file, ct) =>
                 {
-                    try
-                    {
-                        var list = JsonSerializer.Deserialize<List<BrowserRegex>>(json, SerializerOptions);
-                        return (path, List: list!.ToEquatableReadOnlyList());
-                    }
-                    catch { }
+                    var path = file.Path.Replace('\\', '/');
+                    var json = file.GetText(ct)?.ToString();
+                    return (path, json);
                 }
-
-                return (path, []);
-            })
+            )
             .Collect();
 
         context.RegisterSourceOutput(
@@ -65,7 +56,10 @@ public class RegexesGenerator : IIncrementalGenerator
         cancellationToken.ThrowIfCancellationRequested();
 
         var attribute = context.Attributes[0];
-        var path = attribute.ConstructorArguments.FirstOrDefault().Value?.ToString()?.Replace('\\', '/');
+        var path = attribute
+            .ConstructorArguments.FirstOrDefault()
+            .Value?.ToString()
+            ?.Replace('\\', '/');
 
         if (path is null)
             return null;
@@ -75,42 +69,64 @@ public class RegexesGenerator : IIncrementalGenerator
         var propertySymbol = (IPropertySymbol)context.TargetSymbol;
         var propertyType = propertySymbol.Type;
 
-        if (propertyType is not INamedTypeSymbol
+        if (
+            propertyType
+            is not INamedTypeSymbol
             {
                 OriginalDefinition.SpecialType: SpecialType.System_Collections_Generic_IReadOnlyList_T,
                 TypeArguments: [{ } elementType],
-            })
+            }
+        )
         {
             return null;
         }
 
         var containingClass = propertySymbol.ContainingSymbol;
-        var @namespace = containingClass.ContainingNamespace.ToString().NullIf("<global namespace>");
+        var @namespace = containingClass
+            .ContainingNamespace.ToString()
+            .NullIf("<global namespace>");
+
+        if (
+            elementType
+            is not INamedTypeSymbol
+            {
+                IsGenericType: true,
+                TypeArguments.Length: > 0
+            } namedElementType
+        )
+        {
+            throw new NotSupportedException(
+                $"Element type must be a generic type with one type argument: {elementType}"
+            );
+        }
 
         return new PropertyDeclarationInfo
         {
             PropertyName = propertySymbol.Name,
             ResourcePath = path,
             ContainingClass = containingClass.Name,
-            Namespace = @namespace != null ? $"namespace {@namespace};" : "",
+            Namespace = @namespace is not null ? $"namespace {@namespace};" : string.Empty,
             ElementType = elementType.ToDisplayString(SymbolDisplayFormat.FullyQualifiedFormat),
+            ElementGenericType = namedElementType
+                .TypeArguments[0]
+                .ToDisplayString(SymbolDisplayFormat.FullyQualifiedFormat),
             PropertyAccessibility = propertySymbol.DeclaredAccessibility,
         };
     }
 
     private static void Execute(
         PropertyDeclarationInfo property,
-        ImmutableArray<(string Path, EquatableReadOnlyList<BrowserRegex> List)> additionalFiles,
+        ImmutableArray<(string Path, string? Json)> additionalFiles,
         SourceProductionContext context
     )
     {
-        var (_, list) = additionalFiles.FirstOrDefault(file =>
+        (_, string? json) = additionalFiles.FirstOrDefault(file =>
             file.Path.EndsWith(property.ResourcePath, StringComparison.OrdinalIgnoreCase)
         );
 
-        if (list.Count > 0)
+        if (json is not null)
         {
-            var sourceCode = GenerateSource(property, list);
+            var sourceCode = GenerateSource(property, json);
 
             context.AddSource(
                 $"{property.ContainingClass}_{property.PropertyName}.g.cs",
@@ -119,13 +135,27 @@ public class RegexesGenerator : IIncrementalGenerator
         }
     }
 
-    private static string GenerateSource(
-        PropertyDeclarationInfo property,
-        EquatableReadOnlyList<BrowserRegex> list
-    )
+    private static string GenerateSource(PropertyDeclarationInfo property, string json)
     {
-        // TODO: convert `list` to a C# string
-        var valueExpr = "[]";
+        if (property.ElementGenericType is null)
+        {
+            throw new NotSupportedException();
+        }
+
+        string collectionInitializer;
+        string regexDefinitions;
+
+        if (property.ElementGenericType == GetGlobalQualifiedName<Browser>())
+        {
+            var list = DeserializeJson<BrowserRegex>(json);
+            regexDefinitions = GenerateBrowserRegexes(list);
+            collectionInitializer = GenerateCollectionInitializer(list, property);
+        }
+        else
+        {
+            throw new NotSupportedException();
+        }
+
         var fieldName = $"_{property.PropertyName}";
 
         return $$"""
@@ -133,12 +163,106 @@ public class RegexesGenerator : IIncrementalGenerator
 
             partial class {{property.ContainingClass}}
             {
-                private static readonly global::System.Collections.Generic.IReadOnlyList<{{property.ElementType}}> {{fieldName}} = {{valueExpr}};
+                {{regexDefinitions}}
+                
+                private static readonly global::System.Collections.Generic.IReadOnlyList<{{property.ElementType}}> {{fieldName}} = {{collectionInitializer}};
 
-                {{property.PropertyAccessibility.ToSyntaxString()}} static partial global::System.Collections.Generic.IReadOnlyList <{{property.ElementType}}> {{property.PropertyName}} =>
+                {{property.PropertyAccessibility.ToSyntaxString()}} static partial global::System.Collections.Generic.IReadOnlyList<{{property.ElementType}}> {{property.PropertyName}} =>
                     {{fieldName}}; 
             }
             """;
+    }
+
+    private static string GetGlobalQualifiedName<T>()
+    {
+        return $"global::{typeof(T).FullName}";
+    }
+
+    private static EquatableReadOnlyList<T> DeserializeJson<T>(string json)
+    {
+        try
+        {
+            var list = JsonSerializer
+                .Deserialize<List<T>>(json, SerializerOptions)
+                ?.ToEquatableReadOnlyList();
+
+            return list ?? [];
+        }
+        catch
+        {
+            // TODO: signal what went wrong
+            return [];
+        }
+    }
+
+    private static string GenerateBrowserRegexes(EquatableReadOnlyList<BrowserRegex> list)
+    {
+        var sb = new StringBuilder();
+
+        for (int i = 0; i < list.Count; i++)
+        {
+            sb.AppendLine(BuildRegexFieldDeclaration(list[i].Regex, i));
+            sb.AppendLine();
+        }
+
+        return sb.ToString();
+    }
+
+    private static string BuildRegexFieldDeclaration(string pattern, int number)
+    {
+        return $"""
+            public static readonly global::System.Text.RegularExpressions.Regex {RegexMethodPrefix}{number} = 
+                new global::System.Text.RegularExpressions.Regex(
+                    @"{RegexHelper.BuildRegexPattern(pattern)}", 
+                    global::System.Text.RegularExpressions.RegexOptions.IgnoreCase | 
+                    global::System.Text.RegularExpressions.RegexOptions.Compiled);
+            """;
+    }
+
+    private static string GenerateCollectionInitializer(
+        EquatableReadOnlyList<BrowserRegex> list,
+        PropertyDeclarationInfo property
+    )
+    {
+        if (list.Count == 0)
+        {
+            return "[]";
+        }
+
+        var sb = new StringBuilder();
+        var engineType = $"global::{typeof(Engine).FullName}";
+
+        sb.AppendLine("[");
+
+        for (int i = 0; i < list.Count; i++)
+        {
+            sb.AppendIndentedLine(1, $"new {property.ElementType}")
+                .AppendIndentedLine(1, "{")
+                .AppendIndentedLine(
+                    2,
+                    $"{nameof(RuleDefinition<Browser>.Regex)} = {RegexMethodPrefix}{i},"
+                )
+                .AppendIndentedLine(
+                    2,
+                    $"{nameof(RuleDefinition<Browser>.Result)} = new {property.ElementGenericType}"
+                )
+                .AppendIndentedLine(2, "{")
+                .AppendIndentedLine(3, $"{nameof(Browser.Name)} = \"{list[i].Name}\",");
+
+            if (list[i].Version is not null)
+            {
+                sb.AppendIndentedLine(3, $"{nameof(Browser.Version)} = \"{list[i].Version}\",");
+            }
+
+            sb.AppendIndentedLine(2, "},");
+            sb.AppendIndentedLine(1, "},");
+        }
+
+        sb.Append("]");
+
+        var a = sb.ToString();
+
+        return sb.ToString();
     }
 
     private sealed class PropertyDeclarationInfo
@@ -148,6 +272,7 @@ public class RegexesGenerator : IIncrementalGenerator
         public required string ContainingClass { get; init; }
         public required string? Namespace { get; init; }
         public required string ElementType { get; init; }
+        public required string ElementGenericType { get; init; }
         public required Accessibility PropertyAccessibility { get; init; }
     }
 }

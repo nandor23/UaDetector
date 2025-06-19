@@ -1,8 +1,8 @@
 using System.Text.RegularExpressions;
 
-namespace UaDetector.Regexes.Models;
+namespace UaDetector.Models;
 
-public sealed class RegexRule<T>
+public sealed class RuleDefinition<T>
 {
     public required Regex Regex { get; init; }
     public required T Result { get; init; }
