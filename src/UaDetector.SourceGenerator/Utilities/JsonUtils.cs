@@ -1,4 +1,5 @@
 using System.Text.Json;
+using UaDetector.SourceGenerator.Collections;
 
 namespace UaDetector.SourceGenerator.Utilities;
 

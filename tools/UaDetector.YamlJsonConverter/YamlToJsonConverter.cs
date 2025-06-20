@@ -2,7 +2,6 @@ using System.Collections.Frozen;
 using System.Text.Encodings.Web;
 using System.Text.Json;
 using System.Text.Json.Serialization;
-
 using UaDetector.Models.Browsers;
 using UaDetector.Models.Enums;
 using UaDetector.Parsers;

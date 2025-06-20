@@ -2,7 +2,7 @@ using System.Text;
 
 namespace UaDetector.SourceGenerator.Utilities;
 
-public static class StringBuilderExtensions
+internal static class StringBuilderExtensions
 {
     public static StringBuilder AppendIndentedLine(
         this StringBuilder sb,

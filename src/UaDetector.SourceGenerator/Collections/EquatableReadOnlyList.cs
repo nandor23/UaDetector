@@ -1,10 +1,10 @@
 using System.Collections;
 using System.Diagnostics.CodeAnalysis;
 
-namespace UaDetector.SourceGenerator.Utilities;
+namespace UaDetector.SourceGenerator.Collections;
 
 [ExcludeFromCodeCoverage]
-public static class EquatableReadOnlyList
+internal static class EquatableReadOnlyList
 {
     public static EquatableReadOnlyList<T> ToEquatableReadOnlyList<T>(
         this IEnumerable<T> enumerable
@@ -15,7 +15,7 @@ public static class EquatableReadOnlyList
 /// A wrapper for IReadOnlyList that provides value equality support for the wrapped list.
 /// </summary>
 [ExcludeFromCodeCoverage]
-public readonly struct EquatableReadOnlyList<T>(IReadOnlyList<T>? collection)
+internal readonly struct EquatableReadOnlyList<T>(IReadOnlyList<T>? collection)
     : IEquatable<EquatableReadOnlyList<T>>,
         IReadOnlyList<T>
 {
@@ -41,6 +41,7 @@ public readonly struct EquatableReadOnlyList<T>(IReadOnlyList<T>? collection)
     IEnumerator IEnumerable.GetEnumerator() => Collection.GetEnumerator();
 
     public int Count => Collection.Count;
+
     public T this[int index] => Collection[index];
 
     public static bool operator ==(EquatableReadOnlyList<T> left, EquatableReadOnlyList<T> right) =>
