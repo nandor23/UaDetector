@@ -14,7 +14,7 @@ public class RegexesGenerator : IIncrementalGenerator
     {
         var provider = context
             .SyntaxProvider.ForAttributeWithMetadataName(
-                "UaDetector.Attributes.RegexesAttribute",
+                "UaDetector.Attributes.RegexDefinitionsAttribute",
                 predicate: static (node, _) => node is PropertyDeclarationSyntax,
                 transform: GetSemanticTargetForGeneration
             )

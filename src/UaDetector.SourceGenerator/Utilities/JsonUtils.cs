@@ -8,7 +8,7 @@ internal static class JsonUtils
     {
         PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
     };
-    
+
     public static EquatableReadOnlyList<T> DeserializeJson<T>(string json)
     {
         try

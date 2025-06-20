@@ -1,5 +1,4 @@
 using System.Text;
-
 using UaDetector.Models;
 using UaDetector.Models.Browsers;
 using UaDetector.SourceGenerator.Utilities;
@@ -9,17 +8,20 @@ namespace UaDetector.SourceGenerator.Generators;
 internal static class BrowserSourceGenerator
 {
     private const string RegexMethodPrefix = "Regex";
-    
-    
+
     public static string Generate(PropertyDeclarationInfo property, string json)
     {
         var list = JsonUtils.DeserializeJson<BrowserRegex>(json);
         var regexDeclarations = GenerateRegexDeclarations(list);
         var collectionInitializer = GenerateCollectionInitializer(list, property);
 
-        return SourceCodeBuilder.BuildClassSourceCode(property, regexDeclarations, collectionInitializer);
+        return SourceCodeBuilder.BuildClassSourceCode(
+            property,
+            regexDeclarations,
+            collectionInitializer
+        );
     }
-    
+
     private static string GenerateRegexDeclarations(EquatableReadOnlyList<BrowserRegex> list)
     {
         var sb = new StringBuilder();

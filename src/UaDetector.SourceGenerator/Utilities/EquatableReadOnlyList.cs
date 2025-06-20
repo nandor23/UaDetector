@@ -12,7 +12,7 @@ public static class EquatableReadOnlyList
 }
 
 /// <summary>
-///     A wrapper for IReadOnlyList that provides value equality support for the wrapped list.
+/// A wrapper for IReadOnlyList that provides value equality support for the wrapped list.
 /// </summary>
 [ExcludeFromCodeCoverage]
 public readonly struct EquatableReadOnlyList<T>(IReadOnlyList<T>? collection)

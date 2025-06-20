@@ -1,11 +1,11 @@
 namespace UaDetector.Attributes;
 
 [AttributeUsage(AttributeTargets.Property)]
-public sealed class RegexesAttribute : Attribute
+public sealed class RegexDefinitionsAttribute : Attribute
 {
     public string FilePath { get; }
 
-    public RegexesAttribute(string filePath)
+    public RegexDefinitionsAttribute(string filePath)
     {
         if (
             string.IsNullOrWhiteSpace(filePath)
