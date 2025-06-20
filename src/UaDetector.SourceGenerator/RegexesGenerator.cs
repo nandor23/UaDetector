@@ -245,13 +245,43 @@ public class RegexesGenerator : IIncrementalGenerator
                 sb.AppendIndentedLine(3, $"{nameof(Browser.Version)} = \"{list[i].Version}\",");
             }
 
+            if (list[i].Engine is not null)
+            {
+                sb.AppendIndentedLine(3, $"{nameof(Browser.Engine)} = new {engineType}")
+                    .AppendIndentedLine(3, "{");
+
+                if (list[i].Engine?.Default is { } defaultEngine)
+                {
+                    sb.AppendIndentedLine(
+                        4,
+                        $"{nameof(Browser.Engine.Default)} = \"{defaultEngine}\","
+                    );
+                }
+
+                if (list[i].Engine?.Versions is { Count: > 0 } engineVersions)
+                {
+                    sb.AppendIndentedLine(
+                            4,
+                            $"{nameof(Browser.Engine.Versions)} = new Dictionary<string, string>"
+                        )
+                        .AppendIndentedLine(4, "{");
+
+                    foreach (var version in engineVersions)
+                    {
+                        sb.AppendIndentedLine(5, $"{{ \"{version.Key}\", \"{version.Value}\" }},");
+                    }
+
+                    sb.AppendIndentedLine(4, "},");
+                }
+
+                sb.AppendIndentedLine(3, "},");
+            }
+
             sb.AppendIndentedLine(2, "},");
             sb.AppendIndentedLine(1, "},");
         }
 
-        sb.Append("]");
-
-        var a = sb.ToString();
+        sb.AppendLine("]");
 
         return sb.ToString();
     }
