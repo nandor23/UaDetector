@@ -1,6 +1,6 @@
-namespace UaDetector.SourceGenerator;
+namespace UaDetector.SourceGenerator.Utilities;
 
-internal static class RegexHelper
+internal static class RegexBuilder
 {
     public static string BuildRegexFieldDeclaration(string methodName, string pattern)
     {

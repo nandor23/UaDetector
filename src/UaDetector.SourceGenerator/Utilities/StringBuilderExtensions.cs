@@ -1,6 +1,6 @@
 using System.Text;
 
-namespace UaDetector.SourceGenerator;
+namespace UaDetector.SourceGenerator.Utilities;
 
 public static class StringBuilderExtensions
 {

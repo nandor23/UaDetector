@@ -1,14 +1,14 @@
 using System.Collections;
 using System.Diagnostics.CodeAnalysis;
 
-namespace UaDetector.SourceGenerator;
+namespace UaDetector.SourceGenerator.Utilities;
 
 [ExcludeFromCodeCoverage]
 public static class EquatableReadOnlyList
 {
     public static EquatableReadOnlyList<T> ToEquatableReadOnlyList<T>(
         this IEnumerable<T> enumerable
-    ) => new(enumerable is IReadOnlyList<T> l ? l : [.. enumerable]);
+    ) => new(enumerable as IReadOnlyList<T> ?? [.. enumerable]);
 }
 
 /// <summary>
