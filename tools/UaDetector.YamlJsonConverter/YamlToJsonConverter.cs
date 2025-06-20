@@ -2,6 +2,7 @@ using System.Collections.Frozen;
 using System.Text.Encodings.Web;
 using System.Text.Json;
 using System.Text.Json.Serialization;
+
 using UaDetector.Models.Browsers;
 using UaDetector.Models.Enums;
 using UaDetector.Parsers;
@@ -10,7 +11,8 @@ using UaDetector.Regexes.Models;
 using UaDetector.Results;
 using UaDetector.Tests.Fixtures.Models;
 using UaDetector.YamlJsonConverter.Fixtures;
-using UaDetector.YamlJsonConverter.Models;
+using UaDetector.YamlJsonConverter.Models.Json;
+using UaDetector.YamlJsonConverter.Models.Yaml;
 using UaDetector.YamlJsonConverter.Utils;
 using Os = UaDetector.Regexes.Models.Os;
 
@@ -99,7 +101,7 @@ public static class YamlToJsonConverter
             Path.Combine(BaseDirectory, BrowsersFile + ".yml")
         );
 
-        var result = entries.Select(x => new BrowserRegex
+        var result = entries.Select(x => new BrowserJson
         {
             Regex = x.Regex,
             Name = x.Name,

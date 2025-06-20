@@ -1,7 +1,8 @@
 using System.Text.RegularExpressions;
+
 using YamlDotNet.Serialization;
 
-namespace UaDetector.YamlJsonConverter.Models;
+namespace UaDetector.YamlJsonConverter.Models.Yaml;
 
 public sealed class DeviceModelYaml
 {

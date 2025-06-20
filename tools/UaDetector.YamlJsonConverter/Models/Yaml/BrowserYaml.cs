@@ -1,4 +1,4 @@
-namespace UaDetector.YamlJsonConverter.Models;
+namespace UaDetector.YamlJsonConverter.Models.Yaml;
 
 public class BrowserYaml
 {

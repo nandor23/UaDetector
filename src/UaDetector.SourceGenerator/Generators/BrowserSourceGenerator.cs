@@ -1,6 +1,7 @@
 using System.Text;
 using UaDetector.Models;
 using UaDetector.Models.Browsers;
+using UaDetector.SourceGenerator.Models;
 using UaDetector.SourceGenerator.Utilities;
 
 namespace UaDetector.SourceGenerator.Generators;
@@ -11,7 +12,7 @@ internal static class BrowserSourceGenerator
 
     public static string Generate(PropertyDeclarationInfo property, string json)
     {
-        var list = JsonUtils.DeserializeJson<BrowserRegex>(json);
+        var list = JsonUtils.DeserializeJson<BrowserRule>(json);
         var regexDeclarations = GenerateRegexDeclarations(list);
         var collectionInitializer = GenerateCollectionInitializer(list, property);
 
@@ -22,7 +23,7 @@ internal static class BrowserSourceGenerator
         );
     }
 
-    private static string GenerateRegexDeclarations(EquatableReadOnlyList<BrowserRegex> list)
+    private static string GenerateRegexDeclarations(EquatableReadOnlyList<BrowserRule> list)
     {
         var sb = new StringBuilder();
 
@@ -38,7 +39,7 @@ internal static class BrowserSourceGenerator
     }
 
     private static string GenerateCollectionInitializer(
-        EquatableReadOnlyList<BrowserRegex> list,
+        EquatableReadOnlyList<BrowserRule> list,
         PropertyDeclarationInfo property
     )
     {
