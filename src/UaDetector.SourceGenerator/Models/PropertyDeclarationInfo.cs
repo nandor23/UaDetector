@@ -1,6 +1,6 @@
 using Microsoft.CodeAnalysis;
 
-namespace UaDetector.SourceGenerator;
+namespace UaDetector.SourceGenerator.Models;
 
 internal sealed class PropertyDeclarationInfo
 {

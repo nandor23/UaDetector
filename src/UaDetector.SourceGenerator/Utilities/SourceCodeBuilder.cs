@@ -1,5 +1,7 @@
 using Microsoft.CodeAnalysis;
 
+using UaDetector.SourceGenerator.Models;
+
 namespace UaDetector.SourceGenerator.Utilities;
 
 internal static class SourceCodeBuilder

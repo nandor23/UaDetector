@@ -3,6 +3,7 @@ using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using UaDetector.Models.Browsers;
 using UaDetector.SourceGenerator.Generators;
+using UaDetector.SourceGenerator.Models;
 using UaDetector.SourceGenerator.Utilities;
 
 namespace UaDetector.SourceGenerator;
