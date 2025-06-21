@@ -49,68 +49,63 @@ internal static class BrowserSourceGenerator
             return "[]";
         }
 
-        var sb = new StringBuilder();
+        var sb = new IndentedStringBuilder();
         var engineType = $"global::{typeof(Engine).FullName}";
 
-        sb.AppendLine("[");
+        sb.AppendLine("[").Indent();
 
         for (int i = 0; i < list.Count; i++)
         {
-            sb.AppendIndentedLine(1, $"new {property.ElementType}")
-                .AppendIndentedLine(1, "{")
-                .AppendIndentedLine(
-                    2,
-                    $"{nameof(RuleDefinition<Browser>.Regex)} = {RegexMethodPrefix}{i},"
-                )
-                .AppendIndentedLine(
-                    2,
+            sb.AppendLine($"new {property.ElementType}")
+                .AppendLine("{")
+                .Indent()
+                .AppendLine($"{nameof(RuleDefinition<Browser>.Regex)} = {RegexMethodPrefix}{i},")
+                .AppendLine(
                     $"{nameof(RuleDefinition<Browser>.Result)} = new {property.ElementGenericType}"
                 )
-                .AppendIndentedLine(2, "{")
-                .AppendIndentedLine(3, $"{nameof(Browser.Name)} = \"{list[i].Name}\",");
+                .AppendLine("{")
+                .Indent()
+                .AppendLine($"{nameof(Browser.Name)} = \"{list[i].Name}\",");
 
             if (list[i].Version is not null)
             {
-                sb.AppendIndentedLine(3, $"{nameof(Browser.Version)} = \"{list[i].Version}\",");
+                sb.AppendLine($"{nameof(Browser.Version)} = \"{list[i].Version}\",");
             }
 
             if (list[i].Engine is not null)
             {
-                sb.AppendIndentedLine(3, $"{nameof(Browser.Engine)} = new {engineType}")
-                    .AppendIndentedLine(3, "{");
+                sb.AppendLine($"{nameof(Browser.Engine)} = new {engineType}")
+                    .AppendLine("{")
+                    .Indent();
 
                 if (list[i].Engine?.Default is { } defaultEngine)
                 {
-                    sb.AppendIndentedLine(
-                        4,
-                        $"{nameof(Browser.Engine.Default)} = \"{defaultEngine}\","
-                    );
+                    sb.AppendLine($"{nameof(Browser.Engine.Default)} = \"{defaultEngine}\",");
                 }
 
                 if (list[i].Engine?.Versions is { Count: > 0 } engineVersions)
                 {
-                    sb.AppendIndentedLine(
-                            4,
+                    sb.AppendLine(
                             $"{nameof(Browser.Engine.Versions)} = new Dictionary<string, string>"
                         )
-                        .AppendIndentedLine(4, "{");
+                        .AppendLine("{")
+                        .Indent();
 
                     foreach (var version in engineVersions)
                     {
-                        sb.AppendIndentedLine(5, $"{{ \"{version.Key}\", \"{version.Value}\" }},");
+                        sb.AppendLine($"{{ \"{version.Key}\", \"{version.Value}\" }},");
                     }
 
-                    sb.AppendIndentedLine(4, "},");
+                    sb.Unindent().AppendLine("},");
                 }
 
-                sb.AppendIndentedLine(3, "},");
+                sb.Unindent().AppendLine("},");
             }
 
-            sb.AppendIndentedLine(2, "},");
-            sb.AppendIndentedLine(1, "},");
+            sb.Unindent().AppendLine("},").Unindent().AppendLine("},");
         }
 
-        sb.AppendLine("]");
+        sb.Unindent().AppendLine("]");
 
         return sb.ToString();
     }

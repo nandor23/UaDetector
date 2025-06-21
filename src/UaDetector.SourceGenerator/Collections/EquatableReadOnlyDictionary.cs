@@ -12,7 +12,8 @@ internal readonly struct EquatableReadOnlyDictionary<TKey, TValue>(
 ) : IEquatable<EquatableReadOnlyDictionary<TKey, TValue>>, IReadOnlyDictionary<TKey, TValue>
     where TKey : notnull
 {
-    private IReadOnlyDictionary<TKey, TValue> Dictionary => dictionary ?? new Dictionary<TKey, TValue>();
+    private IReadOnlyDictionary<TKey, TValue> Dictionary =>
+        dictionary ?? new Dictionary<TKey, TValue>();
 
     public bool Equals(EquatableReadOnlyDictionary<TKey, TValue> other)
     {

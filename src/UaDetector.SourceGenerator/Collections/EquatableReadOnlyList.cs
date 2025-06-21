@@ -3,14 +3,6 @@ using System.Diagnostics.CodeAnalysis;
 
 namespace UaDetector.SourceGenerator.Collections;
 
-[ExcludeFromCodeCoverage]
-internal static class EquatableReadOnlyList
-{
-    public static EquatableReadOnlyList<T> ToEquatableReadOnlyList<T>(
-        this IEnumerable<T> enumerable
-    ) => new(enumerable as IReadOnlyList<T> ?? [.. enumerable]);
-}
-
 /// <summary>
 /// A wrapper for IReadOnlyList that provides value equality support for the wrapped list.
 /// </summary>
