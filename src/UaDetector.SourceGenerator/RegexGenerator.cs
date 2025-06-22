@@ -9,15 +9,24 @@ using UaDetector.SourceGenerator.Utilities;
 namespace UaDetector.SourceGenerator;
 
 [Generator]
-public class RegexesGenerator : IIncrementalGenerator
+public sealed class RegexGenerator : IIncrementalGenerator
 {
     public void Initialize(IncrementalGeneratorInitializationContext context)
     {
-        var provider = context
+        var regexSourceProvider = context
             .SyntaxProvider.ForAttributeWithMetadataName(
                 "UaDetector.Attributes.RegexSource",
                 predicate: static (node, _) => node is PropertyDeclarationSyntax,
-                transform: GetSemanticTargetForGeneration
+                transform: GetRegexSourceForGeneration
+            )
+            .Where(static m => m is not null)
+            .Select(static (m, _) => m!);
+
+        var combinedRegexProvider = context
+            .SyntaxProvider.ForAttributeWithMetadataName(
+                "UaDetector.Attributes.CombinedRegex",
+                predicate: static (node, _) => node is PropertyDeclarationSyntax,
+                transform: GetCombinedRegexForGeneration
             )
             .Where(static m => m is not null)
             .Select(static (m, _) => m!);
@@ -37,12 +46,12 @@ public class RegexesGenerator : IIncrementalGenerator
             .Collect();
 
         context.RegisterSourceOutput(
-            provider.Combine(additionalFiles),
-            static (spc, source) => Execute(source.Left, source.Right, spc)
+            regexSourceProvider.Combine(combinedRegexProvider.Collect()).Combine(additionalFiles),
+            static (spc, source) => Execute(source.Left.Left, source.Left.Right, source.Right, spc)
         );
     }
 
-    private static RegexSourceProperty? GetSemanticTargetForGeneration(
+    private static RegexSourceProperty? GetRegexSourceForGeneration(
         GeneratorAttributeSyntaxContext context,
         CancellationToken cancellationToken
     )
@@ -56,7 +65,9 @@ public class RegexesGenerator : IIncrementalGenerator
             ?.Replace('\\', '/');
 
         if (path is null)
+        {
             return null;
+        }
 
         cancellationToken.ThrowIfCancellationRequested();
 
@@ -68,7 +79,9 @@ public class RegexesGenerator : IIncrementalGenerator
             is not INamedTypeSymbol
             {
                 OriginalDefinition.SpecialType: SpecialType.System_Collections_Generic_IReadOnlyList_T,
-                TypeArguments: [{ } elementType],
+                TypeArguments: [
+                    INamedTypeSymbol { IsGenericType: true, TypeArguments.Length: > 0 } elementType,
+                ],
             }
         )
         {
@@ -80,36 +93,54 @@ public class RegexesGenerator : IIncrementalGenerator
             .ContainingNamespace.ToString()
             .NullIf("<global namespace>");
 
-        if (
-            elementType
-            is not INamedTypeSymbol
-            {
-                IsGenericType: true,
-                TypeArguments.Length: > 0
-            } namedElementType
-        )
-        {
-            throw new NotSupportedException(
-                $"Element type must be a generic type with one type argument: {elementType}"
-            );
-        }
-
         return new RegexSourceProperty
         {
             PropertyName = propertySymbol.Name,
             ResourcePath = path,
             ContainingClass = containingClass.Name,
+            ContainingClassFullName = containingClass.ToDisplayString(
+                SymbolDisplayFormat.FullyQualifiedFormat
+            ),
             Namespace = @namespace is not null ? $"namespace {@namespace};" : string.Empty,
             ElementType = elementType.ToDisplayString(SymbolDisplayFormat.FullyQualifiedFormat),
-            ElementGenericType = namedElementType
+            ElementGenericType = elementType
                 .TypeArguments[0]
                 .ToDisplayString(SymbolDisplayFormat.FullyQualifiedFormat),
             PropertyAccessibility = propertySymbol.DeclaredAccessibility,
         };
     }
 
+    private static CombinedRegexProperty? GetCombinedRegexForGeneration(
+        GeneratorAttributeSyntaxContext context,
+        CancellationToken cancellationToken
+    )
+    {
+        cancellationToken.ThrowIfCancellationRequested();
+
+        var propertySymbol = (IPropertySymbol)context.TargetSymbol;
+        var containingClass = propertySymbol.ContainingSymbol;
+
+        if (
+            propertySymbol.Type.ToDisplayString(SymbolDisplayFormat.FullyQualifiedFormat)
+            != "global::System.Text.RegularExpressions.Regex"
+        )
+        {
+            return null;
+        }
+
+        return new CombinedRegexProperty
+        {
+            PropertyName = propertySymbol.Name,
+            ContainingClassFullName = containingClass.ToDisplayString(
+                SymbolDisplayFormat.FullyQualifiedFormat
+            ),
+            PropertyAccessibility = propertySymbol.DeclaredAccessibility,
+        };
+    }
+
     private static void Execute(
         RegexSourceProperty regexSourceProperty,
+        ImmutableArray<CombinedRegexProperty> combinedRegexProperties,
         ImmutableArray<(string Path, string? Json)> additionalFiles,
         SourceProductionContext context
     )
@@ -120,7 +151,20 @@ public class RegexesGenerator : IIncrementalGenerator
 
         if (json is not null)
         {
-            var sourceCode = GenerateSource(regexSourceProperty, json);
+            var usageCount = combinedRegexProperties.Count(r =>
+                r.ContainingClassFullName == regexSourceProperty.ContainingClassFullName
+            );
+
+            if (usageCount > 1)
+            {
+                return;
+            }
+
+            var combinedRegexProperty = combinedRegexProperties.FirstOrDefault(p =>
+                p.ContainingClassFullName == regexSourceProperty.ContainingClassFullName
+            );
+
+            var sourceCode = GenerateSource(json, regexSourceProperty, combinedRegexProperty);
 
             context.AddSource(
                 $"{regexSourceProperty.ContainingClass}_{regexSourceProperty.PropertyName}.g.cs",
@@ -129,7 +173,11 @@ public class RegexesGenerator : IIncrementalGenerator
         }
     }
 
-    private static string GenerateSource(RegexSourceProperty regexSourceProperty, string json)
+    private static string GenerateSource(
+        string json,
+        RegexSourceProperty regexSourceProperty,
+        CombinedRegexProperty? combinedRegexProperty
+    )
     {
         if (regexSourceProperty.ElementGenericType is null)
         {
@@ -138,7 +186,11 @@ public class RegexesGenerator : IIncrementalGenerator
 
         if (regexSourceProperty.ElementGenericType == GetGlobalQualifiedName<Browser>())
         {
-            return BrowserSourceGenerator.Generate(regexSourceProperty, json);
+            return BrowserSourceGenerator.Generate(
+                json,
+                regexSourceProperty,
+                combinedRegexProperty
+            );
         }
         else
         {

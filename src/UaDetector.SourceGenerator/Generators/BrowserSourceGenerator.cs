@@ -11,16 +11,26 @@ internal static class BrowserSourceGenerator
 {
     private const string RegexMethodPrefix = "Regex";
 
-    public static string Generate(RegexSourceProperty regexSourceProperty, string json)
+    public static string Generate(
+        string json,
+        RegexSourceProperty regexSourceProperty,
+        CombinedRegexProperty? combinedRegexProperty
+    )
     {
         var list = JsonUtils.DeserializeJson<BrowserRule>(json);
         var regexDeclarations = GenerateRegexDeclarations(list);
         var collectionInitializer = GenerateCollectionInitializer(list, regexSourceProperty);
 
+        var combinedRegexDeclaration = RegexBuilder.BuildCombinedRegexFieldDeclaration(
+            combinedRegexProperty,
+            string.Join("|", list.Reverse().Select(x => x.Regex))
+        );
+
         return SourceCodeBuilder.BuildClassSourceCode(
             regexSourceProperty,
             regexDeclarations,
-            collectionInitializer
+            collectionInitializer,
+            combinedRegexDeclaration
         );
     }
 
