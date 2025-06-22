@@ -7,9 +7,12 @@ namespace UaDetector.Parsers.Clients;
 internal static class AppHintParser
 {
     private const string ResourceName = "Regexes.Resources.Clients.app_hints.json";
-    internal static readonly FrozenDictionary<string, string> Hints = RegexLoader.LoadHints(
-        ResourceName
-    );
+    internal static readonly FrozenDictionary<string, string> Hints;
+
+    static AppHintParser()
+    {
+        Hints = RegexLoader.LoadHints(ResourceName);
+    }
 
     public static bool IsMobileApp(ClientHints clientHints)
     {
