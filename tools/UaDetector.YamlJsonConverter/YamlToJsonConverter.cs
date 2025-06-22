@@ -112,7 +112,7 @@ public static class YamlToJsonConverter
                     && (x.Engine.Versions is null || x.Engine.Versions.Count == 0)
                 )
                     ? null
-                    : new Engine
+                    : new BrowserEngine
                     {
                         Default = string.IsNullOrEmpty(x.Engine.Default) ? null : x.Engine.Default,
                         Versions =

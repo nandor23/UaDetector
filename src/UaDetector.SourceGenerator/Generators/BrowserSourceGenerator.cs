@@ -60,7 +60,7 @@ internal static class BrowserSourceGenerator
         }
 
         var sb = new IndentedStringBuilder();
-        var engineType = $"global::{typeof(Engine).FullName}";
+        var engineType = $"global::{typeof(BrowserEngine).FullName}";
 
         sb.AppendLine("[").Indent();
 

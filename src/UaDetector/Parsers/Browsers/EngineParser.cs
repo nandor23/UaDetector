@@ -10,7 +10,7 @@ namespace UaDetector.Parsers.Browsers;
 internal static class EngineParser
 {
     private const string ResourceName = "Regexes.Resources.Browsers.browser_engines.json";
-    private static readonly IReadOnlyList<BrowserEngine> Engines;
+    private static readonly IReadOnlyList<Engine> Engines;
     private static readonly Regex CombinedRegex;
 
     internal static readonly FrozenSet<string> EngineNames = new[]
@@ -39,7 +39,7 @@ internal static class EngineParser
 
     static EngineParser()
     {
-        (Engines, CombinedRegex) = RegexLoader.LoadRegexesWithCombined<BrowserEngine>(ResourceName);
+        (Engines, CombinedRegex) = RegexLoader.LoadRegexesWithCombined<Engine>(ResourceName);
     }
 
     public static bool TryParse(string userAgent, [NotNullWhen(true)] out string? result)
@@ -51,7 +51,7 @@ internal static class EngineParser
         }
 
         Match? match = null;
-        BrowserEngine? engine = null;
+        Engine? engine = null;
 
         foreach (var enginePattern in Engines)
         {
