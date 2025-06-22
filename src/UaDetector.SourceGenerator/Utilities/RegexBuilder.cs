@@ -8,10 +8,10 @@ internal static class RegexBuilder
     {
         return $"""
             private static readonly global::System.Text.RegularExpressions.Regex {methodName} = 
-                new global::System.Text.RegularExpressions.Regex(
-                    @"{BuildRegexPattern(pattern)}", 
-                    global::System.Text.RegularExpressions.RegexOptions.IgnoreCase | 
-                    global::System.Text.RegularExpressions.RegexOptions.Compiled);
+                    new global::System.Text.RegularExpressions.Regex(
+                        @"{BuildRegexPattern(pattern)}", 
+                        global::System.Text.RegularExpressions.RegexOptions.IgnoreCase | 
+                        global::System.Text.RegularExpressions.RegexOptions.Compiled);
             """;
     }
 
@@ -29,10 +29,10 @@ internal static class RegexBuilder
 
         return $"""
             private static readonly global::System.Text.RegularExpressions.Regex {fieldName} = 
-                new global::System.Text.RegularExpressions.Regex(
-                    @"{BuildRegexPattern(pattern)}", 
-                    global::System.Text.RegularExpressions.RegexOptions.IgnoreCase | 
-                    global::System.Text.RegularExpressions.RegexOptions.Compiled);
+                    new global::System.Text.RegularExpressions.Regex(
+                        @"{BuildRegexPattern(pattern)}", 
+                        global::System.Text.RegularExpressions.RegexOptions.IgnoreCase | 
+                        global::System.Text.RegularExpressions.RegexOptions.Compiled);
 
                 {combinedRegexProperty.PropertyAccessibility.ToSyntaxString()} static partial global::System.Text.RegularExpressions.Regex {combinedRegexProperty.PropertyName} => {fieldName}; 
             """;

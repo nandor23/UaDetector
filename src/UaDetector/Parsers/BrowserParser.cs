@@ -1478,7 +1478,11 @@ public sealed partial class BrowserParser : IBrowserParser
         return false;
     }
 
-    private static string? BuildEngine(string userAgent, BrowserEngine? engine, string? browserVersion)
+    private static string? BuildEngine(
+        string userAgent,
+        BrowserEngine? engine,
+        string? browserVersion
+    )
     {
         var result = engine?.Default;
 

@@ -1,17 +1,20 @@
 using System.Collections.Frozen;
 using System.Diagnostics.CodeAnalysis;
 using System.Text.RegularExpressions;
+using UaDetector.Attributes;
+using UaDetector.Models;
 using UaDetector.Models.Browsers;
 using UaDetector.Models.Constants;
-using UaDetector.Utilities;
 
 namespace UaDetector.Parsers.Browsers;
 
-internal static class EngineParser
+internal static partial class EngineParser
 {
-    private const string ResourceName = "Regexes.Resources.Browsers.browser_engines.json";
-    private static readonly IReadOnlyList<Engine> Engines;
-    private static readonly Regex CombinedRegex;
+    [RegexSource("Regexes/Resources/Browsers/browser_engines.json")]
+    private static partial IReadOnlyList<RuleDefinition<Engine>> Engines { get; }
+
+    [CombinedRegex]
+    private static partial Regex CombinedRegex { get; }
 
     internal static readonly FrozenSet<string> EngineNames = new[]
     {
@@ -37,11 +40,6 @@ internal static class EngineParser
         BrowserEngines.Maple,
     }.ToFrozenSet(StringComparer.OrdinalIgnoreCase);
 
-    static EngineParser()
-    {
-        (Engines, CombinedRegex) = RegexLoader.LoadRegexesWithCombined<Engine>(ResourceName);
-    }
-
     public static bool TryParse(string userAgent, [NotNullWhen(true)] out string? result)
     {
         if (!CombinedRegex.IsMatch(userAgent))
@@ -53,13 +51,13 @@ internal static class EngineParser
         Match? match = null;
         Engine? engine = null;
 
-        foreach (var enginePattern in Engines)
+        foreach (var engineRule in Engines)
         {
-            match = enginePattern.Regex.Match(userAgent);
+            match = engineRule.Regex.Match(userAgent);
 
             if (match.Success)
             {
-                engine = enginePattern;
+                engine = engineRule.Result;
                 break;
             }
         }

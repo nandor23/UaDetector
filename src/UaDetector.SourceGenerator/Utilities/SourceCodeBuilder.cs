@@ -1,3 +1,4 @@
+using System.Text;
 using UaDetector.SourceGenerator.Models;
 
 namespace UaDetector.SourceGenerator.Utilities;
@@ -12,21 +13,32 @@ internal static class SourceCodeBuilder
     )
     {
         var fieldName = $"_{regexSourceProperty.PropertyName}";
+        var classModifier = regexSourceProperty.IsStaticClass ? "static partial" : "partial";
 
-        return $$"""
+        var sb = new StringBuilder();
+
+        sb.AppendLine(
+            $$"""
             {{regexSourceProperty.Namespace}}
 
-            partial class {{regexSourceProperty.ContainingClass}}
+            {{classModifier}} class {{regexSourceProperty.ContainingClass}}
             {
                 {{regexDeclarations}}
                 
                 private static readonly global::System.Collections.Generic.IReadOnlyList<{{regexSourceProperty.ElementType}}> {{fieldName}} = {{collectionInitializer}};
 
-                {{regexSourceProperty.PropertyAccessibility.ToSyntaxString()}} static partial global::System.Collections.Generic.IReadOnlyList<{{regexSourceProperty.ElementType}}> {{regexSourceProperty.PropertyName}} =>
-                    {{fieldName}};
+                {{regexSourceProperty.PropertyAccessibility.ToSyntaxString()}} static partial global::System.Collections.Generic.IReadOnlyList<{{regexSourceProperty.ElementType}}> {{regexSourceProperty.PropertyName}} => {{fieldName}};
+            """
+        );
 
-                {{combinedRegexDeclaration ?? string.Empty}}
-            }
-            """;
+        if (combinedRegexDeclaration is not null)
+        {
+            sb.AppendLine();
+            sb.AppendLine($"    {combinedRegexDeclaration}");
+        }
+
+        sb.AppendLine("}");
+
+        return sb.ToString();
     }
 }

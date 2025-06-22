@@ -5,6 +5,7 @@ using UaDetector.Models.Browsers;
 using UaDetector.SourceGenerator.Generators;
 using UaDetector.SourceGenerator.Models;
 using UaDetector.SourceGenerator.Utilities;
+using Engine = UaDetector.Models.Browsers.Engine;
 
 namespace UaDetector.SourceGenerator;
 
@@ -107,6 +108,7 @@ public sealed class RegexGenerator : IIncrementalGenerator
                 .TypeArguments[0]
                 .ToDisplayString(SymbolDisplayFormat.FullyQualifiedFormat),
             PropertyAccessibility = propertySymbol.DeclaredAccessibility,
+            IsStaticClass = containingClass is INamedTypeSymbol { IsStatic: true },
         };
     }
 
@@ -192,10 +194,13 @@ public sealed class RegexGenerator : IIncrementalGenerator
                 combinedRegexProperty
             );
         }
-        else
+
+        if (regexSourceProperty.ElementGenericType == GetGlobalQualifiedName<Engine>())
         {
-            throw new NotSupportedException();
+            return EngineSourceGenerator.Generate(json, regexSourceProperty, combinedRegexProperty);
         }
+
+        throw new NotSupportedException();
     }
 
     private static string GetGlobalQualifiedName<T>()

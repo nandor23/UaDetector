@@ -12,4 +12,5 @@ internal sealed record RegexSourceProperty
     public required string ElementType { get; init; }
     public required string ElementGenericType { get; init; }
     public required Accessibility PropertyAccessibility { get; init; }
+    public required bool IsStaticClass { get; init; }
 }

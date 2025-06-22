@@ -7,9 +7,9 @@ using UaDetector.SourceGenerator.Utilities;
 
 namespace UaDetector.SourceGenerator.Generators;
 
-internal static class BrowserSourceGenerator
+internal static class EngineSourceGenerator
 {
-    private const string RegexMethodPrefix = "BrowserRegex";
+    private const string RegexMethodPrefix = "EngineRegex";
 
     public static string Generate(
         string json,
@@ -17,7 +17,7 @@ internal static class BrowserSourceGenerator
         CombinedRegexProperty? combinedRegexProperty
     )
     {
-        var list = JsonUtils.DeserializeJson<BrowserRule>(json);
+        var list = JsonUtils.DeserializeJson<EngineRule>(json);
         var regexDeclarations = GenerateRegexDeclarations(list);
         var collectionInitializer = GenerateCollectionInitializer(list, regexSourceProperty);
 
@@ -34,7 +34,7 @@ internal static class BrowserSourceGenerator
         );
     }
 
-    private static string GenerateRegexDeclarations(EquatableReadOnlyList<BrowserRule> list)
+    private static string GenerateRegexDeclarations(EquatableReadOnlyList<EngineRule> list)
     {
         var sb = new StringBuilder();
 
@@ -50,7 +50,7 @@ internal static class BrowserSourceGenerator
     }
 
     private static string GenerateCollectionInitializer(
-        EquatableReadOnlyList<BrowserRule> list,
+        EquatableReadOnlyList<EngineRule> list,
         RegexSourceProperty regexSourceProperty
     )
     {
@@ -60,7 +60,6 @@ internal static class BrowserSourceGenerator
         }
 
         var sb = new IndentedStringBuilder();
-        var engineType = $"global::{typeof(BrowserEngine).FullName}";
 
         sb.AppendLine("[").Indent();
 
@@ -69,50 +68,17 @@ internal static class BrowserSourceGenerator
             sb.AppendLine($"new {regexSourceProperty.ElementType}")
                 .AppendLine("{")
                 .Indent()
-                .AppendLine($"{nameof(RuleDefinition<Browser>.Regex)} = {RegexMethodPrefix}{i},")
+                .AppendLine($"{nameof(RuleDefinition<Engine>.Regex)} = {RegexMethodPrefix}{i},")
                 .AppendLine(
-                    $"{nameof(RuleDefinition<Browser>.Result)} = new {regexSourceProperty.ElementGenericType}"
+                    $"{nameof(RuleDefinition<Engine>.Result)} = new {regexSourceProperty.ElementGenericType}"
                 )
                 .AppendLine("{")
                 .Indent()
-                .AppendLine($"{nameof(Browser.Name)} = \"{list[i].Name}\",");
-
-            if (list[i].Version is not null)
-            {
-                sb.AppendLine($"{nameof(Browser.Version)} = \"{list[i].Version}\",");
-            }
-
-            if (list[i].Engine is not null)
-            {
-                sb.AppendLine($"{nameof(Browser.Engine)} = new {engineType}")
-                    .AppendLine("{")
-                    .Indent();
-
-                if (list[i].Engine?.Default is { } defaultEngine)
-                {
-                    sb.AppendLine($"{nameof(Browser.Engine.Default)} = \"{defaultEngine}\",");
-                }
-
-                if (list[i].Engine?.Versions is { Count: > 0 } engineVersions)
-                {
-                    sb.AppendLine(
-                            $"{nameof(Browser.Engine.Versions)} = new Dictionary<string, string>"
-                        )
-                        .AppendLine("{")
-                        .Indent();
-
-                    foreach (var version in engineVersions)
-                    {
-                        sb.AppendLine($"{{ \"{version.Key}\", \"{version.Value}\" }},");
-                    }
-
-                    sb.Unindent().AppendLine("},");
-                }
-
-                sb.Unindent().AppendLine("},");
-            }
-
-            sb.Unindent().AppendLine("},").Unindent().AppendLine("},");
+                .AppendLine($"{nameof(Engine.Name)} = \"{list[i].Name}\",")
+                .Unindent()
+                .AppendLine("},")
+                .Unindent()
+                .AppendLine("},");
         }
 
         sb.Unindent().AppendLine("]");
