@@ -11,14 +11,14 @@ internal static class BrowserSourceGenerator
 {
     private const string RegexMethodPrefix = "Regex";
 
-    public static string Generate(PropertyDeclarationInfo property, string json)
+    public static string Generate(RegexSourceProperty regexSourceProperty, string json)
     {
         var list = JsonUtils.DeserializeJson<BrowserRule>(json);
         var regexDeclarations = GenerateRegexDeclarations(list);
-        var collectionInitializer = GenerateCollectionInitializer(list, property);
+        var collectionInitializer = GenerateCollectionInitializer(list, regexSourceProperty);
 
         return SourceCodeBuilder.BuildClassSourceCode(
-            property,
+            regexSourceProperty,
             regexDeclarations,
             collectionInitializer
         );
@@ -41,7 +41,7 @@ internal static class BrowserSourceGenerator
 
     private static string GenerateCollectionInitializer(
         EquatableReadOnlyList<BrowserRule> list,
-        PropertyDeclarationInfo property
+        RegexSourceProperty regexSourceProperty
     )
     {
         if (list.Count == 0)
@@ -56,12 +56,12 @@ internal static class BrowserSourceGenerator
 
         for (int i = 0; i < list.Count; i++)
         {
-            sb.AppendLine($"new {property.ElementType}")
+            sb.AppendLine($"new {regexSourceProperty.ElementType}")
                 .AppendLine("{")
                 .Indent()
                 .AppendLine($"{nameof(RuleDefinition<Browser>.Regex)} = {RegexMethodPrefix}{i},")
                 .AppendLine(
-                    $"{nameof(RuleDefinition<Browser>.Result)} = new {property.ElementGenericType}"
+                    $"{nameof(RuleDefinition<Browser>.Result)} = new {regexSourceProperty.ElementGenericType}"
                 )
                 .AppendLine("{")
                 .Indent()

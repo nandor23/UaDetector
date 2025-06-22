@@ -15,7 +15,7 @@ public class RegexesGenerator : IIncrementalGenerator
     {
         var provider = context
             .SyntaxProvider.ForAttributeWithMetadataName(
-                "UaDetector.Attributes.RegexDefinitionsAttribute",
+                "UaDetector.Attributes.RegexSource",
                 predicate: static (node, _) => node is PropertyDeclarationSyntax,
                 transform: GetSemanticTargetForGeneration
             )
@@ -42,7 +42,7 @@ public class RegexesGenerator : IIncrementalGenerator
         );
     }
 
-    private static PropertyDeclarationInfo? GetSemanticTargetForGeneration(
+    private static RegexSourceProperty? GetSemanticTargetForGeneration(
         GeneratorAttributeSyntaxContext context,
         CancellationToken cancellationToken
     )
@@ -94,7 +94,7 @@ public class RegexesGenerator : IIncrementalGenerator
             );
         }
 
-        return new PropertyDeclarationInfo
+        return new RegexSourceProperty
         {
             PropertyName = propertySymbol.Name,
             ResourcePath = path,
@@ -109,36 +109,36 @@ public class RegexesGenerator : IIncrementalGenerator
     }
 
     private static void Execute(
-        PropertyDeclarationInfo property,
+        RegexSourceProperty regexSourceProperty,
         ImmutableArray<(string Path, string? Json)> additionalFiles,
         SourceProductionContext context
     )
     {
         (_, string? json) = additionalFiles.FirstOrDefault(file =>
-            file.Path.EndsWith(property.ResourcePath, StringComparison.OrdinalIgnoreCase)
+            file.Path.EndsWith(regexSourceProperty.ResourcePath, StringComparison.OrdinalIgnoreCase)
         );
 
         if (json is not null)
         {
-            var sourceCode = GenerateSource(property, json);
+            var sourceCode = GenerateSource(regexSourceProperty, json);
 
             context.AddSource(
-                $"{property.ContainingClass}_{property.PropertyName}.g.cs",
+                $"{regexSourceProperty.ContainingClass}_{regexSourceProperty.PropertyName}.g.cs",
                 sourceCode
             );
         }
     }
 
-    private static string GenerateSource(PropertyDeclarationInfo property, string json)
+    private static string GenerateSource(RegexSourceProperty regexSourceProperty, string json)
     {
-        if (property.ElementGenericType is null)
+        if (regexSourceProperty.ElementGenericType is null)
         {
             throw new NotSupportedException();
         }
 
-        if (property.ElementGenericType == GetGlobalQualifiedName<Browser>())
+        if (regexSourceProperty.ElementGenericType == GetGlobalQualifiedName<Browser>())
         {
-            return BrowserSourceGenerator.Generate(property, json);
+            return BrowserSourceGenerator.Generate(regexSourceProperty, json);
         }
         else
         {

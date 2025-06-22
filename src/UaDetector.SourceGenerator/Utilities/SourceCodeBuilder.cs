@@ -7,23 +7,23 @@ namespace UaDetector.SourceGenerator.Utilities;
 internal static class SourceCodeBuilder
 {
     public static string BuildClassSourceCode(
-        PropertyDeclarationInfo property,
+        RegexSourceProperty regexSourceProperty,
         string regexDeclarations,
         string collectionInitializer
     )
     {
-        var fieldName = $"_{property.PropertyName}";
+        var fieldName = $"_{regexSourceProperty.PropertyName}";
 
         return $$"""
-            {{property.Namespace}}
+            {{regexSourceProperty.Namespace}}
 
-            partial class {{property.ContainingClass}}
+            partial class {{regexSourceProperty.ContainingClass}}
             {
                 {{regexDeclarations}}
                 
-                private static readonly global::System.Collections.Generic.IReadOnlyList<{{property.ElementType}}> {{fieldName}} = {{collectionInitializer}};
+                private static readonly global::System.Collections.Generic.IReadOnlyList<{{regexSourceProperty.ElementType}}> {{fieldName}} = {{collectionInitializer}};
 
-                {{property.PropertyAccessibility.ToSyntaxString()}} static partial global::System.Collections.Generic.IReadOnlyList<{{property.ElementType}}> {{property.PropertyName}} =>
+                {{regexSourceProperty.PropertyAccessibility.ToSyntaxString()}} static partial global::System.Collections.Generic.IReadOnlyList<{{regexSourceProperty.ElementType}}> {{regexSourceProperty.PropertyName}} =>
                     {{fieldName}}; 
             }
             """;
