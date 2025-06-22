@@ -4,7 +4,7 @@ using UaDetector.Parsers;
 using UaDetector.Results;
 using UaDetector.Tests.Fixtures.Models;
 using UaDetector.Tests.Helpers;
-using UaDetector.Utils;
+using UaDetector.Utilities;
 
 namespace UaDetector.Tests.Tests.Parsers;
 

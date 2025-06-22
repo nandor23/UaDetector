@@ -9,7 +9,7 @@ using UaDetector.Models.Constants;
 using UaDetector.Models.Enums;
 using UaDetector.Parsers.Browsers;
 using UaDetector.Results;
-using UaDetector.Utils;
+using UaDetector.Utilities;
 
 namespace UaDetector.Parsers;
 

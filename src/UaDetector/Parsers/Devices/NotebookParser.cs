@@ -2,7 +2,7 @@ using System.Diagnostics.CodeAnalysis;
 using System.Text.RegularExpressions;
 using UaDetector.Regexes.Models;
 using UaDetector.Results;
-using UaDetector.Utils;
+using UaDetector.Utilities;
 
 namespace UaDetector.Parsers.Devices;
 
@@ -15,7 +15,7 @@ internal sealed class NotebookParser : DeviceParserBase
     static NotebookParser()
     {
         Notebooks = RegexLoader.LoadRegexes<Device>(ResourceName);
-        FbmdRegex = RegexUtility.BuildUserAgentRegex("FBMD/");
+        FbmdRegex = RegexUtilis.BuildUserAgentRegex("FBMD/");
     }
 
     public override bool TryParse(

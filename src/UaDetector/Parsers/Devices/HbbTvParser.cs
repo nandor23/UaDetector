@@ -3,7 +3,7 @@ using System.Text.RegularExpressions;
 using UaDetector.Models.Enums;
 using UaDetector.Regexes.Models;
 using UaDetector.Results;
-using UaDetector.Utils;
+using UaDetector.Utilities;
 
 namespace UaDetector.Parsers.Devices;
 
@@ -16,7 +16,7 @@ internal sealed class HbbTvParser : DeviceParserBase
     static HbbTvParser()
     {
         Televisions = RegexLoader.LoadRegexes<Device>(ResourceName);
-        HbbTvRegex = RegexUtility.BuildUserAgentRegex(
+        HbbTvRegex = RegexUtilis.BuildUserAgentRegex(
             @"(?:HbbTV|SmartTvA)/([1-9](?:\.[0-9]){1,2})"
         );
     }

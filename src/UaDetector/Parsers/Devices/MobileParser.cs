@@ -1,7 +1,7 @@
 using System.Diagnostics.CodeAnalysis;
 using UaDetector.Regexes.Models;
 using UaDetector.Results;
-using UaDetector.Utils;
+using UaDetector.Utilities;
 
 namespace UaDetector.Parsers.Devices;
 

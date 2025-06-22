@@ -3,7 +3,7 @@ using System.Text.RegularExpressions;
 using UaDetector.Models.Enums;
 using UaDetector.Regexes.Models;
 using UaDetector.Results;
-using UaDetector.Utils;
+using UaDetector.Utilities;
 
 namespace UaDetector.Parsers.Devices;
 
@@ -16,7 +16,7 @@ internal sealed class ShellTvParser : DeviceParserBase
     static ShellTvParser()
     {
         ShellTelevisions = RegexLoader.LoadRegexes<Device>(ResourceName);
-        ShellTvRegex = RegexUtility.BuildUserAgentRegex(
+        ShellTvRegex = RegexUtilis.BuildUserAgentRegex(
             @"[a-z]+[ _]Shell[ _]\w{6}|tclwebkit(\d+[.\d]*)"
         );
     }

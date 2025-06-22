@@ -3,7 +3,7 @@ using System.Text.Json;
 using System.Text.Json.Serialization;
 using System.Text.RegularExpressions;
 
-namespace UaDetector.Utils;
+namespace UaDetector.Utilities;
 
 internal sealed class RegexJsonConverter : JsonConverter<Regex>
 {
@@ -32,7 +32,7 @@ internal sealed class RegexJsonConverter : JsonConverter<Regex>
 
         _patterns.Add(regex);
 
-        return RegexUtility.BuildUserAgentRegex(regex);
+        return RegexUtilis.BuildUserAgentRegex(regex);
     }
 
     public override void Write(Utf8JsonWriter writer, Regex value, JsonSerializerOptions options)
@@ -57,6 +57,6 @@ internal sealed class RegexJsonConverter : JsonConverter<Regex>
 
         sb.Append(_patterns[0]);
 
-        return RegexUtility.BuildUserAgentRegex(sb.ToString());
+        return RegexUtilis.BuildUserAgentRegex(sb.ToString());
     }
 }

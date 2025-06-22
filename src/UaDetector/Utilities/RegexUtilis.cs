@@ -1,8 +1,8 @@
 using System.Text.RegularExpressions;
 
-namespace UaDetector.Utils;
+namespace UaDetector.Utilities;
 
-internal static class RegexUtility
+internal static class RegexUtilis
 {
     public static Regex BuildUserAgentRegex(string pattern)
     {

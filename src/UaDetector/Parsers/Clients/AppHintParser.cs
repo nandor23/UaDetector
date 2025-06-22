@@ -1,6 +1,7 @@
 using System.Collections.Frozen;
 using System.Diagnostics.CodeAnalysis;
-using UaDetector.Utils;
+
+using UaDetector.Utilities;
 
 namespace UaDetector.Parsers.Clients;
 

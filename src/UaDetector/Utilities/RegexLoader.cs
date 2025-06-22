@@ -2,7 +2,7 @@ using System.Collections.Frozen;
 using System.Text.Json;
 using System.Text.RegularExpressions;
 
-namespace UaDetector.Utils;
+namespace UaDetector.Utilities;
 
 internal static class RegexLoader
 {

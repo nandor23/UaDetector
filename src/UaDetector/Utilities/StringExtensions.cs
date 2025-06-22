@@ -1,4 +1,4 @@
-namespace UaDetector.Utils;
+namespace UaDetector.Utilities;
 
 internal static class StringExtensions
 {
