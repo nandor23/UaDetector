@@ -1,24 +1,21 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Text.RegularExpressions;
+
+using UaDetector.Attributes;
+using UaDetector.Models;
 using UaDetector.Models.Enums;
-using UaDetector.Regexes.Models;
 using UaDetector.Results;
-using UaDetector.Utilities;
 
 namespace UaDetector.Parsers.Clients;
 
-internal sealed class PimParser : ClientParserBase
+internal sealed partial class PimParser : ClientParserBase
 {
-    private const string ResourceName = "Regexes.Resources.Clients.pims.json";
-    internal static readonly IReadOnlyList<Client> PersonalInformationManagers;
-    private static readonly Regex CombinedRegex;
-
-    static PimParser()
-    {
-        (PersonalInformationManagers, CombinedRegex) = RegexLoader.LoadRegexesWithCombined<Client>(
-            ResourceName
-        );
-    }
+    [RegexSource("Regexes/Resources/Clients/pims.json")]
+    internal static partial IReadOnlyList<RuleDefinition<Client>> PersonalInformationManagers { get; }
+    
+    [CombinedRegex]
+    private static partial Regex CombinedRegex { get; }
+    
 
     public PimParser(VersionTruncation versionTruncation)
         : base(versionTruncation) { }

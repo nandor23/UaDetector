@@ -1,6 +1,7 @@
 using System.Collections.Immutable;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
+using UaDetector.Models;
 using UaDetector.Models.Browsers;
 using UaDetector.SourceGenerator.Generators;
 using UaDetector.SourceGenerator.Models;
@@ -10,7 +11,7 @@ using Engine = UaDetector.Models.Browsers.Engine;
 namespace UaDetector.SourceGenerator;
 
 [Generator]
-public sealed class RegexGenerator : IIncrementalGenerator
+internal sealed class RegexGenerator : IIncrementalGenerator
 {
     public void Initialize(IncrementalGeneratorInitializationContext context)
     {
@@ -169,7 +170,7 @@ public sealed class RegexGenerator : IIncrementalGenerator
             var sourceCode = GenerateSource(json, regexSourceProperty, combinedRegexProperty);
 
             context.AddSource(
-                $"{regexSourceProperty.ContainingClass}_{regexSourceProperty.PropertyName}.g.cs",
+                $"{regexSourceProperty.ContainingClass}.g.cs",
                 sourceCode
             );
         }
@@ -188,16 +189,17 @@ public sealed class RegexGenerator : IIncrementalGenerator
 
         if (regexSourceProperty.ElementGenericType == GetGlobalQualifiedName<Browser>())
         {
-            return BrowserSourceGenerator.Generate(
-                json,
-                regexSourceProperty,
-                combinedRegexProperty
-            );
+            return BrowserSourceGenerator.Generate(json, regexSourceProperty, combinedRegexProperty);
         }
 
         if (regexSourceProperty.ElementGenericType == GetGlobalQualifiedName<Engine>())
         {
             return EngineSourceGenerator.Generate(json, regexSourceProperty, combinedRegexProperty);
+        }
+
+        if (regexSourceProperty.ElementGenericType == GetGlobalQualifiedName<Client>())
+        {
+            return ClientSourceGenerator.Generate(json, regexSourceProperty, combinedRegexProperty);
         }
 
         throw new NotSupportedException();

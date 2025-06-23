@@ -1,6 +1,6 @@
-namespace UaDetector.YamlJsonConverter.Models.Yaml;
+namespace UaDetector.SourceGenerator.Models;
 
-public sealed class ClientYaml
+internal sealed record ClientRule
 {
     public required string Regex { get; init; }
     public required string Name { get; init; }

@@ -2,6 +2,7 @@ using System.Collections.Frozen;
 using System.Text.Encodings.Web;
 using System.Text.Json;
 using System.Text.Json.Serialization;
+using UaDetector.Models;
 using UaDetector.Models.Browsers;
 using UaDetector.Models.Enums;
 using UaDetector.Parsers;
@@ -137,7 +138,7 @@ public static class YamlToJsonConverter
             Path.Combine(BaseDirectory, ClientsFile + ".yml")
         );
 
-        var result = entries.Select(x => new Client
+        var result = entries.Select(x => new ClientJson
         {
             Regex = x.Regex,
             Name = x.Name,

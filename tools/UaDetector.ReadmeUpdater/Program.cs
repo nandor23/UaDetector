@@ -12,7 +12,7 @@ var browsers = BrowserParser
     .Distinct(StringComparer.OrdinalIgnoreCase);
 
 var mobileApps = MobileAppParser
-    .MobileApps.Select(app => app.Name)
+    .MobileApps.Select(app => app.Result.Name)
     .Concat(AppHintParser.Hints.Values)
     .Concat(
         new List<string>
@@ -56,14 +56,14 @@ var modifiedReadme = originalReadme
     .ReplaceMarkerContent("BROWSERS", browsers)
     .ReplaceMarkerContent("BROWSER-ENGINES", EngineParser.EngineNames)
     .ReplaceMarkerContent("MOBILE-APPS", mobileApps)
-    .ReplaceMarkerContent("MEDIA-PLAYERS", MediaPlayerParser.MediaPlayers.Select(x => x.Name))
-    .ReplaceMarkerContent("LIBRARIES", LibraryParser.Libraries.Select(x => x.Name))
-    .ReplaceMarkerContent("FEED-READERS", FeedReaderParser.FeedReaders.Select(x => x.Name))
+    .ReplaceMarkerContent("MEDIA-PLAYERS", MediaPlayerParser.MediaPlayers.Select(x => x.Result.Name))
+    .ReplaceMarkerContent("LIBRARIES", LibraryParser.Libraries.Select(x => x.Result.Name))
+    .ReplaceMarkerContent("FEED-READERS", FeedReaderParser.FeedReaders.Select(x => x.Result.Name))
     .ReplaceMarkerContent(
         "PERSONAL-INFORMATION-MANAGERS",
-        PimParser.PersonalInformationManagers.Select(x => x.Name)
+        PimParser.PersonalInformationManagers.Select(x => x.Result.Name)
     )
-    .ReplaceMarkerContent("MEDIA-PLAYERS", MediaPlayerParser.MediaPlayers.Select(x => x.Name))
+    .ReplaceMarkerContent("MEDIA-PLAYERS", MediaPlayerParser.MediaPlayers.Select(x => x.Result.Name))
     .ReplaceMarkerContent("DEVICE-BRANDS", deviceBrands)
     .ReplaceMarkerContent("BOTS", BotParser.Bots.Select(x => x.Name));
 
