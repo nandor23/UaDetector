@@ -1,5 +1,5 @@
 using System.Diagnostics.CodeAnalysis;
-using UaDetector.Regexes.Models;
+using UaDetector.Abstractions.Models;
 using UaDetector.Results;
 using UaDetector.Utilities;
 

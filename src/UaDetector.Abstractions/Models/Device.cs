@@ -1,12 +1,12 @@
 using System.Text.RegularExpressions;
 using UaDetector.Abstractions.Enums;
 
-namespace UaDetector.Regexes.Models;
+namespace UaDetector.Abstractions.Models;
 
-internal sealed class Device
+public sealed class Device
 {
-    public required string Brand { get; init; }
     public required Regex Regex { get; init; }
+    public required string Brand { get; init; }
     public DeviceType? Type { get; init; }
     public string? Model { get; init; }
     public IReadOnlyList<DeviceModel>? ModelVariants { get; init; }

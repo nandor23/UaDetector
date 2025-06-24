@@ -21,6 +21,7 @@
     <AdditionalFiles Include="Regexes\**\media_players.json" />
     <AdditionalFiles Include="Regexes\**\mobile_apps.json" />
     <AdditionalFiles Include="Regexes\**\pims.json" />
+    <AdditionalFiles Include="Regexes\**\cameras.json" />
   </ItemGroup>
 
   <ItemGroup>

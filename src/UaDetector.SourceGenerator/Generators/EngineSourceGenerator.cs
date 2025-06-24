@@ -1,6 +1,4 @@
 using System.Text;
-using UaDetector.Abstractions;
-using UaDetector.Abstractions.Models;
 using UaDetector.Abstractions.Models.Browsers;
 using UaDetector.SourceGenerator.Collections;
 using UaDetector.SourceGenerator.Models;

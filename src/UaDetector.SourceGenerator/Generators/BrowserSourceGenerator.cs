@@ -1,6 +1,4 @@
 using System.Text;
-using UaDetector.Abstractions;
-using UaDetector.Abstractions.Models;
 using UaDetector.Abstractions.Models.Browsers;
 using UaDetector.SourceGenerator.Collections;
 using UaDetector.SourceGenerator.Models;
@@ -60,8 +58,8 @@ internal static class BrowserSourceGenerator
             return "[]";
         }
 
-        var sb = new IndentedStringBuilder();
         var engineType = $"global::{typeof(BrowserEngine).FullName}";
+        var sb = new IndentedStringBuilder();
 
         sb.AppendLine("[").Indent();
 
@@ -92,7 +90,7 @@ internal static class BrowserSourceGenerator
                 if (list[i].Engine?.Versions is { Count: > 0 } engineVersions)
                 {
                     sb.AppendLine(
-                            $"{nameof(Browser.Engine.Versions)} = new Dictionary<string, string>"
+                            $"{nameof(Browser.Engine.Versions)} = new global::System.Collections.Generic.Dictionary<string, string>"
                         )
                         .AppendLine("{")
                         .Indent();

@@ -1,5 +1,4 @@
 using System.Text;
-using UaDetector.Abstractions;
 using UaDetector.Abstractions.Models;
 using UaDetector.SourceGenerator.Collections;
 using UaDetector.SourceGenerator.Models;
@@ -76,7 +75,7 @@ internal static class ClientSourceGenerator
                 sb.AppendLine($"{nameof(Client.Version)} = \"{list[i].Version}\",");
             }
 
-            sb.AppendLine("},");
+            sb.Unindent().AppendLine("},");
         }
 
         sb.Unindent().AppendLine("]");

@@ -1,21 +1,18 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Text.RegularExpressions;
-using UaDetector.Regexes.Models;
+using UaDetector.Abstractions.Attributes;
+using UaDetector.Abstractions.Models;
 using UaDetector.Results;
-using UaDetector.Utilities;
 
 namespace UaDetector.Parsers.Devices;
 
-internal sealed class CameraParser : DeviceParserBase
+internal sealed partial class CameraParser : DeviceParserBase
 {
-    private const string ResourceName = "Regexes.Resources.Devices.cameras.json";
-    private static readonly IReadOnlyList<Device> Cameras;
-    private static readonly Regex CombinedRegex;
+    [RegexSource("Regexes/Resources/Devices/cameras.json")]
+    private static partial IReadOnlyList<Device> Cameras { get; }
 
-    static CameraParser()
-    {
-        (Cameras, CombinedRegex) = RegexLoader.LoadRegexesWithCombined<Device>(ResourceName);
-    }
+    [CombinedRegex]
+    private static partial Regex CombinedRegex { get; }
 
     public override bool TryParse(
         string userAgent,

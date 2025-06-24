@@ -180,6 +180,16 @@ internal sealed class RegexGenerator : IIncrementalGenerator
             throw new NotSupportedException();
         }
 
+        if (regexSourceProperty.ElementType == GetGlobalQualifiedName<Client>())
+        {
+            return ClientSourceGenerator.Generate(json, regexSourceProperty, combinedRegexProperty);
+        }
+
+        if (regexSourceProperty.ElementType == GetGlobalQualifiedName<Device>())
+        {
+            return DeviceGenerator.Generate(json, regexSourceProperty, combinedRegexProperty);
+        }
+
         if (regexSourceProperty.ElementType == GetGlobalQualifiedName<Browser>())
         {
             return BrowserSourceGenerator.Generate(
@@ -192,11 +202,6 @@ internal sealed class RegexGenerator : IIncrementalGenerator
         if (regexSourceProperty.ElementType == GetGlobalQualifiedName<Engine>())
         {
             return EngineSourceGenerator.Generate(json, regexSourceProperty, combinedRegexProperty);
-        }
-
-        if (regexSourceProperty.ElementType == GetGlobalQualifiedName<Client>())
-        {
-            return ClientSourceGenerator.Generate(json, regexSourceProperty, combinedRegexProperty);
         }
 
         throw new NotSupportedException();

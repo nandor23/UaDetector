@@ -1,11 +1,10 @@
-using System.Text.RegularExpressions;
 using UaDetector.Abstractions.Enums;
 
-namespace UaDetector.Regexes.Models;
+namespace UaDetector.SourceGenerator.Models;
 
-internal sealed class DeviceModel
+internal sealed record DeviceModelRule
 {
-    public required Regex Regex { get; init; }
+    public required string Regex { get; init; }
     public DeviceType? Type { get; init; }
     public string? Brand { get; init; }
     public string? Name { get; init; }
