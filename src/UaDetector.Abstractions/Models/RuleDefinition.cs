@@ -1,6 +1,6 @@
 using System.Text.RegularExpressions;
 
-namespace UaDetector.Models;
+namespace UaDetector.Abstractions.Models;
 
 public sealed class RuleDefinition<T>
 {

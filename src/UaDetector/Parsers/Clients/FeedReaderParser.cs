@@ -1,8 +1,9 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Text.RegularExpressions;
-using UaDetector.Attributes;
-using UaDetector.Models;
-using UaDetector.Models.Enums;
+using UaDetector.Abstractions;
+using UaDetector.Abstractions.Attributes;
+using UaDetector.Abstractions.Enums;
+using UaDetector.Abstractions.Models;
 using UaDetector.Results;
 
 namespace UaDetector.Parsers.Clients;

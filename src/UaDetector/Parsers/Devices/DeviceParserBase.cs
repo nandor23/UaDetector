@@ -1,8 +1,8 @@
 using System.Collections.Frozen;
 using System.Diagnostics.CodeAnalysis;
 using System.Text.RegularExpressions;
-using UaDetector.Models.Constants;
-using UaDetector.Models.Enums;
+using UaDetector.Abstractions.Constants;
+using UaDetector.Abstractions.Enums;
 using UaDetector.Regexes.Models;
 using UaDetector.Results;
 

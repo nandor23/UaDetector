@@ -1,4 +1,4 @@
-using UaDetector.Models.Browsers;
+using UaDetector.Abstractions.Models.Browsers;
 
 namespace UaDetector.YamlJsonConverter.Models.Json;
 

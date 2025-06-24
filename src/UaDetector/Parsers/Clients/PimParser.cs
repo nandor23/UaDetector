@@ -1,9 +1,9 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Text.RegularExpressions;
-
-using UaDetector.Attributes;
-using UaDetector.Models;
-using UaDetector.Models.Enums;
+using UaDetector.Abstractions;
+using UaDetector.Abstractions.Attributes;
+using UaDetector.Abstractions.Enums;
+using UaDetector.Abstractions.Models;
 using UaDetector.Results;
 
 namespace UaDetector.Parsers.Clients;
@@ -11,11 +11,12 @@ namespace UaDetector.Parsers.Clients;
 internal sealed partial class PimParser : ClientParserBase
 {
     [RegexSource("Regexes/Resources/Clients/pims.json")]
-    internal static partial IReadOnlyList<RuleDefinition<Client>> PersonalInformationManagers { get; }
-    
+    internal static partial IReadOnlyList<
+        RuleDefinition<Client>
+    > PersonalInformationManagers { get; }
+
     [CombinedRegex]
     private static partial Regex CombinedRegex { get; }
-    
 
     public PimParser(VersionTruncation versionTruncation)
         : base(versionTruncation) { }

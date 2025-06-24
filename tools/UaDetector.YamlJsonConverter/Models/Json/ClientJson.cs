@@ -1,4 +1,5 @@
-using UaDetector.Models;
+using UaDetector.Abstractions;
+using UaDetector.Abstractions.Models;
 
 namespace UaDetector.YamlJsonConverter.Models.Json;
 

@@ -1,4 +1,4 @@
-namespace UaDetector.Models;
+namespace UaDetector.Abstractions.Models;
 
 public class Client
 {

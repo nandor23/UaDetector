@@ -1,4 +1,4 @@
-using UaDetector.Models.Enums;
+using UaDetector.Abstractions.Enums;
 
 namespace UaDetector.Results;
 

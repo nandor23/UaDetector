@@ -43,7 +43,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\UaDetector.Models\UaDetector.Models.csproj" OutputItemType="Analyzer"/>
+    <ProjectReference Include="..\UaDetector.Abstractions\UaDetector.Abstractions.csproj" OutputItemType="Analyzer" />
     <ProjectReference Include="..\UaDetector.SourceGenerator\UaDetector.SourceGenerator.csproj"
                       OutputItemType="Analyzer"
                       ReferenceOutputAssembly="false" />

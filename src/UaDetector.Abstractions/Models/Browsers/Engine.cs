@@ -1,4 +1,4 @@
-namespace UaDetector.Models.Browsers;
+namespace UaDetector.Abstractions.Models.Browsers;
 
 public sealed class Engine
 {

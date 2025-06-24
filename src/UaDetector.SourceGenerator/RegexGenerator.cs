@@ -1,12 +1,13 @@
 using System.Collections.Immutable;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
-using UaDetector.Models;
-using UaDetector.Models.Browsers;
+using UaDetector.Abstractions;
+using UaDetector.Abstractions.Models;
+using UaDetector.Abstractions.Models.Browsers;
 using UaDetector.SourceGenerator.Generators;
 using UaDetector.SourceGenerator.Models;
 using UaDetector.SourceGenerator.Utilities;
-using Engine = UaDetector.Models.Browsers.Engine;
+using Engine = UaDetector.Abstractions.Models.Browsers.Engine;
 
 namespace UaDetector.SourceGenerator;
 
@@ -17,7 +18,7 @@ internal sealed class RegexGenerator : IIncrementalGenerator
     {
         var regexSourceProvider = context
             .SyntaxProvider.ForAttributeWithMetadataName(
-                "UaDetector.Attributes.RegexSource",
+                "UaDetector.Abstractions.Attributes.RegexSource",
                 predicate: static (node, _) => node is PropertyDeclarationSyntax,
                 transform: GetRegexSourceForGeneration
             )
@@ -26,7 +27,7 @@ internal sealed class RegexGenerator : IIncrementalGenerator
 
         var combinedRegexProvider = context
             .SyntaxProvider.ForAttributeWithMetadataName(
-                "UaDetector.Attributes.CombinedRegex",
+                "UaDetector.Abstractions.Attributes.CombinedRegex",
                 predicate: static (node, _) => node is PropertyDeclarationSyntax,
                 transform: GetCombinedRegexForGeneration
             )
@@ -169,10 +170,7 @@ internal sealed class RegexGenerator : IIncrementalGenerator
 
             var sourceCode = GenerateSource(json, regexSourceProperty, combinedRegexProperty);
 
-            context.AddSource(
-                $"{regexSourceProperty.ContainingClass}.g.cs",
-                sourceCode
-            );
+            context.AddSource($"{regexSourceProperty.ContainingClass}.g.cs", sourceCode);
         }
     }
 
@@ -189,7 +187,11 @@ internal sealed class RegexGenerator : IIncrementalGenerator
 
         if (regexSourceProperty.ElementGenericType == GetGlobalQualifiedName<Browser>())
         {
-            return BrowserSourceGenerator.Generate(json, regexSourceProperty, combinedRegexProperty);
+            return BrowserSourceGenerator.Generate(
+                json,
+                regexSourceProperty,
+                combinedRegexProperty
+            );
         }
 
         if (regexSourceProperty.ElementGenericType == GetGlobalQualifiedName<Engine>())

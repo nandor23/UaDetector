@@ -1,10 +1,10 @@
 using System.Collections.Frozen;
 using System.Diagnostics.CodeAnalysis;
 using System.Text.RegularExpressions;
-using UaDetector.Attributes;
-using UaDetector.Models;
-using UaDetector.Models.Browsers;
-using UaDetector.Models.Constants;
+using UaDetector.Abstractions.Attributes;
+using UaDetector.Abstractions.Constants;
+using UaDetector.Abstractions.Models;
+using UaDetector.Abstractions.Models.Browsers;
 
 namespace UaDetector.Parsers.Browsers;
 
