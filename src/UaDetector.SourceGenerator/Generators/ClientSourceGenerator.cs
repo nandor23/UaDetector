@@ -68,12 +68,7 @@ internal static class ClientSourceGenerator
             sb.AppendLine($"new {regexSourceProperty.ElementType}")
                 .AppendLine("{")
                 .Indent()
-                .AppendLine($"{nameof(RuleDefinition<Client>.Regex)} = {RegexMethodPrefix}{i},")
-                .AppendLine(
-                    $"{nameof(RuleDefinition<Client>.Result)} = new {regexSourceProperty.ElementGenericType}"
-                )
-                .AppendLine("{")
-                .Indent()
+                .AppendLine($"{nameof(Client.Regex)} = {RegexMethodPrefix}{i},")
                 .AppendLine($"{nameof(Client.Name)} = \"{list[i].Name}\",");
 
             if (list[i].Version is not null)
@@ -81,7 +76,7 @@ internal static class ClientSourceGenerator
                 sb.AppendLine($"{nameof(Client.Version)} = \"{list[i].Version}\",");
             }
 
-            sb.AppendLine("},").Unindent().AppendLine("},");
+            sb.AppendLine("},");
         }
 
         sb.Unindent().AppendLine("]");

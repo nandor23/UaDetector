@@ -1,6 +1,5 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Text.RegularExpressions;
-using UaDetector.Abstractions;
 using UaDetector.Abstractions.Attributes;
 using UaDetector.Abstractions.Enums;
 using UaDetector.Abstractions.Models;
@@ -11,9 +10,7 @@ namespace UaDetector.Parsers.Clients;
 internal sealed partial class PimParser : ClientParserBase
 {
     [RegexSource("Regexes/Resources/Clients/pims.json")]
-    internal static partial IReadOnlyList<
-        RuleDefinition<Client>
-    > PersonalInformationManagers { get; }
+    internal static partial IReadOnlyList<Client> PersonalInformationManagers { get; }
 
     [CombinedRegex]
     private static partial Regex CombinedRegex { get; }

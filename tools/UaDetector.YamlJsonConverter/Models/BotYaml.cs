@@ -1,6 +1,6 @@
 using System.Text.RegularExpressions;
 
-namespace UaDetector.YamlJsonConverter.Models.Yaml;
+namespace UaDetector.YamlJsonConverter.Models;
 
 public class BotYaml
 {

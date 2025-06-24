@@ -5,7 +5,6 @@ using System.Text.RegularExpressions;
 using UaDetector.Abstractions.Attributes;
 using UaDetector.Abstractions.Constants;
 using UaDetector.Abstractions.Enums;
-using UaDetector.Abstractions.Models;
 using UaDetector.Abstractions.Models.Browsers;
 using UaDetector.Parsers.Browsers;
 using UaDetector.Results;
@@ -16,7 +15,7 @@ namespace UaDetector.Parsers;
 public sealed partial class BrowserParser : IBrowserParser
 {
     [RegexSource("Regexes/Resources/Browsers/browsers.json")]
-    internal static partial IReadOnlyList<RuleDefinition<Browser>> Browsers { get; }
+    internal static partial IReadOnlyList<Browser> Browsers { get; }
 
     private const string CacheKeyPrefix = "browser";
     private readonly IUaDetectorCache? _cache;
@@ -1625,13 +1624,13 @@ public sealed partial class BrowserParser : IBrowserParser
         Match? match = null;
         Browser? browser = null;
 
-        foreach (var browserRule in Browsers)
+        foreach (var browserEntry in Browsers)
         {
-            match = browserRule.Regex.Match(userAgent);
+            match = browserEntry.Regex.Match(userAgent);
 
             if (match.Success)
             {
-                browser = browserRule.Result;
+                browser = browserEntry;
                 break;
             }
         }

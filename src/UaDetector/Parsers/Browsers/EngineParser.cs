@@ -3,7 +3,6 @@ using System.Diagnostics.CodeAnalysis;
 using System.Text.RegularExpressions;
 using UaDetector.Abstractions.Attributes;
 using UaDetector.Abstractions.Constants;
-using UaDetector.Abstractions.Models;
 using UaDetector.Abstractions.Models.Browsers;
 
 namespace UaDetector.Parsers.Browsers;
@@ -11,7 +10,7 @@ namespace UaDetector.Parsers.Browsers;
 internal static partial class EngineParser
 {
     [RegexSource("Regexes/Resources/Browsers/browser_engines.json")]
-    private static partial IReadOnlyList<RuleDefinition<Engine>> Engines { get; }
+    private static partial IReadOnlyList<Engine> Engines { get; }
 
     [CombinedRegex]
     private static partial Regex CombinedRegex { get; }
@@ -51,13 +50,13 @@ internal static partial class EngineParser
         Match? match = null;
         Engine? engine = null;
 
-        foreach (var engineRule in Engines)
+        foreach (var browserEngine in Engines)
         {
-            match = engineRule.Regex.Match(userAgent);
+            match = browserEngine.Regex.Match(userAgent);
 
             if (match.Success)
             {
-                engine = engineRule.Result;
+                engine = browserEngine;
                 break;
             }
         }

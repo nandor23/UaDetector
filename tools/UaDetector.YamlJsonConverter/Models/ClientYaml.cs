@@ -1,4 +1,4 @@
-namespace UaDetector.YamlJsonConverter.Models.Yaml;
+namespace UaDetector.YamlJsonConverter.Models;
 
 public sealed class ClientYaml
 {

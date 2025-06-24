@@ -2,8 +2,9 @@ using System.Collections.Frozen;
 using System.Text.Encodings.Web;
 using System.Text.Json;
 using System.Text.Json.Serialization;
-using UaDetector.Abstractions;
+using System.Text.RegularExpressions;
 using UaDetector.Abstractions.Enums;
+using UaDetector.Abstractions.Models;
 using UaDetector.Abstractions.Models.Browsers;
 using UaDetector.Parsers;
 using UaDetector.Parsers.Devices;
@@ -11,8 +12,7 @@ using UaDetector.Regexes.Models;
 using UaDetector.Results;
 using UaDetector.Tests.Fixtures.Models;
 using UaDetector.YamlJsonConverter.Fixtures;
-using UaDetector.YamlJsonConverter.Models.Json;
-using UaDetector.YamlJsonConverter.Models.Yaml;
+using UaDetector.YamlJsonConverter.Models;
 using UaDetector.YamlJsonConverter.Utils;
 using Os = UaDetector.Regexes.Models.Os;
 
@@ -101,9 +101,9 @@ public static class YamlToJsonConverter
             Path.Combine(BaseDirectory, BrowsersFile + ".yml")
         );
 
-        var result = entries.Select(x => new BrowserJson
+        var result = entries.Select(x => new Browser
         {
-            Regex = x.Regex,
+            Regex = new Regex(x.Regex),
             Name = x.Name,
             Version = x.Version,
             Engine =
@@ -138,9 +138,9 @@ public static class YamlToJsonConverter
             Path.Combine(BaseDirectory, ClientsFile + ".yml")
         );
 
-        var result = entries.Select(x => new ClientJson
+        var result = entries.Select(x => new Client
         {
-            Regex = x.Regex,
+            Regex = new Regex(x.Regex),
             Name = x.Name,
             Version = x.Version,
         });

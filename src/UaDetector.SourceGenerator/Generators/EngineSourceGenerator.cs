@@ -69,15 +69,8 @@ internal static class EngineSourceGenerator
             sb.AppendLine($"new {regexSourceProperty.ElementType}")
                 .AppendLine("{")
                 .Indent()
-                .AppendLine($"{nameof(RuleDefinition<Engine>.Regex)} = {RegexMethodPrefix}{i},")
-                .AppendLine(
-                    $"{nameof(RuleDefinition<Engine>.Result)} = new {regexSourceProperty.ElementGenericType}"
-                )
-                .AppendLine("{")
-                .Indent()
+                .AppendLine($"{nameof(Engine.Regex)} = {RegexMethodPrefix}{i},")
                 .AppendLine($"{nameof(Engine.Name)} = \"{list[i].Name}\",")
-                .Unindent()
-                .AppendLine("},")
                 .Unindent()
                 .AppendLine("},");
         }

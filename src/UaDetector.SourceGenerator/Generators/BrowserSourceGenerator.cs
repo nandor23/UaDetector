@@ -70,12 +70,7 @@ internal static class BrowserSourceGenerator
             sb.AppendLine($"new {regexSourceProperty.ElementType}")
                 .AppendLine("{")
                 .Indent()
-                .AppendLine($"{nameof(RuleDefinition<Browser>.Regex)} = {RegexMethodPrefix}{i},")
-                .AppendLine(
-                    $"{nameof(RuleDefinition<Browser>.Result)} = new {regexSourceProperty.ElementGenericType}"
-                )
-                .AppendLine("{")
-                .Indent()
+                .AppendLine($"{nameof(Browser.Regex)} = {RegexMethodPrefix}{i},")
                 .AppendLine($"{nameof(Browser.Name)} = \"{list[i].Name}\",");
 
             if (list[i].Version is not null)
@@ -113,7 +108,7 @@ internal static class BrowserSourceGenerator
                 sb.Unindent().AppendLine("},");
             }
 
-            sb.Unindent().AppendLine("},").Unindent().AppendLine("},");
+            sb.Unindent().AppendLine("},");
         }
 
         sb.Unindent().AppendLine("]");

@@ -82,9 +82,7 @@ internal sealed class RegexGenerator : IIncrementalGenerator
             is not INamedTypeSymbol
             {
                 OriginalDefinition.SpecialType: SpecialType.System_Collections_Generic_IReadOnlyList_T,
-                TypeArguments: [
-                    INamedTypeSymbol { IsGenericType: true, TypeArguments.Length: > 0 } elementType,
-                ],
+                TypeArguments: [INamedTypeSymbol elementType],
             }
         )
         {
@@ -106,9 +104,6 @@ internal sealed class RegexGenerator : IIncrementalGenerator
             ),
             Namespace = @namespace is not null ? $"namespace {@namespace};" : string.Empty,
             ElementType = elementType.ToDisplayString(SymbolDisplayFormat.FullyQualifiedFormat),
-            ElementGenericType = elementType
-                .TypeArguments[0]
-                .ToDisplayString(SymbolDisplayFormat.FullyQualifiedFormat),
             PropertyAccessibility = propertySymbol.DeclaredAccessibility,
             IsStaticClass = containingClass is INamedTypeSymbol { IsStatic: true },
         };
@@ -180,12 +175,12 @@ internal sealed class RegexGenerator : IIncrementalGenerator
         CombinedRegexProperty? combinedRegexProperty
     )
     {
-        if (regexSourceProperty.ElementGenericType is null)
+        if (regexSourceProperty.ElementType is null)
         {
             throw new NotSupportedException();
         }
 
-        if (regexSourceProperty.ElementGenericType == GetGlobalQualifiedName<Browser>())
+        if (regexSourceProperty.ElementType == GetGlobalQualifiedName<Browser>())
         {
             return BrowserSourceGenerator.Generate(
                 json,
@@ -194,12 +189,12 @@ internal sealed class RegexGenerator : IIncrementalGenerator
             );
         }
 
-        if (regexSourceProperty.ElementGenericType == GetGlobalQualifiedName<Engine>())
+        if (regexSourceProperty.ElementType == GetGlobalQualifiedName<Engine>())
         {
             return EngineSourceGenerator.Generate(json, regexSourceProperty, combinedRegexProperty);
         }
 
-        if (regexSourceProperty.ElementGenericType == GetGlobalQualifiedName<Client>())
+        if (regexSourceProperty.ElementType == GetGlobalQualifiedName<Client>())
         {
             return ClientSourceGenerator.Generate(json, regexSourceProperty, combinedRegexProperty);
         }

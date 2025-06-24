@@ -26,7 +26,7 @@ public class BrowserParserTests
     [Test]
     public void Browsers_ShouldContainKeysForAllBrowserNames()
     {
-        var browserNames = BrowserParser.Browsers.Select(rule => rule.Result.Name);
+        var browserNames = BrowserParser.Browsers.Select(rule => rule.Name);
 
         foreach (var browserName in browserNames)
         {
