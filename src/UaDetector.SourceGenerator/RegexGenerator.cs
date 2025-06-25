@@ -209,6 +209,11 @@ internal sealed class RegexGenerator : IIncrementalGenerator
             return OsSourceGenerator.Generate(json, regexSourceProperty, combinedRegexProperty);
         }
 
+        if (regexSourceProperty.ElementType == GetGlobalQualifiedName<Bot>())
+        {
+            return BotSourceGenerator.Generate(json, regexSourceProperty, combinedRegexProperty);
+        }
+
         throw new NotSupportedException();
     }
 

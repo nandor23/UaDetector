@@ -1,24 +1,22 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Text.RegularExpressions;
-using UaDetector.Regexes.Models;
+using UaDetector.Abstractions.Attributes;
+using UaDetector.Abstractions.Models;
 using UaDetector.Results;
-using UaDetector.Utilities;
 
 namespace UaDetector.Parsers;
 
-public sealed class BotParser : IBotParser
+public sealed partial class BotParser : IBotParser
 {
-    private const string ResourceName = "Regexes.Resources.bots.json";
+    [RegexSource("Regexes/Resources/bots.json")]
+    internal static partial IReadOnlyList<Bot> Bots { get; }
+
+    [CombinedRegex]
+    private static partial Regex CombinedRegex { get; }
+
     private const string ParseCacheKeyPrefix = "bot";
     private const string IsBotCacheKeyPrefix = "isbot";
     private readonly IUaDetectorCache? _cache;
-    internal static readonly IReadOnlyList<Bot> Bots;
-    private static readonly Regex CombinedRegex;
-
-    static BotParser()
-    {
-        (Bots, CombinedRegex) = RegexLoader.LoadRegexesWithCombined<Bot>(ResourceName);
-    }
 
     public BotParser(BotParserOptions? botOptions = null)
     {

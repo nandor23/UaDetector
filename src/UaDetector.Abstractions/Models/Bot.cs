@@ -1,9 +1,9 @@
 using System.Text.RegularExpressions;
 using UaDetector.Abstractions.Enums;
 
-namespace UaDetector.Regexes.Models;
+namespace UaDetector.Abstractions.Models;
 
-internal sealed class Bot
+public sealed class Bot
 {
     public required Regex Regex { get; init; }
     public required string Name { get; init; }

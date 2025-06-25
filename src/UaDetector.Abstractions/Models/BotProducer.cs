@@ -1,6 +1,6 @@
-namespace UaDetector.Regexes.Models;
+namespace UaDetector.Abstractions.Models;
 
-internal sealed class BotProducer
+public sealed class BotProducer
 {
     public string? Name { get; init; }
     public string? Url { get; init; }
