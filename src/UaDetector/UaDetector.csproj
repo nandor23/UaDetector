@@ -21,7 +21,14 @@
     <AdditionalFiles Include="Regexes\**\media_players.json" />
     <AdditionalFiles Include="Regexes\**\mobile_apps.json" />
     <AdditionalFiles Include="Regexes\**\pims.json" />
+    
     <AdditionalFiles Include="Regexes\**\cameras.json" />
+    <AdditionalFiles Include="Regexes\**\car_browsers.json" />
+    <AdditionalFiles Include="Regexes\**\consoles.json" />
+    <AdditionalFiles Include="Regexes\**\televisions.json" />
+    <AdditionalFiles Include="Regexes\**\notebooks.json" />
+    <AdditionalFiles Include="Regexes\**\portable_media_players.json" />
+    <AdditionalFiles Include="Regexes\**\shell_televisions.json" />
   </ItemGroup>
 
   <ItemGroup>

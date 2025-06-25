@@ -1,5 +1,6 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Text.RegularExpressions;
+using UaDetector.Abstractions.Attributes;
 using UaDetector.Abstractions.Enums;
 using UaDetector.Abstractions.Models;
 using UaDetector.Results;
@@ -7,15 +8,14 @@ using UaDetector.Utilities;
 
 namespace UaDetector.Parsers.Devices;
 
-internal sealed class ShellTvParser : DeviceParserBase
+internal sealed partial class ShellTvParser : DeviceParserBase
 {
-    private const string ResourceName = "Regexes.Resources.Devices.shell_televisions.json";
-    private static readonly IReadOnlyList<Device> ShellTelevisions;
+    [RegexSource("Regexes/Resources/Devices/shell_televisions.json")]
+    private static partial IReadOnlyList<Device> ShellTelevisions { get; }
     internal static readonly Regex ShellTvRegex;
 
     static ShellTvParser()
     {
-        ShellTelevisions = RegexLoader.LoadRegexes<Device>(ResourceName);
         ShellTvRegex = RegexUtilis.BuildUserAgentRegex(
             @"[a-z]+[ _]Shell[ _]\w{6}|tclwebkit(\d+[.\d]*)"
         );

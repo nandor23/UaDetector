@@ -1,5 +1,4 @@
 using System.Text;
-
 using UaDetector.Abstractions.Enums;
 using UaDetector.Abstractions.Models;
 using UaDetector.SourceGenerator.Collections;
@@ -88,35 +87,34 @@ internal sealed class DeviceGenerator
 
         sb.AppendLine("[").Indent();
 
+        int deviceCount = 0;
         int modelCount = 0;
 
-        for (int i = 0; i < list.Count; i++)
+        foreach (var rule in list)
         {
             sb.AppendLine($"new {regexSourceProperty.ElementType}")
                 .AppendLine("{")
                 .Indent()
-                .AppendLine($"{nameof(Device.Regex)} = {DeviceRegexPrefix}{i},")
-                .AppendLine($"{nameof(Device.Brand)} = \"{list[i].Brand}\",");
+                .AppendLine($"{nameof(Device.Regex)} = {DeviceRegexPrefix}{deviceCount},")
+                .AppendLine($"{nameof(Device.Brand)} = \"{rule.Brand}\",");
 
-            if (list[i].Type is not null)
+            if (rule.Type is not null)
             {
-                sb.AppendLine($"{nameof(Device.Type)} = {enumType}.{list[i].Type},");
+                sb.AppendLine($"{nameof(Device.Type)} = {enumType}.{rule.Type},");
             }
 
-            if (list[i].Model is not null)
+            if (rule.Model is not null)
             {
-                sb.AppendLine($"{nameof(Device.Model)} = \"{list[i].Model}\",");
+                sb.AppendLine($"{nameof(Device.Model)} = \"{rule.Model.EscapeStringLiteral()}\",");
             }
 
-            if (list[i].ModelVariants is { Count: > 0 } modelVariants)
+            if (rule.ModelVariants is not null)
             {
-                sb.AppendLine(
-                        $"{nameof(Device.ModelVariants)} = new {deviceModelType}[]"
-                    )
+                sb.AppendLine($"{nameof(Device.ModelVariants)} = new {deviceModelType}[]")
                     .AppendLine("{")
                     .Indent();
 
-                foreach (var model in modelVariants)
+                foreach (var model in rule.ModelVariants)
                 {
                     sb.AppendLine($"new {deviceModelType}")
                         .AppendLine("{")
@@ -124,7 +122,7 @@ internal sealed class DeviceGenerator
                         .AppendLine(
                             $"{nameof(DeviceModel.Regex)} = {ModelRegexPrefix}{modelCount},"
                         );
-                    
+
                     if (model.Type is not null)
                     {
                         sb.AppendLine($"{nameof(DeviceModel.Type)} = {enumType}.{model.Type},");
@@ -137,11 +135,12 @@ internal sealed class DeviceGenerator
 
                     if (model.Name is not null)
                     {
-                        sb.AppendLine($"{nameof(DeviceModel.Name)} = \"{model.Name}\",");
+                        sb.AppendLine(
+                            $"{nameof(DeviceModel.Name)} = \"{model.Name.EscapeStringLiteral()}\","
+                        );
                     }
 
-                    sb.Unindent()
-                        .AppendLine("},");
+                    sb.Unindent().AppendLine("},");
 
                     modelCount += 1;
                 }
@@ -150,10 +149,13 @@ internal sealed class DeviceGenerator
             }
 
             sb.Unindent().AppendLine("},");
+
+            deviceCount += 1;
         }
 
         sb.Unindent().AppendLine("]");
-        
+
+        //  return "null";
         return sb.ToString();
     }
 }
