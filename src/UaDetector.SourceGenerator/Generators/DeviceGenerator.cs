@@ -155,7 +155,6 @@ internal sealed class DeviceGenerator
 
         sb.Unindent().AppendLine("]");
 
-        //  return "null";
         return sb.ToString();
     }
 }

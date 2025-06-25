@@ -26,6 +26,7 @@
     <AdditionalFiles Include="Regexes\**\car_browsers.json" />
     <AdditionalFiles Include="Regexes\**\consoles.json" />
     <AdditionalFiles Include="Regexes\**\televisions.json" />
+    <AdditionalFiles Include="Regexes\**\mobiles.json" />
     <AdditionalFiles Include="Regexes\**\notebooks.json" />
     <AdditionalFiles Include="Regexes\**\portable_media_players.json" />
     <AdditionalFiles Include="Regexes\**\shell_televisions.json" />

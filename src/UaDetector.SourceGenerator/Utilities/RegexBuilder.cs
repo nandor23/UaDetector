@@ -6,10 +6,13 @@ internal static class RegexBuilder
 {
     public static string BuildRegexFieldDeclaration(string methodName, string pattern)
     {
+        var fullPattern = BuildRegexPattern(pattern);
+        var escapedPattern = EscapeForVerbatimString(fullPattern);
+
         return $"""
             private static readonly global::System.Text.RegularExpressions.Regex {methodName} = 
                     new global::System.Text.RegularExpressions.Regex(
-                        @"{BuildRegexPattern(pattern)}", 
+                        @"{escapedPattern}", 
                         global::System.Text.RegularExpressions.RegexOptions.IgnoreCase | 
                         global::System.Text.RegularExpressions.RegexOptions.Compiled);
             """;
@@ -26,16 +29,23 @@ internal static class RegexBuilder
         }
 
         var fieldName = $"_{combinedRegexProperty.PropertyName}";
+        var fullPattern = BuildRegexPattern(pattern);
+        var escapedPattern = EscapeForVerbatimString(fullPattern);
 
         return $"""
             private static readonly global::System.Text.RegularExpressions.Regex {fieldName} = 
                     new global::System.Text.RegularExpressions.Regex(
-                        @"{BuildRegexPattern(pattern)}", 
+                        @"{escapedPattern}", 
                         global::System.Text.RegularExpressions.RegexOptions.IgnoreCase | 
                         global::System.Text.RegularExpressions.RegexOptions.Compiled);
 
                 {combinedRegexProperty.PropertyAccessibility.ToSyntaxString()} static partial global::System.Text.RegularExpressions.Regex {combinedRegexProperty.PropertyName} => {fieldName}; 
             """;
+    }
+
+    private static string EscapeForVerbatimString(this string input)
+    {
+        return input.Replace("\"", "\"\"");
     }
 
     private static string BuildRegexPattern(string pattern)
