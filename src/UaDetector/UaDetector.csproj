@@ -13,7 +13,8 @@
 
   <ItemGroup>
     <EmbeddedResource Include="Regexes\**\*.json" />
-    
+
+    <AdditionalFiles Include="Regexes\**\operating_systems.json" />
     <AdditionalFiles Include="Regexes\**\browsers.json" />
     <AdditionalFiles Include="Regexes\**\browser_engines.json" />
     <AdditionalFiles Include="Regexes\**\feed_readers.json" />

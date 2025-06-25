@@ -204,6 +204,11 @@ internal sealed class RegexGenerator : IIncrementalGenerator
             return EngineSourceGenerator.Generate(json, regexSourceProperty, combinedRegexProperty);
         }
 
+        if (regexSourceProperty.ElementType == GetGlobalQualifiedName<Os>())
+        {
+            return OsSourceGenerator.Generate(json, regexSourceProperty, combinedRegexProperty);
+        }
+
         throw new NotSupportedException();
     }
 

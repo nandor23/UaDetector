@@ -7,7 +7,7 @@ using UaDetector.SourceGenerator.Utilities;
 
 namespace UaDetector.SourceGenerator.Generators;
 
-internal sealed class DeviceGenerator
+internal static class DeviceGenerator
 {
     private const string DeviceRegexPrefix = "DeviceRegex";
     private const string ModelRegexPrefix = "ModelRegex";
@@ -88,7 +88,7 @@ internal sealed class DeviceGenerator
         int modelCount = 0;
 
         sb.AppendLine("[").Indent();
-        
+
         foreach (var device in list)
         {
             sb.AppendLine($"new {regexSourceProperty.ElementType}")
@@ -104,7 +104,9 @@ internal sealed class DeviceGenerator
 
             if (device.Model is not null)
             {
-                sb.AppendLine($"{nameof(Device.Model)} = \"{device.Model.EscapeStringLiteral()}\",");
+                sb.AppendLine(
+                    $"{nameof(Device.Model)} = \"{device.Model.EscapeStringLiteral()}\","
+                );
             }
 
             if (device.ModelVariants is not null)
@@ -129,7 +131,9 @@ internal sealed class DeviceGenerator
 
                     if (model.Brand is not null)
                     {
-                        sb.AppendLine($"{nameof(DeviceModel.Brand)} = \"{model.Brand.EscapeStringLiteral()}\",");
+                        sb.AppendLine(
+                            $"{nameof(DeviceModel.Brand)} = \"{model.Brand.EscapeStringLiteral()}\","
+                        );
                     }
 
                     if (model.Name is not null)

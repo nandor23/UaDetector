@@ -73,7 +73,9 @@ internal static class ClientSourceGenerator
 
             if (client.Version is not null)
             {
-                sb.AppendLine($"{nameof(Client.Version)} = \"{client.Version.EscapeStringLiteral()}\",");
+                sb.AppendLine(
+                    $"{nameof(Client.Version)} = \"{client.Version.EscapeStringLiteral()}\","
+                );
             }
 
             sb.Unindent().AppendLine("},");

@@ -63,7 +63,7 @@ internal static class BrowserSourceGenerator
         int browserCount = 0;
 
         sb.AppendLine("[").Indent();
-        
+
         foreach (var browser in list)
         {
             sb.AppendLine($"new {regexSourceProperty.ElementType}")
@@ -74,7 +74,9 @@ internal static class BrowserSourceGenerator
 
             if (browser.Version is not null)
             {
-                sb.AppendLine($"{nameof(Browser.Version)} = \"{browser.Version.EscapeStringLiteral()}\",");
+                sb.AppendLine(
+                    $"{nameof(Browser.Version)} = \"{browser.Version.EscapeStringLiteral()}\","
+                );
             }
 
             if (browser.Engine is not null)
@@ -85,7 +87,9 @@ internal static class BrowserSourceGenerator
 
                 if (browser.Engine?.Default is not null)
                 {
-                    sb.AppendLine($"{nameof(Browser.Engine.Default)} = \"{browser.Engine.Default.EscapeStringLiteral()}\",");
+                    sb.AppendLine(
+                        $"{nameof(Browser.Engine.Default)} = \"{browser.Engine.Default.EscapeStringLiteral()}\","
+                    );
                 }
 
                 if (browser.Engine?.Versions is not null)
@@ -98,7 +102,9 @@ internal static class BrowserSourceGenerator
 
                     foreach (var version in browser.Engine.Versions)
                     {
-                        sb.AppendLine($"{{ \"{version.Key}\", \"{version.Value.EscapeStringLiteral()}\" }},");
+                        sb.AppendLine(
+                            $"{{ \"{version.Key}\", \"{version.Value.EscapeStringLiteral()}\" }},"
+                        );
                     }
 
                     sb.Unindent().AppendLine("},");

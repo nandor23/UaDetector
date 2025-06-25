@@ -2,6 +2,7 @@ using System.Collections.Frozen;
 using System.Collections.Immutable;
 using System.Diagnostics.CodeAnalysis;
 using System.Text.RegularExpressions;
+using UaDetector.Abstractions.Attributes;
 using UaDetector.Abstractions.Constants;
 using UaDetector.Abstractions.Enums;
 using UaDetector.Abstractions.Models;
@@ -10,14 +11,16 @@ using UaDetector.Utilities;
 
 namespace UaDetector.Parsers;
 
-public sealed class OsParser : IOsParser
+public sealed partial class OsParser : IOsParser
 {
-    private const string ResourceName = "Regexes.Resources.operating_systems.json";
+    [RegexSource("Regexes/Resources/operating_systems.json")]
+    internal static partial IReadOnlyList<Os> OperatingSystems { get; }
+
     private const string CacheKeyPrefix = "os";
     private readonly IUaDetectorCache? _cache;
     private readonly UaDetectorOptions _uaDetectorOptions;
     private readonly BotParser _botParser;
-    internal static readonly IReadOnlyList<Os> OperatingSystems;
+
     internal static readonly FrozenDictionary<OsCode, string> OsCodeMapping;
     internal static readonly FrozenDictionary<string, OsCode> OsNameMapping;
     internal static readonly FrozenDictionary<string, FrozenSet<OsCode>> OsFamilyMapping;
@@ -32,7 +35,6 @@ public sealed class OsParser : IOsParser
 
     static OsParser()
     {
-        OperatingSystems = RegexLoader.LoadRegexes<Os>(ResourceName);
         OsCodeMapping = new Dictionary<OsCode, string>
         {
             { OsCode.Aix, OsNames.Aix },
