@@ -8,7 +8,7 @@ namespace UaDetector.SourceGenerator.Generators;
 
 internal static class ClientSourceGenerator
 {
-    private const string RegexMethodPrefix = "ClientRegex";
+    private const string ClientRegexPrefix = "ClientRegex";
 
     public static string Generate(
         string json,
@@ -40,7 +40,7 @@ internal static class ClientSourceGenerator
         for (int i = 0; i < list.Count; i++)
         {
             sb.AppendLine(
-                RegexBuilder.BuildRegexFieldDeclaration($"{RegexMethodPrefix}{i}", list[i].Regex)
+                RegexBuilder.BuildRegexFieldDeclaration($"{ClientRegexPrefix}{i}", list[i].Regex)
             );
             sb.AppendLine();
         }
@@ -59,23 +59,26 @@ internal static class ClientSourceGenerator
         }
 
         var sb = new IndentedStringBuilder();
+        int clientCount = 0;
 
         sb.AppendLine("[").Indent();
 
-        for (int i = 0; i < list.Count; i++)
+        foreach (var client in list)
         {
             sb.AppendLine($"new {regexSourceProperty.ElementType}")
                 .AppendLine("{")
                 .Indent()
-                .AppendLine($"{nameof(Client.Regex)} = {RegexMethodPrefix}{i},")
-                .AppendLine($"{nameof(Client.Name)} = \"{list[i].Name}\",");
+                .AppendLine($"{nameof(Client.Regex)} = {ClientRegexPrefix}{clientCount},")
+                .AppendLine($"{nameof(Client.Name)} = \"{client.Name.EscapeStringLiteral()}\",");
 
-            if (list[i].Version is not null)
+            if (client.Version is not null)
             {
-                sb.AppendLine($"{nameof(Client.Version)} = \"{list[i].Version}\",");
+                sb.AppendLine($"{nameof(Client.Version)} = \"{client.Version.EscapeStringLiteral()}\",");
             }
 
             sb.Unindent().AppendLine("},");
+
+            clientCount += 1;
         }
 
         sb.Unindent().AppendLine("]");

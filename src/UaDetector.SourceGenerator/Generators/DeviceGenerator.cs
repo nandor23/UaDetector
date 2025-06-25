@@ -84,37 +84,36 @@ internal sealed class DeviceGenerator
         var deviceModelType = $"global::{typeof(DeviceModel).FullName}";
         var enumType = $"global::{typeof(DeviceType).FullName}";
         var sb = new IndentedStringBuilder();
-
-        sb.AppendLine("[").Indent();
-
         int deviceCount = 0;
         int modelCount = 0;
 
-        foreach (var rule in list)
+        sb.AppendLine("[").Indent();
+        
+        foreach (var device in list)
         {
             sb.AppendLine($"new {regexSourceProperty.ElementType}")
                 .AppendLine("{")
                 .Indent()
                 .AppendLine($"{nameof(Device.Regex)} = {DeviceRegexPrefix}{deviceCount},")
-                .AppendLine($"{nameof(Device.Brand)} = \"{rule.Brand}\",");
+                .AppendLine($"{nameof(Device.Brand)} = \"{device.Brand.EscapeStringLiteral()}\",");
 
-            if (rule.Type is not null)
+            if (device.Type is not null)
             {
-                sb.AppendLine($"{nameof(Device.Type)} = {enumType}.{rule.Type},");
+                sb.AppendLine($"{nameof(Device.Type)} = {enumType}.{device.Type},");
             }
 
-            if (rule.Model is not null)
+            if (device.Model is not null)
             {
-                sb.AppendLine($"{nameof(Device.Model)} = \"{rule.Model.EscapeStringLiteral()}\",");
+                sb.AppendLine($"{nameof(Device.Model)} = \"{device.Model.EscapeStringLiteral()}\",");
             }
 
-            if (rule.ModelVariants is not null)
+            if (device.ModelVariants is not null)
             {
                 sb.AppendLine($"{nameof(Device.ModelVariants)} = new {deviceModelType}[]")
                     .AppendLine("{")
                     .Indent();
 
-                foreach (var model in rule.ModelVariants)
+                foreach (var model in device.ModelVariants)
                 {
                     sb.AppendLine($"new {deviceModelType}")
                         .AppendLine("{")
@@ -130,7 +129,7 @@ internal sealed class DeviceGenerator
 
                     if (model.Brand is not null)
                     {
-                        sb.AppendLine($"{nameof(DeviceModel.Brand)} = \"{model.Brand}\",");
+                        sb.AppendLine($"{nameof(DeviceModel.Brand)} = \"{model.Brand.EscapeStringLiteral()}\",");
                     }
 
                     if (model.Name is not null)

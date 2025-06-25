@@ -8,7 +8,7 @@ namespace UaDetector.SourceGenerator.Generators;
 
 internal static class EngineSourceGenerator
 {
-    private const string RegexMethodPrefix = "EngineRegex";
+    private const string EngineRegexPrefix = "EngineRegex";
 
     public static string Generate(
         string json,
@@ -40,7 +40,7 @@ internal static class EngineSourceGenerator
         for (int i = 0; i < list.Count; i++)
         {
             sb.AppendLine(
-                RegexBuilder.BuildRegexFieldDeclaration($"{RegexMethodPrefix}{i}", list[i].Regex)
+                RegexBuilder.BuildRegexFieldDeclaration($"{EngineRegexPrefix}{i}", list[i].Regex)
             );
             sb.AppendLine();
         }
@@ -67,8 +67,8 @@ internal static class EngineSourceGenerator
             sb.AppendLine($"new {regexSourceProperty.ElementType}")
                 .AppendLine("{")
                 .Indent()
-                .AppendLine($"{nameof(Engine.Regex)} = {RegexMethodPrefix}{i},")
-                .AppendLine($"{nameof(Engine.Name)} = \"{list[i].Name}\",")
+                .AppendLine($"{nameof(Engine.Regex)} = {EngineRegexPrefix}{i},")
+                .AppendLine($"{nameof(Engine.Name)} = \"{list[i].Name.EscapeStringLiteral()}\",")
                 .Unindent()
                 .AppendLine("},");
         }

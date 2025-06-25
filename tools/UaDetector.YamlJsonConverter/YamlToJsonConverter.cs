@@ -14,7 +14,7 @@ using UaDetector.Tests.Fixtures.Models;
 using UaDetector.YamlJsonConverter.Fixtures;
 using UaDetector.YamlJsonConverter.Models;
 using UaDetector.YamlJsonConverter.Utils;
-using Os = UaDetector.Regexes.Models.Os;
+using Os = UaDetector.Abstractions.Models.Os;
 
 namespace UaDetector.YamlJsonConverter;
 

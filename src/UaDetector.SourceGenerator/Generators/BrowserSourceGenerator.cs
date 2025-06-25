@@ -8,7 +8,7 @@ namespace UaDetector.SourceGenerator.Generators;
 
 internal static class BrowserSourceGenerator
 {
-    private const string RegexMethodPrefix = "BrowserRegex";
+    private const string BrowserRegexPrefix = "BrowserRegex";
 
     public static string Generate(
         string json,
@@ -40,7 +40,7 @@ internal static class BrowserSourceGenerator
         for (int i = 0; i < list.Count; i++)
         {
             sb.AppendLine(
-                RegexBuilder.BuildRegexFieldDeclaration($"{RegexMethodPrefix}{i}", list[i].Regex)
+                RegexBuilder.BuildRegexFieldDeclaration($"{BrowserRegexPrefix}{i}", list[i].Regex)
             );
             sb.AppendLine();
         }
@@ -60,34 +60,35 @@ internal static class BrowserSourceGenerator
 
         var engineType = $"global::{typeof(BrowserEngine).FullName}";
         var sb = new IndentedStringBuilder();
+        int browserCount = 0;
 
         sb.AppendLine("[").Indent();
-
-        for (int i = 0; i < list.Count; i++)
+        
+        foreach (var browser in list)
         {
             sb.AppendLine($"new {regexSourceProperty.ElementType}")
                 .AppendLine("{")
                 .Indent()
-                .AppendLine($"{nameof(Browser.Regex)} = {RegexMethodPrefix}{i},")
-                .AppendLine($"{nameof(Browser.Name)} = \"{list[i].Name}\",");
+                .AppendLine($"{nameof(Browser.Regex)} = {BrowserRegexPrefix}{browserCount},")
+                .AppendLine($"{nameof(Browser.Name)} = \"{browser.Name.EscapeStringLiteral()}\",");
 
-            if (list[i].Version is not null)
+            if (browser.Version is not null)
             {
-                sb.AppendLine($"{nameof(Browser.Version)} = \"{list[i].Version}\",");
+                sb.AppendLine($"{nameof(Browser.Version)} = \"{browser.Version.EscapeStringLiteral()}\",");
             }
 
-            if (list[i].Engine is not null)
+            if (browser.Engine is not null)
             {
                 sb.AppendLine($"{nameof(Browser.Engine)} = new {engineType}")
                     .AppendLine("{")
                     .Indent();
 
-                if (list[i].Engine?.Default is { } defaultEngine)
+                if (browser.Engine?.Default is not null)
                 {
-                    sb.AppendLine($"{nameof(Browser.Engine.Default)} = \"{defaultEngine}\",");
+                    sb.AppendLine($"{nameof(Browser.Engine.Default)} = \"{browser.Engine.Default.EscapeStringLiteral()}\",");
                 }
 
-                if (list[i].Engine?.Versions is { Count: > 0 } engineVersions)
+                if (browser.Engine?.Versions is not null)
                 {
                     sb.AppendLine(
                             $"{nameof(Browser.Engine.Versions)} = new global::System.Collections.Generic.Dictionary<string, string>"
@@ -95,9 +96,9 @@ internal static class BrowserSourceGenerator
                         .AppendLine("{")
                         .Indent();
 
-                    foreach (var version in engineVersions)
+                    foreach (var version in browser.Engine.Versions)
                     {
-                        sb.AppendLine($"{{ \"{version.Key}\", \"{version.Value}\" }},");
+                        sb.AppendLine($"{{ \"{version.Key}\", \"{version.Value.EscapeStringLiteral()}\" }},");
                     }
 
                     sb.Unindent().AppendLine("},");
@@ -107,6 +108,8 @@ internal static class BrowserSourceGenerator
             }
 
             sb.Unindent().AppendLine("},");
+
+            browserCount += 1;
         }
 
         sb.Unindent().AppendLine("]");
