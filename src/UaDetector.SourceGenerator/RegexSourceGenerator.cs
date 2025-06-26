@@ -1,12 +1,9 @@
 using System.Collections.Immutable;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
-using UaDetector.Abstractions.Models;
-using UaDetector.Abstractions.Models.Browsers;
 using UaDetector.SourceGenerator.Generators;
 using UaDetector.SourceGenerator.Models;
 using UaDetector.SourceGenerator.Utilities;
-using Engine = UaDetector.Abstractions.Models.Browsers.Engine;
 
 namespace UaDetector.SourceGenerator;
 
@@ -171,59 +168,46 @@ internal sealed class RegexSourceGenerator : IIncrementalGenerator
         CombinedRegexProperty? combinedRegexProperty
     )
     {
-        if (regexSourceProperty.ElementType is null)
+        return regexSourceProperty.ElementType switch
         {
-            throw new NotSupportedException();
-        }
-
-        if (regexSourceProperty.ElementType == GetGlobalQualifiedName<Client>())
-        {
-            return ClientSourceGenerator.Generate(json, regexSourceProperty, combinedRegexProperty);
-        }
-
-        if (regexSourceProperty.ElementType == GetGlobalQualifiedName<Device>())
-        {
-            return DeviceGenerator.Generate(json, regexSourceProperty, combinedRegexProperty);
-        }
-
-        if (regexSourceProperty.ElementType == GetGlobalQualifiedName<Browser>())
-        {
-            return BrowserSourceGenerator.Generate(
+            null => throw new NotSupportedException(),
+            "global::UaDetector.Abstractions.Models.Client" => ClientSourceGenerator.Generate(
                 json,
                 regexSourceProperty,
                 combinedRegexProperty
-            );
-        }
-
-        if (regexSourceProperty.ElementType == GetGlobalQualifiedName<Engine>())
-        {
-            return EngineSourceGenerator.Generate(json, regexSourceProperty, combinedRegexProperty);
-        }
-
-        if (regexSourceProperty.ElementType == GetGlobalQualifiedName<Os>())
-        {
-            return OsSourceGenerator.Generate(json, regexSourceProperty, combinedRegexProperty);
-        }
-
-        if (regexSourceProperty.ElementType == GetGlobalQualifiedName<Bot>())
-        {
-            return BotSourceGenerator.Generate(json, regexSourceProperty, combinedRegexProperty);
-        }
-
-        if (regexSourceProperty.ElementType == GetGlobalQualifiedName<VendorFragment>())
-        {
-            return VendorFragmentSourceGenerator.Generate(
+            ),
+            "global::UaDetector.Abstractions.Models.Device" => DeviceGenerator.Generate(
                 json,
                 regexSourceProperty,
                 combinedRegexProperty
-            );
-        }
-
-        throw new NotSupportedException();
-    }
-
-    private static string GetGlobalQualifiedName<T>()
-    {
-        return $"global::{typeof(T).FullName}";
+            ),
+            "global::UaDetector.Abstractions.Models.Browser" => BrowserSourceGenerator.Generate(
+                json,
+                regexSourceProperty,
+                combinedRegexProperty
+            ),
+            "global::UaDetector.Abstractions.Models.Engine" => EngineSourceGenerator.Generate(
+                json,
+                regexSourceProperty,
+                combinedRegexProperty
+            ),
+            "global::UaDetector.Abstractions.Models.Os" => OsSourceGenerator.Generate(
+                json,
+                regexSourceProperty,
+                combinedRegexProperty
+            ),
+            "global::UaDetector.Abstractions.Models.Bot" => BotSourceGenerator.Generate(
+                json,
+                regexSourceProperty,
+                combinedRegexProperty
+            ),
+            "global::UaDetector.Abstractions.Models.VendorFragment" =>
+                VendorFragmentSourceGenerator.Generate(
+                    json,
+                    regexSourceProperty,
+                    combinedRegexProperty
+                ),
+            _ => throw new NotSupportedException(),
+        };
     }
 }

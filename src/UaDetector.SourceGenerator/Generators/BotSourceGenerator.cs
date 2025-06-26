@@ -1,5 +1,4 @@
 using System.Text;
-using UaDetector.Abstractions.Enums;
 using UaDetector.Abstractions.Models;
 using UaDetector.SourceGenerator.Collections;
 using UaDetector.SourceGenerator.Models;
@@ -59,8 +58,6 @@ internal sealed class BotSourceGenerator
             return "[]";
         }
 
-        var categoryType = $"global::{typeof(BotCategory).FullName}";
-        var producerType = $"global::{typeof(BotProducer).FullName}";
         var sb = new IndentedStringBuilder();
         int botCount = 0;
 
@@ -76,7 +73,7 @@ internal sealed class BotSourceGenerator
 
             if (bot.Category is not null)
             {
-                sb.AppendLine($"{nameof(Bot.Category)} = {categoryType}.{bot.Category},");
+                sb.AppendLine($"{nameof(Bot.Category)} = global::UaDetector.Abstractions.Enums.BotCategory.{bot.Category},");
             }
 
             if (bot.Url is not null)
@@ -86,7 +83,7 @@ internal sealed class BotSourceGenerator
 
             if (bot.Producer is not null)
             {
-                sb.AppendLine($"{nameof(Bot.Producer)} = new {producerType}")
+                sb.AppendLine($"{nameof(Bot.Producer)} = new global::UaDetector.Abstractions.Models.BotProducer")
                     .AppendLine("{")
                     .Indent();
 

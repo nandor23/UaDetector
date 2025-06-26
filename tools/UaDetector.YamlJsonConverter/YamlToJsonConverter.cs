@@ -5,7 +5,6 @@ using System.Text.Json.Serialization;
 using System.Text.RegularExpressions;
 using UaDetector.Abstractions.Enums;
 using UaDetector.Abstractions.Models;
-using UaDetector.Abstractions.Models.Browsers;
 using UaDetector.Parsers;
 using UaDetector.Parsers.Devices;
 using UaDetector.Results;

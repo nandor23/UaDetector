@@ -3,7 +3,7 @@ using System.Diagnostics.CodeAnalysis;
 using System.Text.RegularExpressions;
 using UaDetector.Abstractions.Attributes;
 using UaDetector.Abstractions.Constants;
-using UaDetector.Abstractions.Models.Browsers;
+using UaDetector.Abstractions.Models;
 
 namespace UaDetector.Parsers.Browsers;
 

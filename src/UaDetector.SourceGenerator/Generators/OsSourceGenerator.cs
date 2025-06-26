@@ -80,7 +80,6 @@ internal static class OsSourceGenerator
             return "[]";
         }
 
-        var versionType = $"global::{typeof(OsVersion).FullName}";
         var sb = new IndentedStringBuilder();
         int osCount = 0;
         int versionCount = 0;
@@ -102,13 +101,13 @@ internal static class OsSourceGenerator
 
             if (os.Versions is not null)
             {
-                sb.AppendLine($"{nameof(Os.Versions)} = new {versionType}[]")
+                sb.AppendLine($"{nameof(Os.Versions)} = new global::UaDetector.Abstractions.Models.OsVersion[]")
                     .AppendLine("{")
                     .Indent();
 
                 foreach (var osVersion in os.Versions)
                 {
-                    sb.AppendLine($"new {versionType}")
+                    sb.AppendLine("new global::UaDetector.Abstractions.Models.OsVersion")
                         .AppendLine("{")
                         .Indent()
                         .AppendLine(

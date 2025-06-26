@@ -1,6 +1,6 @@
 using System.Text.RegularExpressions;
 
-namespace UaDetector.Abstractions.Models.Browsers;
+namespace UaDetector.Abstractions.Models;
 
 public sealed class Browser
 {

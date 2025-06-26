@@ -1,5 +1,4 @@
 using System.Text;
-using UaDetector.Abstractions.Enums;
 using UaDetector.Abstractions.Models;
 using UaDetector.SourceGenerator.Collections;
 using UaDetector.SourceGenerator.Models;
@@ -81,8 +80,6 @@ internal static class DeviceGenerator
             return "[]";
         }
 
-        var deviceModelType = $"global::{typeof(DeviceModel).FullName}";
-        var enumType = $"global::{typeof(DeviceType).FullName}";
         var sb = new IndentedStringBuilder();
         int deviceCount = 0;
         int modelCount = 0;
@@ -99,7 +96,7 @@ internal static class DeviceGenerator
 
             if (device.Type is not null)
             {
-                sb.AppendLine($"{nameof(Device.Type)} = {enumType}.{device.Type},");
+                sb.AppendLine($"{nameof(Device.Type)} = global::UaDetector.Abstractions.Enums.DeviceType.{device.Type},");
             }
 
             if (device.Model is not null)
@@ -111,13 +108,13 @@ internal static class DeviceGenerator
 
             if (device.ModelVariants is not null)
             {
-                sb.AppendLine($"{nameof(Device.ModelVariants)} = new {deviceModelType}[]")
+                sb.AppendLine($"{nameof(Device.ModelVariants)} = new global::UaDetector.Abstractions.Models.DeviceModel[]")
                     .AppendLine("{")
                     .Indent();
 
                 foreach (var model in device.ModelVariants)
                 {
-                    sb.AppendLine($"new {deviceModelType}")
+                    sb.AppendLine("new global::UaDetector.Abstractions.Models.DeviceModel")
                         .AppendLine("{")
                         .Indent()
                         .AppendLine(
@@ -126,7 +123,7 @@ internal static class DeviceGenerator
 
                     if (model.Type is not null)
                     {
-                        sb.AppendLine($"{nameof(DeviceModel.Type)} = {enumType}.{model.Type},");
+                        sb.AppendLine($"{nameof(DeviceModel.Type)} = global::UaDetector.Abstractions.Enums.DeviceType.{model.Type},");
                     }
 
                     if (model.Brand is not null)
