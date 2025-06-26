@@ -1,4 +1,4 @@
-namespace UaDetector.Abstractions.Attributes;
+namespace UaDetector.Attributes;
 
 [AttributeUsage(AttributeTargets.Property)]
 public sealed class CombinedRegex : Attribute;

@@ -1,11 +1,12 @@
-namespace UaDetector.Abstractions.Attributes;
+namespace UaDetector.Attributes;
 
 [AttributeUsage(AttributeTargets.Property)]
-public sealed class HintSource : Attribute
+public sealed class RegexSource : Attribute
 {
     public string FilePath { get; }
+    public string? RegexSuffix { get; }
 
-    public HintSource(string filePath)
+    public RegexSource(string filePath, string? regexSuffix = null)
     {
         if (
             string.IsNullOrWhiteSpace(filePath)
@@ -17,5 +18,6 @@ public sealed class HintSource : Attribute
             );
 
         FilePath = filePath;
+        RegexSuffix = regexSuffix;
     }
 }

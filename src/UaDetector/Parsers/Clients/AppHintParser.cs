@@ -1,6 +1,6 @@
 using System.Collections.Frozen;
 using System.Diagnostics.CodeAnalysis;
-using UaDetector.Abstractions.Attributes;
+using UaDetector.Attributes;
 
 namespace UaDetector.Parsers.Clients;
 

@@ -14,7 +14,7 @@ internal sealed class RegexSourceGenerator : IIncrementalGenerator
     {
         var regexSourceProvider = context
             .SyntaxProvider.ForAttributeWithMetadataName(
-                "UaDetector.Abstractions.Attributes.RegexSource",
+                "UaDetector.Attributes.RegexSource",
                 predicate: static (node, _) => node is PropertyDeclarationSyntax,
                 transform: GetRegexSourceForGeneration
             )
@@ -23,7 +23,7 @@ internal sealed class RegexSourceGenerator : IIncrementalGenerator
 
         var combinedRegexProvider = context
             .SyntaxProvider.ForAttributeWithMetadataName(
-                "UaDetector.Abstractions.Attributes.CombinedRegex",
+                "UaDetector.Attributes.CombinedRegex",
                 predicate: static (node, _) => node is PropertyDeclarationSyntax,
                 transform: GetCombinedRegexForGeneration
             )

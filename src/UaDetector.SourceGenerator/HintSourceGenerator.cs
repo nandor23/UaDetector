@@ -13,7 +13,7 @@ internal sealed class HintSourceGenerator : IIncrementalGenerator
     {
         var hintSourceProvider = context
             .SyntaxProvider.ForAttributeWithMetadataName(
-                "UaDetector.Abstractions.Attributes.HintSource",
+                "UaDetector.Attributes.HintSource",
                 predicate: static (node, _) => node is PropertyDeclarationSyntax,
                 transform: GetHintSourceForGeneration
             )
