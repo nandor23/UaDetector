@@ -12,27 +12,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="Regexes\**\*.json" />
-
-    <AdditionalFiles Include="Regexes\**\vendor_fragments.json" />
-    <AdditionalFiles Include="Regexes\**\operating_systems.json" />
-    <AdditionalFiles Include="Regexes\**\browsers.json" />
-    <AdditionalFiles Include="Regexes\**\browser_engines.json" />
-    <AdditionalFiles Include="Regexes\**\bots.json" />
-    <AdditionalFiles Include="Regexes\**\feed_readers.json" />
-    <AdditionalFiles Include="Regexes\**\libraries.json" />
-    <AdditionalFiles Include="Regexes\**\media_players.json" />
-    <AdditionalFiles Include="Regexes\**\mobile_apps.json" />
-    <AdditionalFiles Include="Regexes\**\pims.json" />
-    
-    <AdditionalFiles Include="Regexes\**\cameras.json" />
-    <AdditionalFiles Include="Regexes\**\car_browsers.json" />
-    <AdditionalFiles Include="Regexes\**\consoles.json" />
-    <AdditionalFiles Include="Regexes\**\televisions.json" />
-    <AdditionalFiles Include="Regexes\**\mobiles.json" />
-    <AdditionalFiles Include="Regexes\**\notebooks.json" />
-    <AdditionalFiles Include="Regexes\**\portable_media_players.json" />
-    <AdditionalFiles Include="Regexes\**\shell_televisions.json" />
+    <AdditionalFiles Include="Regexes\**\*.json" />
   </ItemGroup>
 
   <ItemGroup>
@@ -59,9 +39,5 @@
     <ProjectReference Include="..\UaDetector.SourceGenerator\UaDetector.SourceGenerator.csproj"
                       OutputItemType="Analyzer"
                       ReferenceOutputAssembly="false" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Regexes\Models\" />
   </ItemGroup>
 </Project>

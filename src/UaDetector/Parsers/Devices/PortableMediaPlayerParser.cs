@@ -8,7 +8,7 @@ namespace UaDetector.Parsers.Devices;
 
 internal sealed partial class PortableMediaPlayerParser : DeviceParserBase
 {
-    [RegexSource("Regexes/Resources/Devices/portable_media_players.json")]
+    [RegexSource("Regexes/Devices/portable_media_players.json")]
     private static partial IReadOnlyList<Device> PortableMediaPlayers { get; }
 
     [CombinedRegex]

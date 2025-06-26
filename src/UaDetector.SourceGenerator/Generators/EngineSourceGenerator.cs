@@ -16,7 +16,7 @@ internal static class EngineSourceGenerator
         CombinedRegexProperty? combinedRegexProperty
     )
     {
-        var list = JsonUtils.DeserializeJson<EngineRule>(json);
+        var list = JsonUtils.DeserializeList<EngineRule>(json);
         var regexDeclarations = GenerateRegexDeclarations(list);
         var collectionInitializer = GenerateCollectionInitializer(list, regexSourceProperty);
 

@@ -7,7 +7,7 @@ namespace UaDetector.Parsers.Devices;
 
 internal sealed partial class MobileParser : DeviceParserBase
 {
-    [RegexSource("Regexes/Resources/Devices/mobiles.json")]
+    [RegexSource("Regexes/Devices/mobiles.json")]
     private static partial IReadOnlyList<Device> Mobiles { get; }
 
     public override bool TryParse(

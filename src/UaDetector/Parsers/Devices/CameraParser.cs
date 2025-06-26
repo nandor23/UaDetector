@@ -8,7 +8,7 @@ namespace UaDetector.Parsers.Devices;
 
 internal sealed partial class CameraParser : DeviceParserBase
 {
-    [RegexSource("Regexes/Resources/Devices/cameras.json")]
+    [RegexSource("Regexes/Devices/cameras.json")]
     private static partial IReadOnlyList<Device> Cameras { get; }
 
     [CombinedRegex]

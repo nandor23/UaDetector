@@ -13,7 +13,7 @@ namespace UaDetector.Parsers;
 
 public sealed partial class OsParser : IOsParser
 {
-    [RegexSource("Regexes/Resources/operating_systems.json")]
+    [RegexSource("Regexes/operating_systems.json")]
     internal static partial IReadOnlyList<Os> OperatingSystems { get; }
 
     private const string CacheKeyPrefix = "os";

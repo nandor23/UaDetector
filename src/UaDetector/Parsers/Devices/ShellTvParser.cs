@@ -10,7 +10,7 @@ namespace UaDetector.Parsers.Devices;
 
 internal sealed partial class ShellTvParser : DeviceParserBase
 {
-    [RegexSource("Regexes/Resources/Devices/shell_televisions.json")]
+    [RegexSource("Regexes/Devices/shell_televisions.json")]
     private static partial IReadOnlyList<Device> ShellTelevisions { get; }
     internal static readonly Regex ShellTvRegex;
 

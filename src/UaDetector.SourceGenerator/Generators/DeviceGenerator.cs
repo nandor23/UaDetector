@@ -18,7 +18,7 @@ internal static class DeviceGenerator
         CombinedRegexProperty? combinedRegexProperty
     )
     {
-        var list = JsonUtils.DeserializeJson<DeviceRule>(json);
+        var list = JsonUtils.DeserializeList<DeviceRule>(json);
         var regexDeclarations = GenerateRegexDeclarations(list);
         var collectionInitializer = GenerateCollectionInitializer(list, regexSourceProperty);
 

@@ -17,7 +17,7 @@ internal sealed class BotSourceGenerator
         CombinedRegexProperty? combinedRegexProperty
     )
     {
-        var list = JsonUtils.DeserializeJson<BotRule>(json);
+        var list = JsonUtils.DeserializeList<BotRule>(json);
         var regexDeclarations = GenerateRegexDeclarations(list);
         var collectionInitializer = GenerateCollectionInitializer(list, regexSourceProperty);
 

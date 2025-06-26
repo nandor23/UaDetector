@@ -16,7 +16,7 @@ internal static class ClientSourceGenerator
         CombinedRegexProperty? combinedRegexProperty
     )
     {
-        var list = JsonUtils.DeserializeJson<ClientRule>(json);
+        var list = JsonUtils.DeserializeList<ClientRule>(json);
         var regexDeclarations = GenerateRegexDeclarations(list);
         var collectionInitializer = GenerateCollectionInitializer(list, regexSourceProperty);
 

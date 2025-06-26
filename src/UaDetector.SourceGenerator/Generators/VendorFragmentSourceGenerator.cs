@@ -16,7 +16,7 @@ internal static class VendorFragmentSourceGenerator
         CombinedRegexProperty? combinedRegexProperty
     )
     {
-        var list = JsonUtils.DeserializeJson<VendorFragmentRule>(json);
+        var list = JsonUtils.DeserializeList<VendorFragmentRule>(json);
         var regexDeclarations = GenerateRegexDeclarations(list);
         var collectionInitializer = GenerateCollectionInitializer(list, regexSourceProperty);
 

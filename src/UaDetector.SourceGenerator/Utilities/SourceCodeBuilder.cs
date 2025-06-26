@@ -6,28 +6,28 @@ namespace UaDetector.SourceGenerator.Utilities;
 internal static class SourceCodeBuilder
 {
     public static string BuildClassSourceCode(
-        RegexSourceProperty regexSourceProperty,
+        RegexSourceProperty property,
         string regexDeclarations,
         string collectionInitializer,
         string? combinedRegexDeclaration
     )
     {
-        var fieldName = $"_{regexSourceProperty.PropertyName}";
-        var classModifier = regexSourceProperty.IsStaticClass ? "static partial" : "partial";
+        var fieldName = $"_{property.PropertyName}";
+        var classModifier = property.IsStaticClass ? "static partial" : "partial";
 
         var sb = new StringBuilder();
 
         sb.AppendLine(
             $$"""
-            {{regexSourceProperty.Namespace}}
+            {{property.Namespace}}
 
-            {{classModifier}} class {{regexSourceProperty.ContainingClass}}
+            {{classModifier}} class {{property.ContainingClass}}
             {
                 {{regexDeclarations}}
                 
-                private static readonly global::System.Collections.Generic.IReadOnlyList<{{regexSourceProperty.ElementType}}> {{fieldName}} = {{collectionInitializer}};
+                private static readonly global::System.Collections.Generic.IReadOnlyList<{{property.ElementType}}> {{fieldName}} = {{collectionInitializer}};
 
-                {{regexSourceProperty.PropertyAccessibility.ToSyntaxString()}} static partial global::System.Collections.Generic.IReadOnlyList<{{regexSourceProperty.ElementType}}> {{regexSourceProperty.PropertyName}} => {{fieldName}};
+                {{property.PropertyAccessibility.ToSyntaxString()}} static partial global::System.Collections.Generic.IReadOnlyList<{{property.ElementType}}> {{property.PropertyName}} => {{fieldName}};
             """
         );
 

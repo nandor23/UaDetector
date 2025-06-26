@@ -9,7 +9,7 @@ namespace UaDetector.Parsers.Clients;
 
 internal sealed partial class LibraryParser : ClientParserBase
 {
-    [RegexSource("Regexes/Resources/Clients/libraries.json")]
+    [RegexSource("Regexes/Clients/libraries.json")]
     internal static partial IReadOnlyList<Client> Libraries { get; }
 
     [CombinedRegex]

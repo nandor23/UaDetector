@@ -16,7 +16,7 @@ internal static class BrowserSourceGenerator
         CombinedRegexProperty? combinedRegexProperty
     )
     {
-        var list = JsonUtils.DeserializeJson<BrowserRule>(json);
+        var list = JsonUtils.DeserializeList<BrowserRule>(json);
         var regexDeclarations = GenerateRegexDeclarations(list);
         var collectionInitializer = GenerateCollectionInitializer(list, regexSourceProperty);
 

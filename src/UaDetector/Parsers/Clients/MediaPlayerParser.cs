@@ -9,7 +9,7 @@ namespace UaDetector.Parsers.Clients;
 
 internal sealed partial class MediaPlayerParser : ClientParserBase
 {
-    [RegexSource("Regexes/Resources/Clients/media_players.json")]
+    [RegexSource("Regexes/Clients/media_players.json")]
     internal static partial IReadOnlyList<Client> MediaPlayers { get; }
 
     [CombinedRegex]

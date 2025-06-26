@@ -8,7 +8,7 @@ namespace UaDetector.Parsers;
 
 public sealed partial class BotParser : IBotParser
 {
-    [RegexSource("Regexes/Resources/bots.json")]
+    [RegexSource("Regexes/bots.json")]
     internal static partial IReadOnlyList<Bot> Bots { get; }
 
     [CombinedRegex]

@@ -16,7 +16,7 @@ internal static class JsonUtils
         },
     };
 
-    public static EquatableReadOnlyList<T> DeserializeJson<T>(string json)
+    public static EquatableReadOnlyList<T> DeserializeList<T>(string json)
     {
         try
         {
@@ -24,7 +24,21 @@ internal static class JsonUtils
         }
         catch
         {
-            // TODO: signal what went wrong
+            return [];
+        }
+    }
+
+    public static EquatableReadOnlyDictionary<string, string> DeserializeDictionary(string json)
+    {
+        try
+        {
+            return JsonSerializer.Deserialize<EquatableReadOnlyDictionary<string, string>>(
+                json,
+                SerializerOptions
+            );
+        }
+        catch
+        {
             return [];
         }
     }

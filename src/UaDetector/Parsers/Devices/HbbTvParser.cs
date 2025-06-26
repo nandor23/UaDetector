@@ -10,7 +10,7 @@ namespace UaDetector.Parsers.Devices;
 
 internal sealed partial class HbbTvParser : DeviceParserBase
 {
-    [RegexSource("Regexes/Resources/Devices/televisions.json")]
+    [RegexSource("Regexes/Devices/televisions.json")]
     private static partial IReadOnlyList<Device> Televisions { get; }
     internal static readonly Regex HbbTvRegex;
 

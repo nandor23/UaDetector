@@ -9,7 +9,7 @@ namespace UaDetector.Parsers.Browsers;
 
 internal static partial class EngineParser
 {
-    [RegexSource("Regexes/Resources/Browsers/browser_engines.json")]
+    [RegexSource("Regexes/Browsers/browser_engines.json")]
     private static partial IReadOnlyList<Engine> Engines { get; }
 
     [CombinedRegex]

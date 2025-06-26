@@ -1,18 +1,13 @@
 using System.Collections.Frozen;
 using System.Diagnostics.CodeAnalysis;
-using UaDetector.Utilities;
+using UaDetector.Abstractions.Attributes;
 
 namespace UaDetector.Parsers.Clients;
 
-internal static class AppHintParser
+internal static partial class AppHintParser
 {
-    private const string ResourceName = "Regexes.Resources.Clients.app_hints.json";
-    internal static readonly FrozenDictionary<string, string> Hints;
-
-    static AppHintParser()
-    {
-        Hints = RegexLoader.LoadHints(ResourceName);
-    }
+    [HintSource("Regexes/Clients/app_hints.json")]
+    internal static partial FrozenDictionary<string, string> Hints { get; }
 
     public static bool IsMobileApp(ClientHints clientHints)
     {

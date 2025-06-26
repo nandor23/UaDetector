@@ -9,7 +9,7 @@ namespace UaDetector.Parsers.Clients;
 
 internal sealed partial class FeedReaderParser : ClientParserBase
 {
-    [RegexSource("Regexes/Resources/Clients/feed_readers.json")]
+    [RegexSource("Regexes/Clients/feed_readers.json")]
     internal static partial IReadOnlyList<Client> FeedReaders { get; }
 
     [CombinedRegex]

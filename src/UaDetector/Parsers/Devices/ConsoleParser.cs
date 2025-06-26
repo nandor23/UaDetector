@@ -8,7 +8,7 @@ namespace UaDetector.Parsers.Devices;
 
 internal sealed partial class ConsoleParser : DeviceParserBase
 {
-    [RegexSource("Regexes/Resources/Devices/consoles.json")]
+    [RegexSource("Regexes/Devices/consoles.json")]
     private static partial IReadOnlyList<Device> Consoles { get; }
 
     [CombinedRegex]

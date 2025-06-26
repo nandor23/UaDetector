@@ -9,7 +9,7 @@ namespace UaDetector.Parsers.Devices;
 
 internal sealed partial class NotebookParser : DeviceParserBase
 {
-    [RegexSource("Regexes/Resources/Devices/notebooks.json")]
+    [RegexSource("Regexes/Devices/notebooks.json")]
     private static partial IReadOnlyList<Device> Notebooks { get; }
     private static readonly Regex FbmdRegex;
 

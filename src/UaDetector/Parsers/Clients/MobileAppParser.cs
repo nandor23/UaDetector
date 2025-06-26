@@ -9,7 +9,7 @@ namespace UaDetector.Parsers.Clients;
 
 internal sealed partial class MobileAppParser : ClientParserBase
 {
-    [RegexSource("Regexes/Resources/Clients/mobile_apps.json")]
+    [RegexSource("Regexes/Clients/mobile_apps.json")]
     internal static partial IReadOnlyList<Client> MobileApps { get; }
 
     [CombinedRegex]

@@ -7,7 +7,7 @@ namespace UaDetector.Parsers;
 
 internal static partial class VendorFragmentParser
 {
-    [RegexSource("Regexes/Resources/vendor_fragments.json", "[^a-z0-9]+")]
+    [RegexSource("Regexes/vendor_fragments.json", "[^a-z0-9]+")]
     internal static partial IReadOnlyList<VendorFragment> VendorFragments { get; }
 
     public static bool TryParseBrand(string userAgent, [NotNullWhen(true)] out string? result)

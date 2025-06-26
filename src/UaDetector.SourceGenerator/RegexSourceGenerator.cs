@@ -11,7 +11,7 @@ using Engine = UaDetector.Abstractions.Models.Browsers.Engine;
 namespace UaDetector.SourceGenerator;
 
 [Generator]
-internal sealed class RegexGenerator : IIncrementalGenerator
+internal sealed class RegexSourceGenerator : IIncrementalGenerator
 {
     public void Initialize(IncrementalGeneratorInitializationContext context)
     {
@@ -155,15 +155,6 @@ internal sealed class RegexGenerator : IIncrementalGenerator
 
         if (json is not null)
         {
-            var usageCount = combinedRegexProperties.Count(r =>
-                r.ContainingClassFullName == regexSourceProperty.ContainingClassFullName
-            );
-
-            if (usageCount > 1)
-            {
-                return;
-            }
-
             var combinedRegexProperty = combinedRegexProperties.FirstOrDefault(p =>
                 p.ContainingClassFullName == regexSourceProperty.ContainingClassFullName
             );

@@ -9,7 +9,7 @@ namespace UaDetector.Parsers.Clients;
 
 internal sealed partial class PimParser : ClientParserBase
 {
-    [RegexSource("Regexes/Resources/Clients/pims.json")]
+    [RegexSource("Regexes/Clients/pims.json")]
     internal static partial IReadOnlyList<Client> PersonalInformationManagers { get; }
 
     [CombinedRegex]

@@ -8,7 +8,7 @@ namespace UaDetector.Parsers.Devices;
 
 internal sealed partial class CarBrowserParser : DeviceParserBase
 {
-    [RegexSource("Regexes/Resources/Devices/car_browsers.json")]
+    [RegexSource("Regexes/Devices/car_browsers.json")]
     private static partial IReadOnlyList<Device> CarBrowsers { get; }
 
     [CombinedRegex]
