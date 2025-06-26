@@ -1,15 +1,14 @@
 using System.Diagnostics.CodeAnalysis;
-using UaDetector.Regexes.Models;
+using UaDetector.Abstractions.Attributes;
+using UaDetector.Abstractions.Models;
 using UaDetector.Utilities;
 
 namespace UaDetector.Parsers;
 
-internal static class VendorFragmentParser
+internal static partial class VendorFragmentParser
 {
-    private const string ResourceName = "Regexes.Resources.vendor_fragments.json";
-
-    internal static readonly IReadOnlyList<VendorFragment> VendorFragments =
-        RegexLoader.LoadRegexes<VendorFragment>(ResourceName, "[^a-z0-9]+");
+    [RegexSource("Regexes/Resources/vendor_fragments.json", "[^a-z0-9]+")]
+    internal static partial IReadOnlyList<VendorFragment> VendorFragments { get; }
 
     public static bool TryParseBrand(string userAgent, [NotNullWhen(true)] out string? result)
     {

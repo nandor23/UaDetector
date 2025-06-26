@@ -8,7 +8,6 @@ using UaDetector.Abstractions.Models;
 using UaDetector.Abstractions.Models.Browsers;
 using UaDetector.Parsers;
 using UaDetector.Parsers.Devices;
-using UaDetector.Regexes.Models;
 using UaDetector.Results;
 using UaDetector.Tests.Fixtures.Models;
 using UaDetector.YamlJsonConverter.Fixtures;

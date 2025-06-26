@@ -1,6 +1,6 @@
 using System.Text.RegularExpressions;
 
-namespace UaDetector.Regexes.Models;
+namespace UaDetector.Abstractions.Models;
 
 public sealed class VendorFragment
 {

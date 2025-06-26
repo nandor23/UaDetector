@@ -1,7 +1,6 @@
 using System.Collections.Immutable;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
-using UaDetector.Abstractions;
 using UaDetector.Abstractions.Models;
 using UaDetector.Abstractions.Models.Browsers;
 using UaDetector.SourceGenerator.Generators;
@@ -72,6 +71,11 @@ internal sealed class RegexGenerator : IIncrementalGenerator
             return null;
         }
 
+        string? regexSuffix =
+            attribute.ConstructorArguments.Length > 1
+                ? attribute.ConstructorArguments[1].Value?.ToString()
+                : null;
+
         cancellationToken.ThrowIfCancellationRequested();
 
         var propertySymbol = (IPropertySymbol)context.TargetSymbol;
@@ -98,6 +102,7 @@ internal sealed class RegexGenerator : IIncrementalGenerator
         {
             PropertyName = propertySymbol.Name,
             ResourcePath = path,
+            RegexSuffix = regexSuffix,
             ContainingClass = containingClass.Name,
             ContainingClassFullName = containingClass.ToDisplayString(
                 SymbolDisplayFormat.FullyQualifiedFormat
@@ -212,6 +217,15 @@ internal sealed class RegexGenerator : IIncrementalGenerator
         if (regexSourceProperty.ElementType == GetGlobalQualifiedName<Bot>())
         {
             return BotSourceGenerator.Generate(json, regexSourceProperty, combinedRegexProperty);
+        }
+
+        if (regexSourceProperty.ElementType == GetGlobalQualifiedName<VendorFragment>())
+        {
+            return VendorFragmentSourceGenerator.Generate(
+                json,
+                regexSourceProperty,
+                combinedRegexProperty
+            );
         }
 
         throw new NotSupportedException();

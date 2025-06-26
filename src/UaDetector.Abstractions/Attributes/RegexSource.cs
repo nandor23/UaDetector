@@ -4,8 +4,9 @@ namespace UaDetector.Abstractions.Attributes;
 public sealed class RegexSource : Attribute
 {
     public string FilePath { get; }
+    public string? RegexSuffix { get; }
 
-    public RegexSource(string filePath)
+    public RegexSource(string filePath, string? regexSuffix = null)
     {
         if (
             string.IsNullOrWhiteSpace(filePath)
@@ -17,5 +18,6 @@ public sealed class RegexSource : Attribute
             );
 
         FilePath = filePath;
+        RegexSuffix = regexSuffix;
     }
 }

@@ -14,6 +14,7 @@
   <ItemGroup>
     <EmbeddedResource Include="Regexes\**\*.json" />
 
+    <AdditionalFiles Include="Regexes\**\vendor_fragments.json" />
     <AdditionalFiles Include="Regexes\**\operating_systems.json" />
     <AdditionalFiles Include="Regexes\**\browsers.json" />
     <AdditionalFiles Include="Regexes\**\browser_engines.json" />
@@ -58,5 +59,9 @@
     <ProjectReference Include="..\UaDetector.SourceGenerator\UaDetector.SourceGenerator.csproj"
                       OutputItemType="Analyzer"
                       ReferenceOutputAssembly="false" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Regexes\Models\" />
   </ItemGroup>
 </Project>
