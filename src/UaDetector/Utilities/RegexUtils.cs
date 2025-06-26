@@ -2,7 +2,7 @@ using System.Text.RegularExpressions;
 
 namespace UaDetector.Utilities;
 
-internal static class RegexUtilis
+internal static class RegexUtils
 {
     public static Regex BuildUserAgentRegex(string pattern)
     {

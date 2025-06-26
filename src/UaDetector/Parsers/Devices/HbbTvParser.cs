@@ -16,7 +16,7 @@ internal sealed partial class HbbTvParser : DeviceParserBase
 
     static HbbTvParser()
     {
-        HbbTvRegex = RegexUtilis.BuildUserAgentRegex(@"(?:HbbTV|SmartTvA)/([1-9](?:\.[0-9]){1,2})");
+        HbbTvRegex = RegexUtils.BuildUserAgentRegex(@"(?:HbbTV|SmartTvA)/([1-9](?:\.[0-9]){1,2})");
     }
 
     public override bool TryParse(

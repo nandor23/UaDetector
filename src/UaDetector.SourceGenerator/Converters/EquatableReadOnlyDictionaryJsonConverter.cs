@@ -42,8 +42,8 @@ internal sealed class EquatableReadOnlyDictionaryJsonConverterFactory : JsonConv
     public override bool CanConvert(Type typeToConvert)
     {
         return typeToConvert.IsGenericType
-               && typeToConvert.GetGenericTypeDefinition().FullName ==
-               "UaDetector.SourceGenerator.Collections.EquatableReadOnlyDictionary`2";
+            && typeToConvert.GetGenericTypeDefinition().FullName
+                == "UaDetector.SourceGenerator.Collections.EquatableReadOnlyDictionary`2";
     }
 
     public override JsonConverter CreateConverter(Type typeToConvert, JsonSerializerOptions options)

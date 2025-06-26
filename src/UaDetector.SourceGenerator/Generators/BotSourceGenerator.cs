@@ -73,7 +73,9 @@ internal sealed class BotSourceGenerator
 
             if (bot.Category is not null)
             {
-                sb.AppendLine($"{nameof(Bot.Category)} = global::UaDetector.Abstractions.Enums.BotCategory.{bot.Category},");
+                sb.AppendLine(
+                    $"{nameof(Bot.Category)} = global::UaDetector.Abstractions.Enums.BotCategory.{bot.Category},"
+                );
             }
 
             if (bot.Url is not null)
@@ -83,7 +85,9 @@ internal sealed class BotSourceGenerator
 
             if (bot.Producer is not null)
             {
-                sb.AppendLine($"{nameof(Bot.Producer)} = new global::UaDetector.Abstractions.Models.BotProducer")
+                sb.AppendLine(
+                        $"{nameof(Bot.Producer)} = new global::UaDetector.Abstractions.Models.BotProducer"
+                    )
                     .AppendLine("{")
                     .Indent();
 

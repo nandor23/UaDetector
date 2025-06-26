@@ -22,11 +22,11 @@ internal static class ParserExtensions
         RegexOptions.Compiled
     );
 
-    private static readonly Regex DesktopFragmentMatchRegex = RegexUtilis.BuildUserAgentRegex(
+    private static readonly Regex DesktopFragmentMatchRegex = RegexUtils.BuildUserAgentRegex(
         "(?:Windows (?:NT|IoT)|X11; Linux x86_64)"
     );
 
-    private static readonly Regex DesktopFragmentExclusionRegex = RegexUtilis.BuildUserAgentRegex(
+    private static readonly Regex DesktopFragmentExclusionRegex = RegexUtils.BuildUserAgentRegex(
         string.Join(
             "|",
             "CE-HTML",
