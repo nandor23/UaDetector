@@ -16,7 +16,7 @@ internal sealed partial class ShellTvParser : DeviceParserBase
 
     static ShellTvParser()
     {
-        ShellTvRegex = RegexUtils.BuildUserAgentRegex(
+        ShellTvRegex = RegexBuilder.BuildRegex(
             @"[a-z]+[ _]Shell[ _]\w{6}|tclwebkit(\d+[.\d]*)"
         );
     }

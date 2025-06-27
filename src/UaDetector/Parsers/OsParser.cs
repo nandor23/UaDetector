@@ -555,23 +555,23 @@ public sealed partial class OsParser : IOsParser
         {
             {
                 CpuArchitectures.Arm,
-                RegexUtils.BuildUserAgentRegex(
+                RegexBuilder.BuildRegex(
                     "arm[ _;)ev]|.*arm$|.*arm64|aarch64|Apple ?TV|Watch ?OS|Watch1,[12]"
                 )
             },
-            { CpuArchitectures.LoongArch64, RegexUtils.BuildUserAgentRegex("loongarch64") },
-            { CpuArchitectures.Mips, RegexUtils.BuildUserAgentRegex("mips") },
-            { CpuArchitectures.SuperH, RegexUtils.BuildUserAgentRegex("sh4") },
-            { CpuArchitectures.Sparc64, RegexUtils.BuildUserAgentRegex("sparc64") },
+            { CpuArchitectures.LoongArch64, RegexBuilder.BuildRegex("loongarch64") },
+            { CpuArchitectures.Mips, RegexBuilder.BuildRegex("mips") },
+            { CpuArchitectures.SuperH, RegexBuilder.BuildRegex("sh4") },
+            { CpuArchitectures.Sparc64, RegexBuilder.BuildRegex("sparc64") },
             {
                 CpuArchitectures.X64,
-                RegexUtils.BuildUserAgentRegex(
+                RegexBuilder.BuildRegex(
                     "64-?bit|WOW64|(?:Intel)?x64|WINDOWS_64|win64|.*amd64|.*x86_?64"
                 )
             },
             {
                 CpuArchitectures.X86,
-                RegexUtils.BuildUserAgentRegex(".*32bit|.*win32|(?:i[0-9]|x)86|i86pc")
+                RegexBuilder.BuildRegex(".*32bit|.*win32|(?:i[0-9]|x)86|i86pc")
             },
         }.ToFrozenDictionary();
 

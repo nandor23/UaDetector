@@ -15,7 +15,7 @@ internal sealed partial class NotebookParser : DeviceParserBase
 
     static NotebookParser()
     {
-        FbmdRegex = RegexUtils.BuildUserAgentRegex("FBMD/");
+        FbmdRegex = RegexBuilder.BuildRegex("FBMD/");
     }
 
     public override bool TryParse(
