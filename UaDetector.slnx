@@ -29,6 +29,7 @@
   </Folder>
   <Folder Name="/tests/">
     <Project Path="tests\UaDetector.MemoryCache.Tests\UaDetector.MemoryCache.Tests.csproj" Type="Classic C#" />
+    <Project Path="tests\UaDetector.SourceGenerator.Tests\UaDetector.SourceGenerator.Tests.csproj" Type="Classic C#" />
     <Project Path="tests\UaDetector.Tests\UaDetector.Tests.csproj" Type="Classic C#" />
   </Folder>
   <Folder Name="/tools/">
