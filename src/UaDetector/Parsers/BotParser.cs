@@ -1,14 +1,15 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Text.RegularExpressions;
-using UaDetector.Abstractions.Models;
+
 using UaDetector.Attributes;
-using UaDetector.Results;
+using UaDetector.Models;
+using UaDetector.Models.Internal;
 
 namespace UaDetector.Parsers;
 
 public sealed partial class BotParser : IBotParser
 {
-    [RegexSource("Regexes/bots.json")]
+    [RegexSource("Resources/bots.json")]
     internal static partial IReadOnlyList<Bot> Bots { get; }
 
     [CombinedRegex]

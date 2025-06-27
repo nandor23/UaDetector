@@ -1,6 +1,8 @@
 using System.Collections.Immutable;
+
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
+
 using UaDetector.SourceGenerator.Generators;
 using UaDetector.SourceGenerator.Models;
 using UaDetector.SourceGenerator.Utilities;
@@ -170,38 +172,37 @@ internal sealed class RegexSourceGenerator : IIncrementalGenerator
     {
         return regexSourceProperty.ElementType switch
         {
-            null => throw new NotSupportedException(),
-            "global::UaDetector.Abstractions.Models.Client" => ClientSourceGenerator.Generate(
+            "global::UaDetector.Models.Internal.Client" => ClientSourceGenerator.Generate(
                 json,
                 regexSourceProperty,
                 combinedRegexProperty
             ),
-            "global::UaDetector.Abstractions.Models.Device" => DeviceGenerator.Generate(
+            "global::UaDetector.Models.Internal.Device" => DeviceGenerator.Generate(
                 json,
                 regexSourceProperty,
                 combinedRegexProperty
             ),
-            "global::UaDetector.Abstractions.Models.Browser" => BrowserSourceGenerator.Generate(
+            "global::UaDetector.Models.Internal.Browser" => BrowserSourceGenerator.Generate(
                 json,
                 regexSourceProperty,
                 combinedRegexProperty
             ),
-            "global::UaDetector.Abstractions.Models.Engine" => EngineSourceGenerator.Generate(
+            "global::UaDetector.Models.Internal.Engine" => EngineSourceGenerator.Generate(
                 json,
                 regexSourceProperty,
                 combinedRegexProperty
             ),
-            "global::UaDetector.Abstractions.Models.Os" => OsSourceGenerator.Generate(
+            "global::UaDetector.Models.Internal.Os" => OsSourceGenerator.Generate(
                 json,
                 regexSourceProperty,
                 combinedRegexProperty
             ),
-            "global::UaDetector.Abstractions.Models.Bot" => BotSourceGenerator.Generate(
+            "global::UaDetector.Models.Internal.Bot" => BotSourceGenerator.Generate(
                 json,
                 regexSourceProperty,
                 combinedRegexProperty
             ),
-            "global::UaDetector.Abstractions.Models.VendorFragment" =>
+            "global::UaDetector.Models.Internal.VendorFragment" =>
                 VendorFragmentSourceGenerator.Generate(
                     json,
                     regexSourceProperty,

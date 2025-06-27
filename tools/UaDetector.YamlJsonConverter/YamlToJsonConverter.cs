@@ -3,16 +3,18 @@ using System.Text.Encodings.Web;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using System.Text.RegularExpressions;
-using UaDetector.Abstractions.Enums;
-using UaDetector.Abstractions.Models;
+
+using UaDetector.Models;
+using UaDetector.Models.Enums;
+using UaDetector.Models.Internal;
 using UaDetector.Parsers;
 using UaDetector.Parsers.Devices;
-using UaDetector.Results;
 using UaDetector.Tests.Fixtures.Models;
 using UaDetector.YamlJsonConverter.Fixtures;
 using UaDetector.YamlJsonConverter.Models;
 using UaDetector.YamlJsonConverter.Utils;
-using Os = UaDetector.Abstractions.Models.Os;
+
+using Os = UaDetector.Models.Internal.Os;
 
 namespace UaDetector.YamlJsonConverter;
 

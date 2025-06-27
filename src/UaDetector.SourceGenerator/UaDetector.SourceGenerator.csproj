@@ -13,10 +13,6 @@
     <PackageReference Include="Microsoft.CodeAnalysis.CSharp" PrivateAssets="All" />
     <PackageReference Include="PolySharp" PrivateAssets="All" />
   </ItemGroup>
-  
-  <ItemGroup>
-    <ProjectReference Include="..\UaDetector.Abstractions\UaDetector.Abstractions.csproj" />
-  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Bcl.AsyncInterfaces" PrivateAssets="all" GeneratePathProperty="true" />

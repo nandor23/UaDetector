@@ -1,15 +1,16 @@
 using System.Collections.Frozen;
 using System.Diagnostics.CodeAnalysis;
 using System.Text.RegularExpressions;
-using UaDetector.Abstractions.Constants;
-using UaDetector.Abstractions.Models;
+
 using UaDetector.Attributes;
+using UaDetector.Models.Constants;
+using UaDetector.Models.Internal;
 
 namespace UaDetector.Parsers.Browsers;
 
 internal static partial class EngineParser
 {
-    [RegexSource("Regexes/Browsers/browser_engines.json")]
+    [RegexSource("Resources/Browsers/browser_engines.json")]
     private static partial IReadOnlyList<Engine> Engines { get; }
 
     [CombinedRegex]

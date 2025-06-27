@@ -1,4 +1,5 @@
 using Shouldly;
+
 using UaDetector.Parsers;
 using UaDetector.Parsers.Clients;
 

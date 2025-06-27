@@ -7,7 +7,7 @@ namespace UaDetector.Parsers.Browsers;
 
 internal static partial class BrowserHintParser
 {
-    [HintSource("Regexes/Browsers/browser_hints.json")]
+    [HintSource("Resources/Browsers/browser_hints.json")]
     internal static partial FrozenDictionary<string, string> Hints { get; }
 
     public static bool TryParseBrowserName(

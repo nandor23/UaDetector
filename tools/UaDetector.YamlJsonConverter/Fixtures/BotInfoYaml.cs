@@ -1,4 +1,4 @@
-using UaDetector.Results;
+using UaDetector.Models;
 
 namespace UaDetector.YamlJsonConverter.Fixtures;
 

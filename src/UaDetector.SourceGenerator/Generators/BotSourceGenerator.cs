@@ -1,5 +1,5 @@
 using System.Text;
-using UaDetector.Abstractions.Models;
+
 using UaDetector.SourceGenerator.Collections;
 using UaDetector.SourceGenerator.Models;
 using UaDetector.SourceGenerator.Utilities;
@@ -68,25 +68,25 @@ internal sealed class BotSourceGenerator
             sb.AppendLine($"new {regexSourceProperty.ElementType}")
                 .AppendLine("{")
                 .Indent()
-                .AppendLine($"{nameof(Bot.Regex)} = {BotRegexPrefix}{botCount},")
-                .AppendLine($"{nameof(Bot.Name)} = \"{bot.Name.EscapeStringLiteral()}\",");
+                .AppendLine($"{nameof(BotRule.Regex)} = {BotRegexPrefix}{botCount},")
+                .AppendLine($"{nameof(BotRule.Name)} = \"{bot.Name.EscapeStringLiteral()}\",");
 
             if (bot.Category is not null)
             {
                 sb.AppendLine(
-                    $"{nameof(Bot.Category)} = global::UaDetector.Abstractions.Enums.BotCategory.{bot.Category},"
+                    $"{nameof(BotRule.Category)} = (global::UaDetector.Models.Enums.BotCategory){bot.Category},"
                 );
             }
 
             if (bot.Url is not null)
             {
-                sb.AppendLine($"{nameof(Bot.Url)} = \"{bot.Url.EscapeStringLiteral()}\",");
+                sb.AppendLine($"{nameof(BotRule.Url)} = \"{bot.Url.EscapeStringLiteral()}\",");
             }
 
             if (bot.Producer is not null)
             {
                 sb.AppendLine(
-                        $"{nameof(Bot.Producer)} = new global::UaDetector.Abstractions.Models.BotProducer"
+                        $"{nameof(BotRule.Producer)} = new global::UaDetector.Models.Internal.BotProducer"
                     )
                     .AppendLine("{")
                     .Indent();
@@ -94,14 +94,14 @@ internal sealed class BotSourceGenerator
                 if (bot.Producer.Name is not null)
                 {
                     sb.AppendLine(
-                        $"{nameof(BotProducer.Name)} = \"{bot.Producer.Name.EscapeStringLiteral()}\","
+                        $"{nameof(BotProducerRule.Name)} = \"{bot.Producer.Name.EscapeStringLiteral()}\","
                     );
                 }
 
                 if (bot.Producer.Url is not null)
                 {
                     sb.AppendLine(
-                        $"{nameof(BotProducer.Url)} = \"{bot.Producer.Url.EscapeStringLiteral()}\","
+                        $"{nameof(BotProducerRule.Url)} = \"{bot.Producer.Url.EscapeStringLiteral()}\","
                     );
                 }
 

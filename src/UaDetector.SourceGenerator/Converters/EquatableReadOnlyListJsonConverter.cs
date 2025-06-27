@@ -1,5 +1,6 @@
 using System.Text.Json;
 using System.Text.Json.Serialization;
+
 using UaDetector.SourceGenerator.Collections;
 
 namespace UaDetector.SourceGenerator.Converters;

@@ -1,5 +1,5 @@
 using System.Text;
-using UaDetector.Abstractions.Models;
+
 using UaDetector.SourceGenerator.Collections;
 using UaDetector.SourceGenerator.Models;
 using UaDetector.SourceGenerator.Utilities;
@@ -68,20 +68,22 @@ internal static class BrowserSourceGenerator
             sb.AppendLine($"new {regexSourceProperty.ElementType}")
                 .AppendLine("{")
                 .Indent()
-                .AppendLine($"{nameof(Browser.Regex)} = {BrowserRegexPrefix}{browserCount},")
-                .AppendLine($"{nameof(Browser.Name)} = \"{browser.Name.EscapeStringLiteral()}\",");
+                .AppendLine($"{nameof(BrowserRule.Regex)} = {BrowserRegexPrefix}{browserCount},")
+                .AppendLine(
+                    $"{nameof(BrowserRule.Name)} = \"{browser.Name.EscapeStringLiteral()}\","
+                );
 
             if (browser.Version is not null)
             {
                 sb.AppendLine(
-                    $"{nameof(Browser.Version)} = \"{browser.Version.EscapeStringLiteral()}\","
+                    $"{nameof(BrowserRule.Version)} = \"{browser.Version.EscapeStringLiteral()}\","
                 );
             }
 
             if (browser.Engine is not null)
             {
                 sb.AppendLine(
-                        $"{nameof(Browser.Engine)} = new global::UaDetector.Abstractions.Models.BrowserEngine"
+                        $"{nameof(BrowserRule.Engine)} = new global::UaDetector.Models.Internal.BrowserEngine"
                     )
                     .AppendLine("{")
                     .Indent();
@@ -89,14 +91,14 @@ internal static class BrowserSourceGenerator
                 if (browser.Engine?.Default is not null)
                 {
                     sb.AppendLine(
-                        $"{nameof(Browser.Engine.Default)} = \"{browser.Engine.Default.EscapeStringLiteral()}\","
+                        $"{nameof(BrowserRule.Engine.Default)} = \"{browser.Engine.Default.EscapeStringLiteral()}\","
                     );
                 }
 
                 if (browser.Engine?.Versions is not null)
                 {
                     sb.AppendLine(
-                            $"{nameof(Browser.Engine.Versions)} = new global::System.Collections.Generic.Dictionary<string, string>"
+                            $"{nameof(BrowserRule.Engine.Versions)} = new global::System.Collections.Generic.Dictionary<string, string>"
                         )
                         .AppendLine("{")
                         .Indent();

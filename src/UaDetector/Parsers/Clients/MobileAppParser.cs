@@ -1,15 +1,16 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Text.RegularExpressions;
-using UaDetector.Abstractions.Enums;
-using UaDetector.Abstractions.Models;
+
 using UaDetector.Attributes;
-using UaDetector.Results;
+using UaDetector.Models;
+using UaDetector.Models.Enums;
+using UaDetector.Models.Internal;
 
 namespace UaDetector.Parsers.Clients;
 
 internal sealed partial class MobileAppParser : ClientParserBase
 {
-    [RegexSource("Regexes/Clients/mobile_apps.json")]
+    [RegexSource("Resources/Clients/mobile_apps.json")]
     internal static partial IReadOnlyList<Client> MobileApps { get; }
 
     [CombinedRegex]

@@ -1,12 +1,13 @@
 using System.Diagnostics.CodeAnalysis;
-using UaDetector.Abstractions.Models;
+
 using UaDetector.Attributes;
+using UaDetector.Models.Internal;
 
 namespace UaDetector.Parsers;
 
 internal static partial class VendorFragmentParser
 {
-    [RegexSource("Regexes/vendor_fragments.json", "[^a-z0-9]+")]
+    [RegexSource("Resources/vendor_fragments.json", "[^a-z0-9]+")]
     internal static partial IReadOnlyList<VendorFragment> VendorFragments { get; }
 
     public static bool TryParseBrand(string userAgent, [NotNullWhen(true)] out string? result)

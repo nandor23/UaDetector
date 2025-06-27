@@ -1,5 +1,6 @@
 using Shouldly;
-using UaDetector.Abstractions.Enums;
+
+using UaDetector.Models.Enums;
 using UaDetector.Parsers.Devices;
 
 namespace UaDetector.Tests.Tests.Parsers.Devices;

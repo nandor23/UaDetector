@@ -1,16 +1,17 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Text.RegularExpressions;
-using UaDetector.Abstractions.Enums;
-using UaDetector.Abstractions.Models;
+
 using UaDetector.Attributes;
-using UaDetector.Results;
+using UaDetector.Models;
+using UaDetector.Models.Enums;
+using UaDetector.Models.Internal;
 using UaDetector.Utilities;
 
 namespace UaDetector.Parsers.Devices;
 
 internal sealed partial class HbbTvParser : DeviceParserBase
 {
-    [RegexSource("Regexes/Devices/televisions.json")]
+    [RegexSource("Resources/Devices/televisions.json")]
     private static partial IReadOnlyList<Device> Televisions { get; }
     internal static readonly Regex HbbTvRegex;
 

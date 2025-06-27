@@ -1,14 +1,15 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Text.RegularExpressions;
-using UaDetector.Abstractions.Models;
+
 using UaDetector.Attributes;
-using UaDetector.Results;
+using UaDetector.Models;
+using UaDetector.Models.Internal;
 
 namespace UaDetector.Parsers.Devices;
 
 internal sealed partial class CameraParser : DeviceParserBase
 {
-    [RegexSource("Regexes/Devices/cameras.json")]
+    [RegexSource("Resources/Devices/cameras.json")]
     private static partial IReadOnlyList<Device> Cameras { get; }
 
     [CombinedRegex]

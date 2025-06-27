@@ -1,16 +1,17 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Text.RegularExpressions;
-using UaDetector.Abstractions.Enums;
-using UaDetector.Abstractions.Models;
+
 using UaDetector.Attributes;
-using UaDetector.Results;
+using UaDetector.Models;
+using UaDetector.Models.Enums;
+using UaDetector.Models.Internal;
 using UaDetector.Utilities;
 
 namespace UaDetector.Parsers.Devices;
 
 internal sealed partial class ShellTvParser : DeviceParserBase
 {
-    [RegexSource("Regexes/Devices/shell_televisions.json")]
+    [RegexSource("Resources/Devices/shell_televisions.json")]
     private static partial IReadOnlyList<Device> ShellTelevisions { get; }
     internal static readonly Regex ShellTvRegex;
 

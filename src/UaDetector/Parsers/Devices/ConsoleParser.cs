@@ -1,14 +1,15 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Text.RegularExpressions;
-using UaDetector.Abstractions.Models;
+
 using UaDetector.Attributes;
-using UaDetector.Results;
+using UaDetector.Models;
+using UaDetector.Models.Internal;
 
 namespace UaDetector.Parsers.Devices;
 
 internal sealed partial class ConsoleParser : DeviceParserBase
 {
-    [RegexSource("Regexes/Devices/consoles.json")]
+    [RegexSource("Resources/Devices/consoles.json")]
     private static partial IReadOnlyList<Device> Consoles { get; }
 
     [CombinedRegex]

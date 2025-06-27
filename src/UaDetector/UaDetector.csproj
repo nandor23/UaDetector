@@ -12,7 +12,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <AdditionalFiles Include="Regexes\**\*.json" />
+    <AdditionalFiles Include="Resources\**\*.json" />
   </ItemGroup>
 
   <ItemGroup>
@@ -32,7 +32,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\UaDetector.Abstractions\UaDetector.Abstractions.csproj" OutputItemType="Analyzer" />
     <ProjectReference Include="..\UaDetector.SourceGenerator\UaDetector.SourceGenerator.csproj"
                       OutputItemType="Analyzer"
                       ReferenceOutputAssembly="false" />

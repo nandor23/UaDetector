@@ -1,14 +1,15 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Text.RegularExpressions;
-using UaDetector.Abstractions.Models;
+
 using UaDetector.Attributes;
-using UaDetector.Results;
+using UaDetector.Models;
+using UaDetector.Models.Internal;
 
 namespace UaDetector.Parsers.Devices;
 
 internal sealed partial class CarBrowserParser : DeviceParserBase
 {
-    [RegexSource("Regexes/Devices/car_browsers.json")]
+    [RegexSource("Resources/Devices/car_browsers.json")]
     private static partial IReadOnlyList<Device> CarBrowsers { get; }
 
     [CombinedRegex]

@@ -13,7 +13,6 @@
   
   <ItemGroup>
     <ProjectReference Include="..\..\src\UaDetector\UaDetector.csproj" />
-    <ProjectReference Include="..\..\src\UaDetector.Abstractions\UaDetector.Abstractions.csproj" />
     <ProjectReference Include="..\..\tests\UaDetector.Tests\UaDetector.Tests.csproj" />
   </ItemGroup>
   

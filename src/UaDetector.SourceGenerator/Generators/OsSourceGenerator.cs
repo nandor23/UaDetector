@@ -1,5 +1,5 @@
 using System.Text;
-using UaDetector.Abstractions.Models;
+
 using UaDetector.SourceGenerator.Collections;
 using UaDetector.SourceGenerator.Models;
 using UaDetector.SourceGenerator.Utilities;
@@ -91,32 +91,34 @@ internal static class OsSourceGenerator
             sb.AppendLine($"new {regexSourceProperty.ElementType}")
                 .AppendLine("{")
                 .Indent()
-                .AppendLine($"{nameof(Os.Regex)} = {OsRegexPrefix}{osCount},")
-                .AppendLine($"{nameof(Os.Name)} = \"{os.Name.EscapeStringLiteral()}\",");
+                .AppendLine($"{nameof(OsRule.Regex)} = {OsRegexPrefix}{osCount},")
+                .AppendLine($"{nameof(OsRule.Name)} = \"{os.Name.EscapeStringLiteral()}\",");
 
             if (os.Version is not null)
             {
-                sb.AppendLine($"{nameof(Os.Version)} = \"{os.Version.EscapeStringLiteral()}\",");
+                sb.AppendLine(
+                    $"{nameof(OsRule.Version)} = \"{os.Version.EscapeStringLiteral()}\","
+                );
             }
 
             if (os.Versions is not null)
             {
                 sb.AppendLine(
-                        $"{nameof(Os.Versions)} = new global::UaDetector.Abstractions.Models.OsVersion[]"
+                        $"{nameof(OsRule.Versions)} = new global::UaDetector.Models.Internal.OsVersion[]"
                     )
                     .AppendLine("{")
                     .Indent();
 
                 foreach (var osVersion in os.Versions)
                 {
-                    sb.AppendLine("new global::UaDetector.Abstractions.Models.OsVersion")
+                    sb.AppendLine("new global::UaDetector.Models.Internal.OsVersion")
                         .AppendLine("{")
                         .Indent()
                         .AppendLine(
-                            $"{nameof(OsVersion.Regex)} = {VersionRegexPrefix}{versionCount},"
+                            $"{nameof(OsVersionRule.Regex)} = {VersionRegexPrefix}{versionCount},"
                         )
                         .AppendLine(
-                            $"{nameof(OsVersion.Version)} = \"{osVersion.Version.EscapeStringLiteral()}\","
+                            $"{nameof(OsVersionRule.Version)} = \"{osVersion.Version.EscapeStringLiteral()}\","
                         )
                         .Unindent()
                         .AppendLine("},");

@@ -2,11 +2,12 @@ using System.Collections.Frozen;
 using System.Collections.Immutable;
 using System.Diagnostics.CodeAnalysis;
 using System.Text.RegularExpressions;
-using UaDetector.Abstractions.Constants;
-using UaDetector.Abstractions.Enums;
+
+using UaDetector.Models;
+using UaDetector.Models.Constants;
+using UaDetector.Models.Enums;
 using UaDetector.Parsers;
 using UaDetector.Parsers.Devices;
-using UaDetector.Results;
 
 namespace UaDetector;
 

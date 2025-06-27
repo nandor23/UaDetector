@@ -1,15 +1,16 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Text.RegularExpressions;
-using UaDetector.Abstractions.Enums;
-using UaDetector.Abstractions.Models;
+
 using UaDetector.Attributes;
-using UaDetector.Results;
+using UaDetector.Models;
+using UaDetector.Models.Enums;
+using UaDetector.Models.Internal;
 
 namespace UaDetector.Parsers.Clients;
 
 internal sealed partial class MediaPlayerParser : ClientParserBase
 {
-    [RegexSource("Regexes/Clients/media_players.json")]
+    [RegexSource("Resources/Clients/media_players.json")]
     internal static partial IReadOnlyList<Client> MediaPlayers { get; }
 
     [CombinedRegex]

@@ -1,14 +1,15 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Text.RegularExpressions;
-using UaDetector.Abstractions.Models;
+
 using UaDetector.Attributes;
-using UaDetector.Results;
+using UaDetector.Models;
+using UaDetector.Models.Internal;
 
 namespace UaDetector.Parsers.Devices;
 
 internal sealed partial class PortableMediaPlayerParser : DeviceParserBase
 {
-    [RegexSource("Regexes/Devices/portable_media_players.json")]
+    [RegexSource("Resources/Devices/portable_media_players.json")]
     private static partial IReadOnlyList<Device> PortableMediaPlayers { get; }
 
     [CombinedRegex]

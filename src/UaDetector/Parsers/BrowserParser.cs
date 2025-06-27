@@ -2,19 +2,20 @@ using System.Collections.Frozen;
 using System.Collections.Immutable;
 using System.Diagnostics.CodeAnalysis;
 using System.Text.RegularExpressions;
-using UaDetector.Abstractions.Constants;
-using UaDetector.Abstractions.Enums;
-using UaDetector.Abstractions.Models;
+
 using UaDetector.Attributes;
+using UaDetector.Models;
+using UaDetector.Models.Constants;
+using UaDetector.Models.Enums;
+using UaDetector.Models.Internal;
 using UaDetector.Parsers.Browsers;
-using UaDetector.Results;
 using UaDetector.Utilities;
 
 namespace UaDetector.Parsers;
 
 public sealed partial class BrowserParser : IBrowserParser
 {
-    [RegexSource("Regexes/Browsers/browsers.json")]
+    [RegexSource("Resources/Browsers/browsers.json")]
     internal static partial IReadOnlyList<Browser> Browsers { get; }
 
     private const string CacheKeyPrefix = "browser";

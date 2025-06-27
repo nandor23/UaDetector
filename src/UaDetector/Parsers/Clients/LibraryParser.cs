@@ -1,15 +1,16 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Text.RegularExpressions;
-using UaDetector.Abstractions.Enums;
-using UaDetector.Abstractions.Models;
+
 using UaDetector.Attributes;
-using UaDetector.Results;
+using UaDetector.Models;
+using UaDetector.Models.Enums;
+using UaDetector.Models.Internal;
 
 namespace UaDetector.Parsers.Clients;
 
 internal sealed partial class LibraryParser : ClientParserBase
 {
-    [RegexSource("Regexes/Clients/libraries.json")]
+    [RegexSource("Resources/Clients/libraries.json")]
     internal static partial IReadOnlyList<Client> Libraries { get; }
 
     [CombinedRegex]

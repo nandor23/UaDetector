@@ -1,15 +1,16 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Text.RegularExpressions;
-using UaDetector.Abstractions.Models;
+
 using UaDetector.Attributes;
-using UaDetector.Results;
+using UaDetector.Models;
+using UaDetector.Models.Internal;
 using UaDetector.Utilities;
 
 namespace UaDetector.Parsers.Devices;
 
 internal sealed partial class NotebookParser : DeviceParserBase
 {
-    [RegexSource("Regexes/Devices/notebooks.json")]
+    [RegexSource("Resources/Devices/notebooks.json")]
     private static partial IReadOnlyList<Device> Notebooks { get; }
     private static readonly Regex FbmdRegex;
 

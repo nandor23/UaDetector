@@ -1,4 +1,5 @@
 using Shouldly;
+
 using UaDetector.Parsers.Devices;
 
 namespace UaDetector.Tests.Tests.Parsers.Devices;

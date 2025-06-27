@@ -1,4 +1,5 @@
 ﻿using Shouldly;
+
 using UaDetector.Utilities;
 
 namespace UaDetector.Tests.Utils;

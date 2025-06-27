@@ -1,4 +1,5 @@
 using Shouldly;
+
 using UaDetector.Parsers;
 
 namespace UaDetector.Tests.Tests.Parsers;

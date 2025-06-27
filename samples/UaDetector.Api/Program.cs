@@ -1,4 +1,5 @@
 using Scalar.AspNetCore;
+
 using UaDetector;
 using UaDetector.MemoryCache;
 

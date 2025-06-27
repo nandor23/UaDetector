@@ -2,18 +2,19 @@ using System.Collections.Frozen;
 using System.Collections.Immutable;
 using System.Diagnostics.CodeAnalysis;
 using System.Text.RegularExpressions;
-using UaDetector.Abstractions.Constants;
-using UaDetector.Abstractions.Enums;
-using UaDetector.Abstractions.Models;
+
 using UaDetector.Attributes;
-using UaDetector.Results;
+using UaDetector.Models;
+using UaDetector.Models.Constants;
+using UaDetector.Models.Enums;
+using UaDetector.Models.Internal;
 using UaDetector.Utilities;
 
 namespace UaDetector.Parsers;
 
 public sealed partial class OsParser : IOsParser
 {
-    [RegexSource("Regexes/operating_systems.json")]
+    [RegexSource("Resources/operating_systems.json")]
     internal static partial IReadOnlyList<Os> OperatingSystems { get; }
 
     private const string CacheKeyPrefix = "os";
