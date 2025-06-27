@@ -5,7 +5,7 @@ namespace UaDetector;
 
 public static class UaDetectorServiceCollectionExtensions
 {
-    private const string WarmupUserAgent = "service-warmup";
+    private const string WarmupUserAgent = "uadetector-warmup";
 
     public static IServiceCollection AddUaDetector(
         this IServiceCollection services,
@@ -16,9 +16,11 @@ public static class UaDetectorServiceCollectionExtensions
         optionsAction?.Invoke(optionsBuilder);
 
         var uaDetector = new UaDetector(optionsBuilder.Build());
-        uaDetector.TryParse(WarmupUserAgent, out _);
 
         services.AddSingleton<IUaDetector>(uaDetector);
+        
+        _ = Task.Run(() => uaDetector.TryParse(WarmupUserAgent, out _));
+
         return services;
     }
 
@@ -31,9 +33,11 @@ public static class UaDetectorServiceCollectionExtensions
         optionsAction?.Invoke(optionsBuilder);
 
         var osParser = new OsParser(optionsBuilder.Build());
-        osParser.TryParse(WarmupUserAgent, out _);
 
         services.AddSingleton<IOsParser>(osParser);
+        
+        _ = Task.Run(() => osParser.TryParse(WarmupUserAgent, out _));
+
         return services;
     }
 
@@ -46,9 +50,11 @@ public static class UaDetectorServiceCollectionExtensions
         optionsAction?.Invoke(optionsBuilder);
 
         var browserParser = new BrowserParser(optionsBuilder.Build());
-        browserParser.TryParse(WarmupUserAgent, out _);
-
+        
         services.AddSingleton<IBrowserParser>(browserParser);
+        
+        _ = Task.Run(() => browserParser.TryParse(WarmupUserAgent, out _));
+
         return services;
     }
 
@@ -61,9 +67,11 @@ public static class UaDetectorServiceCollectionExtensions
         optionsAction?.Invoke(optionsBuilder);
 
         var clientParser = new ClientParser(optionsBuilder.Build());
-        clientParser.TryParse(WarmupUserAgent, out _);
 
         services.AddSingleton<IClientParser>(clientParser);
+        
+        _ = Task.Run(() => clientParser.TryParse(WarmupUserAgent, out _));
+
         return services;
     }
 
@@ -76,9 +84,11 @@ public static class UaDetectorServiceCollectionExtensions
         optionsAction?.Invoke(optionsBuilder);
 
         var botParser = new BotParser(optionsBuilder.Build());
-        botParser.TryParse(WarmupUserAgent, out _);
 
         services.AddSingleton<IBotParser>(botParser);
+        
+        _ = Task.Run(() => botParser.TryParse(WarmupUserAgent, out _));
+
         return services;
     }
 }
