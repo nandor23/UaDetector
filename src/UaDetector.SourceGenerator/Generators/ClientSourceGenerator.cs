@@ -1,5 +1,4 @@
 using System.Text;
-
 using UaDetector.SourceGenerator.Collections;
 using UaDetector.SourceGenerator.Models;
 using UaDetector.SourceGenerator.Utilities;

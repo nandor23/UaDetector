@@ -1,5 +1,4 @@
 using System.Diagnostics.CodeAnalysis;
-
 using UaDetector.Models;
 
 namespace UaDetector.Parsers;

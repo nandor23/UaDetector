@@ -1,5 +1,4 @@
 using System.Text.RegularExpressions;
-
 using YamlDotNet.Serialization;
 
 namespace UaDetector.YamlJsonConverter.Models;

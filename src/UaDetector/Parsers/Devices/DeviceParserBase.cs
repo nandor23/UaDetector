@@ -1,7 +1,6 @@
 using System.Collections.Frozen;
 using System.Diagnostics.CodeAnalysis;
 using System.Text.RegularExpressions;
-
 using UaDetector.Models;
 using UaDetector.Models.Constants;
 using UaDetector.Models.Enums;

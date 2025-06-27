@@ -1,5 +1,4 @@
 using System.Text.RegularExpressions;
-
 using UaDetector.Models.Enums;
 
 namespace UaDetector.Models.Internal;
