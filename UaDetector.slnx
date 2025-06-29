@@ -22,6 +22,7 @@
     <Project Path="samples\UaDetector.Console\UaDetector.Console.csproj" Type="Classic C#" />
   </Folder>
   <Folder Name="/src/">
+    <Project Path="src\UaDetector.Abstractions\UaDetector.Abstractions.csproj" Type="Classic C#" />
     <Project Path="src\UaDetector.MemoryCache\UaDetector.MemoryCache.csproj" Type="Classic C#" />
     <Project Path="src\UaDetector.SourceGenerator\UaDetector.SourceGenerator.csproj" Type="Classic C#" />
     <Project Path="src\UaDetector\UaDetector.csproj" Type="Classic C#" />

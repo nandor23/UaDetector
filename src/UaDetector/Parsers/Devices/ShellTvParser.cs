@@ -16,9 +16,7 @@ internal sealed partial class ShellTvParser : DeviceParserBase
 
     static ShellTvParser()
     {
-        ShellTvRegex = RegexBuilder.BuildRegex(
-            @"[a-z]+[ _]Shell[ _]\w{6}|tclwebkit(\d+[.\d]*)"
-        );
+        ShellTvRegex = RegexBuilder.BuildRegex(@"[a-z]+[ _]Shell[ _]\w{6}|tclwebkit(\d+[.\d]*)");
     }
 
     public override bool TryParse(

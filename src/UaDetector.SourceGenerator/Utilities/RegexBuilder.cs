@@ -1,3 +1,4 @@
+using UaDetector.Abstractions.Utilities;
 using UaDetector.SourceGenerator.Models;
 
 namespace UaDetector.SourceGenerator.Utilities;
@@ -6,7 +7,7 @@ internal static class RegexBuilder
 {
     public static string BuildRegexFieldDeclaration(string methodName, string pattern)
     {
-        var fullPattern = BuildRegexPattern(pattern);
+        var fullPattern = RegexUtils.BuildPattern(pattern);
         var escapedPattern = EscapeForVerbatimString(fullPattern);
 
         return $"""
@@ -29,7 +30,7 @@ internal static class RegexBuilder
         }
 
         var fieldName = $"_{combinedRegexProperty.PropertyName}";
-        var fullPattern = BuildRegexPattern(pattern);
+        var fullPattern = RegexUtils.BuildPattern(pattern);
         var escapedPattern = EscapeForVerbatimString(fullPattern);
 
         return $"""
@@ -46,10 +47,5 @@ internal static class RegexBuilder
     private static string EscapeForVerbatimString(this string input)
     {
         return input.Replace("\"", "\"\"");
-    }
-
-    private static string BuildRegexPattern(string pattern)
-    {
-        return $"(?:^|[^A-Z0-9_-]|[^A-Z0-9-]_|sprd-|MZ-)(?:{pattern})";
     }
 }
