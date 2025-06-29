@@ -170,37 +170,37 @@ internal sealed class RegexSourceGenerator : IIncrementalGenerator
     {
         return regexSourceProperty.ElementType switch
         {
-            "global::UaDetector.Models.Internal.Client" => ClientSourceGenerator.Generate(
+            "global::UaDetector.Abstractions.Models.Internal.Client" => ClientSourceGenerator.Generate(
                 json,
                 regexSourceProperty,
                 combinedRegexProperty
             ),
-            "global::UaDetector.Models.Internal.Device" => DeviceGenerator.Generate(
+            "global::UaDetector.Abstractions.Models.Internal.Device" => DeviceGenerator.Generate(
                 json,
                 regexSourceProperty,
                 combinedRegexProperty
             ),
-            "global::UaDetector.Models.Internal.Browser" => BrowserSourceGenerator.Generate(
+            "global::UaDetector.Abstractions.Models.Internal.Browser" => BrowserSourceGenerator.Generate(
                 json,
                 regexSourceProperty,
                 combinedRegexProperty
             ),
-            "global::UaDetector.Models.Internal.Engine" => EngineSourceGenerator.Generate(
+            "global::UaDetector.Abstractions.Models.Internal.Engine" => EngineSourceGenerator.Generate(
                 json,
                 regexSourceProperty,
                 combinedRegexProperty
             ),
-            "global::UaDetector.Models.Internal.Os" => OsSourceGenerator.Generate(
+            "global::UaDetector.Abstractions.Models.Internal.Os" => OsSourceGenerator.Generate(
                 json,
                 regexSourceProperty,
                 combinedRegexProperty
             ),
-            "global::UaDetector.Models.Internal.Bot" => BotSourceGenerator.Generate(
+            "global::UaDetector.Abstractions.Models.Internal.Bot" => BotSourceGenerator.Generate(
                 json,
                 regexSourceProperty,
                 combinedRegexProperty
             ),
-            "global::UaDetector.Models.Internal.VendorFragment" =>
+            "global::UaDetector.Abstractions.Models.Internal.VendorFragment" =>
                 VendorFragmentSourceGenerator.Generate(
                     json,
                     regexSourceProperty,

@@ -1,4 +1,4 @@
-using UaDetector.Models;
+using UaDetector.Abstractions.Models;
 
 namespace UaDetector.Tests.Fixtures.Models;
 

@@ -1,6 +1,7 @@
 using Shouldly;
-using UaDetector.Models;
-using UaDetector.Models.Enums;
+
+using UaDetector.Abstractions.Models;
+using UaDetector.Abstractions.Models.Enums;
 using UaDetector.Parsers;
 using UaDetector.Tests.Fixtures.Models;
 using UaDetector.Tests.Helpers;

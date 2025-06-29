@@ -1,6 +1,7 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Text.RegularExpressions;
-using UaDetector.Models.Enums;
+
+using UaDetector.Abstractions.Models.Enums;
 using UaDetector.Utilities;
 
 namespace UaDetector.Parsers;

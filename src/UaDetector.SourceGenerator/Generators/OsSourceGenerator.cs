@@ -103,14 +103,14 @@ internal static class OsSourceGenerator
             if (os.Versions is not null)
             {
                 sb.AppendLine(
-                        $"{nameof(OsRule.Versions)} = new global::UaDetector.Models.Internal.OsVersion[]"
+                        $"{nameof(OsRule.Versions)} = new global::UaDetector.Abstractions.Models.Internal.OsVersion[]"
                     )
                     .AppendLine("{")
                     .Indent();
 
                 foreach (var osVersion in os.Versions)
                 {
-                    sb.AppendLine("new global::UaDetector.Models.Internal.OsVersion")
+                    sb.AppendLine("new global::UaDetector.Abstractions.Models.Internal.OsVersion")
                         .AppendLine("{")
                         .Indent()
                         .AppendLine(

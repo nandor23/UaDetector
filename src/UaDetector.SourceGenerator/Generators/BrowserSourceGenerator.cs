@@ -82,7 +82,7 @@ internal static class BrowserSourceGenerator
             if (browser.Engine is not null)
             {
                 sb.AppendLine(
-                        $"{nameof(BrowserRule.Engine)} = new global::UaDetector.Models.Internal.BrowserEngine"
+                        $"{nameof(BrowserRule.Engine)} = new global::UaDetector.Abstractions.Models.Internal.BrowserEngine"
                     )
                     .AppendLine("{")
                     .Indent();

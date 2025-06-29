@@ -1,5 +1,6 @@
 using Shouldly;
-using UaDetector.Models.Enums;
+
+using UaDetector.Abstractions.Models.Enums;
 
 namespace UaDetector.Tests.Tests.Models.Enums;
 

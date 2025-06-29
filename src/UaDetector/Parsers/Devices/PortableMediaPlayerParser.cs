@@ -1,8 +1,9 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Text.RegularExpressions;
+
+using UaDetector.Abstractions.Models;
+using UaDetector.Abstractions.Models.Internal;
 using UaDetector.Attributes;
-using UaDetector.Models;
-using UaDetector.Models.Internal;
 
 namespace UaDetector.Parsers.Devices;
 

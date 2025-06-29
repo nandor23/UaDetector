@@ -18,28 +18,14 @@ internal static class JsonUtils
 
     public static EquatableReadOnlyList<T> DeserializeList<T>(string json)
     {
-        try
-        {
-            return JsonSerializer.Deserialize<EquatableReadOnlyList<T>>(json, SerializerOptions);
-        }
-        catch
-        {
-            return [];
-        }
+        return JsonSerializer.Deserialize<EquatableReadOnlyList<T>>(json, SerializerOptions);
     }
 
     public static EquatableReadOnlyDictionary<string, string> DeserializeDictionary(string json)
     {
-        try
-        {
-            return JsonSerializer.Deserialize<EquatableReadOnlyDictionary<string, string>>(
-                json,
-                SerializerOptions
-            );
-        }
-        catch
-        {
-            return [];
-        }
+        return JsonSerializer.Deserialize<EquatableReadOnlyDictionary<string, string>>(
+            json,
+            SerializerOptions
+        );
     }
 }
