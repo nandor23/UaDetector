@@ -170,26 +170,17 @@ internal sealed class RegexSourceGenerator : IIncrementalGenerator
     {
         return regexSourceProperty.ElementType switch
         {
-            "global::UaDetector.Abstractions.Models.Internal.Client" => ClientSourceGenerator.Generate(
-                json,
-                regexSourceProperty,
-                combinedRegexProperty
-            ),
+            "global::UaDetector.Abstractions.Models.Internal.Client" =>
+                ClientSourceGenerator.Generate(json, regexSourceProperty, combinedRegexProperty),
             "global::UaDetector.Abstractions.Models.Internal.Device" => DeviceGenerator.Generate(
                 json,
                 regexSourceProperty,
                 combinedRegexProperty
             ),
-            "global::UaDetector.Abstractions.Models.Internal.Browser" => BrowserSourceGenerator.Generate(
-                json,
-                regexSourceProperty,
-                combinedRegexProperty
-            ),
-            "global::UaDetector.Abstractions.Models.Internal.Engine" => EngineSourceGenerator.Generate(
-                json,
-                regexSourceProperty,
-                combinedRegexProperty
-            ),
+            "global::UaDetector.Abstractions.Models.Internal.Browser" =>
+                BrowserSourceGenerator.Generate(json, regexSourceProperty, combinedRegexProperty),
+            "global::UaDetector.Abstractions.Models.Internal.Engine" =>
+                EngineSourceGenerator.Generate(json, regexSourceProperty, combinedRegexProperty),
             "global::UaDetector.Abstractions.Models.Internal.Os" => OsSourceGenerator.Generate(
                 json,
                 regexSourceProperty,

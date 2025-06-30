@@ -1,6 +1,5 @@
 using System.Collections.Immutable;
 using Shouldly;
-
 using UaDetector.Abstractions.Models.Enums;
 using UaDetector.Parsers.Clients;
 using UaDetector.Tests.Fixtures.Models;

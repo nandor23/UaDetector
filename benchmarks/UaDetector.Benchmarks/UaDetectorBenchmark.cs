@@ -1,5 +1,4 @@
 ﻿using BenchmarkDotNet.Attributes;
-
 using UaDetector.Abstractions.Models;
 using UaDetector.Parsers;
 

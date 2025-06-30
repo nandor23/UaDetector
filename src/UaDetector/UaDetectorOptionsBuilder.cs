@@ -8,7 +8,7 @@ public sealed class UaDetectorOptionsBuilder
     public bool DisableBotDetection { get; set; }
     private IUaDetectorCache? Cache { get; set; }
 
-    public UaDetectorOptionsBuilder AddCache(IUaDetectorCache cache)
+    internal UaDetectorOptionsBuilder AddCache(IUaDetectorCache cache)
     {
         Cache = cache;
         return this;

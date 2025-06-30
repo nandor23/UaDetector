@@ -16,6 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <InternalsVisibleTo Include="UaDetector.MemoryCache" />
     <InternalsVisibleTo Include="UaDetector.Tests" />
     <InternalsVisibleTo Include="UaDetector.ReadmeUpdater" />
     <InternalsVisibleTo Include="UaDetector.YamlJsonConverter" />
