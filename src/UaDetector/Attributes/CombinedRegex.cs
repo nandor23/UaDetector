@@ -1,4 +1,4 @@
 namespace UaDetector.Attributes;
 
 [AttributeUsage(AttributeTargets.Property)]
-public sealed class CombinedRegex : Attribute;
+internal sealed class CombinedRegex : Attribute;

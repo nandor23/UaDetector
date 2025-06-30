@@ -1,7 +1,7 @@
 namespace UaDetector.Attributes;
 
 [AttributeUsage(AttributeTargets.Property)]
-public sealed class HintSource : Attribute
+internal sealed class HintSource : Attribute
 {
     public string FilePath { get; }
 
