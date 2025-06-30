@@ -1,4 +1,6 @@
 using System.Text;
+
+using UaDetector.Abstractions.Models.Internal;
 using UaDetector.SourceGenerator.Collections;
 using UaDetector.SourceGenerator.Models;
 using UaDetector.SourceGenerator.Utilities;
@@ -90,29 +92,29 @@ internal static class DeviceGenerator
             sb.AppendLine($"new {regexSourceProperty.ElementType}")
                 .AppendLine("{")
                 .Indent()
-                .AppendLine($"{nameof(DeviceRule.Regex)} = {DeviceRegexPrefix}{deviceCount},")
+                .AppendLine($"{nameof(Device.Regex)} = {DeviceRegexPrefix}{deviceCount},")
                 .AppendLine(
-                    $"{nameof(DeviceRule.Brand)} = \"{device.Brand.EscapeStringLiteral()}\","
+                    $"{nameof(Device.Brand)} = \"{device.Brand.EscapeStringLiteral()}\","
                 );
 
             if (device.Type is not null)
             {
                 sb.AppendLine(
-                    $"{nameof(DeviceRule.Type)} = (global::UaDetector.Abstractions.Models.Enums.DeviceType){device.Type},"
+                    $"{nameof(Device.Type)} = (global::UaDetector.Abstractions.Models.Enums.DeviceType){device.Type},"
                 );
             }
 
             if (device.Model is not null)
             {
                 sb.AppendLine(
-                    $"{nameof(DeviceRule.Model)} = \"{device.Model.EscapeStringLiteral()}\","
+                    $"{nameof(Device.Model)} = \"{device.Model.EscapeStringLiteral()}\","
                 );
             }
 
             if (device.ModelVariants is not null)
             {
                 sb.AppendLine(
-                        $"{nameof(DeviceRule.ModelVariants)} = new global::UaDetector.Abstractions.Models.Internal.DeviceModel[]"
+                        $"{nameof(Device.ModelVariants)} = new global::UaDetector.Abstractions.Models.Internal.DeviceModel[]"
                     )
                     .AppendLine("{")
                     .Indent();
@@ -123,27 +125,27 @@ internal static class DeviceGenerator
                         .AppendLine("{")
                         .Indent()
                         .AppendLine(
-                            $"{nameof(DeviceModelRule.Regex)} = {ModelRegexPrefix}{modelCount},"
+                            $"{nameof(DeviceModel.Regex)} = {ModelRegexPrefix}{modelCount},"
                         );
 
                     if (model.Type is not null)
                     {
                         sb.AppendLine(
-                            $"{nameof(DeviceModelRule.Type)} = (global::UaDetector.Abstractions.Models.Enums.DeviceType){model.Type},"
+                            $"{nameof(DeviceModel.Type)} = (global::UaDetector.Abstractions.Models.Enums.DeviceType){model.Type},"
                         );
                     }
 
                     if (model.Brand is not null)
                     {
                         sb.AppendLine(
-                            $"{nameof(DeviceModelRule.Brand)} = \"{model.Brand.EscapeStringLiteral()}\","
+                            $"{nameof(DeviceModel.Brand)} = \"{model.Brand.EscapeStringLiteral()}\","
                         );
                     }
 
                     if (model.Name is not null)
                     {
                         sb.AppendLine(
-                            $"{nameof(DeviceModelRule.Name)} = \"{model.Name.EscapeStringLiteral()}\","
+                            $"{nameof(DeviceModel.Name)} = \"{model.Name.EscapeStringLiteral()}\","
                         );
                     }
 

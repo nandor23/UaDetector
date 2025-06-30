@@ -1,4 +1,6 @@
 using System.Text;
+
+using UaDetector.Abstractions.Models.Internal;
 using UaDetector.SourceGenerator.Collections;
 using UaDetector.SourceGenerator.Models;
 using UaDetector.SourceGenerator.Utilities;
@@ -84,10 +86,10 @@ internal static class VendorFragmentSourceGenerator
                 .AppendLine("{")
                 .Indent()
                 .AppendLine(
-                    $"{nameof(VendorFragmentRule.Brand)} = \"{fragment.Brand.EscapeStringLiteral()}\","
+                    $"{nameof(VendorFragment.Brand)} = \"{fragment.Brand.EscapeStringLiteral()}\","
                 )
                 .AppendLine(
-                    $"{nameof(VendorFragmentRule.Regexes)} = new global::System.Text.RegularExpressions.Regex[]"
+                    $"{nameof(VendorFragment.Regexes)} = new global::System.Text.RegularExpressions.Regex[]"
                 )
                 .AppendLine("{")
                 .Indent();

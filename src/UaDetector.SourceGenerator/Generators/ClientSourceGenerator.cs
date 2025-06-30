@@ -1,4 +1,6 @@
 using System.Text;
+
+using UaDetector.Abstractions.Models.Internal;
 using UaDetector.SourceGenerator.Collections;
 using UaDetector.SourceGenerator.Models;
 using UaDetector.SourceGenerator.Utilities;
@@ -67,15 +69,15 @@ internal static class ClientSourceGenerator
             sb.AppendLine($"new {regexSourceProperty.ElementType}")
                 .AppendLine("{")
                 .Indent()
-                .AppendLine($"{nameof(ClientRule.Regex)} = {ClientRegexPrefix}{clientCount},")
+                .AppendLine($"{nameof(Client.Regex)} = {ClientRegexPrefix}{clientCount},")
                 .AppendLine(
-                    $"{nameof(ClientRule.Name)} = \"{client.Name.EscapeStringLiteral()}\","
+                    $"{nameof(Client.Name)} = \"{client.Name.EscapeStringLiteral()}\","
                 );
 
             if (client.Version is not null)
             {
                 sb.AppendLine(
-                    $"{nameof(ClientRule.Version)} = \"{client.Version.EscapeStringLiteral()}\","
+                    $"{nameof(Client.Version)} = \"{client.Version.EscapeStringLiteral()}\","
                 );
             }
 
