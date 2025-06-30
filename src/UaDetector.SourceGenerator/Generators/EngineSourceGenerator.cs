@@ -1,5 +1,4 @@
 using System.Text;
-
 using UaDetector.Abstractions.Models.Internal;
 using UaDetector.SourceGenerator.Collections;
 using UaDetector.SourceGenerator.Models;
@@ -69,9 +68,7 @@ internal static class EngineSourceGenerator
                 .AppendLine("{")
                 .Indent()
                 .AppendLine($"{nameof(Engine.Regex)} = {EngineRegexPrefix}{i},")
-                .AppendLine(
-                    $"{nameof(Engine.Name)} = \"{list[i].Name.EscapeStringLiteral()}\","
-                )
+                .AppendLine($"{nameof(Engine.Name)} = \"{list[i].Name.EscapeStringLiteral()}\",")
                 .Unindent()
                 .AppendLine("},");
         }

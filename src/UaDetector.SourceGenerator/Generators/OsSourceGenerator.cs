@@ -1,5 +1,4 @@
 using System.Text;
-
 using UaDetector.Abstractions.Models.Internal;
 using UaDetector.SourceGenerator.Collections;
 using UaDetector.SourceGenerator.Models;
@@ -97,9 +96,7 @@ internal static class OsSourceGenerator
 
             if (os.Version is not null)
             {
-                sb.AppendLine(
-                    $"{nameof(Os.Version)} = \"{os.Version.EscapeStringLiteral()}\","
-                );
+                sb.AppendLine($"{nameof(Os.Version)} = \"{os.Version.EscapeStringLiteral()}\",");
             }
 
             if (os.Versions is not null)

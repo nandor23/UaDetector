@@ -1,5 +1,4 @@
 using System.Text;
-
 using UaDetector.Abstractions.Models.Internal;
 using UaDetector.SourceGenerator.Collections;
 using UaDetector.SourceGenerator.Models;
@@ -70,9 +69,7 @@ internal static class ClientSourceGenerator
                 .AppendLine("{")
                 .Indent()
                 .AppendLine($"{nameof(Client.Regex)} = {ClientRegexPrefix}{clientCount},")
-                .AppendLine(
-                    $"{nameof(Client.Name)} = \"{client.Name.EscapeStringLiteral()}\","
-                );
+                .AppendLine($"{nameof(Client.Name)} = \"{client.Name.EscapeStringLiteral()}\",");
 
             if (client.Version is not null)
             {

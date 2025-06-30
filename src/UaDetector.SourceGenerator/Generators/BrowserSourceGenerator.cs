@@ -1,5 +1,4 @@
 using System.Text;
-
 using UaDetector.Abstractions.Models.Internal;
 using UaDetector.SourceGenerator.Collections;
 using UaDetector.SourceGenerator.Models;
@@ -70,9 +69,7 @@ internal static class BrowserSourceGenerator
                 .AppendLine("{")
                 .Indent()
                 .AppendLine($"{nameof(Browser.Regex)} = {BrowserRegexPrefix}{browserCount},")
-                .AppendLine(
-                    $"{nameof(Browser.Name)} = \"{browser.Name.EscapeStringLiteral()}\","
-                );
+                .AppendLine($"{nameof(Browser.Name)} = \"{browser.Name.EscapeStringLiteral()}\",");
 
             if (browser.Version is not null)
             {

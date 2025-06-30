@@ -1,5 +1,4 @@
 using System.Text;
-
 using UaDetector.Abstractions.Models.Internal;
 using UaDetector.SourceGenerator.Collections;
 using UaDetector.SourceGenerator.Models;
@@ -93,9 +92,7 @@ internal static class DeviceGenerator
                 .AppendLine("{")
                 .Indent()
                 .AppendLine($"{nameof(Device.Regex)} = {DeviceRegexPrefix}{deviceCount},")
-                .AppendLine(
-                    $"{nameof(Device.Brand)} = \"{device.Brand.EscapeStringLiteral()}\","
-                );
+                .AppendLine($"{nameof(Device.Brand)} = \"{device.Brand.EscapeStringLiteral()}\",");
 
             if (device.Type is not null)
             {
