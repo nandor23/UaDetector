@@ -46,13 +46,14 @@
     <PackageVersion Include="PolySharp" Version="1.15.0" />
     <PackageVersion Include="Shouldly" Version="4.3.0" />
     <PackageVersion Include="TUnit" Version="0.25.21" />
+    <PackageVersion Include="Microsoft.CodeAnalysis.Analyzers" Version="4.14.0" />
+    <PackageVersion Include="Microsoft.CodeAnalysis.CSharp" Version="4.12.0" />
+    <PackageVersion Include="Microsoft.CodeAnalysis.CSharp.Workspaces" Version="4.12.0" />
+    <PackageVersion Include="Microsoft.CodeAnalysis.CSharp.Analyzer.Testing" Version="1.1.2" />
     <PackageVersion
       Include="Microsoft.CodeAnalysis.CSharp.SourceGenerators.Testing"
       Version="1.1.2"
     />
-    <PackageVersion Include="Microsoft.CodeAnalysis.Analyzers" Version="4.14.0" />
-    <PackageVersion Include="Microsoft.CodeAnalysis.CSharp" Version="4.8.0" />
-    <PackageVersion Include="Microsoft.CodeAnalysis.CSharp.Workspaces" Version="4.8.0" />
     <PackageVersion Include="Microsoft.Bcl.AsyncInterfaces" Version="9.0.6" />
     <PackageVersion Include="System.Reflection.Metadata" Version="9.0.6" />
     <PackageVersion Include="System.Text.Encoding.CodePages" Version="9.0.6" />

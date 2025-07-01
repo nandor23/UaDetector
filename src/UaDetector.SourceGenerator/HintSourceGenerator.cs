@@ -7,13 +7,13 @@ using UaDetector.SourceGenerator.Utilities;
 namespace UaDetector.SourceGenerator;
 
 [Generator]
-internal sealed class HintSourceGenerator : IIncrementalGenerator
+public sealed class HintSourceGenerator : IIncrementalGenerator
 {
     public void Initialize(IncrementalGeneratorInitializationContext context)
     {
         var hintSourceProvider = context
             .SyntaxProvider.ForAttributeWithMetadataName(
-                "UaDetector.Attributes.HintSource",
+                "UaDetector.Attributes.HintSourceAttribute",
                 predicate: static (node, _) => node is PropertyDeclarationSyntax,
                 transform: GetHintSourceForGeneration
             )
@@ -119,29 +119,34 @@ internal sealed class HintSourceGenerator : IIncrementalGenerator
             var sb = new IndentedStringBuilder();
 
             sb.AppendLine(
-                $$"""
-                {{property.Namespace}}
+                    $$"""
+                    {{property.Namespace}}
 
-                {{classModifier}} class {{property.ContainingClass}}
-                {
-                    private static readonly global::System.Collections.Frozen.FrozenDictionary<string, string> {{fieldName}} =
-                        global::System.Collections.Frozen.FrozenDictionary.ToFrozenDictionary(
-                            new global::System.Collections.Generic.Dictionary<string, string>
-                            {
-                """
-            );
+                    {{classModifier}} class {{property.ContainingClass}}
+                    {
+                        private static readonly global::System.Collections.Frozen.FrozenDictionary<string, string> {{fieldName}} =
+                            global::System.Collections.Frozen.FrozenDictionary.ToFrozenDictionary(
+                                new global::System.Collections.Generic.Dictionary<string, string>
+                                {
+                    """
+                )
+                .Indent()
+                .Indent()
+                .Indent()
+                .Indent();
 
             foreach (var kvp in list)
             {
-                sb.AppendLine($"            {{ \"{kvp.Key}\", \"{kvp.Value}\" }},");
+                sb.AppendLine($"{{ \"{kvp.Key}\", \"{kvp.Value}\" }},");
             }
 
-            sb.AppendLine("        });\n");
+            sb.Unindent().AppendLine("}").Unindent().AppendLine(");").AppendLine().Unindent();
 
             sb.AppendLine(
-                $"    {property.PropertyAccessibility.ToSyntaxString()} static partial global::System.Collections.Frozen.FrozenDictionary<string, string> {property.PropertyName} => {fieldName};"
-            );
-            sb.AppendLine("}");
+                    $"{property.PropertyAccessibility.ToSyntaxString()} static partial global::System.Collections.Frozen.FrozenDictionary<string, string> {property.PropertyName} => {fieldName};"
+                )
+                .Unindent()
+                .AppendLine("}");
 
             context.AddSource($"{property.ContainingClass}.g.cs", sb.ToString());
         }

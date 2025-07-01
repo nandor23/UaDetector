@@ -21,19 +21,16 @@ internal sealed class IndentedStringBuilder
 
     public IndentedStringBuilder AppendLine(string? line = null)
     {
-        if (_indentLevel > 0)
-        {
-            _sb.Append(new string('\t', _indentLevel));
-        }
-
         if (line is not null)
         {
-            _sb.AppendLine(line);
+            if (_indentLevel > 0)
+            {
+                _sb.Append(new string(' ', _indentLevel * 4));
+            }
+            _sb.Append(line);
         }
-        else
-        {
-            _sb.AppendLine();
-        }
+
+        _sb.Append("\r\n");
 
         return this;
     }

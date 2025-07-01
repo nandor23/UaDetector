@@ -8,13 +8,13 @@ using UaDetector.SourceGenerator.Utilities;
 namespace UaDetector.SourceGenerator;
 
 [Generator]
-internal sealed class RegexSourceGenerator : IIncrementalGenerator
+public sealed class RegexSourceGenerator : IIncrementalGenerator
 {
     public void Initialize(IncrementalGeneratorInitializationContext context)
     {
         var regexSourceProvider = context
             .SyntaxProvider.ForAttributeWithMetadataName(
-                "UaDetector.Attributes.RegexSource",
+                "UaDetector.Attributes.RegexSourceAttribute",
                 predicate: static (node, _) => node is PropertyDeclarationSyntax,
                 transform: GetRegexSourceForGeneration
             )
@@ -23,7 +23,7 @@ internal sealed class RegexSourceGenerator : IIncrementalGenerator
 
         var combinedRegexProvider = context
             .SyntaxProvider.ForAttributeWithMetadataName(
-                "UaDetector.Attributes.CombinedRegex",
+                "UaDetector.Attributes.CombinedRegexAttribute",
                 predicate: static (node, _) => node is PropertyDeclarationSyntax,
                 transform: GetCombinedRegexForGeneration
             )
