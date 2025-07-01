@@ -1,4 +1,3 @@
-using System.Text;
 using UaDetector.SourceGenerator.Collections;
 using UaDetector.SourceGenerator.Models;
 using UaDetector.SourceGenerator.Utilities;
@@ -71,38 +70,30 @@ internal static class BrowserSourceGenerator
             sb.AppendLine($"new {regexSourceProperty.ElementType}")
                 .AppendLine("{")
                 .Indent()
-                .AppendLine($"{nameof(BrowserRule.Regex)} = {BrowserRegexPrefix}{browserCount},")
-                .AppendLine(
-                    $"{nameof(BrowserRule.Name)} = \"{browser.Name.EscapeStringLiteral()}\","
-                );
+                .AppendLine($"Regex = {BrowserRegexPrefix}{browserCount},")
+                .AppendLine($"Name = \"{browser.Name.EscapeStringLiteral()}\",");
 
             if (browser.Version is not null)
             {
                 sb.AppendLine(
-                    $"{nameof(BrowserRule.Version)} = \"{browser.Version.EscapeStringLiteral()}\","
+                    $"Version = \"{browser.Version.EscapeStringLiteral()}\","
                 );
             }
 
             if (browser.Engine is not null)
             {
-                sb.AppendLine(
-                        $"{nameof(BrowserRule.Engine)} = new global::UaDetector.Models.BrowserEngine"
-                    )
+                sb.AppendLine("Engine = new global::UaDetector.Models.BrowserEngine")
                     .AppendLine("{")
                     .Indent();
 
                 if (browser.Engine?.Default is not null)
                 {
-                    sb.AppendLine(
-                        $"{nameof(BrowserRule.Engine.Default)} = \"{browser.Engine.Default.EscapeStringLiteral()}\","
-                    );
+                    sb.AppendLine($"Default = \"{browser.Engine.Default.EscapeStringLiteral()}\",");
                 }
 
                 if (browser.Engine?.Versions is not null)
                 {
-                    sb.AppendLine(
-                            $"{nameof(BrowserRule.Engine.Versions)} = new global::System.Collections.Generic.Dictionary<string, string>"
-                        )
+                    sb.AppendLine("Versions = new global::System.Collections.Generic.Dictionary<string, string>")
                         .AppendLine("{")
                         .Indent();
 

@@ -1,4 +1,3 @@
-using System.Text;
 using UaDetector.SourceGenerator.Collections;
 using UaDetector.SourceGenerator.Models;
 using UaDetector.SourceGenerator.Utilities;
@@ -71,15 +70,15 @@ internal static class ClientSourceGenerator
             sb.AppendLine($"new {regexSourceProperty.ElementType}")
                 .AppendLine("{")
                 .Indent()
-                .AppendLine($"{nameof(ClientRule.Regex)} = {ClientRegexPrefix}{clientCount},")
+                .AppendLine($"Regex = {ClientRegexPrefix}{clientCount},")
                 .AppendLine(
-                    $"{nameof(ClientRule.Name)} = \"{client.Name.EscapeStringLiteral()}\","
+                    $"Name = \"{client.Name.EscapeStringLiteral()}\","
                 );
 
             if (client.Version is not null)
             {
                 sb.AppendLine(
-                    $"{nameof(ClientRule.Version)} = \"{client.Version.EscapeStringLiteral()}\","
+                    $"Version = \"{client.Version.EscapeStringLiteral()}\","
                 );
             }
 

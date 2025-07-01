@@ -1,4 +1,3 @@
-using System.Text;
 using UaDetector.SourceGenerator.Collections;
 using UaDetector.SourceGenerator.Models;
 using UaDetector.SourceGenerator.Utilities;
@@ -70,10 +69,8 @@ internal static class EngineSourceGenerator
             sb.AppendLine($"new {regexSourceProperty.ElementType}")
                 .AppendLine("{")
                 .Indent()
-                .AppendLine($"{nameof(EngineRule.Regex)} = {EngineRegexPrefix}{i},")
-                .AppendLine(
-                    $"{nameof(EngineRule.Name)} = \"{list[i].Name.EscapeStringLiteral()}\","
-                )
+                .AppendLine($"Regex = {EngineRegexPrefix}{i},")
+                .AppendLine($"Name = \"{list[i].Name.EscapeStringLiteral()}\",")
                 .Unindent()
                 .AppendLine("},");
         }

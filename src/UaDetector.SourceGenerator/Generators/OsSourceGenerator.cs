@@ -1,4 +1,3 @@
-using System.Text;
 using UaDetector.SourceGenerator.Collections;
 using UaDetector.SourceGenerator.Models;
 using UaDetector.SourceGenerator.Utilities;
@@ -91,21 +90,19 @@ internal static class OsSourceGenerator
             sb.AppendLine($"new {regexSourceProperty.ElementType}")
                 .AppendLine("{")
                 .Indent()
-                .AppendLine($"{nameof(OsRule.Regex)} = {OsRegexPrefix}{osCount},")
-                .AppendLine($"{nameof(OsRule.Name)} = \"{os.Name.EscapeStringLiteral()}\",");
+                .AppendLine($"Regex = {OsRegexPrefix}{osCount},")
+                .AppendLine($"Name = \"{os.Name.EscapeStringLiteral()}\",");
 
             if (os.Version is not null)
             {
                 sb.AppendLine(
-                    $"{nameof(OsRule.Version)} = \"{os.Version.EscapeStringLiteral()}\","
+                    $"Version = \"{os.Version.EscapeStringLiteral()}\","
                 );
             }
 
             if (os.Versions is not null)
             {
-                sb.AppendLine(
-                        $"{nameof(OsRule.Versions)} = new global::UaDetector.Models.OsVersion[]"
-                    )
+                sb.AppendLine("Versions = new global::UaDetector.Models.OsVersion[]")
                     .AppendLine("{")
                     .Indent();
 
@@ -114,12 +111,8 @@ internal static class OsSourceGenerator
                     sb.AppendLine("new global::UaDetector.Models.OsVersion")
                         .AppendLine("{")
                         .Indent()
-                        .AppendLine(
-                            $"{nameof(OsVersionRule.Regex)} = {VersionRegexPrefix}{versionCount},"
-                        )
-                        .AppendLine(
-                            $"{nameof(OsVersionRule.Version)} = \"{osVersion.Version.EscapeStringLiteral()}\","
-                        )
+                        .AppendLine($"Regex = {VersionRegexPrefix}{versionCount},")
+                        .AppendLine($"Version = \"{osVersion.Version.EscapeStringLiteral()}\",")
                         .Unindent()
                         .AppendLine("},");
 
