@@ -98,7 +98,9 @@ internal static class DeviceGenerator
 
             if (device.Type is not null)
             {
-                sb.AppendLine($"Type = (global::UaDetector.Abstractions.Enums.DeviceType){device.Type},");
+                sb.AppendLine(
+                    $"Type = (global::UaDetector.Abstractions.Enums.DeviceType){device.Type},"
+                );
             }
 
             if (device.Model is not null)
@@ -121,7 +123,9 @@ internal static class DeviceGenerator
 
                     if (model.Type is not null)
                     {
-                        sb.AppendLine($"Type = (global::UaDetector.Abstractions.Enums.DeviceType){model.Type},");
+                        sb.AppendLine(
+                            $"Type = (global::UaDetector.Abstractions.Enums.DeviceType){model.Type},"
+                        );
                     }
 
                     if (model.Brand is not null)

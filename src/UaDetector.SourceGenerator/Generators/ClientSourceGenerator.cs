@@ -71,15 +71,11 @@ internal static class ClientSourceGenerator
                 .AppendLine("{")
                 .Indent()
                 .AppendLine($"Regex = {ClientRegexPrefix}{clientCount},")
-                .AppendLine(
-                    $"Name = \"{client.Name.EscapeStringLiteral()}\","
-                );
+                .AppendLine($"Name = \"{client.Name.EscapeStringLiteral()}\",");
 
             if (client.Version is not null)
             {
-                sb.AppendLine(
-                    $"Version = \"{client.Version.EscapeStringLiteral()}\","
-                );
+                sb.AppendLine($"Version = \"{client.Version.EscapeStringLiteral()}\",");
             }
 
             sb.Unindent().AppendLine("},");

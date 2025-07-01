@@ -75,9 +75,7 @@ internal static class BrowserSourceGenerator
 
             if (browser.Version is not null)
             {
-                sb.AppendLine(
-                    $"Version = \"{browser.Version.EscapeStringLiteral()}\","
-                );
+                sb.AppendLine($"Version = \"{browser.Version.EscapeStringLiteral()}\",");
             }
 
             if (browser.Engine is not null)
@@ -93,7 +91,9 @@ internal static class BrowserSourceGenerator
 
                 if (browser.Engine?.Versions is not null)
                 {
-                    sb.AppendLine("Versions = new global::System.Collections.Generic.Dictionary<string, string>")
+                    sb.AppendLine(
+                            "Versions = new global::System.Collections.Generic.Dictionary<string, string>"
+                        )
                         .AppendLine("{")
                         .Indent();
 

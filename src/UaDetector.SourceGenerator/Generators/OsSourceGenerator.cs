@@ -95,9 +95,7 @@ internal static class OsSourceGenerator
 
             if (os.Version is not null)
             {
-                sb.AppendLine(
-                    $"Version = \"{os.Version.EscapeStringLiteral()}\","
-                );
+                sb.AppendLine($"Version = \"{os.Version.EscapeStringLiteral()}\",");
             }
 
             if (os.Versions is not null)
