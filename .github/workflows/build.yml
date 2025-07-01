@@ -30,3 +30,6 @@ jobs:
 
       - name: Test UaDetector.MemoryCache
         run: dotnet test tests/UaDetector.MemoryCache.Tests --no-build
+        
+      - name: Test UaDetector.Abstractions
+        run: dotnet test tests/UaDetector.Abstractions.Tests --no-build
