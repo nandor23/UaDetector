@@ -1,4 +1,4 @@
-namespace UaDetector.Abstractions.Models.Enums;
+namespace UaDetector.Abstractions.Enums;
 
 public enum BrandCode
 {

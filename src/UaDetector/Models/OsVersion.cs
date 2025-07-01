@@ -1,6 +1,6 @@
 using System.Text.RegularExpressions;
 
-namespace UaDetector.Abstractions.Models.Internal;
+namespace UaDetector.Models;
 
 internal sealed class OsVersion
 {

@@ -1,4 +1,4 @@
-namespace UaDetector.Abstractions.Models.Constants;
+namespace UaDetector.Abstractions.Constants;
 
 public static class OsNames
 {

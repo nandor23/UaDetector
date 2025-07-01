@@ -1,5 +1,4 @@
 using System.Text;
-using UaDetector.Abstractions.Models.Internal;
 using UaDetector.SourceGenerator.Collections;
 using UaDetector.SourceGenerator.Models;
 using UaDetector.SourceGenerator.Utilities;
@@ -35,14 +34,18 @@ internal static class EngineSourceGenerator
 
     private static string GenerateRegexDeclarations(EquatableReadOnlyList<EngineRule> list)
     {
-        var sb = new StringBuilder();
+        var sb = new IndentedStringBuilder();
+        sb.Indent();
 
         for (int i = 0; i < list.Count; i++)
         {
             sb.AppendLine(
-                RegexBuilder.BuildRegexFieldDeclaration($"{EngineRegexPrefix}{i}", list[i].Regex)
-            );
-            sb.AppendLine();
+                    RegexBuilder.BuildRegexFieldDeclaration(
+                        $"{EngineRegexPrefix}{i}",
+                        list[i].Regex
+                    )
+                )
+                .AppendLine();
         }
 
         return sb.ToString();
@@ -67,13 +70,15 @@ internal static class EngineSourceGenerator
             sb.AppendLine($"new {regexSourceProperty.ElementType}")
                 .AppendLine("{")
                 .Indent()
-                .AppendLine($"{nameof(Engine.Regex)} = {EngineRegexPrefix}{i},")
-                .AppendLine($"{nameof(Engine.Name)} = \"{list[i].Name.EscapeStringLiteral()}\",")
+                .AppendLine($"{nameof(EngineRule.Regex)} = {EngineRegexPrefix}{i},")
+                .AppendLine(
+                    $"{nameof(EngineRule.Name)} = \"{list[i].Name.EscapeStringLiteral()}\","
+                )
                 .Unindent()
                 .AppendLine("},");
         }
 
-        sb.Unindent().AppendLine("]");
+        sb.Unindent().AppendLine("];");
 
         return sb.ToString();
     }

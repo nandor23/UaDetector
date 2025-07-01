@@ -1,7 +1,7 @@
 using System.Text.RegularExpressions;
-using UaDetector.Abstractions.Models.Enums;
+using UaDetector.Abstractions.Enums;
 
-namespace UaDetector.Abstractions.Models.Internal;
+namespace UaDetector.Models;
 
 internal sealed class Bot
 {

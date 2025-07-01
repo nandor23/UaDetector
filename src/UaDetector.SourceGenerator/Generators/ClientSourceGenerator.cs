@@ -1,5 +1,4 @@
 using System.Text;
-using UaDetector.Abstractions.Models.Internal;
 using UaDetector.SourceGenerator.Collections;
 using UaDetector.SourceGenerator.Models;
 using UaDetector.SourceGenerator.Utilities;
@@ -35,14 +34,18 @@ internal static class ClientSourceGenerator
 
     private static string GenerateRegexDeclarations(EquatableReadOnlyList<ClientRule> list)
     {
-        var sb = new StringBuilder();
+        var sb = new IndentedStringBuilder();
+        sb.Indent();
 
         for (int i = 0; i < list.Count; i++)
         {
             sb.AppendLine(
-                RegexBuilder.BuildRegexFieldDeclaration($"{ClientRegexPrefix}{i}", list[i].Regex)
-            );
-            sb.AppendLine();
+                    RegexBuilder.BuildRegexFieldDeclaration(
+                        $"{ClientRegexPrefix}{i}",
+                        list[i].Regex
+                    )
+                )
+                .AppendLine();
         }
 
         return sb.ToString();
@@ -68,13 +71,15 @@ internal static class ClientSourceGenerator
             sb.AppendLine($"new {regexSourceProperty.ElementType}")
                 .AppendLine("{")
                 .Indent()
-                .AppendLine($"{nameof(Client.Regex)} = {ClientRegexPrefix}{clientCount},")
-                .AppendLine($"{nameof(Client.Name)} = \"{client.Name.EscapeStringLiteral()}\",");
+                .AppendLine($"{nameof(ClientRule.Regex)} = {ClientRegexPrefix}{clientCount},")
+                .AppendLine(
+                    $"{nameof(ClientRule.Name)} = \"{client.Name.EscapeStringLiteral()}\","
+                );
 
             if (client.Version is not null)
             {
                 sb.AppendLine(
-                    $"{nameof(Client.Version)} = \"{client.Version.EscapeStringLiteral()}\","
+                    $"{nameof(ClientRule.Version)} = \"{client.Version.EscapeStringLiteral()}\","
                 );
             }
 
@@ -83,7 +88,7 @@ internal static class ClientSourceGenerator
             clientCount += 1;
         }
 
-        sb.Unindent().AppendLine("]");
+        sb.Unindent().AppendLine("];");
 
         return sb.ToString();
     }

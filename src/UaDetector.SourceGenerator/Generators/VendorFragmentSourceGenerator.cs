@@ -1,5 +1,4 @@
 using System.Text;
-using UaDetector.Abstractions.Models.Internal;
 using UaDetector.SourceGenerator.Collections;
 using UaDetector.SourceGenerator.Models;
 using UaDetector.SourceGenerator.Utilities;
@@ -41,24 +40,24 @@ internal static class VendorFragmentSourceGenerator
 
     private static string GenerateRegexDeclarations(EquatableReadOnlyList<VendorFragmentRule> list)
     {
-        var sb = new StringBuilder();
         int fragmentCount = 0;
+        var sb = new IndentedStringBuilder();
+        sb.Indent();
 
         foreach (var fragment in list)
         {
             foreach (var regex in fragment.Regexes)
             {
                 sb.AppendLine(
-                    RegexBuilder.BuildRegexFieldDeclaration(
-                        $"{FragmentRegexPrefix}{fragmentCount}",
-                        regex
+                        RegexBuilder.BuildRegexFieldDeclaration(
+                            $"{FragmentRegexPrefix}{fragmentCount}",
+                            regex
+                        )
                     )
-                );
+                    .AppendLine();
 
                 fragmentCount += 1;
             }
-
-            sb.AppendLine();
         }
 
         return sb.ToString();
@@ -85,10 +84,10 @@ internal static class VendorFragmentSourceGenerator
                 .AppendLine("{")
                 .Indent()
                 .AppendLine(
-                    $"{nameof(VendorFragment.Brand)} = \"{fragment.Brand.EscapeStringLiteral()}\","
+                    $"{nameof(VendorFragmentRule.Brand)} = \"{fragment.Brand.EscapeStringLiteral()}\","
                 )
                 .AppendLine(
-                    $"{nameof(VendorFragment.Regexes)} = new global::System.Text.RegularExpressions.Regex[]"
+                    $"{nameof(VendorFragmentRule.Regexes)} = new global::System.Text.RegularExpressions.Regex[]"
                 )
                 .AppendLine("{")
                 .Indent();
@@ -102,7 +101,7 @@ internal static class VendorFragmentSourceGenerator
             sb.Unindent().AppendLine("},").Unindent().AppendLine("},");
         }
 
-        sb.Unindent().AppendLine("]");
+        sb.Unindent().AppendLine("];");
 
         return sb.ToString();
     }

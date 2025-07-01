@@ -1,10 +1,10 @@
 using System.Collections.Frozen;
 using System.Diagnostics.CodeAnalysis;
 using System.Text.RegularExpressions;
+using UaDetector.Abstractions.Constants;
+using UaDetector.Abstractions.Enums;
 using UaDetector.Abstractions.Models;
-using UaDetector.Abstractions.Models.Constants;
-using UaDetector.Abstractions.Models.Enums;
-using UaDetector.Abstractions.Models.Internal;
+using UaDetector.Models;
 
 namespace UaDetector.Parsers.Devices;
 

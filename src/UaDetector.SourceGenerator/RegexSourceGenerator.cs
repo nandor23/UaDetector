@@ -170,33 +170,41 @@ internal sealed class RegexSourceGenerator : IIncrementalGenerator
     {
         return regexSourceProperty.ElementType switch
         {
-            "global::UaDetector.Abstractions.Models.Internal.Client" =>
-                ClientSourceGenerator.Generate(json, regexSourceProperty, combinedRegexProperty),
-            "global::UaDetector.Abstractions.Models.Internal.Device" => DeviceGenerator.Generate(
+            "global::UaDetector.Models.Client" => ClientSourceGenerator.Generate(
                 json,
                 regexSourceProperty,
                 combinedRegexProperty
             ),
-            "global::UaDetector.Abstractions.Models.Internal.Browser" =>
-                BrowserSourceGenerator.Generate(json, regexSourceProperty, combinedRegexProperty),
-            "global::UaDetector.Abstractions.Models.Internal.Engine" =>
-                EngineSourceGenerator.Generate(json, regexSourceProperty, combinedRegexProperty),
-            "global::UaDetector.Abstractions.Models.Internal.Os" => OsSourceGenerator.Generate(
+            "global::UaDetector.Models.Device" => DeviceGenerator.Generate(
                 json,
                 regexSourceProperty,
                 combinedRegexProperty
             ),
-            "global::UaDetector.Abstractions.Models.Internal.Bot" => BotSourceGenerator.Generate(
+            "global::UaDetector.Models.Browser" => BrowserSourceGenerator.Generate(
                 json,
                 regexSourceProperty,
                 combinedRegexProperty
             ),
-            "global::UaDetector.Abstractions.Models.Internal.VendorFragment" =>
-                VendorFragmentSourceGenerator.Generate(
-                    json,
-                    regexSourceProperty,
-                    combinedRegexProperty
-                ),
+            "global::UaDetector.Models.Engine" => EngineSourceGenerator.Generate(
+                json,
+                regexSourceProperty,
+                combinedRegexProperty
+            ),
+            "global::UaDetector.Models.Os" => OsSourceGenerator.Generate(
+                json,
+                regexSourceProperty,
+                combinedRegexProperty
+            ),
+            "global::UaDetector.Models.Bot" => BotSourceGenerator.Generate(
+                json,
+                regexSourceProperty,
+                combinedRegexProperty
+            ),
+            "global::UaDetector.Models.VendorFragment" => VendorFragmentSourceGenerator.Generate(
+                json,
+                regexSourceProperty,
+                combinedRegexProperty
+            ),
             _ => throw new NotSupportedException(),
         };
     }

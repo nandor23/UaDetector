@@ -9,20 +9,16 @@
   </PropertyGroup>
   
   <ItemGroup>
-    <ProjectReference Include="..\UaDetector.Abstractions\UaDetector.Abstractions.csproj" />
-  </ItemGroup>
-  
-  <ItemGroup>
     <PackageReference Include="Microsoft.CodeAnalysis.Analyzers" PrivateAssets="All" />
     <PackageReference Include="Microsoft.CodeAnalysis.CSharp" PrivateAssets="All" />
     <PackageReference Include="PolySharp" PrivateAssets="All" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="System.Collections.Immutable" PrivateAssets="all" GeneratePathProperty="true" VersionOverride="9.0.6" />
     <PackageReference Include="Microsoft.Bcl.AsyncInterfaces" PrivateAssets="all" GeneratePathProperty="true" />
     <PackageReference Include="Microsoft.Bcl.HashCode" PrivateAssets="all" GeneratePathProperty="true" />
     <PackageReference Include="System.Buffers" PrivateAssets="all" GeneratePathProperty="true" />
-    <PackageReference Include="System.Collections.Immutable" PrivateAssets="all" GeneratePathProperty="true" />
     <PackageReference Include="System.Memory" PrivateAssets="all" GeneratePathProperty="true" />
     <PackageReference Include="System.Numerics.Vectors" PrivateAssets="all" GeneratePathProperty="true" />
     <PackageReference Include="System.Reflection.Metadata" PrivateAssets="all" GeneratePathProperty="true" />

@@ -1,4 +1,4 @@
-namespace UaDetector.Abstractions.Models.Internal;
+namespace UaDetector.Models;
 
 internal sealed class BotProducer
 {

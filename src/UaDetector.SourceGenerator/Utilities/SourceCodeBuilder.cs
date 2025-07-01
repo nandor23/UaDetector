@@ -1,4 +1,3 @@
-using System.Text;
 using UaDetector.SourceGenerator.Models;
 
 namespace UaDetector.SourceGenerator.Utilities;
@@ -15,7 +14,7 @@ internal static class SourceCodeBuilder
         var fieldName = $"_{property.PropertyName}";
         var classModifier = property.IsStaticClass ? "static partial" : "partial";
 
-        var sb = new StringBuilder();
+        var sb = new IndentedStringBuilder();
 
         sb.AppendLine(
             $$"""
@@ -23,21 +22,18 @@ internal static class SourceCodeBuilder
 
             {{classModifier}} class {{property.ContainingClass}}
             {
-                {{regexDeclarations}}
-                
-                private static readonly global::System.Collections.Generic.IReadOnlyList<{{property.ElementType}}> {{fieldName}} = {{collectionInitializer}};
-
+            {{regexDeclarations}}
+                private static readonly global::System.Collections.Generic.IReadOnlyList<{{property.ElementType}}> {{fieldName}} = {{collectionInitializer}}
                 {{property.PropertyAccessibility.ToSyntaxString()}} static partial global::System.Collections.Generic.IReadOnlyList<{{property.ElementType}}> {{property.PropertyName}} => {{fieldName}};
             """
         );
 
         if (combinedRegexDeclaration is not null)
         {
-            sb.AppendLine();
-            sb.AppendLine($"    {combinedRegexDeclaration}");
+            sb.AppendLine().Indent().AppendLine($"{combinedRegexDeclaration}");
         }
 
-        sb.AppendLine("}");
+        sb.Unindent().AppendLine("}");
 
         return sb.ToString();
     }

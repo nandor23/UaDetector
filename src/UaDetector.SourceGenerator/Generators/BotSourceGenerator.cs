@@ -1,5 +1,4 @@
 using System.Text;
-using UaDetector.Abstractions.Models.Internal;
 using UaDetector.SourceGenerator.Collections;
 using UaDetector.SourceGenerator.Models;
 using UaDetector.SourceGenerator.Utilities;
@@ -35,14 +34,15 @@ internal sealed class BotSourceGenerator
 
     private static string GenerateRegexDeclarations(EquatableReadOnlyList<BotRule> list)
     {
-        var sb = new StringBuilder();
+        var sb = new IndentedStringBuilder();
+        sb.Indent();
 
         for (int i = 0; i < list.Count; i++)
         {
             sb.AppendLine(
-                RegexBuilder.BuildRegexFieldDeclaration($"{BotRegexPrefix}{i}", list[i].Regex)
-            );
-            sb.AppendLine();
+                    RegexBuilder.BuildRegexFieldDeclaration($"{BotRegexPrefix}{i}", list[i].Regex)
+                )
+                .AppendLine();
         }
 
         return sb.ToString();
@@ -61,32 +61,32 @@ internal sealed class BotSourceGenerator
         var sb = new IndentedStringBuilder();
         int botCount = 0;
 
-        sb.AppendLine("[").Indent();
+        sb.AppendLine("[").Indent().Indent();
 
         foreach (var bot in list)
         {
             sb.AppendLine($"new {regexSourceProperty.ElementType}")
                 .AppendLine("{")
                 .Indent()
-                .AppendLine($"{nameof(Bot.Regex)} = {BotRegexPrefix}{botCount},")
-                .AppendLine($"{nameof(Bot.Name)} = \"{bot.Name.EscapeStringLiteral()}\",");
+                .AppendLine($"{nameof(BotRule.Regex)} = {BotRegexPrefix}{botCount},")
+                .AppendLine($"{nameof(BotRule.Name)} = \"{bot.Name.EscapeStringLiteral()}\",");
 
             if (bot.Category is not null)
             {
                 sb.AppendLine(
-                    $"{nameof(Bot.Category)} = (global::UaDetector.Abstractions.Models.Enums.BotCategory){bot.Category},"
+                    $"{nameof(BotRule.Category)} = (global::UaDetector.Abstractions.Enums.BotCategory){bot.Category},"
                 );
             }
 
             if (bot.Url is not null)
             {
-                sb.AppendLine($"{nameof(Bot.Url)} = \"{bot.Url.EscapeStringLiteral()}\",");
+                sb.AppendLine($"{nameof(BotRule.Url)} = \"{bot.Url.EscapeStringLiteral()}\",");
             }
 
             if (bot.Producer is not null)
             {
                 sb.AppendLine(
-                        $"{nameof(Bot.Producer)} = new global::UaDetector.Abstractions.Models.Internal.BotProducer"
+                        $"{nameof(BotRule.Producer)} = new global::UaDetector.Models.BotProducer"
                     )
                     .AppendLine("{")
                     .Indent();
@@ -94,14 +94,14 @@ internal sealed class BotSourceGenerator
                 if (bot.Producer.Name is not null)
                 {
                     sb.AppendLine(
-                        $"{nameof(BotProducer.Name)} = \"{bot.Producer.Name.EscapeStringLiteral()}\","
+                        $"{nameof(BotProducerRule.Name)} = \"{bot.Producer.Name.EscapeStringLiteral()}\","
                     );
                 }
 
                 if (bot.Producer.Url is not null)
                 {
                     sb.AppendLine(
-                        $"{nameof(BotProducer.Url)} = \"{bot.Producer.Url.EscapeStringLiteral()}\","
+                        $"{nameof(BotProducerRule.Url)} = \"{bot.Producer.Url.EscapeStringLiteral()}\","
                     );
                 }
 
@@ -113,7 +113,7 @@ internal sealed class BotSourceGenerator
             botCount += 1;
         }
 
-        sb.Unindent().AppendLine("]");
+        sb.Unindent().AppendLine("];");
 
         return sb.ToString();
     }

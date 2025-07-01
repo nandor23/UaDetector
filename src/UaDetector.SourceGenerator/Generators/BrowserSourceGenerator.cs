@@ -1,5 +1,4 @@
 using System.Text;
-using UaDetector.Abstractions.Models.Internal;
 using UaDetector.SourceGenerator.Collections;
 using UaDetector.SourceGenerator.Models;
 using UaDetector.SourceGenerator.Utilities;
@@ -35,14 +34,18 @@ internal static class BrowserSourceGenerator
 
     private static string GenerateRegexDeclarations(EquatableReadOnlyList<BrowserRule> list)
     {
-        var sb = new StringBuilder();
+        var sb = new IndentedStringBuilder();
+        sb.Indent();
 
         for (int i = 0; i < list.Count; i++)
         {
             sb.AppendLine(
-                RegexBuilder.BuildRegexFieldDeclaration($"{BrowserRegexPrefix}{i}", list[i].Regex)
-            );
-            sb.AppendLine();
+                    RegexBuilder.BuildRegexFieldDeclaration(
+                        $"{BrowserRegexPrefix}{i}",
+                        list[i].Regex
+                    )
+                )
+                .AppendLine();
         }
 
         return sb.ToString();
@@ -68,20 +71,22 @@ internal static class BrowserSourceGenerator
             sb.AppendLine($"new {regexSourceProperty.ElementType}")
                 .AppendLine("{")
                 .Indent()
-                .AppendLine($"{nameof(Browser.Regex)} = {BrowserRegexPrefix}{browserCount},")
-                .AppendLine($"{nameof(Browser.Name)} = \"{browser.Name.EscapeStringLiteral()}\",");
+                .AppendLine($"{nameof(BrowserRule.Regex)} = {BrowserRegexPrefix}{browserCount},")
+                .AppendLine(
+                    $"{nameof(BrowserRule.Name)} = \"{browser.Name.EscapeStringLiteral()}\","
+                );
 
             if (browser.Version is not null)
             {
                 sb.AppendLine(
-                    $"{nameof(Browser.Version)} = \"{browser.Version.EscapeStringLiteral()}\","
+                    $"{nameof(BrowserRule.Version)} = \"{browser.Version.EscapeStringLiteral()}\","
                 );
             }
 
             if (browser.Engine is not null)
             {
                 sb.AppendLine(
-                        $"{nameof(Browser.Engine)} = new global::UaDetector.Abstractions.Models.Internal.BrowserEngine"
+                        $"{nameof(BrowserRule.Engine)} = new global::UaDetector.Models.BrowserEngine"
                     )
                     .AppendLine("{")
                     .Indent();
@@ -89,14 +94,14 @@ internal static class BrowserSourceGenerator
                 if (browser.Engine?.Default is not null)
                 {
                     sb.AppendLine(
-                        $"{nameof(Browser.Engine.Default)} = \"{browser.Engine.Default.EscapeStringLiteral()}\","
+                        $"{nameof(BrowserRule.Engine.Default)} = \"{browser.Engine.Default.EscapeStringLiteral()}\","
                     );
                 }
 
                 if (browser.Engine?.Versions is not null)
                 {
                     sb.AppendLine(
-                            $"{nameof(Browser.Engine.Versions)} = new global::System.Collections.Generic.Dictionary<string, string>"
+                            $"{nameof(BrowserRule.Engine.Versions)} = new global::System.Collections.Generic.Dictionary<string, string>"
                         )
                         .AppendLine("{")
                         .Indent();
@@ -119,7 +124,7 @@ internal static class BrowserSourceGenerator
             browserCount += 1;
         }
 
-        sb.Unindent().AppendLine("]");
+        sb.Unindent().AppendLine("];");
 
         return sb.ToString();
     }

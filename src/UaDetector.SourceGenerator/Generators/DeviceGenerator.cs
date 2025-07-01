@@ -1,5 +1,4 @@
 using System.Text;
-using UaDetector.Abstractions.Models.Internal;
 using UaDetector.SourceGenerator.Collections;
 using UaDetector.SourceGenerator.Models;
 using UaDetector.SourceGenerator.Utilities;
@@ -36,14 +35,18 @@ internal static class DeviceGenerator
 
     private static string GenerateRegexDeclarations(EquatableReadOnlyList<DeviceRule> list)
     {
-        var sb = new StringBuilder();
+        var sb = new IndentedStringBuilder();
+        sb.Indent();
 
         for (int i = 0; i < list.Count; i++)
         {
             sb.AppendLine(
-                RegexBuilder.BuildRegexFieldDeclaration($"{DeviceRegexPrefix}{i}", list[i].Regex)
-            );
-            sb.AppendLine();
+                    RegexBuilder.BuildRegexFieldDeclaration(
+                        $"{DeviceRegexPrefix}{i}",
+                        list[i].Regex
+                    )
+                )
+                .AppendLine();
         }
 
         int modelCount = 0;
@@ -55,12 +58,12 @@ internal static class DeviceGenerator
                 foreach (var model in device.ModelVariants)
                 {
                     sb.AppendLine(
-                        RegexBuilder.BuildRegexFieldDeclaration(
-                            $"{ModelRegexPrefix}{modelCount}",
-                            model.Regex
+                            RegexBuilder.BuildRegexFieldDeclaration(
+                                $"{ModelRegexPrefix}{modelCount}",
+                                model.Regex
+                            )
                         )
-                    );
-                    sb.AppendLine();
+                        .AppendLine();
 
                     modelCount += 1;
                 }
@@ -91,58 +94,60 @@ internal static class DeviceGenerator
             sb.AppendLine($"new {regexSourceProperty.ElementType}")
                 .AppendLine("{")
                 .Indent()
-                .AppendLine($"{nameof(Device.Regex)} = {DeviceRegexPrefix}{deviceCount},")
-                .AppendLine($"{nameof(Device.Brand)} = \"{device.Brand.EscapeStringLiteral()}\",");
+                .AppendLine($"{nameof(DeviceRule.Regex)} = {DeviceRegexPrefix}{deviceCount},")
+                .AppendLine(
+                    $"{nameof(DeviceRule.Brand)} = \"{device.Brand.EscapeStringLiteral()}\","
+                );
 
             if (device.Type is not null)
             {
                 sb.AppendLine(
-                    $"{nameof(Device.Type)} = (global::UaDetector.Abstractions.Models.Enums.DeviceType){device.Type},"
+                    $"{nameof(DeviceRule.Type)} = (global::UaDetector.Abstractions.Enums.DeviceType){device.Type},"
                 );
             }
 
             if (device.Model is not null)
             {
                 sb.AppendLine(
-                    $"{nameof(Device.Model)} = \"{device.Model.EscapeStringLiteral()}\","
+                    $"{nameof(DeviceRule.Model)} = \"{device.Model.EscapeStringLiteral()}\","
                 );
             }
 
             if (device.ModelVariants is not null)
             {
                 sb.AppendLine(
-                        $"{nameof(Device.ModelVariants)} = new global::UaDetector.Abstractions.Models.Internal.DeviceModel[]"
+                        $"{nameof(DeviceRule.ModelVariants)} = new global::UaDetector.Models.DeviceModel[]"
                     )
                     .AppendLine("{")
                     .Indent();
 
                 foreach (var model in device.ModelVariants)
                 {
-                    sb.AppendLine("new global::UaDetector.Abstractions.Models.Internal.DeviceModel")
+                    sb.AppendLine("new global::UaDetector.Models.DeviceModel")
                         .AppendLine("{")
                         .Indent()
                         .AppendLine(
-                            $"{nameof(DeviceModel.Regex)} = {ModelRegexPrefix}{modelCount},"
+                            $"{nameof(DeviceRule.Regex)} = {ModelRegexPrefix}{modelCount},"
                         );
 
                     if (model.Type is not null)
                     {
                         sb.AppendLine(
-                            $"{nameof(DeviceModel.Type)} = (global::UaDetector.Abstractions.Models.Enums.DeviceType){model.Type},"
+                            $"{nameof(DeviceRule.Type)} = (global::UaDetector.Abstractions.Enums.DeviceType){model.Type},"
                         );
                     }
 
                     if (model.Brand is not null)
                     {
                         sb.AppendLine(
-                            $"{nameof(DeviceModel.Brand)} = \"{model.Brand.EscapeStringLiteral()}\","
+                            $"{nameof(DeviceModelRule.Brand)} = \"{model.Brand.EscapeStringLiteral()}\","
                         );
                     }
 
                     if (model.Name is not null)
                     {
                         sb.AppendLine(
-                            $"{nameof(DeviceModel.Name)} = \"{model.Name.EscapeStringLiteral()}\","
+                            $"{nameof(DeviceModelRule.Name)} = \"{model.Name.EscapeStringLiteral()}\","
                         );
                     }
 
@@ -159,7 +164,7 @@ internal static class DeviceGenerator
             deviceCount += 1;
         }
 
-        sb.Unindent().AppendLine("]");
+        sb.Unindent().AppendLine("];");
 
         return sb.ToString();
     }

@@ -1,7 +1,7 @@
 using System.Diagnostics.CodeAnalysis;
 using UaDetector.Abstractions.Models;
-using UaDetector.Abstractions.Models.Internal;
 using UaDetector.Attributes;
+using UaDetector.Models;
 
 namespace UaDetector.Parsers.Devices;
 

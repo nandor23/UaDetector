@@ -1,5 +1,4 @@
 using System.Text;
-using UaDetector.Abstractions.Models.Internal;
 using UaDetector.SourceGenerator.Collections;
 using UaDetector.SourceGenerator.Models;
 using UaDetector.SourceGenerator.Utilities;
@@ -36,14 +35,15 @@ internal static class OsSourceGenerator
 
     private static string GenerateRegexDeclarations(EquatableReadOnlyList<OsRule> list)
     {
-        var sb = new StringBuilder();
+        var sb = new IndentedStringBuilder();
+        sb.Indent();
 
         for (int i = 0; i < list.Count; i++)
         {
             sb.AppendLine(
-                RegexBuilder.BuildRegexFieldDeclaration($"{OsRegexPrefix}{i}", list[i].Regex)
-            );
-            sb.AppendLine();
+                    RegexBuilder.BuildRegexFieldDeclaration($"{OsRegexPrefix}{i}", list[i].Regex)
+                )
+                .AppendLine();
         }
 
         int versionCount = 0;
@@ -55,12 +55,12 @@ internal static class OsSourceGenerator
                 foreach (var version in os.Versions)
                 {
                     sb.AppendLine(
-                        RegexBuilder.BuildRegexFieldDeclaration(
-                            $"{VersionRegexPrefix}{versionCount}",
-                            version.Regex
+                            RegexBuilder.BuildRegexFieldDeclaration(
+                                $"{VersionRegexPrefix}{versionCount}",
+                                version.Regex
+                            )
                         )
-                    );
-                    sb.AppendLine();
+                        .AppendLine();
 
                     versionCount += 1;
                 }
@@ -91,32 +91,34 @@ internal static class OsSourceGenerator
             sb.AppendLine($"new {regexSourceProperty.ElementType}")
                 .AppendLine("{")
                 .Indent()
-                .AppendLine($"{nameof(Os.Regex)} = {OsRegexPrefix}{osCount},")
-                .AppendLine($"{nameof(Os.Name)} = \"{os.Name.EscapeStringLiteral()}\",");
+                .AppendLine($"{nameof(OsRule.Regex)} = {OsRegexPrefix}{osCount},")
+                .AppendLine($"{nameof(OsRule.Name)} = \"{os.Name.EscapeStringLiteral()}\",");
 
             if (os.Version is not null)
             {
-                sb.AppendLine($"{nameof(Os.Version)} = \"{os.Version.EscapeStringLiteral()}\",");
+                sb.AppendLine(
+                    $"{nameof(OsRule.Version)} = \"{os.Version.EscapeStringLiteral()}\","
+                );
             }
 
             if (os.Versions is not null)
             {
                 sb.AppendLine(
-                        $"{nameof(Os.Versions)} = new global::UaDetector.Abstractions.Models.Internal.OsVersion[]"
+                        $"{nameof(OsRule.Versions)} = new global::UaDetector.Models.OsVersion[]"
                     )
                     .AppendLine("{")
                     .Indent();
 
                 foreach (var osVersion in os.Versions)
                 {
-                    sb.AppendLine("new global::UaDetector.Abstractions.Models.Internal.OsVersion")
+                    sb.AppendLine("new global::UaDetector.Models.OsVersion")
                         .AppendLine("{")
                         .Indent()
                         .AppendLine(
-                            $"{nameof(OsVersion.Regex)} = {VersionRegexPrefix}{versionCount},"
+                            $"{nameof(OsVersionRule.Regex)} = {VersionRegexPrefix}{versionCount},"
                         )
                         .AppendLine(
-                            $"{nameof(OsVersion.Version)} = \"{osVersion.Version.EscapeStringLiteral()}\","
+                            $"{nameof(OsVersionRule.Version)} = \"{osVersion.Version.EscapeStringLiteral()}\","
                         )
                         .Unindent()
                         .AppendLine("},");
@@ -132,7 +134,7 @@ internal static class OsSourceGenerator
             osCount += 1;
         }
 
-        sb.Unindent().AppendLine("]");
+        sb.Unindent().AppendLine("];");
 
         return sb.ToString();
     }
