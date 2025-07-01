@@ -1,7 +1,8 @@
 using Shouldly;
+
 using UaDetector.Abstractions.Enums;
 
-namespace UaDetector.Tests.Tests.Models.Enums;
+namespace UaDetector.Abstractions.Tests.Enums;
 
 public class OsCodeTests
 {

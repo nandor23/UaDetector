@@ -2,6 +2,7 @@
   <PropertyGroup>
     <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
   </PropertyGroup>
+  
   <ItemGroup>
     <PackageVersion
       Include="Microsoft.Extensions.DependencyInjection.Abstractions"
