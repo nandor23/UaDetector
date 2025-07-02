@@ -26,11 +26,11 @@ public class HintSourceGeneratorTests
             using System;
 
             [AttributeUsage(AttributeTargets.Property)]
-            internal sealed class HintSource : Attribute
+            internal sealed class HintSourceAttribute : Attribute
             {
                 public string FilePath { get; }
 
-                public HintSource(string filePath)
+                public HintSourceAttribute(string filePath)
                 {
                     FilePath = filePath;
                 }
