@@ -19,10 +19,15 @@ public class AnalyzerTest<TAnalyzer> : CSharpAnalyzerTest<TAnalyzer, DefaultVeri
 
     protected override CompilationOptions CreateCompilationOptions()
     {
-        var compilationOptions = base.CreateCompilationOptions();
-        return compilationOptions.WithSpecificDiagnosticOptions(
-            compilationOptions.SpecificDiagnosticOptions.SetItems(GetNullableWarningsFromCompiler())
-        );
+        var compilationOptions = (CSharpCompilationOptions)base.CreateCompilationOptions();
+
+        return compilationOptions
+            .WithSpecificDiagnosticOptions(
+                compilationOptions.SpecificDiagnosticOptions.SetItems(
+                    GetNullableWarningsFromCompiler()
+                )
+            )
+            .WithNullableContextOptions(NullableContextOptions.Enable);
     }
 
     private static ImmutableDictionary<string, ReportDiagnostic> GetNullableWarningsFromCompiler()

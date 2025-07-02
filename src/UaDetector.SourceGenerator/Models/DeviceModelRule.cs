@@ -1,6 +1,6 @@
 namespace UaDetector.SourceGenerator.Models;
 
-internal sealed record DeviceModelRule
+public sealed record DeviceModelRule
 {
     public required string Regex { get; init; }
     public int? Type { get; init; }

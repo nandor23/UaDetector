@@ -4,7 +4,7 @@ using UaDetector.SourceGenerator.Utilities;
 
 namespace UaDetector.SourceGenerator.Generators;
 
-internal static class VendorFragmentSourceGenerator
+public static class VendorFragmentSourceGenerator
 {
     private const string FragmentRegexPrefix = "VendorFragmentRegex";
 
@@ -75,7 +75,7 @@ internal static class VendorFragmentSourceGenerator
         var sb = new IndentedStringBuilder();
         int fragmentCount = 0;
 
-        sb.AppendLine("[").Indent();
+        sb.AppendLine("[").Indent().Indent();
 
         foreach (var fragment in list)
         {

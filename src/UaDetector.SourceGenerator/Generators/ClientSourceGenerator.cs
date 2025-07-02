@@ -4,7 +4,7 @@ using UaDetector.SourceGenerator.Utilities;
 
 namespace UaDetector.SourceGenerator.Generators;
 
-internal static class ClientSourceGenerator
+public static class ClientSourceGenerator
 {
     private const string ClientRegexPrefix = "ClientRegex";
 
@@ -63,7 +63,7 @@ internal static class ClientSourceGenerator
         var sb = new IndentedStringBuilder();
         int clientCount = 0;
 
-        sb.AppendLine("[").Indent();
+        sb.AppendLine("[").Indent().Indent();
 
         foreach (var client in list)
         {

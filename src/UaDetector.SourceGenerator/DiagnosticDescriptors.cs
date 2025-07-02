@@ -2,7 +2,7 @@ using Microsoft.CodeAnalysis;
 
 namespace UaDetector.SourceGenerator;
 
-internal static class DiagnosticDescriptors
+public static class DiagnosticDescriptors
 {
     public static readonly DiagnosticDescriptor JsonDeserializationFailed = new(
         id: "UAD001",

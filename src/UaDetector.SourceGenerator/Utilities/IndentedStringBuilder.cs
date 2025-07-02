@@ -2,7 +2,7 @@ using System.Text;
 
 namespace UaDetector.SourceGenerator.Utilities;
 
-internal sealed class IndentedStringBuilder
+public sealed class IndentedStringBuilder
 {
     private readonly StringBuilder _sb = new();
     private int _indentLevel;

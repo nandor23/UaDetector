@@ -5,7 +5,7 @@ using UaDetector.SourceGenerator.Converters;
 
 namespace UaDetector.SourceGenerator.Utilities;
 
-internal static class JsonUtils
+public static class JsonUtils
 {
     private static readonly JsonSerializerOptions SerializerOptions = new()
     {

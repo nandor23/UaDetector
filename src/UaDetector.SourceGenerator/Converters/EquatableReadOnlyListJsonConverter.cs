@@ -7,8 +7,7 @@ namespace UaDetector.SourceGenerator.Converters;
 /// <summary>
 /// JSON converter for EquatableReadOnlyList.
 /// </summary>
-internal sealed class EquatableReadOnlyListJsonConverter<T>
-    : JsonConverter<EquatableReadOnlyList<T>>
+public sealed class EquatableReadOnlyListJsonConverter<T> : JsonConverter<EquatableReadOnlyList<T>>
 {
     public override EquatableReadOnlyList<T> Read(
         ref Utf8JsonReader reader,
@@ -33,7 +32,7 @@ internal sealed class EquatableReadOnlyListJsonConverter<T>
 /// <summary>
 /// Generic converter factory for EquatableReadOnlyList.
 /// </summary>
-internal sealed class EquatableReadOnlyListJsonConverterFactory : JsonConverterFactory
+public sealed class EquatableReadOnlyListJsonConverterFactory : JsonConverterFactory
 {
     public override bool CanConvert(Type typeToConvert)
     {

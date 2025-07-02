@@ -11,14 +11,14 @@ public class HintSourceGeneratorTests
 
         namespace UaDetector;
 
-        internal static partial class TestHintParser
+        internal static partial class HintParser
         {
-            [HintSource("Resources/Hints/test_hints.json")]
+            [HintSource("Resources/hints.json")]
             internal static partial FrozenDictionary<string, string> Hints { get; }
         }
         """;
 
-    private const string AttributeCode = """
+    private const string HintSourceAttribute = """
         namespace UaDetector.Attributes;
 
         using System;
@@ -36,7 +36,7 @@ public class HintSourceGeneratorTests
         """;
 
     [Test]
-    public async Task InitializesFrozenDictionary_WhenJsonIsValid()
+    public async Task InitializeFrozenDictionary_WhenJsonIsValid()
     {
         const string jsonContent = """
             {
@@ -49,7 +49,7 @@ public class HintSourceGeneratorTests
         const string expectedGeneratedCode = """
             namespace UaDetector;
 
-            static partial class TestHintParser
+            static partial class HintParser
             {
                 private static readonly global::System.Collections.Frozen.FrozenDictionary<string, string> _Hints =
                     global::System.Collections.Frozen.FrozenDictionary.ToFrozenDictionary(
@@ -70,11 +70,11 @@ public class HintSourceGeneratorTests
         {
             TestState =
             {
-                Sources = { SourceCode, AttributeCode },
-                AdditionalFiles = { ("Resources/Hints/test_hints.json", jsonContent) },
+                Sources = { SourceCode, HintSourceAttribute },
+                AdditionalFiles = { ("Resources/hints.json", jsonContent) },
                 GeneratedSources =
                 {
-                    (typeof(HintSourceGenerator), "TestHintParser.g.cs", expectedGeneratedCode),
+                    (typeof(HintSourceGenerator), "HintParser.g.cs", expectedGeneratedCode),
                 },
             },
         };
@@ -83,7 +83,7 @@ public class HintSourceGeneratorTests
     }
 
     [Test]
-    public async Task ReportsDiagnostic_WhenJsonIsInvalid()
+    public async Task ReportDiagnostic_WhenJsonIsInvalid()
     {
         const string jsonContent = """
             {
@@ -95,15 +95,15 @@ public class HintSourceGeneratorTests
         {
             TestState =
             {
-                Sources = { SourceCode, AttributeCode },
-                AdditionalFiles = { ("Resources/Hints/test_hints.json", jsonContent) },
+                Sources = { SourceCode, HintSourceAttribute },
+                AdditionalFiles = { ("Resources/hints.json", jsonContent) },
                 ExpectedDiagnostics =
                 {
                     DiagnosticResult.CompilerError("UAD001"),
                     DiagnosticResult
                         .CompilerError("CS9248")
                         .WithSpan(9, 62, 9, 67)
-                        .WithArguments("UaDetector.TestHintParser.Hints"),
+                        .WithArguments("UaDetector.HintParser.Hints"),
                 },
             },
         };

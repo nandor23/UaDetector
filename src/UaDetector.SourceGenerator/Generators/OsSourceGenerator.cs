@@ -4,7 +4,7 @@ using UaDetector.SourceGenerator.Utilities;
 
 namespace UaDetector.SourceGenerator.Generators;
 
-internal static class OsSourceGenerator
+public static class OsSourceGenerator
 {
     private const string OsRegexPrefix = "OsRegex";
     private const string VersionRegexPrefix = "VersionRegex";
@@ -83,7 +83,7 @@ internal static class OsSourceGenerator
         int osCount = 0;
         int versionCount = 0;
 
-        sb.AppendLine("[").Indent();
+        sb.AppendLine("[").Indent().Indent();
 
         foreach (var os in list)
         {

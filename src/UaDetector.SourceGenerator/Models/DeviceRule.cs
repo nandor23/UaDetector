@@ -2,7 +2,7 @@ using UaDetector.SourceGenerator.Collections;
 
 namespace UaDetector.SourceGenerator.Models;
 
-internal sealed record DeviceRule
+public sealed record DeviceRule
 {
     public required string Regex { get; init; }
     public required string Brand { get; init; }

@@ -7,7 +7,7 @@ namespace UaDetector.SourceGenerator.Collections;
 /// A wrapper for IReadOnlyList that provides value equality support for the wrapped list.
 /// </summary>
 [ExcludeFromCodeCoverage]
-internal readonly struct EquatableReadOnlyList<T>(IReadOnlyList<T>? collection)
+public readonly struct EquatableReadOnlyList<T>(IReadOnlyList<T>? collection)
     : IEquatable<EquatableReadOnlyList<T>>,
         IReadOnlyList<T>
 {

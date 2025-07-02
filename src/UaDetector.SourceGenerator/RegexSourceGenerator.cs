@@ -205,7 +205,9 @@ public sealed class RegexSourceGenerator : IIncrementalGenerator
                 regexSourceProperty,
                 combinedRegexProperty
             ),
-            _ => throw new NotSupportedException(),
+            _ => throw new NotSupportedException(
+                $"Unsupported ElementType: {regexSourceProperty.ElementType}"
+            ),
         };
     }
 }

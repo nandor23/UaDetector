@@ -4,7 +4,7 @@ using UaDetector.SourceGenerator.Utilities;
 
 namespace UaDetector.SourceGenerator.Generators;
 
-internal static class DeviceGenerator
+public static class DeviceGenerator
 {
     private const string DeviceRegexPrefix = "DeviceRegex";
     private const string ModelRegexPrefix = "ModelRegex";
@@ -86,7 +86,7 @@ internal static class DeviceGenerator
         int deviceCount = 0;
         int modelCount = 0;
 
-        sb.AppendLine("[").Indent();
+        sb.AppendLine("[").Indent().Indent();
 
         foreach (var device in list)
         {

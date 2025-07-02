@@ -2,7 +2,7 @@ using UaDetector.SourceGenerator.Models;
 
 namespace UaDetector.SourceGenerator.Utilities;
 
-internal static class RegexBuilder
+public static class RegexBuilder
 {
     public static string BuildRegexFieldDeclaration(string methodName, string pattern)
     {
@@ -39,17 +39,17 @@ internal static class RegexBuilder
                         global::System.Text.RegularExpressions.RegexOptions.IgnoreCase | 
                         global::System.Text.RegularExpressions.RegexOptions.Compiled);
 
-                {combinedRegexProperty.PropertyAccessibility.ToSyntaxString()} static partial global::System.Text.RegularExpressions.Regex {combinedRegexProperty.PropertyName} => {fieldName}; 
+                {combinedRegexProperty.PropertyAccessibility.ToSyntaxString()} static partial global::System.Text.RegularExpressions.Regex {combinedRegexProperty.PropertyName} => {fieldName};
             """;
+    }
+
+    public static string BuildPattern(string pattern)
+    {
+        return $"(?:^|[^A-Z0-9_-]|[^A-Z0-9-]_|sprd-|MZ-)(?:{pattern})";
     }
 
     private static string EscapeForVerbatimString(this string input)
     {
         return input.Replace("\"", "\"\"");
-    }
-
-    private static string BuildPattern(string pattern)
-    {
-        return $"(?:^|[^A-Z0-9_-]|[^A-Z0-9-]_|sprd-|MZ-)(?:{pattern})";
     }
 }

@@ -2,7 +2,7 @@ using UaDetector.SourceGenerator.Collections;
 
 namespace UaDetector.SourceGenerator.Models;
 
-internal sealed record OsRule
+public sealed record OsRule
 {
     public required string Regex { get; init; }
     public required string Name { get; init; }

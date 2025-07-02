@@ -23,7 +23,7 @@ public class HintSourceAnalyzerTests
         """;
 
     [Test]
-    public async Task ReportsDiagnostic_WhenPropertyTypeIsInvalid()
+    public async Task ReportDiagnostic_WhenPropertyTypeIsInvalid()
     {
         const string sourceCode = """
             using System.Collections.Frozen;

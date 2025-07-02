@@ -9,7 +9,7 @@ namespace UaDetector.SourceGenerator.Converters;
 /// JSON converter for EquatableReadOnlyDictionary.
 /// </summary>
 [ExcludeFromCodeCoverage]
-internal sealed class EquatableReadOnlyDictionaryJsonConverter<TKey, TValue>
+public sealed class EquatableReadOnlyDictionaryJsonConverter<TKey, TValue>
     : JsonConverter<EquatableReadOnlyDictionary<TKey, TValue>>
     where TKey : notnull
 {
@@ -37,7 +37,7 @@ internal sealed class EquatableReadOnlyDictionaryJsonConverter<TKey, TValue>
 /// Generic converter factory for EquatableReadOnlyDictionary.
 /// </summary>
 [ExcludeFromCodeCoverage]
-internal sealed class EquatableReadOnlyDictionaryJsonConverterFactory : JsonConverterFactory
+public sealed class EquatableReadOnlyDictionaryJsonConverterFactory : JsonConverterFactory
 {
     public override bool CanConvert(Type typeToConvert)
     {

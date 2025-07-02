@@ -4,7 +4,7 @@ using UaDetector.SourceGenerator.Utilities;
 
 namespace UaDetector.SourceGenerator.Generators;
 
-internal static class EngineSourceGenerator
+public static class EngineSourceGenerator
 {
     private const string EngineRegexPrefix = "EngineRegex";
 
@@ -62,7 +62,7 @@ internal static class EngineSourceGenerator
 
         var sb = new IndentedStringBuilder();
 
-        sb.AppendLine("[").Indent();
+        sb.AppendLine("[").Indent().Indent();
 
         for (int i = 0; i < list.Count; i++)
         {

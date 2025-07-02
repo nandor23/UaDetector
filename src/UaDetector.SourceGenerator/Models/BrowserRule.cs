@@ -1,6 +1,6 @@
 namespace UaDetector.SourceGenerator.Models;
 
-internal sealed record BrowserRule
+public sealed record BrowserRule
 {
     public required string Regex { get; init; }
     public required string Name { get; init; }

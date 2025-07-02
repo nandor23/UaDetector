@@ -2,7 +2,7 @@ using Microsoft.CodeAnalysis;
 
 namespace UaDetector.SourceGenerator.Models;
 
-internal sealed record HintSourceProperty
+public sealed record HintSourceProperty
 {
     public required string PropertyName { get; init; }
     public required string ResourcePath { get; init; }

@@ -4,7 +4,7 @@ using UaDetector.SourceGenerator.Utilities;
 
 namespace UaDetector.SourceGenerator.Generators;
 
-internal static class BotSourceGenerator
+public static class BotSourceGenerator
 {
     private const string BotRegexPrefix = "BotRegex";
 

@@ -2,7 +2,7 @@ using UaDetector.SourceGenerator.Models;
 
 namespace UaDetector.SourceGenerator.Utilities;
 
-internal static class SourceCodeBuilder
+public static class SourceCodeBuilder
 {
     public static string BuildClassSourceCode(
         RegexSourceProperty property,

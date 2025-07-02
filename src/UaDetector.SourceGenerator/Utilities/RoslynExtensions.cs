@@ -2,7 +2,7 @@ using Microsoft.CodeAnalysis;
 
 namespace UaDetector.SourceGenerator.Utilities;
 
-internal static class RoslynExtensions
+public static class RoslynExtensions
 {
     public static string ToSyntaxString(this Accessibility accessibility) =>
         accessibility switch

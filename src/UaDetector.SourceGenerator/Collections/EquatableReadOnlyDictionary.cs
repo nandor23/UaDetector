@@ -7,7 +7,7 @@ namespace UaDetector.SourceGenerator.Collections;
 /// A wrapper for IReadOnlyDictionary that provides value equality support for the wrapped dictionary.
 /// </summary>
 [ExcludeFromCodeCoverage]
-internal readonly struct EquatableReadOnlyDictionary<TKey, TValue>(
+public readonly struct EquatableReadOnlyDictionary<TKey, TValue>(
     IReadOnlyDictionary<TKey, TValue>? dictionary
 ) : IEquatable<EquatableReadOnlyDictionary<TKey, TValue>>, IReadOnlyDictionary<TKey, TValue>
     where TKey : notnull

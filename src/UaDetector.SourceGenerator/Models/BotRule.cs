@@ -1,6 +1,6 @@
 namespace UaDetector.SourceGenerator.Models;
 
-internal sealed record BotRule
+public sealed record BotRule
 {
     public required string Regex { get; init; }
     public required string Name { get; init; }

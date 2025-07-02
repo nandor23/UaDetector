@@ -4,7 +4,7 @@ using UaDetector.SourceGenerator.Utilities;
 
 namespace UaDetector.SourceGenerator.Generators;
 
-internal static class BrowserSourceGenerator
+public static class BrowserSourceGenerator
 {
     private const string BrowserRegexPrefix = "BrowserRegex";
 
@@ -63,7 +63,7 @@ internal static class BrowserSourceGenerator
         var sb = new IndentedStringBuilder();
         int browserCount = 0;
 
-        sb.AppendLine("[").Indent();
+        sb.AppendLine("[").Indent().Indent();
 
         foreach (var browser in list)
         {

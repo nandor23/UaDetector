@@ -2,7 +2,7 @@ using Microsoft.CodeAnalysis;
 
 namespace UaDetector.SourceGenerator.Models;
 
-internal sealed record RegexSourceProperty
+public sealed record RegexSourceProperty
 {
     public required string PropertyName { get; init; }
     public required string ResourcePath { get; init; }
