@@ -16,8 +16,8 @@ public class RegexSourceGeneratorTests
 
             internal sealed partial class Parser
             {
-                [RegexSource("Resources/clients.json")]
-                internal static partial IReadOnlyList<{{modelTypeName}}> Clients { get; }
+                [RegexSource("Resources/regexes.json")]
+                internal static partial IReadOnlyList<{{modelTypeName}}> Regexes { get; }
 
                 [CombinedRegex]
                 private static partial Regex CombinedRegex { get; }
@@ -35,8 +35,8 @@ public class RegexSourceGeneratorTests
 
             internal sealed partial class Parser
             {
-                [RegexSource("Resources/clients.json")]
-                internal static partial IReadOnlyList<{{modelTypeName}}> Clients { get; }
+                [RegexSource("Resources/regexes.json")]
+                internal static partial IReadOnlyList<{{modelTypeName}}> Regexes { get; }
             }
             """;
 
@@ -85,11 +85,11 @@ public class RegexSourceGeneratorTests
                         global::System.Text.RegularExpressions.RegexOptions.IgnoreCase | 
                         global::System.Text.RegularExpressions.RegexOptions.Compiled);
 
-                private static readonly global::System.Collections.Generic.IReadOnlyList<global::UaDetector.Models.{{testCase.ModelTypeName}}> _Clients = [
-                    {{IndentListContent(testCase.ListContent)}}
-                ];
+                private static readonly global::System.Collections.Generic.IReadOnlyList<global::UaDetector.Models.{{testCase.ModelTypeName}}> _Regexes = {{IndentListContent(
+                testCase.ListContent
+            )}};
 
-                internal static partial global::System.Collections.Generic.IReadOnlyList<global::UaDetector.Models.{{testCase.ModelTypeName}}> Clients => _Clients;
+                internal static partial global::System.Collections.Generic.IReadOnlyList<global::UaDetector.Models.{{testCase.ModelTypeName}}> Regexes => _Regexes;
 
                 private static readonly global::System.Text.RegularExpressions.Regex _CombinedRegex = 
                     new global::System.Text.RegularExpressions.Regex(
@@ -113,7 +113,7 @@ public class RegexSourceGeneratorTests
                     CombinedRegexAttribute,
                     testCase.ModelSourceCode,
                 },
-                AdditionalFiles = { ("Resources/clients.json", testCase.JsonContent) },
+                AdditionalFiles = { ("Resources/regexes.json", testCase.JsonContent) },
                 GeneratedSources =
                 {
                     (typeof(RegexSourceGenerator), "Parser.g.cs", expectedGeneratedCode),
@@ -141,11 +141,11 @@ public class RegexSourceGeneratorTests
                         global::System.Text.RegularExpressions.RegexOptions.IgnoreCase | 
                         global::System.Text.RegularExpressions.RegexOptions.Compiled);
 
-                private static readonly global::System.Collections.Generic.IReadOnlyList<global::UaDetector.Models.{{testCase.ModelTypeName}}> _Clients = [
-                    {{IndentListContent(testCase.ListContent)}}
-                ];
+                private static readonly global::System.Collections.Generic.IReadOnlyList<global::UaDetector.Models.{{testCase.ModelTypeName}}> _Regexes = {{IndentListContent(
+                testCase.ListContent
+            )}};
 
-                internal static partial global::System.Collections.Generic.IReadOnlyList<global::UaDetector.Models.{{testCase.ModelTypeName}}> Clients => _Clients;
+                internal static partial global::System.Collections.Generic.IReadOnlyList<global::UaDetector.Models.{{testCase.ModelTypeName}}> Regexes => _Regexes;
             }
 
             """;
@@ -160,7 +160,7 @@ public class RegexSourceGeneratorTests
                     RegexSourceAttribute,
                     testCase.ModelSourceCode,
                 },
-                AdditionalFiles = { ("Resources/clients.json", testCase.JsonContent) },
+                AdditionalFiles = { ("Resources/regexes.json", testCase.JsonContent) },
                 GeneratedSources =
                 {
                     (typeof(RegexSourceGenerator), "Parser.g.cs", expectedGeneratedCode),
@@ -188,12 +188,14 @@ public class RegexSourceGeneratorTests
                     ]
                     """,
                 ListContent = """
-                    new global::UaDetector.Models.Client
-                    {
-                        Regex = ClientRegex0,
-                        Name = "iTunes",
-                        Version = "$1",
-                    },
+                    [
+                        new global::UaDetector.Models.Client
+                        {
+                            Regex = ClientRegex0,
+                            Name = "iTunes",
+                            Version = "$1",
+                        },
+                    ]
                     """,
                 ModelSourceCode = """
                     using System.Text.RegularExpressions;
@@ -212,7 +214,7 @@ public class RegexSourceGeneratorTests
 
     private static string IndentListContent(string input)
     {
-        var indent = new string(' ', 8);
+        var indent = new string(' ', 4);
 
         var lines = input.Split('\n');
 
