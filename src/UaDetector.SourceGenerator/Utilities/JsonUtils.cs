@@ -1,5 +1,5 @@
+using System.Diagnostics.CodeAnalysis;
 using System.Text.Json;
-using Microsoft.CodeAnalysis;
 using UaDetector.SourceGenerator.Collections;
 using UaDetector.SourceGenerator.Converters;
 
@@ -29,31 +29,24 @@ internal static class JsonUtils
         }
     }
 
-    public static EquatableReadOnlyDictionary<string, string> DeserializeDictionary(
+    public static bool TryDeserializeDictionary(
         string json,
-        SourceProductionContext context
+        [NotNullWhen(true)] out EquatableReadOnlyDictionary<string, string>? result
     )
     {
         try
         {
-            return JsonSerializer.Deserialize<EquatableReadOnlyDictionary<string, string>>(
+            result = JsonSerializer.Deserialize<EquatableReadOnlyDictionary<string, string>>(
                 json,
                 SerializerOptions
             );
+
+            return true;
         }
         catch (Exception)
         {
-            string jsonSnippet = json.Length > 100 ? json[..100] + "..." : json;
-
-            var diagnostic = Diagnostic.Create(
-                DiagnosticDescriptors.JsonDeserializeFailed,
-                Location.None,
-                jsonSnippet
-            );
-
-            context.ReportDiagnostic(diagnostic);
-
-            return [];
+            result = null;
+            return false;
         }
     }
 }

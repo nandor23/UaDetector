@@ -81,4 +81,46 @@ public class HintSourceGeneratorTests
 
         await test.RunAsync();
     }
+
+    [Test]
+    public async Task ReportsDiagnostic_WhenJsonIsInvalid()
+    {
+        const string sourceCode = """
+            using System.Collections.Frozen;
+            using UaDetector.Attributes;
+
+            namespace UaDetector;
+
+            internal static partial class TestHintParser
+            {
+                [HintSource("Resources/Hints/test_hints.json")]
+                internal static partial FrozenDictionary<string, string> Hints { get; }
+            }
+            """;
+
+        const string jsonContent = """
+            {
+                "Chrome": "chrome-browser",
+                "Firefox": "firefox-browser"
+            """;
+
+        var test = new IncrementalGeneratorTest<HintSourceGenerator>
+        {
+            TestState =
+            {
+                Sources = { sourceCode, AttributeCode },
+                AdditionalFiles = { ("Resources/Hints/test_hints.json", jsonContent) },
+                ExpectedDiagnostics =
+                {
+                    DiagnosticResult.CompilerError("UAD001"),
+                    DiagnosticResult
+                        .CompilerError("CS9248")
+                        .WithSpan(9, 62, 9, 67)
+                        .WithArguments("UaDetector.TestHintParser.Hints"),
+                },
+            },
+        };
+
+        await test.RunAsync();
+    }
 }

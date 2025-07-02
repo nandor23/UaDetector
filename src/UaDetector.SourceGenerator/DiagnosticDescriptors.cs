@@ -4,10 +4,10 @@ namespace UaDetector.SourceGenerator;
 
 internal static class DiagnosticDescriptors
 {
-    public static readonly DiagnosticDescriptor JsonDeserializeFailed = new(
+    public static readonly DiagnosticDescriptor JsonDeserializationFailed = new(
         id: "UAD001",
-        title: "JSON Deserialization Failed",
-        messageFormat: "Failed to deserialize JSON from '{0}'",
+        title: "Invalid JSON Format",
+        messageFormat: "Unable to deserialize JSON content",
         category: "UaDetector.SourceGenerator",
         defaultSeverity: DiagnosticSeverity.Error,
         isEnabledByDefault: true

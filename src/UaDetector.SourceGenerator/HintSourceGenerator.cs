@@ -112,7 +112,17 @@ public sealed class HintSourceGenerator : IIncrementalGenerator
 
         if (json is not null)
         {
-            var list = JsonUtils.DeserializeDictionary(json, context);
+            if (!JsonUtils.TryDeserializeDictionary(json, out var dictionary))
+            {
+                var diagnostic = Diagnostic.Create(
+                    DiagnosticDescriptors.JsonDeserializationFailed,
+                    Location.None
+                );
+
+                context.ReportDiagnostic(diagnostic);
+                return;
+            }
+
             var fieldName = $"_{property.PropertyName}";
             var classModifier = property.IsStaticClass ? "static partial" : "partial";
 
@@ -135,7 +145,7 @@ public sealed class HintSourceGenerator : IIncrementalGenerator
                 .Indent()
                 .Indent();
 
-            foreach (var kvp in list)
+            foreach (var kvp in dictionary)
             {
                 sb.AppendLine($"{{ \"{kvp.Key}\", \"{kvp.Value}\" }},");
             }
