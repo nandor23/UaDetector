@@ -43,12 +43,12 @@ internal static class JsonUtils
         }
         catch (Exception)
         {
-            string snippet = json.Length > 100 ? json[..100] + "..." : json;
+            string jsonSnippet = json.Length > 100 ? json[..100] + "..." : json;
 
             var diagnostic = Diagnostic.Create(
                 GeneratorDiagnostics.JsonDeserializeFailed,
                 Location.None,
-                snippet
+                jsonSnippet
             );
 
             context.ReportDiagnostic(diagnostic);

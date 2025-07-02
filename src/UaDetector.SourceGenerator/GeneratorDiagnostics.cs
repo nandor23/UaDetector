@@ -12,12 +12,13 @@ internal static class GeneratorDiagnostics
         defaultSeverity: DiagnosticSeverity.Error,
         isEnabledByDefault: true
     );
-    
+
     internal static readonly DiagnosticDescriptor InvalidFrozenDictionaryPropertyType = new(
         id: "UAD002",
         title: "Invalid FrozenDictionary Property Type",
         messageFormat: "Property must be of type System.Collections.Frozen.FrozenDictionary<string, string>",
         category: "UaDetector.SourceGenerator",
         defaultSeverity: DiagnosticSeverity.Error,
-        isEnabledByDefault: true);
+        isEnabledByDefault: true
+    );
 }
