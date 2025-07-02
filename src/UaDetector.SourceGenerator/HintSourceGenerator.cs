@@ -36,24 +36,11 @@ public sealed class HintSourceGenerator : IIncrementalGenerator
 
         context.RegisterSourceOutput(
             hintSourceProvider.Combine(additionalFiles),
-            static (spc, source) =>
-            {
-                if (source.Left.Diagnostic is not null)
-                {
-                    spc.ReportDiagnostic(source.Left.Diagnostic);
-                }
-
-                if (source.Left.HintSourceProperty is null)
-                {
-                    return;
-                }
-
-                Execute(source.Left.HintSourceProperty, source.Right, spc);
-            }
+            static (spc, source) => Execute(source.Left, source.Right, spc)
         );
     }
 
-    private static HintSourceResult? GetHintSourceForGeneration(
+    private static HintSourceProperty? GetHintSourceForGeneration(
         GeneratorAttributeSyntaxContext context,
         CancellationToken cancellationToken
     )
@@ -94,13 +81,7 @@ public sealed class HintSourceGenerator : IIncrementalGenerator
             }
         )
         {
-            return new HintSourceResult
-            {
-                Diagnostic = Diagnostic.Create(
-                    GeneratorDiagnostics.InvalidFrozenDictionaryPropertyType,
-                    context.TargetNode.GetLocation()
-                ),
-            };
+            return null;
         }
 
         var containingClass = propertySymbol.ContainingSymbol;
@@ -108,17 +89,14 @@ public sealed class HintSourceGenerator : IIncrementalGenerator
             .ContainingNamespace.ToString()
             .NullIf("<global namespace>");
 
-        return new HintSourceResult
+        return new HintSourceProperty
         {
-            HintSourceProperty = new HintSourceProperty
-            {
-                PropertyName = propertySymbol.Name,
-                ResourcePath = path,
-                ContainingClass = containingClass.Name,
-                Namespace = @namespace is not null ? $"namespace {@namespace};" : string.Empty,
-                PropertyAccessibility = propertySymbol.DeclaredAccessibility,
-                IsStaticClass = containingClass is INamedTypeSymbol { IsStatic: true },
-            },
+            PropertyName = propertySymbol.Name,
+            ResourcePath = path,
+            ContainingClass = containingClass.Name,
+            Namespace = @namespace is not null ? $"namespace {@namespace};" : string.Empty,
+            PropertyAccessibility = propertySymbol.DeclaredAccessibility,
+            IsStaticClass = containingClass is INamedTypeSymbol { IsStatic: true },
         };
     }
 
@@ -172,11 +150,5 @@ public sealed class HintSourceGenerator : IIncrementalGenerator
 
             context.AddSource($"{property.ContainingClass}.g.cs", sb.ToString());
         }
-    }
-
-    private record HintSourceResult
-    {
-        public HintSourceProperty? HintSourceProperty { get; init; }
-        public Diagnostic? Diagnostic { get; init; }
     }
 }

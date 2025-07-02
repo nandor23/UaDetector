@@ -46,7 +46,7 @@ internal static class JsonUtils
             string jsonSnippet = json.Length > 100 ? json[..100] + "..." : json;
 
             var diagnostic = Diagnostic.Create(
-                GeneratorDiagnostics.JsonDeserializeFailed,
+                DiagnosticDescriptors.JsonDeserializeFailed,
                 Location.None,
                 jsonSnippet
             );
