@@ -13,7 +13,7 @@ internal static class DiagnosticDescriptors
         isEnabledByDefault: true
     );
 
-    internal static readonly DiagnosticDescriptor InvalidFrozenDictionaryPropertyType = new(
+    public static readonly DiagnosticDescriptor InvalidFrozenDictionaryPropertyType = new(
         id: "UAD002",
         title: "Invalid FrozenDictionary Property Type",
         messageFormat: "Property must be of type FrozenDictionary<string, string>",
@@ -22,10 +22,19 @@ internal static class DiagnosticDescriptors
         isEnabledByDefault: true
     );
 
-    internal static readonly DiagnosticDescriptor InvalidIReadOnlyListModelType = new(
+    public static readonly DiagnosticDescriptor InvalidIReadOnlyListModelType = new(
         id: "UAD003",
         title: "Invalid IReadOnlyList Model Type",
         messageFormat: "Property must be of type IReadOnlyList<T> where T is one of: Client, Browser, Engine, Os, Device, Bot, VendorFragment",
+        category: "UaDetector.SourceGenerator",
+        defaultSeverity: DiagnosticSeverity.Error,
+        isEnabledByDefault: true
+    );
+
+    public static readonly DiagnosticDescriptor CombinedRegexWithoutRegexSource = new(
+        id: "UAD004",
+        title: "CombinedRegexAttribute requires RegexSourceAttribute in same file",
+        messageFormat: "[CombinedRegex] cannot be used unless a [RegexSource] exists in the same file",
         category: "UaDetector.SourceGenerator",
         defaultSeverity: DiagnosticSeverity.Error,
         isEnabledByDefault: true

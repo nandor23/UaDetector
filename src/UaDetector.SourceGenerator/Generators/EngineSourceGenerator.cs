@@ -47,7 +47,7 @@ internal static class EngineSourceGenerator
                 .AppendLine();
         }
 
-        return sb.ToString();
+        return sb.ToString()[..^1];
     }
 
     private static string GenerateCollectionInitializer(

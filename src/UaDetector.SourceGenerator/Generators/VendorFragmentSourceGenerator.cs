@@ -59,7 +59,7 @@ internal static class VendorFragmentSourceGenerator
             }
         }
 
-        return sb.ToString();
+        return sb.ToString()[..^1];
     }
 
     private static string GenerateCollectionInitializer(
