@@ -5,7 +5,7 @@ using Microsoft.CodeAnalysis.Diagnostics;
 namespace UaDetector.SourceGenerator.Analyzers;
 
 [DiagnosticAnalyzer(LanguageNames.CSharp)]
-public class HintSourcePropertyTypeAnalyzer : DiagnosticAnalyzer
+public class HintSourceAnalyzer : DiagnosticAnalyzer
 {
     private static readonly DiagnosticDescriptor Descriptor =
         DiagnosticDescriptors.InvalidFrozenDictionaryPropertyType;

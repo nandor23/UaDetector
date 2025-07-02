@@ -39,4 +39,13 @@ internal static class DiagnosticDescriptors
         defaultSeverity: DiagnosticSeverity.Error,
         isEnabledByDefault: true
     );
+
+    public static readonly DiagnosticDescriptor CombinedRegexInvalidType = new(
+        id: "UAD005",
+        title: "CombinedRegexAttribute must be applied to a property of type Regex",
+        messageFormat: "[CombinedRegex] can only be used on properties of type Regex",
+        category: "Usage",
+        defaultSeverity: DiagnosticSeverity.Error,
+        isEnabledByDefault: true
+    );
 }

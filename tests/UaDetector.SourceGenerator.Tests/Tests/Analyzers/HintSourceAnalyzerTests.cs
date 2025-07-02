@@ -3,7 +3,7 @@ using UaDetector.SourceGenerator.Analyzers;
 
 namespace UaDetector.SourceGenerator.Tests.Tests.Analyzers;
 
-public class HintSourcePropertyTypeAnalyzerTests
+public class HintSourceAnalyzerTests
 {
     private const string AttributeCode = """
         namespace UaDetector.Attributes;
@@ -38,7 +38,7 @@ public class HintSourcePropertyTypeAnalyzerTests
             }
             """;
 
-        var test = new Helpers.AnalyzerTest<HintSourcePropertyTypeAnalyzer>
+        var test = new Helpers.AnalyzerTest<HintSourceAnalyzer>
         {
             TestState =
             {

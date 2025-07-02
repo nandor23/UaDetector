@@ -6,12 +6,16 @@ using UaDetector.SourceGenerator.Utilities;
 namespace UaDetector.SourceGenerator.Analyzers;
 
 [DiagnosticAnalyzer(LanguageNames.CSharp)]
-public class CombinedRegexWithoutRegexSourceAnalyzer : DiagnosticAnalyzer
+public class CombinedRegexAnalyzer : DiagnosticAnalyzer
 {
-    private static readonly DiagnosticDescriptor Descriptor =
+    private static readonly DiagnosticDescriptor MissingRegexSourceDescriptor =
         DiagnosticDescriptors.CombinedRegexWithoutRegexSource;
 
-    public override ImmutableArray<DiagnosticDescriptor> SupportedDiagnostics => [Descriptor];
+    private static readonly DiagnosticDescriptor InvalidTypeDescriptor =
+        DiagnosticDescriptors.CombinedRegexInvalidType;
+
+    public override ImmutableArray<DiagnosticDescriptor> SupportedDiagnostics =>
+        [MissingRegexSourceDescriptor, InvalidTypeDescriptor];
 
     public override void Initialize(AnalysisContext context)
     {
@@ -30,6 +34,19 @@ public class CombinedRegexWithoutRegexSourceAnalyzer : DiagnosticAnalyzer
         if (!HasAttribute(propertySymbol, "UaDetector.Attributes.CombinedRegexAttribute"))
             return;
 
+        var propertyTypeName = propertySymbol.Type.ToDisplayString(
+            SymbolDisplayFormat.FullyQualifiedFormat
+        );
+        if (propertyTypeName != "global::System.Text.RegularExpressions.Regex")
+        {
+            var typeDiagnostic = Diagnostic.Create(
+                InvalidTypeDescriptor,
+                propertySymbol.Locations[0]
+            );
+            context.ReportDiagnostic(typeDiagnostic);
+            return;
+        }
+
         var syntaxRef = propertySymbol.DeclaringSyntaxReferences.FirstOrDefault();
         if (syntaxRef == null)
             return;
@@ -46,8 +63,11 @@ public class CombinedRegexWithoutRegexSourceAnalyzer : DiagnosticAnalyzer
 
         if (!allPropertiesInTree.Any())
         {
-            var diagnostic = Diagnostic.Create(Descriptor, propertySymbol.Locations[0]);
-            context.ReportDiagnostic(diagnostic);
+            var missingSourceDiagnostic = Diagnostic.Create(
+                MissingRegexSourceDescriptor,
+                propertySymbol.Locations[0]
+            );
+            context.ReportDiagnostic(missingSourceDiagnostic);
         }
     }
 
