@@ -1,3 +1,4 @@
+using Microsoft.CodeAnalysis.Testing;
 using UaDetector.SourceGenerator.Tests.Helpers;
 using UaDetector.SourceGenerator.Utilities;
 
@@ -79,7 +80,7 @@ public class RegexSourceGeneratorTests
 
             partial class Parser
             {
-                private static readonly global::System.Text.RegularExpressions.Regex ClientRegex0 = 
+                private static readonly global::System.Text.RegularExpressions.Regex {{testCase.ModelTypeName}}Regex0 = 
                     new global::System.Text.RegularExpressions.Regex(
                         @"{{RegexBuilder.BuildPattern(testCase.RegexPattern)}}", 
                         global::System.Text.RegularExpressions.RegexOptions.IgnoreCase | 
@@ -111,7 +112,6 @@ public class RegexSourceGeneratorTests
                     GetSourceCodeWithCombinedRegex(testCase.ModelTypeName),
                     RegexSourceAttribute,
                     CombinedRegexAttribute,
-                    testCase.ModelSourceCode,
                 },
                 AdditionalFiles = { ("Resources/regexes.json", testCase.JsonContent) },
                 GeneratedSources =
@@ -120,6 +120,11 @@ public class RegexSourceGeneratorTests
                 },
             },
         };
+
+        foreach (var modelSourceCode in testCase.ModelSourceCodes)
+        {
+            test.TestState.Sources.Add(modelSourceCode);
+        }
 
         await test.RunAsync();
     }
@@ -135,7 +140,7 @@ public class RegexSourceGeneratorTests
 
             partial class Parser
             {
-                private static readonly global::System.Text.RegularExpressions.Regex ClientRegex0 = 
+                private static readonly global::System.Text.RegularExpressions.Regex {{testCase.ModelTypeName}}Regex0 = 
                     new global::System.Text.RegularExpressions.Regex(
                         @"{{RegexBuilder.BuildPattern(testCase.RegexPattern)}}", 
                         global::System.Text.RegularExpressions.RegexOptions.IgnoreCase | 
@@ -158,7 +163,6 @@ public class RegexSourceGeneratorTests
                 {
                     GetSourceCodeWithoutCombinedRegex(testCase.ModelTypeName),
                     RegexSourceAttribute,
-                    testCase.ModelSourceCode,
                 },
                 AdditionalFiles = { ("Resources/regexes.json", testCase.JsonContent) },
                 GeneratedSources =
@@ -167,6 +171,11 @@ public class RegexSourceGeneratorTests
                 },
             },
         };
+
+        foreach (var modelSourceCode in testCase.ModelSourceCodes)
+        {
+            test.TestState.Sources.Add(modelSourceCode);
+        }
 
         await test.RunAsync();
     }
@@ -197,18 +206,81 @@ public class RegexSourceGeneratorTests
                         },
                     ]
                     """,
-                ModelSourceCode = """
-                    using System.Text.RegularExpressions;
+                ModelSourceCodes =
+                [
+                    """
+                        using System.Text.RegularExpressions;
 
-                    namespace UaDetector.Models;
+                        namespace UaDetector.Models;
 
-                    public sealed class Client
-                    {
-                        public required Regex Regex { get; init; }
-                        public required string Name { get; init; }
-                        public required string Version { get; init; }
-                    }
+                        public sealed class Client
+                        {
+                            public required Regex Regex { get; init; }
+                            public required string Name { get; init; }
+                            public required string Version { get; init; }
+                        }
+                        """,
+                ],
+            };
+
+        yield return () =>
+            new SourceGeneratorTestCase
+            {
+                ModelTypeName = "Browser",
+                RegexPattern = "Brave",
+                JsonContent = """
+                    [
+                        {
+                          "regex": "Brave",
+                          "name": "Brave",
+                          "version": "$1",
+                          "engine": {
+                            "default": "Blink"
+                          }
+                        }
+                    ]
                     """,
+                ListContent = """
+                    [
+                        new global::UaDetector.Models.Browser
+                        {
+                            Regex = BrowserRegex0,
+                            Name = "Brave",
+                            Version = "$1",
+                            Engine = new global::UaDetector.Models.BrowserEngine
+                            {
+                                Default = "Blink",
+                            },
+                        },
+                    ]
+                    """,
+                ModelSourceCodes =
+                [
+                    """
+                        using System.Text.RegularExpressions;
+
+                        namespace UaDetector.Models;
+
+                        internal sealed class Browser
+                        {
+                            public required Regex Regex { get; init; }
+                            public required string Name { get; init; }
+                            public string? Version { get; init; }
+                            public BrowserEngine? Engine { get; init; }
+                        }
+                        """,
+                    """
+                        namespace UaDetector.Models;
+
+                        using System.Collections.Generic;
+
+                        internal sealed class BrowserEngine
+                        {
+                            public string? Default { get; init; }
+                            public IReadOnlyDictionary<string, string>? Versions { get; init; }
+                        }
+                        """,
+                ],
             };
     }
 
@@ -231,6 +303,6 @@ public class RegexSourceGeneratorTests
         public required string RegexPattern { get; init; }
         public required string JsonContent { get; init; }
         public required string ListContent { get; init; }
-        public required string ModelSourceCode { get; init; }
+        public required IReadOnlyList<string> ModelSourceCodes { get; init; }
     }
 }
