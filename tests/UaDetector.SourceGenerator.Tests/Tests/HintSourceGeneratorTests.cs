@@ -4,36 +4,36 @@ namespace UaDetector.SourceGenerator.Tests.Tests;
 
 public class HintSourceGeneratorTests
 {
+    private const string AttributeCode = """
+        namespace UaDetector.Attributes;
+
+        using System;
+
+        [AttributeUsage(AttributeTargets.Property)]
+        internal sealed class HintSourceAttribute : Attribute
+        {
+            public string FilePath { get; }
+
+            public HintSourceAttribute(string filePath)
+            {
+                FilePath = filePath;
+            }
+        }
+        """;
+
     [Test]
-    public async Task HintSourceGenerator_GeneratesCorrectCode_WhenValidJsonProvided()
+    public async Task InitializesFrozenDictionary_WhenJsonIsValid()
     {
         const string sourceCode = """
             using System.Collections.Frozen;
             using UaDetector.Attributes;
 
-            namespace UaDetector.Tests;
+            namespace UaDetector;
 
             internal static partial class TestHintParser
             {
                 [HintSource("Resources/Hints/test_hints.json")]
                 internal static partial FrozenDictionary<string, string> Hints { get; }
-            }
-            """;
-
-        const string attributeCode = """
-            namespace UaDetector.Attributes;
-
-            using System;
-
-            [AttributeUsage(AttributeTargets.Property)]
-            internal sealed class HintSourceAttribute : Attribute
-            {
-                public string FilePath { get; }
-
-                public HintSourceAttribute(string filePath)
-                {
-                    FilePath = filePath;
-                }
             }
             """;
 
@@ -46,7 +46,7 @@ public class HintSourceGeneratorTests
             """;
 
         const string expectedGeneratedCode = """
-            namespace UaDetector.Tests;
+            namespace UaDetector;
 
             static partial class TestHintParser
             {
@@ -62,14 +62,14 @@ public class HintSourceGeneratorTests
 
                 internal static partial global::System.Collections.Frozen.FrozenDictionary<string, string> Hints => _Hints;
             }
-            
+
             """;
 
         var test = new IncrementalGeneratorTest<HintSourceGenerator>
         {
             TestState =
             {
-                Sources = { sourceCode, attributeCode },
+                Sources = { sourceCode, AttributeCode },
                 AdditionalFiles = { ("Resources/Hints/test_hints.json", jsonContent) },
                 GeneratedSources =
                 {

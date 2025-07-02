@@ -1,4 +1,5 @@
 using System.Text.Json;
+using Microsoft.CodeAnalysis;
 using UaDetector.SourceGenerator.Collections;
 using UaDetector.SourceGenerator.Converters;
 
@@ -28,7 +29,10 @@ internal static class JsonUtils
         }
     }
 
-    public static EquatableReadOnlyDictionary<string, string> DeserializeDictionary(string json)
+    public static EquatableReadOnlyDictionary<string, string> DeserializeDictionary(
+        string json,
+        SourceProductionContext context
+    )
     {
         try
         {
@@ -39,6 +43,16 @@ internal static class JsonUtils
         }
         catch (Exception)
         {
+            string snippet = json.Length > 100 ? json[..100] + "..." : json;
+
+            var diagnostic = Diagnostic.Create(
+                GeneratorDiagnostics.JsonDeserializeFailed,
+                Location.None,
+                snippet
+            );
+
+            context.ReportDiagnostic(diagnostic);
+
             return [];
         }
     }

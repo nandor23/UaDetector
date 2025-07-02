@@ -1,6 +1,7 @@
 using System.Collections.Immutable;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
+
 using UaDetector.SourceGenerator.Models;
 using UaDetector.SourceGenerator.Utilities;
 
@@ -112,7 +113,7 @@ public sealed class HintSourceGenerator : IIncrementalGenerator
 
         if (json is not null)
         {
-            var list = JsonUtils.DeserializeDictionary(json);
+            var list = JsonUtils.DeserializeDictionary(json, context);
             var fieldName = $"_{property.PropertyName}";
             var classModifier = property.IsStaticClass ? "static partial" : "partial";
 

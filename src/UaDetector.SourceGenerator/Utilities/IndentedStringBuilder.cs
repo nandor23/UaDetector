@@ -30,7 +30,7 @@ internal sealed class IndentedStringBuilder
             _sb.Append(line);
         }
 
-        _sb.Append("\r\n");
+        _sb.Append('\n');
 
         return this;
     }
