@@ -5,6 +5,19 @@ namespace UaDetector.SourceGenerator.Tests.Tests;
 
 public class HintSourceGeneratorTests
 {
+    private const string SourceCode = """
+        using System.Collections.Frozen;
+        using UaDetector.Attributes;
+
+        namespace UaDetector;
+
+        internal static partial class TestHintParser
+        {
+            [HintSource("Resources/Hints/test_hints.json")]
+            internal static partial FrozenDictionary<string, string> Hints { get; }
+        }
+        """;
+
     private const string AttributeCode = """
         namespace UaDetector.Attributes;
 
@@ -25,19 +38,6 @@ public class HintSourceGeneratorTests
     [Test]
     public async Task InitializesFrozenDictionary_WhenJsonIsValid()
     {
-        const string sourceCode = """
-            using System.Collections.Frozen;
-            using UaDetector.Attributes;
-
-            namespace UaDetector;
-
-            internal static partial class TestHintParser
-            {
-                [HintSource("Resources/Hints/test_hints.json")]
-                internal static partial FrozenDictionary<string, string> Hints { get; }
-            }
-            """;
-
         const string jsonContent = """
             {
                 "Chrome": "chrome-browser",
@@ -70,7 +70,7 @@ public class HintSourceGeneratorTests
         {
             TestState =
             {
-                Sources = { sourceCode, AttributeCode },
+                Sources = { SourceCode, AttributeCode },
                 AdditionalFiles = { ("Resources/Hints/test_hints.json", jsonContent) },
                 GeneratedSources =
                 {
@@ -85,19 +85,6 @@ public class HintSourceGeneratorTests
     [Test]
     public async Task ReportsDiagnostic_WhenJsonIsInvalid()
     {
-        const string sourceCode = """
-            using System.Collections.Frozen;
-            using UaDetector.Attributes;
-
-            namespace UaDetector;
-
-            internal static partial class TestHintParser
-            {
-                [HintSource("Resources/Hints/test_hints.json")]
-                internal static partial FrozenDictionary<string, string> Hints { get; }
-            }
-            """;
-
         const string jsonContent = """
             {
                 "Chrome": "chrome-browser",
@@ -108,7 +95,7 @@ public class HintSourceGeneratorTests
         {
             TestState =
             {
-                Sources = { sourceCode, AttributeCode },
+                Sources = { SourceCode, AttributeCode },
                 AdditionalFiles = { ("Resources/Hints/test_hints.json", jsonContent) },
                 ExpectedDiagnostics =
                 {
