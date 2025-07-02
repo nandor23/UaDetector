@@ -175,11 +175,6 @@ public sealed class RegexSourceGenerator : IIncrementalGenerator
                 regexSourceProperty,
                 combinedRegexProperty
             ),
-            "global::UaDetector.Models.Device" => DeviceGenerator.Generate(
-                json,
-                regexSourceProperty,
-                combinedRegexProperty
-            ),
             "global::UaDetector.Models.Browser" => BrowserSourceGenerator.Generate(
                 json,
                 regexSourceProperty,
@@ -191,6 +186,11 @@ public sealed class RegexSourceGenerator : IIncrementalGenerator
                 combinedRegexProperty
             ),
             "global::UaDetector.Models.Os" => OsSourceGenerator.Generate(
+                json,
+                regexSourceProperty,
+                combinedRegexProperty
+            ),
+            "global::UaDetector.Models.Device" => DeviceGenerator.Generate(
                 json,
                 regexSourceProperty,
                 combinedRegexProperty

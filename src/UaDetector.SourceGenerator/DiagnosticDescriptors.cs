@@ -21,4 +21,13 @@ internal static class DiagnosticDescriptors
         defaultSeverity: DiagnosticSeverity.Error,
         isEnabledByDefault: true
     );
+
+    internal static readonly DiagnosticDescriptor InvalidIReadOnlyListModelType = new(
+        id: "UAD003",
+        title: "Invalid IReadOnlyList Model Type",
+        messageFormat: "Property must be of type IReadOnlyList<T> where T is one of: Client, Browser, Engine, Os, Device, Bot, VendorFragment",
+        category: "UaDetector.SourceGenerator",
+        defaultSeverity: DiagnosticSeverity.Error,
+        isEnabledByDefault: true
+    );
 }
