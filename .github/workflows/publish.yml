@@ -40,13 +40,6 @@ jobs:
             --output "$PACKAGES_OUTPUT_DIR" \
             -p:PackageVersion=${{ steps.extract_tag.outputs.tag }}
           
-      - name: Pack UaDetector.MemoryCache
-        run: |
-          dotnet pack src/UaDetector.MemoryCache \
-            --configuration Release \
-            --output "$PACKAGES_OUTPUT_DIR" \
-            -p:PackageVersion=${{ steps.extract_tag.outputs.tag }}
-          
       - name: Pack UaDetector.Abstractions
         run: |
           dotnet pack src/UaDetector.Abstractions \

@@ -33,3 +33,6 @@ jobs:
         
       - name: Test UaDetector.Abstractions
         run: dotnet test tests/UaDetector.Abstractions.Tests --no-build
+
+      - name: Test UaDetector.SourceGenerator
+        run: dotnet test tests/UaDetector.SourceGenerator.Tests --no-build

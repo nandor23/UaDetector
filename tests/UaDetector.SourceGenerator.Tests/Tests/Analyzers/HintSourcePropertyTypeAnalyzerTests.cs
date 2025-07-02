@@ -37,7 +37,7 @@ public class HintSourcePropertyTypeAnalyzerTests
                 internal static partial FrozenDictionary<int, string> Hints { get; }
             }
             """;
-        
+
         var test = new Helpers.AnalyzerTest<HintSourcePropertyTypeAnalyzer>
         {
             TestState =
