@@ -87,7 +87,7 @@ public class RegexSourceGeneratorTests
                         global::System.Text.RegularExpressions.RegexOptions.Compiled);
 
                 private static readonly global::System.Collections.Generic.IReadOnlyList<global::UaDetector.Models.{{testCase.ModelTypeName}}> _Regexes = {{IndentListContent(
-                testCase.ListContent
+                testCase.DeserializedModels
             )}};
 
                 internal static partial global::System.Collections.Generic.IReadOnlyList<global::UaDetector.Models.{{testCase.ModelTypeName}}> Regexes => _Regexes;
@@ -147,7 +147,7 @@ public class RegexSourceGeneratorTests
                         global::System.Text.RegularExpressions.RegexOptions.Compiled);
 
                 private static readonly global::System.Collections.Generic.IReadOnlyList<global::UaDetector.Models.{{testCase.ModelTypeName}}> _Regexes = {{IndentListContent(
-                testCase.ListContent
+                testCase.DeserializedModels
             )}};
 
                 internal static partial global::System.Collections.Generic.IReadOnlyList<global::UaDetector.Models.{{testCase.ModelTypeName}}> Regexes => _Regexes;
@@ -196,7 +196,7 @@ public class RegexSourceGeneratorTests
                         }
                     ]
                     """,
-                ListContent = """
+                DeserializedModels = """
                     [
                         new global::UaDetector.Models.Client
                         {
@@ -235,12 +235,15 @@ public class RegexSourceGeneratorTests
                           "name": "Brave",
                           "version": "$1",
                           "engine": {
-                            "default": "Blink"
+                            "default": "Blink",
+                            "versions": {
+                              "28": "Blink"
+                            }
                           }
                         }
                     ]
                     """,
-                ListContent = """
+                DeserializedModels = """
                     [
                         new global::UaDetector.Models.Browser
                         {
@@ -250,6 +253,10 @@ public class RegexSourceGeneratorTests
                             Engine = new global::UaDetector.Models.BrowserEngine
                             {
                                 Default = "Blink",
+                                Versions = new global::System.Collections.Generic.Dictionary<string, string>
+                                {
+                                    { "28", "Blink" },
+                                },
                             },
                         },
                     ]
@@ -282,6 +289,98 @@ public class RegexSourceGeneratorTests
                         """,
                 ],
             };
+
+        yield return () =>
+            new SourceGeneratorTestCase
+            {
+                ModelTypeName = "Engine",
+                RegexPattern = "Maple",
+                JsonContent = """
+                    [
+                        {
+                          "regex": "Maple",
+                          "name": "Maple"
+                        }
+                    ]
+                    """,
+                DeserializedModels = """
+                    [
+                        new global::UaDetector.Models.Engine
+                        {
+                            Regex = EngineRegex0,
+                            Name = "Maple",
+                        },
+                    ]
+                    """,
+                ModelSourceCodes =
+                [
+                    """
+                        using System.Text.RegularExpressions;
+
+                        namespace UaDetector.Models;
+
+                        internal sealed class Engine
+                        {
+                            public required Regex Regex { get; init; }
+                            public required string Name { get; init; }
+                        }
+                        """,
+                ],
+            };
+
+        yield return () =>
+            new SourceGeneratorTestCase
+            {
+                ModelTypeName = "Os",
+                RegexPattern = "Web0S",
+                JsonContent = """
+                    [
+                        {
+                            "regex": "Web0S",
+                            "name": "webOS",
+                            "version": "$1"
+                        }
+                    ]
+                    """,
+                DeserializedModels = """
+                    [
+                        new global::UaDetector.Models.Os
+                        {
+                            Regex = OsRegex0,
+                            Name = "webOS",
+                            Version = "$1",
+                        },
+                    ]
+                    """,
+                ModelSourceCodes =
+                [
+                    """
+                        using System.Text.RegularExpressions;
+                        using System.Collections.Generic;
+
+                        namespace UaDetector.Models;
+
+                        internal sealed class Os
+                        {
+                            public required Regex Regex { get; init; }
+                            public required string Name { get; init; }
+                            public string? Version { get; init; }
+                            public IReadOnlyList<OsVersion>? Versions { get; init; }
+                        }
+                        """,
+                    """
+                        using System.Text.RegularExpressions;
+
+                        namespace UaDetector.Models;
+
+                        internal sealed class OsVersion
+                        {
+                            public required Regex Regex { get; init; }
+                            public required string Version { get; init; }
+                        }
+                        """,
+                ],
+            };
     }
 
     private static string IndentListContent(string input)
@@ -302,7 +401,7 @@ public class RegexSourceGeneratorTests
         public required string ModelTypeName { get; init; }
         public required string RegexPattern { get; init; }
         public required string JsonContent { get; init; }
-        public required string ListContent { get; init; }
+        public required string DeserializedModels { get; init; }
         public required IReadOnlyList<string> ModelSourceCodes { get; init; }
     }
 }
