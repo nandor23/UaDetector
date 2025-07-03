@@ -5,23 +5,6 @@ namespace UaDetector.SourceGenerator.Tests.Tests.Analyzers;
 
 public class HintSourceAnalyzerTests
 {
-    private const string AttributeCode = """
-        namespace UaDetector.Attributes;
-
-        using System;
-
-        [AttributeUsage(AttributeTargets.Property)]
-        internal sealed class HintSourceAttribute : Attribute
-        {
-            public string FilePath { get; }
-
-            public HintSourceAttribute(string filePath)
-            {
-                FilePath = filePath;
-            }
-        }
-        """;
-
     [Test]
     public async Task ReportDiagnostic_WhenPropertyTypeIsInvalid()
     {
@@ -38,11 +21,28 @@ public class HintSourceAnalyzerTests
             }
             """;
 
+        const string attributeCode = """
+            namespace UaDetector.Attributes;
+
+            using System;
+
+            [AttributeUsage(AttributeTargets.Property)]
+            internal sealed class HintSourceAttribute : Attribute
+            {
+                public string FilePath { get; }
+
+                public HintSourceAttribute(string filePath)
+                {
+                    FilePath = filePath;
+                }
+            }
+            """;
+
         var test = new Helpers.AnalyzerTest<HintSourceAnalyzer>
         {
             TestState =
             {
-                Sources = { sourceCode, AttributeCode },
+                Sources = { sourceCode, attributeCode },
                 ExpectedDiagnostics =
                 {
                     DiagnosticResult.CompilerError("UAD002").WithSpan(9, 59, 9, 64),

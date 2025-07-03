@@ -5,7 +5,7 @@ using Microsoft.CodeAnalysis.Diagnostics;
 namespace UaDetector.SourceGenerator.Analyzers;
 
 [DiagnosticAnalyzer(LanguageNames.CSharp)]
-public sealed class HintSourcePropertyModelTypeAnalyzer : DiagnosticAnalyzer
+public sealed class RegexSourceAnalyzer : DiagnosticAnalyzer
 {
     private static readonly DiagnosticDescriptor Descriptor =
         DiagnosticDescriptors.InvalidIReadOnlyListModelType;
