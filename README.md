@@ -25,6 +25,12 @@ Each can be used independently if only certain information is needed from the us
 - **Try-Parse Pattern**: Parsers implement the [Try-Parse Pattern](https://learn.microsoft.com/en-us/dotnet/standard/design-guidelines/exceptions-and-performance#try-parse-pattern),
   returning a **bool** to indicate success and assigning the result to an **out** parameter.
 
+## Requirements
+
+- **.NET 9 SDK** or newer for compilation. Projects can target earlier .NET versions.
+- **Visual Studio 2022** (version 17.12 or later)
+- **JetBrains Rider** (version 2024.3 or later)
+
 ## ⚙️ Configuration
 
 Add the *UaDetector* package (from NuGet) to the project.
