@@ -1,3 +1,4 @@
+using System.Diagnostics.CodeAnalysis;
 using UaDetector.SourceGenerator.Collections;
 using UaDetector.SourceGenerator.Models;
 using UaDetector.SourceGenerator.Utilities;
@@ -8,33 +9,40 @@ public static class VendorFragmentSourceGenerator
 {
     private const string FragmentRegexPrefix = "VendorFragmentRegex";
 
-    public static string Generate(
+    public static bool Generate(
         string json,
         RegexSourceProperty regexSourceProperty,
-        CombinedRegexProperty? combinedRegexProperty
+        CombinedRegexProperty? combinedRegexProperty,
+        [NotNullWhen(true)] out string? result
     )
     {
-        var list = JsonUtils.DeserializeList<VendorFragmentRule>(json);
-        var regexDeclarations = GenerateRegexDeclarations(list);
-        var collectionInitializer = GenerateCollectionInitializer(list, regexSourceProperty);
+        if (!JsonUtils.TryDeserializeList<VendorFragmentRule>(json, out var list))
+        {
+            result = null;
+            return false;
+        }
+        var regexDeclarations = GenerateRegexDeclarations(list.Value);
+        var collectionInitializer = GenerateCollectionInitializer(list.Value, regexSourceProperty);
 
         var combinedRegexDeclaration = RegexBuilder.BuildCombinedRegexFieldDeclaration(
             combinedRegexProperty,
             string.Join(
                 "|",
-                list.Reverse()
+                list.Value.Reverse()
                     .SelectMany(x =>
                         x.Regexes.Select(regex => $"{regex}{regexSourceProperty.RegexSuffix}")
                     )
             )
         );
 
-        return SourceCodeBuilder.BuildClassSourceCode(
+        result = SourceCodeBuilder.BuildClassSourceCode(
             regexSourceProperty,
             regexDeclarations,
             collectionInitializer,
             combinedRegexDeclaration
         );
+
+        return true;
     }
 
     private static string GenerateRegexDeclarations(EquatableReadOnlyList<VendorFragmentRule> list)

@@ -1,4 +1,5 @@
 using System.Collections.Immutable;
+using System.Diagnostics.CodeAnalysis;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using UaDetector.SourceGenerator.Generators;
@@ -156,54 +157,78 @@ public sealed class RegexSourceGenerator : IIncrementalGenerator
                 p.ContainingClassFullName == regexSourceProperty.ContainingClassFullName
             );
 
-            var sourceCode = GenerateSource(json, regexSourceProperty, combinedRegexProperty);
+            if (
+                !TryGenerateSource(
+                    json,
+                    regexSourceProperty,
+                    combinedRegexProperty,
+                    out var sourceCode
+                )
+            )
+            {
+                var diagnostic = Diagnostic.Create(
+                    DiagnosticDescriptors.JsonDeserializationFailed,
+                    Location.None
+                );
+
+                context.ReportDiagnostic(diagnostic);
+                return;
+            }
 
             context.AddSource($"{regexSourceProperty.ContainingClass}.g.cs", sourceCode);
         }
     }
 
-    private static string GenerateSource(
+    private static bool TryGenerateSource(
         string json,
         RegexSourceProperty regexSourceProperty,
-        CombinedRegexProperty? combinedRegexProperty
+        CombinedRegexProperty? combinedRegexProperty,
+        [NotNullWhen(true)] out string? result
     )
     {
         return regexSourceProperty.ElementType switch
         {
-            "global::UaDetector.Models.Client" => ClientSourceGenerator.Generate(
+            "global::UaDetector.Models.Client" => ClientSourceGenerator.TryGenerate(
                 json,
                 regexSourceProperty,
-                combinedRegexProperty
+                combinedRegexProperty,
+                out result
             ),
-            "global::UaDetector.Models.Browser" => BrowserSourceGenerator.Generate(
+            "global::UaDetector.Models.Browser" => BrowserSourceGenerator.TryGenerate(
                 json,
                 regexSourceProperty,
-                combinedRegexProperty
+                combinedRegexProperty,
+                out result
             ),
-            "global::UaDetector.Models.Engine" => EngineSourceGenerator.Generate(
+            "global::UaDetector.Models.Engine" => EngineSourceGenerator.TryGenerate(
                 json,
                 regexSourceProperty,
-                combinedRegexProperty
+                combinedRegexProperty,
+                out result
             ),
             "global::UaDetector.Models.Os" => OsSourceGenerator.Generate(
                 json,
                 regexSourceProperty,
-                combinedRegexProperty
+                combinedRegexProperty,
+                out result
             ),
-            "global::UaDetector.Models.Device" => DeviceGenerator.Generate(
+            "global::UaDetector.Models.Device" => DeviceGenerator.TryGenerate(
                 json,
                 regexSourceProperty,
-                combinedRegexProperty
+                combinedRegexProperty,
+                out result
             ),
-            "global::UaDetector.Models.Bot" => BotSourceGenerator.Generate(
+            "global::UaDetector.Models.Bot" => BotSourceGenerator.TryGenerate(
                 json,
                 regexSourceProperty,
-                combinedRegexProperty
+                combinedRegexProperty,
+                out result
             ),
             "global::UaDetector.Models.VendorFragment" => VendorFragmentSourceGenerator.Generate(
                 json,
                 regexSourceProperty,
-                combinedRegexProperty
+                combinedRegexProperty,
+                out result
             ),
             _ => throw new NotSupportedException(
                 $"Unsupported ElementType: {regexSourceProperty.ElementType}"

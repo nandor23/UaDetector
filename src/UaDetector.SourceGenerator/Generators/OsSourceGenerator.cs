@@ -1,3 +1,4 @@
+using System.Diagnostics.CodeAnalysis;
 using UaDetector.SourceGenerator.Collections;
 using UaDetector.SourceGenerator.Models;
 using UaDetector.SourceGenerator.Utilities;
@@ -9,27 +10,35 @@ public static class OsSourceGenerator
     private const string OsRegexPrefix = "OsRegex";
     private const string VersionRegexPrefix = "VersionRegex";
 
-    public static string Generate(
+    public static bool Generate(
         string json,
         RegexSourceProperty regexSourceProperty,
-        CombinedRegexProperty? combinedRegexProperty
+        CombinedRegexProperty? combinedRegexProperty,
+        [NotNullWhen(true)] out string? result
     )
     {
-        var list = JsonUtils.DeserializeList<OsRule>(json);
-        var regexDeclarations = GenerateRegexDeclarations(list);
-        var collectionInitializer = GenerateCollectionInitializer(list, regexSourceProperty);
+        if (!JsonUtils.TryDeserializeList<OsRule>(json, out var list))
+        {
+            result = null;
+            return false;
+        }
+
+        var regexDeclarations = GenerateRegexDeclarations(list.Value);
+        var collectionInitializer = GenerateCollectionInitializer(list.Value, regexSourceProperty);
 
         var combinedRegexDeclaration = RegexBuilder.BuildCombinedRegexFieldDeclaration(
             combinedRegexProperty,
-            string.Join("|", list.Reverse().Select(x => x.Regex))
+            string.Join("|", list.Value.Reverse().Select(x => x.Regex))
         );
 
-        return SourceCodeBuilder.BuildClassSourceCode(
+        result = SourceCodeBuilder.BuildClassSourceCode(
             regexSourceProperty,
             regexDeclarations,
             collectionInitializer,
             combinedRegexDeclaration
         );
+
+        return true;
     }
 
     private static string GenerateRegexDeclarations(EquatableReadOnlyList<OsRule> list)

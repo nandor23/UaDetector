@@ -1,3 +1,4 @@
+using System.Diagnostics.CodeAnalysis;
 using UaDetector.SourceGenerator.Collections;
 using UaDetector.SourceGenerator.Models;
 using UaDetector.SourceGenerator.Utilities;
@@ -8,27 +9,35 @@ public static class BotSourceGenerator
 {
     private const string BotRegexPrefix = "BotRegex";
 
-    public static string Generate(
+    public static bool TryGenerate(
         string json,
         RegexSourceProperty regexSourceProperty,
-        CombinedRegexProperty? combinedRegexProperty
+        CombinedRegexProperty? combinedRegexProperty,
+        [NotNullWhen(true)] out string? result
     )
     {
-        var list = JsonUtils.DeserializeList<BotRule>(json);
-        var regexDeclarations = GenerateRegexDeclarations(list);
-        var collectionInitializer = GenerateCollectionInitializer(list, regexSourceProperty);
+        if (!JsonUtils.TryDeserializeList<BotRule>(json, out var list))
+        {
+            result = null;
+            return false;
+        }
+
+        var regexDeclarations = GenerateRegexDeclarations(list.Value);
+        var collectionInitializer = GenerateCollectionInitializer(list.Value, regexSourceProperty);
 
         var combinedRegexDeclaration = RegexBuilder.BuildCombinedRegexFieldDeclaration(
             combinedRegexProperty,
-            string.Join("|", list.Reverse().Select(x => x.Regex))
+            string.Join("|", list.Value.Reverse().Select(x => x.Regex))
         );
 
-        return SourceCodeBuilder.BuildClassSourceCode(
+        result = SourceCodeBuilder.BuildClassSourceCode(
             regexSourceProperty,
             regexDeclarations,
             collectionInitializer,
             combinedRegexDeclaration
         );
+
+        return true;
     }
 
     private static string GenerateRegexDeclarations(EquatableReadOnlyList<BotRule> list)

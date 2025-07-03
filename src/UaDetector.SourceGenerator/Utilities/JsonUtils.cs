@@ -17,15 +17,20 @@ public static class JsonUtils
         },
     };
 
-    public static EquatableReadOnlyList<T> DeserializeList<T>(string json)
+    public static bool TryDeserializeList<T>(
+        string json,
+        [NotNullWhen(true)] out EquatableReadOnlyList<T>? result
+    )
     {
         try
         {
-            return JsonSerializer.Deserialize<EquatableReadOnlyList<T>>(json, SerializerOptions);
+            result = JsonSerializer.Deserialize<EquatableReadOnlyList<T>>(json, SerializerOptions);
+            return true;
         }
         catch (Exception)
         {
-            return [];
+            result = null;
+            return false;
         }
     }
 

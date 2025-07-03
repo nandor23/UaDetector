@@ -180,6 +180,38 @@ public class RegexSourceGeneratorTests
         await test.RunAsync();
     }
 
+    [Test]
+    [MethodDataSource(nameof(TestData))]
+    public async Task ReportDiagnostic_WhenJsonIsInvalid(SourceGeneratorTestCase testCase)
+    {
+        var test = new IncrementalGeneratorTest<RegexSourceGenerator>
+        {
+            TestState =
+            {
+                Sources =
+                {
+                    GetSourceCodeWithCombinedRegex(testCase.ModelTypeName),
+                    RegexSourceAttribute,
+                    CombinedRegexAttribute,
+                },
+                AdditionalFiles = { ("Resources/regexes.json", testCase.JsonContent[..^1]) },
+                ExpectedDiagnostics = { DiagnosticResult.CompilerError("UAD001") },
+            },
+        };
+
+        foreach (var modelSourceCode in testCase.ModelSourceCodes)
+        {
+            test.TestState.Sources.Add(modelSourceCode);
+        }
+
+        foreach (var diagnostic in testCase.ExpectedDiagnostics)
+        {
+            test.TestState.ExpectedDiagnostics.Add(diagnostic);
+        }
+
+        await test.RunAsync();
+    }
+
     public static IEnumerable<Func<SourceGeneratorTestCase>> TestData()
     {
         yield return () =>
@@ -220,6 +252,17 @@ public class RegexSourceGeneratorTests
                             public required string Version { get; init; }
                         }
                         """,
+                ],
+                ExpectedDiagnostics =
+                [
+                    DiagnosticResult
+                        .CompilerError("CS9248")
+                        .WithSpan(11, 51, 11, 58)
+                        .WithArguments("UaDetector.Parser.Regexes"),
+                    DiagnosticResult
+                        .CompilerError("CS9248")
+                        .WithSpan(14, 34, 14, 47)
+                        .WithArguments("UaDetector.Parser.CombinedRegex"),
                 ],
             };
 
@@ -288,6 +331,17 @@ public class RegexSourceGeneratorTests
                         }
                         """,
                 ],
+                ExpectedDiagnostics =
+                [
+                    DiagnosticResult
+                        .CompilerError("CS9248")
+                        .WithSpan(11, 52, 11, 59)
+                        .WithArguments("UaDetector.Parser.Regexes"),
+                    DiagnosticResult
+                        .CompilerError("CS9248")
+                        .WithSpan(14, 34, 14, 47)
+                        .WithArguments("UaDetector.Parser.CombinedRegex"),
+                ],
             };
 
         yield return () =>
@@ -325,6 +379,17 @@ public class RegexSourceGeneratorTests
                             public required string Name { get; init; }
                         }
                         """,
+                ],
+                ExpectedDiagnostics =
+                [
+                    DiagnosticResult
+                        .CompilerError("CS9248")
+                        .WithSpan(11, 51, 11, 58)
+                        .WithArguments("UaDetector.Parser.Regexes"),
+                    DiagnosticResult
+                        .CompilerError("CS9248")
+                        .WithSpan(14, 34, 14, 47)
+                        .WithArguments("UaDetector.Parser.CombinedRegex"),
                 ],
             };
 
@@ -379,6 +444,17 @@ public class RegexSourceGeneratorTests
                             public required string Version { get; init; }
                         }
                         """,
+                ],
+                ExpectedDiagnostics =
+                [
+                    DiagnosticResult
+                        .CompilerError("CS9248")
+                        .WithSpan(11, 47, 11, 54)
+                        .WithArguments("UaDetector.Parser.Regexes"),
+                    DiagnosticResult
+                        .CompilerError("CS9248")
+                        .WithSpan(14, 34, 14, 47)
+                        .WithArguments("UaDetector.Parser.CombinedRegex"),
                 ],
             };
 
@@ -443,6 +519,17 @@ public class RegexSourceGeneratorTests
 
                         public enum DeviceType;
                         """,
+                ],
+                ExpectedDiagnostics =
+                [
+                    DiagnosticResult
+                        .CompilerError("CS9248")
+                        .WithSpan(11, 51, 11, 58)
+                        .WithArguments("UaDetector.Parser.Regexes"),
+                    DiagnosticResult
+                        .CompilerError("CS9248")
+                        .WithSpan(14, 34, 14, 47)
+                        .WithArguments("UaDetector.Parser.CombinedRegex"),
                 ],
             };
 
@@ -513,6 +600,17 @@ public class RegexSourceGeneratorTests
                         public enum BotCategory;
                         """,
                 ],
+                ExpectedDiagnostics =
+                [
+                    DiagnosticResult
+                        .CompilerError("CS9248")
+                        .WithSpan(11, 48, 11, 55)
+                        .WithArguments("UaDetector.Parser.Regexes"),
+                    DiagnosticResult
+                        .CompilerError("CS9248")
+                        .WithSpan(14, 34, 14, 47)
+                        .WithArguments("UaDetector.Parser.CombinedRegex"),
+                ],
             };
 
         yield return () =>
@@ -557,6 +655,17 @@ public class RegexSourceGeneratorTests
                         }
                         """,
                 ],
+                ExpectedDiagnostics =
+                [
+                    DiagnosticResult
+                        .CompilerError("CS9248")
+                        .WithSpan(11, 59, 11, 66)
+                        .WithArguments("UaDetector.Parser.Regexes"),
+                    DiagnosticResult
+                        .CompilerError("CS9248")
+                        .WithSpan(14, 34, 14, 47)
+                        .WithArguments("UaDetector.Parser.CombinedRegex"),
+                ],
             };
     }
 
@@ -580,5 +689,6 @@ public class RegexSourceGeneratorTests
         public required string JsonContent { get; init; }
         public required string DeserializedModels { get; init; }
         public required IReadOnlyList<string> ModelSourceCodes { get; init; }
+        public required IReadOnlyList<DiagnosticResult> ExpectedDiagnostics { get; init; }
     }
 }
