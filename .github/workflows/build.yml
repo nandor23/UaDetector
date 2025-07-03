@@ -1,14 +1,16 @@
 name: Build
-
 on:
   push:
     branches: [ "main" ]
   pull_request:
 
+env:
+  DOTNET_VERSION: 9.0.x
+
 jobs:
   build:
     runs-on: ubuntu-latest
-    
+
     steps:
       - uses: actions/checkout@v4
         with:
@@ -17,12 +19,12 @@ jobs:
       - name: Setup .NET
         uses: actions/setup-dotnet@v4
         with:
-          dotnet-version: 9.0.x
+          dotnet-version: ${{ env.DOTNET_VERSION }}
 
       - name: Restore dependencies
         run: dotnet restore
 
-      - name: Build
+      - name: Build solution
         run: dotnet build --no-restore
 
       - name: Test UaDetector
@@ -30,3 +32,9 @@ jobs:
 
       - name: Test UaDetector.MemoryCache
         run: dotnet test tests/UaDetector.MemoryCache.Tests --no-build
+
+      - name: Test UaDetector.SourceGenerator
+        run: dotnet test tests/UaDetector.SourceGenerator.Tests --no-build
+
+      - name: Test UaDetector.Abstractions
+        run: dotnet test tests/UaDetector.Abstractions.Tests --no-build

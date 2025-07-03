@@ -1,22 +1,19 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Text.RegularExpressions;
-using UaDetector.Models.Enums;
-using UaDetector.Regexes.Models;
-using UaDetector.Results;
-using UaDetector.Utils;
+using UaDetector.Abstractions.Enums;
+using UaDetector.Abstractions.Models;
+using UaDetector.Attributes;
+using UaDetector.Models;
 
 namespace UaDetector.Parsers.Clients;
 
-internal sealed class MediaPlayerParser : ClientParserBase
+internal sealed partial class MediaPlayerParser : ClientParserBase
 {
-    private const string ResourceName = "Regexes.Resources.Clients.media_players.json";
-    internal static readonly IReadOnlyList<Client> MediaPlayers;
-    private static readonly Regex CombinedRegex;
+    [RegexSource("Resources/Clients/media_players.json")]
+    internal static partial IReadOnlyList<Client> MediaPlayers { get; }
 
-    static MediaPlayerParser()
-    {
-        (MediaPlayers, CombinedRegex) = RegexLoader.LoadRegexesWithCombined<Client>(ResourceName);
-    }
+    [CombinedRegex]
+    private static partial Regex CombinedRegex { get; }
 
     public MediaPlayerParser(VersionTruncation versionTruncation)
         : base(versionTruncation) { }

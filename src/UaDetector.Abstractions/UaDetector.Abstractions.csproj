@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+  
+  <PropertyGroup>
+    <PackageId>UaDetector.Abstractions</PackageId>
+    <PackageTags>UaDetector;models;enums;constants;</PackageTags>
+    <Description>UaDetector models, enums, and constants.</Description>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="PolySharp" PrivateAssets="All" />
+  </ItemGroup>
+</Project>

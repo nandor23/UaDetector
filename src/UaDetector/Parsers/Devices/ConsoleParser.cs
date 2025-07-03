@@ -1,21 +1,18 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Text.RegularExpressions;
-using UaDetector.Regexes.Models;
-using UaDetector.Results;
-using UaDetector.Utils;
+using UaDetector.Abstractions.Models;
+using UaDetector.Attributes;
+using UaDetector.Models;
 
 namespace UaDetector.Parsers.Devices;
 
-internal sealed class ConsoleParser : DeviceParserBase
+internal sealed partial class ConsoleParser : DeviceParserBase
 {
-    private const string ResourceName = "Regexes.Resources.Devices.consoles.json";
-    private static readonly IReadOnlyList<Device> Consoles;
-    private static readonly Regex CombinedRegex;
+    [RegexSource("Resources/Devices/consoles.json")]
+    private static partial IReadOnlyList<Device> Consoles { get; }
 
-    static ConsoleParser()
-    {
-        (Consoles, CombinedRegex) = RegexLoader.LoadRegexesWithCombined<Device>(ResourceName);
-    }
+    [CombinedRegex]
+    private static partial Regex CombinedRegex { get; }
 
     public override bool TryParse(
         string userAgent,

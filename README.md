@@ -25,6 +25,12 @@ Each can be used independently if only certain information is needed from the us
 - **Try-Parse Pattern**: Parsers implement the [Try-Parse Pattern](https://learn.microsoft.com/en-us/dotnet/standard/design-guidelines/exceptions-and-performance#try-parse-pattern),
   returning a **bool** to indicate success and assigning the result to an **out** parameter.
 
+## Requirements
+
+- **.NET 9 SDK** or newer for compilation. Projects can target earlier .NET versions.
+- **Visual Studio 2022** (version 17.12 or later)
+- **JetBrains Rider** (version 2024.3 or later)
+
 ## ⚙️ Configuration
 
 Add the *UaDetector* package (from NuGet) to the project.
@@ -129,22 +135,22 @@ builder.Services.AddUaDetector(options =>
 
 The following benchmark compares the performance of other .NET user-agent parsing libraries, without caching enabled.
 
-| Method         | Mean     | Error     | StdDev    | Ratio | Allocated   | Alloc Ratio |
+| Method         | Mean     | Error     | StdDev    | Ratio |   Allocated | Alloc Ratio |
 |--------------- |---------:|----------:|----------:|------:|------------:|------------:|
-| UaDetector     | 1.583 ms | 0.0146 ms | 0.0136 ms |  1.00 |     4.04 KB |        1.00 |
-| DeviceDetector | 5.595 ms | 0.0573 ms | 0.0536 ms |  3.53 |  4534.55 KB |    1,121.59 |
-| UAParser       | 6.597 ms | 0.0584 ms | 0.0547 ms |  4.17 | 10794.89 KB |    2,670.04 |
+| UaDetector     | 1.712 ms | 0.0320 ms | 0.0608 ms |  1.00 |     4.04 KB |        1.00 |
+| DeviceDetector | 6.321 ms | 0.1260 ms | 0.1294 ms |  3.70 |  4534.53 KB |    1,122.67 |
+| UAParser       | 7.351 ms | 0.0899 ms | 0.0883 ms |  4.30 | 10794.86 KB |    2,672.62 |
 
 The following benchmark measures the performance of different parsers within the library.
 
 | Method                 | Mean       | Error    | StdDev   | Allocated |
 |----------------------- |-----------:|---------:|---------:|----------:|
-| UaDetector_TryParse    | 1,567.5 us | 18.06 us | 16.89 us |    4140 B |
-| OsParser_TryParse      |   545.0 us |  3.99 us |  3.73 us |    1497 B |
-| BrowserParser_TryParse | 1,095.4 us | 12.78 us | 11.96 us |    1763 B |
-| ClientParser_TryParse  |   150.1 us |  2.17 us |  2.03 us |    1272 B |
-| BotParser_TryParse     |   294.9 us |  2.66 us |  2.49 us |     609 B |
-| BotParser_IsBot        |   289.4 us |  2.47 us |  2.31 us |     281 B |
+| UaDetector_TryParse    | 1,588.1 us | 16.40 us | 15.34 us |    4136 B |
+| OsParser_TryParse      |   565.8 us |  5.99 us |  5.60 us |    1520 B |
+| BrowserParser_TryParse | 1,138.1 us | 21.58 us | 20.18 us |    1752 B |
+| ClientParser_TryParse  |   152.9 us |  1.71 us |  1.33 us |    1264 B |
+| BotParser_TryParse     |   309.5 us |  5.93 us |  5.82 us |     600 B |
+| BotParser_IsBot        |   300.5 us |  1.66 us |  1.47 us |     280 B |
 
 ## 🔍 Detection Capabilities
 

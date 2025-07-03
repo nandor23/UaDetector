@@ -1,8 +1,8 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Text.RegularExpressions;
-using UaDetector.Models.Enums;
-using UaDetector.Regexes.Models;
-using UaDetector.Results;
+using UaDetector.Abstractions.Enums;
+using UaDetector.Abstractions.Models;
+using UaDetector.Models;
 
 namespace UaDetector.Parsers.Clients;
 
@@ -25,7 +25,7 @@ internal abstract class ClientParserBase
 
     protected bool TryParse(
         string userAgent,
-        IEnumerable<Client> clients,
+        IReadOnlyList<Client> clients,
         Regex combinedRegex,
         [NotNullWhen(true)] out ClientInfoInternal? result
     )

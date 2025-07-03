@@ -1,21 +1,21 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Text.RegularExpressions;
-using UaDetector.Regexes.Models;
-using UaDetector.Results;
-using UaDetector.Utils;
+using UaDetector.Abstractions.Models;
+using UaDetector.Attributes;
+using UaDetector.Models;
+using UaDetector.Utilities;
 
 namespace UaDetector.Parsers.Devices;
 
-internal sealed class NotebookParser : DeviceParserBase
+internal sealed partial class NotebookParser : DeviceParserBase
 {
-    private const string ResourceName = "Regexes.Resources.Devices.notebooks.json";
-    private static readonly IReadOnlyList<Device> Notebooks;
+    [RegexSource("Resources/Devices/notebooks.json")]
+    private static partial IReadOnlyList<Device> Notebooks { get; }
     private static readonly Regex FbmdRegex;
 
     static NotebookParser()
     {
-        Notebooks = RegexLoader.LoadRegexes<Device>(ResourceName);
-        FbmdRegex = RegexUtility.BuildUserAgentRegex("FBMD/");
+        FbmdRegex = RegexBuilder.BuildRegex("FBMD/");
     }
 
     public override bool TryParse(

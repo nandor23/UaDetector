@@ -12,25 +12,30 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="Regexes\**\*" />
+    <AdditionalFiles Include="Resources\**\*.json" />
   </ItemGroup>
 
   <ItemGroup>
+    <InternalsVisibleTo Include="UaDetector.MemoryCache" />
     <InternalsVisibleTo Include="UaDetector.Tests" />
     <InternalsVisibleTo Include="UaDetector.ReadmeUpdater" />
     <InternalsVisibleTo Include="UaDetector.YamlJsonConverter" />
   </ItemGroup>
-
+  
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" />
-    <PackageReference Include="PolySharp">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>
+    <PackageReference Include="PolySharp" PrivateAssets="All" />
   </ItemGroup>
 
   <ItemGroup Condition="!$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', 'net8.0'))">
     <PackageReference Include="System.Collections.Immutable" />
     <PackageReference Include="System.Text.Json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\UaDetector.Abstractions\UaDetector.Abstractions.csproj" />
+    <ProjectReference Include="..\UaDetector.SourceGenerator\UaDetector.SourceGenerator.csproj"
+                      OutputItemType="Analyzer"
+                      ReferenceOutputAssembly="false" />
   </ItemGroup>
 </Project>

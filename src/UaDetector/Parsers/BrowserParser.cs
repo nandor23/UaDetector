@@ -2,24 +2,27 @@ using System.Collections.Frozen;
 using System.Collections.Immutable;
 using System.Diagnostics.CodeAnalysis;
 using System.Text.RegularExpressions;
-using UaDetector.Models.Constants;
-using UaDetector.Models.Enums;
+using UaDetector.Abstractions.Constants;
+using UaDetector.Abstractions.Enums;
+using UaDetector.Abstractions.Models;
+using UaDetector.Attributes;
+using UaDetector.Models;
 using UaDetector.Parsers.Browsers;
-using UaDetector.Regexes.Models.Browsers;
-using UaDetector.Results;
-using UaDetector.Utils;
+using UaDetector.Utilities;
 
 namespace UaDetector.Parsers;
 
-public sealed class BrowserParser : IBrowserParser
+public sealed partial class BrowserParser : IBrowserParser
 {
-    private const string ResourceName = "Regexes.Resources.Browsers.browsers.json";
+    [RegexSource("Resources/Browsers/browsers.json")]
+    internal static partial IReadOnlyList<Browser> Browsers { get; }
+
     private const string CacheKeyPrefix = "browser";
     private readonly IUaDetectorCache? _cache;
     private readonly UaDetectorOptions _uaDetectorOptions;
     private readonly ClientParser _clientParser;
     private readonly BotParser _botParser;
-    internal static readonly IReadOnlyList<Browser> Browsers;
+
     internal static readonly FrozenDictionary<BrowserCode, string> BrowserCodeMapping;
     internal static readonly FrozenDictionary<string, BrowserCode> BrowserNameMapping;
     internal static readonly FrozenDictionary<string, string> CompactToFullNameMapping;
@@ -34,7 +37,6 @@ public sealed class BrowserParser : IBrowserParser
 
     static BrowserParser()
     {
-        Browsers = RegexLoader.LoadRegexes<Browser>(ResourceName);
         BrowserCodeMapping = new Dictionary<BrowserCode, string>
         {
             { BrowserCode.Via, BrowserNames.Via },
@@ -1475,7 +1477,11 @@ public sealed class BrowserParser : IBrowserParser
         return false;
     }
 
-    private static string? BuildEngine(string userAgent, Engine? engine, string? browserVersion)
+    private static string? BuildEngine(
+        string userAgent,
+        BrowserEngine? engine,
+        string? browserVersion
+    )
     {
         var result = engine?.Default;
 
@@ -1618,13 +1624,13 @@ public sealed class BrowserParser : IBrowserParser
         Match? match = null;
         Browser? browser = null;
 
-        foreach (var browserPattern in Browsers)
+        foreach (var browserEntry in Browsers)
         {
-            match = browserPattern.Regex.Match(userAgent);
+            match = browserEntry.Regex.Match(userAgent);
 
             if (match.Success)
             {
-                browser = browserPattern;
+                browser = browserEntry;
                 break;
             }
         }

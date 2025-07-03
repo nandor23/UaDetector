@@ -2,7 +2,7 @@ using BenchmarkDotNet.Attributes;
 using DeviceDetectorNET;
 using DeviceDetectorNET.Results;
 using DeviceDetectorNET.Results.Client;
-using UaDetector.Results;
+using UaDetector.Abstractions.Models;
 using UAParser;
 using ClientInfo = UAParser.ClientInfo;
 

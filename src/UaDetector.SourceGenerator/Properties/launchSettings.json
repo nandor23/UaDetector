@@ -1,0 +1,8 @@
+﻿{
+  "profiles": {
+    "SourceGen-UaDetector": {
+      "commandName": "DebugRoslynComponent",
+      "targetProject": "../UaDetector/UaDetector.csproj"
+    }
+  }
+}

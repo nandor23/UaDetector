@@ -1,15 +1,13 @@
 using System.Collections.Frozen;
 using System.Diagnostics.CodeAnalysis;
-using UaDetector.Utils;
+using UaDetector.Attributes;
 
 namespace UaDetector.Parsers.Browsers;
 
-internal static class BrowserHintParser
+internal static partial class BrowserHintParser
 {
-    private const string ResourceName = "Regexes.Resources.Browsers.browser_hints.json";
-    internal static readonly FrozenDictionary<string, string> Hints = RegexLoader.LoadHints(
-        ResourceName
-    );
+    [HintSource("Resources/Browsers/browser_hints.json")]
+    internal static partial FrozenDictionary<string, string> Hints { get; }
 
     public static bool TryParseBrowserName(
         ClientHints clientHints,

@@ -1,10 +1,10 @@
 using Shouldly;
-using UaDetector.Models.Enums;
+using UaDetector.Abstractions.Enums;
+using UaDetector.Abstractions.Models;
 using UaDetector.Parsers;
-using UaDetector.Results;
 using UaDetector.Tests.Fixtures.Models;
 using UaDetector.Tests.Helpers;
-using UaDetector.Utils;
+using UaDetector.Utilities;
 
 namespace UaDetector.Tests.Tests.Parsers;
 
@@ -26,7 +26,7 @@ public class BrowserParserTests
     [Test]
     public void Browsers_ShouldContainKeysForAllBrowserNames()
     {
-        var browserNames = BrowserParser.Browsers.Select(browser => browser.Name);
+        var browserNames = BrowserParser.Browsers.Select(rule => rule.Name);
 
         foreach (var browserName in browserNames)
         {

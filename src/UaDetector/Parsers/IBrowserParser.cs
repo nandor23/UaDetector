@@ -1,5 +1,5 @@
 using System.Diagnostics.CodeAnalysis;
-using UaDetector.Results;
+using UaDetector.Abstractions.Models;
 
 namespace UaDetector.Parsers;
 

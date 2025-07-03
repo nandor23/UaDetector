@@ -1,23 +1,18 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Text.RegularExpressions;
-using UaDetector.Regexes.Models;
-using UaDetector.Results;
-using UaDetector.Utils;
+using UaDetector.Abstractions.Models;
+using UaDetector.Attributes;
+using UaDetector.Models;
 
 namespace UaDetector.Parsers.Devices;
 
-internal sealed class PortableMediaPlayerParser : DeviceParserBase
+internal sealed partial class PortableMediaPlayerParser : DeviceParserBase
 {
-    private const string ResourceName = "Regexes.Resources.Devices.portable_media_players.json";
-    private static readonly IReadOnlyList<Device> PortableMediaPlayers;
-    private static readonly Regex CombinedRegex;
+    [RegexSource("Resources/Devices/portable_media_players.json")]
+    private static partial IReadOnlyList<Device> PortableMediaPlayers { get; }
 
-    static PortableMediaPlayerParser()
-    {
-        (PortableMediaPlayers, CombinedRegex) = RegexLoader.LoadRegexesWithCombined<Device>(
-            ResourceName
-        );
-    }
+    [CombinedRegex]
+    private static partial Regex CombinedRegex { get; }
 
     public override bool TryParse(
         string userAgent,

@@ -1,7 +1,7 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Text.RegularExpressions;
-using UaDetector.Models.Enums;
-using UaDetector.Utils;
+using UaDetector.Abstractions.Enums;
+using UaDetector.Utilities;
 
 namespace UaDetector.Parsers;
 
@@ -22,11 +22,11 @@ internal static class ParserExtensions
         RegexOptions.Compiled
     );
 
-    private static readonly Regex DesktopFragmentMatchRegex = RegexUtility.BuildUserAgentRegex(
+    private static readonly Regex DesktopFragmentMatchRegex = RegexBuilder.BuildRegex(
         "(?:Windows (?:NT|IoT)|X11; Linux x86_64)"
     );
 
-    private static readonly Regex DesktopFragmentExclusionRegex = RegexUtility.BuildUserAgentRegex(
+    private static readonly Regex DesktopFragmentExclusionRegex = RegexBuilder.BuildRegex(
         string.Join(
             "|",
             "CE-HTML",

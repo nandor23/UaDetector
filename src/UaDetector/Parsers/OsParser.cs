@@ -2,22 +2,25 @@ using System.Collections.Frozen;
 using System.Collections.Immutable;
 using System.Diagnostics.CodeAnalysis;
 using System.Text.RegularExpressions;
-using UaDetector.Models.Constants;
-using UaDetector.Models.Enums;
-using UaDetector.Regexes.Models;
-using UaDetector.Results;
-using UaDetector.Utils;
+using UaDetector.Abstractions.Constants;
+using UaDetector.Abstractions.Enums;
+using UaDetector.Abstractions.Models;
+using UaDetector.Attributes;
+using UaDetector.Models;
+using UaDetector.Utilities;
 
 namespace UaDetector.Parsers;
 
-public sealed class OsParser : IOsParser
+public sealed partial class OsParser : IOsParser
 {
-    private const string ResourceName = "Regexes.Resources.operating_systems.json";
+    [RegexSource("Resources/operating_systems.json")]
+    internal static partial IReadOnlyList<Os> OperatingSystems { get; }
+
     private const string CacheKeyPrefix = "os";
     private readonly IUaDetectorCache? _cache;
     private readonly UaDetectorOptions _uaDetectorOptions;
     private readonly BotParser _botParser;
-    internal static readonly IReadOnlyList<Os> OperatingSystems;
+
     internal static readonly FrozenDictionary<OsCode, string> OsCodeMapping;
     internal static readonly FrozenDictionary<string, OsCode> OsNameMapping;
     internal static readonly FrozenDictionary<string, FrozenSet<OsCode>> OsFamilyMapping;
@@ -32,7 +35,6 @@ public sealed class OsParser : IOsParser
 
     static OsParser()
     {
-        OperatingSystems = RegexLoader.LoadRegexes<Os>(ResourceName);
         OsCodeMapping = new Dictionary<OsCode, string>
         {
             { OsCode.Aix, OsNames.Aix },
@@ -553,23 +555,23 @@ public sealed class OsParser : IOsParser
         {
             {
                 CpuArchitectures.Arm,
-                RegexUtility.BuildUserAgentRegex(
+                RegexBuilder.BuildRegex(
                     "arm[ _;)ev]|.*arm$|.*arm64|aarch64|Apple ?TV|Watch ?OS|Watch1,[12]"
                 )
             },
-            { CpuArchitectures.LoongArch64, RegexUtility.BuildUserAgentRegex("loongarch64") },
-            { CpuArchitectures.Mips, RegexUtility.BuildUserAgentRegex("mips") },
-            { CpuArchitectures.SuperH, RegexUtility.BuildUserAgentRegex("sh4") },
-            { CpuArchitectures.Sparc64, RegexUtility.BuildUserAgentRegex("sparc64") },
+            { CpuArchitectures.LoongArch64, RegexBuilder.BuildRegex("loongarch64") },
+            { CpuArchitectures.Mips, RegexBuilder.BuildRegex("mips") },
+            { CpuArchitectures.SuperH, RegexBuilder.BuildRegex("sh4") },
+            { CpuArchitectures.Sparc64, RegexBuilder.BuildRegex("sparc64") },
             {
                 CpuArchitectures.X64,
-                RegexUtility.BuildUserAgentRegex(
+                RegexBuilder.BuildRegex(
                     "64-?bit|WOW64|(?:Intel)?x64|WINDOWS_64|win64|.*amd64|.*x86_?64"
                 )
             },
             {
                 CpuArchitectures.X86,
-                RegexUtility.BuildUserAgentRegex(".*32bit|.*win32|(?:i[0-9]|x)86|i86pc")
+                RegexBuilder.BuildRegex(".*32bit|.*win32|(?:i[0-9]|x)86|i86pc")
             },
         }.ToFrozenDictionary();
 

@@ -1,24 +1,22 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Text.RegularExpressions;
-using UaDetector.Models.Enums;
-using UaDetector.Regexes.Models;
-using UaDetector.Results;
-using UaDetector.Utils;
+using UaDetector.Abstractions.Enums;
+using UaDetector.Abstractions.Models;
+using UaDetector.Attributes;
+using UaDetector.Models;
+using UaDetector.Utilities;
 
 namespace UaDetector.Parsers.Devices;
 
-internal sealed class HbbTvParser : DeviceParserBase
+internal sealed partial class HbbTvParser : DeviceParserBase
 {
-    private const string ResourceName = "Regexes.Resources.Devices.televisions.json";
-    private static readonly IReadOnlyList<Device> Televisions;
+    [RegexSource("Resources/Devices/televisions.json")]
+    private static partial IReadOnlyList<Device> Televisions { get; }
     internal static readonly Regex HbbTvRegex;
 
     static HbbTvParser()
     {
-        Televisions = RegexLoader.LoadRegexes<Device>(ResourceName);
-        HbbTvRegex = RegexUtility.BuildUserAgentRegex(
-            @"(?:HbbTV|SmartTvA)/([1-9](?:\.[0-9]){1,2})"
-        );
+        HbbTvRegex = RegexBuilder.BuildRegex(@"(?:HbbTV|SmartTvA)/([1-9](?:\.[0-9]){1,2})");
     }
 
     public override bool TryParse(

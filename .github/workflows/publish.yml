@@ -40,6 +40,13 @@ jobs:
             --output "$PACKAGES_OUTPUT_DIR" \
             -p:PackageVersion=${{ steps.extract_tag.outputs.tag }}
           
+      - name: Pack UaDetector.Abstractions
+        run: |
+          dotnet pack src/UaDetector.Abstractions \
+            --configuration Release \
+            --output "$PACKAGES_OUTPUT_DIR" \
+            -p:PackageVersion=${{ steps.extract_tag.outputs.tag }}
+          
       - name: Publish to NuGet
         run: |
           dotnet nuget push "$PACKAGES_OUTPUT_DIR"/*.nupkg \

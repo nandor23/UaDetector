@@ -1,22 +1,19 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Text.RegularExpressions;
-using UaDetector.Models.Enums;
-using UaDetector.Regexes.Models;
-using UaDetector.Results;
-using UaDetector.Utils;
+using UaDetector.Abstractions.Enums;
+using UaDetector.Abstractions.Models;
+using UaDetector.Attributes;
+using UaDetector.Models;
 
 namespace UaDetector.Parsers.Clients;
 
-internal sealed class MobileAppParser : ClientParserBase
+internal sealed partial class MobileAppParser : ClientParserBase
 {
-    private const string ResourceName = "Regexes.Resources.Clients.mobile_apps.json";
-    internal static readonly IReadOnlyList<Client> MobileApps;
-    private static readonly Regex CombinedRegex;
+    [RegexSource("Resources/Clients/mobile_apps.json")]
+    internal static partial IReadOnlyList<Client> MobileApps { get; }
 
-    static MobileAppParser()
-    {
-        (MobileApps, CombinedRegex) = RegexLoader.LoadRegexesWithCombined<Client>(ResourceName);
-    }
+    [CombinedRegex]
+    private static partial Regex CombinedRegex { get; }
 
     public MobileAppParser(VersionTruncation versionTruncation)
         : base(versionTruncation) { }

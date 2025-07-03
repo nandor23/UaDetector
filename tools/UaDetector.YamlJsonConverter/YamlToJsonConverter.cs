@@ -2,17 +2,17 @@ using System.Collections.Frozen;
 using System.Text.Encodings.Web;
 using System.Text.Json;
 using System.Text.Json.Serialization;
-using UaDetector.Models.Enums;
+using System.Text.RegularExpressions;
+using UaDetector.Abstractions.Enums;
+using UaDetector.Abstractions.Models;
+using UaDetector.Models;
 using UaDetector.Parsers;
 using UaDetector.Parsers.Devices;
-using UaDetector.Regexes.Models;
-using UaDetector.Regexes.Models.Browsers;
-using UaDetector.Results;
 using UaDetector.Tests.Fixtures.Models;
 using UaDetector.YamlJsonConverter.Fixtures;
 using UaDetector.YamlJsonConverter.Models;
 using UaDetector.YamlJsonConverter.Utils;
-using Os = UaDetector.Regexes.Models.Os;
+using Os = UaDetector.Models.Os;
 
 namespace UaDetector.YamlJsonConverter;
 
@@ -101,7 +101,7 @@ public static class YamlToJsonConverter
 
         var result = entries.Select(x => new Browser
         {
-            Regex = x.Regex,
+            Regex = new Regex(x.Regex),
             Name = x.Name,
             Version = x.Version,
             Engine =
@@ -111,7 +111,7 @@ public static class YamlToJsonConverter
                     && (x.Engine.Versions is null || x.Engine.Versions.Count == 0)
                 )
                     ? null
-                    : new Engine
+                    : new BrowserEngine
                     {
                         Default = string.IsNullOrEmpty(x.Engine.Default) ? null : x.Engine.Default,
                         Versions =
@@ -138,7 +138,7 @@ public static class YamlToJsonConverter
 
         var result = entries.Select(x => new Client
         {
-            Regex = x.Regex,
+            Regex = new Regex(x.Regex),
             Name = x.Name,
             Version = x.Version,
         });

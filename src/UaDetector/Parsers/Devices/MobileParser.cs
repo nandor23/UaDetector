@@ -1,19 +1,14 @@
 using System.Diagnostics.CodeAnalysis;
-using UaDetector.Regexes.Models;
-using UaDetector.Results;
-using UaDetector.Utils;
+using UaDetector.Abstractions.Models;
+using UaDetector.Attributes;
+using UaDetector.Models;
 
 namespace UaDetector.Parsers.Devices;
 
-internal sealed class MobileParser : DeviceParserBase
+internal sealed partial class MobileParser : DeviceParserBase
 {
-    private const string ResourceName = "Regexes.Resources.Devices.mobiles.json";
-    private static readonly IReadOnlyList<Device> Mobiles;
-
-    static MobileParser()
-    {
-        Mobiles = RegexLoader.LoadRegexes<Device>(ResourceName);
-    }
+    [RegexSource("Resources/Devices/mobiles.json")]
+    private static partial IReadOnlyList<Device> Mobiles { get; }
 
     public override bool TryParse(
         string userAgent,
