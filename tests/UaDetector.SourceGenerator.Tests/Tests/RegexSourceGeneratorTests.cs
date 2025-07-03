@@ -445,6 +445,75 @@ public class RegexSourceGeneratorTests
                         """,
                 ],
             };
+        
+        yield return () =>
+            new SourceGeneratorTestCase
+            {
+                ModelTypeName = "Bot",
+                RegexPattern = "Amazonbot",
+                JsonContent = """
+                    [
+                        {
+                            "regex": "Amazonbot",
+                            "name": "Amazon Bot",
+                            "category": 3,
+                            "url": "https://developer.amazon.com/support/amazonbot",
+                            "producer": {
+                                "name": "Amazon.com, Inc.",
+                                "url": "https://www.amazon.com/"
+                            }
+                        }
+                    ]
+                    """,
+                DeserializedModels = """
+                    [
+                        new global::UaDetector.Models.Bot
+                        {
+                            Regex = BotRegex0,
+                            Name = "Amazon Bot",
+                            Category = (global::UaDetector.Abstractions.Enums.BotCategory)3,
+                            Url = "https://developer.amazon.com/support/amazonbot",
+                            Producer = new global::UaDetector.Models.BotProducer
+                            {
+                                Name = "Amazon.com, Inc.",
+                                Url = "https://www.amazon.com/",
+                            },
+                        },
+                    ]
+                    """,
+                ModelSourceCodes =
+                [
+                    """
+                    using System.Text.RegularExpressions;
+                    using UaDetector.Abstractions.Enums;
+                    
+                    namespace UaDetector.Models;
+                    
+                    internal sealed class Bot
+                    {
+                        public required Regex Regex { get; init; }
+                        public required string Name { get; init; }
+                        public BotCategory? Category { get; init; }
+                        public string? Url { get; init; }
+                        public BotProducer? Producer { get; init; }
+                    }
+                    """,
+                    """
+                    namespace UaDetector.Models;
+                    
+                    internal sealed class BotProducer
+                    {
+                        public string? Name { get; init; }
+                        public string? Url { get; init; }
+                    }
+                    """,
+                    """
+                    namespace UaDetector.Abstractions.Enums;
+                    
+                    public enum BotCategory;
+                    """
+                ],
+            };
     }
 
     private static string IndentListContent(string input)
