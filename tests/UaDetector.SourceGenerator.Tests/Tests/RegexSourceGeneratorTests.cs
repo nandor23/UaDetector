@@ -116,7 +116,11 @@ public class RegexSourceGeneratorTests
                 AdditionalFiles = { ("Resources/regexes.json", testCase.JsonContent) },
                 GeneratedSources =
                 {
-                    (typeof(RegexSourceGenerator), "Parser.g.cs", expectedGeneratedCode),
+                    (
+                        typeof(RegexSourceGenerator),
+                        "Parser.g.cs",
+                        expectedGeneratedCode.ReplaceLineEndings()
+                    ),
                 },
             },
         };
@@ -167,7 +171,11 @@ public class RegexSourceGeneratorTests
                 AdditionalFiles = { ("Resources/regexes.json", testCase.JsonContent) },
                 GeneratedSources =
                 {
-                    (typeof(RegexSourceGenerator), "Parser.g.cs", expectedGeneratedCode),
+                    (
+                        typeof(RegexSourceGenerator),
+                        "Parser.g.cs",
+                        expectedGeneratedCode.ReplaceLineEndings()
+                    ),
                 },
             },
         };

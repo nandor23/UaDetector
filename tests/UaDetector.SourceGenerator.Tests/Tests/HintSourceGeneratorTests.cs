@@ -74,7 +74,11 @@ public class HintSourceGeneratorTests
                 AdditionalFiles = { ("Resources/hints.json", jsonContent) },
                 GeneratedSources =
                 {
-                    (typeof(HintSourceGenerator), "HintParser.g.cs", expectedGeneratedCode),
+                    (
+                        typeof(HintSourceGenerator),
+                        "HintParser.g.cs",
+                        expectedGeneratedCode.ReplaceLineEndings()
+                    ),
                 },
             },
         };

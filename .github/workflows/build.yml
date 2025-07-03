@@ -1,4 +1,4 @@
-name: Build
+name: Build and Test
 on:
   push:
     branches: [ "main" ]
@@ -8,6 +8,37 @@ env:
   DOTNET_VERSION: 9.0.x
 
 jobs:
+  test-source-generator:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: true
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: ${{ env.DOTNET_VERSION }}
+
+      - name: Restore dependencies for UaDetector.SourceGenerator
+        run: dotnet restore src/UaDetector.SourceGenerator/UaDetector.SourceGenerator.csproj
+
+      - name: Restore dependencies for UaDetector.SourceGenerator.Tests
+        run: dotnet restore tests/UaDetector.SourceGenerator.Tests/UaDetector.SourceGenerator.Tests.csproj
+
+      - name: Build UaDetector.SourceGenerator
+        run: dotnet build src/UaDetector.SourceGenerator/UaDetector.SourceGenerator.csproj --no-restore
+
+      - name: Build UaDetector.SourceGenerator.Tests
+        run: dotnet build tests/UaDetector.SourceGenerator.Tests --no-restore
+
+      - name: Test UaDetector.SourceGenerator
+        run: dotnet test tests/UaDetector.SourceGenerator.Tests --no-build
+
   build:
     runs-on: ubuntu-latest
 
@@ -32,9 +63,6 @@ jobs:
 
       - name: Test UaDetector.MemoryCache
         run: dotnet test tests/UaDetector.MemoryCache.Tests --no-build
-
-      - name: Test UaDetector.SourceGenerator
-        run: dotnet test tests/UaDetector.SourceGenerator.Tests --no-build
 
       - name: Test UaDetector.Abstractions
         run: dotnet test tests/UaDetector.Abstractions.Tests --no-build
