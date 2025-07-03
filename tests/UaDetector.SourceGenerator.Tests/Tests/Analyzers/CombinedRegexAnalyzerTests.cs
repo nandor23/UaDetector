@@ -3,21 +3,22 @@ using UaDetector.SourceGenerator.Analyzers;
 
 namespace UaDetector.SourceGenerator.Tests.Tests.Analyzers;
 
-public class HintSourceAnalyzerTests
+public class CombinedRegexAnalyzerTests
 {
     [Test]
-    public async Task ReportDiagnostic_WhenPropertyTypeIsInvalid()
+    public async Task ReportDiagnostic_WhenRegexSourceAttributeIsMissing()
     {
         const string sourceCode = """
             using System.Collections.Frozen;
             using UaDetector.Attributes;
+            using System.Text.RegularExpressions;
 
             namespace UaDetector;
 
             internal static partial class Parser
             {
-                [HintSource("Resources/Hints/test_hints.json")]
-                internal static partial FrozenDictionary<int, string> Hints { get; }
+                [CombinedRegex]
+                private static partial Regex CombinedRegex { get; }
             }
             """;
 
@@ -27,29 +28,21 @@ public class HintSourceAnalyzerTests
             using System;
 
             [AttributeUsage(AttributeTargets.Property)]
-            internal sealed class HintSourceAttribute : Attribute
-            {
-                public string FilePath { get; }
-
-                public HintSourceAttribute(string filePath)
-                {
-                    FilePath = filePath;
-                }
-            }
+            internal sealed class CombinedRegexAttribute : Attribute;
             """;
 
-        var test = new Helpers.AnalyzerTest<HintSourceAnalyzer>
+        var test = new Helpers.AnalyzerTest<CombinedRegexAnalyzer>
         {
             TestState =
             {
                 Sources = { sourceCode, attributeCode },
                 ExpectedDiagnostics =
                 {
-                    DiagnosticResult.CompilerError("UAD002").WithSpan(9, 59, 9, 64),
                     DiagnosticResult
                         .CompilerError("CS9248")
-                        .WithSpan(9, 59, 9, 64)
-                        .WithArguments("UaDetector.Parser.Hints"),
+                        .WithSpan(10, 34, 10, 47)
+                        .WithArguments("UaDetector.Parser.CombinedRegex"),
+                    DiagnosticResult.CompilerError("UAD004").WithSpan(10, 34, 10, 47),
                 },
             },
         };

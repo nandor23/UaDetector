@@ -18,7 +18,7 @@ public class HintSourceGeneratorTests
         }
         """;
 
-    private const string HintSourceAttribute = """
+    private const string HintSourceAttributeCode = """
         namespace UaDetector.Attributes;
 
         using System;
@@ -70,7 +70,7 @@ public class HintSourceGeneratorTests
         {
             TestState =
             {
-                Sources = { SourceCode, HintSourceAttribute },
+                Sources = { SourceCode, HintSourceAttributeCode },
                 AdditionalFiles = { ("Resources/hints.json", jsonContent) },
                 GeneratedSources =
                 {
@@ -95,7 +95,7 @@ public class HintSourceGeneratorTests
         {
             TestState =
             {
-                Sources = { SourceCode, HintSourceAttribute },
+                Sources = { SourceCode, HintSourceAttributeCode },
                 AdditionalFiles = { ("Resources/hints.json", jsonContent) },
                 ExpectedDiagnostics =
                 {

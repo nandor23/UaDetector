@@ -41,7 +41,7 @@ public class RegexSourceGeneratorTests
             }
             """;
 
-    private const string RegexSourceAttribute = """
+    private const string RegexSourceAttributeCode = """
         namespace UaDetector.Attributes;
 
         using System;
@@ -60,7 +60,7 @@ public class RegexSourceGeneratorTests
         }
         """;
 
-    private const string CombinedRegexAttribute = """
+    private const string CombinedRegexAttributeCode = """
         namespace UaDetector.Attributes;
 
         using System;
@@ -110,8 +110,8 @@ public class RegexSourceGeneratorTests
                 Sources =
                 {
                     GetSourceCodeWithCombinedRegex(testCase.ModelTypeName),
-                    RegexSourceAttribute,
-                    CombinedRegexAttribute,
+                    RegexSourceAttributeCode,
+                    CombinedRegexAttributeCode,
                 },
                 AdditionalFiles = { ("Resources/regexes.json", testCase.JsonContent) },
                 GeneratedSources =
@@ -162,7 +162,7 @@ public class RegexSourceGeneratorTests
                 Sources =
                 {
                     GetSourceCodeWithoutCombinedRegex(testCase.ModelTypeName),
-                    RegexSourceAttribute,
+                    RegexSourceAttributeCode,
                 },
                 AdditionalFiles = { ("Resources/regexes.json", testCase.JsonContent) },
                 GeneratedSources =
@@ -191,8 +191,8 @@ public class RegexSourceGeneratorTests
                 Sources =
                 {
                     GetSourceCodeWithCombinedRegex(testCase.ModelTypeName),
-                    RegexSourceAttribute,
-                    CombinedRegexAttribute,
+                    RegexSourceAttributeCode,
+                    CombinedRegexAttributeCode,
                 },
                 AdditionalFiles = { ("Resources/regexes.json", testCase.JsonContent[..^1]) },
                 ExpectedDiagnostics = { DiagnosticResult.CompilerError("UAD001") },
