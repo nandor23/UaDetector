@@ -27,8 +27,14 @@ jobs:
       - name: Restore dependencies for UaDetector.SourceGenerator
         run: dotnet restore src/UaDetector.SourceGenerator/UaDetector.SourceGenerator.csproj
 
+      - name: Restore dependencies for UaDetector.SourceGenerator.Tests
+        run: dotnet restore tests/UaDetector.SourceGenerator.Tests/UaDetector.SourceGenerator.Tests.csproj
+
       - name: Build UaDetector.SourceGenerator
         run: dotnet build src/UaDetector.SourceGenerator/UaDetector.SourceGenerator.csproj --no-restore
+
+      - name: Build UaDetector.SourceGenerator.Tests
+        run: dotnet build tests/UaDetector.SourceGenerator.Tests --no-restore
 
       - name: Test UaDetector.SourceGenerator
         run: dotnet test tests/UaDetector.SourceGenerator.Tests --no-build
