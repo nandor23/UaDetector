@@ -190,9 +190,9 @@ public class RegexSourceGeneratorTests
                 JsonContent = """
                     [
                         {
-                          "regex": "iTunes",
-                          "name": "iTunes", 
-                          "version": "$1"
+                            "regex": "iTunes",
+                            "name": "iTunes", 
+                            "version": "$1"
                         }
                     ]
                     """,
@@ -231,15 +231,15 @@ public class RegexSourceGeneratorTests
                 JsonContent = """
                     [
                         {
-                          "regex": "Brave",
-                          "name": "Brave",
-                          "version": "$1",
-                          "engine": {
-                            "default": "Blink",
-                            "versions": {
-                              "28": "Blink"
+                            "regex": "Brave",
+                            "name": "Brave",
+                            "version": "$1",
+                            "engine": {
+                                "default": "Blink",
+                                "versions": {
+                                    "28": "Blink"
+                                }
                             }
-                          }
                         }
                     ]
                     """,
@@ -298,8 +298,8 @@ public class RegexSourceGeneratorTests
                 JsonContent = """
                     [
                         {
-                          "regex": "Maple",
-                          "name": "Maple"
+                            "regex": "Maple",
+                            "name": "Maple"
                         }
                     ]
                     """,
@@ -378,6 +378,70 @@ public class RegexSourceGeneratorTests
                             public required Regex Regex { get; init; }
                             public required string Version { get; init; }
                         }
+                        """,
+                ],
+            };
+
+        yield return () =>
+            new SourceGeneratorTestCase
+            {
+                ModelTypeName = "Device",
+                RegexPattern = "Dell",
+                JsonContent = """
+                    [
+                        {
+                            "brand": "Dell",
+                            "regex": "Dell",
+                            "type": 0
+                        }
+                    ]
+                    """,
+                DeserializedModels = """
+                    [
+                        new global::UaDetector.Models.Device
+                        {
+                            Regex = DeviceRegex0,
+                            Brand = "Dell",
+                            Type = (global::UaDetector.Abstractions.Enums.DeviceType)0,
+                        },
+                    ]
+                    """,
+                ModelSourceCodes =
+                [
+                    """
+                        using System.Text.RegularExpressions;
+                        using UaDetector.Abstractions.Enums;
+                        using System.Collections.Generic;
+
+                        namespace UaDetector.Models;
+
+                        internal sealed class Device
+                        {
+                            public required Regex Regex { get; init; }
+                            public required string Brand { get; init; }
+                            public DeviceType? Type { get; init; }
+                            public string? Model { get; init; }
+                            public IReadOnlyList<DeviceModel>? ModelVariants { get; init; }
+                        }
+                        """,
+                    """
+                        using System.Text.RegularExpressions;
+                        using UaDetector.Abstractions.Enums;
+
+                        namespace UaDetector.Models;
+
+                        internal sealed class DeviceModel
+                        {
+                            public required Regex Regex { get; init; }
+                            public DeviceType? Type { get; init; }
+                            public string? Brand { get; init; }
+                            public string? Name { get; init; }
+                        }
+                        """,
+                    """
+                        namespace UaDetector.Abstractions.Enums;
+
+                        public enum DeviceType;
                         """,
                 ],
             };
