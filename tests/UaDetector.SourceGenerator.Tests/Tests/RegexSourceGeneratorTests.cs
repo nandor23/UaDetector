@@ -445,7 +445,7 @@ public class RegexSourceGeneratorTests
                         """,
                 ],
             };
-        
+
         yield return () =>
             new SourceGeneratorTestCase
             {
@@ -484,34 +484,78 @@ public class RegexSourceGeneratorTests
                 ModelSourceCodes =
                 [
                     """
-                    using System.Text.RegularExpressions;
-                    using UaDetector.Abstractions.Enums;
-                    
-                    namespace UaDetector.Models;
-                    
-                    internal sealed class Bot
-                    {
-                        public required Regex Regex { get; init; }
-                        public required string Name { get; init; }
-                        public BotCategory? Category { get; init; }
-                        public string? Url { get; init; }
-                        public BotProducer? Producer { get; init; }
-                    }
+                        using System.Text.RegularExpressions;
+                        using UaDetector.Abstractions.Enums;
+
+                        namespace UaDetector.Models;
+
+                        internal sealed class Bot
+                        {
+                            public required Regex Regex { get; init; }
+                            public required string Name { get; init; }
+                            public BotCategory? Category { get; init; }
+                            public string? Url { get; init; }
+                            public BotProducer? Producer { get; init; }
+                        }
+                        """,
+                    """
+                        namespace UaDetector.Models;
+
+                        internal sealed class BotProducer
+                        {
+                            public string? Name { get; init; }
+                            public string? Url { get; init; }
+                        }
+                        """,
+                    """
+                        namespace UaDetector.Abstractions.Enums;
+
+                        public enum BotCategory;
+                        """,
+                ],
+            };
+
+        yield return () =>
+            new SourceGeneratorTestCase
+            {
+                ModelTypeName = "VendorFragment",
+                RegexPattern = "Dell",
+                JsonContent = """
+                    [
+                        {
+                            "brand": "Dell",
+                            "regexes": [
+                                "Dell"
+                            ]
+                        }
+                    ]
                     """,
-                    """
-                    namespace UaDetector.Models;
-                    
-                    internal sealed class BotProducer
-                    {
-                        public string? Name { get; init; }
-                        public string? Url { get; init; }
-                    }
+                DeserializedModels = """
+                    [
+                        new global::UaDetector.Models.VendorFragment
+                        {
+                            Brand = "Dell",
+                            Regexes = new global::System.Text.RegularExpressions.Regex[]
+                            {
+                                VendorFragmentRegex0,
+                            },
+                        },
+                    ]
                     """,
+                ModelSourceCodes =
+                [
                     """
-                    namespace UaDetector.Abstractions.Enums;
-                    
-                    public enum BotCategory;
-                    """
+                        using System.Text.RegularExpressions;
+                        using System.Collections.Generic;
+
+                        namespace UaDetector.Models;
+
+                        internal sealed class VendorFragment
+                        {
+                            public required string Brand { get; init; }
+                            public required IReadOnlyList<Regex> Regexes { get; init; }
+                        }
+                        """,
                 ],
             };
     }
