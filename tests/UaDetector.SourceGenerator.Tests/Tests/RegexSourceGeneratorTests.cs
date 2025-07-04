@@ -117,7 +117,7 @@ public class RegexSourceGeneratorTests
                     (
                         typeof(RegexSourceGenerator),
                         "Parser.g.cs",
-                        expectedGeneratedCode.ReplaceLineEndings()
+                        expectedGeneratedCode.ReplaceLineEndings("\n")
                     ),
                 },
             },
@@ -172,7 +172,7 @@ public class RegexSourceGeneratorTests
                     (
                         typeof(RegexSourceGenerator),
                         "Parser.g.cs",
-                        expectedGeneratedCode.ReplaceLineEndings()
+                        expectedGeneratedCode.ReplaceLineEndings("\n")
                     ),
                 },
             },

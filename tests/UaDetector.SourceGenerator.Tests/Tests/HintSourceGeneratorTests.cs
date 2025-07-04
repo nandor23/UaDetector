@@ -77,7 +77,7 @@ public class HintSourceGeneratorTests
                     (
                         typeof(HintSourceGenerator),
                         "Parser.g.cs",
-                        expectedGeneratedCode.ReplaceLineEndings()
+                        expectedGeneratedCode.ReplaceLineEndings("\n")
                     ),
                 },
             },
