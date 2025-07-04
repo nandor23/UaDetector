@@ -86,9 +86,7 @@ public class RegexSourceGeneratorTests
                         global::System.Text.RegularExpressions.RegexOptions.IgnoreCase | 
                         global::System.Text.RegularExpressions.RegexOptions.Compiled);
             
-                private static readonly global::System.Collections.Generic.IReadOnlyList<global::UaDetector.Models.{{testCase.ModelTypeName}}> _Regexes = {{IndentListContent(
-                testCase.DeserializedModels
-            )}};
+                private static readonly global::System.Collections.Generic.IReadOnlyList<global::UaDetector.Models.{{testCase.ModelTypeName}}> _Regexes = {{IndentListContent(testCase.DeserializedModels)}};
             
                 internal static partial global::System.Collections.Generic.IReadOnlyList<global::UaDetector.Models.{{testCase.ModelTypeName}}> Regexes => _Regexes;
             
