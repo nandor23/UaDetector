@@ -77,7 +77,7 @@ public class RegexSourceGeneratorTests
     {
         string expectedGeneratedCode = $$"""
             namespace UaDetector;
-
+            
             partial class Parser
             {
                 private static readonly global::System.Text.RegularExpressions.Regex {{testCase.ModelTypeName}}Regex0 = 
@@ -85,22 +85,22 @@ public class RegexSourceGeneratorTests
                         @"{{RegexBuilder.BuildPattern(testCase.RegexPattern)}}", 
                         global::System.Text.RegularExpressions.RegexOptions.IgnoreCase | 
                         global::System.Text.RegularExpressions.RegexOptions.Compiled);
-
+            
                 private static readonly global::System.Collections.Generic.IReadOnlyList<global::UaDetector.Models.{{testCase.ModelTypeName}}> _Regexes = {{IndentListContent(
                 testCase.DeserializedModels
             )}};
-
+            
                 internal static partial global::System.Collections.Generic.IReadOnlyList<global::UaDetector.Models.{{testCase.ModelTypeName}}> Regexes => _Regexes;
-
+            
                 private static readonly global::System.Text.RegularExpressions.Regex _CombinedRegex = 
                     new global::System.Text.RegularExpressions.Regex(
                         @"{{RegexBuilder.BuildPattern(testCase.RegexPattern)}}", 
                         global::System.Text.RegularExpressions.RegexOptions.IgnoreCase | 
                         global::System.Text.RegularExpressions.RegexOptions.Compiled);
-
+            
                 private static partial global::System.Text.RegularExpressions.Regex CombinedRegex => _CombinedRegex;
             }
-
+            
             """;
 
         var test = new IncrementalGeneratorTest<RegexSourceGenerator>
@@ -141,7 +141,7 @@ public class RegexSourceGeneratorTests
     {
         string expectedGeneratedCode = $$"""
             namespace UaDetector;
-
+            
             partial class Parser
             {
                 private static readonly global::System.Text.RegularExpressions.Regex {{testCase.ModelTypeName}}Regex0 = 
@@ -149,14 +149,14 @@ public class RegexSourceGeneratorTests
                         @"{{RegexBuilder.BuildPattern(testCase.RegexPattern)}}", 
                         global::System.Text.RegularExpressions.RegexOptions.IgnoreCase | 
                         global::System.Text.RegularExpressions.RegexOptions.Compiled);
-
+            
                 private static readonly global::System.Collections.Generic.IReadOnlyList<global::UaDetector.Models.{{testCase.ModelTypeName}}> _Regexes = {{IndentListContent(
                 testCase.DeserializedModels
             )}};
 
                 internal static partial global::System.Collections.Generic.IReadOnlyList<global::UaDetector.Models.{{testCase.ModelTypeName}}> Regexes => _Regexes;
             }
-
+            
             """;
 
         var test = new IncrementalGeneratorTest<RegexSourceGenerator>

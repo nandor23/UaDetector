@@ -11,7 +11,7 @@ public class HintSourceGeneratorTests
 
         namespace UaDetector;
 
-        internal static partial class HintParser
+        internal static partial class Parser
         {
             [HintSource("Resources/hints.json")]
             internal static partial FrozenDictionary<string, string> Hints { get; }
@@ -49,7 +49,7 @@ public class HintSourceGeneratorTests
         const string expectedGeneratedCode = """
             namespace UaDetector;
 
-            static partial class HintParser
+            static partial class Parser
             {
                 private static readonly global::System.Collections.Frozen.FrozenDictionary<string, string> _Hints =
                     global::System.Collections.Frozen.FrozenDictionary.ToFrozenDictionary(
@@ -76,7 +76,7 @@ public class HintSourceGeneratorTests
                 {
                     (
                         typeof(HintSourceGenerator),
-                        "HintParser.g.cs",
+                        "Parser.g.cs",
                         expectedGeneratedCode.ReplaceLineEndings()
                     ),
                 },
@@ -107,7 +107,7 @@ public class HintSourceGeneratorTests
                     DiagnosticResult
                         .CompilerError("CS9248")
                         .WithSpan(9, 62, 9, 67)
-                        .WithArguments("UaDetector.HintParser.Hints"),
+                        .WithArguments("UaDetector.Parser.Hints"),
                 },
             },
         };
