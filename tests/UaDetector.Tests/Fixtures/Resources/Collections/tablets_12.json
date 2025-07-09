@@ -5392,5 +5392,32 @@
         "code": 512
       }
     }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 15; SM-X620) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.6998.895 YaApp_Android/25.43/apad YaSearchBrowser/25.43/apad BroPP/1.0 SA/3 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "15",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "25.43",
+      "engine": {
+        "name": "Blink",
+        "version": "134.0.6998.895"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "Galaxy Tab S10 FE+ 13.1\"",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
   }
 ]
