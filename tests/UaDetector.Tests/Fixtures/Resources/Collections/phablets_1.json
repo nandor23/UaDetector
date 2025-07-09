@@ -8780,5 +8780,59 @@
         "code": 97
       }
     }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 15; SM-W9025) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/28.1 Chrome/130.0.0.0 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "15",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Samsung Browser",
+      "code": 512,
+      "version": "28.1",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "130.0.0.0"
+      }
+    },
+    "device": {
+      "type": 10,
+      "model": "Galaxy W25",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 15; 24117RN76L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "15",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "137.0.0.0",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "137.0.0.0"
+      }
+    },
+    "device": {
+      "type": 10,
+      "model": "Redmi Note 14",
+      "brand": {
+        "name": "Xiaomi",
+        "code": 1973
+      }
+    }
   }
 ]

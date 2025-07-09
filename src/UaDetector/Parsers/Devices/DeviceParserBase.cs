@@ -2100,6 +2100,8 @@ internal abstract class DeviceParserBase
             { BrandCode.Tricolor, BrandNames.Tricolor },
             { BrandCode.XB, BrandNames.XB },
             { BrandCode.Ziovo, BrandNames.Ziovo },
+            {BrandCode.GVill, BrandNames.GVill},
+            {BrandCode.Vitumi, BrandNames.Vitumi},
         }.ToFrozenDictionary();
 
         BrandNameMapping = BrandCodeMapping
