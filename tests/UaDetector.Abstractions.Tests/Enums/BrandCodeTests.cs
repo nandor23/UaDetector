@@ -2104,6 +2104,8 @@ public class BrandCodeTests
             { BrandCode.Tricolor, 2080 },
             { BrandCode.XB, 2081 },
             { BrandCode.Ziovo, 2082 },
+            { BrandCode.GVill, 2083 },
+            { BrandCode.Vitumi, 2084 },
         };
 
         expectedValues.Count.ShouldBe(Enum.GetValues<BrandCode>().Length);

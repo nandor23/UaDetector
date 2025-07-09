@@ -2085,4 +2085,6 @@ public static class BrandNames
     public const string Tricolor = "Tricolor";
     public const string XB = "XB";
     public const string Ziovo = "ZIOVO";
+    public const string GVill = "G-Vill";
+    public const string Vitumi = "Vitumi";
 }
