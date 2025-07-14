@@ -517,6 +517,10 @@
     "name": "Lineage OS",
     "versions": [
       {
+        "regex": "Android 16",
+        "version": "23"
+      },
+      {
         "regex": "Android 15",
         "version": "22"
       },

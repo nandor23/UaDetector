@@ -2087,4 +2087,7 @@ public static class BrandNames
     public const string Ziovo = "ZIOVO";
     public const string GVill = "G-Vill";
     public const string Vitumi = "Vitumi";
+    public const string Fanvace = "Fanvace";
+    public const string GlobalSec = "GlobalSec";
+    public const string Vasoun = "VASOUN";
 }

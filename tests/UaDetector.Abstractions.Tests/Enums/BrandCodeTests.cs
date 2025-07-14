@@ -2106,6 +2106,9 @@ public class BrandCodeTests
             { BrandCode.Ziovo, 2082 },
             { BrandCode.GVill, 2083 },
             { BrandCode.Vitumi, 2084 },
+            { BrandCode.Fanvace, 2085 },
+            { BrandCode.GlobalSec, 2086 },
+            { BrandCode.Vasoun, 2087 },
         };
 
         expectedValues.Count.ShouldBe(Enum.GetValues<BrandCode>().Length);
