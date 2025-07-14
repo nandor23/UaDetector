@@ -6,7 +6,6 @@ YamlToJsonConverter.ConvertOsRegex();
 
 // YamlToJsonConverter.ConvertBrowserRegex();
 
-
 /*YamlToJsonConverter.ConvertOsRegex();
 YamlToJsonConverter.ConvertOsFixture();
 YamlToJsonConverter.ConvertDeviceRegex();

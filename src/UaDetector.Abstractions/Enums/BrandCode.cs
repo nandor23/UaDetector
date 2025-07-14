@@ -2086,5 +2086,8 @@ public enum BrandCode
     XB = 2081,
     Ziovo = 2082,
     GVill = 2083,
-    Vitumi = 2084
+    Vitumi = 2084,
+    Fanvace = 2085,
+    GlobalSec = 2086,
+    Vasoun = 2087,
 }

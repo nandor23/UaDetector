@@ -176,5 +176,16 @@
         "name": "$1"
       }
     ]
+  },
+  {
+    "regex": "Fanvace",
+    "brand": "Fanvace",
+    "type": 9,
+    "modelVariants": [
+      {
+        "regex": "Fanvace[- _]([^;/)]+)(?: Build|[);])",
+        "name": "$1"
+      }
+    ]
   }
 ]

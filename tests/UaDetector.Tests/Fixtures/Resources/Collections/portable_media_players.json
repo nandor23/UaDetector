@@ -1232,5 +1232,32 @@
         "code": 395
       }
     }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 13; Fanvace M36) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "13",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "108.0.0.0",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "108.0.0.0"
+      }
+    },
+    "device": {
+      "type": 9,
+      "model": "M36",
+      "brand": {
+        "name": "Fanvace",
+        "code": 2085
+      }
+    }
   }
 ]
