@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="System.Collections.Immutable" PrivateAssets="all" GeneratePathProperty="true" VersionOverride="9.0.6" />
+    <PackageReference Include="System.Collections.Immutable" PrivateAssets="all" GeneratePathProperty="true" VersionOverride="9.0.7" />
     <PackageReference Include="Microsoft.Bcl.AsyncInterfaces" PrivateAssets="all" GeneratePathProperty="true" />
     <PackageReference Include="Microsoft.Bcl.HashCode" PrivateAssets="all" GeneratePathProperty="true" />
     <PackageReference Include="System.Buffers" PrivateAssets="all" GeneratePathProperty="true" />
