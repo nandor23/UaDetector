@@ -410,7 +410,7 @@ public sealed partial class OsParser : IOsParser
                     OsCode.JavaMe,
                     OsCode.Rex,
                     OsCode.RtosAndNext,
-                    OsCode.KolibriOs
+                    OsCode.KolibriOs,
                 }.ToFrozenSet()
             },
             {
