@@ -679,5 +679,10 @@
     "regex": "MatomoTrackerSDK/(\\d+[.\\d]+)",
     "name": "MatomoTracker",
     "version": "$1"
+  },
+  {
+    "regex": "libHTTP/(\\d+[.\\d]+)",
+    "name": "LibHTTP",
+    "version": "$1"
   }
 ]

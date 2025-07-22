@@ -223,6 +223,7 @@ public sealed partial class OsParser : IOsParser
             { OsCode.PalmOs, OsNames.PalmOs },
             { OsCode.Webian, OsNames.Webian },
             { OsCode.WebOs, OsNames.WebOs },
+            { OsCode.KolibriOs, OsNames.KolibriOs },
         }.ToFrozenDictionary();
 
         OsNameMapping = OsCodeMapping
@@ -409,6 +410,7 @@ public sealed partial class OsParser : IOsParser
                     OsCode.JavaMe,
                     OsCode.Rex,
                     OsCode.RtosAndNext,
+                    OsCode.KolibriOs,
                 }.ToFrozenSet()
             },
             {

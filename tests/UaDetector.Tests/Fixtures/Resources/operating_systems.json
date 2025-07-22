@@ -6926,5 +6926,13 @@
       "version": "26",
       "family": "Mac"
     }
+  },
+  {
+    "userAgent": "KolibriOS libHTTP/1.1",
+    "os": {
+      "name": "KolibriOS",
+      "code": 186,
+      "family": "Real-time OS"
+    }
   }
 ]

@@ -2,7 +2,8 @@
 
 YamlToJsonConverter.ConvertCollectionFixture();
 YamlToJsonConverter.ConvertDeviceRegex();
-YamlToJsonConverter.ConvertOsRegex();
+YamlToJsonConverter.ConvertClientRegex();
+
 
 // YamlToJsonConverter.ConvertBrowserRegex();
 

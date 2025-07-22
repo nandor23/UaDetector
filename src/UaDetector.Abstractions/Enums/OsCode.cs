@@ -188,4 +188,5 @@ public enum OsCode
     PalmOs = 183,
     Webian = 184,
     WebOs = 185,
+    KolibriOs = 186,
 }
