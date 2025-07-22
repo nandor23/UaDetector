@@ -207,6 +207,7 @@ public class OsCodeTests
             { OsCode.PalmOs, 183 },
             { OsCode.Webian, 184 },
             { OsCode.WebOs, 185 },
+            { OsCode.KolibriOs, 186 },
         };
 
         expectedValues.Count.ShouldBe(Enum.GetValues<OsCode>().Length);

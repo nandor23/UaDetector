@@ -1,5 +1,9 @@
 [
   {
+    "regex": "KolibriOS",
+    "name": "KolibriOS"
+  },
+  {
     "regex": "Coolita OS QJY/.+LiteOS(\\d+[.\\d]+)",
     "name": "Coolita OS",
     "version": "$1"

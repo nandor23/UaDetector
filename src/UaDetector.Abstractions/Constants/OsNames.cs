@@ -188,4 +188,5 @@ public static class OsNames
     public const string PalmOs = "palmOS";
     public const string Webian = "Webian";
     public const string WebOs = "webOS";
+    public const string KolibriOs = "KolibriOS";
 }

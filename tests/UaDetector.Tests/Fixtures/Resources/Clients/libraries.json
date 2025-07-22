@@ -1037,5 +1037,13 @@
       "name": "MatomoTracker",
       "version": "7.7.0"
     }
+  },
+  {
+    "userAgent": "KolibriOS libHTTP/1.1",
+    "client": {
+      "type": 2,
+      "name": "LibHTTP",
+      "version": "1.1"
+    }
   }
 ]
