@@ -681,4 +681,6 @@ public enum BrowserCode
     ZircoBrowser = 676,
     ZordoBrowser = 677,
     ZteBrowser = 678,
+    QuarkPc = 679,
+    Quetta = 680,
 }

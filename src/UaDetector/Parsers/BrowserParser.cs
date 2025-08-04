@@ -718,6 +718,8 @@ public sealed partial class BrowserParser : IBrowserParser
             { BrowserCode.ZircoBrowser, BrowserNames.ZircoBrowser },
             { BrowserCode.ZordoBrowser, BrowserNames.ZordoBrowser },
             { BrowserCode.ZteBrowser, BrowserNames.ZteBrowser },
+            { BrowserCode.QuarkPc, BrowserNames.QuarkPc },
+            { BrowserCode.Quetta, BrowserNames.Quetta },
         }.ToFrozenDictionary();
 
         BrowserNameMapping = BrowserCodeMapping
@@ -1060,6 +1062,8 @@ public sealed partial class BrowserParser : IBrowserParser
                     BrowserCode.WhaleTvBrowser,
                     BrowserCode.Singlebox,
                     BrowserCode.HerondBrowser,
+                    BrowserCode.QuarkPc,
+                    BrowserCode.Quetta,
                 }.ToFrozenSet()
             },
             {

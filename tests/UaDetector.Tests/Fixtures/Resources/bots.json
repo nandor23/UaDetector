@@ -11471,6 +11471,18 @@
     }
   },
   {
+    "userAgent": "azure-logic-apps/1.0 (workflow xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx; version xxxxxxxxxxxxxxxxxxxx) microsoft-flow/1.0",
+    "bot": {
+      "name": "Microsoft Power Automate",
+      "category": 11,
+      "url": "https://www.microsoft.com/en-us/power-platform/products/power-automate",
+      "producer": {
+        "name": "Microsoft Corporation",
+        "url": "https://www.microsoft.com/"
+      }
+    }
+  },
+  {
     "userAgent": "Mozilla/5.0 OnlyScans",
     "bot": {
       "name": "Generic Bot"
