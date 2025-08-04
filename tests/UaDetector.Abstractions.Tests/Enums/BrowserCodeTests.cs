@@ -700,6 +700,8 @@ public class BrowserCodeTests
             { BrowserCode.ZircoBrowser, 676 },
             { BrowserCode.ZordoBrowser, 677 },
             { BrowserCode.ZteBrowser, 678 },
+            { BrowserCode.QuarkPc, 679 },
+            { BrowserCode.Quetta, 680 },
         };
 
         expectedValues.Count.ShouldBe(Enum.GetValues<BrowserCode>().Length);

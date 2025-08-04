@@ -14019,5 +14019,34 @@
         "name": "WebKit"
       }
     }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 QuarkPC/2.1.3.259",
+    "browser": {
+      "name": "QuarkPC",
+      "code": 679,
+      "version": "2.1.3.259",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "112.0.0.0"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Mobile Safari/537.36",
+    "headers": {
+      "Sec-CH-UA": "\"Not A(Brand\";v=\"8\", \"Chromium\";v=\"132\", \"Quetta\";v=\"132\""
+    },
+    "browser": {
+      "name": "Quetta",
+      "code": 680,
+      "version": "132.0.0.0",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "132.0.0.0"
+      }
+    }
   }
 ]
