@@ -8,7 +8,7 @@ var readmePath = ReadmeLocator.GetReadmePath();
 var originalReadme = File.ReadAllText(readmePath);
 
 var browsers = BrowserParser
-    .BrowserNameMapping.Keys.Concat(BrowserHintParser.Hints.Values)
+    .BrowserNameMappings.Keys.Concat(BrowserHintParser.Hints.Values)
     .Distinct(StringComparer.OrdinalIgnoreCase);
 
 var mobileApps = MobileAppParser
@@ -48,11 +48,11 @@ var mobileApps = MobileAppParser
     .Distinct(StringComparer.OrdinalIgnoreCase);
 
 var deviceBrands = DeviceParserBase
-    .BrandNameMapping.Keys.Concat(VendorFragmentParser.VendorFragments.Select(x => x.Brand))
+    .BrandNameMappings.Keys.Concat(VendorFragmentParser.VendorFragments.Select(x => x.Brand))
     .Distinct(StringComparer.OrdinalIgnoreCase);
 
 var modifiedReadme = originalReadme
-    .ReplaceMarkerContent("OPERATING-SYSTEMS", OsParser.OsNameMapping.Keys)
+    .ReplaceMarkerContent("OPERATING-SYSTEMS", OsParser.OsNameMappings.Keys)
     .ReplaceMarkerContent("BROWSERS", browsers)
     .ReplaceMarkerContent("BROWSER-ENGINES", EngineParser.EngineNames)
     .ReplaceMarkerContent("MOBILE-APPS", mobileApps)
