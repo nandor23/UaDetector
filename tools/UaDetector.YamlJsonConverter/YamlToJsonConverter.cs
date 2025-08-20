@@ -5,9 +5,8 @@ using System.Text.Json.Serialization;
 using System.Text.RegularExpressions;
 using UaDetector.Abstractions.Enums;
 using UaDetector.Abstractions.Models;
+using UaDetector.Catalogs;
 using UaDetector.Models;
-using UaDetector.Parsers;
-using UaDetector.Parsers.Devices;
 using UaDetector.Tests.Fixtures.Models;
 using UaDetector.YamlJsonConverter.Fixtures;
 using UaDetector.YamlJsonConverter.Models;
@@ -29,40 +28,36 @@ public static class YamlToJsonConverter
     private const string CollectionFixturesFile = "collection_fixtures";
     private const string OsFixturesFile = "os_fixtures";
 
-    private static readonly FrozenDictionary<string, ClientType> ClientTypeMapping = new Dictionary<
-        string,
-        ClientType
-    >
-    {
-        { "mobile app", ClientType.MobileApp },
-        { "mediaplayer", ClientType.MediaPlayer },
-        { "library", ClientType.Library },
-        { "feed reader", ClientType.FeedReader },
-        { "pim", ClientType.PersonalInformationManager },
-    }.ToFrozenDictionary();
+    private static readonly FrozenDictionary<string, ClientType> ClientTypeMappings =
+        new Dictionary<string, ClientType>
+        {
+            { "mobile app", ClientType.MobileApp },
+            { "mediaplayer", ClientType.MediaPlayer },
+            { "library", ClientType.Library },
+            { "feed reader", ClientType.FeedReader },
+            { "pim", ClientType.PersonalInformationManager },
+        }.ToFrozenDictionary();
 
-    private static readonly FrozenDictionary<string, DeviceType> DeviceTypeMapping = new Dictionary<
-        string,
-        DeviceType
-    >
-    {
-        { "desktop", DeviceType.Desktop },
-        { "smartphone", DeviceType.Smartphone },
-        { "tablet", DeviceType.Tablet },
-        { "feature phone", DeviceType.FeaturePhone },
-        { "console", DeviceType.Console },
-        { "tv", DeviceType.Television },
-        { "car browser", DeviceType.CarBrowser },
-        { "smart display", DeviceType.SmartDisplay },
-        { "camera", DeviceType.Camera },
-        { "portable media player", DeviceType.PortableMediaPlayer },
-        { "phablet", DeviceType.Phablet },
-        { "smart speaker", DeviceType.SmartSpeaker },
-        { "wearable", DeviceType.Wearable },
-        { "peripheral", DeviceType.Peripheral },
-    }.ToFrozenDictionary();
+    private static readonly FrozenDictionary<string, DeviceType> DeviceTypeMappings =
+        new Dictionary<string, DeviceType>
+        {
+            { "desktop", DeviceType.Desktop },
+            { "smartphone", DeviceType.Smartphone },
+            { "tablet", DeviceType.Tablet },
+            { "feature phone", DeviceType.FeaturePhone },
+            { "console", DeviceType.Console },
+            { "tv", DeviceType.Television },
+            { "car browser", DeviceType.CarBrowser },
+            { "smart display", DeviceType.SmartDisplay },
+            { "camera", DeviceType.Camera },
+            { "portable media player", DeviceType.PortableMediaPlayer },
+            { "phablet", DeviceType.Phablet },
+            { "smart speaker", DeviceType.SmartSpeaker },
+            { "wearable", DeviceType.Wearable },
+            { "peripheral", DeviceType.Peripheral },
+        }.ToFrozenDictionary();
 
-    private static readonly FrozenDictionary<string, BotCategory> BotCategoryMapping =
+    private static readonly FrozenDictionary<string, BotCategory> BotCategoryMappings =
         new Dictionary<string, BotCategory>
         {
             { "Search bot", BotCategory.SearchBot },
@@ -159,13 +154,13 @@ public static class YamlToJsonConverter
         {
             Brand = x.Key,
             Regex = x.Value.Regex,
-            Type = x.Value.Type is null ? null : DeviceTypeMapping[x.Value.Type],
+            Type = x.Value.Type is null ? null : DeviceTypeMappings[x.Value.Type],
             Model = x.Value.Model,
             ModelVariants = x
                 .Value.ModelVariants?.Select(y => new DeviceModel
                 {
                     Regex = y.Regex,
-                    Type = y.Type is null ? null : DeviceTypeMapping[y.Type],
+                    Type = y.Type is null ? null : DeviceTypeMappings[y.Type],
                     Brand = y.Brand,
                     Name = y.Name,
                 })
@@ -186,7 +181,7 @@ public static class YamlToJsonConverter
         {
             Regex = x.Regex,
             Name = x.Name,
-            Category = x.Category is null ? null : BotCategoryMapping[x.Category],
+            Category = x.Category is null ? null : BotCategoryMappings[x.Category],
             Url = x.Url,
             Producer = x.Producer is null
                 ? null
@@ -235,7 +230,7 @@ public static class YamlToJsonConverter
             Os = new OsInfo
             {
                 Name = x.Os.Name,
-                Code = OsParser.OsNameMapping[x.Os.Name],
+                Code = OsCatalog.OsNameMappings[x.Os.Name],
                 Version = x.Os.Version,
                 CpuArchitecture = x.Os.Platform,
                 Family = x.Os.Family,
@@ -263,7 +258,7 @@ public static class YamlToJsonConverter
                 : new OsInfo
                 {
                     Name = x.Os.Name,
-                    Code = OsParser.OsNameMapping[x.Os.Name],
+                    Code = OsCatalog.OsNameMappings[x.Os.Name],
                     Version = x.Os.Version,
                     CpuArchitecture = x.Os.Platform,
                     Family = x.OsFamily == "Unknown" ? null : x.OsFamily,
@@ -274,7 +269,7 @@ public static class YamlToJsonConverter
                     : new ClientInfo
                     {
                         Name = x.Client.Name,
-                        Type = ClientTypeMapping[x.Client.Type],
+                        Type = ClientTypeMappings[x.Client.Type],
                         Version = x.Client.Version,
                     },
             Browser =
@@ -283,7 +278,7 @@ public static class YamlToJsonConverter
                     : new BrowserInfo
                     {
                         Name = x.Client.Name,
-                        Code = BrowserParser.BrowserNameMapping[x.Client.Name],
+                        Code = BrowserCatalog.BrowserNameMappings[x.Client.Name],
                         Version = x.Client.Version,
                         Family =
                             x.BrowserFamily == "Unknown"
@@ -305,13 +300,13 @@ public static class YamlToJsonConverter
                     ? null
                     : new DeviceInfo
                     {
-                        Type = x.Device.Type is null ? null : DeviceTypeMapping[x.Device.Type],
+                        Type = x.Device.Type is null ? null : DeviceTypeMappings[x.Device.Type],
                         Brand = x.Device.Brand is null or "Unknown"
                             ? null
                             : new BrandInfo
                             {
                                 Name = x.Device.Brand,
-                                Code = DeviceParserBase.BrandNameMapping[x.Device.Brand],
+                                Code = BrandCatalog.BrandNameMappings[x.Device.Brand],
                             },
                         Model = x.Device.Model,
                     },
@@ -320,7 +315,7 @@ public static class YamlToJsonConverter
                 : new BotInfo
                 {
                     Name = x.Bot.Name,
-                    Category = x.Bot.Category is null ? null : BotCategoryMapping[x.Bot.Category],
+                    Category = x.Bot.Category is null ? null : BotCategoryMappings[x.Bot.Category],
                     Url = x.Bot.Url,
                     Producer =
                         x.Bot.Producer is null

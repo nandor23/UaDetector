@@ -6,6 +6,7 @@ using UaDetector.Abstractions.Constants;
 using UaDetector.Abstractions.Enums;
 using UaDetector.Abstractions.Models;
 using UaDetector.Attributes;
+using UaDetector.Catalogs;
 using UaDetector.Models;
 using UaDetector.Utilities;
 
@@ -21,216 +22,19 @@ public sealed partial class OsParser : IOsParser
     private readonly UaDetectorOptions _uaDetectorOptions;
     private readonly BotParser _botParser;
 
-    internal static readonly FrozenDictionary<OsCode, string> OsCodeMapping;
-    internal static readonly FrozenDictionary<string, OsCode> OsNameMapping;
-    internal static readonly FrozenDictionary<string, FrozenSet<OsCode>> OsFamilyMapping;
+    internal static readonly FrozenDictionary<string, FrozenSet<OsCode>> OsFamilyMappings;
     internal static readonly FrozenSet<string> DesktopOsFamilies;
-    private static readonly FrozenDictionary<string, FrozenSet<string>> ClientHintPlatformMapping;
-    private static readonly FrozenDictionary<string, string> FireOsVersionMapping;
-    private static readonly FrozenDictionary<string, string> LineageOsVersionMapping;
-    private static readonly FrozenDictionary<int, string> WindowsMinorVersionMapping;
+    private static readonly FrozenDictionary<string, FrozenSet<string>> ClientHintPlatformMappings;
+    private static readonly FrozenDictionary<string, string> FireOsVersionMappings;
+    private static readonly FrozenDictionary<string, string> LineageOsVersionMappings;
+    private static readonly FrozenDictionary<int, string> WindowsMinorVersionMappings;
     private static readonly FrozenSet<string> AndroidApps;
     private static readonly FrozenDictionary<string, Regex> CpuArchitectureRegexes;
     private static readonly IReadOnlyList<string> ProcessorArchitectures;
 
     static OsParser()
     {
-        OsCodeMapping = new Dictionary<OsCode, string>
-        {
-            { OsCode.Aix, OsNames.Aix },
-            { OsCode.Android, OsNames.Android },
-            { OsCode.AndroidTv, OsNames.AndroidTv },
-            { OsCode.AlpineLinux, OsNames.AlpineLinux },
-            { OsCode.AmazonLinux, OsNames.AmazonLinux },
-            { OsCode.AmigaOs, OsNames.AmigaOs },
-            { OsCode.ArmadilloOs, OsNames.ArmadilloOs },
-            { OsCode.Aros, OsNames.Aros },
-            { OsCode.TvOs, OsNames.TvOs },
-            { OsCode.ArchLinux, OsNames.ArchLinux },
-            { OsCode.AoscOs, OsNames.AoscOs },
-            { OsCode.AspLinux, OsNames.AspLinux },
-            { OsCode.AzureLinux, OsNames.AzureLinux },
-            { OsCode.BackTrack, OsNames.BackTrack },
-            { OsCode.Bada, OsNames.Bada },
-            { OsCode.BaiduYi, OsNames.BaiduYi },
-            { OsCode.BeOs, OsNames.BeOs },
-            { OsCode.BlackBerryOs, OsNames.BlackBerryOs },
-            { OsCode.BlackBerryTabletOs, OsNames.BlackBerryTabletOs },
-            { OsCode.BlackPantherOs, OsNames.BlackPantherOs },
-            { OsCode.BlissOs, OsNames.BlissOs },
-            { OsCode.Brew, OsNames.Brew },
-            { OsCode.BrightSignOs, OsNames.BrightSignOs },
-            { OsCode.CaixaMagica, OsNames.CaixaMagica },
-            { OsCode.CentOs, OsNames.CentOs },
-            { OsCode.CentOsStream, OsNames.CentOsStream },
-            { OsCode.ClearLinuxOs, OsNames.ClearLinuxOs },
-            { OsCode.ClearOsMobile, OsNames.ClearOsMobile },
-            { OsCode.ChromeOs, OsNames.ChromeOs },
-            { OsCode.ChromiumOs, OsNames.ChromiumOs },
-            { OsCode.ChinaOs, OsNames.ChinaOs },
-            { OsCode.CoolitaOs, OsNames.CoolitaOs },
-            { OsCode.CyanogenMod, OsNames.CyanogenMod },
-            { OsCode.Debian, OsNames.Debian },
-            { OsCode.Deepin, OsNames.Deepin },
-            { OsCode.DragonFly, OsNames.DragonFly },
-            { OsCode.DvkBuntu, OsNames.DvkBuntu },
-            { OsCode.ElectroBsd, OsNames.ElectroBsd },
-            { OsCode.EulerOs, OsNames.EulerOs },
-            { OsCode.Fedora, OsNames.Fedora },
-            { OsCode.Fenix, OsNames.Fenix },
-            { OsCode.FirefoxOs, OsNames.FirefoxOs },
-            { OsCode.FireOs, OsNames.FireOs },
-            { OsCode.ForesightLinux, OsNames.ForesightLinux },
-            { OsCode.Freebox, OsNames.Freebox },
-            { OsCode.FreeBsd, OsNames.FreeBsd },
-            { OsCode.FritzOs, OsNames.FritzOs },
-            { OsCode.FydeOs, OsNames.FydeOs },
-            { OsCode.Fuchsia, OsNames.Fuchsia },
-            { OsCode.Gentoo, OsNames.Gentoo },
-            { OsCode.Genix, OsNames.Genix },
-            { OsCode.Geos, OsNames.Geos },
-            { OsCode.GNewSense, OsNames.GNewSense },
-            { OsCode.GridOs, OsNames.GridOs },
-            { OsCode.GoogleTv, OsNames.GoogleTv },
-            { OsCode.HpUx, OsNames.HpUx },
-            { OsCode.HaikuOs, OsNames.HaikuOs },
-            { OsCode.IPadOs, OsNames.IPadOs },
-            { OsCode.HarmonyOs, OsNames.HarmonyOs },
-            { OsCode.HasCodingOs, OsNames.HasCodingOs },
-            { OsCode.HelixOs, OsNames.HelixOs },
-            { OsCode.Irix, OsNames.Irix },
-            { OsCode.Inferno, OsNames.Inferno },
-            { OsCode.JavaMe, OsNames.JavaMe },
-            { OsCode.JoliOs, OsNames.JoliOs },
-            { OsCode.KaiOs, OsNames.KaiOs },
-            { OsCode.Kali, OsNames.Kali },
-            { OsCode.Kanotix, OsNames.Kanotix },
-            { OsCode.KinOs, OsNames.KinOs },
-            { OsCode.Knoppix, OsNames.Knoppix },
-            { OsCode.KreaTv, OsNames.KreaTv },
-            { OsCode.Kubuntu, OsNames.Kubuntu },
-            { OsCode.GnuLinux, OsNames.GnuLinux },
-            { OsCode.LeafOs, OsNames.LeafOs },
-            { OsCode.LindowsOs, OsNames.LindowsOs },
-            { OsCode.Linspire, OsNames.Linspire },
-            { OsCode.LineageOs, OsNames.LineageOs },
-            { OsCode.LiriOs, OsNames.LiriOs },
-            { OsCode.Loongnix, OsNames.Loongnix },
-            { OsCode.Lubuntu, OsNames.Lubuntu },
-            { OsCode.LuminOs, OsNames.LuminOs },
-            { OsCode.LuneOs, OsNames.LuneOs },
-            { OsCode.VectorLinux, OsNames.VectorLinux },
-            { OsCode.Mac, OsNames.Mac },
-            { OsCode.Maemo, OsNames.Maemo },
-            { OsCode.Mageia, OsNames.Mageia },
-            { OsCode.Mandriva, OsNames.Mandriva },
-            { OsCode.MeeGo, OsNames.MeeGo },
-            { OsCode.MetaHorizon, OsNames.MetaHorizon },
-            { OsCode.MocorDroid, OsNames.MocorDroid },
-            { OsCode.MoonOs, OsNames.MoonOs },
-            { OsCode.MotorolaEzx, OsNames.MotorolaEzx },
-            { OsCode.Mint, OsNames.Mint },
-            { OsCode.MildWild, OsNames.MildWild },
-            { OsCode.MorphOs, OsNames.MorphOs },
-            { OsCode.NetBsd, OsNames.NetBsd },
-            { OsCode.MtkNucleus, OsNames.MtkNucleus },
-            { OsCode.Mre, OsNames.Mre },
-            { OsCode.NextStep, OsNames.NextStep },
-            { OsCode.NewsOs, OsNames.NewsOs },
-            { OsCode.Nintendo, OsNames.Nintendo },
-            { OsCode.NintendoMobile, OsNames.NintendoMobile },
-            { OsCode.Nova, OsNames.Nova },
-            { OsCode.Os2, OsNames.Os2 },
-            { OsCode.Osf1, OsNames.Osf1 },
-            { OsCode.OpenBsd, OsNames.OpenBsd },
-            { OsCode.OpenVms, OsNames.OpenVms },
-            { OsCode.OpenVz, OsNames.OpenVz },
-            { OsCode.OpenWrt, OsNames.OpenWrt },
-            { OsCode.OperaTv, OsNames.OperaTv },
-            { OsCode.OracleLinux, OsNames.OracleLinux },
-            { OsCode.Ordissimo, OsNames.Ordissimo },
-            { OsCode.Pardus, OsNames.Pardus },
-            { OsCode.PcLinuxOs, OsNames.PcLinuxOs },
-            { OsCode.PicoOs, OsNames.PicoOs },
-            { OsCode.PlasmaMobile, OsNames.PlasmaMobile },
-            { OsCode.PlayStationPortable, OsNames.PlayStationPortable },
-            { OsCode.PlayStation, OsNames.PlayStation },
-            { OsCode.ProxmoxVe, OsNames.ProxmoxVe },
-            { OsCode.PuffinOs, OsNames.PuffinOs },
-            { OsCode.PureOs, OsNames.PureOs },
-            { OsCode.Qtopia, OsNames.Qtopia },
-            { OsCode.RaspberryPiOs, OsNames.RaspberryPiOs },
-            { OsCode.Raspbian, OsNames.Raspbian },
-            { OsCode.RedHat, OsNames.RedHat },
-            { OsCode.RedStar, OsNames.RedStar },
-            { OsCode.RedOs, OsNames.RedOs },
-            { OsCode.RevengeOs, OsNames.RevengeOs },
-            { OsCode.RisingOs, OsNames.RisingOs },
-            { OsCode.RiscOs, OsNames.RiscOs },
-            { OsCode.RockyLinux, OsNames.RockyLinux },
-            { OsCode.RokuOs, OsNames.RokuOs },
-            { OsCode.Rosa, OsNames.Rosa },
-            { OsCode.RouterOs, OsNames.RouterOs },
-            { OsCode.RemixOs, OsNames.RemixOs },
-            { OsCode.ResurrectionRemixOs, OsNames.ResurrectionRemixOs },
-            { OsCode.Rex, OsNames.Rex },
-            { OsCode.RazoDroid, OsNames.RazoDroid },
-            { OsCode.RtosAndNext, OsNames.RtosAndNext },
-            { OsCode.Sabayon, OsNames.Sabayon },
-            { OsCode.Suse, OsNames.Suse },
-            { OsCode.SailfishOs, OsNames.SailfishOs },
-            { OsCode.ScientificLinux, OsNames.ScientificLinux },
-            { OsCode.SeewoOs, OsNames.SeewoOs },
-            { OsCode.SerenityOs, OsNames.SerenityOs },
-            { OsCode.SirinOs, OsNames.SirinOs },
-            { OsCode.Slackware, OsNames.Slackware },
-            { OsCode.Solaris, OsNames.Solaris },
-            { OsCode.StarBladeOs, OsNames.StarBladeOs },
-            { OsCode.Syllable, OsNames.Syllable },
-            { OsCode.Symbian, OsNames.Symbian },
-            { OsCode.SymbianOs, OsNames.SymbianOs },
-            { OsCode.SymbianOsSeries40, OsNames.SymbianOsSeries40 },
-            { OsCode.SymbianOsSeries60, OsNames.SymbianOsSeries60 },
-            { OsCode.Symbian3, OsNames.Symbian3 },
-            { OsCode.TencentOs, OsNames.TencentOs },
-            { OsCode.ThreadX, OsNames.ThreadX },
-            { OsCode.Tizen, OsNames.Tizen },
-            { OsCode.TiVoOs, OsNames.TiVoOs },
-            { OsCode.TmaxOs, OsNames.TmaxOs },
-            { OsCode.Turbolinux, OsNames.Turbolinux },
-            { OsCode.Ubuntu, OsNames.Ubuntu },
-            { OsCode.Ultrix, OsNames.Ultrix },
-            { OsCode.Uos, OsNames.Uos },
-            { OsCode.Vidaa, OsNames.Vidaa },
-            { OsCode.ViziOs, OsNames.ViziOs },
-            { OsCode.WatchOs, OsNames.WatchOs },
-            { OsCode.WearOs, OsNames.WearOs },
-            { OsCode.WebTv, OsNames.WebTv },
-            { OsCode.WhaleOs, OsNames.WhaleOs },
-            { OsCode.Windows, OsNames.Windows },
-            { OsCode.WindowsCe, OsNames.WindowsCe },
-            { OsCode.WindowsIoT, OsNames.WindowsIoT },
-            { OsCode.WindowsMobile, OsNames.WindowsMobile },
-            { OsCode.WindowsPhone, OsNames.WindowsPhone },
-            { OsCode.WindowsRt, OsNames.WindowsRt },
-            { OsCode.WoPhone, OsNames.WoPhone },
-            { OsCode.Xbox, OsNames.Xbox },
-            { OsCode.Xubuntu, OsNames.Xubuntu },
-            { OsCode.YunOs, OsNames.YunOs },
-            { OsCode.Zenwalk, OsNames.Zenwalk },
-            { OsCode.ZorinOs, OsNames.ZorinOs },
-            { OsCode.IOs, OsNames.IOs },
-            { OsCode.PalmOs, OsNames.PalmOs },
-            { OsCode.Webian, OsNames.Webian },
-            { OsCode.WebOs, OsNames.WebOs },
-            { OsCode.KolibriOs, OsNames.KolibriOs },
-        }.ToFrozenDictionary();
-
-        OsNameMapping = OsCodeMapping
-            .ToDictionary(e => e.Value, e => e.Key)
-            .ToFrozenDictionary(StringComparer.OrdinalIgnoreCase);
-
-        OsFamilyMapping = new Dictionary<string, FrozenSet<OsCode>>
+        OsFamilyMappings = new Dictionary<string, FrozenSet<OsCode>>
         {
             {
                 OsFamilies.Android,
@@ -490,13 +294,13 @@ public sealed partial class OsParser : IOsParser
             OsFamilies.ChromeOs,
         }.ToFrozenSet(StringComparer.OrdinalIgnoreCase);
 
-        ClientHintPlatformMapping = new Dictionary<string, FrozenSet<string>>
+        ClientHintPlatformMappings = new Dictionary<string, FrozenSet<string>>
         {
             { OsNames.GnuLinux, new[] { "Linux" }.ToFrozenSet(StringComparer.OrdinalIgnoreCase) },
             { OsNames.Mac, new[] { "MacOS" }.ToFrozenSet(StringComparer.OrdinalIgnoreCase) },
         }.ToFrozenDictionary(StringComparer.OrdinalIgnoreCase);
 
-        FireOsVersionMapping = new Dictionary<string, string>
+        FireOsVersionMappings = new Dictionary<string, string>
         {
             { "11", "8" },
             { "10", "8" },
@@ -512,7 +316,7 @@ public sealed partial class OsParser : IOsParser
             { "2", "1" },
         }.ToFrozenDictionary();
 
-        LineageOsVersionMapping = new Dictionary<string, string>
+        LineageOsVersionMappings = new Dictionary<string, string>
         {
             { "16", "23" },
             { "15", "22" },
@@ -539,7 +343,7 @@ public sealed partial class OsParser : IOsParser
             { "4.0.4", "9.1.0" },
         }.ToFrozenDictionary();
 
-        WindowsMinorVersionMapping = new Dictionary<int, string>
+        WindowsMinorVersionMappings = new Dictionary<int, string>
         {
             { 1, "7" },
             { 2, "8" },
@@ -599,7 +403,7 @@ public sealed partial class OsParser : IOsParser
 
     private static string ApplyClientHintPlatformMapping(string platform)
     {
-        foreach (var clientHint in ClientHintPlatformMapping)
+        foreach (var clientHint in ClientHintPlatformMappings)
         {
             if (clientHint.Value.Contains(platform))
             {
@@ -612,9 +416,9 @@ public sealed partial class OsParser : IOsParser
 
     private static bool TryMapNameToFamily(string name, [NotNullWhen((true))] out string? result)
     {
-        if (OsNameMapping.TryGetValue(name, out var code))
+        if (OsCatalog.OsNameMappings.TryGetValue(name, out var code))
         {
-            foreach (var osFamily in OsFamilyMapping)
+            foreach (var osFamily in OsFamilyMappings)
             {
                 if (osFamily.Value.Contains(code))
                 {
@@ -638,12 +442,12 @@ public sealed partial class OsParser : IOsParser
 
         if (index != -1)
         {
-            FireOsVersionMapping.TryGetValue(version[..index], out result);
+            FireOsVersionMappings.TryGetValue(version[..index], out result);
         }
 
         if (result is null)
         {
-            FireOsVersionMapping.TryGetValue(version, out result);
+            FireOsVersionMappings.TryGetValue(version, out result);
         }
 
         return result is not null;
@@ -659,12 +463,12 @@ public sealed partial class OsParser : IOsParser
 
         if (index != -1)
         {
-            LineageOsVersionMapping.TryGetValue(version[..index], out result);
+            LineageOsVersionMappings.TryGetValue(version[..index], out result);
         }
 
         if (result is null)
         {
-            LineageOsVersionMapping.TryGetValue(version, out result);
+            LineageOsVersionMappings.TryGetValue(version, out result);
         }
 
         return result is not null;
@@ -749,9 +553,9 @@ public sealed partial class OsParser : IOsParser
         string name = ApplyClientHintPlatformMapping(clientHints.Platform);
         name = name.CollapseSpaces();
 
-        if (OsNameMapping.TryGetValue(name, out var code))
+        if (OsCatalog.OsNameMappings.TryGetValue(name, out var code))
         {
-            name = OsCodeMapping[code];
+            name = OsCatalog.OsCodeMappings[code];
         }
         else
         {
@@ -772,7 +576,7 @@ public sealed partial class OsParser : IOsParser
             switch (majorVersion)
             {
                 case 0 when minorVersion != 0:
-                    WindowsMinorVersionMapping.TryGetValue(minorVersion, out version);
+                    WindowsMinorVersionMappings.TryGetValue(minorVersion, out version);
                     break;
                 case > 0
                 and <= 10:
@@ -832,9 +636,9 @@ public sealed partial class OsParser : IOsParser
 
         string name = ParserExtensions.FormatWithMatch(os.Name, match);
 
-        if (OsNameMapping.TryGetValue(name, out var code))
+        if (OsCatalog.OsNameMappings.TryGetValue(name, out var code))
         {
-            name = OsCodeMapping[code];
+            name = OsCatalog.OsCodeMappings[code];
         }
         else
         {
@@ -1036,7 +840,7 @@ public sealed partial class OsParser : IOsParser
         result = new OsInfo
         {
             Name = name,
-            Code = OsNameMapping[name],
+            Code = OsCatalog.OsNameMappings[name],
             Version = version,
             CpuArchitecture = cpuArchitecture,
             Family = family,

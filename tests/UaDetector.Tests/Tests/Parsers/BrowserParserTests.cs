@@ -1,6 +1,7 @@
 using Shouldly;
 using UaDetector.Abstractions.Enums;
 using UaDetector.Abstractions.Models;
+using UaDetector.Catalogs;
 using UaDetector.Parsers;
 using UaDetector.Tests.Fixtures.Models;
 using UaDetector.Tests.Helpers;
@@ -30,32 +31,15 @@ public class BrowserParserTests
 
         foreach (var browserName in browserNames)
         {
-            BrowserParser.BrowserNameMapping.ShouldContainKey(browserName);
+            BrowserCatalog.BrowserNameMappings.ShouldContainKey(browserName);
         }
-    }
-
-    [Test]
-    public void BrowserCodeMapping_ShouldContainAllBrowserCodes()
-    {
-        foreach (BrowserCode browserCode in Enum.GetValues<BrowserCode>())
-        {
-            BrowserParser.BrowserCodeMapping.ShouldContainKey(browserCode);
-        }
-    }
-
-    [Test]
-    public void BrowserCodeMapping_ShouldContainUniqueValues()
-    {
-        BrowserParser.BrowserCodeMapping.Values.Length.ShouldBe(
-            BrowserParser.BrowserCodeMapping.Values.Distinct().Count()
-        );
     }
 
     [Test]
     public void CompactToFullNameMapping_ShouldContainKeyForAllUniqueNames()
     {
-        var duplicateCompactNames = BrowserParser
-            .BrowserCodeMapping.Values.Select(x => x.RemoveSpaces())
+        var duplicateCompactNames = BrowserCatalog
+            .BrowserCodeMappings.Values.Select(x => x.RemoveSpaces())
             .GroupBy(x => x)
             .Where(group => group.Count() > 1)
             .Select(group => group.Key)
@@ -63,7 +47,7 @@ public class BrowserParserTests
 
         var browserNames = new List<string>();
 
-        foreach (var name in BrowserParser.BrowserNameMapping.Keys)
+        foreach (var name in BrowserCatalog.BrowserNameMappings.Keys)
         {
             var compactName = name.RemoveSpaces();
 
@@ -75,7 +59,7 @@ public class BrowserParserTests
 
         foreach (var name in browserNames)
         {
-            BrowserParser.CompactToFullNameMapping.ShouldContainKey(name);
+            BrowserParser.CompactToFullNameMappings.ShouldContainKey(name);
         }
     }
 

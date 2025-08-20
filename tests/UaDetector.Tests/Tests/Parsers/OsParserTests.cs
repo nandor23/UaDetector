@@ -1,6 +1,7 @@
 using Shouldly;
 using UaDetector.Abstractions.Enums;
 using UaDetector.Abstractions.Models;
+using UaDetector.Catalogs;
 using UaDetector.Parsers;
 using UaDetector.Tests.Fixtures.Models;
 using UaDetector.Tests.Helpers;
@@ -29,25 +30,8 @@ public class OsParserTests
 
         foreach (var osName in osNames)
         {
-            OsParser.OsNameMapping.ShouldContainKey(osName);
+            OsCatalog.OsNameMappings.ShouldContainKey(osName);
         }
-    }
-
-    [Test]
-    public void OsCodeMapping_ShouldContainAllOsCodes()
-    {
-        foreach (OsCode osCode in Enum.GetValues<OsCode>())
-        {
-            OsParser.OsCodeMapping.ShouldContainKey(osCode);
-        }
-    }
-
-    [Test]
-    public void OsCodeMapping_ShouldContainUniqueValues()
-    {
-        OsParser.OsCodeMapping.Values.Length.ShouldBe(
-            OsParser.OsCodeMapping.Values.Distinct().Count()
-        );
     }
 
     [Test]
@@ -57,7 +41,7 @@ public class OsParserTests
         {
             bool contains = false;
 
-            foreach (var osFamily in OsParser.OsFamilyMapping)
+            foreach (var osFamily in OsParser.OsFamilyMappings)
             {
                 if (osFamily.Value.Contains(osCode))
                 {

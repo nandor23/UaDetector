@@ -5,6 +5,7 @@ using System.Text.RegularExpressions;
 using UaDetector.Abstractions.Constants;
 using UaDetector.Abstractions.Enums;
 using UaDetector.Abstractions.Models;
+using UaDetector.Catalogs;
 using UaDetector.Parsers;
 using UaDetector.Parsers.Devices;
 
@@ -39,7 +40,7 @@ public sealed class UaDetector : IUaDetector
     private static readonly FrozenSet<string> AppleOsNames;
     private static readonly FrozenSet<string> TvBrowsers;
     private static readonly FrozenSet<string> TvClients;
-    private static readonly List<KeyValuePair<string, DeviceType>> ClientHintFormFactorsMapping;
+    private static readonly List<KeyValuePair<string, DeviceType>> ClientHintFormFactorsMappings;
 
     private readonly IReadOnlyList<DeviceParserBase> _deviceParsers =
     [
@@ -104,7 +105,7 @@ public sealed class UaDetector : IUaDetector
 
         TvClients = new[] { "TiviMate" }.ToFrozenSet();
 
-        ClientHintFormFactorsMapping =
+        ClientHintFormFactorsMappings =
         [
             new KeyValuePair<string, DeviceType>("automotive", DeviceType.CarBrowser),
             new KeyValuePair<string, DeviceType>("xr", DeviceType.Wearable),
@@ -164,7 +165,7 @@ public sealed class UaDetector : IUaDetector
 
         DeviceType? deviceType = null;
 
-        foreach (var formFactor in ClientHintFormFactorsMapping)
+        foreach (var formFactor in ClientHintFormFactorsMappings)
         {
             if (clientHints.FormFactors.Contains(formFactor.Key))
             {
@@ -436,7 +437,7 @@ public sealed class UaDetector : IUaDetector
                 Model = model,
                 Brand =
                     brand is not null
-                    && DeviceParserBase.BrandNameMapping.TryGetValue(brand, out var brandCode)
+                    && BrandCatalog.BrandNameMappings.TryGetValue(brand, out var brandCode)
                         ? new BrandInfo { Name = brand, Code = brandCode }
                         : null,
             };
