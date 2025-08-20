@@ -1,4 +1,5 @@
 using System.Collections.Frozen;
+using System.Diagnostics.CodeAnalysis;
 using UaDetector.Abstractions.Constants;
 using UaDetector.Abstractions.Enums;
 
@@ -9,6 +10,18 @@ public static class OsCatalog
     public static string GetOsName(OsCode osCode)
     {
         return OsCodeMappings[osCode];
+    }
+
+    public static bool TryGetOsCode(string osName, [NotNullWhen(true)] out OsCode? result)
+    {
+        if (OsNameMappings.TryGetValue(osName, out var osCode))
+        {
+            result = osCode;
+            return true;
+        }
+
+        result = null;
+        return false;
     }
 
     internal static readonly FrozenDictionary<OsCode, string> OsCodeMappings = new Dictionary<
@@ -204,4 +217,8 @@ public static class OsCatalog
         { OsCode.WebOs, OsNames.WebOs },
         { OsCode.KolibriOs, OsNames.KolibriOs },
     }.ToFrozenDictionary();
+
+    internal static readonly FrozenDictionary<string, OsCode> OsNameMappings = OsCodeMappings
+        .ToDictionary(e => e.Value, e => e.Key)
+        .ToFrozenDictionary(StringComparer.OrdinalIgnoreCase);
 }

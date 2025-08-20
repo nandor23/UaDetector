@@ -1,4 +1,3 @@
-using System.Collections.Frozen;
 using System.Diagnostics.CodeAnalysis;
 using System.Text.RegularExpressions;
 using UaDetector.Abstractions.Enums;
@@ -10,15 +9,6 @@ namespace UaDetector.Parsers.Devices;
 
 internal abstract class DeviceParserBase
 {
-    internal static readonly FrozenDictionary<string, BrandCode> BrandNameMappings;
-
-    static DeviceParserBase()
-    {
-        BrandNameMappings = BrandCatalog
-            .BrandCodeMappings.ToDictionary(e => e.Value, e => e.Key)
-            .ToFrozenDictionary();
-    }
-
     private static string? BuildModel(string model, Match match)
     {
         model = ParserExtensions.FormatWithMatch(model, match).Replace('_', ' ');
@@ -101,7 +91,10 @@ internal abstract class DeviceParserBase
                 model = BuildModel(deviceModel.Name, modelMatch);
             }
 
-            if (deviceModel?.Brand?.Length > 0 && BrandNameMappings.ContainsKey(deviceModel.Brand))
+            if (
+                deviceModel?.Brand?.Length > 0
+                && BrandCatalog.BrandNameMappings.ContainsKey(deviceModel.Brand)
+            )
             {
                 brand = deviceModel.Brand;
             }

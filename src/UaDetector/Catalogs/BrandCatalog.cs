@@ -1,4 +1,5 @@
 using System.Collections.Frozen;
+using System.Diagnostics.CodeAnalysis;
 using UaDetector.Abstractions.Constants;
 using UaDetector.Abstractions.Enums;
 
@@ -9,6 +10,18 @@ public static class BrandCatalog
     public static string GetBrandName(BrandCode brandCode)
     {
         return BrandCodeMappings[brandCode];
+    }
+
+    public static bool TryGetBrandCode(string brandName, [NotNullWhen(true)] out BrandCode? result)
+    {
+        if (BrandNameMappings.TryGetValue(brandName, out var brandCode))
+        {
+            result = brandCode;
+            return true;
+        }
+
+        result = null;
+        return false;
     }
 
     internal static readonly FrozenDictionary<BrandCode, string> BrandCodeMappings = new Dictionary<
@@ -2105,4 +2118,7 @@ public static class BrandCatalog
         { BrandCode.GlobalSec, BrandNames.GlobalSec },
         { BrandCode.Vasoun, BrandNames.Vasoun },
     }.ToFrozenDictionary();
+
+    internal static readonly FrozenDictionary<string, BrandCode> BrandNameMappings =
+        BrandCodeMappings.ToDictionary(e => e.Value, e => e.Key).ToFrozenDictionary();
 }

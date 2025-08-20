@@ -5,6 +5,7 @@ using System.Text.RegularExpressions;
 using UaDetector.Abstractions.Constants;
 using UaDetector.Abstractions.Enums;
 using UaDetector.Abstractions.Models;
+using UaDetector.Catalogs;
 using UaDetector.Parsers;
 using UaDetector.Parsers.Devices;
 
@@ -436,7 +437,7 @@ public sealed class UaDetector : IUaDetector
                 Model = model,
                 Brand =
                     brand is not null
-                    && DeviceParserBase.BrandNameMappings.TryGetValue(brand, out var brandCode)
+                    && BrandCatalog.BrandNameMappings.TryGetValue(brand, out var brandCode)
                         ? new BrandInfo { Name = brand, Code = brandCode }
                         : null,
             };

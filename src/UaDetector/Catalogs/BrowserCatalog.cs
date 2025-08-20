@@ -1,4 +1,5 @@
 using System.Collections.Frozen;
+using System.Diagnostics.CodeAnalysis;
 using UaDetector.Abstractions.Constants;
 using UaDetector.Abstractions.Enums;
 
@@ -9,6 +10,21 @@ public static class BrowserCatalog
     public static string GetBrowserName(BrowserCode browserCode)
     {
         return BrowserCodeMappings[browserCode];
+    }
+
+    public static bool TryGetBrowserCode(
+        string browserName,
+        [NotNullWhen(true)] out BrowserCode? result
+    )
+    {
+        if (BrowserNameMappings.TryGetValue(browserName, out var browserCode))
+        {
+            result = browserCode;
+            return true;
+        }
+
+        result = null;
+        return false;
     }
 
     internal static readonly FrozenDictionary<BrowserCode, string> BrowserCodeMappings =
@@ -696,4 +712,9 @@ public static class BrowserCatalog
             { BrowserCode.QuarkPc, BrowserNames.QuarkPc },
             { BrowserCode.Quetta, BrowserNames.Quetta },
         }.ToFrozenDictionary();
+
+    internal static readonly FrozenDictionary<string, BrowserCode> BrowserNameMappings =
+        BrowserCodeMappings
+            .ToDictionary(e => e.Value, e => e.Key)
+            .ToFrozenDictionary(StringComparer.OrdinalIgnoreCase);
 }

@@ -1,13 +1,13 @@
-﻿using UaDetector.Parsers;
+﻿using UaDetector.Catalogs;
+using UaDetector.Parsers;
 using UaDetector.Parsers.Browsers;
 using UaDetector.Parsers.Clients;
-using UaDetector.Parsers.Devices;
 using UaDetector.ReadmeUpdater;
 
 var readmePath = ReadmeLocator.GetReadmePath();
 var originalReadme = File.ReadAllText(readmePath);
 
-var browsers = BrowserParser
+var browsers = BrowserCatalog
     .BrowserNameMappings.Keys.Concat(BrowserHintParser.Hints.Values)
     .Distinct(StringComparer.OrdinalIgnoreCase);
 
@@ -47,12 +47,12 @@ var mobileApps = MobileAppParser
     .Where(name => !name.Contains("$1"))
     .Distinct(StringComparer.OrdinalIgnoreCase);
 
-var deviceBrands = DeviceParserBase
+var deviceBrands = BrandCatalog
     .BrandNameMappings.Keys.Concat(VendorFragmentParser.VendorFragments.Select(x => x.Brand))
     .Distinct(StringComparer.OrdinalIgnoreCase);
 
 var modifiedReadme = originalReadme
-    .ReplaceMarkerContent("OPERATING-SYSTEMS", OsParser.OsNameMappings.Keys)
+    .ReplaceMarkerContent("OPERATING-SYSTEMS", OsCatalog.OsNameMappings.Keys)
     .ReplaceMarkerContent("BROWSERS", browsers)
     .ReplaceMarkerContent("BROWSER-ENGINES", EngineParser.EngineNames)
     .ReplaceMarkerContent("MOBILE-APPS", mobileApps)

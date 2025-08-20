@@ -22,7 +22,6 @@ public sealed partial class OsParser : IOsParser
     private readonly UaDetectorOptions _uaDetectorOptions;
     private readonly BotParser _botParser;
 
-    internal static readonly FrozenDictionary<string, OsCode> OsNameMappings;
     internal static readonly FrozenDictionary<string, FrozenSet<OsCode>> OsFamilyMappings;
     internal static readonly FrozenSet<string> DesktopOsFamilies;
     private static readonly FrozenDictionary<string, FrozenSet<string>> ClientHintPlatformMappings;
@@ -35,10 +34,6 @@ public sealed partial class OsParser : IOsParser
 
     static OsParser()
     {
-        OsNameMappings = OsCatalog
-            .OsCodeMappings.ToDictionary(e => e.Value, e => e.Key)
-            .ToFrozenDictionary(StringComparer.OrdinalIgnoreCase);
-
         OsFamilyMappings = new Dictionary<string, FrozenSet<OsCode>>
         {
             {
@@ -421,7 +416,7 @@ public sealed partial class OsParser : IOsParser
 
     private static bool TryMapNameToFamily(string name, [NotNullWhen((true))] out string? result)
     {
-        if (OsNameMappings.TryGetValue(name, out var code))
+        if (OsCatalog.OsNameMappings.TryGetValue(name, out var code))
         {
             foreach (var osFamily in OsFamilyMappings)
             {
@@ -558,7 +553,7 @@ public sealed partial class OsParser : IOsParser
         string name = ApplyClientHintPlatformMapping(clientHints.Platform);
         name = name.CollapseSpaces();
 
-        if (OsNameMappings.TryGetValue(name, out var code))
+        if (OsCatalog.OsNameMappings.TryGetValue(name, out var code))
         {
             name = OsCatalog.OsCodeMappings[code];
         }
@@ -641,7 +636,7 @@ public sealed partial class OsParser : IOsParser
 
         string name = ParserExtensions.FormatWithMatch(os.Name, match);
 
-        if (OsNameMappings.TryGetValue(name, out var code))
+        if (OsCatalog.OsNameMappings.TryGetValue(name, out var code))
         {
             name = OsCatalog.OsCodeMappings[code];
         }
@@ -845,7 +840,7 @@ public sealed partial class OsParser : IOsParser
         result = new OsInfo
         {
             Name = name,
-            Code = OsNameMappings[name],
+            Code = OsCatalog.OsNameMappings[name],
             Version = version,
             CpuArchitecture = cpuArchitecture,
             Family = family,

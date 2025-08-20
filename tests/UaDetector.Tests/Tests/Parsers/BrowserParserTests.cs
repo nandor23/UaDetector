@@ -31,7 +31,7 @@ public class BrowserParserTests
 
         foreach (var browserName in browserNames)
         {
-            BrowserParser.BrowserNameMappings.ShouldContainKey(browserName);
+            BrowserCatalog.BrowserNameMappings.ShouldContainKey(browserName);
         }
     }
 
@@ -47,7 +47,7 @@ public class BrowserParserTests
 
         var browserNames = new List<string>();
 
-        foreach (var name in BrowserParser.BrowserNameMappings.Keys)
+        foreach (var name in BrowserCatalog.BrowserNameMappings.Keys)
         {
             var compactName = name.RemoveSpaces();
 
