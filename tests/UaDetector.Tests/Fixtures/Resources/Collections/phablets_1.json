@@ -8834,5 +8834,86 @@
         "code": 1973
       }
     }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 15; Infinix X6870) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "15",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "138.0.0.0",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "138.0.0.0"
+      }
+    },
+    "device": {
+      "type": 10,
+      "model": "Note 50S 5G",
+      "brand": {
+        "name": "Infinix",
+        "code": 813
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 12; Infinix X671) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "12",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "103.0.0.0",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "103.0.0.0"
+      }
+    },
+    "device": {
+      "type": 10,
+      "model": "Note 12 5G",
+      "brand": {
+        "name": "Infinix",
+        "code": 813
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 13; 23021RAA2G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.5938.60 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "13",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "117.0.5938.60",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "117.0.5938.60"
+      }
+    },
+    "device": {
+      "type": 10,
+      "model": "Redmi Note 12",
+      "brand": {
+        "name": "Xiaomi",
+        "code": 1973
+      }
+    }
   }
 ]

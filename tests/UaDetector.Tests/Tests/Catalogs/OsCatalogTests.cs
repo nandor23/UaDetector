@@ -1,4 +1,5 @@
 using Shouldly;
+using UaDetector.Abstractions.Constants;
 using UaDetector.Abstractions.Enums;
 using UaDetector.Catalogs;
 
@@ -21,5 +22,26 @@ public class OsCatalogTests
         OsCatalog.OsCodeMappings.Values.Length.ShouldBe(
             OsCatalog.OsCodeMappings.Values.Distinct().Count()
         );
+    }
+
+    [Test]
+    public void GetOsName_ShouldReturnExpectedValue_ForValidOsCode()
+    {
+        OsCatalog.GetOsName(OsCode.Fedora).ShouldBe(OsNames.Fedora);
+    }
+
+    [Test]
+    [Arguments(OsNames.Mac, OsCode.Mac, true)]
+    [Arguments("", null, false)]
+    public void TryGetOsCode_WithValidAndInvalidNames_ReturnsExpectedResults(
+        string osName,
+        OsCode? expectedOsCode,
+        bool expectedSuccess
+    )
+    {
+        var success = OsCatalog.TryGetOsCode(osName, out var actualOsCode);
+
+        success.ShouldBe(expectedSuccess);
+        actualOsCode.ShouldBe(expectedOsCode);
     }
 }

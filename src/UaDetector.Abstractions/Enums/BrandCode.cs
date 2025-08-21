@@ -2090,4 +2090,11 @@ public enum BrandCode
     Fanvace = 2085,
     GlobalSec = 2086,
     Vasoun = 2087,
+    Acd = 2088,
+    RunGee = 2089,
+    Yikemi = 2090,
+    Calme = 2091,
+    Eplutus = 2092,
+    WaipuTv = 2093,
+    Zala = 2094,
 }
