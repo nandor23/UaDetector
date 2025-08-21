@@ -138,6 +138,11 @@
     "version": "$1"
   },
   {
+    "regex": "wxwork/(\\d+[.\\d]+)",
+    "name": "WeCom",
+    "version": "$1"
+  },
+  {
     "regex": "MicroMessenger/([\\d.]+)",
     "name": "WeChat",
     "version": "$1"
