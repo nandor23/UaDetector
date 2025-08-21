@@ -2094,4 +2094,7 @@ public enum BrandCode
     RunGee = 2089,
     Yikemi = 2090,
     Calme = 2091,
+    Eplutus = 2092,
+    WaipuTv = 2093,
+    Zala = 2094,
 }

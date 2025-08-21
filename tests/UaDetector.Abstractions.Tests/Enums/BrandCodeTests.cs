@@ -2113,6 +2113,9 @@ public class BrandCodeTests
             { BrandCode.RunGee, 2089 },
             { BrandCode.Yikemi, 2090 },
             { BrandCode.Calme, 2091 },
+            { BrandCode.Eplutus, 2092 },
+            { BrandCode.WaipuTv, 2093 },
+            { BrandCode.Zala, 2094 },
         };
 
         expectedValues.Count.ShouldBe(Enum.GetValues<BrandCode>().Length);

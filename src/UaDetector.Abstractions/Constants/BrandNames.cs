@@ -2094,4 +2094,7 @@ public static class BrandNames
     public const string RunGee = "RunGee";
     public const string Yikemi = "YIKEMI";
     public const string Calme = "CALME";
+    public const string Eplutus = "Eplutus";
+    public const string WaipuTv = "waipu.tv";
+    public const string Zala = "ZALA";
 }
