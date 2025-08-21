@@ -2109,6 +2109,10 @@ public class BrandCodeTests
             { BrandCode.Fanvace, 2085 },
             { BrandCode.GlobalSec, 2086 },
             { BrandCode.Vasoun, 2087 },
+            { BrandCode.Acd, 2088 },
+            { BrandCode.RunGee, 2089 },
+            { BrandCode.Yikemi, 2090 },
+            { BrandCode.Calme, 2091 },
         };
 
         expectedValues.Count.ShouldBe(Enum.GetValues<BrandCode>().Length);

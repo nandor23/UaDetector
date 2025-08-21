@@ -2093,4 +2093,5 @@ public enum BrandCode
     Acd = 2088,
     RunGee = 2089,
     Yikemi = 2090,
+    Calme = 2091,
 }

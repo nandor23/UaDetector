@@ -2120,6 +2120,7 @@ public static class BrandCatalog
         { BrandCode.Acd, BrandNames.Acd },
         { BrandCode.RunGee, BrandNames.RunGee },
         { BrandCode.Yikemi, BrandNames.Yikemi },
+        { BrandCode.Calme, BrandNames.Calme },
     }.ToFrozenDictionary();
 
     internal static readonly FrozenDictionary<string, BrandCode> BrandNameMappings =

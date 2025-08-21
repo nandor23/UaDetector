@@ -2093,4 +2093,5 @@ public static class BrandNames
     public const string Acd = "ACD";
     public const string RunGee = "RunGee";
     public const string Yikemi = "YIKEMI";
+    public const string Calme = "CALME";
 }
