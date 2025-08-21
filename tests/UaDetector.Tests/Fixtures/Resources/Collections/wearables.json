@@ -3873,5 +3873,59 @@
         "code": 97
       }
     }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 14; Quest 3S) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.6998.111 YaBrowser/25.4.4.111.01 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "14",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "25.4.4.111.01",
+      "engine": {
+        "name": "Blink",
+        "version": "134.0.6998.111"
+      }
+    },
+    "device": {
+      "type": 12,
+      "model": "Quest 3S",
+      "brand": {
+        "name": "Meta",
+        "code": 1245
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 14; Quest 3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.6998.49 YaBrowser/25.4.6.49.01 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "14",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "25.4.6.49.01",
+      "engine": {
+        "name": "Blink",
+        "version": "134.0.6998.49"
+      }
+    },
+    "device": {
+      "type": 12,
+      "model": "Quest 3",
+      "brand": {
+        "name": "Meta",
+        "code": 1245
+      }
+    }
   }
 ]

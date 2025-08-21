@@ -4160,5 +4160,1058 @@
         "code": 2040
       }
     }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 15; KINGKONG POWER 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.6998.105 YaBrowser/25.4.4.105.00 SA/3 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "15",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "25.4.4.105.00",
+      "engine": {
+        "name": "Blink",
+        "version": "134.0.6998.105"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "King Kong Power 5",
+      "brand": {
+        "name": "CUBOT",
+        "code": 339
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 15; TECNO CM6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.6998.77 YaBrowser/25.4.5.77.00 SA/3 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "15",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "25.4.5.77.00",
+      "engine": {
+        "name": "Blink",
+        "version": "134.0.6998.77"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Camon 40 Pro",
+      "brand": {
+        "name": "Tecno Mobile",
+        "code": 1684
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 15; TECNO CM8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.6998.555 YaSearchBrowser/25.45.1 BroPP/1.0 YaSearchApp/25.45.1 webOmni SA/3 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "15",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "25.45.1",
+      "engine": {
+        "name": "Blink",
+        "version": "134.0.6998.555"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Camon 40 Premier 5G",
+      "brand": {
+        "name": "Tecno Mobile",
+        "code": 1684
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 15; A001) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.6998.895 YaApp_Android/25.43.1 YaSearchBrowser/25.43.1 BroPP/1.0 SA/3 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "15",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "25.43.1",
+      "engine": {
+        "name": "Blink",
+        "version": "134.0.6998.895"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Phone 2 Pro",
+      "brand": {
+        "name": "CMF",
+        "code": 333
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 14; S Punk Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.6998.77 YaBrowser/25.4.5.77.00 SA/3 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "14",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "25.4.5.77.00",
+      "engine": {
+        "name": "Blink",
+        "version": "134.0.6998.77"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "S Punk Pro",
+      "brand": {
+        "name": "Doogee",
+        "code": 407
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 14; S cyber Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.6998.77 YaBrowser/25.4.5.77.00 SA/3 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "14",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "25.4.5.77.00",
+      "engine": {
+        "name": "Blink",
+        "version": "134.0.6998.77"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "S Cyber Pro",
+      "brand": {
+        "name": "Doogee",
+        "code": 407
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 6.0; Panasonic ELUGA Tapp) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.80 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "6.0",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "70.0.3538.80",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "70.0.3538.80"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Eluga Tapp",
+      "brand": {
+        "name": "Panasonic",
+        "code": 1312
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 15; 25053PC47G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "15",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "131.0.0.0",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "131.0.0.0"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "F7",
+      "brand": {
+        "name": "POCO",
+        "code": 1356
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 8.1.0; INOI_5X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "8.1.0",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "137.0.0.0",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "137.0.0.0"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "5X",
+      "brand": {
+        "name": "Inoi",
+        "code": 823
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 14; L68_Ultra) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "14",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "138.0.0.0",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "138.0.0.0"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "L68 Ultra",
+      "brand": {
+        "name": "Logic",
+        "code": 1001
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 6.0; SOYES 7S Build/MRA58K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/95.0.4638.74 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "6.0",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Webview",
+      "code": 161,
+      "version": "95.0.4638.74",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "95.0.4638.74"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "7S",
+      "brand": {
+        "name": "Soyes",
+        "code": 1592
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; U; Android 14; zh-CN; PERM10_K10 Build/UKQ1.230924.001) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/123.0.6312.80 Quark/7.14.2.872 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "14",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Quark",
+      "code": 499,
+      "version": "7.14.2.872",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "123.0.6312.80"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "K10 5G",
+      "brand": {
+        "name": "OPPO",
+        "code": 1273
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 15; CPH2725 Build/AP3A.240617.008; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/138.0.7204.179 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "15",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Webview",
+      "code": 161,
+      "version": "138.0.7204.179",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "138.0.7204.179"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "A5x",
+      "brand": {
+        "name": "OPPO",
+        "code": 1273
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 15; 25078RA3EY) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.7103.120 YaBrowser/25.6.2.120.00 SA/3 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "15",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "25.6.2.120.00",
+      "engine": {
+        "name": "Blink",
+        "version": "136.0.7103.120"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Redmi 15C",
+      "brand": {
+        "name": "Xiaomi",
+        "code": 1973
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 15; 25067PYE3C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.7103.422 YaApp_Android/25.62.1 YaSearchBrowser/25.62.1 BroPP/1.0 SA/3 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "15",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "25.62.1",
+      "engine": {
+        "name": "Blink",
+        "version": "136.0.7103.422"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Civi 5 Pro",
+      "brand": {
+        "name": "Xiaomi",
+        "code": 1973
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 15; 25042PN24C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.7103.52 YaBrowser/25.6.6.52.00 SA/3 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "15",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "25.6.6.52.00",
+      "engine": {
+        "name": "Blink",
+        "version": "136.0.7103.52"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "15S Pro",
+      "brand": {
+        "name": "Xiaomi",
+        "code": 1973
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 14; V Max S) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.7103.52 YaBrowser/25.6.6.52.00 SA/3 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "14",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "25.6.6.52.00",
+      "engine": {
+        "name": "Blink",
+        "version": "136.0.7103.52"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "V Max S",
+      "brand": {
+        "name": "Doogee",
+        "code": 407
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 14; SOG13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.7103.55 YaBrowser/25.6.6.55.00 SA/3 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "14",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "25.6.6.55.00",
+      "engine": {
+        "name": "Blink",
+        "version": "136.0.7103.55"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Xperia 1 VI",
+      "brand": {
+        "name": "Sony",
+        "code": 1588
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 14; SM-M166P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.7103.91 YaSearchBrowser/25.66.1 BroPP/1.0 YaSearchApp/25.66.1 webOmni SA/3 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "14",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "25.66.1",
+      "engine": {
+        "name": "Blink",
+        "version": "136.0.7103.91"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Galaxy M16 5G",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 14; SM-E166P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.7103.107 YaBrowser/25.6.4.107.00 SA/3 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "14",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "25.6.4.107.00",
+      "engine": {
+        "name": "Blink",
+        "version": "136.0.7103.107"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Galaxy F16 5G",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 14; SM-A356N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.6834.579 YaSearchBrowser/25.26.1 BroPP/1.0 YaSearchApp/25.26.1 webOmni SA/3 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "14",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "25.26.1",
+      "engine": {
+        "name": "Blink",
+        "version": "132.0.6834.579"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Galaxy A35 5G",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 14; SM-A166E) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.7103.945 YaSearchBrowser/25.61.1 BroPP/1.0 YaSearchApp/25.61.1 webOmni SA/3 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "14",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "25.61.1",
+      "engine": {
+        "name": "Blink",
+        "version": "136.0.7103.945"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Galaxy A16 5G",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 14; SM-A165F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.5993.409 YaSearchBrowser/23.115.1 BroPP/1.0 YaSearchApp/23.115.1 webOmni SA/3 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "14",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "23.115.1",
+      "engine": {
+        "name": "Blink",
+        "version": "118.0.5993.409"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Galaxy A16",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 14; SM-A1560) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.7103.52 YaBrowser/25.6.6.52.00 SA/3 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "14",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "25.6.6.52.00",
+      "engine": {
+        "name": "Blink",
+        "version": "136.0.7103.52"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Galaxy A15 5G",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 14; SL219C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.7103.111 YaBrowser/25.6.5.111.00 SA/3 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "14",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "25.6.5.111.00",
+      "engine": {
+        "name": "Blink",
+        "version": "136.0.7103.111"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Icon 6",
+      "brand": {
+        "name": "Cricket",
+        "code": 331
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 14; SH-M29) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.7103.398 YaApp_Android/25.62.1 YaSearchBrowser/25.62.1 BroPP/1.0 SA/3 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "14",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "25.62.1",
+      "engine": {
+        "name": "Blink",
+        "version": "136.0.7103.398"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Aquos Sense 9",
+      "brand": {
+        "name": "Sharp",
+        "code": 1532
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 14; S3 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.7103.91 YaSearchBrowser/25.66.1 BroPP/1.0 YaSearchApp/25.66.1 webOmni SA/3 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "14",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "25.66.1",
+      "engine": {
+        "name": "Blink",
+        "version": "136.0.7103.91"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "S3 Pro",
+      "brand": {
+        "name": "FOSSiBOT",
+        "code": 584
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 14; S23 Pro Max) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6478.244 YaSearchBrowser/24.90.1 BroPP/1.0 YaSearchApp/24.90.1 webOmni SA/3 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "14",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "24.90.1",
+      "engine": {
+        "name": "Blink",
+        "version": "126.0.6478.244"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "S23 Pro Max",
+      "brand": {
+        "name": "Reeder",
+        "code": 1437
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 14; S119) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.7103.98 YaSearchBrowser/25.66.1 BroPP/1.0 YaSearchApp/25.66.1 webOmni SA/3 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "14",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "25.66.1",
+      "engine": {
+        "name": "Blink",
+        "version": "136.0.7103.98"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "S119",
+      "brand": {
+        "name": "Doogee",
+        "code": 407
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 14; RMX3952) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.7103.91 YaSearchBrowser/25.66.1 BroPP/1.0 YaSearchApp/25.66.1 webOmni SA/3 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "14",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "25.66.1",
+      "engine": {
+        "name": "Blink",
+        "version": "136.0.7103.91"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "13",
+      "brand": {
+        "name": "Realme",
+        "code": 1430
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 14; Play25_Pro_4G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.7103.422 YaApp_Android/25.62/apad YaSearchBrowser/25.62/apad BroPP/1.0 SA/3 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "14",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "25.62",
+      "engine": {
+        "name": "Blink",
+        "version": "136.0.7103.422"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Play 25 Pro 4G",
+      "brand": {
+        "name": "CORN",
+        "code": 320
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 14; OB-A98) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.7103.98 YaSearchBrowser/25.66.1 BroPP/1.0 YaSearchApp/25.66.1 webOmni SA/3 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "14",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "25.66.1",
+      "engine": {
+        "name": "Blink",
+        "version": "136.0.7103.98"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Tank 4 Pro",
+      "brand": {
+        "name": "Unihertz",
+        "code": 1788
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 14; Nokia 8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.7103.91 YaSearchBrowser/25.66.1 BroPP/1.0 YaSearchApp/25.66.1 webOmni SA/3 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "14",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "25.66.1",
+      "engine": {
+        "name": "Blink",
+        "version": "136.0.7103.91"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "8",
+      "brand": {
+        "name": "Nokia",
+        "code": 1219
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 14; LT C26) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.7103.52 YaBrowser/25.6.6.52.00 SA/3 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "14",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "25.6.6.52.00",
+      "engine": {
+        "name": "Blink",
+        "version": "136.0.7103.52"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "C26",
+      "brand": {
+        "name": "LT Mobile",
+        "code": 1017
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 14; KINGKONG X PRO) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.7103.422 YaApp_Android/25.62.1 YaSearchBrowser/25.62.1 BroPP/1.0 SA/3 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "14",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "25.62.1",
+      "engine": {
+        "name": "Blink",
+        "version": "136.0.7103.422"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "King Kong X Pro",
+      "brand": {
+        "name": "CUBOT",
+        "code": 339
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 14; ajib i10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.7103.91 YaSearchBrowser/25.66.1 BroPP/1.0 YaSearchApp/25.66.1 webOmni SA/3 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "14",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "25.66.1",
+      "engine": {
+        "name": "Blink",
+        "version": "136.0.7103.91"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "I10",
+      "brand": {
+        "name": "Ajib",
+        "code": 32
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 13; U380AA) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.7103.52 YaBrowser/25.6.6.52.00 SA/3 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "13",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "25.6.6.52.00",
+      "engine": {
+        "name": "Blink",
+        "version": "136.0.7103.52"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Calypso 4",
+      "brand": {
+        "name": "AT&T",
+        "code": 119
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 13; SM-A716S) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6478.311 YaBrowser/24.7.0.311.00 SA/3 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "13",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "24.7.0.311.00",
+      "engine": {
+        "name": "Blink",
+        "version": "126.0.6478.311"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Galaxy A Quantum",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 13; RunGee x9) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.7103.55 YaBrowser/25.6.6.55.00 SA/3 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "13",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "25.6.6.55.00",
+      "engine": {
+        "name": "Blink",
+        "version": "136.0.7103.55"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "X9",
+      "brand": {
+        "name": "RunGee",
+        "code": 2089
+      }
+    }
   }
 ]
