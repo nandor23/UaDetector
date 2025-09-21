@@ -189,4 +189,5 @@ public enum OsCode
     Webian = 184,
     WebOs = 185,
     KolibriOs = 186,
+    OpenHarmony = 187,
 }

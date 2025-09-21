@@ -66,6 +66,7 @@ public sealed partial class OsParser : IOsParser
                     OsCode.PuffinOs,
                     OsCode.LeafOs,
                     OsCode.MetaHorizon,
+                    OsCode.OpenHarmony,
                 }.ToFrozenSet()
             },
             {

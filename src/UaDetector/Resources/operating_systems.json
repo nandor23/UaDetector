@@ -418,6 +418,11 @@
     "version": "$1"
   },
   {
+    "regex": "OpenHarmony(?:[/ ](\\d+[.\\d]+))?",
+    "name": "OpenHarmony",
+    "version": "$1"
+  },
+  {
     "regex": "HarmonyOS(?:[/ ](\\d+[.\\d]+))?",
     "name": "HarmonyOS",
     "version": "$1"
