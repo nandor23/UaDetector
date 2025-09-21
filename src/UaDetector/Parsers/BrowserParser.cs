@@ -374,6 +374,7 @@ public sealed partial class BrowserParser : IBrowserParser
                     BrowserCode.HerondBrowser,
                     BrowserCode.QuarkPc,
                     BrowserCode.Quetta,
+                    BrowserCode.HeyTapBrowser,
                 }.ToFrozenSet()
             },
             {

@@ -702,6 +702,7 @@ public class BrowserCodeTests
             { BrowserCode.ZteBrowser, 678 },
             { BrowserCode.QuarkPc, 679 },
             { BrowserCode.Quetta, 680 },
+            { BrowserCode.HeyTapBrowser, 681 },
         };
 
         expectedValues.Count.ShouldBe(Enum.GetValues<BrowserCode>().Length);

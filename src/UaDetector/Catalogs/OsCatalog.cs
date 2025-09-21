@@ -216,6 +216,7 @@ public static class OsCatalog
         { OsCode.Webian, OsNames.Webian },
         { OsCode.WebOs, OsNames.WebOs },
         { OsCode.KolibriOs, OsNames.KolibriOs },
+        { OsCode.OpenHarmony, OsNames.OpenHarmony },
     }.ToFrozenDictionary();
 
     internal static readonly FrozenDictionary<string, OsCode> OsNameMappings = OsCodeMappings

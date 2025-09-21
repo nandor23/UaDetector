@@ -683,4 +683,5 @@ public enum BrowserCode
     ZteBrowser = 678,
     QuarkPc = 679,
     Quetta = 680,
+    HeyTapBrowser = 681,
 }

@@ -189,4 +189,5 @@ public static class OsNames
     public const string Webian = "Webian";
     public const string WebOs = "webOS";
     public const string KolibriOs = "KolibriOS";
+    public const string OpenHarmony = "OpenHarmony";
 }

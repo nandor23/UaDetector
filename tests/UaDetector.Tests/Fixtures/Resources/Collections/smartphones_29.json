@@ -11270,10 +11270,15 @@
       "version": "5.1.1",
       "family": "Android"
     },
-    "client": {
-      "type": 0,
+    "browser": {
       "name": "HeyTapBrowser",
-      "version": "10.7.38.1"
+      "code": 681,
+      "version": "10.7.38.1",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "90.0.4430.61"
+      }
     },
     "device": {
       "type": 1,

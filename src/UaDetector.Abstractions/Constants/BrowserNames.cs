@@ -683,4 +683,5 @@ public static class BrowserNames
     public const string ZteBrowser = "ZTE Browser";
     public const string QuarkPc = "QuarkPC";
     public const string Quetta = "Quetta";
+    public const string HeyTapBrowser = "HeyTapBrowser";
 }

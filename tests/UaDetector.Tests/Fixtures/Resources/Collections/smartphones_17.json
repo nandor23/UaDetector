@@ -4721,10 +4721,15 @@
       "version": "10",
       "family": "Android"
     },
-    "client": {
-      "type": 0,
+    "browser": {
       "name": "HeyTapBrowser",
-      "version": "45.7.1.9"
+      "code": 681,
+      "version": "45.7.1.9",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "70.0.3538.80"
+      }
     },
     "device": {
       "type": 1,
@@ -4743,10 +4748,15 @@
       "version": "10",
       "family": "Android"
     },
-    "client": {
-      "type": 0,
+    "browser": {
       "name": "HeyTapBrowser",
-      "version": "45.7.0.0"
+      "code": 681,
+      "version": "45.7.0.0",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "70.0.3538.80"
+      }
     },
     "device": {
       "type": 1,

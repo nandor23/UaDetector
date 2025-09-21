@@ -635,28 +635,6 @@
     }
   },
   {
-    "userAgent": "Mozilla/5.0 (Linux; U; Android 10; zh-cn; PDEM10 Build/QKQ1.191222.002) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/70.0.3538.80 Mobile Safari/537.36 HeyTapBrowser/40.7.4.1",
-    "os": {
-      "name": "Android",
-      "code": 1,
-      "version": "10",
-      "family": "Android"
-    },
-    "client": {
-      "type": 0,
-      "name": "HeyTapBrowser",
-      "version": "40.7.4.1"
-    },
-    "device": {
-      "type": 1,
-      "model": "Find X2",
-      "brand": {
-        "name": "OPPO",
-        "code": 1273
-      }
-    }
-  },
-  {
     "userAgent": "Mozilla/5.0 (2822MB; 720x1411; 320x319; 411x806; Samsung SM-A115F; 10) AppleWebKit/537.36 (KHTML, like Gecko)  ROBLOX Android App 2.448.411159 Phone Hybrid()  GooglePlayStore RobloxApp/2.448.411159 (GlobalDist; GooglePlayStore)",
     "os": {
       "name": "Android",
