@@ -711,6 +711,7 @@ public static class BrowserCatalog
             { BrowserCode.ZteBrowser, BrowserNames.ZteBrowser },
             { BrowserCode.QuarkPc, BrowserNames.QuarkPc },
             { BrowserCode.Quetta, BrowserNames.Quetta },
+            { BrowserCode.HeyTapBrowser, BrowserNames.HeyTapBrowser },
         }.ToFrozenDictionary();
 
     internal static readonly FrozenDictionary<string, BrowserCode> BrowserNameMappings =

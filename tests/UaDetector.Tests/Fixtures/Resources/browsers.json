@@ -14048,5 +14048,21 @@
         "version": "132.0.0.0"
       }
     }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; U; Android 14; en-it; CPH2467 Build/UKQ1.230924.001) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.6422.72 Mobile Safari/537.36 HeyTapBrowser/45.12.6.1",
+    "headers": {
+      "http-x-requested-with": "com.heytap.browser"
+    },
+    "browser": {
+      "name": "HeyTapBrowser",
+      "code": 681,
+      "version": "45.12.6.1",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "125.0.6422.72"
+      }
+    }
   }
 ]

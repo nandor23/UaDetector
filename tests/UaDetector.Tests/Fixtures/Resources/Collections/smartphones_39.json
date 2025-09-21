@@ -4070,10 +4070,15 @@
       "version": "12",
       "family": "Android"
     },
-    "client": {
-      "type": 0,
+    "browser": {
       "name": "HeyTapBrowser",
-      "version": "40.8.20.2"
+      "code": 681,
+      "version": "40.8.20.2",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "90.0.4430.61"
+      }
     },
     "device": {
       "type": 1,
@@ -6416,10 +6421,15 @@
       "version": "11",
       "family": "Android"
     },
-    "client": {
-      "type": 0,
+    "browser": {
       "name": "HeyTapBrowser",
-      "version": "45.10.8.0.1.1"
+      "code": 681,
+      "version": "45.10.8.0.1.1",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "91.0.4472.88"
+      }
     },
     "device": {
       "type": 1,
@@ -8315,10 +8325,15 @@
       "version": "14",
       "family": "Android"
     },
-    "client": {
-      "type": 0,
+    "browser": {
       "name": "HeyTapBrowser",
-      "version": "40.8.30.3"
+      "code": 681,
+      "version": "40.8.30.3",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "90.0.4430.61"
+      }
     },
     "device": {
       "type": 1,

@@ -473,11 +473,6 @@
     "version": "$1"
   },
   {
-    "regex": "HeyTapBrowser/([\\d.]+)",
-    "name": "HeyTapBrowser",
-    "version": "$1"
-  },
-  {
     "regex": "RobloxApp/([\\d.]+)",
     "name": "Roblox",
     "version": "$1"

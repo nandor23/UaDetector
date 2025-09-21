@@ -11046,10 +11046,15 @@
       "version": "10",
       "family": "Android"
     },
-    "client": {
-      "type": 0,
+    "browser": {
       "name": "HeyTapBrowser",
-      "version": "40.7.2.9"
+      "code": 681,
+      "version": "40.7.2.9",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "70.0.3538.80"
+      }
     },
     "device": {
       "type": 1,
