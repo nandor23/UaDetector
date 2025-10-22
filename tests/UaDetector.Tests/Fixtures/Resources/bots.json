@@ -8615,7 +8615,7 @@
     "bot": {
       "name": "PerplexityBot",
       "category": 3,
-      "url": "https://docs.perplexity.ai/docs/perplexitybot",
+      "url": "https://docs.perplexity.ai/guides/bots",
       "producer": {
         "name": "Perplexity AI, Inc.",
         "url": "https://www.perplexity.ai/"
@@ -11503,6 +11503,129 @@
       "producer": {
         "name": "Simbiat Software",
         "url": "https://www.simbiat.eu"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (compatible; Thinkbot/0.5.8; +In_the_test_phase,_if_the_Thinkbot_brings_you_trouble,_please_block_its_IP_address._Thank_you.)",
+    "bot": {
+      "name": "Thinkbot",
+      "category": 3
+    }
+  },
+  {
+    "userAgent": "meta-webindexer",
+    "bot": {
+      "name": "Meta-WebIndexer",
+      "category": 13,
+      "url": "https://developers.facebook.com/docs/sharing/webmasters/web-crawlers",
+      "producer": {
+        "name": "Meta Platforms, Inc.",
+        "url": "https://www.meta.com/"
+      }
+    }
+  },
+  {
+    "userAgent": "meta-externalads",
+    "bot": {
+      "name": "Meta-ExternalAds",
+      "category": 13,
+      "url": "https://developers.facebook.com/docs/sharing/webmasters/web-crawlers",
+      "producer": {
+        "name": "Meta Platforms, Inc.",
+        "url": "https://www.meta.com/"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (compatible; YandexAdditional/1.0; +http://yandex.com/bots)",
+    "bot": {
+      "name": "Yandex Bot",
+      "category": 0,
+      "url": "https://yandex.com/support/webmaster/robot-workings/check-yandex-robots.html",
+      "producer": {
+        "name": "Yandex LLC",
+        "url": "https://yandex.com/company/"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (compatible; YandexAdditionalBot/1.0; +http://yandex.com/bots)",
+    "bot": {
+      "name": "Yandex Bot",
+      "category": 0,
+      "url": "https://yandex.com/support/webmaster/robot-workings/check-yandex-robots.html",
+      "producer": {
+        "name": "Yandex LLC",
+        "url": "https://yandex.com/company/"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (compatible; YandexComBot/3.0; +http://ya.cc/bots)",
+    "bot": {
+      "name": "Yandex Bot",
+      "category": 0,
+      "url": "https://yandex.com/support/webmaster/robot-workings/check-yandex-robots.html",
+      "producer": {
+        "name": "Yandex LLC",
+        "url": "https://yandex.com/company/"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (compatible; YandexDialogs/1.0; +http://yandex.com/bots)",
+    "bot": {
+      "name": "Yandex Bot",
+      "category": 0,
+      "url": "https://yandex.com/support/webmaster/robot-workings/check-yandex-robots.html",
+      "producer": {
+        "name": "Yandex LLC",
+        "url": "https://yandex.com/company/"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Perplexity-User/1.0; +https://perplexity.ai/perplexity-user)",
+    "bot": {
+      "name": "Perplexity-User",
+      "category": 3,
+      "url": "https://docs.perplexity.ai/guides/bots",
+      "producer": {
+        "name": "Perplexity AI, Inc.",
+        "url": "https://www.perplexity.ai/"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (compatible; IbouBot/1.0; +bot@ibou.io; +https://ibou.io/iboubot.html)",
+    "bot": {
+      "name": "IbouBot",
+      "category": 0,
+      "url": "https://ibou.io/iboubot.html"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (compatible; AddSearchBot/1.0; +http://www.addsearch.com/bot; info@addsearch.com)",
+    "bot": {
+      "name": "AddSearchBot",
+      "category": 3,
+      "url": "https://www.addsearch.com/docs/indexing/whitelisting-addsearch-bot/",
+      "producer": {
+        "name": "AddSearch Oy",
+        "url": "https://www.addsearch.com/"
+      }
+    }
+  },
+  {
+    "userAgent": "TerraCotta https://github.com/CeramicTeam/CeramicTerracotta",
+    "bot": {
+      "name": "TerraCotta",
+      "category": 3,
+      "url": "https://github.com/CeramicTeam/CeramicTerracotta",
+      "producer": {
+        "name": "Ceramic, Inc.",
+        "url": "https://ceramic.ai/"
       }
     }
   }
