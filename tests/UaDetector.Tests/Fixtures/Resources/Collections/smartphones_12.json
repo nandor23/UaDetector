@@ -684,7 +684,7 @@
     },
     "device": {
       "type": 1,
-      "model": "EVO",
+      "model": "STX EVO",
       "brand": {
         "name": "Stonex",
         "code": 1615
@@ -710,7 +710,7 @@
     },
     "device": {
       "type": 1,
-      "model": "Mini",
+      "model": "STX Mini",
       "brand": {
         "name": "Stonex",
         "code": 1615
@@ -737,7 +737,7 @@
     },
     "device": {
       "type": 1,
-      "model": "MINI 2",
+      "model": "STX MINI 2",
       "brand": {
         "name": "Stonex",
         "code": 1615
@@ -764,7 +764,7 @@
     },
     "device": {
       "type": 1,
-      "model": "ULTRA",
+      "model": "STX ULTRA",
       "brand": {
         "name": "Stonex",
         "code": 1615
@@ -791,7 +791,7 @@
     },
     "device": {
       "type": 1,
-      "model": "ULTRA 2",
+      "model": "STX ULTRA 2",
       "brand": {
         "name": "Stonex",
         "code": 1615

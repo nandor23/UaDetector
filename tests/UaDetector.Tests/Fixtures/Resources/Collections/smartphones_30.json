@@ -5518,7 +5518,7 @@
     },
     "device": {
       "type": 1,
-      "model": "U696CL",
+      "model": "UMX U696CL",
       "brand": {
         "name": "Unimax",
         "code": 1790
@@ -9243,8 +9243,8 @@
       "type": 1,
       "model": "PL620",
       "brand": {
-        "name": "PCD Argentina",
-        "code": 1327
+        "name": "PCD",
+        "code": 1326
       }
     }
   },

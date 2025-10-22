@@ -1,8 +1,8 @@
 ﻿using UaDetector.YamlJsonConverter;
 
 YamlToJsonConverter.ConvertCollectionFixture();
+YamlToJsonConverter.ConvertOsRegex();
 YamlToJsonConverter.ConvertDeviceRegex();
-
 
 
 // YamlToJsonConverter.ConvertBrowserRegex();
