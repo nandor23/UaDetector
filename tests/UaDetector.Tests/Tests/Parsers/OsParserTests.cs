@@ -2,6 +2,7 @@ using Shouldly;
 using UaDetector.Abstractions.Enums;
 using UaDetector.Abstractions.Models;
 using UaDetector.Parsers;
+using UaDetector.Registries;
 using UaDetector.Tests.Fixtures.Models;
 using UaDetector.Tests.Helpers;
 
@@ -29,7 +30,7 @@ public class OsParserTests
 
         foreach (var osName in osNames)
         {
-            OsCatalog.OsNameMappings.ShouldContainKey(osName);
+            OsRegistry.OsNameMappings.ShouldContainKey(osName);
         }
     }
 

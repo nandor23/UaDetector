@@ -6,6 +6,7 @@ using System.Text.RegularExpressions;
 using UaDetector.Abstractions.Enums;
 using UaDetector.Abstractions.Models;
 using UaDetector.Models;
+using UaDetector.Registries;
 using UaDetector.Tests.Fixtures.Models;
 using UaDetector.YamlJsonConverter.Fixtures;
 using UaDetector.YamlJsonConverter.Models;
@@ -229,7 +230,7 @@ public static class YamlToJsonConverter
             Os = new OsInfo
             {
                 Name = x.Os.Name,
-                Code = OsCatalog.OsNameMappings[x.Os.Name],
+                Code = OsRegistry.OsNameMappings[x.Os.Name],
                 Version = x.Os.Version,
                 CpuArchitecture = x.Os.Platform,
                 Family = x.Os.Family,
@@ -257,7 +258,7 @@ public static class YamlToJsonConverter
                 : new OsInfo
                 {
                     Name = x.Os.Name,
-                    Code = OsCatalog.OsNameMappings[x.Os.Name],
+                    Code = OsRegistry.OsNameMappings[x.Os.Name],
                     Version = x.Os.Version,
                     CpuArchitecture = x.Os.Platform,
                     Family = x.OsFamily == "Unknown" ? null : x.OsFamily,
@@ -277,7 +278,7 @@ public static class YamlToJsonConverter
                     : new BrowserInfo
                     {
                         Name = x.Client.Name,
-                        Code = BrowserCatalog.BrowserNameMappings[x.Client.Name],
+                        Code = BrowserRegistry.BrowserNameMappings[x.Client.Name],
                         Version = x.Client.Version,
                         Family =
                             x.BrowserFamily == "Unknown"

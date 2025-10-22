@@ -2,6 +2,7 @@ using Shouldly;
 using UaDetector.Abstractions.Enums;
 using UaDetector.Abstractions.Models;
 using UaDetector.Parsers;
+using UaDetector.Registries;
 using UaDetector.Tests.Fixtures.Models;
 using UaDetector.Tests.Helpers;
 using UaDetector.Utilities;
@@ -30,14 +31,14 @@ public class BrowserParserTests
 
         foreach (var browserName in browserNames)
         {
-            BrowserCatalog.BrowserNameMappings.ShouldContainKey(browserName);
+            BrowserRegistry.BrowserNameMappings.ShouldContainKey(browserName);
         }
     }
 
     [Test]
     public void CompactToFullNameMapping_ShouldContainKeyForAllUniqueNames()
     {
-        var duplicateCompactNames = BrowserCatalog
+        var duplicateCompactNames = BrowserRegistry
             .BrowserCodeMappings.Values.Select(x => x.RemoveSpaces())
             .GroupBy(x => x)
             .Where(group => group.Count() > 1)
@@ -46,7 +47,7 @@ public class BrowserParserTests
 
         var browserNames = new List<string>();
 
-        foreach (var name in BrowserCatalog.BrowserNameMappings.Keys)
+        foreach (var name in BrowserRegistry.BrowserNameMappings.Keys)
         {
             var compactName = name.RemoveSpaces();
 
