@@ -6,8 +6,8 @@ using UaDetector.Abstractions.Constants;
 using UaDetector.Abstractions.Enums;
 using UaDetector.Abstractions.Models;
 using UaDetector.Attributes;
-using UaDetector.Catalogs;
 using UaDetector.Models;
+using UaDetector.Registries;
 using UaDetector.Utilities;
 
 namespace UaDetector.Parsers;
@@ -417,7 +417,7 @@ public sealed partial class OsParser : IOsParser
 
     private static bool TryMapNameToFamily(string name, [NotNullWhen((true))] out string? result)
     {
-        if (OsCatalog.OsNameMappings.TryGetValue(name, out var code))
+        if (OsRegistry.OsNameMappings.TryGetValue(name, out var code))
         {
             foreach (var osFamily in OsFamilyMappings)
             {
@@ -554,9 +554,9 @@ public sealed partial class OsParser : IOsParser
         string name = ApplyClientHintPlatformMapping(clientHints.Platform);
         name = name.CollapseSpaces();
 
-        if (OsCatalog.OsNameMappings.TryGetValue(name, out var code))
+        if (OsRegistry.OsNameMappings.TryGetValue(name, out var code))
         {
-            name = OsCatalog.OsCodeMappings[code];
+            name = OsRegistry.OsCodeMappings[code];
         }
         else
         {
@@ -637,9 +637,9 @@ public sealed partial class OsParser : IOsParser
 
         string name = ParserExtensions.FormatWithMatch(os.Name, match);
 
-        if (OsCatalog.OsNameMappings.TryGetValue(name, out var code))
+        if (OsRegistry.OsNameMappings.TryGetValue(name, out var code))
         {
-            name = OsCatalog.OsCodeMappings[code];
+            name = OsRegistry.OsCodeMappings[code];
         }
         else
         {
@@ -841,7 +841,7 @@ public sealed partial class OsParser : IOsParser
         result = new OsInfo
         {
             Name = name,
-            Code = OsCatalog.OsNameMappings[name],
+            Code = OsRegistry.OsNameMappings[name],
             Version = version,
             CpuArchitecture = cpuArchitecture,
             Family = family,

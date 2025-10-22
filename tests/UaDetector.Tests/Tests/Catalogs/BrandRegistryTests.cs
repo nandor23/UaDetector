@@ -1,33 +1,32 @@
 using Shouldly;
 using UaDetector.Abstractions.Constants;
 using UaDetector.Abstractions.Enums;
-using UaDetector.Catalogs;
 
 namespace UaDetector.Tests.Tests.Catalogs;
 
-public class BrandCatalogTests
+public class BrandRegistryTests
 {
     [Test]
     public void BrandCodeMapping_ShouldContainAllBrandCodes()
     {
         foreach (BrandCode brandCode in Enum.GetValues<BrandCode>())
         {
-            BrandCatalog.BrandCodeMappings.ShouldContainKey(brandCode);
+            BrandRegistry.BrandCodeMappings.ShouldContainKey(brandCode);
         }
     }
 
     [Test]
     public void BrandCodeMapping_ShouldContainUniqueValues()
     {
-        BrandCatalog.BrandCodeMappings.Values.Length.ShouldBe(
-            BrandCatalog.BrandCodeMappings.Values.Distinct().Count()
+        BrandRegistry.BrandCodeMappings.Values.Length.ShouldBe(
+            BrandRegistry.BrandCodeMappings.Values.Distinct().Count()
         );
     }
 
     [Test]
     public void GetBrandName_ShouldReturnExpectedValue_ForValidBrandCode()
     {
-        BrandCatalog.GetBrandName(BrandCode.Dell).ShouldBe(BrandNames.Dell);
+        BrandRegistry.GetBrandName(BrandCode.Dell).ShouldBe(BrandNames.Dell);
     }
 
     [Test]
@@ -39,7 +38,7 @@ public class BrandCatalogTests
         bool expectedSuccess
     )
     {
-        var success = BrandCatalog.TryGetBrandCode(brandName, out var actualBrandCode);
+        var success = BrandRegistry.TryGetBrandCode(brandName, out var actualBrandCode);
 
         success.ShouldBe(expectedSuccess);
         actualBrandCode.ShouldBe(expectedBrandCode);

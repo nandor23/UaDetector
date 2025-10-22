@@ -1,11 +1,10 @@
 using Shouldly;
 using UaDetector.Abstractions.Constants;
 using UaDetector.Abstractions.Enums;
-using UaDetector.Catalogs;
 
 namespace UaDetector.Tests.Tests.Catalogs;
 
-public class OsCatalogTests
+public class OsRegistryTests
 {
     [Test]
     public void OsCodeMapping_ShouldContainAllOsCodes()

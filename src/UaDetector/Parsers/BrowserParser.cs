@@ -6,9 +6,9 @@ using UaDetector.Abstractions.Constants;
 using UaDetector.Abstractions.Enums;
 using UaDetector.Abstractions.Models;
 using UaDetector.Attributes;
-using UaDetector.Catalogs;
 using UaDetector.Models;
 using UaDetector.Parsers.Browsers;
+using UaDetector.Registries;
 using UaDetector.Utilities;
 
 namespace UaDetector.Parsers;
@@ -36,7 +36,7 @@ public sealed partial class BrowserParser : IBrowserParser
 
     static BrowserParser()
     {
-        var duplicateCompactNames = BrowserCatalog
+        var duplicateCompactNames = BrowserRegistry
             .BrowserCodeMappings.Values.Select(x => x.RemoveSpaces())
             .GroupBy(x => x)
             .Where(group => group.Count() > 1)
@@ -45,7 +45,7 @@ public sealed partial class BrowserParser : IBrowserParser
 
         var mappings = new Dictionary<string, string>();
 
-        foreach (var name in BrowserCatalog.BrowserNameMappings.Keys)
+        foreach (var name in BrowserRegistry.BrowserNameMappings.Keys)
         {
             var compactName = name.RemoveSpaces();
 
@@ -765,7 +765,7 @@ public sealed partial class BrowserParser : IBrowserParser
 
     private static bool TryMapNameToFamily(string name, [NotNullWhen((true))] out string? result)
     {
-        if (BrowserCatalog.BrowserNameMappings.TryGetValue(name, out var code))
+        if (BrowserRegistry.BrowserNameMappings.TryGetValue(name, out var code))
         {
             return TryMapCodeToFamily(code, out result);
         }
@@ -848,24 +848,24 @@ public sealed partial class BrowserParser : IBrowserParser
         var hasBrowserSuffix = browserName.EndsWith("Browser");
 
         if (
-            BrowserCatalog.BrowserNameMappings.TryGetValue(browserName, out var browserCode)
+            BrowserRegistry.BrowserNameMappings.TryGetValue(browserName, out var browserCode)
             || (
                 hasBrowserSuffix
-                && BrowserCatalog.BrowserNameMappings.TryGetValue(
+                && BrowserRegistry.BrowserNameMappings.TryGetValue(
                     browserName[..^7].TrimEnd(),
                     out browserCode
                 )
             )
             || (
                 !hasBrowserSuffix
-                && BrowserCatalog.BrowserNameMappings.TryGetValue(
+                && BrowserRegistry.BrowserNameMappings.TryGetValue(
                     $"{browserName} Browser",
                     out browserCode
                 )
             )
             || (
                 CompactToFullNameMappings.TryGetValue(browserName.RemoveSpaces(), out var fullName)
-                && BrowserCatalog.BrowserNameMappings.TryGetValue(fullName, out browserCode)
+                && BrowserRegistry.BrowserNameMappings.TryGetValue(fullName, out browserCode)
             )
         )
         {
@@ -900,7 +900,7 @@ public sealed partial class BrowserParser : IBrowserParser
 
             if (TryGetBrowserCode(browserName, out var browserCode))
             {
-                name = BrowserCatalog.BrowserCodeMappings[browserCode.Value];
+                name = BrowserRegistry.BrowserCodeMappings[browserCode.Value];
                 code = browserCode;
                 version = fullVersion.Value;
             }
@@ -964,7 +964,7 @@ public sealed partial class BrowserParser : IBrowserParser
 
         string name = ParserExtensions.FormatWithMatch(browser.Name, match);
 
-        if (BrowserCatalog.BrowserNameMappings.TryGetValue(name, out var code))
+        if (BrowserRegistry.BrowserNameMappings.TryGetValue(name, out var code))
         {
             var version = ParserExtensions.BuildVersion(
                 browser.Version,
@@ -1201,7 +1201,7 @@ public sealed partial class BrowserParser : IBrowserParser
         {
             version = null;
 
-            if (BrowserCatalog.BrowserNameMappings.TryGetValue(browserName, out var browserCode))
+            if (BrowserRegistry.BrowserNameMappings.TryGetValue(browserName, out var browserCode))
             {
                 name = browserName;
                 code = browserCode;

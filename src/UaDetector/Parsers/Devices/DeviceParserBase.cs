@@ -2,8 +2,8 @@ using System.Diagnostics.CodeAnalysis;
 using System.Text.RegularExpressions;
 using UaDetector.Abstractions.Enums;
 using UaDetector.Abstractions.Models;
-using UaDetector.Catalogs;
 using UaDetector.Models;
+using UaDetector.Registries;
 
 namespace UaDetector.Parsers.Devices;
 
@@ -93,7 +93,7 @@ internal abstract class DeviceParserBase
 
             if (
                 deviceModel?.Brand?.Length > 0
-                && BrandCatalog.BrandNameMappings.ContainsKey(deviceModel.Brand)
+                && BrandRegistry.BrandNameMappings.ContainsKey(deviceModel.Brand)
             )
             {
                 brand = deviceModel.Brand;

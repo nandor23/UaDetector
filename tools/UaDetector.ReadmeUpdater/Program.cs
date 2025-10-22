@@ -1,5 +1,4 @@
-﻿using UaDetector.Catalogs;
-using UaDetector.Parsers;
+﻿using UaDetector.Parsers;
 using UaDetector.Parsers.Browsers;
 using UaDetector.Parsers.Clients;
 using UaDetector.ReadmeUpdater;
@@ -47,7 +46,7 @@ var mobileApps = MobileAppParser
     .Where(name => !name.Contains("$1"))
     .Distinct(StringComparer.OrdinalIgnoreCase);
 
-var deviceBrands = BrandCatalog
+var deviceBrands = BrandRegistry
     .BrandNameMappings.Keys.Concat(VendorFragmentParser.VendorFragments.Select(x => x.Brand))
     .Distinct(StringComparer.OrdinalIgnoreCase);
 

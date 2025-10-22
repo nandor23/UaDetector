@@ -5,7 +5,6 @@ using System.Text.Json.Serialization;
 using System.Text.RegularExpressions;
 using UaDetector.Abstractions.Enums;
 using UaDetector.Abstractions.Models;
-using UaDetector.Catalogs;
 using UaDetector.Models;
 using UaDetector.Tests.Fixtures.Models;
 using UaDetector.YamlJsonConverter.Fixtures;
@@ -306,7 +305,7 @@ public static class YamlToJsonConverter
                             : new BrandInfo
                             {
                                 Name = x.Device.Brand,
-                                Code = BrandCatalog.BrandNameMappings[x.Device.Brand],
+                                Code = BrandRegistry.BrandNameMappings[x.Device.Brand],
                             },
                         Model = x.Device.Model,
                     },

@@ -1,11 +1,10 @@
 using Shouldly;
 using UaDetector.Abstractions.Constants;
 using UaDetector.Abstractions.Enums;
-using UaDetector.Catalogs;
 
 namespace UaDetector.Tests.Tests.Catalogs;
 
-public class BrowserCatalogTests
+public class BrowserRegistryTests
 {
     [Test]
     public void BrowserCodeMapping_ShouldContainAllBrowserCodes()

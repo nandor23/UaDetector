@@ -3,9 +3,9 @@ using System.Diagnostics.CodeAnalysis;
 using UaDetector.Abstractions.Constants;
 using UaDetector.Abstractions.Enums;
 
-namespace UaDetector.Catalogs;
+namespace UaDetector.Registries;
 
-public static class BrowserCatalog
+public static class BrowserRegistry
 {
     public static string GetBrowserName(BrowserCode browserCode)
     {
