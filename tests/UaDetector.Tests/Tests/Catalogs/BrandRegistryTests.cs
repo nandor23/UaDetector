@@ -1,6 +1,7 @@
 using Shouldly;
 using UaDetector.Abstractions.Constants;
 using UaDetector.Abstractions.Enums;
+using UaDetector.Registries;
 
 namespace UaDetector.Tests.Tests.Catalogs;
 

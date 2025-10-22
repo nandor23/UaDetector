@@ -1,6 +1,7 @@
 using Shouldly;
 using UaDetector.Abstractions.Constants;
 using UaDetector.Abstractions.Enums;
+using UaDetector.Registries;
 
 namespace UaDetector.Tests.Tests.Catalogs;
 
@@ -11,22 +12,22 @@ public class BrowserRegistryTests
     {
         foreach (BrowserCode browserCode in Enum.GetValues<BrowserCode>())
         {
-            BrowserCatalog.BrowserCodeMappings.ShouldContainKey(browserCode);
+            BrowserRegistry.BrowserCodeMappings.ShouldContainKey(browserCode);
         }
     }
 
     [Test]
     public void BrowserCodeMapping_ShouldContainUniqueValues()
     {
-        BrowserCatalog.BrowserCodeMappings.Values.Length.ShouldBe(
-            BrowserCatalog.BrowserCodeMappings.Values.Distinct().Count()
+        BrowserRegistry.BrowserCodeMappings.Values.Length.ShouldBe(
+            BrowserRegistry.BrowserCodeMappings.Values.Distinct().Count()
         );
     }
 
     [Test]
     public void GetBrowserName_ShouldReturnExpectedValue_ForValidBrowserCode()
     {
-        BrowserCatalog.GetBrowserName(BrowserCode.Safari).ShouldBe(BrowserNames.Safari);
+        BrowserRegistry.GetBrowserName(BrowserCode.Safari).ShouldBe(BrowserNames.Safari);
     }
 
     [Test]
@@ -38,7 +39,7 @@ public class BrowserRegistryTests
         bool expectedSuccess
     )
     {
-        var success = BrowserCatalog.TryGetBrowserCode(browserName, out var actualBrowserCode);
+        var success = BrowserRegistry.TryGetBrowserCode(browserName, out var actualBrowserCode);
 
         success.ShouldBe(expectedSuccess);
         actualBrowserCode.ShouldBe(expectedBrowserCode);
