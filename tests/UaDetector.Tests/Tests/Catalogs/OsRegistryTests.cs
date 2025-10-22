@@ -1,33 +1,33 @@
 using Shouldly;
 using UaDetector.Abstractions.Constants;
 using UaDetector.Abstractions.Enums;
-using UaDetector.Catalogs;
+using UaDetector.Registries;
 
 namespace UaDetector.Tests.Tests.Catalogs;
 
-public class OsCatalogTests
+public class OsRegistryTests
 {
     [Test]
     public void OsCodeMapping_ShouldContainAllOsCodes()
     {
         foreach (OsCode osCode in Enum.GetValues<OsCode>())
         {
-            OsCatalog.OsCodeMappings.ShouldContainKey(osCode);
+            OsRegistry.OsCodeMappings.ShouldContainKey(osCode);
         }
     }
 
     [Test]
     public void OsCodeMapping_ShouldContainUniqueValues()
     {
-        OsCatalog.OsCodeMappings.Values.Length.ShouldBe(
-            OsCatalog.OsCodeMappings.Values.Distinct().Count()
+        OsRegistry.OsCodeMappings.Values.Length.ShouldBe(
+            OsRegistry.OsCodeMappings.Values.Distinct().Count()
         );
     }
 
     [Test]
     public void GetOsName_ShouldReturnExpectedValue_ForValidOsCode()
     {
-        OsCatalog.GetOsName(OsCode.Fedora).ShouldBe(OsNames.Fedora);
+        OsRegistry.GetOsName(OsCode.Fedora).ShouldBe(OsNames.Fedora);
     }
 
     [Test]
@@ -39,7 +39,7 @@ public class OsCatalogTests
         bool expectedSuccess
     )
     {
-        var success = OsCatalog.TryGetOsCode(osName, out var actualOsCode);
+        var success = OsRegistry.TryGetOsCode(osName, out var actualOsCode);
 
         success.ShouldBe(expectedSuccess);
         actualOsCode.ShouldBe(expectedOsCode);

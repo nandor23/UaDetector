@@ -3,9 +3,9 @@ using System.Diagnostics.CodeAnalysis;
 using UaDetector.Abstractions.Constants;
 using UaDetector.Abstractions.Enums;
 
-namespace UaDetector.Catalogs;
+namespace UaDetector.Registries;
 
-public static class OsCatalog
+public static class OsRegistry
 {
     public static string GetOsName(OsCode osCode)
     {
