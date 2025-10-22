@@ -2827,8 +2827,9 @@
     "version": "$2"
   },
   {
-    "regex": "appname/([^/; ]*)",
-    "name": "$1"
+    "regex": "AppVersion/([\\d.]+).+appname/((?!\\(null\\))[^/; ]*)",
+    "name": "$2",
+    "version": "$1"
   },
   {
     "regex": "(?!AlohaBrowser)([^/;]*)/(\\d+\\.[\\d.]+) \\((?:iPhone|iPad); (?:iOS|iPadOS) [0-9.]+; Scale/[0-9.]+\\)",
