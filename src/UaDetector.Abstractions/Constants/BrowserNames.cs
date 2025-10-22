@@ -478,7 +478,7 @@ public static class BrowserNames
     public const string PrivacyBrowser = "Privacy Browser";
     public const string PrivacyWall = "PrivacyWall";
     public const string PrivacyExplorerFastSafe = "Privacy Explorer Fast Safe";
-    public const string PrivacyPioneerBrowser = "Privacy Pioneer Browser";
+    public const string CloakPrivateBrowser = "Cloak Private Browser";
     public const string PrivateInternetBrowser = "Private Internet Browser";
     public const string ProxyBrowser = "Proxy Browser";
     public const string Proxyium = "Proxyium";

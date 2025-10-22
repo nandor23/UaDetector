@@ -70958,7 +70958,7 @@
   },
   {
     "regex": "PINE ([^/;)]+)(?: Build|[);])",
-    "brand": "PINE",
+    "brand": "PINE64",
     "type": 13,
     "model": "$1"
   },

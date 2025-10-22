@@ -506,7 +506,7 @@ public static class BrowserRegistry
             { BrowserCode.PrivacyBrowser, BrowserNames.PrivacyBrowser },
             { BrowserCode.PrivacyWall, BrowserNames.PrivacyWall },
             { BrowserCode.PrivacyExplorerFastSafe, BrowserNames.PrivacyExplorerFastSafe },
-            { BrowserCode.PrivacyPioneerBrowser, BrowserNames.PrivacyPioneerBrowser },
+            { BrowserCode.CloakPrivateBrowser, BrowserNames.CloakPrivateBrowser },
             { BrowserCode.PrivateInternetBrowser, BrowserNames.PrivateInternetBrowser },
             { BrowserCode.ProxyBrowser, BrowserNames.ProxyBrowser },
             { BrowserCode.Proxyium, BrowserNames.Proxyium },
