@@ -11731,10 +11731,10 @@
     },
     "device": {
       "type": 1,
-      "model": "i501",
+      "model": "Vida i501",
       "brand": {
-        "name": "VIDA",
-        "code": 1867
+        "name": "Airtel",
+        "code": 38
       }
     }
   },

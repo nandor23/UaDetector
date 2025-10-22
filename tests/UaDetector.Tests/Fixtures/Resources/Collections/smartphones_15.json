@@ -7570,7 +7570,7 @@
     },
     "device": {
       "type": 1,
-      "model": "U452TL",
+      "model": "UMX U452TL",
       "brand": {
         "name": "Unimax",
         "code": 1790
@@ -7597,7 +7597,7 @@
     },
     "device": {
       "type": 1,
-      "model": "U504TL",
+      "model": "UMX U504TL",
       "brand": {
         "name": "Unimax",
         "code": 1790
@@ -7624,7 +7624,7 @@
     },
     "device": {
       "type": 1,
-      "model": "U671C",
+      "model": "UMX U671C",
       "brand": {
         "name": "Unimax",
         "code": 1790
@@ -7651,7 +7651,7 @@
     },
     "device": {
       "type": 1,
-      "model": "U673C",
+      "model": "UMX U673C",
       "brand": {
         "name": "Unimax",
         "code": 1790
@@ -7676,7 +7676,7 @@
     },
     "device": {
       "type": 1,
-      "model": "U680C",
+      "model": "UMX U680C",
       "brand": {
         "name": "Unimax",
         "code": 1790
@@ -7703,7 +7703,7 @@
     },
     "device": {
       "type": 1,
-      "model": "U683CL",
+      "model": "UMX U683CL",
       "brand": {
         "name": "Unimax",
         "code": 1790
@@ -7730,7 +7730,7 @@
     },
     "device": {
       "type": 1,
-      "model": "U693CL",
+      "model": "UMX U693CL",
       "brand": {
         "name": "Unimax",
         "code": 1790

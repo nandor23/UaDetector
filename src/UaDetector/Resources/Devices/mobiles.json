@@ -38679,7 +38679,7 @@
     ]
   },
   {
-    "regex": "(?:PCD[ _])?(?:PL5507|PL571US|PH3501|PH400[12]|E400)(?:[);/ ]|$)",
+    "regex": "(?:PCD[ _])?(?:PL5507|PL571US|PH3501|PH400[12]|E400|PL620)(?:[);/ ]|$)",
     "brand": "PCD",
     "type": 1,
     "modelVariants": [
@@ -38688,13 +38688,13 @@
         "name": "Jaguar Pro II"
       },
       {
-        "regex": "(?:PCD[ _])?(P[HL]\\d{4}|E400)",
+        "regex": "(?:PCD[ _])?(P[HL]\\d{4}|E400|PL620)",
         "name": "$1"
       }
     ]
   },
   {
-    "regex": "PCD[ ]?50[689]|(?:PL620|P63L)(?:[);/ ]|$)",
+    "regex": "PCD[ ]?50[689]|(?:P63L)(?:[);/ ]|$)",
     "brand": "PCD Argentina",
     "type": 1,
     "modelVariants": [
@@ -38703,7 +38703,7 @@
         "name": "$1"
       },
       {
-        "regex": "(PL620|P63L)",
+        "regex": "(P63L)",
         "name": "$1"
       }
     ]
@@ -43705,11 +43705,11 @@
     "modelVariants": [
       {
         "regex": "STX[ -]([^;/]+) Build",
-        "name": "$1"
+        "name": "STX $1"
       },
       {
         "regex": "STX[ -]([a-z0-9_-]+)",
-        "name": "$1"
+        "name": "STX $1"
       }
     ]
   },
@@ -48631,7 +48631,7 @@
     "regex": "U((?:67[013]|680)C|(?:452|504)TL|683CL|69[36]CL)(?:[);/ ]|$)",
     "brand": "Unimax",
     "type": 1,
-    "model": "U$1"
+    "model": "UMX U$1"
   },
   {
     "regex": "(?:QOOQ|QOOQ-V[1-5]0?)(?:[);/ ]|$)",
@@ -69080,7 +69080,7 @@
     "model": "$1"
   },
   {
-    "regex": "Airtel[ _]",
+    "regex": "(?:(?:Airtel[ _])|(?:VIDA_i501))",
     "brand": "Airtel",
     "type": 1,
     "modelVariants": [
@@ -69092,6 +69092,10 @@
       {
         "regex": "Imagine(?:[);/ ]|$)",
         "name": "Imagine"
+      },
+      {
+        "regex": "VIDA_i501",
+        "name": "Vida i501"
       }
     ]
   },
@@ -70875,7 +70879,7 @@
     "model": "MyPad $1"
   },
   {
-    "regex": "VIDA[-_ ](?:i-?([45]01|512|450)|V401)(?:[);/ ]|$)",
+    "regex": "VIDA[-_ ](?:i-?(401|512|450)|V401)(?:[);/ ]|$)",
     "brand": "VIDA",
     "type": 1,
     "modelVariants": [
@@ -72781,7 +72785,7 @@
     "modelVariants": [
       {
         "regex": "LimeZ2PLUS",
-        "name": "Z2 Plus"
+        "name": "TV Box Z2+"
       },
       {
         "regex": "Lime(T95)",
