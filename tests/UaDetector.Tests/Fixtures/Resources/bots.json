@@ -2494,7 +2494,7 @@
   {
     "userAgent": "Mozilla/5.0 (compatible; MixrankBot; crawler@mixrank.com)",
     "bot": {
-      "name": "Mixrank Bot",
+      "name": "MixRank Bot",
       "category": 3,
       "url": "http://mixrank.com",
       "producer": {
@@ -5334,7 +5334,7 @@
   {
     "userAgent": "Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.2.17) Gecko/20110515 HeartRails_Capture/1.0.4 (+http://capture.heartrails.com/) Namoroka/3.6.17",
     "bot": {
-      "name": "Heart Rails Capture",
+      "name": "HeartRails Capture",
       "category": 11,
       "url": "http://capture.heartrails.com"
     }
@@ -5669,7 +5669,7 @@
     "bot": {
       "name": "LumtelBot",
       "category": 3,
-      "url": "https://umtel.com"
+      "url": "https://lumtel.com"
     }
   },
   {
@@ -7565,7 +7565,7 @@
     "bot": {
       "name": "MoodleBot Linkchecker",
       "category": 0,
-      "url": "hhttps://docs.moodle.org/en/Usage",
+      "url": "https://docs.moodle.org/en/Usage",
       "producer": {
         "name": "Moodle Pty Ltd",
         "url": "https://moodle.org/"
@@ -11471,6 +11471,18 @@
     }
   },
   {
+    "userAgent": "Mozilla/5.0 OnlyScans",
+    "bot": {
+      "name": "Generic Bot"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0; Keydrop.io/1.0(onlyscans.com/about);",
+    "bot": {
+      "name": "Generic Bot"
+    }
+  },
+  {
     "userAgent": "azure-logic-apps/1.0 (workflow xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx; version xxxxxxxxxxxxxxxxxxxx) microsoft-flow/1.0",
     "bot": {
       "name": "Microsoft Power Automate",
@@ -11483,15 +11495,15 @@
     }
   },
   {
-    "userAgent": "Mozilla/5.0 OnlyScans",
+    "userAgent": "Simbiat Software",
     "bot": {
-      "name": "Generic Bot"
-    }
-  },
-  {
-    "userAgent": "Mozilla/5.0; Keydrop.io/1.0(onlyscans.com/about);",
-    "bot": {
-      "name": "Generic Bot"
+      "name": "Simbiat Software",
+      "category": 3,
+      "url": "https://www.simbiat.eu",
+      "producer": {
+        "name": "Simbiat Software",
+        "url": "https://www.simbiat.eu"
+      }
     }
   }
 ]

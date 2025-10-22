@@ -1297,7 +1297,7 @@
   },
   {
     "regex": "MixrankBot",
-    "name": "Mixrank Bot",
+    "name": "MixRank Bot",
     "category": 3,
     "url": "http://mixrank.com",
     "producer": {
@@ -2986,7 +2986,7 @@
     "regex": "MoodleBot-Linkchecker",
     "name": "MoodleBot Linkchecker",
     "category": 0,
-    "url": "hhttps://docs.moodle.org/en/Usage",
+    "url": "https://docs.moodle.org/en/Usage",
     "producer": {
       "name": "Moodle Pty Ltd",
       "url": "https://moodle.org/"
@@ -3177,7 +3177,7 @@
   },
   {
     "regex": "HeartRails_Capture",
-    "name": "Heart Rails Capture",
+    "name": "HeartRails Capture",
     "category": 11,
     "url": "http://capture.heartrails.com"
   },
@@ -3417,7 +3417,7 @@
     "regex": "LumtelBot",
     "name": "LumtelBot",
     "category": 3,
-    "url": "https://umtel.com"
+    "url": "https://lumtel.com"
   },
   {
     "regex": "PiplBot",
@@ -6122,6 +6122,16 @@
     "producer": {
       "name": "Microsoft Corporation",
       "url": "https://www.microsoft.com/"
+    }
+  },
+  {
+    "regex": "Simbiat Software",
+    "name": "Simbiat Software",
+    "category": 3,
+    "url": "https://www.simbiat.eu",
+    "producer": {
+      "name": "Simbiat Software",
+      "url": "https://www.simbiat.eu"
     }
   },
   {

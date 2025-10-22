@@ -183,7 +183,7 @@ public static class YamlToJsonConverter
             Name = x.Name,
             Category = x.Category is null ? null : BotCategoryMappings[x.Category],
             Url = x.Url,
-            Producer = x.Producer is null
+            Producer = x.Producer is null || (x.Producer.Name is null && x.Producer.Url is null)
                 ? null
                 : new BotProducer { Name = x.Producer.Name, Url = x.Producer.Url },
         });
