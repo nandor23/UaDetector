@@ -2674,6 +2674,26 @@
         "name": "iPhone 16"
       },
       {
+        "regex": "(?:MDCR_|ICRU_|Apple-)?iPh(?:one)?18[C,_]2|(?:iPhone[ _]?17[ _]?Pro[ _]?Max| 17PROMAX)(?:[);/ ]|$)",
+        "type": 10,
+        "name": "iPhone 17 Pro Max"
+      },
+      {
+        "regex": "(?:MDCR_|ICRU_|Apple-)?iPh(?:one)?18[C,_]1|(?:iPhone[ _]?17[ _]?Pro| 17PRO)(?:[);/ ]|$)",
+        "type": 10,
+        "name": "iPhone 17 Pro"
+      },
+      {
+        "regex": "(?:MDCR_|ICRU_|Apple-)?iPh(?:one)?18[C,_]3|(?:iPhone[ _]?17| 17)(?:[);/ ]|$)",
+        "type": 10,
+        "name": "iPhone 17"
+      },
+      {
+        "regex": "(?:MDCR_|ICRU_|Apple-)?iPh(?:one)?18[C,_]4|(?:iPhone[ _]?17[ _]?Air| 17AIR)(?:[);/ ]|$)",
+        "type": 10,
+        "name": "iPhone Air"
+      },
+      {
         "regex": "(?:MDCR_|ICRU_|Apple-)?iPad1[C,_]1",
         "type": 2,
         "name": "iPad"
