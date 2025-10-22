@@ -2,8 +2,8 @@
 
 A powerful user-agent parsing library inspired by [device-detector](https://github.com/matomo-org/device-detector).
 
-[![Build](https://github.com/UaDetector/UaDetector/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/UaDetector/UaDetector/actions/workflows/build.yml)
-[![License](https://img.shields.io/github/license/UaDetector/UaDetector)](https://www.gnu.org/licenses/lgpl-3.0.en.html)
+[![Build](https://github.com/nandor23/UaDetector/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/nandor23/UaDetector/actions/workflows/build.yml)
+[![License](https://img.shields.io/github/license/nandor23/UaDetector?color=%2325b99c)](https://www.gnu.org/licenses/lgpl-3.0.en.html)
 
 UaDetector is a user-agent parser that identifies the browser, operating system, device, client, and even detects bots.
 It is composed of several sub-parsers: `OsParser`, `BrowserParser`, `ClientParser`, and `BotParser`.
@@ -43,7 +43,7 @@ builder.Services.AddUaDetector(options =>
 ```
 
 | Option                | Type   | Description                                                                 |
-|-----------------------|--------|-----------------------------------------------------------------------------|
+| --------------------- | ------ | --------------------------------------------------------------------------- |
 | `VersionTruncation`   | `enum` | Controls how version numbers are shortened (e.g., `Major`, `Minor`, `None`) |
 | `DisableBotDetection` | `bool` | Disables bot detection entirely, skipping bot-related checks and parsing    |
 
@@ -121,4 +121,4 @@ builder.Services.AddUaDetector(options =>
 });
 ```
 
-> **Note**: For full documentation, visit the [GitHub repository](https://github.com/UaDetector/UaDetector).
+> **Note**: For full documentation, visit the [GitHub repository](https://github.com/nandor23/UaDetector).

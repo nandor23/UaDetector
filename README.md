@@ -7,10 +7,10 @@
 
 <h4 align="center">A powerful user-agent parsing library inspired by <a href="https://github.com/matomo-org/device-detector" target="_blank">device-detector</a></h4>
 
-[![Build](https://github.com/UaDetector/UaDetector/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/UaDetector/UaDetector/actions/workflows/build.yml)
-![GitHub Release](https://img.shields.io/github/v/release/UaDetector/UaDetector)
+[![Build](https://github.com/nandor23/UaDetector/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/nandor23/UaDetector/actions/workflows/build.yml)
+![GitHub Release](https://img.shields.io/github/v/release/nandor23/UaDetector)
 ![NuGet Downloads](https://img.shields.io/nuget/dt/UaDetector?color=%2334a3d9)
-[![License](https://img.shields.io/github/license/UaDetector/UaDetector?color=%2325b99c)](https://www.gnu.org/licenses/lgpl-3.0.en.html)
+[![License](https://img.shields.io/github/license/nandor23/UaDetector?color=%2325b99c)](https://www.gnu.org/licenses/lgpl-3.0.en.html)
 
 UaDetector is a user-agent parser that identifies the browser, operating system, device, client, and even detects bots.
 It is composed of several sub-parsers: `OsParser`, `BrowserParser`, `ClientParser`, and `BotParser`. 
