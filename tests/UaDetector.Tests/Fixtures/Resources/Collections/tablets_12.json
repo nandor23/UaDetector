@@ -3820,7 +3820,7 @@
     },
     "device": {
       "type": 2,
-      "model": "Tab R9 Rro",
+      "model": "Tab R9 Pro",
       "brand": {
         "name": "Hotwav",
         "code": 743
@@ -4090,7 +4090,7 @@
     },
     "device": {
       "type": 2,
-      "model": "Tab R5 Rro",
+      "model": "Tab R5 Pro",
       "brand": {
         "name": "Hotwav",
         "code": 743
@@ -8078,6 +8078,33 @@
     "device": {
       "type": 2,
       "model": "Galaxy Tab S10 Ultra 14.6\" WiFi",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 14; SM-X300) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "14",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome",
+      "code": 137,
+      "version": "130.0.0.0",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "130.0.0.0"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "Galaxy Tab Active5 8.0 (2024) WiFi",
       "brand": {
         "name": "Samsung",
         "code": 1496

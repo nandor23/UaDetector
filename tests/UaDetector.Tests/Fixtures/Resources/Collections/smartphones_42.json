@@ -7637,5 +7637,37 @@
         "code": 97
       }
     }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36",
+    "headers": {
+      "Sec-CH-UA-Platform": "Android",
+      "Sec-CH-UA-Platform-Version": "13.0.0",
+      "Sec-CH-UA-Model": "BV5300 Plus"
+    },
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "13.0.0",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "138.0.0.0",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "138.0.0.0"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "BV5300 Plus",
+      "brand": {
+        "name": "Blackview",
+        "code": 201
+      }
+    }
   }
 ]
