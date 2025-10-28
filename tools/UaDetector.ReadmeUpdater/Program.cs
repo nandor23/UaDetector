@@ -44,7 +44,7 @@ var mobileApps = MobileAppParser
             "radio.net",
         }
     )
-    .Where(name => !name.Contains("$1"))
+    .Where(name => !name.Contains("$1") && !name.Contains("$2"))
     .Distinct(StringComparer.OrdinalIgnoreCase);
 
 var deviceBrands = BrandRegistry
