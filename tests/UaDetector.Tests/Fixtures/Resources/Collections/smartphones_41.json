@@ -10037,7 +10037,6 @@
       }
     }
   },
-
   {
     "userAgent": "Mozilla/5.0 (Linux; Android 15; SM-A566E) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Mobile Safari/537.36",
     "os": {
@@ -11892,8 +11891,8 @@
       "type": 1,
       "model": "Armor C1 Max",
       "brand": {
-        "name": "Ulefone",
-        "code": 1783
+        "name": "KENSHI",
+        "code": 903
       }
     }
   },
@@ -11973,8 +11972,8 @@
       "type": 1,
       "model": "Armor P1 Pro",
       "brand": {
-        "name": "Ulefone",
-        "code": 1783
+        "name": "KENSHI",
+        "code": 903
       }
     }
   },
