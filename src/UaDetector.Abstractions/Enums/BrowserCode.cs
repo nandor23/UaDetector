@@ -478,7 +478,7 @@ public enum BrowserCode
     PrivacyBrowser = 473,
     PrivacyWall = 474,
     PrivacyExplorerFastSafe = 475,
-    PrivacyPioneerBrowser = 476,
+    CloakPrivateBrowser = 476,
     PrivateInternetBrowser = 477,
     ProxyBrowser = 478,
     Proxyium = 479,

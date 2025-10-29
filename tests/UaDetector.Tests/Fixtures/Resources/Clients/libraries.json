@@ -1045,5 +1045,19 @@
       "name": "LibHTTP",
       "version": "1.1"
     }
+  },
+  {
+    "userAgent": "BIC Tracker",
+    "client": {
+      "type": 2,
+      "name": "BIC Tracker"
+    }
+  },
+  {
+    "userAgent": "Lodestone PHP Parser",
+    "client": {
+      "type": 2,
+      "name": "Lodestone PHP Parser"
+    }
   }
 ]

@@ -1377,7 +1377,7 @@ public static class BrandRegistry
         { BrandCode.Pixpro, BrandNames.Pixpro },
         { BrandCode.Pico, BrandNames.Pico },
         { BrandCode.Piranha, BrandNames.Piranha },
-        { BrandCode.Pine, BrandNames.Pine },
+        { BrandCode.Pine, BrandNames.Pine64 },
         { BrandCode.PlanetComputers, BrandNames.PlanetComputers },
         { BrandCode.PlayNow, BrandNames.PlayNow },
         { BrandCode.Ployer, BrandNames.Ployer },

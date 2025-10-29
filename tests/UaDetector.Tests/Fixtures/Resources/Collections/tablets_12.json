@@ -3820,7 +3820,7 @@
     },
     "device": {
       "type": 2,
-      "model": "Tab R9 Rro",
+      "model": "Tab R9 Pro",
       "brand": {
         "name": "Hotwav",
         "code": 743
@@ -4090,7 +4090,7 @@
     },
     "device": {
       "type": 2,
-      "model": "Tab R5 Rro",
+      "model": "Tab R5 Pro",
       "brand": {
         "name": "Hotwav",
         "code": 743
@@ -7951,6 +7951,163 @@
       "brand": {
         "name": "TechPad",
         "code": 1678
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 15; SM-X520 Build/AP3A.240905.015.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.125 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "15",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Webview",
+      "code": 161,
+      "version": "136.0.7103.125",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "136.0.7103.125"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "Galaxy Tab S10 FE 10.9\" WiFi",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 15; SM-X626B Build/AP3A.240905.015.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/127.0.6533.103 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "15",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Webview",
+      "code": 161,
+      "version": "127.0.6533.103",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "127.0.6533.103"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "Galaxy Tab S10 FE+ 13.1\" 5G",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; U; Android 15; SM-X510 Build/AP3A.240905.015.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/137.0.7151.118 Safari/537.36 OPR/12.8.2254.76952",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "15",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Opera",
+      "code": 420,
+      "version": "12.8.2254.76952",
+      "family": "Opera",
+      "engine": {
+        "name": "Presto"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "Galaxy Tab S9 FE 10.9\" WiFi",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 16; SM-X730 Build/BP2A.250605.031.A3; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/139.0.7258.160 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "16",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Webview",
+      "code": 161,
+      "version": "139.0.7258.160",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "139.0.7258.160"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "Galaxy Tab S11 WiFi",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 15; SM-X920 Build/AP3A.240905.015.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/139.0.7258.158 Safari/537.36 GoogleApp/16.34.61.ve.arm64 DSRP",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "15",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Google Search App",
+      "version": "16.34.61"
+    },
+    "device": {
+      "type": 2,
+      "model": "Galaxy Tab S10 Ultra 14.6\" WiFi",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 14; SM-X300) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "14",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome",
+      "code": 137,
+      "version": "130.0.0.0",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "130.0.0.0"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "Galaxy Tab Active5 8.0 (2024) WiFi",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
       }
     }
   }

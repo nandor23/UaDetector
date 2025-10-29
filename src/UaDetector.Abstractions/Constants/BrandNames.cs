@@ -1350,7 +1350,7 @@ public static class BrandNames
     public const string Pixpro = "PIXPRO";
     public const string Pico = "Pico";
     public const string Piranha = "PIRANHA";
-    public const string Pine = "PINE";
+    public const string Pine64 = "PINE64";
     public const string PlanetComputers = "Planet Computers";
     public const string PlayNow = "Play Now";
     public const string Ployer = "Ployer";

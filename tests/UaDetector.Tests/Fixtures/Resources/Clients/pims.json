@@ -359,7 +359,7 @@
     "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 mailapp/6.5.0",
     "client": {
       "type": 4,
-      "name": "mailapp",
+      "name": "MailApp",
       "version": "6.5.0"
     }
   },

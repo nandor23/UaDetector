@@ -13806,7 +13806,7 @@
       "http-x-requested-with": "com.cloaktp.browser"
     },
     "browser": {
-      "name": "Privacy Pioneer Browser",
+      "name": "Cloak Private Browser",
       "code": 476,
       "family": "Chrome",
       "engine": {

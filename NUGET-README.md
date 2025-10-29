@@ -1,6 +1,6 @@
 # UaDetector
 
-A powerful user-agent parsing library inspired by [device-detector](https://github.com/matomo-org/device-detector).
+A powerful user-agent parsing library inspired by [device-detector](https://github.com/matomo-org/device-detector)
 
 [![Build](https://github.com/nandor23/UaDetector/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/nandor23/UaDetector/actions/workflows/build.yml)
 [![License](https://img.shields.io/github/license/nandor23/UaDetector?color=%2325b99c)](https://www.gnu.org/licenses/lgpl-3.0.en.html)

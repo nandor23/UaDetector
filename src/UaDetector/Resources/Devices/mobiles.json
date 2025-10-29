@@ -7546,7 +7546,7 @@
     ]
   },
   {
-    "regex": "Blackview|(BL8[08]00|BV([24-9]000|8[128]00|[468]900|(5[1589]|9[135689])00|6[12368]00|7[13]00)(?:[ _](?:PRO))?|(?<!Titan )P10000(?:[ _](?:PRO))?|omega[ _]pro|Alife[ _][PS]1|N6000|Heatwave|DM550|BV9700Pro|BL9000 Pro|(?<!Lenovo[_ ])A[68]0(?:Pro)?\\))|(?:SOLID 4 G2|A[86]0Plus|A80S|BL(?:6000|8800)Pro|R6 Lite|P2Lite|A8 MAX|A30-RU|A20Pro|Android 10(?:[\\d.]*);(?: [\\w-]+;)? Tab[89]|Android 10(?:[\\d.]*);(?: [\\w-]+;)? (?:A80)|Android 11(?:[\\d.]*);(?: [\\w-]+;)? (?:A95|A100|BL5000|Tab 12)|Android 1[12](?:[\\d.]*);(?: [\\w-]+;)? (?:A[79]0|A70 Pro|A55 Pro|Tab 1[01356]|Tab 6)|Android 13(?:[\\d.]*);(?: [\\w-]+;)? (?:A200 Pro|Tab [86]0|Tab 18|BL9000)|BV500|BV4800|BV[579]200|SOLID_4G1|BV5300(?: Pro)?|Tab A5 Kids|Tab [56]0 Kids|Active (?:8|1[02]) Pro|Active 8|SHARK [89]|Tab 8E|Tab (?:[579]0|[789]|1[01]) WiFi|COLOR 8|Tab (?:1[236]|60) Pro|MEGA [128]|WAVE 6C|WAVE 8C?|HERO 10|A52 Pro| E7s|Tab 90)(?:[);/ ]|$)",
+    "regex": "Blackview|(BL8[08]00|BV([24-9]000|8[128]00|[468]900|(5[1589]|9[135689])00|6[12368]00|7[13]00)(?:[ _](?:PRO))?|(?<!Titan )P10000(?:[ _](?:PRO))?|omega[ _]pro|Alife[ _][PS]1|N6000|Heatwave|DM550|BV9700Pro|BL9000 Pro|(?<!Lenovo[_ ])A[68]0(?:Pro)?\\))|(?:SOLID 4 G2|A[86]0Plus|A80S|BL(?:6000|8800)Pro|R6 Lite|P2Lite|A8 MAX|A30-RU|A20Pro|Android 10(?:[\\d.]*);(?: [\\w-]+;)? Tab[89]|Android 10(?:[\\d.]*);(?: [\\w-]+;)? (?:A80)|Android 11(?:[\\d.]*);(?: [\\w-]+;)? (?:A95|A100|BL5000|Tab 12)|Android 1[12](?:[\\d.]*);(?: [\\w-]+;)? (?:A[79]0|A70 Pro|A55 Pro|Tab 1[01356]|Tab 6)|Android 13(?:[\\d.]*);(?: [\\w-]+;)? (?:A200 Pro|Tab [86]0|Tab 18|BL9000)|BV500|BV4800|BV[579]200|SOLID_4G1|BV5300(?: Pro| Plus)?|Tab A5 Kids|Tab [56]0 Kids|Active (?:8|1[02]) Pro|Active 8|SHARK [89]|Tab 8E|Tab (?:[579]0|[789]|1[01]) WiFi|COLOR 8|Tab (?:1[236]|60) Pro|MEGA [128]|WAVE 6C|WAVE 8C?|HERO 10|A52 Pro| E7s|Tab 90)(?:[);/ ]|$)",
     "brand": "Blackview",
     "type": 1,
     "modelVariants": [
@@ -7634,6 +7634,10 @@
         "regex": "(BV6[13]00)(?:[);/ ]|$)",
         "type": 10,
         "name": "$1"
+      },
+      {
+        "regex": "(BV\\d+[\\w]?|P10000)[ _]?Plus(?:[-_](?:RU|F))?(?:[);/ ]|$)",
+        "name": "$1 Plus"
       },
       {
         "regex": "(BV\\d+[\\w]?|P10000)[ _]?PRO(?:[-_](?:RU|F))?(?:[);/ ]|$)",
@@ -40405,6 +40409,11 @@
         "name": "Galaxy Tab 3 Lite 7.0\""
       },
       {
+        "regex": "(?:SAMSUNG-)?SM-X920",
+        "type": 2,
+        "name": "Galaxy Tab S10 Ultra 14.6\" WiFi"
+      },
+      {
         "regex": "(?:SAMSUNG-)?SM-X926",
         "type": 2,
         "name": "Galaxy Tab S10 Ultra 14.6\" 5G"
@@ -40413,6 +40422,21 @@
         "regex": "(?:SAMSUNG-)?SM-X620",
         "type": 2,
         "name": "Galaxy Tab S10 FE+ 13.1\""
+      },
+      {
+        "regex": "(?:SAMSUNG-)?SM-X626B",
+        "type": 2,
+        "name": "Galaxy Tab S10 FE+ 13.1\" 5G"
+      },
+      {
+        "regex": "(?:SAMSUNG-)?SM-X510",
+        "type": 2,
+        "name": "Galaxy Tab S9 FE 10.9\" WiFi"
+      },
+      {
+        "regex": "(?:SAMSUNG-)?SM-X520",
+        "type": 2,
+        "name": "Galaxy Tab S10 FE 10.9\" WiFi"
       },
       {
         "regex": "(?:SAMSUNG-)?SM-X526",
@@ -40655,6 +40679,11 @@
         "name": "Galaxy Tab S8 11.0\" 5G"
       },
       {
+        "regex": "(?:SAMSUNG-)?SM-X730",
+        "type": 2,
+        "name": "Galaxy Tab S11 WiFi"
+      },
+      {
         "regex": "(?:SAMSUNG-)?SM-T900",
         "type": 2,
         "name": "Galaxy TabPRO 12.2\" WiFi"
@@ -40748,6 +40777,11 @@
         "regex": "(?:SAMSUNG-)?SM-X306",
         "type": 2,
         "name": "Galaxy Tab Active 5 8.0\" 5G"
+      },
+      {
+        "regex": "(?:SAMSUNG-)?SM-X300",
+        "type": 2,
+        "name": "Galaxy Tab Active5 8.0 (2024) WiFi"
       },
       {
         "regex": "(?:SAMSUNG-)?SM-T636",
@@ -48655,7 +48689,7 @@
     "model": "$1"
   },
   {
-    "regex": "Ulefone|Gemini Pro|Power[ _]Armor14|Power 3S|Power_[356]|Power_5S|S(?:10|9)_Pro|(?:Note [89]P|Note 1[23]P|Armor(?! P1[sw]| H[12]s| I2w| V1s| I1 Slim)(?:[ _](?:[2367]|2S|X[236]|6[SE]|3WT|3W|X))?|U00[78][ _]Pro|Be[ _]X|Be[ _]Touch(?:[ _][23])?|Be[ _](?:One|Pure|Pro)(?:[ _]Lite)?|Note 14|Note (?:11P|7T)|Note 16 Pro|Tiger_lite|Note_7P|Note 10P|Paris_(?:Lite|X)|Paris|P6000_Plus|Vienna|GQ3060TF3|Android 11(?:[\\d.]*);(?: [\\w-]+;)? Note 6P?|Tab A11 Pro)(?:[);/ ]|$)",
+    "regex": "Ulefone|Gemini Pro|Power[ _]Armor14|Power 3S|Power_[356]|Power_5S|S(?:10|9)_Pro|(?:Note [89]P|Note 1[23]P|Armor(?! P1[sw]| P1 Pro| H[12]s| I2w| V1s| I1 Slim| C1 Max)(?:[ _](?:[2367]|2S|X[236]|6[SE]|3WT|3W|X))?|U00[78][ _]Pro|Be[ _]X|Be[ _]Touch(?:[ _][23])?|Be[ _](?:One|Pure|Pro)(?:[ _]Lite)?|Note 14|Note (?:11P|7T)|Note 16 Pro|Tiger_lite|Note_7P|Note 10P|Paris_(?:Lite|X)|Paris|P6000_Plus|Vienna|GQ3060TF3|Android 11(?:[\\d.]*);(?: [\\w-]+;)? Note 6P?|Tab A11 Pro)(?:[);/ ]|$)",
     "brand": "Ulefone",
     "type": 1,
     "modelVariants": [
@@ -61361,7 +61395,7 @@
       {
         "regex": "TAB R([569]) Pro",
         "type": 2,
-        "name": "Tab R$1 Rro"
+        "name": "Tab R$1 Pro"
       },
       {
         "regex": "TAB R6 Ultra",
@@ -70958,7 +70992,7 @@
   },
   {
     "regex": "PINE ([^/;)]+)(?: Build|[);])",
-    "brand": "PINE",
+    "brand": "PINE64",
     "type": 13,
     "model": "$1"
   },
@@ -73738,7 +73772,7 @@
     "model": "$1"
   },
   {
-    "regex": "(?:Android 1[34](?:[\\d.]*);(?: [\\w-]+;)? (?:E1[01278]|E28|E38|H3[48]|H2[14]|H19|H1[14]|H44)|Pad Lite E[45]8|Armor_C1w|Armor (?:P1[sw]|I2w|V1s|H[12]s|I1 Slim)|Kenshi[_ ]K10|Pad Pro E11[01])(?:[);/ ]|$)",
+    "regex": "(?:Android 1[34](?:[\\d.]*);(?: [\\w-]+;)? (?:E1[01278]|E28|E38|H3[48]|H2[14]|H19|H1[14]|H44)|Pad Lite E[45]8|Armor_C1w|Armor C1 Max|Armor (?:P1(?:[sw]| Pro)|I2w|V1s|H[12]s|I1 Slim)|Kenshi[_ ]K10|Pad Pro E11[01])(?:[);/ ]|$)",
     "brand": "KENSHI",
     "type": 2,
     "modelVariants": [
@@ -73748,7 +73782,7 @@
         "name": "Armor I1 Slim"
       },
       {
-        "regex": "Armor[_ ](C1w|I2w|P1s|P1w|V1s|H[12]s)",
+        "regex": "Armor[_ ](C1w|I2w|P1s|P1w|V1s|H[12]s|C1 Max|P1 Pro)",
         "type": 1,
         "name": "Armor $1"
       },

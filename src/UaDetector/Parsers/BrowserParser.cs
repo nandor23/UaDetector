@@ -366,7 +366,7 @@ public sealed partial class BrowserParser : IBrowserParser
                     BrowserCode.PuffinWebBrowser,
                     BrowserCode.PuffinSecureBrowser,
                     BrowserCode.PuffinCloudBrowser,
-                    BrowserCode.PrivacyPioneerBrowser,
+                    BrowserCode.CloakPrivateBrowser,
                     BrowserCode.AlohaBrowser,
                     BrowserCode.Pluma,
                     BrowserCode.WhaleTvBrowser,
@@ -698,7 +698,7 @@ public sealed partial class BrowserParser : IBrowserParser
             BrowserCode.OpenBrowserLite,
             BrowserCode.PuffinIncognitoBrowser,
             BrowserCode.PuffinCloudBrowser,
-            BrowserCode.PrivacyPioneerBrowser,
+            BrowserCode.CloakPrivateBrowser,
             BrowserCode.Pluma,
             BrowserCode.PocketInternetExplorer,
         }.ToFrozenSet();

@@ -3410,7 +3410,7 @@
     },
     "client": {
       "type": 4,
-      "name": "mailapp",
+      "name": "MailApp",
       "version": "6.5.3"
     },
     "device": {

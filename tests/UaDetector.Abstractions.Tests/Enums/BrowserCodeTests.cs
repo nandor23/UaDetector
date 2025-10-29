@@ -497,7 +497,7 @@ public class BrowserCodeTests
             { BrowserCode.PrivacyBrowser, 473 },
             { BrowserCode.PrivacyWall, 474 },
             { BrowserCode.PrivacyExplorerFastSafe, 475 },
-            { BrowserCode.PrivacyPioneerBrowser, 476 },
+            { BrowserCode.CloakPrivateBrowser, 476 },
             { BrowserCode.PrivateInternetBrowser, 477 },
             { BrowserCode.ProxyBrowser, 478 },
             { BrowserCode.Proxyium, 479 },
