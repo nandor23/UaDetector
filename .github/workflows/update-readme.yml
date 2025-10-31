@@ -3,6 +3,9 @@ name: Update README
 on:
   push:
     branches: [ "docs" ]
+    
+env:
+  DOTNET_VERSION: 10.0.x
 
 jobs:
   update-readme:
@@ -19,7 +22,7 @@ jobs:
       - name: Setup .NET
         uses: actions/setup-dotnet@v4
         with:
-          dotnet-version: 9.0.x
+          dotnet-version: ${{ env.DOTNET_VERSION }}
 
       - name: Restore dependencies
         run: dotnet restore tools/UaDetector.ReadmeUpdater
