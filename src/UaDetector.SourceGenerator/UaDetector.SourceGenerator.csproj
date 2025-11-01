@@ -9,11 +9,12 @@
   </PropertyGroup>
 
   <ItemGroup Label="Package References">
+    <PackageReference Include="System.Collections.Immutable" VersionOverride="10.0.0-rc.2.25502.107" PrivateAssets="all" />
     <PackageReference Include="Microsoft.CodeAnalysis.Analyzers" PrivateAssets="All" />
     <PackageReference Include="Microsoft.CodeAnalysis.CSharp" PrivateAssets="All" />
     <PackageReference Include="PolySharp" PrivateAssets="All" />
-    <PackageReference Include="System.Text.Json" PrivateAssets="all" />
-    <PackageReference Include="Microsoft.Bcl.HashCode" PrivateAssets="all" />
+    <PackageReference Include="System.Text.Json" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.Bcl.HashCode" PrivateAssets="All" />
   </ItemGroup>
 
   <PropertyGroup>
