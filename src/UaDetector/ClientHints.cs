@@ -205,7 +205,10 @@ internal sealed class ClientHints
                         );
                     }
 
-                    value = value[match.Length..];
+                    // TODO: Remove this once net462 support is dropped
+                    value = value.Substring(match.Length);
+
+                    // value = value[match.Length..];
                 }
             }
             else if (

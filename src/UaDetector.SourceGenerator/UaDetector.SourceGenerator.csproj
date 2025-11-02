@@ -14,19 +14,18 @@
     <PackageReference Include="PolySharp" PrivateAssets="All" />
   </ItemGroup>
 
-  <ItemGroup>
-    <PackageReference Include="System.Collections.Immutable" PrivateAssets="all" GeneratePathProperty="true" VersionOverride="9.0.10" />
-    <PackageReference Include="Microsoft.Bcl.AsyncInterfaces" PrivateAssets="all" GeneratePathProperty="true" />
-    <PackageReference Include="Microsoft.Bcl.HashCode" PrivateAssets="all" GeneratePathProperty="true" />
-    <PackageReference Include="System.Buffers" PrivateAssets="all" GeneratePathProperty="true" />
-    <PackageReference Include="System.Memory" PrivateAssets="all" GeneratePathProperty="true" />
-    <PackageReference Include="System.Numerics.Vectors" PrivateAssets="all" GeneratePathProperty="true" />
-    <PackageReference Include="System.Reflection.Metadata" PrivateAssets="all" GeneratePathProperty="true" />
-    <PackageReference Include="System.Runtime.CompilerServices.Unsafe" PrivateAssets="all" GeneratePathProperty="true" />
-    <PackageReference Include="System.Text.Encoding.CodePages" PrivateAssets="all" GeneratePathProperty="true" />
-    <PackageReference Include="System.Text.Encodings.Web" PrivateAssets="all" GeneratePathProperty="true" />
-    <PackageReference Include="System.Text.Json" PrivateAssets="all" GeneratePathProperty="true" />
-    <PackageReference Include="System.Threading.Tasks.Extensions" PrivateAssets="all" GeneratePathProperty="true" />
+  <ItemGroup Label="Package References">
+    <PackageReference Include="System.Text.Json" PrivateAssets="All" GeneratePathProperty="true" />
+    <PackageReference Include="System.Text.Encodings.Web" PrivateAssets="All" GeneratePathProperty="true" />
+    <PackageReference Include="System.Text.Encoding.CodePages" PrivateAssets="All" GeneratePathProperty="true" />
+    <PackageReference Include="Microsoft.Bcl.HashCode" PrivateAssets="All" GeneratePathProperty="true" />
+    <PackageReference Include="Microsoft.Bcl.AsyncInterfaces" PrivateAssets="All" GeneratePathProperty="true" />
+    <PackageReference Include="System.Buffers" PrivateAssets="All" GeneratePathProperty="true" />
+    <PackageReference Include="System.Memory" PrivateAssets="All" GeneratePathProperty="true" />
+    <PackageReference Include="System.Runtime.CompilerServices.Unsafe" PrivateAssets="All" GeneratePathProperty="true" />
+    <PackageReference Include="System.Threading.Tasks.Extensions" PrivateAssets="All" GeneratePathProperty="true" />
+    <PackageReference Include="System.Numerics.Vectors" PrivateAssets="All" GeneratePathProperty="true" />
+    <PackageReference Include="System.Reflection.Metadata" PrivateAssets="All" GeneratePathProperty="true" />
   </ItemGroup>
 
   <PropertyGroup>
@@ -38,7 +37,6 @@
       <TargetPathWithTargetPlatformMoniker Include="$(PkgMicrosoft_Bcl_AsyncInterfaces)\lib\netstandard2.0\Microsoft.Bcl.AsyncInterfaces.dll" IncludeRuntimeDependency="false" />
       <TargetPathWithTargetPlatformMoniker Include="$(PkgMicrosoft_Bcl_HashCode)\lib\netstandard2.0\Microsoft.Bcl.HashCode.dll" IncludeRuntimeDependency="false" />
       <TargetPathWithTargetPlatformMoniker Include="$(PkgSystem_Buffers)\lib\netstandard2.0\System.Buffers.dll" IncludeRuntimeDependency="false" />
-      <TargetPathWithTargetPlatformMoniker Include="$(PkgSystem_Collections_Immutable)\lib\netstandard2.0\System.Collections.Immutable.dll" IncludeRuntimeDependency="false" />
       <TargetPathWithTargetPlatformMoniker Include="$(PkgSystem_Memory)\lib\netstandard2.0\System.Memory.dll" IncludeRuntimeDependency="false" />
       <TargetPathWithTargetPlatformMoniker Include="$(PkgSystem_Numerics_Vectors)\lib\netstandard2.0\System.Numerics.Vectors.dll" IncludeRuntimeDependency="false" />
       <TargetPathWithTargetPlatformMoniker Include="$(PkgSystem_Reflection_Metadata)\lib\netstandard2.0\System.Reflection.Metadata.dll" IncludeRuntimeDependency="false" />
