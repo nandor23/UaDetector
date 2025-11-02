@@ -2127,5 +2127,7 @@ public static class BrandRegistry
     }.ToFrozenDictionary();
 
     internal static readonly FrozenDictionary<string, BrandCode> BrandNameMappings =
-        BrandCodeMappings.ToDictionary(e => e.Value, e => e.Key).ToFrozenDictionary();
+        BrandCodeMappings
+            .ToDictionary(e => e.Value, e => e.Key)
+            .ToFrozenDictionary(StringComparer.OrdinalIgnoreCase);
 }
