@@ -71,10 +71,5 @@
       Version="8.0.6"
       Condition="!$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', 'net9.0'))"
     />
-    <PackageVersion
-      Include="System.ValueTuple"
-      Version="4.6.1"
-      Condition="$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', 'net462'))"
-    />
   </ItemGroup>
 </Project>

@@ -28,6 +28,11 @@ internal static class StringExtensions
             }
         }
 
+        // TODO: Remove this once net462 support is dropped
+        return buffer[count - 1] == ' '
+            ? buffer.Slice(0, count - 1).ToString()
+            : buffer.Slice(0, count).ToString();
+        
         return buffer[count - 1] == ' '
             ? buffer[..(count - 1)].ToString()
             : buffer[..count].ToString();
@@ -49,6 +54,9 @@ internal static class StringExtensions
             }
         }
 
+        // TODO: Remove this once net462 support is dropped
+        return buffer.Slice(0, count).ToString();
+        
         return buffer[..count].ToString();
     }
 
