@@ -32,6 +32,11 @@
     <PackageReference Include="System.Text.Json" />
   </ItemGroup>
 
+  <!-- TODO: Remove this once net462 support is dropped -->
+  <ItemGroup Condition="$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', 'net462'))">
+    <PackageReference Include="System.ValueTuple" />
+  </ItemGroup>
+
   <ItemGroup>
     <ProjectReference Include="..\UaDetector.Abstractions\UaDetector.Abstractions.csproj" />
     <ProjectReference Include="..\UaDetector.SourceGenerator\UaDetector.SourceGenerator.csproj"
