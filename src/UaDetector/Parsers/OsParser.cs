@@ -443,7 +443,10 @@ public sealed partial class OsParser : IOsParser
 
         if (index != -1)
         {
-            FireOsVersionMappings.TryGetValue(version[..index], out result);
+            // TODO: Remove this once net462 support is dropped
+            FireOsVersionMappings.TryGetValue(version.Substring(0, index), out result);
+
+            // FireOsVersionMappings.TryGetValue(version[..index], out result);
         }
 
         if (result is null)
@@ -464,7 +467,10 @@ public sealed partial class OsParser : IOsParser
 
         if (index != -1)
         {
-            LineageOsVersionMappings.TryGetValue(version[..index], out result);
+            // TODO: Remove this once net462 support is dropped
+            LineageOsVersionMappings.TryGetValue(version.Substring(0, index), out result);
+
+            // LineageOsVersionMappings.TryGetValue(version[..index], out result);
         }
 
         if (result is null)
