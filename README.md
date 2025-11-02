@@ -118,6 +118,26 @@ else
     Console.WriteLine("No bot detected");
 }
 ```
+## 🗂️ Registry Access
+
+Static registry classes offer bidirectional lookups for converting between enum codes and their corresponding string names.
+The `BrowserRegistry`, `OsRegistry`, and `BrandRegistry` classes provide type-safe access to predefined values.
+
+```c#
+// Get browser name from enum code
+string browserName = BrowserRegistry.GetBrowserName(BrowserCode.Safari);
+// Returns: "Safari"
+
+// Try to get browser code from name (case-insensitive)
+if (BrowserRegistry.TryGetBrowserCode("Safari", out var browserCode))
+{
+    Console.WriteLine($"Browser Code: {browserCode}"); // Output: Browser Code: Safari
+}
+else
+{
+    Console.WriteLine("Browser not found");
+}
+```
 
 ##  💾 Caching
 
