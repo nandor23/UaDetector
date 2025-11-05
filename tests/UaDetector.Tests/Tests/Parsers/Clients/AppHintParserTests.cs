@@ -6,7 +6,9 @@ namespace UaDetector.Tests.Tests.Parsers.Clients;
 public class AppHintParserTests
 {
     [Test]
-    [MethodDataSource(nameof(AppHintTestData))]
+    [Arguments("org.telegram.messenger", "Telegram", true)]
+    [Arguments("com.instagram.android", "Instagram", true)]
+    [Arguments("wrong.hint", null, false)]
     public void TryParseAppName_ShouldReturnExpectedAppName(
         string appHint,
         string? expectedAppName,
@@ -19,12 +21,5 @@ public class AppHintParserTests
 
         AppHintParser.TryParseAppName(clientHints, out var appName).ShouldBe(result);
         appName.ShouldBe(expectedAppName);
-    }
-
-    public static IEnumerable<Func<(string, string?, bool)>> AppHintTestData()
-    {
-        yield return () => ("org.telegram.messenger", "Telegram", true);
-        yield return () => ("com.instagram.android", "Instagram", true);
-        yield return () => ("wrong.hint", null, false);
     }
 }
