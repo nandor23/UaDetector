@@ -6720,7 +6720,7 @@
         "name": "ZenFone 7 Pro"
       },
       {
-        "regex": "(?:ASUS_)?(?:ZS670KS|I002D|AI2205_[AC])(?:[);/ ]|$)",
+        "regex": "(?:ASUS_)?(?:ZS670KS|I002D|AI2205_C)(?:[);/ ]|$)",
         "name": "ZenFone 7"
       },
       {
@@ -6866,6 +6866,10 @@
       {
         "regex": "(?:ASUS_)?(?:AI2205)",
         "name": "ROG Phone 7"
+      },
+      {
+        "regex": "(?:ASUS_)?(?:AI2401_[DE])",
+        "name": "ROG Phone 8 Pro"
       },
       {
         "regex": "(?:ASUS_)?(?:AI2401)",
@@ -8071,12 +8075,12 @@
         "name": "X Fold 2"
       },
       {
-        "regex": "V2303A",
+        "regex": "V2303A|V2337A",
         "type": 10,
         "name": "X Fold 3"
       },
       {
-        "regex": "V2337A|V2330",
+        "regex": "V2330",
         "type": 10,
         "name": "X Fold 3 Pro"
       },
@@ -8755,7 +8759,7 @@
       },
       {
         "regex": "V2230A",
-        "name": "Y35m"
+        "name": "Y35 5G"
       },
       {
         "regex": "V2357EA",
@@ -8838,8 +8842,12 @@
         "name": "Y38 5G"
       },
       {
-        "regex": "V23(?:27|14)(?:[);/ ]|$)",
+        "regex": "V2314(?:[);/ ]|$)",
         "name": "V30 Lite 5G"
+      },
+      {
+        "regex": "V2327(?:[);/ ]|$)",
+        "name": "Y100"
       },
       {
         "regex": "(?:V2341|V2424|V2417)(?:[);/ ]|$)",
@@ -9391,11 +9399,11 @@
       },
       {
         "regex": "V2279A",
-        "name": "Y35+"
+        "name": "Y100i"
       },
       {
         "regex": "V2278A",
-        "name": "Y77t"
+        "name": "Y78"
       },
       {
         "regex": "V2271A",
@@ -17983,11 +17991,11 @@
         "name": "Pixel 2 XL"
       },
       {
-        "regex": "GWVK6|GUR25|G2YBB|G1B60",
+        "regex": "GUR25|G2YBB|G1B60",
         "name": "Pixel 9"
       },
       {
-        "regex": "GR83Y|GEC77",
+        "regex": "GWVK6|GR83Y|GEC77",
         "name": "Pixel 9 Pro"
       },
       {
@@ -20117,7 +20125,11 @@
         "name": "Honor Magic 5 Ultimate"
       },
       {
-        "regex": "ALI-NX[13]",
+        "regex": "ALI-NX1",
+        "name": "Honor X9b"
+      },
+      {
+        "regex": "ALI-NX3",
         "name": "Honor Magic 6 Lite 5G"
       },
       {
@@ -20242,7 +20254,7 @@
       },
       {
         "regex": "WDY-AN00",
-        "name": "Honor Play 40C"
+        "name": "Honor Play 40"
       },
       {
         "regex": "RKY-LX[123]",
@@ -27487,7 +27499,7 @@
     ]
   },
   {
-    "regex": "(?:LNV-)?Lenovo|IdeaTab|IdeaPad|Thinkpad|Yoga Tablet|Tab2A[0-9]-[0-9]{2}[a-z]?|ZUK[ -_]|TB-X306|(?:TB2-X30L|TB3-710[IF]|TB128FU|YT3-X50[MFL]|K50a40|TB-(?:Q706Z|X103F|8504F|X304F|X704V|X704A)|A5500-H|A2107A-H|A3500-HV|A2109A|S6000|Z2 Plus|Vibe[ _](?:P1|S6i Plus|S[23567]i|C|[ZX]2|K5(?: Plus)?|V7)|P2A42|L38011|L18011|[5-8]01LV|[67]02LV|Z2131|K350t|K31-t3|Tab A1020|TAB 2 A8-50LC|S90-A|A101LV|P70-A|VR-1541F|d-42A|lineage_A6020|EveryPad2|A2010l36|F0CU0028RK|TB310XU|TB301[FX]U|TB132FU|TB32(?:8[FX]U|0FC)|TB138FC|PB-6505Y|TB-X505[FLX]|TB-8704V|TB351FU|TB3[05]0[FX]U|TB-X606[XFM]|L38043|TB3-X70L|TB-X605[LF]C?|A7600-HV?|YT-X703F|TB330XU|TB373FU|TB3[17]0FU|TB331FC|TB321FU|A397i|TB330FU|NL5H00X|L79031|XT2091-[78]|L71061|L70081|L78031|20JJS0CU1M|A6020l3[67]|A6020a46|TB360ZU|TB311[XF]U|TB37[15]FC|L58091|L39051|L19041|L19111|L780[157]1|Lecoo P116G)(?:[);/ ]|$)",
+    "regex": "(?:LNV-)?Lenovo|IdeaTab|IdeaPad|Thinkpad|Yoga Tablet|Tab2A[0-9]-[0-9]{2}[a-z]?|ZUK[ -_]|TB-X306|(?:TB2-X30L|TB3-710[IF]|TB128FU|YT3-X50[MFL]|K50a40|TB-(?:Q706Z|X103F|8504F|X304F|X704V|X704A)|A5500-H|A2107A-H|A3500-HV|A2109A|S6000|Z2 Plus|Vibe[ _](?:P1|S6i Plus|S[23567]i|C|[ZX]2|K5(?: Plus)?|V7)|P2A42|L38011|L18011|[5-8]01LV|[67]02LV|Z2131|K350t|K31-t3|Tab A1020|TAB 2 A8-50LC|S90-A|A101LV|P70-A|VR-1541F|d-42A|lineage_A6020|EveryPad2|A2010l36|F0CU0028RK|TB310XU|TB301[FX]U|TB132FU|TB32(?:8[FX]U|0FC)|TB138FC|PB-6505Y|TB-X505[FLX]|TB-8704V|TB351FU|TB3[05]0[FX]U|TB-X606[XFM]|L38043|TB3-X70L|TB-X605[LF]C?|A7600-HV?|YT-X703F|TB330XU|TB373FU|TB3[17]0FU|TB331FC|TB321FU|A397i|TB330FU|NL5H00X|L79031|XT2091-[78]|L71061|L70081|L78031|20JJS0CU1M|A6020l3[67]|A6020a46|TB360ZU|TB311[XF]U|TB37[15]FC|L58091|L39051|L19041|L19111|L780[157]1|Lecoo P116G|XT2129-3)(?:[);/ ]|$)",
     "brand": "Lenovo",
     "type": 1,
     "modelVariants": [
@@ -28329,6 +28341,10 @@
       {
         "regex": "Lenovo X2(?:-[ER]U)?",
         "name": "X2"
+      },
+      {
+        "regex": "XT2129-3",
+        "name": "K13 Pro"
       },
       {
         "regex": "VR-1541F",
@@ -30123,6 +30139,11 @@
         "regex": "Yuno",
         "type": 1,
         "name": "Yuno"
+      },
+      {
+        "regex": "Five Pro 32",
+        "type": 1,
+        "name": "Five Pro 32"
       },
       {
         "regex": "Five Pro",
@@ -32723,7 +32744,7 @@
         "name": "Moto G7 Plus"
       },
       {
-        "regex": "XT2129-[123]",
+        "regex": "XT2129-[12]",
         "name": "Moto G30"
       },
       {
@@ -33190,11 +33211,11 @@
       },
       {
         "regex": "motorola razr (40) ultra",
-        "name": "RIZR $1 Ultra"
+        "name": "RAZR $1 Ultra"
       },
       {
         "regex": "motorola razr (40)",
-        "name": "RIZR $1"
+        "name": "RAZR $1"
       },
       {
         "regex": "Motorola[ _-]([^/);]+)(?: Build|[);])",
@@ -36469,12 +36490,8 @@
         "name": "C53"
       },
       {
-        "regex": "RMX3930",
+        "regex": "RMX393[09]",
         "name": "C61"
-      },
-      {
-        "regex": "RMX3939",
-        "name": "C63"
       },
       {
         "regex": "RMX3950",
@@ -36490,7 +36507,7 @@
       },
       {
         "regex": "RMX3782",
-        "name": "C67 5G"
+        "name": "Narzo 60x"
       },
       {
         "regex": "RMX3997",
@@ -36658,7 +36675,7 @@
       },
       {
         "regex": "RMX3933",
-        "name": "Narzo N61"
+        "name": "Note 60"
       },
       {
         "regex": "RMX183[13](?:[);/ ]|$)",
@@ -36754,7 +36771,7 @@
       },
       {
         "regex": "RMX3783",
-        "name": "V50"
+        "name": "V50s"
       },
       {
         "regex": "RMX3781",
@@ -36825,11 +36842,7 @@
         "name": "A1x 5G"
       },
       {
-        "regex": "PJU110",
-        "name": "A1i 5G"
-      },
-      {
-        "regex": "PJS110|PHJ110_A1",
+        "regex": "PJU110|PJS110|PHJ110_A1",
         "name": "A2x 5G"
       },
       {
@@ -37209,12 +37222,12 @@
         "name": "A74 5G"
       },
       {
-        "regex": "CPH2365|PELM00",
-        "name": "A95"
+        "regex": "PELM00",
+        "name": "A95 5G"
       },
       {
-        "regex": "CHP2365",
-        "name": "A94"
+        "regex": "CHP2365|CPH2365",
+        "name": "A95 4G"
       },
       {
         "regex": "PCE[TM]00(?:[);/ ]|$)",
@@ -37250,7 +37263,7 @@
       },
       {
         "regex": "CPH2603",
-        "name": "F25 Pro 5G"
+        "name": "Reno 11 F"
       },
       {
         "regex": "CPH2643",
@@ -37538,7 +37551,7 @@
       },
       {
         "regex": "(?:OPPO[ _]?)?PJG110",
-        "name": "A2 5G"
+        "name": "A2 Pro 5G"
       },
       {
         "regex": "(?:OPPO[ _]?)?PHF110",
@@ -39854,6 +39867,10 @@
         "name": "Neon Ray Pro"
       },
       {
+        "regex": "Neon Ray Ultra M",
+        "name": "Neon Ray Ultra M"
+      },
+      {
         "regex": "Neon Ray Ultra",
         "name": "Neon Ray Ultra"
       },
@@ -42160,6 +42177,10 @@
         "name": "Galaxy F02s"
       },
       {
+        "regex": "(?:SAMSUNG-)?SM-E045F",
+        "name": "Galaxy F04"
+      },
+      {
         "regex": "(?:SAMSUNG-)?SM-F127G(?:[);/ ]|$)",
         "name": "Galaxy F12"
       },
@@ -42472,7 +42493,7 @@
         "name": "Galaxy M01"
       },
       {
-        "regex": "(?:SAMSUNG-)?SM-[EM]045F",
+        "regex": "(?:SAMSUNG-)?SM-M045F",
         "name": "Galaxy M04"
       },
       {
@@ -47260,7 +47281,7 @@
       },
       {
         "regex": "Tecno[ _-]CK8nB?(?:[);/ ]|$)",
-        "name": "Camon 20 Pro 5G"
+        "name": "Camon 20s Pro 5G"
       },
       {
         "regex": "Tecno[ _-]CK9n(?:[);/ ]|$)",
@@ -52049,8 +52070,12 @@
         "name": "14 Civi"
       },
       {
-        "regex": "(?:2311(?:6PN5B[CG]|BPN23C)|Xiaomi 14 Pro)(?:[);/ ]|$)",
+        "regex": "(?:23116PN5B[CG]|Xiaomi 14 Pro)(?:[);/ ]|$)",
         "name": "14 Pro"
+      },
+      {
+        "regex": "(?:2311BPN23C)(?:[);/ ]|$)",
+        "name": "Mix Flip"
       },
       {
         "regex": "(2407FPN8E[GR]|2406APNFAG|Xiaomi 14T Pro)(?:[);/ ]|$)",
@@ -52161,8 +52186,12 @@
         "name": "Mi Mix 4"
       },
       {
-        "regex": "(?:M1803D5XA|MDE5)(?:[);/ ]|$)",
+        "regex": "MDE5(?:[);/ ]|$)",
         "name": "Mi Mix 2"
+      },
+      {
+        "regex": "M1803D5XA(?:[);/ ]|$)",
+        "name": "Mi Mix 2S"
       },
       {
         "regex": "Mi MIX 3 5G(?:[);/ ]|$)",
@@ -52618,7 +52647,7 @@
       },
       {
         "regex": "24053PY09C",
-        "name": "Civi 4"
+        "name": "Civi 4 Pro"
       },
       {
         "regex": "25067PYE3C",
@@ -53029,7 +53058,7 @@
         "name": "Redmi Note 12 Pro DE"
       },
       {
-        "regex": "(?:22101316U[GP])(?:[);/ ]|$)",
+        "regex": "(?:22101316U[GP]|Redmi Note 12 Pro\\+ 5G)(?:[);/ ]|$)",
         "type": 10,
         "name": "Redmi Note 12 Pro+ 5G"
       },
@@ -54787,7 +54816,7 @@
     ]
   },
   {
-    "regex": "Nubia[ _]|(?:NX(?:302J|403A|404H|406E|40[X2]|503A|50[5678]J|51[0123]J|521J|523J_V1|529Jq?|5[345]1J|5[48]9J|569[HJ]|5[67]3J|575J|59[157]J|60[1689]J|61[12679]J|62[79]J|65[19]J|6[126]9J|66[67]J|679[JS]|70[129]J|71[123]J|72[1459]J|73[367]J|769J|779J|709S|907J|789J)|NP0[13]J|Z235[12]N|Z2357N|Z6255CA|Z2353|Z246[45]N)(?:[);/ ]|$)",
+    "regex": "Nubia[ _]|(?:NX(?:302J|403A|404H|406E|40[X2]|503A|50[5678]J|51[0123]J|521J|523J_V1|529Jq?|5[345]1J|5[48]9J|569[HJ]|5[67]3J|575J|59[157]J|60[1689]J|61[12679]J|62[79]J|65[19]J|6[126]9J|66[67]J|679[JS]|70[129]J|71[123]J|72[1459]J|73[367]J|769J|779J|709S|907J|789J)|NP0[13]J|Z235[12]N|Z6255CA|Z2353|Z246[45]N)(?:[);/ ]|$)",
     "brand": "Nubia",
     "type": 1,
     "modelVariants": [
@@ -54829,7 +54858,7 @@
         "name": "Focus Pro 5G"
       },
       {
-        "regex": "Z2357N|NX302J",
+        "regex": "NX302J",
         "name": "Focus 5G"
       },
       {
@@ -55102,7 +55131,7 @@
     ]
   },
   {
-    "regex": "ZTE(?!; MegaFon)|AxonPhone|([a-z0-9]+)_USA_Cricket|(?:Blade[ _](?:A[57] 20(?:19|20)(?:RU)?|(?:V1000|L8)RU|E01|V0820|L110|L[2357]|L210(?:RU)?|L7A|L8|S6|V[6789]|V8Q|V8 SE|V9 VITA|X7|A(310?|320|460|465|475|510|520|530|602|51|30|3)|V580|V Ultra|Q Lux)|N9[15]8St|N818S|N951[0579]|N91[38]0|N9101|N913[267]|N952[01]|N9560|N9810|N799D|[UV]9180|[UV]9815|Z(?:5151V|610DL|6250CC|6400C|6410S|233V|331|5031O|559DL|6621O|667T|6750M|768G|792|81[25]|818L|82[08]|83[12359]|85[125]|851M|992|(557|71[67]|798|836|861|916)BL|986DL|(232|718|828)TL|(?:233|353|558|717|799|837|862|899|917|963)VL|955A|95[678]|965|97[018]|98[1237]|986U|999|936L)|V769M|Blade Apex2|G (LTE|Lux)|Vec|Z959|V865M|Z3001S|902ZT|KIS II Max|Kis 3|K3DX-V5G|Z930L|Optus X|Blade[ _](A[357] 2019(?:-T)?|A[35] 2020-T|A7S 2020-T|A6 MAX|A0622|X9)|Z3153V|Z836F|Ctyon-A9|602ZT|MO-01[JK]|Z963U|402ZT|P545|P609|P650 Pro|dandelion|901ZT|A00[13]ZT|Z-01K|UZTE (?:GRAND V7|V808)|ZTG01|K8[37]CA|K87CC|VERGATARIO ?5(?:PLUS)?|Axon mini|KIS C341|A[13]03ZT|Z335(?:1S|[23]CA)|Z5156CC|Z5157[VY]|B867RE|MEO Smart A[48]0|SmartA35|P65[10] 2021|Z6201V|Z6252CA|Z6251V?|A2020N3|A2322G|A202ZT|A302ZT|Z719DL|Z5158|Z235[069]|Z246[67]|Z245[038]|B2017G|5G UG Phone U2[35]|ATLAS[ _]W|A2121G|A2022|A202[23]P|A0622|A0616|2050RU|Z7540|A2022PG|A2019G|Z2472)(?:[);/ ]|$)",
+    "regex": "ZTE(?!; MegaFon)|AxonPhone|([a-z0-9]+)_USA_Cricket|(?:Blade[ _](?:A[57] 20(?:19|20)(?:RU)?|(?:V1000|L8)RU|E01|V0820|L110|L[2357]|L210(?:RU)?|L7A|L8|S6|V[6789]|V8Q|V8 SE|V9 VITA|X7|A(310?|320|460|465|475|510|520|530|602|51|30|3)|V580|V Ultra|Q Lux)|N9[15]8St|N818S|N951[0579]|N91[38]0|N9101|N913[267]|N952[01]|N9560|N9810|N799D|[UV]9180|[UV]9815|Z(?:5151V|610DL|6250CC|6400C|6410S|233V|331|5031O|559DL|6621O|667T|6750M|768G|792|81[25]|818L|82[08]|83[12359]|85[125]|851M|992|(557|71[67]|798|836|861|916)BL|986DL|(232|718|828)TL|(?:233|353|558|717|799|837|862|899|917|963)VL|955A|95[678]|965|97[018]|98[1237]|986U|999|936L)|V769M|Blade Apex2|G (LTE|Lux)|Vec|Z959|V865M|Z3001S|902ZT|KIS II Max|Kis 3|K3DX-V5G|Z930L|Optus X|Blade[ _](A[357] 2019(?:-T)?|A[35] 2020-T|A7S 2020-T|A6 MAX|A0622|X9)|Z3153V|Z836F|Ctyon-A9|602ZT|MO-01[JK]|Z963U|402ZT|P545|P609|P650 Pro|dandelion|901ZT|A00[13]ZT|Z-01K|UZTE (?:GRAND V7|V808)|ZTG01|K8[37]CA|K87CC|VERGATARIO ?5(?:PLUS)?|Axon mini|KIS C341|A[13]03ZT|Z335(?:1S|[23]CA)|Z5156CC|Z5157[VY]|B867RE|MEO Smart A[48]0|SmartA35|P65[10] 2021|Z6201V|Z6252CA|Z6251V?|A2020N3|A2322G|A202ZT|A302ZT|Z719DL|Z5158|Z235[069]|Z246[67]|Z245[038]|B2017G|5G UG Phone U2[35]|ATLAS[ _]W|A2121G|A2022|A202[23]P|A0622|A0616|2050RU|Z7540|A2022PG|A2019G|Z2472|Z2357N)(?:[);/ ]|$)",
     "brand": "ZTE",
     "type": 1,
     "modelVariants": [
@@ -56187,6 +56216,10 @@
         "name": "Atlas W"
       },
       {
+        "regex": "Z2357N",
+        "name": "Blade A75 5G"
+      },
+      {
         "regex": "A2121[GLE]?(?:[);/ ]|$)",
         "type": 10,
         "name": "Axon 20 5G"
@@ -56785,7 +56818,7 @@
       {
         "regex": "inoiPad 64GB Wi-Fi\\+3G",
         "type": 2,
-        "name": "Pad WiFi"
+        "name": "Pad WiFi+3G"
       },
       {
         "regex": "INOI easyphone",
@@ -65717,8 +65750,12 @@
         "name": "Raptor 5G"
       },
       {
-        "regex": "Raptor(?: LTD)?",
+        "regex": "Raptor LTD",
         "name": "Raptor LTD"
+      },
+      {
+        "regex": "Raptor",
+        "name": "Raptor"
       },
       {
         "regex": "Action A5Pro",

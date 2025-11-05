@@ -3048,7 +3048,7 @@
     },
     "device": {
       "type": 1,
-      "model": "Civi 4",
+      "model": "Civi 4 Pro",
       "brand": {
         "name": "Xiaomi",
         "code": 1973
@@ -10009,7 +10009,7 @@
     },
     "device": {
       "type": 1,
-      "model": "C63",
+      "model": "C61",
       "brand": {
         "name": "Realme",
         "code": 1430
@@ -11302,7 +11302,7 @@
     },
     "device": {
       "type": 1,
-      "model": "V50",
+      "model": "V50s",
       "brand": {
         "name": "Realme",
         "code": 1430
@@ -12615,7 +12615,7 @@
     },
     "device": {
       "type": 1,
-      "model": "Raptor LTD",
+      "model": "Raptor",
       "brand": {
         "name": "F150",
         "code": 536
@@ -13906,10 +13906,10 @@
     },
     "device": {
       "type": 1,
-      "model": "Moto G30",
+      "model": "K13 Pro",
       "brand": {
-        "name": "Motorola",
-        "code": 1120
+        "name": "Lenovo",
+        "code": 976
       }
     }
   },
