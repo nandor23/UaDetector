@@ -19,16 +19,11 @@ public class ShellTvParserTests
     }
 
     [Test]
-    [MethodDataSource(nameof(UserAgentTestData))]
+    [Arguments("Leff Shell LC390TA2A", true)]
+    [Arguments("Leff Shell", false)]
     public void ShellTvRegex_ShouldMatchUserAgent(string userAgent, bool result)
     {
         var isMatch = ShellTvParser.ShellTvRegex.IsMatch(userAgent);
         isMatch.ShouldBe(result);
-    }
-
-    public static IEnumerable<Func<(string, bool)>> UserAgentTestData()
-    {
-        yield return () => ("Leff Shell LC390TA2A", true);
-        yield return () => ("Leff Shell", false);
     }
 }

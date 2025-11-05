@@ -1,7 +1,8 @@
 ﻿using Shouldly;
+
 using UaDetector.Utilities;
 
-namespace UaDetector.Tests.Utils;
+namespace UaDetector.Tests.Tests.Utilities;
 
 public class StringExtensionsTests
 {
@@ -12,6 +13,13 @@ public class StringExtensionsTests
         input.CollapseSpaces().ShouldBe(output);
     }
 
+    [Test]
+    [MethodDataSource(nameof(RemoveSpacesTestData))]
+    public void RemoveSpaces_WithSpaces_ReturnsStringWithoutSpaces(string input, string output)
+    {
+        input.RemoveSpaces().ShouldBe(output);
+    }
+
     public static IEnumerable<Func<(string, string)>> CollapseSpacesTestData()
     {
         yield return () => ("Hello World", "Hello World");
@@ -20,13 +28,6 @@ public class StringExtensionsTests
         yield return () => (" Hello World", "Hello World");
         yield return () => ("  Hello World", "Hello World");
         yield return () => (" Hello   World   ", "Hello World");
-    }
-
-    [Test]
-    [MethodDataSource(nameof(RemoveSpacesTestData))]
-    public void RemoveSpaces_WithSpaces_ReturnsStringWithoutSpaces(string input, string output)
-    {
-        input.RemoveSpaces().ShouldBe(output);
     }
 
     public static IEnumerable<Func<(string, string)>> RemoveSpacesTestData()

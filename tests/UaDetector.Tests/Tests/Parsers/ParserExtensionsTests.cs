@@ -6,7 +6,7 @@ namespace UaDetector.Tests.Tests.Parsers;
 public class ParserExtensionsTests
 {
     [Test]
-    [MethodDataSource(nameof(TryCompareVersionsValidTestData))]
+    [MethodDataSource(nameof(ValidVersionComparisonTestData))]
     public void TryCompareVersions_WithValidInputs_ReturnsExpectedResult(
         string firstVersion,
         string secondVersion,
@@ -21,7 +21,7 @@ public class ParserExtensionsTests
     }
 
     [Test]
-    [MethodDataSource(nameof(TryCompareVersionsInvalidTestData))]
+    [MethodDataSource(nameof(InvalidVersionComparisonTestData))]
     public void TryCompareVersions_WithInvalidInputs_ReturnsExpectedResult(
         string firstVersion,
         string secondVersion
@@ -34,7 +34,7 @@ public class ParserExtensionsTests
         result.ShouldBe(null);
     }
 
-    public static IEnumerable<Func<(string, string, int)>> TryCompareVersionsValidTestData()
+    public static IEnumerable<Func<(string, string, int)>> ValidVersionComparisonTestData()
     {
         yield return () => ("1", "1", 0);
         yield return () => ("1", "1.0", 0);
@@ -47,7 +47,7 @@ public class ParserExtensionsTests
         yield return () => ("1.0.20", "1.0.2", 1);
     }
 
-    public static IEnumerable<Func<(string, string)>> TryCompareVersionsInvalidTestData()
+    public static IEnumerable<Func<(string, string)>> InvalidVersionComparisonTestData()
     {
         yield return () => ("1", "abc");
         yield return () => ("1", string.Empty);
