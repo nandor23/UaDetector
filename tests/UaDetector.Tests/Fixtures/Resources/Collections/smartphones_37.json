@@ -7168,7 +7168,7 @@
     },
     "device": {
       "type": 1,
-      "model": "Honor Play 40C",
+      "model": "Honor Play 40",
       "brand": {
         "name": "Huawei",
         "code": 757
@@ -7735,7 +7735,7 @@
     },
     "device": {
       "type": 1,
-      "model": "RIZR 40",
+      "model": "RAZR 40",
       "brand": {
         "name": "Motorola",
         "code": 1120
@@ -7762,7 +7762,7 @@
     },
     "device": {
       "type": 1,
-      "model": "RIZR 40 Ultra",
+      "model": "RAZR 40 Ultra",
       "brand": {
         "name": "Motorola",
         "code": 1120
@@ -8005,7 +8005,7 @@
     },
     "device": {
       "type": 1,
-      "model": "Y35+",
+      "model": "Y100i",
       "brand": {
         "name": "Vivo",
         "code": 1864
@@ -8113,7 +8113,7 @@
     },
     "device": {
       "type": 1,
-      "model": "Y77t",
+      "model": "Y78",
       "brand": {
         "name": "Vivo",
         "code": 1864
@@ -8950,7 +8950,7 @@
     },
     "device": {
       "type": 1,
-      "model": "ZenFone 7",
+      "model": "ROG Phone 7",
       "brand": {
         "name": "Asus",
         "code": 118
@@ -10470,7 +10470,7 @@
     },
     "device": {
       "type": 1,
-      "model": "Honor Magic 6 Lite 5G",
+      "model": "Honor X9b",
       "brand": {
         "name": "Huawei",
         "code": 757
@@ -11486,7 +11486,7 @@
     },
     "device": {
       "type": 1,
-      "model": "A2 5G",
+      "model": "A2 Pro 5G",
       "brand": {
         "name": "OPPO",
         "code": 1273
@@ -12666,7 +12666,7 @@
     },
     "device": {
       "type": 1,
-      "model": "C67 5G",
+      "model": "Narzo 60x",
       "brand": {
         "name": "Realme",
         "code": 1430

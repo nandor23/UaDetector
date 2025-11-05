@@ -73,7 +73,7 @@
     },
     "device": {
       "type": 1,
-      "model": "Y35m",
+      "model": "Y35 5G",
       "brand": {
         "name": "Vivo",
         "code": 1864
@@ -1435,7 +1435,7 @@
     },
     "device": {
       "type": 1,
-      "model": "ROG Phone 8",
+      "model": "ROG Phone 8 Pro",
       "brand": {
         "name": "Asus",
         "code": 118
@@ -2906,7 +2906,7 @@
     },
     "device": {
       "type": 1,
-      "model": "Camon 20 Pro 5G",
+      "model": "Camon 20s Pro 5G",
       "brand": {
         "name": "Tecno Mobile",
         "code": 1684
@@ -6171,7 +6171,7 @@
     },
     "device": {
       "type": 1,
-      "model": "F25 Pro 5G",
+      "model": "Reno 11 F",
       "brand": {
         "name": "OPPO",
         "code": 1273
@@ -8044,7 +8044,7 @@
     },
     "device": {
       "type": 1,
-      "model": "V30 Lite 5G",
+      "model": "Y100",
       "brand": {
         "name": "Vivo",
         "code": 1864
@@ -10569,7 +10569,7 @@
     },
     "device": {
       "type": 1,
-      "model": "A1i 5G",
+      "model": "A2x 5G",
       "brand": {
         "name": "OPPO",
         "code": 1273

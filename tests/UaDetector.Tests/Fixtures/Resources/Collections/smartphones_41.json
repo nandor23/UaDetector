@@ -527,10 +527,10 @@
     },
     "device": {
       "type": 1,
-      "model": "Focus 5G",
+      "model": "Blade A75 5G",
       "brand": {
-        "name": "Nubia",
-        "code": 1215
+        "name": "ZTE",
+        "code": 2039
       }
     }
   },
@@ -9197,7 +9197,7 @@
     },
     "device": {
       "type": 1,
-      "model": "Neon Ray Ultra",
+      "model": "Neon Ray Ultra M",
       "brand": {
         "name": "Safaricom",
         "code": 1492
@@ -9305,7 +9305,7 @@
     },
     "device": {
       "type": 1,
-      "model": "Five Pro",
+      "model": "Five Pro 32",
       "brand": {
         "name": "Logicom",
         "code": 1003
@@ -10192,7 +10192,7 @@
     },
     "device": {
       "type": 1,
-      "model": "Raptor LTD",
+      "model": "Raptor",
       "brand": {
         "name": "F150",
         "code": 536
@@ -13512,6 +13512,33 @@
       "brand": {
         "name": "OnePlus",
         "code": 1259
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; U; Android 13; de-de; Redmi Note 12 Pro+ 5G Build/TP1A.220624.014) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/112.0.5615.136 Mobile Safari/537.36 XiaoMi/MiuiBrowser/13.35.0-gn",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "13",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Mi Browser",
+      "code": 360,
+      "version": "13.35.0",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "112.0.5615.136"
+      }
+    },
+    "device": {
+      "type": 10,
+      "model": "Redmi Note 12 Pro+ 5G",
+      "brand": {
+        "name": "Xiaomi",
+        "code": 1973
       }
     }
   }

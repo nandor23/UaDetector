@@ -2393,7 +2393,7 @@
     },
     "device": {
       "type": 1,
-      "model": "Mi Mix 2",
+      "model": "Mi Mix 2S",
       "brand": {
         "name": "Xiaomi",
         "code": 1973
@@ -8210,7 +8210,7 @@
     },
     "device": {
       "type": 1,
-      "model": "14 Pro",
+      "model": "Mix Flip",
       "brand": {
         "name": "Xiaomi",
         "code": 1973
@@ -9635,7 +9635,7 @@
     },
     "device": {
       "type": 1,
-      "model": "Narzo N61",
+      "model": "Note 60",
       "brand": {
         "name": "Realme",
         "code": 1430
@@ -10468,7 +10468,7 @@
     },
     "device": {
       "type": 1,
-      "model": "ROG Phone 8",
+      "model": "ROG Phone 8 Pro",
       "brand": {
         "name": "Asus",
         "code": 118
@@ -12163,7 +12163,7 @@
     },
     "device": {
       "type": 1,
-      "model": "A94",
+      "model": "A95 4G",
       "brand": {
         "name": "OPPO",
         "code": 1273
@@ -13019,7 +13019,7 @@
     },
     "device": {
       "type": 1,
-      "model": "Pixel 9",
+      "model": "Pixel 9 Pro",
       "brand": {
         "name": "Google",
         "code": 655
