@@ -16,15 +16,24 @@ UaDetector is a user-agent parser that identifies the browser, operating system,
 It is composed of several sub-parsers: `OsParser`, `BrowserParser`, `ClientParser`, and `BotParser`. 
 Each can be used independently if only certain information is needed from the user-agent string.
 
-## Key Features
+## Features
 
-- **Thread Safety**: The parsers are stateless by design, making them fully thread-safe and dependency-injection friendly.
-- **Optimized for Performance**: Uses compiled regular expressions and frozen dictionaries for faster pattern matching and lookup operations.
-- **Predefined Values**: Static classes provide access to browser, operating system, and other related metadata. 
-  These include: `OsNames`, `OsFamilies`, `CpuArchitectures`, `BrowserNames`, `BrowserFamilies`, `BrowserEngines`, `BrandNames`.
-- **Type-Safe Values**: Certain values are represented by enums, making them suitable for database storage.
-  These include: `OsCode`, `BrowserCode`, `BrandCode`, `ClientType`, `DeviceType`, `BotCategory`.
-- **Try-Parse Pattern**: Parsers implement the [Try-Parse Pattern](https://learn.microsoft.com/en-us/dotnet/standard/design-guidelines/exceptions-and-performance#try-parse-pattern),
+- **Thread-safe**:
+  Parsers are stateless, making them safe for dependency injection and multithreaded scenarios.
+
+- **Fast**:
+  Uses compiled regular expressions and frozen dictionaries for faster pattern matching and lookup operations.
+
+- **Rich metadata**:
+  Static classes provide access to common values: `OsNames`, `OsFamilies`, `CpuArchitectures`,
+  `BrowserNames`, `BrowserFamilies`, `BrowserEngines`, `BrandNames`.
+
+- **Enum support**:
+  Values such as `OsCode`, `BrowserCode`, `BrandCode`, `ClientType`, `DeviceType`, and `BotCategory`
+  are enums, making them suitable for database storage.
+
+- **Try-Parse Pattern**:
+  Parsers implement the [Try-Parse Pattern](https://learn.microsoft.com/en-us/dotnet/standard/design-guidelines/exceptions-and-performance#try-parse-pattern),
   returning a **bool** to indicate success and assigning the result to an **out** parameter.
 
 ## Requirements
