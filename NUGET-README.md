@@ -11,23 +11,11 @@ Each can be used independently if only certain information is needed from the us
 
 ## Features
 
-- **Thread-safe**:
-  Parsers are stateless, making them safe for dependency injection and multithreaded scenarios.
-
-- **Fast**:
-  Uses compiled regular expressions and frozen dictionaries for faster pattern matching and lookup operations.
-
-- **Rich metadata**:
-  Static classes provide access to common values: `OsNames`, `OsFamilies`, `CpuArchitectures`, 
-  `BrowserNames`, `BrowserFamilies`, `BrowserEngines`, `BrandNames`.
-
-- **Enum support**:
-  Values such as `OsCode`, `BrowserCode`, `BrandCode`, `ClientType`, `DeviceType`, and `BotCategory`
-  are enums, making them suitable for database storage.
-
-- **Try-Parse Pattern**: 
-  Parsers implement the [Try-Parse Pattern](https://learn.microsoft.com/en-us/dotnet/standard/design-guidelines/exceptions-and-performance#try-parse-pattern),
-  returning a **bool** to indicate success and assigning the result to an **out** parameter.
+- **Thread-safe**: Parsers are stateless, making them safe for dependency injection and multithreaded scenarios.
+- **Fast**: Uses compiled regular expressions and frozen dictionaries for faster pattern matching and lookup operations.
+- **Rich metadata**: Static classes provide access to common values: `OsNames`, `OsFamilies`, `CpuArchitectures`, `BrowserNames`, `BrowserFamilies`, `BrowserEngines`, `BrandNames`.
+- **Enum support**: Values such as `OsCode`, `BrowserCode`, `BrandCode`, `ClientType`, `DeviceType`, and `BotCategory` are enums, making them suitable for database storage.
+- **Try-Parse Pattern**: Parsers implement the [Try-Parse Pattern](https://learn.microsoft.com/en-us/dotnet/standard/design-guidelines/exceptions-and-performance#try-parse-pattern), returning a **bool** to indicate success and assigning the result to an **out** parameter.
 
 ## Requirements
 
