@@ -181,10 +181,10 @@
     },
     "device": {
       "type": 2,
-      "model": "Honor MagicPad 2 WiFi",
+      "model": "MagicPad 2 WiFi",
       "brand": {
-        "name": "Huawei",
-        "code": 757
+        "name": "Honor",
+        "code": 2095
       }
     }
   },
@@ -826,10 +826,10 @@
     },
     "device": {
       "type": 2,
-      "model": "Honor Pad X8a WiFi",
+      "model": "Pad X8a WiFi",
       "brand": {
-        "name": "Huawei",
-        "code": 757
+        "name": "Honor",
+        "code": 2095
       }
     }
   },
@@ -1150,10 +1150,10 @@
     },
     "device": {
       "type": 2,
-      "model": "Honor Pad X8a LTE",
+      "model": "Pad X8a LTE",
       "brand": {
-        "name": "Huawei",
-        "code": 757
+        "name": "Honor",
+        "code": 2095
       }
     }
   },
@@ -4819,10 +4819,10 @@
     },
     "device": {
       "type": 2,
-      "model": "Honor Pad V9 11.5\" WiFi",
+      "model": "Pad V9 11.5\" WiFi",
       "brand": {
-        "name": "Huawei",
-        "code": 757
+        "name": "Honor",
+        "code": 2095
       }
     }
   },
@@ -6222,10 +6222,10 @@
     },
     "device": {
       "type": 2,
-      "model": "Honor Pad X9a 11.5\" LTE",
+      "model": "Pad X9a 11.5\" LTE",
       "brand": {
-        "name": "Huawei",
-        "code": 757
+        "name": "Honor",
+        "code": 2095
       }
     }
   },
@@ -7167,10 +7167,10 @@
     },
     "device": {
       "type": 2,
-      "model": "Honor Pad X9a 11.5\" WiFi",
+      "model": "Pad X9a 11.5\" WiFi",
       "brand": {
-        "name": "Huawei",
-        "code": 757
+        "name": "Honor",
+        "code": 2095
       }
     }
   },
@@ -7571,10 +7571,10 @@
     },
     "device": {
       "type": 2,
-      "model": "Honor Pad GT 11.5\" WiFi",
+      "model": "Pad GT 11.5\" WiFi",
       "brand": {
-        "name": "Huawei",
-        "code": 757
+        "name": "Honor",
+        "code": 2095
       }
     }
   },
@@ -7598,10 +7598,10 @@
     },
     "device": {
       "type": 2,
-      "model": "Honor Pad GT Pro 12.3\" WiFi",
+      "model": "Pad GT Pro 12.3\" WiFi",
       "brand": {
-        "name": "Huawei",
-        "code": 757
+        "name": "Honor",
+        "code": 2095
       }
     }
   },

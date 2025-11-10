@@ -4606,10 +4606,10 @@
     },
     "device": {
       "type": 1,
-      "model": "Honor Play 9A",
+      "model": "Play 9A",
       "brand": {
-        "name": "Huawei",
-        "code": 757
+        "name": "Honor",
+        "code": 2095
       }
     }
   },

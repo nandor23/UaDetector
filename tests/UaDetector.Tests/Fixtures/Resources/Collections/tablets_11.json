@@ -2194,10 +2194,10 @@
     },
     "device": {
       "type": 2,
-      "model": "Honor Pad 9 12.1\" WiFi",
+      "model": "Pad 9 12.1\" WiFi",
       "brand": {
-        "name": "Huawei",
-        "code": 757
+        "name": "Honor",
+        "code": 2095
       }
     }
   },
@@ -3539,10 +3539,10 @@
     },
     "device": {
       "type": 2,
-      "model": "Honor MagicPad 13 WiFi",
+      "model": "MagicPad 13 WiFi",
       "brand": {
-        "name": "Huawei",
-        "code": 757
+        "name": "Honor",
+        "code": 2095
       }
     }
   },
@@ -9362,10 +9362,10 @@
     },
     "device": {
       "type": 2,
-      "model": "Honor Pad 9 12.1\" 5G",
+      "model": "Pad 9 12.1\" 5G",
       "brand": {
-        "name": "Huawei",
-        "code": 757
+        "name": "Honor",
+        "code": 2095
       }
     }
   },

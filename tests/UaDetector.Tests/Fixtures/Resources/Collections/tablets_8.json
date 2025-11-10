@@ -5870,10 +5870,10 @@
     },
     "device": {
       "type": 2,
-      "model": "Honor Pad V6 10.4\" WiFi",
+      "model": "Pad V6 10.4\" WiFi",
       "brand": {
-        "name": "Huawei",
-        "code": 757
+        "name": "Honor",
+        "code": 2095
       }
     }
   },
@@ -5897,10 +5897,10 @@
     },
     "device": {
       "type": 2,
-      "model": "Honor Pad V6 10.4\" 5G",
+      "model": "Pad V6 10.4\" 5G",
       "brand": {
-        "name": "Huawei",
-        "code": 757
+        "name": "Honor",
+        "code": 2095
       }
     }
   },
@@ -12436,10 +12436,10 @@
     },
     "device": {
       "type": 2,
-      "model": "Honor Pad 8 12.0\" WiFi",
+      "model": "Pad 8 12.0\" WiFi",
       "brand": {
-        "name": "Huawei",
-        "code": 757
+        "name": "Honor",
+        "code": 2095
       }
     }
   },
