@@ -2097,4 +2097,5 @@ public static class BrandNames
     public const string Eplutus = "Eplutus";
     public const string WaipuTv = "waipu.tv";
     public const string Zala = "ZALA";
+    public const string Honor = "Honor";
 }

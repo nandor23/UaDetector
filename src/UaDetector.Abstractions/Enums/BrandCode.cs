@@ -2097,4 +2097,5 @@ public enum BrandCode
     Eplutus = 2092,
     WaipuTv = 2093,
     Zala = 2094,
+    Honor = 2095,
 }

@@ -207,10 +207,10 @@
     },
     "device": {
       "type": 1,
-      "model": "Honor Magic Vs3",
+      "model": "Magic Vs3",
       "brand": {
-        "name": "Huawei",
-        "code": 757
+        "name": "Honor",
+        "code": 2095
       }
     }
   },
@@ -1114,10 +1114,10 @@
     },
     "device": {
       "type": 1,
-      "model": "Honor X7c",
+      "model": "X7c",
       "brand": {
-        "name": "Huawei",
-        "code": 757
+        "name": "Honor",
+        "code": 2095
       }
     }
   },
@@ -3310,10 +3310,10 @@
     },
     "device": {
       "type": 1,
-      "model": "Honor X60i 5G",
+      "model": "X60i 5G",
       "brand": {
-        "name": "Huawei",
-        "code": 757
+        "name": "Honor",
+        "code": 2095
       }
     }
   },
@@ -3337,10 +3337,10 @@
     },
     "device": {
       "type": 1,
-      "model": "Honor X7c",
+      "model": "X7c",
       "brand": {
-        "name": "Huawei",
-        "code": 757
+        "name": "Honor",
+        "code": 2095
       }
     }
   },
@@ -3359,10 +3359,10 @@
     },
     "device": {
       "type": 1,
-      "model": "Honor X6b",
+      "model": "X6b",
       "brand": {
-        "name": "Huawei",
-        "code": 757
+        "name": "Honor",
+        "code": 2095
       }
     }
   },
@@ -3384,10 +3384,10 @@
     },
     "device": {
       "type": 1,
-      "model": "Honor X6b 5G",
+      "model": "X6b 5G",
       "brand": {
-        "name": "Huawei",
-        "code": 757
+        "name": "Honor",
+        "code": 2095
       }
     }
   },
@@ -3411,10 +3411,10 @@
     },
     "device": {
       "type": 1,
-      "model": "Honor X5b Plus",
+      "model": "X5b Plus",
       "brand": {
-        "name": "Huawei",
-        "code": 757
+        "name": "Honor",
+        "code": 2095
       }
     }
   },
@@ -3438,10 +3438,10 @@
     },
     "device": {
       "type": 1,
-      "model": "Honor X7c 5G",
+      "model": "X7c 5G",
       "brand": {
-        "name": "Huawei",
-        "code": 757
+        "name": "Honor",
+        "code": 2095
       }
     }
   },
@@ -5774,10 +5774,10 @@
     },
     "device": {
       "type": 1,
-      "model": "Honor Magic 7",
+      "model": "Magic 7",
       "brand": {
-        "name": "Huawei",
-        "code": 757
+        "name": "Honor",
+        "code": 2095
       }
     }
   },
@@ -5936,10 +5936,10 @@
     },
     "device": {
       "type": 1,
-      "model": "Honor Magic 7 Pro",
+      "model": "Magic 7 Pro",
       "brand": {
-        "name": "Huawei",
-        "code": 757
+        "name": "Honor",
+        "code": 2095
       }
     }
   },
@@ -6285,10 +6285,10 @@
     },
     "device": {
       "type": 1,
-      "model": "Honor X9c",
+      "model": "X9c",
       "brand": {
-        "name": "Huawei",
-        "code": 757
+        "name": "Honor",
+        "code": 2095
       }
     }
   },
@@ -6312,10 +6312,10 @@
     },
     "device": {
       "type": 1,
-      "model": "Honor X60",
+      "model": "X60",
       "brand": {
-        "name": "Huawei",
-        "code": 757
+        "name": "Honor",
+        "code": 2095
       }
     }
   },
@@ -6392,10 +6392,10 @@
     },
     "device": {
       "type": 1,
-      "model": "Honor Magic 7",
+      "model": "Magic 7",
       "brand": {
-        "name": "Huawei",
-        "code": 757
+        "name": "Honor",
+        "code": 2095
       }
     }
   },
@@ -6552,10 +6552,10 @@
     },
     "device": {
       "type": 1,
-      "model": "Honor X60 Pro",
+      "model": "X60 Pro",
       "brand": {
-        "name": "Huawei",
-        "code": 757
+        "name": "Honor",
+        "code": 2095
       }
     }
   },
@@ -7546,10 +7546,10 @@
     },
     "device": {
       "type": 1,
-      "model": "Honor Magic 7 Pro",
+      "model": "Magic 7 Pro",
       "brand": {
-        "name": "Huawei",
-        "code": 757
+        "name": "Honor",
+        "code": 2095
       }
     }
   },
@@ -8695,10 +8695,10 @@
     },
     "device": {
       "type": 1,
-      "model": "Honor X8c",
+      "model": "X8c",
       "brand": {
-        "name": "Huawei",
-        "code": 757
+        "name": "Honor",
+        "code": 2095
       }
     }
   },
@@ -8775,10 +8775,10 @@
     },
     "device": {
       "type": 1,
-      "model": "Honor 300",
+      "model": "300",
       "brand": {
-        "name": "Huawei",
-        "code": 757
+        "name": "Honor",
+        "code": 2095
       }
     }
   },
@@ -8802,10 +8802,10 @@
     },
     "device": {
       "type": 1,
-      "model": "Honor GT",
+      "model": "GT",
       "brand": {
-        "name": "Huawei",
-        "code": 757
+        "name": "Honor",
+        "code": 2095
       }
     }
   },
@@ -8824,10 +8824,10 @@
     },
     "device": {
       "type": 1,
-      "model": "Honor 300 Pro",
+      "model": "300 Pro",
       "brand": {
-        "name": "Huawei",
-        "code": 757
+        "name": "Honor",
+        "code": 2095
       }
     }
   },
@@ -8846,10 +8846,10 @@
     },
     "device": {
       "type": 1,
-      "model": "Honor Magic 7 RSR",
+      "model": "Magic 7 RSR",
       "brand": {
-        "name": "Huawei",
-        "code": 757
+        "name": "Honor",
+        "code": 2095
       }
     }
   },
@@ -8873,10 +8873,10 @@
     },
     "device": {
       "type": 1,
-      "model": "Honor 300 Ultra",
+      "model": "300 Ultra",
       "brand": {
-        "name": "Huawei",
-        "code": 757
+        "name": "Honor",
+        "code": 2095
       }
     }
   },
@@ -8981,10 +8981,10 @@
     },
     "device": {
       "type": 1,
-      "model": "Honor X9c Smart",
+      "model": "X9c Smart",
       "brand": {
-        "name": "Huawei",
-        "code": 757
+        "name": "Honor",
+        "code": 2095
       }
     }
   },
@@ -10840,10 +10840,10 @@
     },
     "device": {
       "type": 1,
-      "model": "Honor X5b",
+      "model": "X5b",
       "brand": {
-        "name": "Huawei",
-        "code": 757
+        "name": "Honor",
+        "code": 2095
       }
     }
   },
@@ -12714,10 +12714,10 @@
     },
     "device": {
       "type": 1,
-      "model": "Honor Magic 7 RSR",
+      "model": "Magic 7 RSR",
       "brand": {
-        "name": "Huawei",
-        "code": 757
+        "name": "Honor",
+        "code": 2095
       }
     }
   },
@@ -12741,10 +12741,10 @@
     },
     "device": {
       "type": 1,
-      "model": "Honor Magic 7",
+      "model": "Magic 7",
       "brand": {
-        "name": "Huawei",
-        "code": 757
+        "name": "Honor",
+        "code": 2095
       }
     }
   },
@@ -13319,10 +13319,10 @@
     },
     "device": {
       "type": 1,
-      "model": "Honor Magic V2 RSR",
+      "model": "Magic V2 RSR",
       "brand": {
-        "name": "Huawei",
-        "code": 757
+        "name": "Honor",
+        "code": 2095
       }
     }
   },

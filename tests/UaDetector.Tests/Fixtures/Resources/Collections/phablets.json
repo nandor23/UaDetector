@@ -13541,10 +13541,10 @@
     },
     "device": {
       "type": 10,
-      "model": "Honor X10 Max",
+      "model": "X10 Max",
       "brand": {
-        "name": "Huawei",
-        "code": 757
+        "name": "Honor",
+        "code": 2095
       }
     }
   },
@@ -13568,10 +13568,10 @@
     },
     "device": {
       "type": 10,
-      "model": "Honor X10 Max",
+      "model": "X10 Max",
       "brand": {
-        "name": "Huawei",
-        "code": 757
+        "name": "Honor",
+        "code": 2095
       }
     }
   },

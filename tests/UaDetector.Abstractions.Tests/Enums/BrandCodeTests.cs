@@ -2116,6 +2116,7 @@ public class BrandCodeTests
             { BrandCode.Eplutus, 2092 },
             { BrandCode.WaipuTv, 2093 },
             { BrandCode.Zala, 2094 },
+            { BrandCode.Honor, 2095 },
         };
 
         expectedValues.Count.ShouldBe(Enum.GetValues<BrandCode>().Length);

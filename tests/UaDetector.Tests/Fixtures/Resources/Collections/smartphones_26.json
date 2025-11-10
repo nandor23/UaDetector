@@ -3111,10 +3111,10 @@
     },
     "device": {
       "type": 1,
-      "model": "Honor 10",
+      "model": "10",
       "brand": {
-        "name": "Huawei",
-        "code": 757
+        "name": "Honor",
+        "code": 2095
       }
     }
   },

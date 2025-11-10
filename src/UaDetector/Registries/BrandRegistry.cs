@@ -2124,6 +2124,7 @@ public static class BrandRegistry
         { BrandCode.Eplutus, BrandNames.Eplutus },
         { BrandCode.WaipuTv, BrandNames.WaipuTv },
         { BrandCode.Zala, BrandNames.Zala },
+        { BrandCode.Honor, BrandNames.Honor },
     }.ToFrozenDictionary();
 
     internal static readonly FrozenDictionary<string, BrandCode> BrandNameMappings =

@@ -2771,10 +2771,10 @@
     },
     "device": {
       "type": 2,
-      "model": "Honor Pad V8 Pro 12.1\" WiFi",
+      "model": "Pad V8 Pro 12.1\" WiFi",
       "brand": {
-        "name": "Huawei",
-        "code": 757
+        "name": "Honor",
+        "code": 2095
       }
     }
   },
@@ -7821,10 +7821,10 @@
     },
     "device": {
       "type": 2,
-      "model": "Honor Pad X8 Lite WiFi",
+      "model": "Pad X8 Lite WiFi",
       "brand": {
-        "name": "Huawei",
-        "code": 757
+        "name": "Honor",
+        "code": 2095
       }
     }
   },

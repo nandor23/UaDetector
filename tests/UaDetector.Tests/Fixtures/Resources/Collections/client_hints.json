@@ -2575,10 +2575,10 @@
     },
     "device": {
       "type": 2,
-      "model": "Honor Pad X9 11.5\" LTE",
+      "model": "Pad X9 11.5\" LTE",
       "brand": {
-        "name": "Huawei",
-        "code": 757
+        "name": "Honor",
+        "code": 2095
       }
     }
   },
@@ -4068,10 +4068,10 @@
     },
     "device": {
       "type": 1,
-      "model": "Honor Note 10",
+      "model": "Note 10",
       "brand": {
-        "name": "Huawei",
-        "code": 757
+        "name": "Honor",
+        "code": 2095
       }
     }
   },

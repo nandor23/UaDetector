@@ -19,10 +19,10 @@
     },
     "device": {
       "type": 2,
-      "model": "Honor Pad 2",
+      "model": "Pad 2",
       "brand": {
-        "name": "Huawei",
-        "code": 757
+        "name": "Honor",
+        "code": 2095
       }
     }
   },
@@ -46,10 +46,10 @@
     },
     "device": {
       "type": 2,
-      "model": "Honor Tab 5",
+      "model": "Tab 5",
       "brand": {
-        "name": "Huawei",
-        "code": 757
+        "name": "Honor",
+        "code": 2095
       }
     }
   },
@@ -73,10 +73,10 @@
     },
     "device": {
       "type": 2,
-      "model": "Honor Tab 5",
+      "model": "Tab 5",
       "brand": {
-        "name": "Huawei",
-        "code": 757
+        "name": "Honor",
+        "code": 2095
       }
     }
   },
@@ -100,10 +100,10 @@
     },
     "device": {
       "type": 2,
-      "model": "Honor Water Play 10.1",
+      "model": "Water Play 10.1",
       "brand": {
-        "name": "Huawei",
-        "code": 757
+        "name": "Honor",
+        "code": 2095
       }
     }
   },
@@ -127,10 +127,10 @@
     },
     "device": {
       "type": 2,
-      "model": "Honor Water Play 10.1",
+      "model": "Water Play 10.1",
       "brand": {
-        "name": "Huawei",
-        "code": 757
+        "name": "Honor",
+        "code": 2095
       }
     }
   },
@@ -153,10 +153,10 @@
     },
     "device": {
       "type": 2,
-      "model": "Honor Water Play 8.0",
+      "model": "Water Play 8.0",
       "brand": {
-        "name": "Huawei",
-        "code": 757
+        "name": "Honor",
+        "code": 2095
       }
     }
   },
@@ -180,10 +180,10 @@
     },
     "device": {
       "type": 2,
-      "model": "Honor Water Play 8.0",
+      "model": "Water Play 8.0",
       "brand": {
-        "name": "Huawei",
-        "code": 757
+        "name": "Honor",
+        "code": 2095
       }
     }
   },
