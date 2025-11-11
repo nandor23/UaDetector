@@ -22,4 +22,5 @@ public static class BrowserEngines
     public const string Arachne = "Arachne";
     public const string LibWeb = "LibWeb";
     public const string Maple = "Maple";
+    public const string ArkWeb = "ArkWeb";
 }

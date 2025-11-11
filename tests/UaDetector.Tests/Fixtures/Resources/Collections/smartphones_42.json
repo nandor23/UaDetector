@@ -7691,5 +7691,706 @@
         "code": 655
       }
     }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 15; Fire 3 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.270 YaBrowser/25.10.0.270.00 SA/3 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "15",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "25.10.0.270.00",
+      "engine": {
+        "name": "Blink",
+        "version": "140.0.7339.270"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Fire 3 Pro",
+      "brand": {
+        "name": "Doogee",
+        "code": 407
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 15; Fire 3 Ultra) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.886 YaSearchBrowser/25.101.1 BroPP/1.0 YaSearchApp/25.101.1 webOmni SA/3 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "15",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "25.101.1",
+      "engine": {
+        "name": "Blink",
+        "version": "140.0.7339.886"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Fire 3 Ultra",
+      "brand": {
+        "name": "Doogee",
+        "code": 407
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 15; Fire 3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.108 YaBrowser/25.10.1.108.00 SA/3 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "15",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "25.10.1.108.00",
+      "engine": {
+        "name": "Blink",
+        "version": "140.0.7339.108"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Fire 3",
+      "brand": {
+        "name": "Doogee",
+        "code": 407
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 15; Cyber 16 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.118 YaBrowser/25.10.1.118.00 SA/3 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "15",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "25.10.1.118.00",
+      "engine": {
+        "name": "Blink",
+        "version": "140.0.7339.118"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Cyber 16 Pro",
+      "brand": {
+        "name": "Hotwav",
+        "code": 743
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 15; COLOR 6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6261.2435 YaSearchBrowser/24.40.1 BroPP/1.0 YaSearchApp/24.40.1 webOmni SA/3 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "15",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "24.40.1",
+      "engine": {
+        "name": "Blink",
+        "version": "122.0.6261.2435"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Color 6",
+      "brand": {
+        "name": "Blackview",
+        "code": 201
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 15; F109 S) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.108 YaBrowser/25.10.1.108.00 SA/3 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "15",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "25.10.1.108.00",
+      "engine": {
+        "name": "Blink",
+        "version": "140.0.7339.108"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "F109 S",
+      "brand": {
+        "name": "FOSSiBOT",
+        "code": 584
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 15; F107 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.854 YaSearchBrowser/25.101.1 BroPP/1.0 YaSearchApp/25.101.1 webOmni SA/3 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "15",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "25.101.1",
+      "engine": {
+        "name": "Blink",
+        "version": "140.0.7339.854"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "F107 Pro",
+      "brand": {
+        "name": "FOSSiBOT",
+        "code": 584
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 15; Blade20 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.7204.1921 YaApp_Android/25.80.1 YaSearchBrowser/25.80.1 BroPP/1.0 SA/3 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "15",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "25.80.1",
+      "engine": {
+        "name": "Blink",
+        "version": "138.0.7204.1921"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Blade 20 Pro",
+      "brand": {
+        "name": "Doogee",
+        "code": 407
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 15; Blade20 Play) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.7204.1921 YaApp_Android/25.80.1 YaSearchBrowser/25.80.1 BroPP/1.0 SA/3 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "15",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "25.80.1",
+      "engine": {
+        "name": "Blink",
+        "version": "138.0.7204.1921"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Blade 20 Play",
+      "brand": {
+        "name": "Doogee",
+        "code": 407
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 15; Blade20 Max) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.854 YaSearchBrowser/25.101.1 BroPP/1.0 YaSearchApp/25.101.1 webOmni SA/3 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "15",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "25.101.1",
+      "engine": {
+        "name": "Blink",
+        "version": "140.0.7339.854"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Blade 20 Max",
+      "brand": {
+        "name": "Doogee",
+        "code": 407
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 14; Blade20 Ultra) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.108 YaBrowser/25.10.1.108.00 SA/3 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "14",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "25.10.1.108.00",
+      "engine": {
+        "name": "Blink",
+        "version": "140.0.7339.108"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Blade 20 Ultra",
+      "brand": {
+        "name": "Doogee",
+        "code": 407
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 14; Blade GT Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.114 YaBrowser/25.10.1.114.00 SA/3 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "14",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "25.10.1.114.00",
+      "engine": {
+        "name": "Blink",
+        "version": "140.0.7339.114"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Blade GT Pro",
+      "brand": {
+        "name": "Doogee",
+        "code": 407
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 14; Blade GT Play) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.118 YaBrowser/25.10.1.118.00 SA/3 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "14",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "25.10.1.118.00",
+      "engine": {
+        "name": "Blink",
+        "version": "140.0.7339.118"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Blade GT Play",
+      "brand": {
+        "name": "Doogee",
+        "code": 407
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 15; Blade20 Build/AP3A.240905.015.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/141.0.7390.97 YaBrowser/25.2.0.51 (lite) Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "15",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser Lite",
+      "code": 655,
+      "version": "25.2.0.51",
+      "engine": {
+        "name": "Blink",
+        "version": "141.0.7390.97"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Blade 20",
+      "brand": {
+        "name": "Doogee",
+        "code": 407
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 15; Blade10 Energy) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.2232 YaSearchBrowser/25.100.1 BroPP/1.0 YaSearchApp/25.100.1 webOmni SA/3 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "15",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "25.100.1",
+      "engine": {
+        "name": "Blink",
+        "version": "140.0.7339.2232"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Blade 10 Energy",
+      "brand": {
+        "name": "Doogee",
+        "code": 407
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 15; WP56) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.854 YaSearchBrowser/25.101.1 BroPP/1.0 YaSearchApp/25.101.1 webOmni SA/3 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "15",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "25.101.1",
+      "engine": {
+        "name": "Blink",
+        "version": "140.0.7339.854"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "WP56",
+      "brand": {
+        "name": "Oukitel",
+        "code": 1292
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 15; WP53 S) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.854 YaSearchBrowser/25.101.1 BroPP/1.0 YaSearchApp/25.101.1 webOmni SA/3 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "15",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "25.101.1",
+      "engine": {
+        "name": "Blink",
+        "version": "140.0.7339.854"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "WP53 S",
+      "brand": {
+        "name": "Oukitel",
+        "code": 1292
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 15; WP53 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.886 YaSearchBrowser/25.101.1 BroPP/1.0 YaSearchApp/25.101.1 webOmni SA/3 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "15",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "25.101.1",
+      "engine": {
+        "name": "Blink",
+        "version": "140.0.7339.886"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "WP53 Pro",
+      "brand": {
+        "name": "Oukitel",
+        "code": 1292
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 15; WP53) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.854 YaSearchBrowser/25.101.1 BroPP/1.0 YaSearchApp/25.101.1 webOmni SA/3 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "15",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "25.101.1",
+      "engine": {
+        "name": "Blink",
+        "version": "140.0.7339.854"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "WP53",
+      "brand": {
+        "name": "Oukitel",
+        "code": 1292
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 15; WP55 Ultra) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.854 YaSearchBrowser/25.101.1 BroPP/1.0 YaSearchApp/25.101.1 webOmni SA/3 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "15",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "25.101.1",
+      "engine": {
+        "name": "Blink",
+        "version": "140.0.7339.854"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "WP55 Ultra",
+      "brand": {
+        "name": "Oukitel",
+        "code": 1292
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 15; WP300) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.886 YaSearchBrowser/25.101.1 BroPP/1.0 YaSearchApp/25.101.1 webOmni SA/3 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "15",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "25.101.1",
+      "engine": {
+        "name": "Blink",
+        "version": "140.0.7339.886"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "WP300",
+      "brand": {
+        "name": "Oukitel",
+        "code": 1292
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 16; Pixel 10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.7204.411 YaSearchBrowser/25.89.1 BroPP/1.0 YaSearchApp/25.89.1 webOmni SA/3 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "16",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "25.89.1",
+      "engine": {
+        "name": "Blink",
+        "version": "138.0.7204.411"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Pixel 10",
+      "brand": {
+        "name": "Google",
+        "code": 655
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 16; Pixel 10 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.7204.1898 YaApp_Android/25.80.1 YaSearchBrowser/25.80.1 BroPP/1.0 SA/3 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "16",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "25.80.1",
+      "engine": {
+        "name": "Blink",
+        "version": "138.0.7204.1898"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Pixel 10 Pro",
+      "brand": {
+        "name": "Google",
+        "code": 655
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 16; Pixel 10 Pro XL) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.7204.1898 YaApp_Android/25.80.1 YaSearchBrowser/25.80.1 BroPP/1.0 SA/3 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "16",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "25.80.1",
+      "engine": {
+        "name": "Blink",
+        "version": "138.0.7204.1898"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Pixel 10 Pro XL",
+      "brand": {
+        "name": "Google",
+        "code": 655
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 15; XPLORE 1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.854 YaSearchBrowser/25.101.1 BroPP/1.0 YaSearchApp/25.101.1 webOmni SA/3 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "15",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "25.101.1",
+      "engine": {
+        "name": "Blink",
+        "version": "140.0.7339.854"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Xplore 1",
+      "brand": {
+        "name": "Blackview",
+        "code": 201
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; U; Android 14; en-za; Hisense E71 Build/UP1A.231005.007) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.7151.61 Mobile Safari/537.36 PHX/19.5",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "14",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Phoenix Browser",
+      "code": 462,
+      "version": "19.5",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "137.0.7151.61"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "E71",
+      "brand": {
+        "name": "Hisense",
+        "code": 719
+      }
+    }
   }
 ]

@@ -8915,5 +8915,113 @@
         "code": 1973
       }
     }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 16; Pixel 10 Pro Fold) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.7204.411 YaSearchBrowser/25.89.1 BroPP/1.0 YaSearchApp/25.89.1 webOmni SA/3 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "16",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "25.89.1",
+      "engine": {
+        "name": "Blink",
+        "version": "138.0.7204.411"
+      }
+    },
+    "device": {
+      "type": 10,
+      "model": "Pixel 10 Pro Fold",
+      "brand": {
+        "name": "Google",
+        "code": 655
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 14; Pixel 9 Pro Fold) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "14",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "129.0.0.0",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "129.0.0.0"
+      }
+    },
+    "device": {
+      "type": 10,
+      "model": "Pixel 9 Pro Fold",
+      "brand": {
+        "name": "Google",
+        "code": 655
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 15; GGH2X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "15",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "128.0.0.0",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "128.0.0.0"
+      }
+    },
+    "device": {
+      "type": 10,
+      "model": "Pixel 9 Pro Fold",
+      "brand": {
+        "name": "Google",
+        "code": 655
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 15; GC15S) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "15",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "129.0.0.0",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "129.0.0.0"
+      }
+    },
+    "device": {
+      "type": 10,
+      "model": "Pixel 9 Pro Fold",
+      "brand": {
+        "name": "Google",
+        "code": 655
+      }
+    }
   }
 ]
