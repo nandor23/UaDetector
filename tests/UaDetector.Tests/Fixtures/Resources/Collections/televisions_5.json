@@ -4679,5 +4679,110 @@
         "code": 1590
       }
     }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; CADENA PRO A CSB-230 Build/QP1A.191105.004; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/141.0.7390.122 YaBrowser/25.7.1.605 (lite) TV Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "10",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser Lite",
+      "code": 655,
+      "version": "25.7.1.605",
+      "engine": {
+        "name": "Blink",
+        "version": "141.0.7390.122"
+      }
+    },
+    "device": {
+      "type": 5,
+      "model": "Pro A CSB-230",
+      "brand": {
+        "name": "CADENA",
+        "code": 244
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; CADENA PRO A3 CSB-242 Build/QP1A.191105.004; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/141.0.7390.97 YaBrowser/25.7.1.605 (lite) TV Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "10",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser Lite",
+      "code": 655,
+      "version": "25.7.1.605",
+      "engine": {
+        "name": "Blink",
+        "version": "141.0.7390.97"
+      }
+    },
+    "device": {
+      "type": 5,
+      "model": "Pro A3 CSB-242",
+      "brand": {
+        "name": "CADENA",
+        "code": 244
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 11; RH-LE50DSY-C Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "11",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Webview",
+      "code": 161,
+      "version": "113.0.5672.163",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "113.0.5672.163"
+      }
+    },
+    "device": {
+      "type": 5,
+      "model": "RH-LE50DSY-C",
+      "brand": {
+        "name": "ROCH",
+        "code": 1459
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 11; RH-LE32DSY-C Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/24.12.0.453 (lite) TV Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "11",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser Lite",
+      "code": 655,
+      "version": "24.12.0.453",
+      "engine": {
+        "name": "Blink",
+        "version": "113.0.5672.163"
+      }
+    },
+    "device": {
+      "type": 5,
+      "model": "RH-LE32DSY-C",
+      "brand": {
+        "name": "ROCH",
+        "code": 1459
+      }
+    }
   }
 ]
