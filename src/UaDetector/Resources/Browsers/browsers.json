@@ -1896,6 +1896,14 @@
     }
   },
   {
+    "regex": "Browser/harmony360Browser/(\\d+[.\\d]+)$",
+    "name": "Harmony 360 Browser",
+    "version": "$1",
+    "engine": {
+      "default": "ArkWeb"
+    }
+  },
+  {
     "regex": "QIHU 360[ES]E|QihooBrowserHD/(\\d+[.\\d]+)",
     "name": "360 Secure Browser",
     "version": "$1"
@@ -2260,6 +2268,14 @@
   {
     "regex": "UC[ ]?Browser.* \\(UCTurbo\\)",
     "name": "UC Browser Turbo"
+  },
+  {
+    "regex": "ArkWeb/(?:\\d+[.\\d]+) (?:Mobile )?UC[ ]?Browser(?:[ /]?(\\d+[.\\d]+))?$",
+    "name": "UC Browser",
+    "version": "$1",
+    "engine": {
+      "default": "ArkWeb"
+    }
   },
   {
     "regex": "UC[ ]?Browser(?:[ /]?(\\d+[.\\d]+))?",

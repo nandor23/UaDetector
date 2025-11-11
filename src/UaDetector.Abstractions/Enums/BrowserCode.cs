@@ -684,4 +684,5 @@ public enum BrowserCode
     QuarkPc = 679,
     Quetta = 680,
     HeyTapBrowser = 681,
+    Harmony360Browser = 682,
 }

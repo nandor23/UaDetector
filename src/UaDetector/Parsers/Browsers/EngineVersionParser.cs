@@ -37,6 +37,7 @@ internal static class EngineVersionParser
         { BrowserEngines.Goanna, BuildRegex(BrowserEngines.Goanna) },
         { BrowserEngines.EkiohFlow, BuildRegex(BrowserEngines.EkiohFlow) },
         { BrowserEngines.Maple, BuildRegex(BrowserEngines.Maple) },
+        { BrowserEngines.ArkWeb, BuildRegex(BrowserEngines.ArkWeb) },
     }.ToFrozenDictionary(StringComparer.OrdinalIgnoreCase);
 
     private static Regex BuildRegex(string pattern)

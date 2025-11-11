@@ -14089,5 +14089,29 @@
         "version": "605.1.15"
       }
     }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (phone; Android 12; OpenHarmony 6.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 ArkWeb/4.1.6.1 Mobile UCBrowser/17.1.8.1349",
+    "browser": {
+      "name": "UC Browser",
+      "code": 604,
+      "version": "17.1.8.1349",
+      "engine": {
+        "name": "ArkWeb",
+        "version": "4.1.6.1"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (PC; OpenHarmony 5.0; HarmonyOS 5.0) AppleWebKit/537.36 (KHTML,like Gecko) Chrome/114.0.0.0 Safari/537.36 ArkWeb/4.1.6.1 Browser/harmony360Browser/1.0.0",
+    "browser": {
+      "name": "Harmony 360 Browser",
+      "code": 682,
+      "version": "1.0.0",
+      "engine": {
+        "name": "ArkWeb",
+        "version": "4.1.6.1"
+      }
+    }
   }
 ]
