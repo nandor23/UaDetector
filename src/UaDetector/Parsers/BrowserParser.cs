@@ -187,7 +187,6 @@ public sealed partial class BrowserParser : IBrowserParser
                     BrowserCode.WhaleBrowser,
                     BrowserCode.Xvast,
                     BrowserCode.YahooJapanBrowser,
-                    BrowserCode.YaaniBrowser,
                     BrowserCode.FlashBrowser,
                     BrowserCode.SpectreBrowser,
                     BrowserCode.Bonsai,
@@ -1236,26 +1235,35 @@ public sealed partial class BrowserParser : IBrowserParser
             return false;
         }
 
-        switch (name)
+        // Ignore "Blink" engine version for "Flow Browser".
+        if (name == BrowserNames.FlowBrowser && engine == BrowserEngines.Blink)
         {
-            // Ignore "Blink" engine version for "Flow Browser".
-            case BrowserNames.FlowBrowser when engine == BrowserEngines.Blink:
-                engineVersion = null;
-                break;
-            // "Every Browser" mimics a Chrome user agent on Android.
-            // "TV-Browser Internet" mimics a Firefox user agent.
-            case BrowserNames.EveryBrowser:
-            case BrowserNames.TvBrowserInternet when engine == BrowserEngines.Gecko:
-                family = BrowserFamilies.Chrome;
-                engine = BrowserEngines.Blink;
-                engineVersion = null;
-                break;
-            case BrowserNames.Wolvic when engine == BrowserEngines.Blink:
-                family = BrowserFamilies.Chrome;
-                break;
-            case BrowserNames.Wolvic when engine == BrowserEngines.Gecko:
-                family = BrowserFamilies.Firefox;
-                break;
+            engineVersion = null;
+        }
+        // "Every Browser" mimics a Chrome user agent on Android.
+        // "TV-Browser Internet" mimics a Firefox user agent.
+        else if (
+            name == BrowserNames.EveryBrowser
+            || (name == BrowserNames.TvBrowserInternet && engine == BrowserEngines.Gecko)
+        )
+        {
+            family = BrowserFamilies.Chrome;
+            engine = BrowserEngines.Blink;
+            engineVersion = null;
+        }
+        else if (
+            name is BrowserNames.YaaniBrowser or BrowserNames.Wolvic
+            && engine == BrowserEngines.Blink
+        )
+        {
+            family = BrowserFamilies.Chrome;
+        }
+        else if (
+            name is BrowserNames.YaaniBrowser or BrowserNames.Wolvic
+            && engine == BrowserEngines.Gecko
+        )
+        {
+            family = BrowserFamilies.Firefox;
         }
 
         result = new BrowserInfo
