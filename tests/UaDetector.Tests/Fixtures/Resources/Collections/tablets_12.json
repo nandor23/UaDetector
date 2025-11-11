@@ -8110,5 +8110,49 @@
         "code": 1496
       }
     }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPad; CPU OS 17_5_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/21F90 [FBAN/FBIOS;FBAV/466.0.0.36.107;FBBV/604687626;FBDV/iPad13,18;FBMD/iPad;FBSN/iPadOS;FBSV/17.5.1;FBSS/2;FBID/tablet;FBLC/nl_NL;FBOP/5;FBRV/606615897]",
+    "os": {
+      "name": "iPadOS",
+      "code": 57,
+      "version": "17.5.1",
+      "family": "iOS"
+    },
+    "client": {
+      "type": 0,
+      "name": "Facebook",
+      "version": "466.0.0.36.107"
+    },
+    "device": {
+      "type": 2,
+      "model": "iPad 10 10.9\" WiFi",
+      "brand": {
+        "name": "Apple",
+        "code": 97
+      }
+    }
+  },
+  {
+    "userAgent": "com.google.ios.youtube/20.30.5 (iPad13,19; U; CPU iPadOS 18_5 like Mac OS X; en_US)",
+    "os": {
+      "name": "iPadOS",
+      "code": 57,
+      "version": "18.5",
+      "family": "iOS"
+    },
+    "client": {
+      "type": 0,
+      "name": "YouTube",
+      "version": "20.30.5"
+    },
+    "device": {
+      "type": 2,
+      "model": "iPad 10 10.9\"",
+      "brand": {
+        "name": "Apple",
+        "code": 97
+      }
+    }
   }
 ]

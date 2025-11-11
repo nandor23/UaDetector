@@ -2859,6 +2859,16 @@
         "name": "iPad Air 5"
       },
       {
+        "regex": "(?:MDCR_|ICRU_|Apple-)?iPad13[C,_]18",
+        "type": 2,
+        "name": "iPad 10 10.9\" WiFi"
+      },
+      {
+        "regex": "(?:MDCR_|ICRU_|Apple-)?iPad13[C,_]19",
+        "type": 2,
+        "name": "iPad 10 10.9\""
+      },
+      {
         "regex": "(?:MDCR_|ICRU_|Apple-)?iPad13[C,_]1|(?:iPad Air 4th Gen \\(WiFi\\))(?:[);/ ]|$)",
         "type": 2,
         "name": "iPad Air 4 WiFi"
