@@ -1122,7 +1122,7 @@
     },
     "device": {
       "type": 2,
-      "model": "C5e 10.1\"",
+      "model": "MatePad C5e 10.1\"",
       "brand": {
         "name": "Huawei",
         "code": 757
@@ -3730,7 +3730,7 @@
     },
     "device": {
       "type": 2,
-      "model": "C5e 10.1\" WiFi",
+      "model": "MatePad C5e 10.1\" WiFi",
       "brand": {
         "name": "Huawei",
         "code": 757
@@ -13782,6 +13782,60 @@
       "brand": {
         "name": "iFIT",
         "code": 835
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; BZI-W20 Build/HUAWEIBZI-W20; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "10",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Webview",
+      "code": 161,
+      "version": "97.0.4692.98",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "97.0.4692.98"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "MatePad C5e 10.1\" WiFi",
+      "brand": {
+        "name": "Huawei",
+        "code": 757
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 4.4.2; Oysters T72X 3G Build/Oysters_T72X_3G) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "4.4.2",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Webview",
+      "code": 161,
+      "version": "30.0.0.0",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "30.0.0.0"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "T72X 3G",
+      "brand": {
+        "name": "Oysters",
+        "code": 1300
       }
     }
   }
