@@ -208,10 +208,10 @@
     },
     "device": {
       "type": 1,
-      "model": "Honor Play 8A",
+      "model": "Play 8A",
       "brand": {
-        "name": "Huawei",
-        "code": 757
+        "name": "Honor",
+        "code": 2095
       }
     }
   },
@@ -1149,10 +1149,10 @@
     },
     "device": {
       "type": 1,
-      "model": "Honor 30S",
+      "model": "30S",
       "brand": {
-        "name": "Huawei",
-        "code": 757
+        "name": "Honor",
+        "code": 2095
       }
     }
   },
@@ -1652,10 +1652,10 @@
     },
     "device": {
       "type": 1,
-      "model": "Honor 30S",
+      "model": "30S",
       "brand": {
-        "name": "Huawei",
-        "code": 757
+        "name": "Honor",
+        "code": 2095
       }
     }
   },
@@ -1732,10 +1732,10 @@
     },
     "device": {
       "type": 1,
-      "model": "Honor Play 5T",
+      "model": "Play 5T",
       "brand": {
-        "name": "Huawei",
-        "code": 757
+        "name": "Honor",
+        "code": 2095
       }
     }
   },
@@ -1786,10 +1786,10 @@
     },
     "device": {
       "type": 1,
-      "model": "Honor V10",
+      "model": "V10",
       "brand": {
-        "name": "Huawei",
-        "code": 757
+        "name": "Honor",
+        "code": 2095
       }
     }
   },
@@ -7003,10 +7003,10 @@
     },
     "device": {
       "type": 1,
-      "model": "Honor Play 5T",
+      "model": "Play 5T",
       "brand": {
-        "name": "Huawei",
-        "code": 757
+        "name": "Honor",
+        "code": 2095
       }
     }
   },
@@ -8270,10 +8270,10 @@
     },
     "device": {
       "type": 1,
-      "model": "Honor 50 5G",
+      "model": "50 5G",
       "brand": {
-        "name": "Huawei",
-        "code": 757
+        "name": "Honor",
+        "code": 2095
       }
     }
   },
@@ -9187,10 +9187,10 @@
     },
     "device": {
       "type": 1,
-      "model": "Honor Play 20",
+      "model": "Play 20",
       "brand": {
-        "name": "Huawei",
-        "code": 757
+        "name": "Honor",
+        "code": 2095
       }
     }
   },
@@ -10991,10 +10991,10 @@
     },
     "device": {
       "type": 1,
-      "model": "Honor Play 9A",
+      "model": "Play 9A",
       "brand": {
-        "name": "Huawei",
-        "code": 757
+        "name": "Honor",
+        "code": 2095
       }
     }
   },
@@ -11933,10 +11933,10 @@
     },
     "device": {
       "type": 1,
-      "model": "Honor Play 4 Pro",
+      "model": "Play 4 Pro",
       "brand": {
-        "name": "Huawei",
-        "code": 757
+        "name": "Honor",
+        "code": 2095
       }
     }
   },
@@ -12066,10 +12066,10 @@
     },
     "device": {
       "type": 1,
-      "model": "Honor Play 5",
+      "model": "Play 5",
       "brand": {
-        "name": "Huawei",
-        "code": 757
+        "name": "Honor",
+        "code": 2095
       }
     }
   },
@@ -12440,10 +12440,10 @@
     },
     "device": {
       "type": 1,
-      "model": "Honor X20",
+      "model": "X20",
       "brand": {
-        "name": "Huawei",
-        "code": 757
+        "name": "Honor",
+        "code": 2095
       }
     }
   },
@@ -12601,10 +12601,10 @@
     },
     "device": {
       "type": 1,
-      "model": "Honor 50 Pro 5G",
+      "model": "50 Pro 5G",
       "brand": {
-        "name": "Huawei",
-        "code": 757
+        "name": "Honor",
+        "code": 2095
       }
     }
   },
@@ -12682,10 +12682,10 @@
     },
     "device": {
       "type": 1,
-      "model": "Honor Play 5T Pro",
+      "model": "Play 5T Pro",
       "brand": {
-        "name": "Huawei",
-        "code": 757
+        "name": "Honor",
+        "code": 2095
       }
     }
   },
@@ -12708,10 +12708,10 @@
     },
     "device": {
       "type": 1,
-      "model": "Honor 6X",
+      "model": "6X",
       "brand": {
-        "name": "Huawei",
-        "code": 757
+        "name": "Honor",
+        "code": 2095
       }
     }
   },
@@ -13864,10 +13864,10 @@
     },
     "device": {
       "type": 1,
-      "model": "Honor 7C",
+      "model": "7C",
       "brand": {
-        "name": "Huawei",
-        "code": 757
+        "name": "Honor",
+        "code": 2095
       }
     }
   },

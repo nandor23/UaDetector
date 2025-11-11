@@ -13411,10 +13411,10 @@
     },
     "device": {
       "type": 1,
-      "model": "Honor View 10",
+      "model": "View 10",
       "brand": {
-        "name": "Huawei",
-        "code": 757
+        "name": "Honor",
+        "code": 2095
       }
     }
   },

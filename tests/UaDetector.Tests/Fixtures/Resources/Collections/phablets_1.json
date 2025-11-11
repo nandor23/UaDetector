@@ -7502,10 +7502,10 @@
     },
     "device": {
       "type": 10,
-      "model": "Honor Magic V3",
+      "model": "Magic V3",
       "brand": {
-        "name": "Huawei",
-        "code": 757
+        "name": "Honor",
+        "code": 2095
       }
     }
   },
@@ -7529,10 +7529,10 @@
     },
     "device": {
       "type": 10,
-      "model": "Honor Magic V3",
+      "model": "Magic V3",
       "brand": {
-        "name": "Huawei",
-        "code": 757
+        "name": "Honor",
+        "code": 2095
       }
     }
   },

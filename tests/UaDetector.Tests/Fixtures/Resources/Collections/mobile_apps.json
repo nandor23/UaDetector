@@ -1505,10 +1505,10 @@
     },
     "device": {
       "type": 1,
-      "model": "Honor 30",
+      "model": "30",
       "brand": {
-        "name": "Huawei",
-        "code": 757
+        "name": "Honor",
+        "code": 2095
       }
     }
   },

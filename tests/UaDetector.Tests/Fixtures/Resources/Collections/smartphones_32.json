@@ -2417,10 +2417,10 @@
     },
     "device": {
       "type": 1,
-      "model": "Honor X40i",
+      "model": "X40i",
       "brand": {
-        "name": "Huawei",
-        "code": 757
+        "name": "Honor",
+        "code": 2095
       }
     }
   },
@@ -2552,10 +2552,10 @@
     },
     "device": {
       "type": 1,
-      "model": "Honor X10 5G",
+      "model": "X10 5G",
       "brand": {
-        "name": "Huawei",
-        "code": 757
+        "name": "Honor",
+        "code": 2095
       }
     }
   },
@@ -2579,10 +2579,10 @@
     },
     "device": {
       "type": 1,
-      "model": "Honor X10 Lite",
+      "model": "X10 Lite",
       "brand": {
-        "name": "Huawei",
-        "code": 757
+        "name": "Honor",
+        "code": 2095
       }
     }
   },
@@ -2633,10 +2633,10 @@
     },
     "device": {
       "type": 1,
-      "model": "Honor 9C",
+      "model": "9C",
       "brand": {
-        "name": "Huawei",
-        "code": 757
+        "name": "Honor",
+        "code": 2095
       }
     }
   },
@@ -2660,10 +2660,10 @@
     },
     "device": {
       "type": 1,
-      "model": "Honor 9A",
+      "model": "9A",
       "brand": {
-        "name": "Huawei",
-        "code": 757
+        "name": "Honor",
+        "code": 2095
       }
     }
   },
@@ -2687,10 +2687,10 @@
     },
     "device": {
       "type": 1,
-      "model": "Honor 30S",
+      "model": "30S",
       "brand": {
-        "name": "Huawei",
-        "code": 757
+        "name": "Honor",
+        "code": 2095
       }
     }
   },
@@ -2714,10 +2714,10 @@
     },
     "device": {
       "type": 1,
-      "model": "Honor 30",
+      "model": "30",
       "brand": {
-        "name": "Huawei",
-        "code": 757
+        "name": "Honor",
+        "code": 2095
       }
     }
   },
@@ -3308,10 +3308,10 @@
     },
     "device": {
       "type": 1,
-      "model": "Honor 70 Pro",
+      "model": "70 Pro",
       "brand": {
-        "name": "Huawei",
-        "code": 757
+        "name": "Honor",
+        "code": 2095
       }
     }
   },
@@ -9195,10 +9195,10 @@
     },
     "device": {
       "type": 1,
-      "model": "Honor 70 5G",
+      "model": "70 5G",
       "brand": {
-        "name": "Huawei",
-        "code": 757
+        "name": "Honor",
+        "code": 2095
       }
     }
   },
@@ -9573,10 +9573,10 @@
     },
     "device": {
       "type": 1,
-      "model": "Honor X8 5G",
+      "model": "X8 5G",
       "brand": {
-        "name": "Huawei",
-        "code": 757
+        "name": "Honor",
+        "code": 2095
       }
     }
   },
