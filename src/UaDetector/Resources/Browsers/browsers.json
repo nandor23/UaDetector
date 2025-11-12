@@ -1577,6 +1577,11 @@
     "version": "$1"
   },
   {
+    "regex": "Atlas/(\\d+[.\\d]+)$",
+    "name": "ChatGPT Atlas",
+    "version": "$1"
+  },
+  {
     "regex": "Falkon(?:/(\\d+[.\\d]+))?",
     "name": "Falkon",
     "version": "$1"

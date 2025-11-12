@@ -14113,5 +14113,18 @@
         "version": "4.1.6.1"
       }
     }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Atlas/1.0",
+    "browser": {
+      "name": "ChatGPT Atlas",
+      "code": 683,
+      "version": "1.0",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "141.0.0.0"
+      }
+    }
   }
 ]

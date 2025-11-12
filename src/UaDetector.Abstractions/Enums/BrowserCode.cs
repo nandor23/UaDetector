@@ -685,4 +685,5 @@ public enum BrowserCode
     Quetta = 680,
     HeyTapBrowser = 681,
     Harmony360Browser = 682,
+    ChatGptAtlas = 683,
 }

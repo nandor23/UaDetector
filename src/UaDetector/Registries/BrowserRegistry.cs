@@ -712,7 +712,8 @@ public static class BrowserRegistry
             { BrowserCode.QuarkPc, BrowserNames.QuarkPc },
             { BrowserCode.Quetta, BrowserNames.Quetta },
             { BrowserCode.HeyTapBrowser, BrowserNames.HeyTapBrowser },
-            { BrowserCode.Harmony360Browser, BrowserNames.Harmony360Browser}
+            { BrowserCode.Harmony360Browser, BrowserNames.Harmony360Browser },
+            { BrowserCode.ChatGptAtlas, BrowserNames.ChatGptAtlas },
         }.ToFrozenDictionary();
 
     internal static readonly FrozenDictionary<string, BrowserCode> BrowserNameMappings =
