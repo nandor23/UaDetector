@@ -9104,5 +9104,32 @@
         "code": 1973
       }
     }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 15; Infinix X6857B Build/AP3A.240905.015.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/141.0.7390.98 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "15",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Webview",
+      "code": 161,
+      "version": "141.0.7390.98",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "141.0.7390.98"
+      }
+    },
+    "device": {
+      "type": 10,
+      "model": "Note 50X 5G",
+      "brand": {
+        "name": "Infinix",
+        "code": 813
+      }
+    }
   }
 ]
