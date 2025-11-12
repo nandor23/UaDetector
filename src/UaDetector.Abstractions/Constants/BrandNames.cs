@@ -2100,4 +2100,6 @@ public static class BrandNames
     public const string Honor = "Honor";
     public const string AiPlus = "AI+";
     public const string Voix = "VOIX";
+    public const string Bncf = "BNCF";
+    public const string Edanix = "Edanix";
 }

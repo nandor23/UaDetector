@@ -2119,6 +2119,8 @@ public class BrandCodeTests
             { BrandCode.Honor, 2095 },
             { BrandCode.AiPlus, 2096 },
             { BrandCode.Voix, 2097 },
+            { BrandCode.Bncf, 2098 },
+            { BrandCode.Edanix, 2099 },
         };
 
         expectedValues.Count.ShouldBe(Enum.GetValues<BrandCode>().Length);

@@ -8315,5 +8315,274 @@
         "code": 1973
       }
     }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 15; 2410CRP4CI) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.114 YaBrowser/25.10.1.114.01 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "15",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "25.10.1.114.01",
+      "engine": {
+        "name": "Blink",
+        "version": "140.0.7339.114"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "Pad 7",
+      "brand": {
+        "name": "Xiaomi",
+        "code": 1973
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 14; TAB KINGKONG 2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.7204.108 YaBrowser/25.8.2.108.01 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "14",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "25.8.2.108.01",
+      "engine": {
+        "name": "Blink",
+        "version": "138.0.7204.108"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "Tab King Kong 2",
+      "brand": {
+        "name": "CUBOT",
+        "code": 339
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 14; TAB R9 Plus) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.108 YaBrowser/25.10.1.108.01 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "14",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "25.10.1.108.01",
+      "engine": {
+        "name": "Blink",
+        "version": "140.0.7339.108"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "Tab R9 Plus",
+      "brand": {
+        "name": "Hotwav",
+        "code": 743
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; U; Android 14; en-us; DMOAO_D2_EEA Build/JOP24G) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.198 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "14",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Webview",
+      "code": 161,
+      "version": "86.0.4240.198",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "86.0.4240.198"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "D2",
+      "brand": {
+        "name": "DMOAO",
+        "code": 402
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; U; Android 13; en-US; Pixus_Arena Build/TP1A.220624.014) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/100.0.4896.58 UCBrowser/13.7.5.1321 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "13",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "code": 604,
+      "version": "13.7.5.1321",
+      "engine": {
+        "name": "Blink",
+        "version": "100.0.4896.58"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "Arena",
+      "brand": {
+        "name": "Pixus",
+        "code": 1344
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; U; Android 12; zh-Hans-CN; TGR-W10 Build/HUAWEITGR-W10) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/123.0.6312.80 Quark/7.17.4.924 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "12",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Quark",
+      "code": 499,
+      "version": "7.17.4.924",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "123.0.6312.80"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "MatePad 11.5\" S WiFi",
+      "brand": {
+        "name": "Huawei",
+        "code": 757
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm; Android 12; ALFA 8TX) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.7204.566 YaSearchBrowser/25.84.1/apad BroPP/1.0 YaSearchApp/25.84.1/apad webOmni SA/3 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "12",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "25.84.1",
+      "engine": {
+        "name": "Blink",
+        "version": "138.0.7204.566"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "ALFA 8TX",
+      "brand": {
+        "name": "Hometech",
+        "code": 733
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 15; HEY3-W00 Build/HONORHEY3-W09; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/141.0.7390.97 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "15",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Webview",
+      "code": 161,
+      "version": "141.0.7390.97",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "141.0.7390.97"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "Pad 10 12.1\" WiFi",
+      "brand": {
+        "name": "Honor",
+        "code": 2095
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 15; HEY3-N09 Build/HONORHEY3-N09) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.6778.260 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "15",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome",
+      "code": 137,
+      "version": "131.0.6778.260",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "131.0.6778.260"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "Pad 10 12.1\"",
+      "brand": {
+        "name": "Honor",
+        "code": 2095
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 15; BPad_Mini_SE Build/AP3A.240905.015.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/141.0.7390.43 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "15",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Webview",
+      "code": 161,
+      "version": "141.0.7390.43",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "141.0.7390.43"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "BPad Mini SE",
+      "brand": {
+        "name": "BNCF",
+        "code": 2098
+      }
+    }
   }
 ]

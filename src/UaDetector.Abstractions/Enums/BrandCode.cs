@@ -2100,4 +2100,6 @@ public enum BrandCode
     Honor = 2095,
     AiPlus = 2096,
     Voix = 2097,
+    Bncf = 2098,
+    Edanix = 2099,
 }
