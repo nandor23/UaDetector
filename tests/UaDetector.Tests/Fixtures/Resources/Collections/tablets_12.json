@@ -8207,5 +8207,113 @@
         "code": 97
       }
     }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 15; Wave TAXX5P0X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.270 YaBrowser/25.10.0.270.01 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "15",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "25.10.0.270.01",
+      "engine": {
+        "name": "Blink",
+        "version": "140.0.7339.270"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "Pro Wave TAXX5P0X",
+      "brand": {
+        "name": "Digma",
+        "code": 390
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 15; Pixel Tablet 2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.6045.163 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "15",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome",
+      "code": 137,
+      "version": "119.0.6045.163",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "119.0.6045.163"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "Pixel Tablet 2",
+      "brand": {
+        "name": "Google",
+        "code": 655
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 15; 25099RP13G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.6998.574 YaSearchBrowser/25.45/apad BroPP/1.0 YaSearchApp/25.45/apad webOmni SA/3 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "15",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "25.45",
+      "engine": {
+        "name": "Blink",
+        "version": "134.0.6998.574"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "Redmi Pad 2 Pro",
+      "brand": {
+        "name": "Xiaomi",
+        "code": 1973
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 15; 2509BRP2DG) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.6998.94 YaBrowser/25.4.5.94.01 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "15",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "25.4.5.94.01",
+      "engine": {
+        "name": "Blink",
+        "version": "134.0.6998.94"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "Redmi Pad 2 Pro 5G",
+      "brand": {
+        "name": "Xiaomi",
+        "code": 1973
+      }
+    }
   }
 ]

@@ -4784,5 +4784,32 @@
         "code": 1459
       }
     }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 14; VONTAR H728) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.116 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "14",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "79.0.3945.116",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "79.0.3945.116"
+      }
+    },
+    "device": {
+      "type": 5,
+      "model": "H728",
+      "brand": {
+        "name": "Vontar",
+        "code": 1888
+      }
+    }
   }
 ]

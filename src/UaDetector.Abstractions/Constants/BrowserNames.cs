@@ -685,4 +685,5 @@ public static class BrowserNames
     public const string Quetta = "Quetta";
     public const string HeyTapBrowser = "HeyTapBrowser";
     public const string Harmony360Browser = "Harmony 360 Browser";
+    public const string ChatGptAtlas = "ChatGPT Atlas";
 }

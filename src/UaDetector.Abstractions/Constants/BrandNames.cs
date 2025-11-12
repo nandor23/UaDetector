@@ -2098,4 +2098,6 @@ public static class BrandNames
     public const string WaipuTv = "waipu.tv";
     public const string Zala = "ZALA";
     public const string Honor = "Honor";
+    public const string AiPlus = "AI+";
+    public const string Voix = "VOIX";
 }

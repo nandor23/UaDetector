@@ -2098,4 +2098,6 @@ public enum BrandCode
     WaipuTv = 2093,
     Zala = 2094,
     Honor = 2095,
+    AiPlus = 2096,
+    Voix = 2097,
 }
