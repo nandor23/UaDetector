@@ -9050,5 +9050,59 @@
         "code": 2095
       }
     }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 15; 25104RADAC Build/AQ3A.250226.002) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.6778.260 Mobile Safari/537.36 OPX/3.0",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "15",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Opera GX",
+      "code": 415,
+      "version": "3.0",
+      "family": "Opera",
+      "engine": {
+        "name": "Blink",
+        "version": "131.0.6778.260"
+      }
+    },
+    "device": {
+      "type": 10,
+      "model": "Redmi Note 15 Pro+",
+      "brand": {
+        "name": "Xiaomi",
+        "code": 1973
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 15; 25080RABDC) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.7204.59 YaBrowser/25.8.9.59.00 SA/3 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "15",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "25.8.9.59.00",
+      "engine": {
+        "name": "Blink",
+        "version": "138.0.7204.59"
+      }
+    },
+    "device": {
+      "type": 10,
+      "model": "Redmi Note 15 Pro",
+      "brand": {
+        "name": "Xiaomi",
+        "code": 1973
+      }
+    }
   }
 ]
