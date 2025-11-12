@@ -704,6 +704,7 @@ public class BrowserCodeTests
             { BrowserCode.Quetta, 680 },
             { BrowserCode.HeyTapBrowser, 681 },
             { BrowserCode.Harmony360Browser, 682 },
+            { BrowserCode.ChatGptAtlas, 683 },
         };
 
         expectedValues.Count.ShouldBe(Enum.GetValues<BrowserCode>().Length);
