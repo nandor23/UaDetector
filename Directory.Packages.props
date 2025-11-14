@@ -16,10 +16,10 @@
     />
   </ItemGroup>
   <ItemGroup Label="STJ runtime dependencies for source generator">
-    <PackageVersion Include="System.Text.Encodings.Web" Version="10.0.0" />
-    <PackageVersion Include="System.Text.Encoding.CodePages" Version="10.0.0" />
-    <PackageVersion Include="Microsoft.Bcl.AsyncInterfaces" Version="10.0.0" />
-    <PackageVersion Include="System.Reflection.Metadata" Version="10.0.0" />
+    <PackageVersion Include="System.Reflection.Metadata" Version="8.0.1" />
+    <PackageVersion Include="System.Text.Encodings.Web" Version="8.0.0" />
+    <PackageVersion Include="System.Text.Encoding.CodePages" Version="8.0.0" />
+    <PackageVersion Include="Microsoft.Bcl.AsyncInterfaces" Version="8.0.0" />
     <PackageVersion Include="Microsoft.Bcl.HashCode" Version="6.0.0" />
     <PackageVersion Include="System.Buffers" Version="4.6.1" />
     <PackageVersion Include="System.Memory" Version="4.6.3" />
