@@ -41,17 +41,15 @@ All sub-parsers, except `AddBotParser`, can be configured via *UaDetectorOptions
 ```c#
 using UaDetector;
 
-builder.Services.AddUaDetector(options =>
-{
-    // Custom configuration options
-    // e.g., options.VersionTruncation = VersionTruncation.Major;
-});
+builder.Services.AddUaDetector();
 ```
 
-| Option                | Type   | Description                                                                 |
-| --------------------- | ------ | --------------------------------------------------------------------------- |
-| `VersionTruncation`   | `enum` | Controls how version numbers are shortened (e.g., `Major`, `Minor`, `None`) |
-| `DisableBotDetection` | `bool` | Disables bot detection entirely, skipping bot-related checks and parsing    |
+### Configuration Options
+
+| Option                | Type   | Default  | Description                                                                                    |
+|-----------------------|--------|----------|------------------------------------------------------------------------------------------------|
+| `VersionTruncation`   | `enum` | `Minor`  | Controls how version numbers are shortened (e.g., `None`, `Major`, `Minor`, `Patch`, `Build`). |
+| `DisableBotDetection` | `bool` | `false`  | Disables bot detection entirely, skipping bot-related checks and parsing.                      |
 
 ## 🚀 Quick Start
 
@@ -147,5 +145,14 @@ builder.Services.AddUaDetector(options =>
     options.UseMemoryCache();
 });
 ```
+
+### Configuration Options
+
+| Option                    | Default   | Description                                                                                                                             |
+|---------------------------|-----------|-----------------------------------------------------------------------------------------------------------------------------------------|
+| `MaxKeyLength`            | 256       | Maximum length allowed for a cache key. Entries with longer keys will not be cached.                                                    |
+| `Expiration`              | `null`    | Entries will expire after this duration, regardless of how frequently they are accessed.                                                |
+| `SlidingExpiration`       | `null`    | Entries will expire if they haven't been accessed within this time period. The expiration timer resets each time the entry is accessed. |
+| `ExpirationScanFrequency` | 1 minute  | Interval between automatic scans that remove expired cache entries.                                                                     |
 
 > **Note**: For full documentation, visit the [GitHub repository](https://github.com/nandor23/UaDetector).
