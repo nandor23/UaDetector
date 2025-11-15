@@ -22,7 +22,7 @@ public class LibraryComparisonBenchmark
         return result;
     }
 
-    /*[Benchmark]
+    [Benchmark]
     public ParseResult<BrowserMatchResult> DeviceDetector()
     {
         var deviceDetector = new DeviceDetector(UserAgent);
@@ -35,5 +35,5 @@ public class LibraryComparisonBenchmark
     {
         var uaParser = Parser.GetDefault();
         return uaParser.Parse(UserAgent);
-    }*/
+    }
 }
