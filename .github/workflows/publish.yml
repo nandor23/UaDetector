@@ -36,6 +36,14 @@ jobs:
             --output "$PACKAGES_OUTPUT_DIR" \
             -p:PackageVersion=${{ steps.extract_tag.outputs.tag }}
           
+      - name: Pack UaDetector.Lite
+        run: |
+          dotnet pack src/UaDetector \
+            --configuration Release \
+            --property:LiteMode=true \
+            --output "$PACKAGES_OUTPUT_DIR" \
+            -p:PackageVersion=${{ steps.extract_tag.outputs.tag }}
+          
       - name: Pack UaDetector.MemoryCache
         run: |
           dotnet pack src/UaDetector.MemoryCache \
