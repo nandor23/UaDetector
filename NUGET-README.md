@@ -148,11 +148,11 @@ builder.Services.AddUaDetector(options =>
 
 ### Configuration Options
 
-| Option                    | Default       | Description                                                                                                                             |
-|---------------------------|---------------|-----------------------------------------------------------------------------------------------------------------------------------------|
-| `MaxKeyLength`            | 256           | Maximum length allowed for a cache key. Entries with longer keys will not be cached.                                                    |
-| `Expiration`              | `null`        | Entries will expire after this duration, regardless of how frequently they are accessed.                                                |
-| `SlidingExpiration`       | `null`        | Entries will expire if they haven't been accessed within this time period. The expiration timer resets each time the entry is accessed. |
-| `ExpirationScanFrequency` | 1&nbsp;minute | Interval between automatic scans that remove expired cache entries.                                                                     |
+| Option                    | Default     | Description                                                                                                                             |
+|---------------------------|-------------|-----------------------------------------------------------------------------------------------------------------------------------------|
+| `MaxKeyLength`            | `256`       | Maximum length allowed for a cache key. Entries with longer keys will not be cached.                                                    |
+| `Expiration`              | `null`      | Entries will expire after this duration, regardless of how frequently they are accessed.                                                |
+| `SlidingExpiration`       | `null`      | Entries will expire if they haven't been accessed within this time period. The expiration timer resets each time the entry is accessed. |
+| `ExpirationScanFrequency` | `1 minute`  | Interval between automatic scans that remove expired cache entries.                                                                     |
 
 > **Note**: For full documentation, visit the [GitHub repository](https://github.com/nandor23/UaDetector).
