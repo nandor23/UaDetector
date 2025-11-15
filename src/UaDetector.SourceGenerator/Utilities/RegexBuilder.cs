@@ -4,7 +4,11 @@ namespace UaDetector.SourceGenerator.Utilities;
 
 public static class RegexBuilder
 {
-    public static string BuildRegexFieldDeclaration(string methodName, string pattern)
+    public static string BuildRegexFieldDeclaration(
+        string methodName,
+        string pattern,
+        bool isLiteMode
+    )
     {
         var fullPattern = BuildPattern(pattern);
         var escapedPattern = EscapeForVerbatimString(fullPattern);
@@ -13,14 +17,14 @@ public static class RegexBuilder
             private static readonly global::System.Text.RegularExpressions.Regex {methodName} = 
                     new global::System.Text.RegularExpressions.Regex(
                         @"{escapedPattern}", 
-                        global::System.Text.RegularExpressions.RegexOptions.IgnoreCase | 
-                        global::System.Text.RegularExpressions.RegexOptions.Compiled);
+                        {GetRegexOptions(isLiteMode)});
             """;
     }
 
     public static string? BuildCombinedRegexFieldDeclaration(
         CombinedRegexProperty? combinedRegexProperty,
-        string pattern
+        string pattern,
+        bool isLiteMode
     )
     {
         if (combinedRegexProperty == null)
@@ -36,8 +40,7 @@ public static class RegexBuilder
             private static readonly global::System.Text.RegularExpressions.Regex {fieldName} = 
                     new global::System.Text.RegularExpressions.Regex(
                         @"{escapedPattern}", 
-                        global::System.Text.RegularExpressions.RegexOptions.IgnoreCase | 
-                        global::System.Text.RegularExpressions.RegexOptions.Compiled);
+                        {GetRegexOptions(isLiteMode)});
 
                 {combinedRegexProperty.PropertyAccessibility.ToSyntaxString()} static partial global::System.Text.RegularExpressions.Regex {combinedRegexProperty.PropertyName} => {fieldName};
             """;
@@ -51,5 +54,13 @@ public static class RegexBuilder
     private static string EscapeForVerbatimString(this string input)
     {
         return input.Replace("\"", "\"\"");
+    }
+
+    private static string GetRegexOptions(bool isLiteMode)
+    {
+        const string ignoreCase = "global::System.Text.RegularExpressions.RegexOptions.IgnoreCase";
+        const string compiled = "global::System.Text.RegularExpressions.RegexOptions.Compiled";
+
+        return isLiteMode ? ignoreCase : $"{ignoreCase} |\n            {compiled}";
     }
 }

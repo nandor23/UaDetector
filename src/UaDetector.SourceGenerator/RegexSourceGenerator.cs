@@ -13,6 +13,10 @@ public sealed class RegexSourceGenerator : IIncrementalGenerator
 {
     public void Initialize(IncrementalGeneratorInitializationContext context)
     {
+        var isLiteMode = context.ParseOptionsProvider.Select(
+            (parseOptions, _) => parseOptions.PreprocessorSymbolNames.Contains("UADETECTOR_LITE")
+        );
+
         var regexSourceProvider = context
             .SyntaxProvider.ForAttributeWithMetadataName(
                 "UaDetector.Attributes.RegexSourceAttribute",
@@ -46,8 +50,18 @@ public sealed class RegexSourceGenerator : IIncrementalGenerator
             .Collect();
 
         context.RegisterSourceOutput(
-            regexSourceProvider.Combine(combinedRegexProvider.Collect()).Combine(additionalFiles),
-            static (spc, source) => Execute(source.Left.Left, source.Left.Right, source.Right, spc)
+            regexSourceProvider
+                .Combine(combinedRegexProvider.Collect())
+                .Combine(additionalFiles)
+                .Combine(isLiteMode),
+            static (spc, source) =>
+                Execute(
+                    source.Left.Left.Left,
+                    source.Left.Left.Right,
+                    source.Left.Right,
+                    source.Right,
+                    spc
+                )
         );
     }
 
@@ -144,6 +158,7 @@ public sealed class RegexSourceGenerator : IIncrementalGenerator
         RegexSourceProperty regexSourceProperty,
         ImmutableArray<CombinedRegexProperty> combinedRegexProperties,
         ImmutableArray<(string Path, string? Json)> additionalFiles,
+        bool isLiteMode,
         SourceProductionContext context
     )
     {
@@ -159,6 +174,7 @@ public sealed class RegexSourceGenerator : IIncrementalGenerator
 
             if (
                 !TryGenerateSource(
+                    isLiteMode,
                     json,
                     regexSourceProperty,
                     combinedRegexProperty,
@@ -180,6 +196,7 @@ public sealed class RegexSourceGenerator : IIncrementalGenerator
     }
 
     private static bool TryGenerateSource(
+        bool isLiteMode,
         string json,
         RegexSourceProperty regexSourceProperty,
         CombinedRegexProperty? combinedRegexProperty,
@@ -189,42 +206,49 @@ public sealed class RegexSourceGenerator : IIncrementalGenerator
         return regexSourceProperty.ElementType switch
         {
             "global::UaDetector.Models.Client" => ClientSourceGenerator.TryGenerate(
+                isLiteMode,
                 json,
                 regexSourceProperty,
                 combinedRegexProperty,
                 out result
             ),
             "global::UaDetector.Models.Browser" => BrowserSourceGenerator.TryGenerate(
+                isLiteMode,
                 json,
                 regexSourceProperty,
                 combinedRegexProperty,
                 out result
             ),
             "global::UaDetector.Models.Engine" => EngineSourceGenerator.TryGenerate(
+                isLiteMode,
                 json,
                 regexSourceProperty,
                 combinedRegexProperty,
                 out result
             ),
-            "global::UaDetector.Models.Os" => OsSourceGenerator.Generate(
+            "global::UaDetector.Models.Os" => OsSourceGenerator.TryGenerate(
+                isLiteMode,
                 json,
                 regexSourceProperty,
                 combinedRegexProperty,
                 out result
             ),
             "global::UaDetector.Models.Device" => DeviceGenerator.TryGenerate(
+                isLiteMode,
                 json,
                 regexSourceProperty,
                 combinedRegexProperty,
                 out result
             ),
             "global::UaDetector.Models.Bot" => BotSourceGenerator.TryGenerate(
+                isLiteMode,
                 json,
                 regexSourceProperty,
                 combinedRegexProperty,
                 out result
             ),
-            "global::UaDetector.Models.VendorFragment" => VendorFragmentSourceGenerator.Generate(
+            "global::UaDetector.Models.VendorFragment" => VendorFragmentSourceGenerator.TryGenerate(
+                isLiteMode,
                 json,
                 regexSourceProperty,
                 combinedRegexProperty,

@@ -10,6 +10,7 @@ public static class EngineSourceGenerator
     private const string EngineRegexPrefix = "EngineRegex";
 
     public static bool TryGenerate(
+        bool isLiteMode,
         string json,
         RegexSourceProperty regexSourceProperty,
         CombinedRegexProperty? combinedRegexProperty,
@@ -22,12 +23,13 @@ public static class EngineSourceGenerator
             return false;
         }
 
-        var regexDeclarations = GenerateRegexDeclarations(list.Value);
+        var regexDeclarations = GenerateRegexDeclarations(list.Value, isLiteMode);
         var collectionInitializer = GenerateCollectionInitializer(list.Value, regexSourceProperty);
 
         var combinedRegexDeclaration = RegexBuilder.BuildCombinedRegexFieldDeclaration(
             combinedRegexProperty,
-            string.Join("|", list.Value.Reverse().Select(x => x.Regex))
+            string.Join("|", list.Value.Reverse().Select(x => x.Regex)),
+            isLiteMode
         );
 
         result = SourceCodeBuilder.BuildClassSourceCode(
@@ -40,7 +42,10 @@ public static class EngineSourceGenerator
         return true;
     }
 
-    private static string GenerateRegexDeclarations(EquatableReadOnlyList<EngineRule> list)
+    private static string GenerateRegexDeclarations(
+        EquatableReadOnlyList<EngineRule> list,
+        bool isLiteMode
+    )
     {
         var sb = new IndentedStringBuilder();
         sb.Indent();
@@ -50,7 +55,8 @@ public static class EngineSourceGenerator
             sb.AppendLine(
                     RegexBuilder.BuildRegexFieldDeclaration(
                         $"{EngineRegexPrefix}{i}",
-                        list[i].Regex
+                        list[i].Regex,
+                        isLiteMode
                     )
                 )
                 .AppendLine();

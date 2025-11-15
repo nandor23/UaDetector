@@ -9,7 +9,8 @@ public static class VendorFragmentSourceGenerator
 {
     private const string FragmentRegexPrefix = "VendorFragmentRegex";
 
-    public static bool Generate(
+    public static bool TryGenerate(
+        bool isLiteMode,
         string json,
         RegexSourceProperty regexSourceProperty,
         CombinedRegexProperty? combinedRegexProperty,
@@ -21,7 +22,7 @@ public static class VendorFragmentSourceGenerator
             result = null;
             return false;
         }
-        var regexDeclarations = GenerateRegexDeclarations(list.Value);
+        var regexDeclarations = GenerateRegexDeclarations(list.Value, isLiteMode);
         var collectionInitializer = GenerateCollectionInitializer(list.Value, regexSourceProperty);
 
         var combinedRegexDeclaration = RegexBuilder.BuildCombinedRegexFieldDeclaration(
@@ -32,7 +33,8 @@ public static class VendorFragmentSourceGenerator
                     .SelectMany(x =>
                         x.Regexes.Select(regex => $"{regex}{regexSourceProperty.RegexSuffix}")
                     )
-            )
+            ),
+            isLiteMode
         );
 
         result = SourceCodeBuilder.BuildClassSourceCode(
@@ -45,7 +47,10 @@ public static class VendorFragmentSourceGenerator
         return true;
     }
 
-    private static string GenerateRegexDeclarations(EquatableReadOnlyList<VendorFragmentRule> list)
+    private static string GenerateRegexDeclarations(
+        EquatableReadOnlyList<VendorFragmentRule> list,
+        bool isLiteMode
+    )
     {
         int fragmentCount = 0;
         var sb = new IndentedStringBuilder();
@@ -58,7 +63,8 @@ public static class VendorFragmentSourceGenerator
                 sb.AppendLine(
                         RegexBuilder.BuildRegexFieldDeclaration(
                             $"{FragmentRegexPrefix}{fragmentCount}",
-                            regex
+                            regex,
+                            isLiteMode
                         )
                     )
                     .AppendLine();

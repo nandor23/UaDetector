@@ -3,12 +3,23 @@
     <OutputType>Library</OutputType>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+<!--
+    <DefineConstants>$(DefineConstants);UADETECTOR_LITE</DefineConstants>
+-->
   </PropertyGroup>
 
   <PropertyGroup>
-    <PackageId>UaDetector</PackageId>
     <PackageTags>UaDetector;user-agent;parser;user-agent-parser;os-detection;browser-detection;client-detection;device-detection;bot-detection;</PackageTags>
     <Description>A user-agent parser that identifies the browser, operating system, device, client, and even detects bots.</Description>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(LiteMode)' != 'true'">
+    <PackageId>UaDetector</PackageId>
+  </PropertyGroup>
+  
+  <PropertyGroup Condition="'$(LiteMode)' == 'true'">
+    <PackageId>UaDetector.Lite</PackageId>
+    <DefineConstants>$(DefineConstants);UADETECTOR_LITE</DefineConstants>
   </PropertyGroup>
 
   <ItemGroup>

@@ -10,6 +10,8 @@ public class IncrementalGeneratorTest<TSourceGenerator>
     : CSharpSourceGeneratorTest<TSourceGenerator, DefaultVerifier>
     where TSourceGenerator : IIncrementalGenerator, new()
 {
+    public bool IsLiteMode { get; set; } = false;
+
     private static LanguageVersion LanguageVersion => LanguageVersion.CSharp13;
 
     public IncrementalGeneratorTest()
@@ -43,6 +45,15 @@ public class IncrementalGeneratorTest<TSourceGenerator>
 
     protected override ParseOptions CreateParseOptions()
     {
-        return ((CSharpParseOptions)base.CreateParseOptions()).WithLanguageVersion(LanguageVersion);
+        var parseOptions = ((CSharpParseOptions)base.CreateParseOptions()).WithLanguageVersion(
+            LanguageVersion
+        );
+
+        if (IsLiteMode)
+        {
+            parseOptions = parseOptions.WithPreprocessorSymbols("UADETECTOR_LITE");
+        }
+
+        return parseOptions;
     }
 }

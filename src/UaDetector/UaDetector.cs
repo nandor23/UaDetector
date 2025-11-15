@@ -127,11 +127,14 @@ public sealed class UaDetector : IUaDetector
         _botParser = new BotParser(new BotParserOptions { Cache = _cache });
     }
 
-    private static Regex BuildRegex(string pattern)
+    private static Regex BuildRegex([StringSyntax(StringSyntaxAttribute.Regex)] string pattern)
     {
         return new Regex(
             $"(?:^|[^A-Z_-])(?:{pattern})",
-            RegexOptions.IgnoreCase | RegexOptions.Compiled
+            RegexOptions.IgnoreCase
+#if !UADETECTOR_LITE
+                | RegexOptions.Compiled
+#endif
         );
     }
 

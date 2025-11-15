@@ -9,6 +9,15 @@ UaDetector is a user-agent parser that identifies the browser, operating system,
 It is composed of several sub-parsers: `OsParser`, `BrowserParser`, `ClientParser`, and `BotParser`.
 Each can be used independently if only certain information is needed from the user-agent string.
 
+## Packages
+
+| Package                                                                             | Description                                               |
+|-------------------------------------------------------------------------------------|-----------------------------------------------------------|
+| [UaDetector](https://www.nuget.org/packages/UaDetector)                             | High-performance user agent parser                        |
+| [UaDetector.Lite](https://www.nuget.org/packages/UaDetector.Lite)                   | Memory-efficient variant with slower parsing              |
+| [UaDetector.Abstractions](https://www.nuget.org/packages/UaDetector.Abstractions)   | Shared models, enums, and constants                       |
+| [UaDetector.MemoryCache](https://www.nuget.org/packages/UaDetector.MemoryCache)     | Memory cache built on Microsoft.Extensions.Caching.Memory |
+
 ## Features
 
 - **Thread-safe**: Parsers are stateless, making them safe for dependency injection and multithreaded scenarios.
@@ -51,9 +60,9 @@ that accepts both the user-agent string and a collection of HTTP headers.
 For more accurate detection, it is recommended to provide the HTTP headers.
 
 > [!TIP]
-> Avoid directly instantiating parsers. The first call to *TryParse* causes a noticeable delay as it triggers
-> the compilation of regular expressions. To prevent this one-time cost during runtime, register the service
-> with dependency injection, as shown earlier.
+> Avoid directly instantiating parsers. The first call to TryParse causes a noticeable delay
+> due to the creation of regular expression objects. To prevent this one-time
+> cost during runtime, register the service with dependency injection, as shown earlier.
 
 ```c#
 [ApiController]

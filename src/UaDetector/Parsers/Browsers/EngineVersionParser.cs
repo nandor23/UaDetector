@@ -40,11 +40,14 @@ internal static class EngineVersionParser
         { BrowserEngines.ArkWeb, BuildRegex(BrowserEngines.ArkWeb) },
     }.ToFrozenDictionary(StringComparer.OrdinalIgnoreCase);
 
-    private static Regex BuildRegex(string pattern)
+    private static Regex BuildRegex([StringSyntax(StringSyntaxAttribute.Regex)] string pattern)
     {
         return new Regex(
             $@"(?:{pattern})\s*[/_]?\s*((?(?=\d+\.\d)\d+[.\d]*|\d{{1,7}}(?=(?:\D|$))))",
-            RegexOptions.IgnoreCase | RegexOptions.Compiled
+            RegexOptions.IgnoreCase
+#if !UADETECTOR_LITE
+                | RegexOptions.Compiled
+#endif
         );
     }
 

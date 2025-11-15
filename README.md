@@ -16,6 +16,15 @@ UaDetector is a user-agent parser that identifies the browser, operating system,
 It is composed of several sub-parsers: `OsParser`, `BrowserParser`, `ClientParser`, and `BotParser`. 
 Each can be used independently if only certain information is needed from the user-agent string.
 
+## Packages
+
+| Package                                                                             | Description                                               |
+|-------------------------------------------------------------------------------------|-----------------------------------------------------------|
+| [UaDetector](https://www.nuget.org/packages/UaDetector)                             | High-performance user agent parser                        |
+| [UaDetector.Lite](https://www.nuget.org/packages/UaDetector.Lite)                   | Memory-efficient variant with slower parsing              |
+| [UaDetector.Abstractions](https://www.nuget.org/packages/UaDetector.Abstractions)   | Shared models, enums, and constants                       |
+| [UaDetector.MemoryCache](https://www.nuget.org/packages/UaDetector.MemoryCache)     | Memory cache built on Microsoft.Extensions.Caching.Memory |
+
 ## Features
 
 - **Thread-safe**: Parsers are stateless, making them safe for dependency injection and multithreaded scenarios.
@@ -62,10 +71,10 @@ Each parser provides two `TryParse` methods: one that accepts only the user-agen
 that accepts both the user-agent string and a collection of HTTP headers. 
 For more accurate detection, it is recommended to provide the HTTP headers.
 
-> [!TIP]
-> Avoid directly instantiating parsers. The first call to *TryParse* causes a noticeable delay as it triggers 
-> the compilation of regular expressions. To prevent this one-time cost during runtime, register the service 
-> with dependency injection, as shown earlier.
+>[!TIP]
+> Avoid directly instantiating parsers. The first call to TryParse causes a noticeable delay
+> due to the creation of regular expression objects. To prevent this one-time
+> cost during runtime, register the service with dependency injection, as shown earlier.
 
 ```c#
 [ApiController]
@@ -152,24 +161,42 @@ builder.Services.AddUaDetector(options =>
 
 ## ⚡ Benchmarks
 
-The following benchmark compares the performance of other .NET user-agent parsing libraries, without caching enabled.
+Both UaDetector and UaDetector.Lite load regular expressions into memory for parsing. 
+If memory usage is a concern, UaDetector.Lite uses **5.6 times less memory** (32.03 MB vs 180.08 MB) 
+than UaDetector while maintaining the same functionality at the cost of parsing speed.
 
-| Method         | Mean     | Error     | StdDev    | Ratio |   Allocated | Alloc Ratio |
-|--------------- |---------:|----------:|----------:|------:|------------:|------------:|
-| UaDetector     | 1.712 ms | 0.0320 ms | 0.0608 ms |  1.00 |     4.04 KB |        1.00 |
-| DeviceDetector | 6.321 ms | 0.1260 ms | 0.1294 ms |  3.70 |  4534.53 KB |    1,122.67 |
-| UAParser       | 7.351 ms | 0.0899 ms | 0.0883 ms |  4.30 | 10794.86 KB |    2,672.62 |
+### Library Comparison
 
-The following benchmark measures the performance of different parsers within the library.
+| Method          | Mean     | Error     | StdDev    | Ratio |   Allocated | Alloc Ratio |
+|-----------------|---------:|----------:|----------:|------:|------------:|------------:|
+| UaDetector      | 1.584 ms | 0.0156 ms | 0.0138 ms |  1.00 |     4.04 KB |        1.00 |
+| UaDetector.Lite | 4.698 ms | 0.0451 ms | 0.0422 ms |  2.97 |     4.04 KB |        1.00 |
+| DeviceDetector  | 5.558 ms | 0.0265 ms | 0.0207 ms |  3.51 |  4597.12 KB |    1,138.17 |
+| UAParser        | 6.692 ms | 0.1093 ms | 0.1022 ms |  4.22 | 10919.42 KB |    2,703.45 |
+
+### Individual Parser Performance
+
+#### UaDetector
 
 | Method                 | Mean       | Error    | StdDev   | Allocated |
 |----------------------- |-----------:|---------:|---------:|----------:|
-| UaDetector_TryParse    | 1,588.1 us | 16.40 us | 15.34 us |    4136 B |
-| OsParser_TryParse      |   565.8 us |  5.99 us |  5.60 us |    1520 B |
-| BrowserParser_TryParse | 1,138.1 us | 21.58 us | 20.18 us |    1752 B |
-| ClientParser_TryParse  |   152.9 us |  1.71 us |  1.33 us |    1264 B |
-| BotParser_TryParse     |   309.5 us |  5.93 us |  5.82 us |     600 B |
-| BotParser_IsBot        |   300.5 us |  1.66 us |  1.47 us |     280 B |
+| UaDetector_TryParse    | 1,565.6 us | 14.01 us | 13.10 us |    4136 B |
+| OsParser_TryParse      |   542.3 us |  6.15 us |  5.75 us |    1520 B |
+| BrowserParser_TryParse | 1,104.9 us | 12.45 us | 11.64 us |    1752 B |
+| ClientParser_TryParse  |   153.7 us |  2.25 us |  2.11 us |    1264 B |
+| BotParser_TryParse     |   321.8 us |  6.15 us |  7.78 us |     576 B |
+| BotParser_IsBot        |   318.7 us |  3.67 us |  3.43 us |     256 B |
+
+#### UaDetector.Lite
+
+| Method                 | Mean       | Error    | StdDev   | Allocated |
+|----------------------- |-----------:|---------:|---------:|----------:|
+| UaDetector_TryParse    | 4,556.6 us | 63.54 us | 59.43 us |    4138 B |
+| OsParser_TryParse      | 1,630.2 us | 15.86 us | 14.84 us |    1520 B |
+| BrowserParser_TryParse | 2,606.9 us | 26.80 us | 25.07 us |    1752 B |
+| ClientParser_TryParse  |   242.2 us |  2.37 us |  2.22 us |    1264 B |
+| BotParser_TryParse     |   293.0 us |  3.72 us |  3.48 us |     576 B |
+| BotParser_IsBot        |   263.2 us |  3.31 us |  3.09 us |     256 B |
 
 ## 🔍 Detection Capabilities
 
