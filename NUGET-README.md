@@ -46,10 +46,10 @@ builder.Services.AddUaDetector();
 
 ### Configuration Options
 
-| Option                | Type   | Description                                                                                    |
-|-----------------------|--------|------------------------------------------------------------------------------------------------|
-| `VersionTruncation`   | `enum` | Controls how version numbers are shortened (e.g., `None`, `Major`, `Minor`, `Patch`, `Build`). |
-| `DisableBotDetection` | `bool` | Disables bot detection entirely, skipping bot-related checks and parsing.                      |
+| Option                | Type   | Default  | Description                                                                                    |
+|-----------------------|--------|----------|------------------------------------------------------------------------------------------------|
+| `VersionTruncation`   | `enum` | `Minor`  | Controls how version numbers are shortened (e.g., `None`, `Major`, `Minor`, `Patch`, `Build`). |
+| `DisableBotDetection` | `bool` | `false`  | Disables bot detection entirely, skipping bot-related checks and parsing.                      |
 
 ## 🚀 Quick Start
 
