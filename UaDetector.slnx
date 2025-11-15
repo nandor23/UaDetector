@@ -15,27 +15,27 @@
     <File Path=".github\workflows\update-readme.yml" />
   </Folder>
   <Folder Name="/benchmarks/">
-    <Project Path="benchmarks\UaDetector.Benchmarks\UaDetector.Benchmarks.csproj" Type="Classic C#" />
+    <Project Path="benchmarks\UaDetector.Benchmarks\UaDetector.Benchmarks.csproj" />
   </Folder>
   <Folder Name="/samples/">
-    <Project Path="samples\UaDetector.Api\UaDetector.Api.csproj" Type="Classic C#" />
-    <Project Path="samples\UaDetector.Console\UaDetector.Console.csproj" Type="Classic C#" />
+    <Project Path="samples\UaDetector.Api\UaDetector.Api.csproj" />
+    <Project Path="samples\UaDetector.Console\UaDetector.Console.csproj" />
   </Folder>
   <Folder Name="/src/">
-    <Project Path="src\UaDetector.Abstractions\UaDetector.Abstractions.csproj" Type="Classic C#" />
-    <Project Path="src\UaDetector.MemoryCache\UaDetector.MemoryCache.csproj" Type="Classic C#" />
-    <Project Path="src\UaDetector.SourceGenerator\UaDetector.SourceGenerator.csproj" Type="Classic C#" />
-    <Project Path="src\UaDetector\UaDetector.csproj" Type="Classic C#" />
+    <Project Path="src\UaDetector.Abstractions\UaDetector.Abstractions.csproj" />
+    <Project Path="src\UaDetector.MemoryCache\UaDetector.MemoryCache.csproj" />
+    <Project Path="src\UaDetector.SourceGenerator\UaDetector.SourceGenerator.csproj" />
+    <Project Path="src\UaDetector\UaDetector.csproj" />
     <File Path="src\Directory.Build.props" />
   </Folder>
   <Folder Name="/tests/">
-    <Project Path="tests\UaDetector.Abstractions.Tests\UaDetector.Abstractions.Tests.csproj" Type="Classic C#" />
-    <Project Path="tests\UaDetector.MemoryCache.Tests\UaDetector.MemoryCache.Tests.csproj" Type="Classic C#" />
-    <Project Path="tests\UaDetector.SourceGenerator.Tests\UaDetector.SourceGenerator.Tests.csproj" Type="Classic C#" />
-    <Project Path="tests\UaDetector.Tests\UaDetector.Tests.csproj" Type="Classic C#" />
+    <Project Path="tests\UaDetector.Abstractions.Tests\UaDetector.Abstractions.Tests.csproj" />
+    <Project Path="tests\UaDetector.MemoryCache.Tests\UaDetector.MemoryCache.Tests.csproj" />
+    <Project Path="tests\UaDetector.SourceGenerator.Tests\UaDetector.SourceGenerator.Tests.csproj" />
+    <Project Path="tests\UaDetector.Tests\UaDetector.Tests.csproj" />
   </Folder>
   <Folder Name="/tools/">
-    <Project Path="tools\UaDetector.ReadmeUpdater\UaDetector.ReadmeUpdater.csproj" Type="Classic C#" />
-    <Project Path="tools\UaDetector.YamlJsonConverter\UaDetector.YamlJsonConverter.csproj" Type="Classic C#" />
+    <Project Path="tools\UaDetector.ReadmeUpdater\UaDetector.ReadmeUpdater.csproj" />
+    <Project Path="tools\UaDetector.YamlJsonConverter\UaDetector.YamlJsonConverter.csproj" />
   </Folder>
 </Solution>

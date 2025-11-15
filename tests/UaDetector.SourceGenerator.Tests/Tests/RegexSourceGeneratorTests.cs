@@ -72,7 +72,8 @@ public class RegexSourceGeneratorTests
     [Test]
     [MethodDataSource(nameof(TestData))]
     public async Task GenerateRegexes_WithCombinedRegex_WhenJsonIsInvalid(
-        SourceGeneratorTestCase testCase
+        SourceGeneratorTestCase testCase,
+        bool isLiteMode
     )
     {
         string expectedGeneratedCode = $$"""
@@ -83,8 +84,7 @@ public class RegexSourceGeneratorTests
                 private static readonly global::System.Text.RegularExpressions.Regex {{testCase.ModelTypeName}}Regex0 = 
                     new global::System.Text.RegularExpressions.Regex(
                         @"{{RegexBuilder.BuildPattern(testCase.RegexPattern)}}", 
-                        global::System.Text.RegularExpressions.RegexOptions.IgnoreCase | 
-                        global::System.Text.RegularExpressions.RegexOptions.Compiled);
+                        {{GetRegexOptions(isLiteMode)}});
 
                 private static readonly global::System.Collections.Generic.IReadOnlyList<global::UaDetector.Models.{{testCase.ModelTypeName}}> _Regexes = {{IndentListContent(
                 testCase.DeserializedModels
@@ -95,8 +95,7 @@ public class RegexSourceGeneratorTests
                 private static readonly global::System.Text.RegularExpressions.Regex _CombinedRegex = 
                     new global::System.Text.RegularExpressions.Regex(
                         @"{{RegexBuilder.BuildPattern(testCase.RegexPattern)}}", 
-                        global::System.Text.RegularExpressions.RegexOptions.IgnoreCase | 
-                        global::System.Text.RegularExpressions.RegexOptions.Compiled);
+                        {{GetRegexOptions(isLiteMode)}});
 
                 private static partial global::System.Text.RegularExpressions.Regex CombinedRegex => _CombinedRegex;
             }
@@ -105,6 +104,7 @@ public class RegexSourceGeneratorTests
 
         var test = new IncrementalGeneratorTest<RegexSourceGenerator>
         {
+            IsLiteMode = isLiteMode,
             TestState =
             {
                 Sources =
@@ -132,7 +132,8 @@ public class RegexSourceGeneratorTests
     [Test]
     [MethodDataSource(nameof(TestData))]
     public async Task GenerateRegexes_WithoutCombinedRegex_WhenJsonIsInvalid(
-        SourceGeneratorTestCase testCase
+        SourceGeneratorTestCase testCase,
+        bool isLiteMode
     )
     {
         string expectedGeneratedCode = $$"""
@@ -143,8 +144,7 @@ public class RegexSourceGeneratorTests
                 private static readonly global::System.Text.RegularExpressions.Regex {{testCase.ModelTypeName}}Regex0 = 
                     new global::System.Text.RegularExpressions.Regex(
                         @"{{RegexBuilder.BuildPattern(testCase.RegexPattern)}}", 
-                        global::System.Text.RegularExpressions.RegexOptions.IgnoreCase | 
-                        global::System.Text.RegularExpressions.RegexOptions.Compiled);
+                        {{GetRegexOptions(isLiteMode)}});
 
                 private static readonly global::System.Collections.Generic.IReadOnlyList<global::UaDetector.Models.{{testCase.ModelTypeName}}> _Regexes = {{IndentListContent(
                 testCase.DeserializedModels
@@ -157,6 +157,7 @@ public class RegexSourceGeneratorTests
 
         var test = new IncrementalGeneratorTest<RegexSourceGenerator>
         {
+            IsLiteMode = isLiteMode,
             TestState =
             {
                 Sources =
@@ -182,10 +183,14 @@ public class RegexSourceGeneratorTests
 
     [Test]
     [MethodDataSource(nameof(TestData))]
-    public async Task ReportDiagnostic_WhenJsonIsInvalid(SourceGeneratorTestCase testCase)
+    public async Task ReportDiagnostic_WhenJsonIsInvalid(
+        SourceGeneratorTestCase testCase,
+        bool isLiteMode
+    )
     {
         var test = new IncrementalGeneratorTest<RegexSourceGenerator>
         {
+            IsLiteMode = isLiteMode,
             TestState =
             {
                 Sources =
@@ -212,10 +217,11 @@ public class RegexSourceGeneratorTests
         await test.RunAsync();
     }
 
-    public static IEnumerable<Func<SourceGeneratorTestCase>> TestData()
+    public static IEnumerable<Func<(SourceGeneratorTestCase, bool)>> TestData()
     {
-        yield return () =>
-            new SourceGeneratorTestCase
+        IEnumerable<SourceGeneratorTestCase> baseTestCases =
+        [
+            new()
             {
                 ModelTypeName = "Client",
                 RegexPattern = "iTunes",
@@ -264,10 +270,8 @@ public class RegexSourceGeneratorTests
                         .WithSpan(14, 34, 14, 47)
                         .WithArguments("UaDetector.Parser.CombinedRegex"),
                 ],
-            };
-
-        yield return () =>
-            new SourceGeneratorTestCase
+            },
+            new()
             {
                 ModelTypeName = "Browser",
                 RegexPattern = "Brave",
@@ -342,10 +346,8 @@ public class RegexSourceGeneratorTests
                         .WithSpan(14, 34, 14, 47)
                         .WithArguments("UaDetector.Parser.CombinedRegex"),
                 ],
-            };
-
-        yield return () =>
-            new SourceGeneratorTestCase
+            },
+            new()
             {
                 ModelTypeName = "Engine",
                 RegexPattern = "Maple",
@@ -391,10 +393,8 @@ public class RegexSourceGeneratorTests
                         .WithSpan(14, 34, 14, 47)
                         .WithArguments("UaDetector.Parser.CombinedRegex"),
                 ],
-            };
-
-        yield return () =>
-            new SourceGeneratorTestCase
+            },
+            new()
             {
                 ModelTypeName = "Os",
                 RegexPattern = "Web0S",
@@ -456,10 +456,8 @@ public class RegexSourceGeneratorTests
                         .WithSpan(14, 34, 14, 47)
                         .WithArguments("UaDetector.Parser.CombinedRegex"),
                 ],
-            };
-
-        yield return () =>
-            new SourceGeneratorTestCase
+            },
+            new()
             {
                 ModelTypeName = "Device",
                 RegexPattern = "Dell",
@@ -531,10 +529,8 @@ public class RegexSourceGeneratorTests
                         .WithSpan(14, 34, 14, 47)
                         .WithArguments("UaDetector.Parser.CombinedRegex"),
                 ],
-            };
-
-        yield return () =>
-            new SourceGeneratorTestCase
+            },
+            new()
             {
                 ModelTypeName = "Bot",
                 RegexPattern = "Amazonbot",
@@ -611,10 +607,8 @@ public class RegexSourceGeneratorTests
                         .WithSpan(14, 34, 14, 47)
                         .WithArguments("UaDetector.Parser.CombinedRegex"),
                 ],
-            };
-
-        yield return () =>
-            new SourceGeneratorTestCase
+            },
+            new()
             {
                 ModelTypeName = "VendorFragment",
                 RegexPattern = "Dell",
@@ -666,7 +660,14 @@ public class RegexSourceGeneratorTests
                         .WithSpan(14, 34, 14, 47)
                         .WithArguments("UaDetector.Parser.CombinedRegex"),
                 ],
-            };
+            },
+        ];
+
+        foreach (var testCase in baseTestCases)
+        {
+            yield return () => (testCase, false);
+            yield return () => (testCase, true);
+        }
     }
 
     private static string IndentListContent(string input)
@@ -680,6 +681,14 @@ public class RegexSourceGeneratorTests
             lines[i] = indent + lines[i];
         }
         return string.Join('\n', lines);
+    }
+
+    private static string GetRegexOptions(bool isLiteMode)
+    {
+        const string ignoreCase = "global::System.Text.RegularExpressions.RegexOptions.IgnoreCase";
+        const string compiled = "global::System.Text.RegularExpressions.RegexOptions.Compiled";
+
+        return isLiteMode ? ignoreCase : $"{ignoreCase} |\n            {compiled}";
     }
 
     public class SourceGeneratorTestCase
