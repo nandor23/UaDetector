@@ -15,6 +15,8 @@ public sealed class UaDetectorMemoryCache : IUaDetectorCache
             new MemoryCacheOptions
             {
                 ExpirationScanFrequency = _cacheOptions.ExpirationScanFrequency,
+                SizeLimit = _cacheOptions.MaxEntries,
+                CompactionPercentage = _cacheOptions.EvictionPercentage,
             }
         );
 
@@ -23,6 +25,11 @@ public sealed class UaDetectorMemoryCache : IUaDetectorCache
             AbsoluteExpirationRelativeToNow = _cacheOptions.Expiration,
             SlidingExpiration = _cacheOptions.SlidingExpiration,
         };
+
+        if (_cacheOptions.MaxEntries is not null)
+        {
+            _entryOptions.Size = 1;
+        }
     }
 
     public bool TryGet<T>(string key, out T? value)
