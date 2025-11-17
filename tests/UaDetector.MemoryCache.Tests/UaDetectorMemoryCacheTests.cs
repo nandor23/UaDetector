@@ -29,6 +29,17 @@ public class UaDetectorMemoryCacheTests
     }
 
     [Test]
+    public void Set_WhenMaxEntriesLimitReached_ShouldNotAddNewEntry()
+    {
+        var cache = new UaDetectorMemoryCache(new UaDetectorMemoryCacheOptions { MaxEntries = 2 });
+
+        cache.Set("a", 1).ShouldBeTrue();
+        cache.Set("b", 2).ShouldBeTrue();
+        cache.Set("c", 3).ShouldBeTrue();
+        cache.TryGet("c", out int? _).ShouldBeFalse();
+    }
+
+    [Test]
     public void TryGet_WhenEntryExpires_ShouldReturnFalse()
     {
         const string key = "123";
