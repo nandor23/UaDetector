@@ -27,6 +27,6 @@ public class UaDetectorController : ControllerBase
             return Ok(result);
         }
 
-        return BadRequest("Unrecognized user-agent");
+        return BadRequest("Unrecognized user agent");
     }
 }
