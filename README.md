@@ -47,9 +47,9 @@ Add the *UaDetector* package (from NuGet) to the project.
 $ dotnet add package UaDetector
 ```
 
-To use UaDetector, register it in *Program.cs* with the `AddUaDetector` method. 
-To use a sub-parser, register it using its dedicated method: `AddOsParser`, `AddBrowserParser`, `AddClientParser`, or `AddBotParser`. 
-All sub-parsers, except `AddBotParser`, can be configured via *UaDetectorOptions* using the *Options* pattern as shown below.
+To use UaDetector, register it in *Program.cs* with the `AddUaDetector()` method. 
+To use a sub-parser, register it using its dedicated method: `AddOsParser()`, `AddBrowserParser()`, `AddClientParser()`, or `AddBotParser()`. 
+All sub-parsers, except `AddBotParser()`, can be configured via *UaDetectorOptions* using the *Options* pattern as shown below.
 
 ```c#
 using UaDetector;
@@ -66,7 +66,7 @@ builder.Services.AddUaDetector();
 
 ## 🚀 Quick Start
 
-Each parser provides two `TryParse` methods: one that accepts only the user agent string and another 
+Each parser provides two `TryParse()` methods: one that accepts only the user agent string and another 
 that accepts both the user agent string and a collection of HTTP headers. 
 For more accurate detection, it is recommended to provide the HTTP headers.
 
@@ -106,7 +106,7 @@ public class UaDetectorController : ControllerBase
 }
 ```
 
-The `BotParser` class provides an additional `IsBot` method to determine whether a user agent string represents a bot.
+The `BotParser` class provides an additional `IsBot()` method to determine whether a user agent string represents a bot.
 
 ```c#
 using UaDetector.Parsers;
@@ -146,7 +146,7 @@ else
 
 ##  💾 Caching
 
-To enable caching, install the [UaDetector.MemoryCache](https://www.nuget.org/packages/UaDetector.MemoryCache) package and configure it using the `UseMemoryCache` extension method.
+To enable caching, install the [UaDetector.MemoryCache](https://www.nuget.org/packages/UaDetector.MemoryCache) package and configure it using the `UseMemoryCache()` extension method.
 
 ```c#
 using UaDetector;
