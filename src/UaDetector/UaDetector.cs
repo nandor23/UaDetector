@@ -21,7 +21,7 @@ public sealed class UaDetector : IUaDetector
     private readonly ClientParser _clientParser;
     private readonly BotParser _botParser;
     private static readonly Regex ContainsLetterRegex;
-    private static readonly Regex AndroidVrFragment;
+    private static readonly Regex AndroidVrFragmentRegex;
     private static readonly Regex ChromeRegex;
     private static readonly Regex MobileRegex;
     private static readonly Regex PadRegex;
@@ -36,7 +36,7 @@ public sealed class UaDetector : IUaDetector
     private static readonly Regex PuffinWebBrowserSmartphoneRegex;
     private static readonly Regex PuffinWebBrowserTabletRegex;
     private static readonly Regex AndroidRegex;
-    private static readonly Regex DesktopFragment;
+    private static readonly Regex DesktopFragmentRegex;
     private static readonly FrozenSet<string> AppleOsNames;
     private static readonly FrozenSet<string> TvBrowsers;
     private static readonly FrozenSet<string> TvClients;
@@ -57,7 +57,7 @@ public sealed class UaDetector : IUaDetector
     static UaDetector()
     {
         ContainsLetterRegex = new Regex("[a-zA-Z]", RegexOptions.Compiled);
-        AndroidVrFragment = BuildRegex("Android( [.0-9]+)?; Mobile VR;| VR ");
+        AndroidVrFragmentRegex = BuildRegex("Android( [.0-9]+)?; Mobile VR;| VR ");
         ChromeRegex = BuildRegex("Chrome/[.0-9]*");
         MobileRegex = BuildRegex("(?:Mobile|eliboM)");
         PadRegex = BuildRegex("Pad/APad");
@@ -76,7 +76,7 @@ public sealed class UaDetector : IUaDetector
         AndroidRegex = BuildRegex(
             @"Andr0id|(?:Android(?: UHD)?|Google) TV|\(lite\) TV|BRAVIA|Firebolt| TV$"
         );
-        DesktopFragment = BuildRegex("Desktop(?: (x(?:32|64)|WOW64))?;");
+        DesktopFragmentRegex = BuildRegex("Desktop(?: (x(?:32|64)|WOW64))?;");
 
         AppleOsNames = new[]
         {
@@ -131,10 +131,7 @@ public sealed class UaDetector : IUaDetector
     {
         return new Regex(
             $"(?:^|[^A-Z_-])(?:{pattern})",
-            RegexOptions.IgnoreCase
-#if !UADETECTOR_LITE
-                | RegexOptions.Compiled
-#endif
+            RegexOptions.IgnoreCase | RegexOptions.Compiled
         );
     }
 
@@ -246,7 +243,7 @@ public sealed class UaDetector : IUaDetector
         }
 
         // User agents containing the fragment 'VR' are assumed to represent wearables.
-        if (deviceType is null && AndroidVrFragment.IsMatch(userAgent))
+        if (deviceType is null && AndroidVrFragmentRegex.IsMatch(userAgent))
         {
             deviceType = DeviceType.Wearable;
         }
@@ -417,7 +414,7 @@ public sealed class UaDetector : IUaDetector
         if (
             deviceType != DeviceType.Desktop
             && userAgent.Contains("Desktop")
-            && DesktopFragment.IsMatch(userAgent)
+            && DesktopFragmentRegex.IsMatch(userAgent)
         )
         {
             deviceType = DeviceType.Desktop;
