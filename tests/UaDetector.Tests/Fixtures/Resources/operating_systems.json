@@ -6999,7 +6999,8 @@
     "os": {
       "name": "Android",
       "code": 1,
-      "version": "12"
+      "version": "12",
+      "family": "Android"
     }
   }
 ]
