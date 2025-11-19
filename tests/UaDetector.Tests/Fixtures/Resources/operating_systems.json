@@ -6993,5 +6993,14 @@
       "version": "14",
       "family": "Android"
     }
+  },
+  {
+    "userAgent": "Superbalist/3.50.0-huawei(com.superbalist.huawei;329;Android;12;API31)",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "12",
+      "family": "Android"
+    }
   }
 ]

@@ -785,6 +785,11 @@
     "version": "$1"
   },
   {
+    "regex": "Android;(\\d+[.\\d]*);API",
+    "name": "Android",
+    "version": "$1"
+  },
+  {
     "regex": "[ ]([\\d.]+)\\) AppleWebKit.*ROBLOX Android App",
     "name": "Android",
     "version": "$1"
