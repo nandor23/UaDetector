@@ -9,8 +9,6 @@ builder.Services.AddControllers();
 
 builder.Services.AddUaDetector(options =>
 {
-    // Custom configuration options
-    // e.g., options.VersionTruncation = VersionTruncation.Major;
     options.UseMemoryCache();
 });
 
@@ -20,8 +18,10 @@ app.MapOpenApi();
 app.MapScalarApiReference(cfg =>
 {
     cfg.Title = "UaDetector";
-    cfg.Theme = ScalarTheme.BluePlanet;
-    cfg.ShowSidebar = true;
+    cfg.Theme = ScalarTheme.Moon;
+    cfg.ShowSidebar = true; 
+    cfg.HideDarkModeToggle = true;
+    
 });
 
 app.UseHttpsRedirection();

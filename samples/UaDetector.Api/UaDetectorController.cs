@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace UaDetector.Api;
 
 [ApiController]
+[Route("user-agent")]
 public class UaDetectorController : ControllerBase
 {
     private readonly IUaDetector _uaDetector;
@@ -13,7 +14,7 @@ public class UaDetectorController : ControllerBase
     }
 
     [HttpGet]
-    [Route("ua-detector")]
+    [Route("detect")]
     public IActionResult GetUserAgentInfo()
     {
         var userAgent = HttpContext.Request.Headers.UserAgent.ToString();
@@ -23,6 +24,18 @@ public class UaDetectorController : ControllerBase
         );
 
         if (_uaDetector.TryParse(userAgent, headers, out var result))
+        {
+            return Ok(result);
+        }
+
+        return BadRequest("Unrecognized user agent");
+    }
+    
+    [HttpGet]
+    [Route("parse")]
+    public IActionResult GetUserAgentInfo([FromQuery] string userAgent)
+    {
+        if (_uaDetector.TryParse(userAgent, out var result))
         {
             return Ok(result);
         }
