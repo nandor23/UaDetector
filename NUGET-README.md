@@ -5,9 +5,10 @@ A powerful user agent parser inspired by [device-detector](https://github.com/ma
 [![Build](https://github.com/nandor23/UaDetector/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/nandor23/UaDetector/actions/workflows/build.yml)
 [![License](https://img.shields.io/github/license/nandor23/UaDetector?color=%2325b99c)](https://www.gnu.org/licenses/lgpl-3.0.en.html)
 
-UaDetector is a user agent parser that identifies browsers, operating systems, devices, clients, and bots.
-It is composed of several sub-parsers: `OsParser`, `BrowserParser`, `ClientParser`, and `BotParser`.
-Each can be used independently if only certain information is needed from the user agent string.
+UaDetector is a user agent parser that identifies devices (desktops, tablets, mobiles, TVs, cars, consoles),
+clients (feed readers, media players, mobile apps), browsers, operating systems, brands, and bots.
+It consists of several independent sub-parsers (`OsParser`, `BrowserParser`, `ClientParser`, and `BotParser`)
+that can be used separately when only specific information is needed.
 
 ## Packages
 
