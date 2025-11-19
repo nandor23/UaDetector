@@ -44,10 +44,7 @@ internal static class EngineVersionParser
     {
         return new Regex(
             $@"(?:{pattern})\s*[/_]?\s*((?(?=\d+\.\d)\d+[.\d]*|\d{{1,7}}(?=(?:\D|$))))",
-            RegexOptions.IgnoreCase
-#if !UADETECTOR_LITE
-                | RegexOptions.Compiled
-#endif
+            RegexOptions.IgnoreCase | RegexOptions.Compiled
         );
     }
 

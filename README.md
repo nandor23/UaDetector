@@ -172,7 +172,7 @@ builder.Services.AddUaDetector(options =>
 ## ⚡ Benchmarks
 
 Both UaDetector and UaDetector.Lite load regular expressions into memory for parsing. 
-If memory usage is a concern, UaDetector.Lite uses **5.6 times less memory** (32.03 MB vs 180.08 MB) 
+If memory usage is a concern, UaDetector.Lite uses **5.6 times less memory** (32.15 MB vs 180.08 MB) 
 than UaDetector while maintaining the same functionality at the cost of parsing speed.
 
 ### Library Comparison
