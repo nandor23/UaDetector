@@ -3137,5 +3137,13 @@
       "name": "TikTok",
       "version": "26.2.0"
     }
+  },
+  {
+    "userAgent": "Superbalist/3.50.0(com.superbalist.android;329;Android;10;API29)",
+    "client": {
+      "type": 0,
+      "name": "Superbalist",
+      "version": "3.50.0"
+    }
   }
 ]
