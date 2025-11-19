@@ -8584,5 +8584,32 @@
         "code": 2098
       }
     }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 12; LOMONOSOV3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4178.0 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "12",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome",
+      "code": 137,
+      "version": "85.0.4178.0",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "85.0.4178.0"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "Lomonosov 3",
+      "brand": {
+        "name": "ONYX BOOX",
+        "code": 1265
+      }
+    }
   }
 ]

@@ -4978,5 +4978,214 @@
         "code": 1498
       }
     }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 13; AKAI_TA50BU500 Build/TP1A.220905.004.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/101.0.4951.61 YaBrowser/24.12.0.453 (lite) Safari/537.36 TV",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "13",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser Lite",
+      "code": 655,
+      "version": "24.12.0.453",
+      "engine": {
+        "name": "Blink",
+        "version": "101.0.4951.61"
+      }
+    },
+    "device": {
+      "type": 5,
+      "model": "TA50BU500",
+      "brand": {
+        "name": "Akai",
+        "code": 45
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 13; AKAI_TA32BH500 Build/TP1A.220905.004.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/101.0.4951.61 YaBrowser/24.12.0.453 (lite) Safari/537.36 TV",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "13",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser Lite",
+      "code": 655,
+      "version": "24.12.0.453",
+      "engine": {
+        "name": "Blink",
+        "version": "101.0.4951.61"
+      }
+    },
+    "device": {
+      "type": 5,
+      "model": "TA32BH500",
+      "brand": {
+        "name": "Akai",
+        "code": 45
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 13; AKAI_TA32BF552 Build/TP1A.220905.004.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/101.0.4951.61 YaBrowser/24.12.0.453 (lite) Safari/537.36 TV",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "13",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser Lite",
+      "code": 655,
+      "version": "24.12.0.453",
+      "engine": {
+        "name": "Blink",
+        "version": "101.0.4951.61"
+      }
+    },
+    "device": {
+      "type": 5,
+      "model": "TA32BF552",
+      "brand": {
+        "name": "Akai",
+        "code": 45
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 12; KORAX-Eurobox Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.93 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "12",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome",
+      "code": 137,
+      "version": "79.0.3945.93",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "79.0.3945.93"
+      }
+    },
+    "device": {
+      "type": 5,
+      "model": "Eurobox Pro",
+      "brand": {
+        "name": "Korax",
+        "code": 936
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 12; KF-1500 Build/ST; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/141.0.7390.97 YaBrowser/25.7.1.605 (lite) TV Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "12",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser Lite",
+      "code": 655,
+      "version": "25.7.1.605",
+      "engine": {
+        "name": "Blink",
+        "version": "141.0.7390.97"
+      }
+    },
+    "device": {
+      "type": 5,
+      "model": "KF-1500",
+      "brand": {
+        "name": "Türksat",
+        "code": 2101
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 12; HOCO DQ09 Build/SP1A.211105.004; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/91.0.4472.114 YaBrowser/24.12.0.453 (lite) TV Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "12",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser Lite",
+      "code": 655,
+      "version": "24.12.0.453",
+      "engine": {
+        "name": "Blink",
+        "version": "91.0.4472.114"
+      }
+    },
+    "device": {
+      "type": 5,
+      "model": "DQ09",
+      "brand": {
+        "name": "hoco",
+        "code": 730
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 12; GD S1 ATV Build/SP1A.211105.004; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/95.0.4638.74 YaBrowser/25.7.1.605 (lite) TV Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "12",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser Lite",
+      "code": 655,
+      "version": "25.7.1.605",
+      "engine": {
+        "name": "Blink",
+        "version": "95.0.4638.74"
+      }
+    },
+    "device": {
+      "type": 5,
+      "model": "S1 ATV",
+      "brand": {
+        "name": "Genius Devices",
+        "code": 2100
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; Rombica TV Emotion Build/TV Emotion; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/74.0.3729.186 YaBrowser/25.7.1.605 (lite) TV Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "10",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser Lite",
+      "code": 655,
+      "version": "25.7.1.605",
+      "engine": {
+        "name": "Blink",
+        "version": "74.0.3729.186"
+      }
+    },
+    "device": {
+      "type": 5,
+      "model": "TV Emotion",
+      "brand": {
+        "name": "Rombica",
+        "code": 1465
+      }
+    }
   }
 ]

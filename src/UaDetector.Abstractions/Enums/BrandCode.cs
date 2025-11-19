@@ -2102,4 +2102,6 @@ public enum BrandCode
     Voix = 2097,
     Bncf = 2098,
     Edanix = 2099,
+    GeniusDevices = 2100,
+    Turksat = 2101,
 }
