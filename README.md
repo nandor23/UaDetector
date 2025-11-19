@@ -12,9 +12,10 @@
 ![NuGet Downloads](https://img.shields.io/nuget/dt/UaDetector?color=%2334a3d9)
 [![License](https://img.shields.io/github/license/nandor23/UaDetector?color=%2325b99c)](https://www.gnu.org/licenses/lgpl-3.0.en.html)
 
-UaDetector is a user agent parser that identifies browsers, operating systems, devices, clients, and bots.
-It is composed of several sub-parsers: `OsParser`, `BrowserParser`, `ClientParser`, and `BotParser`. 
-Each can be used independently if only certain information is needed from the user agent string.
+UaDetector is a user agent parser that identifies devices (desktops, tablets, mobiles, TVs, cars, consoles), 
+clients (feed readers, media players, mobile apps), browsers, operating systems, brands, and bots. 
+It consists of several independent sub-parsers (`OsParser`, `BrowserParser`, `ClientParser`, and `BotParser`) 
+that can be used separately when only specific information is needed.
 
 ## Packages
 
@@ -46,9 +47,9 @@ Add the *UaDetector* package (from NuGet) to the project.
 $ dotnet add package UaDetector
 ```
 
-To use UaDetector, register it in *Program.cs* with the `AddUaDetector` method. 
-To use a sub-parser, register it using its dedicated method: `AddOsParser`, `AddBrowserParser`, `AddClientParser`, or `AddBotParser`. 
-All sub-parsers, except `AddBotParser`, can be configured via *UaDetectorOptions* using the *Options* pattern as shown below.
+To use UaDetector, register it in *Program.cs* with the `AddUaDetector()` method. 
+To use a sub-parser, register it using its dedicated method: `AddOsParser()`, `AddBrowserParser()`, `AddClientParser()`, or `AddBotParser()`. 
+All sub-parsers, except `AddBotParser()`, can be configured via *UaDetectorOptions* using the *Options* pattern as shown below.
 
 ```c#
 using UaDetector;
@@ -65,7 +66,7 @@ builder.Services.AddUaDetector();
 
 ## 🚀 Quick Start
 
-Each parser provides two `TryParse` methods: one that accepts only the user agent string and another 
+Each parser provides two `TryParse()` methods: one that accepts only the user agent string and another 
 that accepts both the user agent string and a collection of HTTP headers. 
 For more accurate detection, it is recommended to provide the HTTP headers.
 
@@ -105,7 +106,7 @@ public class UaDetectorController : ControllerBase
 }
 ```
 
-The `BotParser` class provides an additional `IsBot` method to determine whether a user agent string represents a bot.
+The `BotParser` class provides an additional `IsBot()` method to determine whether a user agent string represents a bot.
 
 ```c#
 using UaDetector.Parsers;
@@ -145,7 +146,7 @@ else
 
 ##  💾 Caching
 
-To enable caching, install the [UaDetector.MemoryCache](https://www.nuget.org/packages/UaDetector.MemoryCache) package and configure it using the `UseMemoryCache` extension method.
+To enable caching, install the [UaDetector.MemoryCache](https://www.nuget.org/packages/UaDetector.MemoryCache) package and configure it using the `UseMemoryCache()` extension method.
 
 ```c#
 using UaDetector;
@@ -159,14 +160,14 @@ builder.Services.AddUaDetector(options =>
 
 ### Configuration Options
 
-| Option                    | Type        | Default    | Description                                                                                                                                                                             |
-|---------------------------|-------------|------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `MaxKeyLength`            | `int`       | `256`      | Maximum length allowed for a cache key. Entries with longer keys will not be cached.                                                                                                    |
-| `Expiration`              | `TimeSpan?` | `null`     | Entries will expire after this duration, regardless of how frequently they are accessed.                                                                                                |
-| `SlidingExpiration`       | `TimeSpan?` | `null`     | Entries will expire if they haven't been accessed within this time period. The expiration timer resets each time the entry is accessed.                                                 |
-| `ExpirationScanFrequency` | `TimeSpan`  | `1 minute` | Interval between automatic scans that evict expired cache entries.                                                                                                                      |
-| `MaxEntries`              | `long?`     | `null`     | Maximum number of entries allowed in the cache. When the limit is reached, least recently used entries will be evicted.                                                                 |
-| `EvictionPercentage`      | `double`    | `0.05`     | Percentage of cache entries to evict when `MaxEntries` limit is reached. Eviction runs asynchronously. When the cache is full, new entries will not be cached until eviction completes. |
+| Option                    | Type        | Default                    | Description                                                                                                                                                                             |
+|---------------------------|-------------|----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `MaxKeyLength`            | `int`       | `256`                      | Maximum length allowed for a cache key. Entries with longer keys will not be cached.                                                                                                    |
+| `Expiration`              | `TimeSpan?` | `null`                     | Entries will expire after this duration, regardless of how frequently they are accessed.                                                                                                |
+| `SlidingExpiration`       | `TimeSpan?` | `null`                     | Entries will expire if they haven't been accessed within this time period. The expiration timer resets each time the entry is accessed.                                                 |
+| `ExpirationScanFrequency` | `TimeSpan`  | <code>1&nbsp;minute</code> | Interval between automatic scans that evict expired cache entries.                                                                                                                      |
+| `MaxEntries`              | `long?`     | `null`                     | Maximum number of entries allowed in the cache. When the limit is reached, least recently used entries will be evicted.                                                                 |
+| `EvictionPercentage`      | `double`    | `0.05`                     | Percentage of cache entries to evict when `MaxEntries` limit is reached. Eviction runs asynchronously. When the cache is full, new entries will not be cached until eviction completes. |
 
 ## ⚡ Benchmarks
 
