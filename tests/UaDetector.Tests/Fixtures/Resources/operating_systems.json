@@ -7002,5 +7002,14 @@
       "version": "12",
       "family": "Android"
     }
+  },
+  {
+    "userAgent": "Instagram 361.0.0.46.88 Android (33/13; 440dpi; 1080x2263; Xiaomi/Redmi; M2101K6G; sweet; qcom; tr_TR; 674675063)",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "13",
+      "family": "Android"
+    }
   }
 ]
