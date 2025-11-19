@@ -2102,4 +2102,6 @@ public static class BrandNames
     public const string Voix = "VOIX";
     public const string Bncf = "BNCF";
     public const string Edanix = "Edanix";
+    public const string GeniusDevices = "Genius Devices";
+    public const string Turksat = "Türksat";
 }

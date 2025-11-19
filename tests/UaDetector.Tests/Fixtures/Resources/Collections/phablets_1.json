@@ -9131,5 +9131,32 @@
         "code": 813
       }
     }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 12; GRL-LX9; HMSCore 6.15.4.312; GMSCore 0.3.10.250932) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.196 HuaweiBrowser/16.0.6.300 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "12",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Huawei Browser Mobile",
+      "code": 264,
+      "version": "16.0.6.300",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "114.0.5735.196"
+      }
+    },
+    "device": {
+      "type": 10,
+      "model": "Mate XT Ultimate Design",
+      "brand": {
+        "name": "Huawei",
+        "code": 757
+      }
+    }
   }
 ]
