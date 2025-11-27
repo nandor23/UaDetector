@@ -10374,33 +10374,6 @@
     }
   },
   {
-    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 11; M2104K10AC) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 YaApp_Android/21.80.1 YaSearchBrowser/21.80.1 BroPP/1.0 SA/3 Mobile Safari/537.36",
-    "os": {
-      "name": "Android",
-      "code": 1,
-      "version": "11",
-      "cpuArchitecture": "ARM",
-      "family": "Android"
-    },
-    "browser": {
-      "name": "Yandex Browser",
-      "code": 653,
-      "version": "21.80.1",
-      "engine": {
-        "name": "Blink",
-        "version": "92.0.4515.131"
-      }
-    },
-    "device": {
-      "type": 10,
-      "model": "Redmi Note 10 Pro",
-      "brand": {
-        "name": "Xiaomi",
-        "code": 1973
-      }
-    }
-  },
-  {
     "userAgent": "Mozilla/5.0 (Linux; Android 11; joyeuse) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Mobile Safari/537.36 OPR/64.2.3282.60128",
     "os": {
       "name": "Android",

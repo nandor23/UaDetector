@@ -2010,7 +2010,7 @@
     },
     "device": {
       "type": 1,
-      "model": "Nova 12 Vitality Edition",
+      "model": "Nova 12 Lite",
       "brand": {
         "name": "Huawei",
         "code": 757
@@ -5483,7 +5483,7 @@
     },
     "device": {
       "type": 1,
-      "model": "Redmi 12C",
+      "model": "Redmi 11A",
       "brand": {
         "name": "Xiaomi",
         "code": 1973
@@ -7182,7 +7182,7 @@
     },
     "device": {
       "type": 1,
-      "model": "Pura 70 Pro+",
+      "model": "Pura 70 Pro",
       "brand": {
         "name": "Huawei",
         "code": 757

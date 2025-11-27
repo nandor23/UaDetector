@@ -11805,7 +11805,7 @@
     },
     "device": {
       "type": 1,
-      "model": "C100",
+      "model": "C110",
       "brand": {
         "name": "Nokia",
         "code": 1219

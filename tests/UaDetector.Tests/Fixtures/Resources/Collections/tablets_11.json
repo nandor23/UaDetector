@@ -471,7 +471,7 @@
     },
     "device": {
       "type": 2,
-      "model": "iPad Pro 2 11\"",
+      "model": "iPad Pro 4 11\"",
       "brand": {
         "name": "Apple",
         "code": 97
@@ -493,7 +493,7 @@
     },
     "device": {
       "type": 2,
-      "model": "iPad Pro 3 11\" WiFi",
+      "model": "iPad Pro 5 11\" WiFi",
       "brand": {
         "name": "Apple",
         "code": 97

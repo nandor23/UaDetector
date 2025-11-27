@@ -1015,8 +1015,12 @@
         "name": "X+"
       },
       {
-        "regex": "N15[26]DL",
+        "regex": "N152DL",
         "name": "C100"
+      },
+      {
+        "regex": "N156DL",
+        "name": "C110"
       },
       {
         "regex": "N151DL",
@@ -2779,7 +2783,7 @@
         "name": "iPad 7 10.2"
       },
       {
-        "regex": "(?:MDCR_|ICRU_|Apple-)?iPad8[C,_](?:9|10)|(?:iPad Pro \\(11-inch\\) \\(4th generation\\))(?:[);/ ]|$)",
+        "regex": "(?:MDCR_|ICRU_|Apple-)?iPad8[C,_](?:9|10)",
         "type": 2,
         "name": "iPad Pro 2 11\""
       },
@@ -2829,7 +2833,7 @@
         "name": "iPad 9 10.2\""
       },
       {
-        "regex": "(?:MDCR_|ICRU_|Apple-)?iPad13[C,_]4|(?:iPad Pro 11 inch 5th Gen \\(WiFi\\))(?:[);/ ]|$)",
+        "regex": "(?:MDCR_|ICRU_|Apple-)?iPad13[C,_]4",
         "type": 2,
         "name": "iPad Pro 3 11\" WiFi"
       },
@@ -2904,7 +2908,7 @@
         "name": "iPad Pro 4 11\" WiFi"
       },
       {
-        "regex": "(?:MDCR_|ICRU_|Apple-)?iPad14[C,_]4",
+        "regex": "(?:MDCR_|ICRU_|Apple-)?iPad14[C,_]4|(?:iPad Pro \\(11-inch\\) \\(4th generation\\))(?:[);/ ]|$)",
         "type": 2,
         "name": "iPad Pro 4 11\""
       },
@@ -2969,7 +2973,7 @@
         "name": "iPad Mini 7"
       },
       {
-        "regex": "(?:MDCR_|ICRU_|Apple-)?iPad16[C,_]3",
+        "regex": "(?:MDCR_|ICRU_|Apple-)?iPad16[C,_]3|(?:iPad Pro 11 inch 5th Gen \\(WiFi\\))(?:[);/ ]|$)",
         "type": 2,
         "name": "iPad Pro 5 11\" WiFi"
       },
@@ -9172,8 +9176,12 @@
         "name": "V17 Neo"
       },
       {
-        "regex": "(?:vivo 19(?:20(?:_20)?|19)|V17 SD665)(?:[);/ ]|$)",
+        "regex": "(?:vivo 1919|V17 SD665)(?:[);/ ]|$)",
         "name": "V17"
+      },
+      {
+        "regex": "vivo 1920(?:_20)?(?:[);/ ]|$)",
+        "name": "S1 Pro"
       },
       {
         "regex": "vivo 1933(?:[);/ ]|$)",
@@ -9536,7 +9544,11 @@
         "name": "Y19e"
       },
       {
-        "regex": "V202[79](?:_PK)?(?:[);/ ]|$)",
+        "regex": "V2027(?:_PK)?(?:[);/ ]|$)",
+        "name": "Y20i"
+      },
+      {
+        "regex": "V2029(?:_PK)?(?:[);/ ]|$)",
         "name": "Y20"
       },
       {
@@ -9789,7 +9801,7 @@
       },
       {
         "regex": "V2357A(?:[);/ ]|$)",
-        "name": "Y36c 5G"
+        "name": "Y37 5G"
       },
       {
         "regex": "V1934A(?:[);/ ]|$)",
@@ -20322,11 +20334,11 @@
         "name": "Pura 70 Ultra"
       },
       {
-        "regex": "HBN-AL00",
+        "regex": "HBN-(?:AL00|LX9)",
         "name": "Pura 70 Pro"
       },
       {
-        "regex": "HBN-(?:AL[18]0|LX9)",
+        "regex": "HBN-(?:AL[18]0)",
         "name": "Pura 70 Pro+"
       },
       {
@@ -20980,7 +20992,7 @@
       },
       {
         "regex": "AQM-[AT]L10(?:[);/ ]|$)",
-        "name": "Honor 4T Pro"
+        "name": "Honor Play 4T Pro"
       },
       {
         "regex": "(?:Honor_|HW-)?CAM-(?:AL00|TL00H|TL00)(?:_TD)?(?:[);/ ]|$)",
@@ -21428,7 +21440,7 @@
       },
       {
         "regex": "FIN-AL60a?",
-        "name": "Nova 12 Vitality Edition"
+        "name": "Nova 12 Lite"
       },
       {
         "regex": "BON-AL00",
@@ -33207,15 +33219,15 @@
       },
       {
         "regex": "(?:MOT-|Motorola-)?XT2243-2",
-        "name": "Moto S30"
+        "name": "Moto S30 Pro"
       },
       {
         "regex": "(?:MOT-|Motorola-)?XT2409-5",
         "name": "Moto S50"
       },
       {
-        "regex": "(?:MOT-|Motorola-)?XT2201-6",
-        "name": "Moto X30"
+        "regex": "(?:MOT-|Motorola-)?XT2201-[26]",
+        "name": "Edge X30"
       },
       {
         "regex": "(?:MOT-|Motorola-)?XT-2201",
@@ -33256,10 +33268,6 @@
       {
         "regex": "(?:MOT-|Motorola-)?edge plus|XT2061-3",
         "name": "Edge Plus"
-      },
-      {
-        "regex": "XT2201-2",
-        "name": "Edge X30"
       },
       {
         "regex": "(?:MOT-|Motorola-)?edge ([23]0) fusion",
@@ -33394,7 +33402,7 @@
         "name": "Moto G Play (2021)"
       },
       {
-        "regex": "XT2271-5",
+        "regex": "XT2271-5|moto g play - 2023",
         "name": "Moto G Play (2023)"
       },
       {
@@ -37489,7 +37497,7 @@
       },
       {
         "regex": "PHJ110",
-        "name": "A58 5G"
+        "name": "A1x 5G"
       },
       {
         "regex": "CPH2577",
@@ -37632,8 +37640,12 @@
         "name": "A98 5G"
       },
       {
-        "regex": "(?:CPH2203|CPH2333)(?:[);/ ]|$)",
+        "regex": "CPH2203(?:[);/ ]|$)",
         "name": "A94"
+      },
+      {
+        "regex": "CPH2333(?:[);/ ]|$)",
+        "name": "A96"
       },
       {
         "regex": "(?:CPH2197)(?:[);/ ]|$)",
@@ -37925,7 +37937,7 @@
       },
       {
         "regex": "(?:OPPO[ _]?)?(PCLM50)(?:[);/ ]|$)",
-        "name": "K7"
+        "name": "Reno 3 Youth"
       },
       {
         "regex": "(?:OPPO[ _]?)?(PERM00)(?:[);/ ]|$)",
@@ -38380,8 +38392,8 @@
         "name": "Reno 7 Pro"
       },
       {
-        "regex": "CPH235[79]|PGAM10",
-        "name": "Reno 8 Pro"
+        "regex": "CPH2357|PGAM10",
+        "name": "Reno 8 Pro 5G"
       },
       {
         "regex": "PFZM10",
@@ -38392,8 +38404,8 @@
         "name": "Reno 8 Z"
       },
       {
-        "regex": "PGBM10",
-        "name": "Reno 8"
+        "regex": "PGBM10|CPH2359",
+        "name": "Reno 8 5G"
       },
       {
         "regex": "CPH2481|CPH2505",
@@ -40677,9 +40689,14 @@
         "name": "Galaxy Tab A7 10.4\" (2020) LTE"
       },
       {
-        "regex": "(?:SAMSUNG-)?SM-T50[03](?:[);/ ]|$)",
+        "regex": "(?:SAMSUNG-)?SM-T500(?:[);/ ]|$)",
         "type": 2,
         "name": "Galaxy Tab A7 10.4\" (2020) WiFi"
+      },
+      {
+        "regex": "(?:SAMSUNG-)?SM-T503(?:[);/ ]|$)",
+        "type": 2,
+        "name": "Galaxy Tab A7 10.4\" (2022) WiFi"
       },
       {
         "regex": "(?:SAMSUNG-)?SM-T22[57]",
@@ -47686,8 +47703,12 @@
         "name": "Camon 18P"
       },
       {
-        "regex": "Tecno[ _-](?:Mobile )?(?:CH6i|CI6n?)(?:[);/ ]|$)",
+        "regex": "Tecno[ _-](?:Mobile )?CI6n?(?:[);/ ]|$)",
         "name": "Camon 19"
+      },
+      {
+        "regex": "Tecno[ _-](?:Mobile )?CH6i(?:[);/ ]|$)",
+        "name": "Camon 19 Neo"
       },
       {
         "regex": "Tecno[ _-](?:Mobile )?CI8n?(?:[);/ ]|$)",
@@ -47706,7 +47727,11 @@
         "name": "Camon 20"
       },
       {
-        "regex": "Tecno[ _-]CK8nB?(?:[);/ ]|$)",
+        "regex": "Tecno[ _-]CK8n(?:[);/ ]|$)",
+        "name": "Camon 20 Pro 5G"
+      },
+      {
+        "regex": "Tecno[ _-]CK8nB(?:[);/ ]|$)",
         "name": "Camon 20s Pro 5G"
       },
       {
@@ -52446,7 +52471,7 @@
       },
       {
         "regex": "2209116AG(?:[);/ ]|$)",
-        "name": "Note 12 Pro"
+        "name": "Redmi Note 12 Pro 4G"
       },
       {
         "regex": "22071212AG(?:[);/ ]|$)",
@@ -52817,7 +52842,7 @@
         "name": "Redmi 9 Prime"
       },
       {
-        "regex": "(?:M2010J19SI|Redmi 9 Power)(?:[);/ ]|$)",
+        "regex": "(?:M2010J19S[IL]|Redmi 9 Power)(?:[);/ ]|$)",
         "name": "Redmi 9 Power"
       },
       {
@@ -52841,7 +52866,7 @@
         "name": "Redmi 9AT"
       },
       {
-        "regex": "(?:M2010J19S[GYL]|pomelo|Redmi 9T, Note 9 4G, 9 Power)(?:[);/ ]|$)",
+        "regex": "(?:M2010J19S[GY]|pomelo|Redmi 9T, Note 9 4G, 9 Power)(?:[);/ ]|$)",
         "name": "Redmi 9T"
       },
       {
@@ -52889,7 +52914,11 @@
         "name": "Redmi 10X Pro"
       },
       {
-        "regex": "22120RN86[CGIH]|22126RN91Y|2212ARNC4L",
+        "regex": "22120RN86C",
+        "name": "Redmi 11A"
+      },
+      {
+        "regex": "22120RN86[GIH]|22126RN91Y|2212ARNC4L",
         "name": "Redmi 12C"
       },
       {
@@ -52991,10 +53020,6 @@
       {
         "regex": "Redmi K50 Ultra",
         "name": "Redmi K50 Ultra"
-      },
-      {
-        "regex": "23013RK75C",
-        "name": "Redmi K60"
       },
       {
         "regex": "22122RK93C",
@@ -53555,9 +53580,14 @@
         "name": "Redmi Note 12 Pro DE"
       },
       {
-        "regex": "(?:22101316U[GP]|Redmi Note 12 Pro\\+ 5G)(?:[);/ ]|$)",
+        "regex": "(?:22101316UG|Redmi Note 12 Pro\\+ 5G)(?:[);/ ]|$)",
         "type": 10,
         "name": "Redmi Note 12 Pro+ 5G"
+      },
+      {
+        "regex": "22101316UP(?:[);/ ]|$)",
+        "type": 10,
+        "name": "Redmi Note 12 Discovery"
       },
       {
         "regex": "22101316UCP(?:[);/ ]|$)",
@@ -53723,6 +53753,11 @@
         "regex": "(?:21091116(?:AI|I)|Redmi Note 11T 5G)(?:[);/ ]|$)",
         "type": 10,
         "name": "Redmi Note 11T 5G"
+      },
+      {
+        "regex": "23013RK75C",
+        "type": 10,
+        "name": "Redmi Note 12 Pro 5G"
       },
       {
         "regex": "(?:M1908C3J[IH]|M1908C3JG)(?:[);/ ]|$)",
@@ -56348,7 +56383,7 @@
       },
       {
         "regex": "ZTE A7050",
-        "name": "Blade V41 Smart"
+        "name": "Blade A72s"
       },
       {
         "regex": "ZTE 8045",

@@ -1249,7 +1249,7 @@
     },
     "device": {
       "type": 10,
-      "model": "Redmi Note 12 Pro+ 5G",
+      "model": "Redmi Note 12 Discovery",
       "brand": {
         "name": "Xiaomi",
         "code": 1973
@@ -9156,6 +9156,33 @@
       "brand": {
         "name": "Huawei",
         "code": 757
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 13; 23013RK75C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.101 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "13",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "98.0.4758.101",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "98.0.4758.101"
+      }
+    },
+    "device": {
+      "type": 10,
+      "model": "Redmi Note 12 Pro 5G",
+      "brand": {
+        "name": "Xiaomi",
+        "code": 1973
       }
     }
   }
