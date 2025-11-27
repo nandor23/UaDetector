@@ -5532,12 +5532,12 @@
   {
     "userAgent": "Expanse indexes the network perimeters of our customers. If you have any questions or concerns, please reach out to: scaninfo@expanseinc.com",
     "bot": {
-      "name": "Expanse",
+      "name": "Cortex Xpanse",
       "category": 5,
-      "url": "https://expanse.co/",
+      "url": "https://docs-cortex.paloaltonetworks.com/r/1/Cortex-Xpanse/Scanning-activity",
       "producer": {
-        "name": "Expanse Inc.",
-        "url": "https://expanse.co/"
+        "name": "Palo Alto Networks, Inc.",
+        "url": "https://www.paloaltonetworks.com/"
       }
     }
   },
@@ -6629,12 +6629,12 @@
   {
     "userAgent": "Expanse, a Palo Alto Networks company, searches across the global IPv4 space multiple times per day to identify customers&#39; presences on the Internet. If you would like to be excluded from our scans, please send IP addresses/domains to: scaninfo@paloaltonetworks.com",
     "bot": {
-      "name": "Expanse",
+      "name": "Cortex Xpanse",
       "category": 5,
-      "url": "https://expanse.co/",
+      "url": "https://docs-cortex.paloaltonetworks.com/r/1/Cortex-Xpanse/Scanning-activity",
       "producer": {
-        "name": "Expanse Inc.",
-        "url": "https://expanse.co/"
+        "name": "Palo Alto Networks, Inc.",
+        "url": "https://www.paloaltonetworks.com/"
       }
     }
   },
@@ -11638,6 +11638,168 @@
       "producer": {
         "name": "Zoom Video Communications, Inc",
         "url": "https://www.zoom.com/"
+      }
+    }
+  },
+  {
+    "userAgent": "Hello from Palo Alto Networks, find out more about our scans in https://docs-cortex.paloaltonetworks.com/r/1/Cortex-Xpanse/Scanning-activity",
+    "bot": {
+      "name": "Cortex Xpanse",
+      "category": 5,
+      "url": "https://docs-cortex.paloaltonetworks.com/r/1/Cortex-Xpanse/Scanning-activity",
+      "producer": {
+        "name": "Palo Alto Networks, Inc.",
+        "url": "https://www.paloaltonetworks.com/"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Laravel Reaver .env Presence)",
+    "bot": {
+      "name": "Generic Bot"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (bang2013@atomicmail.io)",
+    "bot": {
+      "name": "Generic Bot"
+    }
+  },
+  {
+    "userAgent": "libredtail-http",
+    "bot": {
+      "name": "Generic Bot"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (compatible; Replicate-Bot/1.0; +https://replicate.com/)",
+    "bot": {
+      "name": "Replicate-Bot",
+      "category": 11,
+      "url": "https://replicate.com/",
+      "producer": {
+        "name": "Replicate, Inc.",
+        "url": "https://replicate.com/"
+      }
+    }
+  },
+  {
+    "userAgent": "cypex.ai/scanning Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Chrome/126.0.0.0 Safari/537.36",
+    "bot": {
+      "name": "Cypex",
+      "category": 5,
+      "url": "https://cypex.ai/scanning/",
+      "producer": {
+        "name": "Cypex",
+        "url": "https://cypex.ai/"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 5.0) AppleWebKit/537.36 (KHTML, like Gecko) Mobile Safari/537.36 (compatible; TikTokSpider; ttspider-feedback@tiktok.com)",
+    "bot": {
+      "name": "TikTokSpider",
+      "category": 0,
+      "url": "https://www.tiktok.com/",
+      "producer": {
+        "name": "TikTok Inc.",
+        "url": "https://www.tiktok.com/"
+      }
+    }
+  },
+  {
+    "userAgent": "fhms-its-research-scanner/1.0 (+https://fb02itsscan02.fh-muenster.de)",
+    "bot": {
+      "name": "FHMS ITS Research Scanner",
+      "category": 5,
+      "url": "https://fb02itsscan02.fh-muenster.de/",
+      "producer": {
+        "name": "University of Applied Sciences Muenster",
+        "url": "https://www.fh-muenster.de/"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (compatible; Together-Bot/1.0; +https://together.ai/)",
+    "bot": {
+      "name": "Together-Bot",
+      "category": 3,
+      "url": "https://www.together.ai/",
+      "producer": {
+        "name": "Together Computer Inc.",
+        "url": "https://www.together.ai/"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (compatible; xAI-Bot/1.0; +https://x.ai/)",
+    "bot": {
+      "name": "xAI-Bot",
+      "category": 3,
+      "url": "https://x.ai/",
+      "producer": {
+        "name": "X.AI LLC",
+        "url": "https://x.ai/"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (compatible; Groq-Bot/1.0; +https://groq.com/)",
+    "bot": {
+      "name": "Groq-Bot",
+      "category": 3,
+      "url": "https://groq.com/",
+      "producer": {
+        "name": "Groq, Inc.",
+        "url": "https://groq.com/"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (compatible; bigsur.ai/1.0)",
+    "bot": {
+      "name": "Big Sur AI",
+      "category": 3,
+      "url": "https://bigsur.ai/",
+      "producer": {
+        "name": "Big Sur AI, Inc.",
+        "url": "https://bigsur.ai/"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (compatible; Cohere-Command/1.0; +https://cohere.com/)",
+    "bot": {
+      "name": "Cohere AI",
+      "category": 3,
+      "url": "https://cohere.com/",
+      "producer": {
+        "name": "Cohere, Inc.",
+        "url": "https://cohere.com/"
+      }
+    }
+  },
+  {
+    "userAgent": "cohere-training-data-crawler",
+    "bot": {
+      "name": "Cohere AI",
+      "category": 3,
+      "url": "https://cohere.com/",
+      "producer": {
+        "name": "Cohere, Inc.",
+        "url": "https://cohere.com/"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (compatible; FirecrawlAgent/1.0)",
+    "bot": {
+      "name": "FirecrawlAgent",
+      "category": 11,
+      "url": "https://www.firecrawl.dev/",
+      "producer": {
+        "name": "SideGuide Technologies, Inc.",
+        "url": "https://www.sideguide.dev/"
       }
     }
   }
