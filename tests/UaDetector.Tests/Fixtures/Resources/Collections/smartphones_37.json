@@ -3404,10 +3404,10 @@
     },
     "device": {
       "type": 1,
-      "model": "Play 4 Pro",
+      "model": "Honor Play 4 Pro",
       "brand": {
-        "name": "Honor",
-        "code": 2095
+        "name": "Huawei",
+        "code": 757
       }
     }
   },

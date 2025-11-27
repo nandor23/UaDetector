@@ -3788,10 +3788,10 @@
     },
     "device": {
       "type": 1,
-      "model": "Play 4T",
+      "model": "Honor Play 4T",
       "brand": {
-        "name": "Honor",
-        "code": 2095
+        "name": "Huawei",
+        "code": 757
       }
     }
   },
@@ -4273,10 +4273,10 @@
     },
     "device": {
       "type": 1,
-      "model": "7i",
+      "model": "Honor 7i",
       "brand": {
-        "name": "Honor",
-        "code": 2095
+        "name": "Huawei",
+        "code": 757
       }
     }
   },

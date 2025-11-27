@@ -2014,10 +2014,10 @@
     },
     "device": {
       "type": 1,
-      "model": "8X Max",
+      "model": "Honor 8X Max",
       "brand": {
-        "name": "Honor",
-        "code": 2095
+        "name": "Huawei",
+        "code": 757
       }
     }
   },
@@ -2856,10 +2856,10 @@
     },
     "device": {
       "type": 1,
-      "model": "4C Pro",
+      "model": "Honor 4C Pro",
       "brand": {
-        "name": "Honor",
-        "code": 2095
+        "name": "Huawei",
+        "code": 757
       }
     }
   },

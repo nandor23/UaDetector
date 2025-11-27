@@ -13231,10 +13231,10 @@
     },
     "device": {
       "type": 2,
-      "model": "Pad 2",
+      "model": "Honor Pad 2",
       "brand": {
-        "name": "Honor",
-        "code": 2095
+        "name": "Huawei",
+        "code": 757
       }
     }
   },

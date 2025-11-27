@@ -208,10 +208,10 @@
     },
     "device": {
       "type": 1,
-      "model": "Play 8A",
+      "model": "Honor Play 8A",
       "brand": {
-        "name": "Honor",
-        "code": 2095
+        "name": "Huawei",
+        "code": 757
       }
     }
   },
@@ -1149,10 +1149,10 @@
     },
     "device": {
       "type": 1,
-      "model": "30S",
+      "model": "Honor 30S",
       "brand": {
-        "name": "Honor",
-        "code": 2095
+        "name": "Huawei",
+        "code": 757
       }
     }
   },
@@ -1652,10 +1652,10 @@
     },
     "device": {
       "type": 1,
-      "model": "30S",
+      "model": "Honor 30S",
       "brand": {
-        "name": "Honor",
-        "code": 2095
+        "name": "Huawei",
+        "code": 757
       }
     }
   },
@@ -1786,10 +1786,10 @@
     },
     "device": {
       "type": 1,
-      "model": "V10",
+      "model": "Honor V10",
       "brand": {
-        "name": "Honor",
-        "code": 2095
+        "name": "Huawei",
+        "code": 757
       }
     }
   },
@@ -10991,10 +10991,10 @@
     },
     "device": {
       "type": 1,
-      "model": "Play 9A",
+      "model": "Honor Play 9A",
       "brand": {
-        "name": "Honor",
-        "code": 2095
+        "name": "Huawei",
+        "code": 757
       }
     }
   },
@@ -11933,10 +11933,10 @@
     },
     "device": {
       "type": 1,
-      "model": "Play 4 Pro",
+      "model": "Honor Play 4 Pro",
       "brand": {
-        "name": "Honor",
-        "code": 2095
+        "name": "Huawei",
+        "code": 757
       }
     }
   },
@@ -12708,10 +12708,10 @@
     },
     "device": {
       "type": 1,
-      "model": "6X",
+      "model": "Honor 6X",
       "brand": {
-        "name": "Honor",
-        "code": 2095
+        "name": "Huawei",
+        "code": 757
       }
     }
   },
@@ -13864,10 +13864,10 @@
     },
     "device": {
       "type": 1,
-      "model": "7C",
+      "model": "Honor 7C",
       "brand": {
-        "name": "Honor",
-        "code": 2095
+        "name": "Huawei",
+        "code": 757
       }
     }
   },
