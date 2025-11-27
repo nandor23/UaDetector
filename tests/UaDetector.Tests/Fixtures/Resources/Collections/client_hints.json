@@ -4068,10 +4068,10 @@
     },
     "device": {
       "type": 1,
-      "model": "Note 10",
+      "model": "Honor Note 10",
       "brand": {
-        "name": "Honor",
-        "code": 2095
+        "name": "Huawei",
+        "code": 757
       }
     }
   },

@@ -527,10 +527,10 @@
     },
     "device": {
       "type": 1,
-      "model": "Magic 2 3D",
+      "model": "Honor Magic 2 3D",
       "brand": {
-        "name": "Honor",
-        "code": 2095
+        "name": "Huawei",
+        "code": 757
       }
     }
   },
@@ -716,10 +716,10 @@
     },
     "device": {
       "type": 1,
-      "model": "Play 8A",
+      "model": "Honor Play 8A",
       "brand": {
-        "name": "Honor",
-        "code": 2095
+        "name": "Huawei",
+        "code": 757
       }
     }
   },

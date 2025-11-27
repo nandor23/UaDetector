@@ -7484,10 +7484,10 @@
     },
     "device": {
       "type": 1,
-      "model": "X30 Max",
+      "model": "Honor X30 Max",
       "brand": {
-        "name": "Honor",
-        "code": 2095
+        "name": "Huawei",
+        "code": 757
       }
     }
   },
@@ -8120,10 +8120,10 @@
     },
     "device": {
       "type": 1,
-      "model": "X30",
+      "model": "Honor X30",
       "brand": {
-        "name": "Honor",
-        "code": 2095
+        "name": "Huawei",
+        "code": 757
       }
     }
   },
@@ -11148,10 +11148,10 @@
     },
     "device": {
       "type": 1,
-      "model": "X30i",
+      "model": "Honor X30i",
       "brand": {
-        "name": "Honor",
-        "code": 2095
+        "name": "Huawei",
+        "code": 757
       }
     }
   },
@@ -13088,10 +13088,10 @@
     },
     "device": {
       "type": 1,
-      "model": "7C",
+      "model": "Honor 7C",
       "brand": {
-        "name": "Honor",
-        "code": 2095
+        "name": "Huawei",
+        "code": 757
       }
     }
   },
@@ -13302,10 +13302,10 @@
     },
     "device": {
       "type": 1,
-      "model": "6",
+      "model": "Honor 6",
       "brand": {
-        "name": "Honor",
-        "code": 2095
+        "name": "Huawei",
+        "code": 757
       }
     }
   },

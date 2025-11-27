@@ -9995,10 +9995,10 @@
     },
     "device": {
       "type": 1,
-      "model": "X10 Pro",
+      "model": "Honor X10 Pro",
       "brand": {
-        "name": "Honor",
-        "code": 2095
+        "name": "Huawei",
+        "code": 757
       }
     }
   },
