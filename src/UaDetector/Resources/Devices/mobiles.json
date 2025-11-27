@@ -2784,16 +2784,6 @@
         "name": "iPad Pro 2 11\""
       },
       {
-        "regex": "(?:MDCR_|ICRU_|Apple-)?iPad13[C,_]4|(?:iPad Pro 11 inch 5th Gen \\(WiFi\\))(?:[);/ ]|$)",
-        "type": 2,
-        "name": "iPad Pro 3 11\" WiFi"
-      },
-      {
-        "regex": "(?:MDCR_|ICRU_|Apple-)?iPad13[C,_][5-7]",
-        "type": 2,
-        "name": "iPad Pro 3 11\""
-      },
-      {
         "regex": "(?:MDCR_|ICRU_|Apple-)?iPad8[C,_]1[12]",
         "type": 2,
         "name": "iPad Pro 4 12.9\""
@@ -2837,6 +2827,16 @@
         "regex": "(?:MDCR_|ICRU_|Apple-)?iPad12[C,_]2|(?:iPad 9th Gen \\(Cellular\\))(?:[);/ ]|$)",
         "type": 2,
         "name": "iPad 9 10.2\""
+      },
+      {
+        "regex": "(?:MDCR_|ICRU_|Apple-)?iPad13[C,_]4|(?:iPad Pro 11 inch 5th Gen \\(WiFi\\))(?:[);/ ]|$)",
+        "type": 2,
+        "name": "iPad Pro 3 11\" WiFi"
+      },
+      {
+        "regex": "(?:MDCR_|ICRU_|Apple-)?iPad13[C,_][5-7]",
+        "type": 2,
+        "name": "iPad Pro 3 11\""
       },
       {
         "regex": "(?:MDCR_|ICRU_|Apple-)?iPad13[C,_]8",
@@ -2929,6 +2929,46 @@
         "name": "iPad Air 6 11\""
       },
       {
+        "regex": "(?:MDCR_|ICRU_|Apple-)?iPad15[C,_]3",
+        "type": 2,
+        "name": "iPad Air 7 11\" WiFi"
+      },
+      {
+        "regex": "(?:MDCR_|ICRU_|Apple-)?iPad15[C,_]4",
+        "type": 2,
+        "name": "iPad Air 7 11\""
+      },
+      {
+        "regex": "(?:MDCR_|ICRU_|Apple-)?iPad15[C,_]5",
+        "type": 2,
+        "name": "iPad Air 7 13\" WiFi"
+      },
+      {
+        "regex": "(?:MDCR_|ICRU_|Apple-)?iPad15[C,_]6",
+        "type": 2,
+        "name": "iPad Air 7 13\""
+      },
+      {
+        "regex": "(?:MDCR_|ICRU_|Apple-)?iPad15[C,_]7",
+        "type": 2,
+        "name": "iPad 11 10.9\" WiFi"
+      },
+      {
+        "regex": "(?:MDCR_|ICRU_|Apple-)?iPad15[C,_]8",
+        "type": 2,
+        "name": "iPad 11 10.9\""
+      },
+      {
+        "regex": "(?:MDCR_|ICRU_|Apple-)?iPad16[C,_]1",
+        "type": 2,
+        "name": "iPad Mini 7 WiFi"
+      },
+      {
+        "regex": "(?:MDCR_|ICRU_|Apple-)?iPad16[C,_]2",
+        "type": 2,
+        "name": "iPad Mini 7"
+      },
+      {
         "regex": "(?:MDCR_|ICRU_|Apple-)?iPad16[C,_]3",
         "type": 2,
         "name": "iPad Pro 5 11\" WiFi"
@@ -2947,6 +2987,26 @@
         "regex": "(?:MDCR_|ICRU_|Apple-)?iPad16[C,_]6",
         "type": 2,
         "name": "iPad Pro 7 13\""
+      },
+      {
+        "regex": "(?:MDCR_|ICRU_|Apple-)?iPad17[C,_]1",
+        "type": 2,
+        "name": "iPad Pro 6 11\" WiFi"
+      },
+      {
+        "regex": "(?:MDCR_|ICRU_|Apple-)?iPad17[C,_]2",
+        "type": 2,
+        "name": "iPad Pro 6 11\""
+      },
+      {
+        "regex": "(?:MDCR_|ICRU_|Apple-)?iPad17[C,_]3",
+        "type": 2,
+        "name": "iPad Pro 2 13\" WiFi"
+      },
+      {
+        "regex": "(?:MDCR_|ICRU_|Apple-)?iPad17[C,_]4",
+        "type": 2,
+        "name": "iPad Pro 2 13\""
       },
       {
         "regex": "Apple-?TV2[C,_]1",
