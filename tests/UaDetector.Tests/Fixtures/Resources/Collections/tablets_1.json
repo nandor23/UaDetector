@@ -15231,6 +15231,132 @@
     }
   },
   {
+    "userAgent": "Mozilla/5.0 (iPad; CPU OS 15_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/19E241 [FBAN/FBIOS;FBDV/iPad15,3;FBMD/iPad;FBSN/iPadOS;FBSV/15.4;FBSS/2;FBID/tablet;FBLC/en_US;FBOP/5]",
+    "os": {
+      "name": "iPadOS",
+      "code": 57,
+      "version": "15.4",
+      "family": "iOS"
+    },
+    "client": {
+      "type": 0,
+      "name": "Facebook"
+    },
+    "device": {
+      "type": 2,
+      "model": "iPad Air 7 11\" WiFi",
+      "brand": {
+        "name": "Apple",
+        "code": 97
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPad; CPU OS 15_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/19E241 [FBAN/FBIOS;FBDV/iPad15,4;FBMD/iPad;FBSN/iPadOS;FBSV/15.4;FBSS/2;FBID/tablet;FBLC/en_US;FBOP/5]",
+    "os": {
+      "name": "iPadOS",
+      "code": 57,
+      "version": "15.4",
+      "family": "iOS"
+    },
+    "client": {
+      "type": 0,
+      "name": "Facebook"
+    },
+    "device": {
+      "type": 2,
+      "model": "iPad Air 7 11\"",
+      "brand": {
+        "name": "Apple",
+        "code": 97
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPad; CPU OS 15_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/19E241 [FBAN/FBIOS;FBDV/iPad15,5;FBMD/iPad;FBSN/iPadOS;FBSV/15.4;FBSS/2;FBID/tablet;FBLC/en_US;FBOP/5]",
+    "os": {
+      "name": "iPadOS",
+      "code": 57,
+      "version": "15.4",
+      "family": "iOS"
+    },
+    "client": {
+      "type": 0,
+      "name": "Facebook"
+    },
+    "device": {
+      "type": 2,
+      "model": "iPad Air 7 13\" WiFi",
+      "brand": {
+        "name": "Apple",
+        "code": 97
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPad; CPU OS 15_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/19E241 [FBAN/FBIOS;FBDV/iPad15,6;FBMD/iPad;FBSN/iPadOS;FBSV/15.4;FBSS/2;FBID/tablet;FBLC/en_US;FBOP/5]",
+    "os": {
+      "name": "iPadOS",
+      "code": 57,
+      "version": "15.4",
+      "family": "iOS"
+    },
+    "client": {
+      "type": 0,
+      "name": "Facebook"
+    },
+    "device": {
+      "type": 2,
+      "model": "iPad Air 7 13\"",
+      "brand": {
+        "name": "Apple",
+        "code": 97
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPad; CPU OS 15_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/19E241 [FBAN/FBIOS;FBDV/iPad15,7;FBMD/iPad;FBSN/iPadOS;FBSV/15.4;FBSS/2;FBID/tablet;FBLC/en_US;FBOP/5]",
+    "os": {
+      "name": "iPadOS",
+      "code": 57,
+      "version": "15.4",
+      "family": "iOS"
+    },
+    "client": {
+      "type": 0,
+      "name": "Facebook"
+    },
+    "device": {
+      "type": 2,
+      "model": "iPad 11 10.9\" WiFi",
+      "brand": {
+        "name": "Apple",
+        "code": 97
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPad; CPU OS 15_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/19E241 [FBAN/FBIOS;FBDV/iPad15,8;FBMD/iPad;FBSN/iPadOS;FBSV/15.4;FBSS/2;FBID/tablet;FBLC/en_US;FBOP/5]",
+    "os": {
+      "name": "iPadOS",
+      "code": 57,
+      "version": "15.4",
+      "family": "iOS"
+    },
+    "client": {
+      "type": 0,
+      "name": "Facebook"
+    },
+    "device": {
+      "type": 2,
+      "model": "iPad 11 10.9\"",
+      "brand": {
+        "name": "Apple",
+        "code": 97
+      }
+    }
+  },
+  {
     "userAgent": "Mozilla/5.0 (iPad; CPU OS 15_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/19E241 [FBAN/FBIOS;FBDV/iPad13,16;FBMD/iPad;FBSN/iPadOS;FBSV/15.4;FBSS/2;FBID/tablet;FBLC/en_US;FBOP/5]",
     "os": {
       "name": "iPadOS",
@@ -15266,6 +15392,132 @@
     "device": {
       "type": 2,
       "model": "iPad Air 5",
+      "brand": {
+        "name": "Apple",
+        "code": 97
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPad; CPU OS 15_0_1 like Mac OS X) WebKit/8612 (KHTML, like Gecko) Mobile/19A348 [FBAN/FBIOS;FBDV/iPad16,1;FBMD/iPad;FBSN/iOS;FBSV/15.0.1;FBSS/2;FBID/tablet;FBLC/en_GB;FBOP/5]",
+    "os": {
+      "name": "iPadOS",
+      "code": 57,
+      "version": "15.0.1",
+      "family": "iOS"
+    },
+    "client": {
+      "type": 0,
+      "name": "Facebook"
+    },
+    "device": {
+      "type": 2,
+      "model": "iPad Mini 7 WiFi",
+      "brand": {
+        "name": "Apple",
+        "code": 97
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPad; CPU OS 15_0_1 like Mac OS X) WebKit/8612 (KHTML, like Gecko) Mobile/19A348 [FBAN/FBIOS;FBDV/iPad16,2;FBMD/iPad;FBSN/iOS;FBSV/15.0.1;FBSS/2;FBID/tablet;FBLC/en_GB;FBOP/5]",
+    "os": {
+      "name": "iPadOS",
+      "code": 57,
+      "version": "15.0.1",
+      "family": "iOS"
+    },
+    "client": {
+      "type": 0,
+      "name": "Facebook"
+    },
+    "device": {
+      "type": 2,
+      "model": "iPad Mini 7",
+      "brand": {
+        "name": "Apple",
+        "code": 97
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPad; CPU OS 15_0_1 like Mac OS X) WebKit/8612 (KHTML, like Gecko) Mobile/19A348 [FBAN/FBIOS;FBDV/iPad17,1;FBMD/iPad;FBSN/iOS;FBSV/15.0.1;FBSS/2;FBID/tablet;FBLC/en_GB;FBOP/5]",
+    "os": {
+      "name": "iPadOS",
+      "code": 57,
+      "version": "15.0.1",
+      "family": "iOS"
+    },
+    "client": {
+      "type": 0,
+      "name": "Facebook"
+    },
+    "device": {
+      "type": 2,
+      "model": "iPad Pro 6 11\" WiFi",
+      "brand": {
+        "name": "Apple",
+        "code": 97
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPad; CPU OS 15_0_1 like Mac OS X) WebKit/8612 (KHTML, like Gecko) Mobile/19A348 [FBAN/FBIOS;FBDV/iPad17,2;FBMD/iPad;FBSN/iOS;FBSV/15.0.1;FBSS/2;FBID/tablet;FBLC/en_GB;FBOP/5]",
+    "os": {
+      "name": "iPadOS",
+      "code": 57,
+      "version": "15.0.1",
+      "family": "iOS"
+    },
+    "client": {
+      "type": 0,
+      "name": "Facebook"
+    },
+    "device": {
+      "type": 2,
+      "model": "iPad Pro 6 11\"",
+      "brand": {
+        "name": "Apple",
+        "code": 97
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPad; CPU OS 15_0_1 like Mac OS X) WebKit/8612 (KHTML, like Gecko) Mobile/19A348 [FBAN/FBIOS;FBDV/iPad17,3;FBMD/iPad;FBSN/iOS;FBSV/15.0.1;FBSS/2;FBID/tablet;FBLC/en_GB;FBOP/5]",
+    "os": {
+      "name": "iPadOS",
+      "code": 57,
+      "version": "15.0.1",
+      "family": "iOS"
+    },
+    "client": {
+      "type": 0,
+      "name": "Facebook"
+    },
+    "device": {
+      "type": 2,
+      "model": "iPad Pro 2 13\" WiFi",
+      "brand": {
+        "name": "Apple",
+        "code": 97
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPad; CPU OS 15_0_1 like Mac OS X) WebKit/8612 (KHTML, like Gecko) Mobile/19A348 [FBAN/FBIOS;FBDV/iPad17,4;FBMD/iPad;FBSN/iOS;FBSV/15.0.1;FBSS/2;FBID/tablet;FBLC/en_GB;FBOP/5]",
+    "os": {
+      "name": "iPadOS",
+      "code": 57,
+      "version": "15.0.1",
+      "family": "iOS"
+    },
+    "client": {
+      "type": 0,
+      "name": "Facebook"
+    },
+    "device": {
+      "type": 2,
+      "model": "iPad Pro 2 13\"",
       "brand": {
         "name": "Apple",
         "code": 97
