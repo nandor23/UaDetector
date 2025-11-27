@@ -937,7 +937,7 @@
     },
     "device": {
       "type": 1,
-      "model": "Reno 8 Pro",
+      "model": "Reno 8 Pro 5G",
       "brand": {
         "name": "OPPO",
         "code": 1273
@@ -1261,7 +1261,7 @@
     },
     "device": {
       "type": 1,
-      "model": "Reno 8 Pro",
+      "model": "Reno 8 Pro 5G",
       "brand": {
         "name": "OPPO",
         "code": 1273
@@ -8833,7 +8833,7 @@
     },
     "device": {
       "type": 1,
-      "model": "Reno 8",
+      "model": "Reno 8 5G",
       "brand": {
         "name": "OPPO",
         "code": 1273

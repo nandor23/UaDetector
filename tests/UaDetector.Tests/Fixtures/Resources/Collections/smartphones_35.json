@@ -1867,7 +1867,7 @@
     },
     "device": {
       "type": 1,
-      "model": "Moto X30",
+      "model": "Edge X30",
       "brand": {
         "name": "Motorola",
         "code": 1120
@@ -5441,7 +5441,7 @@
     },
     "device": {
       "type": 1,
-      "model": "Note 12 Pro",
+      "model": "Redmi Note 12 Pro 4G",
       "brand": {
         "name": "Xiaomi",
         "code": 1973
@@ -7885,7 +7885,7 @@
     },
     "device": {
       "type": 1,
-      "model": "Moto S30",
+      "model": "Moto S30 Pro",
       "brand": {
         "name": "Motorola",
         "code": 1120

@@ -9554,7 +9554,7 @@
     },
     "device": {
       "type": 1,
-      "model": "Camon 19",
+      "model": "Camon 19 Neo",
       "brand": {
         "name": "Tecno Mobile",
         "code": 1684
@@ -11494,7 +11494,7 @@
     },
     "device": {
       "type": 1,
-      "model": "Honor 4T Pro",
+      "model": "Honor Play 4T Pro",
       "brand": {
         "name": "Huawei",
         "code": 757
