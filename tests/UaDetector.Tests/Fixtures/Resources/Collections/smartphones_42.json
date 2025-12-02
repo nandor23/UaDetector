@@ -8402,13 +8402,13 @@
       "family": "Android"
     },
     "browser": {
-      "name": "Microsoft Edge",
-      "code": 488,
-      "version": "20",
-      "family": "Internet Explorer",
+      "name": "Opera Mobile",
+      "code": 419,
+      "version": "96.0.2254.79777",
+      "family": "Opera",
       "engine": {
-        "name": "Edge",
-        "version": "20"
+        "name": "Blink",
+        "version": "141.0.7390.97"
       }
     },
     "device": {
