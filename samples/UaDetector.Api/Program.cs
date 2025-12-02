@@ -19,9 +19,8 @@ app.MapScalarApiReference(cfg =>
 {
     cfg.Title = "UaDetector";
     cfg.Theme = ScalarTheme.Moon;
-    cfg.ShowSidebar = true; 
+    cfg.ShowSidebar = true;
     cfg.HideDarkModeToggle = true;
-    
 });
 
 app.UseHttpsRedirection();

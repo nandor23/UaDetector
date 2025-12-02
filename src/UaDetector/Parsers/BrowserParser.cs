@@ -375,6 +375,27 @@ public sealed partial class BrowserParser : IBrowserParser
                     BrowserCode.Quetta,
                     BrowserCode.HeyTapBrowser,
                     BrowserCode.ChatGptAtlas,
+                    BrowserCode.Ace,
+                    BrowserCode.Ray,
+                    BrowserCode.Doubao,
+                    BrowserCode.PowerBrowser,
+                    BrowserCode.LemurBrowser,
+                    BrowserCode.TincatBrowser,
+                    BrowserCode.NeuroBrowser,
+                    BrowserCode.Seekee,
+                    BrowserCode.XPlayBrowser,
+                    BrowserCode.SnapBrowser,
+                    BrowserCode.AnonyvBrowser,
+                    BrowserCode.BrowseSafe,
+                    BrowserCode.BlackBrowser,
+                    BrowserCode.NovaBrowser,
+                    BrowserCode.VcBrowserMiniPro,
+                    BrowserCode.ClearTvBrowser,
+                    BrowserCode.AskBrowser,
+                    BrowserCode.StayBrowser,
+                    BrowserCode.DduBrowser,
+                    BrowserCode.PandaBrowser,
+                    BrowserCode.Ifbrowser,
                 }.ToFrozenSet()
             },
             {
@@ -472,6 +493,7 @@ public sealed partial class BrowserParser : IBrowserParser
                     BrowserCode.OperaMiniIos,
                     BrowserCode.OperaGx,
                     BrowserCode.OperaCrypto,
+                    BrowserCode.OperaAir,
                 }.ToFrozenSet()
             },
             {
@@ -701,6 +723,21 @@ public sealed partial class BrowserParser : IBrowserParser
             BrowserCode.CloakPrivateBrowser,
             BrowserCode.Pluma,
             BrowserCode.PocketInternetExplorer,
+            BrowserCode.TincatBrowser,
+            BrowserCode.NeuroBrowser,
+            BrowserCode.Seekee,
+            BrowserCode.XPlayBrowser,
+            BrowserCode.SnapBrowser,
+            BrowserCode.AnonyvBrowser,
+            BrowserCode.BrowseSafe,
+            BrowserCode.BlackBrowser,
+            BrowserCode.NovaBrowser,
+            BrowserCode.VcBrowserMiniPro,
+            BrowserCode.AskBrowser,
+            BrowserCode.StayBrowser,
+            BrowserCode.DduBrowser,
+            BrowserCode.PandaBrowser,
+            BrowserCode.Ifbrowser,
         }.ToFrozenSet();
 
         ClientHintBrandMappings = new Dictionary<string, FrozenSet<string>>
@@ -712,7 +749,10 @@ public sealed partial class BrowserParser : IBrowserParser
             { BrowserNames.MiBrowser, new[] { "Miui Browser", "XiaoMiBrowser" }.ToFrozenSet() },
             { BrowserNames.MicrosoftEdge, new[] { "Edge" }.ToFrozenSet() },
             { BrowserNames.NortonPrivateBrowser, new[] { "Norton Secure Browser" }.ToFrozenSet() },
+            { BrowserNames.OperaGx, new[] { "Opera GX Android" }.ToFrozenSet() },
+            { BrowserNames.OperaMini, new[] { "Opera Mini Android" }.ToFrozenSet() },
             { BrowserNames.VewdBrowser, new[] { "Vewd Core" }.ToFrozenSet() },
+            { BrowserNames.YandexBrowser, new[] { "YaSearchBrowser" }.ToFrozenSet() },
         }.ToFrozenDictionary();
 
         PriorityBrowsers = new[]
@@ -732,6 +772,7 @@ public sealed partial class BrowserParser : IBrowserParser
             BrowserCode.Chromium,
             BrowserCode.ChromeWebview,
             BrowserCode.AndroidBrowser,
+            BrowserCode.ChromeMobile,
         }.ToFrozenSet();
 
         ChromeSafariRegex = new Regex(

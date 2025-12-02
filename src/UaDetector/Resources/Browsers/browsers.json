@@ -1,5 +1,19 @@
 [
   {
+    "regex": "buscari/([\\d.]+)",
+    "name": "Seekee"
+  },
+  {
+    "regex": "ArtisReader/([\\d.]+)",
+    "name": "ArtisBrowser",
+    "version": "$1"
+  },
+  {
+    "regex": "SamanthaDoubao/([\\d.]+)",
+    "name": "Doubao",
+    "version": "$1"
+  },
+  {
     "regex": "HeyTapBrowser/([\\d.]+)",
     "name": "HeyTapBrowser",
     "version": "$1"

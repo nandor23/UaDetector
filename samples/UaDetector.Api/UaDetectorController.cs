@@ -30,7 +30,7 @@ public class UaDetectorController : ControllerBase
 
         return BadRequest("Unrecognized user agent");
     }
-    
+
     [HttpGet]
     [Route("parse")]
     public IActionResult GetUserAgentInfo([FromQuery] string userAgent)
