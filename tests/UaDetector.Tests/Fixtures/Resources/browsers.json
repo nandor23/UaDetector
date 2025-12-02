@@ -14126,5 +14126,514 @@
         "version": "141.0.0.0"
       }
     }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+    "headers": {
+      "Sec-CH-UA": "\"Not)A;Brand\";v=\"8.0.0.0\", \"Chromium\";v=\"138.0.7208.0\", \"Ace\";v=\"138.0.7208.0\""
+    },
+    "browser": {
+      "name": "Ace",
+      "code": 684,
+      "version": "138.0.7208.0",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "138.0.7208.0"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+    "headers": {
+      "Sec-CH-UA": "\"Chromium\";v=\"140.0.7339.2657\", \"Not=A?Brand\";v=\"24.0.0.0\", \"Ray\";v=\"140.0.7339.2657\""
+    },
+    "browser": {
+      "name": "Ray",
+      "code": 699,
+      "version": "140.0.7339.2657",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "140.0.7339.2657"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 SamanthaDoubao/1.37.6",
+    "browser": {
+      "name": "Doubao",
+      "code": 692,
+      "version": "1.37.6",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "121.0.0.0"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Android 15; Mobile; rv:120.0) Gecko/120.0 Firefox/120.0 ArtisReader/35.1",
+    "browser": {
+      "name": "ArtisBrowser",
+      "code": 686,
+      "version": "35.1",
+      "engine": {
+        "name": "Gecko",
+        "version": "120.0"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; U; Android 15; SM-S918B Build/AP3A.240905.015.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/142.0.7444.102 Mobile Safari/537.36 OPR/96.0.2254.79779",
+    "headers": {
+      "Sec-CH-UA": "\"Opera Mini Android\";v=\"96\", \"Chromium\";v=\"142\", \"Android WebView\";v=\"142\", \"Not_A Brand\";v=\"99\""
+    },
+    "browser": {
+      "name": "Opera Mini",
+      "code": 418,
+      "version": "96.0.2254.79779",
+      "family": "Opera",
+      "engine": {
+        "name": "Blink",
+        "version": "142.0.7444.102"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 OPR/119.0.0.0",
+    "headers": {
+      "Sec-CH-UA": "\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Opera Air\";v=\"119\""
+    },
+    "browser": {
+      "name": "Opera Air",
+      "code": 696,
+      "version": "119.0.0.0",
+      "family": "Opera",
+      "engine": {
+        "name": "Blink",
+        "version": "134.0.0.0"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 15; SM-S911B Build/AP3A.240905.015.A2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.155 Mobile Safari/537.36",
+    "headers": {
+      "Sec-CH-UA": "\"Opera GX Android\";v=\"3.0.2.2237\", \"Chromium\";v=\"140.0.7339.155\", \"Not=A?Brand\";v=\"24.0.0.0\", \"Android WebView\";v=\"140.0.7339.155\""
+    },
+    "browser": {
+      "name": "Opera GX",
+      "code": 415,
+      "version": "3.0.2.2237",
+      "family": "Opera"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; 7LIR4ry21h; U; es) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.5195.79 Mobile Tenta/6.11.0 Build/4320 Safari/537.36",
+    "headers": {
+      "Sec-CH-UA": "\"Tenta\";v=\"6.11.0\", \"Chromium\";v=\"105.0.5195.79\", \"Not)A;Brand\";v=\"8.0.0.0\""
+    },
+    "browser": {
+      "name": "Tenta Browser",
+      "code": 588,
+      "version": "6.11.0",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "105.0.5195.79"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Mobile Safari/537.36",
+    "headers": {
+      "Sec-CH-UA": "\"Power\";v=\"125\", \"Chromium\";v=\"125\", \"Not.A/Brand\";v=\"24\""
+    },
+    "browser": {
+      "name": "Power Browser",
+      "code": 698,
+      "version": "125.0.0.0",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "125.0.0.0"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36 Hola/1.216.565",
+    "headers": {
+      "Sec-CH-UA": "\"Chromium\";v=\"116.0.5845.96\", \"Not)A;Brand\";v=\"24.0.0.0\", \"Hola\";v=\"116.0.5845.96\""
+    },
+    "browser": {
+      "name": "hola! Browser",
+      "code": 258,
+      "version": "1.216.565",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "116.0.5845.96"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36",
+    "headers": {
+      "Sec-CH-UA": "\"Not:A-Brand\";v=\"99\", \"Firefox\";v=\"112\""
+    },
+    "browser": {
+      "name": "Firefox",
+      "code": 212,
+      "version": "112.0.0.0",
+      "family": "Firefox"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 YaSearchBrowser/24.10.0 Mobile Safari/537.36",
+    "headers": {
+      "Sec-CH-UA": "\"Not_A Brand\";v=\"8.0.0.0\", \"Chromium\";v=\"120.0.6099.234\", \"YaSearchBrowser\";v=\"24.1.5.390\", \"Yowser\";v=\"2.5\", \"BroPP\";v=\"1.0\", \"YaSearchApp\";v=\"24.15\""
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "24.1.5.390",
+      "engine": {
+        "name": "Blink",
+        "version": "120.0.0.0"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36",
+    "headers": {
+      "Sec-CH-UA": "\"Chromium\";v=\"131.0.6778.99\", \"Not_A Brand\";v=\"24.0.0.0\", \"Microsoft Edge Simulate\";v=\"131.0.6778.99\", \"Lemur\";v=\"131.0.6778.99\""
+    },
+    "browser": {
+      "name": "Lemur Browser",
+      "code": 694,
+      "version": "131.0.6778.99",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "131.0.6778.99"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; VOG-L29 Build/HUAWEIVOG-L29) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/137.0.7151.88 Mobile Safari/537.36 SznProhlizec/11.2.0a",
+    "headers": {
+      "Sec-CH-UA": "\"Android WebView\";v=\"137\", \"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\", \"SznProhlizec\";v=\"11.2.0\""
+    },
+    "browser": {
+      "name": "Seznam Browser",
+      "code": 576,
+      "version": "11.2.0",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "137.0.7151.88"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 14; SM-A145M Build/UP1A.231005.007) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.127 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.netsky.tincat"
+    },
+    "browser": {
+      "name": "Tincat Browser",
+      "code": 703,
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "136.0.7103.127"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 15; SM-A156M Build/AP3A.240905.015.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/140.0.7339.208 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.neurobro.browser"
+    },
+    "browser": {
+      "name": "Neuro Browser",
+      "code": 695,
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "140.0.7339.208"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 14; SM-A045M Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/141.0.7390.122 Mobile Safari/537.36 buscari/28",
+    "headers": {
+      "http-x-requested-with": "com.enzo.browser"
+    },
+    "browser": {
+      "name": "Seekee",
+      "code": 700,
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "141.0.7390.122"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 14; 23053RN02L Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/137.0.7151.61 Mobile Safari/537.36 buscari/32",
+    "headers": {
+      "http-x-requested-with": "com.enzo.paulo"
+    },
+    "browser": {
+      "name": "Seekee",
+      "code": 700,
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "137.0.7151.61"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 13; M2007J17G Build/TQ3A.230901.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/131.0.6778.81 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "de.baumann.browser1"
+    },
+    "browser": {
+      "name": "FOSS Browser",
+      "code": 228,
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "131.0.6778.81"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 11; SM-A205G Build/RP1A.200720.012;) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/141.0.7390.122 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.xsafe.browser"
+    },
+    "browser": {
+      "name": "XPlay Browser",
+      "code": 706,
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "141.0.7390.122"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 13; V2037) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.102 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.snapbrowser.app"
+    },
+    "browser": {
+      "name": "Snap Browser",
+      "code": 701,
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "142.0.7444.102"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "anonyv.navegaseguro"
+    },
+    "browser": {
+      "name": "Anonyv Browser",
+      "code": 685,
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "122.0.0.0"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 15; SM-F956B Build/AP3A.240905.015.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/140.0.7339.156 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.browsesafe.android"
+    },
+    "browser": {
+      "name": "Browse Safe",
+      "code": 689,
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "140.0.7339.156"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 13; moto g 5G (2022) Build/T1SAS33.73-40-6; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/121.0.6167.180 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.saigopal.browser"
+    },
+    "browser": {
+      "name": "Black Browser",
+      "code": 688,
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "121.0.6167.180"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 13; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "mark.viab"
+    },
+    "browser": {
+      "name": "Via",
+      "code": 0,
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "116.0.0.0"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 14; Infinix X6532 Build/UP1A.231005.007) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/139.0.7258.144 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.web.nova.browser"
+    },
+    "browser": {
+      "name": "Nova Browser",
+      "code": 705,
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "139.0.7258.144"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 15; V2240 Build/AP3A.240905.015.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/138.0.7204.179 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.vcbrowser.mini.pro"
+    },
+    "browser": {
+      "name": "VC Browser Mini Pro",
+      "code": 704,
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "138.0.7204.179"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 14; onn. Full HD Streaming Device Build/URO1.250103.029.A1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/138.0.7204.67 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.iberapps.cleartvwebbrowser"
+    },
+    "browser": {
+      "name": "Clear TV Browser",
+      "code": 690,
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "138.0.7204.67"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 14; SM-S156V Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/134.0.6998.39 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.easy.ask.browser"
+    },
+    "browser": {
+      "name": "Ask Browser",
+      "code": 687,
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "134.0.6998.39"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 15; SM-A536W Build/AP3A.240905.015.A2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.7151.116 Mobile Safari/537.36",
+    "headers": {
+      "Sec-CH-UA": "\"Android WebView\";v=\"137\", \"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\""
+    },
+    "browser": {
+      "name": "Chrome Webview",
+      "code": 161,
+      "version": "137.0.7151.116",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "137.0.7151.116"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 15; SM-A536W Build/AP3A.240905.015.A2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.7151.116 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.dajiu.stay"
+    },
+    "browser": {
+      "name": "Stay Browser",
+      "code": 702,
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "137.0.7151.116"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 13; A56 Build/T00624; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/131.0.6778.200 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.ddu.browser.oversea"
+    },
+    "browser": {
+      "name": "DDU Browser",
+      "code": 691,
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "131.0.6778.200"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 8.1.0; Redmi Go Build/OPM1.171019.026; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/131.0.6778.260 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.panda.browser"
+    },
+    "browser": {
+      "name": "Panda Browser",
+      "code": 697,
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "131.0.6778.260"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 13; moto g23 Build/THAS33.31-40-3) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/132.0.6834.79 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.ltd.ifbrowser"
+    },
+    "browser": {
+      "name": "Ifbrowser",
+      "code": 693,
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "132.0.6834.79"
+      }
+    }
   }
 ]

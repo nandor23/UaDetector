@@ -686,4 +686,27 @@ public static class BrowserNames
     public const string HeyTapBrowser = "HeyTapBrowser";
     public const string Harmony360Browser = "Harmony 360 Browser";
     public const string ChatGptAtlas = "ChatGPT Atlas";
+    public const string Ace = "Ace";
+    public const string AnonyvBrowser = "Anonyv Browser";
+    public const string ArtisBrowser = "ArtisBrowser";
+    public const string AskBrowser = "Ask Browser";
+    public const string BlackBrowser = "Black Browser";
+    public const string BrowseSafe = "Browse Safe";
+    public const string ClearTvBrowser = "Clear TV Browser";
+    public const string DduBrowser = "DDU Browser";
+    public const string Doubao = "Doubao";
+    public const string Ifbrowser = "Ifbrowser";
+    public const string LemurBrowser = "Lemur Browser";
+    public const string NeuroBrowser = "Neuro Browser";
+    public const string OperaAir = "Opera Air";
+    public const string PandaBrowser = "Panda Browser";
+    public const string PowerBrowser = "Power Browser";
+    public const string Ray = "Ray";
+    public const string Seekee = "Seekee";
+    public const string SnapBrowser = "Snap Browser";
+    public const string StayBrowser = "Stay Browser";
+    public const string TincatBrowser = "Tincat Browser";
+    public const string VcBrowserMiniPro = "VC Browser Mini Pro";
+    public const string NovaBrowser = "Nova Browser";
+    public const string XPlayBrowser = "XPlay Browser";
 }

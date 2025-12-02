@@ -1,6 +1,6 @@
 ﻿using UaDetector.YamlJsonConverter;
 
-YamlToJsonConverter.ConvertBotRegex();
+YamlToJsonConverter.ConvertBrowserRegex();
 
 
 // YamlToJsonConverter.ConvertBrowserRegex();
