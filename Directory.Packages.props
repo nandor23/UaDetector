@@ -10,7 +10,10 @@
     <PackageVersion Include="Microsoft.CodeAnalysis.CSharp" Version="4.12.0" />
     <PackageVersion Include="Microsoft.CodeAnalysis.CSharp.Workspaces" Version="4.12.0" />
     <PackageVersion Include="Microsoft.CodeAnalysis.CSharp.Analyzer.Testing" Version="1.1.2" />
-    <PackageVersion Include="Microsoft.CodeAnalysis.CSharp.SourceGenerators.Testing" Version="1.1.2" />
+    <PackageVersion
+      Include="Microsoft.CodeAnalysis.CSharp.SourceGenerators.Testing"
+      Version="1.1.2"
+    />
   </ItemGroup>
   <ItemGroup Label="STJ runtime dependencies for source generator">
     <PackageVersion Include="System.Reflection.Metadata" Version="8.0.1" />
@@ -26,15 +29,47 @@
   </ItemGroup>
   <ItemGroup>
     <!-- .NET 10 -->
-    <PackageVersion Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="10.0.0" Condition="$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', 'net10.0'))" />
-    <PackageVersion Include="Microsoft.Extensions.Caching.Memory" Version="10.0.0" Condition="$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', 'net10.0'))" />
+    <PackageVersion
+      Include="Microsoft.Extensions.DependencyInjection.Abstractions"
+      Version="10.0.0"
+      Condition="$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', 'net10.0'))"
+    />
+    <PackageVersion
+      Include="Microsoft.Extensions.Caching.Memory"
+      Version="10.0.0"
+      Condition="$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', 'net10.0'))"
+    />
     <!-- .NET 9 only -->
-    <PackageVersion Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.10" Condition="$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', 'net9.0')) And !$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', 'net10.0'))" />
-    <PackageVersion Include="Microsoft.Extensions.Caching.Memory" Version="9.0.10" Condition="$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', 'net9.0')) And !$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', 'net10.0'))" />
+    <PackageVersion
+      Include="Microsoft.Extensions.DependencyInjection.Abstractions"
+      Version="9.0.10"
+      Condition="$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', 'net9.0')) And !$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', 'net10.0'))"
+    />
+    <PackageVersion
+      Include="Microsoft.Extensions.Caching.Memory"
+      Version="9.0.10"
+      Condition="$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', 'net9.0')) And !$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', 'net10.0'))"
+    />
     <!-- .NET 8 and below -->
-    <PackageVersion Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.2" Condition="!$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', 'net9.0'))" />
-    <PackageVersion Include="Microsoft.Extensions.Caching.Memory" Version="8.0.1" Condition="!$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', 'net9.0'))" />
-    <PackageVersion Include="System.Collections.Immutable" Version="8.0.0" Condition="!$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', 'net9.0'))" />
-    <PackageVersion Include="System.Text.Json" Version="8.0.6" Condition="!$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', 'net9.0'))" />
+    <PackageVersion
+      Include="Microsoft.Extensions.DependencyInjection.Abstractions"
+      Version="8.0.2"
+      Condition="!$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', 'net9.0'))"
+    />
+    <PackageVersion
+      Include="Microsoft.Extensions.Caching.Memory"
+      Version="8.0.1"
+      Condition="!$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', 'net9.0'))"
+    />
+    <PackageVersion
+      Include="System.Collections.Immutable"
+      Version="8.0.0"
+      Condition="!$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', 'net9.0'))"
+    />
+    <PackageVersion
+      Include="System.Text.Json"
+      Version="8.0.6"
+      Condition="!$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', 'net9.0'))"
+    />
   </ItemGroup>
 </Project>
