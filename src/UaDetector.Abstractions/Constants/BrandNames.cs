@@ -2104,4 +2104,6 @@ public static class BrandNames
     public const string Edanix = "Edanix";
     public const string GeniusDevices = "Genius Devices";
     public const string Turksat = "Türksat";
+    public const string GTab = "G-Tab";
+    public const string Suaat = "SUAAT";
 }
