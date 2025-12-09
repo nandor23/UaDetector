@@ -2808,10 +2808,7 @@
   {
     "regex": "MobileIron(?:/(\\d+[.\\d]+))?",
     "name": "Iron Mobile",
-    "version": "$1",
-    "engine": {
-      "default": "Blink"
-    }
+    "version": "$1"
   },
   {
     "regex": "Chrome(?:/(\\d+\\.[.\\d]+) )?.*Iron",
