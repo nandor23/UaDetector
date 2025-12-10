@@ -11005,6 +11005,15 @@
       "cpuArchitecture": "x64",
       "family": "Mac"
     },
+    "browser": {
+      "name": "Safari",
+      "code": 523,
+      "version": "9601.7",
+      "family": "Safari",
+      "engine": {
+        "name": "WebKit"
+      }
+    },
     "device": {
       "type": 0,
       "model": "iMac 21.5\" (2010)",

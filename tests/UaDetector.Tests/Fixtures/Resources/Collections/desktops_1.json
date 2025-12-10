@@ -73,5 +73,28 @@
     "device": {
       "type": 0
     }
+  },
+  {
+    "userAgent": "nook browser/1.0",
+    "os": {
+      "name": "Mac",
+      "code": 83,
+      "family": "Mac"
+    },
+    "browser": {
+      "name": "Nook Browser",
+      "code": 387,
+      "version": "1.0",
+      "engine": {
+        "name": "WebKit"
+      }
+    },
+    "device": {
+      "type": 0,
+      "brand": {
+        "name": "Apple",
+        "code": 97
+      }
+    }
   }
 ]
