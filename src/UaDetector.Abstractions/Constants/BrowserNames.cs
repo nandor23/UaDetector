@@ -389,7 +389,7 @@ public static class BrowserNames
     public const string NortonPrivateBrowser = "Norton Private Browser";
     public const string NoxBrowser = "Nox Browser";
     public const string NomOneVrBrowser = "NOMone VR Browser";
-    public const string NookBrowser = "NOOK Browser";
+    public const string NookBrowser = "Nook Browser";
     public const string NetSurf = "NetSurf";
     public const string NetFront = "NetFront";
     public const string NetFrontLife = "NetFront Life";

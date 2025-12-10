@@ -228,6 +228,7 @@ public static class YamlToJsonConverter
         var result = entries.Select(x => new OsFixture
         {
             UserAgent = x.UserAgent,
+            Headers = x.Headers,
             Os = new OsInfo
             {
                 Name = x.Os.Name,

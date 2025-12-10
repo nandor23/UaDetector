@@ -190,8 +190,11 @@
   },
   {
     "regex": "nook browser(?:/(\\d+[.\\d]+))?",
-    "name": "NOOK Browser",
-    "version": "$1"
+    "name": "Nook Browser",
+    "version": "$1",
+    "engine": {
+      "default": "WebKit"
+    }
   },
   {
     "regex": "xChaos_Arachne/5\\.(\\d+\\.[.\\d]+)",
@@ -3836,7 +3839,7 @@
     }
   },
   {
-    "regex": "NetworkingExtension/(\\d+[.\\d]+).+ CFNetwork",
+    "regex": "(?:com\\.apple\\.WebKit\\.Networking|NetworkingExtension)/(\\d+[.\\d]+).+ CFNetwork",
     "name": "Safari",
     "version": "$1",
     "engine": {

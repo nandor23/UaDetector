@@ -12664,9 +12664,12 @@
   {
     "userAgent": "nook browser/1.0",
     "browser": {
-      "name": "NOOK Browser",
+      "name": "Nook Browser",
       "code": 387,
-      "version": "1.0"
+      "version": "1.0",
+      "engine": {
+        "name": "WebKit"
+      }
     }
   },
   {
@@ -14634,6 +14637,18 @@
       "engine": {
         "name": "Blink",
         "version": "132.0.6834.79"
+      }
+    }
+  },
+  {
+    "userAgent": "com.apple.WebKit.Networking/20621.3.11.11.3 CFNetwork/3826.600.41 Darwin/24.6.0",
+    "browser": {
+      "name": "Safari",
+      "code": 523,
+      "version": "20621.3.11.11",
+      "family": "Safari",
+      "engine": {
+        "name": "WebKit"
       }
     }
   },

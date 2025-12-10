@@ -3,6 +3,7 @@ namespace UaDetector.YamlJsonConverter.Fixtures;
 public sealed class OsFixtureYaml
 {
     public required string UserAgent { get; init; }
+    public required Dictionary<string, string?>? Headers { get; init; }
     public required Os Os { get; init; }
 }
 
