@@ -692,5 +692,10 @@
   {
     "regex": "Lodestone PHP Parser",
     "name": "Lodestone PHP Parser"
+  },
+  {
+    "regex": "^Hubot/(\\d+[.\\d]+)",
+    "name": "Hubot",
+    "version": "$1"
   }
 ]
