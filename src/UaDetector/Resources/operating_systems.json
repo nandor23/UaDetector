@@ -457,7 +457,7 @@
     "name": "FydeOS"
   },
   {
-    "regex": "Fire OS(?:/(\\d+[.\\d]*))?",
+    "regex": "Fire OS(?:[ /](\\d+[.\\d]*))?",
     "name": "Fire OS",
     "version": "$1"
   },
