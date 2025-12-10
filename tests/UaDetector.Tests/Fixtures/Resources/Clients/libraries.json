@@ -1059,5 +1059,13 @@
       "type": 2,
       "name": "Lodestone PHP Parser"
     }
+  },
+  {
+    "userAgent": "Hubot/13.1.4",
+    "client": {
+      "type": 2,
+      "name": "Hubot",
+      "version": "13.1.4"
+    }
   }
 ]
