@@ -2104,4 +2104,6 @@ public enum BrandCode
     Edanix = 2099,
     GeniusDevices = 2100,
     Turksat = 2101,
+    GTab = 2102,
+    Suaat = 2103 
 }

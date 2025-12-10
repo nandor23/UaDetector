@@ -2123,6 +2123,8 @@ public class BrandCodeTests
             { BrandCode.Edanix, 2099 },
             { BrandCode.GeniusDevices, 2100 },
             { BrandCode.Turksat, 2101 },
+            { BrandCode.GTab, 2102 },
+            { BrandCode.Suaat, 2103 },
         };
 
         expectedValues.Count.ShouldBe(Enum.GetValues<BrandCode>().Length);
