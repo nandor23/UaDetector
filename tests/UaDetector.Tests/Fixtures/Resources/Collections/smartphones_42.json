@@ -12573,5 +12573,243 @@
         "code": 1496
       }
     }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 13; A301SO Build/67.0.D.8.61; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/125.0.6422.53 Mobile Safari/537.36 YJApp-ANDROID jp.co.yahoo.android.yjtop/3.169.0",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "13",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Yahoo! Japan",
+      "version": "3.169.0"
+    },
+    "device": {
+      "type": 1,
+      "model": "Xperia 1 V",
+      "brand": {
+        "name": "Sony",
+        "code": 1588
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 13; F-51C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6261.119 Mobile Safari/537.36 OPR/81.1.4292.78446",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "13",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Opera Mobile",
+      "code": 419,
+      "version": "81.1.4292.78446",
+      "family": "Opera",
+      "engine": {
+        "name": "Blink",
+        "version": "122.0.6261.119"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Arrows N F-51C",
+      "brand": {
+        "name": "Fujitsu",
+        "code": 594
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 13; SH-M19s-y Build/S4274; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/115.0.5790.166 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "13",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Webview",
+      "code": 161,
+      "version": "115.0.5790.166",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "115.0.5790.166"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Aquos Sense 6",
+      "brand": {
+        "name": "Sharp",
+        "code": 1532
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 15; SM-S721N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.7204.1898 YaApp_Android/25.80.1 YaSearchBrowser/25.80.1 BroPP/1.0 SA/3 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "15",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "25.80.1",
+      "engine": {
+        "name": "Blink",
+        "version": "138.0.7204.1898"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Galaxy S24 FE",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 15; SM-S721Q) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.7204.888 YaSearchBrowser/25.82.1 BroPP/1.0 YaSearchApp/25.82.1 webOmni SA/3 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "15",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "25.82.1",
+      "engine": {
+        "name": "Blink",
+        "version": "138.0.7204.888"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Galaxy S24 FE",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 15; SM-S721W) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.7204.1898 YaApp_Android/25.80.1 YaSearchBrowser/25.80.1 BroPP/1.0 SA/3 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "15",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "25.80.1",
+      "engine": {
+        "name": "Blink",
+        "version": "138.0.7204.1898"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Galaxy S24 FE",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 15; SM-A5660) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.7204.761 YaSearchBrowser/25.85.1 BroPP/1.0 YaSearchApp/25.85.1 webOmni SA/3 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "15",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "25.85.1",
+      "engine": {
+        "name": "Blink",
+        "version": "138.0.7204.761"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Galaxy A56 5G",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 15; PPG-AN00) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.854 YaSearchBrowser/25.101.1 BroPP/1.0 YaSearchApp/25.101.1 webOmni SA/3 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "15",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "25.101.1",
+      "engine": {
+        "name": "Blink",
+        "version": "140.0.7339.854"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "GT Pro",
+      "brand": {
+        "name": "Honor",
+        "code": 2095
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 15; SM-A065F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.414 YaSearchBrowser/25.107.1 BroPP/1.0 YaSearchApp/25.107.1 webOmni SA/3 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "15",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "25.107.1",
+      "engine": {
+        "name": "Blink",
+        "version": "140.0.7339.414"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Galaxy A06",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
   }
 ]
