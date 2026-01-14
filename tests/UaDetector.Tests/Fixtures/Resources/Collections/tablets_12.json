@@ -8962,5 +8962,221 @@
         "code": 1496
       }
     }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 13; A301LV Build/TKQ1.230127.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/135.0.7049.37 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "13",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Webview",
+      "code": 161,
+      "version": "135.0.7049.37",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "135.0.7049.37"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "Tab 7 5G",
+      "brand": {
+        "name": "Lenovo",
+        "code": 976
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 15; PA2573) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.270 YaBrowser/25.10.0.270.01 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "15",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "25.10.0.270.01",
+      "engine": {
+        "name": "Blink",
+        "version": "140.0.7339.270"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "Pad 5 Pro",
+      "brand": {
+        "name": "Vivo",
+        "code": 1864
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 15; PA2511) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.7204.70 YaBrowser/25.8.8.70.01 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "15",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "25.8.8.70.01",
+      "engine": {
+        "name": "Blink",
+        "version": "138.0.7204.70"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "Pad SE",
+      "brand": {
+        "name": "Vivo",
+        "code": 1864
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 15; PA2455) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.854 YaSearchBrowser/25.101.1/apad BroPP/1.0 YaSearchApp/25.101.1/apad webOmni SA/3 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "15",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "25.101.1",
+      "engine": {
+        "name": "Blink",
+        "version": "140.0.7339.854"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "Pad 3",
+      "brand": {
+        "name": "Vivo",
+        "code": 1864
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 15; OPD2481) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.854 YaSearchBrowser/25.101.1/apad BroPP/1.0 YaSearchApp/25.101.1/apad webOmni SA/3 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "15",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "25.101.1",
+      "engine": {
+        "name": "Blink",
+        "version": "140.0.7339.854"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "Pad Lite 11.0\"",
+      "brand": {
+        "name": "OnePlus",
+        "code": 1259
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 15; OPD2480) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.7204.1898 YaApp_Android/25.80.1/apad YaSearchBrowser/25.80.1/apad BroPP/1.0 SA/3 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "15",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "25.80.1",
+      "engine": {
+        "name": "Blink",
+        "version": "138.0.7204.1898"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "Pad Lite 11.0\"",
+      "brand": {
+        "name": "OnePlus",
+        "code": 1259
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 15; OPD2415) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.854 YaSearchBrowser/25.101.1/apad BroPP/1.0 YaSearchApp/25.101.1/apad webOmni SA/3 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "15",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "25.101.1",
+      "engine": {
+        "name": "Blink",
+        "version": "140.0.7339.854"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "Pad 3 13.2\" WiFi",
+      "brand": {
+        "name": "OnePlus",
+        "code": 1259
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 15; OPD2405) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.7204.405 YaSearchBrowser/25.89.1/apad BroPP/1.0 YaSearchApp/25.89.1/apad webOmni SA/3 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "15",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "25.89.1",
+      "engine": {
+        "name": "Blink",
+        "version": "138.0.7204.405"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "Pad 3 11.61\"",
+      "brand": {
+        "name": "OnePlus",
+        "code": 1259
+      }
+    }
   }
 ]
