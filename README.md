@@ -7,15 +7,20 @@
 
 <h4 align="center">A powerful user agent parser inspired by <a href="https://github.com/matomo-org/device-detector" target="_blank">device-detector</a></h4>
 
-[![Build](https://github.com/nandor23/UaDetector/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/nandor23/UaDetector/actions/workflows/build.yml)
-![GitHub Release](https://img.shields.io/github/v/release/nandor23/UaDetector)
-![NuGet Downloads](https://img.shields.io/nuget/dt/UaDetector?color=%2334a3d9)
-[![License](https://img.shields.io/github/license/nandor23/UaDetector?color=%2325b99c)](https://www.gnu.org/licenses/lgpl-3.0.en.html)
+<p align="center">
+  <a href="https://github.com/nandor23/UaDetector/actions/workflows/build.yml">
+    <img src="https://github.com/nandor23/UaDetector/actions/workflows/build.yml/badge.svg?branch=main" alt="Build">
+  </a>
+  <img src="https://img.shields.io/github/v/release/nandor23/UaDetector" alt="GitHub Release">
+  <img src="https://img.shields.io/nuget/dt/UaDetector?color=%2334a3d9" alt="NuGet Downloads">
+  <a href="https://www.gnu.org/licenses/lgpl-3.0.en.html">
+    <img src="https://img.shields.io/github/license/nandor23/UaDetector?color=%2325b99c" alt="License">
+  </a>
+</p>
 
-UaDetector is a user agent parser that identifies devices (desktops, tablets, mobiles, TVs, cars, consoles), 
-clients (feed readers, media players, mobile apps), browsers, operating systems, brands, and bots. 
-It consists of several independent sub-parsers (`OsParser`, `BrowserParser`, `ClientParser`, and `BotParser`) 
-that can be used separately when only specific information is needed.
+UaDetector is a user agent parser that identifies browsers, operating systems, devices, clients, and bots. 
+It provides several sub-parsers: `OsParser`, `BrowserParser`, `ClientParser`, and `BotParser`. 
+Each can be used independently if only certain information is needed from the user agent string.
 
 ## Packages
 
