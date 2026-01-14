@@ -5,19 +5,18 @@ A powerful user agent parser inspired by [device-detector](https://github.com/ma
 [![Build](https://github.com/nandor23/UaDetector/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/nandor23/UaDetector/actions/workflows/build.yml)
 [![License](https://img.shields.io/github/license/nandor23/UaDetector?color=%2325b99c)](https://www.gnu.org/licenses/lgpl-3.0.en.html)
 
-UaDetector is a user agent parser that identifies devices (desktops, tablets, mobiles, TVs, cars, consoles),
-clients (feed readers, media players, mobile apps), browsers, operating systems, brands, and bots.
-It consists of several independent sub-parsers (`OsParser`, `BrowserParser`, `ClientParser`, and `BotParser`)
-that can be used separately when only specific information is needed.
+UaDetector is a user agent parser that identifies browsers, operating systems, devices, clients, and bots. 
+It provides several sub-parsers: `OsParser`, `BrowserParser`, `ClientParser`, and `BotParser`. 
+Each can be used independently if only certain information is needed from the user agent string.
 
 ## Packages
 
-| Package                                                                             | Description                                               |
-|-------------------------------------------------------------------------------------|-----------------------------------------------------------|
-| [UaDetector](https://www.nuget.org/packages/UaDetector)                             | User agent parser optimized for speed                     |
-| [UaDetector.Lite](https://www.nuget.org/packages/UaDetector.Lite)                   | Memory-optimized variant with slower parsing speed        |
-| [UaDetector.Abstractions](https://www.nuget.org/packages/UaDetector.Abstractions)   | Shared models, enums, and constants                       |
-| [UaDetector.MemoryCache](https://www.nuget.org/packages/UaDetector.MemoryCache)     | Memory cache built on Microsoft.Extensions.Caching.Memory |
+| Package                                                                           | Description                                               |
+| --------------------------------------------------------------------------------- | --------------------------------------------------------- |
+| [UaDetector](https://www.nuget.org/packages/UaDetector)                           | User agent parser optimized for speed                     |
+| [UaDetector.Lite](https://www.nuget.org/packages/UaDetector.Lite)                 | Memory-optimized variant with slower parsing speed        |
+| [UaDetector.Abstractions](https://www.nuget.org/packages/UaDetector.Abstractions) | Shared models, enums, and constants                       |
+| [UaDetector.MemoryCache](https://www.nuget.org/packages/UaDetector.MemoryCache)   | Memory cache built on Microsoft.Extensions.Caching.Memory |
 
 ## Features
 
@@ -47,10 +46,10 @@ builder.Services.AddUaDetector();
 
 ### Configuration Options
 
-| Option                | Type   | Default  | Description                                                                                    |
-|-----------------------|--------|----------|------------------------------------------------------------------------------------------------|
-| `VersionTruncation`   | `enum` | `Minor`  | Controls how version numbers are shortened (e.g., `None`, `Major`, `Minor`, `Patch`, `Build`). |
-| `DisableBotDetection` | `bool` | `false`  | Disables bot detection entirely, skipping bot-related checks and parsing.                      |
+| Option                | Type   | Default | Description                                                                                    |
+| --------------------- | ------ | ------- | ---------------------------------------------------------------------------------------------- |
+| `VersionTruncation`   | `enum` | `Minor` | Controls how version numbers are shortened (e.g., `None`, `Major`, `Minor`, `Patch`, `Build`). |
+| `DisableBotDetection` | `bool` | `false` | Disables bot detection entirely, skipping bot-related checks and parsing.                      |
 
 ## 🚀 Quick Start
 
@@ -150,7 +149,7 @@ builder.Services.AddUaDetector(options =>
 ### Configuration Options
 
 | Option                    | Type        | Default    | Description                                                                                                                                                                             |
-|---------------------------|-------------|------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ------------------------- | ----------- | ---------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `MaxKeyLength`            | `int`       | `256`      | Maximum length allowed for a cache key. Entries with longer keys will not be cached.                                                                                                    |
 | `Expiration`              | `TimeSpan?` | `null`     | Entries will expire after this duration, regardless of how frequently they are accessed.                                                                                                |
 | `SlidingExpiration`       | `TimeSpan?` | `null`     | Entries will expire if they haven't been accessed within this time period. The expiration timer resets each time the entry is accessed.                                                 |
