@@ -191,4 +191,5 @@ public enum OsCode
     KolibriOs = 186,
     OpenHarmony = 187,
     SmartisanOs = 188,
+    TitanOs = 189,
 }

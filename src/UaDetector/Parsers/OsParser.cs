@@ -281,7 +281,7 @@ public sealed partial class OsParser : IOsParser
                     OsCode.KinOs,
                 }.ToFrozenSet()
             },
-            { OsFamilies.OtherSmartTv, new[] { OsCode.WhaleOs }.ToFrozenSet() },
+            { OsFamilies.OtherSmartTv, new[] { OsCode.WhaleOs, OsCode.TitanOs }.ToFrozenSet() },
         }.ToFrozenDictionary(StringComparer.OrdinalIgnoreCase);
 
         DesktopOsFamilies = new[]

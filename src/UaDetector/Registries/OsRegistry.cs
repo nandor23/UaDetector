@@ -218,6 +218,7 @@ public static class OsRegistry
         { OsCode.KolibriOs, OsNames.KolibriOs },
         { OsCode.OpenHarmony, OsNames.OpenHarmony },
         { OsCode.SmartisanOs, OsNames.SmartisanOs },
+        { OsCode.TitanOs, OsNames.TitanOs },
     }.ToFrozenDictionary();
 
     internal static readonly FrozenDictionary<string, OsCode> OsNameMappings = OsCodeMappings
