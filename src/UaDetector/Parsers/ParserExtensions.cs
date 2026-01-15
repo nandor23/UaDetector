@@ -42,7 +42,6 @@ internal static class ParserExtensions
             return false;
         }
 
-        // Exclude Telegram-Android
         return !userAgent.Contains("Telegram-Android/", StringComparison.OrdinalIgnoreCase);
     }
 
