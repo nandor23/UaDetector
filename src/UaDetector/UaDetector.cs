@@ -103,7 +103,7 @@ public sealed class UaDetector : IUaDetector
             BrowserNames.TvBro,
         }.ToFrozenSet();
 
-        TvClients = new[] { "TiviMate" }.ToFrozenSet();
+        TvClients = new[] { "TiviMate", "Redline" }.ToFrozenSet();
 
         ClientHintFormFactorsMappings =
         [
