@@ -953,7 +953,7 @@
     "name": "Kanotix"
   },
   {
-    "regex": "moonOS/(\\d+.[\\d.]+)",
+    "regex": "moonOS/(\\d+[.\\d]+)",
     "name": "moonOS",
     "version": "$1"
   },
@@ -962,7 +962,7 @@
     "name": "Foresight Linux"
   },
   {
-    "regex": "Pardus/(\\d+.[\\d.]+)",
+    "regex": "Pardus/(\\d+[.\\d]+)",
     "name": "Pardus",
     "version": "$1"
   },
@@ -975,7 +975,7 @@
     "name": "OpenWrt"
   },
   {
-    "regex": "RokuOS/.+RokuOS (\\d+.[\\d.]+)",
+    "regex": "RokuOS/.+RokuOS (\\d+[.\\d]+)",
     "name": "Roku OS",
     "version": "$1"
   },
@@ -990,7 +990,7 @@
     "version": "$1"
   },
   {
-    "regex": "RokuBrowser/.+\\(TV-([a-z0-9]+)-(\\d+.[\\d.]+)\\)",
+    "regex": "RokuBrowser/.+\\(TV-([a-z0-9]+)-(\\d+[.\\d]+)\\)",
     "name": "Roku OS",
     "version": "$2"
   },
