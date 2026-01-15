@@ -14677,5 +14677,28 @@
         "version": "609.4"
       }
     }
+  },
+  {
+    "userAgent": "Opera/13 CFNetwork/1568.300.101 Darwin/24.2.0",
+    "browser": {
+      "name": "Opera",
+      "code": 420,
+      "family": "Opera",
+      "engine": {
+        "name": "WebKit"
+      }
+    }
+  },
+  {
+    "userAgent": "Edge/128.0.2739.82 CFNetwork/1568.200.21 Darwin/24.1.0",
+    "browser": {
+      "name": "Microsoft Edge",
+      "code": 488,
+      "version": "128.0.2739.82",
+      "family": "Internet Explorer",
+      "engine": {
+        "name": "WebKit"
+      }
+    }
   }
 ]
