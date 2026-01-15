@@ -136,6 +136,11 @@
   },
   {
     "userAgent": "GIONEE S80/Q03C MAUI-browser/MIDP2.0/CLDC1.1/Screen-240X320",
+    "os": {
+      "name": "Java ME",
+      "code": 63,
+      "family": "Real-time OS"
+    },
     "browser": {
       "name": "MAUI WAP Browser",
       "code": 374
