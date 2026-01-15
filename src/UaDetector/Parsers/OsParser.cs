@@ -67,7 +67,7 @@ public sealed partial class OsParser : IOsParser
                     OsCode.LeafOs,
                     OsCode.MetaHorizon,
                     OsCode.OpenHarmony,
-                    OsCode.SmartisanOs
+                    OsCode.SmartisanOs,
                 }.ToFrozenSet()
             },
             {
@@ -586,8 +586,7 @@ public sealed partial class OsParser : IOsParser
                 case 0 when minorVersion != 0:
                     WindowsMinorVersionMappings.TryGetValue(minorVersion, out version);
                     break;
-                case > 0
-                and <= 10:
+                case > 0 and <= 10:
                     version = "10";
                     break;
                 case > 10:
@@ -763,8 +762,7 @@ public sealed partial class OsParser : IOsParser
 
                     switch (name)
                     {
-                        case OsNames.LeafOs
-                        or OsNames.HarmonyOs:
+                        case OsNames.LeafOs or OsNames.HarmonyOs:
                             version = null;
                             break;
                         case OsNames.PicoOs:

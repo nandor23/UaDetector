@@ -2105,5 +2105,5 @@ public enum BrandCode
     GeniusDevices = 2100,
     Turksat = 2101,
     GTab = 2102,
-    Suaat = 2103 
+    Suaat = 2103,
 }

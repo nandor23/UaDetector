@@ -8,7 +8,7 @@ namespace UaDetector.Parsers;
 internal static class ParserExtensions
 {
     private static readonly Regex ClientHintsFragmentMatchRegex = new(
-        @"Android (?:10[.\d]*; K(?: Build/|[;)])|1[1-5]\)) AppleWebKit",
+        @"Android (?:1[0-6][.\d]*; K(?: Build/|[;)])|1[0-6]\)) AppleWebKit",
         RegexOptions.IgnoreCase | RegexOptions.Compiled
     );
 
@@ -37,7 +37,12 @@ internal static class ParserExtensions
 
     public static bool HasUserAgentClientHintsFragment(string userAgent)
     {
-        return ClientHintsFragmentMatchRegex.IsMatch(userAgent);
+        if (!ClientHintsFragmentMatchRegex.IsMatch(userAgent))
+        {
+            return false;
+        }
+
+        return !userAgent.Contains("Telegram-Android/", StringComparison.OrdinalIgnoreCase);
     }
 
     public static bool HasUserAgentDesktopFragment(string userAgent)
