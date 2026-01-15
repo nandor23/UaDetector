@@ -14664,5 +14664,18 @@
         "version": "605.1.15"
       }
     }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Nintendo Switch; WebApplet) AppleWebKit/609.4 (KHTML, like Gecko) NF/6.0.2.20.5 NintendoBrowser/5.1.0.22023",
+    "browser": {
+      "name": "Nintendo Browser",
+      "code": 707,
+      "version": "5.1.0.22023",
+      "family": "NetFront",
+      "engine": {
+        "name": "WebKit",
+        "version": "609.4"
+      }
+    }
   }
 ]

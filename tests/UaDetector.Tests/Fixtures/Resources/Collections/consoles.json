@@ -186,8 +186,9 @@
       "family": "Gaming Console"
     },
     "browser": {
-      "name": "NetFront",
-      "code": 389,
+      "name": "Nintendo Browser",
+      "code": 707,
+      "version": "5.1.0.15785",
       "family": "NetFront",
       "engine": {
         "name": "WebKit",
@@ -238,8 +239,9 @@
       "family": "Gaming Console"
     },
     "browser": {
-      "name": "NetFront",
-      "code": 389,
+      "name": "Nintendo Browser",
+      "code": 707,
+      "version": "1.0.0.7494",
       "family": "NetFront",
       "engine": {
         "name": "WebKit",
@@ -656,8 +658,9 @@
       "family": "Mobile Gaming Console"
     },
     "browser": {
-      "name": "NetFront",
-      "code": 389,
+      "name": "Nintendo Browser",
+      "code": 707,
+      "version": "1.10.10166",
       "family": "NetFront",
       "engine": {
         "name": "WebKit",
