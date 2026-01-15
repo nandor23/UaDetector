@@ -41017,6 +41017,16 @@
         "name": "Galaxy Tab S10+ 12.4\" 5G"
       },
       {
+        "regex": "(?:SAMSUNG-)?SM-X400",
+        "type": 2,
+        "name": "Galaxy Tab S10 Lite WiFi"
+      },
+      {
+        "regex": "(?:SAMSUNG-)?SM-X406",
+        "type": 2,
+        "name": "Galaxy Tab S10 Lite 5G"
+      },
+      {
         "regex": "(?:SAMSUNG-)?SM-T116(?:BU|NU|NY)?",
         "type": 2,
         "name": "Galaxy Tab 3 V"
