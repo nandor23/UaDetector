@@ -5187,5 +5187,16 @@
         "code": 1465
       }
     }
+  },
+  {
+    "userAgent": "REDLINECLIENT AT_1000_HD V2.8.93",
+    "client": {
+      "type": 0,
+      "name": "Redline",
+      "version": "2.8.93"
+    },
+    "device": {
+      "type": 5
+    }
   }
 ]
