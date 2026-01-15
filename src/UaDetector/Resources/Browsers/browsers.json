@@ -3663,6 +3663,14 @@
     "version": "$1"
   },
   {
+    "regex": "NintendoBrowser(?:/(\\d+[.\\d]+))?",
+    "name": "Nintendo Browser",
+    "version": "$1",
+    "engine": {
+      "default": "WebKit"
+    }
+  },
+  {
     "regex": "NetFrontLifeBrowser(?:/(\\d+[.\\d]+))?",
     "name": "NetFront Life",
     "version": "$1",

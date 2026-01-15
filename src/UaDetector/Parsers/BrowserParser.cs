@@ -467,7 +467,10 @@ public sealed partial class BrowserParser : IBrowserParser
                 }.ToFrozenSet()
             },
             { BrowserNames.Konqueror, new[] { BrowserCode.Konqueror }.ToFrozenSet() },
-            { BrowserNames.NetFront, new[] { BrowserCode.NetFront }.ToFrozenSet() },
+            {
+                BrowserNames.NetFront,
+                new[] { BrowserCode.NetFront, BrowserCode.NintendoBrowser }.ToFrozenSet()
+            },
             { BrowserNames.NetSurf, new[] { BrowserCode.NetSurf }.ToFrozenSet() },
             {
                 BrowserNames.NokiaBrowser,

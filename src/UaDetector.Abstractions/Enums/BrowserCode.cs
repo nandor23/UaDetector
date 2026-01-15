@@ -709,4 +709,5 @@ public enum BrowserCode
     VcBrowserMiniPro = 704,
     NovaBrowser = 705,
     XPlayBrowser = 706,
+    NintendoBrowser = 707,
 }

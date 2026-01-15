@@ -709,4 +709,5 @@ public static class BrowserNames
     public const string VcBrowserMiniPro = "VC Browser Mini Pro";
     public const string NovaBrowser = "Nova Browser";
     public const string XPlayBrowser = "XPlay Browser";
+    public const string NintendoBrowser = "Nintendo Browser";
 }

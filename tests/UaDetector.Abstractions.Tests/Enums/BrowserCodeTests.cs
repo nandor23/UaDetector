@@ -728,6 +728,7 @@ public class BrowserCodeTests
             { BrowserCode.VcBrowserMiniPro, 704 },
             { BrowserCode.NovaBrowser, 705 },
             { BrowserCode.XPlayBrowser, 706 },
+            { BrowserCode.NintendoBrowser, 707 },
         };
 
         expectedValues.Count.ShouldBe(Enum.GetValues<BrowserCode>().Length);
