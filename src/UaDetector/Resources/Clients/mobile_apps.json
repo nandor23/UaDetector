@@ -116,6 +116,11 @@
     "name": "Google Go"
   },
   {
+    "regex": "NSTNWV(?:/([\\d.]+))?",
+    "name": "Google Go",
+    "version": "$1"
+  },
+  {
     "regex": "com\\.google\\.android\\.apps\\.photos",
     "name": "Google Photos"
   },
@@ -2873,6 +2878,21 @@
   {
     "regex": "Hulu/([\\d.]+)",
     "name": "Hulu",
+    "version": "$1"
+  },
+  {
+    "regex": "TeraBox/([\\d.]+)",
+    "name": "TeraBox",
+    "version": "$1"
+  },
+  {
+    "regex": "dubox;([\\d.]+);",
+    "name": "TeraBox",
+    "version": "$1"
+  },
+  {
+    "regex": "DeepSeek Chat/([\\d.]+)",
+    "name": "DeepSeek",
     "version": "$1"
   },
   {
