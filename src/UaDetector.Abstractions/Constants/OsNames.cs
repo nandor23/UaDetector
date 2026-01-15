@@ -191,4 +191,5 @@ public static class OsNames
     public const string KolibriOs = "KolibriOS";
     public const string OpenHarmony = "OpenHarmony";
     public const string SmartisanOs = "Smartisan OS";
+    public const string TitanOs = "Titan OS";
 }

@@ -210,6 +210,7 @@ public class OsCodeTests
             { OsCode.KolibriOs, 186 },
             { OsCode.OpenHarmony, 187 },
             { OsCode.SmartisanOs, 188 },
+            { OsCode.TitanOs, 189 },
         };
 
         expectedValues.Count.ShouldBe(Enum.GetValues<OsCode>().Length);
