@@ -6923,7 +6923,7 @@
     "os": {
       "name": "Mac",
       "code": 83,
-      "version": "26",
+      "version": "26.0",
       "family": "Mac"
     }
   },
@@ -7180,6 +7180,33 @@
       "name": "Java ME",
       "code": 63,
       "family": "Real-time OS"
+    }
+  },
+  {
+    "userAgent": "ArcMobile2/70582.2 CFNetwork/3860.400.1 Darwin/25.3.0",
+    "os": {
+      "name": "iOS",
+      "code": 182,
+      "version": "26.3",
+      "family": "iOS"
+    }
+  },
+  {
+    "userAgent": "NetworkingExtension/8623.2.2 CFNetwork/3860.400.1 Darwin/25.3.0",
+    "os": {
+      "name": "Mac",
+      "code": 83,
+      "version": "26.3",
+      "family": "Mac"
+    }
+  },
+  {
+    "userAgent": "TeraBox/4.9.3.1 CFNetwork/3860.100.1 Darwin/25.0.0",
+    "os": {
+      "name": "iOS",
+      "code": 182,
+      "version": "26.0",
+      "family": "iOS"
     }
   },
   {
