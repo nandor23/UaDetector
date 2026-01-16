@@ -203,6 +203,16 @@
     }
   },
   {
+    "regex": "Apache/",
+    "name": "Apache",
+    "category": 11,
+    "url": "https://www.apache.org/",
+    "producer": {
+      "name": "The Apache Software Foundation",
+      "url": "https://www.apache.org/foundation/"
+    }
+  },
+  {
     "regex": "Applebot-Extended",
     "name": "Applebot-Extended",
     "category": 18,
