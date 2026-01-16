@@ -396,6 +396,10 @@ public sealed partial class BrowserParser : IBrowserParser
                     BrowserCode.DduBrowser,
                     BrowserCode.PandaBrowser,
                     BrowserCode.Ifbrowser,
+                    BrowserCode.Blazer,
+                    BrowserCode.ClarioBrowser,
+                    BrowserCode.Comet,
+                    BrowserCode.FireSendBrowser,
                 }.ToFrozenSet()
             },
             {
