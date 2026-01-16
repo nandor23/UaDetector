@@ -1377,7 +1377,7 @@ public static class BrandNames
     public const string Ppds = "PPDS";
     public const string Pptv = "PPTV";
     public const string Premio = "Premio";
-    public const string Premier = "Premier";
+    public const string Premier = "PREMIER";
     public const string Prestigio = "Prestigio";
     public const string Primepad = "Primepad";
     public const string Prime = "PRIME";
@@ -2106,4 +2106,11 @@ public static class BrandNames
     public const string Turksat = "Türksat";
     public const string GTab = "G-Tab";
     public const string Suaat = "SUAAT";
+    public const string InnoHit = "Inno Hit";
+    public const string Fox = "FOX";
+    public const string Miia = "MIIA";
+    public const string PremierStar = "Premier Star";
+    public const string Sungate = "SUNGATE";
+    public const string Ssmart = "Ssmart";
+    public const string Zimmer = "Zimmer";
 }

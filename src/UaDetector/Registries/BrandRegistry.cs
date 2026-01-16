@@ -2133,6 +2133,13 @@ public static class BrandRegistry
         { BrandCode.Turksat, BrandNames.Turksat },
         { BrandCode.GTab, BrandNames.GTab },
         { BrandCode.Suaat, BrandNames.Suaat },
+        { BrandCode.InnoHit, BrandNames.InnoHit },
+        { BrandCode.Fox, BrandNames.Fox },
+        { BrandCode.Miia, BrandNames.Miia },
+        { BrandCode.PremierStar, BrandNames.PremierStar },
+        { BrandCode.Sungate, BrandNames.Sungate },
+        { BrandCode.Ssmart, BrandNames.Ssmart },
+        { BrandCode.Zimmer, BrandNames.Zimmer },
     }.ToFrozenDictionary();
 
     internal static readonly FrozenDictionary<string, BrandCode> BrandNameMappings =

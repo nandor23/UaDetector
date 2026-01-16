@@ -1,7 +1,7 @@
 [
   {
-    "brand": "Airties",
     "regex": "Airties",
+    "brand": "Airties",
     "type": 5,
     "modelVariants": [
       {
@@ -11,8 +11,8 @@
     ]
   },
   {
-    "brand": "ALDI NORD",
     "regex": "ALDINORD[;,)]",
+    "brand": "ALDI NORD",
     "type": 5,
     "modelVariants": [
       {
@@ -22,8 +22,8 @@
     ]
   },
   {
-    "brand": "ALDI SÜD",
     "regex": "ALDISUED[;,)]",
+    "brand": "ALDI SÜD",
     "type": 5,
     "modelVariants": [
       {
@@ -36,8 +36,8 @@
     ]
   },
   {
-    "brand": "Altech UEC",
     "regex": "Altech UEC",
+    "brand": "Altech UEC",
     "type": 5,
     "modelVariants": [
       {
@@ -47,18 +47,18 @@
     ]
   },
   {
-    "brand": "Altimo",
     "regex": "ALTIMO[;,]",
+    "brand": "Altimo",
     "type": 5
   },
   {
-    "brand": "Altus",
     "regex": "Altus[;,)]",
+    "brand": "Altus",
     "type": 5
   },
   {
-    "brand": "Amazon",
     "regex": "Amazon.+AMZ",
+    "brand": "Amazon",
     "type": 5,
     "modelVariants": [
       {
@@ -68,8 +68,8 @@
     ]
   },
   {
-    "brand": "andersson",
     "regex": "ANDERSSON[;,)]",
+    "brand": "andersson",
     "type": 5,
     "modelVariants": [
       {
@@ -79,8 +79,8 @@
     ]
   },
   {
-    "brand": "AOC",
     "regex": "AOC",
+    "brand": "AOC",
     "type": 5,
     "modelVariants": [
       {
@@ -94,8 +94,8 @@
     ]
   },
   {
-    "brand": "ARRIS",
     "regex": "ARRIS[;,)]",
+    "brand": "ARRIS",
     "type": 5,
     "modelVariants": [
       {
@@ -105,8 +105,8 @@
     ]
   },
   {
-    "brand": "Atlantic Electrics",
     "regex": "ATLANTIC[;,)]",
+    "brand": "Atlantic Electrics",
     "type": 5,
     "modelVariants": [
       {
@@ -116,8 +116,8 @@
     ]
   },
   {
-    "brand": "Atvio",
     "regex": "ATVIO",
+    "brand": "Atvio",
     "type": 5,
     "modelVariants": [
       {
@@ -127,19 +127,19 @@
     ]
   },
   {
+    "regex": "AWOX[;,)]",
     "brand": "AWOX",
-    "regex": "LGE/XianYou/AWOX",
     "type": 5,
     "modelVariants": [
       {
-        "regex": "LGE/XianYou/AWOX; ([a-z0-9]+);",
+        "regex": "LGE/[^/]+/AWOX; ([a-z0-9]+);",
         "name": "$1"
       }
     ]
   },
   {
-    "brand": "AYA",
     "regex": "AYA[;,)]",
+    "brand": "AYA",
     "type": 5,
     "modelVariants": [
       {
@@ -149,19 +149,19 @@
     ]
   },
   {
-    "brand": "BangOlufsen",
     "regex": "Bangolufsen",
+    "brand": "BangOlufsen",
     "type": 5,
     "model": "BeoVision"
   },
   {
-    "brand": "Beko",
     "regex": "Beko[;,)]",
+    "brand": "Beko",
     "type": 5
   },
   {
-    "brand": "Blaupunkt",
     "regex": "Blaupunkt_UMC[;,)]",
+    "brand": "Blaupunkt",
     "type": 5,
     "modelVariants": [
       {
@@ -171,10 +171,14 @@
     ]
   },
   {
-    "brand": "Botech",
     "regex": "Botech[;,)]",
+    "brand": "Botech",
     "type": 5,
     "modelVariants": [
+      {
+        "regex": "LGE/[^/]+/BOTECH; ([a-z0-9]+);",
+        "name": "$1"
+      },
       {
         "regex": "(ATV R[12])",
         "name": "$1"
@@ -182,8 +186,8 @@
     ]
   },
   {
-    "brand": "Bush",
     "regex": "BUSH[;,)]",
+    "brand": "Bush",
     "type": 5,
     "modelVariants": [
       {
@@ -193,8 +197,8 @@
     ]
   },
   {
-    "brand": "Cecotec",
     "regex": "CECOTEC[;,)]",
+    "brand": "Cecotec",
     "type": 5,
     "modelVariants": [
       {
@@ -204,13 +208,13 @@
     ]
   },
   {
-    "brand": "Celcus",
     "regex": "CELCUS[;,)]",
+    "brand": "Celcus",
     "type": 5
   },
   {
-    "brand": "Changhong",
     "regex": "Changhong",
+    "brand": "Changhong",
     "type": 5,
     "modelVariants": [
       {
@@ -220,8 +224,8 @@
     ]
   },
   {
-    "brand": "CLAYTON",
     "regex": "CLAYTON[;,)]",
+    "brand": "CLAYTON",
     "type": 5,
     "modelVariants": [
       {
@@ -231,8 +235,8 @@
     ]
   },
   {
-    "brand": "Continental Edison",
     "regex": "CONTINENTAL_EDI[;,)]",
+    "brand": "Continental Edison",
     "type": 5,
     "modelVariants": [
       {
@@ -242,8 +246,8 @@
     ]
   },
   {
-    "brand": "coocaa",
     "regex": "coocaa[;,)]",
+    "brand": "coocaa",
     "type": 5,
     "modelVariants": [
       {
@@ -253,14 +257,14 @@
     ]
   },
   {
-    "brand": "CreNova",
     "regex": "CreNova",
+    "brand": "CreNova",
     "type": 5,
     "model": "CNV001"
   },
   {
-    "brand": "Crown",
     "regex": "CROWN[;,)]",
+    "brand": "Crown",
     "type": 5,
     "modelVariants": [
       {
@@ -270,8 +274,8 @@
     ]
   },
   {
-    "brand": "Cultraview",
     "regex": "Cultraview690[;,]",
+    "brand": "Cultraview",
     "type": 5,
     "modelVariants": [
       {
@@ -281,8 +285,8 @@
     ]
   },
   {
-    "brand": "Daewoo",
     "regex": "Daewoo[;,)]",
+    "brand": "Daewoo",
     "type": 5,
     "modelVariants": [
       {
@@ -292,8 +296,8 @@
     ]
   },
   {
-    "brand": "Digihome",
     "regex": "DIGIHOME[;,)]",
+    "brand": "Digihome",
     "type": 5,
     "modelVariants": [
       {
@@ -303,8 +307,8 @@
     ]
   },
   {
-    "brand": "DIKOM",
     "regex": "DIKOM[;,)]",
+    "brand": "DIKOM",
     "type": 5,
     "modelVariants": [
       {
@@ -314,8 +318,8 @@
     ]
   },
   {
-    "brand": "DIORA",
     "regex": "DIORA[;,)]",
+    "brand": "DIORA",
     "type": 5,
     "modelVariants": [
       {
@@ -325,14 +329,14 @@
     ]
   },
   {
-    "brand": "DMM",
     "regex": "DMM",
+    "brand": "DMM",
     "type": 5,
     "model": "Dreambox"
   },
   {
-    "brand": "EGL",
     "regex": "EGL[;,)]",
+    "brand": "EGL",
     "type": 5,
     "modelVariants": [
       {
@@ -342,8 +346,8 @@
     ]
   },
   {
-    "brand": "Elektroland",
     "regex": "ELEKTROLAND[;,)]",
+    "brand": "Elektroland",
     "type": 5,
     "modelVariants": [
       {
@@ -353,8 +357,8 @@
     ]
   },
   {
-    "brand": "ELECTRONIA",
     "regex": "ELECTRONIA[;,)]",
+    "brand": "ELECTRONIA",
     "type": 5,
     "modelVariants": [
       {
@@ -364,8 +368,8 @@
     ]
   },
   {
-    "brand": "elit",
     "regex": "ELIT[;,)]",
+    "brand": "elit",
     "type": 5,
     "modelVariants": [
       {
@@ -375,8 +379,8 @@
     ]
   },
   {
-    "brand": "ENDURO",
     "regex": "ENDURO[;,)]",
+    "brand": "ENDURO",
     "type": 5,
     "modelVariants": [
       {
@@ -386,8 +390,8 @@
     ]
   },
   {
-    "brand": "Essentielb",
     "regex": "ESSENTIELB[;,)]",
+    "brand": "Essentielb",
     "type": 5,
     "modelVariants": [
       {
@@ -397,8 +401,8 @@
     ]
   },
   {
-    "brand": "Express LUCK",
     "regex": "Expressluck[;,)]",
+    "brand": "Express LUCK",
     "type": 5,
     "modelVariants": [
       {
@@ -408,8 +412,8 @@
     ]
   },
   {
-    "brand": "FINIX",
     "regex": "FINIX[;,)]",
+    "brand": "FINIX",
     "type": 5,
     "modelVariants": [
       {
@@ -419,8 +423,8 @@
     ]
   },
   {
-    "brand": "Finlux",
     "regex": "FINLUX[;,)]",
+    "brand": "Finlux",
     "type": 5,
     "modelVariants": [
       {
@@ -430,13 +434,13 @@
     ]
   },
   {
-    "brand": "FITCO",
     "regex": "FITCO, ([a-z0-9_ -]+), (?:wired|wireless)",
+    "brand": "FITCO",
     "type": 5
   },
   {
-    "brand": "F&U",
     "regex": "FU[;,)]",
+    "brand": "F&U",
     "type": 5,
     "modelVariants": [
       {
@@ -446,8 +450,8 @@
     ]
   },
   {
-    "brand": "Fuego",
     "regex": "FUEGO[;,)]",
+    "brand": "Fuego",
     "type": 5,
     "modelVariants": [
       {
@@ -457,8 +461,8 @@
     ]
   },
   {
-    "brand": "FUJICOM",
     "regex": "FUJICOM[;,)]",
+    "brand": "FUJICOM",
     "type": 5,
     "modelVariants": [
       {
@@ -468,13 +472,13 @@
     ]
   },
   {
-    "brand": "Funai",
     "regex": "FUNAI[;,)]",
+    "brand": "Funai",
     "type": 5
   },
   {
-    "brand": "GN Electronics",
     "regex": "GN_ELECTRONICS[;,)]",
+    "brand": "GN Electronics",
     "type": 5,
     "modelVariants": [
       {
@@ -484,8 +488,8 @@
     ]
   },
   {
-    "brand": "GoGEN",
     "regex": "GOGEN[;,)]",
+    "brand": "GoGEN",
     "type": 5,
     "modelVariants": [
       {
@@ -495,8 +499,8 @@
     ]
   },
   {
-    "brand": "Graetz",
     "regex": "GRAETZ[;,)]",
+    "brand": "Graetz",
     "type": 5,
     "modelVariants": [
       {
@@ -506,8 +510,8 @@
     ]
   },
   {
-    "brand": "Grundig",
     "regex": "(OWB|(?:Amazon.+)?Grundig)",
+    "brand": "Grundig",
     "type": 5,
     "modelVariants": [
       {
@@ -521,8 +525,8 @@
     ]
   },
   {
-    "brand": "Haier",
     "regex": "(?:HHW_)?HAIER",
+    "brand": "Haier",
     "type": 5,
     "modelVariants": [
       {
@@ -532,8 +536,8 @@
     ]
   },
   {
-    "brand": "Hanseatic",
     "regex": "HANSEATIC[;,)]",
+    "brand": "Hanseatic",
     "type": 5,
     "modelVariants": [
       {
@@ -543,8 +547,8 @@
     ]
   },
   {
-    "brand": "Hi-Level",
     "regex": "HI-LEVEL[;,)]",
+    "brand": "Hi-Level",
     "type": 5,
     "modelVariants": [
       {
@@ -554,8 +558,8 @@
     ]
   },
   {
-    "brand": "HIGH1ONE",
     "regex": "HIGH_ONE[;,)]",
+    "brand": "HIGH1ONE",
     "type": 5,
     "modelVariants": [
       {
@@ -565,8 +569,8 @@
     ]
   },
   {
-    "brand": "Hisense",
     "regex": "Hisense|Eurofins_Digital_Testing",
+    "brand": "Hisense",
     "type": 5,
     "modelVariants": [
       {
@@ -636,8 +640,8 @@
     ]
   },
   {
-    "brand": "Hitachi",
     "regex": "Hitachi[;,)]",
+    "brand": "Hitachi",
     "type": 5,
     "modelVariants": [
       {
@@ -651,8 +655,8 @@
     ]
   },
   {
-    "brand": "HOFER",
     "regex": "HOFER[;,)]",
+    "brand": "HOFER",
     "type": 5,
     "modelVariants": [
       {
@@ -662,8 +666,8 @@
     ]
   },
   {
-    "brand": "Horizon",
     "regex": "HORIZON[;,)]",
+    "brand": "Horizon",
     "type": 5,
     "modelVariants": [
       {
@@ -673,18 +677,18 @@
     ]
   },
   {
-    "brand": "HOTACK",
     "regex": "HOTACK",
+    "brand": "HOTACK",
     "type": 13
   },
   {
-    "brand": "Hotel",
     "regex": "HOTEL[;,)]",
+    "brand": "Hotel",
     "type": 5
   },
   {
-    "brand": "Humax",
     "regex": "Humax|hdr1000s",
+    "brand": "Humax",
     "type": 5,
     "modelVariants": [
       {
@@ -718,8 +722,8 @@
     ]
   },
   {
-    "brand": "HUMElab",
     "regex": "HUMELAB[;,)]",
+    "brand": "HUMElab",
     "type": 5,
     "modelVariants": [
       {
@@ -729,10 +733,14 @@
     ]
   },
   {
-    "brand": "Hyundai",
     "regex": "HYUNDAI[;,)]",
+    "brand": "Hyundai",
     "type": 5,
     "modelVariants": [
+      {
+        "regex": "LGE/[^/]+/HYUNDAI; ([a-z0-9]+);",
+        "name": "$1"
+      },
       {
         "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
         "name": "Smart TV ($1)"
@@ -740,13 +748,13 @@
     ]
   },
   {
-    "brand": "Ikea",
     "regex": "Ikea",
+    "brand": "Ikea",
     "type": 5
   },
   {
-    "brand": "Intek",
     "regex": "Intek",
+    "brand": "Intek",
     "type": 5,
     "modelVariants": [
       {
@@ -756,8 +764,8 @@
     ]
   },
   {
-    "brand": "Inverto",
     "regex": "Inverto",
+    "brand": "Inverto",
     "type": 5,
     "modelVariants": [
       {
@@ -771,13 +779,17 @@
     ]
   },
   {
-    "brand": "JVC",
     "regex": "AFTSO001|JVC[;,)]",
+    "brand": "JVC",
     "type": 5,
     "modelVariants": [
       {
         "regex": "AFTSO001",
         "name": "4K (2019)"
+      },
+      {
+        "regex": "LGE/[^/]+/JVC; ([a-z0-9-]+);",
+        "name": "$1"
       },
       {
         "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
@@ -786,8 +798,8 @@
     ]
   },
   {
-    "brand": "Kalley",
     "regex": "KALLEY[;,)]",
+    "brand": "Kalley",
     "type": 5,
     "modelVariants": [
       {
@@ -797,8 +809,8 @@
     ]
   },
   {
-    "brand": "Kendo",
     "regex": "KENDO[;,)]",
+    "brand": "Kendo",
     "type": 5,
     "modelVariants": [
       {
@@ -808,13 +820,13 @@
     ]
   },
   {
-    "brand": "KUBO",
     "regex": "KUBO[;,)]",
+    "brand": "KUBO",
     "type": 5
   },
   {
-    "brand": "Laurus",
     "regex": "LAURUS[;,)]",
+    "brand": "Laurus",
     "type": 5,
     "modelVariants": [
       {
@@ -824,8 +836,8 @@
     ]
   },
   {
-    "brand": "Lenco",
     "regex": "LENCO[;,)]",
+    "brand": "Lenco",
     "type": 5,
     "modelVariants": [
       {
@@ -835,8 +847,8 @@
     ]
   },
   {
-    "brand": "Myros",
     "regex": "MYROS[;,)]",
+    "brand": "Myros",
     "type": 5,
     "modelVariants": [
       {
@@ -846,8 +858,8 @@
     ]
   },
   {
-    "brand": "Navon",
     "regex": "NAVON[;,)]",
+    "brand": "Navon",
     "type": 5,
     "modelVariants": [
       {
@@ -857,8 +869,8 @@
     ]
   },
   {
-    "brand": "NILAIT",
     "regex": "NILAIT[;,)]",
+    "brand": "NILAIT",
     "type": 5,
     "modelVariants": [
       {
@@ -868,8 +880,19 @@
     ]
   },
   {
-    "brand": "Aiwa",
+    "regex": "ALLSTAR[;,)]",
+    "brand": "All Star",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "LGE/[^/]+/ALLSTAR; ([a-z0-9]+);",
+        "name": "$1"
+      }
+    ]
+  },
+  {
     "regex": "LGE/SQY/RCA",
+    "brand": "Aiwa",
     "type": 5,
     "modelVariants": [
       {
@@ -879,30 +902,34 @@
     ]
   },
   {
+    "regex": "AXEN[;,)]",
     "brand": "AXEN",
-    "regex": "LGE/ATMACA/AXEN",
     "type": 5,
     "modelVariants": [
       {
-        "regex": "LGE/ATMACA/AXEN; ([a-z0-9]+)-",
+        "regex": "LGE/[^/]+/AXEN; ([a-z0-9]+)-",
         "name": "$1"
       }
     ]
   },
   {
+    "regex": "DYON[;,)]",
     "brand": "Dyon",
-    "regex": "LGE/KONKA/DYON",
     "type": 5,
     "modelVariants": [
       {
         "regex": "SMART-32-X-EOS",
         "name": "Smart 32 X-EOS"
+      },
+      {
+        "regex": "LGE/[^/]+/DYON; ([a-z0-9]+)",
+        "name": "$1"
       }
     ]
   },
   {
-    "brand": "EAS Electric",
     "regex": "EAS_ELECTRIC[;,)]",
+    "brand": "EAS Electric",
     "type": 5,
     "modelVariants": [
       {
@@ -912,8 +939,8 @@
     ]
   },
   {
-    "brand": "Edenwood",
     "regex": "EDENWOOD[;,)]",
+    "brand": "Edenwood",
     "type": 5,
     "modelVariants": [
       {
@@ -923,45 +950,93 @@
     ]
   },
   {
+    "regex": "ONVO[;,)]",
     "brand": "ONVO",
-    "regex": "(?:SILICONPLAYER|XianYou)/ONVO",
     "type": 5,
     "modelVariants": [
       {
-        "regex": "(?:SILICONPLAYER|XianYou)/ONVO; ([a-z0-9]+);",
+        "regex": "LGE/[^/]+/ONVO; ([a-z0-9]+);",
         "name": "$1"
       }
     ]
   },
   {
+    "regex": "DIJITSU[;,)]",
     "brand": "DIJITSU",
-    "regex": "LGE/SILICONPLAYER/DIJITSU",
     "type": 5,
     "modelVariants": [
       {
-        "regex": "LGE/SILICONPLAYER/DIJITSU; ([a-z0-9]+);",
+        "regex": "LGE/[^/]+/DIJITSU; ([a-z0-9]+);",
         "name": "$1"
       }
     ]
   },
   {
+    "regex": "FOX[;,)]",
+    "brand": "FOX",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "LGE/[^/]+/FOX; ([a-z0-9-]+);",
+        "name": "$1"
+      }
+    ]
+  },
+  {
+    "regex": "INNOHIT[;,)]",
+    "brand": "Inno Hit",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "LGE/[^/]+/INNOHIT; ([a-z0-9-]+);",
+        "name": "$1"
+      }
+    ]
+  },
+  {
+    "regex": "SIMFER[;,)]",
     "brand": "simfer",
-    "regex": "LGE/WALTON/SIMFER",
     "type": 5,
     "modelVariants": [
       {
-        "regex": "LGE/WALTON/SIMFER; ([a-z0-9]+);",
+        "regex": "LGE/[^/]+/SIMFER; ([a-z0-9]+);",
         "name": "$1"
       }
     ]
   },
   {
-    "brand": "Sunny",
-    "regex": "(?:ATMACA|XianYou)/SUNNY",
+    "regex": "SMARTTECH[;,)]",
+    "brand": "Smart Tech",
     "type": 5,
     "modelVariants": [
       {
-        "regex": "(?:ATMACA|XianYou)/SUNNY; ([a-z0-9]+)-",
+        "regex": "LGE/[^/]+/SMARTTECH; ([a-z0-9]+);",
+        "name": "$1"
+      }
+    ]
+  },
+  {
+    "regex": "STILEVS[;,)]",
+    "brand": "Stilevs",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "LGE/[^/]+/STILEVS; ([a-z0-9]+);",
+        "name": "$1"
+      }
+    ]
+  },
+  {
+    "regex": "SUNNY[;,)]|SN55FMN243-0246",
+    "brand": "Sunny",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "(SN55FMN243-0246)",
+        "name": "$1"
+      },
+      {
+        "regex": "(?:ATMACA|XianYou)/SUNNY; (?!\\d{2}AT\\d{3})([a-z0-9-]+);",
         "name": "$1"
       },
       {
@@ -975,8 +1050,8 @@
     ]
   },
   {
-    "brand": "Kydos",
     "regex": "KYDOS[;,)]",
+    "brand": "Kydos",
     "type": 5,
     "modelVariants": [
       {
@@ -986,19 +1061,85 @@
     ]
   },
   {
+    "regex": "SKYTECH[;,)]",
     "brand": "Skytech",
-    "regex": "LGE/WALTON/SKYTECH",
     "type": 5,
     "modelVariants": [
       {
-        "regex": "LGE/WALTON/SKYTECH; ([a-z0-9-]+);",
+        "regex": "LGE/[^/]+/SKYTECH; ([a-z0-9-]+);",
         "name": "$1"
       }
     ]
   },
   {
+    "regex": "SSMART[;,)]",
+    "brand": "Ssmart",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "LGE/[^/]+/SSMART; ([a-z0-9-]+);",
+        "name": "$1"
+      }
+    ]
+  },
+  {
+    "regex": "SUNGATE[;,)]",
+    "brand": "SUNGATE",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "LGE/[^/]+/SUNGATE; ([a-z0-9-]+);",
+        "name": "$1"
+      }
+    ]
+  },
+  {
+    "regex": "TAUBE[;,)]",
+    "brand": "TAUBE",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "LGE/[^/]+/TAUBE; ([a-z0-9]+);",
+        "name": "$1"
+      }
+    ]
+  },
+  {
+    "regex": "PREO[;,)]",
+    "brand": "Teknosa",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "LGE/[^/]+/PREO; ([a-z0-9-]+);",
+        "name": "Preo $1"
+      }
+    ]
+  },
+  {
+    "regex": "WESTON[;,)]",
+    "brand": "Weston",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "LGE/[^/]+/WESTON; ([a-z0-9]+);",
+        "name": "$1"
+      }
+    ]
+  },
+  {
+    "regex": "ZIMMER[;,)]",
+    "brand": "Zimmer",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "LGE/[^/]+/ZIMMER; ([a-z0-9-]+);",
+        "name": "$1"
+      }
+    ]
+  },
+  {
+    "regex": "LGE ?;|43UN68006LA",
     "brand": "LG",
-    "regex": "LGE ?;",
     "type": 5,
     "modelVariants": [
       {
@@ -1008,6 +1149,10 @@
       {
         "regex": "43LJ614V-ZA",
         "name": "43LJ614V-ZA"
+      },
+      {
+        "regex": "43UN68006LA",
+        "name": "43UN68006LA"
       },
       {
         "regex": "55SK850V-ZA",
@@ -1076,8 +1221,8 @@
     ]
   },
   {
-    "brand": "Lifemaxx",
     "regex": "Lifemaxx[;,)]",
+    "brand": "Lifemaxx",
     "type": 5,
     "modelVariants": [
       {
@@ -1087,8 +1232,8 @@
     ]
   },
   {
-    "brand": "Linsar",
     "regex": "LINSAR[;,)]",
+    "brand": "Linsar",
     "type": 5,
     "modelVariants": [
       {
@@ -1098,8 +1243,8 @@
     ]
   },
   {
-    "brand": "Loewe",
     "regex": "Loewe",
+    "brand": "Loewe",
     "type": 5,
     "modelVariants": [
       {
@@ -1117,8 +1262,8 @@
     ]
   },
   {
-    "brand": "Logik",
     "regex": "DIXONS-LOGIK[;,)]",
+    "brand": "Logik",
     "type": 5,
     "modelVariants": [
       {
@@ -1128,8 +1273,8 @@
     ]
   },
   {
-    "brand": "Luxor",
     "regex": "LUXOR[;,)]",
+    "brand": "Luxor",
     "type": 5,
     "modelVariants": [
       {
@@ -1139,8 +1284,8 @@
     ]
   },
   {
-    "brand": "Manhattan",
     "regex": "Manhattan",
+    "brand": "Manhattan",
     "type": 5,
     "modelVariants": [
       {
@@ -1150,8 +1295,8 @@
     ]
   },
   {
-    "brand": "Medion",
     "regex": "Medion",
+    "brand": "Medion",
     "type": 5,
     "modelVariants": [
       {
@@ -1164,8 +1309,8 @@
     ]
   },
   {
-    "brand": "MEGA VISION",
     "regex": "MEGA_VISION[;,)]",
+    "brand": "MEGA VISION",
     "type": 5,
     "modelVariants": [
       {
@@ -1175,8 +1320,19 @@
     ]
   },
   {
-    "brand": "Miray",
+    "regex": "MIIA[;,)]",
+    "brand": "MIIA",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "LGE/[^/]+/MIIA; (MT[a-z0-9]+);",
+        "name": "$1"
+      }
+    ]
+  },
+  {
     "regex": "MIRAY",
+    "brand": "Miray",
     "type": 5,
     "modelVariants": [
       {
@@ -1186,8 +1342,8 @@
     ]
   },
   {
-    "brand": "Mitchell & Brown",
     "regex": "MITCHELL_BROWN[;,)]",
+    "brand": "Mitchell & Brown",
     "type": 5,
     "modelVariants": [
       {
@@ -1197,8 +1353,8 @@
     ]
   },
   {
-    "brand": "MStar",
     "regex": "MStar[;,)]",
+    "brand": "MStar",
     "type": 5,
     "modelVariants": [
       {
@@ -1208,8 +1364,8 @@
     ]
   },
   {
-    "brand": "MTC",
     "regex": "MTC[;,)]",
+    "brand": "MTC",
     "type": 5,
     "modelVariants": [
       {
@@ -1219,8 +1375,8 @@
     ]
   },
   {
-    "brand": "NABO",
     "regex": "NABO[;,)]",
+    "brand": "NABO",
     "type": 5,
     "modelVariants": [
       {
@@ -1230,13 +1386,13 @@
     ]
   },
   {
-    "brand": "Neo",
     "regex": "NEO, ([a-z0-9_ -]+), (?:wired|wireless)",
+    "brand": "Neo",
     "type": 5
   },
   {
-    "brand": "NEXON",
     "regex": "NEXON[;,)]",
+    "brand": "NEXON",
     "type": 5,
     "modelVariants": [
       {
@@ -1246,10 +1402,14 @@
     ]
   },
   {
-    "brand": "NEXT",
     "regex": "NEXT[;,)]",
+    "brand": "Next & NextStar",
     "type": 5,
     "modelVariants": [
+      {
+        "regex": "LGE/[^/]+/NEXT; ([a-z0-9-]+);",
+        "name": "$1"
+      },
       {
         "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
         "name": "Smart TV ($1)"
@@ -1257,8 +1417,8 @@
     ]
   },
   {
-    "brand": "Nokia",
     "regex": "NOKIA[;,)]",
+    "brand": "Nokia",
     "type": 5,
     "modelVariants": [
       {
@@ -1268,8 +1428,8 @@
     ]
   },
   {
-    "brand": "Nordmende",
     "regex": "NORDMENDE[;,)]",
+    "brand": "Nordmende",
     "type": 5,
     "modelVariants": [
       {
@@ -1279,8 +1439,8 @@
     ]
   },
   {
-    "brand": "Metz",
     "regex": "Metz",
+    "brand": "Metz",
     "type": 5,
     "modelVariants": [
       {
@@ -1290,8 +1450,8 @@
     ]
   },
   {
-    "brand": "NORMANDE",
     "regex": "NORMANDE[;,)]",
+    "brand": "NORMANDE",
     "type": 5,
     "modelVariants": [
       {
@@ -1301,8 +1461,8 @@
     ]
   },
   {
-    "brand": "OCEANIC",
     "regex": "OCEANIC[;,)]",
+    "brand": "OCEANIC",
     "type": 5,
     "modelVariants": [
       {
@@ -1312,8 +1472,8 @@
     ]
   },
   {
-    "brand": "ok.",
     "regex": "OK[;,)]",
+    "brand": "ok.",
     "type": 5,
     "modelVariants": [
       {
@@ -1323,8 +1483,8 @@
     ]
   },
   {
-    "brand": "Orava",
     "regex": "ORAVA[;,)]",
+    "brand": "Orava",
     "type": 5,
     "modelVariants": [
       {
@@ -1334,8 +1494,8 @@
     ]
   },
   {
-    "brand": "Panasonic",
     "regex": "Panasonic",
+    "brand": "Panasonic",
     "type": 5,
     "modelVariants": [
       {
@@ -1373,13 +1533,19 @@
     ]
   },
   {
-    "brand": "PEAQ",
     "regex": "PEAQ",
-    "type": 5
+    "brand": "PEAQ",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "LGE/[^/]+/PEAQ; ([a-z0-9-]+);",
+        "name": "$1"
+      }
+    ]
   },
   {
-    "brand": "TCL SCBC",
     "regex": "SCBC[;,)]|_TV_[A-Z0-9_]+_TCL_SCBC",
+    "brand": "TCL SCBC",
     "type": 5,
     "modelVariants": [
       {
@@ -1397,14 +1563,14 @@
     ]
   },
   {
-    "brand": "PPDS",
     "regex": "Philips.+([0-9]{2}H[FHOU][HKLST][0-9]{4}[^),;]+)",
+    "brand": "PPDS",
     "type": 5,
     "model": "$1"
   },
   {
-    "brand": "Philips",
     "regex": "(?:Philips|TPVision)|NETTV/",
+    "brand": "Philips",
     "type": 5,
     "modelVariants": [
       {
@@ -1418,13 +1584,24 @@
     ]
   },
   {
-    "brand": "Polaroid",
     "regex": "POLAROID[;,)]",
+    "brand": "Polaroid",
     "type": 5
   },
   {
-    "brand": "PROFiLO",
+    "regex": "PREMIER[;,)]",
+    "brand": "PREMIER",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "LGE/[^/]+/PREMIER; ([a-z0-9]+);",
+        "name": "$1"
+      }
+    ]
+  },
+  {
     "regex": "PROFILO[;,)]",
+    "brand": "PROFiLO",
     "type": 5,
     "modelVariants": [
       {
@@ -1438,8 +1615,8 @@
     ]
   },
   {
-    "brand": "PROSONIC",
     "regex": "PROSONIC[;,)]",
+    "brand": "PROSONIC",
     "type": 5,
     "modelVariants": [
       {
@@ -1449,8 +1626,8 @@
     ]
   },
   {
-    "brand": "Qilive",
     "regex": "QILIVE[;,)]",
+    "brand": "Qilive",
     "type": 5,
     "modelVariants": [
       {
@@ -1460,8 +1637,8 @@
     ]
   },
   {
-    "brand": "RCA Tablets",
     "regex": "RCA;",
+    "brand": "RCA Tablets",
     "type": 5,
     "modelVariants": [
       {
@@ -1471,8 +1648,8 @@
     ]
   },
   {
-    "brand": "REGAL",
     "regex": "REGAL[;,)]",
+    "brand": "REGAL",
     "type": 5,
     "modelVariants": [
       {
@@ -1482,8 +1659,8 @@
     ]
   },
   {
-    "brand": "Saba",
     "regex": "Saba[;,)]",
+    "brand": "Saba",
     "type": 5,
     "modelVariants": [
       {
@@ -1493,8 +1670,8 @@
     ]
   },
   {
-    "brand": "Salora",
     "regex": "Salora(?:_cx)?[;,)]",
+    "brand": "Salora",
     "type": 5,
     "modelVariants": [
       {
@@ -1504,8 +1681,8 @@
     ]
   },
   {
-    "brand": "Samsung",
     "regex": "Samsung|Maple_2011",
+    "brand": "Samsung",
     "type": 5,
     "modelVariants": [
       {
@@ -1523,8 +1700,8 @@
     ]
   },
   {
-    "brand": "SCHAUB LORENZ",
     "regex": "SCHAUB_LORENZ[;,)]",
+    "brand": "SCHAUB LORENZ",
     "type": 5,
     "modelVariants": [
       {
@@ -1534,8 +1711,8 @@
     ]
   },
   {
-    "brand": "SCHONTECH",
     "regex": "SCHONTECH[;,)]",
+    "brand": "SCHONTECH",
     "type": 5,
     "modelVariants": [
       {
@@ -1545,8 +1722,8 @@
     ]
   },
   {
-    "brand": "SEG",
     "regex": "SEG[;,)]",
+    "brand": "SEG",
     "type": 5,
     "modelVariants": [
       {
@@ -1556,8 +1733,8 @@
     ]
   },
   {
-    "brand": "SEHMAX",
     "regex": "SEHMAX[;,)]",
+    "brand": "SEHMAX",
     "type": 5,
     "modelVariants": [
       {
@@ -1567,8 +1744,8 @@
     ]
   },
   {
-    "brand": "Selevision",
     "regex": "Selevision",
+    "brand": "Selevision",
     "type": 5,
     "modelVariants": [
       {
@@ -1582,8 +1759,8 @@
     ]
   },
   {
-    "brand": "Sharp",
     "regex": "(?:UMC-)?Sharp",
+    "brand": "Sharp",
     "type": 5,
     "modelVariants": [
       {
@@ -1624,8 +1801,8 @@
     ]
   },
   {
-    "brand": "Silva Schneider",
     "regex": "SILVA_SCHNEIDER[;,)]",
+    "brand": "Silva Schneider",
     "type": 5,
     "modelVariants": [
       {
@@ -1635,8 +1812,8 @@
     ]
   },
   {
-    "brand": "Skyworth",
     "regex": "Sky_?worth|SKW690|SWTV[;,)]",
+    "brand": "Skyworth",
     "type": 5,
     "modelVariants": [
       {
@@ -1654,8 +1831,8 @@
     ]
   },
   {
-    "brand": "Smart Electronic",
     "regex": "Smart[;,)]",
+    "brand": "Smart Electronic",
     "type": 5,
     "modelVariants": [
       {
@@ -1669,13 +1846,24 @@
     ]
   },
   {
-    "brand": "Solas",
+    "regex": "SCHNEIDER[;,)]",
+    "brand": "Schneider",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "LGE/[^/]+/SCHNEIDER; ([a-z0-9-]+);",
+        "name": "$1"
+      }
+    ]
+  },
+  {
     "regex": "SOLAS[;,]",
+    "brand": "Solas",
     "type": 5
   },
   {
-    "brand": "Sony",
     "regex": "Sony",
+    "brand": "Sony",
     "type": 5,
     "modelVariants": [
       {
@@ -1705,13 +1893,13 @@
     ]
   },
   {
-    "brand": "Star-Light",
     "regex": "STAR LIGHT[;,)]",
+    "brand": "Star-Light",
     "type": 5
   },
   {
-    "brand": "SULPICE TV",
     "regex": "SULPICE_TV[;,)]",
+    "brand": "SULPICE TV",
     "type": 5,
     "modelVariants": [
       {
@@ -1721,8 +1909,8 @@
     ]
   },
   {
-    "brand": "TALBERG",
     "regex": "TALBERG[;,)]",
+    "brand": "TALBERG",
     "type": 5,
     "modelVariants": [
       {
@@ -1732,8 +1920,8 @@
     ]
   },
   {
-    "brand": "TD Systems",
     "regex": "TDSystems[;,)]",
+    "brand": "TD Systems",
     "type": 5,
     "modelVariants": [
       {
@@ -1743,8 +1931,8 @@
     ]
   },
   {
-    "brand": "Technicolor",
     "regex": "Technicolor",
+    "brand": "Technicolor",
     "type": 5,
     "modelVariants": [
       {
@@ -1754,8 +1942,8 @@
     ]
   },
   {
-    "brand": "Technika",
     "regex": "TECHNIKA[;,)]",
+    "brand": "Technika",
     "type": 5,
     "modelVariants": [
       {
@@ -1765,8 +1953,8 @@
     ]
   },
   {
-    "brand": "TechniSat",
     "regex": "TechniSat",
+    "brand": "TechniSat",
     "type": 5,
     "modelVariants": [
       {
@@ -1780,8 +1968,8 @@
     ]
   },
   {
-    "brand": "TechnoTrend",
     "regex": "TechnoTrend",
+    "brand": "TechnoTrend",
     "type": 5,
     "modelVariants": [
       {
@@ -1791,8 +1979,8 @@
     ]
   },
   {
-    "brand": "Techwood",
     "regex": "Techwood[;,)]",
+    "brand": "Techwood",
     "type": 5,
     "modelVariants": [
       {
@@ -1802,8 +1990,8 @@
     ]
   },
   {
-    "brand": "Telefunken",
     "regex": "Telefunken",
+    "brand": "Telefunken",
     "type": 5,
     "modelVariants": [
       {
@@ -1813,8 +2001,8 @@
     ]
   },
   {
-    "brand": "TCL",
     "regex": "(?:Amazon.+)?TCL",
+    "brand": "TCL",
     "type": 5,
     "modelVariants": [
       {
@@ -1832,8 +2020,8 @@
     ]
   },
   {
-    "brand": "Thomson",
     "regex": "THOMSON[,]?|THOM",
+    "brand": "Thomson",
     "type": 5,
     "modelVariants": [
       {
@@ -1867,8 +2055,8 @@
     ]
   },
   {
-    "brand": "TOKYO",
     "regex": "TOKYO[;,)]",
+    "brand": "TOKYO",
     "type": 5,
     "modelVariants": [
       {
@@ -1878,8 +2066,8 @@
     ]
   },
   {
-    "brand": "TUCSON",
     "regex": "TUCSON[;,)]",
+    "brand": "TUCSON",
     "type": 5,
     "modelVariants": [
       {
@@ -1889,8 +2077,8 @@
     ]
   },
   {
-    "brand": "Turbo-X",
     "regex": "TURBO-?X[;,)]",
+    "brand": "Turbo-X",
     "type": 5,
     "modelVariants": [
       {
@@ -1900,8 +2088,8 @@
     ]
   },
   {
-    "brand": "Top-Tech",
     "regex": "Toptech690[;,]",
+    "brand": "Top-Tech",
     "type": 5,
     "modelVariants": [
       {
@@ -1911,8 +2099,8 @@
     ]
   },
   {
-    "brand": "Toshiba",
     "regex": "(?:Amazon.+)?Toshiba",
+    "brand": "Toshiba",
     "type": 5,
     "modelVariants": [
       {
@@ -1934,8 +2122,8 @@
     ]
   },
   {
-    "brand": "Tsinghua Tongfang",
     "regex": "THTF_CVTE[;,)]",
+    "brand": "Tsinghua Tongfang",
     "type": 5,
     "modelVariants": [
       {
@@ -1945,8 +2133,8 @@
     ]
   },
   {
-    "brand": "UNITED",
     "regex": "UNITED[;,)]",
+    "brand": "UNITED",
     "type": 5,
     "modelVariants": [
       {
@@ -1956,8 +2144,8 @@
     ]
   },
   {
-    "brand": "VANGUARD",
     "regex": "VANGUARD[;,)]",
+    "brand": "VANGUARD",
     "type": 5,
     "modelVariants": [
       {
@@ -1967,8 +2155,8 @@
     ]
   },
   {
-    "brand": "Videoweb",
     "regex": "videoweb|tv2n",
+    "brand": "Videoweb",
     "type": 5,
     "modelVariants": [
       {
@@ -1982,8 +2170,8 @@
     ]
   },
   {
-    "brand": "Visitech",
     "regex": "VISITECH[;,)]",
+    "brand": "Visitech",
     "type": 5,
     "modelVariants": [
       {
@@ -1993,8 +2181,8 @@
     ]
   },
   {
-    "brand": "VORTEX (RO)",
     "regex": "VORTEX[;,)]",
+    "brand": "VORTEX (RO)",
     "type": 5,
     "modelVariants": [
       {
@@ -2004,8 +2192,8 @@
     ]
   },
   {
-    "brand": "VOX",
     "regex": "VOX[;,)]",
+    "brand": "VOX",
     "type": 5,
     "modelVariants": [
       {
@@ -2015,8 +2203,8 @@
     ]
   },
   {
-    "brand": "Walker",
     "regex": "WALKER[;,)]",
+    "brand": "Walker",
     "type": 5,
     "modelVariants": [
       {
@@ -2026,8 +2214,8 @@
     ]
   },
   {
-    "brand": "Waltham",
     "regex": "WALTHAM[;,)]",
+    "brand": "Waltham",
     "type": 5,
     "modelVariants": [
       {
@@ -2037,8 +2225,8 @@
     ]
   },
   {
-    "brand": "We. by Loewe.",
     "regex": "WeByLoewe[;,)]",
+    "brand": "We. by Loewe.",
     "type": 5,
     "modelVariants": [
       {
@@ -2056,8 +2244,8 @@
     ]
   },
   {
-    "brand": "WELLINGTON",
     "regex": "WELLINGTON[;,)]",
+    "brand": "WELLINGTON",
     "type": 5,
     "modelVariants": [
       {
@@ -2067,8 +2255,8 @@
     ]
   },
   {
-    "brand": "WONDER",
     "regex": "WONDER[;,)]",
+    "brand": "WONDER",
     "type": 5,
     "modelVariants": [
       {
@@ -2078,13 +2266,13 @@
     ]
   },
   {
-    "brand": "X.Vision",
     "regex": "X-VISION[;,)]",
+    "brand": "X.Vision",
     "type": 5
   },
   {
-    "brand": "Vestel",
     "regex": "(?:Vestel.+VESTEL|(?:BBC_CUSTOMERS|VESTEL)[;,)])",
+    "brand": "Vestel",
     "type": 5,
     "modelVariants": [
       {
@@ -2094,13 +2282,13 @@
     ]
   },
   {
-    "brand": "Arçelik",
     "regex": "Arcelik",
+    "brand": "Arçelik",
     "type": 5
   },
   {
-    "brand": "XGEM",
     "regex": "XGEM[;,)]",
+    "brand": "XGEM",
     "type": 5,
     "modelVariants": [
       {
@@ -2110,8 +2298,8 @@
     ]
   },
   {
-    "brand": "Xiaomi",
     "regex": "Amazon.+Xiaomi",
+    "brand": "Xiaomi",
     "type": 5,
     "modelVariants": [
       {
@@ -2125,10 +2313,14 @@
     ]
   },
   {
+    "regex": "OEM, ([a-z0-9_ -]+), (?:wired|wireless)|_TV_[A-Z0-9]+_([0-9]{4});|LaTivu_(?:\\d+[.\\d]+)_([0-9]{4})|LGE/[^/]+/[^/]+;",
     "brand": "Unknown",
-    "regex": "OEM, ([a-z0-9_ -]+), (?:wired|wireless)|_TV_[A-Z0-9]+_([0-9]{4});|LaTivu_(?:\\d+[.\\d]+)_([0-9]{4})",
     "type": 5,
     "modelVariants": [
+      {
+        "regex": "LGE/[^/]+/[^/]+; ([a-z0-9-]+);",
+        "name": "$1"
+      },
       {
         "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
         "name": "Smart TV ($1)"

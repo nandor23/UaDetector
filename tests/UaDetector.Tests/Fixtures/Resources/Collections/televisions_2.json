@@ -8047,8 +8047,8 @@
       "type": 5,
       "model": "Smart TV (2020)",
       "brand": {
-        "name": "NEXT",
-        "code": 1197
+        "name": "Next & NextStar",
+        "code": 1198
       }
     }
   },
@@ -8300,7 +8300,7 @@
     },
     "device": {
       "type": 5,
-      "model": "SN50FMN242",
+      "model": "SN50FMN242-0246",
       "brand": {
         "name": "Sunny",
         "code": 1631

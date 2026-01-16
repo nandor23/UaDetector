@@ -2125,6 +2125,13 @@ public class BrandCodeTests
             { BrandCode.Turksat, 2101 },
             { BrandCode.GTab, 2102 },
             { BrandCode.Suaat, 2103 },
+            { BrandCode.InnoHit, 2104 },
+            { BrandCode.Fox, 2105 },
+            { BrandCode.Miia, 2106 },
+            { BrandCode.PremierStar, 2107 },
+            { BrandCode.Sungate, 2108 },
+            { BrandCode.Ssmart, 2109 },
+            { BrandCode.Zimmer, 2110 },
         };
 
         expectedValues.Count.ShouldBe(Enum.GetValues<BrandCode>().Length);
