@@ -114,6 +114,16 @@
     }
   },
   {
+    "regex": "Amzn-SearchBot",
+    "name": "Amzn-SearchBot",
+    "category": 19,
+    "url": "https://developer.amazon.com/amazonbot",
+    "producer": {
+      "name": "Amazon.com, Inc.",
+      "url": "https://www.amazon.com/"
+    }
+  },
+  {
     "regex": "Amzn-User",
     "name": "Amzn-User",
     "category": 17,
@@ -138,6 +148,26 @@
     "name": "NovaAct",
     "category": 16,
     "url": "https://nova.amazon.com/act",
+    "producer": {
+      "name": "Amazon.com, Inc.",
+      "url": "https://www.amazon.com/"
+    }
+  },
+  {
+    "regex": "AmazonBuyForMe",
+    "name": "AmazonBuyForMe",
+    "category": 16,
+    "url": "https://buyforme.amazon/",
+    "producer": {
+      "name": "Amazon.com, Inc.",
+      "url": "https://www.amazon.com/"
+    }
+  },
+  {
+    "regex": "amazon-kendra",
+    "name": "Amazon Kendra",
+    "category": 3,
+    "url": "https://docs.aws.amazon.com/kendra/latest/dg/stop-web-crawler.html",
     "producer": {
       "name": "Amazon.com, Inc.",
       "url": "https://www.amazon.com/"
@@ -2220,6 +2250,7 @@
     "regex": "Twingly Recon",
     "name": "Twingly Recon",
     "category": 3,
+    "url": "https://app.twingly.com/public-docs/crawler",
     "producer": {
       "name": "Twingly",
       "url": "https://www.twingly.com"
@@ -2598,9 +2629,19 @@
     }
   },
   {
-    "regex": "Yandex(?:(?:\\.Gazeta |Accessibility|Additional|Com|Mobile|MobileScreenShot|RenderResources|Screenshot|Sprav)?Bot|(?:Additional|AdNet|Antivirus|Blogs|Calendar|Catalog|Dialogs|Direct|Favicons|ForDomain|ImageResizer|Images|Market|Media|Metrika|News|OntoDB(?:API)?|Pagechecker|Partner|RCA|SearchShop|(?:News|Site)links|Tracker|Turbo|Userproxy|Verticals|Vertis|Video|Webmaster))|YaDirectFetcher",
+    "regex": "Yandex(?:(?:\\.Gazeta |Accessibility|Com|Mobile|MobileScreenShot|RenderResources|Screenshot|Sprav)?Bot|(?:AdNet|Antivirus|Blogs|Calendar|Catalog|Dialogs|Direct|Favicons|ForDomain|ImageResizer|Images|Market|Media|Metrika|News|OntoDB(?:API)?|Pagechecker|Partner|RCA|SearchShop|(?:News|Site)links|Tracker|Turbo|Userproxy|Verticals|Vertis|Video|Webmaster))|YaDirectFetcher",
     "name": "Yandex Bot",
     "category": 0,
+    "url": "https://yandex.com/support/webmaster/robot-workings/check-yandex-robots.html",
+    "producer": {
+      "name": "Yandex LLC",
+      "url": "https://yandex.com/company/"
+    }
+  },
+  {
+    "regex": "YandexAdditional",
+    "name": "YandexAdditionalBot",
+    "category": 19,
     "url": "https://yandex.com/support/webmaster/robot-workings/check-yandex-robots.html",
     "producer": {
       "name": "Yandex LLC",
@@ -6761,6 +6802,66 @@
     "producer": {
       "name": "LumeWeaver Labs",
       "url": "https://lumeweaver.com/"
+    }
+  },
+  {
+    "regex": "PanguBot",
+    "name": "PanguBot",
+    "category": 18,
+    "url": "https://www.huawei.com/",
+    "producer": {
+      "name": "Huawei Technologies Co., Ltd.",
+      "url": "https://www.huawei.com/"
+    }
+  },
+  {
+    "regex": "Manus-User",
+    "name": "Manus-User",
+    "category": 17,
+    "url": "https://manus.im/help/Manus-user",
+    "producer": {
+      "name": "Butterfly Effect Pte. Ltd.",
+      "url": "https://manus.im/"
+    }
+  },
+  {
+    "regex": "HubSpotContentSearchBot",
+    "name": "HubSpotContentSearchBot",
+    "category": 3,
+    "url": "https://developers.hubspot.com/docs/cms/start-building/building-blocks/modules/content-search",
+    "producer": {
+      "name": "HubSpot, Inc.",
+      "url": "https://www.hubspot.com/"
+    }
+  },
+  {
+    "regex": "ProRata",
+    "name": "ProRata",
+    "category": 19,
+    "url": "https://platform.gist.ai/docs/gcn-overview",
+    "producer": {
+      "name": "ProRataAI, Inc.",
+      "url": "https://prorata.ai/"
+    }
+  },
+  {
+    "regex": "blackboardally",
+    "name": "Blackboard Ally",
+    "category": 3,
+    "url": "https://ally.ac/",
+    "producer": {
+      "name": "Anthology Inc.",
+      "url": "https://www.anthology.com/"
+    }
+  },
+  {
+    "regex": "semantic-visions\\.com",
+    "name": "svEye",
+    "category": 3,
+    "url": "https://sveye.semantic-visions.com/",
+    "producer": {
+      "name": "Semantic Visions, s.r.o.",
+      "url": "https://www.semantic-visions.com/"
     }
   },
   {

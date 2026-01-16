@@ -4065,6 +4065,7 @@
     "bot": {
       "name": "Twingly Recon",
       "category": 3,
+      "url": "https://app.twingly.com/public-docs/crawler",
       "producer": {
         "name": "Twingly",
         "url": "https://www.twingly.com"
@@ -11544,8 +11545,8 @@
   {
     "userAgent": "Mozilla/5.0 (compatible; YandexAdditional/1.0; +http://yandex.com/bots)",
     "bot": {
-      "name": "Yandex Bot",
-      "category": 0,
+      "name": "YandexAdditionalBot",
+      "category": 19,
       "url": "https://yandex.com/support/webmaster/robot-workings/check-yandex-robots.html",
       "producer": {
         "name": "Yandex LLC",
@@ -11556,8 +11557,8 @@
   {
     "userAgent": "Mozilla/5.0 (compatible; YandexAdditionalBot/1.0; +http://yandex.com/bots)",
     "bot": {
-      "name": "Yandex Bot",
-      "category": 0,
+      "name": "YandexAdditionalBot",
+      "category": 19,
       "url": "https://yandex.com/support/webmaster/robot-workings/check-yandex-robots.html",
       "producer": {
         "name": "Yandex LLC",
@@ -12357,6 +12358,138 @@
       "producer": {
         "name": "LumeWeaver Labs",
         "url": "https://lumeweaver.com/"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36; Devin/1.0; +devin.ai",
+    "bot": {
+      "name": "Devin",
+      "category": 17,
+      "url": "https://cognition.ai/",
+      "producer": {
+        "name": "Cognition AI, Inc.",
+        "url": "https://cognition.ai/"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Amzn-SearchBot/0.1) Chrome/119.0.6045.214 Safari/537.36",
+    "bot": {
+      "name": "Amzn-SearchBot",
+      "category": 19,
+      "url": "https://developer.amazon.com/amazonbot",
+      "producer": {
+        "name": "Amazon.com, Inc.",
+        "url": "https://www.amazon.com/"
+      }
+    }
+  },
+  {
+    "userAgent": "Agent/AmazonBuyForMe",
+    "bot": {
+      "name": "AmazonBuyForMe",
+      "category": 16,
+      "url": "https://buyforme.amazon/",
+      "producer": {
+        "name": "Amazon.com, Inc.",
+        "url": "https://www.amazon.com/"
+      }
+    }
+  },
+  {
+    "userAgent": "amazon-kendra-customer-id-<AccountID>",
+    "bot": {
+      "name": "Amazon Kendra",
+      "category": 3,
+      "url": "https://docs.aws.amazon.com/kendra/latest/dg/stop-web-crawler.html",
+      "producer": {
+        "name": "Amazon.com, Inc.",
+        "url": "https://www.amazon.com/"
+      }
+    }
+  },
+  {
+    "userAgent": "Twingly Recon-Sjostrom/1.0 (+https://app.twingly.com/public-docs/crawler)",
+    "bot": {
+      "name": "Twingly Recon",
+      "category": 3,
+      "url": "https://app.twingly.com/public-docs/crawler",
+      "producer": {
+        "name": "Twingly",
+        "url": "https://www.twingly.com"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 7.0;) AppleWebKit/537.36 (KHTML, like Gecko) Mobile Safari/537.36 (compatible; PanguBot;pangubot@huawei.com)",
+    "bot": {
+      "name": "PanguBot",
+      "category": 18,
+      "url": "https://www.huawei.com/",
+      "producer": {
+        "name": "Huawei Technologies Co., Ltd.",
+        "url": "https://www.huawei.com/"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36; Manus-User/1.0",
+    "bot": {
+      "name": "Manus-User",
+      "category": 17,
+      "url": "https://manus.im/help/Manus-user",
+      "producer": {
+        "name": "Butterfly Effect Pte. Ltd.",
+        "url": "https://manus.im/"
+      }
+    }
+  },
+  {
+    "userAgent": "HubSpotContentSearchBot",
+    "bot": {
+      "name": "HubSpotContentSearchBot",
+      "category": 3,
+      "url": "https://developers.hubspot.com/docs/cms/start-building/building-blocks/modules/content-search",
+      "producer": {
+        "name": "HubSpot, Inc.",
+        "url": "https://www.hubspot.com/"
+      }
+    }
+  },
+  {
+    "userAgent": "ProRataInc (The ProRata Fair Use Crawler; https://prorata.ai; support@prorata.ai)",
+    "bot": {
+      "name": "ProRata",
+      "category": 19,
+      "url": "https://platform.gist.ai/docs/gcn-overview",
+      "producer": {
+        "name": "ProRataAI, Inc.",
+        "url": "https://prorata.ai/"
+      }
+    }
+  },
+  {
+    "userAgent": "blackboardally",
+    "bot": {
+      "name": "Blackboard Ally",
+      "category": 3,
+      "url": "https://ally.ac/",
+      "producer": {
+        "name": "Anthology Inc.",
+        "url": "https://www.anthology.com/"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (X11; compatible; semantic-visions.com crawler; HTTPClient 4.5)",
+    "bot": {
+      "name": "svEye",
+      "category": 3,
+      "url": "https://sveye.semantic-visions.com/",
+      "producer": {
+        "name": "Semantic Visions, s.r.o.",
+        "url": "https://www.semantic-visions.com/"
       }
     }
   }
