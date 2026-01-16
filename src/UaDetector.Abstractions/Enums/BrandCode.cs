@@ -868,7 +868,7 @@ public enum BrandCode
     JayTech = 863,
     Jambo = 864,
     Jiake = 865,
-    Jedi = 866,
+    Jide = 866,
     Jeep = 867,
     Jeka = 868,
     JFone = 869,

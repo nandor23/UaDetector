@@ -887,7 +887,7 @@ public class BrandCodeTests
             { BrandCode.JayTech, 863 },
             { BrandCode.Jambo, 864 },
             { BrandCode.Jiake, 865 },
-            { BrandCode.Jedi, 866 },
+            { BrandCode.Jide, 866 },
             { BrandCode.Jeep, 867 },
             { BrandCode.Jeka, 868 },
             { BrandCode.JFone, 869 },

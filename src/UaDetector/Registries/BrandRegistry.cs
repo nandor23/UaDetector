@@ -895,7 +895,7 @@ public static class BrandRegistry
         { BrandCode.JayTech, BrandNames.JayTech },
         { BrandCode.Jambo, BrandNames.Jambo },
         { BrandCode.Jiake, BrandNames.Jiake },
-        { BrandCode.Jedi, BrandNames.Jedi },
+        { BrandCode.Jide, BrandNames.Jide },
         { BrandCode.Jeep, BrandNames.Jeep },
         { BrandCode.Jeka, BrandNames.Jeka },
         { BrandCode.JFone, BrandNames.JFone },
