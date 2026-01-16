@@ -73419,7 +73419,7 @@
   },
   {
     "regex": "(?:MAXI 20|Premier P50)(?:[);/ ]|$)",
-    "brand": "Premier",
+    "brand": "Premier Star",
     "type": 1,
     "modelVariants": [
       {
@@ -73694,13 +73694,13 @@
     "model": "$1"
   },
   {
-    "regex": "(?:BAUHN|ATV85UHDW-0122)(?:[);/ ]|$)",
+    "regex": "(?:BAUHN|ATV[78]5UHDW-[0-9]{4})(?:[);/ ]|$)",
     "brand": "BAUHN",
     "type": 5,
     "modelVariants": [
       {
-        "regex": "ATV85UHDW-0122",
-        "name": "ATV85UHDW-0122"
+        "regex": "(ATV[78]5UHDW-[0-9]{4})",
+        "name": "$1"
       }
     ]
   },

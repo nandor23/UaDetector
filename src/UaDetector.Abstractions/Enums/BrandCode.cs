@@ -2106,4 +2106,11 @@ public enum BrandCode
     Turksat = 2101,
     GTab = 2102,
     Suaat = 2103,
+    InnoHit = 2104,
+    Fox = 2105,
+    Miia = 2106,
+    PremierStar = 2107,
+    Sungate = 2108,
+    Ssmart = 2109,
+    Zimmer = 2110
 }
