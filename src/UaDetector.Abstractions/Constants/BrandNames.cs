@@ -868,7 +868,7 @@ public static class BrandNames
     public const string JayTech = "JAY-Tech";
     public const string Jambo = "Jambo";
     public const string Jiake = "Jiake";
-    public const string Jedi = "Jedi";
+    public const string Jide = "Jide";
     public const string Jeep = "Jeep";
     public const string Jeka = "Jeka";
     public const string JFone = "JFone";
