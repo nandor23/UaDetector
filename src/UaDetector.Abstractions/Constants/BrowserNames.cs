@@ -710,4 +710,8 @@ public static class BrowserNames
     public const string NovaBrowser = "Nova Browser";
     public const string XPlayBrowser = "XPlay Browser";
     public const string NintendoBrowser = "Nintendo Browser";
+    public const string Blazer = "Blazer";
+    public const string ClarioBrowser = "Clario Browser";
+    public const string Comet = "Comet";
+    public const string FireSendBrowser = "FireSend Browser";
 }

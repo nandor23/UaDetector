@@ -1,5 +1,10 @@
 [
   {
+    "regex": "FireSendBrowser/([\\d.]+)",
+    "name": "FireSend Browser",
+    "version": "$1"
+  },
+  {
     "regex": "buscari/([\\d.]+)",
     "name": "Seekee"
   },

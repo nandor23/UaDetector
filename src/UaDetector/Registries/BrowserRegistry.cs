@@ -738,6 +738,10 @@ public static class BrowserRegistry
             { BrowserCode.NovaBrowser, BrowserNames.NovaBrowser },
             { BrowserCode.XPlayBrowser, BrowserNames.XPlayBrowser },
             { BrowserCode.NintendoBrowser, BrowserNames.NintendoBrowser },
+            { BrowserCode.Blazer, BrowserNames.Blazer },
+            { BrowserCode.ClarioBrowser, BrowserNames.ClarioBrowser },
+            { BrowserCode.Comet, BrowserNames.Comet },
+            { BrowserCode.FireSendBrowser, BrowserNames.FireSendBrowser },
         }.ToFrozenDictionary();
 
     internal static readonly FrozenDictionary<string, BrowserCode> BrowserNameMappings =
