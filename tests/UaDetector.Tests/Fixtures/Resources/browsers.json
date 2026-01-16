@@ -14679,6 +14679,55 @@
     }
   },
   {
+    "userAgent": "Mozilla/5.0 (Linux; Android 16; tRsUPT7GVs; U; en) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.6367.42 Mobile Safari/537.36",
+    "browser": {
+      "name": "Avast Secure Browser",
+      "code": 71,
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "124.0.6367.42"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 16; Ra7H5LWWYD; U; en) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.7204.63 Mobile Safari/537.36",
+    "browser": {
+      "name": "Avast Secure Browser",
+      "code": 71,
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "138.0.7204.63"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 15; X8nxwmJASU; U; en) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.6367.42 Mobile Safari/537.36",
+    "browser": {
+      "name": "Avast Secure Browser",
+      "code": 71,
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "124.0.6367.42"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 14; KXYM1VSywW; U; en) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.5414.85 Mobile Tenta/7.3.0 Safari/537.36",
+    "browser": {
+      "name": "Tenta Browser",
+      "code": 588,
+      "version": "7.3.0",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "109.0.5414.85"
+      }
+    }
+  },
+  {
     "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 FireSendBrowser/1.0",
     "browser": {
       "name": "FireSend Browser",
