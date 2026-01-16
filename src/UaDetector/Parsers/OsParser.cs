@@ -294,6 +294,7 @@ public sealed partial class OsParser : IOsParser
             OsFamilies.Windows,
             OsFamilies.BeOs,
             OsFamilies.ChromeOs,
+            OsFamilies.OpenVms,
         }.ToFrozenSet(StringComparer.OrdinalIgnoreCase);
 
         ClientHintPlatformMappings = new Dictionary<string, FrozenSet<string>>

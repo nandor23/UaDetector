@@ -2132,6 +2132,7 @@ public class BrandCodeTests
             { BrandCode.Sungate, 2108 },
             { BrandCode.Ssmart, 2109 },
             { BrandCode.Zimmer, 2110 },
+            { BrandCode.Dec, 2111 },
         };
 
         expectedValues.Count.ShouldBe(Enum.GetValues<BrandCode>().Length);

@@ -2140,6 +2140,7 @@ public static class BrandRegistry
         { BrandCode.Sungate, BrandNames.Sungate },
         { BrandCode.Ssmart, BrandNames.Ssmart },
         { BrandCode.Zimmer, BrandNames.Zimmer },
+        { BrandCode.Dec, BrandNames.Dec },
     }.ToFrozenDictionary();
 
     internal static readonly FrozenDictionary<string, BrandCode> BrandNameMappings =

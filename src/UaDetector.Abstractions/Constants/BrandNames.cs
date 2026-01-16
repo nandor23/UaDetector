@@ -2113,4 +2113,5 @@ public static class BrandNames
     public const string Sungate = "SUNGATE";
     public const string Ssmart = "Ssmart";
     public const string Zimmer = "Zimmer";
+    public const string Dec = "DEC";
 }

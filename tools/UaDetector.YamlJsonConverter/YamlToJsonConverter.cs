@@ -80,7 +80,6 @@ public static class YamlToJsonConverter
             { "AI Assistant", BotCategory.AiAssistant },
             { "AI Data Scraper", BotCategory.AiDataScraper },
             { "AI Search Crawler", BotCategory.AiSearchCrawler },
-
         }.ToFrozenDictionary();
 
     private static readonly JsonSerializerOptions JsonSerializerOptions = new()
