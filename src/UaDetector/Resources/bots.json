@@ -105,9 +105,19 @@
   },
   {
     "regex": "Amazonbot",
-    "name": "Amazon Bot",
-    "category": 3,
-    "url": "https://developer.amazon.com/support/amazonbot",
+    "name": "Amazonbot",
+    "category": 19,
+    "url": "https://developer.amazon.com/amazonbot",
+    "producer": {
+      "name": "Amazon.com, Inc.",
+      "url": "https://www.amazon.com/"
+    }
+  },
+  {
+    "regex": "Amzn-User",
+    "name": "Amzn-User",
+    "category": 17,
+    "url": "https://developer.amazon.com/amazonbot",
     "producer": {
       "name": "Amazon.com, Inc.",
       "url": "https://www.amazon.com/"
@@ -118,6 +128,16 @@
     "name": "Amazon AdBot",
     "category": 3,
     "url": "https://adbot.amazon.com/",
+    "producer": {
+      "name": "Amazon.com, Inc.",
+      "url": "https://www.amazon.com/"
+    }
+  },
+  {
+    "regex": "NovaAct",
+    "name": "NovaAct",
+    "category": 16,
+    "url": "https://nova.amazon.com/act",
     "producer": {
       "name": "Amazon.com, Inc.",
       "url": "https://www.amazon.com/"
@@ -153,9 +173,19 @@
     }
   },
   {
+    "regex": "Applebot-Extended",
+    "name": "Applebot-Extended",
+    "category": 18,
+    "url": "https://support.apple.com/en-us/119829",
+    "producer": {
+      "name": "Apple Inc",
+      "url": "https://www.apple.com/"
+    }
+  },
+  {
     "regex": "Applebot",
     "name": "Applebot",
-    "category": 3,
+    "category": 19,
     "url": "https://support.apple.com/en-us/119829",
     "producer": {
       "name": "Apple Inc",
@@ -636,7 +666,7 @@
   {
     "regex": "DuckAssistBot",
     "name": "DuckAssistBot",
-    "category": 0,
+    "category": 17,
     "url": "https://duckduckgo.com/duckduckgo-help-pages/results/duckassistbot/",
     "producer": {
       "name": "DuckDuckGo",
@@ -718,7 +748,7 @@
   {
     "regex": "meta-externalagent",
     "name": "Meta-ExternalAgent",
-    "category": 3,
+    "category": 17,
     "url": "https://developers.facebook.com/docs/sharing/webmasters/web-crawlers",
     "producer": {
       "name": "Meta Platforms, Inc.",
@@ -949,8 +979,8 @@
   {
     "regex": "Google-CloudVertexBot",
     "name": "Google-CloudVertexBot",
-    "category": 3,
-    "url": "https://developers.google.com/search/docs/crawling-indexing/google-common-crawlers#google-cloudvertexbot",
+    "category": 18,
+    "url": "https://developers.google.com/crawling/docs/crawlers-fetchers/google-common-crawlers#google-cloudvertexbot",
     "producer": {
       "name": "Google Inc.",
       "url": "https://www.google.com/"
@@ -1046,7 +1076,7 @@
     "regex": "deepcrawl\\.com",
     "name": "Lumar",
     "category": 3,
-    "url": "https://deepcrawl.com/bot",
+    "url": "https://www.lumar.io/spdr/",
     "producer": {
       "name": "Lumar",
       "url": "https://www.lumar.io/"
@@ -1063,10 +1093,90 @@
     }
   },
   {
-    "regex": "Adwords-(?:DisplayAds|Express|Instant)|Google Web Preview|Google[ -]Publisher[ -]Plugin|Google-(?:adstxt|Ads-Conversions|Ads-Qualify|Adwords|AMPHTML|Assess|Extended|HotelAdsVerifier|InspectionTool|Lens|PageRenderer|Read-Aloud|Shopping-Quality|Site-Verification|Sites-Thumbnails|speakr|Stale-Content-Probe|Test|Youtube-Links)|(?:AdsBot|APIs|Feedfetcher|Mediapartners)-Google(?:-Mobile)?|Google(?:AdSenseInfeed|AssociationService|bot|Other|Prober|Producer|Sites)|Google.*/\\+/web/snippet",
+    "regex": "Adwords-(?:DisplayAds|Express|Instant)|Google Web Preview|Google[ -]Publisher[ -]Plugin|Google-(?:adstxt|Ads-Conversions|Ads-Qualify|Adwords|AMPHTML|Assess|HotelAdsVerifier|InspectionTool|Lens|PageRenderer|Read-Aloud|Shopping-Quality|Site-Verification|Sites-Thumbnails|speakr|Stale-Content-Probe|Test|Youtube-Links)|(?:AdsBot|APIs|Feedfetcher|Mediapartners)-Google(?:-Mobile)?|Google(?:AdSenseInfeed|AssociationService|bot|Other|Prober|Producer|Sites)|Google.*/\\+/web/snippet",
     "name": "Googlebot",
     "category": 0,
     "url": "https://developers.google.com/search/docs/crawling-indexing/overview-google-crawlers",
+    "producer": {
+      "name": "Google Inc.",
+      "url": "https://www.google.com/"
+    }
+  },
+  {
+    "regex": "Google-NotebookLM",
+    "name": "Google-NotebookLM",
+    "category": 17,
+    "url": "https://developers.google.com/crawling/docs/crawlers-fetchers/google-user-triggered-fetchers",
+    "producer": {
+      "name": "Google Inc.",
+      "url": "https://www.google.com/"
+    }
+  },
+  {
+    "regex": "Google-Extended",
+    "name": "Google-Extended",
+    "category": 18,
+    "url": "https://developers.google.com/crawling/docs/crawlers-fetchers/google-common-crawlers",
+    "producer": {
+      "name": "Google Inc.",
+      "url": "https://www.google.com/"
+    }
+  },
+  {
+    "regex": "Gemini-Deep-Research",
+    "name": "Gemini-Deep-Research",
+    "category": 17,
+    "url": "https://gemini.google/overview/deep-research/",
+    "producer": {
+      "name": "Google Inc.",
+      "url": "https://www.google.com/"
+    }
+  },
+  {
+    "regex": "GoogleAgent-Mariner",
+    "name": "GoogleAgent-Mariner",
+    "category": 16,
+    "url": "https://developers.google.com/search/docs/crawling-indexing/google-agent-mariner",
+    "producer": {
+      "name": "Google Inc.",
+      "url": "https://www.google.com/"
+    }
+  },
+  {
+    "regex": "GoogleAgent-Search",
+    "name": "GoogleAgent-Search",
+    "category": 17,
+    "url": "https://developers.google.com/search/docs/crawling-indexing/google-agent-search",
+    "producer": {
+      "name": "Google Inc.",
+      "url": "https://www.google.com/"
+    }
+  },
+  {
+    "regex": "Bard-AI",
+    "name": "Bard-AI",
+    "category": 19,
+    "url": "https://developers.google.com/search/docs/crawling-indexing/google-common-crawlers",
+    "producer": {
+      "name": "Google Inc.",
+      "url": "https://www.google.com/"
+    }
+  },
+  {
+    "regex": "Gemini-AI",
+    "name": "Gemini-AI",
+    "category": 19,
+    "url": "https://developers.google.com/search/docs/crawling-indexing/google-common-crawlers",
+    "producer": {
+      "name": "Google Inc.",
+      "url": "https://www.google.com/"
+    }
+  },
+  {
+    "regex": "Google-Pinpoint",
+    "name": "Google-Pinpoint",
+    "category": 17,
+    "url": "https://developers.google.com/crawling/docs/crawlers-fetchers/google-user-triggered-fetchers#google-pinpoint",
     "producer": {
       "name": "Google Inc.",
       "url": "https://www.google.com/"
@@ -1477,13 +1587,33 @@
     }
   },
   {
-    "regex": "omgili",
-    "name": "Omgili bot",
-    "category": 0,
-    "url": "http://www.omgili.com/Crawler.html",
+    "regex": "webzio-extended",
+    "name": "webzio-extended",
+    "category": 18,
+    "url": "https://docs.webz.io/reference/how-it-works-video",
     "producer": {
-      "name": "Omgili",
-      "url": "http://www.omgili.com"
+      "name": "Webz.io Ltd",
+      "url": "https://webz.io/"
+    }
+  },
+  {
+    "regex": "webzio",
+    "name": "webzio",
+    "category": 19,
+    "url": "https://docs.webz.io/reference/how-it-works-video",
+    "producer": {
+      "name": "Webz.io Ltd",
+      "url": "https://webz.io/"
+    }
+  },
+  {
+    "regex": "omgili",
+    "name": "Omgilibot",
+    "category": 0,
+    "url": "https://webz.io/blog/api/what-is-the-omgili-bot-and-why-is-it-crawling-your-website/",
+    "producer": {
+      "name": "Webz.io Ltd",
+      "url": "https://webz.io/"
     }
   },
   {
@@ -4336,9 +4466,19 @@
     }
   },
   {
+    "regex": "Doximity-Diffbot",
+    "name": "Doximity-Diffbot",
+    "category": 18,
+    "url": "https://docs.diffbot.com/docs/getting-started-with-crawl",
+    "producer": {
+      "name": "Diffbot Technologies Corp.",
+      "url": "https://www.diffbot.com/"
+    }
+  },
+  {
     "regex": ".+diffbot",
     "name": "Diffbot",
-    "category": 3,
+    "category": 18,
     "url": "https://docs.diffbot.com/docs/getting-started-with-crawl",
     "producer": {
       "name": "Diffbot Technologies Corp.",
@@ -4470,7 +4610,7 @@
   {
     "regex": "OAI-SearchBot",
     "name": "OAI-SearchBot",
-    "category": 3,
+    "category": 19,
     "url": "https://platform.openai.com/docs/bots",
     "producer": {
       "name": "OpenAI OpCo, LLC",
@@ -4480,7 +4620,7 @@
   {
     "regex": "GPTBot",
     "name": "GPTBot",
-    "category": 3,
+    "category": 18,
     "url": "https://platform.openai.com/docs/bots",
     "producer": {
       "name": "OpenAI OpCo, LLC",
@@ -4490,7 +4630,17 @@
   {
     "regex": "ChatGPT-User",
     "name": "ChatGPT-User",
-    "category": 3,
+    "category": 17,
+    "url": "https://platform.openai.com/docs/bots",
+    "producer": {
+      "name": "OpenAI OpCo, LLC",
+      "url": "https://openai.com/"
+    }
+  },
+  {
+    "regex": "ChatGPT-Browser",
+    "name": "ChatGPT-Browser",
+    "category": 17,
     "url": "https://platform.openai.com/docs/bots",
     "producer": {
       "name": "OpenAI OpCo, LLC",
@@ -4645,15 +4795,49 @@
     }
   },
   {
-    "regex": "ClaudeBot",
+    "regex": "ClaudeBot|Anthropic-Claude",
     "name": "ClaudeBot",
-    "category": 3,
-    "url": "https://github.com/ClaudeBot/ClaudeBot"
+    "category": 18,
+    "url": "https://support.claude.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler",
+    "producer": {
+      "name": "Anthropic PBC",
+      "url": "https://www.anthropic.com/"
+    }
+  },
+  {
+    "regex": "Claude-SearchBot",
+    "name": "Claude-SearchBot",
+    "category": 19,
+    "url": "https://support.claude.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler",
+    "producer": {
+      "name": "Anthropic PBC",
+      "url": "https://www.anthropic.com/"
+    }
+  },
+  {
+    "regex": "Claude-User",
+    "name": "Claude-User",
+    "category": 17,
+    "url": "https://support.claude.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler",
+    "producer": {
+      "name": "Anthropic PBC",
+      "url": "https://www.anthropic.com/"
+    }
+  },
+  {
+    "regex": "Claude-Web",
+    "name": "Claude-Web",
+    "category": 19,
+    "url": "https://support.claude.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler",
+    "producer": {
+      "name": "Anthropic PBC",
+      "url": "https://www.anthropic.com/"
+    }
   },
   {
     "regex": "Imagesift",
     "name": "ImageSift",
-    "category": 3,
+    "category": 18,
     "url": "https://imagesift.com/",
     "producer": {
       "name": "Castle Global, Inc.",
@@ -4796,7 +4980,7 @@
   {
     "regex": "YouBot",
     "name": "YouBot",
-    "category": 3,
+    "category": 19,
     "url": "https://about.you.com/youbot/",
     "producer": {
       "name": "SuSea, Inc.",
@@ -4832,8 +5016,8 @@
   {
     "regex": "GitHubCopilotChat",
     "name": "GitHubCopilotChat",
-    "category": 3,
-    "url": "https://github.com/aaamoon/copilot-gpt4-service"
+    "category": 17,
+    "url": "https://github.com/microsoft/vscode-copilot-chat"
   },
   {
     "regex": "^pdrl\\.fm",
@@ -4850,7 +5034,7 @@
   {
     "regex": "anthropic-ai",
     "name": "Anthropic AI",
-    "category": 3,
+    "category": 18,
     "url": "https://www.anthropic.com/",
     "producer": {
       "name": "Anthropic, PBC",
@@ -4898,9 +5082,29 @@
     }
   },
   {
-    "regex": "cohere-(?:ai|command|training)",
+    "regex": "cohere-ai",
     "name": "Cohere AI",
-    "category": 3,
+    "category": 18,
+    "url": "https://cohere.com/",
+    "producer": {
+      "name": "Cohere, Inc.",
+      "url": "https://cohere.com/"
+    }
+  },
+  {
+    "regex": "Cohere-Command",
+    "name": "Cohere-Command",
+    "category": 18,
+    "url": "https://cohere.com/",
+    "producer": {
+      "name": "Cohere, Inc.",
+      "url": "https://cohere.com/"
+    }
+  },
+  {
+    "regex": "cohere-training",
+    "name": "cohere-training-data-crawler",
+    "category": 18,
     "url": "https://cohere.com/",
     "producer": {
       "name": "Cohere, Inc.",
@@ -4910,7 +5114,7 @@
   {
     "regex": "PerplexityBot",
     "name": "PerplexityBot",
-    "category": 3,
+    "category": 19,
     "url": "https://docs.perplexity.ai/guides/bots",
     "producer": {
       "name": "Perplexity AI, Inc.",
@@ -4920,7 +5124,7 @@
   {
     "regex": "Perplexity-User",
     "name": "Perplexity-User",
-    "category": 3,
+    "category": 17,
     "url": "https://docs.perplexity.ai/guides/bots",
     "producer": {
       "name": "Perplexity AI, Inc.",
@@ -6182,7 +6386,7 @@
   {
     "regex": "IbouBot",
     "name": "IbouBot",
-    "category": 0,
+    "category": 19,
     "url": "https://ibou.io/iboubot.html"
   },
   {
@@ -6198,7 +6402,7 @@
   {
     "regex": "TerraCotta",
     "name": "TerraCotta",
-    "category": 3,
+    "category": 18,
     "url": "https://github.com/CeramicTeam/CeramicTerracotta",
     "producer": {
       "name": "Ceramic, Inc.",
@@ -6218,7 +6422,7 @@
   {
     "regex": "Replicate-Bot",
     "name": "Replicate-Bot",
-    "category": 11,
+    "category": 18,
     "url": "https://replicate.com/",
     "producer": {
       "name": "Replicate, Inc.",
@@ -6248,7 +6452,7 @@
   {
     "regex": "Together-Bot",
     "name": "Together-Bot",
-    "category": 3,
+    "category": 18,
     "url": "https://www.together.ai/",
     "producer": {
       "name": "Together Computer Inc.",
@@ -6258,7 +6462,7 @@
   {
     "regex": "xAI-Bot",
     "name": "xAI-Bot",
-    "category": 3,
+    "category": 18,
     "url": "https://x.ai/",
     "producer": {
       "name": "X.AI LLC",
@@ -6268,7 +6472,7 @@
   {
     "regex": "Groq-Bot",
     "name": "Groq-Bot",
-    "category": 3,
+    "category": 18,
     "url": "https://groq.com/",
     "producer": {
       "name": "Groq, Inc.",
@@ -6278,7 +6482,7 @@
   {
     "regex": "bigsur\\.ai",
     "name": "Big Sur AI",
-    "category": 3,
+    "category": 17,
     "url": "https://bigsur.ai/",
     "producer": {
       "name": "Big Sur AI, Inc.",
@@ -6288,7 +6492,7 @@
   {
     "regex": "FirecrawlAgent",
     "name": "FirecrawlAgent",
-    "category": 11,
+    "category": 18,
     "url": "https://www.firecrawl.dev/",
     "producer": {
       "name": "SideGuide Technologies, Inc.",
@@ -6296,11 +6500,275 @@
     }
   },
   {
-    "regex": "nuhk|grub-client|Download Demon|SearchExpress|Microsoft URL Control|borg|altavista|dataminr\\.com|teoma|oegp|http%20client|htdig|mogimogi|larbin|scrubby|searchsight|semanticdiscovery|snappy|zeal(?!ot)|dataparksearch|findlinks|BrowserMob|URL2PNG|ZooShot|GomezA|Google SketchUp|Read%20Later|7Siters|centuryb\\.o\\.t9|InterNaetBoten|EasyBib AutoCite|Bidtellect|tomnomnom/meg|cortex|Re-re Studio|adreview|AHC/|NameOfAgent|Request-Promise|ALittle Client|Hello,? world|wp_is_mobile|0xAbyssalDoesntExist|Anarchy99|^revolt|nvd0rz|xfa1|Hakai|gbrmss|fuck-your-hp|IDBTE4M CODE87|Antoine|Insomania|Hells-Net|b3astmode|Linux Gnu \\(cow\\)|Test Certificate Info|iplabel|Magellan|TheSafex?Internetx?Search|Searcherx?web|kirkland-signature|LinkChain|survey-security-dot-txt|infrawatch|Time/|r00ts3c-owned-you|nvdorz|Root Slut|NiggaBalls|BotPoke|GlobalWebSearch|xx032_bo9vs83_2a|sslshed|geckotrail|Wordup|Keydrop|\\(compatible\\)|John Recon|SPARK COMMIT|masjesu|Komaru_The_Cat|Jesus Christ of Nazareth is LORD|Kowai|Hakai|LoliSec|LMAO|^xenu|^(?:chrome|firefox|Abcd|Dark|KvshClient|Node.js|Report Runner|url|Zeus|ZmEu)$|OnlyScans|TheInternetSearchx|Laravel Reaver|bang2013|libredtail|Mozilliqa",
+    "regex": "Ai2Bot-Dolma",
+    "name": "Ai2Bot-Dolma",
+    "category": 18,
+    "url": "https://allenai.org/crawler",
+    "producer": {
+      "name": "The Allen Institute for Artificial Intelligence",
+      "url": "https://allenai.org/"
+    }
+  },
+  {
+    "regex": "Ai2Bot-DeepResearchEval",
+    "name": "Ai2Bot-DeepResearchEval",
+    "category": 17,
+    "url": "https://allenai.org/crawler",
+    "producer": {
+      "name": "The Allen Institute for Artificial Intelligence",
+      "url": "https://allenai.org/"
+    }
+  },
+  {
+    "regex": "Ai2Bot",
+    "name": "Ai2Bot",
+    "category": 18,
+    "url": "https://allenai.org/crawler",
+    "producer": {
+      "name": "The Allen Institute for Artificial Intelligence",
+      "url": "https://allenai.org/"
+    }
+  },
+  {
+    "regex": "WARDBot",
+    "name": "WARDBot",
+    "category": 9,
+    "url": "https://ward.ai/robot",
+    "producer": {
+      "name": "W.A.R.D. LLC",
+      "url": "https://ward.ai/"
+    }
+  },
+  {
+    "regex": "Character-AI",
+    "name": "Character-AI",
+    "category": 17,
+    "url": "https://character.ai/",
+    "producer": {
+      "name": "Character Technologies, Inc.",
+      "url": "https://character.ai/"
+    }
+  },
+  {
+    "regex": "DeepseekBot",
+    "name": "DeepseekBot",
+    "category": 18,
+    "url": "https://www.deepseek.com/bot",
+    "producer": {
+      "name": "Hangzhou Deep Search Artificiell Intelligens Basic Technology Research Co., Ltd.",
+      "url": "https://www.deepseek.com/"
+    }
+  },
+  {
+    "regex": "MistralAI-User",
+    "name": "MistralAI-User",
+    "category": 17,
+    "url": "https://docs.mistral.ai/robots",
+    "producer": {
+      "name": "Mistral AI",
+      "url": "https://mistral.ai/"
+    }
+  },
+  {
+    "regex": "Crawlspace",
+    "name": "Crawlspace",
+    "category": 18,
+    "url": "https://crawlspace.dev/",
+    "producer": {
+      "name": "Crawlspace Company",
+      "url": "https://crawlspace.dev/"
+    }
+  },
+  {
+    "regex": "Devin",
+    "name": "Devin",
+    "category": 17,
+    "url": "https://cognition.ai/",
+    "producer": {
+      "name": "Cognition AI, Inc.",
+      "url": "https://cognition.ai/"
+    }
+  },
+  {
+    "regex": "Andibot",
+    "name": "Andibot",
+    "category": 19,
+    "url": "https://andisearch.com/",
+    "producer": {
+      "name": "Andi",
+      "url": "https://andisearch.com/"
+    }
+  },
+  {
+    "regex": "HypeStat",
+    "name": "HypeStat",
+    "category": 3,
+    "url": "https://hypestat.com/crawler"
+  },
+  {
+    "regex": "StatusNestBacklinkSpider",
+    "name": "StatusNestBacklinkSpider",
+    "category": 3,
+    "url": "https://statusnest.com/bot"
+  },
+  {
+    "regex": "RunPod-Bot",
+    "name": "RunPod-Bot",
+    "category": 18,
+    "url": "https://www.runpod.io/",
+    "producer": {
+      "name": "RunPod Inc.",
+      "url": "https://www.runpod.io/"
+    }
+  },
+  {
+    "regex": "HuggingFace-Bot",
+    "name": "HuggingFace-Bot",
+    "category": 18,
+    "url": "https://huggingface.co/",
+    "producer": {
+      "name": "Hugging Face, Inc",
+      "url": "https://huggingface.co/"
+    }
+  },
+  {
+    "regex": "LinkBloom",
+    "name": "LinkBloom",
+    "category": 3,
+    "url": "https://hamidsoltani.com/linkbloom"
+  },
+  {
+    "regex": "img2dataset",
+    "name": "img2dataset",
+    "category": 3,
+    "url": "https://github.com/rom1504/img2dataset"
+  },
+  {
+    "regex": "iAskBot",
+    "name": "iAskBot",
+    "category": 18,
+    "url": "https://iask.ai/",
+    "producer": {
+      "name": "Ai Search Inc.",
+      "url": "https://iask.ai/"
+    }
+  },
+  {
+    "regex": "LinerBot",
+    "name": "LinerBot",
+    "category": 17,
+    "url": "https://docs.getliner.com/docs/linerbot",
+    "producer": {
+      "name": "Liner",
+      "url": "https://liner.com/"
+    }
+  },
+  {
+    "regex": "Poggio-Citations",
+    "name": "Poggio-Citations",
+    "category": 17,
+    "url": "https://docs.poggio.io/dev-resources/robots",
+    "producer": {
+      "name": "Poggio Labs, Inc.",
+      "url": "https://poggio.io/"
+    }
+  },
+  {
+    "regex": "QualifiedBot",
+    "name": "QualifiedBot",
+    "category": 17,
+    "url": "https://www.qualified.com/legal/qualified-crawler-user-agent",
+    "producer": {
+      "name": "Qualified.com, Inc.",
+      "url": "https://www.qualified.com/"
+    }
+  },
+  {
+    "regex": "ZanistaBot",
+    "name": "ZanistaBot",
+    "category": 19,
+    "url": "https://zanista.ai/crawler-info",
+    "producer": {
+      "name": "Zanista AI LTD.",
+      "url": "https://zanista.ai/"
+    }
+  },
+  {
+    "regex": "ChatGLM-Spider",
+    "name": "ChatGLM-Spider",
+    "category": 18,
+    "url": "https://chatglm.cn/",
+    "producer": {
+      "name": "Beijing Zhipu Huazhang Technology Co., Ltd.",
+      "url": "https://zhipuai.cn/"
+    }
+  },
+  {
+    "regex": "gochitchat\\.ai",
+    "name": "Sider",
+    "category": 18,
+    "url": "https://sider.ai/",
+    "producer": {
+      "name": "Sider AI",
+      "url": "https://sider.ai/"
+    }
+  },
+  {
+    "regex": "SBIntuitionsBot",
+    "name": "SBIntuitionsBot",
+    "category": 18,
+    "url": "https://www.sbintuitions.co.jp/en/bot/",
+    "producer": {
+      "name": "SB Intuitions Corp.",
+      "url": "https://www.sbintuitions.co.jp/"
+    }
+  },
+  {
+    "regex": "ias_crawler",
+    "name": "IAS Crawler",
+    "category": 18,
+    "url": "https://integralads.com/ias-privacy-data-management/policies/site-indexing-policy/",
+    "producer": {
+      "name": "Integral Ad Science, Inc.",
+      "url": "https://integralads.com/"
+    }
+  },
+  {
+    "regex": "ias_wombles",
+    "name": "IAS Wombles",
+    "category": 18,
+    "url": "https://integralads.com/ias-privacy-data-management/policies/site-indexing-policy/",
+    "producer": {
+      "name": "Integral Ad Science, Inc.",
+      "url": "https://integralads.com/"
+    }
+  },
+  {
+    "regex": "ShapBot",
+    "name": "ShapBot",
+    "category": 18,
+    "url": "https://docs.parallel.ai/resources/crawler",
+    "producer": {
+      "name": "Parallel Web Systems Inc.",
+      "url": "https://parallel.ai/"
+    }
+  },
+  {
+    "regex": "LumeWebScan",
+    "name": "LumeWebScan",
+    "category": 3,
+    "url": "https://lumeweaver.com/",
+    "producer": {
+      "name": "LumeWeaver Labs",
+      "url": "https://lumeweaver.com/"
+    }
+  },
+  {
+    "regex": "nuhk|grub-client|Download Demon|SearchExpress|Microsoft URL Control|borg|altavista|dataminr\\.com|teoma|oegp|http%20client|htdig|mogimogi|larbin|scrubby|searchsight|semanticdiscovery|snappy|zeal(?!ot)|dataparksearch|findlinks|BrowserMob|URL2PNG|ZooShot|GomezA|Google SketchUp|Read%20Later|7Siters|centuryb\\.o\\.t9|InterNaetBoten|EasyBib AutoCite|Bidtellect|tomnomnom/meg|cortex|Re-re Studio|adreview|AHC/|NameOfAgent|Request-Promise|ALittle Client|Hello,? world|wp_is_mobile|0xAbyssalDoesntExist|Anarchy99|^revolt|nvd0rz|xfa1|Hakai|gbrmss|fuck-your-hp|IDBTE4M CODE87|Antoine|Insomania|Hells-Net|b3astmode|Linux Gnu \\(cow\\)|Test Certificate Info|iplabel|Magellan|TheSafex?Internetx?Search|Searcherx?web|kirkland-signature|LinkChain|survey-security-dot-txt|infrawatch|Time/|r00ts3c-owned-you|nvdorz|Root Slut|NiggaBalls|BotPoke|GlobalWebSearch|xx032_bo9vs83_2a|sslshed|geckotrail|Wordup|Keydrop|\\(compatible\\)|John Recon|SPARK COMMIT|masjesu|Komaru_The_Cat|Jesus Christ of Nazareth is LORD|Kowai|Hakai|LoliSec|LMAO|^xenu|^(?:chrome|firefox|Abcd|Dark|KvshClient|Node.js|Report Runner|url|Zeus|ZmEu)$|OnlyScans|TheInternetSearchx|Laravel Reaver|bang2013|libredtail|Mozilliqa|Tiberius",
     "name": "Generic Bot"
   },
   {
-    "regex": "[a-z0-9_-]*(?:(?<!cu|Hu|power[ _]|m[ _])bot(?![ _]TAB|[ _]?5[0-9]|[ _]Senior|[ _]Junior)|analyzer|appengine|archiver?|checker|collector|crawl|crawler|(?<!node-|uclient-|Mikrotik/\\d\\.[x\\d] |electron-)fetch(?:er)?|indexer|inspector|monitor|(?<!Microsoft |banshee-)project(?!or)|(?<!Google Wap |Blue |SpeedMode; )proxy|(?<!P)research|resolver|robots|(?<!Cam)scanner|scraper|script|searcher|(?<!-)security|spider(?! 8)|study|transcoder|uptime|user[ _]?agent|validator|-(?:AI|Extended|User)/)(?:[^a-z]|$)",
+    "regex": "[a-z0-9_-]*(?:(?<!cu|Hu|power[ _]|m[ _])bot(?![ _]TAB|[ _]?5[0-9]|[ _]Senior|[ _]Junior)|analyzer|appengine|archiver?|checker|collector|crawl|crawler|(?<!node-|uclient-|Mikrotik/\\d\\.[x\\d] |electron-)fetch(?:er)?|(?<!url)grabber|indexer|inspector|monitor|(?<!Microsoft |banshee-)project(?!or)|(?<!Google Wap |Blue |SpeedMode; )proxy|(?<!P)research|resolver|robots|(?<!Cam)scanner|scraper|script|searcher|(?<!-)security|spider(?! 8)|study|transcoder|uptime|user[ _]?agent|validator|-(?:AI|Extended|User)/)(?:[^a-z]|$)",
     "name": "Generic Bot"
   }
 ]

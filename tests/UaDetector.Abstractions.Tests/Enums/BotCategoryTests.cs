@@ -37,6 +37,10 @@ public class BotCategoryTests
             { BotCategory.SocialMediaAgent, 13 },
             { BotCategory.ReadItLaterService, 14 },
             { BotCategory.Benchmark, 15 },
+            { BotCategory.AiAgent, 16 },
+            { BotCategory.AiAssistant, 17 },
+            { BotCategory.AiDataScraper, 18 },
+            { BotCategory.AiSearchCrawler, 19 },
         };
 
         expectedValues.Count.ShouldBe(Enum.GetValues<BotCategory>().Length);
