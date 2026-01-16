@@ -152,7 +152,7 @@ public class UaDetectorTests
     public static IEnumerable<Func<string>> FixtureFileNames()
     {
         var fixturesPath = Path.Combine("Fixtures", "Resources", "Collections");
-    
+
         foreach (var file in Directory.GetFiles(fixturesPath, "*.json"))
         {
             yield return () => file;

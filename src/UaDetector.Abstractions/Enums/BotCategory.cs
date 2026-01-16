@@ -21,5 +21,5 @@ public enum BotCategory
     AiAgent = 16,
     AiAssistant = 17,
     AiDataScraper = 18,
-    AiSearchCrawler = 19
+    AiSearchCrawler = 19,
 }

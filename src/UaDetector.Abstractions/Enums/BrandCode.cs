@@ -2112,5 +2112,6 @@ public enum BrandCode
     PremierStar = 2107,
     Sungate = 2108,
     Ssmart = 2109,
-    Zimmer = 2110
+    Zimmer = 2110,
+    Dec = 2111,
 }
