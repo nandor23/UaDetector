@@ -131,9 +131,9 @@
   {
     "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/600.2.5 (KHTML, like Gecko) Version/8.0.2 Safari/600.2.5 (Amazonbot/0.1; +https://developer.amazon.com/support/amazonbot)",
     "bot": {
-      "name": "Amazon Bot",
-      "category": 3,
-      "url": "https://developer.amazon.com/support/amazonbot",
+      "name": "Amazonbot",
+      "category": 19,
+      "url": "https://developer.amazon.com/amazonbot",
       "producer": {
         "name": "Amazon.com, Inc.",
         "url": "https://www.amazon.com/"
@@ -202,7 +202,7 @@
     "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10 _1) AppleWebKit/600.2.5 (KHTML, like Gecko) Version/8.0.2 Safari/600.2.5 (Applebot/0.1; +http://www.apple.com/go/applebot)",
     "bot": {
       "name": "Applebot",
-      "category": 3,
+      "category": 19,
       "url": "https://support.apple.com/en-us/119829",
       "producer": {
         "name": "Apple Inc",
@@ -226,7 +226,7 @@
     "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/600.2.5 (KHTML, like Gecko) Version/8.0.2 Safari/600.2.5 (Applebot/0.1)",
     "bot": {
       "name": "Applebot",
-      "category": 3,
+      "category": 19,
       "url": "https://support.apple.com/en-us/119829",
       "producer": {
         "name": "Apple Inc",
@@ -237,8 +237,8 @@
   {
     "userAgent": "Applebot-Extended",
     "bot": {
-      "name": "Applebot",
-      "category": 3,
+      "name": "Applebot-Extended",
+      "category": 18,
       "url": "https://support.apple.com/en-us/119829",
       "producer": {
         "name": "Apple Inc",
@@ -1122,7 +1122,7 @@
     "userAgent": "DuckAssistBot/1.1; (+http://duckduckgo.com/duckassistbot.html)",
     "bot": {
       "name": "DuckAssistBot",
-      "category": 0,
+      "category": 17,
       "url": "https://duckduckgo.com/duckduckgo-help-pages/results/duckassistbot/",
       "producer": {
         "name": "DuckDuckGo",
@@ -2890,24 +2890,24 @@
   {
     "userAgent": "omgili/0.5 +http://omgili.com",
     "bot": {
-      "name": "Omgili bot",
+      "name": "Omgilibot",
       "category": 0,
-      "url": "http://www.omgili.com/Crawler.html",
+      "url": "https://webz.io/blog/api/what-is-the-omgili-bot-and-why-is-it-crawling-your-website/",
       "producer": {
-        "name": "Omgili",
-        "url": "http://www.omgili.com"
+        "name": "Webz.io Ltd",
+        "url": "https://webz.io/"
       }
     }
   },
   {
     "userAgent": "omgilibot/0.3 +http://www.omgili.com/Crawler.html",
     "bot": {
-      "name": "Omgili bot",
+      "name": "Omgilibot",
       "category": 0,
-      "url": "http://www.omgili.com/Crawler.html",
+      "url": "https://webz.io/blog/api/what-is-the-omgili-bot-and-why-is-it-crawling-your-website/",
       "producer": {
-        "name": "Omgili",
-        "url": "http://www.omgili.com"
+        "name": "Webz.io Ltd",
+        "url": "https://webz.io/"
       }
     }
   },
@@ -7284,7 +7284,7 @@
     "userAgent": "Snap/1.0 (+https://www.diffbot.com/dev/docs/crawl/)",
     "bot": {
       "name": "Diffbot",
-      "category": 3,
+      "category": 18,
       "url": "https://docs.diffbot.com/docs/getting-started-with-crawl",
       "producer": {
         "name": "Diffbot Technologies Corp.",
@@ -7295,8 +7295,8 @@
   {
     "userAgent": "Doximity-Diffbot",
     "bot": {
-      "name": "Diffbot",
-      "category": 3,
+      "name": "Doximity-Diffbot",
+      "category": 18,
       "url": "https://docs.diffbot.com/docs/getting-started-with-crawl",
       "producer": {
         "name": "Diffbot Technologies Corp.",
@@ -7308,7 +7308,7 @@
     "userAgent": "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.1.2) Gecko/20090729 Firefox/3.5.2 (.NET CLR 3.5.30729; Diffbot/0.1; +http://www.diffbot.com)",
     "bot": {
       "name": "Diffbot",
-      "category": 3,
+      "category": 18,
       "url": "https://docs.diffbot.com/docs/getting-started-with-crawl",
       "producer": {
         "name": "Diffbot Technologies Corp.",
@@ -7508,7 +7508,7 @@
     "userAgent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
     "bot": {
       "name": "ChatGPT-User",
-      "category": 3,
+      "category": 17,
       "url": "https://platform.openai.com/docs/bots",
       "producer": {
         "name": "OpenAI OpCo, LLC",
@@ -7520,7 +7520,7 @@
     "userAgent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; OAI-SearchBot/1.0; +https://openai.com/searchbot",
     "bot": {
       "name": "OAI-SearchBot",
-      "category": 3,
+      "category": 19,
       "url": "https://platform.openai.com/docs/bots",
       "producer": {
         "name": "OpenAI OpCo, LLC",
@@ -7653,7 +7653,7 @@
     "bot": {
       "name": "Lumar",
       "category": 3,
-      "url": "https://deepcrawl.com/bot",
+      "url": "https://www.lumar.io/spdr/",
       "producer": {
         "name": "Lumar",
         "url": "https://www.lumar.io/"
@@ -7712,7 +7712,7 @@
     "userAgent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; GPTBot/1.0; +https://openai.com/gptbot)",
     "bot": {
       "name": "GPTBot",
-      "category": 3,
+      "category": 18,
       "url": "https://platform.openai.com/docs/bots",
       "producer": {
         "name": "OpenAI OpCo, LLC",
@@ -7936,11 +7936,15 @@
     }
   },
   {
-    "userAgent": "ClaudeBot",
+    "userAgent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; ClaudeBot/1.0; +ClaudeBot@anthropic.com)",
     "bot": {
       "name": "ClaudeBot",
-      "category": 3,
-      "url": "https://github.com/ClaudeBot/ClaudeBot"
+      "category": 18,
+      "url": "https://support.claude.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler",
+      "producer": {
+        "name": "Anthropic PBC",
+        "url": "https://www.anthropic.com/"
+      }
     }
   },
   {
@@ -7971,7 +7975,7 @@
     "userAgent": "Mozilla/5.0 (compatible; ImagesiftBot; +imagesift.com)",
     "bot": {
       "name": "ImageSift",
-      "category": 3,
+      "category": 18,
       "url": "https://imagesift.com/",
       "producer": {
         "name": "Castle Global, Inc.",
@@ -8359,9 +8363,9 @@
   {
     "userAgent": "Google-Extended",
     "bot": {
-      "name": "Googlebot",
-      "category": 0,
-      "url": "https://developers.google.com/search/docs/crawling-indexing/overview-google-crawlers",
+      "name": "Google-Extended",
+      "category": 18,
+      "url": "https://developers.google.com/crawling/docs/crawlers-fetchers/google-common-crawlers",
       "producer": {
         "name": "Google Inc.",
         "url": "https://www.google.com/"
@@ -8420,7 +8424,7 @@
     "userAgent": "YouBot (+http://www.you.com)",
     "bot": {
       "name": "YouBot",
-      "category": 3,
+      "category": 19,
       "url": "https://about.you.com/youbot/",
       "producer": {
         "name": "SuSea, Inc.",
@@ -8432,7 +8436,7 @@
     "userAgent": "Mozilla/5.0 (compatible; YouBot/1.0; +https://about.you.com/youbot/)",
     "bot": {
       "name": "YouBot",
-      "category": 3,
+      "category": 19,
       "url": "https://about.you.com/youbot/",
       "producer": {
         "name": "SuSea, Inc.",
@@ -8488,8 +8492,8 @@
     "userAgent": "GitHubCopilotChat/0.8.0",
     "bot": {
       "name": "GitHubCopilotChat",
-      "category": 3,
-      "url": "https://github.com/aaamoon/copilot-gpt4-service"
+      "category": 17,
+      "url": "https://github.com/microsoft/vscode-copilot-chat"
     }
   },
   {
@@ -8512,7 +8516,7 @@
     "userAgent": "anthropic-ai",
     "bot": {
       "name": "Anthropic AI",
-      "category": 3,
+      "category": 18,
       "url": "https://www.anthropic.com/",
       "producer": {
         "name": "Anthropic, PBC",
@@ -8602,7 +8606,7 @@
     "userAgent": "cohere-ai",
     "bot": {
       "name": "Cohere AI",
-      "category": 3,
+      "category": 18,
       "url": "https://cohere.com/",
       "producer": {
         "name": "Cohere, Inc.",
@@ -8614,7 +8618,7 @@
     "userAgent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; PerplexityBot/1.0; +https://perplexity.ai/perplexitybot)",
     "bot": {
       "name": "PerplexityBot",
-      "category": 3,
+      "category": 19,
       "url": "https://docs.perplexity.ai/guides/bots",
       "producer": {
         "name": "Perplexity AI, Inc.",
@@ -10817,7 +10821,7 @@
     "bot": {
       "name": "Lumar",
       "category": 3,
-      "url": "https://deepcrawl.com/bot",
+      "url": "https://www.lumar.io/spdr/",
       "producer": {
         "name": "Lumar",
         "url": "https://www.lumar.io/"
@@ -10829,7 +10833,7 @@
     "bot": {
       "name": "Lumar",
       "category": 3,
-      "url": "https://deepcrawl.com/bot",
+      "url": "https://www.lumar.io/spdr/",
       "producer": {
         "name": "Lumar",
         "url": "https://www.lumar.io/"
@@ -10880,8 +10884,8 @@
     "userAgent": "Google-CloudVertexBot",
     "bot": {
       "name": "Google-CloudVertexBot",
-      "category": 3,
-      "url": "https://developers.google.com/search/docs/crawling-indexing/google-common-crawlers#google-cloudvertexbot",
+      "category": 18,
+      "url": "https://developers.google.com/crawling/docs/crawlers-fetchers/google-common-crawlers#google-cloudvertexbot",
       "producer": {
         "name": "Google Inc.",
         "url": "https://www.google.com/"
@@ -10958,7 +10962,7 @@
     "userAgent": "meta-externalagent/1.1 (+https://developers.facebook.com/docs/sharing/webmasters/crawler)",
     "bot": {
       "name": "Meta-ExternalAgent",
-      "category": 3,
+      "category": 17,
       "url": "https://developers.facebook.com/docs/sharing/webmasters/web-crawlers",
       "producer": {
         "name": "Meta Platforms, Inc.",
@@ -10970,7 +10974,7 @@
     "userAgent": "meta-externalagent/1.1",
     "bot": {
       "name": "Meta-ExternalAgent",
-      "category": 3,
+      "category": 17,
       "url": "https://developers.facebook.com/docs/sharing/webmasters/web-crawlers",
       "producer": {
         "name": "Meta Platforms, Inc.",
@@ -11589,7 +11593,7 @@
     "userAgent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Perplexity-User/1.0; +https://perplexity.ai/perplexity-user)",
     "bot": {
       "name": "Perplexity-User",
-      "category": 3,
+      "category": 17,
       "url": "https://docs.perplexity.ai/guides/bots",
       "producer": {
         "name": "Perplexity AI, Inc.",
@@ -11601,7 +11605,7 @@
     "userAgent": "Mozilla/5.0 (compatible; IbouBot/1.0; +bot@ibou.io; +https://ibou.io/iboubot.html)",
     "bot": {
       "name": "IbouBot",
-      "category": 0,
+      "category": 19,
       "url": "https://ibou.io/iboubot.html"
     }
   },
@@ -11621,7 +11625,7 @@
     "userAgent": "TerraCotta https://github.com/CeramicTeam/CeramicTerracotta",
     "bot": {
       "name": "TerraCotta",
-      "category": 3,
+      "category": 18,
       "url": "https://github.com/CeramicTeam/CeramicTerracotta",
       "producer": {
         "name": "Ceramic, Inc.",
@@ -11675,7 +11679,7 @@
     "userAgent": "Mozilla/5.0 (compatible; Replicate-Bot/1.0; +https://replicate.com/)",
     "bot": {
       "name": "Replicate-Bot",
-      "category": 11,
+      "category": 18,
       "url": "https://replicate.com/",
       "producer": {
         "name": "Replicate, Inc.",
@@ -11723,7 +11727,7 @@
     "userAgent": "Mozilla/5.0 (compatible; Together-Bot/1.0; +https://together.ai/)",
     "bot": {
       "name": "Together-Bot",
-      "category": 3,
+      "category": 18,
       "url": "https://www.together.ai/",
       "producer": {
         "name": "Together Computer Inc.",
@@ -11735,7 +11739,7 @@
     "userAgent": "Mozilla/5.0 (compatible; xAI-Bot/1.0; +https://x.ai/)",
     "bot": {
       "name": "xAI-Bot",
-      "category": 3,
+      "category": 18,
       "url": "https://x.ai/",
       "producer": {
         "name": "X.AI LLC",
@@ -11747,7 +11751,7 @@
     "userAgent": "Mozilla/5.0 (compatible; Groq-Bot/1.0; +https://groq.com/)",
     "bot": {
       "name": "Groq-Bot",
-      "category": 3,
+      "category": 18,
       "url": "https://groq.com/",
       "producer": {
         "name": "Groq, Inc.",
@@ -11759,7 +11763,7 @@
     "userAgent": "Mozilla/5.0 (compatible; bigsur.ai/1.0)",
     "bot": {
       "name": "Big Sur AI",
-      "category": 3,
+      "category": 17,
       "url": "https://bigsur.ai/",
       "producer": {
         "name": "Big Sur AI, Inc.",
@@ -11770,8 +11774,8 @@
   {
     "userAgent": "Mozilla/5.0 (compatible; Cohere-Command/1.0; +https://cohere.com/)",
     "bot": {
-      "name": "Cohere AI",
-      "category": 3,
+      "name": "Cohere-Command",
+      "category": 18,
       "url": "https://cohere.com/",
       "producer": {
         "name": "Cohere, Inc.",
@@ -11782,8 +11786,8 @@
   {
     "userAgent": "cohere-training-data-crawler",
     "bot": {
-      "name": "Cohere AI",
-      "category": 3,
+      "name": "cohere-training-data-crawler",
+      "category": 18,
       "url": "https://cohere.com/",
       "producer": {
         "name": "Cohere, Inc.",
@@ -11795,7 +11799,7 @@
     "userAgent": "Mozilla/5.0 (compatible; FirecrawlAgent/1.0)",
     "bot": {
       "name": "FirecrawlAgent",
-      "category": 11,
+      "category": 18,
       "url": "https://www.firecrawl.dev/",
       "producer": {
         "name": "SideGuide Technologies, Inc.",
@@ -11812,6 +11816,548 @@
     },
     "bot": {
       "name": "Generic Bot"
+    }
+  },
+  {
+    "userAgent": "Google-NotebookLM",
+    "bot": {
+      "name": "Google-NotebookLM",
+      "category": 17,
+      "url": "https://developers.google.com/crawling/docs/crawlers-fetchers/google-user-triggered-fetchers",
+      "producer": {
+        "name": "Google Inc.",
+        "url": "https://www.google.com/"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Claude-User/1.0; +Claude-User@anthropic.com)",
+    "bot": {
+      "name": "Claude-User",
+      "category": 17,
+      "url": "https://support.claude.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler",
+      "producer": {
+        "name": "Anthropic PBC",
+        "url": "https://www.anthropic.com/"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Claude-SearchBot/1.0; +searchbot@anthropic.com)",
+    "bot": {
+      "name": "Claude-SearchBot",
+      "category": 19,
+      "url": "https://support.claude.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler",
+      "producer": {
+        "name": "Anthropic PBC",
+        "url": "https://www.anthropic.com/"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Amzn-User/0.1) Chrome/119.0.6045.214 Safari/537.36",
+    "bot": {
+      "name": "Amzn-User",
+      "category": 17,
+      "url": "https://developer.amazon.com/amazonbot",
+      "producer": {
+        "name": "Amazon.com, Inc.",
+        "url": "https://www.amazon.com/"
+      }
+    }
+  },
+  {
+    "userAgent": "webzio-extended (+https://webz.io/bot.html)",
+    "bot": {
+      "name": "webzio-extended",
+      "category": 18,
+      "url": "https://docs.webz.io/reference/how-it-works-video",
+      "producer": {
+        "name": "Webz.io Ltd",
+        "url": "https://webz.io/"
+      }
+    }
+  },
+  {
+    "userAgent": "webzio (+https://webz.io/bot.html)",
+    "bot": {
+      "name": "webzio",
+      "category": 19,
+      "url": "https://docs.webz.io/reference/how-it-works-video",
+      "producer": {
+        "name": "Webz.io Ltd",
+        "url": "https://webz.io/"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Gemini-Deep-Research; +https://gemini.google/overview/deep-research/) Chrome/135.0.0.0 Safari/537.36",
+    "bot": {
+      "name": "Gemini-Deep-Research",
+      "category": 17,
+      "url": "https://gemini.google/overview/deep-research/",
+      "producer": {
+        "name": "Google Inc.",
+        "url": "https://www.google.com/"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (compatible; Claude-Web/1.0; +https://www.anthropic.com)",
+    "bot": {
+      "name": "Claude-Web",
+      "category": 19,
+      "url": "https://support.claude.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler",
+      "producer": {
+        "name": "Anthropic PBC",
+        "url": "https://www.anthropic.com/"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (compatible) Ai2Bot-Dolma (+https://www.allenai.org/crawl)",
+    "bot": {
+      "name": "Ai2Bot-Dolma",
+      "category": 18,
+      "url": "https://allenai.org/crawler",
+      "producer": {
+        "name": "The Allen Institute for Artificial Intelligence",
+        "url": "https://allenai.org/"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (compatible) AI2Bot (+https://www.allenai.org/crawler)",
+    "bot": {
+      "name": "Ai2Bot",
+      "category": 18,
+      "url": "https://allenai.org/crawler",
+      "producer": {
+        "name": "The Allen Institute for Artificial Intelligence",
+        "url": "https://allenai.org/"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (compatible; WARDBot/1.0; http://ward.ai/robot)",
+    "bot": {
+      "name": "WARDBot",
+      "category": 9,
+      "url": "https://ward.ai/robot",
+      "producer": {
+        "name": "W.A.R.D. LLC",
+        "url": "https://ward.ai/"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36; compatible; OAI-SearchBot/1.0; robots.txt; +https://openai.com/searchbot",
+    "bot": {
+      "name": "OAI-SearchBot",
+      "category": 19,
+      "url": "https://platform.openai.com/docs/bots",
+      "producer": {
+        "name": "OpenAI OpCo, LLC",
+        "url": "https://openai.com/"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (compatible; Webzio-Extended/1.0)",
+    "bot": {
+      "name": "webzio-extended",
+      "category": 18,
+      "url": "https://docs.webz.io/reference/how-it-works-video",
+      "producer": {
+        "name": "Webz.io Ltd",
+        "url": "https://webz.io/"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (compatible; Character-AI/1.0; +https://character.ai/)",
+    "bot": {
+      "name": "Character-AI",
+      "category": 17,
+      "url": "https://character.ai/",
+      "producer": {
+        "name": "Character Technologies, Inc.",
+        "url": "https://character.ai/"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (compatible; DeepseekBot/1.0; +https://www.deepseek.com/bot)",
+    "bot": {
+      "name": "DeepseekBot",
+      "category": 18,
+      "url": "https://www.deepseek.com/bot",
+      "producer": {
+        "name": "Hangzhou Deep Search Artificiell Intelligens Basic Technology Research Co., Ltd.",
+        "url": "https://www.deepseek.com/"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; MistralAI-User/1.0; +https://docs.mistral.ai/robots)",
+    "bot": {
+      "name": "MistralAI-User",
+      "category": 17,
+      "url": "https://docs.mistral.ai/robots",
+      "producer": {
+        "name": "Mistral AI",
+        "url": "https://mistral.ai/"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (compatible; Crawlspace/1.0)",
+    "bot": {
+      "name": "Crawlspace",
+      "category": 18,
+      "url": "https://crawlspace.dev/",
+      "producer": {
+        "name": "Crawlspace Company",
+        "url": "https://crawlspace.dev/"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (compatible; Devin/1.0)",
+    "bot": {
+      "name": "Devin",
+      "category": 17,
+      "url": "https://cognition.ai/",
+      "producer": {
+        "name": "Cognition AI, Inc.",
+        "url": "https://cognition.ai/"
+      }
+    }
+  },
+  {
+    "userAgent": "Google-Pinpoint",
+    "bot": {
+      "name": "Google-Pinpoint",
+      "category": 17,
+      "url": "https://developers.google.com/crawling/docs/crawlers-fetchers/google-user-triggered-fetchers#google-pinpoint",
+      "producer": {
+        "name": "Google Inc.",
+        "url": "https://www.google.com/"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (compatible; Andibot/1.0)",
+    "bot": {
+      "name": "Andibot",
+      "category": 19,
+      "url": "https://andisearch.com/",
+      "producer": {
+        "name": "Andi",
+        "url": "https://andisearch.com/"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (compatible; hypestat/1.0; +https://hypestat.com/crawler)",
+    "bot": {
+      "name": "HypeStat",
+      "category": 3,
+      "url": "https://hypestat.com/crawler"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (compatible; StatusNestBacklinkSpider/1.0; +https://statusnest.com/bot)",
+    "bot": {
+      "name": "StatusNestBacklinkSpider",
+      "category": 3,
+      "url": "https://statusnest.com/bot"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (compatible; RunPod-Bot/1.0; +https://runpod.io/)",
+    "bot": {
+      "name": "RunPod-Bot",
+      "category": 18,
+      "url": "https://www.runpod.io/",
+      "producer": {
+        "name": "RunPod Inc.",
+        "url": "https://www.runpod.io/"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (compatible; HuggingFace-Bot/1.0; +https://huggingface.co/)",
+    "bot": {
+      "name": "HuggingFace-Bot",
+      "category": 18,
+      "url": "https://huggingface.co/",
+      "producer": {
+        "name": "Hugging Face, Inc",
+        "url": "https://huggingface.co/"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko; compatible; GoogleAgent-Mariner; +https://developers.google.com/search/docs/crawling-indexing/google-agent-mariner) Chrome/135.0.0.0 Safari/537.36",
+    "bot": {
+      "name": "GoogleAgent-Mariner",
+      "category": 16,
+      "url": "https://developers.google.com/search/docs/crawling-indexing/google-agent-mariner",
+      "producer": {
+        "name": "Google Inc.",
+        "url": "https://www.google.com/"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; GoogleAgent-Search; +https://developers.google.com/search/docs/crawling-indexing/google-agent-search) Chrome/114.0.0.0 Safari/537.36",
+    "bot": {
+      "name": "GoogleAgent-Search",
+      "category": 17,
+      "url": "https://developers.google.com/search/docs/crawling-indexing/google-agent-search",
+      "producer": {
+        "name": "Google Inc.",
+        "url": "https://www.google.com/"
+      }
+    }
+  },
+  {
+    "userAgent": "Tiberius/0.1 (+https://moosara.com)",
+    "bot": {
+      "name": "Generic Bot"
+    }
+  },
+  {
+    "userAgent": "LinkBloom/2.7.11 (Educational Domain Discovery; +https://hamidsoltani.com/linkbloom)",
+    "bot": {
+      "name": "LinkBloom",
+      "category": 3,
+      "url": "https://hamidsoltani.com/linkbloom"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:72.0) Gecko/20100101 Firefox/72.0 (compatible; test; +https://github.com/rom1504/img2dataset)",
+    "bot": {
+      "name": "img2dataset",
+      "category": 3,
+      "url": "https://github.com/rom1504/img2dataset"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 AppleWebKit/605.1.15 (KHTML, like Gecko; compatible; iAskBot/1.0; +https://iask.ai/) Chrome/120.0.6099.119 Safari/605.1.15",
+    "bot": {
+      "name": "iAskBot",
+      "category": 18,
+      "url": "https://iask.ai/",
+      "producer": {
+        "name": "Ai Search Inc.",
+        "url": "https://iask.ai/"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; ChatGPT-Browser/1.0; +https://openai.com/bot)",
+    "bot": {
+      "name": "ChatGPT-Browser",
+      "category": 17,
+      "url": "https://platform.openai.com/docs/bots",
+      "producer": {
+        "name": "OpenAI OpCo, LLC",
+        "url": "https://openai.com/"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Anthropic-Claude/1.0; +https://www.anthropic.com)",
+    "bot": {
+      "name": "ClaudeBot",
+      "category": 18,
+      "url": "https://support.claude.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler",
+      "producer": {
+        "name": "Anthropic PBC",
+        "url": "https://www.anthropic.com/"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (compatible; NovaAct/1.0; +https://www.novaact.com)",
+    "bot": {
+      "name": "NovaAct",
+      "category": 16,
+      "url": "https://nova.amazon.com/act",
+      "producer": {
+        "name": "Amazon.com, Inc.",
+        "url": "https://www.amazon.com/"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Bard-AI/1.0; +https://developers.google.com/search/docs/crawling-indexing/google-common-crawlers)",
+    "bot": {
+      "name": "Bard-AI",
+      "category": 19,
+      "url": "https://developers.google.com/search/docs/crawling-indexing/google-common-crawlers",
+      "producer": {
+        "name": "Google Inc.",
+        "url": "https://www.google.com/"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Gemini-AI/1.0; +https://developers.google.com/search/docs/crawling-indexing/google-common-crawlers)",
+    "bot": {
+      "name": "Gemini-AI",
+      "category": 19,
+      "url": "https://developers.google.com/search/docs/crawling-indexing/google-common-crawlers",
+      "producer": {
+        "name": "Google Inc.",
+        "url": "https://www.google.com/"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; LinerBot/1.0; +https://docs.getliner.com/docs/linerbot)",
+    "bot": {
+      "name": "LinerBot",
+      "category": 17,
+      "url": "https://docs.getliner.com/docs/linerbot",
+      "producer": {
+        "name": "Liner",
+        "url": "https://liner.com/"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (compatible) AI2Bot-DeepResearchEval (+https://www.allenai.org/crawler)",
+    "bot": {
+      "name": "Ai2Bot-DeepResearchEval",
+      "category": 17,
+      "url": "https://allenai.org/crawler",
+      "producer": {
+        "name": "The Allen Institute for Artificial Intelligence",
+        "url": "https://allenai.org/"
+      }
+    }
+  },
+  {
+    "userAgent": "Poggio-Citations 1.0 (+https://docs.poggio.io/api/robots)",
+    "bot": {
+      "name": "Poggio-Citations",
+      "category": 17,
+      "url": "https://docs.poggio.io/dev-resources/robots",
+      "producer": {
+        "name": "Poggio Labs, Inc.",
+        "url": "https://poggio.io/"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (compatible; QualifiedBot/1.0; +https://www.qualified.com/legal/qualified-crawler-user-agent)",
+    "bot": {
+      "name": "QualifiedBot",
+      "category": 17,
+      "url": "https://www.qualified.com/legal/qualified-crawler-user-agent",
+      "producer": {
+        "name": "Qualified.com, Inc.",
+        "url": "https://www.qualified.com/"
+      }
+    }
+  },
+  {
+    "userAgent": "ZanistaBot/1.0 (+https://zanista.ai/crawler-info)",
+    "bot": {
+      "name": "ZanistaBot",
+      "category": 19,
+      "url": "https://zanista.ai/crawler-info",
+      "producer": {
+        "name": "Zanista AI LTD.",
+        "url": "https://zanista.ai/"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (compatible; ChatGLM-Spider/1.0; +https://chatglm.cn/)",
+    "bot": {
+      "name": "ChatGLM-Spider",
+      "category": 18,
+      "url": "https://chatglm.cn/",
+      "producer": {
+        "name": "Beijing Zhipu Huazhang Technology Co., Ltd.",
+        "url": "https://zhipuai.cn/"
+      }
+    }
+  },
+  {
+    "userAgent": "linkReader/1.0 (+https://gochitchat.ai)",
+    "bot": {
+      "name": "Sider",
+      "category": 18,
+      "url": "https://sider.ai/",
+      "producer": {
+        "name": "Sider AI",
+        "url": "https://sider.ai/"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (compatible; SBIntuitionsBot/0.1; +https://www.sbintuitions.co.jp/bot/)",
+    "bot": {
+      "name": "SBIntuitionsBot",
+      "category": 18,
+      "url": "https://www.sbintuitions.co.jp/en/bot/",
+      "producer": {
+        "name": "SB Intuitions Corp.",
+        "url": "https://www.sbintuitions.co.jp/"
+      }
+    }
+  },
+  {
+    "userAgent": "IAS Crawler (ias_crawler; http://integralads.com/site-indexing-policy/)",
+    "bot": {
+      "name": "IAS Crawler",
+      "category": 18,
+      "url": "https://integralads.com/ias-privacy-data-management/policies/site-indexing-policy/",
+      "producer": {
+        "name": "Integral Ad Science, Inc.",
+        "url": "https://integralads.com/"
+      }
+    }
+  },
+  {
+    "userAgent": "IAS Wombles (ias_wombles; http://integralads.com/site-indexing-policy/)",
+    "bot": {
+      "name": "IAS Wombles",
+      "category": 18,
+      "url": "https://integralads.com/ias-privacy-data-management/policies/site-indexing-policy/",
+      "producer": {
+        "name": "Integral Ad Science, Inc.",
+        "url": "https://integralads.com/"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ShapBot/0.1.0",
+    "bot": {
+      "name": "ShapBot",
+      "category": 18,
+      "url": "https://docs.parallel.ai/resources/crawler",
+      "producer": {
+        "name": "Parallel Web Systems Inc.",
+        "url": "https://parallel.ai/"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (compatible; LumeWebScan/2.0; +https://lumeweaver.com/)",
+    "bot": {
+      "name": "LumeWebScan",
+      "category": 3,
+      "url": "https://lumeweaver.com/",
+      "producer": {
+        "name": "LumeWeaver Labs",
+        "url": "https://lumeweaver.com/"
+      }
     }
   }
 ]

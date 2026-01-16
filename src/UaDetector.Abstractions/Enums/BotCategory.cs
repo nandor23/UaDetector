@@ -18,4 +18,8 @@ public enum BotCategory
     SocialMediaAgent = 13,
     ReadItLaterService = 14,
     Benchmark = 15,
+    AiAgent = 16,
+    AiAssistant = 17,
+    AiDataScraper = 18,
+    AiSearchCrawler = 19
 }

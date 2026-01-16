@@ -76,6 +76,11 @@ public static class YamlToJsonConverter
             { "Social Media Agent", BotCategory.SocialMediaAgent },
             { "Read-it-later Service", BotCategory.ReadItLaterService },
             { "Benchmark", BotCategory.Benchmark },
+            { "AI Agent", BotCategory.AiAgent },
+            { "AI Assistant", BotCategory.AiAssistant },
+            { "AI Data Scraper", BotCategory.AiDataScraper },
+            { "AI Search Crawler", BotCategory.AiSearchCrawler },
+
         }.ToFrozenDictionary();
 
     private static readonly JsonSerializerOptions JsonSerializerOptions = new()
