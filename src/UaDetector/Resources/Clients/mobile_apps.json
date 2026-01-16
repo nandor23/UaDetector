@@ -68,9 +68,13 @@
     "version": "$1"
   },
   {
-    "regex": "(?:MessengerForiOS|MESSENGER|FB_IAB/Orca-Android).*(?:FBAV)(?:[ /]([\\d.]+))?",
+    "regex": "(?:MessengerForiOS|MESSENGER|(?:FB_IAB|FBAN)/Orca-Android).*(?:FBAV)(?:[ /]([\\d.]+))?",
     "name": "Facebook Messenger",
     "version": "$1"
+  },
+  {
+    "regex": "(?:MessengerForiOS|(?:FB_IAB|FBAN)/Orca-Android)",
+    "name": "Facebook Messenger"
   },
   {
     "regex": "(?:GroupsForiOS).*(?:FBAV)(?:[ /]([\\d.]+))?",
@@ -141,6 +145,15 @@
     "regex": "OPA/([\\d.]+)",
     "name": "Google Assistant",
     "version": "$1"
+  },
+  {
+    "regex": "com\\.google\\.Maps/([\\d.]+)",
+    "name": "Google Maps",
+    "version": "$1"
+  },
+  {
+    "regex": "com\\.google\\.android\\.googlequicksearchbox",
+    "name": "Google"
   },
   {
     "regex": "wxwork/(\\d+[.\\d]+)",
@@ -393,6 +406,11 @@
   {
     "regex": "Flipboard/([\\d.]+)?",
     "name": "Flipboard App",
+    "version": "$1"
+  },
+  {
+    "regex": "lite baiduboxapp/([\\d.]+)?",
+    "name": "Baidu Box App Lite",
     "version": "$1"
   },
   {
@@ -1294,7 +1312,7 @@
   },
   {
     "regex": "NewsSapphire/(\\d+\\.[.\\d]+)",
-    "name": "Microsoft Start",
+    "name": "MSN",
     "version": "$1"
   },
   {
