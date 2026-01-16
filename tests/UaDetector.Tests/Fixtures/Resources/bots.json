@@ -12492,5 +12492,17 @@
         "url": "https://www.semantic-visions.com/"
       }
     }
+  },
+  {
+    "userAgent": "Apache/2.2.2 (Fedora) (internal dummy connection)",
+    "bot": {
+      "name": "Apache",
+      "category": 11,
+      "url": "https://www.apache.org/",
+      "producer": {
+        "name": "The Apache Software Foundation",
+        "url": "https://www.apache.org/foundation/"
+      }
+    }
   }
 ]

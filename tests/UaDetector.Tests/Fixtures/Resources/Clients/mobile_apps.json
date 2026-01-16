@@ -3052,22 +3052,6 @@
     }
   },
   {
-    "userAgent": "Apache/2.2.2 (Fedora) (internal dummy connection)",
-    "client": {
-      "type": 0,
-      "name": "Apache",
-      "version": "2.2.2"
-    }
-  },
-  {
-    "userAgent": "Apache/2.4.34 (Ubuntu) OpenSSL/1.1.1 (internal dummy connection)",
-    "client": {
-      "type": 0,
-      "name": "Apache",
-      "version": "2.4.34"
-    }
-  },
-  {
     "userAgent": "com.google.ios.youtube/17.39.4 (iPad4,2; U; CPU iOS 12_5_7 like Mac OS X; zh-Hans_US)",
     "client": {
       "type": 0,

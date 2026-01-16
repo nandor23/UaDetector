@@ -2826,11 +2826,6 @@
     "version": "$1"
   },
   {
-    "regex": "Apache/([\\d.]+)",
-    "name": "Apache",
-    "version": "$1"
-  },
-  {
     "regex": "smzdm ([\\d.]+)",
     "name": "smzdm",
     "version": "$1"
