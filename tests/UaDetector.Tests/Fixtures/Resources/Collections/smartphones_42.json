@@ -12811,5 +12811,71 @@
         "code": 1496
       }
     }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPhone; U; CPU iPhone OS 13.3.1; en_US; ) AppleWebKit/0.0 (KHTML, like Gecko) Version/0.0; GmmClient:google_ios/com.google.Maps/5.38.8/Mobile/ios:iPhone10,2/iOS-AppStore comdirect/1.0 (appVersion:20.3.0;deviceName:apple iphone;deviceType:mobile)",
+    "os": {
+      "name": "iOS",
+      "code": 182,
+      "version": "13.3.1",
+      "family": "iOS"
+    },
+    "client": {
+      "type": 0,
+      "name": "Google Maps",
+      "version": "5.38.8"
+    },
+    "device": {
+      "type": 10,
+      "model": "iPhone 8 Plus",
+      "brand": {
+        "name": "Apple",
+        "code": 97
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 12_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 [FBAN/MessengerForiOS;FBDV/iPhone11,2;FBMD/iPhone;FBSN/iOS;FBSV/12.4.1;FBSS/3;FBID/phone;FBLC/de_DE;FBOP/5]",
+    "os": {
+      "name": "iOS",
+      "code": 182,
+      "version": "12.4.1",
+      "family": "iOS"
+    },
+    "client": {
+      "type": 0,
+      "name": "Facebook Messenger"
+    },
+    "device": {
+      "type": 1,
+      "model": "iPhone XS",
+      "brand": {
+        "name": "Apple",
+        "code": 97
+      }
+    }
+  },
+  {
+    "userAgent": "Dalvik/2.1.0 (Linux; U; Android 15; Pixel 8 Pro Build/AP3A.241005.015) [FBAN/Orca-Android;FBAV/482.0.0.71.108;FBPN/com.facebook.orca;FBLC/de_DE;FBBV/658301643;FBCR/Telekom.de;FBMF/Google;FBBD/google;FBDV/Pixel 8 Pro;FBSV/15;FBCA/arm64-v8a:null;FBDM/{density=2.25,width=1008,height=2244};FB_FW/1;]",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "15",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "client": {
+      "type": 0,
+      "name": "Facebook Messenger",
+      "version": "482.0.0.71.108"
+    },
+    "device": {
+      "type": 1,
+      "model": "Pixel 8 Pro",
+      "brand": {
+        "name": "Google",
+        "code": 655
+      }
+    }
   }
 ]
