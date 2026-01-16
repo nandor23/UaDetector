@@ -96,5 +96,27 @@
         "code": 97
       }
     }
+  },
+  {
+    "userAgent": "Opera/9.46.(Windows 95; lg-UG) Presto/2.9.172 Version/11.00",
+    "os": {
+      "name": "Windows",
+      "code": 170,
+      "version": "95",
+      "family": "Windows"
+    },
+    "browser": {
+      "name": "Opera",
+      "code": 420,
+      "version": "9.46",
+      "family": "Opera",
+      "engine": {
+        "name": "Presto",
+        "version": "2.9.172"
+      }
+    },
+    "device": {
+      "type": 0
+    }
   }
 ]
