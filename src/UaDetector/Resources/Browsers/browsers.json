@@ -2015,6 +2015,22 @@
     "name": "Aloha Browser"
   },
   {
+    "regex": "Chrome/.+Tenta/(\\d+[.\\d]+)",
+    "name": "Tenta Browser",
+    "version": "$1",
+    "engine": {
+      "default": "Blink"
+    }
+  },
+  {
+    "regex": "Tenta/(\\d+[.\\d]+)",
+    "name": "Tenta Browser",
+    "version": "$1",
+    "engine": {
+      "default": "WebKit"
+    }
+  },
+  {
     "regex": "Chrome.+(?:Avast(?:SecureBrowser)?|ASW|Safer)(?:/(\\d+[.\\d]+))?",
     "name": "Avast Secure Browser",
     "version": "$1",
@@ -2028,6 +2044,13 @@
     "version": "$1",
     "engine": {
       "default": "WebKit"
+    }
+  },
+  {
+    "regex": "Android \\d+; [A-Za-z0-9]{10}; U; [^;]+\\) AppleWebKit/.+Chrome/",
+    "name": "Avast Secure Browser",
+    "engine": {
+      "default": "Blink"
     }
   },
   {
@@ -2954,22 +2977,6 @@
   {
     "regex": "isivioo",
     "name": "Isivioo"
-  },
-  {
-    "regex": "Chrome/.+Tenta/(\\d+[.\\d]+)",
-    "name": "Tenta Browser",
-    "version": "$1",
-    "engine": {
-      "default": "Blink"
-    }
-  },
-  {
-    "regex": "Tenta/(\\d+[.\\d]+)",
-    "name": "Tenta Browser",
-    "version": "$1",
-    "engine": {
-      "default": "WebKit"
-    }
   },
   {
     "regex": "Rocket/(\\d+[.\\d]+)",
