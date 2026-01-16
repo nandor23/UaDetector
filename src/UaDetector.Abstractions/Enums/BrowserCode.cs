@@ -710,4 +710,8 @@ public enum BrowserCode
     NovaBrowser = 705,
     XPlayBrowser = 706,
     NintendoBrowser = 707,
+    Blazer = 708,
+    ClarioBrowser = 709,
+    Comet = 710,
+    FireSendBrowser = 711,
 }

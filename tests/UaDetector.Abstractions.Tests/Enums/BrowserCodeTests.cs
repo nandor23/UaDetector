@@ -729,6 +729,10 @@ public class BrowserCodeTests
             { BrowserCode.NovaBrowser, 705 },
             { BrowserCode.XPlayBrowser, 706 },
             { BrowserCode.NintendoBrowser, 707 },
+            { BrowserCode.Blazer, 708 },
+            { BrowserCode.ClarioBrowser, 709 },
+            { BrowserCode.Comet, 710 },
+            { BrowserCode.FireSendBrowser, 711 },
         };
 
         expectedValues.Count.ShouldBe(Enum.GetValues<BrowserCode>().Length);
