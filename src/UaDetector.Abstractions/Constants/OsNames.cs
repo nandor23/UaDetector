@@ -192,4 +192,12 @@ public static class OsNames
     public const string OpenHarmony = "OpenHarmony";
     public const string SmartisanOs = "Smartisan OS";
     public const string TitanOs = "Titan OS";
+    public const string ArcaOs = "ArcaOS";
+    public const string Contiki = "Contiki";
+    public const string ElementaryOs = "elementary OS";
+    public const string GhostBsd = "GhostBSD";
+    public const string Linpus = "Linpus";
+    public const string Minix = "MINIX";
+    public const string MocorOs = "Mocor OS";
+    public const string Plan9 = "Plan 9";
 }

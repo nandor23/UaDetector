@@ -192,4 +192,12 @@ public enum OsCode
     OpenHarmony = 187,
     SmartisanOs = 188,
     TitanOs = 189,
+    ArcaOs = 190,
+    Contiki = 191,
+    ElementaryOs = 192,
+    GhostBsd = 193,
+    Linpus = 194,
+    Minix = 195,
+    MocorOs = 196,
+    Plan9 = 197,
 }

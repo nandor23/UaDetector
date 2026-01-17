@@ -1,5 +1,44 @@
 [
   {
+    "regex": "Contiki/(\\d+[.\\d]+)",
+    "name": "Contiki",
+    "version": "$1"
+  },
+  {
+    "regex": "Minix (\\d+[.\\d]+)",
+    "name": "MINIX",
+    "version": "$1"
+  },
+  {
+    "regex": "Plan 9 (\\d+[.\\d]+)",
+    "name": "Plan 9",
+    "version": "$1"
+  },
+  {
+    "regex": "Linpus/(\\d+[.\\d]+)",
+    "name": "Linpus",
+    "version": "$1"
+  },
+  {
+    "regex": "ArcaOS(?: (\\d+[.\\d]+))?",
+    "name": "ArcaOS",
+    "version": "$1"
+  },
+  {
+    "regex": "GhostBSD/(\\d+[.\\d]+)",
+    "name": "GhostBSD",
+    "version": "$1"
+  },
+  {
+    "regex": "elementary OS/(\\d+[.\\d]+)",
+    "name": "elementary OS",
+    "version": "$1"
+  },
+  {
+    "regex": "SpreadTrum",
+    "name": "Mocor OS"
+  },
+  {
     "regex": "TitanOS/(\\d+[.\\d]+)",
     "name": "Titan OS",
     "version": "$1"
@@ -939,6 +978,15 @@
     "regex": "MRE/(\\d+)\\.(\\d+).*;MAUI",
     "name": "MRE",
     "version": "$1.$2"
+  },
+  {
+    "regex": "MRE\\\\\\\\(\\d+[.\\d]+)",
+    "name": "MRE",
+    "version": "$1"
+  },
+  {
+    "regex": ".+MRE|MAUI Runtime",
+    "name": "MRE"
   },
   {
     "regex": "Linspire",

@@ -219,6 +219,14 @@ public static class OsRegistry
         { OsCode.OpenHarmony, OsNames.OpenHarmony },
         { OsCode.SmartisanOs, OsNames.SmartisanOs },
         { OsCode.TitanOs, OsNames.TitanOs },
+        { OsCode.ArcaOs, OsNames.ArcaOs },
+        { OsCode.Contiki, OsNames.Contiki },
+        { OsCode.ElementaryOs, OsNames.ElementaryOs },
+        { OsCode.GhostBsd, OsNames.GhostBsd },
+        { OsCode.Linpus, OsNames.Linpus },
+        { OsCode.Minix, OsNames.Minix },
+        { OsCode.MocorOs, OsNames.MocorOs },
+        { OsCode.Plan9, OsNames.Plan9 },
     }.ToFrozenDictionary();
 
     internal static readonly FrozenDictionary<string, OsCode> OsNameMappings = OsCodeMappings

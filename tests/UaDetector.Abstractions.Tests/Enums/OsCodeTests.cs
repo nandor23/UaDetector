@@ -211,6 +211,14 @@ public class OsCodeTests
             { OsCode.OpenHarmony, 187 },
             { OsCode.SmartisanOs, 188 },
             { OsCode.TitanOs, 189 },
+            { OsCode.ArcaOs, 190 },
+            { OsCode.Contiki, 191 },
+            { OsCode.ElementaryOs, 192 },
+            { OsCode.GhostBsd, 193 },
+            { OsCode.Linpus, 194 },
+            { OsCode.Minix, 195 },
+            { OsCode.MocorOs, 196 },
+            { OsCode.Plan9, 197 },
         };
 
         expectedValues.Count.ShouldBe(Enum.GetValues<OsCode>().Length);
