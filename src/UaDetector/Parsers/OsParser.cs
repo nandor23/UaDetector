@@ -388,7 +388,7 @@ public sealed partial class OsParser : IOsParser
             {
                 CpuArchitectures.X64,
                 RegexBuilder.BuildRegex(
-                    "64-?bit|WOW64|(?:Intel)?x64|WINDOWS_64|win64|.*amd64|.*x86_?64"
+                    "64-?bit|WOW64|(?:Intel)?x64|WINDOWS_64|win64|IRIX;?64|.*amd64|.*x86_?64"
                 )
             },
             {

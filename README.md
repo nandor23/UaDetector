@@ -10,8 +10,8 @@
 <p align="center">
   <a href="https://github.com/nandor23/UaDetector/actions/workflows/build.yml"><img src="https://github.com/nandor23/UaDetector/actions/workflows/build.yml/badge.svg?branch=main" alt="Build"></a>
   <img src="https://img.shields.io/github/v/release/nandor23/UaDetector" alt="GitHub Release">
-  <img src="https://img.shields.io/nuget/dt/UaDetector?color=%2334a3d9" alt="NuGet Downloads">
-  <a href="https://www.gnu.org/licenses/lgpl-3.0.en.html"><img src="https://img.shields.io/github/license/nandor23/UaDetector?color=%2325b99c" alt="License"></a>
+  <img src="https://img.shields.io/nuget/dt/UaDetector?color=%235c6bc0" alt="NuGet Downloads">
+  <a href="https://www.gnu.org/licenses/lgpl-3.0.en.html"><img src="https://img.shields.io/github/license/nandor23/UaDetector?color=%231e8e7e" alt="License"></a>
 </p>
 
 UaDetector is a user agent parser that identifies browsers, operating systems, devices, clients, and bots. 
