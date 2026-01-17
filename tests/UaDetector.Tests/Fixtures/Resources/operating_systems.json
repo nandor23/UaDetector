@@ -7217,5 +7217,140 @@
       "version": "3.0",
       "family": "Other Smart TV"
     }
+  },
+  {
+    "userAgent": "OperaMini(MAUI_MRE;Opera Mini/4.4.33576;fr)",
+    "os": {
+      "name": "MRE",
+      "code": 97,
+      "family": "Real-time OS"
+    }
+  },
+  {
+    "userAgent": "Opera/9.80 (MAUI Runtime; Opera Mini/4.4.33576/191.293; U; fr) Presto/2.12.423 Version/12.16",
+    "os": {
+      "name": "MRE",
+      "code": 97,
+      "family": "Real-time OS"
+    }
+  },
+  {
+    "userAgent": "NativeOperaMini(MRE_VER_2202;240X320;MT6276;V/;Opera Mini/6.1.27412;fr)",
+    "os": {
+      "name": "MRE",
+      "code": 97,
+      "family": "Real-time OS"
+    }
+  },
+  {
+    "userAgent": "GIONEE50_12864_11B_HW (MRE\\\\2.5.00(3072) resolution\\\\240320 chipset\\\\MT6250 touch\\\\1 tpannel\\\\0 camera\\\\1 gsensor\\\\0 keyboard\\ormal) 1307SY_0201_V1045 Release/2013.06.28 WAP Browser/MAUI (HTTP PGDL; HTTPS) Profile/Profile/MIDP-2.0 Configuration/CLDC-1.1 Q03C1-2.40 en-US",
+    "os": {
+      "name": "MRE",
+      "code": 97,
+      "version": "2.5.00",
+      "family": "Real-time OS"
+    }
+  },
+  {
+    "userAgent": "Opera/9.80 (SpreadTrum; Opera Mini/4.4.31227/191.268; U; en) Presto/2.12.423 Version/12.16",
+    "os": {
+      "name": "Mocor OS",
+      "code": 196,
+      "family": "Real-time OS"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/604.1 (KHTML, like Gecko) Version/11.0 Safari/604.1 elementary OS/0.4 (Loki) Epiphany/3.18.11",
+    "os": {
+      "name": "elementary OS",
+      "code": 192,
+      "version": "0.4",
+      "cpuArchitecture": "x64",
+      "family": "GNU/Linux"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (X11; GhostBSD/10.3; x86_64; rv:50.0.1) Gecko/20100101 Firefox/50.0.1",
+    "os": {
+      "name": "GhostBSD",
+      "code": 193,
+      "version": "10.3",
+      "cpuArchitecture": "x64",
+      "family": "Unix"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (OS/2; ArcaOS 5.0.6; x86_64; rv:89.0) Gecko/20100101 Firefox/89.0",
+    "os": {
+      "name": "ArcaOS",
+      "code": 190,
+      "version": "5.0.6",
+      "cpuArchitecture": "x64",
+      "family": "IBM"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (OS/2; ArcaOS; x64; rv:89.0) Gecko/20100101 Firefox/89.0",
+    "os": {
+      "name": "ArcaOS",
+      "code": 190,
+      "cpuArchitecture": "x64",
+      "family": "IBM"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9b5pre) Gecko/2008032619 Linpus/3.0-0.49",
+    "os": {
+      "name": "Linpus",
+      "code": 194,
+      "version": "3.0",
+      "cpuArchitecture": "x86",
+      "family": "GNU/Linux"
+    }
+  },
+  {
+    "userAgent": "NCSA_Mosaic/5.0 (X11;Plan 9 4.0)",
+    "os": {
+      "name": "Plan 9",
+      "code": 197,
+      "version": "4.0",
+      "family": "Unix"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (X11; Original ; Minix 3.3 ; rv:3.0)",
+    "os": {
+      "name": "MINIX",
+      "code": 195,
+      "version": "3.3",
+      "family": "Unix"
+    }
+  },
+  {
+    "userAgent": "Contiki/1.0 (Commodore 64; http://dunkels.com/adam/contiki/)",
+    "os": {
+      "name": "Contiki",
+      "code": 191,
+      "version": "1.0",
+      "family": "Other Mobile"
+    }
+  },
+  {
+    "userAgent": "Contiki/1.2-pre0 http://dunkels.com/adam/contiki/",
+    "os": {
+      "name": "Contiki",
+      "code": 191,
+      "version": "1.2",
+      "family": "Other Mobile"
+    }
+  },
+  {
+    "userAgent": "Contiki/2.2.2 http://www.sics.se/contiki/",
+    "os": {
+      "name": "Contiki",
+      "code": 191,
+      "version": "2.2.2",
+      "family": "Other Mobile"
+    }
   }
 ]

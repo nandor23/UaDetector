@@ -96,7 +96,7 @@ public sealed partial class OsParser : IOsParser
                 new[] { OsCode.Nintendo, OsCode.PlayStation }.ToFrozenSet()
             },
             { OsFamilies.GoogleTv, new[] { OsCode.GoogleTv }.ToFrozenSet() },
-            { OsFamilies.Ibm, new[] { OsCode.Os2 }.ToFrozenSet() },
+            { OsFamilies.Ibm, new[] { OsCode.Os2, OsCode.ArcaOs }.ToFrozenSet() },
             {
                 OsFamilies.Ios,
                 new[] { OsCode.IOs, OsCode.TvOs, OsCode.WatchOs, OsCode.IPadOs }.ToFrozenSet()
@@ -193,6 +193,8 @@ public sealed partial class OsParser : IOsParser
                     OsCode.ViziOs,
                     OsCode.AzureLinux,
                     OsCode.CoolitaOs,
+                    OsCode.ElementaryOs,
+                    OsCode.Linpus,
                 }.ToFrozenSet()
             },
             { OsFamilies.Mac, new[] { OsCode.Mac }.ToFrozenSet() },
@@ -217,6 +219,7 @@ public sealed partial class OsParser : IOsParser
                     OsCode.Rex,
                     OsCode.RtosAndNext,
                     OsCode.KolibriOs,
+                    OsCode.MocorOs,
                 }.ToFrozenSet()
             },
             {
@@ -231,6 +234,7 @@ public sealed partial class OsParser : IOsParser
                     OsCode.Maemo,
                     OsCode.LuneOs,
                     OsCode.Geos,
+                    OsCode.Contiki,
                 }.ToFrozenSet()
             },
             {
@@ -265,6 +269,9 @@ public sealed partial class OsParser : IOsParser
                     OsCode.NewsOs,
                     OsCode.NextStep,
                     OsCode.StarBladeOs,
+                    OsCode.GhostBsd,
+                    OsCode.Plan9,
+                    OsCode.Minix,
                 }.ToFrozenSet()
             },
             { OsFamilies.WebTv, new[] { OsCode.WebTv }.ToFrozenSet() },
