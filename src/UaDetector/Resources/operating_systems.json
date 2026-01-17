@@ -119,7 +119,7 @@
     "version": "$1"
   },
   {
-    "regex": "OpenVMS V(\\d+[.\\d]+)",
+    "regex": "OpenVMS(?: V(\\d+[.\\d]+))?",
     "name": "OpenVMS",
     "version": "$1"
   },
@@ -552,7 +552,7 @@
     "version": "$1"
   },
   {
-    "regex": "(?:Andr[o0]id (\\d([\\d.])*);? |Amazon;|smarttv_)AFT|AEO[ACBHKT]|KF[ADFGJKMORSTQ]|.+FIRETVSTICK2018",
+    "regex": "(?:Andr[o0]id (\\d([\\d.])*);? |Amazon;|smarttv_)AFT|AEO[ACBHKT]| KF[ADFGJKMORSTQ]|.+FIRETVSTICK2018",
     "name": "Fire OS",
     "versions": [
       {
@@ -1097,7 +1097,7 @@
     "version": "$1"
   },
   {
-    "regex": "(?:rhel|Red Hat Enterprise Linux Server)/(\\d+[.\\d]+)",
+    "regex": "(?:rhel|Red ?Hat(?: Enterprise)? Linux(?: Server)?)[ /](\\d+[.\\d]+)",
     "name": "Red Hat",
     "version": "$1"
   },
@@ -1191,13 +1191,17 @@
     "version": "$1"
   },
   {
-    "regex": "(Debian|Knoppix|Mint(?! Browser)|Ubuntu|Kubuntu|Xubuntu|Lubuntu|Fedora|Red Hat|Mandriva|Gentoo|Sabayon|Slackware|SUSE|CentOS|BackTrack|Freebox|ASPLinux)(?:(?: Enterprise)? Linux)?(?:[ /\\-](\\d+[.\\d]+))?",
+    "regex": "(Debian|Knoppix|Mint(?! Browser)|Ubuntu|Kubuntu|Xubuntu|Lubuntu|Fedora|Red Hat|Mandriva|Gentoo|Sabayon|Slackware|openSUSE|SUSE|CentOS|BackTrack|Freebox|ASPLinux)(?:(?: Enterprise)? Linux)?(?:[ /\\-](\\d+[.\\d]+))?",
     "name": "$1",
     "version": "$2"
   },
   {
     "regex": "OS ROSA; Linux",
     "name": "Rosa"
+  },
+  {
+    "regex": ".+gentoo",
+    "name": "Gentoo"
   },
   {
     "regex": "(?:Web0S; .*WEBOS|webOS|web0S|Palm webOS|hpwOS)(?:[/]?(\\d+[.\\d]+))?",
@@ -2304,6 +2308,11 @@
     "version": "$1"
   },
   {
+    "regex": "BSD Four",
+    "name": "BSD",
+    "version": "4"
+  },
+  {
     "regex": "ElectroBSD(?:[/ ]?(\\d+[.\\d]+))?",
     "name": "ElectroBSD",
     "version": "$1"
@@ -2334,7 +2343,7 @@
     "version": "$1"
   },
   {
-    "regex": "IRIX(?:;64)?(?:[/ ]?(\\d+[.\\d]+))",
+    "regex": "IRIX(?:;?64)?(?:[/ ]?(\\d+[.\\d]+))?",
     "name": "IRIX",
     "version": "$1"
   },

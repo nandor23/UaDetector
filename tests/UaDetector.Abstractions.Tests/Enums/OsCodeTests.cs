@@ -219,6 +219,8 @@ public class OsCodeTests
             { OsCode.Minix, 195 },
             { OsCode.MocorOs, 196 },
             { OsCode.Plan9, 197 },
+            { OsCode.Bsd, 198 },
+            { OsCode.OpenSuse, 199 },
         };
 
         expectedValues.Count.ShouldBe(Enum.GetValues<OsCode>().Length);

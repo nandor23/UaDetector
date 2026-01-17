@@ -195,6 +195,7 @@ public sealed partial class OsParser : IOsParser
                     OsCode.CoolitaOs,
                     OsCode.ElementaryOs,
                     OsCode.Linpus,
+                    OsCode.OpenSuse,
                 }.ToFrozenSet()
             },
             { OsFamilies.Mac, new[] { OsCode.Mac }.ToFrozenSet() },
@@ -272,6 +273,7 @@ public sealed partial class OsParser : IOsParser
                     OsCode.GhostBsd,
                     OsCode.Plan9,
                     OsCode.Minix,
+                    OsCode.Bsd,
                 }.ToFrozenSet()
             },
             { OsFamilies.WebTv, new[] { OsCode.WebTv }.ToFrozenSet() },
@@ -386,7 +388,7 @@ public sealed partial class OsParser : IOsParser
             {
                 CpuArchitectures.X64,
                 RegexBuilder.BuildRegex(
-                    "64-?bit|WOW64|(?:Intel)?x64|WINDOWS_64|win64|.*amd64|.*x86_?64"
+                    "64-?bit|WOW64|(?:Intel)?x64|WINDOWS_64|win64|IRIX;?64|.*amd64|.*x86_?64"
                 )
             },
             {
