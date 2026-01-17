@@ -200,4 +200,6 @@ public enum OsCode
     Minix = 195,
     MocorOs = 196,
     Plan9 = 197,
+    Bsd = 198,
+    OpenSuse = 199,
 }

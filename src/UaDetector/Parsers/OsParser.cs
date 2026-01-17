@@ -195,6 +195,7 @@ public sealed partial class OsParser : IOsParser
                     OsCode.CoolitaOs,
                     OsCode.ElementaryOs,
                     OsCode.Linpus,
+                    OsCode.OpenSuse,
                 }.ToFrozenSet()
             },
             { OsFamilies.Mac, new[] { OsCode.Mac }.ToFrozenSet() },
@@ -272,6 +273,7 @@ public sealed partial class OsParser : IOsParser
                     OsCode.GhostBsd,
                     OsCode.Plan9,
                     OsCode.Minix,
+                    OsCode.Bsd,
                 }.ToFrozenSet()
             },
             { OsFamilies.WebTv, new[] { OsCode.WebTv }.ToFrozenSet() },

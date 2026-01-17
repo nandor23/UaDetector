@@ -227,6 +227,8 @@ public static class OsRegistry
         { OsCode.Minix, OsNames.Minix },
         { OsCode.MocorOs, OsNames.MocorOs },
         { OsCode.Plan9, OsNames.Plan9 },
+        { OsCode.Bsd, OsNames.Bsd },
+        { OsCode.OpenSuse, OsNames.OpenSuse },
     }.ToFrozenDictionary();
 
     internal static readonly FrozenDictionary<string, OsCode> OsNameMappings = OsCodeMappings
