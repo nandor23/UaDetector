@@ -202,4 +202,5 @@ public static class OsNames
     public const string Plan9 = "Plan 9";
     public const string Bsd = "BSD";
     public const string OpenSuse = "openSUSE";
+    public const string Orsay = "Orsay";
 }

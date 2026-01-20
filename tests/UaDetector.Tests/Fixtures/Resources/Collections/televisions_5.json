@@ -1844,7 +1844,6 @@
       }
     }
   },
-
   {
     "userAgent": "Mozilla/5.0 (Linux; Android 10; TV-Impact Build/TV-Impact-pro; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.131 YaBrowser/23.9.0.75 (lite) Safari/537.36 TV",
     "os": {
@@ -5185,6 +5184,142 @@
       "brand": {
         "name": "Rombica",
         "code": 1465
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (SmartHub; SMART-TV; U; Linux/SmartTV; Maple2012) AppleWebKit/534.7 (KHTML, like Gecko) SmartTV Safari/534.7",
+    "os": {
+      "name": "Orsay",
+      "code": 200,
+      "family": "Other Smart TV"
+    },
+    "browser": {
+      "name": "Maple",
+      "code": 346,
+      "engine": {
+        "name": "Maple",
+        "version": "2012"
+      }
+    },
+    "device": {
+      "type": 5,
+      "model": "Smart TV (2012)",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (SmartHub; SMART-TV; U; Linux/SmartTV+2013; Maple2012) AppleWebKit/535.20+ (KHTML, like Gecko) SmartTV Safari/535.20+",
+    "os": {
+      "name": "Orsay",
+      "code": 200,
+      "family": "Other Smart TV"
+    },
+    "browser": {
+      "name": "Maple",
+      "code": 346,
+      "engine": {
+        "name": "Maple",
+        "version": "2012"
+      }
+    },
+    "device": {
+      "type": 5,
+      "model": "Smart TV (2013)",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (SmartHub; SMART-TV; U; Linux/SmartTV+2014; Maple2012) AppleWebKit/537.42+ (KHTML, like Gecko) SmartTV Safari/537.42+",
+    "os": {
+      "name": "Orsay",
+      "code": 200,
+      "family": "Other Smart TV"
+    },
+    "browser": {
+      "name": "Maple",
+      "code": 346,
+      "engine": {
+        "name": "Maple",
+        "version": "2012"
+      }
+    },
+    "device": {
+      "type": 5,
+      "model": "Smart TV (2014)",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (SmartHub; SMART-TV; U; Linux/SmartTV+2015; Maple2012) AppleWebKit/537.42+ (KHTML, like Gecko) SmartTV Safari/537.42+",
+    "os": {
+      "name": "Orsay",
+      "code": 200,
+      "family": "Other Smart TV"
+    },
+    "browser": {
+      "name": "Maple",
+      "code": 346,
+      "engine": {
+        "name": "Maple",
+        "version": "2012"
+      }
+    },
+    "device": {
+      "type": 5,
+      "model": "Smart TV (2015)",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0(SmartHub;SMART-TV;U;Linux/SmartTV;Maple2012).",
+    "os": {
+      "name": "Orsay",
+      "code": 200,
+      "family": "Other Smart TV"
+    },
+    "browser": {
+      "name": "Maple",
+      "code": 346,
+      "engine": {
+        "name": "Maple",
+        "version": "2012"
+      }
+    },
+    "device": {
+      "type": 5,
+      "model": "Smart TV (2012)",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (SmartHub; SMART-TV; U; Linux/SmartTV) AppleWebKit/531.2 (KHTML, like Gecko) Web Browser/1.0 SmartTV Safari/531.2+",
+    "os": {
+      "name": "Orsay",
+      "code": 200,
+      "family": "Other Smart TV"
+    },
+    "device": {
+      "type": 5,
+      "model": "Smart TV",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
       }
     }
   },

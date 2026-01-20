@@ -202,4 +202,5 @@ public enum OsCode
     Plan9 = 197,
     Bsd = 198,
     OpenSuse = 199,
+    Orsay = 200,
 }

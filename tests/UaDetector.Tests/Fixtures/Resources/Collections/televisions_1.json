@@ -6999,9 +6999,9 @@
   {
     "userAgent": "Mozilla/5.0 (SmartHub; SMART-TV; U; Linux/SmartTV+2013; Maple2012) AppleWebKit/535.20+ (KHTML, like Gecko) SmartTV Safari/535.20+ SamsungTV/T-MST14AKUC-0407.0 (Samsung, UN40H6400, Wired)",
     "os": {
-      "name": "Tizen",
-      "code": 157,
-      "family": "Other Mobile"
+      "name": "Orsay",
+      "code": 200,
+      "family": "Other Smart TV"
     },
     "browser": {
       "name": "Maple",
