@@ -2909,6 +2909,11 @@
     "version": "$1"
   },
   {
+    "regex": "ChatGPT/([\\d.]+)",
+    "name": "ChatGPT",
+    "version": "$1"
+  },
+  {
     "regex": "REDLINECLIENT.+V([\\d.]+)",
     "name": "Redline",
     "version": "$1"
