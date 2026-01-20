@@ -229,6 +229,7 @@ public static class OsRegistry
         { OsCode.Plan9, OsNames.Plan9 },
         { OsCode.Bsd, OsNames.Bsd },
         { OsCode.OpenSuse, OsNames.OpenSuse },
+        { OsCode.Orsay, OsNames.Orsay },
     }.ToFrozenDictionary();
 
     internal static readonly FrozenDictionary<string, OsCode> OsNameMappings = OsCodeMappings
