@@ -15454,7 +15454,7 @@
     },
     "device": {
       "type": 2,
-      "model": "iPad Pro 6 11\" WiFi",
+      "model": "iPad Pro M5 11\" WiFi",
       "brand": {
         "name": "Apple",
         "code": 97
@@ -15475,7 +15475,7 @@
     },
     "device": {
       "type": 2,
-      "model": "iPad Pro 6 11\"",
+      "model": "iPad Pro M5 11\"",
       "brand": {
         "name": "Apple",
         "code": 97
@@ -15496,7 +15496,7 @@
     },
     "device": {
       "type": 2,
-      "model": "iPad Pro 2 13\" WiFi",
+      "model": "iPad Pro M5 13\" WiFi",
       "brand": {
         "name": "Apple",
         "code": 97
@@ -15517,7 +15517,7 @@
     },
     "device": {
       "type": 2,
-      "model": "iPad Pro 2 13\"",
+      "model": "iPad Pro M5 13\"",
       "brand": {
         "name": "Apple",
         "code": 97

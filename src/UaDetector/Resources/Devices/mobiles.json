@@ -2810,12 +2810,12 @@
       {
         "regex": "(?:MDCR_|ICRU_|Apple-)?iPad8[C,_][12]",
         "type": 2,
-        "name": "iPad Pro 3 11.0 WiFi"
+        "name": "iPad Pro 11\" WiFi"
       },
       {
-        "regex": "(?:MDCR_|ICRU_|Apple-)?iPad8[C,_][34]|(?:iPad Pro 11-inch 3rd-gen \\(Cellular\\))(?:[);/ ]|$)",
+        "regex": "(?:MDCR_|ICRU_|Apple-)?iPad8[C,_][34]",
         "type": 2,
-        "name": "iPad Pro 3 11.0"
+        "name": "iPad Pro 11\""
       },
       {
         "regex": "(?:MDCR_|ICRU_|Apple-)?iPad8[C,_][5-8]",
@@ -2853,7 +2853,7 @@
         "name": "iPad Pro 3 11\" WiFi"
       },
       {
-        "regex": "(?:MDCR_|ICRU_|Apple-)?iPad13[C,_][5-7]",
+        "regex": "(?:MDCR_|ICRU_|Apple-)?iPad13[C,_][5-7]|(?:iPad Pro 11-inch 3rd-gen \\(Cellular\\))(?:[);/ ]|$)",
         "type": 2,
         "name": "iPad Pro 3 11\""
       },
@@ -3010,22 +3010,22 @@
       {
         "regex": "(?:MDCR_|ICRU_|Apple-)?iPad17[C,_]1",
         "type": 2,
-        "name": "iPad Pro 6 11\" WiFi"
+        "name": "iPad Pro M5 11\" WiFi"
       },
       {
         "regex": "(?:MDCR_|ICRU_|Apple-)?iPad17[C,_]2",
         "type": 2,
-        "name": "iPad Pro 6 11\""
+        "name": "iPad Pro M5 11\""
       },
       {
         "regex": "(?:MDCR_|ICRU_|Apple-)?iPad17[C,_]3",
         "type": 2,
-        "name": "iPad Pro 2 13\" WiFi"
+        "name": "iPad Pro M5 13\" WiFi"
       },
       {
         "regex": "(?:MDCR_|ICRU_|Apple-)?iPad17[C,_]4",
         "type": 2,
-        "name": "iPad Pro 2 13\""
+        "name": "iPad Pro M5 13\""
       },
       {
         "regex": "Apple-?TV2[C,_]1",
@@ -9951,7 +9951,7 @@
       },
       {
         "regex": "V2006(?:[);/ ]|$)",
-        "name": "Y60s"
+        "name": "X50 Pro"
       },
       {
         "regex": "vivo (?:1724|Y71A?)(?:[);/ ]|$)",
@@ -13605,9 +13605,14 @@
     "type": 1,
     "modelVariants": [
       {
-        "regex": "(DG101HSTB|DG101TBIPS)(?:[);/ ]|$)",
+        "regex": "DG101TBIPS(?:[);/ ]|$)",
         "type": 2,
         "name": "DG101TBIPS"
+      },
+      {
+        "regex": "DG101HSTB(?:[);/ ]|$)",
+        "type": 2,
+        "name": "DG101HSTB"
       }
     ]
   },
@@ -22032,7 +22037,7 @@
         "name": "MatePad 10.4\" 5G"
       },
       {
-        "regex": "DB[YR]-W09",
+        "regex": "DBY-W09",
         "type": 2,
         "name": "MatePad 11 WiFi"
       },
@@ -22052,7 +22057,7 @@
         "name": "MatePad 12 X WiFi"
       },
       {
-        "regex": "DBR-W1[09]",
+        "regex": "DBR-W1[09]|DBR-W09",
         "type": 2,
         "name": "MatePad 11 (2023) WiFi"
       },
@@ -22362,14 +22367,19 @@
         "name": "MediaPad SE 10.1\" WiFi"
       },
       {
-        "regex": "AGS3K-W0[90]",
+        "regex": "AGS3K-W00",
         "type": 2,
         "name": "MediaPad T10s 10.1\" WiFi"
       },
       {
+        "regex": "AGS3K-W09",
+        "type": 2,
+        "name": "MatePad T10s 10.1\" WiFi"
+      },
+      {
         "regex": "AGS3K-L09",
         "type": 2,
-        "name": "MediaPad T10s 10.1\" LTE"
+        "name": "MatePad T10s 10.1\" LTE"
       },
       {
         "regex": "AGRK-W09",

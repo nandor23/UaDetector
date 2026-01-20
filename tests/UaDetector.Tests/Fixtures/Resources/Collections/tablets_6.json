@@ -14562,7 +14562,7 @@
     },
     "device": {
       "type": 2,
-      "model": "MediaPad T10s 10.1\" WiFi",
+      "model": "MatePad T10s 10.1\" WiFi",
       "brand": {
         "name": "Huawei",
         "code": 757
@@ -14589,7 +14589,7 @@
     },
     "device": {
       "type": 2,
-      "model": "MediaPad T10s 10.1\" LTE",
+      "model": "MatePad T10s 10.1\" LTE",
       "brand": {
         "name": "Huawei",
         "code": 757

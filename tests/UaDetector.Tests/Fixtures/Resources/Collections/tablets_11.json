@@ -537,7 +537,7 @@
     },
     "device": {
       "type": 2,
-      "model": "iPad Pro 3 11.0",
+      "model": "iPad Pro 3 11\"",
       "brand": {
         "name": "Apple",
         "code": 97
@@ -647,7 +647,7 @@
     },
     "device": {
       "type": 2,
-      "model": "iPad Pro 3 11.0 WiFi",
+      "model": "iPad Pro 11\" WiFi",
       "brand": {
         "name": "Apple",
         "code": 97
@@ -669,7 +669,7 @@
     },
     "device": {
       "type": 2,
-      "model": "iPad Pro 3 11.0",
+      "model": "iPad Pro 11\"",
       "brand": {
         "name": "Apple",
         "code": 97
@@ -1215,7 +1215,7 @@
     },
     "device": {
       "type": 2,
-      "model": "iPad Pro 3 11.0 WiFi",
+      "model": "iPad Pro 11\" WiFi",
       "brand": {
         "name": "Apple",
         "code": 97
@@ -1237,7 +1237,7 @@
     },
     "device": {
       "type": 2,
-      "model": "iPad Pro 3 11.0",
+      "model": "iPad Pro 11\"",
       "brand": {
         "name": "Apple",
         "code": 97
