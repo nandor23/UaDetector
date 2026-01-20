@@ -1,13 +1,17 @@
 # UaDetector
 
-A powerful user agent parser inspired by [device-detector](https://github.com/matomo-org/device-detector)
+A powerful user agent parser inspired by [Device Detector](https://github.com/matomo-org/device-detector)
 
 [![Build](https://github.com/nandor23/UaDetector/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/nandor23/UaDetector/actions/workflows/build.yml)
 [![License](https://img.shields.io/github/license/nandor23/UaDetector?color=%231e8e7e)](https://www.gnu.org/licenses/lgpl-3.0.en.html)
 
-UaDetector is a user agent parser that identifies browsers, operating systems, devices, clients, and bots. 
-It provides several sub-parsers: `OsParser`, `BrowserParser`, `ClientParser`, and `BotParser`. 
-Each can be used independently if only certain information is needed from the user agent string.
+UaDetector is a fast and precise user agent parser for .NET, built on top of the largest and most up-to-date user agent
+database from the [Matomo Device Detector](https://github.com/matomo-org/device-detector) project. It identifies browsers,
+operating systems, devices, clients, and bots. The library is optimized for performance with in-memory caching of regular
+expressions and frozen dictionaries for lookup operations.
+
+In addition to the main `UaDetector` parser, individual sub-parsers are available: `OsParser`, `BrowserParser`,
+`ClientParser`, and `BotParser`. Each can be used independently when only specific information is needed from the user agent string.
 
 ## Packages
 
@@ -108,6 +112,46 @@ if (botParser.IsBot(userAgent))
 else
 {
     Console.WriteLine("No bot detected");
+}
+```
+
+## 📋 Example Output
+
+**Input:**
+```
+Mozilla/5.0 (Linux; Android 14; SAMSUNG SM-S926B) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/23.0 Chrome/115.0.0.0 Mobile Safari/537.36
+```
+
+**Output:**
+```json
+{
+  "os": {
+    "name": "Android",
+    "code": 1,
+    "version": "14",
+    "cpuArchitecture": null,
+    "family": "Android"
+  },
+  "browser": {
+    "name": "Samsung Browser",
+    "code": 512,
+    "version": "23.0",
+    "family": "Chrome",
+    "engine": {
+      "name": "Blink",
+      "version": "115.0"
+    }
+  },
+  "client": null,
+  "device": {
+    "type": 1,
+    "model": "Galaxy S24+",
+    "brand": {
+      "name": "Samsung",
+      "code": 1496
+    }
+  },
+  "bot": null
 }
 ```
 

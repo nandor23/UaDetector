@@ -3,9 +3,7 @@
     <OutputType>Library</OutputType>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-<!--
     <DefineConstants>$(DefineConstants);UADETECTOR_LITE</DefineConstants>
--->
   </PropertyGroup>
 
   <PropertyGroup>

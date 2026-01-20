@@ -5,7 +5,7 @@
   <br>
 </h1>
 
-<h4 align="center">A powerful user agent parser inspired by <a href="https://github.com/matomo-org/device-detector" target="_blank">device-detector</a></h4>
+<h4 align="center">A powerful user agent parser inspired by <a href="https://github.com/matomo-org/device-detector" target="_blank">Device Detector</a></h4>
 
 <p align="center">
   <a href="https://github.com/nandor23/UaDetector/actions/workflows/build.yml"><img src="https://github.com/nandor23/UaDetector/actions/workflows/build.yml/badge.svg?branch=main" alt="Build"></a>
@@ -14,9 +14,13 @@
   <a href="https://www.gnu.org/licenses/lgpl-3.0.en.html"><img src="https://img.shields.io/github/license/nandor23/UaDetector?color=%231e8e7e" alt="License"></a>
 </p>
 
-UaDetector is a user agent parser that identifies browsers, operating systems, devices, clients, and bots. 
-It provides several sub-parsers: `OsParser`, `BrowserParser`, `ClientParser`, and `BotParser`. 
-Each can be used independently if only certain information is needed from the user agent string.
+UaDetector is a fast and precise user agent parser for .NET, built on top of the largest and most up-to-date user agent 
+database from the [Matomo Device Detector](https://github.com/matomo-org/device-detector) project. It identifies browsers, 
+operating systems, devices, clients, and bots. The library is optimized for performance with in-memory caching of regular 
+expressions and frozen dictionaries for lookup operations.
+
+In addition to the main `UaDetector` parser, individual sub-parsers are available: `OsParser`, `BrowserParser`, 
+`ClientParser`, and `BotParser`. Each can be used independently when only specific information is needed from the user agent string.
 
 ## Packages
 
@@ -125,7 +129,7 @@ else
 }
 ```
 
-## 📄 Example Output
+## 📋 Example Output
 
 **Input:**
 ```
@@ -214,7 +218,7 @@ builder.Services.AddUaDetector(options =>
 ## ⚡ Benchmarks
 
 Both UaDetector and UaDetector.Lite load regular expressions into memory for parsing. 
-If memory usage is a concern, UaDetector.Lite uses **5.6 times less memory** (32.15 MB vs 180.08 MB) 
+If memory usage is a concern, UaDetector.Lite uses **5.6 times less memory** (32.38 MB MB vs 181.88 MB) 
 than UaDetector while maintaining the same functionality at the cost of parsing speed.
 
 ### Library Comparison
