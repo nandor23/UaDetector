@@ -9185,5 +9185,32 @@
         "code": 1973
       }
     }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 15; Redmi Note 14 5G Build/AP3A.240905.015.A2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.6312.118 Mobile Safari/537.36 XiaoMi/MiuiBrowser/14.39.0-gn",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "15",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Mi Browser",
+      "code": 360,
+      "version": "14.39.0",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "123.0.6312.118"
+      }
+    },
+    "device": {
+      "type": 10,
+      "model": "Redmi Note 14",
+      "brand": {
+        "name": "Xiaomi",
+        "code": 1973
+      }
+    }
   }
 ]
