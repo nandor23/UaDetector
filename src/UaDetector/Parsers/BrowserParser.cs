@@ -561,7 +561,6 @@ public sealed partial class BrowserParser : IBrowserParser
             BrowserCode.StartInternetBrowser,
             BrowserCode.SpBrowser,
             BrowserCode.SailfishBrowser,
-            BrowserCode.SamsungBrowser,
             BrowserCode.Stargon,
             BrowserCode.Skyfire,
             BrowserCode.Streamy,
