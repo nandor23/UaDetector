@@ -14839,5 +14839,18 @@
         "name": "WebKit"
       }
     }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/29.0 Chrome/136.0.0.0 Safari/537.36",
+    "browser": {
+      "name": "Samsung Browser",
+      "code": 512,
+      "version": "29.0",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "136.0.0.0"
+      }
+    }
   }
 ]

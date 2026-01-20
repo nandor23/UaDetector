@@ -162,5 +162,28 @@
     "device": {
       "type": 0
     }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/29.0 Chrome/136.0.0.0 Safari/537.36",
+    "os": {
+      "name": "Windows",
+      "code": 170,
+      "version": "10",
+      "cpuArchitecture": "x64",
+      "family": "Windows"
+    },
+    "browser": {
+      "name": "Samsung Browser",
+      "code": 512,
+      "version": "29.0",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "136.0.0.0"
+      }
+    },
+    "device": {
+      "type": 0
+    }
   }
 ]
