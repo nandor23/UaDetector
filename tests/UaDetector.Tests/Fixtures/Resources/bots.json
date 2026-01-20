@@ -11820,6 +11820,34 @@
     }
   },
   {
+    "userAgent": "Mozilla/5.0 (compatible; PrivacyPolicyBot/1.0)",
+    "bot": {
+      "name": "PrivacyPolicyBot",
+      "category": 3
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (compatible; SeoCherryBot/1.0; +https://en.wikipedia.org/wiki/Web_crawler)",
+    "bot": {
+      "name": "SeoCherryBot",
+      "category": 3
+    }
+  },
+  {
+    "userAgent": "HanaleiBot runid=beta-stage-integration-test",
+    "bot": {
+      "name": "HanaleiBot",
+      "category": 3
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; ABEvalBot/0.1) Version/11.1.2 Safari/605.1.15",
+    "bot": {
+      "name": "ABEvalBot",
+      "category": 3
+    }
+  },
+  {
     "userAgent": "Google-NotebookLM",
     "bot": {
       "name": "Google-NotebookLM",
