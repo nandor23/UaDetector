@@ -5635,7 +5635,17 @@
     "category": 9
   },
   {
-    "regex": "WebMon",
+    "regex": "WebMoney Advisor",
+    "name": "WebMoney Advisor",
+    "category": 11,
+    "url": "https://advisor.web.money/en/",
+    "producer": {
+      "name": "DEED Baltic, UAB",
+      "url": "http://www.deed.lt/"
+    }
+  },
+  {
+    "regex": "WebMon/",
     "name": "WebMon",
     "category": 9
   },
