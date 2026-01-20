@@ -49335,189 +49335,6 @@
     "model": "$1"
   },
   {
-    "regex": "Ulefone|Gemini Pro|Power[ _]Armor14|Power 3S|Power_[356]|Power_5S|S(?:10|9)_Pro|(?:Note [89]P|Note 1[23]P|Armor(?! P1[sw]| P1 Pro| H[12]s| I2w| V1s| I1 Slim| C1 Max)(?:[ _](?:[2367]|2S|X[236]|6[SE]|3WT|3W|X))?|U00[78][ _]Pro|Be[ _]X|Be[ _]Touch(?:[ _][23])?|Be[ _](?:One|Pure|Pro)(?:[ _]Lite)?|Note 14|Note (?:11P|7T)|(?<!MZ-MEIZU )Note 16 Pro|Tiger_lite|Note_7P|Note 10P|Paris_(?:Lite|X)|Paris|P6000_Plus|Vienna|RugKing|GQ3060TF3|Android 11(?:[\\d.]*);(?: [\\w-]+;)? Note 6P?|Tab A11 Pro)(?:[);/ ]|$)",
-    "brand": "Ulefone",
-    "type": 1,
-    "modelVariants": [
-      {
-        "regex": "S(10|9)_Pro",
-        "name": "S$1 Pro"
-      },
-      {
-        "regex": "Be[ _]Touch([ _][23])?",
-        "name": "Be Touch$1"
-      },
-      {
-        "regex": "Be[ _]Pure[ _]Lite",
-        "name": "Be Pure Lite"
-      },
-      {
-        "regex": "Be[ _]Pure",
-        "name": "Be Pure"
-      },
-      {
-        "regex": "Be[ _]One[ _]Lite",
-        "name": "Be One Lite"
-      },
-      {
-        "regex": "Be[ _]One",
-        "name": "Be One"
-      },
-      {
-        "regex": "Be[ _]X",
-        "name": "Be X"
-      },
-      {
-        "regex": "Be[ _]Pro",
-        "name": "Be Pro"
-      },
-      {
-        "regex": "U(00[78]) Pro",
-        "name": "U$1 Pro"
-      },
-      {
-        "regex": "P6000_Plus",
-        "name": "P6000 Plus"
-      },
-      {
-        "regex": "Paris_lite",
-        "name": "Paris Lite"
-      },
-      {
-        "regex": "Paris_X",
-        "name": "Paris X"
-      },
-      {
-        "regex": "RugKing",
-        "name": "RugKing"
-      },
-      {
-        "regex": "Paris",
-        "name": "Paris"
-      },
-      {
-        "regex": "Tiger_lite",
-        "name": "Tiger Lite"
-      },
-      {
-        "regex": "Power[ _]Armor[ _]?(\\d+)[ _]Pro",
-        "name": "Power Armor $1 Pro"
-      },
-      {
-        "regex": "Power Armor X11 Pro",
-        "name": "Power Armor X11 Pro"
-      },
-      {
-        "regex": "Power Armor (\\d+|19T|X11|18T|16S)(?:[);/ ]|$)",
-        "name": "Power Armor $1"
-      },
-      {
-        "regex": "Armor[ _]6S(?:[);/ ]|$)",
-        "name": "Armor 6S"
-      },
-      {
-        "regex": "GQ3060TF3(?:[);/ ]|$)",
-        "name": "Armor 20WT"
-      },
-      {
-        "regex": "Armor[ _]([679])E(?:[);/ ]|$)",
-        "name": "Armor $1E"
-      },
-      {
-        "regex": "Armor[ _]X(\\d+) Pro(?:[);/ ]|$)",
-        "name": "Armor X$1 Pro"
-      },
-      {
-        "regex": "Armor[ _]X(\\d+)(?:[);/ ]|$)",
-        "name": "Armor X$1"
-      },
-      {
-        "regex": "Armor[ _]([25])S(?:[);/ ]|$)",
-        "name": "Armor $1S"
-      },
-      {
-        "regex": "Armor[ _]X(?:[);/ ]|$)",
-        "name": "Armor X"
-      },
-      {
-        "regex": "Armor[ _]3W(?:[);/ ]|$)",
-        "name": "Armor 3W"
-      },
-      {
-        "regex": "Armor[ _]3WT(?:[);/ ]|$)",
-        "name": "Armor 3WT"
-      },
-      {
-        "regex": "Armor[ _](1\\d|11T) 5G(?:[);/ ]|$)",
-        "name": "Armor $1 5G"
-      },
-      {
-        "regex": "Armor[ _](8) Pro(?:[);/ ]|$)",
-        "name": "Armor $1 Pro"
-      },
-      {
-        "regex": "Armor[ _]([236789])(?:[);/ ]|$)",
-        "name": "Armor $1"
-      },
-      {
-        "regex": "Armor Pad([^;/)]*)(?: Build|[);])",
-        "type": 2,
-        "name": "Armor Pad$1"
-      },
-      {
-        "regex": "Armor([^;/)]*)(?: Build|[);])",
-        "name": "Armor$1"
-      },
-      {
-        "regex": "Gemini Pro(?:[);/ ]|$)",
-        "name": "Gemini Pro"
-      },
-      {
-        "regex": "Vienna",
-        "name": "Vienna"
-      },
-      {
-        "regex": "Power[_ ]([356][SL]?)",
-        "name": "Power $1"
-      },
-      {
-        "regex": "Note[ _]([78]P|7T|6|14)(?:[);/ ]|$)",
-        "name": "Note $1"
-      },
-      {
-        "regex": "Note[ _](16) Pro(?:[);/ ]|$)",
-        "name": "Note $1 Pro"
-      },
-      {
-        "regex": "Note ([69]|1[123]|10)P(?:[);/ ]|$)",
-        "type": 10,
-        "name": "Note $1P"
-      },
-      {
-        "regex": "Tab A11 Pro",
-        "type": 2,
-        "name": "Tab A11 Pro"
-      },
-      {
-        "regex": "Ulefone[_ ]Tab[_ ]([^;/)]+)(?: Build|[);])",
-        "type": 2,
-        "name": "Tab $1"
-      },
-      {
-        "regex": "Ulefone[_ ](X|S1[ _]Pro|S[17])(?:[);/ ]|$)",
-        "name": "$1"
-      },
-      {
-        "regex": "Ulefone[ _-]?([^;/]+) Build",
-        "name": "$1"
-      },
-      {
-        "regex": "Ulefone[ _-]?([^;/)]+)(?:[;/)]|$)",
-        "name": "$1"
-      }
-    ]
-  },
-  {
     "regex": "UMI(?:DIGI)?[ _]|(?:A[5]_Pro|.+; A[79] Pro|S3_Pro|ROME[_ ]X|BISON|hammer_S|S2 LITE|London|Z2_PRO|C NOTE 2|A11 Pro Max|Power 3|Android 10(?:[\\d.]*);(?: [\\w-]+;)? (?:A3[SX]|A7S(?! 2020))|RP0[1234]|MT0[167]|MT1[016]|MP0[1-9]|MP1[3789]|MP2[0134-79]|MP34|Plus E|S2_PRO|RP05|(?<! HP Engage )One Pro|Diamond_X|TG3DBG1MA|Android [67](?:[\\d.]*);(?: [\\w-]+;)? Z Pro|Android 8(?:[\\d.]*);(?: [\\w-]+;)? A1_PRO|RP08|MP3[38]|PR4JBX20A|PG2309GBA|PA2310GBB)(?:[;/) ]|$)",
     "brand": "UMIDIGI",
     "type": 1,
@@ -54043,6 +53860,189 @@
       },
       {
         "regex": "Xiaomi[ _-]([^/;]+)(?: Build|$)",
+        "name": "$1"
+      }
+    ]
+  },
+  {
+    "regex": "Ulefone|Gemini Pro|Power[ _]Armor14|Power 3S|Power_[356]|Power_5S|S(?:10|9)_Pro|(?:Note [89]P|Note 1[23]P|Armor(?! P1[sw]| P1 Pro| H[12]s| I2w| V1s| I1 Slim| C1 Max)(?:[ _](?:[2367]|2S|X[236]|6[SE]|3WT|3W|X))?|U00[78][ _]Pro|Be[ _]X|Be[ _]Touch(?:[ _][23])?|Be[ _](?:One|Pure|Pro)(?:[ _]Lite)?|Note 14|Note (?:11P|7T)|(?<!MZ-MEIZU )Note 16 Pro|Tiger_lite|Note_7P|Note 10P|Paris_(?:Lite|X)|Paris|P6000_Plus|Vienna|RugKing|GQ3060TF3|Android 11(?:[\\d.]*);(?: [\\w-]+;)? Note 6P?|Tab A11 Pro)(?:[);/ ]|$)",
+    "brand": "Ulefone",
+    "type": 1,
+    "modelVariants": [
+      {
+        "regex": "S(10|9)_Pro",
+        "name": "S$1 Pro"
+      },
+      {
+        "regex": "Be[ _]Touch([ _][23])?",
+        "name": "Be Touch$1"
+      },
+      {
+        "regex": "Be[ _]Pure[ _]Lite",
+        "name": "Be Pure Lite"
+      },
+      {
+        "regex": "Be[ _]Pure",
+        "name": "Be Pure"
+      },
+      {
+        "regex": "Be[ _]One[ _]Lite",
+        "name": "Be One Lite"
+      },
+      {
+        "regex": "Be[ _]One",
+        "name": "Be One"
+      },
+      {
+        "regex": "Be[ _]X",
+        "name": "Be X"
+      },
+      {
+        "regex": "Be[ _]Pro",
+        "name": "Be Pro"
+      },
+      {
+        "regex": "U(00[78]) Pro",
+        "name": "U$1 Pro"
+      },
+      {
+        "regex": "P6000_Plus",
+        "name": "P6000 Plus"
+      },
+      {
+        "regex": "Paris_lite",
+        "name": "Paris Lite"
+      },
+      {
+        "regex": "Paris_X",
+        "name": "Paris X"
+      },
+      {
+        "regex": "RugKing",
+        "name": "RugKing"
+      },
+      {
+        "regex": "Paris",
+        "name": "Paris"
+      },
+      {
+        "regex": "Tiger_lite",
+        "name": "Tiger Lite"
+      },
+      {
+        "regex": "Power[ _]Armor[ _]?(\\d+)[ _]Pro",
+        "name": "Power Armor $1 Pro"
+      },
+      {
+        "regex": "Power Armor X11 Pro",
+        "name": "Power Armor X11 Pro"
+      },
+      {
+        "regex": "Power Armor (\\d+|19T|X11|18T|16S)(?:[);/ ]|$)",
+        "name": "Power Armor $1"
+      },
+      {
+        "regex": "Armor[ _]6S(?:[);/ ]|$)",
+        "name": "Armor 6S"
+      },
+      {
+        "regex": "GQ3060TF3(?:[);/ ]|$)",
+        "name": "Armor 20WT"
+      },
+      {
+        "regex": "Armor[ _]([679])E(?:[);/ ]|$)",
+        "name": "Armor $1E"
+      },
+      {
+        "regex": "Armor[ _]X(\\d+) Pro(?:[);/ ]|$)",
+        "name": "Armor X$1 Pro"
+      },
+      {
+        "regex": "Armor[ _]X(\\d+)(?:[);/ ]|$)",
+        "name": "Armor X$1"
+      },
+      {
+        "regex": "Armor[ _]([25])S(?:[);/ ]|$)",
+        "name": "Armor $1S"
+      },
+      {
+        "regex": "Armor[ _]X(?:[);/ ]|$)",
+        "name": "Armor X"
+      },
+      {
+        "regex": "Armor[ _]3W(?:[);/ ]|$)",
+        "name": "Armor 3W"
+      },
+      {
+        "regex": "Armor[ _]3WT(?:[);/ ]|$)",
+        "name": "Armor 3WT"
+      },
+      {
+        "regex": "Armor[ _](1\\d|11T) 5G(?:[);/ ]|$)",
+        "name": "Armor $1 5G"
+      },
+      {
+        "regex": "Armor[ _](8) Pro(?:[);/ ]|$)",
+        "name": "Armor $1 Pro"
+      },
+      {
+        "regex": "Armor[ _]([236789])(?:[);/ ]|$)",
+        "name": "Armor $1"
+      },
+      {
+        "regex": "Armor Pad([^;/)]*)(?: Build|[);])",
+        "type": 2,
+        "name": "Armor Pad$1"
+      },
+      {
+        "regex": "Armor([^;/)]*)(?: Build|[);])",
+        "name": "Armor$1"
+      },
+      {
+        "regex": "Gemini Pro(?:[);/ ]|$)",
+        "name": "Gemini Pro"
+      },
+      {
+        "regex": "Vienna",
+        "name": "Vienna"
+      },
+      {
+        "regex": "Power[_ ]([356][SL]?)",
+        "name": "Power $1"
+      },
+      {
+        "regex": "Note[ _]([78]P|7T|6|14)(?:[);/ ]|$)",
+        "name": "Note $1"
+      },
+      {
+        "regex": "Note[ _](16) Pro(?:[);/ ]|$)",
+        "name": "Note $1 Pro"
+      },
+      {
+        "regex": "Note ([69]|1[123]|10)P(?:[);/ ]|$)",
+        "type": 10,
+        "name": "Note $1P"
+      },
+      {
+        "regex": "Tab A11 Pro",
+        "type": 2,
+        "name": "Tab A11 Pro"
+      },
+      {
+        "regex": "Ulefone[_ ]Tab[_ ]([^;/)]+)(?: Build|[);])",
+        "type": 2,
+        "name": "Tab $1"
+      },
+      {
+        "regex": "Ulefone[_ ](X|S1[ _]Pro|S[17])(?:[);/ ]|$)",
+        "name": "$1"
+      },
+      {
+        "regex": "Ulefone[ _-]?([^;/]+) Build",
+        "name": "$1"
+      },
+      {
+        "regex": "Ulefone[ _-]?([^;/)]+)(?:[;/)]|$)",
         "name": "$1"
       }
     ]
