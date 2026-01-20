@@ -45,16 +45,14 @@ public sealed partial class BotParser : IBotParser
 
                 result = new BotInfo
                 {
-                    Name = bot.Name,
+                    Name = !string.IsNullOrEmpty(bot.Name)
+                        ? ParserExtensions.FormatWithMatch(bot.Name, match)
+                        : bot.Name,
                     Category = bot.Category,
                     Url = bot.Url,
                     Producer = bot.Producer is null
                         ? null
-                        : new ProducerInfo
-                        {
-                            Name = bot.Producer?.Name,
-                            Url = bot.Producer?.Url,
-                        },
+                        : new ProducerInfo { Name = bot.Producer?.Name, Url = bot.Producer?.Url },
                 };
 
                 _cache?.Set(cacheKey, result);
