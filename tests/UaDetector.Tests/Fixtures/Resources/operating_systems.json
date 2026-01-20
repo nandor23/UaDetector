@@ -7220,6 +7220,15 @@
     }
   },
   {
+    "userAgent": "ChatGPT/1.2025.308 (iOS 17.7.10; iPad7,5; build 19181868194)",
+    "os": {
+      "name": "iPadOS",
+      "code": 57,
+      "version": "17.7.10",
+      "family": "iOS"
+    }
+  },
+  {
     "userAgent": "Tor Browser/5.7 (Redhat Linux 2.0; ar_YE;)",
     "os": {
       "name": "Red Hat",
