@@ -38,25 +38,27 @@ public sealed partial class BotParser : IBotParser
             {
                 var match = bot.Regex.Match(userAgent);
 
-                if (match.Success)
+                if (!match.Success)
                 {
-                    result = new BotInfo
-                    {
-                        Name = bot.Name,
-                        Category = bot.Category,
-                        Url = bot.Url,
-                        Producer = bot.Producer is null
-                            ? null
-                            : new ProducerInfo
-                            {
-                                Name = bot.Producer?.Name,
-                                Url = bot.Producer?.Url,
-                            },
-                    };
-
-                    _cache?.Set(cacheKey, result);
-                    return true;
+                    continue;
                 }
+
+                result = new BotInfo
+                {
+                    Name = bot.Name,
+                    Category = bot.Category,
+                    Url = bot.Url,
+                    Producer = bot.Producer is null
+                        ? null
+                        : new ProducerInfo
+                        {
+                            Name = bot.Producer?.Name,
+                            Url = bot.Producer?.Url,
+                        },
+                };
+
+                _cache?.Set(cacheKey, result);
+                return true;
             }
         }
 
