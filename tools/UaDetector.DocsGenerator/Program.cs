@@ -15,10 +15,8 @@ var collectors = new List<IDataCollector>
     new BotDataCollector(),
 };
 
-var readmeGenerator = new ReadmeGenerator();
-readmeGenerator.Update(collectors);
+ReadmeGenerator.Update(collectors);
 
-var docsGenerator = new DocsGenerator();
-docsGenerator.Generate(collectors);
+DocsGenerator.Generate(collectors);
 
 Console.WriteLine("\nAll updates completed successfully!");

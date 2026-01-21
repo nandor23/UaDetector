@@ -13,7 +13,6 @@
   <Folder Name="/.solution/actions/">
     <File Path=".github/workflows/build.yml" />
     <File Path=".github/workflows/publish.yml" />
-    <File Path=".github/workflows/update-readme.yml" />
   </Folder>
   <Folder Name="/.solution/docs/">
     <File Path="docs\benchmarks.md" />
