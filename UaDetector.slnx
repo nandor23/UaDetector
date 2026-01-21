@@ -15,6 +15,7 @@
     <File Path=".github/workflows/publish.yml" />
     <File Path=".github/workflows/update-readme.yml" />
   </Folder>
+  <Folder Name="/.solution/docs/" />
   <Folder Name="/benchmarks/">
     <Project Path="benchmarks/UaDetector.MemoryUsage/UaDetector.MemoryUsage.csproj" />
     <Project Path="benchmarks/UaDetector.Benchmarks/UaDetector.Benchmarks.csproj" />
