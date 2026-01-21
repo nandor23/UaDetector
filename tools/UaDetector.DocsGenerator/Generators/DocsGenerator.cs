@@ -5,9 +5,9 @@ using UaDetector.DocsGenerator.Utilities;
 
 namespace UaDetector.DocsGenerator.Generators;
 
-public class DocsGenerator
+public static class DocsGenerator
 {
-    public void Generate(IEnumerable<IDataCollector> collectors)
+    public static void Generate(IEnumerable<IDataCollector> collectors)
     {
         var docsPath = Path.GetDirectoryName(PathLocator.GetDocsPath())!;
         var filePath = Path.Combine(docsPath, "detection-capabilities.md");
