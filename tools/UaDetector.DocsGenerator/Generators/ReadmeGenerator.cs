@@ -3,9 +3,9 @@ using UaDetector.DocsGenerator.Utilities;
 
 namespace UaDetector.DocsGenerator.Generators;
 
-public class ReadmeGenerator
+public static class ReadmeGenerator
 {
-    public void Update(IEnumerable<IDataCollector> collectors)
+    public static void Update(IEnumerable<IDataCollector> collectors)
     {
         var readmePath = PathLocator.GetReadmePath();
         var originalReadme = File.ReadAllText(readmePath);

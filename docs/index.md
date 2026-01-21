@@ -43,6 +43,6 @@ Fast and precise user agent parser for .NET, built on top of the largest and mos
 
     ---
 
-    Enum-based codes for `OsCode`, `BrowserCode`, `DeviceType` make database storage simple
+    Enum-based codes for `OsCode`, `BrowserCode`, `DeviceType` are perfect for database storage
 
 </div>
