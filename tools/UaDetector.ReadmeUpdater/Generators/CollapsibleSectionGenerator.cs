@@ -9,13 +9,13 @@ public static class CollapsibleSectionGenerator
         var content = string.Join(", ", itemsList);
 
         return $"""
-                <details>
-                <summary><strong>{count}</strong> {title.ToLower()} supported (click to expand)</summary>
-                <br>
+            <details>
+            <summary><strong>{count}</strong> {title.ToLower()} supported (click to expand)</summary>
+            <br>
 
-                {content}
+            {content}
 
-                </details>
-                """;
+            </details>
+            """;
     }
 }

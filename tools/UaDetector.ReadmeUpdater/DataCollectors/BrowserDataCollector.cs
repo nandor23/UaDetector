@@ -11,8 +11,8 @@ public class BrowserDataCollector : IDataCollector
 
     public IEnumerable<string> CollectData()
     {
-        return BrowserRegistry.BrowserNameMappings.Keys
-            .Concat(BrowserHintParser.Hints.Values)
+        return BrowserRegistry
+            .BrowserNameMappings.Keys.Concat(BrowserHintParser.Hints.Values)
             .Distinct(StringComparer.OrdinalIgnoreCase);
     }
 }

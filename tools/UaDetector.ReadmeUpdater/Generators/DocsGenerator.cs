@@ -17,10 +17,11 @@ public class DocsGenerator
 
         foreach (var collector in collectors)
         {
-            var itemsList = collector.CollectData()
+            var itemsList = collector
+                .CollectData()
                 .OrderBy(x => x, StringComparer.OrdinalIgnoreCase)
                 .ToList();
-        
+
             var count = itemsList.Count;
             var content = string.Join(", ", itemsList);
 

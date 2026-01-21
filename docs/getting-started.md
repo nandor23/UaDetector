@@ -145,7 +145,8 @@ string browserName = BrowserRegistry.GetBrowserName(BrowserCode.Safari);
 // Try to get browser code from name (case-insensitive)
 if (BrowserRegistry.TryGetBrowserCode("Safari", out var browserCode))
 {
-    Console.WriteLine($"Browser Code: {browserCode}"); // Output: Browser Code: Safari
+    // Output: Browser Code: Safari
+    Console.WriteLine($"Browser Code: {browserCode}");
 }
 else
 {

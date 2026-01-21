@@ -10,8 +10,8 @@ public class MobileAppDataCollector : IDataCollector
 
     public IEnumerable<string> CollectData()
     {
-        return MobileAppParser.MobileApps
-            .Select(app => app.Name)
+        return MobileAppParser
+            .MobileApps.Select(app => app.Name)
             .Concat(AppHintParser.Hints.Values)
             .Concat(GetAdditionalApps())
             .Where(name => !name.Contains("$1") && !name.Contains("$2"))
@@ -46,7 +46,7 @@ public class MobileAppDataCollector : IDataCollector
             "radio.pl",
             "radio.pt",
             "radio.se",
-            "radio.net"
+            "radio.net",
         };
     }
 }

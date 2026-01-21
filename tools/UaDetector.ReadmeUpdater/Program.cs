@@ -12,7 +12,7 @@ var collectors = new List<IDataCollector>
     new FeedReaderDataCollector(),
     new PimDataCollector(),
     new DeviceBrandDataCollector(),
-    new BotDataCollector()
+    new BotDataCollector(),
 };
 
 var readmeGenerator = new ReadmeGenerator();
