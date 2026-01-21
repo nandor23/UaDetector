@@ -290,7 +290,10 @@ public sealed partial class OsParser : IOsParser
                     OsCode.KinOs,
                 }.ToFrozenSet()
             },
-            { OsFamilies.OtherSmartTv, new[] { OsCode.WhaleOs, OsCode.TitanOs, OsCode.Orsay }.ToFrozenSet() },
+            {
+                OsFamilies.OtherSmartTv,
+                new[] { OsCode.WhaleOs, OsCode.TitanOs, OsCode.Orsay }.ToFrozenSet()
+            },
         }.ToFrozenDictionary(StringComparer.OrdinalIgnoreCase);
 
         DesktopOsFamilies = new[]
