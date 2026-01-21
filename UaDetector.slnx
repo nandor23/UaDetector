@@ -26,6 +26,9 @@
     <File Path="docs\assets\favicon.png" />
     <File Path="docs\assets\logo.svg" />
   </Folder>
+  <Folder Name="/.solution/docs/stylesheets/">
+    <File Path="docs\stylesheets\extra.css" />
+  </Folder>
   <Folder Name="/benchmarks/">
     <Project Path="benchmarks/UaDetector.MemoryUsage/UaDetector.MemoryUsage.csproj" />
     <Project Path="benchmarks/UaDetector.Benchmarks/UaDetector.Benchmarks.csproj" />
