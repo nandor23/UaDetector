@@ -1,0 +1,66 @@
+site_name: UaDetector
+site_description: Fast and precise user agent parser for .NET
+site_author: nandor23
+site_url: https://nandor23.github.io/UaDetector/
+repo_name: nandor23/UaDetector
+repo_url: https://github.com/nandor23/UaDetector
+
+theme:
+  name: material
+  logo: assets/logo.svg
+  favicon: assets/favicon.png
+  palette:
+    - scheme: slate
+      primary: blue grey
+      accent: blue grey
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    - scheme: default
+      primary: blue grey
+      accent: blue grey
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.top
+    - navigation.footer
+    - navigation.tabs.sticky
+    - search.suggest
+    - search.highlight
+    - search.share
+    - toc.follow
+    - content.code.copy
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+nav:
+  - Getting Started: getting-started.md
+  - Caching: caching.md
+  - Detection Capabilities: detection-capabilities.md
+  - Benchmarks: benchmarks.md
+    
+markdown_extensions:
+  - pymdownx.highlight:
+      use_pygments: true
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+plugins:
+  - search
+
+extra_css:
+  - stylesheets/extra.css

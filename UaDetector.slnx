@@ -15,7 +15,17 @@
     <File Path=".github/workflows/publish.yml" />
     <File Path=".github/workflows/update-readme.yml" />
   </Folder>
-  <Folder Name="/.solution/docs/" />
+  <Folder Name="/.solution/docs/">
+    <File Path="docs\benchmarks.md" />
+    <File Path="docs\caching.md" />
+    <File Path="docs\getting-started.md" />
+    <File Path="docs\index.md" />
+    <File Path="mkdocs.yml" />
+  </Folder>
+  <Folder Name="/.solution/docs/assets/">
+    <File Path="docs\assets\favicon.png" />
+    <File Path="docs\assets\logo.svg" />
+  </Folder>
   <Folder Name="/benchmarks/">
     <Project Path="benchmarks/UaDetector.MemoryUsage/UaDetector.MemoryUsage.csproj" />
     <Project Path="benchmarks/UaDetector.Benchmarks/UaDetector.Benchmarks.csproj" />

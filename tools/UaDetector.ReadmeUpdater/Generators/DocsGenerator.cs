@@ -1,3 +1,4 @@
+using System.Text;
 using UaDetector.ReadmeUpdater.DataCollectors;
 using UaDetector.ReadmeUpdater.Utilities;
 
@@ -7,32 +8,31 @@ public class DocsGenerator
 {
     public void Generate(IEnumerable<IDataCollector> collectors)
     {
-        var docsPath = PathLocator.GetDocsPath();
-        Directory.CreateDirectory(docsPath);
+        var docsPath = Path.GetDirectoryName(PathLocator.GetDocsPath())!;
+        var filePath = Path.Combine(docsPath, "detection-capabilities.md");
 
-        var generatedCount = 0;
+        var sb = new StringBuilder();
+        sb.AppendLine("# Detection Capabilities");
+        sb.AppendLine();
 
         foreach (var collector in collectors)
         {
             var itemsList = collector.CollectData()
                 .OrderBy(x => x, StringComparer.OrdinalIgnoreCase)
                 .ToList();
-            
+        
             var count = itemsList.Count;
             var content = string.Join(", ", itemsList);
 
-            var markdown = $@"## {collector.Title}
-
-**{count} {collector.Title.ToLower()} supported**
-
-{content}
-";
-
-            var filePath = Path.Combine(docsPath, collector.FileName);
-            File.WriteAllText(filePath, markdown);
-            generatedCount++;
+            sb.AppendLine($"## {collector.Title}");
+            sb.AppendLine();
+            sb.AppendLine($"**{count} {collector.Title.ToLower()} supported**");
+            sb.AppendLine();
+            sb.AppendLine(content);
+            sb.AppendLine();
         }
 
-        Console.WriteLine($"{generatedCount} docs files generated in {docsPath}");
+        File.WriteAllText(filePath, sb.ToString());
+        Console.WriteLine($"detection-capabilities.md generated in {docsPath}");
     }
 }

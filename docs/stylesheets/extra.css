@@ -1,0 +1,10 @@
+/* Remove hover effects from feature cards */
+.md-typeset .grid.cards > :is(ul, ol) > li:hover {
+  box-shadow: var(--md-shadow-z1);
+  transform: none;
+  border-color: var(--md-default-fg-color--lightest);
+}
+
+.md-typeset .grid.cards > :is(ul, ol) > li {
+  transition: none;
+}

@@ -28,34 +28,6 @@ public static class StringExtensions
         return ReplaceContent(content, markerName, newContent);
     }
 
-    /// <summary>
-    /// Replaces all content between matching HTML comment marker pairs with joined enumerable content.
-    /// <example>
-    /// For marker "BROWSERS":
-    /// <code>
-    /// &lt;!-- BROWSERS --&gt;Chrome, Firefox&lt;!-- BROWSERS --&gt;
-    /// becomes
-    /// &lt;!-- BROWSERS --&gt;Edge, Safari, Chrome&lt;!-- BROWSERS --&gt;
-    /// </code>
-    /// </example>
-    /// </summary>
-    /// <param name="content">The string to modify</param>
-    /// <param name="markerName">Name between comment markers (e.g. "BROWSERS")</param>
-    /// <param name="newContentItems">Items to join and place between the markers</param>
-    /// <exception cref="ArgumentException">Thrown when the specified markers are not found in the content</exception>
-    public static string ReplaceMarkerContent(
-        this string content,
-        string markerName,
-        IEnumerable<string> newContentItems
-    )
-    {
-        return ReplaceContent(
-            content,
-            markerName,
-            string.Join(", ", newContentItems.Order(StringComparer.OrdinalIgnoreCase))
-        );
-    }
-
     private static string ReplaceContent(this string content, string markerName, string newContent)
     {
         string sectionPattern =
