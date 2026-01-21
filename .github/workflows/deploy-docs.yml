@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -24,4 +25,4 @@ jobs:
           pip install mkdocs-material
       
       - name: Deploy to GitHub Pages
-        run: mkdocs gh-deploy
+        run: mkdocs gh-deploy --force
