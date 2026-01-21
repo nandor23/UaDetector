@@ -1,6 +1,6 @@
-﻿namespace UaDetector.ReadmeUpdater;
+﻿namespace UaDetector.DocsGenerator.Utilities;
 
-public static class ReadmeLocator
+public static class PathLocator
 {
     public static string GetReadmePath()
     {
@@ -19,5 +19,12 @@ public static class ReadmeLocator
         }
 
         throw new FileNotFoundException("Could not locate README.md");
+    }
+
+    public static string GetDocsPath()
+    {
+        var readmePath = GetReadmePath();
+        var solutionRoot = Path.GetDirectoryName(readmePath)!;
+        return Path.Combine(solutionRoot, "docs", "detection-capabilities");
     }
 }

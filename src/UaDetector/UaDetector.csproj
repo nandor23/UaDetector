@@ -29,7 +29,7 @@
   <ItemGroup>
     <InternalsVisibleTo Include="UaDetector.MemoryCache" />
     <InternalsVisibleTo Include="UaDetector.Tests" />
-    <InternalsVisibleTo Include="UaDetector.ReadmeUpdater" />
+    <InternalsVisibleTo Include="UaDetector.DocsGenerator" />
     <InternalsVisibleTo Include="UaDetector.YamlJsonConverter" />
   </ItemGroup>
   
