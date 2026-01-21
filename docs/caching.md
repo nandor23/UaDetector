@@ -1,4 +1,3 @@
-## Caching
 
 To enable caching, install the [UaDetector.MemoryCache](https://www.nuget.org/packages/UaDetector.MemoryCache) package and configure it using the `UseMemoryCache()` extension method.
 

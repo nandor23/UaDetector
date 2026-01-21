@@ -19,3 +19,8 @@
 [data-md-color-scheme="slate"] {
     --md-default-fg-color: #e3e4e6;
 }
+
+/* Hide site name in sidebar navigation */
+.md-nav--primary .md-nav__title {
+    display: none;
+}

@@ -18,6 +18,7 @@
   <Folder Name="/.solution/docs/">
     <File Path="docs\benchmarks.md" />
     <File Path="docs\caching.md" />
+    <File Path="docs\detection-capabilities.md" />
     <File Path="docs\getting-started.md" />
     <File Path="docs\index.md" />
     <File Path="mkdocs.yml" />

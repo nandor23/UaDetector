@@ -64,3 +64,12 @@ plugins:
 
 extra_css:
   - stylesheets/extra.css
+    
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/nandor23/UaDetector
+      name: View on GitHub
+    - icon: simple/nuget
+      link: https://www.nuget.org/packages/UaDetector
+      name: Install from NuGet
