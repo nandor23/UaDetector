@@ -1,7 +1,7 @@
-using UaDetector.ReadmeUpdater.DataCollectors;
-using UaDetector.ReadmeUpdater.Utilities;
+using UaDetector.DocsGenerator.DataCollectors;
+using UaDetector.DocsGenerator.Utilities;
 
-namespace UaDetector.ReadmeUpdater.Generators;
+namespace UaDetector.DocsGenerator.Generators;
 
 public class ReadmeGenerator
 {

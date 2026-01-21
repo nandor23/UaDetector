@@ -1,7 +1,7 @@
 using UaDetector.Parsers.Browsers;
 using UaDetector.Registries;
 
-namespace UaDetector.ReadmeUpdater.DataCollectors;
+namespace UaDetector.DocsGenerator.DataCollectors;
 
 public class BrowserDataCollector : IDataCollector
 {

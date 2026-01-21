@@ -1,4 +1,4 @@
-namespace UaDetector.ReadmeUpdater.DataCollectors;
+namespace UaDetector.DocsGenerator.DataCollectors;
 
 public interface IDataCollector
 {

@@ -25,10 +25,10 @@ jobs:
           dotnet-version: ${{ env.DOTNET_VERSION }}
 
       - name: Restore dependencies
-        run: dotnet restore tools/UaDetector.ReadmeUpdater
+        run: dotnet restore tools/UaDetector.DocsGenerator
 
       - name: Run README updater
-        run: dotnet run --project tools/UaDetector.ReadmeUpdater --no-restore
+        run: dotnet run --project tools/UaDetector.DocsGenerator --no-restore
 
       - name: Check for changes in the README
         id: check_git_diff

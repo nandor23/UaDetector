@@ -1,7 +1,7 @@
 using UaDetector.Parsers;
 using UaDetector.Registries;
 
-namespace UaDetector.ReadmeUpdater.DataCollectors;
+namespace UaDetector.DocsGenerator.DataCollectors;
 
 public class DeviceBrandDataCollector : IDataCollector
 {

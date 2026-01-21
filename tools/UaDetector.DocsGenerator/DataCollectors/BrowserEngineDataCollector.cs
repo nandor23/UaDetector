@@ -1,6 +1,6 @@
 using UaDetector.Parsers.Browsers;
 
-namespace UaDetector.ReadmeUpdater.DataCollectors;
+namespace UaDetector.DocsGenerator.DataCollectors;
 
 public class BrowserEngineDataCollector : IDataCollector
 {

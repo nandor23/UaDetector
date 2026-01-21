@@ -1,4 +1,4 @@
-﻿namespace UaDetector.ReadmeUpdater.Utilities;
+﻿namespace UaDetector.DocsGenerator.Utilities;
 
 public static class PathLocator
 {

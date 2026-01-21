@@ -1,5 +1,5 @@
-﻿using UaDetector.ReadmeUpdater.DataCollectors;
-using UaDetector.ReadmeUpdater.Generators;
+﻿using UaDetector.DocsGenerator.DataCollectors;
+using UaDetector.DocsGenerator.Generators;
 
 var collectors = new List<IDataCollector>
 {

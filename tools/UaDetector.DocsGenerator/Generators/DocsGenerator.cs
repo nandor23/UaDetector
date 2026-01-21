@@ -1,8 +1,9 @@
 using System.Text;
-using UaDetector.ReadmeUpdater.DataCollectors;
-using UaDetector.ReadmeUpdater.Utilities;
 
-namespace UaDetector.ReadmeUpdater.Generators;
+using UaDetector.DocsGenerator.DataCollectors;
+using UaDetector.DocsGenerator.Utilities;
+
+namespace UaDetector.DocsGenerator.Generators;
 
 public class DocsGenerator
 {

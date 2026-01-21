@@ -1,6 +1,6 @@
 using UaDetector.Parsers;
 
-namespace UaDetector.ReadmeUpdater.DataCollectors;
+namespace UaDetector.DocsGenerator.DataCollectors;
 
 public class BotDataCollector : IDataCollector
 {

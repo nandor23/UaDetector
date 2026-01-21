@@ -1,6 +1,6 @@
 using UaDetector.Parsers.Clients;
 
-namespace UaDetector.ReadmeUpdater.DataCollectors;
+namespace UaDetector.DocsGenerator.DataCollectors;
 
 public class PimDataCollector : IDataCollector
 {

@@ -1,4 +1,4 @@
-namespace UaDetector.ReadmeUpdater.Generators;
+namespace UaDetector.DocsGenerator.Generators;
 
 public static class CollapsibleSectionGenerator
 {
