@@ -221,7 +221,7 @@ public class OsCodeTests
             { OsCode.Plan9, 197 },
             { OsCode.Bsd, 198 },
             { OsCode.OpenSuse, 199 },
-            { OsCode.Orsay, 200 }
+            { OsCode.Orsay, 200 },
         };
 
         expectedValues.Count.ShouldBe(Enum.GetValues<OsCode>().Length);
