@@ -11966,7 +11966,8 @@
   {
     "userAgent": "Secweb-Sectxt/1.0",
     "bot": {
-      "name": "Generic Bot"
+      "name": "Secweb-Sectxt",
+      "category": 3
     }
   },
   {
@@ -12910,6 +12911,65 @@
         "name": "DEED Baltic, UAB",
         "url": "http://www.deed.lt/"
       }
+    }
+  },
+  {
+    "userAgent": "TprAdsTxtCrawler/1.1",
+    "bot": {
+      "name": "TprAdsTxtCrawler",
+      "category": 3
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (compatible; CopyvioDetector/0.4.dev0; +wikipedia.earwig[at]gmail.com)",
+    "bot": {
+      "name": "CopyvioDetector",
+      "category": 3,
+      "url": "https://copyvios.toolforge.org/",
+      "producer": {
+        "name": "Ben Kurtovic",
+        "url": "https://github.com/earwig"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (compatible; Dormouse/1.0)",
+    "bot": {
+      "name": "Dormouse",
+      "category": 3
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (compatible; FormFinder/1.0)",
+    "bot": {
+      "name": "FormFinder",
+      "category": 3
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (compatible; ImportDomains/1.0)",
+    "bot": {
+      "name": "ImportDomains",
+      "category": 3
+    }
+  },
+  {
+    "userAgent": "YourUserAgentHere",
+    "bot": {
+      "name": "Generic Bot"
+    }
+  },
+  {
+    "userAgent": "desktop",
+    "bot": {
+      "name": "Generic Bot"
+    }
+  },
+  {
+    "userAgent": "StudyBot/1.0 (Research Purposes)",
+    "bot": {
+      "name": "StudyBot",
+      "category": 3
     }
   }
 ]

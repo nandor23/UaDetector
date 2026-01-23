@@ -10,6 +10,6 @@ public class BotDataCollector : IDataCollector
 
     public IEnumerable<string> CollectData()
     {
-        return BotParser.Bots.Select(x => x.Name);
+        return BotParser.Bots.Select(x => x.Name).Where(name => !name.Contains("$1"));
     }
 }

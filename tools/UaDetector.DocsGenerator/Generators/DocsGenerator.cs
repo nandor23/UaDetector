@@ -1,5 +1,4 @@
 using System.Text;
-
 using UaDetector.DocsGenerator.DataCollectors;
 using UaDetector.DocsGenerator.Utilities;
 

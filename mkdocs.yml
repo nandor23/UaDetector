@@ -40,8 +40,8 @@ theme:
 nav:
   - Getting Started: getting-started.md
   - Caching: caching.md
-  - Detection Capabilities: detection-capabilities.md
   - Benchmarks: benchmarks.md
+  - Detection Capabilities: detection-capabilities.md
     
 markdown_extensions:
   - pymdownx.highlight:
