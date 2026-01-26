@@ -1,5 +1,10 @@
 [
   {
+    "regex": "NuttX(?:/(\\d+[.\\d]+))?",
+    "name": "NuttX",
+    "version": "$1"
+  },
+  {
     "regex": "Contiki/(\\d+[.\\d]+)",
     "name": "Contiki",
     "version": "$1"
