@@ -222,6 +222,7 @@ public class OsCodeTests
             { OsCode.Bsd, 198 },
             { OsCode.OpenSuse, 199 },
             { OsCode.Orsay, 200 },
+            { OsCode.NuttX, 201 },
         };
 
         expectedValues.Count.ShouldBe(Enum.GetValues<OsCode>().Length);

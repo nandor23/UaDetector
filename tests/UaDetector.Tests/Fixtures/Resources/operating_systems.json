@@ -7450,5 +7450,14 @@
       "version": "2.2.2",
       "family": "Other Mobile"
     }
+  },
+  {
+    "userAgent": "NuttX/6.xx.x (; http://www.nuttx.org/)",
+    "os": {
+      "name": "NuttX",
+      "code": 201,
+      "version": "6",
+      "family": "Real-time OS"
+    }
   }
 ]

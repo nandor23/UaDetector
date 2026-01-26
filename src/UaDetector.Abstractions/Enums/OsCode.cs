@@ -203,4 +203,5 @@ public enum OsCode
     Bsd = 198,
     OpenSuse = 199,
     Orsay = 200,
+    NuttX = 201,
 }
