@@ -2114,4 +2114,6 @@ public static class BrandNames
     public const string Ssmart = "Ssmart";
     public const string Zimmer = "Zimmer";
     public const string Dec = "DEC";
+    public const string Jckkcfug = "Jckkcfug";
+    public const string Lagenio = "LAGENIO";
 }
