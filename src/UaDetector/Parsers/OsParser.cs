@@ -221,7 +221,7 @@ public sealed partial class OsParser : IOsParser
                     OsCode.RtosAndNext,
                     OsCode.KolibriOs,
                     OsCode.MocorOs,
-                    OsCode.NuttX
+                    OsCode.NuttX,
                 }.ToFrozenSet()
             },
             {
