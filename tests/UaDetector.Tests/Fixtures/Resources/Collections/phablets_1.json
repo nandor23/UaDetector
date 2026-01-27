@@ -9212,5 +9212,59 @@
         "code": 1973
       }
     }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 16; MBH-N49) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.964 YaSearchBrowser/25.123.1 BroPP/1.0 YaSearchApp/25.123.1 webOmni Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "16",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "25.123.1",
+      "engine": {
+        "name": "Blink",
+        "version": "142.0.7444.964"
+      }
+    },
+    "device": {
+      "type": 10,
+      "model": "Magic V5",
+      "brand": {
+        "name": "Honor",
+        "code": 2095
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 15; Note 18 GT) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.964 YaSearchBrowser/25.123.1/apad BroPP/1.0 YaSearchApp/25.123.1/apad webOmni Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "15",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "25.123.1",
+      "engine": {
+        "name": "Blink",
+        "version": "142.0.7444.964"
+      }
+    },
+    "device": {
+      "type": 10,
+      "model": "Note 18 GT",
+      "brand": {
+        "name": "Hotwav",
+        "code": 743
+      }
+    }
   }
 ]

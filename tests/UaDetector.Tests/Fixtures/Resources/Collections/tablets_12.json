@@ -9232,5 +9232,167 @@
         "code": 1496
       }
     }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 15; SM-X135G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.216 YaBrowser/25.12.3.216.01 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "15",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "25.12.3.216.01",
+      "engine": {
+        "name": "Blink",
+        "version": "142.0.7444.216"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "Galaxy Tab A11 8.7\" LTE",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 15; SM-X135F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.121 YaBrowser/25.12.2.121.01 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "15",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "25.12.2.121.01",
+      "engine": {
+        "name": "Blink",
+        "version": "142.0.7444.121"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "Galaxy Tab A11 8.7\" LTE",
+      "brand": {
+        "name": "Samsung",
+        "code": 1496
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 15; RT3 Plus) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.710 YaApp_Android/25.104.1 YaSearchBrowser/25.104.1 BroPP/1.0 SA/3 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "15",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "25.104.1",
+      "engine": {
+        "name": "Blink",
+        "version": "140.0.7339.710"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "RT3 Plus",
+      "brand": {
+        "name": "Oukitel",
+        "code": 1292
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 15; A10Pro_EEA) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.7103.109 YaBrowser/25.6.2.109.01 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "15",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "25.6.2.109.01",
+      "engine": {
+        "name": "Blink",
+        "version": "136.0.7103.109"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "A10 Pro",
+      "brand": {
+        "name": "Jckkcfug",
+        "code": 2112
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 14; V-Z80Plus) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.710 YaApp_Android/25.104.1/apad YaSearchBrowser/25.104.1/apad BroPP/1.0 SA/3 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "14",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "25.104.1",
+      "engine": {
+        "name": "Blink",
+        "version": "140.0.7339.710"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "V-Z80 Plus",
+      "brand": {
+        "name": "VIKUSHA",
+        "code": 1850
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 14; W5A) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.121 YaBrowser/25.12.2.121.01 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "14",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 653,
+      "version": "25.12.2.121.01",
+      "engine": {
+        "name": "Blink",
+        "version": "142.0.7444.121"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "WPad5",
+      "brand": {
+        "name": "HeadWolf",
+        "code": 705
+      }
+    }
   }
 ]

@@ -2114,4 +2114,6 @@ public enum BrandCode
     Ssmart = 2109,
     Zimmer = 2110,
     Dec = 2111,
+    Jckkcfug = 2112,
+    Lagenio = 2113
 }
