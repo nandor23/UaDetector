@@ -12,9 +12,20 @@
     }
   },
   {
-    "userAgent": "360spider-image",
+    "userAgent": "360Spider-Image",
     "bot": {
-      "name": "360Spider",
+      "name": "360Spider-Image",
+      "category": 0,
+      "url": "https://www.so.com/help/help_3_2.html",
+      "producer": {
+        "name": "Online Media Group, Inc."
+      }
+    }
+  },
+  {
+    "userAgent": "360Spider-Video",
+    "bot": {
+      "name": "360Spider-Video",
       "category": 0,
       "url": "https://www.so.com/help/help_3_2.html",
       "producer": {
@@ -1550,6 +1561,18 @@
   },
   {
     "userAgent": "DoCoMo/2.0 P900i(c100;TB;W24H11) (compatible; ichiro/mobile goo; +http://search.goo.ne.jp/option/use/sub4/sub4-1/)",
+    "bot": {
+      "name": "Goo",
+      "category": 0,
+      "url": "http://search.goo.ne.jp/option/use/sub4/sub4-1",
+      "producer": {
+        "name": "NTT Resonant",
+        "url": "http://goo.ne.jp"
+      }
+    }
+  },
+  {
+    "userAgent": "ichiro/3.0 (http://search.goo.ne.jp/option/use/sub4/sub4-1/)",
     "bot": {
       "name": "Goo",
       "category": 0,
@@ -12993,6 +13016,349 @@
       "producer": {
         "name": "Yandex LLC",
         "url": "https://yandex.com/company/"
+      }
+    }
+  },
+  {
+    "userAgent": "SpeedySpider - http://www.entireweb.com",
+    "bot": {
+      "name": "Speedy"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (compatible; Speedy Spider; http://www.entireweb.com/about/search_tech/speedy_spider/)",
+    "bot": {
+      "name": "Speedy"
+    }
+  },
+  {
+    "userAgent": "nrsbot/6.0(loopip.com/robot.html)",
+    "bot": {
+      "name": "NetResearchServer"
+    }
+  },
+  {
+    "userAgent": "NetResearchServer/2.5(loopimprovements.com/robot.html)",
+    "bot": {
+      "name": "NetResearchServer"
+    }
+  },
+  {
+    "userAgent": "Google-Cloud-Scheduler",
+    "bot": {
+      "name": "Google Cloud Scheduler",
+      "category": 3,
+      "url": "https://cloud.google.com/scheduler",
+      "producer": {
+        "name": "Google Inc.",
+        "url": "https://www.google.com/"
+      }
+    }
+  },
+  {
+    "userAgent": "GoogleStackdriverMonitoring-UptimeChecks(https://cloud.google.com/monitoring)",
+    "bot": {
+      "name": "Google Stackdriver Monitoring",
+      "category": 9,
+      "url": "https://docs.cloud.google.com/monitoring/uptime-checks/using-uptime-checks",
+      "producer": {
+        "name": "Google Inc.",
+        "url": "https://www.google.com/"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 zgrab/0.x",
+    "bot": {
+      "name": "zgrab",
+      "category": 5,
+      "url": "https://github.com/zmap/zgrab"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (X11; U; Linux i686 (x86_64); en-US; rv:1.8.1.11) Gecko/20080109 (Charlotte/0.9t; http://www.searchme.com/support/)",
+    "bot": {
+      "name": "Charlotte",
+      "category": 3,
+      "url": "https://web.archive.org/web/20070225121634/http://www.searchme.com/support/pages/spider.php",
+      "producer": {
+        "name": "Searchme, Inc.",
+        "url": "https://web.archive.org/web/20070217233037/http://www.searchme.com/"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (compatible; Charlotte/1.1; http://www.searchme.com/support/)",
+    "bot": {
+      "name": "Charlotte",
+      "category": 3,
+      "url": "https://web.archive.org/web/20070225121634/http://www.searchme.com/support/pages/spider.php",
+      "producer": {
+        "name": "Searchme, Inc.",
+        "url": "https://web.archive.org/web/20070217233037/http://www.searchme.com/"
+      }
+    }
+  },
+  {
+    "userAgent": "CSS Certificate Spider (http://www.css-security.com/certificatespider/)",
+    "bot": {
+      "name": "CSS Certificate Spider",
+      "category": 3,
+      "url": "http://www.css-security.com/certificatespider/",
+      "producer": {
+        "name": "Certified Security Solutions",
+        "url": "https://www.css-security.com/company/about-us/"
+      }
+    }
+  },
+  {
+    "userAgent": "EmailWolf 1.00",
+    "bot": {
+      "name": "EmailWolf"
+    }
+  },
+  {
+    "userAgent": "Gigabot/3.0 (http://www.gigablast.com/spider.html)",
+    "bot": {
+      "name": "Gigabot"
+    }
+  },
+  {
+    "userAgent": "Riddler (http://riddler.io/about)",
+    "bot": {
+      "name": "Riddler",
+      "category": 2,
+      "url": "https://riddler.io/about",
+      "producer": {
+        "name": "F-Secure",
+        "url": "https://www.f-secure.com"
+      }
+    }
+  },
+  {
+    "userAgent": "netEstate NE Crawler (+http://www.website-datenbank.de/)",
+    "bot": {
+      "name": "netEstate",
+      "category": 3,
+      "url": "http://www.website-datenbank.de/Impressum",
+      "producer": {
+        "name": "netEstate GmbH",
+        "url": "https://www.netestate.de/en/"
+      }
+    }
+  },
+  {
+    "userAgent": "Scooter/3.3",
+    "bot": {
+      "name": "Scooter"
+    }
+  },
+  {
+    "userAgent": "Pompos/1.2 http://pompos.iliad.fr",
+    "bot": {
+      "name": "Pompos",
+      "category": 3,
+      "url": "https://web.archive.org/web/20090124084536/http://dir.com/pompos.html",
+      "producer": {
+        "name": "ILIAD SA",
+        "url": "https://www.iliad.fr/"
+      }
+    }
+  },
+  {
+    "userAgent": "FAST-WebCrawler/2.2.5 - Lycos/Alltheweb/Fast",
+    "bot": {
+      "name": "Lycos"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (compatible; WebThumbnail/3.x; Website Thumbnail Generator; +http://webthumbnail.org)",
+    "bot": {
+      "name": "WebThumbnail"
+    }
+  },
+  {
+    "userAgent": "Mozilla/3.0 (Slurp/si; slurp@inktomi.com; http://www.inktomi.com/slurp.html)",
+    "bot": {
+      "name": "Inktomi Slurp"
+    }
+  },
+  {
+    "userAgent": "Willow Internet Crawler by Twotrees V2.1",
+    "bot": {
+      "name": "Willow Internet Crawler",
+      "category": 3,
+      "url": "https://twotrees.com/company/indexing-web-crawlers/",
+      "producer": {
+        "name": "Twotrees Technologies, LLC",
+        "url": "https://twotrees.com/"
+      }
+    }
+  },
+  {
+    "userAgent": "YahooCacheSystem; YahooWebServiceClient",
+    "bot": {
+      "name": "Yahoo! Cache System",
+      "category": 3,
+      "producer": {
+        "name": "Yahoo! Inc.",
+        "url": "http://www.yahoo.com"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US; rv:1.9.2.28) Gecko/20120306 Firefox/99.0 YottaaMonitor",
+    "bot": {
+      "name": "Yottaa Site Monitor",
+      "category": 9,
+      "url": "http://www.yottaa.com/products/site-monitor",
+      "producer": {
+        "name": "Yottaa",
+        "url": "http://www.yottaa.com/"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko; Google-BusinessLinkVerification) Chrome/143.0.7499.192 Safari/537.36",
+    "bot": {
+      "name": "Googlebot",
+      "category": 0,
+      "url": "https://developers.google.com/search/docs/crawling-indexing/overview-google-crawlers",
+      "producer": {
+        "name": "Google Inc.",
+        "url": "https://www.google.com/"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (compatible; Eyeotabot/1.0; +http://www.eyeota.com)",
+    "bot": {
+      "name": "Eyeotabot",
+      "category": 3,
+      "url": "https://www.eyeota.com/",
+      "producer": {
+        "name": "Eyeota Pte Ltd",
+        "url": "https://www.eyeota.com/"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (compatible; YioopBot; +https://www.yioop.com/bot)",
+    "bot": {
+      "name": "YioopBot",
+      "category": 0,
+      "url": "https://www.yioop.com/bot",
+      "producer": {
+        "name": "Chris Pollett",
+        "url": "https://www.pollett.org/"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (compatible; yoozBot-2.2; http://yooz.ir; info@yooz.ir)",
+    "bot": {
+      "name": "yoozBot",
+      "category": 0,
+      "url": "https://www.yooz.ir/",
+      "producer": {
+        "name": "yooz",
+        "url": "https://www.yooz.ir/"
+      }
+    }
+  },
+  {
+    "userAgent": "yoozbot-bear/1.0 (http://yooz.ir/; info@yooz.ir);",
+    "bot": {
+      "name": "yoozBot",
+      "category": 0,
+      "url": "https://www.yooz.ir/",
+      "producer": {
+        "name": "yooz",
+        "url": "https://www.yooz.ir/"
+      }
+    }
+  },
+  {
+    "userAgent": "Y!J-BRJ/YATS crawler (http://help.yahoo.co.jp/help/jp/search/indexing/indexing-15.html)",
+    "bot": {
+      "name": "Yahoo! Japan BRJ",
+      "category": 3,
+      "url": "https://support.yahoo-net.jp/PccSearch/s/article/H000007955",
+      "producer": {
+        "name": "Yahoo! Japan Corp.",
+        "url": "https://www.yahoo.co.jp/"
+      }
+    }
+  },
+  {
+    "userAgent": "Y!J-PSC/1.0 crawler (http://help.yahoo.co.jp/help/jp/search/indexing/indexing-15.html)",
+    "bot": {
+      "name": "Yahoo! Japan PSC",
+      "category": 3,
+      "url": "https://support.yahoo-net.jp/PccSearch/s/article/H000007955",
+      "producer": {
+        "name": "Yahoo! Japan Corp.",
+        "url": "https://www.yahoo.co.jp/"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPhone; Y!J-BRY/YATSH crawler; http://help.yahoo.co.jp/help/jp/search/indexing/indexing-15.html)",
+    "bot": {
+      "name": "Yahoo! Japan BRY",
+      "category": 3,
+      "url": "https://support.yahoo-net.jp/PccSearch/s/article/H000007955",
+      "producer": {
+        "name": "Yahoo! Japan Corp.",
+        "url": "https://www.yahoo.co.jp/"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (compatible; Y!J SearchMonkey/1.0 (Y!J-AGENT; http://help.yahoo.co.jp/help/jp/search/indexing/indexing-15.html))",
+    "bot": {
+      "name": "Yahoo! Japan",
+      "category": 3,
+      "url": "https://support.yahoo-net.jp/PccSearch/s/article/H000007955",
+      "producer": {
+        "name": "Yahoo! Japan Corp.",
+        "url": "https://www.yahoo.co.jp/"
+      }
+    }
+  },
+  {
+    "userAgent": "Y!J-BSC/1.0 (http://help.yahoo.co.jp/help/jp/blog-search/)",
+    "bot": {
+      "name": "Yahoo! Japan BSC",
+      "category": 3,
+      "url": "https://support.yahoo-net.jp/PccSearch/s/article/H000007955",
+      "producer": {
+        "name": "Yahoo! Japan Corp.",
+        "url": "https://www.yahoo.co.jp/"
+      }
+    }
+  },
+  {
+    "userAgent": "Y!J-BRI/0.0.1 crawler ( http://help.yahoo.co.jp/help/jp/search/indexing/indexing-15.html )",
+    "bot": {
+      "name": "Yahoo! Japan BRI",
+      "category": 3,
+      "url": "https://support.yahoo-net.jp/PccSearch/s/article/H000007955",
+      "producer": {
+        "name": "Yahoo! Japan Corp.",
+        "url": "https://www.yahoo.co.jp/"
+      }
+    }
+  },
+  {
+    "userAgent": "Y!J-BRO/YFSJ crawler (compatible; Mozilla 4.0; MSIE 5.5; http://help.yahoo.co.jp/help/jp/search/indexing/indexing-15.html; YahooFeedSeekerJp/2.0)",
+    "bot": {
+      "name": "Yahoo! Japan BRO",
+      "category": 3,
+      "url": "https://support.yahoo-net.jp/PccSearch/s/article/H000007955",
+      "producer": {
+        "name": "Yahoo! Japan Corp.",
+        "url": "https://www.yahoo.co.jp/"
       }
     }
   }
