@@ -2133,6 +2133,8 @@ public class BrandCodeTests
             { BrandCode.Ssmart, 2109 },
             { BrandCode.Zimmer, 2110 },
             { BrandCode.Dec, 2111 },
+            { BrandCode.Jckkcfug, 2112 },
+            { BrandCode.Lagenio, 2113 },
         };
 
         expectedValues.Count.ShouldBe(Enum.GetValues<BrandCode>().Length);
