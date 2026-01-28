@@ -13765,5 +13765,59 @@
         "code": 536
       }
     }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; HUAWEI P30 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.105 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "10",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "89.0.4389.105",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "89.0.4389.105"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "P30 Pro",
+      "brand": {
+        "name": "Huawei",
+        "code": 757
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 14; HUAWEI Mate 60 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 1,
+      "version": "14",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 140,
+      "version": "116.0.0.0",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "116.0.0.0"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Mate 60 Pro",
+      "brand": {
+        "name": "Huawei",
+        "code": 757
+      }
+    }
   }
 ]

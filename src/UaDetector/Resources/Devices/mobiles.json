@@ -19386,7 +19386,7 @@
     ]
   },
   {
-    "regex": "Homtom|(?:HT[0-9]{1,2}(?: ?Pro)?|HT3_Pro|P30 Pro|android 8([\\d.]*);(?: [\\w-]+;)? S17)(?:[);/ ]|$)",
+    "regex": "Homtom|(?:HT[0-9]{1,2}(?: ?Pro)?|HT3_Pro|(?<!Huawei )P30 Pro|android 8([\\d.]*);(?: [\\w-]+;)? S17)(?:[);/ ]|$)",
     "brand": "Homtom",
     "type": 1,
     "modelVariants": [
@@ -21175,7 +21175,7 @@
         "name": "P10 Plus"
       },
       {
-        "regex": "VOG-AL00",
+        "regex": "(?:VOG-AL00|P30 Pro)(?:[);/ ]|$)",
         "name": "P30 Pro"
       },
       {
@@ -21359,7 +21359,7 @@
         "name": "Mate 50E"
       },
       {
-        "regex": "ALN-AL[08]0",
+        "regex": "(?:ALN-AL[08]0|Mate 60 Pro)(?:[);/ ]|$)",
         "name": "Mate 60 Pro"
       },
       {
