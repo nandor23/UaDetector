@@ -1,4 +1,6 @@
 using BenchmarkDotNet.Attributes;
+using BenchmarkDotNet.Order;
+
 using DeviceDetectorNET;
 using DeviceDetectorNET.Results;
 using DeviceDetectorNET.Results.Client;
@@ -9,23 +11,33 @@ using ClientInfo = UAParser.ClientInfo;
 namespace UaDetector.Benchmarks;
 
 [MemoryDiagnoser]
+[Orderer(SummaryOrderPolicy.FastestToSlowest)]
 public class LibraryComparisonBenchmark
 {
-    private const string UserAgent =
-        "Safari/9537.73.11 CFNetwork/673.0.3 Darwin/13.0.0 (x86_64) (MacBookAir6%2C2)";
+    private string[] _userAgents = null!;
+    private int _index;
+
+    [GlobalSetup]
+    public void Setup()
+    {
+        _userAgents = TestUserAgents.All;
+        _index = 0;
+    }
 
     [Benchmark(Baseline = true)]
     public UserAgentInfo? UaDetector()
     {
+        var ua = _userAgents[_index++ % _userAgents.Length];
         var uaDetector = new UaDetector();
-        uaDetector.TryParse(UserAgent, out var result);
+        uaDetector.TryParse(ua, out var result);
         return result;
     }
 
-    [Benchmark]
+    [Benchmark(Description = "DeviceDetector.NET")]
     public ParseResult<BrowserMatchResult> DeviceDetector()
     {
-        var deviceDetector = new DeviceDetector(UserAgent);
+        var ua = _userAgents[_index++ % _userAgents.Length];
+        var deviceDetector = new DeviceDetector(ua);
         deviceDetector.Parse();
         return deviceDetector.GetBrowserClient();
     }
@@ -33,7 +45,8 @@ public class LibraryComparisonBenchmark
     [Benchmark]
     public ClientInfo UAParser()
     {
+        var ua = _userAgents[_index++ % _userAgents.Length];
         var uaParser = Parser.GetDefault();
-        return uaParser.Parse(UserAgent);
+        return uaParser.Parse(ua);
     }
 }
