@@ -2115,5 +2115,5 @@ public enum BrandCode
     Zimmer = 2110,
     Dec = 2111,
     Jckkcfug = 2112,
-    Lagenio = 2113
+    Lagenio = 2113,
 }
