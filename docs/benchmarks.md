@@ -6,10 +6,10 @@ than UaDetector while maintaining the same functionality at the cost of parsing 
 
 | Method             | Mean     | Error     | StdDev    | Ratio | Allocated   | Alloc Ratio |
 |--------------------|---------:|----------:|----------:|------:|------------:|------------:|
-| UaDetector         | 3.175 ms | 0.5996 ms | 1.6210 ms |  2.25 |     2.65 KB |        1.00 |
-| UAParser           | 6.753 ms | 0.1203 ms | 0.1125 ms |  4.78 | 11293.44 KB |    4,264.19 |
-| UaDetector.Lite    | 7.201 ms | 0.1412 ms | 0.2651 ms |  1.00 |     4.13 KB |        1.00 |
-| DeviceDetector.NET | 8.158 ms | 0.7390 ms | 2.0230 ms |  5.77 |  8621.18 KB |    3,255.19 |
+| UaDetector         | 3.175 ms | 0.5996 ms | 1.6210 ms |  1.00 |     2.65 KB |        1.00 |
+| UAParser           | 6.753 ms | 0.1203 ms | 0.1125 ms |  2.13 | 11293.44 KB |    4,264.19 |
+| UaDetector.Lite    | 7.201 ms | 0.1412 ms | 0.2651 ms |  2.27 |     4.13 KB |        1.56 |
+| DeviceDetector.NET | 8.158 ms | 0.7390 ms | 2.0230 ms |  2.57 |  8621.18 KB |    3,255.19 |
 
 ### Individual Parser Performance
 
