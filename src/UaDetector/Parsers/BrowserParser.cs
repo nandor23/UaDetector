@@ -898,15 +898,10 @@ public sealed partial class BrowserParser : IBrowserParser
             BrowserRegistry.BrowserNameMappings.TryGetValue(browserName, out var browserCode)
             || (
                 hasBrowserSuffix
-                // TODO: Remove this once net462 support is dropped
                 && BrowserRegistry.BrowserNameMappings.TryGetValue(
-                    browserName.Substring(0, browserName.Length - 7).TrimEnd(),
+                    browserName[..^7].TrimEnd(),
                     out browserCode
                 )
-            /*&& BrowserRegistry.BrowserNameMappings.TryGetValue(
-                browserName[..^7].TrimEnd(),
-                out browserCode
-            )*/
             )
             || (
                 !hasBrowserSuffix

@@ -198,11 +198,7 @@ internal sealed class ClientHints
                 while (FullVersionListRegex.Match(value) is { Success: true } match)
                 {
                     clientHints.FullVersionList[match.Groups[1].Value] = match.Groups[2].Value;
-
-                    // TODO: Remove this once net462 support is dropped
-                    value = value.Substring(match.Length);
-
-                    // value = value[match.Length..];
+                    value = value[match.Length..];
                 }
             }
             else if (

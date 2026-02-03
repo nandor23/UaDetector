@@ -112,10 +112,7 @@ internal static class ParserExtensions
 
             if (index != -1)
             {
-                // TODO: Remove this once net462 support is dropped
-                version = version.Substring(0, index);
-
-                // version = version[..index];
+                version = version[..index];
             }
         }
 
