@@ -9,20 +9,24 @@ public class UaDetectorBenchmark
 {
     private string[] _userAgents = null!;
     private int _index;
+    private UaDetector _uaDetector = null!;
 
     [GlobalSetup]
     public void Setup()
     {
         _userAgents = TestUserAgents.All;
         _index = 0;
+        _uaDetector = new UaDetector();
+        
+        // Warm up - trigger regex compilation
+        _uaDetector.TryParse("uadetector-warmup", out _);
     }
 
     [Benchmark]
     public UserAgentInfo? UaDetector_TryParse()
     {
-        var uaDetector = new UaDetector();
         var ua = _userAgents[_index++ % _userAgents.Length];
-        uaDetector.TryParse(ua, out var result);
+        _uaDetector.TryParse(ua, out var result);
         return result;
     }
 

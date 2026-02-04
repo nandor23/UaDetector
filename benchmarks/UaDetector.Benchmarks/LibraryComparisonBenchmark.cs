@@ -16,20 +16,24 @@ public class LibraryComparisonBenchmark
 {
     private string[] _userAgents = null!;
     private int _index;
+    private UaDetector _uaDetector = null!;
 
     [GlobalSetup]
     public void Setup()
     {
         _userAgents = TestUserAgents.All;
         _index = 0;
+        _uaDetector = new UaDetector();
+        
+        // Warm up - trigger regex compilation
+        _uaDetector.TryParse("uadetector-warmup", out _);
     }
 
     [Benchmark(Baseline = true)]
     public UserAgentInfo? UaDetector()
     {
         var ua = _userAgents[_index++ % _userAgents.Length];
-        var uaDetector = new UaDetector();
-        uaDetector.TryParse(ua, out var result);
+        _uaDetector.TryParse(ua, out var result);
         return result;
     }
 
