@@ -12,9 +12,8 @@ public class DeviceBrandDataCollector : IDataCollector
     public IEnumerable<string> CollectData()
     {
         return BrandRegistry
-            .BrandNameMappings.Keys.Concat(
-                VendorFragmentParser.VendorFragments.Select(x => x.Brand)
-            )
+            .BrandNameMappings.Keys.Concat(BrandRegistry.LegacyBrandNameMappings.Keys)
+            .Concat(VendorFragmentParser.VendorFragments.Select(x => x.Brand))
             .Distinct(StringComparer.OrdinalIgnoreCase);
     }
 }

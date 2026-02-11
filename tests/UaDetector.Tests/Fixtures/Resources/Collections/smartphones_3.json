@@ -15861,10 +15861,10 @@
     },
     "device": {
       "type": 1,
-      "model": "6A",
+      "model": "Dazen 6A",
       "brand": {
-        "name": "Dazen",
-        "code": 356
+        "name": "Coolpad",
+        "code": 317
       }
     }
   },
@@ -18774,7 +18774,7 @@
       "type": 1,
       "model": "Storm C3",
       "brand": {
-        "name": "Cloud",
+        "name": "Cloud Mobile",
         "code": 290
       }
     }
@@ -19093,7 +19093,7 @@
       "type": 1,
       "model": "Stratus C5 Elite",
       "brand": {
-        "name": "Cloud",
+        "name": "Cloud Mobile",
         "code": 290
       }
     }

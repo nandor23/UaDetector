@@ -4139,9 +4139,9 @@
     },
     "device": {
       "type": 10,
-      "model": "Mode 1 RR",
+      "model": "RR",
       "brand": {
-        "name": "P-UP",
+        "name": "Mode 1",
         "code": 1305
       }
     }

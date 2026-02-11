@@ -9,7 +9,12 @@ public static class BrandRegistry
 {
     public static string GetBrandName(BrandCode brandCode)
     {
-        return BrandCodeMappings[brandCode];
+        if (BrandCodeMappings.TryGetValue(brandCode, out var brandName))
+        {
+            return brandName;
+        }
+
+        return LegacyBrandCodeMappings[brandCode];
     }
 
     public static bool TryGetBrandCode(string brandName, [NotNullWhen(true)] out BrandCode? result)
@@ -20,8 +25,26 @@ public static class BrandRegistry
             return true;
         }
 
+        if (LegacyBrandNameMappings.TryGetValue(brandName, out brandCode))
+        {
+            result = brandCode;
+            return true;
+        }
+
         result = null;
         return false;
+    }
+
+    internal static bool ContainsCode(BrandCode brandCode)
+    {
+        return BrandCodeMappings.ContainsKey(brandCode)
+            || LegacyBrandCodeMappings.ContainsKey(brandCode);
+    }
+
+    internal static bool ContainsName(string brandName)
+    {
+        return BrandNameMappings.ContainsKey(brandName)
+            || LegacyBrandNameMappings.ContainsKey(brandName);
     }
 
     internal static readonly FrozenDictionary<BrandCode, string> BrandCodeMappings = new Dictionary<
@@ -186,7 +209,7 @@ public static class BrandRegistry
         { BrandCode.BangOlufsen, BrandNames.BangOlufsen },
         { BrandCode.BarnesAndNoble, BrandNames.BarnesAndNoble },
         { BrandCode.Bartec, BrandNames.Bartec },
-        { BrandCode.Base, BrandNames.Base },
+        { BrandCode.UnikalneSmartphones, BrandNames.UnikalneSmartphones },
         { BrandCode.Bauhn, BrandNames.Bauhn },
         { BrandCode.Bbk, BrandNames.Bbk },
         { BrandCode.BbMobile, BrandNames.BbMobile },
@@ -319,9 +342,8 @@ public static class BrandRegistry
         { BrandCode.Claresta, BrandNames.Claresta },
         { BrandCode.Clayton, BrandNames.Clayton },
         { BrandCode.Clovertek, BrandNames.Clovertek },
-        { BrandCode.Cloud, BrandNames.Cloud },
+        { BrandCode.CloudMobile, BrandNames.CloudMobile },
         { BrandCode.Cloudfone, BrandNames.Cloudfone },
-        { BrandCode.Cloudpad, BrandNames.Cloudpad },
         { BrandCode.Clout, BrandNames.Clout },
         { BrandCode.CnM, BrandNames.CnM },
         { BrandCode.CobyKyros, BrandNames.CobyKyros },
@@ -385,7 +407,6 @@ public static class BrandRegistry
         { BrandCode.Datamini, BrandNames.Datamini },
         { BrandCode.Datalogic, BrandNames.Datalogic },
         { BrandCode.Datsun, BrandNames.Datsun },
-        { BrandCode.Dazen, BrandNames.Dazen },
         { BrandCode.Dass, BrandNames.Dass },
         { BrandCode.Dbtel, BrandNames.Dbtel },
         { BrandCode.DbPhone, BrandNames.DbPhone },
@@ -412,7 +433,7 @@ public static class BrandRegistry
         { BrandCode.Digihome, BrandNames.Digihome },
         { BrandCode.Digiland, BrandNames.Digiland },
         { BrandCode.Dijitsu, BrandNames.Dijitsu },
-        { BrandCode.Digit4G, BrandNames.Digit4G },
+        { BrandCode.Digit, BrandNames.Digit },
         { BrandCode.Digicom, BrandNames.Digicom },
         { BrandCode.Digifors, BrandNames.Digifors },
         { BrandCode.Dikom, BrandNames.Dikom },
@@ -430,7 +451,7 @@ public static class BrandRegistry
         { BrandCode.Dingding, BrandNames.Dingding },
         { BrandCode.Dinax, BrandNames.Dinax },
         { BrandCode.Dinalink, BrandNames.Dinalink },
-        { BrandCode.Dmm, BrandNames.Dmm },
+        { BrandCode.DreamMultimedia, BrandNames.DreamMultimedia },
         { BrandCode.Dmoao, BrandNames.Dmoao },
         { BrandCode.Dns, BrandNames.Dns },
         { BrandCode.DoCoMo, BrandNames.DoCoMo },
@@ -451,7 +472,7 @@ public static class BrandRegistry
         { BrandCode.DragonTouch, BrandNames.DragonTouch },
         { BrandCode.Dragon, BrandNames.Dragon },
         { BrandCode.Dreamgate, BrandNames.Dreamgate },
-        { BrandCode.DreamTab, BrandNames.DreamTab },
+        { BrandCode.Powerway, BrandNames.Powerway },
         { BrandCode.DreamStar, BrandNames.DreamStar },
         { BrandCode.Dtac, BrandNames.Dtac },
         { BrandCode.DuneHd, BrandNames.DuneHd },
@@ -498,7 +519,6 @@ public static class BrandRegistry
         { BrandCode.Ematic, BrandNames.Ematic },
         { BrandCode.Emporia, BrandNames.Emporia },
         { BrandCode.Ekt, BrandNames.Ekt },
-        { BrandCode.Ekinox, BrandNames.Ekinox },
         { BrandCode.Elari, BrandNames.Elari },
         { BrandCode.Electroneum, BrandNames.Electroneum },
         { BrandCode.Electronia, BrandNames.Electronia },
@@ -526,7 +546,6 @@ public static class BrandRegistry
         { BrandCode.Ergo, BrandNames.Ergo },
         { BrandCode.Ericsson, BrandNames.Ericsson },
         { BrandCode.Erisson, BrandNames.Erisson },
-        { BrandCode.Ericy, BrandNames.Ericy },
         { BrandCode.Essential, BrandNames.Essential },
         { BrandCode.Essentielb, BrandNames.Essentielb },
         { BrandCode.EStar, BrandNames.EStar },
@@ -564,7 +583,6 @@ public static class BrandRegistry
         { BrandCode.Ezze, BrandNames.Ezze },
         { BrandCode.Eyu, BrandNames.Eyu },
         { BrandCode.Eyemoo, BrandNames.Eyemoo },
-        { BrandCode.UE, BrandNames.UE },
         { BrandCode.F150, BrandNames.F150 },
         { BrandCode.FPlus, BrandNames.FPlus },
         { BrandCode.Facebook, BrandNames.Facebook },
@@ -743,7 +761,7 @@ public static class BrandRegistry
         { BrandCode.HiHi, BrandNames.HiHi },
         { BrandCode.HiKing, BrandNames.HiKing },
         { BrandCode.Highscreen, BrandNames.Highscreen },
-        { BrandCode.HighQ, BrandNames.HighQ },
+        { BrandCode.EpikLearning, BrandNames.EpikLearning },
         { BrandCode.High1One, BrandNames.High1One },
         { BrandCode.HiGrace, BrandNames.HiGrace },
         { BrandCode.Hipstreet, BrandNames.Hipstreet },
@@ -754,7 +772,6 @@ public static class BrandRegistry
         { BrandCode.Hitech, BrandNames.Hitech },
         { BrandCode.HiMax, BrandNames.HiMax },
         { BrandCode.HiNova, BrandNames.HiNova },
-        { BrandCode.Hllo, BrandNames.Hllo },
         { BrandCode.Hkc, BrandNames.Hkc },
         { BrandCode.Hmd, BrandNames.Hmd },
         { BrandCode.HkPro, BrandNames.HkPro },
@@ -771,7 +788,7 @@ public static class BrandRegistry
         { BrandCode.Horizon, BrandNames.Horizon },
         { BrandCode.Horizont, BrandNames.Horizont },
         { BrandCode.Hosin, BrandNames.Hosin },
-        { BrandCode.Hotel, BrandNames.Hotel },
+        { BrandCode.HotelTvCompany, BrandNames.HotelTvCompany },
         { BrandCode.Hotwav, BrandNames.Hotwav },
         { BrandCode.HotPepper, BrandNames.HotPepper },
         { BrandCode.Hotack, BrandNames.Hotack },
@@ -1036,7 +1053,6 @@ public static class BrandRegistry
         { BrandCode.Logik, BrandNames.Logik },
         { BrandCode.Logitech, BrandNames.Logitech },
         { BrandCode.Lokmat, BrandNames.Lokmat },
-        { BrandCode.LpxG, BrandNames.LpxG },
         { BrandCode.Lumigon, BrandNames.Lumigon },
         { BrandCode.Lumus, BrandNames.Lumus },
         { BrandCode.Lumitel, BrandNames.Lumitel },
@@ -1089,7 +1105,7 @@ public static class BrandRegistry
         { BrandCode.Mbi, BrandNames.Mbi },
         { BrandCode.Mbk, BrandNames.Mbk },
         { BrandCode.MdcStore, BrandNames.MdcStore },
-        { BrandCode.Mdtv, BrandNames.Mdtv },
+        { BrandCode.Ott, BrandNames.Ott },
         { BrandCode.MeanIt, BrandNames.MeanIt },
         { BrandCode.Mecer, BrandNames.Mecer },
         { BrandCode.M3Mobile, BrandNames.M3Mobile },
@@ -1134,8 +1150,7 @@ public static class BrandRegistry
         { BrandCode.Miwang, BrandNames.Miwang },
         { BrandCode.Mlled, BrandNames.Mlled },
         { BrandCode.Mls, BrandNames.Mls },
-        { BrandCode.Mlab, BrandNames.Mlab },
-        { BrandCode.Mmi, BrandNames.Mmi },
+        { BrandCode.Microlab, BrandNames.Microlab },
         { BrandCode.Mobicel, BrandNames.Mobicel },
         { BrandCode.Mobiistar, BrandNames.Mobiistar },
         { BrandCode.MobileKingdom, BrandNames.MobileKingdom },
@@ -1334,10 +1349,10 @@ public static class BrandRegistry
         { BrandCode.Oyyu, BrandNames.Oyyu },
         { BrandCode.OzoneHd, BrandNames.OzoneHd },
         { BrandCode.Ollee, BrandNames.Ollee },
-        { BrandCode.PUp, BrandNames.PUp },
+        { BrandCode.Mode1, BrandNames.Mode1 },
         { BrandCode.PacificResearchAlliance, BrandNames.PacificResearchAlliance },
         { BrandCode.Pagraer, BrandNames.Pagraer },
-        { BrandCode.Padpro, BrandNames.Padpro },
+        { BrandCode.SevenKeTree, BrandNames.SevenKeTree },
         { BrandCode.Paladin, BrandNames.Paladin },
         { BrandCode.Palm, BrandNames.Palm },
         { BrandCode.Panacom, BrandNames.Panacom },
@@ -1492,13 +1507,13 @@ public static class BrandRegistry
         { BrandCode.RoamCat, BrandNames.RoamCat },
         { BrandCode.Rocket, BrandNames.Rocket },
         { BrandCode.Rokit, BrandNames.Rokit },
-        { BrandCode.ROiK, BrandNames.ROiK },
+        { BrandCode.Kap, BrandNames.Kap },
         { BrandCode.Roku, BrandNames.Roku },
         { BrandCode.Rombica, BrandNames.Rombica },
         { BrandCode.Romsat, BrandNames.Romsat },
         { BrandCode.RossAndMoor, BrandNames.RossAndMoor },
         { BrandCode.Rover, BrandNames.Rover },
-        { BrandCode.RoverPad, BrandNames.RoverPad },
+        { BrandCode.RoverComputers, BrandNames.RoverComputers },
         { BrandCode.RoyQueen, BrandNames.RoyQueen },
         { BrandCode.Royole, BrandNames.Royole },
         { BrandCode.RtProject, BrandNames.RtProject },
@@ -1626,16 +1641,16 @@ public static class BrandRegistry
         { BrandCode.SohoStyle, BrandNames.SohoStyle },
         { BrandCode.SobieTech, BrandNames.SobieTech },
         { BrandCode.Sowly, BrandNames.Sowly },
-        { BrandCode.Spark, BrandNames.Spark },
+        { BrandCode.SparkNz, BrandNames.SparkNz },
         { BrandCode.Sparx, BrandNames.Sparx },
         { BrandCode.Spc, BrandNames.Spc },
         { BrandCode.Spectrum, BrandNames.Spectrum },
         { BrandCode.Spectralink, BrandNames.Spectralink },
         { BrandCode.Spice, BrandNames.Spice },
-        { BrandCode.Sprint, BrandNames.Sprint },
+        { BrandCode.QuantaComputer, BrandNames.QuantaComputer },
         { BrandCode.Spurt, BrandNames.Spurt },
         { BrandCode.Sqool, BrandNames.Sqool },
-        { BrandCode.Star, BrandNames.Star },
+        { BrandCode.Kingelon, BrandNames.Kingelon },
         { BrandCode.Starlight, BrandNames.Starlight },
         { BrandCode.StarLight, BrandNames.StarLight },
         { BrandCode.Starmobile, BrandNames.Starmobile },
@@ -1646,7 +1661,7 @@ public static class BrandRegistry
         { BrandCode.StgTelecom, BrandNames.StgTelecom },
         { BrandCode.Stonex, BrandNames.Stonex },
         { BrandCode.Storex, BrandNames.Storex },
-        { BrandCode.Stream, BrandNames.Stream },
+        { BrandCode.StreamSystem, BrandNames.StreamSystem },
         { BrandCode.StrawBerry, BrandNames.StrawBerry },
         { BrandCode.Strong, BrandNames.Strong },
         { BrandCode.Stylo, BrandNames.Stylo },
@@ -1702,13 +1717,13 @@ public static class BrandRegistry
         { BrandCode.Technicolor, BrandNames.Technicolor },
         { BrandCode.TeachTouch, BrandNames.TeachTouch },
         { BrandCode.Technika, BrandNames.Technika },
-        { BrandCode.TechSmart, BrandNames.TechSmart },
+        { BrandCode.Techmade, BrandNames.Techmade },
         { BrandCode.TechniSat, BrandNames.TechniSat },
         { BrandCode.TechnoTrend, BrandNames.TechnoTrend },
         { BrandCode.Technosat, BrandNames.Technosat },
         { BrandCode.Temigereev, BrandNames.Temigereev },
         { BrandCode.TechPad, BrandNames.TechPad },
-        { BrandCode.Tps, BrandNames.Tps },
+        { BrandCode.SzTps, BrandNames.SzTps },
         { BrandCode.Techwood, BrandNames.Techwood },
         { BrandCode.Technopc, BrandNames.Technopc },
         { BrandCode.Techstorm, BrandNames.Techstorm },
@@ -1802,8 +1817,7 @@ public static class BrandRegistry
         { BrandCode.Tvc, BrandNames.Tvc },
         { BrandCode.TvPlus, BrandNames.TvPlus },
         { BrandCode.Twm, BrandNames.Twm },
-        { BrandCode.Twz, BrandNames.Twz },
-        { BrandCode.Twoe, BrandNames.Twoe },
+        { BrandCode.TwzCorporation, BrandNames.TwzCorporation },
         { BrandCode.TwinMos, BrandNames.TwinMos },
         { BrandCode.Tymes, BrandNames.Tymes },
         { BrandCode.UsCellular, BrandNames.UsCellular },
@@ -1925,7 +1939,7 @@ public static class BrandRegistry
         { BrandCode.VortexRo, BrandNames.VortexRo },
         { BrandCode.Vormor, BrandNames.Vormor },
         { BrandCode.Voto, BrandNames.Voto },
-        { BrandCode.Vox, BrandNames.Vox },
+        { BrandCode.VoxElectronics, BrandNames.VoxElectronics },
         { BrandCode.Voxtel, BrandNames.Voxtel },
         { BrandCode.Voyo, BrandNames.Voyo },
         { BrandCode.Volfen, BrandNames.Volfen },
@@ -1946,7 +1960,6 @@ public static class BrandRegistry
         { BrandCode.Waltham, BrandNames.Waltham },
         { BrandCode.Waltter, BrandNames.Waltter },
         { BrandCode.Wainyok, BrandNames.Wainyok },
-        { BrandCode.WhiteMobile, BrandNames.WhiteMobile },
         { BrandCode.Whoop, BrandNames.Whoop },
         { BrandCode.WeByLoewe, BrandNames.WeByLoewe },
         { BrandCode.WeChip, BrandNames.WeChip },
@@ -1957,7 +1970,7 @@ public static class BrandRegistry
         { BrandCode.WesternDigital, BrandNames.WesternDigital },
         { BrandCode.Weston, BrandNames.Weston },
         { BrandCode.Westpoint, BrandNames.Westpoint },
-        { BrandCode.Wanmukang, BrandNames.Wanmukang },
+        { BrandCode.ZhongyuDisplay, BrandNames.ZhongyuDisplay },
         { BrandCode.Wansa, BrandNames.Wansa },
         { BrandCode.Wexler, BrandNames.Wexler },
         { BrandCode.WE, BrandNames.WE },
@@ -1984,7 +1997,7 @@ public static class BrandRegistry
         { BrandCode.Wonder, BrandNames.Wonder },
         { BrandCode.Wonu, BrandNames.Wonu },
         { BrandCode.Woo, BrandNames.Woo },
-        { BrandCode.Wortmann, BrandNames.Wortmann },
+        { BrandCode.Terra, BrandNames.Terra },
         { BrandCode.Woxter, BrandNames.Woxter },
         { BrandCode.Wozifan, BrandNames.Wozifan },
         { BrandCode.XAge, BrandNames.XAge },
@@ -2143,10 +2156,31 @@ public static class BrandRegistry
         { BrandCode.Dec, BrandNames.Dec },
         { BrandCode.Jckkcfug, BrandNames.Jckkcfug },
         { BrandCode.Lagenio, BrandNames.Lagenio },
+        { BrandCode.Exertis, BrandNames.Exertis },
     }.ToFrozenDictionary();
 
     internal static readonly FrozenDictionary<string, BrandCode> BrandNameMappings =
         BrandCodeMappings
+            .ToDictionary(e => e.Value, e => e.Key)
+            .ToFrozenDictionary(StringComparer.OrdinalIgnoreCase);
+
+    internal static readonly FrozenDictionary<BrandCode, string> LegacyBrandCodeMappings =
+        new Dictionary<BrandCode, string>
+        {
+            { BrandCode.Cloudpad, BrandNames.Cloudpad },
+            { BrandCode.Dazen, BrandNames.Dazen },
+            { BrandCode.Ekinox, BrandNames.Ekinox },
+            { BrandCode.Ericy, BrandNames.Ericy },
+            { BrandCode.UE, BrandNames.UE },
+            { BrandCode.Hllo, BrandNames.Hllo },
+            { BrandCode.LpxG, BrandNames.LpxG },
+            { BrandCode.Mmi, BrandNames.Mmi },
+            { BrandCode.Twoe, BrandNames.Twoe },
+            { BrandCode.WhiteMobile, BrandNames.WhiteMobile },
+        }.ToFrozenDictionary();
+
+    internal static readonly FrozenDictionary<string, BrandCode> LegacyBrandNameMappings =
+        LegacyBrandCodeMappings
             .ToDictionary(e => e.Value, e => e.Key)
             .ToFrozenDictionary(StringComparer.OrdinalIgnoreCase);
 }

@@ -5290,9 +5290,9 @@
     },
     "device": {
       "type": 1,
-      "model": "Mode 1 MD-01P",
+      "model": "MD-01P",
       "brand": {
-        "name": "P-UP",
+        "name": "Mode 1",
         "code": 1305
       }
     }

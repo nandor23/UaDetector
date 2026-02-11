@@ -1,6 +1,5 @@
 using BenchmarkDotNet.Attributes;
 using BenchmarkDotNet.Order;
-
 using DeviceDetectorNET;
 using DeviceDetectorNET.Results;
 using DeviceDetectorNET.Results.Client;
@@ -24,7 +23,7 @@ public class LibraryComparisonBenchmark
         _userAgents = TestUserAgents.All;
         _index = 0;
         _uaDetector = new UaDetector();
-        
+
         // Warm up - trigger regex compilation
         _uaDetector.TryParse("uadetector-warmup", out _);
     }

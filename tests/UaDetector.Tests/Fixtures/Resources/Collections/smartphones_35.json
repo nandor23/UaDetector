@@ -979,7 +979,7 @@
       "type": 1,
       "model": "OX X1",
       "brand": {
-        "name": "TWZ",
+        "name": "TWZ Corporation",
         "code": 1773
       }
     }
@@ -3084,7 +3084,7 @@
       "type": 1,
       "model": "Stratus C7",
       "brand": {
-        "name": "Cloud",
+        "name": "Cloud Mobile",
         "code": 290
       }
     }
@@ -11985,7 +11985,7 @@
       "type": 1,
       "model": "HT28",
       "brand": {
-        "name": "Stream",
+        "name": "StreamSystem",
         "code": 1617
       }
     }
@@ -12007,7 +12007,7 @@
       "type": 1,
       "model": "HT16",
       "brand": {
-        "name": "Stream",
+        "name": "StreamSystem",
         "code": 1617
       }
     }

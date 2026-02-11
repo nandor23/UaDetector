@@ -4977,8 +4977,9 @@
     },
     "device": {
       "type": 5,
+      "model": "MDTV",
       "brand": {
-        "name": "MDTV",
+        "name": "OTT",
         "code": 1060
       }
     }
@@ -7226,8 +7227,8 @@
       "type": 5,
       "model": "VMS1100",
       "brand": {
-        "name": "MMI",
-        "code": 1106
+        "name": "ARRIS",
+        "code": 105
       }
     }
   },

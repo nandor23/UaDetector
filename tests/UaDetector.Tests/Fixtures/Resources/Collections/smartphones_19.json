@@ -4610,8 +4610,8 @@
       "type": 1,
       "model": "F534L",
       "brand": {
-        "name": "Twoe",
-        "code": 1774
+        "name": "2E",
+        "code": 0
       }
     }
   },
@@ -4637,8 +4637,8 @@
       "type": 1,
       "model": "F572L",
       "brand": {
-        "name": "Twoe",
-        "code": 1774
+        "name": "2E",
+        "code": 0
       }
     }
   },

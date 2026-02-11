@@ -925,9 +925,9 @@
     },
     "device": {
       "type": 6,
-      "model": "10",
+      "model": "ROiK-10",
       "brand": {
-        "name": "ROiK",
+        "name": "KAP",
         "code": 1463
       }
     }

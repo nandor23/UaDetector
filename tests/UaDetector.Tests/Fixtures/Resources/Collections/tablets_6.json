@@ -2866,9 +2866,9 @@
     },
     "device": {
       "type": 2,
-      "model": "AQT100",
+      "model": "Slate AQT100",
       "brand": {
-        "name": "Sprint",
+        "name": "Quanta Computer",
         "code": 1603
       }
     }
@@ -2893,9 +2893,9 @@
     },
     "device": {
       "type": 2,
-      "model": "AQT80",
+      "model": "Slate AQT80",
       "brand": {
-        "name": "Sprint",
+        "name": "Quanta Computer",
         "code": 1603
       }
     }
@@ -2920,9 +2920,9 @@
     },
     "device": {
       "type": 2,
-      "model": "AQT82",
+      "model": "Slate AQT82",
       "brand": {
-        "name": "Sprint",
+        "name": "Quanta Computer",
         "code": 1603
       }
     }
@@ -9805,7 +9805,7 @@
       "type": 2,
       "model": "Sunshine T1",
       "brand": {
-        "name": "Cloud",
+        "name": "Cloud Mobile",
         "code": 290
       }
     }

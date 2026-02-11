@@ -17,7 +17,7 @@ public class UaDetectorBenchmark
         _userAgents = TestUserAgents.All;
         _index = 0;
         _uaDetector = new UaDetector();
-        
+
         // Warm up - trigger regex compilation
         _uaDetector.TryParse("uadetector-warmup", out _);
     }

@@ -436,9 +436,8 @@ public sealed class UaDetector : IUaDetector
                 Type = deviceType,
                 Model = model,
                 Brand =
-                    brand is not null
-                    && BrandRegistry.BrandNameMappings.TryGetValue(brand, out var brandCode)
-                        ? new BrandInfo { Name = brand, Code = brandCode }
+                    brand is not null && BrandRegistry.TryGetBrandCode(brand, out var brandCode)
+                        ? new BrandInfo { Name = brand, Code = brandCode.Value }
                         : null,
             };
         }

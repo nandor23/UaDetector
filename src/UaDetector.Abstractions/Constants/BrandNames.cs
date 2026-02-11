@@ -159,7 +159,7 @@ public static class BrandNames
     public const string BangOlufsen = "BangOlufsen";
     public const string BarnesAndNoble = "Barnes & Noble";
     public const string Bartec = "BARTEC";
-    public const string Base = "BASE";
+    public const string UnikalneSmartphones = "Unikalne Smartphones";
     public const string Bauhn = "BAUHN";
     public const string Bbk = "BBK";
     public const string BbMobile = "BB Mobile";
@@ -292,7 +292,7 @@ public static class BrandNames
     public const string Claresta = "Claresta";
     public const string Clayton = "CLAYTON";
     public const string Clovertek = "Clovertek";
-    public const string Cloud = "Cloud";
+    public const string CloudMobile = "Cloud Mobile";
     public const string Cloudfone = "Cloudfone";
     public const string Cloudpad = "Cloudpad";
     public const string Clout = "Clout";
@@ -385,7 +385,7 @@ public static class BrandNames
     public const string Digihome = "Digihome";
     public const string Digiland = "Digiland";
     public const string Dijitsu = "DIJITSU";
-    public const string Digit4G = "Digit4G";
+    public const string Digit = "Digit";
     public const string Digicom = "DIGICOM";
     public const string Digifors = "DIGIFORS";
     public const string Dikom = "DIKOM";
@@ -403,7 +403,7 @@ public static class BrandNames
     public const string Dingding = "DING DING";
     public const string Dinax = "Dinax";
     public const string Dinalink = "Dinalink";
-    public const string Dmm = "DMM";
+    public const string DreamMultimedia = "Dream Multimedia";
     public const string Dmoao = "DMOAO";
     public const string Dns = "DNS";
     public const string DoCoMo = "DoCoMo";
@@ -424,7 +424,7 @@ public static class BrandNames
     public const string DragonTouch = "Dragon Touch";
     public const string Dragon = "DRAGON";
     public const string Dreamgate = "Dreamgate";
-    public const string DreamTab = "DreamTab";
+    public const string Powerway = "Powerway";
     public const string DreamStar = "DreamStar";
     public const string Dtac = "Dtac";
     public const string DuneHd = "Dune HD";
@@ -716,7 +716,7 @@ public static class BrandNames
     public const string HiHi = "HiHi";
     public const string HiKing = "HiKing";
     public const string Highscreen = "Highscreen";
-    public const string HighQ = "High Q";
+    public const string EpikLearning = "EPIK Learning";
     public const string High1One = "HIGH1ONE";
     public const string HiGrace = "HiGrace";
     public const string Hipstreet = "Hipstreet";
@@ -744,7 +744,7 @@ public static class BrandNames
     public const string Horizon = "Horizon";
     public const string Horizont = "Horizont";
     public const string Hosin = "Hosin";
-    public const string Hotel = "Hotel";
+    public const string HotelTvCompany = "Hotel TV Company";
     public const string Hotwav = "Hotwav";
     public const string HotPepper = "Hot Pepper";
     public const string Hotack = "HOTACK";
@@ -1062,7 +1062,7 @@ public static class BrandNames
     public const string Mbi = "MBI";
     public const string Mbk = "MBK";
     public const string MdcStore = "MDC Store";
-    public const string Mdtv = "MDTV";
+    public const string Ott = "OTT";
     public const string MeanIt = "meanIT";
     public const string Mecer = "Mecer";
     public const string M3Mobile = "M3 Mobile";
@@ -1107,7 +1107,7 @@ public static class BrandNames
     public const string Miwang = "MIWANG";
     public const string Mlled = "MLLED";
     public const string Mls = "MLS";
-    public const string Mlab = "MLAB";
+    public const string Microlab = "Microlab";
     public const string Mmi = "MMI";
     public const string Mobicel = "Mobicel";
     public const string Mobiistar = "Mobiistar";
@@ -1307,10 +1307,10 @@ public static class BrandNames
     public const string Oyyu = "Oyyu";
     public const string OzoneHd = "OzoneHD";
     public const string Ollee = "Ollee";
-    public const string PUp = "P-UP";
+    public const string Mode1 = "Mode 1";
     public const string PacificResearchAlliance = "Pacific Research Alliance";
     public const string Pagraer = "PAGRAER";
-    public const string Padpro = "Padpro";
+    public const string SevenKeTree = "7Ke tree";
     public const string Paladin = "Paladin";
     public const string Palm = "Palm";
     public const string Panacom = "Panacom";
@@ -1465,13 +1465,13 @@ public static class BrandNames
     public const string RoamCat = "Roam Cat";
     public const string Rocket = "Rocket";
     public const string Rokit = "Rokit";
-    public const string ROiK = "ROiK";
+    public const string Kap = "KAP";
     public const string Roku = "Roku";
     public const string Rombica = "Rombica";
     public const string Romsat = "Romsat";
     public const string RossAndMoor = "Ross&Moor";
     public const string Rover = "Rover";
-    public const string RoverPad = "RoverPad";
+    public const string RoverComputers = "Rover Computers";
     public const string RoyQueen = "RoyQueen";
     public const string Royole = "Royole";
     public const string RtProject = "RT Project";
@@ -1599,16 +1599,16 @@ public static class BrandNames
     public const string SohoStyle = "Soho Style";
     public const string SobieTech = "SobieTech";
     public const string Sowly = "SOWLY";
-    public const string Spark = "Spark";
+    public const string SparkNz = "Spark NZ";
     public const string Sparx = "Sparx";
     public const string Spc = "SPC";
     public const string Spectrum = "Spectrum";
     public const string Spectralink = "Spectralink";
     public const string Spice = "Spice";
-    public const string Sprint = "Sprint";
+    public const string QuantaComputer = "Quanta Computer";
     public const string Spurt = "SPURT";
     public const string Sqool = "SQOOL";
-    public const string Star = "Star";
+    public const string Kingelon = "Kingelon";
     public const string Starlight = "Starlight";
     public const string StarLight = "Star-Light";
     public const string Starmobile = "Starmobile";
@@ -1619,7 +1619,7 @@ public static class BrandNames
     public const string StgTelecom = "STG Telecom";
     public const string Stonex = "Stonex";
     public const string Storex = "Storex";
-    public const string Stream = "Stream";
+    public const string StreamSystem = "StreamSystem";
     public const string StrawBerry = "StrawBerry";
     public const string Strong = "STRONG";
     public const string Stylo = "Stylo";
@@ -1675,13 +1675,13 @@ public static class BrandNames
     public const string Technicolor = "Technicolor";
     public const string TeachTouch = "TeachTouch";
     public const string Technika = "Technika";
-    public const string TechSmart = "TechSmart";
+    public const string Techmade = "Techmade";
     public const string TechniSat = "TechniSat";
     public const string TechnoTrend = "TechnoTrend";
     public const string Technosat = "TECHNOSAT";
     public const string Temigereev = "Temigereev";
     public const string TechPad = "TechPad";
-    public const string Tps = "TPS";
+    public const string SzTps = "SZ TPS";
     public const string Techwood = "Techwood";
     public const string Technopc = "Technopc";
     public const string Techstorm = "Techstorm";
@@ -1775,7 +1775,7 @@ public static class BrandNames
     public const string Tvc = "TVC";
     public const string TvPlus = "TV+";
     public const string Twm = "TWM";
-    public const string Twz = "TWZ";
+    public const string TwzCorporation = "TWZ Corporation";
     public const string Twoe = "Twoe";
     public const string TwinMos = "TwinMOS";
     public const string Tymes = "Tymes";
@@ -1898,7 +1898,7 @@ public static class BrandNames
     public const string VortexRo = "VORTEX (RO)";
     public const string Vormor = "Vormor";
     public const string Voto = "Voto";
-    public const string Vox = "VOX";
+    public const string VoxElectronics = "VOX Electronics";
     public const string Voxtel = "Voxtel";
     public const string Voyo = "Voyo";
     public const string Volfen = "Völfen";
@@ -1930,7 +1930,7 @@ public static class BrandNames
     public const string WesternDigital = "Western Digital";
     public const string Weston = "Weston";
     public const string Westpoint = "Westpoint";
-    public const string Wanmukang = "Wanmukang";
+    public const string ZhongyuDisplay = "Zhongyu Display";
     public const string Wansa = "WANSA";
     public const string Wexler = "Wexler";
     public const string WE = "WE";
@@ -1957,7 +1957,7 @@ public static class BrandNames
     public const string Wonder = "WONDER";
     public const string Wonu = "Wonu";
     public const string Woo = "Woo";
-    public const string Wortmann = "Wortmann";
+    public const string Terra = "Terra";
     public const string Woxter = "Woxter";
     public const string Wozifan = "WOZIFAN";
     public const string XAge = "X-AGE";
@@ -2116,4 +2116,5 @@ public static class BrandNames
     public const string Dec = "DEC";
     public const string Jckkcfug = "Jckkcfug";
     public const string Lagenio = "LAGENIO";
+    public const string Exertis = "Exertis";
 }

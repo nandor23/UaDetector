@@ -3673,9 +3673,9 @@
     },
     "device": {
       "type": 3,
-      "model": "Bold",
+      "model": "Digit4G Bold",
       "brand": {
-        "name": "Digit4G",
+        "name": "Digit",
         "code": 383
       }
     }
@@ -3700,9 +3700,9 @@
     },
     "device": {
       "type": 3,
-      "model": "Defender",
+      "model": "Digit4G Defender",
       "brand": {
-        "name": "Digit4G",
+        "name": "Digit",
         "code": 383
       }
     }
@@ -3727,9 +3727,9 @@
     },
     "device": {
       "type": 3,
-      "model": "Elite",
+      "model": "Digit4G Elite",
       "brand": {
-        "name": "Digit4G",
+        "name": "Digit",
         "code": 383
       }
     }
@@ -3754,9 +3754,9 @@
     },
     "device": {
       "type": 3,
-      "model": "Music",
+      "model": "Digit4G Music",
       "brand": {
-        "name": "Digit4G",
+        "name": "Digit",
         "code": 383
       }
     }
@@ -3781,9 +3781,9 @@
     },
     "device": {
       "type": 3,
-      "model": "Power",
+      "model": "Digit4G Power",
       "brand": {
-        "name": "Digit4G",
+        "name": "Digit",
         "code": 383
       }
     }
@@ -3808,9 +3808,9 @@
     },
     "device": {
       "type": 3,
-      "model": "Star",
+      "model": "Digit4G Star",
       "brand": {
-        "name": "Digit4G",
+        "name": "Digit",
         "code": 383
       }
     }
@@ -3835,9 +3835,9 @@
     },
     "device": {
       "type": 3,
-      "model": "Lite",
+      "model": "Digit4G Lite",
       "brand": {
-        "name": "Digit4G",
+        "name": "Digit",
         "code": 383
       }
     }
@@ -3862,9 +3862,9 @@
     },
     "device": {
       "type": 3,
-      "model": "Power Max",
+      "model": "Digit4G Power Max",
       "brand": {
-        "name": "Digit4G",
+        "name": "Digit",
         "code": 383
       }
     }
@@ -3889,9 +3889,9 @@
     },
     "device": {
       "type": 3,
-      "model": "Shine",
+      "model": "Digit4G Shine",
       "brand": {
-        "name": "Digit4G",
+        "name": "Digit",
         "code": 383
       }
     }

@@ -12,7 +12,7 @@ public class BrandRegistryTests
     {
         foreach (BrandCode brandCode in Enum.GetValues<BrandCode>())
         {
-            BrandRegistry.BrandCodeMappings.ShouldContainKey(brandCode);
+            BrandRegistry.ContainsCode(brandCode).ShouldBeTrue();
         }
     }
 
@@ -22,16 +22,27 @@ public class BrandRegistryTests
         BrandRegistry.BrandCodeMappings.Values.Length.ShouldBe(
             BrandRegistry.BrandCodeMappings.Values.Distinct().Count()
         );
+
+        BrandRegistry.LegacyBrandCodeMappings.Values.Length.ShouldBe(
+            BrandRegistry.LegacyBrandCodeMappings.Values.Distinct().Count()
+        );
     }
 
     [Test]
-    public void GetBrandName_ShouldReturnExpectedValue_ForValidBrandCode()
+    [Arguments(BrandCode.Apple, BrandNames.Apple)]
+    [Arguments(BrandCode.Cloudpad, BrandNames.Cloudpad)]
+    public void GetBrandName_ShouldReturnExpectedValue_ForValidBrandCode(
+        BrandCode brandCode,
+        string expectedBrandName
+    )
     {
-        BrandRegistry.GetBrandName(BrandCode.Dell).ShouldBe(BrandNames.Dell);
+        var actualBrandName = BrandRegistry.GetBrandName(brandCode);
+        actualBrandName.ShouldBe(expectedBrandName);
     }
 
     [Test]
     [Arguments(BrandNames.Apple, BrandCode.Apple, true)]
+    [Arguments(BrandNames.Cloudpad, BrandCode.Cloudpad, true)]
     [Arguments("", null, false)]
     public void TryGetBrandCode_WithValidAndInvalidNames_ReturnsExpectedResults(
         string brandName,

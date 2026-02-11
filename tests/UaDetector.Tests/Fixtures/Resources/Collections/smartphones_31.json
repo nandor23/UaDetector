@@ -669,7 +669,7 @@
       "type": 1,
       "model": "Cirrus C2",
       "brand": {
-        "name": "Cloud",
+        "name": "Cloud Mobile",
         "code": 290
       }
     }
@@ -14615,7 +14615,7 @@
       "type": 1,
       "model": "B3 Maxi",
       "brand": {
-        "name": "Stream",
+        "name": "StreamSystem",
         "code": 1617
       }
     }
@@ -14642,7 +14642,7 @@
       "type": 1,
       "model": "B3 Simply",
       "brand": {
-        "name": "Stream",
+        "name": "StreamSystem",
         "code": 1617
       }
     }

@@ -9161,9 +9161,9 @@
     },
     "device": {
       "type": 10,
-      "model": "Mode 1 RS",
+      "model": "RS",
       "brand": {
-        "name": "P-UP",
+        "name": "Mode 1",
         "code": 1305
       }
     }

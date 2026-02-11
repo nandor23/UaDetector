@@ -916,7 +916,7 @@
       "type": 1,
       "model": "N8800",
       "brand": {
-        "name": "Star",
+        "name": "Kingelon",
         "code": 1606
       }
     }
@@ -943,7 +943,7 @@
       "type": 1,
       "model": "N9500",
       "brand": {
-        "name": "Star",
+        "name": "Kingelon",
         "code": 1606
       }
     }
@@ -969,7 +969,7 @@
       "type": 1,
       "model": "N9600",
       "brand": {
-        "name": "Star",
+        "name": "Kingelon",
         "code": 1606
       }
     }
@@ -996,7 +996,7 @@
       "type": 1,
       "model": "N9700",
       "brand": {
-        "name": "Star",
+        "name": "Kingelon",
         "code": 1606
       }
     }
@@ -1022,7 +1022,7 @@
       "type": 1,
       "model": "N9800",
       "brand": {
-        "name": "Star",
+        "name": "Kingelon",
         "code": 1606
       }
     }
@@ -1048,7 +1048,7 @@
       "type": 1,
       "model": "N9977",
       "brand": {
-        "name": "Star",
+        "name": "Kingelon",
         "code": 1606
       }
     }
@@ -1073,9 +1073,9 @@
     },
     "device": {
       "type": 1,
-      "model": "Note 3",
+      "model": "N9000",
       "brand": {
-        "name": "Star",
+        "name": "Kingelon",
         "code": 1606
       }
     }
@@ -16010,9 +16010,9 @@
     },
     "device": {
       "type": 1,
-      "model": "Play1",
+      "model": "Digit4G Play1",
       "brand": {
-        "name": "Digit4G",
+        "name": "Digit",
         "code": 383
       }
     }
