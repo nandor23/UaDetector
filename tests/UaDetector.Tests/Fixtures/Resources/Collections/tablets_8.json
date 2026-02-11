@@ -6007,7 +6007,7 @@
       "type": 2,
       "model": "Sunshine T1 Elite",
       "brand": {
-        "name": "Cloud",
+        "name": "Cloud Mobile",
         "code": 290
       }
     }
@@ -14001,10 +14001,10 @@
     },
     "device": {
       "type": 2,
-      "model": "Pad 1",
+      "model": "UE 1 PAD",
       "brand": {
-        "name": "UE",
-        "code": 535
+        "name": "Newman",
+        "code": 1183
       }
     }
   },

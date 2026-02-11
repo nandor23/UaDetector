@@ -4415,10 +4415,10 @@
     },
     "device": {
       "type": 1,
-      "model": "Smartfren Andromax R",
+      "model": "Andromax R",
       "brand": {
-        "name": "Hisense",
-        "code": 719
+        "name": "Smartfren",
+        "code": 1570
       }
     }
   },
@@ -4442,10 +4442,10 @@
     },
     "device": {
       "type": 1,
-      "model": "Smartfren Andromax Z",
+      "model": "Andromax Z",
       "brand": {
-        "name": "Hisense",
-        "code": 719
+        "name": "Smartfren",
+        "code": 1570
       }
     }
   },
@@ -14605,7 +14605,7 @@
       "type": 1,
       "model": "Typhoon C6",
       "brand": {
-        "name": "Cloud",
+        "name": "Cloud Mobile",
         "code": 290
       }
     }

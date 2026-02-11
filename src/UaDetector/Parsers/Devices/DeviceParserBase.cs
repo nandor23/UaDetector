@@ -91,10 +91,7 @@ internal abstract class DeviceParserBase
                 model = BuildModel(deviceModel.Name, modelMatch);
             }
 
-            if (
-                deviceModel?.Brand?.Length > 0
-                && BrandRegistry.BrandNameMappings.ContainsKey(deviceModel.Brand)
-            )
+            if (deviceModel?.Brand?.Length > 0 && BrandRegistry.ContainsName(deviceModel.Brand))
             {
                 brand = deviceModel.Brand;
             }

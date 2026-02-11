@@ -154,9 +154,9 @@
     },
     "device": {
       "type": 2,
-      "model": "Terra Pad 1006",
+      "model": "Pad 1006",
       "brand": {
-        "name": "Wortmann",
+        "name": "Terra",
         "code": 1955
       }
     }
@@ -7232,7 +7232,7 @@
       "type": 2,
       "model": "Air 7.85\" 3G",
       "brand": {
-        "name": "RoverPad",
+        "name": "Rover Computers",
         "code": 1469
       }
     }
@@ -7259,7 +7259,7 @@
       "type": 2,
       "model": "Art 7.85\" 3G",
       "brand": {
-        "name": "RoverPad",
+        "name": "Rover Computers",
         "code": 1469
       }
     }
@@ -9306,10 +9306,10 @@
     },
     "device": {
       "type": 2,
-      "model": "SMB-H8009",
+      "model": "HLLO SMB-H8009",
       "brand": {
-        "name": "HLLO",
-        "code": 725
+        "name": "Exertis",
+        "code": 2114
       }
     }
   },

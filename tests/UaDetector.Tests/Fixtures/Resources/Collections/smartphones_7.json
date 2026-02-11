@@ -13449,9 +13449,9 @@
     },
     "device": {
       "type": 1,
-      "model": "Energy",
+      "model": "Digit4G Energy",
       "brand": {
-        "name": "Digit4G",
+        "name": "Digit",
         "code": 383
       }
     }
@@ -13475,9 +13475,9 @@
     },
     "device": {
       "type": 1,
-      "model": "Pro",
+      "model": "Digit4G Pro",
       "brand": {
-        "name": "Digit4G",
+        "name": "Digit",
         "code": 383
       }
     }

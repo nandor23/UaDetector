@@ -3524,7 +3524,7 @@
       "type": 5,
       "model": "WSTRF4022FTP",
       "brand": {
-        "name": "Stream",
+        "name": "StreamSystem",
         "code": 1617
       }
     }
@@ -3550,7 +3550,7 @@
       "type": 5,
       "model": "WSTRH3222FTP",
       "brand": {
-        "name": "Stream",
+        "name": "StreamSystem",
         "code": 1617
       }
     }
@@ -3576,7 +3576,7 @@
       "type": 5,
       "model": "WSTRU4322FTP",
       "brand": {
-        "name": "Stream",
+        "name": "StreamSystem",
         "code": 1617
       }
     }
@@ -3602,7 +3602,7 @@
       "type": 5,
       "model": "WSTRU5522FTP",
       "brand": {
-        "name": "Stream",
+        "name": "StreamSystem",
         "code": 1617
       }
     }
@@ -11519,7 +11519,7 @@
     "device": {
       "type": 5,
       "brand": {
-        "name": "VOX",
+        "name": "VOX Electronics",
         "code": 1896
       }
     }

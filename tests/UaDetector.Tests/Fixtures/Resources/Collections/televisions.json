@@ -73,7 +73,7 @@
     "device": {
       "type": 5,
       "brand": {
-        "name": "Hotel",
+        "name": "Hotel TV Company",
         "code": 742
       }
     }
@@ -2261,7 +2261,7 @@
       "type": 5,
       "model": "Dreambox",
       "brand": {
-        "name": "DMM",
+        "name": "Dream Multimedia",
         "code": 401
       }
     }
@@ -10145,7 +10145,7 @@
     "device": {
       "type": 5,
       "brand": {
-        "name": "Hotel",
+        "name": "Hotel TV Company",
         "code": 742
       }
     }
@@ -11434,7 +11434,7 @@
       "type": 5,
       "model": "Smart TV (2017)",
       "brand": {
-        "name": "VOX",
+        "name": "VOX Electronics",
         "code": 1896
       }
     }

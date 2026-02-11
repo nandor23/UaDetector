@@ -330,7 +330,7 @@
   },
   {
     "regex": "DMM",
-    "brand": "DMM",
+    "brand": "Dream Multimedia",
     "type": 5,
     "model": "Dreambox"
   },
@@ -683,7 +683,7 @@
   },
   {
     "regex": "HOTEL[;,)]",
-    "brand": "Hotel",
+    "brand": "Hotel TV Company",
     "type": 5
   },
   {
@@ -2193,7 +2193,7 @@
   },
   {
     "regex": "VOX[;,)]",
-    "brand": "VOX",
+    "brand": "VOX Electronics",
     "type": 5,
     "modelVariants": [
       {

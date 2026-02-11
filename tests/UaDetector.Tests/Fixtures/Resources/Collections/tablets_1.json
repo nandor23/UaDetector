@@ -4554,10 +4554,10 @@
     },
     "device": {
       "type": 2,
-      "model": "Q7A",
+      "model": "Crius Mea Q7A",
       "brand": {
-        "name": "Crius Mea",
-        "code": 332
+        "name": "Ooredoo",
+        "code": 1269
       }
     }
   },
@@ -4580,10 +4580,10 @@
     },
     "device": {
       "type": 2,
-      "model": "Q7A+",
+      "model": "Crius Mea Q7A+",
       "brand": {
-        "name": "Crius Mea",
-        "code": 332
+        "name": "Ooredoo",
+        "code": 1269
       }
     }
   },

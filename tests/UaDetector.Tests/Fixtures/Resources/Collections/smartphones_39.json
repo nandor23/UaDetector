@@ -1934,9 +1934,9 @@
     },
     "device": {
       "type": 1,
-      "model": "Next Ultra",
+      "model": "Digit4G Next Ultra",
       "brand": {
-        "name": "Digit4G",
+        "name": "Digit",
         "code": 383
       }
     }
@@ -1961,9 +1961,9 @@
     },
     "device": {
       "type": 1,
-      "model": "E4 Pro",
+      "model": "Digit4G E4 Pro",
       "brand": {
-        "name": "Digit4G",
+        "name": "Digit",
         "code": 383
       }
     }

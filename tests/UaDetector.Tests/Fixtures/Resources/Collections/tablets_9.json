@@ -10836,7 +10836,7 @@
       "type": 2,
       "model": "SC10",
       "brand": {
-        "name": "TPS",
+        "name": "SZ TPS",
         "code": 1679
       }
     }
@@ -12501,7 +12501,7 @@
       "type": 2,
       "model": "Glowy 10",
       "brand": {
-        "name": "MLAB",
+        "name": "Microlab",
         "code": 1105
       }
     }

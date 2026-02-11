@@ -312,7 +312,7 @@ public static class YamlToJsonConverter
                             : new BrandInfo
                             {
                                 Name = x.Device.Brand,
-                                Code = BrandRegistry.BrandNameMappings[x.Device.Brand],
+                                Code = GetBrandCode(x.Device.Brand),
                             },
                         Model = x.Device.Model,
                     },
@@ -339,5 +339,12 @@ public static class YamlToJsonConverter
             CollectionFixturesFile + ".json",
             JsonSerializer.Serialize(result, JsonSerializerOptions)
         );
+    }
+
+    public static BrandCode GetBrandCode(string brandName)
+    {
+        return BrandRegistry.TryGetBrandCode(brandName, out var brandCode)
+            ? brandCode.Value
+            : throw new KeyNotFoundException($"Brand name '{brandName}' not found in registry");
     }
 }

@@ -13983,10 +13983,10 @@
     },
     "device": {
       "type": 1,
-      "model": "Betacrux",
+      "model": "H133 Beta Crux",
       "brand": {
-        "name": "H133",
-        "code": 679
+        "name": "Ceibal",
+        "code": 265
       }
     }
   },

@@ -73,10 +73,10 @@
     },
     "device": {
       "type": 5,
-      "model": "Box Max",
+      "model": "LPX-G Box Max",
       "brand": {
-        "name": "LPX-G",
-        "code": 1007
+        "name": "OTT",
+        "code": 1060
       }
     }
   },

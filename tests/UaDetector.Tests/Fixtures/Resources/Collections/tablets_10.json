@@ -4811,7 +4811,7 @@
       "type": 2,
       "model": "TabPlay 125",
       "brand": {
-        "name": "TWZ",
+        "name": "TWZ Corporation",
         "code": 1773
       }
     }
@@ -4838,7 +4838,7 @@
       "type": 2,
       "model": "TabPlay 126",
       "brand": {
-        "name": "TWZ",
+        "name": "TWZ Corporation",
         "code": 1773
       }
     }
@@ -9572,7 +9572,7 @@
       "type": 2,
       "model": "Sky 7.85\" 3G",
       "brand": {
-        "name": "RoverPad",
+        "name": "Rover Computers",
         "code": 1469
       }
     }
@@ -9732,7 +9732,7 @@
       "type": 2,
       "model": "Sky 7.85\" 3G",
       "brand": {
-        "name": "RoverPad",
+        "name": "Rover Computers",
         "code": 1469
       }
     }
@@ -11421,10 +11421,10 @@
     },
     "device": {
       "type": 2,
-      "model": "+VT107C",
+      "model": "Cloudpad C701TV+",
       "brand": {
-        "name": "Cloudpad",
-        "code": 292
+        "name": "Cloudfone",
+        "code": 291
       }
     }
   },
@@ -11448,10 +11448,10 @@
     },
     "device": {
       "type": 2,
-      "model": "+VTQ007C",
+      "model": "Cloudpad C700QTV+",
       "brand": {
-        "name": "Cloudpad",
-        "code": 292
+        "name": "Cloudfone",
+        "code": 291
       }
     }
   },
@@ -13849,9 +13849,9 @@
     },
     "device": {
       "type": 2,
-      "model": "ELT0704H",
+      "model": "HighQ ELT0704H",
       "brand": {
-        "name": "High Q",
+        "name": "EPIK Learning",
         "code": 714
       }
     }
@@ -13876,9 +13876,9 @@
     },
     "device": {
       "type": 2,
-      "model": "ELT0706H",
+      "model": "HighQ ELT0706H",
       "brand": {
-        "name": "High Q",
+        "name": "EPIK Learning",
         "code": 714
       }
     }
@@ -13903,9 +13903,9 @@
     },
     "device": {
       "type": 2,
-      "model": "ELT0802H",
+      "model": "HighQ ELT0802H",
       "brand": {
-        "name": "High Q",
+        "name": "EPIK Learning",
         "code": 714
       }
     }
@@ -15925,9 +15925,9 @@
     },
     "device": {
       "type": 2,
-      "model": "Terra Pad 1005",
+      "model": "Pad 1005",
       "brand": {
-        "name": "Wortmann",
+        "name": "Terra",
         "code": 1955
       }
     }

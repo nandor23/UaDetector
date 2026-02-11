@@ -3002,9 +3002,9 @@
     },
     "device": {
       "type": 1,
-      "model": "Varia",
+      "model": "BASE Varia",
       "brand": {
-        "name": "BASE",
+        "name": "Unikalne Smartphones",
         "code": 157
       }
     }
@@ -6413,9 +6413,9 @@
     },
     "device": {
       "type": 1,
-      "model": "E3 Pro",
+      "model": "Digit4G E3 Pro",
       "brand": {
-        "name": "Digit4G",
+        "name": "Digit",
         "code": 383
       }
     }
@@ -6466,9 +6466,9 @@
     },
     "device": {
       "type": 1,
-      "model": "E2 Pro",
+      "model": "Digit4G E2 Pro",
       "brand": {
-        "name": "Digit4G",
+        "name": "Digit",
         "code": 383
       }
     }
@@ -10740,9 +10740,9 @@
     },
     "device": {
       "type": 1,
-      "model": "Infinity",
+      "model": "Digit4G Infinity",
       "brand": {
-        "name": "Digit4G",
+        "name": "Digit",
         "code": 383
       }
     }
@@ -10767,9 +10767,9 @@
     },
     "device": {
       "type": 1,
-      "model": "Infinity Max",
+      "model": "Digit4G Infinity Max",
       "brand": {
-        "name": "Digit4G",
+        "name": "Digit",
         "code": 383
       }
     }
@@ -10794,9 +10794,9 @@
     },
     "device": {
       "type": 1,
-      "model": "Glory1",
+      "model": "Digit4G Glory1",
       "brand": {
-        "name": "Digit4G",
+        "name": "Digit",
         "code": 383
       }
     }
@@ -10821,9 +10821,9 @@
     },
     "device": {
       "type": 1,
-      "model": "Energy Max",
+      "model": "Digit4G Energy Max",
       "brand": {
-        "name": "Digit4G",
+        "name": "Digit",
         "code": 383
       }
     }

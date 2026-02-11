@@ -1768,10 +1768,10 @@
     },
     "device": {
       "type": 1,
-      "model": "Smartfren Andromax U2",
+      "model": "Andromax U2",
       "brand": {
-        "name": "Hisense",
-        "code": 719
+        "name": "Smartfren",
+        "code": 1570
       }
     }
   },
@@ -8880,8 +8880,8 @@
       "type": 1,
       "model": "E500A",
       "brand": {
-        "name": "Twoe",
-        "code": 1774
+        "name": "2E",
+        "code": 0
       }
     }
   },

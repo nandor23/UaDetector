@@ -13643,9 +13643,9 @@
     },
     "device": {
       "type": 2,
-      "model": "DRN-809",
+      "model": "Dreamtab DRN-809",
       "brand": {
-        "name": "DreamTab",
+        "name": "Powerway",
         "code": 422
       }
     }
@@ -13670,9 +13670,9 @@
     },
     "device": {
       "type": 2,
-      "model": "DRN-709",
+      "model": "Dreamtab DRN-709",
       "brand": {
-        "name": "DreamTab",
+        "name": "Powerway",
         "code": 422
       }
     }

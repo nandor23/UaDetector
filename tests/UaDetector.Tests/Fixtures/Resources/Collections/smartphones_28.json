@@ -3951,7 +3951,7 @@
       "type": 1,
       "model": "Stratus C5",
       "brand": {
-        "name": "Cloud",
+        "name": "Cloud Mobile",
         "code": 290
       }
     }
@@ -4005,7 +4005,7 @@
       "type": 1,
       "model": "Cyclone C4",
       "brand": {
-        "name": "Cloud",
+        "name": "Cloud Mobile",
         "code": 290
       }
     }

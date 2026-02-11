@@ -6762,7 +6762,7 @@
       "type": 2,
       "model": "GT40 Pro Max",
       "brand": {
-        "name": "Padpro",
+        "name": "7Ke tree",
         "code": 1308
       }
     }
@@ -9497,9 +9497,9 @@
     },
     "device": {
       "type": 2,
-      "model": "Terra Pad 1200 V2",
+      "model": "Pad 1200 V2",
       "brand": {
-        "name": "Wortmann",
+        "name": "Terra",
         "code": 1955
       }
     }

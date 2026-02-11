@@ -316,10 +316,10 @@
     },
     "device": {
       "type": 1,
-      "model": "E8 Ultra",
+      "model": "EKINOX E8 Ultra",
       "brand": {
-        "name": "EKINOX",
-        "code": 469
+        "name": "iGet",
+        "code": 788
       }
     }
   },
@@ -6979,9 +6979,9 @@
     },
     "device": {
       "type": 1,
-      "model": "T6",
+      "model": "TechSmart T6",
       "brand": {
-        "name": "TechSmart",
+        "name": "Techmade",
         "code": 1673
       }
     }
@@ -7006,9 +7006,9 @@
     },
     "device": {
       "type": 1,
-      "model": "T5+",
+      "model": "TechSmart T5+",
       "brand": {
-        "name": "TechSmart",
+        "name": "Techmade",
         "code": 1673
       }
     }
