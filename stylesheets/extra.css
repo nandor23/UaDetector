@@ -1,0 +1,26 @@
+/* Remove hover effects from feature cards */
+.md-typeset .grid.cards > :is(ul, ol) > li:hover {
+    box-shadow: var(--md-shadow-z1);
+    transform: none;
+    border-color: var(--md-default-fg-color--lightest);
+}
+
+.md-typeset .grid.cards > :is(ul, ol) > li {
+    transition: none;
+}
+
+/* Darker pleasant background */
+[data-md-color-scheme="slate"] {
+    --md-default-bg-color: #2b2f36;
+    --md-code-bg-color: #23262d;
+}
+
+/* Adjust text color for better contrast */
+[data-md-color-scheme="slate"] {
+    --md-default-fg-color: #e3e4e6;
+}
+
+/* Hide site name in sidebar navigation */
+.md-nav--primary .md-nav__title {
+    display: none;
+}
