@@ -10,7 +10,7 @@ var memoryBefore = GC.GetTotalMemory(true);
 
 builder.Services.AddUaDetector();
 
-var app = builder.Build();
+builder.Build();
 
 // Wait until regular expressions are loaded into memory
 await Task.Delay(TimeSpan.FromSeconds(20));
