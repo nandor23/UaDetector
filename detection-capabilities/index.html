@@ -1,0 +1,822 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Fast and precise user agent parser for .NET">
+      
+      
+        <meta name="author" content="nandor23">
+      
+      
+        <link rel="canonical" href="https://nandor23.github.io/UaDetector/detection-capabilities/">
+      
+      
+        <link rel="prev" href="../benchmarks/">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.2">
+    
+    
+      
+        <title>Detection Capabilities - UaDetector</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="blue-grey" data-md-color-accent="blue-grey">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#detection-capabilities" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="UaDetector" class="md-header__button md-logo" aria-label="UaDetector" data-md-component="logo">
+      
+  <img src="../assets/logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            UaDetector
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Detection Capabilities
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue-grey" data-md-color-accent="blue-grey"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="blue-grey"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/nandor23/UaDetector" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    nandor23/UaDetector
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="UaDetector" class="md-nav__button md-logo" aria-label="UaDetector" data-md-component="logo">
+      
+  <img src="../assets/logo.svg" alt="logo">
+
+    </a>
+    UaDetector
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/nandor23/UaDetector" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    nandor23/UaDetector
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting-started/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Started
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../caching/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Caching
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../benchmarks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Benchmarks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Detection Capabilities
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Detection Capabilities
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#operating-systems" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Operating Systems
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#browsers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Browsers
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#browser-engines" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Browser Engines
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mobile-apps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mobile Apps
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#media-players" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Media Players
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#libraries" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Libraries
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#feed-readers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Feed Readers
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#personal-information-managers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Personal Information Managers
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#device-brands" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Device Brands
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bots" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bots
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#operating-systems" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Operating Systems
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#browsers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Browsers
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#browser-engines" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Browser Engines
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mobile-apps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mobile Apps
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#media-players" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Media Players
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#libraries" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Libraries
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#feed-readers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Feed Readers
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#personal-information-managers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Personal Information Managers
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#device-brands" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Device Brands
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bots" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bots
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="detection-capabilities">Detection Capabilities</h1>
+<h2 id="operating-systems">Operating Systems</h2>
+<p><strong>202 operating systems supported</strong></p>
+<p>AIX, Alpine Linux, Amazon Linux, AmigaOS, Android, Android TV, AOSC OS, ArcaOS, Arch Linux, Armadillo OS, AROS, ASPLinux, Azure Linux, BackTrack, Bada, Baidu Yi, BeOS, BlackBerry OS, BlackBerry Tablet OS, blackPanther OS, Bliss OS, Brew, BrightSignOS, BSD, Caixa Mágica, CentOS, CentOS Stream, China OS, Chrome OS, Chromium OS, Clear Linux OS, ClearOS Mobile, Contiki, Coolita OS, CyanogenMod, Debian, Deepin, DragonFly, DVKBuntu, ElectroBSD, elementary OS, EulerOS, Fedora, Fenix, Fire OS, Firefox OS, Foresight Linux, Freebox, FreeBSD, FRITZ!OS, Fuchsia, FydeOS, GENIX, Gentoo, GEOS, GhostBSD, gNewSense, GNU/Linux, Google TV, GridOS, Haiku OS, HarmonyOS, HasCodingOS, HELIX OS, HP-UX, Inferno, iOS, iPadOS, IRIX, Java ME, Joli OS, KaiOS, Kali, Kanotix, KIN OS, Knoppix, KolibriOS, KreaTV, Kubuntu, LeafOS, LindowsOS, Lineage OS, Linpus, Linspire, Liri OS, Loongnix, Lubuntu, Lumin OS, LuneOS, Mac, Maemo, Mageia, Mandriva, MeeGo, Meta Horizon, MildWild, MINIX, Mint, Mocor OS, MocorDroid, moonOS, MorphOS, Motorola EZX, MRE, MTK / Nucleus, NetBSD, NEWS-OS, NeXTSTEP, Nintendo, Nintendo Mobile, Nova, NuttX, OpenBSD, OpenHarmony, openSUSE, OpenVMS, OpenVZ, OpenWrt, Opera TV, Oracle Linux, Ordissimo, Orsay, OS/2, OSF1, palmOS, Pardus, PCLinuxOS, PICO OS, Plan 9, Plasma Mobile, PlayStation, PlayStation Portable, Proxmox VE, Puffin OS, PureOS, Qtopia, Raspberry Pi OS, Raspbian, RazoDroiD, Red Hat, Red Star, RedOS, Remix OS, Resurrection Remix OS, Revenge OS, REX, RISC OS, risingOS, Rocky Linux, Roku OS, Rosa, RouterOS, RTOS &amp; Next, Sabayon, Sailfish OS, Scientific Linux, SeewoOS, SerenityOS, Sirin OS, Slackware, Smartisan OS, Solaris, Star-Blade OS, SUSE, Syllable, Symbian, Symbian OS, Symbian OS Series 40, Symbian OS Series 60, Symbian^3, TencentOS, ThreadX, Titan OS, TiVo OS, Tizen, TmaxOS, Turbolinux, tvOS, Ubuntu, ULTRIX, UOS, VectorLinux, VIDAA, ViziOS, watchOS, Wear OS, Webian, webOS, WebTV, Whale OS, Windows, Windows CE, Windows IoT, Windows Mobile, Windows Phone, Windows RT, WoPhone, Xbox, Xubuntu, YunOS, Zenwalk, ZorinOS</p>
+<h2 id="browsers">Browsers</h2>
+<p><strong>712 browsers supported</strong></p>
+<p>115 Browser, 18+ Privacy Browser, 1DM Browser, 1DM+ Browser, 2345 Browser, 360 Phone Browser, 360 Secure Browser, 7654 Browser, 7Star, ABrowse, Ace, Acoo Browser, AdBlock Browser, Adult Browser, Ai Browser, Airfind Secure Browser, Aloha Browser, Aloha Browser Lite, AltiBrowser, ALVA, Amaya, Amaze Browser, Amerigo, Amiga Aweb, Amiga Voyager, Amigo, Android Browser, Anka Browser, Anonyv Browser, ANT Fresco, ANTGalio, AOL Desktop, AOL Explorer, AOL Shield, AOL Shield Pro, Aplix, APN Browser, AppBrowzer, AppTec Secure Browser, APUS Browser, Arachne, Arc Search, Arctic Fox, Armorfly Browser, Arora, ArtisBrowser, Arvin, Ask Browser, Ask.com, Asus Browser, Atlas, Atom, Atomic Web Browser, Avant Browser, Avast Secure Browser, AVG Secure Browser, Avira Secure Browser, Awesomium, AwoX, Azka Browser, B-Line, Baidu Browser, Baidu Spark, Bang, Bangla Browser, Basic Web Browser, Basilisk, Beaker Browser, Beamrise, Belva Browser, Beonex, Berry Browser, Beyond Private Browser, BF Browser, Bitchute Browser, Biyubi, BizBrowser, Black Browser, Black Lion Browser, BlackBerry Browser, BlackHawk, Blazer, Bloket, Blue Browser, Bluefy, Bonsai, Borealis Navigator, Brave, BriskBard, BroKeep Browser, Browlser, BrowsBit, Browse Safe, BrowseHere, Browser Hup Pro, Browser Mini, BrowseX, Browspeed Browser, Browzar, Bunjalloo, BXE Browser, Byffox, Cake Browser, Camino, Catalyst, Catsxp, Cave Browser, CCleaner, Centaury, CG Browser, ChanjetCloud, Charon, ChatGPT Atlas, Chedot, Cheetah Browser, Cherry Browser, Cheshire, Chim Lac, Chowbo, Chrome, Chrome Frame, Chrome Mobile, Chrome Mobile iOS, Chrome Webview, ChromePlus, Chromium, Chromium GOST, Clario Browser, Classilla, Clear TV Browser, Cliqz, Cloak Private Browser, CM Browser, CM Mini, Coast, Coc Coc, Colibri, Colom Browser, Columbus Browser, Comet, CometBird, Comfort Browser, Comodo Dragon, Conkeror, CoolBrowser, CoolNovo, Cornowser, COS Browser, Craving Explorer, Crazy Browser, Cromite, Crow Browser, Crusta, Cunaguaro, Cyberfox, CyBrowser, Dark Browser, Dark Web, Dark Web Browser, Dark Web Private, dbrowser, DDU Browser, Debuggable Browser, Decentr, Deepnet Explorer, deg-degan, Deledao, Delta Browser, Desi Browser, DeskBrowse, Dezor, Diigo Browser, Dillo, DoCoMo, Dolphin, Dolphin Zero, Dooble, Dorado, Dot Browser, Doubao, Dragon Browser, DUC Browser, DuckDuckGo Privacy Browser, East Browser, Easy Browser, Ecosia, Edge WebView, EinkBro, Element Browser, Elements Browser, Elinks, Eolie, Epic, Espial TV Browser, EudoraWeb, EUI Browser, Every Browser, Explore Browser, eZ Browser, Falkon, Fast Browser UC Lite, Fast Explorer, Faux Browser, Fennec, fGet, Fiery Browser, Fire Browser, Firebird, Firefox, Firefox Focus, Firefox Klar, Firefox Mobile, Firefox Mobile iOS, Firefox Reality, Firefox Rocket, FireSend Browser, Fireweb, Fireweb Navigator, Flash Browser, Flast, Float Browser, Flock, Floorp, Flow, Flow Browser, Fluid, Flyperlink, FOSS Browser, Freedom Browser, FreeU, Frost, Frost+, Fulldive, G Browser, Galeon, Gener8, Ghostery Privacy Browser, GinxDroid Browser, Glass Browser, GNOME Web, GO Browser, GoBrowser, Godzilla Browser, GOG Galaxy, GoKu, Good Browser, Google Earth, Google Earth Pro, GreenBrowser, Habit Browser, Halo Browser, Harman Browser, Harmony 360 Browser, HasBrowser, Hawk Quick Browser, Hawk Turbo Browser, Headless Chrome, Helio, Herond Browser, Hexa Web Browser, HeyTapBrowser, Hi Browser, hola! Browser, Holla Web Browser, HONOR Browser, HotBrowser, HotJava, HTC Browser, Huawei Browser, Huawei Browser Mobile, HUB Browser, IBrowse, iBrowser, iBrowser Mini, iCab, iCab Mobile, IceCat, IceDragon, Iceweasel, iDesktop PC Browser, IE Browser Fast, IE Mobile, Ifbrowser, Impervious Browser, InBrowser, Incognito Browser, Indian UC Mini Browser, iNet Browser, Inspect Browser, Insta Browser, Internet Browser Secure, Internet Explorer, Internet Webbrowser, Intune Managed Browser, Involta Go, Iridium, Iron, Iron Mobile, Isivioo, IVVI Browser, Japan Browser, Jasmine, JavaFX, Jelly, Jig Browser, Jig Browser Plus, JioSphere, JUZI Browser, K-meleon, K-Ninja, K.Browser, Kapiko, Kazehakase, Keepsafe Browser, KeepSolid Browser, Keyboard Browser, Kids Safe Browser, Kindle Browser, Kinza, Kitt, Kiwi, Kode Browser, Konqueror, KUN, KUTO Mini Browser, Kylo, Ladybird, Lagatos Browser, Lark Browser, Legan Browser, Lemur Browser, Lenovo Browser, Lexi Browser, LG Browser, LieBaoFast, Light, Lightning Browser, Lightning Browser Plus, Lilo, Links, Liri Browser, LogicUI TV Browser, Lolifox, Lotus, Lovense Browser, LT Browser, LuaKit, LUJO TV Browser, Lulumi, Lunascape, Lunascape Lite, Lynket Browser, Lynx, Maelstrom, Mandarin, Maple, MarsLab Web Browser, MAUI WAP Browser, MaxBrowser, Maxthon, MaxTube Browser, mCent, Me Browser, Meizu Browser, Mercury, Mi Browser, MicroB, Microsoft Edge, Midori, Midori Lite, Minimo, Mint Browser, Mises, MixerBox AI, MMBOX XBrowser, Mmx Browser, Mobicip, Mobile Safari, Mobile Silk, Mogok Browser, Monument Browser, Motorola Internet Browser, MxNitro, Mypal, Naenara Browser, Naked Browser, Naked Browser Pro, Navigateur Web, NCSA Mosaic, NetFront, NetFront Life, NetPositive, Netscape, NetSurf, Neuro Browser, NextWord Browser, NFS Browser, Ninesky, Ninetails, Nintendo Browser, Nokia Browser, Nokia OSS Browser, Nokia Ovi Browser, NOMone VR Browser, Nook Browser, Norton Private Browser, Nova Browser, Nova Video Downloader Pro, Nox Browser, NTENT Browser, Nuanti Meta, Nuviu, Obigo, Ocean Browser, OceanHero, Oculus Browser, Odd Browser, Odin, Odin Browser, Odyssey Web Browser, Off By One, Office Browser, OH Browser, OH Private Browser, OhHai Browser, OJR Browser, OmniWeb, OnBrowser Lite, ONE Browser, Onion Browser, ONIONBrowser, Open Browser, Open Browser 4U, Open Browser fast 5G, Open Browser Lite, Open TV Browser, OpenFin, Openwave Mobile Browser, Opera, Opera Air, Opera Crypto, Opera Devices, Opera GX, Opera Mini, Opera Mini iOS, Opera Mobile, Opera Neon, Opera Next, Opera Touch, Oppo Browser, Opus Browser, Orbitum, Orca, Ordissimo, Oregano, Origin In-Game Overlay, Origyn Web Browser, OrNET Browser, Otter Browser, Owl Browser, Pale Moon, Palm Blazer, Palm Pre, Palm WebPro, Palmscape, Panda Browser, Pawxy, Peach Browser, Peeps dBrowser, Perfect Browser, Perk, Phantom Browser, Phantom.me, Phoenix, Phoenix Browser, Photon, Pi Browser, PICO Browser, Pintar Browser, PirateBrowser, PlayFree Browser, Pluma, Pocket Internet Explorer, PocketBook Browser, Polaris, Polarity, PolyBrowser, Polypane, Power Browser, Presearch, Prism, Privacy Browser, Privacy Explorer Fast Safe, PrivacyWall, Private Internet Browser, PronHub Browser, Proxy Browser, ProxyFox, Proxyium, ProxyMax, Proxynet, PSI Secure Browser, Puffin Cloud Browser, Puffin Incognito Browser, Puffin Secure Browser, Puffin Web Browser, Pure Lite Browser, Pure Mini Browser, Qazweb, Qiyu, QJY TV Browser, Qmamu, QQ Browser, QQ Browser Lite, QQ Browser Mini, QtWeb, QtWebEngine, Quark, QuarkPC, Quetta, Quick Browser, Quick Search TV, QupZilla, Qutebrowser, Qwant Mobile, Rabbit Private Browser, Raise Fast Browser, Rakuten Browser, Rakuten Web Search, Raspbian Chromium, Ray, RCA Tor Explorer, Realme Browser, Rekonq, Reqwireless WebViewer, Roccat, RockMelt, Roku Browser, Safari, Safari Technology Preview, Safe Exam Browser, Sailfish Browser, SalamWeb, Samsung Browser, Samsung Browser Lite, Savannah Browser, SavySoda, SberBrowser, Secure Browser, Secure Private Browser, SecureX, Seekee, Seewo Browser, SEMC-Browser, Seraphic Sraf, Seznam Browser, SFive, Sharkee Browser, Shiira, Sidekick, SilverMob US, SimpleBrowser, Singlebox, SiteKiosk, Sizzy, Skye, Skyfire, SkyLeap, Sleipnir, SlimBoat, Slimjet, Smart Browser, Smart Lenovo Browser, Smart Search &amp; Web Browser, Smooz, Snap Browser, Snowshoe, Sogou Explorer, Sogou Mobile Browser, Sony Small Browser, SOTI Surf, Soul Browser, Soundy Browser, SP Browser, Spark, Spectre Browser, Splash, Sputnik Browser, Stampy Browser, Stargon, START Internet Browser, Stay Browser, Stealth Browser, Steam In-Game Overlay, Streamy, Sunflower Browser, Sunrise, Super Fast Browser, SuperBird, SuperFast Browser, surf, Surf Browser, Surfy Browser, Sushi Browser, Sweet Browser, Swiftfox, Swiftweasel, SX Browser, T+Browser, T-Browser, t-online.de Browser, TalkTo, Tao Browser, tararia, TenFourFox, Tenta Browser, Tesla Browser, Thor, Tincat Browser, Tint Browser, Tizen Browser, ToGate, Tor Browser, Total Browser, TQ Browser, TrueLocation Browser, TUC Mini Browser, Tungsten, TUSK, TV Bro, TV-Browser Internet, TweakStyle, U Browser, UBrowser, UC Browser, UC Browser HD, UC Browser Mini, UC Browser Turbo, Ui Browser Mini, Ume Browser, UPhone Browser, UR Browser, Uzbl, Vast Browser, vBrowser, VC Browser Mini Pro, VD Browser, Veera, Vegas Browser, Venus Browser, Vertex Surf, Vewd Browser, Via, Viasat Browser, VibeMate, Vision Mobile Browser, Vivaldi, Vivid Browser Mini, vivo Browser, VMS Mosaic, VMware AirWatch, Vonkeror, Vuhuv, w3m, Waterfox, Wave Browser, Wavebox, Wear Internet Browser, Web Browser &amp; Explorer, Web Explorer, WebDiscover, Webian Shell, WebPositive, Weltweitimnetz Browser, WeTab Browser, Wexond, Whale Browser, Whale TV Browser, Wolvic, World Browser, wOSBrowser, Wukong Browser, Wyzo, X Browser Lite, X-VPN, xBrowser, XBrowser Mini, xBrowser Pro Super Fast, Xiino, XnBrowse, XNX Browser, Xooloo Internet, XPlay Browser, xStand, XtremeCast, Xvast, Yaani Browser, YAGI, Yahoo! Japan Browser, Yandex Browser, Yandex Browser Corp, Yandex Browser Lite, Yo Browser, Yolo Browser, YouBrowser, YouCare, Yuzu Browser, Zetakey, Zirco Browser, Zordo Browser, ZTE Browser, Zvu</p>
+<h2 id="browser-engines">Browser Engines</h2>
+<p><strong>20 browser engines supported</strong></p>
+<p>Arachne, Blink, Clecko, Dillo, Edge, EkiohFlow, Elektra, Gecko, Goanna, iCab, KHTML, LibWeb, Maple, NetFront, NetSurf, Presto, Servo, Text-based, Trident, WebKit</p>
+<h2 id="mobile-apps">Mobile Apps</h2>
+<p><strong>710 mobile apps supported</strong></p>
+<p>'sodes, +Simple, 1Password, 2tch, 360 Security, ACT Shield, ActionExtension, Active Cleaner, Adobe Acrobat Reader, Adobe Creative Cloud, Adobe IPM, Adobe NGL, Adobe Synchronizer, Adori, Agora, Aha Radio 2, AIDA64, Airr, Airsonic, Aka Messenger, Aka Messenger Lite, AliExpress, Alipay, All You Can Books, AllHitMusicRadio, Always Safe Security 24, Amazon Fire, Amazon Music, Amazon Shopping, Ameba, AN WhatsApp, Anchor, AnchorFM, AndroidDownloadManager, Anghami, AntennaPod, AntiBrowserSpy, Anybox, AnyDesk Remote Desktop, Anything LLM, Anytime Podcast Player, AOL, APK Downloader, Apollo, App Lock, appdb, AppGallery, Apple iMessage, Apple News, Apple Podcasts, Apple Reminders, Apple TV, Arvocast, ASUS Updater, Audacy, Audials, Audible, Audio, Audio Now, Audiobooks, Autoplius.lt, Avid Link, Awasu, Ayoba, Background Intelligent Transfer Service, Baidu Box App, Baidu Box App Lite, Baidu Input, Ballz, Bank Millenium, Battle.net, BB2C, BBC News, Be Focused, Bear, Bestgram, BetBull, BeyondPod, Bible, Bible KJV, Bifrost Wallet, Big Keyboard, Binance, Bitcoin Core, Bitsboard, Bitwarden, Blackboard, Blitz, Blue Proxy, BlueStacks, BlueWallet, Bolt, BonPrix, Bookmobile, Bookshelf, Boom, Boom360, Boomplay, Bose Music, Bose SoundTouch, BOX Video Downloader, bPod, Breez, Bridge, Broadcast, Broadway Podcast Network, Browser app, Browser-Anonymizer, BrowserPlus, Bullhorn, BuzzVideo, Calculator Hide Photos, Calculator Photo Vault, CamScanner, Canopy, Capital, capsule.fm, Castamatic, Castaway, CastBox, Castify, Castro, Castro 2, CCleaner, CGN, ChatGPT, ChMate, Chrome Update, Cici, Ciisaa, Citrix Workspace, Classic FM, Clean Master, Client, Clipbox+, Clovia, CM Security, COAF SMART Citizen, Coinbase, Cooler, Copied, Cortana, Cosmicast, Coupons &amp; Deals, Covenant Eyes, CPod, CPU-Z, CrosswalkApp, Crypto.com DeFi Wallet, CSDN, Damus, Darty Sécurité, Daum, De Standaard, De Telegraaf, DeepL, DeepSeek, DevCasts, DeviantArt, DingTalk, DIRECTV, Discord, DManager, DNA Digiturva, Dogecoin Core, DoggCatcher, Don't Waste My Time!, douban App, DoubleTwist CloudPlayer, Doughnut, Douyin, Downcast, Downie, Download Hub, Download Manager, Downloader, Dr. Watson, DStream Air, Edge Update, Edmodo, Elisa Turvapaketti, Email Home, EMAudioPlayer, Emby Theater, Epic Games Launcher, ESET Remote Administrator, ESPN, eToro, Evolve Podcast, Expedia, Expo, EZVPN, F-Secure Mobile Security, F-Secure SAFE, Facebook, Facebook Audience Network, Facebook Groups, Facebook Lite, Facebook Messenger, Facebook Messenger Lite, faidr, Fancy Security, Fathom, FeedR, FeedStation, Fiddler Classic, Files, Fit Home, Flipboard App, Flipp, FM WhatsApp, Focus Keeper, Focus Matrix, Fountain, Freespoke, FVD - Free Video Downloader, Gaana, Garmin fenix 5X, Garmin Forerunner, GBox Helper, GBWhatsApp, Genspark, GetPodcast, Git, GitHub Desktop, GlobalProtect, GMX Mail, GO Security, GoEuro, Gold, GoldenPod, GoLoud, GoNative, Goodpods, GoodReader, Google, Google Assistant, Google Drive, Google Fiber TV, Google Go, Google Lens, Google Maps, Google Nest Hub, Google Photos, Google Play, Google Play Newsstand, Google Plus, Google Podcasts, Google Search App, Google Tag Manager, Graph Messenger, GroupMe, Guacamole, Hago, Hammel, HandBrake, HardCast, Hark Audio, Heart, HeartFocus, HeartFocus Education, HermesPod, HiCast, HideX, Hik-Connect, Himalaya, HiOS Launcher, HiSearch, HisThumbnail, HistoryHound, Hornet, Hotels.com, HP Smart, HTTP request maker, Huawei Mobile Services, Huawei Quick App Center, Hulu, HyperCatcher, iCatcher, IDM Video Download Manager, iHeartRadio, IMO HD Video Calls &amp; Chat, IMO International Calls &amp; Chat, Instabridge, Instacast, Instagram, Instapaper, InstaPro, iPlayTV, IPTV, IPTV Pro, iSafePlay, itel Launcher, iVoox, Jam, JaneStyle, Jaumo, Jaumo Prime, JioSaavn, Jitsi Meet, JJ2GO, Joy Launcher, Jungle Disk, Just Listen, Kajabi, KakaoTalk, KeepClean, Keeper Password Manager, Keplr, Kids Listen, KidsPod, Kik, Kimi, Kinogo.ge, KKBOX, Klara, Klarna, KPN Veilig, KUTO VPN, Kwai, Kwai Pro, KYMS - Keep Your Media Safe, L.A. Times, Landis+Gyr AIM Browser, Lark, Laughable, Lazada, LBC, LG Player, Libero Mail, Line, LinkedIn, Listen, LiSTNR, Liulo, LivU, Logi Options+, Lookr, LoseIt!, Luminary, Ma Protection, Macrium Reflect, MBolsa, Megaphone, MEmpresas, Menucast, Mercantile Bank of Michigan, Messenger Home, Messenger Lite, MessengerX, Meta Business Suite, Metacast, MetaMask, MetaTrader, MiChat, MiChat Lite, Microsoft Bing, Microsoft Copilot, Microsoft Lync, Microsoft Math Solver, Microsoft Office, Microsoft Office Access, Microsoft Office Excel, Microsoft Office Mobile, Microsoft Office OneDrive for Business, Microsoft Office OneNote, Microsoft Office PowerPoint, Microsoft Office Project, Microsoft Office Publisher, Microsoft Office Visio, Microsoft Office Word, Microsoft OneDrive, Microsoft Outlook, Microsoft Power Query, Microsoft Store, Mimir, mobile.de, MobileSMS, Mojeek, MOMO, MoonFM, mowPod, Moya, MSN, MX Player, My Bentley, My Watch Party, My World, MyTuner, nate, Naver, NAVER Dictionary, NET.mede, Netflix, News Home, News Suite by Sony, NewsArticle App, Newsly, NewsPoint, Nextcloud, NoCard VPN, NoCard VPN Lite, Nox Security, NPR, NRC, NRC Audio, NTV Mobil, NuMuKi Browser, OBS Studio, Obsidian, Odnoklassniki, OfferUp, Omshy VPN, OP.GG, Opal Travel, OpenVAS, Opera News, Opera Updater, Orange Radio, Orbot, Outcast, Overcast, Overhaul FM, Paint by Number, Palco MP3, Pandora, Papers, PeaCast, Perplexity, Petal Search, Photo Search, Photo Sherlock, Pic Collage, Pinterest, Player FM, PLAYit, Plex Media Server, Plus Messenger, Pocket Casts, Podbay, Podbean, Podcast &amp; Radio Addict, Podcast App, Podcast Guru, Podcast Player, Podcast Republic, Podcastly, Podcat, Podcatcher Deluxe, Podchaser, Podclipper, PodCruncher, Podeo, Podfriend, Podhero, Podimo, PodKast, Podkicker, Podkicker Classic, Podkicker Pro, PodLP, PodMe, PodMN, PodNL, Podopolo, Podplay, Pods, PodTrapper, podU, Podurama, Podverse, Podvine, Podyssey, PotatoVPN, PowerShell, Procast, PugPig Bolt, Q-municate, qBittorrent, QQ, QQMusic, Quick Cast, QuickCast, Quicksilver, Quora, R, Radio Italiane, Radio Next, radio.at, radio.de, radio.dk, radio.es, radio.fr, radio.it, radio.net, radio.pl, radio.pt, radio.se, RadioApp, Radioline, RadioPublic, Rave Social, Razer Synapse, RDDocuments, readly App, Reddit, Reddit is fun, Redditor, Redline, RedReader, rekordbox, Repod, Reuters News, Reverse Image Search, Rhythmbox, RNPS Action Cards, Roblox, RoboForm, Rocket Chat, RSSDemon, RSSRadio, Rutube, SachNoi, Safari Search Helper, SafeIP, Samsung Email, Samsung Magician, Samsung Podcasts, Sanista Persian Instagram, Search By Image, SearchCraft, Seekr, ServeStream, SFR Sécurité, Sgallery, Shadow, Shadowrocket, SHAREit, ShareKaro, Shopee, ShowMe, Signal, Sina Weibo, Siri, SiriusXM, SKOUT, Skyeng, Skyeng Teachers, Skype, Skype for Business, Slack, SmartNews, smzdm, Snapchat, SnapTube, SnapU2B, Snipd, Social Media Explorer, SoFi, SogouSearch App, SohuNews, Soldier, Sonnet, Sony PlayStation 5, SOOP, SoundOn, SoundWaves, SPORT1, Spotify, Spreaker, Startsiden, Sticky Password, Stitcher, StoryShots, Stream Master, Streamlabs OBS, Strimio, Super Cleaner, Superbalist, Surfshark, Sweep, Swinsian, Swisscom Internet Security, Swoot, T2S, TalkTalk SuperSafe, Taobao, TCL Live, Teams, Telegram, Telekom Mail, Telia Trygg, Telia Turvapaketti, Tencent Docs, TeraBox, The Crossword, The Epoch Times, The New York Times, The Wall Street Journal, Theyub, Threads, Thunder, tieba, TikTok, TikTok Lite, TIM, Tinder, TiviMate, TopBuzz, TopSecret Chat, TotalAV, TownNews Now, TracePal, Tracker Connect, Trade Me, TradingView, Treble.fm, TRP Retail Locator, Tumile, TuneIn Radio, TuneIn Radio Pro, TurTc, Turtlecast, Tuya Smart Life, TV Cast, TVirl, twinkle, Twitch Studio, Twitter, Twitterrific, U-Cursos, Ubook Player, UCast, Uconnect LIVE, Uforia, Unibox, UnityPlayer, UPC Internet Security, V2Free, Vault, Viber, Victor Reader Stream 3, Victor Reader Stream New Generation, Victor Reader Stream Trek, VidJuice UniTube, Virgin Radio, VIS+, Visha, Visual Studio Code, Vodacast, VPN Monster, Vuhuv, Vuze, waipu.tv, Walla News, WatchFree+, Wattpad, Wayback Machine, Waze, Weather Home, WEB.DE Mail, WebDAV, Webex Teams, WeChat, WeChat Share Extension, WeCom, WH Questions, Whatplay, WhatsApp, WhatsApp Business, WhatsApp+2, Whisper, Windows Antivirus, Windows CryptoAPI, Windows Delivery Optimization, Windows Push Notification Services, Windows Update Agent, Wireshark, Wirtschafts Woche, Wiseplay, WNYC, Word Cookies!, WPS Office, Wynk Music, X Launcher, Xiao Yu Zhou, XING, XOS Launcher, XShare, XSplit Broadcaster, Y8 Browser, Yahoo OneSearch, Yahoo! Japan, YakYak, Yandex, Yandex Music, Yapa, Yelp Mobile, Yo WhatsApp, YouTube, Youtube Music, Zalo, Zee Business, ZEIT ONLINE, Zen, ZEPETO, Ziggo Safe Online, Zite, Zoho Chat, Zune</p>
+<h2 id="media-players">Media Players</h2>
+<p><strong>43 media players supported</strong></p>
+<p>Alexa, Amarok, Audacious, Banshee, Boxee, Clementine, Deezer, DIGA, Downcast, FlyCast, Foobar2000, Google Podcasts, HTC Streaming Player, Hubhopper, iTunes, JHelioviewer, JRiver Media Center, Juice, Just Audio, Kasts, Kodi, MediaMonkey, Miro, MixerBox, MPlayer, mpv, Music Player Daemon, MusicBee, NexPlayer, Nightingale, QuickTime, Songbird, SONOS, Sony Media Go, Stagefright, StudioDisplay, SubStream, VLC, Winamp, Windows Media Player, XBMC, Xtream Player, YouView</p>
+<h2 id="libraries">Libraries</h2>
+<p><strong>144 libraries supported</strong></p>
+<p>aiohttp, Akka HTTP, Android License Verification Library, AnyEvent HTTP, Apache HTTP Client, Apidog, Aria2, Artifactory, Axios, Azure Blob Storage, Azure Data Factory, Babashka HTTP Client, BIC Tracker, Boto3, Buildah, BuildKit, Bun, C++ REST SDK, CakePHP, CarrierWave, Containerd, containers, cPanel HTTP Client, cpp-httplib, cri-o, curl, Cygwin, Cypress, Dart, Deno, docker, Down, Electron Fetch, Emacs, Embarcadero URI Client, ESP32 HTTP Client, Faraday, fasthttp, ffmpeg, FFUF, FileDownloader, Free Download Manager, GeoIP Update, git-annex, go-container registry, Go-http-client, go-network, Google HTTP Java Client, got, GRequests, gRPC-Java, GStreamer, Guzzle (PHP HTTP Client), gvfs, hackney, Harbor registry client, Helm, HTML Parser, http.rb, HTTP:Tiny, HTTPie, httplib2, httprs, HTTPX, HTTP_Request2, Hubot, ICAP Client, Insomnia REST Client, iOS Application, IPinfo, Jakarta Commons HttpClient, Jaunt, Java, Java HTTP Client, jsdom, KaiOS Downloader, Kiwi TCMS, Kiwi TCMS API, libdnf, LibHTTP, libpod, libsoup, Libsyn, Lodestone PHP Parser, LUA OpenResty NGINX, Mandrill PHP, MatomoTracker, Mechanize, Mikrotik Fetch, Msray-Plus, Node Fetch, OKDownload Library, OkHttp, OkHttp, Open Build Service, Pa11y, Perl, Perl REST::Client, PhantomJS, PHP, PHP cURL Class, Podgrab, Postman Desktop, PRDownloader, Python Requests, Python urllib, QbHttp, quic-go, r-curl, Radio Downloader, ReactorNetty, req, request, Requests, reqwest, REST Client for Ruby, RestSharp, Resty, resty-requests, ruby, Safari View Service, ScalaJ HTTP, Skopeo, Slim Framework, SlimerJS, sqlmap, Stealer, superagent, Symfony, trafilatura, Typhoeus, uclient-fetch, Ultimate Sitemap Parser, undici, Unirest for Java, urlgrabber (yum), uTorrent, vimeo.php, webchk, Wget, Windows HTTP, WinHttp WinHttpRequest, WWW-Mechanize, XML-RPC</p>
+<h2 id="feed-readers">Feed Readers</h2>
+<p><strong>28 feed readers supported</strong></p>
+<p>Akregator, Apple PubSub, BashPodder, Breaker, castero, castget, FeedDemon, Feeddler RSS Reader, gPodder, JetBrains Omea Reader, Liferea, NetNewsWire, Newsbeuter, NewsBlur, NewsBlur Mobile App, Newsboat, Playapod, PodPuppy, PritTorrent, Pulp, QuiteRSS, ReadKit, Reeder, Reeder, RSS Bandit, RSS Junkie, RSSOwl, Stringer</p>
+<h2 id="personal-information-managers">Personal Information Managers</h2>
+<p><strong>35 personal information managers supported</strong></p>
+<p>Airmail, Apple Mail, Barca, Basecamp, BathyScaphe, BlueMail, DAVdroid, eM Client, Evernote, Foxmail, Franz, Gmail, JaneView, Live5ch, Lotus Notes, Mail Master, MailApp, MailBar, Mailbird, Mailspring, Microsoft Outlook, Microsoft Outlook, NAVER Mail, Notion, Outlook Express, Postbox, Raindrop.io, Rambox Pro, SeaMonkey, Spicebird, The Bat!, Thunderbird, Windows Mail, Yahoo Mail, Yahoo! Mail</p>
+<h2 id="device-brands">Device Brands</h2>
+<p><strong>2115 device brands supported</strong></p>
+<p>10moons, 2E, 360, 3GNET, 3GO, 3Q, 4Good, 4ife, 5IVE, 7 Mobile, 7Ke tree, 8848, A&amp;K, A1, A95X, AAUW, Accent, Accesstyle, ACD, Ace, Aceline, Acepad, Acer, Acteck, actiMirror, Adreamer, Adronix, Advan, Advance, Advantage Air, AEEZO, AFFIX, AfriOne, AG Mobile, AGM, AI+, AIDATA, AileTV, Ainol, Airis, Airness, AIRON, Airpha, Airtel, Airties, AirTouch, AIS, Aiuto, Aiwa, Ajib, Akai, AKIRA, Alba, Alcatel, Alcor, ALDI NORD, ALDI SÜD, Alfawise, Alienware, Aligator, All Star, AllCall, AllDocube, allente, ALLINmobile, Allview, Allwinner, Alps, alpsmart, Altech UEC, Altibox, Altice, Altimo, altron, Altus, AMA, Amazon, Amazon Basics, AMCV, AMGOO, Amigoo, Amino, Amoi, ANBERNIC, ANCEL, andersson, Andowl, Angelcare, AngelTech, Anker, Anry, ANS, ANXONIT, AOC, Aocos, Aocwei, AOpen, Aoro, Aoson, AOYODKG, ApoloSign, Apple, Aquarius, Archos, Arian Space, Arival, Ark, ArmPhone, Arnova, ARRIS, Artel, Artizlee, ArtLine, Arçelik, Asano, Asanzo, Ask, Aspera, ASSE, Assistant, astro (MY), Astro (UA), Asus, AT&amp;T, Athesi, Atlantic Electrics, Atmaca Elektronik, ATMAN, ATMPC, ATOL, Atom, Atouch, Atozee, Attila, Atvio, Audiovox, AUPO, AURIS, Autan, AUX, Avaya, Avenzo, AVH, Avvio, Awow, AWOX, AXEN, Axioo, AXXA, Axxion, AYA, AYYA, Azeyou, AZOM, Azumi Mobile, Azupik, b2m, Backcell, BAFF, BangOlufsen, Barnes &amp; Noble, BARTEC, BAUHN, BB Mobile, BBK, BDF, BDQ, BDsharing, Beafon, Becker, Beeline, Beelink, Beetel, Beista, Beko, Bell, Bellphone, Benco, Benesse, BenQ, BenQ-Siemens, BenWee, Benzo, Beyond, Bezkam, BGH, Biegedy, Bigben, BIHEE, BilimLand, Billion, Billow, BioRugged, Bird, Bitel, Bitmore, Bittium, Bkav, Black Bear, Black Box, Black Fox, Blackpcs, Blackphone, Blackton, Blackview, Blaupunkt, Bleck, BLISS, Blloc, Blow, Blu, Bluboo, Bluebird, Bluedot, Bluegood, BlueSky, Bluewave, BluSlate, BMAX, Bmobile, BMW, BMXC, BNCF, Bobarry, bogo, Bolva, Bookeen, Boost, Botech, Boway, bq, Bqeel, BrandCode, Brandt, BRAVE, Bravis, BrightSign, Brigmton, Brondi, BROR, BS Mobile, Bubblegum, Bundy, Bush, BuzzTV, BYD, BYJU'S, BYYBUO, C Idea, C5 Mobile, CADENA, CAGI, Caixun, CALME, Camfone, Canaima, Canal Digital, Canal+, Canguro, Capitel, Captiva, Carbon Mobile, Carrefour, Casio, Casper, Cat, Cavion, CCIT, Cecotec, Ceibal, Celcus, Celkon, Cell-C, Cellacom, CellAllure, Cellution, CENTEK, Centric, CEPTER, CG Mobile, CGV, Chainway, Changhong, CHCNAV, Cherry Mobile, Chico Mobile, ChiliGreen, China Mobile, China Telecom, Chuwi, CipherLab, Citycall, CKK Mobile, Claresta, Clarmin, CLAYTON, ClearPHONE, Clementoni, Cloud Mobile, Cloudfone, Cloudpad, Clout, Clovertek, CMF, CnM, Cobalt, Coby Kyros, Cogeco, COLORROOM, Colors, Comio, CommScope, Compal, Compaq, COMPUMAX, ComTrade Tesla, Conceptum, Concord, ConCorde, Condor, Connectce, Connex, Conquest, CONSUNG, Continental Edison, Contixo, coocaa, COOD-E, Coolpad, Coopers, CORN, Cosmote, Covia, Cowon, COYOTE, CPDEVICE, CreNova, Crescent, Crestron, Cricket, Crius Mea, Crony, Crosscall, Crown, Ctroniq, Cube, CUBOT, CUD, Cuiud, Cultraview, CVTE, Cwowdefu, CX, Cyrus, D-Link, D-Tech, Daewoo, Danew, DangcapHD, Dany, Daria, DASS, Datalogic, Datamini, Datang, Datawind, Datsun, Dawlance, Dazen, DbPhone, Dbtel, Dcode, DEALDIG, DEC, Dell, Denali, Denka, Denver, Desay, DeWalt, DEXP, DEYI, DF, DGTEC, DIALN, Dialog, Dicam, Digi, Digicel, DIGICOM, Digidragon, DIGIFORS, Digihome, Digiland, Digit, Digma, DIJITSU, DIKOM, DIMO, Dinalink, Dinax, DING DING, Diofox, DIORA, DISH, Disney, Ditecma, Diva, DiverMax, Divisat, DIXON, DL, DMOAO, DNS, DoCoMo, Doffler, Dolamee, Dom.ru, Doogee, Doopro, Doov, Dopod, Doppio, Dora, DORLAND, Doro, DPA, DRAGON, Dragon Touch, Dream Multimedia, Dreamgate, DreamStar, Droidlogic, Droxio, DSDevices, DSIC, Dtac, DUDU AUTO, Dune HD, DUNNS Mobile, DuoTV, Durabook, Duubee, Dykemann, Dyon, E-Boda, E-Ceros, E-TACHI, E-tel, Eagle, EagleSoar, EAS Electric, Easypix, EBEN, EBEST, Echo Mobiles, ecom, ECON, ECOO, EcoStar, ECS, Edanix, Edenwood, EE, EFT, EGL, EGOTEK, Ehlel, Einstein, EKINOX, EKO, Eks Mobility, EKT, ELARI, ELE-GATE, Elecson, Electroneum, ELECTRONIA, Elekta, Elektroland, Element, Elenberg, Elephone, Elevate, Elista, elit, Elong Mobile, Eltex, Ematic, Emporia, ENACOM, ENDURO, Energizer, Energy Sistem, Engel, ENIE, Enot, eNOVA, Entity, Envizen, Ephone, Epic, EPIK Learning, Epik One, Eplutus, Epson, Equator, Ergo, Ericsson, Ericy, Erisson, Essential, Essentielb, eSTAR, ETOE, Eton, eTouch, Etuline, Eudora, Eurocase, EUROLUX, Eurostar, Evercoss, Everest, Everex, Everfine, Everis, Evertek, Evolio, Evolveo, Evoo, EVPAD, EvroMedia, evvoli, EWIS, EXCEED, Exertis, Exmart, ExMobile, EXO, Explay, Express LUCK, ExtraLink, Extrem, Eyemoo, EYU, Ezio, Ezze, F&amp;U, F+, F150, F2 Mobile, Facebook, Facetel, Facime, Fairphone, Famoco, Famous, Fantec, Fanvace, FaRao Pro, Farassoo, FarEasTone, Fengxiang, Fenoti, FEONAL, Fero, FFF SmartLife, Figgers, FiGi, FiGO, FiiO, Filimo, FILIX, FinePower, FINIX, Finlux, FireFly Mobile, FISE, Fision, FITCO, Fluo, Fly, FLYCAT, FLYCOAY, FMT, FNB, FNF, Fobem, Fondi, Fonos, FONTEL, FOODO, FORME, Formovie, Formuler, Forstar, Fortis, FortuneShip, FOSSiBOT, Four Mobile, Fourel, FOX, Foxconn, FoxxD, FPT, free, Freetel, FreeYond, FRESH, Frunsi, Fuego, FUJICOM, Fujitsu, Funai, Fusion5, Future Mobile Technology, Fxtec, G-Guard, G-PLUS, G-Tab, G-TiDE, G-Touch, G-Vill, Galactic, Galatec, Galaxy Innovations, Gamma, Garmin-Asus, Gateway, Gazal, Gazer, GDL, Geanee, Geant, Gear Mobile, Gemini, General Mobile, Genesis, Genius Devices, Geo Phone, GEOFOX, Geotel, Geotex, GEOZON, Getnord, GFive, Gfone, Ghia, Ghong, Ghost, Gigabyte, Gigaset, Gini, Ginzzu, Gionee, GIRASOLE, GlobalSec, Globex, Globmall, GlocalMe, Glofiish, GLONYX, Glory Star, GLX, GN Electronics, GOCLEVER, Gocomma, GoGEN, Gol Mobile, GOLDBERG, GoldMaster, GoldStar, Goly, Gome, GoMobile, GOODTEL, Google, Goophone, Gooweel, GOtv, Gplus, Gradiente, Graetz, Grape, Great Asia, Gree, Green Lion, Green Orange, Greentel, Gresso, Gretel, GroBerwert, Grundig, Grünberg, Gtel, GTMEDIA, GTX, Guophone, GVC Pro, H133, H96, Hafury, Haier, Haipai, Haixu, Hamlet, Hammer, Handheld, HannSpree, Hanseatic, Hanson, HAOQIN, HAOVM, Hardkernel, Harper, Hartens, Hasee, Hathway, HAVIT, HDC, HeadWolf, HEC, Heimat, Helio, Hemilton, HERO, HexaByte, Hezire, Hi, Hi Nova, Hi-Level, Hiberg, HiBy, HIGH1ONE, Highscreen, HiGrace, HiHi, HiKing, HiMax, HIPER, Hipstreet, Hiremco, Hisense, Hitachi, Hitech, HKC, HKPro, HLLO, HMD, hoco, HOFER, Hoffmann, HOLLEBERG, Homatics, Hometech, HOMII, Homtom, Honeywell, HongTop, HONKUAHG, Honor, Hoozo, Hopeland, Horion, Horizon, Horizont, Hosin, Hot Pepper, HOTACK, Hotel TV Company, HOTREALS, Hotwav, How, HP, HTC, Huadoo, Huagan, Huavi, Huawei, Hugerock, Humanware, Humax, HUMElab, Hurricane, Huskee, Hyatta, Hykker, Hyrican, Hytera, Hyundai, Hyve, I KALL, i-Cherry, I-INN, i-Joy, i-mate, i-mobile, I-Plus, iBall, iBerry, ibowin, iBrit, IconBIT, Icone Gold, iData, IDC, iDino, iDroid, iFIT, iGet, iHome Life, iHunt, Ikea, IKI Mobile, iKoMo, iKon, iKonia, IKU Mobile, iLA, iLepo, iLife, iMan, Imaq, iMars, iMI, IMO Mobile, Imose, Impression, iMuz, iNavi, INCAR, Inch, Inco, Indurama, iNew, Infiniton, InfinityPro, Infinix, InFocus, InfoKit, Infomir, InFone, Inhon, Inka, Inkti, InnJoo, Inno Hit, Innos, Innostream, iNo Mobile, Inoi, iNOVA, inovo, INQ, Insignia, INSYS, Intek, Intel, Intex, Invens, Inverto, Invin, iOcean, IOTWE, iOutdoor, iPEGTOP, iPro, iQ&amp;T, IQM, IRA, Irbis, iReplace, Iris, iRobot, iRola, iRulu, iSafe Mobile, iStar, iSWAG, IT, iTel, iTruck, IUNI, iVA, iView, iVooMi, ivvi, iWaylink, iXTech, iYou, iZotron, Jambo, JAY-Tech, Jckkcfug, Jeep, Jeka, Jesy, JFone, Jiake, Jiayu, Jide, Jin Tu, Jinga, Jio, Jivi, JKL, Jolla, Joy, JoySurf, JPay, JREN, Jumper, Juniper Systems, Just5, JUSYEA, JVC, JXD, K-Lite, K-Touch, Kaan, Kaiomy, Kalley, Kanji, KAP, Kapsys, Karbonn, Kata, KATV1, Kazam, Kazuna, KDDI, Kempler &amp; Strauss, Kenbo, Kendo, Keneksi, KENSHI, KENWOOD, Kenxinda, KGTEL, Khadas, Kiano, kidiby, Kingbox, Kingelon, Kingstar, Kingsun, KINGZONE, Kinstone, Kiowa, Kivi, Klipad, KMC, KN Mobile, Kocaso, Kodak, Kogan, Komu, Konka, Konrow, Koobee, Koolnee, Kooper, KOPO, Korax, Koridy, Koslam, Kraft, KREZ, KRIP, KRONO, Krüger&amp;Matz, KT-Tech, KTC, KUBO, KuGou, Kuliao, Kult, Kumai, Kurio, KVADRA, Kvant, Kydos, Kyocera, Kyowon, Kzen, KZG, L-Max, LAGENIO, LAIQ, Land Rover, Landvo, Lanin, Lanix, Lark, Laser, Laurus, Lava, LCT, Le Pan, Leader Phone, Leagoo, Leben, LeBest, Lectrus, Ledstar, LeEco, Leelbox, Leff, Legend, Leke, Lemco, LEMFO, Lemhoov, Lenco, Lenovo, Leotec, Lephone, Lesia, Lexand, Lexibook, LG, Liberton, Lifemaxx, Lime, Lingbo, Lingwin, Linnex, Linsar, Linsay, Listo, LNMBBS, Loewe, LOGAN, Logic, Logic Instrument, Logicom, Logik, Logitech, LOKMAT, LongTV, Loview, Lovme, LPX-G, LT Mobile, Lumigon, Lumitel, Lumus, Luna, LUNNEN, LUO, Luxor, Lville, LW, LYF, LYOTECH LABS, M-Horse, M-KOPA, M-Tech, M.T.T., M3 Mobile, M4tel, MAC AUDIO, Macoox, Mafe, MAG, MAGCH, Magenta, Magicsee, Magnus, Majestic, Malata, Mango, Manhattan, Mann, Manta Multimedia, Mantra, Mara, Marshal, Mascom, Massgo, Masstel, Master-G, Mastertech, Matco Tools, Matrix, Maunfeld, Maxcom, Maxfone, Maximus, Maxtron, MAXVI, Maxwell, Maxwest, MAXX, Maze, Maze Speed, MBI, MBK, MBOX, McLaut, MDC Store, meanIT, Mecer, MECHEN, Mecool, Mediacom, Medion, MEEG, MEGA VISION, Megacable, MegaFon, MEGAMAX, Meitu, Meizu, Melrose, MeMobile, Memup, MEO, MESWAO, Meta, Metz, MEU, Microlab, MicroMax, Microsoft, Microtech, Mightier, MIIA, Minix, Mint, Mintt, Mio, Mione, mipo, Miray, Mitchell &amp; Brown, Mito, Mitsubishi, Mitsui, MIVO, MIWANG, MIXC, MiXzo, MLLED, MLS, MMI, Mobell, Mobicel, MobiIoT, Mobiistar, Mobile Kingdom, Mobiola, Mobistel, MobiWire, Mobo, Mobvoi, Mode 1, Mode Mobile, Modecom, Mofut, Moondrop, MORTAL, Mosimosi, Motiv, Motorola, Motorola Solutions, Movic, MOVISUN, Movitel, Moxee, mPhone, Mpman, MSI, MStar, MTC, MTN, multibox, Multilaser, MultiPOS, MULTYNET, MwalimuPlus, MYFON, MyGica, MygPad, Mymaga, MyMobile, MyPhone (PH), myPhone (PL), Myria, Myros, Mystery, MyTab, MyWigo, N-one, Nabi, NABO, Nanho, Naomi Phone, NASCO, National, Navcity, Navitech, Navitel, Navon, NavRoad, NEC, Necnot, Nedaphone, Neffos, NEKO, Neo, neoCore, Neolix, Neomi, Neon IQ, Neoregent, Nesons, NetBox, Netgear, Netmak, NETWIT, NeuImage, NeuTab, NEVIR, New Balance, New Bridge, Newal, Newgen, Newland, Newman, Newsday, NewsMy, Nexa, Nexar, NEXBOX, Nexian, NEXON, NEXT, Next &amp; NextStar, Nextbit, NextBook, NextTab, NG Optics, NGM, NGpon, Nikon, NILAIT, NINETEC, NINETOLOGY, Nintendo, nJoy, NOA, Noain, Nobby, Noblex, NOBUX, noDROPOUT, NOGA, Nokia, Nomi, Nomu, Noontec, Nordfrost, Nordmende, NORMANDE, NorthTech, Nos, Nothing, Nous, Novacom, Novex, Novey, NOVIS, NoviSea, NOVO, NTT West, NuAns, Nubia, NUU Mobile, NuVision, Nuvo, Nvidia, NYX Mobile, O+, O2, Oale, Oangcc, OASYS, Obabox, Ober, Obi, OCEANIC, Odotpad, Odys, Oilsky, OINOM, ok., Okapi, Okapia, Oking, OKSI, OKWU, Olax, Olkya, Ollee, OLTO, Olympia, OMIX, Onda, OneClick, OneLern, OnePlus, Onida, Onix, Onkyo, ONN, ONVO, ONYX BOOX, Ookee, Ooredoo, OpelMobile, Openbox, Ophone, OPPO, Opsson, Optoma, Orange, Orange Pi, Orava, Orbic, Orbita, Orbsmart, Ordissimo, Orion, OSCAL, OTT, OTTO, OUJIA, Ouki, Oukitel, OUYA, Overmax, Ovvi, Owwo, OX TAB, OYSIN, Oysters, Oyyu, OzoneHD, Pacific Research Alliance, Packard Bell, PAGRAER, Paladin, Palm, Panacom, Panasonic, Panavox, Pano, Panodic, Panoramic, Pantech, PAPYRE, Parrot Mobile, Partner Mobile, PC Smart, PCBOX, PCD, PCD Argentina, PEAQ, Pelitt, Pendoo, Penta, Pentagram, Perfeo, Phicomm, Philco, Philips, Phonemax, phoneOne, Pico, PINE64, Pioneer, Pioneer Computers, PiPO, PIRANHA, Pixela, Pixelphone, PIXPRO, Pixus, Planet Computers, Platoon, Play Now, PLDT, Ployer, Plum, PlusStyle, Pluzz, PocketBook, POCO, Point Mobile, Point of View, Polar, PolarLine, Polaroid, Polestar, PolyPad, Polytron, Pomp, Poppox, POPTEL, Porsche, Portfolio, Positivo, Positivo BGH, Powerway, PPDS, PPTV, PREMIER, Premier Star, Premio, Prestigio, PRIME, Primepad, Primux, PRISM+, Pritom, Prixton, PROFiLO, Proline, Prology, ProScan, PROSONIC, Protruly, ProVision, PULID, Punos, Purism, PVBox, Q-Box, Q-Touch, Q.Bell, QFX, Qilive, QIN, Qiuwoky, QLink, QMobile, Qnet Mobile, QTECH, Qtek, Quanta Computer, Quantum, Quatro, Qubo, Quechua, Quest, Quipus, Qumo, Qupi, Qware, QWATT, R-TV, R3Di, Rakuten, Ramos, Raspberry, Ravoz, Raylandz, Razer, RAZZ, RCA Tablets, RCT, Reach, Readboy, Realix, Realme, RED, RED-X, Redbean, Redfox, RedLine, Redway, Reeder, REGAL, RelNAT, Relndoo, Remdun, Renova, RENSO, rephone, Retroid Pocket, Revo, Revomovil, Rhino, Ricoh, Rikomagic, RIM, Ringing Bells, Rinno, Ritmix, Ritzviva, Riviera, Rivo, Rizzen, ROADMAX, Roadrover, Roam Cat, ROCH, Rocket, Rokit, Roku, Rombica, Romsat, Ross&amp;Moor, Rover, Rover Computers, Royole, RoyQueen, RT Project, RTK, RugGear, RuggeTech, Ruggex, Ruio, Runbo, RunGee, Rupa, Ryte, S-Color, S-TELL, S2Tel, Saba, Safaricom, Sagem, Sagemcom, Saiet, SAILF, Salora, Sambox, Samsung, Samtech, Samtron, Sanei, Sankey, Sansui, Santin, SANY, Sanyo, Savio, Sber, SCHAUB LORENZ, Schneider, Schok, SCHONTECH, Scoole, Scosmos, Seatel, SEBBE, Seeken, SEEWO, SEG, Sega, SEHMAX, Selecline, Selenga, Selevision, Selfix, SEMP TCL, Sencor, Sencrom, Sendo, Senkatel, SENNA, Senseit, Senwa, SERVO, Seuic, Sewoo, SFR, SGIN, Shanling, Sharp, Shift Phones, Shivaki, Shtrikh-M, Shuttle, Sico, Siemens, Sigma, Silelis, Silent Circle, Silva Schneider, Simbans, simfer, Simply, SINGER, Singtech, Siragon, Sirin Labs, Siswoo, SK Broadband, SKG, SKK Mobile, Sky, Skyline, SkyStream, Skytech, Skyworth, Smadl, Smailo, Smart, Smart Electronic, Smart Kassel, Smart Tech, Smartab, SmartBook, SMARTEC, Smartex, Smartfren, Smartisan, Smarty, Smooth Mobile, Smotreshka, SMT Telecom, SMUX, SNAMI, SobieTech, Soda, Softbank, Soho Style, Solas, SOLE, SOLO, Solone, Sonim, SONOS, Sony, Sony Ericsson, SOSH, SoulLink, Soundmax, SOWLY, Soyes, Spark NZ, Sparx, SPC, Spectralink, Spectrum, Spice, Spider, SPURT, SQOOL, SSKY, Ssmart, Star-Light, Starlight, Starmobile, Starway, Starwind, STF Mobile, STG Telecom, Stilevs, STK, Stonex, Storex, StrawBerry, StreamSystem, STRONG, Stylo, SUAAT, Subor, Sugar, SULPICE TV, Sumvision, SUNGATE, Sunmax, Sunmi, Sunny, Sunstech, SunVan, Sunvell, SUNWIND, Super General, SuperBOX, Supermax, SuperSonic, SuperTab, SuperTV, Supra, Supraim, Surfans, Surge, Suzuki, Sveon, Swipe, SWISSMOBILITY, Swisstone, Switel, SWOFY, Syco, SYH, Sylvania, Symphony, Syrox, System76, SZ TPS, T-Mobile, T96, TADAAM, TAG Tech, Taiga System, Takara, TALBERG, Talius, Tambo, Tanix, TAUBE, TB Touch, TCL, TCL SCBC, TD Systems, TD Tech, TeachTouch, Techmade, Technicolor, Technika, TechniSat, Technopc, TECHNOSAT, TechnoTrend, TechPad, Techstorm, Techwood, Teclast, Tecno Mobile, TecToy, TEENO, Teknosa, Tele2, Telefunken, Telego, Telenor, Telia, Telit, Telkom, Telly, Telma, TeloSystems, Telpo, Temigereev, TENPLUS, Teracube, Terra, Tesco, Tesla, TETC, Tetratab, teXet, ThL, Thomson, Thuraya, TIANYU, Tibuta, Tigers, Time2, Timovi, TIMvision, Tinai, Tinmo, TiPhone, Tivax, TiVo, TJC, TJD, TOKYO, Tolino, Tone, TOOGO, Tooky, Top House, Top-Tech, TopDevice, TOPDON, Topelotek, Toplux, TOPSHOWS, Topsion, Topway, Torex, TORNADO, Torque, TOSCIDO, Toshiba, Touch Plus, Touchmate, TOX, Transpeed, Trecfone, TrekStor, Trevi, TriaPlay, Tricolor, Trident, Trifone, Trimble, Trio, Tronsmart, True, True Slim, Tsinghua Tongfang, TTEC, TTfone, TTK-TV, TuCEL, TUCSON, Tunisie Telecom, Turbo, Turbo-X, TurboKids, TurboPad, Turkcell, Tuvio, TV+, TVC, TwinMOS, TWM, Twoe, TWZ Corporation, TYD, Tymes, Türk Telekom, Türksat, U-Magic, U.S. Cellular, UD, UE, UGINE, Ugoos, Uhans, Uhappy, Ulefone, Umax, UMIDIGI, Umiio, Unblock Tech, Uniden, Unihertz, Unikalne Smartphones, Unimax, Uniqcell, Uniscope, Unistrong, Unitech, UNITED, United Group, UNIWA, Unnecto, Unnion Technologies, UNNO, Unonu, UnoPhone, Unowhy, UOOGOU, Urovo, UTime, UTOK, UTStarcom, UZ Mobile, V-Gen, V-HOME, V-HOPE, v-mobile, V7, VAIO, VALE, VALEM, VALTECH, VANGUARD, Vankyo, VANWIN, Vargo, VASOUN, Vastking, VAVA, VC, VDVD, Vega, Veidoo, Vekta, Venso, Venstar, Venturer, VEON, Verico, Verizon, Vernee, Verssed, Versus, Vertex, Vertu, Verykool, Vesta, Vestel, VETAS, Vexia, VGO TEL, ViBox, Victurio, VIDA, Videocon, Videoweb, Viendo, ViewSonic, VIIPOO, VIKUSHA, VILLAON, VIMOQ, Vinabox, Vinga, Vinsoc, Vios, Viper, Vipro, Virzo, Vision Technology, Vision Touch, Visitech, Visual Land, Vitelcom, Vitumi, Vityaz, Viumee, Vivax, VIVIBright, VIVIMAGE, Vivo, VIWA, Vizio, Vizmo, VK Mobile, VKworld, VNPT Technology, VOCAL, Vodacom, Vodafone, VOGA, VOIX, VOLIA, VOLKANO, Volla, Volt, Vonino, Vontar, Vorago, Vorcom, Vorke, Vormor, Vortex, VORTEX (RO), Voto, VOX Electronics, Voxtel, Voyo, Vsmart, Vsun, VUCATIMES, Vue Micro, Vulcan, VVETIME, Völfen, W&amp;O, WAF, Wainyok, waipu.tv, Walker, Waltham, Walton, Waltter, WANSA, WE, We. by Loewe., Web TV, Webfleet, WeChip, Wecool, Weelikeit, Weiimi, Weimei, WellcoM, WELLINGTON, Western Digital, Weston, Westpoint, Wexler, White Mobile, Whoop, Wieppo, Wigor, Wiko, WildRed, Wileyfox, Winds, Wink, Winmax, Winnovo, Winstar, Wintouch, Wiseasy, WIWA, WizarPos, Wizz, Wolder, Wolfgang, Wolki, WONDER, Wonu, Woo, Woxter, WOZIFAN, WS, X-AGE, X-BO, X-Mobile, X-TIGI, X-View, X.Vision, X88, X96, X96Q, XB, Xcell, XCOM, Xcruiser, XElectron, XGEM, XGIMI, Xgody, Xiaodu, Xiaolajiao, Xiaomi, Xion, Xolo, Xoro, XPPen, XREAL, Xshitou, Xsmart, Xtouch, Xtratech, Xwave, XY Auto, Yandex, Yarvik, YASIN, YELLYOUTH, YEPEN, Yes, Yestel, Yezz, YIKEMI, Yoka TV, Yooz, Yota, YOTOPT, Youin, Youwei, Ytone, Yu, YU Fly, Yuandao, YUHO, YUMKEM, YUNDOO, Yuno, YunSong, Yusun, Yxtel, Z-Kai, Zaith, ZALA, Zamolxe, Zatec, Zealot, Zeblaze, Zebra, Zeeker, Zeemi, Zen, Zenek, Zentality, Zfiner, ZH&amp;K, Zhongyu Display, Zidoo, ZIFFLER, ZIFRO, Zigo, ZIK, Zimmer, Zinox, ZIOVO, Ziox, Zonda, Zonko, Zoom, ZoomSmart, Zopo, ZTE, Zuum, Zync, ZYQ, Zyrex, ZZB, öwn</p>
+<h2 id="bots">Bots</h2>
+<p><strong>795 bots supported</strong></p>
+<p>1001FirmsBot, 2GDPR, 2ip, 360 Monitoring, 360JK, Abonti, Aboundexbot, AccompanyBot, Acoon, AdAuth, Adbeat, AddSearchBot, AddThis.com, ADMantX, ADmantX Service Fetcher, Adsbot, Adscanner, AdsTxtCrawler, adstxtlab.com, Aegis, aHrefs Bot, AhrefsSiteAudit, Ai2Bot, Ai2Bot-DeepResearchEval, Ai2Bot-Dolma, aiHitBot, Alexa Crawler, Alexa Site Audit, AliyunSecBot, Allloadin Favicon Bot, AlltheWeb, AlphaXCrawl, Amazon AdBot, Amazon ELB, Amazon Kendra, Amazon Route53 Health Check, Amazonbot, Amazonbot-Video, AmazonBuyForMe, Amorank Spider, Amzn-SearchBot, Amzn-User, Analytics SEO Crawler, Andibot, Ant, Anthropic AI, Apache, ApacheBench, Applebot, Applebot-Extended, AppSignalBot, Arachni, archive.org bot, ArchiveBot, ArchiveBox, Arquivo.pt, ARSNova Filter System, Asana, Ask Jeeves, AspiegelBot, Assetnote, Automattic Analytics, Awario, Awario, Backlink-Check.de, BacklinkCrawler, BacklinksExtendedBot, BackupLand, Baidu Spider, Bard-AI, Barkrowler, Barracuda Sentinel, BazQux Reader, BBC Forge URL Monitor, BBC Page Monitor, BDCbot, BDFetch, Better Uptime Bot, Big Sur AI, BingBot, Birdcrawlerbot, BitlyBot, BitSight, Blackboard Ally, Blackbox Exporter, Blekkobot, BLEXBot Crawler, Bloglines, Bloglovin, Blogtrottr, Bluesky, BoardReader, BoardReader Blog Indexer, Botify, Bountii Bot, BrandVerity, Bravebot, BrightBot, BrightEdge, Browsershots, BUbiNG, Buck, BuiltWith, Butterfly Robot, Bytespider, CareerBot, Castopod, Castro 2, Catchpoint, CATExplorador, ccBot crawler, CensysInspect, Character-AI, Charlotte, Chartable, ChatGLM-Spider, ChatGPT-Browser, ChatGPT-User, Chatwork LinkPreview, CheckHost, CheckMark Network, Choosito, Chrome Privacy Preserving Prefetch Proxy, Cincraw, CISPA Web Analyzer, CLASSLA-web, Claude-SearchBot, Claude-User, Claude-Web, ClaudeBot, Clickagy, Cliqzbot, CloudFlare Always Online, CloudFlare AMP Fetcher, Cloudflare Custom Hostname Verification, Cloudflare Diagnostics, Cloudflare Health Checks, Cloudflare Observatory, Cloudflare Security Insights, Cloudflare Smart Transit, Cloudflare SSL Detector, Cloudflare Traffic Manager, CloudServerMarketSpider, CMS Experiment, Cocolyzebot, Cohere AI, Cohere-Command, cohere-training-data-crawler, Collectd, colly, CommaFeed, COMODO DCV, Comscore, ContentKing, Convertify, Cookiebot, CopyvioDetector, Cortex Xpanse, Cotoyogi, Crawldad, Crawlson, Crawlspace, Crawly Project, CriteoBot, CrowdTangle, CrystalSemanticsBot, CSS Certificate Spider, CSSCheck, CybaaAgent, CybaaBot, CyberFind Crawler, Cyberscan, Cypex, Cốc Cốc Bot, DaspeedBot, Datadog Agent, DataForSeoBot, datagnionbot, Datanyze, Dataprovider, DataXu, Daum, Dazoobot, Deep SEARCH 9, Deepfield Genome, deepnoc, DeepseekBot, DepSpid, Detectify, Devin, Diffbot, Discobot, Discord Bot, Disqus, Domain Codex, Domain Re-Animator Bot, Domain Research Project, DomainAppender, DomainCrawler, Domains Project, DomainStatsBot, DomCop Bot, DotBot, Dotcom Monitor, Doximity-Diffbot, Dubbotbot, DuckAssistBot, DuckDuckBot, ducks.party, DuplexWeb-Google, DVbot, DynatraceSynthetic, Easou Spider, eCairn-Grabber, EFF Do Not Track Verifier, Elastic Synthetics, EMail Exractor, EmailWolf, Embedly, Entfer, evc-batch, Everyfeed, ExaBot, ExactSeek Crawler, Example3, Exchange check, EyeMonit, Eyeotabot, eZ Publish Link Validator, Ezgif, Ezooms, Facebook Crawler, FacebookBot, Faveeo, FediList, Feed Wrangler, Feedbin, FeedBurner, Feedly, Feedspot, Femtosearch, Fever, FHMS ITS Research Scanner, FindFiles.net, Findxbot, FirecrawlAgent, Flipboard, FontRadar, ForwardQR, fragFINN, FreeWebMonitoring, FreshRSS, Friendica, Functionize, Gaisbot, GDNP, GeedoBot, GeedoProductSearch, Gemini-AI, Gemini-Deep-Research, Genieo Web filter, Ghost Inspector, Gigablast, Gigabot, Github Camo, GitHubCopilotChat, Gluten Free Crawler, Gmail Image Proxy, Gobuster, Golfe, Goo, Google Apps Script, Google Area 120 Privacy Policy Fetcher, Google Cloud Scheduler, Google Docs, Google Favicon, Google PageSpeed Insights, Google Partner Monitoring, Google Search Console, Google Sheets, Google Slides, Google Stackdriver Monitoring, Google StoreBot, Google Structured Data Testing Tool, Google Transparency Report, Google-CloudVertexBot, Google-Document-Conversion, Google-Extended, Google-Firebase, Google-ilp, Google-NotebookLM, Google-Pinpoint, Google-Safety, GoogleAgent-Mariner, GoogleAgent-Search, Googlebot, Googlebot, Googlebot News, Gowikibot, Gozle, GPTBot, Grafana, Grammarly, Grapeshot, Gregarius, Groq-Bot, GTmetrix, GumGum Verity, hackermention, HaloBot, Hatena Bookmark, Hatena Favicon, Headline, HeartRails Capture, Heexybot, Heritrix, Heureka Feed, htmlyse, HTTPMon, httpx, HuaweiWebCatBot, HubPages, HubSpot, HubSpotContentSearchBot, HuggingFace-Bot, HypeStat, IAS Crawler, IAS Wombles, iAskBot, IbouBot, ICC-Crawler, IDG, Iframely, IIS Site Analysis, ImageSift, img2dataset, Inetdex Bot, Infegy, InfoTigerBot, Inktomi Slurp, inoreader, Inspici, InsytfulBot, Intelligence X, Interactsh, InternetMeasurement, IONOS Crawler, IP-Guide Crawler, IPIP, IPS Agent, IsItWP, iTMS, JobboerseBot, JungleKeyThumbnail, K6, KadoBot, Kagibot, Kaspersky, KeybaseBot, KeyCDN Tools, KeyCDN Tools, Keys.so, Kiwi TCMS GitOps, KlarnaBot, KomodiaBot, Konturbot, Kouio, Kozmonavt, KStandBot, l9explore, l9tcpid, LAC IA Harvester, Larbin web crawler, LastMod Bot, LCC, leak.info, LeakIX, Let's Encrypt Validation, LetSearch, Lighthouse, LightspeedSystemsCrawler, LinerBot, Linespider, LinkBloom, Linkdex Bot, LinkedIn Bot, LinkpadBot, LinkPreview, LinkWalker, LiveJournal, LTX71, Lumar, LumeWebScan, LumtelBot, Lycos, MaCoCu, MADBbot, Magpie-Crawler, MagpieRSS, Mail.Ru Bot, MakeMerryBot, Manus-User, Marginalia, MariaDB/MySQL Knowledge Base, masscan, masscan-ng, Mastodon Bot, Matomo, Meanpath Bot, Mediatoolkit Bot, Mediumbot, MegaIndex, MeltwaterNews, Meta-ExternalAds, Meta-ExternalAgent, Meta-ExternalFetcher, Meta-WebIndexer, MetaInspector, MetaJobBot, MicroAdBot, Microsoft Power Automate, Microsoft Preview, Miniature.io, MistralAI-User, Mixnode, MixRank Bot, MJ12 Bot, Mnogosearch, ModatScanner, MojeekBot, Monitor Backlinks, Monitor.Us, Monsidobot, Montastic Monitor, MoodleBot Linkchecker, Morningscore Bot, MTRobot, MuckRack, Munin, MuscatFerret, Nagios check_http, najdu.s.holubem.eu, NalezenCzBot, NameProtectBot, nbertaupete95, Neevabot, Netcraft Survey Bot, netEstate, NetLyzer FastProbe, Netpeak Checker, NetResearchServer, NetSystemsResearch, NetTrack, Netvibes, NETZZAPPEN, NewsBlur, NewsGator, Newslitbot, NiceCrawler, Nimbostratus Bot, NLCrawler, Nmap, NodePing, Notify Ninja, NovaAct, Nutch-based Bot, Nuzzel, OAI-SearchBot, oBot, Observer, Octopus, Odin, Odnoklassniki Bot, Oh Dear, Omgilibot, OmtrBot, Onalytica, OnlineOrNot Bot, OpenGraph.io, Openindex Spider, OpenLinkProfiler, OpenRobotsTXT, OpenWebSpider, Orange Bot, OSZKbot, Outbrain, Overcast Podcast Sync, OWLer, Page Modified Pinger, Pageburst, PagePeeker, PageThing, Pandalytics, PanguBot, Panscient, PaperLiBot, Paqlebot, parse.ly, PATHspider, PayPal IPN, PDR Labs, Peer39, Perplexity-User, PerplexityBot, Petal Bot, Phantomas, PHP Server Monitor, phpMyAdmin, Picsearch bot, Pigafetta, PingAdmin.Ru, Pingdom Bot, Pinterest, PiplBot, Plesk Screenshot Service, Plukkie, Pocket, Podroll Analyzer, PodUptime, Poggio-Citations, Pompos, Prerender, PritTorrent, Probely, Project Patchwatch, Project Resonance, Prometheus, ProRata, PRTG Network Monitor, Punk Map, QualifiedBot, Quantcast, QuerySeekerSpider, Quora Bot, Quora Link Preview, Qwantbot, Rainmeter, RamblerMail Image Proxy, RavenCrawler, RecordedFuture, Reddit Bot, RedekenBot, RenovateBot, Replicate-Bot, Repo Lookout, ReqBin, Research JLU, Research Scan, researchcyber.net, Riddler, RocketMonitorBot, Rogerbot, ROI Hunter, RSiteAuditor, RSSRadio Bot, RunPod-Bot, RuxitSynthetic, Ryowl, SabsimBot, SafeDNSBot, Sandoba//Crawler, SBIder, SBIntuitionsBot, Scamadviser External Hit, Scooter, Scraping Robot, Scrapy, Screaming Frog SEO Spider, ScreenerBot, Sectigo DCV, security.txt scanserver, SecurityHeaders, Seekport, Sellers.Guide, semaltbot, Semantic Scholar Bot, Semrush Reputation Management, SemrushBot, Sensika Bot, Sentry Bot, Senuto, Seobility, SEOENGBot, SEOkicks, SeolytBot, Seoscanners.net, SERankingBacklinksBot, Serendeputy Bot, Serenety, serpstatbot, Server Density, Seznam Bot, Seznam Email Proxy, Seznam Zbozi.cz, sfFeedReader, ShapBot, ShopAlike, Shopify Partner, ShopWiki, Sider, SilverReader, Simbiat Software, SimplePie, Sirdata, SISTRIX Crawler, SISTRIX Optimizer, Site24x7 Defacement Monitor, Site24x7 Website Monitoring, SiteAuditBot, Sitebulb, SiteCheckerBotCrawler, Siteimprove, SitemapParser-VIPnytt, SiteOne Crawler, SiteScore, SiteSucker, Sixy.ch, Skype URI Preview, Slackbot, SMTBot, Snap URL Preview Service, Snapchat Ads, Snapchat Proxy, SnoopSecInspect, Sogou Spider, Soso Spider, Sparkler, Spawning AI, Speedy, SpiderLing, Spinn3r, SplitSignalBot, Spotify, Sprinklr, Sputnik Bot, Sputnik Favicon Bot, Sputnik Image Bot, sqalix, SSL Labs, start.me, Startpagina Linkchecker, Statista, StatOnline.ru, StatusCake, StatusNestBacklinkSpider, Steam Chat URL Lookup, Steve Bot, Stract, Sublinq, Substack Content Fetch, SuggestBot, Superfeedr Bot, SurdotlyBot, Survey Bot, svEye, Swiftbot, Swisscows Favicons, Synapse, t3versions, Taboolabot, TactiScout, Tag Inspector, Tarmot Gezgin, tchelebi, TelegramBot, Tenable.asm, TerraCotta, TestCrawler, The British Library Legal Deposit Bot, The Trade Desk Content, theoldreader, ThousandEyes, TigerBot, TikTokSpider, Timpibot, TinEye, TinEye Crawler, Tiny Tiny RSS, TLSProbe, Together-Bot, TraceMyFile, Trendiction Bot, Trendsmap, TurnitinBot, TweetedTimes Bot, Tweetmeme Bot, Twingly Recon, Twitterbot, Twurly, UCSB Network Measurement, UGAResearchAgent, UkrNet Mail Proxy, uMBot, UniversalFeedParser, Uptime-Kuma, Uptimebot, UptimeRobot, Uptimia, URLAppendBot, URLinspector, URLSuMaBot, Vagabondo, ValidBot, Valimail, Velen Public Web Crawler, Vercel Bot, VertexWP, VeryHip, Viber Url Downloader, VirusTotal Cloud, Visual Site Mapper Crawler, VK Robot, VK Share Button, VORTEX, VU Server Health Scanner, vuhuvBot, W3C CSS Validator, W3C I18N Checker, W3C Link Checker, W3C Markup Validation Service, W3C MobileOK Checker, W3C P3P Validator, W3C Unified Validator, WanscannerBot, Wappalyzer, WARDBot, WDG HTML Validator, WebbCrawler, WebCEO, WebDataStats, Webliobot, WebMon, WebMoney Advisor, Weborama, WebPageTest, WebPros, Website-info, WebSitePulse, WebThumbnail, webtru, Webwiki, webzio, webzio-extended, WellKnownBot, WeSEE:Search, WeViKaBot, WhatCMS, WhatsMyIP.org, WhereGoes, Who.is Bot, Wibybot, WikiDo, Willow Internet Crawler, WireReaderBot, WooRank, WooRank, WordPress, WordPress.com mShots, Workona, Wotbox, wp.com feedbot, WPMU DEV, xAI-Bot, XenForo, XoviBot, xtate, YaCy, Yahoo Gemini, Yahoo! Cache System, Yahoo! Japan, Yahoo! Link Preview, Yahoo! Mail Proxy, Yahoo! Slurp, YaK, YandexAdditionalBot, YandexBot-MirrorDetector, Yeti/Naverbot, YioopBot, yoozBot, Yottaa Site Monitor, YouBot, Youdao Bot, Yourls, Yunyun Bot, Zaldamo, ZanistaBot, Zao, Ze List, Zeno, zgrab, Zookabot, ZoomBot, ZoominfoBot, Zotero Translation Server, ZumBot</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../benchmarks/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Benchmarks">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Benchmarks
+              </div>
+            </div>
+          </a>
+        
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://github.com/nandor23/UaDetector" target="_blank" rel="noopener" title="View on GitHub" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://www.nuget.org/packages/UaDetector" target="_blank" rel="noopener" title="Install from NuGet" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M1.998.342a1.997 1.997 0 1 0 0 3.995 1.997 1.997 0 0 0 0-3.995m9.18 4.34a6.156 6.156 0 0 0-6.153 6.155v6.667c0 3.4 2.756 6.154 6.154 6.154h6.667c3.4 0 6.154-2.755 6.154-6.154v-6.667a6.154 6.154 0 0 0-6.154-6.155zm-1.477 2.8a2.496 2.496 0 1 1 0 4.993 2.496 2.496 0 0 1 0-4.993m7.968 6.16a3.996 3.996 0 1 1-.002 7.992 3.996 3.996 0 0 1 .002-7.992"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.top", "navigation.footer", "navigation.tabs.sticky", "search.suggest", "search.highlight", "search.share", "toc.follow", "content.code.copy"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
