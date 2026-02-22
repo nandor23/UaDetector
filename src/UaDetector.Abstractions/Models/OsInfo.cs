@@ -17,6 +17,7 @@ public sealed class OsInfo
             new[]
             {
                 $"{nameof(Name)}: {Name}",
+                $"{nameof(Code)}: {Code}",
                 string.IsNullOrEmpty(Version) ? null : $"{nameof(Version)}: {Version}",
                 string.IsNullOrEmpty(CpuArchitecture)
                     ? null

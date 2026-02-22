@@ -1,8 +1,8 @@
 using UaDetector.Abstractions.Enums;
 
-namespace UaDetector.Abstractions.Models;
+namespace UaDetector.Models;
 
-public sealed class DeviceInfoInternal
+internal sealed class DeviceInfoInternal
 {
     public DeviceType? Type { get; init; }
     public string? Brand { get; init; }

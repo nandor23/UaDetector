@@ -17,6 +17,7 @@ public sealed class BrowserInfo
             new[]
             {
                 $"{nameof(Name)}: {Name}",
+                $"{nameof(Code)}: {Code}",
                 string.IsNullOrEmpty(Version) ? null : $"{nameof(Version)}: {Version}",
                 string.IsNullOrEmpty(Family) ? null : $"{nameof(Family)}: {Family}",
                 Engine is null ? null : $"{nameof(Engine)}: {Engine}",
