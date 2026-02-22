@@ -1,8 +1,8 @@
-using UaDetector.Abstractions.Models;
+using UaDetector.Models;
 
 namespace UaDetector.Tests.Fixtures.Models;
 
-public class DeviceFixture
+internal class DeviceFixture
 {
     public required string UserAgent { get; init; }
 
