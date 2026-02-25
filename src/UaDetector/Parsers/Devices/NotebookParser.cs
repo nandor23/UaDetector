@@ -1,6 +1,5 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Text.RegularExpressions;
-using UaDetector.Abstractions.Models;
 using UaDetector.Attributes;
 using UaDetector.Models;
 using UaDetector.Utilities;
