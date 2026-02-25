@@ -1,9 +1,3 @@
-## Requirements
-
-- **.NET 9 SDK** or newer for compilation. Projects can target earlier .NET versions.
-- **Visual Studio 2022** (version 17.12 or later)
-- **JetBrains Rider** (version 2024.3 or later)
-
 ## Installation & Setup
 
 Add the *UaDetector* package (from NuGet) to the project.
