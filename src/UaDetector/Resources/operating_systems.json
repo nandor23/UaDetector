@@ -1538,7 +1538,7 @@
     "name": "iOS",
     "versions": [
       {
-        "regex": "Darwin/25\\.([0-3])\\.0",
+        "regex": "Darwin/25\\.([0-4])\\.0",
         "version": "26.$1"
       },
       {
@@ -1857,7 +1857,7 @@
     "name": "Mac",
     "versions": [
       {
-        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?25\\.([0-3])\\.0",
+        "regex": "(?:x86_64-apple-)?Darwin(?:/|; )?25\\.([0-4])\\.0",
         "version": "26.$1"
       },
       {
