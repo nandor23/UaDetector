@@ -714,4 +714,5 @@ public enum BrowserCode
     ClarioBrowser = 709,
     Comet = 710,
     FireSendBrowser = 711,
+    VivaldiMobileIos = 712,
 }

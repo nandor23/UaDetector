@@ -714,4 +714,5 @@ public static class BrowserNames
     public const string ClarioBrowser = "Clario Browser";
     public const string Comet = "Comet";
     public const string FireSendBrowser = "FireSend Browser";
+    public const string VivaldiMobileIos = "Vivaldi Mobile iOS";
 }

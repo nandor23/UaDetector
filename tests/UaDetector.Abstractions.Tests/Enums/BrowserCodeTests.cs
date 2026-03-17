@@ -733,6 +733,7 @@ public class BrowserCodeTests
             { BrowserCode.ClarioBrowser, 709 },
             { BrowserCode.Comet, 710 },
             { BrowserCode.FireSendBrowser, 711 },
+            { BrowserCode.VivaldiMobileIos, 712 },
         };
 
         expectedValues.Count.ShouldBe(Enum.GetValues<BrowserCode>().Length);
