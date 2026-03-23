@@ -2769,6 +2769,14 @@
     }
   },
   {
+    "regex": "VivaiOS/(\\d+[.\\d]+)",
+    "name": "Vivaldi Mobile iOS",
+    "version": "$1",
+    "engine": {
+      "default": "WebKit"
+    }
+  },
+  {
     "regex": "TweakStyle(?:/(\\d+[.\\d]+))?",
     "name": "TweakStyle",
     "version": "$1",

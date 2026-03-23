@@ -400,6 +400,7 @@ public sealed partial class BrowserParser : IBrowserParser
                     BrowserCode.ClarioBrowser,
                     BrowserCode.Comet,
                     BrowserCode.FireSendBrowser,
+                    BrowserCode.VivaldiMobileIos,
                 }.ToFrozenSet()
             },
             {
