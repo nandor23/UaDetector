@@ -17,7 +17,7 @@ public class UaDetectorController : ControllerBase
     [Route("detect")]
     public IActionResult GetUserAgentInfo()
     {
-        var userAgent = HttpContext.Request.Headers.UserAgent.ToString();
+        var userAgent = Request.Headers.UserAgent.ToString();
         var headers = Request.Headers.ToDictionary(
             h => h.Key,
             h => h.Value.ToArray().FirstOrDefault()
