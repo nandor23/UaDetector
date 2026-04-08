@@ -158,18 +158,24 @@ Static registry classes offer bidirectional lookups for converting between enum 
 The `BrowserRegistry`, `OsRegistry`, and `BrandRegistry` classes provide type-safe access to predefined values.
 
 ```c#
-// Get browser name from enum code
-string browserName = BrowserRegistry.GetBrowserName(BrowserCode.Safari);
-// Returns: "Safari"
-
-// Try to get browser code from name (case-insensitive)
-if (BrowserRegistry.TryGetBrowserCode("Safari", out var browserCode))
+// Look up a browser name by its code
+if (BrowserRegistry.TryGetBrowserName(BrowserCode.Safari, out var browserName))
 {
-    Console.WriteLine($"Browser Code: {browserCode}"); // Output: Browser Code: Safari
+    Console.WriteLine($"Browser Name: {browserName}");
 }
 else
 {
-    Console.WriteLine("Browser not found");
+    Console.WriteLine("Browser name not found");
+}
+
+// Look up a browser code by its name
+if (BrowserRegistry.TryGetBrowserCode("Safari", out var browserCode))
+{
+    Console.WriteLine($"Browser Code: {browserCode}");
+}
+else
+{
+    Console.WriteLine("Browser code not found");
 }
 ```
 
