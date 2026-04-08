@@ -30,8 +30,14 @@ void SampleBrowserRegistry()
 {
     Console.WriteLine("=== Browser Registry Sample ===");
 
-    string browserName = BrowserRegistry.GetBrowserName(BrowserCode.Safari);
-    Console.WriteLine($"Browser Name: {browserName}");
+    if (BrowserRegistry.TryGetBrowserName(BrowserCode.Safari, out var browserName))
+    {
+        Console.WriteLine($"Browser Name: {browserName}");
+    }
+    else
+    {
+        Console.WriteLine("Browser name not found");
+    }
 
     if (BrowserRegistry.TryGetBrowserCode("Safari", out var browserCode))
     {
@@ -39,7 +45,7 @@ void SampleBrowserRegistry()
     }
     else
     {
-        Console.WriteLine("Browser not found");
+        Console.WriteLine("Browser code not found");
     }
 
     Console.WriteLine();

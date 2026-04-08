@@ -7,9 +7,9 @@ namespace UaDetector.Registries;
 
 public static class OsRegistry
 {
-    public static string GetOsName(OsCode osCode)
+    public static bool TryGetOsName(OsCode osCode, [NotNullWhen(true)] out string? result)
     {
-        return OsCodeMappings[osCode];
+        return OsCodeMappings.TryGetValue(osCode, out result);
     }
 
     public static bool TryGetOsCode(string osName, [NotNullWhen(true)] out OsCode? result)

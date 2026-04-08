@@ -29,14 +29,18 @@ public class BrandRegistryTests
     }
 
     [Test]
-    [Arguments(BrandCode.Apple, BrandNames.Apple)]
-    [Arguments(BrandCode.Cloudpad, BrandNames.Cloudpad)]
-    public void GetBrandName_ShouldReturnExpectedValue_ForValidBrandCode(
+    [Arguments(BrandCode.Apple, BrandNames.Apple, true)]
+    [Arguments(BrandCode.Cloudpad, BrandNames.Cloudpad, true)]
+    [Arguments((BrandCode)Int32.MaxValue, null, false)]
+    public void TryGetBrandName_ShouldReturnExpectedValue(
         BrandCode brandCode,
-        string expectedBrandName
+        string? expectedBrandName,
+        bool expectedSuccess
     )
     {
-        var actualBrandName = BrandRegistry.GetBrandName(brandCode);
+        var success = BrandRegistry.TryGetBrandName(brandCode, out var actualBrandName);
+
+        success.ShouldBe(expectedSuccess);
         actualBrandName.ShouldBe(expectedBrandName);
     }
 
@@ -44,7 +48,7 @@ public class BrandRegistryTests
     [Arguments(BrandNames.Apple, BrandCode.Apple, true)]
     [Arguments(BrandNames.Cloudpad, BrandCode.Cloudpad, true)]
     [Arguments("", null, false)]
-    public void TryGetBrandCode_WithValidAndInvalidNames_ReturnsExpectedResults(
+    public void TryGetBrandCode_ShouldReturnExpectedValue(
         string brandName,
         BrandCode? expectedBrandCode,
         bool expectedSuccess

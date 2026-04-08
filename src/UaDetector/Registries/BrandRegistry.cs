@@ -7,25 +7,18 @@ namespace UaDetector.Registries;
 
 public static class BrandRegistry
 {
-    public static string GetBrandName(BrandCode brandCode)
+    public static bool TryGetBrandName(BrandCode brandCode, [NotNullWhen(true)] out string? result)
     {
-        if (BrandCodeMappings.TryGetValue(brandCode, out var brandName))
-        {
-            return brandName;
-        }
-
-        return LegacyBrandCodeMappings[brandCode];
+        return BrandCodeMappings.TryGetValue(brandCode, out result)
+            || LegacyBrandCodeMappings.TryGetValue(brandCode, out result);
     }
 
     public static bool TryGetBrandCode(string brandName, [NotNullWhen(true)] out BrandCode? result)
     {
-        if (BrandNameMappings.TryGetValue(brandName, out var brandCode))
-        {
-            result = brandCode;
-            return true;
-        }
-
-        if (LegacyBrandNameMappings.TryGetValue(brandName, out brandCode))
+        if (
+            BrandNameMappings.TryGetValue(brandName, out var brandCode)
+            || LegacyBrandNameMappings.TryGetValue(brandName, out brandCode)
+        )
         {
             result = brandCode;
             return true;

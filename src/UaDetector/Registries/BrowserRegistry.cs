@@ -7,9 +7,12 @@ namespace UaDetector.Registries;
 
 public static class BrowserRegistry
 {
-    public static string GetBrowserName(BrowserCode browserCode)
+    public static bool TryGetBrowserName(
+        BrowserCode browserCode,
+        [NotNullWhen(true)] out string? result
+    )
     {
-        return BrowserCodeMappings[browserCode];
+        return BrowserCodeMappings.TryGetValue(browserCode, out result);
     }
 
     public static bool TryGetBrowserCode(
@@ -742,7 +745,7 @@ public static class BrowserRegistry
             { BrowserCode.ClarioBrowser, BrowserNames.ClarioBrowser },
             { BrowserCode.Comet, BrowserNames.Comet },
             { BrowserCode.FireSendBrowser, BrowserNames.FireSendBrowser },
-            { BrowserCode.VivaldiMobileIos, BrowserNames.VivaldiMobileIos }
+            { BrowserCode.VivaldiMobileIos, BrowserNames.VivaldiMobileIos },
         }.ToFrozenDictionary();
 
     internal static readonly FrozenDictionary<string, BrowserCode> BrowserNameMappings =

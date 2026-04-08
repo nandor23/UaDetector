@@ -25,15 +25,26 @@ public class OsRegistryTests
     }
 
     [Test]
-    public void GetOsName_ShouldReturnExpectedValue_ForValidOsCode()
+    [Arguments(OsCode.Mac, OsNames.Mac, true)]
+    [Arguments(OsCode.Fedora, OsNames.Fedora, true)]
+    [Arguments((OsCode)Int32.MaxValue, null, false)]
+    public void TryGetOsName_ShouldReturnExpectedValue(
+        OsCode osCode,
+        string? expectedName,
+        bool expectedSuccess
+    )
     {
-        OsRegistry.GetOsName(OsCode.Fedora).ShouldBe(OsNames.Fedora);
+        var success = OsRegistry.TryGetOsName(osCode, out var actualOsName);
+
+        success.ShouldBe(expectedSuccess);
+        actualOsName.ShouldBe(expectedName);
     }
 
     [Test]
     [Arguments(OsNames.Mac, OsCode.Mac, true)]
+    [Arguments(OsNames.Fedora, OsCode.Fedora, true)]
     [Arguments("", null, false)]
-    public void TryGetOsCode_WithValidAndInvalidNames_ReturnsExpectedResults(
+    public void TryGetOsCode_ShouldReturnExpectedValue(
         string osName,
         OsCode? expectedOsCode,
         bool expectedSuccess
