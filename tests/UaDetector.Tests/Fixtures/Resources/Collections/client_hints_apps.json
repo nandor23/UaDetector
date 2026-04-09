@@ -6,20 +6,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Telegram"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Pixel 3",
       "brand": {
         "name": "Google",
-        "code": 655
+        "code": 656
       }
     }
   },
@@ -30,21 +30,21 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "10",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Snapchat",
       "version": "11.59.0.35"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Redmi 9A",
       "brand": {
         "name": "Xiaomi",
-        "code": 1973
+        "code": 1974
       }
     }
   },
@@ -55,20 +55,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "10",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Sanista Persian Instagram"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Galaxy A6+",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -79,20 +79,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "10",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "InstaPro"
     },
     "device": {
-      "type": 10,
+      "type": 11,
       "model": "Redmi Note 7",
       "brand": {
         "name": "Xiaomi",
-        "code": 1973
+        "code": 1974
       }
     }
   },
@@ -103,22 +103,22 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "9",
       "cpuArchitecture": "ARM",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "WeChat",
       "version": "8.0.15.2001"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Galaxy S9+",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -129,20 +129,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "KakaoTalk"
     },
     "device": {
-      "type": 10,
+      "type": 11,
       "model": "Galaxy Z Fold 3 5G",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -153,20 +153,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "9",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Orbot"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Galaxy J6",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -177,20 +177,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "10",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Ayoba"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "P smart (2021)",
       "brand": {
         "name": "Huawei",
-        "code": 757
+        "code": 758
       }
     }
   },
@@ -201,20 +201,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "SnapU2B"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Galaxy A21s",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -225,21 +225,21 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "10",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Facebook",
       "version": "357.0.0.23.115"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Galaxy A10",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -250,21 +250,21 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Facebook Messenger",
       "version": "349.0.0.7.108"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Galaxy A52",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -275,20 +275,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "7.1.1",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Yahoo OneSearch"
     },
     "device": {
-      "type": 2,
+      "type": 3,
       "model": "Galaxy Tab A 9.7\" WiFi",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -299,21 +299,21 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "12",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Yahoo! Japan",
       "version": "3.114.0"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Pixel 4a (5G)",
       "brand": {
         "name": "Google",
-        "code": 655
+        "code": 656
       }
     }
   },
@@ -324,20 +324,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "VPN Monster"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Galaxy A70",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -348,20 +348,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "7.0",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Blue Proxy"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Galaxy J7 Prime",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -372,20 +372,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "10",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "KYMS - Keep Your Media Safe"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "P30 Pro",
       "brand": {
         "name": "Huawei",
-        "code": 757
+        "code": 758
       }
     }
   },
@@ -396,20 +396,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "9",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "FVD - Free Video Downloader"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Mi A1",
       "brand": {
         "name": "Xiaomi",
-        "code": 1973
+        "code": 1974
       }
     }
   },
@@ -420,21 +420,21 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "10",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Kik",
       "version": "15.41.0.25917"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "P30 Pro",
       "brand": {
         "name": "Huawei",
-        "code": 757
+        "code": 758
       }
     }
   },
@@ -445,20 +445,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Tinder"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Galaxy A30s",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -469,20 +469,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "LivU"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Galaxy A12",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -493,17 +493,17 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "10",
       "cpuArchitecture": "x86",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "MetaMask"
     },
     "device": {
-      "type": 1
+      "type": 2
     }
   },
   {
@@ -513,20 +513,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "TotalAV"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Galaxy A32 5G",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -537,20 +537,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Elisa Turvapaketti"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "6T",
       "brand": {
         "name": "OnePlus",
-        "code": 1259
+        "code": 1260
       }
     }
   },
@@ -561,20 +561,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Ziggo Safe Online"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "F2 Pro",
       "brand": {
         "name": "POCO",
-        "code": 1356
+        "code": 1357
       }
     }
   },
@@ -585,20 +585,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "6.0.1",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "AOL"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Galaxy J7 Sky Pro",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -609,20 +609,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "12",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Fancy Security"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Galaxy S10+",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -633,20 +633,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "10",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Google Play"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Moto E7i Power",
       "brand": {
         "name": "Motorola",
-        "code": 1120
+        "code": 1121
       }
     }
   },
@@ -657,20 +657,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "10",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "KeepClean"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "P30 Lite",
       "brand": {
         "name": "Huawei",
-        "code": 757
+        "code": 758
       }
     }
   },
@@ -681,20 +681,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "10",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "V2Free"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "P30 Lite",
       "brand": {
         "name": "Huawei",
-        "code": 757
+        "code": 758
       }
     }
   },
@@ -705,21 +705,21 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Surfshark",
       "version": "2.7.7.5"
     },
     "device": {
-      "type": 2,
+      "type": 3,
       "model": "Galaxy Tab A 8.0\" (2019) WiFi",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -730,20 +730,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "8.0",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "TurTc"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Pixel 2",
       "brand": {
         "name": "Google",
-        "code": 655
+        "code": 656
       }
     }
   },
@@ -754,20 +754,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "12",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "News Suite by Sony"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Galaxy S21 FE 5G",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -778,20 +778,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "9",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Tumile"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Galaxy S8",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -802,20 +802,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "8.0.0",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "SmartNews"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Galaxy S7",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -826,20 +826,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "8.0.0",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "SHAREit"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Galaxy A7 (2018)",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -850,20 +850,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "9",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "ESPN"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Galaxy S8",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -874,20 +874,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "6.0",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Active Cleaner"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Y5 (2017)",
       "brand": {
         "name": "Huawei",
-        "code": 757
+        "code": 758
       }
     }
   },
@@ -898,20 +898,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "10",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Calculator Photo Vault"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Galaxy S9+",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -922,20 +922,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "10",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Calculator Hide Photos"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Redmi 9A",
       "brand": {
         "name": "Xiaomi",
-        "code": 1973
+        "code": 1974
       }
     }
   },
@@ -946,20 +946,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Sgallery"
     },
     "device": {
-      "type": 10,
+      "type": 11,
       "model": "Note 11 Pro",
       "brand": {
         "name": "Infinix",
-        "code": 813
+        "code": 814
       }
     }
   },
@@ -970,20 +970,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "10",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "AppGallery"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "P40 Lite",
       "brand": {
         "name": "Huawei",
-        "code": 757
+        "code": 758
       }
     }
   },
@@ -994,20 +994,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "10",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "MiChat"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "A15",
       "brand": {
         "name": "OPPO",
-        "code": 1273
+        "code": 1274
       }
     }
   },
@@ -1018,20 +1018,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "MiChat Lite"
     },
     "device": {
-      "type": 10,
+      "type": 11,
       "model": "Redmi Note 9 Pro",
       "brand": {
         "name": "Xiaomi",
-        "code": 1973
+        "code": 1974
       }
     }
   },
@@ -1042,20 +1042,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Nox Security"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Moto G Play (2021)",
       "brand": {
         "name": "Motorola",
-        "code": 1120
+        "code": 1121
       }
     }
   },
@@ -1066,20 +1066,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "12",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Super Cleaner"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Galaxy S22 Ultra",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -1090,21 +1090,21 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Hago",
       "version": "4.14.1"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Galaxy A32 5G",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -1115,21 +1115,21 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Instagram",
       "version": "222.0.0.15.114"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Galaxy A32",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -1140,20 +1140,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Microsoft Outlook"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Galaxy A30s",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -1164,21 +1164,21 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "9",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Microsoft Bing",
       "version": "22.2.400225301"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Galaxy J2 Core",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -1189,21 +1189,21 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "10",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Microsoft Bing",
       "version": "21.9.400310302"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "P40 Lite E NFC",
       "brand": {
         "name": "Huawei",
-        "code": 757
+        "code": 758
       }
     }
   },
@@ -1214,21 +1214,21 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Naver",
       "version": "11.10.5"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Galaxy A10e",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -1239,20 +1239,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "GO Security"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "A3",
       "brand": {
         "name": "TCL",
-        "code": 1667
+        "code": 1668
       }
     }
   },
@@ -1263,20 +1263,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "12",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "F-Secure SAFE"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "X20",
       "brand": {
         "name": "Nokia",
-        "code": 1219
+        "code": 1220
       }
     }
   },
@@ -1287,20 +1287,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "8.1.0",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Jaumo"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Y91i",
       "brand": {
         "name": "Vivo",
-        "code": 1864
+        "code": 1865
       }
     }
   },
@@ -1311,20 +1311,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "6.0.1",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "SKOUT"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Y53i",
       "brand": {
         "name": "Vivo",
-        "code": 1864
+        "code": 1865
       }
     }
   },
@@ -1335,20 +1335,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "9",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Hornet"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "F7",
       "brand": {
         "name": "OPPO",
-        "code": 1273
+        "code": 1274
       }
     }
   },
@@ -1359,20 +1359,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "9",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Jaumo Prime"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "V17 Pro",
       "brand": {
         "name": "Vivo",
-        "code": 1864
+        "code": 1865
       }
     }
   },
@@ -1383,13 +1383,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "cpuArchitecture": "x64",
       "family": "Android"
     },
     "browser": {
       "name": "iDesktop PC Browser",
-      "code": 270,
+      "code": 271,
       "family": "Chrome",
       "engine": {
         "name": "Blink",
@@ -1397,7 +1397,7 @@
       }
     },
     "device": {
-      "type": 2
+      "type": 3
     }
   },
   {
@@ -1407,20 +1407,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "10",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Darty Sécurité"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "P20",
       "brand": {
         "name": "Huawei",
-        "code": 757
+        "code": 758
       }
     }
   },
@@ -1431,20 +1431,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "12",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "F-Secure Mobile Security"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Galaxy A52s 5G",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -1455,20 +1455,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "12",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Swisscom Internet Security"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Galaxy S10",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -1479,20 +1479,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "9",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Reddit is fun"
     },
     "device": {
-      "type": 10,
+      "type": 11,
       "model": "Redmi Note 8 Pro",
       "brand": {
         "name": "Xiaomi",
-        "code": 1973
+        "code": 1974
       }
     }
   },
@@ -1503,20 +1503,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "8.0.0",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Reddit is fun"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Galaxy S7",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -1527,20 +1527,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "10",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "RedReader"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Galaxy A7 (2018)",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -1551,21 +1551,21 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "6.0",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Sina Weibo",
       "version": "9.4.3"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Maimang 5",
       "brand": {
         "name": "Huawei",
-        "code": 757
+        "code": 758
       }
     }
   },
@@ -1576,20 +1576,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "12",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Wiseplay"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Galaxy S10",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -1600,20 +1600,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "12",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Always Safe Security 24"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Pixel 5",
       "brand": {
         "name": "Google",
-        "code": 655
+        "code": 656
       }
     }
   },
@@ -1624,20 +1624,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Zee Business"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Galaxy A21s",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -1648,20 +1648,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "9",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "iSafePlay"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Torque G04",
       "brand": {
         "name": "Kyocera",
-        "code": 949
+        "code": 950
       }
     }
   },
@@ -1672,21 +1672,21 @@
     },
     "os": {
       "name": "HarmonyOS",
-      "code": 58,
+      "code": 59,
       "version": "2.2.0",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Baidu Box App",
       "version": "12.25.0.10"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "P20 Pro",
       "brand": {
         "name": "Huawei",
-        "code": 757
+        "code": 758
       }
     }
   },
@@ -1697,20 +1697,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "9",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "T2S"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Galaxy A50",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -1721,20 +1721,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Photo Sherlock"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Redmi 9",
       "brand": {
         "name": "Xiaomi",
-        "code": 1973
+        "code": 1974
       }
     }
   },
@@ -1745,20 +1745,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "12",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Reverse Image Search"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Galaxy A32 5G",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -1769,20 +1769,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "7.0",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Joy Launcher"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "5",
       "brand": {
         "name": "Alcatel",
-        "code": 48
+        "code": 49
       }
     }
   },
@@ -1793,20 +1793,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "5.1.1",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "TCL Live"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "One Touch Pop 3 5.5\"",
       "brand": {
         "name": "Alcatel",
-        "code": 48
+        "code": 49
       }
     }
   },
@@ -1817,20 +1817,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Social Media Explorer"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Moto G Stylus",
       "brand": {
         "name": "Motorola",
-        "code": 1120
+        "code": 1121
       }
     }
   },
@@ -1841,21 +1841,21 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "12",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Reddit",
       "version": "2022.28.0"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Mi 11T Pro",
       "brand": {
         "name": "Xiaomi",
-        "code": 1973
+        "code": 1974
       }
     }
   },
@@ -1866,20 +1866,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "12",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Omshy VPN"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Reno 6",
       "brand": {
         "name": "OPPO",
-        "code": 1273
+        "code": 1274
       }
     }
   },
@@ -1890,20 +1890,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "8.1.0",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Opera News"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Spark Youth",
       "brand": {
         "name": "Tecno Mobile",
-        "code": 1684
+        "code": 1685
       }
     }
   },
@@ -1914,20 +1914,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Search By Image"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Moto G20",
       "brand": {
         "name": "Motorola",
-        "code": 1120
+        "code": 1121
       }
     }
   },
@@ -1938,20 +1938,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "ShareKaro"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "A91",
       "brand": {
         "name": "OPPO",
-        "code": 1273
+        "code": 1274
       }
     }
   },
@@ -1962,20 +1962,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "10",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "NewsPoint"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "A5 (2020)",
       "brand": {
         "name": "OPPO",
-        "code": 1273
+        "code": 1274
       }
     }
   },
@@ -1986,20 +1986,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "XOS Launcher"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Hot 10i",
       "brand": {
         "name": "Infinix",
-        "code": 813
+        "code": 814
       }
     }
   },
@@ -2010,20 +2010,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "9",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "HiOS Launcher"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Pouvoir 3 Air",
       "brand": {
         "name": "Tecno Mobile",
-        "code": 1684
+        "code": 1685
       }
     }
   },
@@ -2034,20 +2034,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "10",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "itel Launcher"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "A26",
       "brand": {
         "name": "iTel",
-        "code": 853
+        "code": 854
       }
     }
   },
@@ -2058,20 +2058,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "6.0.1",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Twitter"
     },
     "device": {
-      "type": 10,
+      "type": 11,
       "model": "Galaxy Grand Prime Plus",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -2082,20 +2082,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "5.1.1",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Waze"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Galaxy J3 (2016)",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -2106,21 +2106,21 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "12",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Tuya Smart Life",
       "version": "3.38.1"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Galaxy S21 5G",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -2131,20 +2131,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "5.1.1",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Clean Master"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "4060A",
       "brand": {
         "name": "Alcatel",
-        "code": 48
+        "code": 49
       }
     }
   },
@@ -2155,20 +2155,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "10",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Clean Master"
     },
     "device": {
-      "type": 2,
+      "type": 3,
       "model": "MediaPad M6 10.8\"",
       "brand": {
         "name": "Huawei",
-        "code": 757
+        "code": 758
       }
     }
   },
@@ -2179,20 +2179,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "12",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "TV Cast"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Galaxy A13",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -2203,20 +2203,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "9",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "TV Cast"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Galaxy S8",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -2227,20 +2227,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "10",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "TV Cast"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Redmi 8A",
       "brand": {
         "name": "Xiaomi",
-        "code": 1973
+        "code": 1974
       }
     }
   },
@@ -2251,20 +2251,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "10",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "TV Cast"
     },
     "device": {
-      "type": 2,
+      "type": 3,
       "model": "Galaxy Tab S4 10.5\"",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -2275,20 +2275,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "CM Security"
     },
     "device": {
-      "type": 10,
+      "type": 11,
       "model": "Redmi Note 10S",
       "brand": {
         "name": "Xiaomi",
-        "code": 1973
+        "code": 1974
       }
     }
   },
@@ -2299,20 +2299,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.3",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "IDM Video Download Manager"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Nexus 4",
       "brand": {
         "name": "Google",
-        "code": 655
+        "code": 656
       }
     }
   },
@@ -2323,20 +2323,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "12",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Coupons & Deals"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Galaxy A32 5G",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -2347,16 +2347,16 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "7.0",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Quick Cast"
     },
     "device": {
-      "type": 1
+      "type": 2
     }
   },
   {
@@ -2366,16 +2366,16 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "8.1",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Download Manager"
     },
     "device": {
-      "type": 1
+      "type": 2
     }
   },
   {
@@ -2385,20 +2385,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "12",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "KPN Veilig"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Galaxy A32 5G",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -2409,20 +2409,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "ACT Shield"
     },
     "device": {
-      "type": 10,
+      "type": 11,
       "model": "Redmi Note 8",
       "brand": {
         "name": "Xiaomi",
-        "code": 1973
+        "code": 1974
       }
     }
   },
@@ -2433,20 +2433,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "12",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "TalkTalk SuperSafe"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Galaxy A12",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -2457,20 +2457,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "13",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Bifrost Wallet"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Galaxy A71",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -2481,20 +2481,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "12",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "AnyDesk Remote Desktop"
     },
     "device": {
-      "type": 2,
+      "type": 3,
       "model": "Tab M10 Plus (Gen 3)",
       "brand": {
         "name": "Lenovo",
-        "code": 976
+        "code": 977
       }
     }
   },
@@ -2505,20 +2505,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "9",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "KUTO VPN"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Y6 (2019)",
       "brand": {
         "name": "Huawei",
-        "code": 757
+        "code": 758
       }
     }
   },
@@ -2529,20 +2529,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "13",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "YouTube"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Galaxy S21 Ultra 5G",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -2553,20 +2553,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "13",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "BlueWallet"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Galaxy A33 5G",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -2577,20 +2577,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "10",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Google Go"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Moto E7i Power",
       "brand": {
         "name": "Motorola",
-        "code": 1120
+        "code": 1121
       }
     }
   },
@@ -2601,20 +2601,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "12",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "SnapTube"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Galaxy A11",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -2625,20 +2625,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "10",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Messenger Home"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Galaxy S9",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -2649,20 +2649,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "13",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Email Home"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Galaxy A03s",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -2673,20 +2673,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "13",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Weather Home"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Galaxy S23",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -2697,20 +2697,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "13",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Big Keyboard"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Galaxy A53 5G",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -2721,20 +2721,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "9",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Messenger Lite"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Galaxy A8 (2018)",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -2745,20 +2745,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Fit Home"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Galaxy A32 5G",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -2769,20 +2769,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "13",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "News Home"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Galaxy S22",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -2793,20 +2793,20 @@
     },
     "os": {
       "name": "Fire OS",
-      "code": 42,
+      "code": 43,
       "version": "7",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Google Search App"
     },
     "device": {
-      "type": 2,
+      "type": 3,
       "model": "Fire HD 10 (2019)",
       "brand": {
         "name": "Amazon",
-        "code": 72
+        "code": 73
       }
     }
   },
@@ -2817,20 +2817,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "10",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Huawei Quick App Center"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Honor 7X",
       "brand": {
         "name": "Huawei",
-        "code": 757
+        "code": 758
       }
     }
   },
@@ -2841,20 +2841,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "HideX"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Redmi 9A",
       "brand": {
         "name": "Xiaomi",
-        "code": 1973
+        "code": 1974
       }
     }
   },
@@ -2865,20 +2865,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "10",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Sweep"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Redmi 9A",
       "brand": {
         "name": "Xiaomi",
-        "code": 1973
+        "code": 1974
       }
     }
   },
@@ -2889,20 +2889,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "6.0",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Google Maps"
     },
     "device": {
-      "type": 2,
+      "type": 3,
       "model": "MediaPad T3 7",
       "brand": {
         "name": "Huawei",
-        "code": 757
+        "code": 758
       }
     }
   },
@@ -2913,20 +2913,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "10",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "BOX Video Downloader"
     },
     "device": {
-      "type": 2,
+      "type": 3,
       "model": "Galaxy Tab S6 10.5\"",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -2937,20 +2937,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "12",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Kinogo.ge"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Redmi 9T",
       "brand": {
         "name": "Xiaomi",
-        "code": 1973
+        "code": 1974
       }
     }
   },
@@ -2961,20 +2961,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Download Hub"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Pixel 5",
       "brand": {
         "name": "Google",
-        "code": 655
+        "code": 656
       }
     }
   },
@@ -2985,20 +2985,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "14",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "DNA Digiturva"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Galaxy A53 5G",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -3009,20 +3009,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "10",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Telia Trygg"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "P smart Z",
       "brand": {
         "name": "Huawei",
-        "code": 757
+        "code": 758
       }
     }
   },
@@ -3033,20 +3033,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "5.0",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "UPC Internet Security"
     },
     "device": {
-      "type": 10,
+      "type": 11,
       "model": "Galaxy Note 3",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -3057,20 +3057,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "12",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "SFR Sécurité"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Galaxy S10+",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -3081,20 +3081,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Telia Turvapaketti"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Galaxy A20e",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -3105,21 +3105,21 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "10",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Daum",
       "version": "6.9.27"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Galaxy S9+",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -3130,20 +3130,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.4",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "EZVPN"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Nexus 4",
       "brand": {
         "name": "Google",
-        "code": 655
+        "code": 656
       }
     }
   },
@@ -3154,20 +3154,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "10",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "NoCard VPN"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "1V (2020)",
       "brand": {
         "name": "Alcatel",
-        "code": 48
+        "code": 49
       }
     }
   },
@@ -3178,20 +3178,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "10",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "NoCard VPN Lite"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "1V (2020)",
       "brand": {
         "name": "Alcatel",
-        "code": 48
+        "code": 49
       }
     }
   },
@@ -3201,7 +3201,7 @@
       "http-x-requested-with": "com.massimple.nacion.parana.es"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "+Simple"
     }
   },
@@ -3211,7 +3211,7 @@
       "http-x-requested-with": "com.massimple.nacion.gcba.es"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "+Simple"
     }
   },
@@ -3222,20 +3222,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "10",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "CM Security"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Galaxy S9+",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -3246,20 +3246,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Microsoft Math Solver"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Nova 9 SE",
       "brand": {
         "name": "Huawei",
-        "code": 757
+        "code": 758
       }
     }
   },
@@ -3270,21 +3270,21 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Instabridge",
       "version": "21.9.0"
     },
     "device": {
-      "type": 10,
+      "type": 11,
       "model": "Blade V2020 Smart",
       "brand": {
         "name": "ZTE",
-        "code": 2039
+        "code": 2040
       }
     }
   },
@@ -3295,20 +3295,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Whatplay"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Mi 9",
       "brand": {
         "name": "Xiaomi",
-        "code": 1973
+        "code": 1974
       }
     }
   },
@@ -3319,21 +3319,21 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "12",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "SearchCraft",
       "version": "2.6.1"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Mate 50",
       "brand": {
         "name": "Huawei",
-        "code": 757
+        "code": 758
       }
     }
   },
@@ -3344,20 +3344,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "10",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Petal Search"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Mate 20",
       "brand": {
         "name": "Huawei",
-        "code": 757
+        "code": 758
       }
     }
   },
@@ -3368,20 +3368,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "10",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "PLAYit"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Redmi 8A Dual",
       "brand": {
         "name": "Xiaomi",
-        "code": 1973
+        "code": 1974
       }
     }
   },
@@ -3392,20 +3392,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11.0",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "X Launcher"
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "TV Box",
       "brand": {
         "name": "Orange",
-        "code": 1277
+        "code": 1278
       }
     }
   },
@@ -3416,20 +3416,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "12",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Moya"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Galaxy A03 Core",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -3440,20 +3440,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "14",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Microsoft Copilot"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Pixel 6",
       "brand": {
         "name": "Google",
-        "code": 655
+        "code": 656
       }
     }
   },
@@ -3464,21 +3464,21 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "9",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "nate",
       "version": "5.6.2"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Galaxy S8",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -3489,20 +3489,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "10",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Tracker Connect"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Galaxy J1 Mini",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -3513,20 +3513,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "12",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Cici"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "X6",
       "brand": {
         "name": "Honor",
-        "code": 2095
+        "code": 2096
       }
     }
   },
@@ -3537,20 +3537,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "360 Security"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Galaxy A50",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -3561,20 +3561,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "XShare"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Hot 10 Play",
       "brand": {
         "name": "Infinix",
-        "code": 813
+        "code": 814
       }
     }
   },
@@ -3585,21 +3585,21 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "12",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Visha",
       "version": "4.1.1.1501"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Hot 20i",
       "brand": {
         "name": "Infinix",
-        "code": 813
+        "code": 814
       }
     }
   },
@@ -3610,20 +3610,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "10",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Photo Search"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Mi 10T Pro 5G",
       "brand": {
         "name": "Xiaomi",
-        "code": 1973
+        "code": 1974
       }
     }
   },
@@ -3634,20 +3634,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "14",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Sticky Password"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Galaxy S23 Ultra",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -3658,21 +3658,21 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "13",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "The Crossword",
       "version": "5.5.0"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Galaxy A13 5G",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -3684,12 +3684,12 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "cpuArchitecture": "x64",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Castify"
     }
   },
@@ -3700,20 +3700,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "12",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Castify"
     },
     "device": {
-      "type": 2,
+      "type": 3,
       "model": "Galaxy Tab A7 10.4\" (2022) WiFi",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -3727,11 +3727,11 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Mojeek"
     }
   },
@@ -3742,16 +3742,16 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "14",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Telegram"
     },
     "device": {
-      "type": 1
+      "type": 2
     }
   },
   {
@@ -3761,16 +3761,16 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "14",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Aka Messenger"
     },
     "device": {
-      "type": 1
+      "type": 2
     }
   },
   {
@@ -3780,16 +3780,16 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "14",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Aka Messenger Lite"
     },
     "device": {
-      "type": 1
+      "type": 2
     }
   },
   {
@@ -3799,16 +3799,16 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "10",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Bestgram"
     },
     "device": {
-      "type": 1
+      "type": 2
     }
   },
   {
@@ -3818,16 +3818,16 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "14",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Graph Messenger"
     },
     "device": {
-      "type": 1
+      "type": 2
     }
   },
   {
@@ -3837,21 +3837,21 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "14",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Kimi",
       "version": "2.4.3"
     },
     "device": {
-      "type": 10,
+      "type": 11,
       "model": "Redmi Note 12 Pro",
       "brand": {
         "name": "Xiaomi",
-        "code": 1973
+        "code": 1974
       }
     }
   },
@@ -3862,20 +3862,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "15",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Genspark"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Galaxy S23 Ultra",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -3886,20 +3886,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "14",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Canopy"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Galaxy S24",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -3910,21 +3910,21 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "14",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Lookr",
       "version": "2.1.7"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "A669W",
       "brand": {
         "name": "iTel",
-        "code": 853
+        "code": 854
       }
     }
   },
@@ -3935,20 +3935,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "14",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Ma Protection"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Galaxy S24 Ultra",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -3959,20 +3959,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "15",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "VIS+"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Galaxy S24",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -3983,20 +3983,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "14",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Viber"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Galaxy A55 5G",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -4007,21 +4007,21 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "14",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Keplr",
       "version": "2.0.90"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Galaxy S21 5G",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -4032,20 +4032,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "13",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "DeepSeek"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Moto G Stylus 5G",
       "brand": {
         "name": "Motorola",
-        "code": 1120
+        "code": 1121
       }
     }
   },
@@ -4056,16 +4056,16 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "14",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Plus Messenger"
     },
     "device": {
-      "type": 1
+      "type": 2
     }
   },
   {
@@ -4075,20 +4075,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "TeraBox"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Spark 7",
       "brand": {
         "name": "Tecno Mobile",
-        "code": 1684
+        "code": 1685
       }
     }
   },
@@ -4099,20 +4099,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "8.0.0",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Vault"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Galaxy S7 Edge",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -4123,21 +4123,21 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Line",
       "version": "12.21.1"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Galaxy A21",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -4148,20 +4148,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "10",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "WEB.DE Mail"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "P30 Lite",
       "brand": {
         "name": "Huawei",
-        "code": 757
+        "code": 758
       }
     }
   },
@@ -4172,20 +4172,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "13",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "GMX Mail"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Galaxy A14 5G",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -4196,21 +4196,21 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "14",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Baidu Box App Lite",
       "version": "6.43.0.11"
     },
     "device": {
-      "type": 10,
+      "type": 11,
       "model": "Redmi Note 12",
       "brand": {
         "name": "Xiaomi",
-        "code": 1973
+        "code": 1974
       }
     }
   },
@@ -4221,20 +4221,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "14",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Samsung Email"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Galaxy A53 5G",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -4245,20 +4245,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "15",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "MSN"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "12",
       "brand": {
         "name": "OnePlus",
-        "code": 1259
+        "code": 1260
       }
     }
   },
@@ -4269,20 +4269,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "12",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "App Lock"
     },
     "device": {
-      "type": 2,
+      "type": 3,
       "model": "X2",
       "brand": {
         "name": "Yestel",
-        "code": 1991
+        "code": 1992
       }
     }
   },
@@ -4293,20 +4293,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "14",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Netflix"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Redmi A3x",
       "brand": {
         "name": "Xiaomi",
-        "code": 1973
+        "code": 1974
       }
     }
   },
@@ -4317,20 +4317,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "14",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "readly App"
     },
     "device": {
-      "type": 2,
+      "type": 3,
       "model": "Pad 6",
       "brand": {
         "name": "Xiaomi",
-        "code": 1973
+        "code": 1974
       }
     }
   },
@@ -4341,20 +4341,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "13",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Libero Mail"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Galaxy A52s 5G",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -4365,20 +4365,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "12",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "GBox Helper"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Mi 10 Pro",
       "brand": {
         "name": "Xiaomi",
-        "code": 1973
+        "code": 1974
       }
     }
   },
@@ -4389,20 +4389,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "13",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Telekom Mail"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "A74",
       "brand": {
         "name": "OPPO",
-        "code": 1273
+        "code": 1274
       }
     }
   },
@@ -4415,20 +4415,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "15",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Dogtorance"
     },
     "device": {
-      "type": 10,
+      "type": 11,
       "model": "Redmi Note 14 Pro 5G",
       "brand": {
         "name": "Xiaomi",
-        "code": 1973
+        "code": 1974
       }
     }
   },
@@ -4441,12 +4441,12 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "10",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Startpage"
     }
   },
@@ -4459,12 +4459,12 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "10",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Startpage"
     }
   },
@@ -4477,20 +4477,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "15",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Honor Search"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "90",
       "brand": {
         "name": "Honor",
-        "code": 2095
+        "code": 2096
       }
     }
   },
@@ -4501,20 +4501,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "10",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "HUAWEI AI Search"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "P40 Lite",
       "brand": {
         "name": "Huawei",
-        "code": 757
+        "code": 758
       }
     }
   },
@@ -4527,16 +4527,16 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "10",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "emporiaAPP"
     },
     "device": {
-      "type": 1
+      "type": 2
     }
   },
   {
@@ -4548,16 +4548,16 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "12",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Launcher3"
     },
     "device": {
-      "type": 2
+      "type": 3
     }
   },
   {
@@ -4569,20 +4569,20 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "7.1.1",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Rocks Player"
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "3T",
       "brand": {
         "name": "OnePlus",
-        "code": 1259
+        "code": 1260
       }
     }
   }

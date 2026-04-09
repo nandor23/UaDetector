@@ -2,7 +2,7 @@
   {
     "brand": "BMW",
     "regex": "AFTLBT962E2(?:[);/ ]|$)",
-    "type": 6,
+    "type": 7,
     "modelVariants": [
       {
         "regex": "AFTLBT962E2(?:[);/ ]|$)",
@@ -13,7 +13,7 @@
   {
     "brand": "Jeep",
     "regex": "AFTLFT962X3(?:[);/ ]|$)",
-    "type": 6,
+    "type": 7,
     "modelVariants": [
       {
         "regex": "AFTLFT962X3(?:[);/ ]|$)",
@@ -24,7 +24,7 @@
   {
     "brand": "Tesla",
     "regex": "(?:Tesla/(?:(?:develop|feature|terminal-das-fsd-eap)-)?[0-9.]+|QtCarBrowser)",
-    "type": 6,
+    "type": 7,
     "modelVariants": [
       {
         "regex": "QtCarBrowser",
@@ -38,7 +38,7 @@
   {
     "brand": "MAC AUDIO",
     "regex": "Mac Audio Spro",
-    "type": 6,
+    "type": 7,
     "modelVariants": [
       {
         "regex": "Spro",
@@ -49,7 +49,7 @@
   {
     "brand": "Topway",
     "regex": "sp9853i_1h10_vmm",
-    "type": 6,
+    "type": 7,
     "modelVariants": [
       {
         "regex": "sp9853i_1h10_vmm",

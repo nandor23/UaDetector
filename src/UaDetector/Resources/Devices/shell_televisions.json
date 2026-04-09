@@ -2,116 +2,116 @@
   {
     "brand": "Telefunken",
     "regex": "Telefunken Shell",
-    "type": 5
+    "type": 6
   },
   {
     "brand": "JVC",
     "regex": "JVC Shell",
-    "type": 5
+    "type": 6
   },
   {
     "brand": "Leff",
     "regex": "Leff Shell",
-    "type": 5
+    "type": 6
   },
   {
     "brand": "Leben",
     "regex": "Leben Shell",
-    "type": 5
+    "type": 6
   },
   {
     "brand": "Lumus",
     "regex": "LUMUS Shell",
-    "type": 5
+    "type": 6
   },
   {
     "brand": "Erisson",
     "regex": "Erisson[_ ]Shell",
-    "type": 5
+    "type": 6
   },
   {
     "brand": "BBK",
     "regex": "BBK shell",
-    "type": 5
+    "type": 6
   },
   {
     "brand": "Novex",
     "regex": "Novex shell",
-    "type": 5
+    "type": 6
   },
   {
     "brand": "Digma",
     "regex": "Digma Shell",
-    "type": 5
+    "type": 6
   },
   {
     "brand": "AMCV",
     "regex": "AMCV Shell",
-    "type": 5
+    "type": 6
   },
   {
     "brand": "Mystery",
     "regex": "Mystery Shell",
-    "type": 5
+    "type": 6
   },
   {
     "brand": "ECON",
     "regex": "ECON Shell",
-    "type": 5
+    "type": 6
   },
   {
     "brand": "Starwind",
     "regex": "Starwind Shell",
-    "type": 5
+    "type": 6
   },
   {
     "brand": "Kvant",
     "regex": "Kvant Shell",
-    "type": 5
+    "type": 6
   },
   {
     "brand": "Hi",
     "regex": "Hi Shell",
-    "type": 5
+    "type": 6
   },
   {
     "brand": "AKIRA",
     "regex": "AKIRA Shell",
-    "type": 5
+    "type": 6
   },
   {
     "brand": "Loview",
     "regex": "Loview Shell",
-    "type": 5
+    "type": 6
   },
   {
     "brand": "Supra",
     "regex": "Supra Shell",
-    "type": 5
+    "type": 6
   },
   {
     "brand": "Yuno",
     "regex": "Yuno Shell",
-    "type": 5
+    "type": 6
   },
   {
     "brand": "TCL",
     "regex": "TCL/TCL-",
-    "type": 5
+    "type": 6
   },
   {
     "brand": "RCA Tablets",
     "regex": "TCL/RCA-",
-    "type": 5
+    "type": 6
   },
   {
     "brand": "Thomson",
     "regex": "TCL/THOM-",
-    "type": 5
+    "type": 6
   },
   {
     "brand": "DEXP",
     "regex": "DEXP Shell",
-    "type": 5
+    "type": 6
   }
 ]

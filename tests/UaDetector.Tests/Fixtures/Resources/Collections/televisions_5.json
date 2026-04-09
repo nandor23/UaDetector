@@ -3,13 +3,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; 43LF7202T Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.120 YaBrowser/24.12.0.453 (lite) Safari/537.36 TV",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "24.12.0.453",
       "engine": {
         "name": "Blink",
@@ -17,11 +17,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "43LF7202T 43.0\"",
       "brand": {
         "name": "Asano",
-        "code": 111
+        "code": 112
       }
     }
   },
@@ -29,13 +29,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; 43F690TS Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/24.12.0.453 (lite) TV Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "24.12.0.453",
       "engine": {
         "name": "Blink",
@@ -43,11 +43,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "43F690TS",
       "brand": {
         "name": "Harper",
-        "code": 693
+        "code": 694
       }
     }
   },
@@ -55,13 +55,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; 43F541T Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/24.1.2.279 (lite) TV Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "24.1.2.279",
       "engine": {
         "name": "Blink",
@@ -69,11 +69,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "43F541T",
       "brand": {
         "name": "Leff",
-        "code": 970
+        "code": 971
       }
     }
   },
@@ -81,13 +81,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; 43FSQ2020T2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.90 Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome",
-      "code": 137,
+      "code": 138,
       "version": "73.0.3683.90",
       "family": "Chrome",
       "engine": {
@@ -96,11 +96,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "43FSQ2020T2",
       "brand": {
         "name": "Romsat",
-        "code": 1466
+        "code": 1467
       }
     }
   },
@@ -108,13 +108,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; 43FLES905T2SM Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/24.12.0.453 (lite) TV Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "24.12.0.453",
       "engine": {
         "name": "Blink",
@@ -122,11 +122,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "43FLES905T2SM",
       "brand": {
         "name": "Erisson",
-        "code": 496
+        "code": 497
       }
     }
   },
@@ -134,13 +134,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; 43FLES900T2SM Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.120 YaBrowser/24.1.2.250 (lite) Safari/537.36 TV",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "24.1.2.250",
       "engine": {
         "name": "Blink",
@@ -148,11 +148,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "43FLES900T2SM",
       "brand": {
         "name": "Erisson",
-        "code": 496
+        "code": 497
       }
     }
   },
@@ -160,13 +160,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; 43F01 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/24.12.0.453 (lite) TV Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "24.12.0.453",
       "engine": {
         "name": "Blink",
@@ -174,11 +174,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "HTV-43F01-T2C",
       "brand": {
         "name": "Hartens",
-        "code": 694
+        "code": 695
       }
     }
   },
@@ -186,13 +186,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; 40LST5975 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/109.0.5414.117 YaBrowser/24.1.2.86 (lite) TV Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "24.1.2.86",
       "engine": {
         "name": "Blink",
@@ -200,11 +200,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "40LST5975",
       "brand": {
         "name": "Skyline",
-        "code": 1556
+        "code": 1557
       }
     }
   },
@@ -212,13 +212,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; 40LF8130S Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/24.12.0.453 (lite) TV Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "24.12.0.453",
       "engine": {
         "name": "Blink",
@@ -226,11 +226,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "40LF8130S 40.0\"",
       "brand": {
         "name": "Asano",
-        "code": 111
+        "code": 112
       }
     }
   },
@@ -238,13 +238,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; 32ST20H Build/RP1A.200720.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.91 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "69.0.3497.91",
       "family": "Chrome",
       "engine": {
@@ -253,11 +253,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "32ST20H",
       "brand": {
         "name": "OLTO",
-        "code": 1256
+        "code": 1257
       }
     }
   },
@@ -265,13 +265,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; 32LH1221 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/24.12.0.453 (lite) TV Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "24.12.0.453",
       "engine": {
         "name": "Blink",
@@ -279,11 +279,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "32LH1221",
       "brand": {
         "name": "Vityaz",
-        "code": 1870
+        "code": 1871
       }
     }
   },
@@ -291,13 +291,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; 24R470TS Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.120 YaBrowser/19.6.0.158 (lite) Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "19.6.0.158",
       "engine": {
         "name": "Blink",
@@ -305,11 +305,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "24R470TS",
       "brand": {
         "name": "Harper",
-        "code": 693
+        "code": 694
       }
     }
   },
@@ -317,13 +317,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; 28H541T Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/24.12.0.438 (lite) TV Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "24.12.0.438",
       "engine": {
         "name": "Blink",
@@ -331,11 +331,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "28H541T",
       "brand": {
         "name": "Leff",
-        "code": 970
+        "code": 971
       }
     }
   },
@@ -343,13 +343,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 7.1.2; McLaut TV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.127 Safari/537.36 OPR/60.3.3004.55692",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "7.1.2",
       "family": "Android"
     },
     "browser": {
       "name": "Opera",
-      "code": 420,
+      "code": 421,
       "version": "60.3.3004.55692",
       "family": "Opera",
       "engine": {
@@ -358,11 +358,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "Smart TV",
       "brand": {
         "name": "McLaut",
-        "code": 1055
+        "code": 1056
       }
     }
   },
@@ -370,14 +370,14 @@
     "userAgent": "Mozilla/5.0 (Linux; arm; Android 11; TVS-SU5007 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/104.0.5112.102 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "cpuArchitecture": "ARM",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Webview",
-      "code": 161,
+      "code": 162,
       "version": "104.0.5112.102",
       "family": "Chrome",
       "engine": {
@@ -386,11 +386,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "TVS-SU5007",
       "brand": {
         "name": "Galatec",
-        "code": 612
+        "code": 613
       }
     }
   },
@@ -398,14 +398,14 @@
     "userAgent": "Mozilla/5.0 (Linux; arm; Android 11; TLE-32SBM) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 YaBrowser/21.3.0.269.01 Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "cpuArchitecture": "ARM",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser",
-      "code": 653,
+      "code": 654,
       "version": "21.3.0.269.01",
       "engine": {
         "name": "Blink",
@@ -413,11 +413,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "TLE-32SBM",
       "brand": {
         "name": "Renova",
-        "code": 1443
+        "code": 1444
       }
     }
   },
@@ -425,14 +425,14 @@
     "userAgent": "Mozilla/5.0 (Linux; arm; Android 11; TQ65UFBHV1 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/104.0.5112.102 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "cpuArchitecture": "ARM",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Webview",
-      "code": 161,
+      "code": 162,
       "version": "104.0.5112.102",
       "family": "Chrome",
       "engine": {
@@ -441,11 +441,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "TQ65UFBHV1",
       "brand": {
         "name": "Tuvio",
-        "code": 1767
+        "code": 1768
       }
     }
   },
@@ -453,14 +453,14 @@
     "userAgent": "Mozilla/5.0 (Linux; arm; Android 11; TDTV65BS06U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 YaApp_Android/23.74.1/apad YaSearchBrowser/23.74.1/apad BroPP/1.0 SA/3 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "cpuArchitecture": "ARM",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser",
-      "code": 653,
+      "code": 654,
       "version": "23.74.1",
       "engine": {
         "name": "Blink",
@@ -468,11 +468,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "TDTV65BS06U",
       "brand": {
         "name": "TopDevice",
-        "code": 1735
+        "code": 1736
       }
     }
   },
@@ -480,14 +480,14 @@
     "userAgent": "Mozilla/5.0 (Linux; arm; Android 11; TD43UFBSV1 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/116.0.5845.275 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "cpuArchitecture": "ARM",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Webview",
-      "code": 161,
+      "code": 162,
       "version": "116.0.5845.275",
       "family": "Chrome",
       "engine": {
@@ -496,11 +496,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "TD43UFBSV1",
       "brand": {
         "name": "Tuvio",
-        "code": 1767
+        "code": 1768
       }
     }
   },
@@ -508,14 +508,14 @@
     "userAgent": "Mozilla/5.0 (Linux; arm; Android 11; TD32HFBHV1 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/104.0.5112.102 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "cpuArchitecture": "ARM",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Webview",
-      "code": 161,
+      "code": 162,
       "version": "104.0.5112.102",
       "family": "Chrome",
       "engine": {
@@ -524,11 +524,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "TD32HFBHV1",
       "brand": {
         "name": "Tuvio",
-        "code": 1767
+        "code": 1768
       }
     }
   },
@@ -536,14 +536,14 @@
     "userAgent": "Mozilla/5.0 (Linux; arm; Android 11; TD24HFBHV1 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/104.0.5112.102 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "cpuArchitecture": "ARM",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Webview",
-      "code": 161,
+      "code": 162,
       "version": "104.0.5112.102",
       "family": "Chrome",
       "engine": {
@@ -552,11 +552,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "TD24HFBHV1",
       "brand": {
         "name": "Tuvio",
-        "code": 1767
+        "code": 1768
       }
     }
   },
@@ -564,14 +564,14 @@
     "userAgent": "Mozilla/5.0 (Linux; arm; Android 11; T43FSM5160 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/104.0.5112.102 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "cpuArchitecture": "ARM",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Webview",
-      "code": 161,
+      "code": 162,
       "version": "104.0.5112.102",
       "family": "Chrome",
       "engine": {
@@ -580,11 +580,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "T43FSM5160",
       "brand": {
         "name": "Thomson",
-        "code": 1709
+        "code": 1710
       }
     }
   },
@@ -592,14 +592,14 @@
     "userAgent": "Mozilla/5.0 (Linux; arm; Android 11; CT-8932 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/104.0.5112.102 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "cpuArchitecture": "ARM",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Webview",
-      "code": 161,
+      "code": 162,
       "version": "104.0.5112.102",
       "family": "Chrome",
       "engine": {
@@ -608,11 +608,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "CT-8932",
       "brand": {
         "name": "CENTEK",
-        "code": 273
+        "code": 274
       }
     }
   },
@@ -620,14 +620,14 @@
     "userAgent": "Mozilla/5.0 (Linux; arm; Android 11; CT-8843 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/104.0.5112.102 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "cpuArchitecture": "ARM",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Webview",
-      "code": 161,
+      "code": 162,
       "version": "104.0.5112.102",
       "family": "Chrome",
       "engine": {
@@ -636,11 +636,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "CT-8843",
       "brand": {
         "name": "CENTEK",
-        "code": 273
+        "code": 274
       }
     }
   },
@@ -648,14 +648,14 @@
     "userAgent": "Mozilla/5.0 (Linux; arm; Android 11; CT-8840 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/104.0.5112.102 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "cpuArchitecture": "ARM",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Webview",
-      "code": 161,
+      "code": 162,
       "version": "104.0.5112.102",
       "family": "Chrome",
       "engine": {
@@ -664,11 +664,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "CT-8840",
       "brand": {
         "name": "CENTEK",
-        "code": 273
+        "code": 274
       }
     }
   },
@@ -676,14 +676,14 @@
     "userAgent": "Mozilla/5.0 (Linux; arm; Android 11; CT-8832 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/104.0.5112.102 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "cpuArchitecture": "ARM",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Webview",
-      "code": 161,
+      "code": 162,
       "version": "104.0.5112.102",
       "family": "Chrome",
       "engine": {
@@ -692,11 +692,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "CT-8832",
       "brand": {
         "name": "CENTEK",
-        "code": 273
+        "code": 274
       }
     }
   },
@@ -704,14 +704,14 @@
     "userAgent": "Mozilla/5.0 (Linux; arm; Android 11; CT-8824 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/104.0.5112.102 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "cpuArchitecture": "ARM",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Webview",
-      "code": 161,
+      "code": 162,
       "version": "104.0.5112.102",
       "family": "Chrome",
       "engine": {
@@ -720,11 +720,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "CT-8824",
       "brand": {
         "name": "CENTEK",
-        "code": 273
+        "code": 274
       }
     }
   },
@@ -732,14 +732,14 @@
     "userAgent": "Mozilla/5.0 (Linux; arm; Android 11; C50USY24F Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/104.0.5112.102 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "cpuArchitecture": "ARM",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Webview",
-      "code": 161,
+      "code": 162,
       "version": "104.0.5112.102",
       "family": "Chrome",
       "engine": {
@@ -748,11 +748,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "C50USY24F",
       "brand": {
         "name": "RAZZ",
-        "code": 1420
+        "code": 1421
       }
     }
   },
@@ -760,14 +760,14 @@
     "userAgent": "Mozilla/5.0 (Linux; arm; Android 11; F32EY1000B Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/104.0.5112.102 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "cpuArchitecture": "ARM",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Webview",
-      "code": 161,
+      "code": 162,
       "version": "104.0.5112.102",
       "family": "Chrome",
       "engine": {
@@ -776,11 +776,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "F32EY1000B",
       "brand": {
         "name": "Accesstyle",
-        "code": 15
+        "code": 16
       }
     }
   },
@@ -788,14 +788,14 @@
     "userAgent": "Mozilla/5.0 (Linux; arm; Android 11; DM-LED65UBB33 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/104.0.5112.102 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "cpuArchitecture": "ARM",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Webview",
-      "code": 161,
+      "code": 162,
       "version": "104.0.5112.102",
       "family": "Chrome",
       "engine": {
@@ -804,11 +804,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "DM-LED65UBB33",
       "brand": {
         "name": "Digma",
-        "code": 390
+        "code": 391
       }
     }
   },
@@ -816,14 +816,14 @@
     "userAgent": "Mozilla/5.0 (Linux; arm; Android 11; DM-LED50UBB33 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/116.0.5845.275 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "cpuArchitecture": "ARM",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Webview",
-      "code": 161,
+      "code": 162,
       "version": "116.0.5845.275",
       "family": "Chrome",
       "engine": {
@@ -832,11 +832,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "DM-LED50UBB33",
       "brand": {
         "name": "Digma",
-        "code": 390
+        "code": 391
       }
     }
   },
@@ -844,14 +844,14 @@
     "userAgent": "Mozilla/5.0 (Linux; arm; Android 11; DM-LED43UBB33 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/116.0.5845.275 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "cpuArchitecture": "ARM",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Webview",
-      "code": 161,
+      "code": 162,
       "version": "116.0.5845.275",
       "family": "Chrome",
       "engine": {
@@ -860,11 +860,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "DM-LED43UBB33",
       "brand": {
         "name": "Digma",
-        "code": 390
+        "code": 391
       }
     }
   },
@@ -872,14 +872,14 @@
     "userAgent": "Mozilla/5.0 (Linux; arm; Android 11; DM-LED43SBB33 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/104.0.5112.102 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "cpuArchitecture": "ARM",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Webview",
-      "code": 161,
+      "code": 162,
       "version": "104.0.5112.102",
       "family": "Chrome",
       "engine": {
@@ -888,11 +888,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "DM-LED43SBB33",
       "brand": {
         "name": "Digma",
-        "code": 390
+        "code": 391
       }
     }
   },
@@ -900,14 +900,14 @@
     "userAgent": "Mozilla/5.0 (Linux; arm; Android 11; DM-LED40SBB33 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/104.0.5112.102 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "cpuArchitecture": "ARM",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Webview",
-      "code": 161,
+      "code": 162,
       "version": "104.0.5112.102",
       "family": "Chrome",
       "engine": {
@@ -916,11 +916,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "DM-LED40SBB33",
       "brand": {
         "name": "Digma",
-        "code": 390
+        "code": 391
       }
     }
   },
@@ -928,14 +928,14 @@
     "userAgent": "Mozilla/5.0 (Linux; arm; Android 11; DM-LED32SBB33 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/104.0.5112.102 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "cpuArchitecture": "ARM",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Webview",
-      "code": 161,
+      "code": 162,
       "version": "104.0.5112.102",
       "family": "Chrome",
       "engine": {
@@ -944,11 +944,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "DM-LED32SBB33",
       "brand": {
         "name": "Digma",
-        "code": 390
+        "code": 391
       }
     }
   },
@@ -956,13 +956,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 14; Mortal T1 Build/QP1A.191105.004; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/80.0.3987.149 YaBrowser/24.12.0.453 (lite) Safari/537.36 TV",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "14",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "24.12.0.453",
       "engine": {
         "name": "Blink",
@@ -970,11 +970,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "T1",
       "brand": {
         "name": "MORTAL",
-        "code": 2049
+        "code": 2050
       }
     }
   },
@@ -982,13 +982,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 12; VGK02 Build/STTC.230104.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/131.0.6778.262 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "12",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Webview",
-      "code": 161,
+      "code": 162,
       "version": "131.0.6778.262",
       "family": "Chrome",
       "engine": {
@@ -997,11 +997,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "DGO Smart Stick",
       "brand": {
         "name": "Skyworth",
-        "code": 1555
+        "code": 1556
       }
     }
   },
@@ -1009,13 +1009,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 12; IP-80 MAX) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "12",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome",
-      "code": 137,
+      "code": 138,
       "version": "72.0.3626.121",
       "family": "Chrome",
       "engine": {
@@ -1024,11 +1024,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "IP-80 Max",
       "brand": {
         "name": "RedLine",
-        "code": 1436
+        "code": 1437
       }
     }
   },
@@ -1036,13 +1036,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 9; EX-40FS001W Build/PPR2.180905.006.A1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/24.12.0.453 (lite) TV Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "9",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "24.12.0.453",
       "engine": {
         "name": "Blink",
@@ -1050,11 +1050,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "EX-40FS001W",
       "brand": {
         "name": "ECON",
-        "code": 455
+        "code": 456
       }
     }
   },
@@ -1062,13 +1062,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 10; RED 90 Build/QP1A.191105.004; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/74.0.3729.186 Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "10",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Webview",
-      "code": 161,
+      "code": 162,
       "version": "74.0.3729.186",
       "family": "Chrome",
       "engine": {
@@ -1077,11 +1077,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "Red 90",
       "brand": {
         "name": "Spider",
-        "code": 2060
+        "code": 2061
       }
     }
   },
@@ -1089,13 +1089,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 10; RED 60 Build/QP1A.191105.004; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/74.0.3729.186 Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "10",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Webview",
-      "code": 161,
+      "code": 162,
       "version": "74.0.3729.186",
       "family": "Chrome",
       "engine": {
@@ -1104,11 +1104,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "Red 60",
       "brand": {
         "name": "Spider",
-        "code": 2060
+        "code": 2061
       }
     }
   },
@@ -1116,13 +1116,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 10; RED 30 Build/QP1A.191105.004; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/74.0.3729.186 Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "10",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Webview",
-      "code": 161,
+      "code": 162,
       "version": "74.0.3729.186",
       "family": "Chrome",
       "engine": {
@@ -1131,11 +1131,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "Red 30",
       "brand": {
         "name": "Spider",
-        "code": 2060
+        "code": 2061
       }
     }
   },
@@ -1143,13 +1143,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 10; RED 10 Build/QP1A.191105.004; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/74.0.3729.186 Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "10",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Webview",
-      "code": 161,
+      "code": 162,
       "version": "74.0.3729.186",
       "family": "Chrome",
       "engine": {
@@ -1158,11 +1158,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "Red 10",
       "brand": {
         "name": "Spider",
-        "code": 2060
+        "code": 2061
       }
     }
   },
@@ -1170,13 +1170,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; Gazal_100MIX Build/RD2A.211001.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.120 Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Webview",
-      "code": 161,
+      "code": 162,
       "version": "83.0.4103.120",
       "family": "Chrome",
       "engine": {
@@ -1185,11 +1185,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "100 Mix",
       "brand": {
         "name": "Gazal",
-        "code": 615
+        "code": 616
       }
     }
   },
@@ -1197,13 +1197,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; Gazal_100 Build/RD2A.211001.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.120 Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Webview",
-      "code": 161,
+      "code": 162,
       "version": "83.0.4103.120",
       "family": "Chrome",
       "engine": {
@@ -1212,11 +1212,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "100",
       "brand": {
         "name": "Gazal",
-        "code": 615
+        "code": 616
       }
     }
   },
@@ -1224,13 +1224,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 7.0; DENKA TV Build/NTG46) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "7.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "67.0.3396.87",
       "family": "Chrome",
       "engine": {
@@ -1239,11 +1239,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "Smart TV",
       "brand": {
         "name": "Denka",
-        "code": 2054
+        "code": 2055
       }
     }
   },
@@ -1251,13 +1251,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; DAWLANCE GSMART 4KTV Build/RTT2.220103.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/132.0.6834.165 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Webview",
-      "code": 161,
+      "code": 162,
       "version": "132.0.6834.165",
       "family": "Chrome",
       "engine": {
@@ -1266,11 +1266,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "4K Smart TV",
       "brand": {
         "name": "Dawlance",
-        "code": 2053
+        "code": 2054
       }
     }
   },
@@ -1278,13 +1278,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 10; SAMBOX_KM_35_PRO Build/QP1A.191105.004; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/80.0.3987.149 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "10",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Webview",
-      "code": 161,
+      "code": 162,
       "version": "80.0.3987.149",
       "family": "Chrome",
       "engine": {
@@ -1293,11 +1293,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "KM35 Pro",
       "brand": {
         "name": "Sambox",
-        "code": 2059
+        "code": 2060
       }
     }
   },
@@ -1305,13 +1305,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 10; KM22 Build/QP1A.191105.004; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/133.0.6943.89 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "10",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Webview",
-      "code": 161,
+      "code": 162,
       "version": "133.0.6943.89",
       "family": "Chrome",
       "engine": {
@@ -1320,11 +1320,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "KM22",
       "brand": {
         "name": "Sambox",
-        "code": 2059
+        "code": 2060
       }
     }
   },
@@ -1332,13 +1332,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; SL-LED58S01T2SU Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.120 YaBrowser/24.12.0.453 (lite) Safari/537.36 TV",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "24.12.0.453",
       "engine": {
         "name": "Blink",
@@ -1346,11 +1346,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "SL-LED58S01T2SU",
       "brand": {
         "name": "Scoole",
-        "code": 1512
+        "code": 1513
       }
     }
   },
@@ -1358,13 +1358,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 13; SL-LED55S02T2SU Build/TP1A.220905.004.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/101.0.4951.61 YaBrowser/23.1.0.39 (lite) Safari/537.36 TV",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "13",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "23.1.0.39",
       "engine": {
         "name": "Blink",
@@ -1372,11 +1372,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "SL-LED55S02T2SU",
       "brand": {
         "name": "Scoole",
-        "code": 1512
+        "code": 1513
       }
     }
   },
@@ -1384,13 +1384,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 13; ONVO_65OV6000U Build/TP1A.220905.004.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/101.0.4951.61 YaBrowser/24.12.0.453 (lite) Safari/537.36 TV",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "13",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "24.12.0.453",
       "engine": {
         "name": "Blink",
@@ -1398,11 +1398,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "65OV6000U",
       "brand": {
         "name": "ONVO",
-        "code": 1268
+        "code": 1269
       }
     }
   },
@@ -1410,13 +1410,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 13; OPENBOX GOLD) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.101 Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "13",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome",
-      "code": 137,
+      "code": 138,
       "version": "75.0.3770.101",
       "family": "Chrome",
       "engine": {
@@ -1425,11 +1425,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "Gold",
       "brand": {
         "name": "Openbox",
-        "code": 1271
+        "code": 1272
       }
     }
   },
@@ -1437,13 +1437,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 13; N50HQ2305SVF Build/TP1A.220905.004.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/101.0.4951.61 YaBrowser/22.8.0.15 (lite) Safari/537.36 TV",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "13",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "22.8.0.15",
       "engine": {
         "name": "Blink",
@@ -1451,11 +1451,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "N50HQ2305SVF",
       "brand": {
         "name": "Nesons",
-        "code": 2058
+        "code": 2059
       }
     }
   },
@@ -1463,13 +1463,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 13; N43HQ2304SVF Build/TP1A.220905.004.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/101.0.4951.61 YaBrowser/22.8.0.15 (lite) Safari/537.36 TV",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "13",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "22.8.0.15",
       "engine": {
         "name": "Blink",
@@ -1477,11 +1477,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "N43HQ2304SVF",
       "brand": {
         "name": "Nesons",
-        "code": 2058
+        "code": 2059
       }
     }
   },
@@ -1489,13 +1489,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 13; N32HR2301SF Build/TP1A.220905.004.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/101.0.4951.61 YaBrowser/22.8.0.15 (lite) Safari/537.36 TV",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "13",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "22.8.0.15",
       "engine": {
         "name": "Blink",
@@ -1503,11 +1503,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "N32HR2301SF",
       "brand": {
         "name": "Nesons",
-        "code": 2058
+        "code": 2059
       }
     }
   },
@@ -1515,13 +1515,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 13; N32HF2302SF Build/TP1A.220905.004.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/101.0.4951.61 YaBrowser/22.8.0.15 (lite) Safari/537.36 TV",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "13",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "22.8.0.15",
       "engine": {
         "name": "Blink",
@@ -1529,11 +1529,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "N32HF2302SF",
       "brand": {
         "name": "Nesons",
-        "code": 2058
+        "code": 2059
       }
     }
   },
@@ -1541,13 +1541,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 10; EPICO 4K Build/QTG1.210615.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/132.0.6834.165 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "10",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Webview",
-      "code": 161,
+      "code": 162,
       "version": "132.0.6834.165",
       "family": "Chrome",
       "engine": {
@@ -1556,11 +1556,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "Epico 4K Cloud PVR",
       "brand": {
         "name": "Cogeco",
-        "code": 2052
+        "code": 2053
       }
     }
   },
@@ -1568,13 +1568,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 10; FRESH SMART TV Build/QTG3.200617.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/133.0.6943.89 Mobile Safari/537.36",
     "os": {
       "name": "Android TV",
-      "code": 2,
+      "code": 3,
       "version": "10",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Webview",
-      "code": 161,
+      "code": 162,
       "version": "133.0.6943.89",
       "family": "Chrome",
       "engine": {
@@ -1583,11 +1583,11 @@
       }
     },
     "device": {
-      "type": 2,
+      "type": 3,
       "model": "Smart TV",
       "brand": {
         "name": "FRESH",
-        "code": 2057
+        "code": 2058
       }
     }
   },
@@ -1595,13 +1595,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; CRD65-UHD11 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.120 Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Webview",
-      "code": 161,
+      "code": 162,
       "version": "83.0.4103.120",
       "family": "Chrome",
       "engine": {
@@ -1610,11 +1610,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "CRD65-UHD11",
       "brand": {
         "name": "MAG",
-        "code": 1025
+        "code": 1026
       }
     }
   },
@@ -1622,13 +1622,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 9; GTKing_AT_ATV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.62 Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "9",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome",
-      "code": 137,
+      "code": 138,
       "version": "78.0.3904.62",
       "family": "Chrome",
       "engine": {
@@ -1637,11 +1637,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "GT King",
       "brand": {
         "name": "Beelink",
-        "code": 167
+        "code": 168
       }
     }
   },
@@ -1649,13 +1649,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 9; GT1-Mini-AT_ATV Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.62 Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "9",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Webview",
-      "code": 161,
+      "code": 162,
       "version": "78.0.3904.62",
       "family": "Chrome",
       "engine": {
@@ -1664,11 +1664,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "GT1 Mini",
       "brand": {
         "name": "Beelink",
-        "code": 167
+        "code": 168
       }
     }
   },
@@ -1676,21 +1676,21 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; CAIXUN AndroidTV Build/RP1A.200720.011) IPTV/6.1.11",
     "os": {
       "name": "Android TV",
-      "code": 2,
+      "code": 3,
       "version": "11",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "IPTV",
       "version": "6.1.11"
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "Smart TV",
       "brand": {
         "name": "Caixun",
-        "code": 2051
+        "code": 2052
       }
     }
   },
@@ -1698,13 +1698,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; EcostarTV Build/RTO9.231122.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/132.0.6834.163 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Webview",
-      "code": 161,
+      "code": 162,
       "version": "132.0.6834.163",
       "family": "Chrome",
       "engine": {
@@ -1713,11 +1713,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "Smart TV",
       "brand": {
         "name": "EcoStar",
-        "code": 2055
+        "code": 2056
       }
     }
   },
@@ -1725,13 +1725,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 12; Fision TV Plus Build/STT5.240704.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/132.0.6834.165 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "12",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Webview",
-      "code": 161,
+      "code": 162,
       "version": "132.0.6834.165",
       "family": "Chrome",
       "engine": {
@@ -1740,11 +1740,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "TV+",
       "brand": {
         "name": "Fision",
-        "code": 2056
+        "code": 2057
       }
     }
   },
@@ -1752,21 +1752,21 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 9; Droidlogic Hiremco Build/Hiremco) IPTV Pro/8.1.4",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "9",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "IPTV Pro",
       "version": "8.1.4"
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "Smart TV",
       "brand": {
         "name": "Hiremco",
-        "code": 718
+        "code": 719
       }
     }
   },
@@ -1774,21 +1774,21 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 10; HIREMCO Matrix Build/QP1A.191105.004) IPTV Pro/6.0.8",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "10",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "IPTV Pro",
       "version": "6.0.8"
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "Matrix",
       "brand": {
         "name": "Hiremco",
-        "code": 718
+        "code": 719
       }
     }
   },
@@ -1796,13 +1796,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; DM-LED55UBB33 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/24.12.0.453 (lite) TV Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "24.12.0.453",
       "engine": {
         "name": "Blink",
@@ -1810,11 +1810,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "DM-LED55UBB33",
       "brand": {
         "name": "Digma",
-        "code": 390
+        "code": 391
       }
     }
   },
@@ -1822,13 +1822,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; Dongle G 4K Build/RTT0.211009.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/132.0.6834.122 YaBrowser/24.12.0.453 (lite) TV Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "24.12.0.453",
       "engine": {
         "name": "Blink",
@@ -1836,11 +1836,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "Dongle G 4K",
       "brand": {
         "name": "Homatics",
-        "code": 732
+        "code": 733
       }
     }
   },
@@ -1848,13 +1848,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 10; TV-Impact Build/TV-Impact-pro; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.131 YaBrowser/23.9.0.75 (lite) Safari/537.36 TV",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "10",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "23.9.0.75",
       "engine": {
         "name": "Blink",
@@ -1862,11 +1862,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "TV Impact Pro",
       "brand": {
         "name": "Rombica",
-        "code": 1465
+        "code": 1466
       }
     }
   },
@@ -1874,13 +1874,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; NEKO_WK_LT_32NH8000S Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.120 YaBrowser/24.12.0.453 (lite) Safari/537.36 TV",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "24.12.0.453",
       "engine": {
         "name": "Blink",
@@ -1888,11 +1888,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "LT-32NH8000S",
       "brand": {
         "name": "NEKO",
-        "code": 1170
+        "code": 1171
       }
     }
   },
@@ -1900,13 +1900,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; NEKO_LT-43NX7020S Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.120 YaBrowser/19.6.0.158 (lite) Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "19.6.0.158",
       "engine": {
         "name": "Blink",
@@ -1914,11 +1914,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "LT-43NX7020S",
       "brand": {
         "name": "NEKO",
-        "code": 1170
+        "code": 1171
       }
     }
   },
@@ -1926,13 +1926,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; MULTYNET FHD Android TV Build/RTO3.231013.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/135.0.7049.111 Mobile Safari/537.36",
     "os": {
       "name": "Android TV",
-      "code": 2,
+      "code": 3,
       "version": "11",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Webview",
-      "code": 161,
+      "code": 162,
       "version": "135.0.7049.111",
       "family": "Chrome",
       "engine": {
@@ -1941,11 +1941,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "Smart TV",
       "brand": {
         "name": "MULTYNET",
-        "code": 2062
+        "code": 2063
       }
     }
   },
@@ -1953,13 +1953,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 7.1.2; AILETV Build/NHG47K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/119.0.6045.193 Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "7.1.2",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Webview",
-      "code": 161,
+      "code": 162,
       "version": "119.0.6045.193",
       "family": "Chrome",
       "engine": {
@@ -1968,11 +1968,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "Smart TV",
       "brand": {
         "name": "AileTV",
-        "code": 2063
+        "code": 2064
       }
     }
   },
@@ -1980,13 +1980,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; BRANDT UHD TV Build/RTM2.210929.098; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/132.0.6834.166 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Webview",
-      "code": 161,
+      "code": 162,
       "version": "132.0.6834.166",
       "family": "Chrome",
       "engine": {
@@ -1995,11 +1995,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "UHD TV",
       "brand": {
         "name": "Brandt",
-        "code": 228
+        "code": 229
       }
     }
   },
@@ -2007,13 +2007,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; duoTV Build/RD2A.211001.002) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome",
-      "code": 137,
+      "code": 138,
       "version": "69.0.3497.100",
       "family": "Chrome",
       "engine": {
@@ -2022,11 +2022,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "Smart TV",
       "brand": {
         "name": "DuoTV",
-        "code": 2065
+        "code": 2066
       }
     }
   },
@@ -2034,13 +2034,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 9; Y8 MAX S905X3 Build/PPR1.180610.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.111 Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "9",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome",
-      "code": 137,
+      "code": 138,
       "version": "63.0.3239.111",
       "family": "Chrome",
       "engine": {
@@ -2049,11 +2049,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "Y8 Max",
       "brand": {
         "name": "Bqeel",
-        "code": 2064
+        "code": 2065
       }
     }
   },
@@ -2061,13 +2061,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; HTY-24H06W-VZ-M Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/24.12.0.453 (lite) TV Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "24.12.0.453",
       "engine": {
         "name": "Blink",
@@ -2075,11 +2075,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "HTY-24H06W-VZ",
       "brand": {
         "name": "Hartens",
-        "code": 694
+        "code": 695
       }
     }
   },
@@ -2087,13 +2087,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; INDURAMA GOOGLE TV 4K Build/RTM9.241015.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/132.0.6834.163 Mobile Safari/537.36",
     "os": {
       "name": "Android TV",
-      "code": 2,
+      "code": 3,
       "version": "11",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Webview",
-      "code": 161,
+      "code": 162,
       "version": "132.0.6834.163",
       "family": "Chrome",
       "engine": {
@@ -2102,11 +2102,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "Smart TV",
       "brand": {
         "name": "Indurama",
-        "code": 2066
+        "code": 2067
       }
     }
   },
@@ -2114,13 +2114,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 12; MagentaTV Box Build/STTC.220803.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/133.0.6943.121 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "12",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Webview",
-      "code": 161,
+      "code": 162,
       "version": "133.0.6943.121",
       "family": "Chrome",
       "engine": {
@@ -2129,11 +2129,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "TV Box",
       "brand": {
         "name": "Magenta",
-        "code": 2069
+        "code": 2070
       }
     }
   },
@@ -2141,13 +2141,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 12; MagentaTV ONE Build/STTC.230104.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/132.0.6834.163 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "12",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Webview",
-      "code": 161,
+      "code": 162,
       "version": "132.0.6834.163",
       "family": "Chrome",
       "engine": {
@@ -2156,11 +2156,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "TV One",
       "brand": {
         "name": "Magenta",
-        "code": 2069
+        "code": 2070
       }
     }
   },
@@ -2168,13 +2168,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 12; MagentaTV One (2. Generation) Build/STTC.220803.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/132.0.6834.166 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "12",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Webview",
-      "code": 161,
+      "code": 162,
       "version": "132.0.6834.166",
       "family": "Chrome",
       "engine": {
@@ -2183,11 +2183,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "TV One (Gen 2)",
       "brand": {
         "name": "Magenta",
-        "code": 2069
+        "code": 2070
       }
     }
   },
@@ -2195,13 +2195,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; NTV_H43C612N Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.120 Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Webview",
-      "code": 161,
+      "code": 162,
       "version": "83.0.4103.120",
       "family": "Chrome",
       "engine": {
@@ -2210,11 +2210,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "NTV-H43C612N",
       "brand": {
         "name": "Nexar",
-        "code": 2070
+        "code": 2071
       }
     }
   },
@@ -2222,13 +2222,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; NTV-U50C614S) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.87 Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome",
-      "code": 137,
+      "code": 138,
       "version": "98.0.4758.87",
       "family": "Chrome",
       "engine": {
@@ -2237,11 +2237,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "NTV-U50C614S",
       "brand": {
         "name": "Nexar",
-        "code": 2070
+        "code": 2071
       }
     }
   },
@@ -2249,13 +2249,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 9; K55USY23 Build/PPR2.180905.006.A1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/24.12.0.453 (lite) TV Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "9",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "24.12.0.453",
       "engine": {
         "name": "Blink",
@@ -2263,11 +2263,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "K55USY23",
       "brand": {
         "name": "RAZZ",
-        "code": 1420
+        "code": 1421
       }
     }
   },
@@ -2275,21 +2275,21 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 9; RED360 Air 8K Build/PPR1.181005.003) IPTV Pro/8.1.4",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "9",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "IPTV Pro",
       "version": "8.1.4"
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "RED360 Air 8K",
       "brand": {
         "name": "RedLine",
-        "code": 1436
+        "code": 1437
       }
     }
   },
@@ -2297,13 +2297,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; TD43FFBSV1 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/24.12.0.453 (lite) TV Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "24.12.0.453",
       "engine": {
         "name": "Blink",
@@ -2311,11 +2311,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "TD43FFBSV1",
       "brand": {
         "name": "Tuvio",
-        "code": 1767
+        "code": 1768
       }
     }
   },
@@ -2323,13 +2323,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 9; STV-43FDUBK1R Build/PPR2.180905.006.A1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "9",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Webview",
-      "code": 161,
+      "code": 162,
       "version": "113.0.5672.163",
       "family": "Chrome",
       "engine": {
@@ -2338,11 +2338,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "STV-43FDUBK1R",
       "brand": {
         "name": "Tuvio",
-        "code": 1767
+        "code": 1768
       }
     }
   },
@@ -2350,13 +2350,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 13; SENNA_43SN6000F Build/TP1A.220905.004.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/101.0.4951.61 YaBrowser/24.12.0.453 (lite) Safari/537.36 TV",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "13",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "24.12.0.453",
       "engine": {
         "name": "Blink",
@@ -2364,11 +2364,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "43SN6000F",
       "brand": {
         "name": "SENNA",
-        "code": 1488
+        "code": 1489
       }
     }
   },
@@ -2376,13 +2376,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 10; Qupi TV Start Build/QP1A.191105.004; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/80.0.3987.149 YaBrowser/24.12.0.453 (lite) TV Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "10",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "24.12.0.453",
       "engine": {
         "name": "Blink",
@@ -2390,11 +2390,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "TV Start",
       "brand": {
         "name": "Qupi",
-        "code": 2071
+        "code": 2072
       }
     }
   },
@@ -2402,21 +2402,21 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 10; SENCROM Redrobox 4K PLUS Build/QP1A.191105.004) IPTV Pro/8.1.4",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "10",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "IPTV Pro",
       "version": "8.1.4"
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "Redro Box 4K Plus",
       "brand": {
         "name": "Sencrom",
-        "code": 2072
+        "code": 2073
       }
     }
   },
@@ -2424,13 +2424,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 9; InfinityProTV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "9",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome",
-      "code": 137,
+      "code": 138,
       "version": "70.0.3538.110",
       "family": "Chrome",
       "engine": {
@@ -2439,11 +2439,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "Smart TV",
       "brand": {
         "name": "InfinityPro",
-        "code": 2068
+        "code": 2069
       }
     }
   },
@@ -2451,14 +2451,14 @@
     "userAgent": "Mozilla/5.0 (Linux; arm; Android 9; WinkBox 2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.6723.105 YaBrowser/24.12.3.105.00 SA/3 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "9",
       "cpuArchitecture": "ARM",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser",
-      "code": 653,
+      "code": 654,
       "version": "24.12.3.105.00",
       "engine": {
         "name": "Blink",
@@ -2466,11 +2466,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "Box 2",
       "brand": {
         "name": "Wink",
-        "code": 1940
+        "code": 1941
       }
     }
   },
@@ -2478,13 +2478,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 9; era8K Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.136 Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "9",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome",
-      "code": 137,
+      "code": 138,
       "version": "74.0.3729.136",
       "family": "Chrome",
       "engine": {
@@ -2493,11 +2493,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "era8K Pro",
       "brand": {
         "name": "Korax",
-        "code": 936
+        "code": 937
       }
     }
   },
@@ -2505,13 +2505,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 13; NTV-H3230TS Build/TP1A.220905.004.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/101.0.4951.61 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "13",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "24.1.2.86",
       "engine": {
         "name": "Blink",
@@ -2519,11 +2519,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "NTV-H3230TS",
       "brand": {
         "name": "NOVIS",
-        "code": 2076
+        "code": 2077
       }
     }
   },
@@ -2531,13 +2531,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 13; 50MT-UDG54G Build/TP1A.220905.004.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/101.0.4951.61 YaBrowser/24.12.0.453 (lite) Safari/537.36 TV",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "13",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "24.12.0.453",
       "engine": {
         "name": "Blink",
@@ -2545,11 +2545,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "50MT-UDG54G",
       "brand": {
         "name": "Rombica",
-        "code": 1465
+        "code": 1466
       }
     }
   },
@@ -2557,13 +2557,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 9; STV-32FDFBK1R Build/PPR2.180905.006.A1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.120 YaBrowser/23.9.0.74 (lite) TV Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "9",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "23.9.0.74",
       "engine": {
         "name": "Blink",
@@ -2571,11 +2571,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "STV-32FDFBK1R",
       "brand": {
         "name": "Tuvio",
-        "code": 1767
+        "code": 1768
       }
     }
   },
@@ -2583,13 +2583,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 14; Box R 4K Plus Build/UKG3.241022.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/135.0.7049.100 YaBrowser/24.12.0.453 (lite) TV Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "14",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "24.12.0.453",
       "engine": {
         "name": "Blink",
@@ -2597,11 +2597,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "Box R 4K Plus",
       "brand": {
         "name": "Homatics",
-        "code": 732
+        "code": 733
       }
     }
   },
@@ -2609,13 +2609,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 12; BQ_42FS07B Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/91.0.4472.114 YaBrowser/24.1.2.182 (lite) Safari/537.36 TV",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "12",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "24.1.2.182",
       "engine": {
         "name": "Blink",
@@ -2623,11 +2623,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "42FS07B",
       "brand": {
         "name": "bq",
-        "code": 227
+        "code": 228
       }
     }
   },
@@ -2635,13 +2635,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 12; BQ_32FSFO1B Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/91.0.4472.114 YaBrowser/24.1.2.182 (lite) Safari/537.36 TV",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "12",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "24.1.2.182",
       "engine": {
         "name": "Blink",
@@ -2649,11 +2649,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "32FSF01B",
       "brand": {
         "name": "bq",
-        "code": 227
+        "code": 228
       }
     }
   },
@@ -2661,13 +2661,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 12; BQ_32FS40B Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/91.0.4472.114 YaBrowser/24.1.2.182 (lite) Safari/537.36 TV",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "12",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "24.1.2.182",
       "engine": {
         "name": "Blink",
@@ -2675,11 +2675,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "32FS40B",
       "brand": {
         "name": "bq",
-        "code": 227
+        "code": 228
       }
     }
   },
@@ -2687,13 +2687,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 12; BQ_32FS38B Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/91.0.4472.114 YaBrowser/24.1.2.182 (lite) Safari/537.36 TV",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "12",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "24.1.2.182",
       "engine": {
         "name": "Blink",
@@ -2701,11 +2701,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "32FS38B",
       "brand": {
         "name": "bq",
-        "code": 227
+        "code": 228
       }
     }
   },
@@ -2713,14 +2713,14 @@
     "userAgent": "Mozilla/5.0 (Linux; arm; Android 12; Bt_32FS36B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.141 YaApp_Android/22.36/apad YaSearchBrowser/22.36/apad BroPP/1.0 SA/3 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "12",
       "cpuArchitecture": "ARM",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser",
-      "code": 653,
+      "code": 654,
       "version": "22.36",
       "engine": {
         "name": "Blink",
@@ -2728,11 +2728,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "Bt 32FS36B",
       "brand": {
         "name": "Blackton",
-        "code": 200
+        "code": 201
       }
     }
   },
@@ -2740,14 +2740,14 @@
     "userAgent": "Mozilla/5.0 (Linux; arm; Android 12; BQ_40FS36B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.141 YaApp_Android/22.36/apad YaSearchBrowser/22.36/apad BroPP/1.0 SA/3 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "12",
       "cpuArchitecture": "ARM",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser",
-      "code": 653,
+      "code": 654,
       "version": "22.36",
       "engine": {
         "name": "Blink",
@@ -2755,11 +2755,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "40FS36B",
       "brand": {
         "name": "bq",
-        "code": 227
+        "code": 228
       }
     }
   },
@@ -2767,14 +2767,14 @@
     "userAgent": "Mozilla/5.0 (Linux; arm; Android 11; 65ULES910T2SM) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.85 YaApp_Android/21.111/apad YaSearchBrowser/21.111/apad BroPP/1.0 SA/3 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "cpuArchitecture": "ARM",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser",
-      "code": 653,
+      "code": 654,
       "version": "21.111",
       "engine": {
         "name": "Blink",
@@ -2782,11 +2782,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "65ULES910T2SM",
       "brand": {
         "name": "Erisson",
-        "code": 496
+        "code": 497
       }
     }
   },
@@ -2794,14 +2794,14 @@
     "userAgent": "Mozilla/5.0 (Linux; arm; Android 11; 65UCY3 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/116.0.5845.275 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "cpuArchitecture": "ARM",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Webview",
-      "code": 161,
+      "code": 162,
       "version": "116.0.5845.275",
       "family": "Chrome",
       "engine": {
@@ -2810,11 +2810,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "65UCY3",
       "brand": {
         "name": "DEXP",
-        "code": 368
+        "code": 369
       }
     }
   },
@@ -2822,14 +2822,14 @@
     "userAgent": "Mozilla/5.0 (Linux; arm; Android 11; 24LE7011D Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/104.0.5112.102 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "cpuArchitecture": "ARM",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Webview",
-      "code": 161,
+      "code": 162,
       "version": "104.0.5112.102",
       "family": "Chrome",
       "engine": {
@@ -2838,11 +2838,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "24LE7011D",
       "brand": {
         "name": "Horizont",
-        "code": 740
+        "code": 741
       }
     }
   },
@@ -2850,14 +2850,14 @@
     "userAgent": "Mozilla/5.0 (Linux; arm; Android 10; youwei box) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.6834.2037 YaApp_Android/25.20/apad YaSearchBrowser/25.20/apad BroPP/1.0 SA/3 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "10",
       "cpuArchitecture": "ARM",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser",
-      "code": 653,
+      "code": 654,
       "version": "25.20",
       "engine": {
         "name": "Blink",
@@ -2865,11 +2865,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "Box X1",
       "brand": {
         "name": "Youwei",
-        "code": 1998
+        "code": 1999
       }
     }
   },
@@ -2877,13 +2877,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; 43LEX-8258UTS2C Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/24.12.0.453 (lite) TV Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "24.12.0.453",
       "engine": {
         "name": "Blink",
@@ -2891,11 +2891,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "43LEX-8258/UTS2C",
       "brand": {
         "name": "BBK",
-        "code": 159
+        "code": 160
       }
     }
   },
@@ -2903,13 +2903,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; 43LEX-8257UTS2C Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/22.8.0.12 (lite) TV Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "22.8.0.12",
       "engine": {
         "name": "Blink",
@@ -2917,11 +2917,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "43LEX-8257/UTS2C",
       "brand": {
         "name": "BBK",
-        "code": 159
+        "code": 160
       }
     }
   },
@@ -2929,13 +2929,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; 43LEX-8249UTS2C Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/24.12.0.453 (lite) TV Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "24.12.0.453",
       "engine": {
         "name": "Blink",
@@ -2943,11 +2943,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "43LEX-8249/UTS2C",
       "brand": {
         "name": "BBK",
-        "code": 159
+        "code": 160
       }
     }
   },
@@ -2955,13 +2955,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; 43LEX-8246UTS2C Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/24.12.0.453 (lite) TV Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "24.12.0.453",
       "engine": {
         "name": "Blink",
@@ -2969,11 +2969,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "43LEX-8246/UTS2C",
       "brand": {
         "name": "BBK",
-        "code": 159
+        "code": 160
       }
     }
   },
@@ -2981,13 +2981,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; 43LEX-7288FTS2C-T9 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/24.12.0.453 (lite) TV Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "24.12.0.453",
       "engine": {
         "name": "Blink",
@@ -2995,11 +2995,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "43LEX-7288/FTS2C",
       "brand": {
         "name": "BBK",
-        "code": 159
+        "code": 160
       }
     }
   },
@@ -3007,13 +3007,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; 43LEX-7260-FTS2C Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/24.12.0.453 (lite) TV Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "24.12.0.453",
       "engine": {
         "name": "Blink",
@@ -3021,11 +3021,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "43LEX-7260/FTS2C",
       "brand": {
         "name": "BBK",
-        "code": 159
+        "code": 160
       }
     }
   },
@@ -3033,13 +3033,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; 43LEX-7259FTS2C Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/24.12.0.453 (lite) TV Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "24.12.0.453",
       "engine": {
         "name": "Blink",
@@ -3047,11 +3047,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "43LEX-7259/FTS2C",
       "brand": {
         "name": "BBK",
-        "code": 159
+        "code": 160
       }
     }
   },
@@ -3059,13 +3059,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; 43LEX-7257FTS2C Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/24.12.0.453 (lite) TV Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "24.12.0.453",
       "engine": {
         "name": "Blink",
@@ -3073,11 +3073,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "43LEX-7257/FTS2C",
       "brand": {
         "name": "BBK",
-        "code": 159
+        "code": 160
       }
     }
   },
@@ -3085,13 +3085,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; 43LEX-8265-UTS2C Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/24.12.0.453 (lite) TV Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "24.12.0.453",
       "engine": {
         "name": "Blink",
@@ -3099,11 +3099,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "43LEX-8265/UTS2C",
       "brand": {
         "name": "BBK",
-        "code": 159
+        "code": 160
       }
     }
   },
@@ -3111,13 +3111,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; 43LEX-7246FTS2C Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/24.12.0.453 (lite) TV Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "24.12.0.453",
       "engine": {
         "name": "Blink",
@@ -3125,11 +3125,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "43LEX-7246/FTS2C",
       "brand": {
         "name": "BBK",
-        "code": 159
+        "code": 160
       }
     }
   },
@@ -3137,13 +3137,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; 43LEX-7236-FTS2C Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/24.12.0.453 (lite) TV Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "24.12.0.453",
       "engine": {
         "name": "Blink",
@@ -3151,11 +3151,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "43LEX-7236/FTS2C",
       "brand": {
         "name": "BBK",
-        "code": 159
+        "code": 160
       }
     }
   },
@@ -3163,13 +3163,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; 32HSQ1220T2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.90 Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome",
-      "code": 137,
+      "code": 138,
       "version": "73.0.3683.90",
       "family": "Chrome",
       "engine": {
@@ -3178,11 +3178,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "32HSQ1220T2",
       "brand": {
         "name": "Romsat",
-        "code": 1466
+        "code": 1467
       }
     }
   },
@@ -3190,13 +3190,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; 24LH8011T Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/23.1.0.59 (lite) TV Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "23.1.0.59",
       "engine": {
         "name": "Blink",
@@ -3204,11 +3204,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "24LH8011T 24.0\"",
       "brand": {
         "name": "Asano",
-        "code": 111
+        "code": 112
       }
     }
   },
@@ -3216,13 +3216,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; 24LH7010T Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.120 YaBrowser/24.1.2.221 (lite) Safari/537.36 TV",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "24.1.2.221",
       "engine": {
         "name": "Blink",
@@ -3230,11 +3230,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "24LH7010T 24.0\"",
       "brand": {
         "name": "Asano",
-        "code": 111
+        "code": 112
       }
     }
   },
@@ -3242,13 +3242,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; 24LF8010T Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/24.12.0.453 (lite) TV Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "24.12.0.453",
       "engine": {
         "name": "Blink",
@@ -3256,11 +3256,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "24LF8010T 24.0\"",
       "brand": {
         "name": "Asano",
-        "code": 111
+        "code": 112
       }
     }
   },
@@ -3268,13 +3268,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; 24H550T Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/24.12.0.453 (lite) TV Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "24.12.0.453",
       "engine": {
         "name": "Blink",
@@ -3282,11 +3282,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "24H550T",
       "brand": {
         "name": "Leff",
-        "code": 970
+        "code": 971
       }
     }
   },
@@ -3294,13 +3294,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; 24F560T Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/24.11.0.385 (lite) TV Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "24.11.0.385",
       "engine": {
         "name": "Blink",
@@ -3308,11 +3308,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "24F560T",
       "brand": {
         "name": "Leff",
-        "code": 970
+        "code": 971
       }
     }
   },
@@ -3320,13 +3320,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; 43U570T Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.120 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "24.1.2.86",
       "engine": {
         "name": "Blink",
@@ -3334,11 +3334,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "43U570T",
       "brand": {
         "name": "Leff",
-        "code": 970
+        "code": 971
       }
     }
   },
@@ -3346,13 +3346,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; 50U541T Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/24.12.0.453 (lite) TV Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "24.12.0.453",
       "engine": {
         "name": "Blink",
@@ -3360,11 +3360,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "50U541T",
       "brand": {
         "name": "Leff",
-        "code": 970
+        "code": 971
       }
     }
   },
@@ -3372,13 +3372,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; 50LU1222 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Webview",
-      "code": 161,
+      "code": 162,
       "version": "113.0.5672.163",
       "family": "Chrome",
       "engine": {
@@ -3387,11 +3387,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "50LU1222",
       "brand": {
         "name": "Vityaz",
-        "code": 1870
+        "code": 1871
       }
     }
   },
@@ -3399,13 +3399,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; 50U550T Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/24.12.0.453 (lite) TV Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "24.12.0.453",
       "engine": {
         "name": "Blink",
@@ -3413,11 +3413,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "50U550T",
       "brand": {
         "name": "Leff",
-        "code": 970
+        "code": 971
       }
     }
   },
@@ -3425,13 +3425,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; 55LE7053D Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Webview",
-      "code": 161,
+      "code": 162,
       "version": "113.0.5672.163",
       "family": "Chrome",
       "engine": {
@@ -3440,11 +3440,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "55LE7053D",
       "brand": {
         "name": "Horizont",
-        "code": 740
+        "code": 741
       }
     }
   },
@@ -3452,13 +3452,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; 55LU8030S Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.120 YaBrowser/24.1.2.221 (lite) Safari/537.36 TV",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "24.1.2.221",
       "engine": {
         "name": "Blink",
@@ -3466,11 +3466,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "55LU8030S 55.0\"",
       "brand": {
         "name": "Asano",
-        "code": 111
+        "code": 112
       }
     }
   },
@@ -3478,13 +3478,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; 55LU1222 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/24.12.0.453 (lite) TV Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "24.12.0.453",
       "engine": {
         "name": "Blink",
@@ -3492,11 +3492,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "55LU1222",
       "brand": {
         "name": "Vityaz",
-        "code": 1870
+        "code": 1871
       }
     }
   },
@@ -3504,13 +3504,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; 55ULX9005T2 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/24.12.0.453 (lite) TV Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "24.12.0.453",
       "engine": {
         "name": "Blink",
@@ -3518,11 +3518,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "55ULX9005T2",
       "brand": {
         "name": "Erisson",
-        "code": 496
+        "code": 497
       }
     }
   },
@@ -3530,13 +3530,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; 55ULES901T2SM Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.120 YaBrowser/24.12.0.453 (lite) Safari/537.36 TV",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "24.12.0.453",
       "engine": {
         "name": "Blink",
@@ -3544,11 +3544,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "55ULES901T2SM",
       "brand": {
         "name": "Erisson",
-        "code": 496
+        "code": 497
       }
     }
   },
@@ -3556,13 +3556,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; 55UE-BYVB Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Webview",
-      "code": 161,
+      "code": 162,
       "version": "113.0.5672.163",
       "family": "Chrome",
       "engine": {
@@ -3571,11 +3571,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "55UE-BYVB",
       "brand": {
         "name": "KTC",
-        "code": 2079
+        "code": 2080
       }
     }
   },
@@ -3583,13 +3583,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; K43UH902 Build/tricolor_wildred; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/116.0.0.0 YaBrowser/24.1.2.86 (lite) TV Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "24.1.2.86",
       "engine": {
         "name": "Blink",
@@ -3597,11 +3597,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "K43UH902",
       "brand": {
         "name": "Tricolor",
-        "code": 2080
+        "code": 2081
       }
     }
   },
@@ -3609,13 +3609,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; K43UH901 Build/tricolor_wildred; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/116.0.0.0 YaBrowser/24.1.2.86 (lite) TV Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "24.1.2.86",
       "engine": {
         "name": "Blink",
@@ -3623,11 +3623,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "K43UH901",
       "brand": {
         "name": "Tricolor",
-        "code": 2080
+        "code": 2081
       }
     }
   },
@@ -3635,13 +3635,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; K32HH902 Build/tricolor_wildred; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/116.0.0.0 YaBrowser/24.1.2.86 (lite) TV Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "24.1.2.86",
       "engine": {
         "name": "Blink",
@@ -3649,11 +3649,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "K32HH902",
       "brand": {
         "name": "Tricolor",
-        "code": 2080
+        "code": 2081
       }
     }
   },
@@ -3661,13 +3661,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; H43QSY24F Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/24.12.0.453 (lite) TV Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "24.12.0.453",
       "engine": {
         "name": "Blink",
@@ -3675,11 +3675,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "H43QSY24F",
       "brand": {
         "name": "RAZZ",
-        "code": 1420
+        "code": 1421
       }
     }
   },
@@ -3687,13 +3687,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; H32H5001SA Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.120 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "24.1.2.86",
       "engine": {
         "name": "Blink",
@@ -3701,11 +3701,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "H32H5001SA",
       "brand": {
         "name": "Tricolor",
-        "code": 2080
+        "code": 2081
       }
     }
   },
@@ -3713,13 +3713,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; H32H5000SA Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.120 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "24.1.2.86",
       "engine": {
         "name": "Blink",
@@ -3727,11 +3727,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "H32H5000SA",
       "brand": {
         "name": "Tricolor",
-        "code": 2080
+        "code": 2081
       }
     }
   },
@@ -3739,13 +3739,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 9; SUN-LED50XU400 Build/PPR2.180905.006.A1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.120 YaBrowser/24.12.0.453 (lite) TV Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "9",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "24.12.0.453",
       "engine": {
         "name": "Blink",
@@ -3753,11 +3753,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "SUN-LED50XU400",
       "brand": {
         "name": "SUNWIND",
-        "code": 1632
+        "code": 1633
       }
     }
   },
@@ -3765,13 +3765,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 12; Box R Lite 4K Build/STTC.220803.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/133.0.6943.49 YaBrowser/24.12.0.453 (lite) TV Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "12",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "24.12.0.453",
       "engine": {
         "name": "Blink",
@@ -3779,11 +3779,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "Box R Lite 4K",
       "brand": {
         "name": "Homatics",
-        "code": 732
+        "code": 733
       }
     }
   },
@@ -3791,13 +3791,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 12; BQ_43FS38B Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/91.0.4472.114 YaBrowser/24.1.2.182 (lite) Safari/537.36 TV",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "12",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "24.1.2.182",
       "engine": {
         "name": "Blink",
@@ -3805,11 +3805,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "43FS38B",
       "brand": {
         "name": "bq",
-        "code": 227
+        "code": 228
       }
     }
   },
@@ -3817,13 +3817,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 13; 43OV4000AF Build/TP1A.220905.004.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/101.0.4951.61 YaBrowser/25.6.1.561 (lite) Safari/537.36 TV",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "13",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "25.6.1.561",
       "engine": {
         "name": "Blink",
@@ -3831,11 +3831,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "43OV4000AF",
       "brand": {
         "name": "ONVO",
-        "code": 1268
+        "code": 1269
       }
     }
   },
@@ -3843,13 +3843,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 13; 43LU6000T Build/TP1A.220905.004.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/101.0.4951.61 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "13",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "24.1.2.86",
       "engine": {
         "name": "Blink",
@@ -3857,11 +3857,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "43LU6000T 43.0\"",
       "brand": {
         "name": "Asano",
-        "code": 111
+        "code": 112
       }
     }
   },
@@ -3869,13 +3869,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 7.0; 40LF7030ST Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/51.0.2704.91 Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "7.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Webview",
-      "code": 161,
+      "code": 162,
       "version": "51.0.2704.91",
       "family": "Chrome",
       "engine": {
@@ -3884,11 +3884,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "40LF7030ST 40.0\"",
       "brand": {
         "name": "Asano",
-        "code": 111
+        "code": 112
       }
     }
   },
@@ -3896,13 +3896,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 13; TDTV50CS06U Build/TP1A.220905.004.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/101.0.4951.61 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "13",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "24.1.2.86",
       "engine": {
         "name": "Blink",
@@ -3910,11 +3910,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "TDTV50CS06U",
       "brand": {
         "name": "TopDevice",
-        "code": 1735
+        "code": 1736
       }
     }
   },
@@ -3922,13 +3922,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 13; TDTV50CQ08U Build/TP1A.220905.004.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/101.0.4951.61 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "13",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "24.1.2.86",
       "engine": {
         "name": "Blink",
@@ -3936,11 +3936,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "TDTV50CQ08U",
       "brand": {
         "name": "TopDevice",
-        "code": 1735
+        "code": 1736
       }
     }
   },
@@ -3948,13 +3948,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 13; TDTV24BS02H_WE Build/TP1A.220905.004.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/101.0.4951.61 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "13",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "24.1.2.86",
       "engine": {
         "name": "Blink",
@@ -3962,11 +3962,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "TDTV24BS02H",
       "brand": {
         "name": "TopDevice",
-        "code": 1735
+        "code": 1736
       }
     }
   },
@@ -3974,13 +3974,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 13; TDTV24BS01H_BK Build/TP1A.220905.004.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/101.0.4951.61 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "13",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "24.1.2.86",
       "engine": {
         "name": "Blink",
@@ -3988,11 +3988,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "TDTV24BS01H",
       "brand": {
         "name": "TopDevice",
-        "code": 1735
+        "code": 1736
       }
     }
   },
@@ -4000,13 +4000,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 13; SM-LED32M07S Build/TP1A.220905.004.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/101.0.4951.61 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "13",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "24.1.2.86",
       "engine": {
         "name": "Blink",
@@ -4014,11 +4014,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "SM-LED32M07S",
       "brand": {
         "name": "Soundmax",
-        "code": 1590
+        "code": 1591
       }
     }
   },
@@ -4026,13 +4026,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 13; SM-QLED50T21SU Build/TP1A.220905.004.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/101.0.4951.61 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "13",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "24.1.2.86",
       "engine": {
         "name": "Blink",
@@ -4040,11 +4040,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "SM-QLED50T21SU",
       "brand": {
         "name": "Soundmax",
-        "code": 1590
+        "code": 1591
       }
     }
   },
@@ -4052,13 +4052,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 13; SL-LED65S01T2SU Build/TP1A.220905.004.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/101.0.4951.61 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "13",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "24.1.2.86",
       "engine": {
         "name": "Blink",
@@ -4066,11 +4066,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "SL-LED65S01T2SU",
       "brand": {
         "name": "Scoole",
-        "code": 1512
+        "code": 1513
       }
     }
   },
@@ -4078,13 +4078,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 13; HX-43F01FB Build/TP1A.220905.004.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/101.0.4951.61 Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "13",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Webview",
-      "code": 161,
+      "code": 162,
       "version": "101.0.4951.61",
       "family": "Chrome",
       "engine": {
@@ -4093,11 +4093,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "HX-43F01FB",
       "brand": {
         "name": "Hi",
-        "code": 708
+        "code": 709
       }
     }
   },
@@ -4105,13 +4105,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 13; HX-32H01FB Build/TP1A.220905.004.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/101.0.4951.61 YaBrowser/22.8.0.223 (lite) Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "13",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "22.8.0.223",
       "engine": {
         "name": "Blink",
@@ -4119,11 +4119,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "HX-32H01FB",
       "brand": {
         "name": "Hi",
-        "code": 708
+        "code": 709
       }
     }
   },
@@ -4131,13 +4131,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 13; HX-43U01FB Build/TP1A.220905.004.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/101.0.4951.61 Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "13",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Webview",
-      "code": 161,
+      "code": 162,
       "version": "101.0.4951.61",
       "family": "Chrome",
       "engine": {
@@ -4146,11 +4146,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "HX-43U01FB",
       "brand": {
         "name": "Hi",
-        "code": 708
+        "code": 709
       }
     }
   },
@@ -4158,13 +4158,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 13; HX-50U01FB Build/TP1A.220905.004.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/101.0.4951.61 YaBrowser/22.8.0.223 (lite) Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "13",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "22.8.0.223",
       "engine": {
         "name": "Blink",
@@ -4172,11 +4172,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "HX-50U01FB",
       "brand": {
         "name": "Hi",
-        "code": 708
+        "code": 709
       }
     }
   },
@@ -4184,13 +4184,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 13; HX-55U01FB Build/TP1A.220905.004.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/101.0.4951.61 Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "13",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Webview",
-      "code": 161,
+      "code": 162,
       "version": "101.0.4951.61",
       "family": "Chrome",
       "engine": {
@@ -4199,11 +4199,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "HX-55U01FB",
       "brand": {
         "name": "Hi",
-        "code": 708
+        "code": 709
       }
     }
   },
@@ -4211,13 +4211,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 13; HX-32F01FB Build/TP1A.220905.004.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/101.0.4951.61 Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "13",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Webview",
-      "code": 161,
+      "code": 162,
       "version": "101.0.4951.61",
       "family": "Chrome",
       "engine": {
@@ -4226,11 +4226,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "HX-32F01FB",
       "brand": {
         "name": "Hi",
-        "code": 708
+        "code": 709
       }
     }
   },
@@ -4238,13 +4238,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 13; HX-24H01FB Build/TP1A.220905.004.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/101.0.4951.61 YaBrowser/22.8.0.223 (lite) Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "13",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "22.8.0.223",
       "engine": {
         "name": "Blink",
@@ -4252,11 +4252,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "HX-24H01FB",
       "brand": {
         "name": "Hi",
-        "code": 708
+        "code": 709
       }
     }
   },
@@ -4264,13 +4264,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 13; 50LU6000T Build/TP1A.220905.004.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/101.0.4951.61 YaBrowser/25.7.1.605 (lite) Safari/537.36 TV",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "13",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "25.7.1.605",
       "engine": {
         "name": "Blink",
@@ -4278,11 +4278,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "50LU6000T 50.0\"",
       "brand": {
         "name": "Asano",
-        "code": 111
+        "code": 112
       }
     }
   },
@@ -4290,13 +4290,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 13; 32QWS9002 Build/TP1A.220905.004.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/101.0.4951.61 YaBrowser/24.1.2.86 (lite) Safari/537.36 TV",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "13",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "24.1.2.86",
       "engine": {
         "name": "Blink",
@@ -4304,11 +4304,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "32QWS9002",
       "brand": {
         "name": "WildRed",
-        "code": 1938
+        "code": 1939
       }
     }
   },
@@ -4316,13 +4316,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 12; AN-232) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "12",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome",
-      "code": 137,
+      "code": 138,
       "version": "119.0.0.0",
       "family": "Chrome",
       "engine": {
@@ -4331,11 +4331,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "AN-232",
       "brand": {
         "name": "Eplutus",
-        "code": 2092
+        "code": 2093
       }
     }
   },
@@ -4343,13 +4343,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; ZALA SmartBox DV9135 Build/RT; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/138.0.7204.169 YaBrowser/25.7.1.605 (lite) TV Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "25.7.1.605",
       "engine": {
         "name": "Blink",
@@ -4357,11 +4357,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "DV9135",
       "brand": {
         "name": "ZALA",
-        "code": 2094
+        "code": 2095
       }
     }
   },
@@ -4369,13 +4369,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; YNDX-00095 Build/RD2A.211001.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/24.12.0.453 (lite) TV Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "24.12.0.453",
       "engine": {
         "name": "Blink",
@@ -4383,11 +4383,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "YNDX-00095",
       "brand": {
         "name": "Yandex",
-        "code": 1988
+        "code": 1989
       }
     }
   },
@@ -4395,13 +4395,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; YNDX-00094 Build/RD2A.211001.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/24.12.0.453 (lite) TV Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "24.12.0.453",
       "engine": {
         "name": "Blink",
@@ -4409,11 +4409,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "YNDX-00094",
       "brand": {
         "name": "Yandex",
-        "code": 1988
+        "code": 1989
       }
     }
   },
@@ -4421,13 +4421,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; YNDX-00093 Build/RD2A.211001.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/24.12.0.453 (lite) TV Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "24.12.0.453",
       "engine": {
         "name": "Blink",
@@ -4435,11 +4435,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "YNDX-00093",
       "brand": {
         "name": "Yandex",
-        "code": 1988
+        "code": 1989
       }
     }
   },
@@ -4447,13 +4447,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; WinkBox Mini Build/RD2A.211001.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/125.0.6422.147 YaBrowser/24.1.2.260 (lite) TV Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "24.1.2.260",
       "engine": {
         "name": "Blink",
@@ -4461,11 +4461,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "Box Mini",
       "brand": {
         "name": "Wink",
-        "code": 1940
+        "code": 1941
       }
     }
   },
@@ -4473,13 +4473,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; WinkBox 3 Build/RD2A.211001.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/125.0.6422.147 YaBrowser/24.1.2.260 (lite) TV Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "24.1.2.260",
       "engine": {
         "name": "Blink",
@@ -4487,11 +4487,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "Box 3",
       "brand": {
         "name": "Wink",
-        "code": 1940
+        "code": 1941
       }
     }
   },
@@ -4499,13 +4499,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; waipu tv stick Build/RTT0.211009.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/138.0.7204.169 YaBrowser/25.7.1.605 (lite) TV Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "25.7.1.605",
       "engine": {
         "name": "Blink",
@@ -4513,11 +4513,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "4K Stick",
       "brand": {
         "name": "waipu.tv",
-        "code": 2093
+        "code": 2094
       }
     }
   },
@@ -4525,13 +4525,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; ULX-24TCS221-T9 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/24.12.0.453 (lite) TV Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "24.12.0.453",
       "engine": {
         "name": "Blink",
@@ -4539,11 +4539,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "ULX-24TCS221-T9",
       "brand": {
         "name": "Yuno",
-        "code": 2005
+        "code": 2006
       }
     }
   },
@@ -4551,13 +4551,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; ULX-32TCS226-T9 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/22.8.0.12 (lite) TV Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "22.8.0.12",
       "engine": {
         "name": "Blink",
@@ -4565,11 +4565,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "ULX-32TCS226-T9",
       "brand": {
         "name": "Yuno",
-        "code": 2005
+        "code": 2006
       }
     }
   },
@@ -4577,13 +4577,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; SM-LED55M04SU Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/24.12.0.453 (lite) TV Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "24.12.0.453",
       "engine": {
         "name": "Blink",
@@ -4591,11 +4591,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "SM-LED55M04SU",
       "brand": {
         "name": "Soundmax",
-        "code": 1590
+        "code": 1591
       }
     }
   },
@@ -4603,13 +4603,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; SM-LED43M03SU Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Webview",
-      "code": 161,
+      "code": 162,
       "version": "113.0.5672.163",
       "family": "Chrome",
       "engine": {
@@ -4618,11 +4618,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "SM-LED43M03SU",
       "brand": {
         "name": "Soundmax",
-        "code": 1590
+        "code": 1591
       }
     }
   },
@@ -4630,13 +4630,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; SM-LED32M15S Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Webview",
-      "code": 161,
+      "code": 162,
       "version": "113.0.5672.163",
       "family": "Chrome",
       "engine": {
@@ -4645,11 +4645,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "SM-LED32M15S",
       "brand": {
         "name": "Soundmax",
-        "code": 1590
+        "code": 1591
       }
     }
   },
@@ -4657,13 +4657,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; SM-LED24M11S Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.120 YaBrowser/23.1.0.39 (lite) Safari/537.36 TV",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "23.1.0.39",
       "engine": {
         "name": "Blink",
@@ -4671,11 +4671,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "SM-LED24M11S",
       "brand": {
         "name": "Soundmax",
-        "code": 1590
+        "code": 1591
       }
     }
   },
@@ -4683,13 +4683,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 10; CADENA PRO A CSB-230 Build/QP1A.191105.004; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/141.0.7390.122 YaBrowser/25.7.1.605 (lite) TV Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "10",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "25.7.1.605",
       "engine": {
         "name": "Blink",
@@ -4697,11 +4697,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "Pro A CSB-230",
       "brand": {
         "name": "CADENA",
-        "code": 244
+        "code": 245
       }
     }
   },
@@ -4709,13 +4709,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 10; CADENA PRO A3 CSB-242 Build/QP1A.191105.004; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/141.0.7390.97 YaBrowser/25.7.1.605 (lite) TV Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "10",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "25.7.1.605",
       "engine": {
         "name": "Blink",
@@ -4723,11 +4723,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "Pro A3 CSB-242",
       "brand": {
         "name": "CADENA",
-        "code": 244
+        "code": 245
       }
     }
   },
@@ -4735,13 +4735,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; RH-LE50DSY-C Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Webview",
-      "code": 161,
+      "code": 162,
       "version": "113.0.5672.163",
       "family": "Chrome",
       "engine": {
@@ -4750,11 +4750,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "RH-LE50DSY-C",
       "brand": {
         "name": "ROCH",
-        "code": 1459
+        "code": 1460
       }
     }
   },
@@ -4762,13 +4762,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; RH-LE32DSY-C Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/24.12.0.453 (lite) TV Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "24.12.0.453",
       "engine": {
         "name": "Blink",
@@ -4776,11 +4776,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "RH-LE32DSY-C",
       "brand": {
         "name": "ROCH",
-        "code": 1459
+        "code": 1460
       }
     }
   },
@@ -4788,13 +4788,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 14; VONTAR H728) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.116 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "14",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "79.0.3945.116",
       "family": "Chrome",
       "engine": {
@@ -4803,11 +4803,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "H728",
       "brand": {
         "name": "Vontar",
-        "code": 1888
+        "code": 1889
       }
     }
   },
@@ -4815,14 +4815,14 @@
     "userAgent": "Mozilla/5.0 (Linux; arm; Android 11; YNDX-00096 Build/RD2A.211001.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/132.0.6834.718 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "cpuArchitecture": "ARM",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Webview",
-      "code": 161,
+      "code": 162,
       "version": "132.0.6834.718",
       "family": "Chrome",
       "engine": {
@@ -4831,11 +4831,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "YNDX-00096",
       "brand": {
         "name": "Yandex",
-        "code": 1988
+        "code": 1989
       }
     }
   },
@@ -4843,14 +4843,14 @@
     "userAgent": "Mozilla/5.0 (Linux; arm; Android 11; YNDX-00081 Build/RD2A.211001.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/132.0.6834.718 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "cpuArchitecture": "ARM",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Webview",
-      "code": 161,
+      "code": 162,
       "version": "132.0.6834.718",
       "family": "Chrome",
       "engine": {
@@ -4859,11 +4859,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "YNDX-00081",
       "brand": {
         "name": "Yandex",
-        "code": 1988
+        "code": 1989
       }
     }
   },
@@ -4871,14 +4871,14 @@
     "userAgent": "Mozilla/5.0 (Linux; arm; Android 11; YNDX-00080 Build/RD2A.211001.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/132.0.6834.718 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "cpuArchitecture": "ARM",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Webview",
-      "code": 161,
+      "code": 162,
       "version": "132.0.6834.718",
       "family": "Chrome",
       "engine": {
@@ -4887,11 +4887,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "YNDX-00080",
       "brand": {
         "name": "Yandex",
-        "code": 1988
+        "code": 1989
       }
     }
   },
@@ -4899,14 +4899,14 @@
     "userAgent": "Mozilla/5.0 (Linux; arm; Android 11; YNDX-00079 Build/RD2A.211001.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/132.0.6834.718 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "cpuArchitecture": "ARM",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Webview",
-      "code": 161,
+      "code": 162,
       "version": "132.0.6834.718",
       "family": "Chrome",
       "engine": {
@@ -4915,11 +4915,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "YNDX-00079",
       "brand": {
         "name": "Yandex",
-        "code": 1988
+        "code": 1989
       }
     }
   },
@@ -4927,14 +4927,14 @@
     "userAgent": "Mozilla/5.0 (Linux; arm; Android 11; YNDX-00078 Build/RD2A.211001.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/132.0.6834.718 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "cpuArchitecture": "ARM",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Webview",
-      "code": 161,
+      "code": 162,
       "version": "132.0.6834.718",
       "family": "Chrome",
       "engine": {
@@ -4943,11 +4943,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "YNDX-00078",
       "brand": {
         "name": "Yandex",
-        "code": 1988
+        "code": 1989
       }
     }
   },
@@ -4955,14 +4955,14 @@
     "userAgent": "Mozilla/5.0 (Linux; arm; Android 11; SAMTRON_43SA701) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 YaBrowser/20.3.0.276.01 Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "cpuArchitecture": "ARM",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser",
-      "code": 653,
+      "code": 654,
       "version": "20.3.0.276.01",
       "engine": {
         "name": "Blink",
@@ -4970,11 +4970,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "43SA701",
       "brand": {
         "name": "Samtron",
-        "code": 1498
+        "code": 1499
       }
     }
   },
@@ -4982,13 +4982,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 13; AKAI_TA50BU500 Build/TP1A.220905.004.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/101.0.4951.61 YaBrowser/24.12.0.453 (lite) Safari/537.36 TV",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "13",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "24.12.0.453",
       "engine": {
         "name": "Blink",
@@ -4996,11 +4996,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "TA50BU500",
       "brand": {
         "name": "Akai",
-        "code": 45
+        "code": 46
       }
     }
   },
@@ -5008,13 +5008,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 13; AKAI_TA32BH500 Build/TP1A.220905.004.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/101.0.4951.61 YaBrowser/24.12.0.453 (lite) Safari/537.36 TV",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "13",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "24.12.0.453",
       "engine": {
         "name": "Blink",
@@ -5022,11 +5022,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "TA32BH500",
       "brand": {
         "name": "Akai",
-        "code": 45
+        "code": 46
       }
     }
   },
@@ -5034,13 +5034,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 13; AKAI_TA32BF552 Build/TP1A.220905.004.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/101.0.4951.61 YaBrowser/24.12.0.453 (lite) Safari/537.36 TV",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "13",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "24.12.0.453",
       "engine": {
         "name": "Blink",
@@ -5048,11 +5048,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "TA32BF552",
       "brand": {
         "name": "Akai",
-        "code": 45
+        "code": 46
       }
     }
   },
@@ -5060,13 +5060,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 12; KORAX-Eurobox Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.93 Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "12",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome",
-      "code": 137,
+      "code": 138,
       "version": "79.0.3945.93",
       "family": "Chrome",
       "engine": {
@@ -5075,11 +5075,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "Eurobox Pro",
       "brand": {
         "name": "Korax",
-        "code": 936
+        "code": 937
       }
     }
   },
@@ -5087,13 +5087,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 12; KF-1500 Build/ST; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/141.0.7390.97 YaBrowser/25.7.1.605 (lite) TV Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "12",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "25.7.1.605",
       "engine": {
         "name": "Blink",
@@ -5101,11 +5101,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "KF-1500",
       "brand": {
         "name": "Türksat",
-        "code": 2101
+        "code": 2102
       }
     }
   },
@@ -5113,13 +5113,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 12; HOCO DQ09 Build/SP1A.211105.004; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/91.0.4472.114 YaBrowser/24.12.0.453 (lite) TV Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "12",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "24.12.0.453",
       "engine": {
         "name": "Blink",
@@ -5127,11 +5127,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "DQ09",
       "brand": {
         "name": "hoco",
-        "code": 730
+        "code": 731
       }
     }
   },
@@ -5139,13 +5139,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 12; GD S1 ATV Build/SP1A.211105.004; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/95.0.4638.74 YaBrowser/25.7.1.605 (lite) TV Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "12",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "25.7.1.605",
       "engine": {
         "name": "Blink",
@@ -5153,11 +5153,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "S1 ATV",
       "brand": {
         "name": "Genius Devices",
-        "code": 2100
+        "code": 2101
       }
     }
   },
@@ -5165,13 +5165,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 10; Rombica TV Emotion Build/TV Emotion; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/74.0.3729.186 YaBrowser/25.7.1.605 (lite) TV Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "10",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser Lite",
-      "code": 655,
+      "code": 656,
       "version": "25.7.1.605",
       "engine": {
         "name": "Blink",
@@ -5179,11 +5179,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "TV Emotion",
       "brand": {
         "name": "Rombica",
-        "code": 1465
+        "code": 1466
       }
     }
   },
@@ -5191,23 +5191,23 @@
     "userAgent": "Mozilla/5.0 (SmartHub; SMART-TV; U; Linux/SmartTV; Maple2012) AppleWebKit/534.7 (KHTML, like Gecko) SmartTV Safari/534.7",
     "os": {
       "name": "Orsay",
-      "code": 200,
+      "code": 201,
       "family": "Other Smart TV"
     },
     "browser": {
       "name": "Maple",
-      "code": 346,
+      "code": 347,
       "engine": {
         "name": "Maple",
         "version": "2012"
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "Smart TV (2012)",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -5215,23 +5215,23 @@
     "userAgent": "Mozilla/5.0 (SmartHub; SMART-TV; U; Linux/SmartTV+2013; Maple2012) AppleWebKit/535.20+ (KHTML, like Gecko) SmartTV Safari/535.20+",
     "os": {
       "name": "Orsay",
-      "code": 200,
+      "code": 201,
       "family": "Other Smart TV"
     },
     "browser": {
       "name": "Maple",
-      "code": 346,
+      "code": 347,
       "engine": {
         "name": "Maple",
         "version": "2012"
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "Smart TV (2013)",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -5239,23 +5239,23 @@
     "userAgent": "Mozilla/5.0 (SmartHub; SMART-TV; U; Linux/SmartTV+2014; Maple2012) AppleWebKit/537.42+ (KHTML, like Gecko) SmartTV Safari/537.42+",
     "os": {
       "name": "Orsay",
-      "code": 200,
+      "code": 201,
       "family": "Other Smart TV"
     },
     "browser": {
       "name": "Maple",
-      "code": 346,
+      "code": 347,
       "engine": {
         "name": "Maple",
         "version": "2012"
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "Smart TV (2014)",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -5263,23 +5263,23 @@
     "userAgent": "Mozilla/5.0 (SmartHub; SMART-TV; U; Linux/SmartTV+2015; Maple2012) AppleWebKit/537.42+ (KHTML, like Gecko) SmartTV Safari/537.42+",
     "os": {
       "name": "Orsay",
-      "code": 200,
+      "code": 201,
       "family": "Other Smart TV"
     },
     "browser": {
       "name": "Maple",
-      "code": 346,
+      "code": 347,
       "engine": {
         "name": "Maple",
         "version": "2012"
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "Smart TV (2015)",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -5287,23 +5287,23 @@
     "userAgent": "Mozilla/5.0(SmartHub;SMART-TV;U;Linux/SmartTV;Maple2012).",
     "os": {
       "name": "Orsay",
-      "code": 200,
+      "code": 201,
       "family": "Other Smart TV"
     },
     "browser": {
       "name": "Maple",
-      "code": 346,
+      "code": 347,
       "engine": {
         "name": "Maple",
         "version": "2012"
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "Smart TV (2012)",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -5311,40 +5311,40 @@
     "userAgent": "Mozilla/5.0 (SmartHub; SMART-TV; U; Linux/SmartTV) AppleWebKit/531.2 (KHTML, like Gecko) Web Browser/1.0 SmartTV Safari/531.2+",
     "os": {
       "name": "Orsay",
-      "code": 200,
+      "code": 201,
       "family": "Other Smart TV"
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "Smart TV",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
   {
     "userAgent": "REDLINECLIENT AT_1000_HD V2.8.93",
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Redline",
       "version": "2.8.93"
     },
     "device": {
-      "type": 5
+      "type": 6
     }
   },
   {
     "userAgent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) Chr0me/87.0.4280.88 Safari/537.36 LG Browser/8.00.00(LGE; ATV75UHDW-0324; 04.42.26; 0x00000001; DTV_C22P); webOS.TV-2022; LG NetCast.TV-2013 Compatible (LGE, ATV75UHDW-0324, wireless)",
     "os": {
       "name": "webOS",
-      "code": 185,
+      "code": 186,
       "version": "22",
       "family": "Other Mobile"
     },
     "browser": {
       "name": "LG Browser",
-      "code": 327,
+      "code": 328,
       "version": "8.00.00",
       "engine": {
         "name": "Blink",
@@ -5352,11 +5352,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "ATV75UHDW-0324",
       "brand": {
         "name": "BAUHN",
-        "code": 158
+        "code": 159
       }
     }
   },
@@ -5364,13 +5364,13 @@
     "userAgent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36 HbbTV/1.5.1 (+DRM; LGE/WALTON/WESTON; 50WS3204; WEBOS5.0 04.50.63; W50_K6LP; DTV_C20P;)",
     "os": {
       "name": "webOS",
-      "code": 185,
+      "code": 186,
       "version": "5.0",
       "family": "Other Mobile"
     },
     "browser": {
       "name": "Chrome",
-      "code": 137,
+      "code": 138,
       "version": "68.0.3440.106",
       "family": "Chrome",
       "engine": {
@@ -5379,11 +5379,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "50WS3204",
       "brand": {
         "name": "Weston",
-        "code": 1926
+        "code": 1927
       }
     }
   },
@@ -5391,13 +5391,13 @@
     "userAgent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 HbbTV/1.6.1 (+DRM; LGE/SILICONPLAYER/WESTON; 50WS3205; WEBOS22 04.42.26; W22_K8LP; DTV_C22P;)",
     "os": {
       "name": "webOS",
-      "code": 185,
+      "code": 186,
       "version": "22",
       "family": "Other Mobile"
     },
     "browser": {
       "name": "Chrome",
-      "code": 137,
+      "code": 138,
       "version": "87.0.4280.88",
       "family": "Chrome",
       "engine": {
@@ -5406,11 +5406,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "50WS3205",
       "brand": {
         "name": "Weston",
-        "code": 1926
+        "code": 1927
       }
     }
   },
@@ -5418,13 +5418,13 @@
     "userAgent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 HbbTV/1.6.1 (+DRM; LGE/SILICONPLAYER/ZIMMER; ZM-U4377; WEBOS22 04.41.53; W22_K8AP; DTV_C22L;)",
     "os": {
       "name": "webOS",
-      "code": 185,
+      "code": 186,
       "version": "22",
       "family": "Other Mobile"
     },
     "browser": {
       "name": "Chrome",
-      "code": 137,
+      "code": 138,
       "version": "87.0.4280.88",
       "family": "Chrome",
       "engine": {
@@ -5433,11 +5433,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "ZM-U4377",
       "brand": {
         "name": "Zimmer",
-        "code": 2110
+        "code": 2111
       }
     }
   },
@@ -5445,13 +5445,13 @@
     "userAgent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 HbbTV/1.6.1 (+DRM; LGE/WALTON/ZIMMER; ZM-U4377; WEBOS22 04.41.53; W22_K8AP; DTV_C22L;)",
     "os": {
       "name": "webOS",
-      "code": 185,
+      "code": 186,
       "version": "22",
       "family": "Other Mobile"
     },
     "browser": {
       "name": "Chrome",
-      "code": 137,
+      "code": 138,
       "version": "87.0.4280.88",
       "family": "Chrome",
       "engine": {
@@ -5460,11 +5460,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "ZM-U4377",
       "brand": {
         "name": "Zimmer",
-        "code": 2110
+        "code": 2111
       }
     }
   },
@@ -5472,13 +5472,13 @@
     "userAgent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36 HbbTV/1.5.1 (+DRM; LGE/WALTON/Hyundai; 50HYN3205; WEBOS5.0 04.50.63; W50_K6LP; DTV_C20P;)",
     "os": {
       "name": "webOS",
-      "code": 185,
+      "code": 186,
       "version": "5.0",
       "family": "Other Mobile"
     },
     "browser": {
       "name": "Chrome",
-      "code": 137,
+      "code": 138,
       "version": "68.0.3440.106",
       "family": "Chrome",
       "engine": {
@@ -5487,11 +5487,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "50HYN3205",
       "brand": {
         "name": "Hyundai",
-        "code": 765
+        "code": 766
       }
     }
   },
@@ -5499,13 +5499,13 @@
     "userAgent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 HbbTV/1.6.1 (+DRM; LGE/SILICONPLAYER/Hyundai; 50HYN3205; WEBOS22 04.42.26; W22_K8LP; DTV_C22P;)",
     "os": {
       "name": "webOS",
-      "code": 185,
+      "code": 186,
       "version": "22",
       "family": "Other Mobile"
     },
     "browser": {
       "name": "Chrome",
-      "code": 137,
+      "code": 138,
       "version": "87.0.4280.88",
       "family": "Chrome",
       "engine": {
@@ -5514,11 +5514,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "50HYN3205",
       "brand": {
         "name": "Hyundai",
-        "code": 765
+        "code": 766
       }
     }
   },
@@ -5526,13 +5526,13 @@
     "userAgent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36 HbbTV/1.5.1 (+DRM; LGE/SILICONPLAYER/AWOX; 65A6500USWF; WEBOS5.0 04.50.63; W50_K6LP; DTV_C20P;)",
     "os": {
       "name": "webOS",
-      "code": 185,
+      "code": 186,
       "version": "5.0",
       "family": "Other Mobile"
     },
     "browser": {
       "name": "Chrome",
-      "code": 137,
+      "code": 138,
       "version": "68.0.3440.106",
       "family": "Chrome",
       "engine": {
@@ -5541,11 +5541,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "65A6500USWF",
       "brand": {
         "name": "AWOX",
-        "code": 150
+        "code": 151
       }
     }
   },
@@ -5553,13 +5553,13 @@
     "userAgent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36 HbbTV/1.5.1 (+DRM; LGE/DUALSHINE/SKYTECH; ST-5090; WEBOS5.0 04.50.63; W50_K6LP; DTV_C20P;)",
     "os": {
       "name": "webOS",
-      "code": 185,
+      "code": 186,
       "version": "5.0",
       "family": "Other Mobile"
     },
     "browser": {
       "name": "Chrome",
-      "code": 137,
+      "code": 138,
       "version": "68.0.3440.106",
       "family": "Chrome",
       "engine": {
@@ -5568,11 +5568,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "ST-5090",
       "brand": {
         "name": "Skytech",
-        "code": 1558
+        "code": 1559
       }
     }
   },
@@ -5580,13 +5580,13 @@
     "userAgent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36 HbbTV/1.5.1 (+DRM; LGE/SILICONPLAYER/SKYTECH; ST-5090; WEBOS5.0 04.50.63; W50_K6LP; DTV_C20P;)",
     "os": {
       "name": "webOS",
-      "code": 185,
+      "code": 186,
       "version": "5.0",
       "family": "Other Mobile"
     },
     "browser": {
       "name": "Chrome",
-      "code": 137,
+      "code": 138,
       "version": "68.0.3440.106",
       "family": "Chrome",
       "engine": {
@@ -5595,11 +5595,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "ST-5090",
       "brand": {
         "name": "Skytech",
-        "code": 1558
+        "code": 1559
       }
     }
   },
@@ -5607,13 +5607,13 @@
     "userAgent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 HbbTV/1.6.1 (+DRM; LGE/EXPRESSLUCK/SMARTTECH; 55UW02V; WEBOS22 04.41.33; W22_K8LP; DTV_C22P;)",
     "os": {
       "name": "webOS",
-      "code": 185,
+      "code": 186,
       "version": "22",
       "family": "Other Mobile"
     },
     "browser": {
       "name": "Chrome",
-      "code": 137,
+      "code": 138,
       "version": "87.0.4280.88",
       "family": "Chrome",
       "engine": {
@@ -5622,11 +5622,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "55UW02V",
       "brand": {
         "name": "Smart Tech",
-        "code": 1564
+        "code": 1565
       }
     }
   },
@@ -5634,13 +5634,13 @@
     "userAgent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 HbbTV/1.6.1 (+DRM; LGE/KONKA/STILEVS; ST55SMWOS4K; WEBOS22 04.42.26; W22_K8LP; DTV_C22P;)",
     "os": {
       "name": "webOS",
-      "code": 185,
+      "code": 186,
       "version": "22",
       "family": "Other Mobile"
     },
     "browser": {
       "name": "Chrome",
-      "code": 137,
+      "code": 138,
       "version": "87.0.4280.88",
       "family": "Chrome",
       "engine": {
@@ -5649,11 +5649,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "ST55SMWOS4K",
       "brand": {
         "name": "Stilevs",
-        "code": 1621
+        "code": 1622
       }
     }
   },
@@ -5661,13 +5661,13 @@
     "userAgent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 HbbTV/1.6.1 (+DRM; LGE/WALTON/STILEVS; ST55SMWOS4K; WEBOS22 04.42.26; W22_K8LP; DTV_C22P;)",
     "os": {
       "name": "webOS",
-      "code": 185,
+      "code": 186,
       "version": "22",
       "family": "Other Mobile"
     },
     "browser": {
       "name": "Chrome",
-      "code": 137,
+      "code": 138,
       "version": "87.0.4280.88",
       "family": "Chrome",
       "engine": {
@@ -5676,11 +5676,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "ST55SMWOS4K",
       "brand": {
         "name": "Stilevs",
-        "code": 1621
+        "code": 1622
       }
     }
   },
@@ -5688,13 +5688,13 @@
     "userAgent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36 HbbTV/1.5.1 (+DRM; LGE/KTC/NEXT; YE-43020FS2-4K; WEBOS5.0 04.50.63; W50_K6LP; DTV_C20P;)",
     "os": {
       "name": "webOS",
-      "code": 185,
+      "code": 186,
       "version": "5.0",
       "family": "Other Mobile"
     },
     "browser": {
       "name": "Chrome",
-      "code": 137,
+      "code": 138,
       "version": "68.0.3440.106",
       "family": "Chrome",
       "engine": {
@@ -5703,11 +5703,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "YE-43020FS2-4K",
       "brand": {
         "name": "Next & NextStar",
-        "code": 1198
+        "code": 1199
       }
     }
   },
@@ -5715,13 +5715,13 @@
     "userAgent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36 HbbTV/1.5.1 (+DRM; LGE/SILICONPLAYER/NEXT; YE-43020FS2-4K; WEBOS5.0 04.50.63; W50_K6LP; DTV_C20P;)",
     "os": {
       "name": "webOS",
-      "code": 185,
+      "code": 186,
       "version": "5.0",
       "family": "Other Mobile"
     },
     "browser": {
       "name": "Chrome",
-      "code": 137,
+      "code": 138,
       "version": "68.0.3440.106",
       "family": "Chrome",
       "engine": {
@@ -5730,11 +5730,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "YE-43020FS2-4K",
       "brand": {
         "name": "Next & NextStar",
-        "code": 1198
+        "code": 1199
       }
     }
   },
@@ -5742,13 +5742,13 @@
     "userAgent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36 HbbTV/1.5.1 (+DRM; LGE/SILICONPLAYER/SUNGATE; LED50DN5; WEBOS5.0 04.50.63; W50_K6LP; DTV_C20P;)",
     "os": {
       "name": "webOS",
-      "code": 185,
+      "code": 186,
       "version": "5.0",
       "family": "Other Mobile"
     },
     "browser": {
       "name": "Chrome",
-      "code": 137,
+      "code": 138,
       "version": "68.0.3440.106",
       "family": "Chrome",
       "engine": {
@@ -5757,11 +5757,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "LED50DN5",
       "brand": {
         "name": "SUNGATE",
-        "code": 2108
+        "code": 2109
       }
     }
   },
@@ -5769,13 +5769,13 @@
     "userAgent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.128 Safari/537.36 HbbTV/1.6.1 (+DRM; LGE/ATMACA/INNOHIT; SN32LEDT260-0276; WEBOS23 03.11.77; W23_KF23F; DTV_C23L;) LaTivu_2.0_2023",
     "os": {
       "name": "webOS",
-      "code": 185,
+      "code": 186,
       "version": "23",
       "family": "Other Mobile"
     },
     "browser": {
       "name": "Chrome",
-      "code": 137,
+      "code": 138,
       "version": "94.0.4606.128",
       "family": "Chrome",
       "engine": {
@@ -5784,11 +5784,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "SN32LEDT260-0276",
       "brand": {
         "name": "Inno Hit",
-        "code": 2104
+        "code": 2105
       }
     }
   },
@@ -5796,13 +5796,13 @@
     "userAgent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36 HbbTV/1.5.1 (+DRM; LGE/KONKA/FOX; 43WOS620D; WEBOS5.0 04.50.61; W50_K6LP; DTV_C20P;)",
     "os": {
       "name": "webOS",
-      "code": 185,
+      "code": 186,
       "version": "5.0",
       "family": "Other Mobile"
     },
     "browser": {
       "name": "Chrome",
-      "code": 137,
+      "code": 138,
       "version": "68.0.3440.106",
       "family": "Chrome",
       "engine": {
@@ -5811,11 +5811,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "43WOS620D",
       "brand": {
         "name": "FOX",
-        "code": 2105
+        "code": 2106
       }
     }
   },
@@ -5823,13 +5823,13 @@
     "userAgent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36 HbbTV/1.5.1 (+DRM; LGE/KONKA/TEST; 43WOS620D-123; WEBOS5.0 04.50.61; W50_K6LP; DTV_C20P;)",
     "os": {
       "name": "webOS",
-      "code": 185,
+      "code": 186,
       "version": "5.0",
       "family": "Other Mobile"
     },
     "browser": {
       "name": "Chrome",
-      "code": 137,
+      "code": 138,
       "version": "68.0.3440.106",
       "family": "Chrome",
       "engine": {
@@ -5838,7 +5838,7 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "43WOS620D-123"
     }
   },
@@ -5846,13 +5846,13 @@
     "userAgent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36 HbbTV/1.5.1 (+DRM; LGE/KONKA; SN55FMN243-0246; WEBOS5.0 04.50.63; W50_K6LP; DTV_C20P;)",
     "os": {
       "name": "webOS",
-      "code": 185,
+      "code": 186,
       "version": "5.0",
       "family": "Other Mobile"
     },
     "browser": {
       "name": "Chrome",
-      "code": 137,
+      "code": 138,
       "version": "68.0.3440.106",
       "family": "Chrome",
       "engine": {
@@ -5861,11 +5861,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "SN55FMN243-0246",
       "brand": {
         "name": "Sunny",
-        "code": 1631
+        "code": 1632
       }
     }
   },
@@ -5873,13 +5873,13 @@
     "userAgent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 HbbTV/1.6.1 (+DRM; LGE/ATMACA/PEAQ; PQ32DAL540-0276; WEBOS22 04.41.53; W22_K8AP; DTV_C22L;)",
     "os": {
       "name": "webOS",
-      "code": 185,
+      "code": 186,
       "version": "22",
       "family": "Other Mobile"
     },
     "browser": {
       "name": "Chrome",
-      "code": 137,
+      "code": 138,
       "version": "87.0.4280.88",
       "family": "Chrome",
       "engine": {
@@ -5888,11 +5888,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "PQ32DAL540-0276",
       "brand": {
         "name": "PEAQ",
-        "code": 1328
+        "code": 1329
       }
     }
   },
@@ -5900,13 +5900,13 @@
     "userAgent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 HbbTV/1.6.1 (+DRM; LGE/ATMACA/PREO; PR32DAL540-0276; WEBOS22 04.41.53; W22_K8AP; DTV_C22L;)",
     "os": {
       "name": "webOS",
-      "code": 185,
+      "code": 186,
       "version": "22",
       "family": "Other Mobile"
     },
     "browser": {
       "name": "Chrome",
-      "code": 137,
+      "code": 138,
       "version": "87.0.4280.88",
       "family": "Chrome",
       "engine": {
@@ -5915,11 +5915,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "Preo PR32DAL540-0276",
       "brand": {
         "name": "Teknosa",
-        "code": 1704
+        "code": 1705
       }
     }
   },
@@ -5927,13 +5927,13 @@
     "userAgent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36 HbbTV/1.5.1 (+DRM; LGE/ATMACA/ALLSTAR; ASSTV55WF4K; WEBOS5.0 04.50.63; W50_K6LP; DTV_C20P;)",
     "os": {
       "name": "webOS",
-      "code": 185,
+      "code": 186,
       "version": "5.0",
       "family": "Other Mobile"
     },
     "browser": {
       "name": "Chrome",
-      "code": 137,
+      "code": 138,
       "version": "68.0.3440.106",
       "family": "Chrome",
       "engine": {
@@ -5942,11 +5942,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "ASSTV55WF4K",
       "brand": {
         "name": "All Star",
-        "code": 58
+        "code": 59
       }
     }
   },
@@ -5954,13 +5954,13 @@
     "userAgent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 HbbTV/1.6.1 (+DRM; LGE/KTC/BOTECH; 58BSE9503; WEBOS22 04.42.26; W22_K8LP; DTV_C22P;)",
     "os": {
       "name": "webOS",
-      "code": 185,
+      "code": 186,
       "version": "22",
       "family": "Other Mobile"
     },
     "browser": {
       "name": "Chrome",
-      "code": 137,
+      "code": 138,
       "version": "87.0.4280.88",
       "family": "Chrome",
       "engine": {
@@ -5969,11 +5969,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "58BSE9503",
       "brand": {
         "name": "Botech",
-        "code": 226
+        "code": 227
       }
     }
   },
@@ -5981,13 +5981,13 @@
     "userAgent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 HbbTV/1.6.1 (+DRM; LGE/JPE/JVC; LT-65NQ7155; WEBOS22 04.42.26; W22_K8LP; DTV_C22P;)",
     "os": {
       "name": "webOS",
-      "code": 185,
+      "code": 186,
       "version": "22",
       "family": "Other Mobile"
     },
     "browser": {
       "name": "Chrome",
-      "code": 137,
+      "code": 138,
       "version": "87.0.4280.88",
       "family": "Chrome",
       "engine": {
@@ -5996,11 +5996,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "LT-65NQ7155",
       "brand": {
         "name": "JVC",
-        "code": 884
+        "code": 885
       }
     }
   },
@@ -6008,13 +6008,13 @@
     "userAgent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 HbbTV/1.6.1 (+DRM; LGE/SILICONPLAYER/JVC; LT-50NQ7155; WEBOS22 04.42.26; W22_K8LP; DTV_C22P;)",
     "os": {
       "name": "webOS",
-      "code": 185,
+      "code": 186,
       "version": "22",
       "family": "Other Mobile"
     },
     "browser": {
       "name": "Chrome",
-      "code": 137,
+      "code": 138,
       "version": "87.0.4280.88",
       "family": "Chrome",
       "engine": {
@@ -6023,11 +6023,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "LT-50NQ7155",
       "brand": {
         "name": "JVC",
-        "code": 884
+        "code": 885
       }
     }
   },
@@ -6035,13 +6035,13 @@
     "userAgent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 HbbTV/1.6.1 (+DRM; LGE/XianYou/TAUBE; TB50WOUMC; WEBOS22 04.41.33; W22_K8LP; DTV_C22P;)",
     "os": {
       "name": "webOS",
-      "code": 185,
+      "code": 186,
       "version": "22",
       "family": "Other Mobile"
     },
     "browser": {
       "name": "Chrome",
-      "code": 137,
+      "code": 138,
       "version": "87.0.4280.88",
       "family": "Chrome",
       "engine": {
@@ -6050,11 +6050,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "TB50WOUMC",
       "brand": {
         "name": "TAUBE",
-        "code": 1665
+        "code": 1666
       }
     }
   },
@@ -6062,13 +6062,13 @@
     "userAgent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 HbbTV/1.6.1 (+DRM; LGE/SILICONPLAYER/SSMART; 43FSV22; WEBOS22 04.41.53; W22_K8AP; DTV_C22L;)",
     "os": {
       "name": "webOS",
-      "code": 185,
+      "code": 186,
       "version": "22",
       "family": "Other Mobile"
     },
     "browser": {
       "name": "Chrome",
-      "code": 137,
+      "code": 138,
       "version": "87.0.4280.88",
       "family": "Chrome",
       "engine": {
@@ -6077,11 +6077,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "43FSV22",
       "brand": {
         "name": "Ssmart",
-        "code": 2109
+        "code": 2110
       }
     }
   },
@@ -6089,13 +6089,13 @@
     "userAgent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36 HbbTV/1.5.1 (+DRM; LGE/SILICONPLAYER/SCHNEIDER; LED58-SC680K; WEBOS5.0 04.50.62; W50_K6LP; DTV_C20P;)",
     "os": {
       "name": "webOS",
-      "code": 185,
+      "code": 186,
       "version": "5.0",
       "family": "Other Mobile"
     },
     "browser": {
       "name": "Chrome",
-      "code": 137,
+      "code": 138,
       "version": "68.0.3440.106",
       "family": "Chrome",
       "engine": {
@@ -6104,11 +6104,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "LED58-SC680K",
       "brand": {
         "name": "Schneider",
-        "code": 1509
+        "code": 1510
       }
     }
   },
@@ -6116,13 +6116,13 @@
     "userAgent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 HbbTV/1.6.1 (+DRM; LGE/XianYou/PREMIER; 55PRM2020USV; WEBOS22 04.42.26; W22_K8LP; DTV_C22P;)",
     "os": {
       "name": "webOS",
-      "code": 185,
+      "code": 186,
       "version": "22",
       "family": "Other Mobile"
     },
     "browser": {
       "name": "Chrome",
-      "code": 137,
+      "code": 138,
       "version": "87.0.4280.88",
       "family": "Chrome",
       "engine": {
@@ -6131,11 +6131,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "55PRM2020USV",
       "brand": {
         "name": "PREMIER",
-        "code": 1375
+        "code": 1376
       }
     }
   },
@@ -6143,13 +6143,13 @@
     "userAgent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36 HbbTV/1.5.1 (+DRM; LGE/SILICONPLAYER/MIIA; OV43400; WEBOS5.0 04.50.63; W50_K6LP; DTV_C20L;)",
     "os": {
       "name": "webOS",
-      "code": 185,
+      "code": 186,
       "version": "5.0",
       "family": "Other Mobile"
     },
     "browser": {
       "name": "Chrome",
-      "code": 137,
+      "code": 138,
       "version": "68.0.3440.106",
       "family": "Chrome",
       "engine": {
@@ -6158,10 +6158,10 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "brand": {
         "name": "MIIA",
-        "code": 2106
+        "code": 2107
       }
     }
   },
@@ -6169,13 +6169,13 @@
     "userAgent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36 HbbTV/1.5.1 (+DRM; LGE/TPV; 43UN68006LA; WEBOS5.0 04.50.63; W50_K6LP; DTV_C20P;)",
     "os": {
       "name": "webOS",
-      "code": 185,
+      "code": 186,
       "version": "5.0",
       "family": "Other Mobile"
     },
     "browser": {
       "name": "Chrome",
-      "code": 137,
+      "code": 138,
       "version": "68.0.3440.106",
       "family": "Chrome",
       "engine": {
@@ -6184,11 +6184,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "43UN68006LA",
       "brand": {
         "name": "LG",
-        "code": 984
+        "code": 985
       }
     }
   }

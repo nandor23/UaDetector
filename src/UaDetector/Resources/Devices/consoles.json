@@ -2,13 +2,13 @@
   {
     "brand": "Archos",
     "regex": "Archos.*GAMEPAD([2]?)",
-    "type": 4,
+    "type": 5,
     "model": "Gamepad $1"
   },
   {
     "brand": "Microsoft",
     "regex": "Xbox",
-    "type": 4,
+    "type": 5,
     "modelVariants": [
       {
         "regex": "Xbox Series X",
@@ -35,25 +35,25 @@
   {
     "brand": "Nintendo",
     "regex": "Nintendo (([3]?DS[i]?)|Wii[U]?|Switch|GameBoy)",
-    "type": 4,
+    "type": 5,
     "model": "$1"
   },
   {
     "brand": "OUYA",
     "regex": "OUYA",
-    "type": 4,
+    "type": 5,
     "model": "OUYA"
   },
   {
     "brand": "Sanyo",
     "regex": "Aplix_SANYO",
-    "type": 4,
+    "type": 5,
     "model": "3DO TRY"
   },
   {
     "brand": "Sega",
     "regex": "Dreamcast|Aplix_SEGASATURN",
-    "type": 4,
+    "type": 5,
     "modelVariants": [
       {
         "regex": "Dreamcast",
@@ -68,13 +68,13 @@
   {
     "brand": "JXD",
     "regex": "JXD_S601WIFI",
-    "type": 4,
+    "type": 5,
     "model": "S601 WiFi"
   },
   {
     "brand": "Sony",
     "regex": "(?:PlayStation ?(4 Pro|[2-5]|Portable|Vita)|sony_tv;ps5;|\\(PS3\\))",
-    "type": 4,
+    "type": 5,
     "modelVariants": [
       {
         "regex": "sony_tv;ps5;",
@@ -97,7 +97,7 @@
   {
     "brand": "Retroid Pocket",
     "regex": "Retroid Pocket",
-    "type": 4,
+    "type": 5,
     "modelVariants": [
       {
         "regex": "Pocket ([23]) ?(?:Plus|\\+)",

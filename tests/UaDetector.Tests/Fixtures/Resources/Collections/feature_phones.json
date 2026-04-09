@@ -3,14 +3,14 @@
     "userAgent": "AIRNESS-AIR99/REV 2.2.1/Teleca Q03B1",
     "browser": {
       "name": "Obigo",
-      "code": 402
+      "code": 403
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "AIR99",
       "brand": {
         "name": "Airness",
-        "code": 35
+        "code": 36
       }
     }
   },
@@ -18,20 +18,20 @@
     "userAgent": "BenQ-CF61/1.00/WAP2.0/MIDP2.0/CLDC1.0 UP.Browser/6.3.0.4.c.1.102 (GUI) MMP/2.0",
     "os": {
       "name": "Java ME",
-      "code": 63,
+      "code": 64,
       "family": "Real-time OS"
     },
     "browser": {
       "name": "Openwave Mobile Browser",
-      "code": 430,
+      "code": 431,
       "version": "6.3.0.4"
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "CF61",
       "brand": {
         "name": "BenQ",
-        "code": 171
+        "code": 172
       }
     }
   },
@@ -39,31 +39,31 @@
     "userAgent": "Cricket-A310/1.0 UP.Browser/6.3.0.7 (GUI) MMP/2.0",
     "os": {
       "name": "Java ME",
-      "code": 63,
+      "code": 64,
       "family": "Real-time OS"
     },
     "browser": {
       "name": "Openwave Mobile Browser",
-      "code": 430,
+      "code": 431,
       "version": "6.3.0.7"
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "A310",
       "brand": {
         "name": "Cricket",
-        "code": 331
+        "code": 332
       }
     }
   },
   {
     "userAgent": "R380 2.0 WAP1.1",
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "R380",
       "brand": {
         "name": "Ericsson",
-        "code": 495
+        "code": 496
       }
     }
   },
@@ -71,15 +71,15 @@
     "userAgent": "Fly_DS123/Q03C_MAUI_Browser/MIDP2.0 Configuration/CLDC-1.1",
     "os": {
       "name": "Java ME",
-      "code": 63,
+      "code": 64,
       "family": "Real-time OS"
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "DS123",
       "brand": {
         "name": "Fly",
-        "code": 564
+        "code": 565
       }
     }
   },
@@ -87,14 +87,14 @@
     "userAgent": "FLY_E141TV_PLUS/ WAP Browser/MAUI(HTTP PGDL;HTTPS)Profile/Q03C1-2.40 ru-RU",
     "browser": {
       "name": "MAUI WAP Browser",
-      "code": 374
+      "code": 375
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "E141TV PLUS",
       "brand": {
         "name": "Fly",
-        "code": 564
+        "code": 565
       }
     }
   },
@@ -102,15 +102,15 @@
     "userAgent": "Fly_E158/WAPBrowserProfile/MIDP2.0 Configuration/CLDC1.1",
     "os": {
       "name": "Java ME",
-      "code": 63,
+      "code": 64,
       "family": "Real-time OS"
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "E158",
       "brand": {
         "name": "Fly",
-        "code": 564
+        "code": 565
       }
     }
   },
@@ -118,20 +118,20 @@
     "userAgent": "GIONEE50_12864_11B_HW (MRE\\\\2.5.00(3072) resolution\\\\240320 chipset\\\\MT6250 touch\\\\1 tpannel\\\\0 camera\\\\1 gsensor\\\\0 keyboard\\ormal) 1307SY_0201_V1045 Release/2013.06.28 WAP Browser/MAUI (HTTP PGDL; HTTPS) Profile/Profile/MIDP-2.0 Configuration/CLDC-1.1 Q03C1-2.40 en-US",
     "os": {
       "name": "MRE",
-      "code": 97,
+      "code": 98,
       "version": "2.5.00",
       "family": "Real-time OS"
     },
     "browser": {
       "name": "MAUI WAP Browser",
-      "code": 374
+      "code": 375
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "50",
       "brand": {
         "name": "Gionee",
-        "code": 635
+        "code": 636
       }
     }
   },
@@ -139,52 +139,52 @@
     "userAgent": "GIONEE S80/Q03C MAUI-browser/MIDP2.0/CLDC1.1/Screen-240X320",
     "os": {
       "name": "Java ME",
-      "code": 63,
+      "code": 64,
       "family": "Real-time OS"
     },
     "browser": {
       "name": "MAUI WAP Browser",
-      "code": 374
+      "code": 375
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "S80",
       "brand": {
         "name": "Gionee",
-        "code": 635
+        "code": 636
       }
     }
   },
   {
     "userAgent": "Karbonn K222s WAP-Browser/1.0.0",
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "K222s",
       "brand": {
         "name": "Karbonn",
-        "code": 893
+        "code": 894
       }
     }
   },
   {
     "userAgent": "Karbonn K595 WAP-Browser/1.0.0",
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "K595",
       "brand": {
         "name": "Karbonn",
-        "code": 893
+        "code": 894
       }
     }
   },
   {
     "userAgent": "WAP Browser-Karbonn K84/1.0.0",
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "K84",
       "brand": {
         "name": "Karbonn",
-        "code": 893
+        "code": 894
       }
     }
   },
@@ -192,20 +192,20 @@
     "userAgent": "KDDI-CA3H UP.Browser/6.2_7.2.7.1.K.5.214 (GUI) MMP/2.0",
     "os": {
       "name": "Java ME",
-      "code": 63,
+      "code": 64,
       "family": "Real-time OS"
     },
     "browser": {
       "name": "Openwave Mobile Browser",
-      "code": 430,
+      "code": 431,
       "version": "6.2"
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "CA3H",
       "brand": {
         "name": "KDDI",
-        "code": 899
+        "code": 900
       }
     }
   },
@@ -213,12 +213,12 @@
     "userAgent": "Mozilla/5.0 Opera/9.80 (KDDI-KC4A; BREW; Opera Mobi; U; ja) Presto/2.4.18 Version/10.00",
     "os": {
       "name": "Brew",
-      "code": 21,
+      "code": 22,
       "family": "Brew"
     },
     "browser": {
       "name": "Opera Mobile",
-      "code": 419,
+      "code": 420,
       "version": "10.00",
       "family": "Opera",
       "engine": {
@@ -227,11 +227,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "KC4A",
       "brand": {
         "name": "KDDI",
-        "code": 899
+        "code": 900
       }
     }
   },
@@ -239,20 +239,20 @@
     "userAgent": "KDDI-SN3V UP.Browser/6.2_7.2.7.1.K.7.113 (GUI) MMP/2.0",
     "os": {
       "name": "Java ME",
-      "code": 63,
+      "code": 64,
       "family": "Real-time OS"
     },
     "browser": {
       "name": "Openwave Mobile Browser",
-      "code": 430,
+      "code": 431,
       "version": "6.2"
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "SN3V",
       "brand": {
         "name": "KDDI",
-        "code": 899
+        "code": 900
       }
     }
   },
@@ -260,20 +260,20 @@
     "userAgent": "KDDI-TS3W UP.Browser/6.2_7.2.7.1.K.6.1.102 (GUI) MMP/2.0",
     "os": {
       "name": "Java ME",
-      "code": 63,
+      "code": 64,
       "family": "Real-time OS"
     },
     "browser": {
       "name": "Openwave Mobile Browser",
-      "code": 430,
+      "code": 431,
       "version": "6.2"
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "TS3W",
       "brand": {
         "name": "KDDI",
-        "code": 899
+        "code": 900
       }
     }
   },
@@ -281,13 +281,13 @@
     "userAgent": "Mozilla/4.0 (Brew MP 1.0.4; U; en-us; Kyocera; NetFront/4.1/AMB) Sprint S2151-BST",
     "os": {
       "name": "Brew",
-      "code": 21,
+      "code": 22,
       "version": "1.0.4",
       "family": "Brew"
     },
     "browser": {
       "name": "NetFront",
-      "code": 389,
+      "code": 390,
       "version": "4.1",
       "family": "NetFront",
       "engine": {
@@ -296,11 +296,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "Coast",
       "brand": {
         "name": "Kyocera",
-        "code": 949
+        "code": 950
       }
     }
   },
@@ -308,16 +308,16 @@
     "userAgent": "lephone K10/Dorado WAP-Browser/1.0.0",
     "browser": {
       "name": "Dorado",
-      "code": 180,
+      "code": 181,
       "version": "1.0.0",
       "family": "Nokia Browser"
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "K10",
       "brand": {
         "name": "Lephone",
-        "code": 980
+        "code": 981
       }
     }
   },
@@ -325,16 +325,16 @@
     "userAgent": "lephone K7/Dorado WAP-Browser/1.0.0",
     "browser": {
       "name": "Dorado",
-      "code": 180,
+      "code": 181,
       "version": "1.0.0",
       "family": "Nokia Browser"
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "K7",
       "brand": {
         "name": "Lephone",
-        "code": 980
+        "code": 981
       }
     }
   },
@@ -342,20 +342,20 @@
     "userAgent": "MOT-V360v/08.B7.58R MIB/2.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1",
     "os": {
       "name": "Java ME",
-      "code": 63,
+      "code": 64,
       "family": "Real-time OS"
     },
     "browser": {
       "name": "Motorola Internet Browser",
-      "code": 363,
+      "code": 364,
       "version": "2.2.1"
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "V360",
       "brand": {
         "name": "Motorola",
-        "code": 1120
+        "code": 1121
       }
     }
   },
@@ -363,13 +363,13 @@
     "userAgent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12; es-US; KIN.Two 1.0)",
     "os": {
       "name": "KIN OS",
-      "code": 68,
+      "code": 69,
       "version": "1.0",
       "family": "Windows Mobile"
     },
     "browser": {
       "name": "IE Mobile",
-      "code": 292,
+      "code": 293,
       "version": "6.12",
       "family": "Internet Explorer",
       "engine": {
@@ -377,11 +377,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "Kin Two",
       "brand": {
         "name": "Microsoft",
-        "code": 1085
+        "code": 1086
       }
     }
   },
@@ -389,21 +389,21 @@
     "userAgent": "Mozilla/5.0 (Sonim-XP3400/E343B_2100B00_N1900;U;REX/1.0;BREW/3.1.5;240*320;CTC/2.0) POLARIS/6.2",
     "os": {
       "name": "Brew",
-      "code": 21,
+      "code": 22,
       "version": "3.1.5",
       "family": "Brew"
     },
     "browser": {
       "name": "Polaris",
-      "code": 469,
+      "code": 470,
       "version": "6.2"
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "XP3400",
       "brand": {
         "name": "Sonim",
-        "code": 1586
+        "code": 1587
       }
     }
   },
@@ -411,15 +411,15 @@
     "userAgent": "Mozilla/4.0 (jig browser 7.3.7; P902i)",
     "browser": {
       "name": "Jig Browser",
-      "code": 298,
+      "code": 299,
       "version": "7.3.7"
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "P902i",
       "brand": {
         "name": "Panasonic",
-        "code": 1312
+        "code": 1313
       }
     }
   },
@@ -427,12 +427,12 @@
     "userAgent": "SAMSUNG-GT-E2152/E2152XXJK2 NetFront/3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1",
     "os": {
       "name": "Java ME",
-      "code": 63,
+      "code": 64,
       "family": "Real-time OS"
     },
     "browser": {
       "name": "NetFront",
-      "code": 389,
+      "code": 390,
       "version": "3.5",
       "family": "NetFront",
       "engine": {
@@ -441,11 +441,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "E2152",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -453,12 +453,12 @@
     "userAgent": "SonyEricssonU10/R1x Browser/NetFront/3.5 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.5",
     "os": {
       "name": "Java ME",
-      "code": 63,
+      "code": 64,
       "family": "Real-time OS"
     },
     "browser": {
       "name": "NetFront",
-      "code": 389,
+      "code": 390,
       "version": "3.5",
       "family": "NetFront",
       "engine": {
@@ -467,11 +467,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "Aino",
       "brand": {
         "name": "Sony Ericsson",
-        "code": 1589
+        "code": 1590
       }
     }
   },
@@ -479,12 +479,12 @@
     "userAgent": "SonyEricssonU100i/R1x Browser/NetFront/3.5 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.5",
     "os": {
       "name": "Java ME",
-      "code": 63,
+      "code": 64,
       "family": "Real-time OS"
     },
     "browser": {
       "name": "NetFront",
-      "code": 389,
+      "code": 390,
       "version": "3.5",
       "family": "NetFront",
       "engine": {
@@ -493,11 +493,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "Aino",
       "brand": {
         "name": "Sony Ericsson",
-        "code": 1589
+        "code": 1590
       }
     }
   },
@@ -505,12 +505,12 @@
     "userAgent": "SonyEricssonJ108i/R1x Browser/NetFront/3.5 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.5",
     "os": {
       "name": "Java ME",
-      "code": 63,
+      "code": 64,
       "family": "Real-time OS"
     },
     "browser": {
       "name": "NetFront",
-      "code": 389,
+      "code": 390,
       "version": "3.5",
       "family": "NetFront",
       "engine": {
@@ -519,11 +519,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "Cedar",
       "brand": {
         "name": "Sony Ericsson",
-        "code": 1589
+        "code": 1590
       }
     }
   },
@@ -531,12 +531,12 @@
     "userAgent": "SonyEricssonJ10i2/R1x Browser/NetFront/3.5 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.5",
     "os": {
       "name": "Java ME",
-      "code": 63,
+      "code": 64,
       "family": "Real-time OS"
     },
     "browser": {
       "name": "NetFront",
-      "code": 389,
+      "code": 390,
       "version": "3.5",
       "family": "NetFront",
       "engine": {
@@ -545,11 +545,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "Elm",
       "brand": {
         "name": "Sony Ericsson",
-        "code": 1589
+        "code": 1590
       }
     }
   },
@@ -557,12 +557,12 @@
     "userAgent": "SonyEricssonJ20i/R1x Browser/NetFront/3.5 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.5",
     "os": {
       "name": "Java ME",
-      "code": 63,
+      "code": 64,
       "family": "Real-time OS"
     },
     "browser": {
       "name": "NetFront",
-      "code": 389,
+      "code": 390,
       "version": "3.5",
       "family": "NetFront",
       "engine": {
@@ -571,11 +571,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "Hazel",
       "brand": {
         "name": "Sony Ericsson",
-        "code": 1589
+        "code": 1590
       }
     }
   },
@@ -583,12 +583,12 @@
     "userAgent": "SonyEricssonF100i/R1x Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.4",
     "os": {
       "name": "Java ME",
-      "code": 63,
+      "code": 64,
       "family": "Real-time OS"
     },
     "browser": {
       "name": "NetFront",
-      "code": 389,
+      "code": 390,
       "version": "3.4",
       "family": "NetFront",
       "engine": {
@@ -597,11 +597,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "Jalou",
       "brand": {
         "name": "Sony Ericsson",
-        "code": 1589
+        "code": 1590
       }
     }
   },
@@ -609,19 +609,19 @@
     "userAgent": "SonyEricssonWT13i/R3AF010 TelecaBrowser/Q07C1-1 Profile/MIDP-2.0 Configuration/CLDC-1.1",
     "os": {
       "name": "Java ME",
-      "code": 63,
+      "code": 64,
       "family": "Real-time OS"
     },
     "browser": {
       "name": "Obigo",
-      "code": 402
+      "code": 403
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "Mix Walkman",
       "brand": {
         "name": "Sony Ericsson",
-        "code": 1589
+        "code": 1590
       }
     }
   },
@@ -629,20 +629,20 @@
     "userAgent": "UCWEB/2.0 (Java; U; MIDP-2.0; fr-FR; sonyericssonwt13i) U2/1.0.0 UCBrowser/9.2.0.311 U2/1.0.0 Mobile UNTRUSTED/1.0",
     "os": {
       "name": "Java ME",
-      "code": 63,
+      "code": 64,
       "family": "Real-time OS"
     },
     "browser": {
       "name": "UC Browser",
-      "code": 604,
+      "code": 605,
       "version": "9.2.0.311"
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "Mix Walkman",
       "brand": {
         "name": "Sony Ericsson",
-        "code": 1589
+        "code": 1590
       }
     }
   },
@@ -650,12 +650,12 @@
     "userAgent": "SonyEricssonJ105i/R1x Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.4",
     "os": {
       "name": "Java ME",
-      "code": 63,
+      "code": 64,
       "family": "Real-time OS"
     },
     "browser": {
       "name": "NetFront",
-      "code": 389,
+      "code": 390,
       "version": "3.4",
       "family": "NetFront",
       "engine": {
@@ -664,11 +664,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "Naite",
       "brand": {
         "name": "Sony Ericsson",
-        "code": 1589
+        "code": 1590
       }
     }
   },
@@ -676,19 +676,19 @@
     "userAgent": "SonyEricssonP910i/R3A SEMC-Browser/Symbian/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.0",
     "os": {
       "name": "Symbian^3",
-      "code": 154,
+      "code": 155,
       "family": "Symbian"
     },
     "browser": {
       "name": "SEMC-Browser",
-      "code": 517
+      "code": 518
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "P910i",
       "brand": {
         "name": "Sony Ericsson",
-        "code": 1589
+        "code": 1590
       }
     }
   },
@@ -696,13 +696,13 @@
     "userAgent": "Mozilla/5.0 (SymbianOS/9.2;U; Series60/5.0 SonyEricssonU1i/1.00;Profile/MIDP-2.1 Configuration/ CLDC-1.1)AppleWebKit/525 (KHTML, like Gecko) version/3.0Safari/525",
     "os": {
       "name": "Symbian OS Series 60",
-      "code": 153,
+      "code": 154,
       "version": "5.0",
       "family": "Symbian"
     },
     "browser": {
       "name": "Nokia Browser",
-      "code": 381,
+      "code": 382,
       "version": "7.0",
       "family": "Nokia Browser",
       "engine": {
@@ -711,11 +711,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "Satio",
       "brand": {
         "name": "Sony Ericsson",
-        "code": 1589
+        "code": 1590
       }
     }
   },
@@ -723,13 +723,13 @@
     "userAgent": "SonyEricssonU1i/R1CA; Mozilla/5.0 (SymbianOS/9.4; U; Series60/5.0 Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 Safari/525",
     "os": {
       "name": "Symbian OS Series 60",
-      "code": 153,
+      "code": 154,
       "version": "5.0",
       "family": "Symbian"
     },
     "browser": {
       "name": "Nokia Browser",
-      "code": 381,
+      "code": 382,
       "version": "7.0",
       "family": "Nokia Browser",
       "engine": {
@@ -738,11 +738,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "Satio",
       "brand": {
         "name": "Sony Ericsson",
-        "code": 1589
+        "code": 1590
       }
     }
   },
@@ -750,15 +750,15 @@
     "userAgent": "SonyEricssonW100i/1.0 Browser/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1",
     "os": {
       "name": "Java ME",
-      "code": 63,
+      "code": 64,
       "family": "Real-time OS"
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "Spiro",
       "brand": {
         "name": "Sony Ericsson",
-        "code": 1589
+        "code": 1590
       }
     }
   },
@@ -766,19 +766,19 @@
     "userAgent": "SonyEricssonCK13i/R5AA032 TelecaBrowser/Q07C1-1 Profile/MIDP-2.0 Configuration/CLDC-1.1",
     "os": {
       "name": "Java ME",
-      "code": 63,
+      "code": 64,
       "family": "Real-time OS"
     },
     "browser": {
       "name": "Obigo",
-      "code": 402
+      "code": 403
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "txt",
       "brand": {
         "name": "Sony Ericsson",
-        "code": 1589
+        "code": 1590
       }
     }
   },
@@ -786,19 +786,19 @@
     "userAgent": "SonyEricssonCK15i/R3AE021 TelecaBrowser/Q07C1-1 Profile/MIDP-2.0 Configuration/CLDC-1.1",
     "os": {
       "name": "Java ME",
-      "code": 63,
+      "code": 64,
       "family": "Real-time OS"
     },
     "browser": {
       "name": "Obigo",
-      "code": 402
+      "code": 403
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "txt pro",
       "brand": {
         "name": "Sony Ericsson",
-        "code": 1589
+        "code": 1590
       }
     }
   },
@@ -806,20 +806,20 @@
     "userAgent": "UCWEB/2.0 (Java; U; MIDP-2.0; es-LA; SonyEricssonCK15i) U2/1.0.0 UCBrowser/9.4.0.342 U2/1.0.0 Mobile UNTRUSTED/1.0",
     "os": {
       "name": "Java ME",
-      "code": 63,
+      "code": 64,
       "family": "Real-time OS"
     },
     "browser": {
       "name": "UC Browser",
-      "code": 604,
+      "code": 605,
       "version": "9.4.0.342"
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "txt pro",
       "brand": {
         "name": "Sony Ericsson",
-        "code": 1589
+        "code": 1590
       }
     }
   },
@@ -827,13 +827,13 @@
     "userAgent": "Mozilla/5.0 (SymbianOS/9.2;U; Series60/5.0 SonyEricssonU5i/1.00;Profile/MIDP-2.1 Configuration/ CLDC-1.1)AppleWebKit/525 (KHTML, like Gecko) version/3.0Safari/525",
     "os": {
       "name": "Symbian OS Series 60",
-      "code": 153,
+      "code": 154,
       "version": "5.0",
       "family": "Symbian"
     },
     "browser": {
       "name": "Nokia Browser",
-      "code": 381,
+      "code": 382,
       "version": "7.0",
       "family": "Nokia Browser",
       "engine": {
@@ -842,11 +842,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "Vivaz",
       "brand": {
         "name": "Sony Ericsson",
-        "code": 1589
+        "code": 1590
       }
     }
   },
@@ -854,13 +854,13 @@
     "userAgent": "Mozilla/5.0 (SymbianOS/9.2;U; Series60/5.0 SonyEricssonU8i/1.00;Profile/MIDP-2.1 Configuration/ CLDC-1.1)AppleWebKit/525 (KHTML, like Gecko) version/3.0Safari/525",
     "os": {
       "name": "Symbian OS Series 60",
-      "code": 153,
+      "code": 154,
       "version": "5.0",
       "family": "Symbian"
     },
     "browser": {
       "name": "Nokia Browser",
-      "code": 381,
+      "code": 382,
       "version": "7.0",
       "family": "Nokia Browser",
       "engine": {
@@ -869,11 +869,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "Vivaz pro",
       "brand": {
         "name": "Sony Ericsson",
-        "code": 1589
+        "code": 1590
       }
     }
   },
@@ -881,19 +881,19 @@
     "userAgent": "SonyEricssonW150a/1.0 TelecaBrowser/Q07C1-3 Profile/MIDP-2.0 Configuration/CLDC-1.1",
     "os": {
       "name": "Java ME",
-      "code": 63,
+      "code": 64,
       "family": "Real-time OS"
     },
     "browser": {
       "name": "Obigo",
-      "code": 402
+      "code": 403
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "Yendo",
       "brand": {
         "name": "Sony Ericsson",
-        "code": 1589
+        "code": 1590
       }
     }
   },
@@ -901,12 +901,12 @@
     "userAgent": "SonyEricssonW20/R1x Browser/NetFront/3.5 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.5",
     "os": {
       "name": "Java ME",
-      "code": 63,
+      "code": 64,
       "family": "Real-time OS"
     },
     "browser": {
       "name": "NetFront",
-      "code": 389,
+      "code": 390,
       "version": "3.5",
       "family": "NetFront",
       "engine": {
@@ -915,11 +915,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "Zylo",
       "brand": {
         "name": "Sony Ericsson",
-        "code": 1589
+        "code": 1590
       }
     }
   },
@@ -927,20 +927,20 @@
     "userAgent": "SAGEM-my411C-orange/1.0/ MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.2.6.c.1.382 (GUI)",
     "os": {
       "name": "Java ME",
-      "code": 63,
+      "code": 64,
       "family": "Real-time OS"
     },
     "browser": {
       "name": "Openwave Mobile Browser",
-      "code": 430,
+      "code": 431,
       "version": "7.2.6"
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "my411C-orange",
       "brand": {
         "name": "Sagem",
-        "code": 1493
+        "code": 1494
       }
     }
   },
@@ -948,20 +948,20 @@
     "userAgent": "Sagem-my411X/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.2.6.c.1.326 (GUI)",
     "os": {
       "name": "Java ME",
-      "code": 63,
+      "code": 64,
       "family": "Real-time OS"
     },
     "browser": {
       "name": "Openwave Mobile Browser",
-      "code": 430,
+      "code": 431,
       "version": "7.2.6"
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "my411X",
       "brand": {
         "name": "Sagem",
-        "code": 1493
+        "code": 1494
       }
     }
   },
@@ -969,20 +969,20 @@
     "userAgent": "SAGEM-my511X-orange/1.0/ MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.2.6.c.1.393 (GUI)",
     "os": {
       "name": "Java ME",
-      "code": 63,
+      "code": 64,
       "family": "Real-time OS"
     },
     "browser": {
       "name": "Openwave Mobile Browser",
-      "code": 430,
+      "code": 431,
       "version": "7.2.6"
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "my511X-orange",
       "brand": {
         "name": "Sagem",
-        "code": 1493
+        "code": 1494
       }
     }
   },
@@ -990,20 +990,20 @@
     "userAgent": "SAGEM-myC5-2v/1.0 UP.Browser/6.2.3.3.g.2.106 (GUI) MMP/2.0",
     "os": {
       "name": "Java ME",
-      "code": 63,
+      "code": 64,
       "family": "Real-time OS"
     },
     "browser": {
       "name": "Openwave Mobile Browser",
-      "code": 430,
+      "code": 431,
       "version": "6.2.3.3"
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "myC5-2v",
       "brand": {
         "name": "Sagem",
-        "code": 1493
+        "code": 1494
       }
     }
   },
@@ -1011,20 +1011,20 @@
     "userAgent": "SAGEM-myV-55/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.0 UP.Browser/6.2.2.6.d.3.100 (GUI) MMP/1.0",
     "os": {
       "name": "Java ME",
-      "code": 63,
+      "code": 64,
       "family": "Real-time OS"
     },
     "browser": {
       "name": "Openwave Mobile Browser",
-      "code": 430,
+      "code": 431,
       "version": "6.2.2.6"
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "myV-55",
       "brand": {
         "name": "Sagem",
-        "code": 1493
+        "code": 1494
       }
     }
   },
@@ -1032,13 +1032,13 @@
     "userAgent": "Mozilla/4.0 (BREW 3.1.5; U; en-us; Sanyo; NetFront/3.5.1/AMB) Boost SCP6760",
     "os": {
       "name": "Brew",
-      "code": 21,
+      "code": 22,
       "version": "3.1.5",
       "family": "Brew"
     },
     "browser": {
       "name": "NetFront",
-      "code": 389,
+      "code": 390,
       "version": "3.5.1",
       "family": "NetFront",
       "engine": {
@@ -1047,11 +1047,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "Incognito",
       "brand": {
         "name": "Sanyo",
-        "code": 1504
+        "code": 1505
       }
     }
   },
@@ -1059,13 +1059,13 @@
     "userAgent": "Mozilla/4.0 (Brew MP 1.0.2; U; en-us; Sanyo; NetFront/3.5.1/AMB) Boost SCP6780",
     "os": {
       "name": "Brew",
-      "code": 21,
+      "code": 22,
       "version": "1.0.2",
       "family": "Brew"
     },
     "browser": {
       "name": "NetFront",
-      "code": 389,
+      "code": 390,
       "version": "3.5.1",
       "family": "NetFront",
       "engine": {
@@ -1074,11 +1074,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "Innuendo",
       "brand": {
         "name": "Sanyo",
-        "code": 1504
+        "code": 1505
       }
     }
   },
@@ -1086,12 +1086,12 @@
     "userAgent": "Mozilla/4.0 (REX; U; en-us; Sanyo; SCP-6750/US; NetFront/3.4/AMB)",
     "os": {
       "name": "REX",
-      "code": 136,
+      "code": 137,
       "family": "Real-time OS"
     },
     "browser": {
       "name": "NetFront",
-      "code": 389,
+      "code": 390,
       "version": "3.4",
       "family": "NetFront",
       "engine": {
@@ -1100,11 +1100,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "Katana Eclipse X",
       "brand": {
         "name": "Sanyo",
-        "code": 1504
+        "code": 1505
       }
     }
   },
@@ -1112,12 +1112,12 @@
     "userAgent": "Mozilla/4.0 (MobilePhone PM-8200/US/1.0) NetFront/3.x MMP/2.0",
     "os": {
       "name": "Java ME",
-      "code": 63,
+      "code": 64,
       "family": "Real-time OS"
     },
     "browser": {
       "name": "NetFront",
-      "code": 389,
+      "code": 390,
       "version": "3",
       "family": "NetFront",
       "engine": {
@@ -1126,22 +1126,22 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "PM-8200",
       "brand": {
         "name": "Sanyo",
-        "code": 1504
+        "code": 1505
       }
     }
   },
   {
     "userAgent": "TIANYU-KTOUCH/A930/Screen-240X320",
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "A930",
       "brand": {
         "name": "TIANYU",
-        "code": 1711
+        "code": 1712
       }
     }
   },
@@ -1149,12 +1149,12 @@
     "userAgent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) 320x240; VZW; UTStar-XV6175; Window Mobile 6.1 Standard;",
     "os": {
       "name": "Windows CE",
-      "code": 171,
+      "code": 172,
       "family": "Windows Mobile"
     },
     "browser": {
       "name": "IE Mobile",
-      "code": 292,
+      "code": 293,
       "version": "8.12",
       "family": "Internet Explorer",
       "engine": {
@@ -1162,11 +1162,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "XV6175",
       "brand": {
         "name": "UTStarcom",
-        "code": 1808
+        "code": 1809
       }
     }
   },
@@ -1174,20 +1174,20 @@
     "userAgent": "VK-VK700 UP.Browser/6.2.3.4 (GUI) MMP/2.0",
     "os": {
       "name": "Java ME",
-      "code": 63,
+      "code": 64,
       "family": "Real-time OS"
     },
     "browser": {
       "name": "Openwave Mobile Browser",
-      "code": 430,
+      "code": 431,
       "version": "6.2.3.4"
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "VK700",
       "brand": {
         "name": "VK Mobile",
-        "code": 1877
+        "code": 1878
       }
     }
   },
@@ -1195,20 +1195,20 @@
     "userAgent": "vk-vk900/1.1 up.browser/6.2.3.4 (gui) mmp/2.0",
     "os": {
       "name": "Java ME",
-      "code": 63,
+      "code": 64,
       "family": "Real-time OS"
     },
     "browser": {
       "name": "Openwave Mobile Browser",
-      "code": 430,
+      "code": 431,
       "version": "6.2.3.4"
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "VK900",
       "brand": {
         "name": "VK Mobile",
-        "code": 1877
+        "code": 1878
       }
     }
   },
@@ -1216,12 +1216,12 @@
     "userAgent": "CAT-B100 MIDP-2.0/CLDC-1.1 Release/31.12.2010 Browser/Opera (HTTPS) Sync/SyncClient1.1 Profile/MIDP-2.0 Configuration/CLDC-1.1 Opera/9.80 (MTK; Nucleus; Opera Mobi/4000; U; uk-UA) Presto/2.5.28 Version/10.10",
     "os": {
       "name": "MTK / Nucleus",
-      "code": 96,
+      "code": 97,
       "family": "Real-time OS"
     },
     "browser": {
       "name": "Opera Mobile",
-      "code": 419,
+      "code": 420,
       "version": "10.10",
       "family": "Opera",
       "engine": {
@@ -1230,11 +1230,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "B100",
       "brand": {
         "name": "Cat",
-        "code": 255
+        "code": 256
       }
     }
   },
@@ -1242,20 +1242,20 @@
     "userAgent": "WAP_Browser_Larus_TV1 MRE/3.1.001536;MAUI/LARUS_TV1_V008_2015-05-05;BDATE/2015/05/18 17:46;LCD/240320;CHIP/MT6260;KEY/Normal;TOUCH/1;CAMERA/1;SENSOR/0;DEV/WAP_Browser_Larus_TV1;WAP Browser/MAUI HTTP PGDL;HTTPS;GMOBI/001;MBOUNCE/002;MOMAGIC/003;INDEX/004;S",
     "os": {
       "name": "MRE",
-      "code": 97,
+      "code": 98,
       "version": "3.1",
       "family": "Real-time OS"
     },
     "browser": {
       "name": "MAUI WAP Browser",
-      "code": 374
+      "code": 375
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "Larus TV1",
       "brand": {
         "name": "DEXP",
-        "code": 368
+        "code": 369
       }
     }
   },
@@ -1263,20 +1263,20 @@
     "userAgent": "LAVA.DISCOVER136.R016_V01 (MRE/3.1.00(2048);MAUI/Discover136_S119_20131010;BDATE/2013/10/10 22:24;LCD/320480;CHIP/MT6260;KEY/Reduced;TOUCH/1;CAMERA/0;SENSOR/0;DEV/R016_V01;WAP Browser/MAUI (HTTP PGDL;HTTPS);GMOBI/001;MBOUNCE/002;MOMAGIC/003;INDEX/004;SPICEI2I/005;GAMELOFT/006;MOBIM/)",
     "os": {
       "name": "MRE",
-      "code": 97,
+      "code": 98,
       "version": "3.1",
       "family": "Real-time OS"
     },
     "browser": {
       "name": "MAUI WAP Browser",
-      "code": 374
+      "code": 375
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "Discover 136",
       "brand": {
         "name": "Lava",
-        "code": 961
+        "code": 962
       }
     }
   },
@@ -1284,20 +1284,20 @@
     "userAgent": "DEWAV60A_64_11B_HW (MRE/3.1.00(1280);MAUI/_DE33781-EXPLAY-FIN_L104;BDATE/2013/08/07 17:28;LCD/240320;CHIP/MT6260;KEY/Normal;TOUCH/0;CAMERA/1;SENSOR/0;DEV/DEWAV60A_64_11B_HW;WAP Browser/MAUI (HTTP PGDL;HTTPS);GMOBI/001;MBOUNCE/002;MOMAGIC/003;INDEX/004;SPI",
     "os": {
       "name": "MRE",
-      "code": 97,
+      "code": 98,
       "version": "3.1",
       "family": "Real-time OS"
     },
     "browser": {
       "name": "MAUI WAP Browser",
-      "code": 374
+      "code": 375
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "Fin",
       "brand": {
         "name": "Explay",
-        "code": 525
+        "code": 526
       }
     }
   },
@@ -1305,20 +1305,20 @@
     "userAgent": "LAVA.KKT QUADRA.LEGEND61D_11C_HW_V02 (MRE/3.1.00(1);MAUI/KKT_Quadra_S107_20170206;BDATE/2017/02/06 11:15;LCD/240320;CHIP/MT6261;KEY/Normal;TOUCH/0;CAMERA/1;SENSOR/0;DEV/LEGEND61D_11C_HW_V02;WAP Browser/MAUI ();GMOBI/001;MBOUNCE/002;MOMAGIC/003;INDEX/004;SPICEI2I/005;GAMELOFT/006;MOBIM/007;KKFU) LAVA_KKT_Quadra_S107_20170206 Release/2017.02.06 WAP Browser/MAUI Profile/ Q03C1-2.40 en-US",
     "os": {
       "name": "MRE",
-      "code": 97,
+      "code": 98,
       "version": "3.1",
       "family": "Real-time OS"
     },
     "browser": {
       "name": "MAUI WAP Browser",
-      "code": 374
+      "code": 375
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "KKT Quadra",
       "brand": {
         "name": "Lava",
-        "code": 961
+        "code": 962
       }
     }
   },
@@ -1326,20 +1326,20 @@
     "userAgent": "A61D_11C_HW (MRE/3.1.00(64);MAUI/KKT40PowerP_S108_20161213;BDATE/2016/12/14 10:45;LCD/240320;CHIP/MT6261;KEY/Normal;TOUCH/0;CAMERA/1;SENSOR/0;DEV/LAVA61D_11C_HW;WAP Browser/MAUI ();GMOBI/001;MBOUNCE/002;MOMAGIC/003;INDEX/004;SPICEI2I/005;GAMELOFT/006;MOBIM/007;KKFUN/00) LAVA_KKT40PowerP_S108_20161213 Release/2016.12.14 WAP Browser/MAUI Profile/ Q03C1-2.40 en-US",
     "os": {
       "name": "MRE",
-      "code": 97,
+      "code": 98,
       "version": "3.1",
       "family": "Real-time OS"
     },
     "browser": {
       "name": "MAUI WAP Browser",
-      "code": 374
+      "code": 375
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "KKT40 Power Plus",
       "brand": {
         "name": "Lava",
-        "code": 961
+        "code": 962
       }
     }
   },
@@ -1347,20 +1347,20 @@
     "userAgent": "TIANQIN61M_11C_HW (MRE/3.1.00(64);MAUI/_T19A_MAXVI_P11_MTK6261D_V02_20180721;BDATE/2018/07/21 11:50;LCD/240320;CHIP/MT6261;KEY/Normal;TOUCH/0;CAMERA/1;SENSOR/0;DEV/TIANQIN61M_11C_HW;WAP Browser/MAUI ();GMOBI/001;MBOUNCE/002;MOMAGIC/003;INDEX/004;SPICEI2I/",
     "os": {
       "name": "MRE",
-      "code": 97,
+      "code": 98,
       "version": "3.1",
       "family": "Real-time OS"
     },
     "browser": {
       "name": "MAUI WAP Browser",
-      "code": 374
+      "code": 375
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "P11",
       "brand": {
         "name": "MAXVI",
-        "code": 1047
+        "code": 1048
       }
     }
   },
@@ -1368,20 +1368,20 @@
     "userAgent": "TIANQIN61M_11C_HW (MRE/3.1.00(64);MAUI/_Maxvi_K10_20170817;BDATE/2017/08/17 09:47;LCD/240320;CHIP/MT6261;KEY/Normal;TOUCH/0;CAMERA/1;SENSOR/0;DEV/TIANQIN61M_11C_HW;WAP Browser/MAUI ();GMOBI/001;MBOUNCE/002;MOMAGIC/003;INDEX/004;SPICEI2I/005;GAMELOFT/006;M",
     "os": {
       "name": "MRE",
-      "code": 97,
+      "code": 98,
       "version": "3.1",
       "family": "Real-time OS"
     },
     "browser": {
       "name": "MAUI WAP Browser",
-      "code": 374
+      "code": 375
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "K10",
       "brand": {
         "name": "MAXVI",
-        "code": 1047
+        "code": 1048
       }
     }
   },
@@ -1389,20 +1389,20 @@
     "userAgent": "TIANQIN61M_11C_HW (MRE/3.1.00(64);MAUI/_Maxvi_X300_20170623;BDATE/2017/06/23 14:22;LCD/240320;CHIP/MT6261;KEY/Normal;TOUCH/0;CAMERA/1;SENSOR/0;DEV/TIANQIN61M_11C_HW;WAP Browser/MAUI ();GMOBI/001;MBOUNCE/002;MOMAGIC/003;INDEX/004;SPICEI2I/005;GAMELOFT/006;",
     "os": {
       "name": "MRE",
-      "code": 97,
+      "code": 98,
       "version": "3.1",
       "family": "Real-time OS"
     },
     "browser": {
       "name": "MAUI WAP Browser",
-      "code": 374
+      "code": 375
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "X300",
       "brand": {
         "name": "MAXVI",
-        "code": 1047
+        "code": 1048
       }
     }
   },
@@ -1410,20 +1410,20 @@
     "userAgent": "TIANQIN61M_11C_HW MRE/3.1.0064;MAUI/_Maxvi_X500_20170816;BDATE/2017/08/16 13:43;LCD/240320;CHIP/MT6261;KEY/Normal;TOUCH/0;CAMERA/1;SENSOR/0;DEV/TIANQIN61M_11C_HW;WAP Browser/MAUI ;GMOBI/001;MBOUNCE/002;MOMAGIC/003;INDEX/004;SPICEI2I/005;GAMELOFT/006;MOBIM",
     "os": {
       "name": "MRE",
-      "code": 97,
+      "code": 98,
       "version": "3.1",
       "family": "Real-time OS"
     },
     "browser": {
       "name": "MAUI WAP Browser",
-      "code": 374
+      "code": 375
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "X500",
       "brand": {
         "name": "MAXVI",
-        "code": 1047
+        "code": 1048
       }
     }
   },
@@ -1431,20 +1431,20 @@
     "userAgent": "TIANQIN61M_11C_HW (MRE/3.1.00(64);MAUI/_Maxvi_X800_20170609;BDATE/2017/06/09 16:47;LCD/240320;CHIP/MT6261;KEY/Normal;TOUCH/0;CAMERA/1;SENSOR/0;DEV/TIANQIN61M_11C_HW;WAP Browser/MAUI ();GMOBI/001;MBOUNCE/002;MOMAGIC/003;INDEX/004;SPICEI2I/005;GAMELOFT/006;",
     "os": {
       "name": "MRE",
-      "code": 97,
+      "code": 98,
       "version": "3.1",
       "family": "Real-time OS"
     },
     "browser": {
       "name": "MAUI WAP Browser",
-      "code": 374
+      "code": 375
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "X800",
       "brand": {
         "name": "MAXVI",
-        "code": 1047
+        "code": 1048
       }
     }
   },
@@ -1452,20 +1452,20 @@
     "userAgent": "SAGETEL61D_11C_HW MRE/3.1.00900;MAUI/XB59_ARTEL_V5_V06_170621_MP;BDATE/2017/06/21 17:20;LCD/240320;CHIP/MT6261;KEY/Normal;TOUCH/0;CAMERA/1;SENSOR/0;DEV/SAGETEL61D_11C_HW;WAP Browser/MAUI ;GMOBI/001;MBOUNCE/002;MOMAGIC/003;INDEX/004;SPICEI2I/005;GAMELOFT/0",
     "os": {
       "name": "MRE",
-      "code": 97,
+      "code": 98,
       "version": "3.1",
       "family": "Real-time OS"
     },
     "browser": {
       "name": "MAUI WAP Browser",
-      "code": 374
+      "code": 375
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "V5",
       "brand": {
         "name": "Artel",
-        "code": 108
+        "code": 109
       }
     }
   },
@@ -1473,20 +1473,20 @@
     "userAgent": "SAGETEL61D_11C_HW MRE/3.1.00900;MAUI/_AX2941_ARTEL_X4_V05_181205_MP;BDATE/2018/12/05 15:26;LCD/240320;CHIP/MT6261;KEY/Normal;TOUCH/0;CAMERA/1;SENSOR/0;DEV/SAGETEL61D_11C_HW;WAP Browser/MAUI ;GMOBI/001;MBOUNCE/002;MOMAGIC/003;INDEX/004;SPICEI2I/005;GAMELOF",
     "os": {
       "name": "MRE",
-      "code": 97,
+      "code": 98,
       "version": "3.1",
       "family": "Real-time OS"
     },
     "browser": {
       "name": "MAUI WAP Browser",
-      "code": 374
+      "code": 375
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "X4",
       "brand": {
         "name": "Artel",
-        "code": 108
+        "code": 109
       }
     }
   },
@@ -1494,20 +1494,20 @@
     "userAgent": "SAGETEL61D_11C_HW MRE/3.1.00900;MAUI/ARTEL_F5_V02_20170527_MP;BDATE/2017/05/27 14:28;LCD/128160;CHIP/MT6261;KEY/Normal;TOUCH/0;CAMERA/1;SENSOR/0;DEV/SAGETEL61D_11C_HW;WAP Browser/MAUI ;GMOBI/001;MBOUNCE/002;MOMAGIC/003;INDEX/004;SPICEI2I/005;GAMELOFT/006;",
     "os": {
       "name": "MRE",
-      "code": 97,
+      "code": 98,
       "version": "3.1",
       "family": "Real-time OS"
     },
     "browser": {
       "name": "MAUI WAP Browser",
-      "code": 374
+      "code": 375
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "F5",
       "brand": {
         "name": "Artel",
-        "code": 108
+        "code": 109
       }
     }
   },
@@ -1515,20 +1515,20 @@
     "userAgent": "SAGETEL61D_11C_HW MRE/3.1.00900;MAUI/ARTEL_M5_V07_20171117_MP;BDATE/2017/11/17 15:42;LCD/128160;CHIP/MT6261;KEY/Normal;TOUCH/0;CAMERA/1;SENSOR/0;DEV/SAGETEL61D_11C_HW;WAP Browser/MAUI ;GMOBI/001;MBOUNCE/002;MOMAGIC/003;INDEX/004;SPICEI2I/005;GAMELOFT/006;",
     "os": {
       "name": "MRE",
-      "code": 97,
+      "code": 98,
       "version": "3.1",
       "family": "Real-time OS"
     },
     "browser": {
       "name": "MAUI WAP Browser",
-      "code": 374
+      "code": 375
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "M5",
       "brand": {
         "name": "Artel",
-        "code": 108
+        "code": 109
       }
     }
   },
@@ -1536,19 +1536,19 @@
     "userAgent": "Videocon_V1585_Maui Wap Browser Profile/MIDP-2.0 Configuration/CLDC-1.1",
     "os": {
       "name": "Java ME",
-      "code": 63,
+      "code": 64,
       "family": "Real-time OS"
     },
     "browser": {
       "name": "MAUI WAP Browser",
-      "code": 374
+      "code": 375
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "V1585",
       "brand": {
         "name": "Videocon",
-        "code": 1846
+        "code": 1847
       }
     }
   },
@@ -1556,19 +1556,19 @@
     "userAgent": "Micromax X291/Q03C MAUI-Browser Profile/MIDP-2.0 Configuration/CLDC-1.1",
     "os": {
       "name": "Java ME",
-      "code": 63,
+      "code": 64,
       "family": "Real-time OS"
     },
     "browser": {
       "name": "MAUI WAP Browser",
-      "code": 374
+      "code": 375
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "X291",
       "brand": {
         "name": "MicroMax",
-        "code": 1083
+        "code": 1084
       }
     }
   },
@@ -1576,19 +1576,19 @@
     "userAgent": "Micromax X246/Q03C MAUI-Browser Profile/MIDP-2.0 Configuration/CLDC-1.1",
     "os": {
       "name": "Java ME",
-      "code": 63,
+      "code": 64,
       "family": "Real-time OS"
     },
     "browser": {
       "name": "MAUI WAP Browser",
-      "code": 374
+      "code": 375
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "X246",
       "brand": {
         "name": "MicroMax",
-        "code": 1083
+        "code": 1084
       }
     }
   },
@@ -1596,19 +1596,19 @@
     "userAgent": "Micromax X458/Q03C MAUI-Browser Profile/MIDP-2.0 Configuration/CLDC-1.1",
     "os": {
       "name": "Java ME",
-      "code": 63,
+      "code": 64,
       "family": "Real-time OS"
     },
     "browser": {
       "name": "MAUI WAP Browser",
-      "code": 374
+      "code": 375
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "X458",
       "brand": {
         "name": "MicroMax",
-        "code": 1083
+        "code": 1084
       }
     }
   },
@@ -1616,19 +1616,19 @@
     "userAgent": "Micromax X312/Q03C MAUI-Browser Profile/MIDP-2.0 Configuration/CLDC-1.1",
     "os": {
       "name": "Java ME",
-      "code": 63,
+      "code": 64,
       "family": "Real-time OS"
     },
     "browser": {
       "name": "MAUI WAP Browser",
-      "code": 374
+      "code": 375
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "X312",
       "brand": {
         "name": "MicroMax",
-        "code": 1083
+        "code": 1084
       }
     }
   },
@@ -1636,19 +1636,19 @@
     "userAgent": "Micromax X252/Q03C MAUI-Browser Profile/MIDP-2.0 Configuration/CLDC-1.1",
     "os": {
       "name": "Java ME",
-      "code": 63,
+      "code": 64,
       "family": "Real-time OS"
     },
     "browser": {
       "name": "MAUI WAP Browser",
-      "code": 374
+      "code": 375
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "X252",
       "brand": {
         "name": "MicroMax",
-        "code": 1083
+        "code": 1084
       }
     }
   },
@@ -1656,20 +1656,20 @@
     "userAgent": "HONGYU61M_11C_HW (MRE/3.1.00(64);MAUI/_LD2409_WINMAX_BD45_180108;BDATE/2018/01/08 18:11;LCD/240320;CHIP/MT6261;KEY/Normal;TOUCH/0;CAMERA/1;SENSOR/0;DEV/HONGYU61M_11C_HW;WAP Browser/MAUI ();GMOBI/001;MBOUNCE/002;MOMAGIC/003;INDEX/004;SPICEI2I/005;GAMELOFT",
     "os": {
       "name": "MRE",
-      "code": 97,
+      "code": 98,
       "version": "3.1",
       "family": "Real-time OS"
     },
     "browser": {
       "name": "MAUI WAP Browser",
-      "code": 374
+      "code": 375
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "BD45",
       "brand": {
         "name": "Winmax",
-        "code": 1941
+        "code": 1942
       }
     }
   },
@@ -1677,15 +1677,15 @@
     "userAgent": "DoCoMo/2.0 MST_v_SH2101V",
     "browser": {
       "name": "DoCoMo",
-      "code": 177,
+      "code": 178,
       "version": "2.0"
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "SH2101V",
       "brand": {
         "name": "DoCoMo",
-        "code": 404
+        "code": 405
       }
     }
   },
@@ -1693,15 +1693,15 @@
     "userAgent": "DoCoMo/1.0/D501i",
     "browser": {
       "name": "DoCoMo",
-      "code": 177,
+      "code": 178,
       "version": "1.0"
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "D501i",
       "brand": {
         "name": "DoCoMo",
-        "code": 404
+        "code": 405
       }
     }
   },
@@ -1709,15 +1709,15 @@
     "userAgent": "DoCoMo/1.0/F501i",
     "browser": {
       "name": "DoCoMo",
-      "code": 177,
+      "code": 178,
       "version": "1.0"
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "F501i",
       "brand": {
         "name": "DoCoMo",
-        "code": 404
+        "code": 405
       }
     }
   },
@@ -1725,15 +1725,15 @@
     "userAgent": "DoCoMo/1.0/P501i",
     "browser": {
       "name": "DoCoMo",
-      "code": 177,
+      "code": 178,
       "version": "1.0"
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "P501i",
       "brand": {
         "name": "DoCoMo",
-        "code": 404
+        "code": 405
       }
     }
   },
@@ -1741,20 +1741,20 @@
     "userAgent": "KDDI-TS3N UP.Browser/6.2_7.2.7.1.K.3.330 (GUI) MMP/2.0",
     "os": {
       "name": "Java ME",
-      "code": 63,
+      "code": 64,
       "family": "Real-time OS"
     },
     "browser": {
       "name": "Openwave Mobile Browser",
-      "code": 430,
+      "code": 431,
       "version": "6.2"
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "TS3N",
       "brand": {
         "name": "KDDI",
-        "code": 899
+        "code": 900
       }
     }
   },
@@ -1762,31 +1762,31 @@
     "userAgent": "SIE-S55/16 UP.Browser/6.1.0.5.c.4 (GUI) MMP/1.0 UP.Link/5.1.2.10",
     "os": {
       "name": "Java ME",
-      "code": 63,
+      "code": 64,
       "family": "Real-time OS"
     },
     "browser": {
       "name": "Openwave Mobile Browser",
-      "code": 430,
+      "code": 431,
       "version": "6.1.0.5"
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "S55",
       "brand": {
         "name": "Siemens",
-        "code": 1539
+        "code": 1540
       }
     }
   },
   {
     "userAgent": "SIE-SLIK/3.1 UP/4.1.19i",
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "SLIK",
       "brand": {
         "name": "Siemens",
-        "code": 1539
+        "code": 1540
       }
     }
   },
@@ -1794,15 +1794,15 @@
     "userAgent": "SIE-C45/06 UP.Browser/5.0.1.1.102 (GUI)",
     "browser": {
       "name": "Openwave Mobile Browser",
-      "code": 430,
+      "code": 431,
       "version": "5.0.1.1.102"
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "C45",
       "brand": {
         "name": "Siemens",
-        "code": 1539
+        "code": 1540
       }
     }
   },
@@ -1810,20 +1810,20 @@
     "userAgent": "SIE-S65/12 UP.Browser/7.0.0.1.c3 (GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Link/5.1.2.16",
     "os": {
       "name": "Java ME",
-      "code": 63,
+      "code": 64,
       "family": "Real-time OS"
     },
     "browser": {
       "name": "Openwave Mobile Browser",
-      "code": 430,
+      "code": 431,
       "version": "7.0.0.1"
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "S65",
       "brand": {
         "name": "Siemens",
-        "code": 1539
+        "code": 1540
       }
     }
   },
@@ -1831,26 +1831,26 @@
     "userAgent": "SIE-ME45/05 UP.Browser/5.0.1.1.102 (GUI)",
     "browser": {
       "name": "Openwave Mobile Browser",
-      "code": 430,
+      "code": 431,
       "version": "5.0.1.1.102"
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "ME45",
       "brand": {
         "name": "Siemens",
-        "code": 1539
+        "code": 1540
       }
     }
   },
   {
     "userAgent": "SIE-S40/2.3 UP/4.1.16r",
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "S40",
       "brand": {
         "name": "Siemens",
-        "code": 1539
+        "code": 1540
       }
     }
   },
@@ -1858,20 +1858,20 @@
     "userAgent": "Amoi-CA6/1.0 UP.Browser/6.2.2.5 (GUI) MMP/1.0",
     "os": {
       "name": "Java ME",
-      "code": 63,
+      "code": 64,
       "family": "Real-time OS"
     },
     "browser": {
       "name": "Openwave Mobile Browser",
-      "code": 430,
+      "code": 431,
       "version": "6.2.2.5"
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "CA6",
       "brand": {
         "name": "Amoi",
-        "code": 77
+        "code": 78
       }
     }
   },
@@ -1879,20 +1879,20 @@
     "userAgent": "SAGETEL60A_6464_11B_HW (MRE/3.1.00(1280);MAUI/_X2805_ARTEL_X5_V13_191224_MP;BDATE/2019/12/24 18:05;LCD/240320;CHIP/MT6260;KEY/Normal;TOUCH/0;CAMERA/1;SENSOR/0;DEV/SAGETEL60A_6464_11B_HW;WAP Browser/MAUI (HTTP PGDL;HTTPS);GMOBI/001;MBOUNCE/002;MOMAGIC/003;",
     "os": {
       "name": "MRE",
-      "code": 97,
+      "code": 98,
       "version": "3.1",
       "family": "Real-time OS"
     },
     "browser": {
       "name": "MAUI WAP Browser",
-      "code": 374
+      "code": 375
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "X5",
       "brand": {
         "name": "Artel",
-        "code": 108
+        "code": 109
       }
     }
   },
@@ -1900,14 +1900,14 @@
     "userAgent": "Mozilla/5.0 (Mobile; Windows Phone 8.1; Android 4.0; ARM; Trident/7.0; Touch; rv:11.0; IEMobile/11.0; HISENSE; E260T+) like iPhone OS 7_0_3 Mac OS X AppleWebKit/537 (KHTML, like Gecko) Mobile Safari/537",
     "os": {
       "name": "Windows Phone",
-      "code": 174,
+      "code": 175,
       "version": "8.1",
       "cpuArchitecture": "ARM",
       "family": "Windows Mobile"
     },
     "browser": {
       "name": "IE Mobile",
-      "code": 292,
+      "code": 293,
       "version": "11.0",
       "family": "Internet Explorer",
       "engine": {
@@ -1916,11 +1916,11 @@
       }
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Nana",
       "brand": {
         "name": "Hisense",
-        "code": 719
+        "code": 720
       }
     }
   },
@@ -1928,13 +1928,13 @@
     "userAgent": "Mozilla/5.0 (Mobile; Fise_32433_3G; rv:48.0) Gecko/48.0 Firefox/48.0 KAIOS/2.5.1.1",
     "os": {
       "name": "KaiOS",
-      "code": 65,
+      "code": 66,
       "version": "2.5.1.1",
       "family": "Firefox OS"
     },
     "browser": {
       "name": "Firefox Mobile",
-      "code": 222,
+      "code": 223,
       "version": "48.0",
       "family": "Firefox",
       "engine": {
@@ -1943,11 +1943,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "M32433 3G",
       "brand": {
         "name": "FISE",
-        "code": 559
+        "code": 560
       }
     }
   },
@@ -1955,13 +1955,13 @@
     "userAgent": "Mozilla/5.0 (Mobile; DIXON_XK1_3G; rv:48.0) Gecko/48.0 Firefox/48.0 KAIOS/2.5.1.1",
     "os": {
       "name": "KaiOS",
-      "code": 65,
+      "code": 66,
       "version": "2.5.1.1",
       "family": "Firefox OS"
     },
     "browser": {
       "name": "Firefox Mobile",
-      "code": 222,
+      "code": 223,
       "version": "48.0",
       "family": "Firefox",
       "engine": {
@@ -1970,11 +1970,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "XK1 3G",
       "brand": {
         "name": "DIXON",
-        "code": 396
+        "code": 397
       }
     }
   },
@@ -1982,13 +1982,13 @@
     "userAgent": "Mozilla/5.0 (Mobile; Tech_Pad_Kaios_One_3G; rv:48.0) Gecko/48.0 Firefox/48.0 KAIOS/2.5.1.1",
     "os": {
       "name": "KaiOS",
-      "code": 65,
+      "code": 66,
       "version": "2.5.1.1",
       "family": "Firefox OS"
     },
     "browser": {
       "name": "Firefox Mobile",
-      "code": 222,
+      "code": 223,
       "version": "48.0",
       "family": "Firefox",
       "engine": {
@@ -1997,11 +1997,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "Kaios One 3G",
       "brand": {
         "name": "TechPad",
-        "code": 1678
+        "code": 1679
       }
     }
   },
@@ -2009,16 +2009,16 @@
     "userAgent": "B30_Dorado WAP-Browser/1.0.0",
     "browser": {
       "name": "Dorado",
-      "code": 180,
+      "code": 181,
       "version": "1.0.0",
       "family": "Nokia Browser"
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "B30",
       "brand": {
         "name": "Cat",
-        "code": 255
+        "code": 256
       }
     }
   },
@@ -2026,26 +2026,26 @@
     "userAgent": "G-Fone777/Browser/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1",
     "os": {
       "name": "Java ME",
-      "code": 63,
+      "code": 64,
       "family": "Real-time OS"
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "777",
       "brand": {
         "name": "Gfone",
-        "code": 603
+        "code": 604
       }
     }
   },
   {
     "userAgent": "FLY-SL600/BSI AU.Browser/2.0 QO3C1",
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "SL600",
       "brand": {
         "name": "Fly",
-        "code": 564
+        "code": 565
       }
     }
   },
@@ -2053,20 +2053,20 @@
     "userAgent": "O2-X2i/6.1.0.7 UP.Browser/6.1.0.7.8.c.1.103 (GUI) MMP/1.0",
     "os": {
       "name": "Java ME",
-      "code": 63,
+      "code": 64,
       "family": "Real-time OS"
     },
     "browser": {
       "name": "Openwave Mobile Browser",
-      "code": 430,
+      "code": 431,
       "version": "6.1.0.7.8"
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "X2i",
       "brand": {
         "name": "O2",
-        "code": 1240
+        "code": 1241
       }
     }
   },
@@ -2074,20 +2074,20 @@
     "userAgent": "O2-X1i/6.1.0.7 UP.Browser/6.1.0.7.8.c.1.100 (GUI) MMP/1.0",
     "os": {
       "name": "Java ME",
-      "code": 63,
+      "code": 64,
       "family": "Real-time OS"
     },
     "browser": {
       "name": "Openwave Mobile Browser",
-      "code": 430,
+      "code": 431,
       "version": "6.1.0.7.8"
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "X1i",
       "brand": {
         "name": "O2",
-        "code": 1240
+        "code": 1241
       }
     }
   },
@@ -2095,20 +2095,20 @@
     "userAgent": "O2-X4 UP.Browser/6.2.3.5.122 (GUI) MMP/2.0",
     "os": {
       "name": "Java ME",
-      "code": 63,
+      "code": 64,
       "family": "Real-time OS"
     },
     "browser": {
       "name": "Openwave Mobile Browser",
-      "code": 430,
+      "code": 431,
       "version": "6.2.3.5.122"
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "X4",
       "brand": {
         "name": "O2",
-        "code": 1240
+        "code": 1241
       }
     }
   },
@@ -2116,14 +2116,14 @@
     "userAgent": "G4040_MAUI WAP Browser",
     "browser": {
       "name": "MAUI WAP Browser",
-      "code": 374
+      "code": 375
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "G4040",
       "brand": {
         "name": "A&K",
-        "code": 13
+        "code": 14
       }
     }
   },
@@ -2131,20 +2131,20 @@
     "userAgent": "KDDI-CA32 UP.Browser/6.2.0.7.3.129 (GUI) MMP/2.0",
     "os": {
       "name": "Java ME",
-      "code": 63,
+      "code": 64,
       "family": "Real-time OS"
     },
     "browser": {
       "name": "Openwave Mobile Browser",
-      "code": 430,
+      "code": 431,
       "version": "6.2.0.7.3.129"
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "CA32",
       "brand": {
         "name": "KDDI",
-        "code": 899
+        "code": 900
       }
     }
   },
@@ -2152,15 +2152,15 @@
     "userAgent": "LAVA KKT Pearl/MIDP-2.0 Configuration/CLDC-1.1/Screen-240x320",
     "os": {
       "name": "Java ME",
-      "code": 63,
+      "code": 64,
       "family": "Real-time OS"
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "KKT Pearl",
       "brand": {
         "name": "Lava",
-        "code": 961
+        "code": 962
       }
     }
   },
@@ -2168,20 +2168,20 @@
     "userAgent": "LAVA Spark i7/MIDP-2.0 Configuration/CLDC-1.1/Screen-240x320  Dorado WAP-Browser",
     "os": {
       "name": "Java ME",
-      "code": 63,
+      "code": 64,
       "family": "Real-time OS"
     },
     "browser": {
       "name": "Dorado",
-      "code": 180,
+      "code": 181,
       "family": "Nokia Browser"
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "Spark i7",
       "brand": {
         "name": "Lava",
-        "code": 961
+        "code": 962
       }
     }
   },
@@ -2189,15 +2189,15 @@
     "userAgent": "TECNOT611/wap2.0_Profile/MIDP-2.0/CLDC-1.1/240x320/key",
     "os": {
       "name": "Java ME",
-      "code": 63,
+      "code": 64,
       "family": "Real-time OS"
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "T611",
       "brand": {
         "name": "Tecno Mobile",
-        "code": 1684
+        "code": 1685
       }
     }
   },
@@ -2205,7 +2205,7 @@
     "userAgent": "Mozilla/3.0(WILLCOM;SANYO/WX310SA/2;1/1/C128) NetFront/3.3",
     "browser": {
       "name": "NetFront",
-      "code": 389,
+      "code": 390,
       "version": "3.3",
       "family": "NetFront",
       "engine": {
@@ -2214,11 +2214,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "WX310SA",
       "brand": {
         "name": "Sanyo",
-        "code": 1504
+        "code": 1505
       }
     }
   },
@@ -2226,13 +2226,13 @@
     "userAgent": "Mozilla/5.0 (Mobile; Crosscall_Core-S4_4G; rv:48.0; CAEN) Gecko/48.0 Firefox/48.0 KAIOS/2.5.3.2",
     "os": {
       "name": "KaiOS",
-      "code": 65,
+      "code": 66,
       "version": "2.5.3.2",
       "family": "Firefox OS"
     },
     "browser": {
       "name": "Firefox Mobile",
-      "code": 222,
+      "code": 223,
       "version": "48.0",
       "family": "Firefox",
       "engine": {
@@ -2241,11 +2241,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "Core-S4",
       "brand": {
         "name": "Crosscall",
-        "code": 335
+        "code": 336
       }
     }
   },
@@ -2253,13 +2253,13 @@
     "userAgent": "Mozilla/5.0 (Mobile; ALCATEL4044T; rv:37.0) Gecko/37.0 Firefox/37.0 KaiOS/1.0",
     "os": {
       "name": "KaiOS",
-      "code": 65,
+      "code": 66,
       "version": "1.0",
       "family": "Firefox OS"
     },
     "browser": {
       "name": "Firefox Mobile",
-      "code": 222,
+      "code": 223,
       "version": "37.0",
       "family": "Firefox",
       "engine": {
@@ -2268,11 +2268,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "Go Flip",
       "brand": {
         "name": "Alcatel",
-        "code": 48
+        "code": 49
       }
     }
   },
@@ -2280,13 +2280,13 @@
     "userAgent": "Mozilla/5.0 (Mobile; LYF/LF-2403N/LYF-LF2403N-000-01-38-151217;Android; rv:48.0) Gecko/48.0 Firefox/48.0 KAIOS/2.0",
     "os": {
       "name": "KaiOS",
-      "code": 65,
+      "code": 66,
       "version": "2.0",
       "family": "Firefox OS"
     },
     "browser": {
       "name": "Firefox Mobile",
-      "code": 222,
+      "code": 223,
       "version": "48.0",
       "family": "Firefox",
       "engine": {
@@ -2295,11 +2295,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "LF-2403N",
       "brand": {
         "name": "LYF",
-        "code": 1014
+        "code": 1015
       }
     }
   },
@@ -2307,13 +2307,13 @@
     "userAgent": "Mozilla/5.0 (Mobile; LYF/F90M/LYF-F90M-000-02-28-130318; Android; rv:48.0) Gecko/48.0 Firefox/48.0 KAIOS/2.0",
     "os": {
       "name": "KaiOS",
-      "code": 65,
+      "code": 66,
       "version": "2.0",
       "family": "Firefox OS"
     },
     "browser": {
       "name": "Firefox Mobile",
-      "code": 222,
+      "code": 223,
       "version": "48.0",
       "family": "Firefox",
       "engine": {
@@ -2322,11 +2322,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "F90M",
       "brand": {
         "name": "LYF",
-        "code": 1014
+        "code": 1015
       }
     }
   },
@@ -2334,13 +2334,13 @@
     "userAgent": "Mozilla/5.0 (Mobile; LYF/F30C/LYF_F30C-000-09-10-140318; Android; rv:48.0) Gecko/48.0 Firefox/48.0 KAIOS/2.0",
     "os": {
       "name": "KaiOS",
-      "code": 65,
+      "code": 66,
       "version": "2.0",
       "family": "Firefox OS"
     },
     "browser": {
       "name": "Firefox Mobile",
-      "code": 222,
+      "code": 223,
       "version": "48.0",
       "family": "Firefox",
       "engine": {
@@ -2349,11 +2349,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "F30C",
       "brand": {
         "name": "LYF",
-        "code": 1014
+        "code": 1015
       }
     }
   },
@@ -2361,13 +2361,13 @@
     "userAgent": "Mozilla/5.0 (Mobile; IPRO_K2_3G; rv:48.0; CAEN) Gecko/48.0 Firefox/48.0 KAIOS/2.5.1.2",
     "os": {
       "name": "KaiOS",
-      "code": 65,
+      "code": 66,
       "version": "2.5.1.2",
       "family": "Firefox OS"
     },
     "browser": {
       "name": "Firefox Mobile",
-      "code": 222,
+      "code": 223,
       "version": "48.0",
       "family": "Firefox",
       "engine": {
@@ -2376,11 +2376,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "K2 3G",
       "brand": {
         "name": "iPro",
-        "code": 839
+        "code": 840
       }
     }
   },
@@ -2388,13 +2388,13 @@
     "userAgent": "Mozilla/5.0 (Mobile; CAT B35; rv:48.0) Gecko/48.0 Firefox/48.0 KAIOS/2.5.1",
     "os": {
       "name": "KaiOS",
-      "code": 65,
+      "code": 66,
       "version": "2.5.1",
       "family": "Firefox OS"
     },
     "browser": {
       "name": "Firefox Mobile",
-      "code": 222,
+      "code": 223,
       "version": "48.0",
       "family": "Firefox",
       "engine": {
@@ -2403,11 +2403,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "B35",
       "brand": {
         "name": "Cat",
-        "code": 255
+        "code": 256
       }
     }
   },
@@ -2415,13 +2415,13 @@
     "userAgent": "Mozilla/5.0 (Mobile; LYF/F120B/LYF-F120B-001-02-05-011118_audio_patch-i;Android; rv:48.0) Gecko/48.0 Firefox/48.0 KAIOS/2.5",
     "os": {
       "name": "KaiOS",
-      "code": 65,
+      "code": 66,
       "version": "2.5",
       "family": "Firefox OS"
     },
     "browser": {
       "name": "Firefox Mobile",
-      "code": 222,
+      "code": 223,
       "version": "48.0",
       "family": "Firefox",
       "engine": {
@@ -2430,11 +2430,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "F120B",
       "brand": {
         "name": "LYF",
-        "code": 1014
+        "code": 1015
       }
     }
   },
@@ -2442,13 +2442,13 @@
     "userAgent": "Mozilla/5.0 (Mobile; ATT_EA211101; rv:48.0) Gecko/48.0 Firefox/48.0 KAIOS/2.5.4",
     "os": {
       "name": "KaiOS",
-      "code": 65,
+      "code": 66,
       "version": "2.5.4",
       "family": "Firefox OS"
     },
     "browser": {
       "name": "Firefox Mobile",
-      "code": 222,
+      "code": 223,
       "version": "48.0",
       "family": "Firefox",
       "engine": {
@@ -2457,11 +2457,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "Cingular Flex",
       "brand": {
         "name": "AT&T",
-        "code": 119
+        "code": 120
       }
     }
   },
@@ -2469,13 +2469,13 @@
     "userAgent": "Mozilla/5.0 (Mobile; Nokia 2720 V Flip; rv:48.0) Gecko/48.0 Firefox/48.0 KAIOS/2.5.4",
     "os": {
       "name": "KaiOS",
-      "code": 65,
+      "code": 66,
       "version": "2.5.4",
       "family": "Firefox OS"
     },
     "browser": {
       "name": "Firefox Mobile",
-      "code": 222,
+      "code": 223,
       "version": "48.0",
       "family": "Firefox",
       "engine": {
@@ -2484,11 +2484,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "2720 V Flip",
       "brand": {
         "name": "Nokia",
-        "code": 1219
+        "code": 1220
       }
     }
   },
@@ -2496,13 +2496,13 @@
     "userAgent": "Mozilla/5.0 (Mobile; Nokia_2720_Flip; rv:48.0) Gecko/48.0 Firefox/48.0 KAIOS/2.5.2.2",
     "os": {
       "name": "KaiOS",
-      "code": 65,
+      "code": 66,
       "version": "2.5.2.2",
       "family": "Firefox OS"
     },
     "browser": {
       "name": "Firefox Mobile",
-      "code": 222,
+      "code": 223,
       "version": "48.0",
       "family": "Firefox",
       "engine": {
@@ -2511,11 +2511,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "2720 Flip",
       "brand": {
         "name": "Nokia",
-        "code": 1219
+        "code": 1220
       }
     }
   },
@@ -2523,13 +2523,13 @@
     "userAgent": "Mozilla/5.0 (Mobile; 3088X; rv:48.0) Gecko/48.0 Firefox/48.0 KAIOS/2.5.1.1",
     "os": {
       "name": "KaiOS",
-      "code": 65,
+      "code": 66,
       "version": "2.5.1.1",
       "family": "Firefox OS"
     },
     "browser": {
       "name": "Firefox Mobile",
-      "code": 222,
+      "code": 223,
       "version": "48.0",
       "family": "Firefox",
       "engine": {
@@ -2538,11 +2538,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "3088",
       "brand": {
         "name": "Alcatel",
-        "code": 48
+        "code": 49
       }
     }
   },
@@ -2550,13 +2550,13 @@
     "userAgent": "Mozilla/5.0 (Mobile; ALCATEL 4052C; rv:48.0) Gecko/48.0 Firefox/48.0 KAIOS/2.5.2",
     "os": {
       "name": "KaiOS",
-      "code": 65,
+      "code": 66,
       "version": "2.5.2",
       "family": "Firefox OS"
     },
     "browser": {
       "name": "Firefox Mobile",
-      "code": 222,
+      "code": 223,
       "version": "48.0",
       "family": "Firefox",
       "engine": {
@@ -2565,11 +2565,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "SmartFlip",
       "brand": {
         "name": "Alcatel",
-        "code": 48
+        "code": 49
       }
     }
   },
@@ -2577,13 +2577,13 @@
     "userAgent": "Mozilla/5.0 (Mobile; ALCATEL 4052O; rv:48.0) Gecko/48.0 Firefox/48.0 KAIOS/2.5.2",
     "os": {
       "name": "KaiOS",
-      "code": 65,
+      "code": 66,
       "version": "2.5.2",
       "family": "Firefox OS"
     },
     "browser": {
       "name": "Firefox Mobile",
-      "code": 222,
+      "code": 223,
       "version": "48.0",
       "family": "Firefox",
       "engine": {
@@ -2592,11 +2592,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "Go Flip 3",
       "brand": {
         "name": "Alcatel",
-        "code": 48
+        "code": 49
       }
     }
   },
@@ -2604,13 +2604,13 @@
     "userAgent": "Mozilla/5.0 (Mobile; ALCATEL 4052R; rv:48.0) Gecko/48.0 Firefox/48.0 KAIOS/2.5.2",
     "os": {
       "name": "KaiOS",
-      "code": 65,
+      "code": 66,
       "version": "2.5.2",
       "family": "Firefox OS"
     },
     "browser": {
       "name": "Firefox Mobile",
-      "code": 222,
+      "code": 223,
       "version": "48.0",
       "family": "Firefox",
       "engine": {
@@ -2619,11 +2619,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "SmartFlip",
       "brand": {
         "name": "Alcatel",
-        "code": 48
+        "code": 49
       }
     }
   },
@@ -2631,13 +2631,13 @@
     "userAgent": "Mozilla/5.0 (Mobile; ALCATEL 4052W; rv:48.0) Gecko/48.0 Firefox/48.0 KAIOS/2.5.2",
     "os": {
       "name": "KaiOS",
-      "code": 65,
+      "code": 66,
       "version": "2.5.2",
       "family": "Firefox OS"
     },
     "browser": {
       "name": "Firefox Mobile",
-      "code": 222,
+      "code": 223,
       "version": "48.0",
       "family": "Firefox",
       "engine": {
@@ -2646,11 +2646,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "Go Flip 3",
       "brand": {
         "name": "Alcatel",
-        "code": 48
+        "code": 49
       }
     }
   },
@@ -2658,13 +2658,13 @@
     "userAgent": "Mozilla/5.0 (Mobile; ALCATEL 4052Z; rv:48.0) Gecko/48.0 Firefox/48.0 KAIOS/2.5.2",
     "os": {
       "name": "KaiOS",
-      "code": 65,
+      "code": 66,
       "version": "2.5.2",
       "family": "Firefox OS"
     },
     "browser": {
       "name": "Firefox Mobile",
-      "code": 222,
+      "code": 223,
       "version": "48.0",
       "family": "Firefox",
       "engine": {
@@ -2673,11 +2673,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "Go Flip 3",
       "brand": {
         "name": "Alcatel",
-        "code": 48
+        "code": 49
       }
     }
   },
@@ -2685,13 +2685,13 @@
     "userAgent": "Mozilla/5.0 (Mobile; ALCATEL 4056W; rv:84.0) Gecko/84.0 Firefox/84.0 KAIOS/3.0",
     "os": {
       "name": "KaiOS",
-      "code": 65,
+      "code": 66,
       "version": "3.0",
       "family": "Firefox OS"
     },
     "browser": {
       "name": "Firefox Mobile",
-      "code": 222,
+      "code": 223,
       "version": "84.0",
       "family": "Firefox",
       "engine": {
@@ -2700,11 +2700,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "Go Flip 4",
       "brand": {
         "name": "Alcatel",
-        "code": 48
+        "code": 49
       }
     }
   },
@@ -2712,13 +2712,13 @@
     "userAgent": "Mozilla/5.0 (Mobile; ALCATEL 4056Z; rv:84.0) Gecko/84.0 Firefox/84.0 KAIOS/3.0",
     "os": {
       "name": "KaiOS",
-      "code": 65,
+      "code": 66,
       "version": "3.0",
       "family": "Firefox OS"
     },
     "browser": {
       "name": "Firefox Mobile",
-      "code": 222,
+      "code": 223,
       "version": "84.0",
       "family": "Firefox",
       "engine": {
@@ -2727,11 +2727,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "Go Flip 4",
       "brand": {
         "name": "Alcatel",
-        "code": 48
+        "code": 49
       }
     }
   },
@@ -2739,13 +2739,13 @@
     "userAgent": "Mozilla/5.0 (Mobile; ALCATEL A406DL; rv:48.0) Gecko/48.0 Firefox/48.0 KAIOS/2.5.4",
     "os": {
       "name": "KaiOS",
-      "code": 65,
+      "code": 66,
       "version": "2.5.4",
       "family": "Firefox OS"
     },
     "browser": {
       "name": "Firefox Mobile",
-      "code": 222,
+      "code": 223,
       "version": "48.0",
       "family": "Firefox",
       "engine": {
@@ -2754,11 +2754,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "MyFlip 2",
       "brand": {
         "name": "Alcatel",
-        "code": 48
+        "code": 49
       }
     }
   },
@@ -2766,13 +2766,13 @@
     "userAgent": "Mozilla/5.0 (Mobile; Mango_AKABUTO_4G; rv:48.0) Gecko/48.0 Firefox/48.0 KAIOS/2.5.2",
     "os": {
       "name": "KaiOS",
-      "code": 65,
+      "code": 66,
       "version": "2.5.2",
       "family": "Firefox OS"
     },
     "browser": {
       "name": "Firefox Mobile",
-      "code": 222,
+      "code": 223,
       "version": "48.0",
       "family": "Firefox",
       "engine": {
@@ -2781,11 +2781,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "Akabuto 4G",
       "brand": {
         "name": "Mango",
-        "code": 1030
+        "code": 1031
       }
     }
   },
@@ -2793,13 +2793,13 @@
     "userAgent": "Mozilla/5.0 (Mobile; ATT_U102AA; rv:48.0) Gecko/48.0 Firefox/48.0 KAIOS/2.5.3.1",
     "os": {
       "name": "KaiOS",
-      "code": 65,
+      "code": 66,
       "version": "2.5.3.1",
       "family": "Firefox OS"
     },
     "browser": {
       "name": "Firefox Mobile",
-      "code": 222,
+      "code": 223,
       "version": "48.0",
       "family": "Firefox",
       "engine": {
@@ -2808,11 +2808,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "Cingular Flip IV",
       "brand": {
         "name": "AT&T",
-        "code": 119
+        "code": 120
       }
     }
   },
@@ -2820,13 +2820,13 @@
     "userAgent": "Mozilla/5.0 (Mobile; ATT_U1030AA; rv:84.0) Gecko/84.0 Firefox/84.0 KAIOS/3.1",
     "os": {
       "name": "KaiOS",
-      "code": 65,
+      "code": 66,
       "version": "3.1",
       "family": "Firefox OS"
     },
     "browser": {
       "name": "Firefox Mobile",
-      "code": 222,
+      "code": 223,
       "version": "84.0",
       "family": "Firefox",
       "engine": {
@@ -2835,11 +2835,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "Cingular Flex 2",
       "brand": {
         "name": "AT&T",
-        "code": 119
+        "code": 120
       }
     }
   },
@@ -2847,13 +2847,13 @@
     "userAgent": "Mozilla/5.0 (Mobile; ALCATEL4044C; rv:37.0) Gecko/37.0 Firefox/37.0 KaiOS/1.0",
     "os": {
       "name": "KaiOS",
-      "code": 65,
+      "code": 66,
       "version": "1.0",
       "family": "Firefox OS"
     },
     "browser": {
       "name": "Firefox Mobile",
-      "code": 222,
+      "code": 223,
       "version": "37.0",
       "family": "Firefox",
       "engine": {
@@ -2862,11 +2862,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "Quick Flip",
       "brand": {
         "name": "Alcatel",
-        "code": 48
+        "code": 49
       }
     }
   },
@@ -2874,13 +2874,13 @@
     "userAgent": "Mozilla/5.0 (Mobile; ALCATEL4044O; rv:37.0) Gecko/37.0 Firefox/37.0 KaiOS/1.0",
     "os": {
       "name": "KaiOS",
-      "code": 65,
+      "code": 66,
       "version": "1.0",
       "family": "Firefox OS"
     },
     "browser": {
       "name": "Firefox Mobile",
-      "code": 222,
+      "code": 223,
       "version": "37.0",
       "family": "Firefox",
       "engine": {
@@ -2889,11 +2889,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "Cingular Flip II",
       "brand": {
         "name": "Alcatel",
-        "code": 48
+        "code": 49
       }
     }
   },
@@ -2901,13 +2901,13 @@
     "userAgent": "Mozilla/5.0 (Mobile; ALCATEL4044V; rv:37.0) Gecko/37.0 Firefox/37.0 KaiOS/1.0",
     "os": {
       "name": "KaiOS",
-      "code": 65,
+      "code": 66,
       "version": "1.0",
       "family": "Firefox OS"
     },
     "browser": {
       "name": "Firefox Mobile",
-      "code": 222,
+      "code": 223,
       "version": "37.0",
       "family": "Firefox",
       "engine": {
@@ -2916,11 +2916,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "Go Flip V",
       "brand": {
         "name": "Alcatel",
-        "code": 48
+        "code": 49
       }
     }
   },
@@ -2928,13 +2928,13 @@
     "userAgent": "Mozilla/5.0 (Mobile; CKT_U102AC; rv:48.0) Gecko/48.0 Firefox/48.0 KAIOS/2.5.3.1",
     "os": {
       "name": "KaiOS",
-      "code": 65,
+      "code": 66,
       "version": "2.5.3.1",
       "family": "Firefox OS"
     },
     "browser": {
       "name": "Firefox Mobile",
-      "code": 222,
+      "code": 223,
       "version": "48.0",
       "family": "Firefox",
       "engine": {
@@ -2943,11 +2943,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "Debut Flip",
       "brand": {
         "name": "Cricket",
-        "code": 331
+        "code": 332
       }
     }
   },
@@ -2955,13 +2955,13 @@
     "userAgent": "Mozilla/5.0 (Mobile; CKT_U1030AC; rv:84.0) Gecko/84.0 Firefox/84.0 KAIOS/3.1",
     "os": {
       "name": "KaiOS",
-      "code": 65,
+      "code": 66,
       "version": "3.1",
       "family": "Firefox OS"
     },
     "browser": {
       "name": "Firefox Mobile",
-      "code": 222,
+      "code": 223,
       "version": "84.0",
       "family": "Firefox",
       "engine": {
@@ -2970,11 +2970,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "Debut Flex",
       "brand": {
         "name": "Cricket",
-        "code": 331
+        "code": 332
       }
     }
   },
@@ -2982,13 +2982,13 @@
     "userAgent": "Mozilla/5.0 (Mobile; rv:48.0; A405DL) Gecko/48.0 Firefox/48.0 KAIOS/2.5",
     "os": {
       "name": "KaiOS",
-      "code": 65,
+      "code": 66,
       "version": "2.5",
       "family": "Firefox OS"
     },
     "browser": {
       "name": "Firefox Mobile",
-      "code": 222,
+      "code": 223,
       "version": "48.0",
       "family": "Firefox",
       "engine": {
@@ -2997,11 +2997,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "MyFlip",
       "brand": {
         "name": "Alcatel",
-        "code": 48
+        "code": 49
       }
     }
   },
@@ -3009,13 +3009,13 @@
     "userAgent": "Mozilla/5.0 (Mobile; Doppio_TEXTER_3G; rv:48.0) Gecko/48.0 Firefox/48.0 KAIOS/2.5.1.1",
     "os": {
       "name": "KaiOS",
-      "code": 65,
+      "code": 66,
       "version": "2.5.1.1",
       "family": "Firefox OS"
     },
     "browser": {
       "name": "Firefox Mobile",
-      "code": 222,
+      "code": 223,
       "version": "48.0",
       "family": "Firefox",
       "engine": {
@@ -3024,11 +3024,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "Texter",
       "brand": {
         "name": "Doppio",
-        "code": 413
+        "code": 414
       }
     }
   },
@@ -3036,13 +3036,13 @@
     "userAgent": "Mozilla/5.0 (Mobile; BLACKPHONE_Blackphone_K330_3G; rv:48.0; CAEN) Gecko/48.0 Firefox/48.0 KAIOS/2.5.1.2",
     "os": {
       "name": "KaiOS",
-      "code": 65,
+      "code": 66,
       "version": "2.5.1.2",
       "family": "Firefox OS"
     },
     "browser": {
       "name": "Firefox Mobile",
-      "code": 222,
+      "code": 223,
       "version": "48.0",
       "family": "Firefox",
       "engine": {
@@ -3051,11 +3051,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "K330",
       "brand": {
         "name": "Blackphone",
-        "code": 199
+        "code": 200
       }
     }
   },
@@ -3063,13 +3063,13 @@
     "userAgent": "Mozilla/5.0 (Mobile; GEOPHONE_T19I_4G; rv:48.0) Gecko/48.0 Firefox/48.0 KAIOS/2.5.3.2",
     "os": {
       "name": "KaiOS",
-      "code": 65,
+      "code": 66,
       "version": "2.5.3.2",
       "family": "Firefox OS"
     },
     "browser": {
       "name": "Firefox Mobile",
-      "code": 222,
+      "code": 223,
       "version": "48.0",
       "family": "Firefox",
       "engine": {
@@ -3078,11 +3078,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "T19i",
       "brand": {
         "name": "Geo Phone",
-        "code": 621
+        "code": 622
       }
     }
   },
@@ -3090,13 +3090,13 @@
     "userAgent": "Mozilla/5.0 (Mobile; Geo_Phone_T15_4G; rv:48.0) Gecko/48.0 Firefox/48.0 KAIOS/2.5.3.1",
     "os": {
       "name": "KaiOS",
-      "code": 65,
+      "code": 66,
       "version": "2.5.3.1",
       "family": "Firefox OS"
     },
     "browser": {
       "name": "Firefox Mobile",
-      "code": 222,
+      "code": 223,
       "version": "48.0",
       "family": "Firefox",
       "engine": {
@@ -3105,11 +3105,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "T15",
       "brand": {
         "name": "Geo Phone",
-        "code": 621
+        "code": 622
       }
     }
   },
@@ -3117,13 +3117,13 @@
     "userAgent": "Mozilla/5.0 (Mobile; Geo_Phone_T19_4G; rv:48.0) Gecko/48.0 Firefox/48.0 KAIOS/2.5.3.1",
     "os": {
       "name": "KaiOS",
-      "code": 65,
+      "code": 66,
       "version": "2.5.3.1",
       "family": "Firefox OS"
     },
     "browser": {
       "name": "Firefox Mobile",
-      "code": 222,
+      "code": 223,
       "version": "48.0",
       "family": "Firefox",
       "engine": {
@@ -3132,11 +3132,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "T19",
       "brand": {
         "name": "Geo Phone",
-        "code": 621
+        "code": 622
       }
     }
   },
@@ -3144,13 +3144,13 @@
     "userAgent": "Mozilla/5.0 (Mobile; Accent_Nubia50K; rv:48.0) Gecko/48.0 Firefox/48.0 KAIOS/2.5.1.1",
     "os": {
       "name": "KaiOS",
-      "code": 65,
+      "code": 66,
       "version": "2.5.1.1",
       "family": "Firefox OS"
     },
     "browser": {
       "name": "Firefox Mobile",
-      "code": 222,
+      "code": 223,
       "version": "48.0",
       "family": "Firefox",
       "engine": {
@@ -3159,11 +3159,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "Nubia 50K",
       "brand": {
         "name": "Accent",
-        "code": 14
+        "code": 15
       }
     }
   },
@@ -3171,13 +3171,13 @@
     "userAgent": "Mozilla/5.0 (Mobile; ACCENT_NUBIA60K; rv:48.0) Gecko/48.0 Firefox/48.0 KAIOS/2.5.1.1",
     "os": {
       "name": "KaiOS",
-      "code": 65,
+      "code": 66,
       "version": "2.5.1.1",
       "family": "Firefox OS"
     },
     "browser": {
       "name": "Firefox Mobile",
-      "code": 222,
+      "code": 223,
       "version": "48.0",
       "family": "Firefox",
       "engine": {
@@ -3186,11 +3186,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "Nubia 60K",
       "brand": {
         "name": "Accent",
-        "code": 14
+        "code": 15
       }
     }
   },
@@ -3198,13 +3198,13 @@
     "userAgent": "Mozilla/5.0 (Mobile; Accent_60K28_512; rv:48.0) Gecko/48.0 Firefox/48.0 KAIOS/2.5.1.1",
     "os": {
       "name": "KaiOS",
-      "code": 65,
+      "code": 66,
       "version": "2.5.1.1",
       "family": "Firefox OS"
     },
     "browser": {
       "name": "Firefox Mobile",
-      "code": 222,
+      "code": 223,
       "version": "48.0",
       "family": "Firefox",
       "engine": {
@@ -3213,11 +3213,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "Nubia 60K",
       "brand": {
         "name": "Accent",
-        "code": 14
+        "code": 15
       }
     }
   },
@@ -3225,13 +3225,13 @@
     "userAgent": "Mozilla/5.0 (Mobile; B300V; rv:84.0) Gecko/84.0 Firefox/84.0 KAIOS/3.1",
     "os": {
       "name": "KaiOS",
-      "code": 65,
+      "code": 66,
       "version": "3.1",
       "family": "Firefox OS"
     },
     "browser": {
       "name": "Firefox Mobile",
-      "code": 222,
+      "code": 223,
       "version": "84.0",
       "family": "Firefox",
       "engine": {
@@ -3240,11 +3240,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "Flex",
       "brand": {
         "name": "Blu",
-        "code": 204
+        "code": 205
       }
     }
   },
@@ -3252,13 +3252,13 @@
     "userAgent": "Mozilla/5.0 (Mobile; BLU_TankMega_3G; rv:48.0) Gecko/48.0 Firefox/48.0 KAIOS/2.5.1.1",
     "os": {
       "name": "KaiOS",
-      "code": 65,
+      "code": 66,
       "version": "2.5.1.1",
       "family": "Firefox OS"
     },
     "browser": {
       "name": "Firefox Mobile",
-      "code": 222,
+      "code": 223,
       "version": "48.0",
       "family": "Firefox",
       "engine": {
@@ -3267,11 +3267,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "Tank Mega",
       "brand": {
         "name": "Blu",
-        "code": 204
+        "code": 205
       }
     }
   },
@@ -3279,13 +3279,13 @@
     "userAgent": "Mozilla/5.0 (Mobile; BLU_ZOEY_SMART; rv:48.0) Gecko/48.0 Firefox/48.0 KAIOS/2.5.1.1",
     "os": {
       "name": "KaiOS",
-      "code": 65,
+      "code": 66,
       "version": "2.5.1.1",
       "family": "Firefox OS"
     },
     "browser": {
       "name": "Firefox Mobile",
-      "code": 222,
+      "code": 223,
       "version": "48.0",
       "family": "Firefox",
       "engine": {
@@ -3294,11 +3294,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "Zoey Smart",
       "brand": {
         "name": "Blu",
-        "code": 204
+        "code": 205
       }
     }
   },
@@ -3306,13 +3306,13 @@
     "userAgent": "Mozilla/5.0 (Mobile; Jio/F491H/Jio-F491H-001-06-24-271223;Android; rv:48.0) Gecko/48.0 Firefox/48.0 KAIOS/2.5.3.2",
     "os": {
       "name": "KaiOS",
-      "code": 65,
+      "code": 66,
       "version": "2.5.3.2",
       "family": "Firefox OS"
     },
     "browser": {
       "name": "Firefox Mobile",
-      "code": 222,
+      "code": 223,
       "version": "48.0",
       "family": "Firefox",
       "engine": {
@@ -3321,11 +3321,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "F491H",
       "brand": {
         "name": "Jio",
-        "code": 873
+        "code": 874
       }
     }
   },
@@ -3333,13 +3333,13 @@
     "userAgent": "Mozilla/5.0 (Mobile; Jio/JFP1AE/Jio-JFP1AE-001-01-47-080524;Android; rv:48.0) Gecko/48.0 Firefox/48.0 KAIOS/2.5.3.2",
     "os": {
       "name": "KaiOS",
-      "code": 65,
+      "code": 66,
       "version": "2.5.3.2",
       "family": "Firefox OS"
     },
     "browser": {
       "name": "Firefox Mobile",
-      "code": 222,
+      "code": 223,
       "version": "48.0",
       "family": "Firefox",
       "engine": {
@@ -3348,11 +3348,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "JFP1AE",
       "brand": {
         "name": "Jio",
-        "code": 873
+        "code": 874
       }
     }
   },
@@ -3360,13 +3360,13 @@
     "userAgent": "Mozilla/5.0 (Mobile; Multilaser_ZAPP; rv:48.0) Gecko/48.0 Firefox/48.0 KAIOS/2.5.1.1",
     "os": {
       "name": "KaiOS",
-      "code": 65,
+      "code": 66,
       "version": "2.5.1.1",
       "family": "Firefox OS"
     },
     "browser": {
       "name": "Firefox Mobile",
-      "code": 222,
+      "code": 223,
       "version": "48.0",
       "family": "Firefox",
       "engine": {
@@ -3375,11 +3375,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "ZAPP",
       "brand": {
         "name": "Multilaser",
-        "code": 1137
+        "code": 1138
       }
     }
   },
@@ -3387,13 +3387,13 @@
     "userAgent": "Mozilla/5.0 (Mobile; Multilaser_ZAPP_II_3G; rv:48.0; CAEN) Gecko/48.0 Firefox/48.0 KAIOS/2.5.1.2",
     "os": {
       "name": "KaiOS",
-      "code": 65,
+      "code": 66,
       "version": "2.5.1.2",
       "family": "Firefox OS"
     },
     "browser": {
       "name": "Firefox Mobile",
-      "code": 222,
+      "code": 223,
       "version": "48.0",
       "family": "Firefox",
       "engine": {
@@ -3402,11 +3402,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "ZAPP II",
       "brand": {
         "name": "Multilaser",
-        "code": 1137
+        "code": 1138
       }
     }
   },
@@ -3414,13 +3414,13 @@
     "userAgent": "Mozilla/5.0 (Mobile; M560M3; rv:48.0) Gecko/48.0 Firefox/48.0 KAIOS/2.5.1",
     "os": {
       "name": "KaiOS",
-      "code": 65,
+      "code": 66,
       "version": "2.5.1",
       "family": "Firefox OS"
     },
     "browser": {
       "name": "Firefox Mobile",
-      "code": 222,
+      "code": 223,
       "version": "48.0",
       "family": "Firefox",
       "engine": {
@@ -3429,11 +3429,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "Smart S",
       "brand": {
         "name": "MTN",
-        "code": 1132
+        "code": 1133
       }
     }
   },
@@ -3441,13 +3441,13 @@
     "userAgent": "Mozilla/5.0 (Mobile; M561M3; rv:48.0) Gecko/48.0 Firefox/48.0 KAIOS/2.5.1.2",
     "os": {
       "name": "KaiOS",
-      "code": 65,
+      "code": 66,
       "version": "2.5.1.2",
       "family": "Firefox OS"
     },
     "browser": {
       "name": "Firefox Mobile",
-      "code": 222,
+      "code": 223,
       "version": "48.0",
       "family": "Firefox",
       "engine": {
@@ -3456,11 +3456,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "Smart T",
       "brand": {
         "name": "MTN",
-        "code": 1132
+        "code": 1133
       }
     }
   },
@@ -3468,13 +3468,13 @@
     "userAgent": "Mozilla/5.0 (Mobile; M562F3; rv:48.0) Gecko/48.0 Firefox/48.0 KAIOS/2.5.1.1",
     "os": {
       "name": "KaiOS",
-      "code": 65,
+      "code": 66,
       "version": "2.5.1.1",
       "family": "Firefox OS"
     },
     "browser": {
       "name": "Firefox Mobile",
-      "code": 222,
+      "code": 223,
       "version": "48.0",
       "family": "Firefox",
       "engine": {
@@ -3483,11 +3483,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "Sanza",
       "brand": {
         "name": "Orange",
-        "code": 1277
+        "code": 1278
       }
     }
   },
@@ -3495,13 +3495,13 @@
     "userAgent": "Mozilla/5.0 (Mobile; M571M3; rv:48.0) Gecko/48.0 Firefox/48.0 KAIOS/2.5.1.2",
     "os": {
       "name": "KaiOS",
-      "code": 65,
+      "code": 66,
       "version": "2.5.1.2",
       "family": "Firefox OS"
     },
     "browser": {
       "name": "Firefox Mobile",
-      "code": 222,
+      "code": 223,
       "version": "48.0",
       "family": "Firefox",
       "engine": {
@@ -3510,11 +3510,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "Smart Kamunye",
       "brand": {
         "name": "MTN",
-        "code": 1132
+        "code": 1133
       }
     }
   },
@@ -3522,13 +3522,13 @@
     "userAgent": "Mozilla/5.0 (Mobile; RED_X_RX2441_4G; rv:48.0) Gecko/48.0 Firefox/48.0 KAIOS/2.5.3.1",
     "os": {
       "name": "KaiOS",
-      "code": 65,
+      "code": 66,
       "version": "2.5.3.1",
       "family": "Firefox OS"
     },
     "browser": {
       "name": "Firefox Mobile",
-      "code": 222,
+      "code": 223,
       "version": "48.0",
       "family": "Firefox",
       "engine": {
@@ -3537,11 +3537,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "RX2441",
       "brand": {
         "name": "RED-X",
-        "code": 1433
+        "code": 1434
       }
     }
   },
@@ -3549,13 +3549,13 @@
     "userAgent": "Mozilla/5.0 (Mobile; SIGMAMOBILE-S3500-3G; rv:48.0) Gecko/48.0 Firefox/48.0 KAIOS/2.5.1.1",
     "os": {
       "name": "KaiOS",
-      "code": 65,
+      "code": 66,
       "version": "2.5.1.1",
       "family": "Firefox OS"
     },
     "browser": {
       "name": "Firefox Mobile",
-      "code": 222,
+      "code": 223,
       "version": "48.0",
       "family": "Firefox",
       "engine": {
@@ -3564,11 +3564,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "X-Style",
       "brand": {
         "name": "Sigma",
-        "code": 1540
+        "code": 1541
       }
     }
   },
@@ -3576,13 +3576,13 @@
     "userAgent": "Mozilla/5.0 (Mobile; R3Di_FR150; rv:48.0; CAEN) Gecko/48.0 Firefox/48.0 KAIOS/2.5.4",
     "os": {
       "name": "KaiOS",
-      "code": 65,
+      "code": 66,
       "version": "2.5.4",
       "family": "Firefox OS"
     },
     "browser": {
       "name": "Firefox Mobile",
-      "code": 222,
+      "code": 223,
       "version": "48.0",
       "family": "Firefox",
       "engine": {
@@ -3591,11 +3591,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "FR150",
       "brand": {
         "name": "R3Di",
-        "code": 1415
+        "code": 1416
       }
     }
   },
@@ -3603,13 +3603,13 @@
     "userAgent": "Mozilla/5.0 (Mobile; Symphony_PD1_4G_4G; rv:48.0; CAEN) Gecko/48.0 Firefox/48.0 KAIOS/2.5.3.2",
     "os": {
       "name": "KaiOS",
-      "code": 65,
+      "code": 66,
       "version": "2.5.3.2",
       "family": "Firefox OS"
     },
     "browser": {
       "name": "Firefox Mobile",
-      "code": 222,
+      "code": 223,
       "version": "48.0",
       "family": "Firefox",
       "engine": {
@@ -3618,11 +3618,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "PD1 4G",
       "brand": {
         "name": "Symphony",
-        "code": 1652
+        "code": 1653
       }
     }
   },
@@ -3630,13 +3630,13 @@
     "userAgent": "Mozilla/5.0 (Mobile; Bmobile_W125K_3G; rv:48.0) Gecko/48.0 Firefox/48.0 KAIOS/2.5.1.2",
     "os": {
       "name": "KaiOS",
-      "code": 65,
+      "code": 66,
       "version": "2.5.1.2",
       "family": "Firefox OS"
     },
     "browser": {
       "name": "Firefox Mobile",
-      "code": 222,
+      "code": 223,
       "version": "48.0",
       "family": "Firefox",
       "engine": {
@@ -3645,11 +3645,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "W125K",
       "brand": {
         "name": "Bmobile",
-        "code": 217
+        "code": 218
       }
     }
   },
@@ -3657,13 +3657,13 @@
     "userAgent": "Mozilla/5.0 (Mobile; Digit_Digit4G-Bold_4G; rv:48.0) Gecko/48.0 Firefox/48.0 KAIOS/2.5.3.1",
     "os": {
       "name": "KaiOS",
-      "code": 65,
+      "code": 66,
       "version": "2.5.3.1",
       "family": "Firefox OS"
     },
     "browser": {
       "name": "Firefox Mobile",
-      "code": 222,
+      "code": 223,
       "version": "48.0",
       "family": "Firefox",
       "engine": {
@@ -3672,11 +3672,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "Digit4G Bold",
       "brand": {
         "name": "Digit",
-        "code": 383
+        "code": 384
       }
     }
   },
@@ -3684,13 +3684,13 @@
     "userAgent": "Mozilla/5.0 (Mobile; Digit_Digit4G-Defender_4G; rv:48.0; CAEN) Gecko/48.0 Firefox/48.0 KAIOS/2.5.3.2",
     "os": {
       "name": "KaiOS",
-      "code": 65,
+      "code": 66,
       "version": "2.5.3.2",
       "family": "Firefox OS"
     },
     "browser": {
       "name": "Firefox Mobile",
-      "code": 222,
+      "code": 223,
       "version": "48.0",
       "family": "Firefox",
       "engine": {
@@ -3699,11 +3699,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "Digit4G Defender",
       "brand": {
         "name": "Digit",
-        "code": 383
+        "code": 384
       }
     }
   },
@@ -3711,13 +3711,13 @@
     "userAgent": "Mozilla/5.0 (Mobile; Digit_Digit4G-Elite_4G; rv:48.0; CAEN) Gecko/48.0 Firefox/48.0 KAIOS/2.5.3.2",
     "os": {
       "name": "KaiOS",
-      "code": 65,
+      "code": 66,
       "version": "2.5.3.2",
       "family": "Firefox OS"
     },
     "browser": {
       "name": "Firefox Mobile",
-      "code": 222,
+      "code": 223,
       "version": "48.0",
       "family": "Firefox",
       "engine": {
@@ -3726,11 +3726,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "Digit4G Elite",
       "brand": {
         "name": "Digit",
-        "code": 383
+        "code": 384
       }
     }
   },
@@ -3738,13 +3738,13 @@
     "userAgent": "Mozilla/5.0 (Mobile; Digit_Digit4G-Music_4G; rv:48.0; CAEN) Gecko/48.0 Firefox/48.0 KAIOS/2.5.3.2",
     "os": {
       "name": "KaiOS",
-      "code": 65,
+      "code": 66,
       "version": "2.5.3.2",
       "family": "Firefox OS"
     },
     "browser": {
       "name": "Firefox Mobile",
-      "code": 222,
+      "code": 223,
       "version": "48.0",
       "family": "Firefox",
       "engine": {
@@ -3753,11 +3753,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "Digit4G Music",
       "brand": {
         "name": "Digit",
-        "code": 383
+        "code": 384
       }
     }
   },
@@ -3765,13 +3765,13 @@
     "userAgent": "Mozilla/5.0 (Mobile; Digit_Digit4G-Power_4G; rv:48.0; CAEN) Gecko/48.0 Firefox/48.0 KAIOS/2.5.3.2",
     "os": {
       "name": "KaiOS",
-      "code": 65,
+      "code": 66,
       "version": "2.5.3.2",
       "family": "Firefox OS"
     },
     "browser": {
       "name": "Firefox Mobile",
-      "code": 222,
+      "code": 223,
       "version": "48.0",
       "family": "Firefox",
       "engine": {
@@ -3780,11 +3780,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "Digit4G Power",
       "brand": {
         "name": "Digit",
-        "code": 383
+        "code": 384
       }
     }
   },
@@ -3792,13 +3792,13 @@
     "userAgent": "Mozilla/5.0 (Mobile; Digit_Digit4G-Star_4G; rv:48.0; CAEN) Gecko/48.0 Firefox/48.0 KAIOS/2.5.3.2",
     "os": {
       "name": "KaiOS",
-      "code": 65,
+      "code": 66,
       "version": "2.5.3.2",
       "family": "Firefox OS"
     },
     "browser": {
       "name": "Firefox Mobile",
-      "code": 222,
+      "code": 223,
       "version": "48.0",
       "family": "Firefox",
       "engine": {
@@ -3807,11 +3807,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "Digit4G Star",
       "brand": {
         "name": "Digit",
-        "code": 383
+        "code": 384
       }
     }
   },
@@ -3819,13 +3819,13 @@
     "userAgent": "Mozilla/5.0 (Mobile; Digit_Digit4GLite_4G; rv:48.0) Gecko/48.0 Firefox/48.0 KAIOS/2.5.3.2",
     "os": {
       "name": "KaiOS",
-      "code": 65,
+      "code": 66,
       "version": "2.5.3.2",
       "family": "Firefox OS"
     },
     "browser": {
       "name": "Firefox Mobile",
-      "code": 222,
+      "code": 223,
       "version": "48.0",
       "family": "Firefox",
       "engine": {
@@ -3834,11 +3834,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "Digit4G Lite",
       "brand": {
         "name": "Digit",
-        "code": 383
+        "code": 384
       }
     }
   },
@@ -3846,13 +3846,13 @@
     "userAgent": "Mozilla/5.0 (Mobile; Digit_Digit4GPowerMAX_4G; rv:48.0) Gecko/48.0 Firefox/48.0 KAIOS/2.5.3.2",
     "os": {
       "name": "KaiOS",
-      "code": 65,
+      "code": 66,
       "version": "2.5.3.2",
       "family": "Firefox OS"
     },
     "browser": {
       "name": "Firefox Mobile",
-      "code": 222,
+      "code": 223,
       "version": "48.0",
       "family": "Firefox",
       "engine": {
@@ -3861,11 +3861,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "Digit4G Power Max",
       "brand": {
         "name": "Digit",
-        "code": 383
+        "code": 384
       }
     }
   },
@@ -3873,13 +3873,13 @@
     "userAgent": "Mozilla/5.0 (Mobile; Digit_Digit4G_Shine_4G; rv:48.0; CAEN) Gecko/48.0 Firefox/48.0 KAIOS/2.5.3.2",
     "os": {
       "name": "KaiOS",
-      "code": 65,
+      "code": 66,
       "version": "2.5.3.2",
       "family": "Firefox OS"
     },
     "browser": {
       "name": "Firefox Mobile",
-      "code": 222,
+      "code": 223,
       "version": "48.0",
       "family": "Firefox",
       "engine": {
@@ -3888,11 +3888,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "Digit4G Shine",
       "brand": {
         "name": "Digit",
-        "code": 383
+        "code": 384
       }
     }
   },
@@ -3900,13 +3900,13 @@
     "userAgent": "Mozilla/5.0 (Mobile; Sanza-M560F3; rv:48.0) Gecko/48.0 Firefox/48.0 KAIOS/2.5.1",
     "os": {
       "name": "KaiOS",
-      "code": 65,
+      "code": 66,
       "version": "2.5.1",
       "family": "Firefox OS"
     },
     "browser": {
       "name": "Firefox Mobile",
-      "code": 222,
+      "code": 223,
       "version": "48.0",
       "family": "Firefox",
       "engine": {
@@ -3915,11 +3915,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "Sanza",
       "brand": {
         "name": "Orange",
-        "code": 1277
+        "code": 1278
       }
     }
   },
@@ -3927,13 +3927,13 @@
     "userAgent": "Mozilla/5.0 (Mobile; Energizer_E241; rv:48.0) Gecko/48.0 Firefox/48.0 KAIOS/2.5.1.1",
     "os": {
       "name": "KaiOS",
-      "code": 65,
+      "code": 66,
       "version": "2.5.1.1",
       "family": "Firefox OS"
     },
     "browser": {
       "name": "Firefox Mobile",
-      "code": 222,
+      "code": 223,
       "version": "48.0",
       "family": "Firefox",
       "engine": {
@@ -3942,11 +3942,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "E241",
       "brand": {
         "name": "Energizer",
-        "code": 485
+        "code": 486
       }
     }
   },
@@ -3954,13 +3954,13 @@
     "userAgent": "Mozilla/5.0 (Mobile; ENERGIZER_E241S; rv:48.0) Gecko/48.0 Firefox/48.0 KAIOS/2.5.3.2",
     "os": {
       "name": "KaiOS",
-      "code": 65,
+      "code": 66,
       "version": "2.5.3.2",
       "family": "Firefox OS"
     },
     "browser": {
       "name": "Firefox Mobile",
-      "code": 222,
+      "code": 223,
       "version": "48.0",
       "family": "Firefox",
       "engine": {
@@ -3969,11 +3969,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "E241S",
       "brand": {
         "name": "Energizer",
-        "code": 485
+        "code": 486
       }
     }
   },
@@ -3981,13 +3981,13 @@
     "userAgent": "Mozilla/5.0 (Mobile; Energizer_E242S_4G; rv:48.0; CAEN) Gecko/48.0 Firefox/48.0 KAIOS/2.5.3.2",
     "os": {
       "name": "KaiOS",
-      "code": 65,
+      "code": 66,
       "version": "2.5.3.2",
       "family": "Firefox OS"
     },
     "browser": {
       "name": "Firefox Mobile",
-      "code": 222,
+      "code": 223,
       "version": "48.0",
       "family": "Firefox",
       "engine": {
@@ -3996,11 +3996,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "E242S",
       "brand": {
         "name": "Energizer",
-        "code": 485
+        "code": 486
       }
     }
   },
@@ -4008,13 +4008,13 @@
     "userAgent": "Mozilla/5.0 (Mobile; ENERGIZER_E280S; rv:48.0) Gecko/48.0 Firefox/48.0 KAIOS/2.5.3.2",
     "os": {
       "name": "KaiOS",
-      "code": 65,
+      "code": 66,
       "version": "2.5.3.2",
       "family": "Firefox OS"
     },
     "browser": {
       "name": "Firefox Mobile",
-      "code": 222,
+      "code": 223,
       "version": "48.0",
       "family": "Firefox",
       "engine": {
@@ -4023,11 +4023,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "E280S",
       "brand": {
         "name": "Energizer",
-        "code": 485
+        "code": 486
       }
     }
   },
@@ -4035,13 +4035,13 @@
     "userAgent": "Mozilla/5.0 (Mobile; Energizer_E282SC_4G; rv:48.0) Gecko/48.0 Firefox/48.0 KAIOS/2.5.3.2",
     "os": {
       "name": "KaiOS",
-      "code": 65,
+      "code": 66,
       "version": "2.5.3.2",
       "family": "Firefox OS"
     },
     "browser": {
       "name": "Firefox Mobile",
-      "code": 222,
+      "code": 223,
       "version": "48.0",
       "family": "Firefox",
       "engine": {
@@ -4050,11 +4050,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "E282SC",
       "brand": {
         "name": "Energizer",
-        "code": 485
+        "code": 486
       }
     }
   },
@@ -4062,13 +4062,13 @@
     "userAgent": "Mozilla/5.0 (Mobile; ENERGIZER_H280A_512; rv:48.0) Gecko/48.0 Firefox/48.0 KAIOS/2.5.1.1",
     "os": {
       "name": "KaiOS",
-      "code": 65,
+      "code": 66,
       "version": "2.5.1.1",
       "family": "Firefox OS"
     },
     "browser": {
       "name": "Firefox Mobile",
-      "code": 222,
+      "code": 223,
       "version": "48.0",
       "family": "Firefox",
       "engine": {
@@ -4077,11 +4077,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "H280A",
       "brand": {
         "name": "Energizer",
-        "code": 485
+        "code": 486
       }
     }
   },
@@ -4089,13 +4089,13 @@
     "userAgent": "Mozilla/5.0 (Mobile; IDC_Voice_20_4G; rv:48.0) Gecko/48.0 Firefox/48.0 KAIOS/2.5.2",
     "os": {
       "name": "KaiOS",
-      "code": 65,
+      "code": 66,
       "version": "2.5.2",
       "family": "Firefox OS"
     },
     "browser": {
       "name": "Firefox Mobile",
-      "code": 222,
+      "code": 223,
       "version": "48.0",
       "family": "Firefox",
       "engine": {
@@ -4104,11 +4104,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "Voice 20",
       "brand": {
         "name": "IDC",
-        "code": 787
+        "code": 788
       }
     }
   },
@@ -4116,13 +4116,13 @@
     "userAgent": "Mozilla/5.0 (Mobile; Free_Wi-Kif4G_4G; rv:48.0) Gecko/48.0 Firefox/48.0 KAIOS/2.5.2",
     "os": {
       "name": "KaiOS",
-      "code": 65,
+      "code": 66,
       "version": "2.5.2",
       "family": "Firefox OS"
     },
     "browser": {
       "name": "Firefox Mobile",
-      "code": 222,
+      "code": 223,
       "version": "48.0",
       "family": "Firefox",
       "engine": {
@@ -4131,11 +4131,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "Wi-Kif 4G",
       "brand": {
         "name": "free",
-        "code": 585
+        "code": 586
       }
     }
   },
@@ -4143,13 +4143,13 @@
     "userAgent": "Mozilla/5.0 (Mobile; Telma_Wi-Kif+3G_3G; rv:48.0) Gecko/48.0 Firefox/48.0 KAIOS/2.5.1.1",
     "os": {
       "name": "KaiOS",
-      "code": 65,
+      "code": 66,
       "version": "2.5.1.1",
       "family": "Firefox OS"
     },
     "browser": {
       "name": "Firefox Mobile",
-      "code": 222,
+      "code": 223,
       "version": "48.0",
       "family": "Firefox",
       "engine": {
@@ -4158,11 +4158,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "Wi-Kif+ 3G",
       "brand": {
         "name": "Telma",
-        "code": 1695
+        "code": 1696
       }
     }
   },
@@ -4170,13 +4170,13 @@
     "userAgent": "Mozilla/5.0 (Mobile; Telma_Wi-Kif+4G_4G; rv:48.0) Gecko/48.0 Firefox/48.0 KAIOS/2.5.2",
     "os": {
       "name": "KaiOS",
-      "code": 65,
+      "code": 66,
       "version": "2.5.2",
       "family": "Firefox OS"
     },
     "browser": {
       "name": "Firefox Mobile",
-      "code": 222,
+      "code": 223,
       "version": "48.0",
       "family": "Firefox",
       "engine": {
@@ -4185,11 +4185,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "Wi-Kif+ 4G",
       "brand": {
         "name": "Telma",
-        "code": 1695
+        "code": 1696
       }
     }
   },
@@ -4197,13 +4197,13 @@
     "userAgent": "Mozilla/5.0 (Mobile; Telma_Wikif_Max_4G; rv:48.0) Gecko/48.0 Firefox/48.0 KAIOS/2.5.3.2",
     "os": {
       "name": "KaiOS",
-      "code": 65,
+      "code": 66,
       "version": "2.5.3.2",
       "family": "Firefox OS"
     },
     "browser": {
       "name": "Firefox Mobile",
-      "code": 222,
+      "code": 223,
       "version": "48.0",
       "family": "Firefox",
       "engine": {
@@ -4212,11 +4212,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "Wi-Kif Max",
       "brand": {
         "name": "Telma",
-        "code": 1695
+        "code": 1696
       }
     }
   },
@@ -4224,13 +4224,13 @@
     "userAgent": "Mozilla/5.0 (Mobile; KLT_K301; rv:48.0) Gecko/48.0 Firefox/48.0 KAIOS/2.5.1.1",
     "os": {
       "name": "KaiOS",
-      "code": 65,
+      "code": 66,
       "version": "2.5.1.1",
       "family": "Firefox OS"
     },
     "browser": {
       "name": "Firefox Mobile",
-      "code": 222,
+      "code": 223,
       "version": "48.0",
       "family": "Firefox",
       "engine": {
@@ -4239,11 +4239,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "K301",
       "brand": {
         "name": "K-Lite",
-        "code": 888
+        "code": 889
       }
     }
   },
@@ -4251,13 +4251,13 @@
     "userAgent": "Mozilla/5.0 (Mobile;Orange_Nevalink;rv:48.0; CAEN) Gecko/48.0 Firefox/48.0 KAIOS/2.5.2",
     "os": {
       "name": "KaiOS",
-      "code": 65,
+      "code": 66,
       "version": "2.5.2",
       "family": "Firefox OS"
     },
     "browser": {
       "name": "Firefox Mobile",
-      "code": 222,
+      "code": 223,
       "version": "48.0",
       "family": "Firefox",
       "engine": {
@@ -4266,11 +4266,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "Neva Link",
       "brand": {
         "name": "Orange",
-        "code": 1277
+        "code": 1278
       }
     }
   },
@@ -4278,13 +4278,13 @@
     "userAgent": "Mozilla/5.0 (Mobile;Orange_Nevamini;rv:48.0) Gecko/48.0 Firefox/48.0 KAIOS/2.5.2.1",
     "os": {
       "name": "KaiOS",
-      "code": 65,
+      "code": 66,
       "version": "2.5.2.1",
       "family": "Firefox OS"
     },
     "browser": {
       "name": "Firefox Mobile",
-      "code": 222,
+      "code": 223,
       "version": "48.0",
       "family": "Firefox",
       "engine": {
@@ -4293,11 +4293,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "Neva Mini",
       "brand": {
         "name": "Orange",
-        "code": 1277
+        "code": 1278
       }
     }
   },
@@ -4305,13 +4305,13 @@
     "userAgent": "Mozilla/5.0 (Mobile; ASPERA_F30_4G; rv:48.0) Gecko/48.0 Firefox/48.0 KAIOS/2.5.3.2",
     "os": {
       "name": "KaiOS",
-      "code": 65,
+      "code": 66,
       "version": "2.5.3.2",
       "family": "Firefox OS"
     },
     "browser": {
       "name": "Firefox Mobile",
-      "code": 222,
+      "code": 223,
       "version": "48.0",
       "family": "Firefox",
       "engine": {
@@ -4320,11 +4320,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "F30",
       "brand": {
         "name": "Aspera",
-        "code": 106
+        "code": 107
       }
     }
   },
@@ -4332,13 +4332,13 @@
     "userAgent": "Mozilla/5.0 (Mobile; ASPERA_R40_4G; rv:48.0) Gecko/48.0 Firefox/48.0 KAIOS/2.5.3.1",
     "os": {
       "name": "KaiOS",
-      "code": 65,
+      "code": 66,
       "version": "2.5.3.1",
       "family": "Firefox OS"
     },
     "browser": {
       "name": "Firefox Mobile",
-      "code": 222,
+      "code": 223,
       "version": "48.0",
       "family": "Firefox",
       "engine": {
@@ -4347,11 +4347,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "R40",
       "brand": {
         "name": "Aspera",
-        "code": 106
+        "code": 107
       }
     }
   },
@@ -4359,13 +4359,13 @@
     "userAgent": "Mozilla/5.0 (Mobile; Condor_FP216L; rv:48.0) Gecko/48.0 Firefox/48.0 KAIOS/2.5.1.1",
     "os": {
       "name": "KaiOS",
-      "code": 65,
+      "code": 66,
       "version": "2.5.1.1",
       "family": "Firefox OS"
     },
     "browser": {
       "name": "Firefox Mobile",
-      "code": 222,
+      "code": 223,
       "version": "48.0",
       "family": "Firefox",
       "engine": {
@@ -4374,11 +4374,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "FP216L",
       "brand": {
         "name": "Condor",
-        "code": 305
+        "code": 306
       }
     }
   },
@@ -4386,13 +4386,13 @@
     "userAgent": "Mozilla/5.0 (Mobile; LOGAN_Panita_3G; rv:48.0; CAEN) Gecko/48.0 Firefox/48.0 KAIOS/2.5.1.2",
     "os": {
       "name": "KaiOS",
-      "code": 65,
+      "code": 66,
       "version": "2.5.1.2",
       "family": "Firefox OS"
     },
     "browser": {
       "name": "Firefox Mobile",
-      "code": 222,
+      "code": 223,
       "version": "48.0",
       "family": "Firefox",
       "engine": {
@@ -4401,11 +4401,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "Panita",
       "brand": {
         "name": "LOGAN",
-        "code": 1000
+        "code": 1001
       }
     }
   },
@@ -4413,13 +4413,13 @@
     "userAgent": "Mozilla/5.0 (Mobile; MAXCOM MK241; rv:48.0) Gecko/48.0 Firefox/48.0 KAIOS/2.5.1",
     "os": {
       "name": "KaiOS",
-      "code": 65,
+      "code": 66,
       "version": "2.5.1",
       "family": "Firefox OS"
     },
     "browser": {
       "name": "Firefox Mobile",
-      "code": 222,
+      "code": 223,
       "version": "48.0",
       "family": "Firefox",
       "engine": {
@@ -4428,11 +4428,11 @@
       }
     },
     "device": {
-      "type": 3,
+      "type": 4,
       "model": "MK241",
       "brand": {
         "name": "Maxcom",
-        "code": 1043
+        "code": 1044
       }
     }
   }

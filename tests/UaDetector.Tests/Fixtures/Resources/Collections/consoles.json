@@ -3,13 +3,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 4.1.1; ARCHOS GAMEPAD Build/JRO03H) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166 Safari/535.19",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.1.1",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome",
-      "code": 137,
+      "code": 138,
       "version": "18.0.1025.166",
       "family": "Chrome",
       "engine": {
@@ -18,11 +18,11 @@
       }
     },
     "device": {
-      "type": 4,
+      "type": 5,
       "model": "Gamepad",
       "brand": {
         "name": "Archos",
-        "code": 99
+        "code": 100
       }
     }
   },
@@ -30,13 +30,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.2.2; fr-fr; ARCHOS GAMEPAD2 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.2.2",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -44,11 +44,11 @@
       }
     },
     "device": {
-      "type": 4,
+      "type": 5,
       "model": "Gamepad 2",
       "brand": {
         "name": "Archos",
-        "code": 99
+        "code": 100
       }
     }
   },
@@ -56,13 +56,13 @@
     "userAgent": "Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0; Xbox)",
     "os": {
       "name": "Windows",
-      "code": 170,
+      "code": 171,
       "version": "7",
       "family": "Windows"
     },
     "browser": {
       "name": "Internet Explorer",
-      "code": 285,
+      "code": 286,
       "version": "9.0",
       "family": "Internet Explorer",
       "engine": {
@@ -71,11 +71,11 @@
       }
     },
     "device": {
-      "type": 4,
+      "type": 5,
       "model": "Xbox 360",
       "brand": {
         "name": "Microsoft",
-        "code": 1085
+        "code": 1086
       }
     }
   },
@@ -83,13 +83,13 @@
     "userAgent": "Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0; Xbox; Xbox One)",
     "os": {
       "name": "Windows",
-      "code": 170,
+      "code": 171,
       "version": "8",
       "family": "Windows"
     },
     "browser": {
       "name": "Internet Explorer",
-      "code": 285,
+      "code": 286,
       "version": "10.0",
       "family": "Internet Explorer",
       "engine": {
@@ -98,11 +98,11 @@
       }
     },
     "device": {
-      "type": 4,
+      "type": 5,
       "model": "Xbox One",
       "brand": {
         "name": "Microsoft",
-        "code": 1085
+        "code": 1086
       }
     }
   },
@@ -110,13 +110,13 @@
     "userAgent": "Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; Xbox; Xbox One)",
     "os": {
       "name": "Windows Phone",
-      "code": 174,
+      "code": 175,
       "version": "8.0",
       "family": "Windows Mobile"
     },
     "browser": {
       "name": "IE Mobile",
-      "code": 292,
+      "code": 293,
       "version": "10.0",
       "family": "Internet Explorer",
       "engine": {
@@ -125,11 +125,11 @@
       }
     },
     "device": {
-      "type": 4,
+      "type": 5,
       "model": "Xbox One",
       "brand": {
         "name": "Microsoft",
-        "code": 1085
+        "code": 1086
       }
     }
   },
@@ -137,21 +137,21 @@
     "userAgent": "Mozilla/5.0 (Nintendo 3DS; U; ; en) Version/1.7498.EU",
     "os": {
       "name": "Nintendo Mobile",
-      "code": 101,
+      "code": 102,
       "version": "3DS",
       "family": "Mobile Gaming Console"
     },
     "browser": {
       "name": "NetFront",
-      "code": 389,
+      "code": 390,
       "family": "NetFront"
     },
     "device": {
-      "type": 4,
+      "type": 5,
       "model": "3DS",
       "brand": {
         "name": "Nintendo",
-        "code": 1205
+        "code": 1206
       }
     }
   },
@@ -159,21 +159,21 @@
     "userAgent": "Bunjalloo/0.7.6(Nintendo DS;U;en)",
     "os": {
       "name": "Nintendo Mobile",
-      "code": 101,
+      "code": 102,
       "version": "DS",
       "family": "Mobile Gaming Console"
     },
     "browser": {
       "name": "Bunjalloo",
-      "code": 97,
+      "code": 98,
       "version": "0.7.6"
     },
     "device": {
-      "type": 4,
+      "type": 5,
       "model": "DS",
       "brand": {
         "name": "Nintendo",
-        "code": 1205
+        "code": 1206
       }
     }
   },
@@ -181,13 +181,13 @@
     "userAgent": "Mozilla/5.0 (Nintendo Switch; WifiWebAuthApplet) AppleWebKit/601.6 (KHTML, like Gecko) NF/4.0.0.7.9 NintendoBrowser/5.1.0.15785",
     "os": {
       "name": "Nintendo",
-      "code": 100,
+      "code": 101,
       "version": "Switch",
       "family": "Gaming Console"
     },
     "browser": {
       "name": "Nintendo Browser",
-      "code": 707,
+      "code": 708,
       "version": "5.1.0.15785",
       "family": "NetFront",
       "engine": {
@@ -196,11 +196,11 @@
       }
     },
     "device": {
-      "type": 4,
+      "type": 5,
       "model": "Switch",
       "brand": {
         "name": "Nintendo",
-        "code": 1205
+        "code": 1206
       }
     }
   },
@@ -208,13 +208,13 @@
     "userAgent": "Opera/9.30 (Nintendo Wii; U; ; 3642; en)",
     "os": {
       "name": "Nintendo",
-      "code": 100,
+      "code": 101,
       "version": "Wii",
       "family": "Gaming Console"
     },
     "browser": {
       "name": "Opera",
-      "code": 420,
+      "code": 421,
       "version": "9.30",
       "family": "Opera",
       "engine": {
@@ -222,11 +222,11 @@
       }
     },
     "device": {
-      "type": 4,
+      "type": 5,
       "model": "Wii",
       "brand": {
         "name": "Nintendo",
-        "code": 1205
+        "code": 1206
       }
     }
   },
@@ -234,13 +234,13 @@
     "userAgent": "Mozilla/5.0 (Nintendo WiiU) AppleWebKit/534.52 (KHTML, like Gecko) NX/2.1.0.8.21 NintendoBrowser/1.0.0.7494.US",
     "os": {
       "name": "Nintendo",
-      "code": 100,
+      "code": 101,
       "version": "Wii",
       "family": "Gaming Console"
     },
     "browser": {
       "name": "Nintendo Browser",
-      "code": 707,
+      "code": 708,
       "version": "1.0.0.7494",
       "family": "NetFront",
       "engine": {
@@ -249,11 +249,11 @@
       }
     },
     "device": {
-      "type": 4,
+      "type": 5,
       "model": "WiiU",
       "brand": {
         "name": "Nintendo",
-        "code": 1205
+        "code": 1206
       }
     }
   },
@@ -261,13 +261,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android OUYA 4.1.2; en-us; OUYA Build/JZO54L-OUYA) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.1.2",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -275,11 +275,11 @@
       }
     },
     "device": {
-      "type": 4,
+      "type": 5,
       "model": "OUYA",
       "brand": {
         "name": "OUYA",
-        "code": 1293
+        "code": 1294
       }
     }
   },
@@ -287,13 +287,13 @@
     "userAgent": "Mozilla/5.0 (PLAYSTATION 3 4.46) AppleWebKit/531.22.8 (KHTML, like Gecko)",
     "os": {
       "name": "PlayStation",
-      "code": 117,
+      "code": 118,
       "version": "3.4.46",
       "family": "Gaming Console"
     },
     "browser": {
       "name": "NetFront",
-      "code": 389,
+      "code": 390,
       "family": "NetFront",
       "engine": {
         "name": "WebKit",
@@ -301,11 +301,11 @@
       }
     },
     "device": {
-      "type": 4,
+      "type": 5,
       "model": "PlayStation 3",
       "brand": {
         "name": "Sony",
-        "code": 1588
+        "code": 1589
       }
     }
   },
@@ -313,13 +313,13 @@
     "userAgent": "Mozilla/5.0 (PlayStation 4 1.52) AppleWebKit/536.26 (KHTML, like Gecko)",
     "os": {
       "name": "PlayStation",
-      "code": 117,
+      "code": 118,
       "version": "4.1.52",
       "family": "Gaming Console"
     },
     "browser": {
       "name": "NetFront",
-      "code": 389,
+      "code": 390,
       "family": "NetFront",
       "engine": {
         "name": "WebKit",
@@ -327,11 +327,11 @@
       }
     },
     "device": {
-      "type": 4,
+      "type": 5,
       "model": "PlayStation 4",
       "brand": {
         "name": "Sony",
-        "code": 1588
+        "code": 1589
       }
     }
   },
@@ -339,21 +339,21 @@
     "userAgent": "Mozilla/5.0 (PlayStation 4 Pro 5.0)",
     "os": {
       "name": "PlayStation",
-      "code": 117,
+      "code": 118,
       "version": "4.5.0",
       "family": "Gaming Console"
     },
     "browser": {
       "name": "NetFront",
-      "code": 389,
+      "code": 390,
       "family": "NetFront"
     },
     "device": {
-      "type": 4,
+      "type": 5,
       "model": "PlayStation 4 Pro",
       "brand": {
         "name": "Sony",
-        "code": 1588
+        "code": 1589
       }
     }
   },
@@ -361,21 +361,21 @@
     "userAgent": "Mozilla/4.0 (PlayStation Portable); 2.00)",
     "os": {
       "name": "PlayStation Portable",
-      "code": 116,
+      "code": 117,
       "version": "Portable",
       "family": "Mobile Gaming Console"
     },
     "browser": {
       "name": "NetFront",
-      "code": 389,
+      "code": 390,
       "family": "NetFront"
     },
     "device": {
-      "type": 4,
+      "type": 5,
       "model": "PlayStation Portable",
       "brand": {
         "name": "Sony",
-        "code": 1588
+        "code": 1589
       }
     }
   },
@@ -383,13 +383,13 @@
     "userAgent": "Mozilla/5.0 (PlayStation Vita 3.01) AppleWebKit/536.26 (KHTML, like Gecko) Silk/3.2",
     "os": {
       "name": "PlayStation Portable",
-      "code": 116,
+      "code": 117,
       "version": "Vita",
       "family": "Mobile Gaming Console"
     },
     "browser": {
       "name": "Mobile Silk",
-      "code": 361,
+      "code": 362,
       "version": "3.2",
       "family": "Chrome",
       "engine": {
@@ -398,11 +398,11 @@
       }
     },
     "device": {
-      "type": 4,
+      "type": 5,
       "model": "PlayStation Vita",
       "brand": {
         "name": "Sony",
-        "code": 1588
+        "code": 1589
       }
     }
   },
@@ -410,14 +410,14 @@
     "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; XBOX_ONE_ED) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.79 Safari/537.36 Edge/14.14393",
     "os": {
       "name": "Windows",
-      "code": 170,
+      "code": 171,
       "version": "10",
       "cpuArchitecture": "x64",
       "family": "Windows"
     },
     "browser": {
       "name": "Microsoft Edge",
-      "code": 488,
+      "code": 489,
       "version": "14.14393",
       "family": "Internet Explorer",
       "engine": {
@@ -426,11 +426,11 @@
       }
     },
     "device": {
-      "type": 4,
+      "type": 5,
       "model": "Xbox One S",
       "brand": {
         "name": "Microsoft",
-        "code": 1085
+        "code": 1086
       }
     }
   },
@@ -438,14 +438,14 @@
     "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; Xbox; Xbox One X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.82 Safari/537.36 Edge/20.02",
     "os": {
       "name": "Windows",
-      "code": 170,
+      "code": 171,
       "version": "10",
       "cpuArchitecture": "x64",
       "family": "Windows"
     },
     "browser": {
       "name": "Microsoft Edge",
-      "code": 488,
+      "code": 489,
       "version": "20.02",
       "family": "Internet Explorer",
       "engine": {
@@ -454,11 +454,11 @@
       }
     },
     "device": {
-      "type": 4,
+      "type": 5,
       "model": "Xbox One X",
       "brand": {
         "name": "Microsoft",
-        "code": 1085
+        "code": 1086
       }
     }
   },
@@ -466,14 +466,14 @@
     "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; Xbox; Xbox Series X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.82 Safari/537.36 Edge/20.02",
     "os": {
       "name": "Windows",
-      "code": 170,
+      "code": 171,
       "version": "10",
       "cpuArchitecture": "x64",
       "family": "Windows"
     },
     "browser": {
       "name": "Microsoft Edge",
-      "code": 488,
+      "code": 489,
       "version": "20.02",
       "family": "Internet Explorer",
       "engine": {
@@ -482,11 +482,11 @@
       }
     },
     "device": {
-      "type": 4,
+      "type": 5,
       "model": "Xbox Series X",
       "brand": {
         "name": "Microsoft",
-        "code": 1085
+        "code": 1086
       }
     }
   },
@@ -494,13 +494,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 9; Retroid Pocket 2Plus) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.74 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "9",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "95.0.4638.74",
       "family": "Chrome",
       "engine": {
@@ -509,11 +509,11 @@
       }
     },
     "device": {
-      "type": 4,
+      "type": 5,
       "model": "2 Plus",
       "brand": {
         "name": "Retroid Pocket",
-        "code": 1442
+        "code": 1443
       }
     }
   },
@@ -521,13 +521,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 5.1; SHIELD Build/LMY47N; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/53.0.2785.97 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "5.1",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Webview",
-      "code": 161,
+      "code": 162,
       "version": "53.0.2785.97",
       "family": "Chrome",
       "engine": {
@@ -536,11 +536,11 @@
       }
     },
     "device": {
-      "type": 4,
+      "type": 5,
       "model": "SHIELD Portable",
       "brand": {
         "name": "Nvidia",
-        "code": 1236
+        "code": 1237
       }
     }
   },
@@ -548,13 +548,13 @@
     "userAgent": "Mozilla/5.0 (PlayStation; PlayStation 5/2.26) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0 Safari/605.1.15",
     "os": {
       "name": "PlayStation",
-      "code": 117,
+      "code": 118,
       "version": "5.2.26",
       "family": "Gaming Console"
     },
     "browser": {
       "name": "NetFront",
-      "code": 389,
+      "code": 390,
       "family": "NetFront",
       "engine": {
         "name": "WebKit",
@@ -562,11 +562,11 @@
       }
     },
     "device": {
-      "type": 4,
+      "type": 5,
       "model": "PlayStation 5",
       "brand": {
         "name": "Sony",
-        "code": 1588
+        "code": 1589
       }
     }
   },
@@ -574,13 +574,13 @@
     "userAgent": "Mozilla/5.0 (PlayStation 5 3.03/SmartTV) AppleWebKit/605.1.15 (KHTML, like Gecko)",
     "os": {
       "name": "PlayStation",
-      "code": 117,
+      "code": 118,
       "version": "5.3.03",
       "family": "Gaming Console"
     },
     "browser": {
       "name": "NetFront",
-      "code": 389,
+      "code": 390,
       "family": "NetFront",
       "engine": {
         "name": "WebKit",
@@ -588,11 +588,11 @@
       }
     },
     "device": {
-      "type": 4,
+      "type": 5,
       "model": "PlayStation 5",
       "brand": {
         "name": "Sony",
-        "code": 1588
+        "code": 1589
       }
     }
   },
@@ -600,13 +600,13 @@
     "userAgent": "Mozilla/5.0 (PlayStation 5/SmartTV) AppleWebKit/605.1.15 (KHTML, like Gecko)",
     "os": {
       "name": "PlayStation",
-      "code": 117,
+      "code": 118,
       "version": "5",
       "family": "Gaming Console"
     },
     "browser": {
       "name": "NetFront",
-      "code": 389,
+      "code": 390,
       "family": "NetFront",
       "engine": {
         "name": "WebKit",
@@ -614,11 +614,11 @@
       }
     },
     "device": {
-      "type": 4,
+      "type": 5,
       "model": "PlayStation 5",
       "brand": {
         "name": "Sony",
-        "code": 1588
+        "code": 1589
       }
     }
   },
@@ -626,14 +626,14 @@
     "userAgent": "Mozilla/5.0 [ja] (Playstation2; Linux 2.4.20 MIPS; ja-JP; rv:1.8a2) Gecko/20040630",
     "os": {
       "name": "PlayStation",
-      "code": 117,
+      "code": 118,
       "version": "2.4.20",
       "cpuArchitecture": "MIPS",
       "family": "Gaming Console"
     },
     "browser": {
       "name": "NetFront",
-      "code": 389,
+      "code": 390,
       "family": "NetFront",
       "engine": {
         "name": "Gecko",
@@ -641,11 +641,11 @@
       }
     },
     "device": {
-      "type": 4,
+      "type": 5,
       "model": "PlayStation 2",
       "brand": {
         "name": "Sony",
-        "code": 1588
+        "code": 1589
       }
     }
   },
@@ -653,13 +653,13 @@
     "userAgent": "Mozilla/5.0 (New Nintendo 3DS like iPhone) AppleWebKit/536.30 (KHTML, like Gecko) NX/3.0.0.5.22 Mobile NintendoBrowser/1.10.10166.JP",
     "os": {
       "name": "Nintendo Mobile",
-      "code": 101,
+      "code": 102,
       "version": "3DS",
       "family": "Mobile Gaming Console"
     },
     "browser": {
       "name": "Nintendo Browser",
-      "code": 707,
+      "code": 708,
       "version": "1.10.10166",
       "family": "NetFront",
       "engine": {
@@ -668,11 +668,11 @@
       }
     },
     "device": {
-      "type": 4,
+      "type": 5,
       "model": "3DS",
       "brand": {
         "name": "Nintendo",
-        "code": 1205
+        "code": 1206
       }
     }
   },
@@ -680,21 +680,21 @@
     "userAgent": "UCWEB/2.0 (MIDP-2.0; U; Adr 2.3.4; ru; JXD_S601WIFI) U2/1.0.0 UCBrowser/9.9.1.554 U2/1.0.0 Mobile",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "2.3.4",
       "family": "Android"
     },
     "browser": {
       "name": "UC Browser",
-      "code": 604,
+      "code": 605,
       "version": "9.9.1.554"
     },
     "device": {
-      "type": 4,
+      "type": 5,
       "model": "S601 WiFi",
       "brand": {
         "name": "JXD",
-        "code": 885
+        "code": 886
       }
     }
   },
@@ -702,13 +702,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 4.4.4; DEXP Freya) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 YaBrowser/18.11.1.1008.01 Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.4.4",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser",
-      "code": 653,
+      "code": 654,
       "version": "18.11.1.1008.01",
       "engine": {
         "name": "Blink",
@@ -716,11 +716,11 @@
       }
     },
     "device": {
-      "type": 4,
+      "type": 5,
       "model": "Freya",
       "brand": {
         "name": "DEXP",
-        "code": 368
+        "code": 369
       }
     }
   },
@@ -728,13 +728,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 9; Retroid Pocket 2+) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "9",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "111.0.0.0",
       "family": "Chrome",
       "engine": {
@@ -743,22 +743,22 @@
       }
     },
     "device": {
-      "type": 4,
+      "type": 5,
       "model": "2 Plus",
       "brand": {
         "name": "Retroid Pocket",
-        "code": 1442
+        "code": 1443
       }
     }
   },
   {
     "userAgent": "Mech.Mozilla/20.02 (Nintendo GameBoy; U) [ja]",
     "device": {
-      "type": 4,
+      "type": 5,
       "model": "GameBoy",
       "brand": {
         "name": "Nintendo",
-        "code": 1205
+        "code": 1206
       }
     }
   },
@@ -766,13 +766,13 @@
     "userAgent": "Mozilla/5.0 (PlayStation 4 PRO) AppleWebKit/531.3 (KHTML, like Gecko, HEVC, HDR, UHD) SCEE/1.0 Nuanti/2.0",
     "os": {
       "name": "PlayStation",
-      "code": 117,
+      "code": 118,
       "version": "4",
       "family": "Gaming Console"
     },
     "browser": {
       "name": "Nuanti Meta",
-      "code": 396,
+      "code": 397,
       "version": "2.0",
       "engine": {
         "name": "WebKit",
@@ -780,11 +780,11 @@
       }
     },
     "device": {
-      "type": 4,
+      "type": 5,
       "model": "PlayStation 4 Pro",
       "brand": {
         "name": "Sony",
-        "code": 1588
+        "code": 1589
       }
     }
   },
@@ -792,7 +792,7 @@
     "userAgent": "Mozilla/5.0 (PS3) AppleWebKit/535.11 (KHTML, like Gecko) NuantiMeta/2.0",
     "browser": {
       "name": "Nuanti Meta",
-      "code": 396,
+      "code": 397,
       "version": "2.0",
       "engine": {
         "name": "WebKit",
@@ -800,11 +800,11 @@
       }
     },
     "device": {
-      "type": 4,
+      "type": 5,
       "model": "PlayStation 3",
       "brand": {
         "name": "Sony",
-        "code": 1588
+        "code": 1589
       }
     }
   },
@@ -812,15 +812,15 @@
     "userAgent": "Aplix_SEGASATURN_browser/2.0 (Japanese)",
     "browser": {
       "name": "Aplix",
-      "code": 53,
+      "code": 54,
       "version": "2.0"
     },
     "device": {
-      "type": 4,
+      "type": 5,
       "model": "Saturn",
       "brand": {
         "name": "Sega",
-        "code": 1516
+        "code": 1517
       }
     }
   },
@@ -828,15 +828,15 @@
     "userAgent": "Aplix_SANYO_browser/1.03 (Japanese)",
     "browser": {
       "name": "Aplix",
-      "code": 53,
+      "code": 54,
       "version": "1.03"
     },
     "device": {
-      "type": 4,
+      "type": 5,
       "model": "3DO TRY",
       "brand": {
         "name": "Sanyo",
-        "code": 1504
+        "code": 1505
       }
     }
   },
@@ -844,13 +844,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 12; Razer Edge 5G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "12",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "124.0.0.0",
       "family": "Chrome",
       "engine": {
@@ -859,11 +859,11 @@
       }
     },
     "device": {
-      "type": 4,
+      "type": 5,
       "model": "Edge 5G",
       "brand": {
         "name": "Razer",
-        "code": 1419
+        "code": 1420
       }
     }
   },
@@ -871,13 +871,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 12; RG405V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.96 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "12",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "78.0.3904.96",
       "family": "Chrome",
       "engine": {
@@ -886,11 +886,11 @@
       }
     },
     "device": {
-      "type": 4,
+      "type": 5,
       "model": "RG405V",
       "brand": {
         "name": "ANBERNIC",
-        "code": 83
+        "code": 84
       }
     }
   },
@@ -898,13 +898,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 12; RG505) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.96 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "12",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "78.0.3904.96",
       "family": "Chrome",
       "engine": {
@@ -913,11 +913,11 @@
       }
     },
     "device": {
-      "type": 4,
+      "type": 5,
       "model": "RG505",
       "brand": {
         "name": "ANBERNIC",
-        "code": 83
+        "code": 84
       }
     }
   },
@@ -925,14 +925,14 @@
     "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 13; Retroid Pocket 4 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6261.96 YaBrowser/24.4.3.96.00 SA/3 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "13",
       "cpuArchitecture": "ARM",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser",
-      "code": 653,
+      "code": 654,
       "version": "24.4.3.96.00",
       "engine": {
         "name": "Blink",
@@ -940,11 +940,11 @@
       }
     },
     "device": {
-      "type": 4,
+      "type": 5,
       "model": "4 Pro",
       "brand": {
         "name": "Retroid Pocket",
-        "code": 1442
+        "code": 1443
       }
     }
   },
@@ -952,13 +952,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 11; en-US; Retroid Pocket 3 Plus Build/RP1A.201005.001) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.108 UCBrowser/13.4.5.1308 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "browser": {
       "name": "UC Browser",
-      "code": 604,
+      "code": 605,
       "version": "13.4.5.1308",
       "engine": {
         "name": "Blink",
@@ -966,11 +966,11 @@
       }
     },
     "device": {
-      "type": 4,
+      "type": 5,
       "model": "3 Plus",
       "brand": {
         "name": "Retroid Pocket",
-        "code": 1442
+        "code": 1443
       }
     }
   },
@@ -978,13 +978,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 13; RG556) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "13",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "132.0.0.0",
       "family": "Chrome",
       "engine": {
@@ -993,11 +993,11 @@
       }
     },
     "device": {
-      "type": 4,
+      "type": 5,
       "model": "RG556",
       "brand": {
         "name": "ANBERNIC",
-        "code": 83
+        "code": 84
       }
     }
   },
@@ -1005,13 +1005,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 13; RG406V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "13",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "132.0.0.0",
       "family": "Chrome",
       "engine": {
@@ -1020,11 +1020,11 @@
       }
     },
     "device": {
-      "type": 4,
+      "type": 5,
       "model": "RG406V",
       "brand": {
         "name": "ANBERNIC",
-        "code": 83
+        "code": 84
       }
     }
   },
@@ -1032,13 +1032,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 13; RGCUBE) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "13",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "131.0.0.0",
       "family": "Chrome",
       "engine": {
@@ -1047,11 +1047,11 @@
       }
     },
     "device": {
-      "type": 4,
+      "type": 5,
       "model": "RG Cube",
       "brand": {
         "name": "ANBERNIC",
-        "code": 83
+        "code": 84
       }
     }
   },
@@ -1059,13 +1059,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 13; Retroid Pocket 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "13",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "132.0.0.0",
       "family": "Chrome",
       "engine": {
@@ -1074,11 +1074,11 @@
       }
     },
     "device": {
-      "type": 4,
+      "type": 5,
       "model": "5",
       "brand": {
         "name": "Retroid Pocket",
-        "code": 1442
+        "code": 1443
       }
     }
   },
@@ -1086,14 +1086,14 @@
     "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 12; RG405M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.6834.33 YaBrowser/25.3.0.33.00 SA/3 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "12",
       "cpuArchitecture": "ARM",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser",
-      "code": 653,
+      "code": 654,
       "version": "25.3.0.33.00",
       "engine": {
         "name": "Blink",
@@ -1101,11 +1101,11 @@
       }
     },
     "device": {
-      "type": 4,
+      "type": 5,
       "model": "RG405M",
       "brand": {
         "name": "ANBERNIC",
-        "code": 83
+        "code": 84
       }
     }
   }

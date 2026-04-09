@@ -3,13 +3,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 8.0; LEO-BX9 Build/OWDD.180926.001.A1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Cr4 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "8.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome",
-      "code": 137,
+      "code": 138,
       "version": "53.0.2785.143",
       "family": "Chrome",
       "engine": {
@@ -18,11 +18,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Smart Watch 2",
       "brand": {
         "name": "Huawei",
-        "code": 757
+        "code": 758
       }
     }
   },
@@ -30,13 +30,13 @@
     "userAgent": "Mozilla/5.0 Linux; Android 7.1.1; LG Watch Urbane Build/NWD1.180306.004 AppleWebKit/537.36 KHTML, like Gecko Chrome/19.77.34.5 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "7.1.1",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "19.77.34.5",
       "family": "Chrome",
       "engine": {
@@ -45,11 +45,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Watch Urbane",
       "brand": {
         "name": "LG",
-        "code": 984
+        "code": 985
       }
     }
   },
@@ -57,13 +57,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Tizen 4.0; SAMSUNG SM-R820) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/2.0 Chrome/56.0.2924.0 Mobile Safari/537.36",
     "os": {
       "name": "Tizen",
-      "code": 157,
+      "code": 158,
       "version": "4.0",
       "family": "Other Mobile"
     },
     "browser": {
       "name": "Samsung Browser",
-      "code": 512,
+      "code": 513,
       "version": "2.0",
       "family": "Chrome",
       "engine": {
@@ -72,11 +72,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Galaxy Watch Active 2 44mm",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -84,17 +84,17 @@
     "userAgent": "Watch1,1/4.3.2 (15U70)",
     "os": {
       "name": "watchOS",
-      "code": 166,
+      "code": 167,
       "version": "4.3.2",
       "cpuArchitecture": "ARM",
       "family": "iOS"
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Watch 38mm",
       "brand": {
         "name": "Apple",
-        "code": 97
+        "code": 98
       }
     }
   },
@@ -102,17 +102,17 @@
     "userAgent": "Watch1,2/4.3.2 (15U70)",
     "os": {
       "name": "watchOS",
-      "code": 166,
+      "code": 167,
       "version": "4.3.2",
       "cpuArchitecture": "ARM",
       "family": "iOS"
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Watch 42mm",
       "brand": {
         "name": "Apple",
-        "code": 97
+        "code": 98
       }
     }
   },
@@ -120,17 +120,17 @@
     "userAgent": "atc/1.0 watchOS/5.3 model/Watch2,3 hwp/t8002 build/16U569 (6; dt:133)",
     "os": {
       "name": "watchOS",
-      "code": 166,
+      "code": 167,
       "version": "5.3",
       "cpuArchitecture": "ARM",
       "family": "iOS"
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Watch Series 2 38mm",
       "brand": {
         "name": "Apple",
-        "code": 97
+        "code": 98
       }
     }
   },
@@ -138,17 +138,17 @@
     "userAgent": "atc/1.0 watchOS/5.1.3 model/Watch2,4 hwp/t8002 build/16S535 (6; dt:134)",
     "os": {
       "name": "watchOS",
-      "code": 166,
+      "code": 167,
       "version": "5.1.3",
       "cpuArchitecture": "ARM",
       "family": "iOS"
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Watch Series 2 42mm",
       "brand": {
         "name": "Apple",
-        "code": 97
+        "code": 98
       }
     }
   },
@@ -156,17 +156,17 @@
     "userAgent": "atc/1.0 watchOS/6.1.1 model/Watch2,6 hwp/t8002 build/17S449 (6; dt:148)",
     "os": {
       "name": "watchOS",
-      "code": 166,
+      "code": 167,
       "version": "6.1.1",
       "cpuArchitecture": "ARM",
       "family": "iOS"
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Watch Series 1 38mm",
       "brand": {
         "name": "Apple",
-        "code": 97
+        "code": 98
       }
     }
   },
@@ -174,17 +174,17 @@
     "userAgent": "atc/1.0 watchOS/6.0 model/Watch2,7 hwp/t8002 build/17R5556d (6; dt:149)",
     "os": {
       "name": "watchOS",
-      "code": 166,
+      "code": 167,
       "version": "6.0",
       "cpuArchitecture": "ARM",
       "family": "iOS"
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Watch Series 1 42mm",
       "brand": {
         "name": "Apple",
-        "code": 97
+        "code": 98
       }
     }
   },
@@ -192,17 +192,17 @@
     "userAgent": "atc/1.0 watchOS/6.0 model/Watch3,1 hwp/t8004 build/17R527 (6; dt:153)",
     "os": {
       "name": "watchOS",
-      "code": 166,
+      "code": 167,
       "version": "6.0",
       "cpuArchitecture": "ARM",
       "family": "iOS"
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Watch Series 3 38mm",
       "brand": {
         "name": "Apple",
-        "code": 97
+        "code": 98
       }
     }
   },
@@ -210,17 +210,17 @@
     "userAgent": "atc/1.0 watchOS/6.0 model/Watch3,2 hwp/t8004 build/17R5532f (6; dt:154)",
     "os": {
       "name": "watchOS",
-      "code": 166,
+      "code": 167,
       "version": "6.0",
       "cpuArchitecture": "ARM",
       "family": "iOS"
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Watch Series 3 42mm",
       "brand": {
         "name": "Apple",
-        "code": 97
+        "code": 98
       }
     }
   },
@@ -228,17 +228,17 @@
     "userAgent": "atc/1.0 watchOS/5.3 model/Watch3,3 hwp/t8004 build/16U569 (6; dt:155)",
     "os": {
       "name": "watchOS",
-      "code": 166,
+      "code": 167,
       "version": "5.3",
       "cpuArchitecture": "ARM",
       "family": "iOS"
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Watch Series 3 38mm",
       "brand": {
         "name": "Apple",
-        "code": 97
+        "code": 98
       }
     }
   },
@@ -246,17 +246,17 @@
     "userAgent": "atc/1.0 watchOS/5.3 model/Watch3,4 hwp/t8004 build/16U569 (6; dt:156)",
     "os": {
       "name": "watchOS",
-      "code": 166,
+      "code": 167,
       "version": "5.3",
       "cpuArchitecture": "ARM",
       "family": "iOS"
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Watch Series 3 42mm",
       "brand": {
         "name": "Apple",
-        "code": 97
+        "code": 98
       }
     }
   },
@@ -264,17 +264,17 @@
     "userAgent": "atc/1.0 watchOS/6.0 model/Watch4,1 hwp/t8006 build/17R5556d (6; dt:190)",
     "os": {
       "name": "watchOS",
-      "code": 166,
+      "code": 167,
       "version": "6.0",
       "cpuArchitecture": "ARM",
       "family": "iOS"
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Watch Series 4 40mm",
       "brand": {
         "name": "Apple",
-        "code": 97
+        "code": 98
       }
     }
   },
@@ -282,17 +282,17 @@
     "userAgent": "atc/1.0 watchOS/6.0 model/Watch4,2 hwp/t8006 build/17R575 (6; dt:191)",
     "os": {
       "name": "watchOS",
-      "code": 166,
+      "code": 167,
       "version": "6.0",
       "cpuArchitecture": "ARM",
       "family": "iOS"
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Watch Series 4 44mm",
       "brand": {
         "name": "Apple",
-        "code": 97
+        "code": 98
       }
     }
   },
@@ -300,17 +300,17 @@
     "userAgent": "atc/1.0 watchOS/6.0 model/Watch4,3 hwp/t8006 build/17R5546f (6; dt:192)",
     "os": {
       "name": "watchOS",
-      "code": 166,
+      "code": 167,
       "version": "6.0",
       "cpuArchitecture": "ARM",
       "family": "iOS"
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Watch Series 4 40mm",
       "brand": {
         "name": "Apple",
-        "code": 97
+        "code": 98
       }
     }
   },
@@ -318,17 +318,17 @@
     "userAgent": "atc/1.0 watchOS/6.1.1 model/Watch4,4 hwp/t8006 build/17S449 (6; dt:193)",
     "os": {
       "name": "watchOS",
-      "code": 166,
+      "code": 167,
       "version": "6.1.1",
       "cpuArchitecture": "ARM",
       "family": "iOS"
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Watch Series 4 44mm",
       "brand": {
         "name": "Apple",
-        "code": 97
+        "code": 98
       }
     }
   },
@@ -336,17 +336,17 @@
     "userAgent": "atc/1.0 watchOS/6.1.1 model/Watch5,1 hwp/t8006 build/17S449 (6; dt:201)",
     "os": {
       "name": "watchOS",
-      "code": 166,
+      "code": 167,
       "version": "6.1.1",
       "cpuArchitecture": "ARM",
       "family": "iOS"
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Watch Series 5 40mm",
       "brand": {
         "name": "Apple",
-        "code": 97
+        "code": 98
       }
     }
   },
@@ -354,17 +354,17 @@
     "userAgent": "atc/1.0 watchOS/6.2.6 model/Watch5,2 hwp/t8006 build/17T620 (6; dt:201)",
     "os": {
       "name": "watchOS",
-      "code": 166,
+      "code": 167,
       "version": "6.2.6",
       "cpuArchitecture": "ARM",
       "family": "iOS"
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Watch Series 5 44mm",
       "brand": {
         "name": "Apple",
-        "code": 97
+        "code": 98
       }
     }
   },
@@ -372,17 +372,17 @@
     "userAgent": "atc/1.0 watchOS/6.1.3 model/Watch5,3 hwp/t8006 build/17S811 (6; dt:202)",
     "os": {
       "name": "watchOS",
-      "code": 166,
+      "code": 167,
       "version": "6.1.3",
       "cpuArchitecture": "ARM",
       "family": "iOS"
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Watch Series 5 40mm",
       "brand": {
         "name": "Apple",
-        "code": 97
+        "code": 98
       }
     }
   },
@@ -390,17 +390,17 @@
     "userAgent": "atc/1.0 watchOS/6.0 model/Watch5,4 hwp/t8006 build/17R561a (6; dt:202)",
     "os": {
       "name": "watchOS",
-      "code": 166,
+      "code": 167,
       "version": "6.0",
       "cpuArchitecture": "ARM",
       "family": "iOS"
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Watch Series 5 44mm",
       "brand": {
         "name": "Apple",
-        "code": 97
+        "code": 98
       }
     }
   },
@@ -408,16 +408,16 @@
     "userAgent": "atc/1.0 watchOS",
     "os": {
       "name": "watchOS",
-      "code": 166,
+      "code": 167,
       "cpuArchitecture": "ARM",
       "family": "iOS"
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Watch",
       "brand": {
         "name": "Apple",
-        "code": 97
+        "code": 98
       }
     }
   },
@@ -425,17 +425,17 @@
     "userAgent": "com.apple.appstored/1.0 watchOS/7.0 model/Watch6,1 hwp/t8301 build/18R382 (6; dt:226) AMS/1",
     "os": {
       "name": "watchOS",
-      "code": 166,
+      "code": 167,
       "version": "7.0",
       "cpuArchitecture": "ARM",
       "family": "iOS"
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Watch Series 6 40mm",
       "brand": {
         "name": "Apple",
-        "code": 97
+        "code": 98
       }
     }
   },
@@ -443,17 +443,17 @@
     "userAgent": "server-bag [Watch OS,7.1,18R590,Watch6,2]",
     "os": {
       "name": "watchOS",
-      "code": 166,
+      "code": 167,
       "version": "7.1",
       "cpuArchitecture": "ARM",
       "family": "iOS"
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Watch Series 6 44mm",
       "brand": {
         "name": "Apple",
-        "code": 97
+        "code": 98
       }
     }
   },
@@ -461,17 +461,17 @@
     "userAgent": "server-bag [Watch OS,7.0.1,18R395,Watch6,3]",
     "os": {
       "name": "watchOS",
-      "code": 166,
+      "code": 167,
       "version": "7.0.1",
       "cpuArchitecture": "ARM",
       "family": "iOS"
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Watch Series 6 40mm",
       "brand": {
         "name": "Apple",
-        "code": 97
+        "code": 98
       }
     }
   },
@@ -479,17 +479,17 @@
     "userAgent": "server-bag [Watch OS,7.0,18R382,Watch6,4]",
     "os": {
       "name": "watchOS",
-      "code": 166,
+      "code": 167,
       "version": "7.0",
       "cpuArchitecture": "ARM",
       "family": "iOS"
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Watch Series 6 44mm",
       "brand": {
         "name": "Apple",
-        "code": 97
+        "code": 98
       }
     }
   },
@@ -497,13 +497,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 5.0.1; ASUS ZenWatch Build/LWX48S) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/19.77.34.5 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "5.0.1",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "19.77.34.5",
       "family": "Chrome",
       "engine": {
@@ -512,11 +512,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "ZenWatch",
       "brand": {
         "name": "Asus",
-        "code": 118
+        "code": 119
       }
     }
   },
@@ -524,13 +524,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 7.1.1; ASUS ZenWatch 2 Build/NWD1.170706.001) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Cr4 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "7.1.1",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome",
-      "code": 137,
+      "code": 138,
       "version": "53.0.2785.143",
       "family": "Chrome",
       "engine": {
@@ -539,11 +539,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "ZenWatch 2",
       "brand": {
         "name": "Asus",
-        "code": 118
+        "code": 119
       }
     }
   },
@@ -551,17 +551,17 @@
     "userAgent": "atc/1.0 watchOS/7.3 model/Watch5,9 hwp/t8006 build/18S801 (6; dt:233)",
     "os": {
       "name": "watchOS",
-      "code": 166,
+      "code": 167,
       "version": "7.3",
       "cpuArchitecture": "ARM",
       "family": "iOS"
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Watch SE 40mm",
       "brand": {
         "name": "Apple",
-        "code": 97
+        "code": 98
       }
     }
   },
@@ -569,17 +569,17 @@
     "userAgent": "atc/1.0 watchOS/7.0.2 model/Watch5,10 hwp/t8006 build/18R402 (6; dt:233)",
     "os": {
       "name": "watchOS",
-      "code": 166,
+      "code": 167,
       "version": "7.0.2",
       "cpuArchitecture": "ARM",
       "family": "iOS"
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Watch SE 44mm",
       "brand": {
         "name": "Apple",
-        "code": 97
+        "code": 98
       }
     }
   },
@@ -587,17 +587,17 @@
     "userAgent": "atc/1.0 watchOS/7.0.2 model/Watch5,11 hwp/t8006 build/18R402 (6; dt:234)",
     "os": {
       "name": "watchOS",
-      "code": 166,
+      "code": 167,
       "version": "7.0.2",
       "cpuArchitecture": "ARM",
       "family": "iOS"
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Watch SE 40mm",
       "brand": {
         "name": "Apple",
-        "code": 97
+        "code": 98
       }
     }
   },
@@ -605,17 +605,17 @@
     "userAgent": "atc/1.0 watchOS/7.2 model/Watch5,12 hwp/t8006 build/18S563 (6; dt:234)",
     "os": {
       "name": "watchOS",
-      "code": 166,
+      "code": 167,
       "version": "7.2",
       "cpuArchitecture": "ARM",
       "family": "iOS"
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Watch SE 44mm",
       "brand": {
         "name": "Apple",
-        "code": 97
+        "code": 98
       }
     }
   },
@@ -623,13 +623,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 8.1.0; Pico G2 4K Build/OPM1.171019.026; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/61.0.3163.98 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "8.1.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Webview",
-      "code": 161,
+      "code": 162,
       "version": "61.0.3163.98",
       "family": "Chrome",
       "engine": {
@@ -638,11 +638,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "G2 4K",
       "brand": {
         "name": "Pico",
-        "code": 1346
+        "code": 1347
       }
     }
   },
@@ -650,13 +650,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 5.1.1; VRL42) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.93 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "5.1.1",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "79.0.3945.93",
       "family": "Chrome",
       "engine": {
@@ -665,11 +665,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "VR L42",
       "brand": {
         "name": "Digma",
-        "code": 390
+        "code": 391
       }
     }
   },
@@ -677,13 +677,13 @@
     "userAgent": "Mozilla/5.0 Linux; Android 7.1.1; NB RunIQ Build/NWD1.171016.002 AppleWebKit/537.36 KHTML, like Gecko Chrome/53.0.2785.143 Cr4 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "7.1.1",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome",
-      "code": 137,
+      "code": 138,
       "version": "53.0.2785.143",
       "family": "Chrome",
       "engine": {
@@ -692,11 +692,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "RunIQ",
       "brand": {
         "name": "New Balance",
-        "code": 1186
+        "code": 1187
       }
     }
   },
@@ -704,13 +704,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Tizen 5.5; SAMSUNG SM-R800) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/2.0 Chrome/69.0.3497.106 Mobile Safari/537.36",
     "os": {
       "name": "Tizen",
-      "code": 157,
+      "code": 158,
       "version": "5.5",
       "family": "Other Mobile"
     },
     "browser": {
       "name": "Samsung Browser",
-      "code": 512,
+      "code": 513,
       "version": "2.0",
       "family": "Chrome",
       "engine": {
@@ -719,11 +719,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Galaxy Watch 46mm",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -731,13 +731,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Tizen 4.0; SAMSUNG SM-R500) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/2.0 Chrome/56.0.2924.0 Mobile Safari/537.36",
     "os": {
       "name": "Tizen",
-      "code": 157,
+      "code": 158,
       "version": "4.0",
       "family": "Other Mobile"
     },
     "browser": {
       "name": "Samsung Browser",
-      "code": 512,
+      "code": 513,
       "version": "2.0",
       "family": "Chrome",
       "engine": {
@@ -746,11 +746,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Galaxy Watch Active",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -758,13 +758,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Tizen 4.0; SAMSUNG SM-R760) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/2.0 Chrome/56.0.2924.0 Mobile Safari/537.36",
     "os": {
       "name": "Tizen",
-      "code": 157,
+      "code": 158,
       "version": "4.0",
       "family": "Other Mobile"
     },
     "browser": {
       "name": "Samsung Browser",
-      "code": 512,
+      "code": 513,
       "version": "2.0",
       "family": "Chrome",
       "engine": {
@@ -773,11 +773,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Galaxy Gear S3 Frontier 46mm",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -785,13 +785,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Tizen 5.5; SAMSUNG SM-R845F) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/2.0 Chrome/69.0.3497.106 Mobile Safari/537.36",
     "os": {
       "name": "Tizen",
-      "code": 157,
+      "code": 158,
       "version": "5.5",
       "family": "Other Mobile"
     },
     "browser": {
       "name": "Samsung Browser",
-      "code": 512,
+      "code": 513,
       "version": "2.0",
       "family": "Chrome",
       "engine": {
@@ -800,11 +800,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Galaxy Watch 3 45mm LTE",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -812,13 +812,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Tizen 5.5; SAMSUNG SM-R855F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.106 Mobile Safari/537.36",
     "os": {
       "name": "Tizen",
-      "code": 157,
+      "code": 158,
       "version": "5.5",
       "family": "Other Mobile"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "69.0.3497.106",
       "family": "Chrome",
       "engine": {
@@ -827,11 +827,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Galaxy Watch 3 41mm 4G",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -839,13 +839,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Tizen 5.5; SAMSUNG SM-R840) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.106 Mobile Safari/537.36",
     "os": {
       "name": "Tizen",
-      "code": 157,
+      "code": 158,
       "version": "5.5",
       "family": "Other Mobile"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "69.0.3497.106",
       "family": "Chrome",
       "engine": {
@@ -854,11 +854,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Galaxy Watch 3 45mm",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -866,13 +866,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Tizen 4.0; SAMSUNG SM-R830) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.0 Mobile Safari/537.36",
     "os": {
       "name": "Tizen",
-      "code": 157,
+      "code": 158,
       "version": "4.0",
       "family": "Other Mobile"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "56.0.2924.0",
       "family": "Chrome",
       "engine": {
@@ -881,11 +881,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Galaxy Watch Active 2 40mm",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -893,13 +893,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Tizen 4.0; SAMSUNG SM-R765V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.0 Mobile Safari/537.36",
     "os": {
       "name": "Tizen",
-      "code": 157,
+      "code": 158,
       "version": "4.0",
       "family": "Other Mobile"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "56.0.2924.0",
       "family": "Chrome",
       "engine": {
@@ -908,11 +908,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Galaxy Gear S3 Frontier 33mm",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -920,13 +920,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Tizen 4.0; SAMSUNG SM-R600) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/2.0 Chrome/56.0.2924.0 Mobile Safari/537.36",
     "os": {
       "name": "Tizen",
-      "code": 157,
+      "code": 158,
       "version": "4.0",
       "family": "Other Mobile"
     },
     "browser": {
       "name": "Samsung Browser",
-      "code": 512,
+      "code": 513,
       "version": "2.0",
       "family": "Chrome",
       "engine": {
@@ -935,11 +935,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Galaxy Gear Sport 43mm",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -947,13 +947,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Tizen 5.5; SAMSUNG SM-R815F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.106 Mobile Safari/537.36",
     "os": {
       "name": "Tizen",
-      "code": 157,
+      "code": 158,
       "version": "5.5",
       "family": "Other Mobile"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "69.0.3497.106",
       "family": "Chrome",
       "engine": {
@@ -962,11 +962,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Galaxy Watch 42mm LTE",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -974,13 +974,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Tizen 4.0; SAMSUNG SM-R810) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.0 Mobile Safari/537.36",
     "os": {
       "name": "Tizen",
-      "code": 157,
+      "code": 158,
       "version": "4.0",
       "family": "Other Mobile"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "56.0.2924.0",
       "family": "Chrome",
       "engine": {
@@ -989,11 +989,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Galaxy Watch 42mm",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -1001,13 +1001,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Tizen 5.5; SAMSUNG SM-R850) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/2.0 Chrome/69.0.3497.106 Mobile Safari/537.36",
     "os": {
       "name": "Tizen",
-      "code": 157,
+      "code": 158,
       "version": "5.5",
       "family": "Other Mobile"
     },
     "browser": {
       "name": "Samsung Browser",
-      "code": 512,
+      "code": 513,
       "version": "2.0",
       "family": "Chrome",
       "engine": {
@@ -1016,11 +1016,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Galaxy Watch 3 41mm",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -1028,13 +1028,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Tizen 4.0; SAMSUNG SM-R805F) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/2.0 Chrome/56.0.2924.0 Mobile Safari/537.36",
     "os": {
       "name": "Tizen",
-      "code": 157,
+      "code": 158,
       "version": "4.0",
       "family": "Other Mobile"
     },
     "browser": {
       "name": "Samsung Browser",
-      "code": 512,
+      "code": 513,
       "version": "2.0",
       "family": "Chrome",
       "engine": {
@@ -1043,11 +1043,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Galaxy Watch 46mm LTE",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -1055,13 +1055,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Tizen 4.0; SAMSUNG SM-R805U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.0 Mobile Safari/537.36",
     "os": {
       "name": "Tizen",
-      "code": 157,
+      "code": 158,
       "version": "4.0",
       "family": "Other Mobile"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "56.0.2924.0",
       "family": "Chrome",
       "engine": {
@@ -1070,11 +1070,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Galaxy Watch 46mm LTE",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -1082,13 +1082,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Tizen 4.0; SAMSUNG SM-R815U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.0 Mobile Safari/537.36",
     "os": {
       "name": "Tizen",
-      "code": 157,
+      "code": 158,
       "version": "4.0",
       "family": "Other Mobile"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "56.0.2924.0",
       "family": "Chrome",
       "engine": {
@@ -1097,11 +1097,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Galaxy Watch 42mm LTE",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -1109,13 +1109,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Tizen 4.0; SAMSUNG SM-R825U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.0 Mobile Safari/537.36",
     "os": {
       "name": "Tizen",
-      "code": 157,
+      "code": 158,
       "version": "4.0",
       "family": "Other Mobile"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "56.0.2924.0",
       "family": "Chrome",
       "engine": {
@@ -1124,11 +1124,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Galaxy Watch Active 2 44mm LTE",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -1136,13 +1136,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Tizen 5.5; SAMSUNG SM-R835F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.106 Mobile Safari/537.36",
     "os": {
       "name": "Tizen",
-      "code": 157,
+      "code": 158,
       "version": "5.5",
       "family": "Other Mobile"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "69.0.3497.106",
       "family": "Chrome",
       "engine": {
@@ -1151,11 +1151,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Galaxy Watch Active 2 40mm LTE",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -1163,13 +1163,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Tizen 4.0; SAMSUNG SM-R770) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/2.0 Chrome/56.0.2924.0 Mobile Safari/537.36",
     "os": {
       "name": "Tizen",
-      "code": 157,
+      "code": 158,
       "version": "4.0",
       "family": "Other Mobile"
     },
     "browser": {
       "name": "Samsung Browser",
-      "code": 512,
+      "code": 513,
       "version": "2.0",
       "family": "Chrome",
       "engine": {
@@ -1178,11 +1178,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Galaxy Gear S3 Classic 41mm",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -1190,13 +1190,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Tizen 5.5; SAMSUNG SM-R835U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.106 Mobile Safari/537.36",
     "os": {
       "name": "Tizen",
-      "code": 157,
+      "code": 158,
       "version": "5.5",
       "family": "Other Mobile"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "69.0.3497.106",
       "family": "Chrome",
       "engine": {
@@ -1205,11 +1205,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Galaxy Watch Active 2 40mm LTE",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -1217,13 +1217,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Tizen 4.0; SAMSUNG SM-R815W) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.0 Mobile Safari/537.36",
     "os": {
       "name": "Tizen",
-      "code": 157,
+      "code": 158,
       "version": "4.0",
       "family": "Other Mobile"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "56.0.2924.0",
       "family": "Chrome",
       "engine": {
@@ -1232,11 +1232,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Galaxy Watch 42mm LTE",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -1244,13 +1244,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Tizen 5.5; SAMSUNG SM-R855U) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/2.0 Chrome/69.0.3497.106 Mobile Safari/537.36",
     "os": {
       "name": "Tizen",
-      "code": 157,
+      "code": 158,
       "version": "5.5",
       "family": "Other Mobile"
     },
     "browser": {
       "name": "Samsung Browser",
-      "code": 512,
+      "code": 513,
       "version": "2.0",
       "family": "Chrome",
       "engine": {
@@ -1259,11 +1259,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Galaxy Watch 3 41mm 4G",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -1271,13 +1271,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Tizen 5.5; SAMSUNG SM-R825F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.106 Mobile Safari/537.36",
     "os": {
       "name": "Tizen",
-      "code": 157,
+      "code": 158,
       "version": "5.5",
       "family": "Other Mobile"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "69.0.3497.106",
       "family": "Chrome",
       "engine": {
@@ -1286,11 +1286,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Galaxy Watch Active 2 44mm LTE",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -1298,13 +1298,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Tizen 5.5; SAMSUNG SM-R845U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.106 Mobile Safari/537.36",
     "os": {
       "name": "Tizen",
-      "code": 157,
+      "code": 158,
       "version": "5.5",
       "family": "Other Mobile"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "69.0.3497.106",
       "family": "Chrome",
       "engine": {
@@ -1313,11 +1313,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Galaxy Watch 3 45mm LTE",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -1325,13 +1325,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 8.0.0; VR-1541F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.57 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "8.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "70.0.3538.57",
       "family": "Chrome",
       "engine": {
@@ -1340,11 +1340,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Mirage Solo",
       "brand": {
         "name": "Lenovo",
-        "code": 976
+        "code": 977
       }
     }
   },
@@ -1352,17 +1352,17 @@
     "userAgent": "atc/1.0 watchOS/8.0.1 model/Watch6,6 hwp/t8301 build/19R354 (6; dt:259)",
     "os": {
       "name": "watchOS",
-      "code": 166,
+      "code": 167,
       "version": "8.0.1",
       "cpuArchitecture": "ARM",
       "family": "iOS"
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Watch Series 7 41mm",
       "brand": {
         "name": "Apple",
-        "code": 97
+        "code": 98
       }
     }
   },
@@ -1370,17 +1370,17 @@
     "userAgent": "atc/1.0 watchOS/8.0.1 model/Watch6,8 hwp/t8301 build/19R354 (6; dt:259)",
     "os": {
       "name": "watchOS",
-      "code": 166,
+      "code": 167,
       "version": "8.0.1",
       "cpuArchitecture": "ARM",
       "family": "iOS"
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Watch Series 7 41mm",
       "brand": {
         "name": "Apple",
-        "code": 97
+        "code": 98
       }
     }
   },
@@ -1388,17 +1388,17 @@
     "userAgent": "atc/1.0 watchOS/8.0.1 model/Watch6,7 hwp/t8301 build/19R354 (6; dt:259)",
     "os": {
       "name": "watchOS",
-      "code": 166,
+      "code": 167,
       "version": "8.0.1",
       "cpuArchitecture": "ARM",
       "family": "iOS"
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Watch Series 7 45mm",
       "brand": {
         "name": "Apple",
-        "code": 97
+        "code": 98
       }
     }
   },
@@ -1406,17 +1406,17 @@
     "userAgent": "atc/1.0 watchOS/8.0.1 model/Watch6,9 hwp/t8301 build/19R354 (6; dt:259)",
     "os": {
       "name": "watchOS",
-      "code": 166,
+      "code": 167,
       "version": "8.0.1",
       "cpuArchitecture": "ARM",
       "family": "iOS"
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Watch Series 7 45mm",
       "brand": {
         "name": "Apple",
-        "code": 97
+        "code": 98
       }
     }
   },
@@ -1424,12 +1424,12 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 7.1.1; Pacific) AppleWebKit/537.36 (KHTML, like Gecko) OculusBrowser/10.16.0.0.0.296461555 SamsungBrowser/4.0 Chrome/91.0.4472.88 Mobile VR Safari/537.36",
     "os": {
       "name": "Meta Horizon",
-      "code": 88,
+      "code": 89,
       "family": "Android"
     },
     "browser": {
       "name": "Oculus Browser",
-      "code": 399,
+      "code": 400,
       "version": "10.16.0.0.0.296461555",
       "family": "Chrome",
       "engine": {
@@ -1438,11 +1438,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Go",
       "brand": {
         "name": "Meta",
-        "code": 1245
+        "code": 1246
       }
     }
   },
@@ -1450,12 +1450,12 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 7.1.1; Quest) AppleWebKit/537.36 (KHTML, like Gecko) OculusBrowser/13.4.0.3.15.268829550 SamsungBrowser/4.0 Chrome/87.0.4280.141 VR Safari/537.36",
     "os": {
       "name": "Meta Horizon",
-      "code": 88,
+      "code": 89,
       "family": "Android"
     },
     "browser": {
       "name": "Oculus Browser",
-      "code": 399,
+      "code": 400,
       "version": "13.4.0.3.15.268829550",
       "family": "Chrome",
       "engine": {
@@ -1464,11 +1464,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Quest",
       "brand": {
         "name": "Meta",
-        "code": 1245
+        "code": 1246
       }
     }
   },
@@ -1476,12 +1476,12 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 10; Quest 2) AppleWebKit/537.36 (KHTML, like Gecko) OculusBrowser/13.0.0.2.16.259832224 SamsungBrowser/4.0 Chrome/87.0.4280.66 VR Safari/537.36",
     "os": {
       "name": "Meta Horizon",
-      "code": 88,
+      "code": 89,
       "family": "Android"
     },
     "browser": {
       "name": "Oculus Browser",
-      "code": 399,
+      "code": 400,
       "version": "13.0.0.2.16.259832224",
       "family": "Chrome",
       "engine": {
@@ -1490,11 +1490,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Quest 2",
       "brand": {
         "name": "Meta",
-        "code": 1245
+        "code": 1246
       }
     }
   },
@@ -1502,12 +1502,12 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 10; Standalone HMD) AppleWebKit/537.36 (KHTML, like Gecko) OculusBrowser/8.5.0.4.24.209184609 SamsungBrowser/4.0 Chrome/79.0.3945.126 Mobile VR Safari/537.36",
     "os": {
       "name": "Meta Horizon",
-      "code": 88,
+      "code": 89,
       "family": "Android"
     },
     "browser": {
       "name": "Oculus Browser",
-      "code": 399,
+      "code": 400,
       "version": "8.5.0.4.24.209184609",
       "family": "Chrome",
       "engine": {
@@ -1516,11 +1516,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Quest 2",
       "brand": {
         "name": "Meta",
-        "code": 1245
+        "code": 1246
       }
     }
   },
@@ -1528,13 +1528,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 9; H1-C-ALADENG) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "9",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "94.0.4606.71",
       "family": "Chrome",
       "engine": {
@@ -1543,11 +1543,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "W5",
       "brand": {
         "name": "Gocomma",
-        "code": 646
+        "code": 647
       }
     }
   },
@@ -1555,12 +1555,12 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 10; LEM14 Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/74.0.3729.186 Mobile Safari/537.36",
     "os": {
       "name": "Wear OS",
-      "code": 167,
+      "code": 168,
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Webview",
-      "code": 161,
+      "code": 162,
       "version": "74.0.3729.186",
       "family": "Chrome",
       "engine": {
@@ -1569,11 +1569,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "LEM14",
       "brand": {
         "name": "LEMFO",
-        "code": 973
+        "code": 974
       }
     }
   },
@@ -1581,13 +1581,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 4.4; Moto 360 Build/KNX01S) AppleWebKit/537.36 (KHTML, like Gecko) WIB/0.9.8 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.4",
       "family": "Android"
     },
     "browser": {
       "name": "Wear Internet Browser",
-      "code": 631,
+      "code": 632,
       "version": "0.9.8",
       "engine": {
         "name": "WebKit",
@@ -1595,11 +1595,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Moto 360",
       "brand": {
         "name": "Motorola",
-        "code": 1120
+        "code": 1121
       }
     }
   },
@@ -1607,13 +1607,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 4.4; Gear Live Build/KMV78X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/19.77.34.5 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.4",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "19.77.34.5",
       "family": "Chrome",
       "engine": {
@@ -1622,11 +1622,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Gear Live",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -1634,13 +1634,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 4.4; G Watch Build/KNX01Q) AppleWebKit/537.36 (KHTML, like Gecko) WIB/0.9.8 Mobile Safari/537.3",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.4",
       "family": "Android"
     },
     "browser": {
       "name": "Wear Internet Browser",
-      "code": 631,
+      "code": 632,
       "version": "0.9.8",
       "engine": {
         "name": "WebKit",
@@ -1648,11 +1648,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "G Watch",
       "brand": {
         "name": "LG",
-        "code": 984
+        "code": 985
       }
     }
   },
@@ -1660,13 +1660,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 4.4; G Watch R Build/KNX01R) AppleWebKit/537.36 (KHTML, like Gecko) WIB/0.9.8 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.4",
       "family": "Android"
     },
     "browser": {
       "name": "Wear Internet Browser",
-      "code": 631,
+      "code": 632,
       "version": "0.9.8",
       "engine": {
         "name": "WebKit",
@@ -1674,11 +1674,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "G Watch R",
       "brand": {
         "name": "LG",
-        "code": 984
+        "code": 985
       }
     }
   },
@@ -1686,13 +1686,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 5.0.2; SmartWatch 3 Build/LWX49K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/19.77.34.5 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "5.0.2",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "19.77.34.5",
       "family": "Chrome",
       "engine": {
@@ -1701,11 +1701,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "SmartWatch 3",
       "brand": {
         "name": "Sony",
-        "code": 1588
+        "code": 1589
       }
     }
   },
@@ -1713,13 +1713,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 2.3.4; Motorola-F100 Build/4.5.1-26_G2-436_US-MR7-24) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.45 Mobile Safari/537.36 OPR/15.0.1162.59192",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "2.3.4",
       "family": "Android"
     },
     "browser": {
       "name": "Opera Mobile",
-      "code": 419,
+      "code": 420,
       "version": "15.0.1162.59192",
       "family": "Opera",
       "engine": {
@@ -1728,11 +1728,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Moto ACTV",
       "brand": {
         "name": "Motorola",
-        "code": 1120
+        "code": 1121
       }
     }
   },
@@ -1740,13 +1740,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.2.2; xx; NT-1501C Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.2.2",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -1754,11 +1754,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Callisto 100",
       "brand": {
         "name": "IconBIT",
-        "code": 782
+        "code": 783
       }
     }
   },
@@ -1766,13 +1766,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Tizen 2.2.1.3; SM-R750) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.76 efl-webengine/0.1.1.1 Mobile Safari/537.36",
     "os": {
       "name": "Tizen",
-      "code": 157,
+      "code": 158,
       "version": "2.2.1.3",
       "family": "Other Mobile"
     },
     "browser": {
       "name": "Chrome",
-      "code": 137,
+      "code": 138,
       "version": "34.0.1847.76",
       "family": "Chrome",
       "engine": {
@@ -1781,11 +1781,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Gear S 40mm",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -1793,13 +1793,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Tizen 2.2.1.3; SAMSUNG SM-R750A) AppleWebKit/538.1 (KHTML, like Gecko) Version/2.2.1.3 Mobile Safari/538.1",
     "os": {
       "name": "Tizen",
-      "code": 157,
+      "code": 158,
       "version": "2.2.1.3",
       "family": "Other Mobile"
     },
     "browser": {
       "name": "Tizen Browser",
-      "code": 590,
+      "code": 591,
       "version": "2.2.1.3",
       "engine": {
         "name": "WebKit",
@@ -1807,11 +1807,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Gear S 40mm",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -1819,13 +1819,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Tizen 2.3.2.2; SAMSUNG SM-R732) AppleWebKit/538.1 (KHTML, like Gecko) Version/2.3.2.2 Mobile Safari/538.1",
     "os": {
       "name": "Tizen",
-      "code": 157,
+      "code": 158,
       "version": "2.3.2.2",
       "family": "Other Mobile"
     },
     "browser": {
       "name": "Tizen Browser",
-      "code": 590,
+      "code": 591,
       "version": "2.3.2.2",
       "engine": {
         "name": "WebKit",
@@ -1833,11 +1833,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Gear S2 42mm",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -1845,20 +1845,20 @@
     "userAgent": "AppleCoreMedia/1.0.0.18R590 (Apple Watch; U; CPU OS 7_1 like Mac OS X; it_it)",
     "os": {
       "name": "iOS",
-      "code": 182,
+      "code": 183,
       "version": "7.1",
       "family": "iOS"
     },
     "client": {
-      "type": 2,
+      "type": 3,
       "name": "iOS Application"
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Watch",
       "brand": {
         "name": "Apple",
-        "code": 97
+        "code": 98
       }
     }
   },
@@ -1866,13 +1866,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 10; R2021W2 Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/74.0.3729.186 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "10",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Webview",
-      "code": 161,
+      "code": 162,
       "version": "74.0.3729.186",
       "family": "Chrome",
       "engine": {
@@ -1881,11 +1881,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "R2021W2",
       "brand": {
         "name": "Autan",
-        "code": 133
+        "code": 134
       }
     }
   },
@@ -1893,13 +1893,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 10; APPLLP2 Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/74.0.3729.186 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "10",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Webview",
-      "code": 161,
+      "code": 162,
       "version": "74.0.3729.186",
       "family": "Chrome",
       "engine": {
@@ -1908,11 +1908,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "APPLLP2",
       "brand": {
         "name": "LOKMAT",
-        "code": 1006
+        "code": 1007
       }
     }
   },
@@ -1920,13 +1920,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 8.0.0; LEO-DLXX Build/OWDE.180707.001.E1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/77.0.3865.120 MQQBrowser/6.2 TBS/045714 Mobile Safari/537.36 bwqsh/3.3.6",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "8.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "QQ Browser",
-      "code": 496,
+      "code": 497,
       "version": "6.2",
       "engine": {
         "name": "Blink",
@@ -1934,11 +1934,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Smart Watch 2 Sport",
       "brand": {
         "name": "Huawei",
-        "code": 757
+        "code": 758
       }
     }
   },
@@ -1946,13 +1946,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 10; LEM12Pro Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/74.0.3729.186 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "10",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Webview",
-      "code": 161,
+      "code": 162,
       "version": "74.0.3729.186",
       "family": "Chrome",
       "engine": {
@@ -1961,11 +1961,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "LEM12 Pro",
       "brand": {
         "name": "LEMFO",
-        "code": 973
+        "code": 974
       }
     }
   },
@@ -1973,13 +1973,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 8.1.0; OW19W1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.96 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "8.1.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "78.0.3904.96",
       "family": "Chrome",
       "engine": {
@@ -1988,11 +1988,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Watch 46mm",
       "brand": {
         "name": "OPPO",
-        "code": 1273
+        "code": 1274
       }
     }
   },
@@ -2000,13 +2000,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 8.1.0; OW19W2 Build/OPM1.171019.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/61.0.3163.98 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "8.1.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Webview",
-      "code": 161,
+      "code": 162,
       "version": "61.0.3163.98",
       "family": "Chrome",
       "engine": {
@@ -2015,11 +2015,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Watch 41mm",
       "brand": {
         "name": "OPPO",
-        "code": 1273
+        "code": 1274
       }
     }
   },
@@ -2027,13 +2027,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 8.1.0; OW19W3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.137 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "8.1.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "64.0.3282.137",
       "family": "Chrome",
       "engine": {
@@ -2042,11 +2042,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Watch 46mm",
       "brand": {
         "name": "OPPO",
-        "code": 1273
+        "code": 1274
       }
     }
   },
@@ -2054,13 +2054,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 8.1.0; OW20W1 Build/OPM1.171019.026.11_A.37.210713172937; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/61.0.3163.98 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "8.1.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Webview",
-      "code": 161,
+      "code": 162,
       "version": "61.0.3163.98",
       "family": "Chrome",
       "engine": {
@@ -2069,11 +2069,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Watch 2 46mm",
       "brand": {
         "name": "OPPO",
-        "code": 1273
+        "code": 1274
       }
     }
   },
@@ -2081,13 +2081,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 10; LEM15) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "10",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "100.0.4896.127",
       "family": "Chrome",
       "engine": {
@@ -2096,11 +2096,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "LEM15",
       "brand": {
         "name": "LEMFO",
-        "code": 973
+        "code": 974
       }
     }
   },
@@ -2108,13 +2108,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 7.0; GEOZON LTE Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/51.0.2704.91 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "7.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Webview",
-      "code": 161,
+      "code": 162,
       "version": "51.0.2704.91",
       "family": "Chrome",
       "engine": {
@@ -2123,11 +2123,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "LTE",
       "brand": {
         "name": "GEOZON",
-        "code": 625
+        "code": 626
       }
     }
   },
@@ -2135,13 +2135,13 @@
     "userAgent": "Mozilla/5.0 (X11; Linux x86_64; Quest 2) AppleWebKit/537.36 (KHTML, like Gecko) OculusBrowser/22.2.0.3.39.382455783 SamsungBrowser/4.0 Chrome/102.0.5005.148 VR Safari/537.36",
     "os": {
       "name": "Meta Horizon",
-      "code": 88,
+      "code": 89,
       "cpuArchitecture": "x64",
       "family": "Android"
     },
     "browser": {
       "name": "Oculus Browser",
-      "code": 399,
+      "code": 400,
       "version": "22.2.0.3.39.382455783",
       "family": "Chrome",
       "engine": {
@@ -2150,11 +2150,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Quest 2",
       "brand": {
         "name": "Meta",
-        "code": 1245
+        "code": 1246
       }
     }
   },
@@ -2162,13 +2162,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 8.1; LEO-DLXXE Build/HONORLRA-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.111 HuaweiBrowser/9.1.1.308 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "8.1",
       "family": "Android"
     },
     "browser": {
       "name": "Huawei Browser Mobile",
-      "code": 264,
+      "code": 265,
       "version": "9.1.1.308",
       "family": "Chrome",
       "engine": {
@@ -2177,11 +2177,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Smart Watch 2 Sport",
       "brand": {
         "name": "Huawei",
-        "code": 757
+        "code": 758
       }
     }
   },
@@ -2189,13 +2189,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 9; APPLLP Max Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/96.0.4664.104 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "9",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Webview",
-      "code": 161,
+      "code": 162,
       "version": "96.0.4664.104",
       "family": "Chrome",
       "engine": {
@@ -2204,11 +2204,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "APPLLP Max",
       "brand": {
         "name": "LOKMAT",
-        "code": 1006
+        "code": 1007
       }
     }
   },
@@ -2216,13 +2216,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 10; Pico Neo 3 Build/4.9.5; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/90.0.4430.210 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "10",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Webview",
-      "code": 161,
+      "code": 162,
       "version": "90.0.4430.210",
       "family": "Chrome",
       "engine": {
@@ -2231,11 +2231,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Neo 3",
       "brand": {
         "name": "Pico",
-        "code": 1346
+        "code": 1347
       }
     }
   },
@@ -2243,13 +2243,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 7.1.1; THOR 4 Plus) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "7.1.1",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "71.0.3578.98",
       "family": "Chrome",
       "engine": {
@@ -2258,11 +2258,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Thor 4 Plus",
       "brand": {
         "name": "Zeblaze",
-        "code": 2019
+        "code": 2020
       }
     }
   },
@@ -2270,13 +2270,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 5.1; THOR S Build/LMY47I) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/39.0.0.0 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "5.1",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Webview",
-      "code": 161,
+      "code": 162,
       "version": "39.0.0.0",
       "family": "Chrome",
       "engine": {
@@ -2285,11 +2285,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Thor S",
       "brand": {
         "name": "Zeblaze",
-        "code": 2019
+        "code": 2020
       }
     }
   },
@@ -2297,13 +2297,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 5.1; THOR PRO Build/LMY47I) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/39.0.0.0 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "5.1",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Webview",
-      "code": 161,
+      "code": 162,
       "version": "39.0.0.0",
       "family": "Chrome",
       "engine": {
@@ -2312,11 +2312,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Thor Pro",
       "brand": {
         "name": "Zeblaze",
-        "code": 2019
+        "code": 2020
       }
     }
   },
@@ -2324,13 +2324,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 10; GLL-AL01) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.137 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "10",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "64.0.3282.137",
       "family": "Chrome",
       "engine": {
@@ -2339,11 +2339,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Watch 3 Pro Elite",
       "brand": {
         "name": "Huawei",
-        "code": 757
+        "code": 758
       }
     }
   },
@@ -2351,12 +2351,12 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; SAMSUNG SM-R875F) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/1.2 Chrome/90.0.4430.210 Mobile Safari/537.36",
     "os": {
       "name": "Wear OS",
-      "code": 167,
+      "code": 168,
       "family": "Android"
     },
     "browser": {
       "name": "Samsung Browser",
-      "code": 512,
+      "code": 513,
       "version": "1.2",
       "family": "Chrome",
       "engine": {
@@ -2365,11 +2365,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Galaxy Watch 4 44mm",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -2377,12 +2377,12 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; SM-R870) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Mobile Safari/537.36",
     "os": {
       "name": "Wear OS",
-      "code": 167,
+      "code": 168,
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "112.0.0.0",
       "family": "Chrome",
       "engine": {
@@ -2391,11 +2391,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Galaxy Watch 4 40mm",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -2403,12 +2403,12 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; SM-R860) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36",
     "os": {
       "name": "Wear OS",
-      "code": 167,
+      "code": 168,
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "110.0.0.0",
       "family": "Chrome",
       "engine": {
@@ -2417,11 +2417,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Galaxy Watch 4 40mm",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -2429,12 +2429,12 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; SAMSUNG SM-R905U) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/2.2. Chrome/102.0.5005.125 Mobile Safari/537.36 29",
     "os": {
       "name": "Wear OS",
-      "code": 167,
+      "code": 168,
       "family": "Android"
     },
     "browser": {
       "name": "Samsung Browser",
-      "code": 512,
+      "code": 513,
       "version": "2.2",
       "family": "Chrome",
       "engine": {
@@ -2443,11 +2443,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Galaxy Watch 5 40mm",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -2455,13 +2455,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Tizen 2.3.2.7; SAMSUNG SM-R720) AppleWebKit/538.1 (KHTML, like Gecko) Version/2.3.2.7 Mobile Safari/538.1",
     "os": {
       "name": "Tizen",
-      "code": 157,
+      "code": 158,
       "version": "2.3.2.7",
       "family": "Other Mobile"
     },
     "browser": {
       "name": "Tizen Browser",
-      "code": 590,
+      "code": 591,
       "version": "2.3.2.7",
       "engine": {
         "name": "WebKit",
@@ -2469,11 +2469,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Galaxy Gear S2 43mm",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -2481,12 +2481,12 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; SM-R925F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36",
     "os": {
       "name": "Wear OS",
-      "code": 167,
+      "code": 168,
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "110.0.0.0",
       "family": "Chrome",
       "engine": {
@@ -2495,11 +2495,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Galaxy Watch 5 Pro 50mm",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -2507,12 +2507,12 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; SAMSUNG SM-R925N) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/1.2. Chrome/90.0.4430.210 Mobile Safari/537.36",
     "os": {
       "name": "Wear OS",
-      "code": 167,
+      "code": 168,
       "family": "Android"
     },
     "browser": {
       "name": "Samsung Browser",
-      "code": 512,
+      "code": 513,
       "version": "1.2",
       "family": "Chrome",
       "engine": {
@@ -2521,11 +2521,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Galaxy Watch 5 Pro 50mm",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -2533,12 +2533,12 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; SAMSUNG SM-R925U) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/2.2. Chrome/102.0.5005.125 Mobile Safari/537.36 29",
     "os": {
       "name": "Wear OS",
-      "code": 167,
+      "code": 168,
       "family": "Android"
     },
     "browser": {
       "name": "Samsung Browser",
-      "code": 512,
+      "code": 513,
       "version": "2.2",
       "family": "Chrome",
       "engine": {
@@ -2547,11 +2547,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Galaxy Watch 5 Pro 50mm",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -2559,12 +2559,12 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; SAMSUNG SM-R920) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/2.2. Chrome/102.0.5005.125 Mobile Safari/537.36",
     "os": {
       "name": "Wear OS",
-      "code": 167,
+      "code": 168,
       "family": "Android"
     },
     "browser": {
       "name": "Samsung Browser",
-      "code": 512,
+      "code": 513,
       "version": "2.2",
       "family": "Chrome",
       "engine": {
@@ -2573,11 +2573,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Galaxy Watch 5 Pro 45mm",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -2585,13 +2585,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Tizen 2.3.2.7; SAMSUNG SM-R730A) AppleWebKit/538.1 (KHTML, like Gecko) Version/2.3.2.7 Mobile Safari/538.1",
     "os": {
       "name": "Tizen",
-      "code": 157,
+      "code": 158,
       "version": "2.3.2.7",
       "family": "Other Mobile"
     },
     "browser": {
       "name": "Tizen Browser",
-      "code": 590,
+      "code": 591,
       "version": "2.3.2.7",
       "engine": {
         "name": "WebKit",
@@ -2599,11 +2599,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Galaxy Gear S2 44mm",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -2611,12 +2611,12 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; SM-R915U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Mobile Safari/537.36",
     "os": {
       "name": "Wear OS",
-      "code": 167,
+      "code": 168,
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "103.0.0.0",
       "family": "Chrome",
       "engine": {
@@ -2625,11 +2625,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Galaxy Watch 5 44mm",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -2637,12 +2637,12 @@
     "userAgent": "ozilla/5.0 (Linux; Android 11; SAMSUNG SM-R915F) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/1.2. Chrome/90.0.4430.210 Mobile Safari/537.36",
     "os": {
       "name": "Wear OS",
-      "code": 167,
+      "code": 168,
       "family": "Android"
     },
     "browser": {
       "name": "Samsung Browser",
-      "code": 512,
+      "code": 513,
       "version": "1.2",
       "family": "Chrome",
       "engine": {
@@ -2651,11 +2651,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Galaxy Watch 5 44mm",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -2663,12 +2663,12 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; SM-R910) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Mobile Safari/537.36",
     "os": {
       "name": "Wear OS",
-      "code": 167,
+      "code": 168,
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "111.0.0.0",
       "family": "Chrome",
       "engine": {
@@ -2677,11 +2677,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Galaxy Watch 5 44mm",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -2689,12 +2689,12 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; SAMSUNG SM-R905N) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/2.2. Chrome/102.0.5005.125 Mobile Safari/537.36",
     "os": {
       "name": "Wear OS",
-      "code": 167,
+      "code": 168,
       "family": "Android"
     },
     "browser": {
       "name": "Samsung Browser",
-      "code": 512,
+      "code": 513,
       "version": "2.2",
       "family": "Chrome",
       "engine": {
@@ -2703,11 +2703,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Galaxy Watch 5 40mm",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -2715,12 +2715,12 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; SM-R905F) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/2.2. Chrome/102.0.5005.125 Mobile Safari/537.36",
     "os": {
       "name": "Wear OS",
-      "code": 167,
+      "code": 168,
       "family": "Android"
     },
     "browser": {
       "name": "Samsung Browser",
-      "code": 512,
+      "code": 513,
       "version": "2.2",
       "family": "Chrome",
       "engine": {
@@ -2729,11 +2729,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Galaxy Watch 5 40mm",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -2741,12 +2741,12 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; SM-R895U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.41 Mobile Safari/537.36",
     "os": {
       "name": "Wear OS",
-      "code": 167,
+      "code": 168,
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "101.0.4951.41",
       "family": "Chrome",
       "engine": {
@@ -2755,11 +2755,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Galaxy Watch 4 46mm",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -2767,12 +2767,12 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 9; SM-R895N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.7305.55 Mobile Safari/537.36",
     "os": {
       "name": "Wear OS",
-      "code": 167,
+      "code": 168,
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "101.0.7305.55",
       "family": "Chrome",
       "engine": {
@@ -2781,11 +2781,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Galaxy Watch 4 46mm",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -2793,12 +2793,12 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; SM-R895F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Mobile Safari/537.36",
     "os": {
       "name": "Wear OS",
-      "code": 167,
+      "code": 168,
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "111.0.0.0",
       "family": "Chrome",
       "engine": {
@@ -2807,11 +2807,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Galaxy Watch 4 46mm",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -2819,12 +2819,12 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; SM-R900) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.92 Odd/47.2.1.1 Mobile Safari/537.36",
     "os": {
       "name": "Wear OS",
-      "code": 167,
+      "code": 168,
       "family": "Android"
     },
     "browser": {
       "name": "Odd Browser",
-      "code": 400,
+      "code": 401,
       "version": "47.2.1.1",
       "family": "Chrome",
       "engine": {
@@ -2833,11 +2833,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Galaxy Watch 5 40mm",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -2845,12 +2845,12 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 9; TicWatch Pro S) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.92 Odd/47.2.1.1 Mobile Safari/537.36",
     "os": {
       "name": "Wear OS",
-      "code": 167,
+      "code": 168,
       "family": "Android"
     },
     "browser": {
       "name": "Odd Browser",
-      "code": 400,
+      "code": 401,
       "version": "47.2.1.1",
       "family": "Chrome",
       "engine": {
@@ -2859,11 +2859,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "TicWatch Pro S",
       "brand": {
         "name": "Mobvoi",
-        "code": 1116
+        "code": 1117
       }
     }
   },
@@ -2871,12 +2871,12 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 9; TicWatch S2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.92 Odd/47.2.1.1 Mobile Safari/537.36",
     "os": {
       "name": "Wear OS",
-      "code": 167,
+      "code": 168,
       "family": "Android"
     },
     "browser": {
       "name": "Odd Browser",
-      "code": 400,
+      "code": 401,
       "version": "47.2.1.1",
       "family": "Chrome",
       "engine": {
@@ -2885,11 +2885,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "TicWatch S2",
       "brand": {
         "name": "Mobvoi",
-        "code": 1116
+        "code": 1117
       }
     }
   },
@@ -2897,12 +2897,12 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 9; TicWatch C2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.92 Odd/47.2.1.1 Mobile Safari/537.36",
     "os": {
       "name": "Wear OS",
-      "code": 167,
+      "code": 168,
       "family": "Android"
     },
     "browser": {
       "name": "Odd Browser",
-      "code": 400,
+      "code": 401,
       "version": "47.2.1.1",
       "family": "Chrome",
       "engine": {
@@ -2911,11 +2911,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "TicWatch C2",
       "brand": {
         "name": "Mobvoi",
-        "code": 1116
+        "code": 1117
       }
     }
   },
@@ -2923,12 +2923,12 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 9; TicWatch C2+) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.92 Odd/47.2.1.1 Mobile Safari/537.36",
     "os": {
       "name": "Wear OS",
-      "code": 167,
+      "code": 168,
       "family": "Android"
     },
     "browser": {
       "name": "Odd Browser",
-      "code": 400,
+      "code": 401,
       "version": "47.2.1.1",
       "family": "Chrome",
       "engine": {
@@ -2937,11 +2937,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "TicWatch C2+",
       "brand": {
         "name": "Mobvoi",
-        "code": 1116
+        "code": 1117
       }
     }
   },
@@ -2949,12 +2949,12 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 8.0.0; Ticwatch S) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.92 Odd/47.2.1.1 Mobile Safari/537.36",
     "os": {
       "name": "Wear OS",
-      "code": 167,
+      "code": 168,
       "family": "Android"
     },
     "browser": {
       "name": "Odd Browser",
-      "code": 400,
+      "code": 401,
       "version": "47.2.1.1",
       "family": "Chrome",
       "engine": {
@@ -2963,11 +2963,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "TicWatch S",
       "brand": {
         "name": "Mobvoi",
-        "code": 1116
+        "code": 1117
       }
     }
   },
@@ -2975,14 +2975,14 @@
     "userAgent": "Mozilla/5.0 (X11; Linux x86_64; PICO 4 OS5.4.0 like Quest) AppleWebKit/537.36 (KHTML, like Gecko) PicoBrowser/3.3.22 Chrome/105.0.5195.68 VR Safari/537.36 OculusBrowser/7.0",
     "os": {
       "name": "PICO OS",
-      "code": 114,
+      "code": 115,
       "version": "5.4.0",
       "cpuArchitecture": "x64",
       "family": "Android"
     },
     "browser": {
       "name": "PICO Browser",
-      "code": 466,
+      "code": 467,
       "version": "3.3.22",
       "family": "Chrome",
       "engine": {
@@ -2991,11 +2991,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "4",
       "brand": {
         "name": "Pico",
-        "code": 1346
+        "code": 1347
       }
     }
   },
@@ -3003,17 +3003,17 @@
     "userAgent": "com.apple.invitation-registration [Watch OS,9.0,20R361,Watch6,10]",
     "os": {
       "name": "watchOS",
-      "code": 166,
+      "code": 167,
       "version": "9.0",
       "cpuArchitecture": "ARM",
       "family": "iOS"
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Watch SE (Gen 2) 40mm",
       "brand": {
         "name": "Apple",
-        "code": 97
+        "code": 98
       }
     }
   },
@@ -3021,17 +3021,17 @@
     "userAgent": "com.apple.invitation-registration [Watch OS,9.0,20R361,Watch6,11]",
     "os": {
       "name": "watchOS",
-      "code": 166,
+      "code": 167,
       "version": "9.0",
       "cpuArchitecture": "ARM",
       "family": "iOS"
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Watch SE (Gen 2) 44mm",
       "brand": {
         "name": "Apple",
-        "code": 97
+        "code": 98
       }
     }
   },
@@ -3039,17 +3039,17 @@
     "userAgent": "com.apple.invitation-registration [Watch OS,9.1,20S75,Watch6,12]",
     "os": {
       "name": "watchOS",
-      "code": 166,
+      "code": 167,
       "version": "9.1",
       "cpuArchitecture": "ARM",
       "family": "iOS"
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Watch SE (Gen 2) 40mm",
       "brand": {
         "name": "Apple",
-        "code": 97
+        "code": 98
       }
     }
   },
@@ -3057,17 +3057,17 @@
     "userAgent": "com.apple.invitation-registration [Watch OS,9.1,20S75,Watch6,13]",
     "os": {
       "name": "watchOS",
-      "code": 166,
+      "code": 167,
       "version": "9.1",
       "cpuArchitecture": "ARM",
       "family": "iOS"
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Watch SE (Gen 2) 44mm",
       "brand": {
         "name": "Apple",
-        "code": 97
+        "code": 98
       }
     }
   },
@@ -3075,17 +3075,17 @@
     "userAgent": "com.apple.invitation-registration [Watch OS,9.1,20S75,Watch6,14]",
     "os": {
       "name": "watchOS",
-      "code": 166,
+      "code": 167,
       "version": "9.1",
       "cpuArchitecture": "ARM",
       "family": "iOS"
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Watch Series 8 41mm",
       "brand": {
         "name": "Apple",
-        "code": 97
+        "code": 98
       }
     }
   },
@@ -3093,17 +3093,17 @@
     "userAgent": "com.apple.invitation-registration [Watch OS,9.0,20R361,Watch6,15]",
     "os": {
       "name": "watchOS",
-      "code": 166,
+      "code": 167,
       "version": "9.0",
       "cpuArchitecture": "ARM",
       "family": "iOS"
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Watch Series 8 45mm",
       "brand": {
         "name": "Apple",
-        "code": 97
+        "code": 98
       }
     }
   },
@@ -3111,17 +3111,17 @@
     "userAgent": "com.apple.invitation-registration [Watch OS,9.4,20T253,Watch6,16]",
     "os": {
       "name": "watchOS",
-      "code": 166,
+      "code": 167,
       "version": "9.4",
       "cpuArchitecture": "ARM",
       "family": "iOS"
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Watch Series 8 41mm",
       "brand": {
         "name": "Apple",
-        "code": 97
+        "code": 98
       }
     }
   },
@@ -3129,17 +3129,17 @@
     "userAgent": "aceApps (watchOS 9.0; Apple Watch6,17; naverapp_ios_watch; 11.17.2)",
     "os": {
       "name": "watchOS",
-      "code": 166,
+      "code": 167,
       "version": "9.0",
       "cpuArchitecture": "ARM",
       "family": "iOS"
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Watch Series 8 45mm",
       "brand": {
         "name": "Apple",
-        "code": 97
+        "code": 98
       }
     }
   },
@@ -3147,17 +3147,17 @@
     "userAgent": "com.apple.invitation-registration [Watch OS,9.3.1,20S664,Watch6,18]",
     "os": {
       "name": "watchOS",
-      "code": 166,
+      "code": 167,
       "version": "9.3.1",
       "cpuArchitecture": "ARM",
       "family": "iOS"
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Watch Ultra",
       "brand": {
         "name": "Apple",
-        "code": 97
+        "code": 98
       }
     }
   },
@@ -3165,17 +3165,17 @@
     "userAgent": "com.apple.invitation-registration [Watch OS,10.0,21R355,Watch7,1]",
     "os": {
       "name": "watchOS",
-      "code": 166,
+      "code": 167,
       "version": "10.0",
       "cpuArchitecture": "ARM",
       "family": "iOS"
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Watch Series 9 41mm",
       "brand": {
         "name": "Apple",
-        "code": 97
+        "code": 98
       }
     }
   },
@@ -3183,17 +3183,17 @@
     "userAgent": "com.apple.invitation-registration [Watch OS,10.0,21R355,Watch7,2]",
     "os": {
       "name": "watchOS",
-      "code": 166,
+      "code": 167,
       "version": "10.0",
       "cpuArchitecture": "ARM",
       "family": "iOS"
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Watch Series 9 45mm",
       "brand": {
         "name": "Apple",
-        "code": 97
+        "code": 98
       }
     }
   },
@@ -3201,17 +3201,17 @@
     "userAgent": "com.apple.invitation-registration [Watch OS,10.0,21R355,Watch7,3]",
     "os": {
       "name": "watchOS",
-      "code": 166,
+      "code": 167,
       "version": "10.0",
       "cpuArchitecture": "ARM",
       "family": "iOS"
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Watch Series 9 41mm",
       "brand": {
         "name": "Apple",
-        "code": 97
+        "code": 98
       }
     }
   },
@@ -3219,17 +3219,17 @@
     "userAgent": "com.apple.invitation-registration [Watch OS,10.0,21R355,Watch7,4]",
     "os": {
       "name": "watchOS",
-      "code": 166,
+      "code": 167,
       "version": "10.0",
       "cpuArchitecture": "ARM",
       "family": "iOS"
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Watch Series 9 45mm",
       "brand": {
         "name": "Apple",
-        "code": 97
+        "code": 98
       }
     }
   },
@@ -3237,17 +3237,17 @@
     "userAgent": "com.apple.invitation-registration [Watch OS,10.0,21R355,Watch7,5]",
     "os": {
       "name": "watchOS",
-      "code": 166,
+      "code": 167,
       "version": "10.0",
       "cpuArchitecture": "ARM",
       "family": "iOS"
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Watch Ultra 2",
       "brand": {
         "name": "Apple",
-        "code": 97
+        "code": 98
       }
     }
   },
@@ -3255,13 +3255,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 8.1.0; KidPhone4G Build/O11019; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/58.0.3029.125 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "8.1.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Webview",
-      "code": 161,
+      "code": 162,
       "version": "58.0.3029.125",
       "family": "Chrome",
       "engine": {
@@ -3270,11 +3270,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "KidPhone 4G",
       "brand": {
         "name": "ELARI",
-        "code": 470
+        "code": 471
       }
     }
   },
@@ -3282,14 +3282,14 @@
     "userAgent": "Mozilla/5.0 (X11; Linux x86_64; PICO 4 OS5.8.2 like Quest) AppleWebKit/537.36 (KHTML, like Gecko) PicoBrowser/3.3.38 Chrome/105.0.5195.68 VR Safari/537.36",
     "os": {
       "name": "PICO OS",
-      "code": 114,
+      "code": 115,
       "version": "5.8.2",
       "cpuArchitecture": "x64",
       "family": "Android"
     },
     "browser": {
       "name": "PICO Browser",
-      "code": 466,
+      "code": 467,
       "version": "3.3.38",
       "family": "Chrome",
       "engine": {
@@ -3298,11 +3298,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "4",
       "brand": {
         "name": "Pico",
-        "code": 1346
+        "code": 1347
       }
     }
   },
@@ -3310,14 +3310,14 @@
     "userAgent": "Mozilla/5.0 (X11; Linux x86_64; Pico Neo3 Link OS5.8.4.0 like Quest) AppleWebKit/537.36 (KHTML, like Gecko) PicoBrowser/3.3.22 Chrome/105.0.5195.68 VR Safari/537.36",
     "os": {
       "name": "PICO OS",
-      "code": 114,
+      "code": 115,
       "version": "5.8.4.0",
       "cpuArchitecture": "x64",
       "family": "Android"
     },
     "browser": {
       "name": "PICO Browser",
-      "code": 466,
+      "code": 467,
       "version": "3.3.22",
       "family": "Chrome",
       "engine": {
@@ -3326,11 +3326,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Neo 3 Link",
       "brand": {
         "name": "Pico",
-        "code": 1346
+        "code": 1347
       }
     }
   },
@@ -3338,13 +3338,13 @@
     "userAgent": "Mozilla/5.0 (Android 12; Mobile VR; rv:81.0) Gecko/81.0 Firefox/81.0",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "12",
       "family": "Android"
     },
     "browser": {
       "name": "Firefox Reality",
-      "code": 214,
+      "code": 215,
       "family": "Firefox",
       "engine": {
         "name": "Gecko",
@@ -3352,20 +3352,20 @@
       }
     },
     "device": {
-      "type": 12
+      "type": 13
     }
   },
   {
     "userAgent": "Mozilla/5.0 (X11; Linux x86_64; Quest 3) AppleWebKit/537.36 (KHTML, like Gecko) OculusBrowser/32.1.0.37.133.575621010 Chrome/122.0.6261.64 VR Safari/537.36",
     "os": {
       "name": "Meta Horizon",
-      "code": 88,
+      "code": 89,
       "cpuArchitecture": "x64",
       "family": "Android"
     },
     "browser": {
       "name": "Oculus Browser",
-      "code": 399,
+      "code": 400,
       "version": "32.1.0.37.133.575621010",
       "family": "Chrome",
       "engine": {
@@ -3374,11 +3374,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Quest 3",
       "brand": {
         "name": "Meta",
-        "code": 1245
+        "code": 1246
       }
     }
   },
@@ -3386,13 +3386,13 @@
     "userAgent": "Mozilla/5.0 (X11; Linux x86_64; Quest Pro) AppleWebKit/537.36 (KHTML, like Gecko) OculusBrowser/32.1.0.37.133.575621010 Chrome/122.0.6261.64 VR Safari/537.36",
     "os": {
       "name": "Meta Horizon",
-      "code": 88,
+      "code": 89,
       "cpuArchitecture": "x64",
       "family": "Android"
     },
     "browser": {
       "name": "Oculus Browser",
-      "code": 399,
+      "code": 400,
       "version": "32.1.0.37.133.575621010",
       "family": "Chrome",
       "engine": {
@@ -3401,11 +3401,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Quest Pro",
       "brand": {
         "name": "Meta",
-        "code": 1245
+        "code": 1246
       }
     }
   },
@@ -3413,13 +3413,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 8.1.0; X9 CALL2 Build/O11019; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/123.0.6312.40 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "8.1.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Webview",
-      "code": 161,
+      "code": 162,
       "version": "123.0.6312.40",
       "family": "Chrome",
       "engine": {
@@ -3428,11 +3428,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "X9 Call 2",
       "brand": {
         "name": "W&O",
-        "code": 1913
+        "code": 1914
       }
     }
   },
@@ -3440,13 +3440,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; LEM16 Build/RP1A.201005.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/124.0.6367.54 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Webview",
-      "code": 161,
+      "code": 162,
       "version": "124.0.6367.54",
       "family": "Chrome",
       "engine": {
@@ -3455,11 +3455,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "LEM16",
       "brand": {
         "name": "LEMFO",
-        "code": 973
+        "code": 974
       }
     }
   },
@@ -3467,13 +3467,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; SAMSUNG TicWatch Pro 3 Ultra GPS) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/3.0. Chrome/111.0.5563.116 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "browser": {
       "name": "Samsung Browser",
-      "code": 512,
+      "code": 513,
       "version": "3.0",
       "family": "Chrome",
       "engine": {
@@ -3482,11 +3482,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "TicWatch Pro 3 Ultra GPS",
       "brand": {
         "name": "Mobvoi",
-        "code": 1116
+        "code": 1117
       }
     }
   },
@@ -3494,14 +3494,14 @@
     "userAgent": "Mozilla/5.0 (Linux; arm; Android 12; ARC-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.554 YaApp_Android/23.94.1 YaSearchBrowser/23.94.1 BroPP/1.0 SA/3 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "12",
       "cpuArchitecture": "ARM",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser",
-      "code": 653,
+      "code": 654,
       "version": "23.94.1",
       "engine": {
         "name": "Blink",
@@ -3509,11 +3509,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Watch 4",
       "brand": {
         "name": "Huawei",
-        "code": 757
+        "code": 758
       }
     }
   },
@@ -3521,12 +3521,12 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 11; SAMSUNG SM-R885U) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/3.0. Chrome/111.0.5563.116 Mobile Safari/537.36",
     "os": {
       "name": "Wear OS",
-      "code": 167,
+      "code": 168,
       "family": "Android"
     },
     "browser": {
       "name": "Samsung Browser",
-      "code": 512,
+      "code": 513,
       "version": "3.0",
       "family": "Chrome",
       "engine": {
@@ -3535,11 +3535,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Galaxy Watch 4 Classic 42mm",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -3547,13 +3547,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.4; en-us; Glass 1 Build/IMM76L; XE7) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.0.4",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -3561,11 +3561,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Glass 1",
       "brand": {
         "name": "Google",
-        "code": 655
+        "code": 656
       }
     }
   },
@@ -3573,13 +3573,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 10; Pico Neo 3 OS5.9.5.0 like Quest) AppleWebKit/537.36 (KHTML, like Gecko) PicoBrowser/3.3.36 Chrome/105.0.5195.68 Mobile VR Safari/537.36  OculusBrowser/7.0",
     "os": {
       "name": "PICO OS",
-      "code": 114,
+      "code": 115,
       "version": "5.9.5.0",
       "family": "Android"
     },
     "browser": {
       "name": "PICO Browser",
-      "code": 466,
+      "code": 467,
       "version": "3.3.36",
       "family": "Chrome",
       "engine": {
@@ -3588,11 +3588,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Neo 3",
       "brand": {
         "name": "Pico",
-        "code": 1346
+        "code": 1347
       }
     }
   },
@@ -3600,13 +3600,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 10; A8110) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Mobile VR Wolvic/1.0",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "10",
       "family": "Android"
     },
     "browser": {
       "name": "Wolvic",
-      "code": 648,
+      "code": 649,
       "version": "1.0",
       "family": "Chrome",
       "engine": {
@@ -3615,11 +3615,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "A8110",
       "brand": {
         "name": "Pico",
-        "code": 1346
+        "code": 1347
       }
     }
   },
@@ -3627,12 +3627,12 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 13; SM-R960) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/4.0. Chrome/121.0.0.0 Mobile Safari/537.36",
     "os": {
       "name": "Wear OS",
-      "code": 167,
+      "code": 168,
       "family": "Android"
     },
     "browser": {
       "name": "Samsung Browser",
-      "code": 512,
+      "code": 513,
       "version": "4.0",
       "family": "Chrome",
       "engine": {
@@ -3641,11 +3641,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Galaxy Watch 6 Classic 47mm",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -3653,12 +3653,12 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 13; SM-R950) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/4.0. Chrome/121.0.0.0 Mobile Safari/537.36",
     "os": {
       "name": "Wear OS",
-      "code": 167,
+      "code": 168,
       "family": "Android"
     },
     "browser": {
       "name": "Samsung Browser",
-      "code": 512,
+      "code": 513,
       "version": "4.0",
       "family": "Chrome",
       "engine": {
@@ -3667,11 +3667,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Galaxy Watch 6 Classic 43mm",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -3679,12 +3679,12 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 13; SM-R920) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/4.0. Chrome/121.0.0.0 Mobile Safari/537.36",
     "os": {
       "name": "Wear OS",
-      "code": 167,
+      "code": 168,
       "family": "Android"
     },
     "browser": {
       "name": "Samsung Browser",
-      "code": 512,
+      "code": 513,
       "version": "4.0",
       "family": "Chrome",
       "engine": {
@@ -3693,11 +3693,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Galaxy Watch 5 Pro 45mm",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -3705,14 +3705,14 @@
     "userAgent": "Mozilla/5.0 (Linux; arm; Android 8.1.0; ELARI 4G Wink) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.6723.105 YaBrowser/24.12.3.105.00 SA/3 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "8.1.0",
       "cpuArchitecture": "ARM",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser",
-      "code": 653,
+      "code": 654,
       "version": "24.12.3.105.00",
       "engine": {
         "name": "Blink",
@@ -3720,11 +3720,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "4G Wink",
       "brand": {
         "name": "ELARI",
-        "code": 470
+        "code": 471
       }
     }
   },
@@ -3732,13 +3732,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 13; OPWWE231) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/4.0. Chrome/121.0.0.0 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "13",
       "family": "Android"
     },
     "browser": {
       "name": "Samsung Browser",
-      "code": 512,
+      "code": 513,
       "version": "4.0",
       "family": "Chrome",
       "engine": {
@@ -3747,11 +3747,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Watch 2",
       "brand": {
         "name": "OnePlus",
-        "code": 1259
+        "code": 1260
       }
     }
   },
@@ -3759,13 +3759,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 13; TicWatch Pro 5) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/4.0. Chrome/121.0.0.0 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "13",
       "family": "Android"
     },
     "browser": {
       "name": "Samsung Browser",
-      "code": 512,
+      "code": 513,
       "version": "4.0",
       "family": "Chrome",
       "engine": {
@@ -3774,11 +3774,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "TicWatch Pro 5",
       "brand": {
         "name": "Mobvoi",
-        "code": 1116
+        "code": 1117
       }
     }
   },
@@ -3786,22 +3786,22 @@
     "userAgent": "Darwin/24.5.0 (Watch7,8; watchOS 11.4) MatomoTrackerSDK/7.7.0",
     "os": {
       "name": "watchOS",
-      "code": 166,
+      "code": 167,
       "version": "11.4",
       "cpuArchitecture": "ARM",
       "family": "iOS"
     },
     "client": {
-      "type": 2,
+      "type": 3,
       "name": "MatomoTracker",
       "version": "7.7.0"
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Watch Series 10 42mm",
       "brand": {
         "name": "Apple",
-        "code": 97
+        "code": 98
       }
     }
   },
@@ -3809,22 +3809,22 @@
     "userAgent": "Darwin/24.5.0 (Watch7,10; watchOS 11.4) MatomoTrackerSDK/7.7.0",
     "os": {
       "name": "watchOS",
-      "code": 166,
+      "code": 167,
       "version": "11.4",
       "cpuArchitecture": "ARM",
       "family": "iOS"
     },
     "client": {
-      "type": 2,
+      "type": 3,
       "name": "MatomoTracker",
       "version": "7.7.0"
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Watch Series 10 42mm",
       "brand": {
         "name": "Apple",
-        "code": 97
+        "code": 98
       }
     }
   },
@@ -3832,22 +3832,22 @@
     "userAgent": "Darwin/24.5.0 (Watch7,9; watchOS 11.4) MatomoTrackerSDK/7.7.0",
     "os": {
       "name": "watchOS",
-      "code": 166,
+      "code": 167,
       "version": "11.4",
       "cpuArchitecture": "ARM",
       "family": "iOS"
     },
     "client": {
-      "type": 2,
+      "type": 3,
       "name": "MatomoTracker",
       "version": "7.7.0"
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Watch Series 10 46mm",
       "brand": {
         "name": "Apple",
-        "code": 97
+        "code": 98
       }
     }
   },
@@ -3855,22 +3855,22 @@
     "userAgent": "Darwin/24.5.0 (Watch7,11; watchOS 11.4) MatomoTrackerSDK/7.7.0",
     "os": {
       "name": "watchOS",
-      "code": 166,
+      "code": 167,
       "version": "11.4",
       "cpuArchitecture": "ARM",
       "family": "iOS"
     },
     "client": {
-      "type": 2,
+      "type": 3,
       "name": "MatomoTracker",
       "version": "7.7.0"
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Watch Series 10 46mm",
       "brand": {
         "name": "Apple",
-        "code": 97
+        "code": 98
       }
     }
   },
@@ -3878,14 +3878,14 @@
     "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 14; Quest 3S) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.6998.111 YaBrowser/25.4.4.111.01 Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "14",
       "cpuArchitecture": "ARM",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser",
-      "code": 653,
+      "code": 654,
       "version": "25.4.4.111.01",
       "engine": {
         "name": "Blink",
@@ -3893,11 +3893,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Quest 3S",
       "brand": {
         "name": "Meta",
-        "code": 1245
+        "code": 1246
       }
     }
   },
@@ -3905,14 +3905,14 @@
     "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 14; Quest 3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.6998.49 YaBrowser/25.4.6.49.01 Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "14",
       "cpuArchitecture": "ARM",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser",
-      "code": 653,
+      "code": 654,
       "version": "25.4.6.49.01",
       "engine": {
         "name": "Blink",
@@ -3920,11 +3920,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Quest 3",
       "brand": {
         "name": "Meta",
-        "code": 1245
+        "code": 1246
       }
     }
   }

@@ -12,7 +12,7 @@ public class BotCategoryTests
 
         for (int i = 0; i < values.Count; i++)
         {
-            values[i].ShouldBe(i);
+            values[i].ShouldBe(i + 1);
         }
     }
 
@@ -21,26 +21,26 @@ public class BotCategoryTests
     {
         var expectedValues = new Dictionary<BotCategory, int>
         {
-            { BotCategory.SearchBot, 0 },
-            { BotCategory.SearchTools, 1 },
-            { BotCategory.SecuritySearchBot, 2 },
-            { BotCategory.Crawler, 3 },
-            { BotCategory.Validator, 4 },
-            { BotCategory.SecurityChecker, 5 },
-            { BotCategory.FeedFetcher, 6 },
-            { BotCategory.FeedReader, 7 },
-            { BotCategory.FeedParser, 8 },
-            { BotCategory.SiteMonitor, 9 },
-            { BotCategory.NetworkMonitor, 10 },
-            { BotCategory.ServiceAgent, 11 },
-            { BotCategory.ServiceBot, 12 },
-            { BotCategory.SocialMediaAgent, 13 },
-            { BotCategory.ReadItLaterService, 14 },
-            { BotCategory.Benchmark, 15 },
-            { BotCategory.AiAgent, 16 },
-            { BotCategory.AiAssistant, 17 },
-            { BotCategory.AiDataScraper, 18 },
-            { BotCategory.AiSearchCrawler, 19 },
+            { BotCategory.SearchBot, 1 },
+            { BotCategory.SearchTools, 2 },
+            { BotCategory.SecuritySearchBot, 3 },
+            { BotCategory.Crawler, 4 },
+            { BotCategory.Validator, 5 },
+            { BotCategory.SecurityChecker, 6 },
+            { BotCategory.FeedFetcher, 7 },
+            { BotCategory.FeedReader, 8 },
+            { BotCategory.FeedParser, 9 },
+            { BotCategory.SiteMonitor, 10 },
+            { BotCategory.NetworkMonitor, 11 },
+            { BotCategory.ServiceAgent, 12 },
+            { BotCategory.ServiceBot, 13 },
+            { BotCategory.SocialMediaAgent, 14 },
+            { BotCategory.ReadItLaterService, 15 },
+            { BotCategory.Benchmark, 16 },
+            { BotCategory.AiAgent, 17 },
+            { BotCategory.AiAssistant, 18 },
+            { BotCategory.AiDataScraper, 19 },
+            { BotCategory.AiSearchCrawler, 20 },
         };
 
         expectedValues.Count.ShouldBe(Enum.GetValues<BotCategory>().Length);

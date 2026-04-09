@@ -12,7 +12,7 @@ public class ClientTypeTests
 
         for (int i = 0; i < values.Count; i++)
         {
-            values[i].ShouldBe(i);
+            values[i].ShouldBe(i + 1);
         }
     }
 
@@ -21,11 +21,11 @@ public class ClientTypeTests
     {
         var expectedValues = new Dictionary<ClientType, int>
         {
-            { ClientType.MobileApp, 0 },
-            { ClientType.MediaPlayer, 1 },
-            { ClientType.Library, 2 },
-            { ClientType.FeedReader, 3 },
-            { ClientType.PersonalInformationManager, 4 },
+            { ClientType.MobileApp, 1 },
+            { ClientType.MediaPlayer, 2 },
+            { ClientType.Library, 3 },
+            { ClientType.FeedReader, 4 },
+            { ClientType.PersonalInformationManager, 5 },
         };
 
         expectedValues.Count.ShouldBe(Enum.GetValues<ClientType>().Length);

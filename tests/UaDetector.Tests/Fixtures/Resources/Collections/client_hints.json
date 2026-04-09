@@ -12,13 +12,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "8.1.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "98.0.4758.87",
       "family": "Chrome",
       "engine": {
@@ -27,11 +27,11 @@
       }
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "ZenFone 4 Max",
       "brand": {
         "name": "Asus",
-        "code": 118
+        "code": 119
       }
     }
   },
@@ -48,14 +48,14 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "8.1.0",
       "cpuArchitecture": "ARM",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser",
-      "code": 653,
+      "code": 654,
       "version": "22.1.4.706",
       "engine": {
         "name": "Blink",
@@ -63,11 +63,11 @@
       }
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "ZenFone 4 Max",
       "brand": {
         "name": "Asus",
-        "code": 118
+        "code": 119
       }
     }
   },
@@ -84,13 +84,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "8.1.0",
       "family": "Android"
     },
     "browser": {
       "name": "Opera Mobile",
-      "code": 419,
+      "code": 420,
       "version": "67.1.3508.63168",
       "family": "Opera",
       "engine": {
@@ -99,11 +99,11 @@
       }
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "ZenFone 4 Max",
       "brand": {
         "name": "Asus",
-        "code": 118
+        "code": 119
       }
     }
   },
@@ -117,14 +117,14 @@
     },
     "os": {
       "name": "Windows",
-      "code": 170,
+      "code": 171,
       "version": "11",
       "cpuArchitecture": "x64",
       "family": "Windows"
     },
     "browser": {
       "name": "Chrome",
-      "code": 137,
+      "code": 138,
       "version": "97.0.4692.99",
       "family": "Chrome",
       "engine": {
@@ -133,7 +133,7 @@
       }
     },
     "device": {
-      "type": 0
+      "type": 1
     }
   },
   {
@@ -145,14 +145,14 @@
     },
     "os": {
       "name": "Windows",
-      "code": 170,
+      "code": 171,
       "version": "10",
       "cpuArchitecture": "x64",
       "family": "Windows"
     },
     "browser": {
       "name": "Chrome",
-      "code": 137,
+      "code": 138,
       "version": "97.0.4692.99",
       "family": "Chrome",
       "engine": {
@@ -161,7 +161,7 @@
       }
     },
     "device": {
-      "type": 0
+      "type": 1
     }
   },
   {
@@ -174,14 +174,14 @@
     },
     "os": {
       "name": "Windows",
-      "code": 170,
+      "code": 171,
       "version": "11",
       "cpuArchitecture": "x64",
       "family": "Windows"
     },
     "browser": {
       "name": "Microsoft Edge",
-      "code": 488,
+      "code": 489,
       "version": "95.0.1020.44",
       "family": "Internet Explorer",
       "engine": {
@@ -190,7 +190,7 @@
       }
     },
     "device": {
-      "type": 0
+      "type": 1
     }
   },
   {
@@ -204,14 +204,14 @@
     },
     "os": {
       "name": "Windows",
-      "code": 170,
+      "code": 171,
       "version": "10",
       "cpuArchitecture": "x64",
       "family": "Windows"
     },
     "browser": {
       "name": "Opera",
-      "code": 420,
+      "code": 421,
       "version": "84.0.4316.19",
       "family": "Opera",
       "engine": {
@@ -220,7 +220,7 @@
       }
     },
     "device": {
-      "type": 0
+      "type": 1
     }
   },
   {
@@ -235,13 +235,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "98.0.4758.101",
       "family": "Chrome",
       "engine": {
@@ -250,11 +250,11 @@
       }
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Nord 2 5G",
       "brand": {
         "name": "OnePlus",
-        "code": 1259
+        "code": 1260
       }
     }
   },
@@ -271,14 +271,14 @@
     },
     "os": {
       "name": "Windows",
-      "code": 170,
+      "code": 171,
       "version": "10",
       "cpuArchitecture": "x64",
       "family": "Windows"
     },
     "browser": {
       "name": "CCleaner",
-      "code": 119,
+      "code": 120,
       "version": "98.0.14335.105",
       "family": "Chrome",
       "engine": {
@@ -287,7 +287,7 @@
       }
     },
     "device": {
-      "type": 0
+      "type": 1
     }
   },
   {
@@ -303,14 +303,14 @@
     },
     "os": {
       "name": "Windows",
-      "code": 170,
+      "code": 171,
       "version": "10",
       "cpuArchitecture": "x64",
       "family": "Windows"
     },
     "browser": {
       "name": "AVG Secure Browser",
-      "code": 72,
+      "code": 73,
       "version": "98.0.14335.104",
       "family": "Chrome",
       "engine": {
@@ -319,7 +319,7 @@
       }
     },
     "device": {
-      "type": 0
+      "type": 1
     }
   },
   {
@@ -335,14 +335,14 @@
     },
     "os": {
       "name": "Windows",
-      "code": 170,
+      "code": 171,
       "version": "10",
       "cpuArchitecture": "x64",
       "family": "Windows"
     },
     "browser": {
       "name": "Avast Secure Browser",
-      "code": 71,
+      "code": 72,
       "version": "98.0.14335.103",
       "family": "Chrome",
       "engine": {
@@ -351,7 +351,7 @@
       }
     },
     "device": {
-      "type": 0
+      "type": 1
     }
   },
   {
@@ -367,13 +367,13 @@
     },
     "os": {
       "name": "Fire OS",
-      "code": 42,
+      "code": 43,
       "version": "7",
       "family": "Android"
     },
     "browser": {
       "name": "Mobile Silk",
-      "code": 361,
+      "code": 362,
       "version": "98.1.148",
       "family": "Chrome",
       "engine": {
@@ -382,11 +382,11 @@
       }
     },
     "device": {
-      "type": 2,
+      "type": 3,
       "model": "Fire HD 8 (2018)",
       "brand": {
         "name": "Amazon",
-        "code": 72
+        "code": 73
       }
     }
   },
@@ -403,14 +403,14 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "cpuArchitecture": "ARM",
       "family": "Android"
     },
     "browser": {
       "name": "Avast Secure Browser",
-      "code": 71,
+      "code": 72,
       "version": "6.6.0",
       "family": "Chrome",
       "engine": {
@@ -419,7 +419,7 @@
       }
     },
     "device": {
-      "type": 1
+      "type": 2
     }
   },
   {
@@ -435,14 +435,14 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "cpuArchitecture": "ARM",
       "family": "Android"
     },
     "browser": {
       "name": "Avast Secure Browser",
-      "code": 71,
+      "code": 72,
       "version": "6.6.0",
       "family": "Chrome"
     }
@@ -461,14 +461,14 @@
     },
     "os": {
       "name": "Windows",
-      "code": 170,
+      "code": 171,
       "version": "10",
       "cpuArchitecture": "x86",
       "family": "Windows"
     },
     "browser": {
       "name": "Microsoft Edge",
-      "code": 488,
+      "code": 489,
       "version": "98.0.1108.56",
       "family": "Internet Explorer",
       "engine": {
@@ -477,7 +477,7 @@
       }
     },
     "device": {
-      "type": 0
+      "type": 1
     }
   },
   {
@@ -494,14 +494,14 @@
     },
     "os": {
       "name": "Mac",
-      "code": 83,
+      "code": 84,
       "version": "10.14.6",
       "cpuArchitecture": "x64",
       "family": "Mac"
     },
     "browser": {
       "name": "Chrome",
-      "code": 137,
+      "code": 138,
       "version": "98.0.4758.109",
       "family": "Chrome",
       "engine": {
@@ -510,10 +510,10 @@
       }
     },
     "device": {
-      "type": 0,
+      "type": 1,
       "brand": {
         "name": "Apple",
-        "code": 97
+        "code": 98
       }
     }
   },
@@ -531,14 +531,14 @@
     },
     "os": {
       "name": "Mac",
-      "code": 83,
+      "code": 84,
       "version": "11.6.0",
       "cpuArchitecture": "ARM",
       "family": "Mac"
     },
     "browser": {
       "name": "Opera",
-      "code": 420,
+      "code": 421,
       "version": "84.0.4316.21",
       "family": "Opera",
       "engine": {
@@ -547,10 +547,10 @@
       }
     },
     "device": {
-      "type": 0,
+      "type": 1,
       "brand": {
         "name": "Apple",
-        "code": 97
+        "code": 98
       }
     }
   },
@@ -568,14 +568,14 @@
     },
     "os": {
       "name": "GNU/Linux",
-      "code": 72,
+      "code": 73,
       "version": "5.4.0",
       "cpuArchitecture": "x64",
       "family": "GNU/Linux"
     },
     "browser": {
       "name": "Chrome",
-      "code": 137,
+      "code": 138,
       "version": "98.0.4758.102",
       "family": "Chrome",
       "engine": {
@@ -584,7 +584,7 @@
       }
     },
     "device": {
-      "type": 0
+      "type": 1
     }
   },
   {
@@ -600,13 +600,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "10.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "98.0.4758.101",
       "family": "Chrome",
       "engine": {
@@ -615,7 +615,7 @@
       }
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "X30"
     }
   },
@@ -633,14 +633,14 @@
     },
     "os": {
       "name": "Windows",
-      "code": 170,
+      "code": 171,
       "version": "11",
       "cpuArchitecture": "x64",
       "family": "Windows"
     },
     "browser": {
       "name": "Microsoft Edge",
-      "code": 488,
+      "code": 489,
       "version": "97.0.1072.66",
       "family": "Internet Explorer",
       "engine": {
@@ -649,7 +649,7 @@
       }
     },
     "device": {
-      "type": 0,
+      "type": 1,
       "model": "Xbox"
     }
   },
@@ -667,14 +667,14 @@
     },
     "os": {
       "name": "Windows",
-      "code": 170,
+      "code": 171,
       "version": "10",
       "cpuArchitecture": "x64",
       "family": "Windows"
     },
     "browser": {
       "name": "Opera Crypto",
-      "code": 414,
+      "code": 415,
       "version": "99.0.4844.16",
       "family": "Opera",
       "engine": {
@@ -683,7 +683,7 @@
       }
     },
     "device": {
-      "type": 0
+      "type": 1
     }
   },
   {
@@ -700,14 +700,14 @@
     },
     "os": {
       "name": "Windows",
-      "code": 170,
+      "code": 171,
       "version": "10",
       "cpuArchitecture": "x64",
       "family": "Windows"
     },
     "browser": {
       "name": "Gener8",
-      "code": 235,
+      "code": 236,
       "version": "98.0.4758.109",
       "family": "Chrome",
       "engine": {
@@ -716,7 +716,7 @@
       }
     },
     "device": {
-      "type": 0
+      "type": 1
     }
   },
   {
@@ -727,7 +727,7 @@
     },
     "bot": {
       "name": "WebPageTest",
-      "category": 9,
+      "category": 10,
       "url": "https://www.webpagetest.org"
     }
   },
@@ -745,7 +745,7 @@
     },
     "bot": {
       "name": "WebPageTest",
-      "category": 9,
+      "category": 10,
       "url": "https://www.webpagetest.org"
     }
   },
@@ -757,14 +757,14 @@
     },
     "os": {
       "name": "Chromium OS",
-      "code": 29,
+      "code": 30,
       "version": "14150.90.0",
       "cpuArchitecture": "x64",
       "family": "Chrome OS"
     },
     "browser": {
       "name": "Chrome",
-      "code": 137,
+      "code": 138,
       "version": "94.0.4606.126",
       "family": "Chrome",
       "engine": {
@@ -773,7 +773,7 @@
       }
     },
     "device": {
-      "type": 0
+      "type": 1
     }
   },
   {
@@ -789,14 +789,14 @@
     },
     "os": {
       "name": "Chromium OS",
-      "code": 29,
+      "code": 30,
       "version": "14150.90.0",
       "cpuArchitecture": "x64",
       "family": "Chrome OS"
     },
     "browser": {
       "name": "Chrome",
-      "code": 137,
+      "code": 138,
       "version": "94.0.4606.126",
       "family": "Chrome",
       "engine": {
@@ -805,7 +805,7 @@
       }
     },
     "device": {
-      "type": 0
+      "type": 1
     }
   },
   {
@@ -819,14 +819,14 @@
     },
     "os": {
       "name": "Chrome OS",
-      "code": 28,
+      "code": 29,
       "version": "13597.84.0",
       "cpuArchitecture": "ARM",
       "family": "Chrome OS"
     },
     "browser": {
       "name": "Chrome",
-      "code": 137,
+      "code": 138,
       "version": "92.0.4515.98",
       "family": "Chrome",
       "engine": {
@@ -835,7 +835,7 @@
       }
     },
     "device": {
-      "type": 0
+      "type": 1
     }
   },
   {
@@ -847,12 +847,12 @@
     },
     "os": {
       "name": "Windows",
-      "code": 170,
+      "code": 171,
       "family": "Windows"
     },
     "browser": {
       "name": "Chrome",
-      "code": 137,
+      "code": 138,
       "version": "96.0.6167.5881",
       "family": "Chrome",
       "engine": {
@@ -861,7 +861,7 @@
       }
     },
     "device": {
-      "type": 0
+      "type": 1
     }
   },
   {
@@ -878,14 +878,14 @@
     },
     "os": {
       "name": "Fedora",
-      "code": 39,
+      "code": 40,
       "version": "5.16.11",
       "cpuArchitecture": "x64",
       "family": "GNU/Linux"
     },
     "browser": {
       "name": "Chrome",
-      "code": 137,
+      "code": 138,
       "version": "98.0.4758.121",
       "family": "Chrome",
       "engine": {
@@ -894,7 +894,7 @@
       }
     },
     "device": {
-      "type": 0
+      "type": 1
     }
   },
   {
@@ -904,13 +904,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "cpuArchitecture": "x64",
       "family": "Android"
     },
     "browser": {
       "name": "Open Browser",
-      "code": 432,
+      "code": 433,
       "family": "Chrome",
       "engine": {
         "name": "Blink",
@@ -918,7 +918,7 @@
       }
     },
     "device": {
-      "type": 2
+      "type": 3
     }
   },
   {
@@ -928,13 +928,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "9",
       "family": "Android"
     },
     "browser": {
       "name": "Pi Browser",
-      "code": 483,
+      "code": 484,
       "version": "1.3.0",
       "family": "Chrome",
       "engine": {
@@ -943,11 +943,11 @@
       }
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Y6 (2019)",
       "brand": {
         "name": "Huawei",
-        "code": 757
+        "code": 758
       }
     }
   },
@@ -960,13 +960,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "10",
       "family": "Android"
     },
     "browser": {
       "name": "Brave",
-      "code": 103,
+      "code": 104,
       "version": "106.0.0.0",
       "family": "Chrome",
       "engine": {
@@ -975,7 +975,7 @@
       }
     },
     "device": {
-      "type": 1
+      "type": 2
     }
   },
   {
@@ -987,13 +987,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "10",
       "family": "Android"
     },
     "browser": {
       "name": "Brave",
-      "code": 103,
+      "code": 104,
       "version": "106.0.0.0",
       "family": "Chrome",
       "engine": {
@@ -1002,7 +1002,7 @@
       }
     },
     "device": {
-      "type": 1
+      "type": 2
     }
   },
   {
@@ -1014,13 +1014,13 @@
     },
     "os": {
       "name": "Meta Horizon",
-      "code": 88,
+      "code": 89,
       "cpuArchitecture": "x64",
       "family": "Android"
     },
     "browser": {
       "name": "Oculus Browser",
-      "code": 399,
+      "code": 400,
       "version": "24.3.0.4.63.416895357",
       "family": "Chrome",
       "engine": {
@@ -1029,11 +1029,11 @@
       }
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Quest 2",
       "brand": {
         "name": "Meta",
-        "code": 1245
+        "code": 1246
       }
     }
   },
@@ -1050,13 +1050,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "10.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "114.0.5735.196",
       "family": "Chrome",
       "engine": {
@@ -1065,11 +1065,11 @@
       }
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Mi 9 SE",
       "brand": {
         "name": "Xiaomi",
-        "code": 1973
+        "code": 1974
       }
     }
   },
@@ -1086,13 +1086,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "114.0.5735.196",
       "family": "Chrome",
       "engine": {
@@ -1101,11 +1101,11 @@
       }
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Galaxy A10",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -1122,13 +1122,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "13.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "111.0.5563.116",
       "family": "Chrome",
       "engine": {
@@ -1137,11 +1137,11 @@
       }
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "M5",
       "brand": {
         "name": "POCO",
-        "code": 1356
+        "code": 1357
       }
     }
   },
@@ -1158,13 +1158,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "10",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "111.0.5563.116",
       "family": "Chrome",
       "engine": {
@@ -1173,11 +1173,11 @@
       }
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "M5",
       "brand": {
         "name": "POCO",
-        "code": 1356
+        "code": 1357
       }
     }
   },
@@ -1188,13 +1188,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "10",
       "family": "Android"
     },
     "browser": {
       "name": "LUJO TV Browser",
-      "code": 339,
+      "code": 340,
       "family": "Chrome",
       "engine": {
         "name": "Blink",
@@ -1202,7 +1202,7 @@
       }
     },
     "device": {
-      "type": 5
+      "type": 6
     }
   },
   {
@@ -1212,13 +1212,13 @@
     },
     "os": {
       "name": "GNU/Linux",
-      "code": 72,
+      "code": 73,
       "cpuArchitecture": "x86",
       "family": "GNU/Linux"
     },
     "browser": {
       "name": "LogicUI TV Browser",
-      "code": 333,
+      "code": 334,
       "family": "Chrome",
       "engine": {
         "name": "Blink",
@@ -1226,7 +1226,7 @@
       }
     },
     "device": {
-      "type": 5
+      "type": 6
     }
   },
   {
@@ -1236,14 +1236,14 @@
     },
     "os": {
       "name": "Windows",
-      "code": 170,
+      "code": 171,
       "version": "10",
       "cpuArchitecture": "x64",
       "family": "Windows"
     },
     "browser": {
       "name": "Open TV Browser",
-      "code": 436,
+      "code": 437,
       "family": "Chrome",
       "engine": {
         "name": "Blink",
@@ -1251,7 +1251,7 @@
       }
     },
     "device": {
-      "type": 5
+      "type": 6
     }
   },
   {
@@ -1261,13 +1261,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "browser": {
       "name": "Firefox Mobile",
-      "code": 222,
+      "code": 223,
       "family": "Firefox",
       "engine": {
         "name": "Blink",
@@ -1275,11 +1275,11 @@
       }
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Galaxy A71",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -1290,13 +1290,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "12",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser",
-      "code": 653,
+      "code": 654,
       "family": "Chrome",
       "engine": {
         "name": "Blink",
@@ -1304,11 +1304,11 @@
       }
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Galaxy A03 Core",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -1319,13 +1319,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "browser": {
       "name": "Opera Mini",
-      "code": 418,
+      "code": 419,
       "family": "Opera",
       "engine": {
         "name": "Blink",
@@ -1333,11 +1333,11 @@
       }
     },
     "device": {
-      "type": 10,
+      "type": 11,
       "model": "Redmi Note 11 Pro 5G",
       "brand": {
         "name": "Xiaomi",
-        "code": 1973
+        "code": 1974
       }
     }
   },
@@ -1348,13 +1348,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "12",
       "family": "Android"
     },
     "browser": {
       "name": "Samsung Browser",
-      "code": 512,
+      "code": 513,
       "family": "Chrome",
       "engine": {
         "name": "Blink",
@@ -1362,11 +1362,11 @@
       }
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Galaxy M42 5G",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -1377,13 +1377,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "12",
       "family": "Android"
     },
     "browser": {
       "name": "Samsung Browser Lite",
-      "code": 513,
+      "code": 514,
       "family": "Chrome",
       "engine": {
         "name": "Blink",
@@ -1391,11 +1391,11 @@
       }
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Galaxy A03 Core",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -1413,14 +1413,14 @@
     },
     "os": {
       "name": "Windows",
-      "code": 170,
+      "code": 171,
       "version": "11",
       "cpuArchitecture": "x64",
       "family": "Windows"
     },
     "browser": {
       "name": "Avira Secure Browser",
-      "code": 73,
+      "code": 74,
       "version": "116.0.22144.111",
       "family": "Chrome",
       "engine": {
@@ -1429,7 +1429,7 @@
       }
     },
     "device": {
-      "type": 0
+      "type": 1
     }
   },
   {
@@ -1441,12 +1441,12 @@
     },
     "os": {
       "name": "GNU/Linux",
-      "code": 72,
+      "code": 73,
       "family": "GNU/Linux"
     },
     "browser": {
       "name": "Crow Browser",
-      "code": 156,
+      "code": 157,
       "version": "94.0.4606.128",
       "family": "Chrome",
       "engine": {
@@ -1455,11 +1455,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "NetCast",
       "brand": {
         "name": "LG",
-        "code": 984
+        "code": 985
       }
     }
   },
@@ -1472,13 +1472,13 @@
     },
     "os": {
       "name": "Android TV",
-      "code": 2,
+      "code": 3,
       "version": "11",
       "family": "Android"
     },
     "browser": {
       "name": "Vewd Browser",
-      "code": 618,
+      "code": 619,
       "version": "4.24.3.23",
       "family": "Chrome",
       "engine": {
@@ -1487,11 +1487,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "TY55-1",
       "brand": {
         "name": "Telly",
-        "code": 1694
+        "code": 1695
       }
     }
   },
@@ -1507,13 +1507,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "13.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "117.0.5938.60",
       "family": "Chrome",
       "engine": {
@@ -1522,11 +1522,11 @@
       }
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "BV8900",
       "brand": {
         "name": "Blackview",
-        "code": 201
+        "code": 202
       }
     }
   },
@@ -1542,13 +1542,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "118.0.5993.80",
       "family": "Chrome",
       "engine": {
@@ -1557,11 +1557,11 @@
       }
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Explr 9",
       "brand": {
         "name": "ComTrade Tesla",
-        "code": 301
+        "code": 302
       }
     }
   },
@@ -1578,13 +1578,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "13",
       "family": "Android"
     },
     "browser": {
       "name": "Aloha Browser",
-      "code": 40,
+      "code": 41,
       "version": "5.10.4",
       "family": "Chrome",
       "engine": {
@@ -1593,11 +1593,11 @@
       }
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "FP5",
       "brand": {
         "name": "Fairphone",
-        "code": 541
+        "code": 542
       }
     }
   },
@@ -1613,13 +1613,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "13.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "124.0.6367.82",
       "family": "Chrome",
       "engine": {
@@ -1628,11 +1628,11 @@
       }
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "C65",
       "brand": {
         "name": "FoxxD",
-        "code": 582
+        "code": 583
       }
     }
   },
@@ -1648,13 +1648,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome",
-      "code": 137,
+      "code": 138,
       "version": "116.0.5845.173",
       "family": "Chrome",
       "engine": {
@@ -1663,11 +1663,11 @@
       }
     },
     "device": {
-      "type": 2,
+      "type": 3,
       "model": "Gacrux",
       "brand": {
         "name": "Ceibal",
-        "code": 265
+        "code": 266
       }
     }
   },
@@ -1683,13 +1683,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "14.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "126.0.6478.186",
       "family": "Chrome",
       "engine": {
@@ -1698,11 +1698,11 @@
       }
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Black 1",
       "brand": {
         "name": "Kalley",
-        "code": 891
+        "code": 892
       }
     }
   },
@@ -1718,13 +1718,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "13.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "117.0.5938.60",
       "family": "Chrome",
       "engine": {
@@ -1733,11 +1733,11 @@
       }
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Black 3",
       "brand": {
         "name": "Kalley",
-        "code": 891
+        "code": 892
       }
     }
   },
@@ -1753,13 +1753,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "13.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "118.0.5993.111",
       "family": "Chrome",
       "engine": {
@@ -1768,11 +1768,11 @@
       }
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Black C",
       "brand": {
         "name": "Kalley",
-        "code": 891
+        "code": 892
       }
     }
   },
@@ -1788,13 +1788,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "13.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "117.0.5938.60",
       "family": "Chrome",
       "engine": {
@@ -1803,11 +1803,11 @@
       }
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Black C Pro",
       "brand": {
         "name": "Kalley",
-        "code": 891
+        "code": 892
       }
     }
   },
@@ -1823,13 +1823,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "8.1.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome",
-      "code": 137,
+      "code": 138,
       "version": "118.0.5993.80",
       "family": "Chrome",
       "engine": {
@@ -1838,11 +1838,11 @@
       }
     },
     "device": {
-      "type": 2,
+      "type": 3,
       "model": "BrailleNote Touch",
       "brand": {
         "name": "Humanware",
-        "code": 759
+        "code": 760
       }
     }
   },
@@ -1858,13 +1858,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "8.1.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome",
-      "code": 137,
+      "code": 138,
       "version": "118.0.5993.80",
       "family": "Chrome",
       "engine": {
@@ -1873,11 +1873,11 @@
       }
     },
     "device": {
-      "type": 2,
+      "type": 3,
       "model": "BrailleNote Touch Plus",
       "brand": {
         "name": "Humanware",
-        "code": 759
+        "code": 760
       }
     }
   },
@@ -1893,13 +1893,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "8.1.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "121.0.6167.143",
       "family": "Chrome",
       "engine": {
@@ -1908,11 +1908,11 @@
       }
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Camon 20 Pro",
       "brand": {
         "name": "Tecno Mobile",
-        "code": 1684
+        "code": 1685
       }
     }
   },
@@ -1929,13 +1929,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "12.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "DuckDuckGo Privacy Browser",
-      "code": 185,
+      "code": 186,
       "family": "Chrome",
       "engine": {
         "name": "Blink",
@@ -1943,11 +1943,11 @@
       }
     },
     "device": {
-      "type": 2,
+      "type": 3,
       "model": "DG101HSTB",
       "brand": {
         "name": "DGTEC",
-        "code": 373
+        "code": 374
       }
     }
   },
@@ -1963,13 +1963,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "10.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome",
-      "code": 137,
+      "code": 138,
       "version": "121.0.6167.178",
       "family": "Chrome",
       "engine": {
@@ -1978,11 +1978,11 @@
       }
     },
     "device": {
-      "type": 2,
+      "type": 3,
       "model": "LRNS10GIL0",
       "brand": {
         "name": "BYJU'S",
-        "code": 240
+        "code": 241
       }
     }
   },
@@ -1998,13 +1998,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "12.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "118.0.5993.80",
       "family": "Chrome",
       "engine": {
@@ -2013,11 +2013,11 @@
       }
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "LIV 3S",
       "brand": {
         "name": "Yezz",
-        "code": 1992
+        "code": 1993
       }
     }
   },
@@ -2033,13 +2033,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "12.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "116.0.5845.172",
       "family": "Chrome",
       "engine": {
@@ -2048,11 +2048,11 @@
       }
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "JioPhone Next",
       "brand": {
         "name": "Jio",
-        "code": 873
+        "code": 874
       }
     }
   },
@@ -2068,13 +2068,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "14.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "118.0.5993.80",
       "family": "Chrome",
       "engine": {
@@ -2083,11 +2083,11 @@
       }
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "X20",
       "brand": {
         "name": "M-KOPA",
-        "code": 1135
+        "code": 1136
       }
     }
   },
@@ -2103,13 +2103,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "14.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "118.0.5993.80",
       "family": "Chrome",
       "engine": {
@@ -2118,11 +2118,11 @@
       }
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "X2",
       "brand": {
         "name": "M-KOPA",
-        "code": 1135
+        "code": 1136
       }
     }
   },
@@ -2138,13 +2138,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "10.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome",
-      "code": 137,
+      "code": 138,
       "version": "113.0.5672.163",
       "family": "Chrome",
       "engine": {
@@ -2153,11 +2153,11 @@
       }
     },
     "device": {
-      "type": 2,
+      "type": 3,
       "model": "X20",
       "brand": {
         "name": "meanIT",
-        "code": 1061
+        "code": 1062
       }
     }
   },
@@ -2173,13 +2173,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "116.0.5845.114",
       "family": "Chrome",
       "engine": {
@@ -2188,11 +2188,11 @@
       }
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "EarnPhone",
       "brand": {
         "name": "Mode Mobile",
-        "code": 1118
+        "code": 1119
       }
     }
   },
@@ -2208,13 +2208,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "10.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "118.0.5993.80",
       "family": "Chrome",
       "engine": {
@@ -2223,11 +2223,11 @@
       }
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "MobileMapper 60",
       "brand": {
         "name": "Trimble",
-        "code": 1751
+        "code": 1752
       }
     }
   },
@@ -2243,13 +2243,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "7.1.2",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome",
-      "code": 137,
+      "code": 138,
       "version": "119.0.6045.193",
       "family": "Chrome",
       "engine": {
@@ -2258,11 +2258,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "PC Ultra",
       "brand": {
         "name": "NOGA",
-        "code": 1218
+        "code": 1219
       }
     }
   },
@@ -2278,13 +2278,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "13.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome",
-      "code": 137,
+      "code": 138,
       "version": "120.0.6099.231",
       "family": "Chrome",
       "engine": {
@@ -2293,11 +2293,11 @@
       }
     },
     "device": {
-      "type": 2,
+      "type": 3,
       "model": "Ocean K10",
       "brand": {
         "name": "Olax",
-        "code": 1252
+        "code": 1253
       }
     }
   },
@@ -2313,13 +2313,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "10.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "114.0.5735.61",
       "family": "Chrome",
       "engine": {
@@ -2328,11 +2328,11 @@
       }
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Okapi 10",
       "brand": {
         "name": "Okapi",
-        "code": 1249
+        "code": 1250
       }
     }
   },
@@ -2349,13 +2349,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "14.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "DuckDuckGo Privacy Browser",
-      "code": 185,
+      "code": 186,
       "family": "Chrome",
       "engine": {
         "name": "Blink",
@@ -2363,11 +2363,11 @@
       }
     },
     "device": {
-      "type": 2,
+      "type": 3,
       "model": "Pad 2",
       "brand": {
         "name": "OPPO",
-        "code": 1273
+        "code": 1274
       }
     }
   },
@@ -2383,13 +2383,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "13.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "121.0.6167.164",
       "family": "Chrome",
       "engine": {
@@ -2398,11 +2398,11 @@
       }
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Rugged 60Q",
       "brand": {
         "name": "OpelMobile",
-        "code": 1270
+        "code": 1271
       }
     }
   },
@@ -2418,13 +2418,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "125.0.6422.147",
       "family": "Chrome",
       "engine": {
@@ -2433,11 +2433,11 @@
       }
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "RxIS202",
       "brand": {
         "name": "Realix",
-        "code": 1426
+        "code": 1427
       }
     }
   },
@@ -2454,13 +2454,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "13.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "128.0.6613.127",
       "family": "Chrome",
       "engine": {
@@ -2469,11 +2469,11 @@
       }
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Horizon",
       "brand": {
         "name": "Stylo",
-        "code": 1620
+        "code": 1621
       }
     }
   },
@@ -2489,13 +2489,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "7.1.2",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome",
-      "code": 137,
+      "code": 138,
       "version": "119.0.6045.193",
       "family": "Chrome",
       "engine": {
@@ -2504,11 +2504,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "TV Box",
       "brand": {
         "name": "ELE-GATE",
-        "code": 473
+        "code": 474
       }
     }
   },
@@ -2524,13 +2524,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "13.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "114.0.5735.60",
       "family": "Chrome",
       "engine": {
@@ -2539,11 +2539,11 @@
       }
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Elio",
       "brand": {
         "name": "Logicom",
-        "code": 1003
+        "code": 1004
       }
     }
   },
@@ -2559,13 +2559,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "13.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome",
-      "code": 137,
+      "code": 138,
       "version": "123.0.6312.80",
       "family": "Chrome",
       "engine": {
@@ -2574,11 +2574,11 @@
       }
     },
     "device": {
-      "type": 2,
+      "type": 3,
       "model": "Pad X9 11.5\" LTE",
       "brand": {
         "name": "Honor",
-        "code": 2095
+        "code": 2096
       }
     }
   },
@@ -2594,13 +2594,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "125.0.6422.147",
       "family": "Chrome",
       "engine": {
@@ -2609,11 +2609,11 @@
       }
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "EA520",
       "brand": {
         "name": "Unitech",
-        "code": 1787
+        "code": 1788
       }
     }
   },
@@ -2629,13 +2629,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "119.0.6045.163",
       "family": "Chrome",
       "engine": {
@@ -2644,11 +2644,11 @@
       }
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "EA520",
       "brand": {
         "name": "Unitech",
-        "code": 1787
+        "code": 1788
       }
     }
   },
@@ -2664,13 +2664,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "125.0.6422.113",
       "family": "Chrome",
       "engine": {
@@ -2679,11 +2679,11 @@
       }
     },
     "device": {
-      "type": 2,
+      "type": 3,
       "model": "E0118",
       "brand": {
         "name": "Everis",
-        "code": 514
+        "code": 515
       }
     }
   },
@@ -2699,13 +2699,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome",
-      "code": 137,
+      "code": 138,
       "version": "127.0.6533.103",
       "family": "Chrome",
       "engine": {
@@ -2714,11 +2714,11 @@
       }
     },
     "device": {
-      "type": 2,
+      "type": 3,
       "model": "E0119",
       "brand": {
         "name": "Everis",
-        "code": 514
+        "code": 515
       }
     }
   },
@@ -2734,13 +2734,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "120.0.6099.144",
       "family": "Chrome",
       "engine": {
@@ -2749,11 +2749,11 @@
       }
     },
     "device": {
-      "type": 2,
+      "type": 3,
       "model": "E0120",
       "brand": {
         "name": "Everis",
-        "code": 514
+        "code": 515
       }
     }
   },
@@ -2769,13 +2769,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "10.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome",
-      "code": 137,
+      "code": 138,
       "version": "115.0.5790.139",
       "family": "Chrome",
       "engine": {
@@ -2784,11 +2784,11 @@
       }
     },
     "device": {
-      "type": 2,
+      "type": 3,
       "model": "CP10",
       "brand": {
         "name": "Atozee",
-        "code": 126
+        "code": 127
       }
     }
   },
@@ -2805,13 +2805,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "DuckDuckGo Privacy Browser",
-      "code": 185,
+      "code": 186,
       "family": "Chrome",
       "engine": {
         "name": "Blink",
@@ -2819,11 +2819,11 @@
       }
     },
     "device": {
-      "type": 2,
+      "type": 3,
       "model": "CP20 Gold",
       "brand": {
         "name": "Atozee",
-        "code": 126
+        "code": 127
       }
     }
   },
@@ -2839,13 +2839,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "14.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "120.0.6099.193",
       "family": "Chrome",
       "engine": {
@@ -2854,11 +2854,11 @@
       }
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Redmi A3x",
       "brand": {
         "name": "Xiaomi",
-        "code": 1973
+        "code": 1974
       }
     }
   },
@@ -2874,13 +2874,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "14.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "126.0.6478.122",
       "family": "Chrome",
       "engine": {
@@ -2889,11 +2889,11 @@
       }
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Redmi A3x",
       "brand": {
         "name": "Xiaomi",
-        "code": 1973
+        "code": 1974
       }
     }
   },
@@ -2909,13 +2909,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "14.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "126.0.6478.123",
       "family": "Chrome",
       "engine": {
@@ -2924,11 +2924,11 @@
       }
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "14 Civi",
       "brand": {
         "name": "Xiaomi",
-        "code": 1973
+        "code": 1974
       }
     }
   },
@@ -2944,13 +2944,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "12.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "115.0.5790.138",
       "family": "Chrome",
       "engine": {
@@ -2959,11 +2959,11 @@
       }
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "12T Pro",
       "brand": {
         "name": "Xiaomi",
-        "code": 1973
+        "code": 1974
       }
     }
   },
@@ -2980,13 +2980,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "14.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "DuckDuckGo Privacy Browser",
-      "code": 185,
+      "code": 186,
       "family": "Chrome",
       "engine": {
         "name": "Blink",
@@ -2994,11 +2994,11 @@
       }
     },
     "device": {
-      "type": 2,
+      "type": 3,
       "model": "Redmi Pad Pro",
       "brand": {
         "name": "Xiaomi",
-        "code": 1973
+        "code": 1974
       }
     }
   },
@@ -3014,13 +3014,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "114.0.5735.196",
       "family": "Chrome",
       "engine": {
@@ -3029,11 +3029,11 @@
       }
     },
     "device": {
-      "type": 2,
+      "type": 3,
       "model": "100092980",
       "brand": {
         "name": "ONN",
-        "code": 1266
+        "code": 1267
       }
     }
   },
@@ -3049,13 +3049,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "14.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome",
-      "code": 137,
+      "code": 138,
       "version": "117.0.5938.60",
       "family": "Chrome",
       "engine": {
@@ -3064,11 +3064,11 @@
       }
     },
     "device": {
-      "type": 2,
+      "type": 3,
       "model": "100135923",
       "brand": {
         "name": "ONN",
-        "code": 1266
+        "code": 1267
       }
     }
   },
@@ -3084,13 +3084,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "13.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome",
-      "code": 137,
+      "code": 138,
       "version": "117.0.5938.153",
       "family": "Chrome",
       "engine": {
@@ -3099,11 +3099,11 @@
       }
     },
     "device": {
-      "type": 2,
+      "type": 3,
       "model": "100110027",
       "brand": {
         "name": "ONN",
-        "code": 1266
+        "code": 1267
       }
     }
   },
@@ -3119,13 +3119,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "12.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome",
-      "code": 137,
+      "code": 138,
       "version": "126.0.6478.122",
       "family": "Chrome",
       "engine": {
@@ -3134,11 +3134,11 @@
       }
     },
     "device": {
-      "type": 2,
+      "type": 3,
       "model": "100071483A",
       "brand": {
         "name": "ONN",
-        "code": 1266
+        "code": 1267
       }
     }
   },
@@ -3154,13 +3154,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "12.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome",
-      "code": 137,
+      "code": 138,
       "version": "124.0.6367.113",
       "family": "Chrome",
       "engine": {
@@ -3169,11 +3169,11 @@
       }
     },
     "device": {
-      "type": 2,
+      "type": 3,
       "model": "100071485A",
       "brand": {
         "name": "ONN",
-        "code": 1266
+        "code": 1267
       }
     }
   },
@@ -3189,13 +3189,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "12.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome",
-      "code": 137,
+      "code": 138,
       "version": "123.0.6312.40",
       "family": "Chrome",
       "engine": {
@@ -3204,11 +3204,11 @@
       }
     },
     "device": {
-      "type": 2,
+      "type": 3,
       "model": "100044018",
       "brand": {
         "name": "ONN",
-        "code": 1266
+        "code": 1267
       }
     }
   },
@@ -3224,13 +3224,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome",
-      "code": 137,
+      "code": 138,
       "version": "113.0.5672.76",
       "family": "Chrome",
       "engine": {
@@ -3239,11 +3239,11 @@
       }
     },
     "device": {
-      "type": 2,
+      "type": 3,
       "model": "100011886CA",
       "brand": {
         "name": "ONN",
-        "code": 1266
+        "code": 1267
       }
     }
   },
@@ -3259,13 +3259,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome",
-      "code": 137,
+      "code": 138,
       "version": "113.0.5672.162",
       "family": "Chrome",
       "engine": {
@@ -3274,11 +3274,11 @@
       }
     },
     "device": {
-      "type": 2,
+      "type": 3,
       "model": "100011886 GTW",
       "brand": {
         "name": "ONN",
-        "code": 1266
+        "code": 1267
       }
     }
   },
@@ -3294,13 +3294,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "10.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome",
-      "code": 137,
+      "code": 138,
       "version": "122.0.6261.91",
       "family": "Chrome",
       "engine": {
@@ -3309,11 +3309,11 @@
       }
     },
     "device": {
-      "type": 2,
+      "type": 3,
       "model": "Gravity Ultimate 2",
       "brand": {
         "name": "SPC",
-        "code": 1599
+        "code": 1600
       }
     }
   },
@@ -3329,13 +3329,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome",
-      "code": 137,
+      "code": 138,
       "version": "124.0.6367.82",
       "family": "Chrome",
       "engine": {
@@ -3344,11 +3344,11 @@
       }
     },
     "device": {
-      "type": 2,
+      "type": 3,
       "model": "Gravity 3",
       "brand": {
         "name": "SPC",
-        "code": 1599
+        "code": 1600
       }
     }
   },
@@ -3364,13 +3364,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "12.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "124.0.6367.113",
       "family": "Chrome",
       "engine": {
@@ -3379,11 +3379,11 @@
       }
     },
     "device": {
-      "type": 2,
+      "type": 3,
       "model": "Gravity 3 Mini",
       "brand": {
         "name": "SPC",
-        "code": 1599
+        "code": 1600
       }
     }
   },
@@ -3399,13 +3399,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome",
-      "code": 137,
+      "code": 138,
       "version": "116.0.5845.163",
       "family": "Chrome",
       "engine": {
@@ -3414,11 +3414,11 @@
       }
     },
     "device": {
-      "type": 2,
+      "type": 3,
       "model": "Gravity 3 SE",
       "brand": {
         "name": "SPC",
-        "code": 1599
+        "code": 1600
       }
     }
   },
@@ -3434,13 +3434,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "13.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "114.0.5735.60",
       "family": "Chrome",
       "engine": {
@@ -3449,11 +3449,11 @@
       }
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "HD55",
       "brand": {
         "name": "Vortex",
-        "code": 1892
+        "code": 1893
       }
     }
   },
@@ -3469,13 +3469,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "13.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "121.0.6167.164",
       "family": "Chrome",
       "engine": {
@@ -3484,11 +3484,11 @@
       }
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "HD60",
       "brand": {
         "name": "Vortex",
-        "code": 1892
+        "code": 1893
       }
     }
   },
@@ -3504,13 +3504,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "13.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "119.0.6045.67",
       "family": "Chrome",
       "engine": {
@@ -3519,11 +3519,11 @@
       }
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "HD60i",
       "brand": {
         "name": "Vortex",
-        "code": 1892
+        "code": 1893
       }
     }
   },
@@ -3539,13 +3539,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "13.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "111.0.5563.116",
       "family": "Chrome",
       "engine": {
@@ -3554,11 +3554,11 @@
       }
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "HD60L",
       "brand": {
         "name": "Vortex",
-        "code": 1892
+        "code": 1893
       }
     }
   },
@@ -3574,13 +3574,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "14.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "125.0.6422.165",
       "family": "Chrome",
       "engine": {
@@ -3589,11 +3589,11 @@
       }
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "HD68",
       "brand": {
         "name": "Vortex",
-        "code": 1892
+        "code": 1893
       }
     }
   },
@@ -3609,13 +3609,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome",
-      "code": 137,
+      "code": 138,
       "version": "126.0.6478.110",
       "family": "Chrome",
       "engine": {
@@ -3624,11 +3624,11 @@
       }
     },
     "device": {
-      "type": 2,
+      "type": 3,
       "model": "MX101M2",
       "brand": {
         "name": "RCT",
-        "code": 1424
+        "code": 1425
       }
     }
   },
@@ -3644,13 +3644,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome",
-      "code": 137,
+      "code": 138,
       "version": "120.0.6099.115",
       "family": "Chrome",
       "engine": {
@@ -3659,11 +3659,11 @@
       }
     },
     "device": {
-      "type": 2,
+      "type": 3,
       "model": "MX101M3",
       "brand": {
         "name": "RCT",
-        "code": 1424
+        "code": 1425
       }
     }
   },
@@ -3679,13 +3679,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "123.0.6312.80",
       "family": "Chrome",
       "engine": {
@@ -3694,11 +3694,11 @@
       }
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "MS5539G",
       "brand": {
         "name": "Maze Speed",
-        "code": 1052
+        "code": 1053
       }
     }
   },
@@ -3714,13 +3714,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "13.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "111.0.5563.116",
       "family": "Chrome",
       "engine": {
@@ -3729,11 +3729,11 @@
       }
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "MS5614G",
       "brand": {
         "name": "Maze Speed",
-        "code": 1052
+        "code": 1053
       }
     }
   },
@@ -3749,13 +3749,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome",
-      "code": 137,
+      "code": 138,
       "version": "108.0.5359.128",
       "family": "Chrome",
       "engine": {
@@ -3764,11 +3764,11 @@
       }
     },
     "device": {
-      "type": 2,
+      "type": 3,
       "model": "E10M",
       "brand": {
         "name": "SGIN",
-        "code": 1531
+        "code": 1532
       }
     }
   },
@@ -3784,13 +3784,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome",
-      "code": 137,
+      "code": 138,
       "version": "115.0.5790.166",
       "family": "Chrome",
       "engine": {
@@ -3799,11 +3799,11 @@
       }
     },
     "device": {
-      "type": 2,
+      "type": 3,
       "model": "Silverstone T5A",
       "brand": {
         "name": "Packard Bell",
-        "code": 1320
+        "code": 1321
       }
     }
   },
@@ -3820,13 +3820,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "14.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "DuckDuckGo Privacy Browser",
-      "code": 185,
+      "code": 186,
       "family": "Chrome",
       "engine": {
         "name": "Blink",
@@ -3834,11 +3834,11 @@
       }
     },
     "device": {
-      "type": 10,
+      "type": 11,
       "model": "Galaxy Z Fold 5",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -3854,13 +3854,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "14.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "120.0.6099.210",
       "family": "Chrome",
       "engine": {
@@ -3869,11 +3869,11 @@
       }
     },
     "device": {
-      "type": 10,
+      "type": 11,
       "model": "Galaxy Z Flip 5",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -3889,13 +3889,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "14.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "124.0.6367.113",
       "family": "Chrome",
       "engine": {
@@ -3904,11 +3904,11 @@
       }
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Galaxy S23 FE",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -3924,13 +3924,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "14.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "127.0.6533.103",
       "family": "Chrome",
       "engine": {
@@ -3939,11 +3939,11 @@
       }
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Galaxy S24",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -3959,13 +3959,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "14.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "125.0.6422.146",
       "family": "Chrome",
       "engine": {
@@ -3974,11 +3974,11 @@
       }
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Galaxy S24 Ultra",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -3994,13 +3994,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "14.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "126.0.6478.122",
       "family": "Chrome",
       "engine": {
@@ -4009,11 +4009,11 @@
       }
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Galaxy A55 5G",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -4021,21 +4021,21 @@
     "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/21G93 [FBAN/FBIOS;FBAV/479.1.0.33.109;FBBV/637241220;FBDV/iPhone15,2;FBMD/iPhone;FBSN/iOS;FBSV/17.6.1;FBSS/3;FBID/phone;FBLC/es_ES;FBOP/5;FBRV/639094949;IABMV/1]",
     "os": {
       "name": "iOS",
-      "code": 182,
+      "code": 183,
       "version": "17.6.1",
       "family": "iOS"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Facebook",
       "version": "479.1.0.33.109"
     },
     "device": {
-      "type": 10,
+      "type": 11,
       "model": "iPhone 14 Pro",
       "brand": {
         "name": "Apple",
-        "code": 97
+        "code": 98
       }
     }
   },
@@ -4051,14 +4051,14 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "9.0.0",
       "cpuArchitecture": "x64",
       "family": "Android"
     },
     "browser": {
       "name": "Opera",
-      "code": 420,
+      "code": 421,
       "version": "88.0.4412.53",
       "family": "Opera",
       "engine": {
@@ -4067,11 +4067,11 @@
       }
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Honor Note 10",
       "brand": {
         "name": "Huawei",
-        "code": 757
+        "code": 758
       }
     }
   },
@@ -4087,13 +4087,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "9.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "106.0.5249.126",
       "family": "Chrome",
       "engine": {
@@ -4102,11 +4102,11 @@
       }
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "N8",
       "brand": {
         "name": "iQ&T",
-        "code": 826
+        "code": 827
       }
     }
   },
@@ -4122,13 +4122,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "117.0.5938.60",
       "family": "Chrome",
       "engine": {
@@ -4137,11 +4137,11 @@
       }
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "4063T",
       "brand": {
         "name": "Alcatel",
-        "code": 48
+        "code": 49
       }
     }
   },
@@ -4157,13 +4157,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "13.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "128.0.6613.100",
       "family": "Chrome",
       "engine": {
@@ -4172,11 +4172,11 @@
       }
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "DuraForce EX",
       "brand": {
         "name": "Kyocera",
-        "code": 949
+        "code": 950
       }
     }
   },
@@ -4192,13 +4192,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "14.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "125.0.6422.165",
       "family": "Chrome",
       "engine": {
@@ -4207,11 +4207,11 @@
       }
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Aquos wish3",
       "brand": {
         "name": "Sharp",
-        "code": 1532
+        "code": 1533
       }
     }
   },
@@ -4227,13 +4227,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "13.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "119.0.6045.134",
       "family": "Chrome",
       "engine": {
@@ -4242,11 +4242,11 @@
       }
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Xperia 10 V",
       "brand": {
         "name": "Sony",
-        "code": 1588
+        "code": 1589
       }
     }
   },
@@ -4262,13 +4262,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "13.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "125.0.6422.165",
       "family": "Chrome",
       "engine": {
@@ -4277,11 +4277,11 @@
       }
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Anshin Family",
       "brand": {
         "name": "ZTE",
-        "code": 2039
+        "code": 2040
       }
     }
   },
@@ -4297,13 +4297,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "8.1.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "114.0.5735.60",
       "family": "Chrome",
       "engine": {
@@ -4312,11 +4312,11 @@
       }
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "X2",
       "brand": {
         "name": "iLA",
-        "code": 798
+        "code": 799
       }
     }
   },
@@ -4332,13 +4332,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "9.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome",
-      "code": 137,
+      "code": 138,
       "version": "121.0.6167.180",
       "family": "Chrome",
       "engine": {
@@ -4347,11 +4347,11 @@
       }
     },
     "device": {
-      "type": 2,
+      "type": 3,
       "model": "TM-MID1065",
       "brand": {
         "name": "Touchmate",
-        "code": 1743
+        "code": 1744
       }
     }
   },
@@ -4367,13 +4367,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "13.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "119.0.6045.66",
       "family": "Chrome",
       "engine": {
@@ -4382,11 +4382,11 @@
       }
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Stellar-X5",
       "brand": {
         "name": "Crosscall",
-        "code": 335
+        "code": 336
       }
     }
   },
@@ -4402,13 +4402,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "13.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "121.0.6167.178",
       "family": "Chrome",
       "engine": {
@@ -4417,11 +4417,11 @@
       }
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "SS5724G",
       "brand": {
         "name": "Soho Style",
-        "code": 1594
+        "code": 1595
       }
     }
   },
@@ -4437,13 +4437,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "121.0.6167.143",
       "family": "Chrome",
       "engine": {
@@ -4452,11 +4452,11 @@
       }
     },
     "device": {
-      "type": 2,
+      "type": 3,
       "model": "1T 7\" 3G",
       "brand": {
         "name": "Alcatel",
-        "code": 48
+        "code": 49
       }
     }
   },
@@ -4472,13 +4472,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "13.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome",
-      "code": 137,
+      "code": 138,
       "version": "111.0.5563.116",
       "family": "Chrome",
       "engine": {
@@ -4487,11 +4487,11 @@
       }
     },
     "device": {
-      "type": 2,
+      "type": 3,
       "model": "T60 Plus",
       "brand": {
         "name": "Veidoo",
-        "code": 1823
+        "code": 1824
       }
     }
   },
@@ -4507,13 +4507,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "13.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "111.0.5563.116",
       "family": "Chrome",
       "engine": {
@@ -4522,11 +4522,11 @@
       }
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "S1586K",
       "brand": {
         "name": "Soho Style",
-        "code": 1594
+        "code": 1595
       }
     }
   },
@@ -4542,13 +4542,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "120.0.6099.43",
       "family": "Chrome",
       "engine": {
@@ -4557,11 +4557,11 @@
       }
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "X7",
       "brand": {
         "name": "X-Mobile",
-        "code": 1961
+        "code": 1962
       }
     }
   },
@@ -4577,13 +4577,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "124.0.6367.54",
       "family": "Chrome",
       "engine": {
@@ -4592,11 +4592,11 @@
       }
     },
     "device": {
-      "type": 4,
+      "type": 5,
       "model": "G Cloud",
       "brand": {
         "name": "Logitech",
-        "code": 1005
+        "code": 1006
       }
     }
   },
@@ -4612,13 +4612,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "9.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "114.0.5735.60",
       "family": "Chrome",
       "engine": {
@@ -4627,11 +4627,11 @@
       }
     },
     "device": {
-      "type": 4,
+      "type": 5,
       "model": "2 Plus",
       "brand": {
         "name": "Retroid Pocket",
-        "code": 1442
+        "code": 1443
       }
     }
   },
@@ -4647,13 +4647,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "13.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "124.0.6367.113",
       "family": "Chrome",
       "engine": {
@@ -4662,11 +4662,11 @@
       }
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Sens M1",
       "brand": {
         "name": "Zuum",
-        "code": 2040
+        "code": 2041
       }
     }
   },
@@ -4682,13 +4682,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "13.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "122.0.6261.120",
       "family": "Chrome",
       "engine": {
@@ -4697,11 +4697,11 @@
       }
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Blade A72",
       "brand": {
         "name": "Nubia",
-        "code": 1215
+        "code": 1216
       }
     }
   },
@@ -4717,13 +4717,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome",
-      "code": 137,
+      "code": 138,
       "version": "124.0.6367.82",
       "family": "Chrome",
       "engine": {
@@ -4732,11 +4732,11 @@
       }
     },
     "device": {
-      "type": 2,
+      "type": 3,
       "model": "ZKempler Plus",
       "brand": {
         "name": "Kempler & Strauss",
-        "code": 901
+        "code": 902
       }
     }
   },
@@ -4752,13 +4752,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "14.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "126.0.6478.122",
       "family": "Chrome",
       "engine": {
@@ -4767,11 +4767,11 @@
       }
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Xanon X90",
       "brand": {
         "name": "Walton",
-        "code": 1911
+        "code": 1912
       }
     }
   },
@@ -4787,13 +4787,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "9.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome",
-      "code": 137,
+      "code": 138,
       "version": "120.0.6099.115",
       "family": "Chrome",
       "engine": {
@@ -4802,11 +4802,11 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "AWTX6",
       "brand": {
         "name": "Aiwa",
-        "code": 42
+        "code": 43
       }
     }
   },
@@ -4822,13 +4822,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "12.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome",
-      "code": 137,
+      "code": 138,
       "version": "112.0.5615.135",
       "family": "Chrome",
       "engine": {
@@ -4837,11 +4837,11 @@
       }
     },
     "device": {
-      "type": 2,
+      "type": 3,
       "model": "HN2-M16Q",
       "brand": {
         "name": "INSYS",
-        "code": 828
+        "code": 829
       }
     }
   },
@@ -4857,13 +4857,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "12.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "112.0.5615.48",
       "family": "Chrome",
       "engine": {
@@ -4872,11 +4872,11 @@
       }
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "E50s",
       "brand": {
         "name": "Hisense",
-        "code": 719
+        "code": 720
       }
     }
   },
@@ -4892,13 +4892,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome",
-      "code": 137,
+      "code": 138,
       "version": "126.0.6478.188",
       "family": "Chrome",
       "engine": {
@@ -4907,7 +4907,7 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "HK1RBOX-X4"
     }
   },
@@ -4924,13 +4924,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "DuckDuckGo Privacy Browser",
-      "code": 185,
+      "code": 186,
       "family": "Chrome",
       "engine": {
         "name": "Blink",
@@ -4938,11 +4938,11 @@
       }
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "7.2",
       "brand": {
         "name": "Nokia",
-        "code": 1219
+        "code": 1220
       }
     }
   },
@@ -4959,13 +4959,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "13.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "DuckDuckGo Privacy Browser",
-      "code": 185,
+      "code": 186,
       "family": "Chrome",
       "engine": {
         "name": "Blink",
@@ -4973,11 +4973,11 @@
       }
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Galaxy S20 FE 5G",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -4995,13 +4995,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "14.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "DuckDuckGo Privacy Browser",
-      "code": 185,
+      "code": 186,
       "family": "Chrome",
       "engine": {
         "name": "Blink",
@@ -5009,11 +5009,11 @@
       }
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Galaxy A13",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -5029,13 +5029,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "120.0.6099.210",
       "family": "Chrome",
       "engine": {
@@ -5044,11 +5044,11 @@
       }
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Model S 4G",
       "brand": {
         "name": "Sunmax",
-        "code": 1644
+        "code": 1645
       }
     }
   },
@@ -5064,13 +5064,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "124.0.6367.113",
       "family": "Chrome",
       "engine": {
@@ -5079,11 +5079,11 @@
       }
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Model S",
       "brand": {
         "name": "Sunmax",
-        "code": 1644
+        "code": 1645
       }
     }
   },
@@ -5099,13 +5099,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "12.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "102.0.5005.125",
       "family": "Chrome",
       "engine": {
@@ -5114,11 +5114,11 @@
       }
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Model D",
       "brand": {
         "name": "Sunmax",
-        "code": 1644
+        "code": 1645
       }
     }
   },
@@ -5134,13 +5134,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "8.1.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "104.0.5112.69",
       "family": "Chrome",
       "engine": {
@@ -5149,11 +5149,11 @@
       }
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Model A",
       "brand": {
         "name": "Sunmax",
-        "code": 1644
+        "code": 1645
       }
     }
   },
@@ -5169,13 +5169,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "94.0.4606.85",
       "family": "Chrome",
       "engine": {
@@ -5184,11 +5184,11 @@
       }
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Model 6",
       "brand": {
         "name": "Sunmax",
-        "code": 1644
+        "code": 1645
       }
     }
   },
@@ -5204,13 +5204,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "124.0.6367.82",
       "family": "Chrome",
       "engine": {
@@ -5219,11 +5219,11 @@
       }
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "model": "Model 6 Pro 4G",
       "brand": {
         "name": "Sunmax",
-        "code": 1644
+        "code": 1645
       }
     }
   },
@@ -5239,13 +5239,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "9.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "122.0.6261.90",
       "family": "Chrome",
       "engine": {
@@ -5254,11 +5254,11 @@
       }
     },
     "device": {
-      "type": 2,
+      "type": 3,
       "model": "LECT-TAB1011H",
       "brand": {
         "name": "Lectrus",
-        "code": 959
+        "code": 960
       }
     }
   },
@@ -5269,13 +5269,13 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "10",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "133.0.0.0",
       "family": "Chrome",
       "engine": {
@@ -5284,7 +5284,7 @@
       }
     },
     "device": {
-      "type": 1
+      "type": 2
     }
   }
 ]

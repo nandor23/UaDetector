@@ -12,7 +12,7 @@ public class DeviceTypeTests
 
         for (int i = 0; i < values.Count; i++)
         {
-            values[i].ShouldBe(i);
+            values[i].ShouldBe(i + 1);
         }
     }
 
@@ -21,20 +21,20 @@ public class DeviceTypeTests
     {
         var expectedValues = new Dictionary<DeviceType, int>
         {
-            { DeviceType.Desktop, 0 },
-            { DeviceType.Smartphone, 1 },
-            { DeviceType.Tablet, 2 },
-            { DeviceType.FeaturePhone, 3 },
-            { DeviceType.Console, 4 },
-            { DeviceType.Television, 5 },
-            { DeviceType.CarBrowser, 6 },
-            { DeviceType.SmartDisplay, 7 },
-            { DeviceType.Camera, 8 },
-            { DeviceType.PortableMediaPlayer, 9 },
-            { DeviceType.Phablet, 10 },
-            { DeviceType.SmartSpeaker, 11 },
-            { DeviceType.Wearable, 12 },
-            { DeviceType.Peripheral, 13 },
+            { DeviceType.Desktop, 1 },
+            { DeviceType.Smartphone, 2 },
+            { DeviceType.Tablet, 3 },
+            { DeviceType.FeaturePhone, 4 },
+            { DeviceType.Console, 5 },
+            { DeviceType.Television, 6 },
+            { DeviceType.CarBrowser, 7 },
+            { DeviceType.SmartDisplay, 8 },
+            { DeviceType.Camera, 9 },
+            { DeviceType.PortableMediaPlayer, 10 },
+            { DeviceType.Phablet, 11 },
+            { DeviceType.SmartSpeaker, 12 },
+            { DeviceType.Wearable, 13 },
+            { DeviceType.Peripheral, 14 },
         };
 
         expectedValues.Count.ShouldBe(Enum.GetValues<DeviceType>().Length);
