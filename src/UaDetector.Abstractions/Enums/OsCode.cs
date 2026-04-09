@@ -1,5 +1,4 @@
-
-        namespace UaDetector.Abstractions.Enums;
+namespace UaDetector.Abstractions.Enums;
 
 public enum OsCode
 {

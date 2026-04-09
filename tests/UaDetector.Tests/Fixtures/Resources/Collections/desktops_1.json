@@ -3,13 +3,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 13; 20JJS0CU1M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.6422.113 Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "13",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome",
-      "code": 137,
+      "code": 138,
       "version": "125.0.6422.113",
       "family": "Chrome",
       "engine": {
@@ -18,11 +18,11 @@
       }
     },
     "device": {
-      "type": 0,
+      "type": 1,
       "model": "ThinkPad Yoga 370",
       "brand": {
         "name": "Lenovo",
-        "code": 976
+        "code": 977
       }
     }
   },
@@ -30,13 +30,13 @@
     "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1 DuckDuckGo/7 Safari/605.1.15",
     "os": {
       "name": "Mac",
-      "code": 83,
+      "code": 84,
       "version": "10.15",
       "family": "Mac"
     },
     "browser": {
       "name": "DuckDuckGo Privacy Browser",
-      "code": 185,
+      "code": 186,
       "version": "7",
       "family": "Chrome",
       "engine": {
@@ -45,10 +45,10 @@
       }
     },
     "device": {
-      "type": 0,
+      "type": 1,
       "brand": {
         "name": "Apple",
-        "code": 97
+        "code": 98
       }
     }
   },
@@ -56,13 +56,13 @@
     "userAgent": "Mozilla/5.0 (X11; U; Linux aarch64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 Puffin/8.2.4.705LD",
     "os": {
       "name": "GNU/Linux",
-      "code": 72,
+      "code": 73,
       "cpuArchitecture": "ARM",
       "family": "GNU/Linux"
     },
     "browser": {
       "name": "Puffin Secure Browser",
-      "code": 451,
+      "code": 452,
       "version": "8.2.4.705",
       "family": "Chrome",
       "engine": {
@@ -71,29 +71,29 @@
       }
     },
     "device": {
-      "type": 0
+      "type": 1
     }
   },
   {
     "userAgent": "nook browser/1.0",
     "os": {
       "name": "Mac",
-      "code": 83,
+      "code": 84,
       "family": "Mac"
     },
     "browser": {
       "name": "Nook Browser",
-      "code": 387,
+      "code": 388,
       "version": "1.0",
       "engine": {
         "name": "WebKit"
       }
     },
     "device": {
-      "type": 0,
+      "type": 1,
       "brand": {
         "name": "Apple",
-        "code": 97
+        "code": 98
       }
     }
   },
@@ -101,21 +101,21 @@
     "userAgent": "VMS_Mosaic/4.0 (Motif;OpenVMS V8.3 COMPAQ Professional Workstation ) libwww/2.12_Mosaic",
     "os": {
       "name": "OpenVMS",
-      "code": 106,
+      "code": 107,
       "version": "8.3",
       "family": "OpenVMS"
     },
     "browser": {
       "name": "VMS Mosaic",
-      "code": 628,
+      "code": 629,
       "version": "4.0"
     },
     "device": {
-      "type": 0,
+      "type": 1,
       "model": "Professional Workstation",
       "brand": {
         "name": "Compaq",
-        "code": 300
+        "code": 301
       }
     }
   },
@@ -123,21 +123,21 @@
     "userAgent": "VMS_Mosaic/3.8-1 (Motif;OpenVMS V7.3-2 DEC 3000 - M700)  libwww/2.12_Mosaic",
     "os": {
       "name": "OpenVMS",
-      "code": 106,
+      "code": 107,
       "version": "7.3",
       "family": "OpenVMS"
     },
     "browser": {
       "name": "VMS Mosaic",
-      "code": 628,
+      "code": 629,
       "version": "3.8"
     },
     "device": {
-      "type": 0,
+      "type": 1,
       "model": "Model 700",
       "brand": {
         "name": "DEC",
-        "code": 2111
+        "code": 2112
       }
     }
   },
@@ -145,13 +145,13 @@
     "userAgent": "Opera/9.46.(Windows 95; lg-UG) Presto/2.9.172 Version/11.00",
     "os": {
       "name": "Windows",
-      "code": 170,
+      "code": 171,
       "version": "95",
       "family": "Windows"
     },
     "browser": {
       "name": "Opera",
-      "code": 420,
+      "code": 421,
       "version": "9.46",
       "family": "Opera",
       "engine": {
@@ -160,21 +160,21 @@
       }
     },
     "device": {
-      "type": 0
+      "type": 1
     }
   },
   {
     "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/29.0 Chrome/136.0.0.0 Safari/537.36",
     "os": {
       "name": "Windows",
-      "code": 170,
+      "code": 171,
       "version": "10",
       "cpuArchitecture": "x64",
       "family": "Windows"
     },
     "browser": {
       "name": "Samsung Browser",
-      "code": 512,
+      "code": 513,
       "version": "29.0",
       "family": "Chrome",
       "engine": {
@@ -183,7 +183,7 @@
       }
     },
     "device": {
-      "type": 0
+      "type": 1
     }
   }
 ]

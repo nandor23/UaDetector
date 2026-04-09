@@ -6,14 +6,14 @@
     "userAgent": "amaya/9.51 libwww/5.4.0",
     "browser": {
       "name": "Amaya",
-      "code": 44,
+      "code": 45,
       "version": "9.51"
     }
   },
   {
     "userAgent": "BashPodder",
     "client": {
-      "type": 3,
+      "type": 4,
       "name": "BashPodder"
     }
   },
@@ -21,7 +21,7 @@
     "userAgent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/80.0.3987.117 Mobile Safari/537.36",
     "browser": {
       "name": "Chrome Webview",
-      "code": 161,
+      "code": 162,
       "version": "80.0.3987.117",
       "family": "Chrome",
       "engine": {
@@ -34,7 +34,7 @@
     "userAgent": "Dillo/0.8.5-i18n-misc",
     "browser": {
       "name": "Dillo",
-      "code": 183,
+      "code": 184,
       "version": "0.8.5",
       "engine": {
         "name": "Dillo",
@@ -45,7 +45,7 @@
   {
     "userAgent": "Google-HTTP-Java-Client/1.17.0-rc (gzip)",
     "client": {
-      "type": 2,
+      "type": 3,
       "name": "Google HTTP Java Client",
       "version": "1.17.0-rc"
     }
@@ -53,7 +53,7 @@
   {
     "userAgent": "gPodder/3.5.2 (+http://gpodder.org/)",
     "client": {
-      "type": 3,
+      "type": 4,
       "name": "gPodder",
       "version": "3.5.2"
     }
@@ -62,7 +62,7 @@
     "userAgent": "HotJava/1.1.2 FCS",
     "browser": {
       "name": "HotJava",
-      "code": 261,
+      "code": 262,
       "version": "1.1.2"
     }
   },
@@ -70,7 +70,7 @@
     "userAgent": "Lynx/2.8.8pre.3 libwww-FM/2.14 SSL-MM/1.4.1 OpenSSL/1.0.1e",
     "browser": {
       "name": "Lynx",
-      "code": 343,
+      "code": 344,
       "version": "2.8.8",
       "engine": {
         "name": "Text-based"
@@ -81,44 +81,44 @@
     "userAgent": "pcdc751/1.0 UP.Browser/6.2.3.2 (GUI) MMP/2.0",
     "os": {
       "name": "Java ME",
-      "code": 63,
+      "code": 64,
       "family": "Real-time OS"
     },
     "browser": {
       "name": "Openwave Mobile Browser",
-      "code": 430,
+      "code": 431,
       "version": "6.2.3.2"
     },
     "device": {
-      "type": 3
+      "type": 4
     }
   },
   {
     "userAgent": "r355[TF268435460205582333000000014065648021] UP.Browser/6.2.3.8 (GUI) MMP/2.0",
     "os": {
       "name": "Java ME",
-      "code": 63,
+      "code": 64,
       "family": "Real-time OS"
     },
     "browser": {
       "name": "Openwave Mobile Browser",
-      "code": 430,
+      "code": 431,
       "version": "6.2.3.8"
     },
     "device": {
-      "type": 3
+      "type": 4
     }
   },
   {
     "userAgent": "Opera/9.80 (J2ME/MIDP; Opera Mini/5.0.22371/28.3782; U; en) Presto/2.8.119 Version/11.10",
     "os": {
       "name": "Java ME",
-      "code": 63,
+      "code": 64,
       "family": "Real-time OS"
     },
     "browser": {
       "name": "Opera Mini",
-      "code": 418,
+      "code": 419,
       "version": "5.0.22371",
       "family": "Opera",
       "engine": {
@@ -127,13 +127,13 @@
       }
     },
     "device": {
-      "type": 3
+      "type": 4
     }
   },
   {
     "userAgent": "The Bat! 4.0.0.22",
     "client": {
-      "type": 4,
+      "type": 5,
       "name": "The Bat!",
       "version": "4.0.0.22"
     }
@@ -142,7 +142,7 @@
     "userAgent": "UCWEB8.4.0.150/28/352",
     "browser": {
       "name": "UC Browser",
-      "code": 604,
+      "code": 605,
       "version": "8.4.0.150"
     }
   },
@@ -150,13 +150,13 @@
     "userAgent": "Mozilla/5.0 (Android; Linux armv7l; rv:10.0) Gecko/20120118 Firefox/10.0 Fennec/10.0",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "cpuArchitecture": "ARM",
       "family": "Android"
     },
     "browser": {
       "name": "Fennec",
-      "code": 211,
+      "code": 212,
       "version": "10.0",
       "family": "Firefox",
       "engine": {
@@ -169,12 +169,12 @@
     "userAgent": "Opera/9.80 (Android; Opera Mini/7.5.33361/34.861; U; en) Presto/2.8.119 Version/11.10",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "family": "Android"
     },
     "browser": {
       "name": "Opera Mini",
-      "code": 418,
+      "code": 419,
       "version": "7.5.33361",
       "family": "Opera",
       "engine": {
@@ -187,13 +187,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 2.3; en-us; MID Build/GRH55) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "2.3",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -205,13 +205,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 2.3.6; en-us; e1109_v73_gq1003_rtp Build/GRK39F) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "2.3.6",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -223,13 +223,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 2.3.6; en-us; SP100 Build/GRK39F) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "2.3.6",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -241,13 +241,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 2.3.6; in-id; A7* Build/GRK39F) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "2.3.6",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -259,13 +259,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 2.3.6; mk-mk; move 2 Build/GRK39F) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "2.3.6",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -277,13 +277,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 2.3.6; zh-cn; BF9200 Build/GRK39F) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "2.3.6",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -295,13 +295,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 2.3.6; zh-cn; k6 Build/GRJ90) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "2.3.6",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -313,13 +313,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 2.3.6; zh-cn; MT917 Build/6.5.1_GC-146-DNRTD-9) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "2.3.6",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -331,13 +331,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 2.3.6; zh-cn; TV808 Build/GINGERBREAD) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "2.3.6",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -349,13 +349,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 2.3.7; en-au; T-Hub2 Build/TVA301TELBG3) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "2.3.7",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -367,13 +367,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 2.3.7; en-us; A19 Build/REL_2.3.12) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "2.3.7",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -385,13 +385,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 2.3.7; en-us; nine i7400 Build/REL_2.3.12) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "2.3.7",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -403,13 +403,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 2.3.7; en-us; Precedent Build/AreaRom Test) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "2.3.7",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -421,13 +421,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 2.3.7; fa-ir; X8 Build/GingerDX; GingerDX) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "2.3.7",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -439,13 +439,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 2.3.7; fr-fr; AZ210B Build/AZ210B_GB_01.06I) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "2.3.7",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -457,13 +457,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 2.3.7; ja-jp; IS12S Build/6.0.D.0.272) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "2.3.7",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -475,13 +475,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 2.3.7; zh-cn; 8180 Build/GWK74) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "2.3.7",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -493,13 +493,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 2.3.7; zh-cn; Blade Build/GRJ22; mumayi.com_hyurpg_love_01) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "2.3.7",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -511,13 +511,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 2.3.7; zh-cn; S800 Build/REL_2.3.7) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "2.3.7",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -529,13 +529,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.3; bg-bg; EPAD Build/IML74K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.0.3",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -547,13 +547,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.3; el-gr; R9 Build/IML74K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.0.3",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -565,13 +565,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.3; en-us; 97FC Build/IML74K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.0.3",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -583,13 +583,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.3; en-us; AT107F Build/IML74K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.0.3",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -601,13 +601,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.3; en-us; Build/S5110-01-V2.1-20120801) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.0.3",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -619,13 +619,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.3; en-us; Full AOSP on Rk29sdk Build/IML74K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.0.3",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -637,13 +637,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.3; en-us; ICS Build/ICS.f08refem31.20120808) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.0.3",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -655,13 +655,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.3; en-us; MID Build/IML74K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.0.3",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -673,13 +673,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.3; en-us; T10A Build/IML74K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.0.3",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -691,13 +691,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.3; es-es; Build/ICS.f06ref848L.20120530) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.0.3",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -709,13 +709,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.3; es-es; Proton Lite Build/IML74K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.0.3",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -727,13 +727,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.3; fr-fr; MIDR477 Build/IML74K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.0.3",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -745,13 +745,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.3; fr-fr; MIDR47B Build/eng.glwx.20121127.134615) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.0.3",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -763,13 +763,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.3; id-id; SpeedUp S3 Build/IML74K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.0.3",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -781,13 +781,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.3; id-id; Z5 Build/IML74K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.0.3",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -799,13 +799,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.3; it-it; e1809c_v75_gq1008_9p017 Build/IML74K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.0.3",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -817,13 +817,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.3; ru-ru; T-800 Build/ICS.g04w138188ref.20121030) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.0.3",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -835,13 +835,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.3; tr-tr; Broncho M7 Build/IML74K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.0.3",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -853,13 +853,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.3; tr-tr; T736 Build/IML74K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.0.3",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -871,13 +871,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.3; tr-tr; Vega Build/IML74K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.0.3",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -889,13 +889,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.3; zh-cn; I_7520 Build/IML74K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.0.3",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -907,13 +907,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.3; zh-cn; T6 Build/IML74K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.0.3",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -925,13 +925,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.3; zh-tw; M701C Build/IML74K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.0.3",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -943,13 +943,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.3; zh-tw; Playboy_PB-S3 Build/IML74K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.0.3",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -961,13 +961,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.4; ar-eg; A704J Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.0.4",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -979,13 +979,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.4; ar-eg; KB901 Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.0.4",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -997,13 +997,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.4; ar-eg; TP-107A Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.0.4",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -1015,13 +1015,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.4; en-au; A13-MID Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.0.4",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -1033,13 +1033,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.4; en-ca; MID Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.0.4",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -1051,13 +1051,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.4; en-ca; X10 Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.0.4",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -1069,13 +1069,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.4; en-eg; A13 Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.0.4",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -1087,13 +1087,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.4; en-eg; TWD_MID Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.0.4",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -1105,13 +1105,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.4; en-gb; A088 Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.0.4",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -1123,13 +1123,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.4; en-gb; Softwinerf900 Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.0.4",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -1141,13 +1141,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.4; en-gb; X906 Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.0.4",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -1159,13 +1159,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.4; en-us; 201M Build/7.7.1Q-164_SMJ-143) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.0.4",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -1177,13 +1177,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.4; en-us; ANDROID T3i Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.0.4",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -1195,13 +1195,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.4; en-us; e1809c_v75_jbl_253 Build/IML74K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.0.4",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -1213,13 +1213,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.4; en-us; e1908_v77_mt6628_hjy1a6x_9p017 Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.0.4",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -1231,13 +1231,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.4; en-us; Expad Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.0.4",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -1249,13 +1249,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.4; en-us; Gadmei ICS Build/E8HD-T364-1280x768) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.0.4",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -1267,13 +1267,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.4; en-us; IdolPad 7+ Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.0.4",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -1285,13 +1285,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.4; en-us; IS12M Build/6.7.5-50_MR1-11) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.0.4",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -1303,13 +1303,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.4; en-us; J-Q8D Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.0.4",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -1321,13 +1321,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.4; en-us; M006-Q Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.0.4",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -1339,13 +1339,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.4; en-us; N10 Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.0.4",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -1357,13 +1357,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.4; en-us; N10 Build/IMM76I) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.0.4",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -1375,13 +1375,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.4; en-us; PC721 Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.0.4",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -1393,13 +1393,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.4; en-us; Spark Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.0.4",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -1411,13 +1411,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.4; en-us; SX9701W Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.0.4",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -1429,13 +1429,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.4; en-us; TAB900 Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.0.4",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -1447,13 +1447,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.4; en-us; TVPAD Slim K3409 Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.0.4",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -1465,13 +1465,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.4; en-us; UM-A13 Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.0.4",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -1483,13 +1483,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.4; en-us; V700D Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.0.4",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -1501,13 +1501,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.4; en-us; X401 Build/IML74K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.0.4",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -1519,13 +1519,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.4; es-es; MANHATTAN Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.0.4",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -1537,13 +1537,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.4; es-es; MW0710 Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.0.4",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -1555,13 +1555,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.4; es-es; Planet II v2 Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.0.4",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -1573,13 +1573,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.4; es-es; Proton Lite Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.0.4",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -1591,13 +1591,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.4; es-es; SoftwinerEvb Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.0.4",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -1609,13 +1609,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.4; es-es; TAB-1030 Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.0.4",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -1627,13 +1627,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.4; es-us; f7 Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.0.4",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -1645,13 +1645,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.4; fr-fr; 1FC Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.0.4",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -1663,13 +1663,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.4; fr-fr; E330 Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.0.4",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -1681,13 +1681,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.4; fr-fr; MHU001D Build/MHU001D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.0.4",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -1699,13 +1699,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.4; it-it; I9220 Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.0.4",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -1717,13 +1717,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.4; ja-jp; CAL21 Build/A1000091) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.0.4",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -1735,13 +1735,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.4; ja-jp; IS12M Build/6.7.5-50_MR1-11) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.0.4",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -1753,13 +1753,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.4; ms-my; MID Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.0.4",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -1771,13 +1771,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.4; nl-nl; CRESTA.CTP888 Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.0.4",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -1789,13 +1789,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.4; pl-pl; A13-MID Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.0.4",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -1807,13 +1807,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.4; pt-br; T02A Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.0.4",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -1825,13 +1825,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.4; pt-pt; DEM752NC Build/IMM76I) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.0.4",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -1843,13 +1843,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.4; ro-ro; M1001 Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.0.4",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -1861,13 +1861,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.4; ro-ro; M1005 Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.0.4",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -1879,13 +1879,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.4; ru-ru; Advance TV Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.0.4",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -1897,13 +1897,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.4; ru-ru; DNS Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.0.4",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -1911,10 +1911,10 @@
       }
     },
     "device": {
-      "type": 1,
+      "type": 2,
       "brand": {
         "name": "DNS",
-        "code": 403
+        "code": 404
       }
     }
   },
@@ -1922,13 +1922,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.4; ru-ru; M83w Build/M83w-eng 4.0.4 IMM76D test-keys_OTA:MID_2.1.1.1_20120905.203550) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.0.4",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -1940,13 +1940,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.4; th-th; TP710 Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.0.4",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -1958,13 +1958,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.4; tr-tr; AMPE Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.0.4",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -1976,13 +1976,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.4; tr-tr; TP73G Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.0.4",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -1994,13 +1994,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.4; vi-vn; VL-110 Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.0.4",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -2012,13 +2012,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.4; zh-cn; 4S Build/GRK39F) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.0.4",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -2030,13 +2030,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.4; zh-cn; LA-I Build/IMM76I) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.0.4",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -2048,13 +2048,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.4; zh-cn; N710 Build/IMM76L) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.0.4",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -2066,13 +2066,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.4; zh-tw; DOUBLE IV Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.0.4",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -2084,13 +2084,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.4; zh-tw; ELIYA S1 Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.0.4",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -2102,13 +2102,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.4; zh-tw; PC-828 Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.0.4",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -2120,13 +2120,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.9; ru-ru; X710d Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.0.9",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -2138,13 +2138,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.1; zh-tw; 9300 Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.1",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -2156,13 +2156,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.1.0; zh-cn; Coolgen E70 G Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.1.0",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -2174,13 +2174,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.1.1; en-gb; X817 Build/JRO03H) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.1.1",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -2192,13 +2192,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.1.1; en-us; e1908_v77_jbl1_9p017_6628 Build/JRO03C) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.1.1",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -2210,13 +2210,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.1.1; en-us; I9220 Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.1.1",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -2228,13 +2228,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.1.1; es-es; I699 Build/GRK39F) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.1.1",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -2246,13 +2246,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.1.1; hu-hu; MonsterPad Build/JRO03H) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.1.1",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -2264,13 +2264,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.1.1; ja-jp; M704S Build/JRO03H) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.1.1",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -2282,13 +2282,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.1.1; pl-pl; Pro 10 dual core Build/JRO03H) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.1.1",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -2300,13 +2300,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.1.1; zh-cn; Build/JRO03C) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.1.1",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -2318,13 +2318,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.1.1; zh-cn; ifive MX Build/JRO03H) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.1.1",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -2336,13 +2336,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.1.1; zh-cn; N12GJ-QZ Build/JRO03H) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.1.1",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -2354,13 +2354,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.1.1; zh-tw; HD3 Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.1.1",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -2372,13 +2372,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.2.2; ru-ru; Alcor Zest Q813IS Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.2.2",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -2390,12 +2390,12 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.4.2; zh-cn; X5 R1 Build/KOT49H) AppleWebKit/534.24 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.24 T5/2.0 baiduboxapp/6.7 (Baidu; P1 4.4.2)",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.4.2",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Baidu Box App",
       "version": "6.7"
     }
@@ -2404,24 +2404,24 @@
     "userAgent": "Dalvik/2.1.0 (Linux## U## Android 7.1.1## Chromebook 14 (CB3-431) Build/R63-10032.86.0)",
     "os": {
       "name": "Chrome OS",
-      "code": 28,
+      "code": 29,
       "version": "10032.86.0",
       "family": "Chrome OS"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit"
       }
     },
     "device": {
-      "type": 0,
+      "type": 1,
       "model": "Chromebook 14",
       "brand": {
         "name": "Acer",
-        "code": 17
+        "code": 18
       }
     }
   },
@@ -2429,11 +2429,11 @@
     "userAgent": "bPod",
     "os": {
       "name": "BlackBerry OS",
-      "code": 17,
+      "code": 18,
       "family": "BlackBerry"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "bPod"
     }
   },
@@ -2441,25 +2441,25 @@
     "userAgent": "BREW-Applet/0x20068888 (BREW/3.1.5.20; DeviceId: 90086; Lang: zhcn) ucweb-squid",
     "os": {
       "name": "Brew",
-      "code": 21,
+      "code": 22,
       "version": "3.1.5.20",
       "family": "Brew"
     },
     "browser": {
       "name": "UC Browser",
-      "code": 604
+      "code": 605
     }
   },
   {
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.1.1; en-us; Incredible 2 Build/JRO03H; CyanogenMod-PARANOIDANDROID) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30",
     "os": {
       "name": "CyanogenMod",
-      "code": 32,
+      "code": 33,
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -2471,13 +2471,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 2.3.7; en-us; LS670 Build/GWK74; CyanogenMod-7.2.0) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1",
     "os": {
       "name": "CyanogenMod",
-      "code": 32,
+      "code": 33,
       "version": "7.2.0",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -2489,13 +2489,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 2.3.7; tr-tr; Mokee Os Build/FRG83; CyanogenMod-7.2.0) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1",
     "os": {
       "name": "CyanogenMod",
-      "code": 32,
+      "code": 33,
       "version": "7.2.0",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -2507,13 +2507,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.4; en-us; Blade Build/IMM76D; CyanogenMod-9) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30",
     "os": {
       "name": "CyanogenMod",
-      "code": 32,
+      "code": 33,
       "version": "9",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -2525,13 +2525,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.4; es-es; Skate Build/IML74K; CyanogenMod-9) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30",
     "os": {
       "name": "CyanogenMod",
-      "code": 32,
+      "code": 33,
       "version": "9",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -2543,13 +2543,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.4; fa-ir; Liberty Build/IMM76L; CyanogenMod-9.0.0) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30",
     "os": {
       "name": "CyanogenMod",
-      "code": 32,
+      "code": 33,
       "version": "9.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -2561,13 +2561,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 2.3.6; zh-cn; SPHS on Hsdroid Build/MocorDroid2.3.5) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1",
     "os": {
       "name": "MocorDroid",
-      "code": 89,
+      "code": 90,
       "version": "2.3.5",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -2579,13 +2579,13 @@
     "userAgent": "Mozilla/1.10 [en] (Compatible; RISC OS 3.70; Oregano 1.10)",
     "os": {
       "name": "RISC OS",
-      "code": 129,
+      "code": 130,
       "version": "3.70",
       "family": "RISC OS"
     },
     "browser": {
       "name": "Oregano",
-      "code": 426,
+      "code": 427,
       "version": "1.10"
     }
   },
@@ -2593,7 +2593,7 @@
     "userAgent": "Mozilla/4.01 (Compatible; Acorn Browse 1.25 [23-Oct-97] AW  97; RISC OS 4.39) Acorn-HTTP/0.84",
     "os": {
       "name": "RISC OS",
-      "code": 129,
+      "code": 130,
       "version": "4.39",
       "family": "RISC OS"
     }
@@ -2602,13 +2602,13 @@
     "userAgent": "Mozilla/3.04 (compatible; NCBrowser/2.35; ANTFresco/2.17; RISC OS-NC 5.13 Laz1UK1309)",
     "os": {
       "name": "RISC OS",
-      "code": 129,
+      "code": 130,
       "version": "5.13",
       "family": "RISC OS"
     },
     "browser": {
       "name": "ANT Fresco",
-      "code": 38,
+      "code": 39,
       "version": "2.17"
     }
   },
@@ -2616,13 +2616,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Tizen/1.0 like Android; en-us; AppleWebKit/534.46 (KHTML, like Gecko) Tizen Browser/1.0 Mobile",
     "os": {
       "name": "Tizen",
-      "code": 157,
+      "code": 158,
       "version": "1.0",
       "family": "Other Mobile"
     },
     "browser": {
       "name": "Tizen Browser",
-      "code": 590,
+      "code": 591,
       "version": "1.0",
       "engine": {
         "name": "WebKit",
@@ -2634,12 +2634,12 @@
     "userAgent": "Mozilla/4.0 (compatible; MSIE 4.01; Windows NT Windows CE)",
     "os": {
       "name": "Windows CE",
-      "code": 171,
+      "code": 172,
       "family": "Windows Mobile"
     },
     "browser": {
       "name": "Internet Explorer",
-      "code": 285,
+      "code": 286,
       "version": "4.01",
       "family": "Internet Explorer",
       "engine": {
@@ -2651,12 +2651,12 @@
     "userAgent": "Opera/9.80 (Windows Mobile; WCE; Opera Mobi/WMD-50433; U; en) Presto/2.4.13 Version/10.00",
     "os": {
       "name": "Windows Mobile",
-      "code": 173,
+      "code": 174,
       "family": "Windows Mobile"
     },
     "browser": {
       "name": "Opera Mobile",
-      "code": 419,
+      "code": 420,
       "version": "10.00",
       "family": "Opera",
       "engine": {
@@ -2669,12 +2669,12 @@
     "userAgent": "Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0; XBLWP7; ZuneWP7)",
     "os": {
       "name": "Windows Phone",
-      "code": 174,
+      "code": 175,
       "family": "Windows Mobile"
     },
     "browser": {
       "name": "IE Mobile",
-      "code": 292,
+      "code": 293,
       "version": "9.0",
       "family": "Internet Explorer",
       "engine": {
@@ -2687,19 +2687,19 @@
     "userAgent": "SubStream/0.7 CFNetwork/485.12.30 Darwin/10.4.0",
     "os": {
       "name": "iOS",
-      "code": 182,
+      "code": 183,
       "version": "4.2",
       "family": "iOS"
     },
     "client": {
-      "type": 1,
+      "type": 2,
       "name": "SubStream",
       "version": "0.7"
     },
     "device": {
       "brand": {
         "name": "Apple",
-        "code": 97
+        "code": 98
       }
     }
   },
@@ -2707,13 +2707,13 @@
     "userAgent": "Mozilla/5.0 (Linux; diordnA 9) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Focus/8.0.9 Chrome/85.0.4183.127 eliboM Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "9",
       "family": "Android"
     },
     "browser": {
       "name": "Firefox Focus",
-      "code": 213,
+      "code": 214,
       "version": "8.0.9",
       "engine": {
         "name": "Blink",
@@ -2721,20 +2721,20 @@
       }
     },
     "device": {
-      "type": 1
+      "type": 2
     }
   },
   {
     "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Safari/537.36 Edg/77.07.4.5059",
     "os": {
       "name": "GNU/Linux",
-      "code": 72,
+      "code": 73,
       "cpuArchitecture": "x64",
       "family": "GNU/Linux"
     },
     "browser": {
       "name": "Microsoft Edge",
-      "code": 488,
+      "code": 489,
       "version": "77.07.4.5059",
       "family": "Internet Explorer",
       "engine": {
@@ -2743,20 +2743,20 @@
       }
     },
     "device": {
-      "type": 0
+      "type": 1
     }
   },
   {
     "userAgent": "Mozilla/5.0 (Linux; Tizen 2.3) AppleWebKit/538.1 (KHTML, like Gecko)Version/2.3 TV Safari/538.1",
     "os": {
       "name": "Tizen",
-      "code": 157,
+      "code": 158,
       "version": "2.3",
       "family": "Other Mobile"
     },
     "browser": {
       "name": "Safari",
-      "code": 523,
+      "code": 524,
       "version": "2.3",
       "family": "Safari",
       "engine": {
@@ -2765,13 +2765,13 @@
       }
     },
     "device": {
-      "type": 5
+      "type": 6
     }
   },
   {
     "userAgent": "GRequests/0.10",
     "client": {
-      "type": 2,
+      "type": 3,
       "name": "GRequests",
       "version": "0.10"
     }
@@ -2780,13 +2780,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.4.4; Speed Tablet 13.3 Quad Core Build/KTU84Q; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Safari/537.36 OPR/24.0.2254.115213",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.4.4",
       "family": "Android"
     },
     "browser": {
       "name": "Opera",
-      "code": 420,
+      "code": 421,
       "version": "24.0.2254.115213",
       "family": "Opera",
       "engine": {
@@ -2795,20 +2795,20 @@
       }
     },
     "device": {
-      "type": 2
+      "type": 3
     }
   },
   {
     "userAgent": "Mozilla/5.0 (Linux; Android 8.0.0; Base Shell LSC320AN10 Build/OPR5.170623.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/61.0.3163.98 Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "8.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Webview",
-      "code": 161,
+      "code": 162,
       "version": "61.0.3163.98",
       "family": "Chrome",
       "engine": {
@@ -2817,20 +2817,20 @@
       }
     },
     "device": {
-      "type": 5
+      "type": 6
     }
   },
   {
     "userAgent": "Mozilla/5.0 (Linux; Android 8.0.0; Base Shell LK315T3HB87 Build/OPR5.170623.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/61.0.3163.98 Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "8.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Webview",
-      "code": 161,
+      "code": 162,
       "version": "61.0.3163.98",
       "family": "Chrome",
       "engine": {
@@ -2839,20 +2839,20 @@
       }
     },
     "device": {
-      "type": 5
+      "type": 6
     }
   },
   {
     "userAgent": "Mozilla/5.0 (Linux; Android 8.0.0; Base Shell LC390TA2A Build/OPR5.170623.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/61.0.3163.98 Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "8.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Webview",
-      "code": 161,
+      "code": 162,
       "version": "61.0.3163.98",
       "family": "Chrome",
       "engine": {
@@ -2861,20 +2861,20 @@
       }
     },
     "device": {
-      "type": 5
+      "type": 6
     }
   },
   {
     "userAgent": "Mozilla/5.0 (Linux; Android 4.4.4; WildRed Shell V400HJ6_PE1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.4.4",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome",
-      "code": 137,
+      "code": 138,
       "version": "77.0.3865.116",
       "family": "Chrome",
       "engine": {
@@ -2883,20 +2883,20 @@
       }
     },
     "device": {
-      "type": 5
+      "type": 6
     }
   },
   {
     "userAgent": "Mozilla/5.0 (Linux; Android 4.4.4; WildRed Shell V320BJ6_Q01) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.96 Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.4.4",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome",
-      "code": 137,
+      "code": 138,
       "version": "78.0.3904.96",
       "family": "Chrome",
       "engine": {
@@ -2905,20 +2905,20 @@
       }
     },
     "device": {
-      "type": 5
+      "type": 6
     }
   },
   {
     "userAgent": "Mozilla/5.0 (Linux; Android 4.4.2; G700 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36 OPR/51.2.2461.137690",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.4.2",
       "family": "Android"
     },
     "browser": {
       "name": "Opera",
-      "code": 420,
+      "code": 421,
       "version": "51.2.2461.137690",
       "family": "Opera",
       "engine": {
@@ -2927,20 +2927,20 @@
       }
     },
     "device": {
-      "type": 2
+      "type": 3
     }
   },
   {
     "userAgent": "Mozilla/5.0 (Linux; Android 5.1; MZ-Fast Build/LMY47D) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/45.0.2454.94 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "5.1",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Webview",
-      "code": 161,
+      "code": 162,
       "version": "45.0.2454.94",
       "family": "Chrome",
       "engine": {
@@ -2949,20 +2949,20 @@
       }
     },
     "device": {
-      "type": 1
+      "type": 2
     }
   },
   {
     "userAgent": "Mozilla/5.0 (Linux; Android 8.1.0; K4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "8.1.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome",
-      "code": 137,
+      "code": 138,
       "version": "96.0.4664.45",
       "family": "Chrome",
       "engine": {
@@ -2971,20 +2971,20 @@
       }
     },
     "device": {
-      "type": 2
+      "type": 3
     }
   },
   {
     "userAgent": "Mozilla/5.0 (Linux; U; Android 8.1.0; en-us; K5 Build/JOP24G) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/69.0.3497.100 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "8.1.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Webview",
-      "code": 161,
+      "code": 162,
       "version": "69.0.3497.100",
       "family": "Chrome",
       "engine": {
@@ -2993,20 +2993,20 @@
       }
     },
     "device": {
-      "type": 1
+      "type": 2
     }
   },
   {
     "userAgent": "Mozilla/5.0 (Linux; Android 8.1.0; K6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.92 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "8.1.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "96.0.4664.92",
       "family": "Chrome",
       "engine": {
@@ -3015,20 +3015,20 @@
       }
     },
     "device": {
-      "type": 1
+      "type": 2
     }
   },
   {
     "userAgent": "Mozilla/5.0 (Linux; Android 9; Default string) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.101 Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "9",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome",
-      "code": 137,
+      "code": 138,
       "version": "75.0.3770.101",
       "family": "Chrome",
       "engine": {
@@ -3037,20 +3037,20 @@
       }
     },
     "device": {
-      "type": 2
+      "type": 3
     }
   },
   {
     "userAgent": "Mozilla/5.0 (Linux; Android 11; Android_Device) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/96.0.4664.92 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Webview",
-      "code": 161,
+      "code": 162,
       "version": "96.0.4664.92",
       "family": "Chrome",
       "engine": {
@@ -3059,20 +3059,20 @@
       }
     },
     "device": {
-      "type": 1
+      "type": 2
     }
   },
   {
     "userAgent": "Mozilla/5.0 (Linux; Android 9; Unspecified Device) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.0.0 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "9",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "91.0.0.0",
       "family": "Chrome",
       "engine": {
@@ -3081,19 +3081,19 @@
       }
     },
     "device": {
-      "type": 1
+      "type": 2
     }
   },
   {
     "userAgent": "Mozilla/5.0 (Linux; Plasma Mobile, like Android 9.0) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.14.2 Chrome/75.0.3770.116 Mobile Safari/537.36",
     "os": {
       "name": "Plasma Mobile",
-      "code": 115,
+      "code": 116,
       "family": "GNU/Linux"
     },
     "browser": {
       "name": "QtWebEngine",
-      "code": 503,
+      "code": 504,
       "version": "5.14.2",
       "family": "Chrome",
       "engine": {
@@ -3102,27 +3102,27 @@
       }
     },
     "device": {
-      "type": 1
+      "type": 2
     }
   },
   {
     "userAgent": "Dalvik/2.1.0 (Linux; U; Android 10; audi_ks1280x480 Build/PPR1.180610.011)",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "10",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit"
       }
     },
     "device": {
-      "type": 6,
+      "type": 7,
       "model": "Audi KS"
     }
   },
@@ -3130,13 +3130,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 7.0; ks1280x480) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.98 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "7.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "97.0.4692.98",
       "family": "Chrome",
       "engine": {
@@ -3145,7 +3145,7 @@
       }
     },
     "device": {
-      "type": 6,
+      "type": 7,
       "model": "Audi KS"
     }
   },
@@ -3153,13 +3153,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 7.1.2; AOSP on r33a0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.93 Safari/537.36 EdgA/96.0.1054.53",
     "os": {
       "name": "Android TV",
-      "code": 2,
+      "code": 3,
       "version": "7.1.2",
       "family": "Android"
     },
     "browser": {
       "name": "Microsoft Edge",
-      "code": 488,
+      "code": 489,
       "version": "96.0.1054.53",
       "family": "Internet Explorer",
       "engine": {
@@ -3168,20 +3168,20 @@
       }
     },
     "device": {
-      "type": 5
+      "type": 6
     }
   },
   {
     "userAgent": "Mozilla/5.0 (Linux; Android 7.1.2; hx322x_box) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.73 Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "7.1.2",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome",
-      "code": 137,
+      "code": 138,
       "version": "99.0.4844.73",
       "family": "Chrome",
       "engine": {
@@ -3190,21 +3190,21 @@
       }
     },
     "device": {
-      "type": 5
+      "type": 6
     }
   },
   {
     "userAgent": "Mozilla/5.0 (Linux; arm; Android 11; X98_S500) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 YaBrowser/23.5.0.256.01 Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "cpuArchitecture": "ARM",
       "family": "Android"
     },
     "browser": {
       "name": "Yandex Browser",
-      "code": 653,
+      "code": 654,
       "version": "23.5.0.256.01",
       "engine": {
         "name": "Blink",
@@ -3212,7 +3212,7 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "X98 S500"
     }
   },
@@ -3223,12 +3223,12 @@
     },
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "family": "Android"
     },
     "browser": {
       "name": "Every Browser",
-      "code": 189,
+      "code": 190,
       "family": "Chrome",
       "engine": {
         "name": "Blink"
@@ -3242,31 +3242,31 @@
       "sec-ch-ua-model": "\"Some Unknown Model\""
     },
     "device": {
-      "type": 12,
+      "type": 13,
       "model": "Some Unknown Model"
     }
   },
   {
     "userAgent": "Microsoft Office Word/16.78.1008 (Desktop; Desktop app; Unknown/Unknown)",
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Microsoft Office Word",
       "version": "16.78.1008"
     },
     "device": {
-      "type": 0
+      "type": 1
     }
   },
   {
     "userAgent": "Mozilla/5.0 (Linux;) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36 SRAF/4.0 (; SERAPHIC; SERAPHIC; v4.0; v1.0; ); CE-HTML/1.0 hbbtv NETRANGEMMH",
     "os": {
       "name": "GNU/Linux",
-      "code": 72,
+      "code": 73,
       "family": "GNU/Linux"
     },
     "browser": {
       "name": "Seraphic Sraf",
-      "code": 540,
+      "code": 541,
       "version": "4.0",
       "family": "Chrome",
       "engine": {
@@ -3275,19 +3275,19 @@
       }
     },
     "device": {
-      "type": 5
+      "type": 6
     }
   },
   {
     "userAgent": "Mozilla/5.0 (Linux ) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36 OPR/40.0.2207.0 OMI/4.9.0.237.DOM3-OPT.253 Model/Vestel-MB211 VSTVB MB200 HbbTV/1.2.1 (; TEST; MB211; 3.33.17.0; _TV_NT72563_2017;) SmartTvA/3.0.0",
     "os": {
       "name": "GNU/Linux",
-      "code": 72,
+      "code": 73,
       "family": "GNU/Linux"
     },
     "browser": {
       "name": "Opera Devices",
-      "code": 417,
+      "code": 418,
       "version": "4.9.0.237",
       "family": "Opera",
       "engine": {
@@ -3296,7 +3296,7 @@
       }
     },
     "device": {
-      "type": 5,
+      "type": 6,
       "model": "Smart TV (2017)"
     }
   },
@@ -3304,13 +3304,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 9.0.0; P1 Build/PQ3B.190801.002; wv-atv; mse) Google/1.0.0 AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/43.0.2357.65 Mobile Safari/537.36",
     "os": {
       "name": "Android TV",
-      "code": 2,
+      "code": 3,
       "version": "9.0.0",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Webview",
-      "code": 161,
+      "code": 162,
       "version": "43.0.2357.65",
       "family": "Chrome",
       "engine": {
@@ -3319,7 +3319,7 @@
       }
     },
     "device": {
-      "type": 5
+      "type": 6
     }
   },
   {
@@ -3336,18 +3336,18 @@
     },
     "os": {
       "name": "GNU/Linux",
-      "code": 72,
+      "code": 73,
       "version": "5.19.0",
       "cpuArchitecture": "x86",
       "family": "GNU/Linux"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Facebook",
       "version": "445.0.0.35.117"
     },
     "device": {
-      "type": 0
+      "type": 1
     }
   },
   {
@@ -3362,14 +3362,14 @@
     },
     "os": {
       "name": "Windows",
-      "code": 170,
+      "code": 171,
       "version": "10",
       "cpuArchitecture": "x86",
       "family": "Windows"
     },
     "browser": {
       "name": "Chrome Mobile iOS",
-      "code": 138,
+      "code": 139,
       "version": "79.0.3945.73",
       "family": "Chrome",
       "engine": {
@@ -3378,21 +3378,21 @@
       }
     },
     "device": {
-      "type": 0
+      "type": 1
     }
   },
   {
     "userAgent": "ESPN Watch Extension/6396 CFNetwork/1333.0.4 Darwin/21.5.0",
     "os": {
       "name": "iOS",
-      "code": 182,
+      "code": 183,
       "version": "15.5",
       "family": "iOS"
     },
     "device": {
       "brand": {
         "name": "Apple",
-        "code": 97
+        "code": 98
       }
     }
   },
@@ -3400,13 +3400,13 @@
     "userAgent": "Mozilla/5.0 (X11; U; Linux armv7l; en-GB; rv:1.9.2a1pre) Gecko/20090514 Firefox/3.0 Tablet browser 0.9.7 RX-34",
     "os": {
       "name": "GNU/Linux",
-      "code": 72,
+      "code": 73,
       "cpuArchitecture": "ARM",
       "family": "GNU/Linux"
     },
     "browser": {
       "name": "MicroB",
-      "code": 350,
+      "code": 351,
       "version": "0.9.7",
       "family": "Firefox",
       "engine": {
@@ -3415,38 +3415,38 @@
       }
     },
     "device": {
-      "type": 2
+      "type": 3
     }
   },
   {
     "userAgent": "Pinterest for Android Tablet/11.42.2 (trona; 9)",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "9",
       "family": "Android"
     },
     "client": {
-      "type": 0,
+      "type": 1,
       "name": "Pinterest",
       "version": "11.42.2"
     },
     "device": {
-      "type": 2
+      "type": 3
     }
   },
   {
     "userAgent": "Mozilla/5.0 (Linux; Android 11; WayDroid x86_64 Device) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3602.0 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "11",
       "cpuArchitecture": "x64",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "72.0.3602.0",
       "family": "Chrome",
       "engine": {
@@ -3455,20 +3455,20 @@
       }
     },
     "device": {
-      "type": 0
+      "type": 1
     }
   },
   {
     "userAgent": "Mozilla/5.0 (X11; U; U; Linux x86_64; es-pe) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.136 Safari/537.36 Puffin/9.3.0.51570AV",
     "os": {
       "name": "GNU/Linux",
-      "code": 72,
+      "code": 73,
       "cpuArchitecture": "x64",
       "family": "GNU/Linux"
     },
     "browser": {
       "name": "Puffin Web Browser",
-      "code": 452,
+      "code": 453,
       "version": "9.3.0.51570",
       "family": "Chrome",
       "engine": {
@@ -3481,13 +3481,13 @@
     "userAgent": "Mozilla/5.0 (X11; U; Linux i686; th-TH@calendar=gregorian) AppleWebKit/534.12 (KHTML, like Gecko) Puffin/1.3.2665MS Safari/534.12",
     "os": {
       "name": "GNU/Linux",
-      "code": 72,
+      "code": 73,
       "cpuArchitecture": "x86",
       "family": "GNU/Linux"
     },
     "browser": {
       "name": "Puffin Web Browser",
-      "code": 452,
+      "code": 453,
       "version": "1.3.2665",
       "family": "Chrome",
       "engine": {
@@ -3500,13 +3500,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 2.2.1; es-us) AppleWebKit/534.12 (KHTML, like Gecko) Puffin/1.3.2913S Mobile Safari/534.12",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "2.2.1",
       "family": "Android"
     },
     "browser": {
       "name": "Puffin Web Browser",
-      "code": 452,
+      "code": 453,
       "version": "1.3.2913",
       "family": "Chrome",
       "engine": {
@@ -3519,13 +3519,13 @@
     "userAgent": "Mozilla/5.0 (PC; OpenHarmony 5.0; HarmonyOS 5.0) AppleWebKit/537.36 (KHTML,like Gecko) Chrome/114.0.0.0 Safari/537.36 ArkWeb/4.1.6.1 Browser/harmony360Browser/1.0.0",
     "os": {
       "name": "OpenHarmony",
-      "code": 187,
+      "code": 188,
       "version": "5.0",
       "family": "Android"
     },
     "browser": {
       "name": "Harmony 360 Browser",
-      "code": 682,
+      "code": 683,
       "version": "1.0.0",
       "engine": {
         "name": "ArkWeb",
@@ -3533,14 +3533,14 @@
       }
     },
     "device": {
-      "type": 0
+      "type": 1
     }
   },
   {
     "userAgent": "Mozilla/4.0 (compatible; Gecko/20041115) Maple 5.0.0 Navi",
     "browser": {
       "name": "Maple",
-      "code": 346,
+      "code": 347,
       "version": "5.0.0",
       "engine": {
         "name": "Maple",

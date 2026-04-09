@@ -2,7 +2,7 @@
   {
     "brand": "Apple",
     "regex": "(?:Apple-)?iPod",
-    "type": 9,
+    "type": 10,
     "modelVariants": [
       {
         "regex": "(?:Apple-)?iPod1[C,_]?1",
@@ -41,13 +41,13 @@
   {
     "brand": "Cowon",
     "regex": "COWON ([^;/]+) Build",
-    "type": 9,
+    "type": 10,
     "model": "$1"
   },
   {
     "brand": "FiiO",
     "regex": "FiiO",
-    "type": 9,
+    "type": 10,
     "modelVariants": [
       {
         "regex": "M11 Plus LTD",
@@ -62,19 +62,19 @@
   {
     "brand": "Microsoft",
     "regex": "Microsoft ZuneHD",
-    "type": 9,
+    "type": 10,
     "model": "Zune HD"
   },
   {
     "brand": "Panasonic",
     "regex": "(SV-MV100)",
-    "type": 9,
+    "type": 10,
     "model": "$1"
   },
   {
     "brand": "Samsung",
     "regex": "YP-(G[SIPB]?1|G[57]0|GB70D)",
-    "type": 9,
+    "type": 10,
     "modelVariants": [
       {
         "regex": "YP-G[B]?1",
@@ -109,13 +109,13 @@
   {
     "brand": "Wizz",
     "regex": "(DV-PTB1080)(?:[);/ ]|$)",
-    "type": 9,
+    "type": 10,
     "model": "$1"
   },
   {
     "brand": "Shanling",
     "regex": "Shanling M6",
-    "type": 9,
+    "type": 10,
     "modelVariants": [
       {
         "regex": "Shanling (M6\\(21\\))",
@@ -126,25 +126,25 @@
   {
     "brand": "Sylvania",
     "regex": "(SLTDVD102[34])",
-    "type": 9,
+    "type": 10,
     "model": "$1"
   },
   {
     "brand": "KuGou",
     "regex": "KuGou[_ -](P5)",
-    "type": 9,
+    "type": 10,
     "model": "$1"
   },
   {
     "brand": "Surfans",
     "regex": "(Y57A)(?:[);/ ]|$)",
-    "type": 9,
+    "type": 10,
     "model": "$1"
   },
   {
     "brand": "Oilsky",
     "regex": "Oilsky (M501|M303)(?:-Pro)?(?:[);/ ]|$)",
-    "type": 9,
+    "type": 10,
     "modelVariants": [
       {
         "regex": "M303-Pro",
@@ -159,13 +159,13 @@
   {
     "brand": "Diofox",
     "regex": "Diofox[ _](M8|M10|M508)(?:[);/ ]|$)",
-    "type": 9,
+    "type": 10,
     "model": "$1"
   },
   {
     "brand": "MECHEN",
     "regex": "MECHEN",
-    "type": 9,
+    "type": 10,
     "modelVariants": [
       {
         "regex": "MECHEN[- _]([^;/)]+)[- _]Pro(?: Build|[);])",
@@ -180,7 +180,7 @@
   {
     "regex": "Fanvace",
     "brand": "Fanvace",
-    "type": 9,
+    "type": 10,
     "modelVariants": [
       {
         "regex": "Fanvace[- _]([^;/)]+)(?: Build|[);])",

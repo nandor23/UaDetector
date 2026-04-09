@@ -3,13 +3,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 2.3.3; ja-jp; COOLPIX S800c Build/CP01_WW) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "2.3.3",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -17,11 +17,11 @@
       }
     },
     "device": {
-      "type": 8,
+      "type": 9,
       "model": "Coolpix S800c",
       "brand": {
         "name": "Nikon",
-        "code": 1203
+        "code": 1204
       }
     }
   },
@@ -29,13 +29,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 5.0.2; DMC-CM1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.92 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "5.0.2",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "77.0.3865.92",
       "family": "Chrome",
       "engine": {
@@ -44,11 +44,11 @@
       }
     },
     "device": {
-      "type": 8,
+      "type": 9,
       "model": "Lumix DMC-CM1",
       "brand": {
         "name": "Panasonic",
-        "code": 1312
+        "code": 1313
       }
     }
   },
@@ -56,13 +56,13 @@
     "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0; de-DE; EK-GC100 Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.0",
       "family": "Android"
     },
     "browser": {
       "name": "Android Browser",
-      "code": 48,
+      "code": 49,
       "family": "Android Browser",
       "engine": {
         "name": "WebKit",
@@ -70,11 +70,11 @@
       }
     },
     "device": {
-      "type": 8,
+      "type": 9,
       "model": "Galaxy Camera",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -82,13 +82,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 4.1.2; EK-GC100 Build/JZO54K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.63 Mobile Safari/537.36 OPR/15.0.1162.60140",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.1.2",
       "family": "Android"
     },
     "browser": {
       "name": "Opera Mobile",
-      "code": 419,
+      "code": 420,
       "version": "15.0.1162.60140",
       "family": "Opera",
       "engine": {
@@ -97,11 +97,11 @@
       }
     },
     "device": {
-      "type": 8,
+      "type": 9,
       "model": "Galaxy Camera",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -109,13 +109,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 4.3; EK-GC200 Build/JSS15J) AppleWebKit/537.36 (KHTML like Gecko) Chrome/35.0.1916.141 Mobile Safari/537.36",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.3",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "35.0.1916.141",
       "family": "Chrome",
       "engine": {
@@ -124,11 +124,11 @@
       }
     },
     "device": {
-      "type": 8,
+      "type": 9,
       "model": "Galaxy Camera 2",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -136,13 +136,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 4.1.2; EK-GC110 Build/JZO54K) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166 Mobile Safari/535.19",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.1.2",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Mobile",
-      "code": 140,
+      "code": 141,
       "version": "18.0.1025.166",
       "family": "Chrome",
       "engine": {
@@ -151,11 +151,11 @@
       }
     },
     "device": {
-      "type": 8,
+      "type": 9,
       "model": "Galaxy Camera WiFi only",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   },
@@ -163,13 +163,13 @@
     "userAgent": "Mozilla/5.0 (Linux; Android 4.2.2; en-nz; SAMSUNG EK-GN120 Build/JDQ39) AppleWebKit/535.19 (KHTML, like Gecko) Version/1.0 Chrome/18.0.1025.308 Mobile Safari/535.19",
     "os": {
       "name": "Android",
-      "code": 1,
+      "code": 2,
       "version": "4.2.2",
       "family": "Android"
     },
     "browser": {
       "name": "Chrome Webview",
-      "code": 161,
+      "code": 162,
       "version": "18.0.1025.308",
       "family": "Chrome",
       "engine": {
@@ -178,11 +178,11 @@
       }
     },
     "device": {
-      "type": 8,
+      "type": 9,
       "model": "Galaxy NX",
       "brand": {
         "name": "Samsung",
-        "code": 1496
+        "code": 1497
       }
     }
   }
