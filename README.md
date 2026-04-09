@@ -142,14 +142,14 @@ Mozilla/5.0 (Linux; Android 14; SAMSUNG SM-S926B) AppleWebKit/537.36 (KHTML, lik
 {
   "os": {
     "name": "Android",
-    "code": 1,
+    "code": 2,
     "version": "14",
     "cpuArchitecture": null,
     "family": "Android"
   },
   "browser": {
     "name": "Samsung Browser",
-    "code": 512,
+    "code": 513,
     "version": "23.0",
     "family": "Chrome",
     "engine": {
@@ -159,11 +159,11 @@ Mozilla/5.0 (Linux; Android 14; SAMSUNG SM-S926B) AppleWebKit/537.36 (KHTML, lik
   },
   "client": null,
   "device": {
-    "type": 1,
+    "type": 2,
     "model": "Galaxy S24+",
     "brand": {
       "name": "Samsung",
-      "code": 1496
+      "code": 1497
     }
   },
   "bot": null
