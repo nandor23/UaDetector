@@ -1,6 +1,6 @@
-namespace UaDetector;
+namespace UaDetector.Abstractions;
 
-internal interface IUaDetectorCache
+public interface IUaDetectorCache
 {
     bool TryGet<T>(string key, out T? value);
     bool Set<T>(string key, T? value);

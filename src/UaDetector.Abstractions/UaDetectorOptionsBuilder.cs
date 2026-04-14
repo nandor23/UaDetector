@@ -1,6 +1,6 @@
 using UaDetector.Abstractions.Enums;
 
-namespace UaDetector;
+namespace UaDetector.Abstractions;
 
 public sealed class UaDetectorOptionsBuilder
 {
@@ -8,13 +8,13 @@ public sealed class UaDetectorOptionsBuilder
     public bool DisableBotDetection { get; set; }
     private IUaDetectorCache? Cache { get; set; }
 
-    internal UaDetectorOptionsBuilder AddCache(IUaDetectorCache cache)
+    public UaDetectorOptionsBuilder AddCache(IUaDetectorCache cache)
     {
         Cache = cache;
         return this;
     }
 
-    internal UaDetectorOptions Build()
+    public UaDetectorOptions Build()
     {
         return new UaDetectorOptions
         {

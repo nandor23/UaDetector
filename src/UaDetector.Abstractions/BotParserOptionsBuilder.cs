@@ -1,16 +1,16 @@
-namespace UaDetector;
+namespace UaDetector.Abstractions;
 
 public sealed class BotParserOptionsBuilder
 {
     private IUaDetectorCache? Cache { get; set; }
 
-    internal BotParserOptionsBuilder AddCache(IUaDetectorCache cache)
+    public BotParserOptionsBuilder AddCache(IUaDetectorCache cache)
     {
         Cache = cache;
         return this;
     }
 
-    internal BotParserOptions Build()
+    public BotParserOptions Build()
     {
         return new BotParserOptions { Cache = Cache };
     }

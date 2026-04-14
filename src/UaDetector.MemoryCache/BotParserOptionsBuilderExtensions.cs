@@ -1,3 +1,5 @@
+using UaDetector.Abstractions;
+
 namespace UaDetector.MemoryCache;
 
 public static class BotParserOptionsBuilderExtensions

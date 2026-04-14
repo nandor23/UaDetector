@@ -1,5 +1,6 @@
 using System.Collections.Immutable;
 using System.Diagnostics.CodeAnalysis;
+using UaDetector.Abstractions;
 using UaDetector.Abstractions.Models;
 using UaDetector.Parsers.Clients;
 
