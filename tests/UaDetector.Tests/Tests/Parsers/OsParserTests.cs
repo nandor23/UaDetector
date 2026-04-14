@@ -1,4 +1,5 @@
 using Shouldly;
+using UaDetector.Abstractions;
 using UaDetector.Abstractions.Enums;
 using UaDetector.Abstractions.Models;
 using UaDetector.Parsers;

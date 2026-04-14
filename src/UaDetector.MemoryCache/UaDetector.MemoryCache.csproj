@@ -17,6 +17,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\UaDetector\UaDetector.csproj" />
+    <ProjectReference Include="..\UaDetector.Abstractions\UaDetector.Abstractions.csproj" />
   </ItemGroup>
 </Project>
