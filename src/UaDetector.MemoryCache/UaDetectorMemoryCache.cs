@@ -1,4 +1,5 @@
 using Microsoft.Extensions.Caching.Memory;
+using UaDetector.Abstractions;
 
 namespace UaDetector.MemoryCache;
 

@@ -1,3 +1,4 @@
+using UaDetector.Abstractions;
 using UaDetector.Abstractions.Enums;
 
 namespace UaDetector;

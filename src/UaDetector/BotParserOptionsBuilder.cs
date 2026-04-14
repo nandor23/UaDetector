@@ -1,3 +1,5 @@
+using UaDetector.Abstractions;
+
 namespace UaDetector;
 
 public sealed class BotParserOptionsBuilder
