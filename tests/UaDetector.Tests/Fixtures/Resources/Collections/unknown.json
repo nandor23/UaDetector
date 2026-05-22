@@ -3547,5 +3547,23 @@
         "version": "5.0.0"
       }
     }
+  },
+  {
+    "userAgent": "Opera/9.47.(Windows CE; km-KH) Presto/2.9.173 Version/10.0",
+    "os": {
+      "name": "Windows CE",
+      "code": 172,
+      "family": "Windows Mobile"
+    },
+    "browser": {
+      "name": "Opera",
+      "code": 421,
+      "version": "9.47",
+      "family": "Opera",
+      "engine": {
+        "name": "Presto",
+        "version": "2.9.173"
+      }
+    }
   }
 ]
