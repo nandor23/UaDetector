@@ -2717,6 +2717,11 @@
         "name": "iPhone Air"
       },
       {
+        "regex": "(?:MDCR_|ICRU_|Apple-)?iPh(?:one)?18[C,_]5|(?:iPhone[ _]?17e| 17e)(?:[);/ ]|$)",
+        "type": 11,
+        "name": "iPhone 17e"
+      },
+      {
         "regex": "(?:MDCR_|ICRU_|Apple-)?iPad1[C,_]1",
         "type": 3,
         "name": "iPad"
