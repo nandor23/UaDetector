@@ -9266,5 +9266,27 @@
         "code": 744
       }
     }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 26_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/23D8133 Barcelona 379.0.0.26.99 (iPhone18,5; iOS 26_3_1; en_GB; en-GB; scale=3.00; 1170x2532; 729743846)",
+    "os": {
+      "name": "iOS",
+      "code": 183,
+      "version": "26.3.1",
+      "family": "iOS"
+    },
+    "client": {
+      "type": 1,
+      "name": "Threads",
+      "version": "379.0.0.26.99"
+    },
+    "device": {
+      "type": 11,
+      "model": "iPhone 17e",
+      "brand": {
+        "name": "Apple",
+        "code": 98
+      }
+    }
   }
 ]
