@@ -14913,5 +14913,16 @@
         "name": "WebKit"
       }
     }
+  },
+  {
+    "userAgent": "com.huawei.hmos.browser (2in1;OpenHarmony-6.0.2.130;HAD-W24) NetworkSDK/8.0.10.309",
+    "browser": {
+      "name": "Huawei Browser",
+      "code": 266,
+      "family": "Chrome",
+      "engine": {
+        "name": "ArkWeb"
+      }
+    }
   }
 ]

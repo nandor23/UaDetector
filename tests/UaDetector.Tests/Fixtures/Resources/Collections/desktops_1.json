@@ -185,5 +185,30 @@
     "device": {
       "type": 1
     }
+  },
+  {
+    "userAgent": "com.huawei.hmos.browser (2in1;OpenHarmony-6.0.2.130;HAD-W24) NetworkSDK/8.0.10.309",
+    "os": {
+      "name": "HarmonyOS NEXT",
+      "code": 203,
+      "version": "6.0.2.130",
+      "family": "OpenHarmony"
+    },
+    "browser": {
+      "name": "Huawei Browser",
+      "code": 266,
+      "family": "Chrome",
+      "engine": {
+        "name": "ArkWeb"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "MateBook Pro",
+      "brand": {
+        "name": "Huawei",
+        "code": 758
+      }
+    }
   }
 ]
