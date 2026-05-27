@@ -3875,7 +3875,7 @@
     }
   },
   {
-    "regex": "(?:com\\.apple\\.WebKit\\.Networking|NetworkingExtension)/(\\d+[.\\d]+).+ CFNetwork",
+    "regex": "(?:com\\.apple\\.WebKit\\.Networking|com\\.apple\\.AuthenticationServicesCore\\.AuthenticationServicesAgent|NetworkingExtension)/(\\d+[.\\d]+).+ (?:CF)?Network",
     "name": "Safari",
     "version": "$1",
     "engine": {

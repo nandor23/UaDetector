@@ -14889,5 +14889,29 @@
         "version": "136.0.0.0"
       }
     }
+  },
+  {
+    "userAgent": "com.apple.AuthenticationServicesCore.AuthenticationServicesAgent/8623.2.7.10.4 CFNetwork/3860.400.51 Darwin/25.3.0",
+    "browser": {
+      "name": "Safari",
+      "code": 524,
+      "version": "8623.2.7.10",
+      "family": "Safari",
+      "engine": {
+        "name": "WebKit"
+      }
+    }
+  },
+  {
+    "userAgent": "com.apple.WebKit.Networking/21623.1.14.11.9 Network/5569.60.39.0.3 macOS/26.2",
+    "browser": {
+      "name": "Safari",
+      "code": 524,
+      "version": "21623.1.14.11",
+      "family": "Safari",
+      "engine": {
+        "name": "WebKit"
+      }
+    }
   }
 ]
