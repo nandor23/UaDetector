@@ -204,4 +204,5 @@ public enum OsCode
     OpenSuse = 200,
     Orsay = 201,
     NuttX = 202,
+    HarmonyOsNext = 203,
 }

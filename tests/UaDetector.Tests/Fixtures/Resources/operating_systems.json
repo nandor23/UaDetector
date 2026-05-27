@@ -6942,7 +6942,7 @@
       "name": "OpenHarmony",
       "code": 188,
       "version": "5.1",
-      "family": "Android"
+      "family": "OpenHarmony"
     }
   },
   {
@@ -7645,6 +7645,15 @@
       "code": 134,
       "version": "7.22.2",
       "family": "GNU/Linux"
+    }
+  },
+  {
+    "userAgent": "com.huawei.hmos.browser (2in1;OpenHarmony-6.0.2.130;HAD-W24) NetworkSDK/8.0.10.309",
+    "os": {
+      "name": "HarmonyOS NEXT",
+      "code": 203,
+      "version": "6.0.2.130",
+      "family": "OpenHarmony"
     }
   }
 ]

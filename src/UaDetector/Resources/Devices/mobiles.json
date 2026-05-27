@@ -22511,6 +22511,11 @@
         "name": "BLM-00 SmartScreen"
       },
       {
+        "regex": "HAD-W24(?:[);/ ]|$)",
+        "type": 1,
+        "name": "MateBook Pro"
+      },
+      {
         "regex": "EC6108V(8|9)",
         "type": 6,
         "name": "EC6108V$1"

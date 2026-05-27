@@ -67,7 +67,6 @@ public sealed partial class OsParser : IOsParser
                     OsCode.PuffinOs,
                     OsCode.LeafOs,
                     OsCode.MetaHorizon,
-                    OsCode.OpenHarmony,
                     OsCode.SmartisanOs,
                 }.ToFrozenSet()
             },
@@ -208,6 +207,10 @@ public sealed partial class OsParser : IOsParser
                     OsCode.NintendoMobile,
                     OsCode.Xbox,
                 }.ToFrozenSet()
+            },
+            {
+                OsFamilies.OpenHarmony,
+                new[] { OsCode.OpenHarmony, OsCode.HarmonyOsNext }.ToFrozenSet()
             },
             { OsFamilies.OpenVms, new[] { OsCode.OpenVms }.ToFrozenSet() },
             {

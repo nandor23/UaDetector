@@ -1815,6 +1815,13 @@
     }
   },
   {
+    "regex": "com\\.huawei\\.hmos\\.browser",
+    "name": "Huawei Browser",
+    "engine": {
+      "default": "ArkWeb"
+    }
+  },
+  {
     "regex": "ZTE ?Browser/",
     "name": "ZTE Browser",
     "version": "$1"

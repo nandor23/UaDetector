@@ -231,6 +231,7 @@ public static class OsRegistry
         { OsCode.OpenSuse, OsNames.OpenSuse },
         { OsCode.Orsay, OsNames.Orsay },
         { OsCode.NuttX, OsNames.NuttX },
+        { OsCode.HarmonyOsNext, OsNames.HarmonyOsNext },
     }.ToFrozenDictionary();
 
     internal static readonly FrozenDictionary<string, OsCode> OsNameMappings = OsCodeMappings

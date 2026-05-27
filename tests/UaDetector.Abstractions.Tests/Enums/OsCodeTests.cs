@@ -223,6 +223,7 @@ public class OsCodeTests
             { OsCode.OpenSuse, 200 },
             { OsCode.Orsay, 201 },
             { OsCode.NuttX, 202 },
+            { OsCode.HarmonyOsNext, 203 },
         };
 
         expectedValues.Count.ShouldBe(Enum.GetValues<OsCode>().Length);
