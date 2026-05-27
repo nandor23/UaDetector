@@ -402,7 +402,7 @@ public sealed partial class BrowserParser : IBrowserParser
                     BrowserCode.Comet,
                     BrowserCode.FireSendBrowser,
                     BrowserCode.VivaldiMobileIos,
-                    BrowserCode.HeadlessEdge
+                    BrowserCode.HeadlessEdge,
                 }.ToFrozenSet()
             },
             {
