@@ -746,6 +746,7 @@ public static class BrowserRegistry
             { BrowserCode.Comet, BrowserNames.Comet },
             { BrowserCode.FireSendBrowser, BrowserNames.FireSendBrowser },
             { BrowserCode.VivaldiMobileIos, BrowserNames.VivaldiMobileIos },
+            { BrowserCode.HeadlessEdge, BrowserNames.HeadlessEdge },
         }.ToFrozenDictionary();
 
     internal static readonly FrozenDictionary<string, BrowserCode> BrowserNameMappings =
