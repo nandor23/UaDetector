@@ -7551,6 +7551,58 @@
     }
   },
   {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 17; Pixel 9 Pro XL) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.7559.43 YaBrowser/26.3.7.43.00 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "17",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36",
+    "headers": {
+      "Sec-CH-UA-Platform": "Android",
+      "Sec-CH-UA-Model": "jedi"
+    },
+    "os": {
+      "name": "Chrome OS",
+      "code": 29,
+      "family": "Chrome OS"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36",
+    "headers": {
+      "Sec-CH-UA-Platform": "Android",
+      "Sec-CH-UA-Model": "skywalker"
+    },
+    "os": {
+      "name": "Chrome OS",
+      "code": 29,
+      "family": "Chrome OS"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPad; U; CPU OS 5_0 like Mac OS X; en-us) AppleWebKit/534.46 (KHTML, like Gecko) Version/5.0.2 Mobile/9A5248d Safari/6533.18.5#2.0#TCL/TCL-EU-RT2851-S1/28/tclwebkit1.0.2/19201080(562399576,null;224578291,d508951cfa464b3a972a06a9dc0c29dc)",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "9",
+      "family": "Android"
+    }
+  },
+  {
+    "userAgent": "v1/YelpApp/25.19.0-28251902 Model/a53x Android/14",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "14",
+      "family": "Android"
+    }
+  },
+  {
     "userAgent": "Opera/5 CFNetwork/3860.600.2 Darwin/25.5.0",
     "os": {
       "name": "iOS",
