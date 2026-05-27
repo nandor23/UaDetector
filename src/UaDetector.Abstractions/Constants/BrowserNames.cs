@@ -715,4 +715,5 @@ public static class BrowserNames
     public const string Comet = "Comet";
     public const string FireSendBrowser = "FireSend Browser";
     public const string VivaldiMobileIos = "Vivaldi Mobile iOS";
+    public const string HeadlessEdge = "Headless Edge";
 }

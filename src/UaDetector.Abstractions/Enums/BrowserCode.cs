@@ -715,4 +715,5 @@ public enum BrowserCode
     Comet = 711,
     FireSendBrowser = 712,
     VivaldiMobileIos = 713,
+    HeadlessEdge = 714
 }

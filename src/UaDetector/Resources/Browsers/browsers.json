@@ -1930,6 +1930,14 @@
     }
   },
   {
+    "regex": "HeadlessChrome/.*(?:Headless)?Edg(?:/(\\d+[.\\d]+))?",
+    "name": "Headless Edge",
+    "version": "$1",
+    "engine": {
+      "default": "Blink"
+    }
+  },
+  {
     "regex": "Edg[ /](\\d+[.\\d]+)",
     "name": "Microsoft Edge",
     "version": "$1",
