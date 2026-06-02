@@ -14950,5 +14950,18 @@
         "name": "ArkWeb"
       }
     }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (SaferSurf rv:9.0) Gecko/20100101 Firefox/9.0",
+    "browser": {
+      "name": "Firefox",
+      "code": 213,
+      "version": "9.0",
+      "family": "Firefox",
+      "engine": {
+        "name": "Gecko",
+        "version": "9.0"
+      }
+    }
   }
 ]

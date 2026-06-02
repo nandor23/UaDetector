@@ -2046,7 +2046,7 @@
     }
   },
   {
-    "regex": "Chrome.+(?:Avast(?:SecureBrowser)?|ASW|Safer)(?:/(\\d+[.\\d]+))?",
+    "regex": "Chrome.+(?:Avast(?:SecureBrowser)?|ASW|Safer(?!Surf))(?:/(\\d+[.\\d]+))?",
     "name": "Avast Secure Browser",
     "version": "$1",
     "engine": {
@@ -2054,7 +2054,7 @@
     }
   },
   {
-    "regex": "(?:Avast(?:SecureBrowser)?|ASW|Safer)(?:/(\\d+[.\\d]+))?",
+    "regex": "(?:Avast(?:SecureBrowser)?|ASW|Safer(?!Surf))(?:/(\\d+[.\\d]+))?",
     "name": "Avast Secure Browser",
     "version": "$1",
     "engine": {
