@@ -7655,5 +7655,14 @@
       "version": "6.0.2.130",
       "family": "OpenHarmony"
     }
+  },
+  {
+    "userAgent": "Barcelona 425.0.0.26.58 (iPad12,1; iPadOS 26_3_1; nl_NL; nl; scale=2.00; 750x1334; 936469872) AppleWebKit/420+",
+    "os": {
+      "name": "iPadOS",
+      "code": 58,
+      "version": "26.3.1",
+      "family": "iOS"
+    }
   }
 ]
