@@ -298,7 +298,7 @@ public sealed partial class OsParser : IOsParser
             },
             {
                 OsFamilies.OtherSmartTv,
-                new[] { OsCode.WhaleOs, OsCode.TitanOs, OsCode.Orsay }.ToFrozenSet()
+                new[] { OsCode.WhaleOs, OsCode.TitanOs, OsCode.Orsay, OsCode.VegaOs }.ToFrozenSet()
             },
         }.ToFrozenDictionary(StringComparer.OrdinalIgnoreCase);
 

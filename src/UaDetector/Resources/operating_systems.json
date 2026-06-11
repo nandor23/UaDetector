@@ -625,6 +625,11 @@
     "name": "Fire OS"
   },
   {
+    "regex": "Kepler[ /](\\d+[.\\d]+)",
+    "name": "Vega OS",
+    "version": "$1"
+  },
+  {
     "regex": "revengeos_x2",
     "name": "Revenge OS",
     "version": "2"

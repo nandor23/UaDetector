@@ -206,4 +206,5 @@ public enum OsCode
     NuttX = 202,
     HarmonyOsNext = 203,
     AndroidGo = 204,
+    VegaOs = 205,
 }

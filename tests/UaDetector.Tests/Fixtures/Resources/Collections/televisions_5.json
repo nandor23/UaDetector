@@ -6191,5 +6191,44 @@
         "code": 985
       }
     }
+  },
+  {
+    "userAgent": "Kepler/1.1 (Linux; AFTCL001)",
+    "os": {
+      "name": "Vega OS",
+      "code": 205,
+      "version": "1.1",
+      "family": "Other Smart TV"
+    },
+    "device": {
+      "type": 6,
+      "model": "Fire TV Stick HD (2026)",
+      "brand": {
+        "name": "Amazon",
+        "code": 73
+      }
+    }
+  },
+  {
+    "userAgent": "Amazon AFTCA002 Kepler/1.1 Hulu/1.43.0 NativeClientPlatform/2025.09.8",
+    "os": {
+      "name": "Vega OS",
+      "code": 205,
+      "version": "1.1",
+      "family": "Other Smart TV"
+    },
+    "client": {
+      "type": 1,
+      "name": "Hulu",
+      "version": "1.43.0"
+    },
+    "device": {
+      "type": 6,
+      "model": "Fire TV Stick 4K Select (2025)",
+      "brand": {
+        "name": "Amazon",
+        "code": 73
+      }
+    }
   }
 ]

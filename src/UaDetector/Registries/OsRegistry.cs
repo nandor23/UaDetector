@@ -233,6 +233,7 @@ public static class OsRegistry
         { OsCode.NuttX, OsNames.NuttX },
         { OsCode.HarmonyOsNext, OsNames.HarmonyOsNext },
         { OsCode.AndroidGo, OsNames.AndroidGo },
+        { OsCode.VegaOs, OsNames.VegaOs },
     }.ToFrozenDictionary();
 
     internal static readonly FrozenDictionary<string, OsCode> OsNameMappings = OsCodeMappings
