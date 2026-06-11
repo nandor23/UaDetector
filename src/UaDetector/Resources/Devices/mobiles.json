@@ -928,7 +928,7 @@
         "name": "Surface Book 3"
       },
       {
-        "regex": "Surface Pro( [34])?",
+        "regex": "Surface Pro( [347])?",
         "type": 1,
         "name": "Surface Pro$1"
       },
