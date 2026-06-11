@@ -2919,6 +2919,11 @@
     "version": "$1"
   },
   {
+    "regex": "espn/([\\d.]+)",
+    "name": "ESPN",
+    "version": "$1"
+  },
+  {
     "regex": "PrimeVideo/([\\d.]+)",
     "name": "Amazon Prime Video",
     "version": "$1"
