@@ -97,7 +97,7 @@
     "version": "$1"
   },
   {
-    "regex": "(?:FBAN|FBSV|FBID|FBBV)/",
+    "regex": "(?:FBAN|FBSV|FBID|FBBV)/|MetaIAB",
     "name": "Facebook"
   },
   {
@@ -2916,6 +2916,11 @@
   {
     "regex": "REDLINECLIENT.+V([\\d.]+)",
     "name": "Redline",
+    "version": "$1"
+  },
+  {
+    "regex": "PrimeVideo/([\\d.]+)",
+    "name": "Amazon Prime Video",
     "version": "$1"
   },
   {
