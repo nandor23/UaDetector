@@ -238,5 +238,38 @@
         "code": 1086
       }
     }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+    "headers": {
+      "sec-ch-ua-model": "\"Surface Pro\"",
+      "sec-ch-ua-platform": "Windows",
+      "sec-ch-ua-platform-version": "15"
+    },
+    "os": {
+      "name": "Windows",
+      "code": 171,
+      "version": "11",
+      "cpuArchitecture": "x64",
+      "family": "Windows"
+    },
+    "browser": {
+      "name": "Chrome",
+      "code": 138,
+      "version": "132.0.0.0",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "132.0.0.0"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Surface Pro",
+      "brand": {
+        "name": "Microsoft",
+        "code": 1086
+      }
+    }
   }
 ]

@@ -19,12 +19,13 @@ internal sealed partial class NotebookParser : DeviceParserBase
 
     public override bool TryParse(
         string userAgent,
+        string restoredUserAgent,
         [NotNullWhen(true)] out DeviceInfoInternal? result
     )
     {
         if (FbmdRegex.IsMatch(userAgent))
         {
-            TryParse(userAgent, Notebooks, out result);
+            TryParse(restoredUserAgent, Notebooks, out result);
         }
         else
         {

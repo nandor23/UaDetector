@@ -1,7 +1,7 @@
 [
   {
-    "brand": "Apple",
     "regex": "(?:Apple-)?iPod",
+    "brand": "Apple",
     "type": 10,
     "modelVariants": [
       {
@@ -39,14 +39,14 @@
     ]
   },
   {
-    "brand": "Cowon",
     "regex": "COWON ([^;/]+) Build",
+    "brand": "Cowon",
     "type": 10,
     "model": "$1"
   },
   {
-    "brand": "FiiO",
     "regex": "FiiO",
+    "brand": "FiiO",
     "type": 10,
     "modelVariants": [
       {
@@ -60,20 +60,20 @@
     ]
   },
   {
-    "brand": "Microsoft",
     "regex": "Microsoft ZuneHD",
+    "brand": "Microsoft",
     "type": 10,
     "model": "Zune HD"
   },
   {
-    "brand": "Panasonic",
     "regex": "(SV-MV100)",
+    "brand": "Panasonic",
     "type": 10,
     "model": "$1"
   },
   {
-    "brand": "Samsung",
     "regex": "YP-(G[SIPB]?1|G[57]0|GB70D)",
+    "brand": "Samsung",
     "type": 10,
     "modelVariants": [
       {
@@ -107,14 +107,14 @@
     ]
   },
   {
-    "brand": "Wizz",
     "regex": "(DV-PTB1080)(?:[);/ ]|$)",
+    "brand": "Wizz",
     "type": 10,
     "model": "$1"
   },
   {
-    "brand": "Shanling",
     "regex": "Shanling M6",
+    "brand": "Shanling",
     "type": 10,
     "modelVariants": [
       {
@@ -124,26 +124,26 @@
     ]
   },
   {
-    "brand": "Sylvania",
     "regex": "(SLTDVD102[34])",
+    "brand": "Sylvania",
     "type": 10,
     "model": "$1"
   },
   {
-    "brand": "KuGou",
     "regex": "KuGou[_ -](P5)",
+    "brand": "KuGou",
     "type": 10,
     "model": "$1"
   },
   {
-    "brand": "Surfans",
     "regex": "(Y57A)(?:[);/ ]|$)",
+    "brand": "Surfans",
     "type": 10,
     "model": "$1"
   },
   {
-    "brand": "Oilsky",
     "regex": "Oilsky (M501|M303)(?:-Pro)?(?:[);/ ]|$)",
+    "brand": "Oilsky",
     "type": 10,
     "modelVariants": [
       {
@@ -157,14 +157,14 @@
     ]
   },
   {
-    "brand": "Diofox",
     "regex": "Diofox[ _](M8|M10|M508)(?:[);/ ]|$)",
+    "brand": "Diofox",
     "type": 10,
     "model": "$1"
   },
   {
-    "brand": "MECHEN",
     "regex": "MECHEN",
+    "brand": "MECHEN",
     "type": 10,
     "modelVariants": [
       {

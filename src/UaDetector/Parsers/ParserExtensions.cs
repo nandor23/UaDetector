@@ -18,7 +18,7 @@ internal static class ParserExtensions
     );
 
     private static readonly Regex DesktopFragmentReplacementRegex = new(
-        "X11; Linux x86_64",
+        @"X11; Linux x86_64|Windows NT 10\.0; Win64; x64",
         RegexOptions.Compiled
     );
 
@@ -80,7 +80,7 @@ internal static class ParserExtensions
         {
             result = DesktopFragmentReplacementRegex.Replace(
                 userAgent,
-                $"X11; Linux x86_64; {clientHints.Model}"
+                match => $"{match.Value}; {clientHints.Model}"
             );
         }
 

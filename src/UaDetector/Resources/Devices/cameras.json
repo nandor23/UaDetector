@@ -1,13 +1,13 @@
 [
   {
-    "brand": "Nikon",
     "regex": "Coolpix S800c",
+    "brand": "Nikon",
     "type": 9,
     "model": "Coolpix S800c"
   },
   {
-    "brand": "Samsung",
     "regex": "EK-G[CN][0-9]{3}",
+    "brand": "Samsung",
     "type": 9,
     "modelVariants": [
       {

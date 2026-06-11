@@ -15,12 +15,13 @@ internal sealed partial class CameraParser : DeviceParserBase
 
     public override bool TryParse(
         string userAgent,
+        string restoredUserAgent,
         [NotNullWhen(true)] out DeviceInfoInternal? result
     )
     {
         if (CombinedRegex.IsMatch(userAgent))
         {
-            TryParse(userAgent, Cameras, out result);
+            TryParse(restoredUserAgent, Cameras, out result);
         }
         else
         {

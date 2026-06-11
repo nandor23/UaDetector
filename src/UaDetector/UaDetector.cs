@@ -181,6 +181,7 @@ public sealed class UaDetector : IUaDetector
 
     private bool TryParseDevice(
         string userAgent,
+        string restoredUserAgent,
         ClientHints clientHints,
         OsInfo? os,
         BrowserInfo? browser,
@@ -208,7 +209,7 @@ public sealed class UaDetector : IUaDetector
         {
             foreach (var parser in _deviceParsers)
             {
-                if (parser.TryParse(userAgent, out var deviceInfo))
+                if (parser.TryParse(userAgent, restoredUserAgent, out var deviceInfo))
                 {
                     deviceType = deviceInfo.Type;
                     model = deviceInfo.Model;
@@ -467,13 +468,13 @@ public sealed class UaDetector : IUaDetector
         }
 
         var clientHints = ClientHints.Create(headers);
-
-        if (ParserExtensions.TryRestoreUserAgent(userAgent, clientHints, out var restoredUserAgent))
+        
+        if (!ParserExtensions.TryRestoreUserAgent(userAgent, clientHints, out var restoredUserAgent))
         {
-            userAgent = restoredUserAgent;
+            restoredUserAgent = userAgent;
         }
 
-        var cacheKey = $"{CacheKeyPrefix}:{userAgent}";
+        var cacheKey = $"{CacheKeyPrefix}:{restoredUserAgent}";
 
         if (_cache is not null && _cache.TryGet(cacheKey, out result))
         {
@@ -482,7 +483,7 @@ public sealed class UaDetector : IUaDetector
 
         if (
             !_uaDetectorOptions.DisableBotDetection
-            && _botParser.TryParse(userAgent, out BotInfo? bot)
+            && _botParser.TryParse(restoredUserAgent, out BotInfo? bot)
         )
         {
             result = new UserAgentInfo
@@ -500,14 +501,22 @@ public sealed class UaDetector : IUaDetector
 
         BrowserInfo? browser = null;
 
-        _osParser.TryParse(userAgent, clientHints, out var os);
+        _osParser.TryParse(restoredUserAgent, clientHints, out var os);
 
-        if (!_clientParser.TryParse(userAgent, clientHints, out ClientInfo? client))
+        if (!_clientParser.TryParse(restoredUserAgent, clientHints, out ClientInfo? client))
         {
-            _browserParser.TryParse(userAgent, clientHints, out browser);
+            _browserParser.TryParse(restoredUserAgent, clientHints, out browser);
         }
 
-        TryParseDevice(userAgent, clientHints, os, browser, client, out var device);
+        TryParseDevice(
+            userAgent,
+            restoredUserAgent,
+            clientHints,
+            os,
+            browser,
+            client,
+            out var device
+        );
 
         if (os is null && browser is null && client is null && device is null)
         {
