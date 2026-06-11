@@ -323,6 +323,8 @@ public sealed partial class OsParser : IOsParser
 
         FireOsVersionMappings = new Dictionary<string, string>
         {
+            { "16", "16" },
+            { "15", "16" },
             { "14", "14" },
             { "13", "14" },
             { "12", "14" },

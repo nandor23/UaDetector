@@ -575,6 +575,10 @@
     "name": "Fire OS",
     "versions": [
       {
+        "regex": "Andr[o0]id 1[56]",
+        "version": "16"
+      },
+      {
         "regex": "Andr[o0]id 1[234]",
         "version": "14"
       },
