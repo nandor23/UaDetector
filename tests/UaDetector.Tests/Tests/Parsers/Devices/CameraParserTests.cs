@@ -29,7 +29,7 @@ public class CameraParserTests
 
         foreach (var fixture in fixtures)
         {
-            parser.TryParse(fixture.UserAgent, out var result).ShouldBeTrue();
+            parser.TryParse(fixture.UserAgent, fixture.UserAgent, out var result).ShouldBeTrue();
 
             result.ShouldNotBeNull();
             result.Type.ShouldBe(fixture.Device.Type);

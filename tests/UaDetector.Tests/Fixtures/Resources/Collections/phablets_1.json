@@ -9288,5 +9288,62 @@
         "code": 98
       }
     }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Mobile Safari/537.36",
+    "headers": {
+      "sec-ch-ua-model": "\"MEIZU Note21 Pro\"",
+      "x-requested-with": "com.duckduckgo.mobile.android"
+    },
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "10",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "DuckDuckGo Privacy Browser",
+      "code": 186,
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "147.0.0.0"
+      }
+    },
+    "device": {
+      "type": 11,
+      "model": "Note 21 Pro",
+      "brand": {
+        "name": "Meizu",
+        "code": 1077
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 16; Redmi Note 14 Pro+ 5G Build/BP2A.250605.031.A3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.7049.79 Mobile Safari/537.36 XiaoMi/MiuiBrowser/14.51.0-gn",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "16",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Mi Browser",
+      "code": 361,
+      "version": "14.51.0",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "135.0.7049.79"
+      }
+    },
+    "device": {
+      "type": 11,
+      "model": "Redmi Note 14 Pro+ 5G",
+      "brand": {
+        "name": "Xiaomi",
+        "code": 1974
+      }
+    }
   }
 ]

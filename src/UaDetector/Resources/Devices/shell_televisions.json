@@ -1,117 +1,117 @@
 [
   {
-    "brand": "Telefunken",
     "regex": "Telefunken Shell",
+    "brand": "Telefunken",
     "type": 6
   },
   {
-    "brand": "JVC",
     "regex": "JVC Shell",
+    "brand": "JVC",
     "type": 6
   },
   {
-    "brand": "Leff",
     "regex": "Leff Shell",
+    "brand": "Leff",
     "type": 6
   },
   {
-    "brand": "Leben",
     "regex": "Leben Shell",
+    "brand": "Leben",
     "type": 6
   },
   {
-    "brand": "Lumus",
     "regex": "LUMUS Shell",
+    "brand": "Lumus",
     "type": 6
   },
   {
-    "brand": "Erisson",
     "regex": "Erisson[_ ]Shell",
+    "brand": "Erisson",
     "type": 6
   },
   {
-    "brand": "BBK",
     "regex": "BBK shell",
+    "brand": "BBK",
     "type": 6
   },
   {
-    "brand": "Novex",
     "regex": "Novex shell",
+    "brand": "Novex",
     "type": 6
   },
   {
-    "brand": "Digma",
     "regex": "Digma Shell",
+    "brand": "Digma",
     "type": 6
   },
   {
-    "brand": "AMCV",
     "regex": "AMCV Shell",
+    "brand": "AMCV",
     "type": 6
   },
   {
-    "brand": "Mystery",
     "regex": "Mystery Shell",
+    "brand": "Mystery",
     "type": 6
   },
   {
-    "brand": "ECON",
     "regex": "ECON Shell",
+    "brand": "ECON",
     "type": 6
   },
   {
-    "brand": "Starwind",
     "regex": "Starwind Shell",
+    "brand": "Starwind",
     "type": 6
   },
   {
-    "brand": "Kvant",
     "regex": "Kvant Shell",
+    "brand": "Kvant",
     "type": 6
   },
   {
-    "brand": "Hi",
     "regex": "Hi Shell",
+    "brand": "Hi",
     "type": 6
   },
   {
-    "brand": "AKIRA",
     "regex": "AKIRA Shell",
+    "brand": "AKIRA",
     "type": 6
   },
   {
-    "brand": "Loview",
     "regex": "Loview Shell",
+    "brand": "Loview",
     "type": 6
   },
   {
-    "brand": "Supra",
     "regex": "Supra Shell",
+    "brand": "Supra",
     "type": 6
   },
   {
-    "brand": "Yuno",
     "regex": "Yuno Shell",
+    "brand": "Yuno",
     "type": 6
   },
   {
-    "brand": "TCL",
     "regex": "TCL/TCL-",
+    "brand": "TCL",
     "type": 6
   },
   {
-    "brand": "RCA Tablets",
     "regex": "TCL/RCA-",
+    "brand": "RCA Tablets",
     "type": 6
   },
   {
-    "brand": "Thomson",
     "regex": "TCL/THOM-",
+    "brand": "Thomson",
     "type": 6
   },
   {
-    "brand": "DEXP",
     "regex": "DEXP Shell",
+    "brand": "DEXP",
     "type": 6
   }
 ]

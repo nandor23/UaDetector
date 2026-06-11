@@ -15,12 +15,13 @@ internal sealed partial class CarBrowserParser : DeviceParserBase
 
     public override bool TryParse(
         string userAgent,
+        string restoredUserAgent,
         [NotNullWhen(true)] out DeviceInfoInternal? result
     )
     {
         if (CombinedRegex.IsMatch(userAgent))
         {
-            TryParse(userAgent, CarBrowsers, out result);
+            TryParse(restoredUserAgent, CarBrowsers, out result);
         }
         else
         {

@@ -20,12 +20,13 @@ internal sealed partial class HbbTvParser : DeviceParserBase
 
     public override bool TryParse(
         string userAgent,
+        string restoredUserAgent,
         [NotNullWhen(true)] out DeviceInfoInternal? result
     )
     {
         if (HbbTvRegex.IsMatch(userAgent))
         {
-            if (!TryParse(userAgent, Televisions, out result))
+            if (!TryParse(restoredUserAgent, Televisions, out result))
             {
                 result = new DeviceInfoInternal
                 {

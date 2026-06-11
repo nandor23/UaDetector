@@ -11,9 +11,10 @@ internal sealed partial class MobileParser : DeviceParserBase
 
     public override bool TryParse(
         string userAgent,
+        string restoredUserAgent,
         [NotNullWhen(true)] out DeviceInfoInternal? result
     )
     {
-        return TryParse(userAgent, Mobiles, out result);
+        return TryParse(restoredUserAgent, Mobiles, out result);
     }
 }

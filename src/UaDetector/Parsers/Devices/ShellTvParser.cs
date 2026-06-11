@@ -20,12 +20,13 @@ internal sealed partial class ShellTvParser : DeviceParserBase
 
     public override bool TryParse(
         string userAgent,
+        string restoredUserAgent,
         [NotNullWhen(true)] out DeviceInfoInternal? result
     )
     {
         if (ShellTvRegex.IsMatch(userAgent))
         {
-            if (!TryParse(userAgent, ShellTelevisions, out result))
+            if (!TryParse(restoredUserAgent, ShellTelevisions, out result))
             {
                 result = new DeviceInfoInternal
                 {

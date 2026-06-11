@@ -18,6 +18,7 @@ internal abstract class DeviceParserBase
 
     public abstract bool TryParse(
         string userAgent,
+        string restoredUserAgent,
         [NotNullWhen(true)] out DeviceInfoInternal? result
     );
 

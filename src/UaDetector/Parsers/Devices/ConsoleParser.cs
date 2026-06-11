@@ -15,12 +15,13 @@ internal sealed partial class ConsoleParser : DeviceParserBase
 
     public override bool TryParse(
         string userAgent,
+        string restoredUserAgent,
         [NotNullWhen(true)] out DeviceInfoInternal? result
     )
     {
         if (CombinedRegex.IsMatch(userAgent))
         {
-            TryParse(userAgent, Consoles, out result);
+            TryParse(restoredUserAgent, Consoles, out result);
         }
         else
         {

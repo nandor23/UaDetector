@@ -15,12 +15,13 @@ internal sealed partial class PortableMediaPlayerParser : DeviceParserBase
 
     public override bool TryParse(
         string userAgent,
+        string restoredUserAgent,
         [NotNullWhen(true)] out DeviceInfoInternal? result
     )
     {
         if (CombinedRegex.IsMatch(userAgent))
         {
-            TryParse(userAgent, PortableMediaPlayers, out result);
+            TryParse(restoredUserAgent, PortableMediaPlayers, out result);
         }
         else
         {
