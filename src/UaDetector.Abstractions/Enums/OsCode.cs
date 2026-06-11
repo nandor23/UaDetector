@@ -205,4 +205,5 @@ public enum OsCode
     Orsay = 201,
     NuttX = 202,
     HarmonyOsNext = 203,
+    AndroidGo = 204,
 }

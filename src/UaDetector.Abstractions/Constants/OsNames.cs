@@ -205,4 +205,5 @@ public static class OsNames
     public const string Orsay = "Orsay";
     public const string NuttX = "NuttX";
     public const string HarmonyOsNext = "HarmonyOS NEXT";
+    public const string AndroidGo = "Android Go";
 }

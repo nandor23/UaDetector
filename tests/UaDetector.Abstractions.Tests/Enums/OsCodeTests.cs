@@ -224,6 +224,7 @@ public class OsCodeTests
             { OsCode.Orsay, 201 },
             { OsCode.NuttX, 202 },
             { OsCode.HarmonyOsNext, 203 },
+            { OsCode.AndroidGo, 204 },
         };
 
         expectedValues.Count.ShouldBe(Enum.GetValues<OsCode>().Length);
