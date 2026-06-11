@@ -878,6 +878,11 @@
     ]
   },
   {
+    "regex": "Android (\\d+[.\\d]*);.+release\\.go$",
+    "name": "Android Go",
+    "version": "$1"
+  },
+  {
     "regex": "Android Marshmallow",
     "name": "Android",
     "version": "6"
