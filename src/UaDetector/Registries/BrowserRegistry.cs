@@ -747,6 +747,11 @@ public static class BrowserRegistry
             { BrowserCode.FireSendBrowser, BrowserNames.FireSendBrowser },
             { BrowserCode.VivaldiMobileIos, BrowserNames.VivaldiMobileIos },
             { BrowserCode.HeadlessEdge, BrowserNames.HeadlessEdge },
+            { BrowserCode.ITopPrivateBrowser, BrowserNames.ITopPrivateBrowser },
+            { BrowserCode.Island, BrowserNames.Island },
+            { BrowserCode.MySudo, BrowserNames.MySudo },
+            { BrowserCode.PrivateBrowsing, BrowserNames.PrivateBrowsing },
+            { BrowserCode.SafeBrowser, BrowserNames.SafeBrowser },
         }.ToFrozenDictionary();
 
     internal static readonly FrozenDictionary<string, BrowserCode> BrowserNameMappings =

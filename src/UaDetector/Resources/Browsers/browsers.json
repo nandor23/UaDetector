@@ -1,5 +1,9 @@
 [
   {
+    "regex": "MySudo Browser",
+    "name": "MySudo"
+  },
+  {
     "regex": "FireSendBrowser/([\\d.]+)",
     "name": "FireSend Browser",
     "version": "$1"
@@ -3244,6 +3248,18 @@
     "regex": "QtWebEngine/(\\d+[.\\d]+)",
     "name": "QtWebEngine",
     "version": "$1"
+  },
+  {
+    "regex": "iTop$",
+    "name": "iTop Private Browser"
+  },
+  {
+    "regex": "SafeBrowser/(\\d+[.\\d]+)",
+    "name": "SafeBrowser",
+    "version": "$1",
+    "engine": {
+      "default": "WebKit"
+    }
   },
   {
     "regex": "(?:iPad|iPhone);.* like Mac OS X.* Chrome(?:/(\\d+[.\\d]+))? Mobile/\\w{5,7} Safari/",

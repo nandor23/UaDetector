@@ -716,4 +716,9 @@ public enum BrowserCode
     FireSendBrowser = 712,
     VivaldiMobileIos = 713,
     HeadlessEdge = 714,
+    ITopPrivateBrowser = 715,
+    Island = 716,
+    MySudo = 717,
+    PrivateBrowsing = 718,
+    SafeBrowser = 719,
 }
