@@ -735,6 +735,11 @@ public class BrowserCodeTests
             { BrowserCode.FireSendBrowser, 712 },
             { BrowserCode.VivaldiMobileIos, 713 },
             { BrowserCode.HeadlessEdge, 714 },
+            { BrowserCode.ITopPrivateBrowser, 715 },
+            { BrowserCode.Island, 716 },
+            { BrowserCode.MySudo, 717 },
+            { BrowserCode.PrivateBrowsing, 718 },
+            { BrowserCode.SafeBrowser, 719 },
         };
 
         expectedValues.Count.ShouldBe(Enum.GetValues<BrowserCode>().Length);

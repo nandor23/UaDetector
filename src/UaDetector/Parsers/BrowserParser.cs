@@ -403,6 +403,9 @@ public sealed partial class BrowserParser : IBrowserParser
                     BrowserCode.FireSendBrowser,
                     BrowserCode.VivaldiMobileIos,
                     BrowserCode.HeadlessEdge,
+                    BrowserCode.ITopPrivateBrowser,
+                    BrowserCode.Island,
+                    BrowserCode.PrivateBrowsing,
                 }.ToFrozenSet()
             },
             {
@@ -747,6 +750,8 @@ public sealed partial class BrowserParser : IBrowserParser
             BrowserCode.DduBrowser,
             BrowserCode.PandaBrowser,
             BrowserCode.Ifbrowser,
+            BrowserCode.MySudo,
+            BrowserCode.SafeBrowser,
         }.ToFrozenSet();
 
         ClientHintBrandMappings = new Dictionary<string, FrozenSet<string>>

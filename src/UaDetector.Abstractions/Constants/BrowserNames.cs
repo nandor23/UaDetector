@@ -716,4 +716,9 @@ public static class BrowserNames
     public const string FireSendBrowser = "FireSend Browser";
     public const string VivaldiMobileIos = "Vivaldi Mobile iOS";
     public const string HeadlessEdge = "Headless Edge";
+    public const string ITopPrivateBrowser = "iTop Private Browser";
+    public const string Island = "Island";
+    public const string MySudo = "MySudo";
+    public const string PrivateBrowsing = "PrivateBrowsing";
+    public const string SafeBrowser = "SafeBrowser";
 }
