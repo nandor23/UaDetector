@@ -29,6 +29,30 @@ public class UaDetectorMemoryCacheTests
     }
 
     [Test]
+    public void Set_WhenKeyLengthEqualsLimit_ShouldCacheValue()
+    {
+        const string key = "123";
+        const int value = 23;
+        var cache = new UaDetectorMemoryCache(
+            new UaDetectorMemoryCacheOptions { MaxKeyLength = 3 }
+        );
+
+        cache.Set(key, value).ShouldBeTrue();
+
+        cache.TryGet(key, out int? result).ShouldBeTrue();
+        result.ShouldBe(value);
+    }
+
+    [Test]
+    public void TryGet_WhenKeyNotPresent_ShouldReturnFalseWithDefault()
+    {
+        var cache = new UaDetectorMemoryCache(new UaDetectorMemoryCacheOptions());
+
+        cache.TryGet("missing", out int? result).ShouldBeFalse();
+        result.ShouldBe(null);
+    }
+
+    [Test]
     public void Set_WhenMaxEntriesLimitReached_ShouldNotAddNewEntry()
     {
         var cache = new UaDetectorMemoryCache(new UaDetectorMemoryCacheOptions { MaxEntries = 2 });
@@ -75,6 +99,32 @@ public class UaDetectorMemoryCacheTests
         Thread.Sleep(300);
         cache.TryGet(key, out int? result).ShouldBeFalse();
         result.ShouldBe(null);
+    }
+
+    [Test]
+    public void TryGet_WhenAccessedWithinSlidingWindow_ShouldKeepEntryAlive()
+    {
+        const string key = "123";
+        const int value = 23;
+        var cache = new UaDetectorMemoryCache(
+            new UaDetectorMemoryCacheOptions
+            {
+                SlidingExpiration = TimeSpan.FromMilliseconds(200),
+                ExpirationScanFrequency = TimeSpan.FromMilliseconds(50),
+            }
+        );
+
+        cache.Set(key, value);
+
+        // Access repeatedly within the sliding window to reset the expiration timer.
+        for (var i = 0; i < 4; i++)
+        {
+            Thread.Sleep(100);
+            cache.TryGet(key, out int? _).ShouldBeTrue();
+        }
+
+        cache.TryGet(key, out int? result).ShouldBeTrue();
+        result.ShouldBe(value);
     }
 
     [Test]
