@@ -9,7 +9,6 @@
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageReadmeFile>NUGET-README.md</PackageReadmeFile>
     <PackageIcon>logo.png</PackageIcon>
-    <PackageIconUrl>https://github.com/nandor23/UaDetector/blob/main/assets/logo.png</PackageIconUrl>
     <PackageProjectUrl>https://github.com/nandor23/UaDetector</PackageProjectUrl>
     <RepositoryUrl>https://github.com/nandor23/UaDetector</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
