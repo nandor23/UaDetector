@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="Logo" src="logo/uad-logo.svg" width="150"/>
+    <img alt="Logo" src="assets/logo.svg" width="150"/>
   <br>
   UaDetector
   <br>
@@ -8,7 +8,7 @@
 <h4 align="center">A powerful user agent parser inspired by <a href="https://github.com/matomo-org/device-detector" target="_blank">Device Detector</a></h4>
 
 <p align="center">
-  <a href="https://github.com/nandor23/UaDetector/actions/workflows/build.yml"><img src="https://github.com/nandor23/UaDetector/actions/workflows/build.yml/badge.svg?branch=main" alt="Build"></a>
+  <a href="https://github.com/nandor23/UaDetector/actions/workflows/ci.yml"><img src="https://github.com/nandor23/UaDetector/actions/workflows/ci.yml/badge.svg?branch=main" alt="CI"></a>
   <img src="https://img.shields.io/github/v/release/nandor23/UaDetector" alt="GitHub Release">
   <img src="https://img.shields.io/nuget/dt/UaDetector?color=%235c6bc0" alt="NuGet Downloads">
   <a href="https://www.gnu.org/licenses/lgpl-3.0.en.html"><img src="https://img.shields.io/github/license/nandor23/UaDetector?color=%231e8e7e" alt="License"></a>
@@ -18,7 +18,7 @@
   <a href="https://nandor23.github.io/UaDetector/"><strong>📚 Documentation</strong></a>
 </p>
 
-UaDetector is a fast and precise user agent parser for .NET, built on top of the largest and most up-to-date user agent 
+UaDetector is a fast and accurate user agent parser for .NET, built on the largest and most up-to-date user agent 
 database from the [Matomo Device Detector](https://github.com/matomo-org/device-detector) project. It identifies 
 browsers, operating systems, devices, clients, and bots.
 
