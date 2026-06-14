@@ -5,7 +5,7 @@ A powerful user agent parser inspired by [Device Detector](https://github.com/ma
 [![CI](https://github.com/nandor23/UaDetector/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/nandor23/UaDetector/actions/workflows/ci.yml)
 [![License](https://img.shields.io/github/license/nandor23/UaDetector?color=%231e8e7e)](https://www.gnu.org/licenses/lgpl-3.0.en.html)
 
-UaDetector is a fast and precise user agent parser, built on top of the largest and most up-to-date user agent
+UaDetector is a fast and accurate user agent parser for .NET, built on the largest and most up-to-date user agent
 database from the [Matomo Device Detector](https://github.com/matomo-org/device-detector) project. It identifies
 browsers, operating systems, devices, clients, and bots.
 

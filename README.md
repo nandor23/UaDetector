@@ -18,7 +18,7 @@
   <a href="https://nandor23.github.io/UaDetector/"><strong>📚 Documentation</strong></a>
 </p>
 
-UaDetector is a fast and precise user agent parser for .NET, built on top of the largest and most up-to-date user agent 
+UaDetector is a fast and accurate user agent parser for .NET, built on the largest and most up-to-date user agent 
 database from the [Matomo Device Detector](https://github.com/matomo-org/device-detector) project. It identifies 
 browsers, operating systems, devices, clients, and bots.
 
