@@ -468,8 +468,10 @@ public sealed class UaDetector : IUaDetector
         }
 
         var clientHints = ClientHints.Create(headers);
-        
-        if (!ParserExtensions.TryRestoreUserAgent(userAgent, clientHints, out var restoredUserAgent))
+
+        if (
+            !ParserExtensions.TryRestoreUserAgent(userAgent, clientHints, out var restoredUserAgent)
+        )
         {
             restoredUserAgent = userAgent;
         }

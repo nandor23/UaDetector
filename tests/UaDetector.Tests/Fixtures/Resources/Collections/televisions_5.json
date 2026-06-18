@@ -6193,6 +6193,361 @@
     }
   },
   {
+    "userAgent": "Mozilla/5.0 (X11; Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.182 Odin/88.4324.2.10 Safari/537.36 Model/Hisense-MT9602 VIDAA/6.0(AWOX_oem;SmartTV;VS1250UE1;MTK9602/V0000.06.13M.O0312;UHD;VS1250U;)",
+    "os": {
+      "name": "VIDAA",
+      "code": 165,
+      "version": "6.0",
+      "cpuArchitecture": "ARM",
+      "family": "GNU/Linux"
+    },
+    "browser": {
+      "name": "Odin",
+      "code": 404,
+      "version": "88.4324.2.10",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "88.0.4324.182"
+      }
+    },
+    "device": {
+      "type": 6,
+      "brand": {
+        "name": "AWOX",
+        "code": 151
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (X11; Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.182 Odin/88.4324.2.10 Safari/537.36 Model/Hisense-MT9602 VIDAA/6.0(ELCO;SmartTV;VS0665UD1;MTK9602/V0000.01.00U.N0330;UHD;VS0665U;)",
+    "os": {
+      "name": "VIDAA",
+      "code": 165,
+      "version": "6.0",
+      "cpuArchitecture": "ARM",
+      "family": "GNU/Linux"
+    },
+    "browser": {
+      "name": "Odin",
+      "code": 404,
+      "version": "88.4324.2.10",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "88.0.4324.182"
+      }
+    },
+    "device": {
+      "type": 6,
+      "model": "Smart TV",
+      "brand": {
+        "name": "ELCO",
+        "code": 2119
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (X11; Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.182 Odin/88.4324.2.10 Safari/537.36 Model/Hisense-MT9602 VIDAA/6.0(CLIKON;SmartTV;VT0655UE1;MTK9602/V0000.06.13R.O0422;UHD;VT0655U;)",
+    "os": {
+      "name": "VIDAA",
+      "code": 165,
+      "version": "6.0",
+      "cpuArchitecture": "ARM",
+      "family": "GNU/Linux"
+    },
+    "browser": {
+      "name": "Odin",
+      "code": 404,
+      "version": "88.4324.2.10",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "88.0.4324.182"
+      }
+    },
+    "device": {
+      "type": 6,
+      "model": "Smart TV",
+      "brand": {
+        "name": "Clikon",
+        "code": 2117
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (X11; Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.108 Odin/74.3729.2.10 Safari/537.36 Model/Hisense-MT9602 VIDAA/5.0(ARRQW;SmartTV;43A33EAVT;MTK9602/V0000.01.00R.L1001;FHD)",
+    "os": {
+      "name": "VIDAA",
+      "code": 165,
+      "version": "5.0",
+      "cpuArchitecture": "ARM",
+      "family": "GNU/Linux"
+    },
+    "browser": {
+      "name": "Odin",
+      "code": 404,
+      "version": "74.3729.2.10",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "74.0.3729.108"
+      }
+    },
+    "device": {
+      "type": 6,
+      "model": "Smart TV",
+      "brand": {
+        "name": "Arrow",
+        "code": 2116
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (X11; Linux aarch64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Odin/100.4896.4.10 Safari/537.36 HbbTV/1.6.1 (+DRM;VIDAA;2023_VS1240FE2_0101_AKAI;V0101.07.00T.O0312;;c6cc38aa-4204-4627-a650-d6faf031725f;) FVC/8.0 (VIDAA;c6cc38aa-4204-4627-a650-d6faf031725f;) LaTivu_2.0_2023",
+    "os": {
+      "name": "GNU/Linux",
+      "code": 73,
+      "cpuArchitecture": "ARM",
+      "family": "GNU/Linux"
+    },
+    "browser": {
+      "name": "Odin",
+      "code": 404,
+      "version": "100.4896.4.10",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "100.0.4896.127"
+      }
+    },
+    "device": {
+      "type": 6,
+      "model": "Smart TV (2023)",
+      "brand": {
+        "name": "Akai",
+        "code": 46
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (X11; Linux aarch64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Odin/100.4896.4.10 Safari/537.36 HbbTV/1.6.1 (+DRM;VIDAA;2023_VS0643FD2_0104_COLES;V0104.07.00W.N1116;;c6cc38aa-4204-4627-a650-d6faf031725f;) FVC/8.0 (VIDAA;c6cc38aa-4204-4627-a650-d6faf031725f;) LaTivu_2.0_2023",
+    "os": {
+      "name": "GNU/Linux",
+      "code": 73,
+      "cpuArchitecture": "ARM",
+      "family": "GNU/Linux"
+    },
+    "browser": {
+      "name": "Odin",
+      "code": 404,
+      "version": "100.4896.4.10",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "100.0.4896.127"
+      }
+    },
+    "device": {
+      "type": 6,
+      "model": "Smart TV (2023)",
+      "brand": {
+        "name": "Coles",
+        "code": 2118
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (X11; Linux aarch64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Odin/100.4896.4.10 Safari/537.36 HbbTV/1.6.1 (+DRM;VIDAA;2023_VS1024FE2_0100_DYON;V0100.07.00C.O0712;;c6cc38aa-4204-4627-a650-d6faf031725f;) FVC/8.0 (VIDAA;c6cc38aa-4204-4627-a650-d6faf031725f;) LaTivu_2.0_2023",
+    "os": {
+      "name": "GNU/Linux",
+      "code": 73,
+      "cpuArchitecture": "ARM",
+      "family": "GNU/Linux"
+    },
+    "browser": {
+      "name": "Odin",
+      "code": 404,
+      "version": "100.4896.4.10",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "100.0.4896.127"
+      }
+    },
+    "device": {
+      "type": 6,
+      "model": "Smart TV (2023)",
+      "brand": {
+        "name": "Dyon",
+        "code": 431
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (X11; Linux aarch64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Odin/100.4896.4.10 Safari/537.36 HbbTV/1.6.1 (+DRM;VIDAA;2023_VS0340FD2_0100_EDENWOOD;V0100.07.00Q.N0928;;c6cc38aa-4204-4627-a650-d6faf031725f;) FVC/8.0 (VIDAA;c6cc38aa-4204-4627-a650-d6faf031725f;) LaTivu_2.0_2023",
+    "os": {
+      "name": "GNU/Linux",
+      "code": 73,
+      "cpuArchitecture": "ARM",
+      "family": "GNU/Linux"
+    },
+    "browser": {
+      "name": "Odin",
+      "code": 404,
+      "version": "100.4896.4.10",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "100.0.4896.127"
+      }
+    },
+    "device": {
+      "type": 6,
+      "model": "Smart TV (2023)",
+      "brand": {
+        "name": "Edenwood",
+        "code": 459
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (X11; Linux aarch64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Odin/100.4896.4.10 Safari/537.36 HbbTV/1.6.1 (+DRM;VIDAA;2023_VS1332FE2_0206_Ioplee;V0206.07.00P.O0408;;c6cc38aa-4204-4627-a650-d6faf031725f;) FVC/8.0 (VIDAA;c6cc38aa-4204-4627-a650-d6faf031725f;) LaTivu_2.0_2023",
+    "os": {
+      "name": "GNU/Linux",
+      "code": 73,
+      "cpuArchitecture": "ARM",
+      "family": "GNU/Linux"
+    },
+    "browser": {
+      "name": "Odin",
+      "code": 404,
+      "version": "100.4896.4.10",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "100.0.4896.127"
+      }
+    },
+    "device": {
+      "type": 6,
+      "model": "Smart TV (2023)",
+      "brand": {
+        "name": "ioplee",
+        "code": 2120
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36 OPR/46.0.2207.0 OMI/4.11.3.57.Martell-3.136 Model/Hisense-MT5659-SDK4-11 (;Hisense;SmartTV;V0100.01.00A.N0410;HE40E5600FFWTS) FXM-U2FsdGVkX18XByJW1bnLA8wOBJqub175wrYOO4ha1V6Gf+ZJ8c/jpLnKpr7kqlYp-END",
+    "os": {
+      "name": "GNU/Linux",
+      "code": 73,
+      "cpuArchitecture": "ARM",
+      "family": "GNU/Linux"
+    },
+    "browser": {
+      "name": "Opera Devices",
+      "code": 418,
+      "version": "4.11.3.57",
+      "family": "Opera",
+      "engine": {
+        "name": "Blink",
+        "version": "59.0.3071.115"
+      }
+    },
+    "device": {
+      "type": 6,
+      "model": "HE40E5600FFWTS",
+      "brand": {
+        "name": "Hisense",
+        "code": 720
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36 OPR/46.0.2207.0 OMI/4.11.3.57.Martell-3.136 Model/Hisense-MT5659-SDK4-11 (;Hisense;SmartTV;V0000.01.00A.N0328;HE32A5600HWTS) FXM-U2FsdGVkX1+MCm7toH1cD1KjDak8mTDrdvLQmdqVVi2yPnBJzkmLCMdp3FVeJbMf-END",
+    "os": {
+      "name": "GNU/Linux",
+      "code": 73,
+      "cpuArchitecture": "ARM",
+      "family": "GNU/Linux"
+    },
+    "browser": {
+      "name": "Opera Devices",
+      "code": 418,
+      "version": "4.11.3.57",
+      "family": "Opera",
+      "engine": {
+        "name": "Blink",
+        "version": "59.0.3071.115"
+      }
+    },
+    "device": {
+      "type": 6,
+      "model": "HE32A5600HWTS",
+      "brand": {
+        "name": "Hisense",
+        "code": 720
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36 OPR/40.0.2207.0 OMI/4.9.0.183.Catcher.151 Model/Hisense-MSD6586 (Hisense;HU50A6107UW;V0000.01.00a.N0412) MST6586",
+    "os": {
+      "name": "GNU/Linux",
+      "code": 73,
+      "cpuArchitecture": "ARM",
+      "family": "GNU/Linux"
+    },
+    "browser": {
+      "name": "Opera Devices",
+      "code": 418,
+      "version": "4.9.0.183",
+      "family": "Opera",
+      "engine": {
+        "name": "Blink",
+        "version": "53.0.2785.143"
+      }
+    },
+    "device": {
+      "type": 6,
+      "model": "HU50A6107UW",
+      "brand": {
+        "name": "Hisense",
+        "code": 720
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (X11; Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.182 Odin/88.4324.2.10 Safari/537.36 Model/Hisense-MT9602 VIDAA/6.0(ESSENTIEL;SmartTV;VS0343UE1;MTK9602/V0000.06.13P.O0810;UHD;VS0343U;)",
+    "os": {
+      "name": "VIDAA",
+      "code": 165,
+      "version": "6.0",
+      "cpuArchitecture": "ARM",
+      "family": "GNU/Linux"
+    },
+    "browser": {
+      "name": "Odin",
+      "code": 404,
+      "version": "88.4324.2.10",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "88.0.4324.182"
+      }
+    },
+    "device": {
+      "type": 6,
+      "model": "Smart TV",
+      "brand": {
+        "name": "Essentielb",
+        "code": 500
+      }
+    }
+  },
+  {
     "userAgent": "Kepler/1.1 (Linux; AFTCL001)",
     "os": {
       "name": "Vega OS",

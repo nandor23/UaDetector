@@ -2658,7 +2658,7 @@
     },
     "device": {
       "type": 6,
-      "model": "HE65M7000UWTS",
+      "model": "HE65M7000UWTSG",
       "brand": {
         "name": "Hisense",
         "code": 720
@@ -12428,7 +12428,7 @@
     },
     "device": {
       "type": 6,
-      "model": "HE55A6103FUWT",
+      "model": "HE55A6103FUWTS",
       "brand": {
         "name": "Hisense",
         "code": 720
