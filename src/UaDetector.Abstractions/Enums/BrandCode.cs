@@ -2117,4 +2117,9 @@ public enum BrandCode
     Jckkcfug = 2113,
     Lagenio = 2114,
     Exertis = 2115,
+    Arrow = 2116,
+    Clikon = 2117,
+    Coles = 2118,
+    Elco = 2119,
+    Ioplee = 2120,
 }

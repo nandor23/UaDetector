@@ -2117,4 +2117,9 @@ public static class BrandNames
     public const string Jckkcfug = "Jckkcfug";
     public const string Lagenio = "LAGENIO";
     public const string Exertis = "Exertis";
+    public const string Arrow = "Arrow";
+    public const string Clikon = "Clikon";
+    public const string Coles = "Coles";
+    public const string Elco = "ELCO";
+    public const string Ioplee = "ioplee";
 }

@@ -2136,6 +2136,11 @@ public class BrandCodeTests
             { BrandCode.Jckkcfug, 2113 },
             { BrandCode.Lagenio, 2114 },
             { BrandCode.Exertis, 2115 },
+            { BrandCode.Arrow, 2116 },
+            { BrandCode.Clikon, 2117 },
+            { BrandCode.Coles, 2118 },
+            { BrandCode.Elco, 2119 },
+            { BrandCode.Ioplee, 2120 },
         };
 
         expectedValues.Count.ShouldBe(Enum.GetValues<BrandCode>().Length);

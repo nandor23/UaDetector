@@ -7941,11 +7941,7 @@
       }
     },
     "device": {
-      "type": 6,
-      "brand": {
-        "name": "Hisense",
-        "code": 720
-      }
+      "type": 6
     }
   },
   {
