@@ -9,8 +9,9 @@
 
 <p align="center">
   <a href="https://github.com/nandor23/UaDetector/actions/workflows/ci.yml"><img src="https://github.com/nandor23/UaDetector/actions/workflows/ci.yml/badge.svg?branch=main" alt="CI"></a>
-  <a href="https://codecov.io/gh/nandor23/UaDetector"><img src="https://codecov.io/gh/nandor23/UaDetector/branch/main/graph/badge.svg" alt="Codecov"></a>
-  <img src="https://img.shields.io/github/v/release/nandor23/UaDetector" alt="GitHub Release">
+  <a href="https://codecov.io/gh/nandor23/UaDetector" > 
+   <img src="https://codecov.io/gh/nandor23/UaDetector/graph/badge.svg?token=FDJTM4LALR"/> 
+  </a>  <img src="https://img.shields.io/github/v/release/nandor23/UaDetector" alt="GitHub Release">
   <img src="https://img.shields.io/nuget/dt/UaDetector?color=%235c6bc0" alt="NuGet Downloads">
   <a href="https://www.gnu.org/licenses/lgpl-3.0.en.html"><img src="https://img.shields.io/github/license/nandor23/UaDetector?color=%231e8e7e" alt="License"></a>
 </p>
