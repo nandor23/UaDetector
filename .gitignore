@@ -151,6 +151,10 @@ coverage*.json
 coverage*.xml
 coverage*.info
 
+# Microsoft.Testing.Platform code coverage output
+coverage/
+*.cobertura.xml
+
 # Visual Studio code coverage results
 *.coverage
 *.coveragexml
