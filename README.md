@@ -9,9 +9,8 @@
 
 <p align="center">
   <a href="https://github.com/nandor23/UaDetector/actions/workflows/ci.yml"><img src="https://github.com/nandor23/UaDetector/actions/workflows/ci.yml/badge.svg?branch=main" alt="CI"></a>
-  <a href="https://codecov.io/gh/nandor23/UaDetector" > 
-   <img src="https://codecov.io/gh/nandor23/UaDetector/graph/badge.svg?token=FDJTM4LALR"/> 
-  </a>  <img src="https://img.shields.io/github/v/release/nandor23/UaDetector" alt="GitHub Release">
+  <a href="https://codecov.io/gh/nandor23/UaDetector"><img src="https://codecov.io/gh/nandor23/UaDetector/graph/badge.svg?token=FDJTM4LALR" alt="Codecov"></a>
+  <img src="https://img.shields.io/github/v/release/nandor23/UaDetector" alt="GitHub Release">
   <img src="https://img.shields.io/nuget/dt/UaDetector?color=%235c6bc0" alt="NuGet Downloads">
   <a href="https://www.gnu.org/licenses/lgpl-3.0.en.html"><img src="https://img.shields.io/github/license/nandor23/UaDetector?color=%231e8e7e" alt="License"></a>
 </p>
@@ -20,15 +19,15 @@
   <a href="https://nandor23.github.io/UaDetector/"><strong>📚 Documentation</strong></a>
 </p>
 
-UaDetector is a fast and accurate user agent parser for .NET, built on the largest and most up-to-date user agent 
-database from the [Matomo Device Detector](https://github.com/matomo-org/device-detector) project. It identifies 
+UaDetector is a fast and accurate user agent parser for .NET, built on the largest and most up-to-date user agent
+database from the [Matomo Device Detector](https://github.com/matomo-org/device-detector) project. It identifies
 browsers, operating systems, devices, clients, and bots.
 
-The library is optimized for speed with in-memory caching of regular expressions and frozen dictionaries for lookup 
+The library is optimized for speed with in-memory caching of regular expressions and frozen dictionaries for lookup
 operations. It maintains compatibility with the original regex patterns and detection rules.
 
-In addition to the main `UaDetector` parser, individual sub-parsers are available: `OsParser`, `BrowserParser`, 
-`ClientParser`, and `BotParser`. Each can be used independently when only specific information is needed from 
+In addition to the main `UaDetector` parser, individual sub-parsers are available: `OsParser`, `BrowserParser`,
+`ClientParser`, and `BotParser`. Each can be used independently when only specific information is needed from
 the user agent string.
 
 ## Packages
@@ -55,8 +54,8 @@ Add the *UaDetector* package (from NuGet) to the project.
 $ dotnet add package UaDetector
 ```
 
-To use UaDetector, register it in *Program.cs* with the `AddUaDetector()` method. 
-To use a sub-parser, register it using its dedicated method: `AddOsParser()`, `AddBrowserParser()`, `AddClientParser()`, or `AddBotParser()`. 
+To use UaDetector, register it in *Program.cs* with the `AddUaDetector()` method.
+To use a sub-parser, register it using its dedicated method: `AddOsParser()`, `AddBrowserParser()`, `AddClientParser()`, or `AddBotParser()`.
 All sub-parsers, except `AddBotParser()`, can be configured via *UaDetectorOptions* using the *Options* pattern as shown below.
 
 ```c#
@@ -74,8 +73,8 @@ builder.Services.AddUaDetector();
 
 ## 🚀 Quick Start
 
-Each parser provides two `TryParse()` methods: one that accepts only the user agent string and another 
-that accepts both the user agent string and a collection of HTTP headers. 
+Each parser provides two `TryParse()` methods: one that accepts only the user agent string and another
+that accepts both the user agent string and a collection of HTTP headers.
 For more accurate detection, it is recommended to provide the HTTP headers.
 
 >[!TIP]
@@ -226,8 +225,8 @@ builder.Services.AddUaDetector(options =>
 
 ## ⚡ Benchmarks
 
-Both UaDetector and UaDetector.Lite load regular expressions into memory for parsing. 
-If memory usage is a concern, UaDetector.Lite uses **5.6 times less memory** (32.38 MB vs 181.88 MB) 
+Both UaDetector and UaDetector.Lite load regular expressions into memory for parsing.
+If memory usage is a concern, UaDetector.Lite uses **5.6 times less memory** (32.38 MB vs 181.88 MB)
 than UaDetector while maintaining the same functionality at the cost of parsing speed.
 
 ### Library Comparison
