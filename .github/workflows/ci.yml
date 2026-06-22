@@ -32,25 +32,25 @@ jobs:
         run: >
           dotnet test --project tests/UaDetector.Tests --no-build --configuration Release
           --coverage --coverage-output-format cobertura
-          --coverage-output UaDetector.cobertura.xml --results-directory ${{ github.workspace }}/coverage
+          --coverage-output UaDetector.coverage.xml --results-directory ${{ github.workspace }}/coverage
 
       - name: Test UaDetector.MemoryCache
         run: >
           dotnet test --project tests/UaDetector.MemoryCache.Tests --no-build --configuration Release
           --coverage --coverage-output-format cobertura
-          --coverage-output UaDetector.MemoryCache.cobertura.xml --results-directory ${{ github.workspace }}/coverage
+          --coverage-output UaDetector.MemoryCache.coverage.xml --results-directory ${{ github.workspace }}/coverage
 
       - name: Test UaDetector.SourceGenerator
         run: >
           dotnet test --project tests/UaDetector.SourceGenerator.Tests --no-build --configuration Release
           --coverage --coverage-output-format cobertura
-          --coverage-output UaDetector.SourceGenerator.cobertura.xml --results-directory ${{ github.workspace }}/coverage
+          --coverage-output UaDetector.SourceGenerator.coverage.xml --results-directory ${{ github.workspace }}/coverage
 
       - name: Test UaDetector.Abstractions
         run: >
           dotnet test --project tests/UaDetector.Abstractions.Tests --no-build --configuration Release
           --coverage --coverage-output-format cobertura
-          --coverage-output UaDetector.Abstractions.cobertura.xml --results-directory ${{ github.workspace }}/coverage
+          --coverage-output UaDetector.Abstractions.coverage.xml --results-directory ${{ github.workspace }}/coverage
 
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v5
