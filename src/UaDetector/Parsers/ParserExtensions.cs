@@ -8,12 +8,12 @@ namespace UaDetector.Parsers;
 internal static class ParserExtensions
 {
     private static readonly Regex ClientHintsFragmentMatchRegex = new(
-        @"Android (?:1[0-6][.\d]*; K(?: Build/|[;)])|1[0-6]\)) AppleWebKit",
+        @"Android (?:1[0-7][.\d]*; K(?: Build/|[;)])|1[0-7]\)) AppleWebKit",
         RegexOptions.IgnoreCase | RegexOptions.Compiled
     );
 
     private static readonly Regex ClientHintsFragmentReplacementRegex = new(
-        @"Android (?:10[.\d]*; K|1[1-5])",
+        @"Android (?:10[.\d]*; K|1[1-7])",
         RegexOptions.Compiled
     );
 
