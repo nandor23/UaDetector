@@ -143,10 +143,20 @@ internal sealed class ClientHints
     public HashSet<string> FormFactors { get; } = new(StringComparer.OrdinalIgnoreCase);
 
     /// <summary>
+    /// Immutable shared empty instance.
+    /// </summary>
+    private static readonly ClientHints Empty = new();
+
+    /// <summary>
     /// Create a new ClientHints instance from a dictionary containing all available client hint headers.
     /// </summary>
     public static ClientHints Create(IDictionary<string, string?> headers)
     {
+        if (headers.Count == 0)
+        {
+            return Empty;
+        }
+
         ClientHints clientHints = new();
 
         foreach (var header in headers)

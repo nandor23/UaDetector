@@ -9,8 +9,8 @@ UaDetector is a fast and accurate user agent parser for .NET, built on the large
 database from the [Matomo Device Detector](https://github.com/matomo-org/device-detector) project. It identifies
 browsers, operating systems, devices, brands, clients, and bots.
 
-The library is optimized for speed with in-memory caching of regular expressions and frozen dictionaries for lookup
-operations. It maintains compatibility with the original regex patterns and detection rules.
+The library is optimized for speed while maintaining compatibility with the original regex patterns and detection
+rules.
 
 In addition to the main `UaDetector` parser, individual sub-parsers are available: `OsParser`, `BrowserParser`,
 `ClientParser`, and `BotParser`. Each can be used independently when only specific information is needed from

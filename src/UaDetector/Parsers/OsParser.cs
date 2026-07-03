@@ -723,15 +723,20 @@ public sealed partial class OsParser : IOsParser
             userAgent = restoredUserAgent;
         }
 
+        if (_cache is null)
+        {
+            return TryParse(userAgent, clientHints, out result);
+        }
+
         var cacheKey = $"{CacheKeyPrefix}:{userAgent}";
 
-        if (_cache is not null && _cache.TryGet(cacheKey, out result))
+        if (_cache.TryGet(cacheKey, out result))
         {
             return result is not null;
         }
 
         TryParse(userAgent, clientHints, out result);
-        _cache?.Set(cacheKey, result);
+        _cache.Set(cacheKey, result);
         return result is not null;
     }
 

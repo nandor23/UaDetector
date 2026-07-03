@@ -5,7 +5,7 @@
   <PropertyGroup Condition="'$(MSBuildProjectName)' != 'UaDetector.SourceGenerator'">
     <TargetFrameworks>netstandard2.0;net462;net8.0;net9.0;net10.0;</TargetFrameworks>
     <Authors>Nandor Krizbai</Authors>
-    <Copyright>Copyright (c) Nandor Krizbai, Matomo</Copyright>
+    <Copyright>Copyright © $([System.DateTime]::UtcNow.Year) Nandor Krizbai, The Matomo Team</Copyright>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageReadmeFile>NUGET-README.md</PackageReadmeFile>
     <PackageIcon>logo.png</PackageIcon>

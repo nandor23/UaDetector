@@ -150,6 +150,64 @@ public class UaDetectorTests
         result.Device.ShouldBeNull();
     }
 
+    [Test]
+    public void TryParse_WhenCacheProvided_ShouldStoreResultInCache()
+    {
+        const string userAgent =
+            "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/21.0.1180.89 Safari/537.1";
+        var cache = new RecordingCache();
+        var uaDetector = new UaDetector(new UaDetectorOptions { Cache = cache });
+
+        uaDetector.TryParse(userAgent, out _).ShouldBeTrue();
+
+        cache.SetKeys.ShouldContain(key => key.StartsWith("ua:"));
+    }
+
+    [Test]
+    public void TryParse_WhenCalledTwiceWithSameUserAgent_ShouldServeSecondCallFromCache()
+    {
+        const string userAgent =
+            "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/21.0.1180.89 Safari/537.1";
+        var cache = new RecordingCache();
+        var uaDetector = new UaDetector(new UaDetectorOptions { Cache = cache });
+
+        uaDetector.TryParse(userAgent, out _).ShouldBeTrue();
+        int setsAfterFirstParse = cache.SetCount;
+
+        uaDetector.TryParse(userAgent, out _).ShouldBeTrue();
+
+        cache.SetCount.ShouldBe(setsAfterFirstParse);
+        cache.GetKeys.Count(key => key.StartsWith("ua:")).ShouldBe(2);
+    }
+
+    [Test]
+    public void TryParse_WhenServedFromCache_ShouldReturnSameResult()
+    {
+        const string userAgent =
+            "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/21.0.1180.89 Safari/537.1";
+        var cache = new RecordingCache();
+        var uaDetector = new UaDetector(new UaDetectorOptions { Cache = cache });
+
+        uaDetector.TryParse(userAgent, out var first).ShouldBeTrue();
+        uaDetector.TryParse(userAgent, out var second).ShouldBeTrue();
+
+        second.ShouldBeEquivalentTo(first);
+    }
+
+    [Test]
+    public void TryParse_WhenNoCacheProvided_ShouldNotTouchCache()
+    {
+        const string userAgent =
+            "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/21.0.1180.89 Safari/537.1";
+        var cache = new RecordingCache();
+        var uaDetector = new UaDetector();
+
+        uaDetector.TryParse(userAgent, out _).ShouldBeTrue();
+
+        cache.GetCount.ShouldBe(0);
+        cache.SetCount.ShouldBe(0);
+    }
+
     public static IEnumerable<Func<string>> FixtureFileNames()
     {
         var fixturesPath = Path.Combine("Fixtures", "Resources", "Collections");

@@ -1,11 +1,7 @@
 using BenchmarkDotNet.Attributes;
 using BenchmarkDotNet.Order;
 using DeviceDetectorNET;
-using DeviceDetectorNET.Results;
-using DeviceDetectorNET.Results.Client;
-using UaDetector.Abstractions.Models;
 using UAParser;
-using ClientInfo = UAParser.ClientInfo;
 
 namespace UaDetector.Benchmarks;
 
@@ -14,42 +10,53 @@ namespace UaDetector.Benchmarks;
 public class LibraryComparisonBenchmark
 {
     private string[] _userAgents = null!;
-    private int _index;
     private UaDetector _uaDetector = null!;
+    private Parser _uaParser = null!;
 
     [GlobalSetup]
     public void Setup()
     {
         _userAgents = TestUserAgents.All;
-        _index = 0;
         _uaDetector = new UaDetector();
+        _uaParser = Parser.GetDefault();
+
+        if (_userAgents.Length != TestUserAgents.Count)
+        {
+            throw new InvalidOperationException(
+                $"TestUserAgents.Count ({TestUserAgents.Count}) must equal TestUserAgents.All.Length ({_userAgents.Length})."
+            );
+        }
 
         // Warm up - trigger regex compilation
         _uaDetector.TryParse("uadetector-warmup", out _);
     }
 
-    [Benchmark(Baseline = true)]
-    public UserAgentInfo? UaDetector()
+    [Benchmark(Baseline = true, OperationsPerInvoke = TestUserAgents.Count)]
+    public void UaDetector()
     {
-        var ua = _userAgents[_index++ % _userAgents.Length];
-        _uaDetector.TryParse(ua, out var result);
-        return result;
+        foreach (var ua in _userAgents)
+        {
+            _uaDetector.TryParse(ua, out _);
+        }
     }
 
-    [Benchmark(Description = "DeviceDetector.NET")]
-    public ParseResult<BrowserMatchResult> DeviceDetector()
+    [Benchmark(Description = "DeviceDetector.NET", OperationsPerInvoke = TestUserAgents.Count)]
+    public void DeviceDetector()
     {
-        var ua = _userAgents[_index++ % _userAgents.Length];
-        var deviceDetector = new DeviceDetector(ua);
-        deviceDetector.Parse();
-        return deviceDetector.GetBrowserClient();
+        foreach (var ua in _userAgents)
+        {
+            var deviceDetector = new DeviceDetector(ua);
+            deviceDetector.Parse();
+            deviceDetector.GetBrowserClient();
+        }
     }
 
-    [Benchmark]
-    public ClientInfo UAParser()
+    [Benchmark(OperationsPerInvoke = TestUserAgents.Count)]
+    public void UAParser()
     {
-        var ua = _userAgents[_index++ % _userAgents.Length];
-        var uaParser = Parser.GetDefault();
-        return uaParser.Parse(ua);
+        foreach (var ua in _userAgents)
+        {
+            _uaParser.Parse(ua);
+        }
     }
 }

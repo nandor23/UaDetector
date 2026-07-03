@@ -1,4 +1,5 @@
 using Shouldly;
+using UaDetector.Abstractions;
 using UaDetector.Parsers;
 using UaDetector.Tests.Fixtures.Models;
 using UaDetector.Tests.Helpers;
@@ -44,5 +45,46 @@ public class BotParserTests
     {
         var parser = new BotParser();
         parser.IsBot("360spider-image").ShouldBeTrue();
+    }
+
+    [Test]
+    public void TryParse_WhenCacheProvided_ShouldStoreResultInCache()
+    {
+        const string userAgent =
+            "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)";
+        var cache = new RecordingCache();
+        var parser = new BotParser(new BotParserOptions { Cache = cache });
+
+        parser.TryParse(userAgent, out _);
+
+        cache.SetKeys.ShouldContain(key => key.StartsWith("bot:"));
+    }
+
+    [Test]
+    public void TryParse_WhenCalledTwiceWithSameUserAgent_ShouldServeSecondCallFromCache()
+    {
+        const string userAgent =
+            "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)";
+        var cache = new RecordingCache();
+        var parser = new BotParser(new BotParserOptions { Cache = cache });
+
+        parser.TryParse(userAgent, out _);
+        int setsAfterFirstParse = cache.SetCount;
+
+        parser.TryParse(userAgent, out _);
+
+        cache.SetCount.ShouldBe(setsAfterFirstParse);
+        cache.GetKeys.Count(key => key.StartsWith("bot:")).ShouldBe(2);
+    }
+
+    [Test]
+    public void IsBot_WhenCacheProvided_ShouldStoreResultInCache()
+    {
+        var cache = new RecordingCache();
+        var parser = new BotParser(new BotParserOptions { Cache = cache });
+
+        parser.IsBot("360spider-image");
+
+        cache.SetKeys.ShouldContain(key => key.StartsWith("isbot:"));
     }
 }
