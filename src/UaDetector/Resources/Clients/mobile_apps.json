@@ -2919,6 +2919,11 @@
     "version": "$1"
   },
   {
+    "regex": "GM-Android/([\\d.]+)",
+    "name": "General Motors",
+    "version": "$1"
+  },
+  {
     "regex": "espn/([\\d.]+)",
     "name": "ESPN",
     "version": "$1"
