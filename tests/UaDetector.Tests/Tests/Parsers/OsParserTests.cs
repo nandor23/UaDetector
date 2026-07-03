@@ -85,4 +85,34 @@ public class OsParserTests
             result.Family.ShouldBe(fixture.Os.Family);
         }
     }
+
+    [Test]
+    public void TryParse_WhenCacheProvided_ShouldStoreResultInCache()
+    {
+        const string userAgent =
+            "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/21.0.1180.89 Safari/537.1";
+        var cache = new RecordingCache();
+        var parser = new OsParser(new UaDetectorOptions { Cache = cache });
+
+        parser.TryParse(userAgent, out _).ShouldBeTrue();
+
+        cache.SetKeys.ShouldContain(key => key.StartsWith("os:"));
+    }
+
+    [Test]
+    public void TryParse_WhenCalledTwiceWithSameUserAgent_ShouldServeSecondCallFromCache()
+    {
+        const string userAgent =
+            "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/21.0.1180.89 Safari/537.1";
+        var cache = new RecordingCache();
+        var parser = new OsParser(new UaDetectorOptions { Cache = cache });
+
+        parser.TryParse(userAgent, out _).ShouldBeTrue();
+        int setsAfterFirstParse = cache.SetCount;
+
+        parser.TryParse(userAgent, out _).ShouldBeTrue();
+
+        cache.SetCount.ShouldBe(setsAfterFirstParse);
+        cache.GetKeys.Count(key => key.StartsWith("os:")).ShouldBe(2);
+    }
 }
