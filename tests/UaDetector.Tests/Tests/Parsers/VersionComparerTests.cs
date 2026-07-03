@@ -26,7 +26,10 @@ public class VersionComparerTests
         VersionComparer.AreEqual("1.0", "1").ShouldBeFalse();
         VersionComparer.IsGreaterThan("1.0", "1").ShouldBeTrue();
 
-        VersionComparer.IsLessThan("", "1").ShouldBeTrue();
-        VersionComparer.AreEqual("", "").ShouldBeTrue();
+        // A null or empty version is not comparable, so every comparison returns false.
+        VersionComparer.IsLessThan("", "1").ShouldBeFalse();
+        VersionComparer.IsGreaterThan("1", "").ShouldBeFalse();
+        VersionComparer.AreEqual("", "").ShouldBeFalse();
+        VersionComparer.IsLessThan(null, "1").ShouldBeFalse();
     }
 }

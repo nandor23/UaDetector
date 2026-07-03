@@ -1195,8 +1195,6 @@ public sealed partial class BrowserParser : IBrowserParser
                 if (
                     engine == BrowserEngines.Blink
                     && name != BrowserNames.Iridium
-                    && browserFromUserAgent.EngineVersion?.Length > 0
-                    && engineVersion?.Length > 0
                     && VersionComparer.IsLessThan(engineVersion, browserFromUserAgent.EngineVersion)
                 )
                 {
@@ -1214,11 +1212,7 @@ public sealed partial class BrowserParser : IBrowserParser
                     if (
                         ParserExtensions.GetMajorVersion(version)
                             != ParserExtensions.GetMajorVersion(browserFromUserAgent.Version)
-                        || browserFromUserAgent.Version?.Length > 0
-                            && VersionComparer.IsLessThanOrEqual(
-                                version,
-                                browserFromUserAgent.Version
-                            )
+                        || VersionComparer.IsLessThanOrEqual(version, browserFromUserAgent.Version)
                     )
                     {
                         version = browserFromUserAgent.Version;
@@ -1267,7 +1261,6 @@ public sealed partial class BrowserParser : IBrowserParser
                 if (
                     engine == BrowserEngines.Blink
                     && name != BrowserNames.Iridium
-                    && engineVersion?.Length > 0
                     && VersionComparer.IsLessThan(engineVersion, browserFromClientHints.Version)
                 )
                 {
@@ -1277,8 +1270,6 @@ public sealed partial class BrowserParser : IBrowserParser
                 if (
                     engine == BrowserEngines.Blink
                     && name != BrowserNames.Iridium
-                    && browserFromUserAgent.EngineVersion?.Length > 0
-                    && browserFromClientHints.EngineVersion?.Length > 0
                     && VersionComparer.IsLessThan(
                         browserFromUserAgent.EngineVersion,
                         browserFromClientHints.EngineVersion
