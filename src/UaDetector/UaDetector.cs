@@ -255,6 +255,12 @@ public sealed class UaDetector : IUaDetector
             brand = BrandNames.Apple;
         }
 
+        // Assume all devices running ThinOS are from Dell.
+        if (brand is null or { Length: 0 } && os is not null && os.Name == OsNames.ThinOs)
+        {
+            brand = BrandNames.Dell;
+        }
+
         // User agents containing the fragment 'VR' are assumed to represent wearables.
         if (deviceType is null && AndroidVrFragmentRegex.IsMatch(userAgent))
         {
