@@ -2122,4 +2122,5 @@ public static class BrandNames
     public const string Coles = "Coles";
     public const string Elco = "ELCO";
     public const string Ioplee = "ioplee";
+    public const string Kobo = "Kobo";
 }

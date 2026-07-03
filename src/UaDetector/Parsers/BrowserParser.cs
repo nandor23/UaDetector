@@ -752,7 +752,7 @@ public sealed partial class BrowserParser : IBrowserParser
             BrowserCode.Ifbrowser,
             BrowserCode.MySudo,
             BrowserCode.SafeBrowser,
-            BrowserCode.QuicheBrowser
+            BrowserCode.QuicheBrowser,
         }.ToFrozenSet();
 
         ClientHintBrandMappings = new Dictionary<string, FrozenSet<string>>

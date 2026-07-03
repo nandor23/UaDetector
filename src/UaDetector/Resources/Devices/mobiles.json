@@ -30804,6 +30804,11 @@
     ]
   },
   {
+    "regex": "Kobo",
+    "brand": "Kobo",
+    "type": 3
+  },
+  {
     "regex": "KONKA[_ ]([a-z0-9]+)|(?: R[EU]1|KC516(?: Pro)?|KUD50WT702AN|UDE55NR314ANTS)(?:[);/ ]|$)",
     "brand": "Konka",
     "type": 2,
