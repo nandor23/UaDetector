@@ -620,8 +620,7 @@ public sealed partial class OsParser : IOsParser
             name != OsNames.Windows
             && version?.Length > 0
             && version != "0.0.0"
-            && ParserExtensions.TryCompareVersions(version, "0", out var comparisonResult)
-            && comparisonResult == 0
+            && VersionComparer.AreEqual(version, "0")
         )
         {
             version = null;

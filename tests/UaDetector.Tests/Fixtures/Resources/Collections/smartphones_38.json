@@ -9843,11 +9843,11 @@
     "browser": {
       "name": "Samsung Browser",
       "code": 513,
-      "version": "24.0",
+      "version": "24.0.7.1",
       "family": "Chrome",
       "engine": {
         "name": "Blink",
-        "version": "117.0.0.0"
+        "version": "117.0.5938.156"
       }
     },
     "device": {

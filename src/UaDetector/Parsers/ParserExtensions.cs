@@ -143,111 +143,29 @@ internal static class ParserExtensions
     }
 
     /// <summary>
-    /// Tries to compare <paramref name="first"/> and <paramref name="second"/>.
+    /// Extracts the leading numeric segment of <paramref name="version"/> as the major version.
     /// </summary>
-    /// <param name="first">The first version string to compare.</param>
-    /// <param name="second">The second version string to compare.</param>
-    /// <param name="result">
-    /// The comparison result:
-    /// - Less than zero if <paramref name="first"/> is less than <paramref name="second"/>.
-    /// - Zero if they are equal.
-    /// - Greater than zero if <paramref name="first"/> is greater than <paramref name="second"/>.
-    /// Only set if the comparison succeeds.
-    /// </param>
-    /// <returns>
-    /// True if the comparison was successful, false otherwise.
-    /// </returns>
-    public static bool TryCompareVersions(
-        string first,
-        string second,
-        [NotNullWhen(true)] out int? result
-    )
+    /// <param name="version">The version string to parse.</param>
+    /// <returns>The major version, or 0 if <paramref name="version"/> is null, empty, or has no leading digits.</returns>
+    public static int GetMajorVersion(string? version)
     {
-        ReadOnlySpan<char> firstSpan = first.AsSpan();
-        ReadOnlySpan<char> secondSpan = second.AsSpan();
-
-        int offset1 = 0,
-            offset2 = 0;
-
-        bool hasSegment1 = true,
-            hasSegment2 = true;
-
-        while (hasSegment1 || hasSegment2)
+        if (string.IsNullOrEmpty(version))
         {
-            int value1 = 0,
-                value2 = 0;
-
-            if (hasSegment1)
-            {
-                var segment = NextVersionSegment(firstSpan, ref offset1, out hasSegment1);
-
-                if (hasSegment1 && !TryParseVersionSegment(segment, out value1))
-                {
-                    result = null;
-                    return false;
-                }
-            }
-
-            if (hasSegment2)
-            {
-                var segment = NextVersionSegment(secondSpan, ref offset2, out hasSegment2);
-
-                if (hasSegment2 && !TryParseVersionSegment(segment, out value2))
-                {
-                    result = null;
-                    return false;
-                }
-            }
-
-            result = value1.CompareTo(value2);
-
-            if (result != 0)
-            {
-                return true;
-            }
+            return 0;
         }
 
-        result = 0;
-        return true;
-    }
+        var result = 0;
 
-    /// <summary>
-    /// Returns the next '.'-delimited segment starting at <paramref name="offset"/>, mirroring
-    /// <see cref="string.Split(char[])"/> semantics without allocating. <paramref name="hasSegment"/>
-    /// is set to false once the string has been fully consumed.
-    /// </summary>
-    private static ReadOnlySpan<char> NextVersionSegment(
-        ReadOnlySpan<char> text,
-        ref int offset,
-        out bool hasSegment
-    )
-    {
-        if (offset > text.Length)
+        foreach (var c in version)
         {
-            hasSegment = false;
-            return default;
+            if (c is < '0' or > '9')
+            {
+                break;
+            }
+
+            result = result * 10 + (c - '0');
         }
 
-        hasSegment = true;
-        var remaining = text[offset..];
-        int dotIndex = remaining.IndexOf('.');
-
-        if (dotIndex < 0)
-        {
-            offset = text.Length + 1;
-            return remaining;
-        }
-
-        offset += dotIndex + 1;
-        return remaining[..dotIndex];
-    }
-
-    private static bool TryParseVersionSegment(ReadOnlySpan<char> segment, out int value)
-    {
-#if NET6_0_OR_GREATER
-        return int.TryParse(segment, out value);
-#else
-        return int.TryParse(segment.ToString(), out value);
-#endif
+        return result;
     }
 }

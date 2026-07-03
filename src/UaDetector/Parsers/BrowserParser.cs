@@ -25,6 +25,7 @@ public sealed partial class BrowserParser : IBrowserParser
     private readonly ClientParser _clientParser;
     private readonly BotParser _botParser;
 
+    private static readonly string[] EngineBrands = ["Android WebView", "Chromium"];
     internal static readonly FrozenDictionary<string, string> CompactToFullNameMappings;
     internal static readonly FrozenSet<BrowserCode> MobileOnlyBrowsers;
     private static readonly FrozenDictionary<string, FrozenSet<BrowserCode>> BrowserFamilyMappings;
@@ -860,14 +861,7 @@ public sealed partial class BrowserParser : IBrowserParser
         {
             foreach (var version in engine.Versions)
             {
-                if (
-                    ParserExtensions.TryCompareVersions(
-                        browserVersion,
-                        version.Key,
-                        out var comparisonResult
-                    )
-                    && comparisonResult < 0
-                )
+                if (VersionComparer.IsLessThan(browserVersion, version.Key))
                 {
                     continue;
                 }
@@ -947,8 +941,21 @@ public sealed partial class BrowserParser : IBrowserParser
         }
 
         string? name = null,
-            version = null;
+            version = null,
+            engine = null,
+            engineVersion = null;
+
         BrowserCode? code = null;
+
+        foreach (var engineBrand in EngineBrands)
+        {
+            if (clientHints.FullVersionList.TryGetValue(engineBrand, out var brandVersion))
+            {
+                engine = BrowserEngines.Blink;
+                engineVersion = brandVersion;
+                break;
+            }
+        }
 
         foreach (var fullVersion in clientHints.FullVersionList)
         {
@@ -988,6 +995,8 @@ public sealed partial class BrowserParser : IBrowserParser
             Name = name,
             Code = code.Value,
             Version = ParserExtensions.BuildVersion(version, _uaDetectorOptions.VersionTruncation),
+            Engine = engine,
+            EngineVersion = engineVersion,
         };
 
         return true;
@@ -1053,13 +1062,25 @@ public sealed partial class BrowserParser : IBrowserParser
     /// </summary>
     private static bool IsSameTruncatedVersion(string shortVersion, string fullVersion)
     {
-        return shortVersion.Length < fullVersion.Length
-            && ParserExtensions.TryCompareVersions(
-                shortVersion,
-                fullVersion,
-                out var comparisonResult
-            )
-            && comparisonResult == 0;
+        if (
+            shortVersion.Length >= fullVersion.Length
+            || !fullVersion.StartsWith(shortVersion, StringComparison.Ordinal)
+            || fullVersion[shortVersion.Length] != '.'
+        )
+        {
+            return false;
+        }
+
+        // The extra segments of the longer version must all be zero (e.g. "1.2" matches "1.2.0").
+        foreach (var c in fullVersion.AsSpan(shortVersion.Length))
+        {
+            if (c is not ('.' or '0'))
+            {
+                return false;
+            }
+        }
+
+        return true;
     }
 
     public bool TryParse(string userAgent, [NotNullWhen(true)] out BrowserInfo? result)
@@ -1131,6 +1152,8 @@ public sealed partial class BrowserParser : IBrowserParser
             name = browserFromClientHints.Name;
             code = browserFromClientHints.Code;
             version = browserFromClientHints.Version;
+            engine = browserFromClientHints.Engine;
+            engineVersion = browserFromClientHints.EngineVersion;
 
             if (IridiumVersionRegex.IsMatch(version))
             {
@@ -1170,13 +1193,36 @@ public sealed partial class BrowserParser : IBrowserParser
                 }
 
                 if (
+                    engine == BrowserEngines.Blink
+                    && name != BrowserNames.Iridium
+                    && browserFromUserAgent.EngineVersion?.Length > 0
+                    && engineVersion?.Length > 0
+                    && VersionComparer.IsLessThan(engineVersion, browserFromUserAgent.EngineVersion)
+                )
+                {
+                    engineVersion = browserFromUserAgent.EngineVersion;
+                }
+
+                if (
                     name is BrowserNames.Chromium or BrowserNames.ChromeWebview
                     && !ChromiumBrowsers.Contains(browserFromUserAgent.Code)
                 )
                 {
                     name = browserFromUserAgent.Name;
                     code = browserFromUserAgent.Code;
-                    version = browserFromUserAgent.Version;
+
+                    if (
+                        ParserExtensions.GetMajorVersion(version)
+                            != ParserExtensions.GetMajorVersion(browserFromUserAgent.Version)
+                        || browserFromUserAgent.Version?.Length > 0
+                            && VersionComparer.IsLessThanOrEqual(
+                                version,
+                                browserFromUserAgent.Version
+                            )
+                    )
+                    {
+                        version = browserFromUserAgent.Version;
+                    }
                 }
 
                 // Use browser name from user agent if it already contains the "Mobile" suffix
@@ -1207,12 +1253,7 @@ public sealed partial class BrowserParser : IBrowserParser
                     browserFromUserAgent.Version?.Length > 0
                     && version?.Length > 0
                     && browserFromUserAgent.Version.StartsWith(version)
-                    && ParserExtensions.TryCompareVersions(
-                        version,
-                        browserFromUserAgent.Version,
-                        out var comparisonResult
-                    )
-                    && comparisonResult < 0
+                    && VersionComparer.IsLessThan(version, browserFromUserAgent.Version)
                 )
                 {
                     version = browserFromUserAgent.Version;
@@ -1227,15 +1268,24 @@ public sealed partial class BrowserParser : IBrowserParser
                     engine == BrowserEngines.Blink
                     && name != BrowserNames.Iridium
                     && engineVersion?.Length > 0
-                    && ParserExtensions.TryCompareVersions(
-                        engineVersion,
-                        browserFromClientHints.Version,
-                        out comparisonResult
-                    )
-                    && comparisonResult < 0
+                    && VersionComparer.IsLessThan(engineVersion, browserFromClientHints.Version)
                 )
                 {
                     engineVersion = browserFromClientHints.Version;
+                }
+
+                if (
+                    engine == BrowserEngines.Blink
+                    && name != BrowserNames.Iridium
+                    && browserFromUserAgent.EngineVersion?.Length > 0
+                    && browserFromClientHints.EngineVersion?.Length > 0
+                    && VersionComparer.IsLessThan(
+                        browserFromUserAgent.EngineVersion,
+                        browserFromClientHints.EngineVersion
+                    )
+                )
+                {
+                    engineVersion = browserFromClientHints.EngineVersion;
                 }
             }
         }
@@ -1343,6 +1393,8 @@ public sealed partial class BrowserParser : IBrowserParser
         public required string Name { get; init; }
         public required BrowserCode Code { get; init; }
         public required string? Version { get; init; }
+        public required string? Engine { get; init; }
+        public required string? EngineVersion { get; init; }
     }
 
     private sealed class UserAgentBrowserInfo

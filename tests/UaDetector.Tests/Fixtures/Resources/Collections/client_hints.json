@@ -444,7 +444,11 @@
       "name": "Avast Secure Browser",
       "code": 72,
       "version": "6.6.0",
-      "family": "Chrome"
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "98.0.4758.101"
+      }
     }
   },
   {
@@ -4019,6 +4023,14 @@
   },
   {
     "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/21G93 [FBAN/FBIOS;FBAV/479.1.0.33.109;FBBV/637241220;FBDV/iPhone15,2;FBMD/iPhone;FBSN/iOS;FBSV/17.6.1;FBSS/3;FBID/phone;FBLC/es_ES;FBOP/5;FBRV/639094949;IABMV/1]",
+    "headers": {
+      "Sec-CH-UA": null,
+      "Sec-CH-UA-Platform": null,
+      "Sec-CH-UA-Mobile": null,
+      "Sec-CH-UA-Full-Version": null,
+      "Sec-CH-UA-Platform-Version": null,
+      "Sec-CH-UA-Model": null
+    },
     "os": {
       "name": "iOS",
       "code": 183,
