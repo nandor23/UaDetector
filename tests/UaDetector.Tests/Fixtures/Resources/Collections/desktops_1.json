@@ -212,6 +212,55 @@
     }
   },
   {
+    "userAgent": "Mozilla/5.0 (Linux; Android 6.0; AfriOne 2in1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.92 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "6.0",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome",
+      "code": 138,
+      "version": "77.0.3865.92",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "77.0.3865.92"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "Transformer",
+      "brand": {
+        "name": "AfriOne",
+        "code": 28
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (PC; OpenHarmony 6.1; Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 ArkWeb/6.1.0.100 HuaweiBrowser/6.1.3.321",
+    "os": {
+      "name": "OpenHarmony",
+      "code": 188,
+      "version": "6.1",
+      "family": "OpenHarmony"
+    },
+    "browser": {
+      "name": "Huawei Browser",
+      "code": 266,
+      "version": "6.1.3.321",
+      "family": "Chrome",
+      "engine": {
+        "name": "ArkWeb",
+        "version": "6.1.0.100"
+      }
+    },
+    "device": {
+      "type": 1
+    }
+  },
+  {
     "userAgent": "CitrixReceiver WTOS/1.0",
     "os": {
       "name": "ThinOS",
