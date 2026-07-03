@@ -168,6 +168,7 @@ internal static class ParserExtensions
 
         int offset1 = 0,
             offset2 = 0;
+
         bool hasSegment1 = true,
             hasSegment2 = true;
 
