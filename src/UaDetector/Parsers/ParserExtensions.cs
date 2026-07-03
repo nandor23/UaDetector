@@ -229,7 +229,7 @@ internal static class ParserExtensions
         }
 
         hasSegment = true;
-        var remaining = text.Slice(offset);
+        var remaining = text[offset..];
         int dotIndex = remaining.IndexOf('.');
 
         if (dotIndex < 0)
@@ -239,7 +239,7 @@ internal static class ParserExtensions
         }
 
         offset += dotIndex + 1;
-        return remaining.Slice(0, dotIndex);
+        return remaining[..dotIndex];
     }
 
     private static bool TryParseVersionSegment(ReadOnlySpan<char> segment, out int value)
