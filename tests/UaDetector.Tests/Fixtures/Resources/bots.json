@@ -2975,10 +2975,22 @@
     "bot": {
       "name": "Openindex Spider",
       "category": 1,
-      "url": "http://www.openindex.io/en/webmasters/spider.html",
+      "url": "https://www.openindex.io/about-our-spider/",
       "producer": {
         "name": "Openindex B.V.",
-        "url": "http://www.openindex.io"
+        "url": "https://www.openindex.io/"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (compatible; OpenindexSpider; +https://www.openindex.io/saas/about-our-spider/)",
+    "bot": {
+      "name": "Openindex Spider",
+      "category": 1,
+      "url": "https://www.openindex.io/about-our-spider/",
+      "producer": {
+        "name": "Openindex B.V.",
+        "url": "https://www.openindex.io/"
       }
     }
   },
@@ -10103,9 +10115,9 @@
   {
     "userAgent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; GeedoProductSearch; +http://www.geedo.com/product-search.html) Chrome/79.0.3945.88 Safari/537.36",
     "bot": {
-      "name": "GeedoProductSearch",
+      "name": "GeedoShopProductFinder",
       "category": 4,
-      "url": "https://geedo.com/product-search/"
+      "url": "https://geedo.com/product-finder/"
     }
   },
   {
@@ -13390,6 +13402,423 @@
     "userAgent": "IMPORTANT! FREE! NON-CRIMINAL BLOCKCHAIN PHP NEURAL NETWORK! OWN CRYPTO, GIFT, CAPITALIST AND BLOCKCHAIN SCIENTIFIC DEBT GATEWAYS! OWN HOSTING AND ENCRYPTED DATABASE! LINK - http://78.29.51.27/phpneuralnetwork/?s1=CU_example.com",
     "bot": {
       "name": "Generic Bot"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 ProxyChecker/2.0",
+    "bot": {
+      "name": "ProxyChecker",
+      "category": 6,
+      "url": "https://iplark.com/",
+      "producer": {
+        "name": "IPLark",
+        "url": "https://iplark.com/"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (compatible; ShopifyChecker/1.0)",
+    "bot": {
+      "name": "ShopifyChecker",
+      "category": 4
+    }
+  },
+  {
+    "userAgent": "Shodan-Pull/1.0",
+    "bot": {
+      "name": "Shodan-Pull",
+      "category": 6
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (compatible; FreePBX-Scanner/1.0)",
+    "bot": {
+      "name": "FreePBX-Scanner",
+      "category": 6
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (compatible; SecurityScanner/1.0)",
+    "bot": {
+      "name": "SecurityScanner",
+      "category": 6
+    }
+  },
+  {
+    "userAgent": "PlayStore-Google",
+    "bot": {
+      "name": "PlayStore-Google",
+      "category": 4,
+      "url": "https://play.google.com/",
+      "producer": {
+        "name": "Google Inc.",
+        "url": "https://www.google.com/"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 CheckerProxy/1.0",
+    "bot": {
+      "name": "CheckerProxy",
+      "category": 6
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (compatible; CSE-Scanner/1.0)",
+    "bot": {
+      "name": "CSE-Scanner",
+      "category": 6
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (compatible; DomainProbe/1.1; +https://example.local)",
+    "bot": {
+      "name": "DomainProbe",
+      "category": 6
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (compatible; CMSLookup/1.0)",
+    "bot": {
+      "name": "CMSLookup",
+      "category": 6
+    }
+  },
+  {
+    "userAgent": "StackScopeBot/1.0 (+https://stackscope.dev/bot)",
+    "bot": {
+      "name": "StackScopeBot",
+      "category": 4,
+      "url": "https://stackscope.dev/bot",
+      "producer": {
+        "name": "StackScope",
+        "url": "https://stackscope.dev/"
+      }
+    }
+  },
+  {
+    "userAgent": "AffiliateSpyBot/1.0 (+https://affiliatespy.io)",
+    "bot": {
+      "name": "AffiliateSpyBot",
+      "category": 4,
+      "url": "https://www.affiliatespy.io/",
+      "producer": {
+        "name": "Wayfinity Ltd",
+        "url": "https://www.wayfinity.io/"
+      }
+    }
+  },
+  {
+    "userAgent": "OI-Crawler/Nutch (https://openintel.nl/webcrawl/)",
+    "bot": {
+      "name": "OI-Crawler",
+      "category": 4,
+      "url": "https://openintel.nl/webcrawl/",
+      "producer": {
+        "name": "OpenINTEL",
+        "url": "https://openintel.nl/"
+      }
+    }
+  },
+  {
+    "userAgent": "visionheight.com/scan Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Chrome/126.0.0.0 Safari/537.36",
+    "bot": {
+      "name": "VisionHeight",
+      "category": 6,
+      "url": "https://www.visionheight.com/scan",
+      "producer": {
+        "name": "Vision Height Ltd",
+        "url": "https://www.visionheight.com/"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (compatible; AccessibleWebBot/1.0; +https://accessibleweb.com/bot/)",
+    "bot": {
+      "name": "AccessibleWebBot",
+      "category": 4,
+      "url": "https://accessibleweb.com/bot/",
+      "producer": {
+        "name": "Accessible Web Inc.",
+        "url": "https://accessibleweb.com/"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; AccessibleWebBot/1.0; +https://accessibleweb.com/bot/) HeadlessChrome/W.X.Y.Z Safari/537.36",
+    "bot": {
+      "name": "AccessibleWebBot",
+      "category": 4,
+      "url": "https://accessibleweb.com/bot/",
+      "producer": {
+        "name": "Accessible Web Inc.",
+        "url": "https://accessibleweb.com/"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (compatible; Crusader/1.0)",
+    "bot": {
+      "name": "Generic Bot"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15 MarketGoo/2.1",
+    "bot": {
+      "name": "MarketGoo",
+      "category": 4,
+      "url": "https://www.marketgoo.com/",
+      "producer": {
+        "name": "MARKETGOO INTERNET, S.L.",
+        "url": "https://www.marketgoo.com/"
+      }
+    }
+  },
+  {
+    "userAgent": "presearch_com Spider/Nutch-1.20",
+    "bot": {
+      "name": "Presearch",
+      "category": 1,
+      "url": "https://presearch.com/",
+      "producer": {
+        "name": "Presearch.com Inc.",
+        "url": "https://presearch.com/"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3/Nutch-1.20 (Crawling agent for presearch.com index)",
+    "bot": {
+      "name": "Presearch",
+      "category": 1,
+      "url": "https://presearch.com/",
+      "producer": {
+        "name": "Presearch.com Inc.",
+        "url": "https://presearch.com/"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 ArtelLeadRadar/4.0",
+    "bot": {
+      "name": "ArtelLeadRadar",
+      "category": 4
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (compatible; FinderGo/1.0)",
+    "bot": {
+      "name": "FinderGo",
+      "category": 4
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (compatible; ProductLookoutBot/1.0)",
+    "bot": {
+      "name": "ProductLookoutBot",
+      "category": 4
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (compatible; KenyaDomainScorer/2.1)",
+    "bot": {
+      "name": "KenyaDomainScorer",
+      "category": 4
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (compatible; PhishBucketRust/1.0)",
+    "bot": {
+      "name": "PhishBucketRust",
+      "category": 4
+    }
+  },
+  {
+    "userAgent": "multi-country-domains/1.0",
+    "bot": {
+      "name": "Generic Bot"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (compatible; WATCrawler/1.0)",
+    "bot": {
+      "name": "WATCrawler",
+      "category": 4
+    }
+  },
+  {
+    "userAgent": "Goosee-Audit/1.0 (+internal-security-audit)",
+    "bot": {
+      "name": "Goosee-Audit",
+      "category": 6
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (compatible; platform-fingerprint/1.0)",
+    "bot": {
+      "name": "Generic Bot"
+    }
+  },
+  {
+    "userAgent": "greedyhand/0.1",
+    "bot": {
+      "name": "Generic Bot"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (compatible; HubSeedsBot/1.0)",
+    "bot": {
+      "name": "HubSeedsBot",
+      "category": 4
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (compatible; PostitLeadDiscovery/2.0; public business contact research)",
+    "bot": {
+      "name": "PostitLeadDiscovery",
+      "category": 4
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (compatible; DomainExtractor/1.0)",
+    "bot": {
+      "name": "Generic Bot"
+    }
+  },
+  {
+    "userAgent": "LetrixLabs/1.0",
+    "bot": {
+      "name": "LetrixLabs",
+      "category": 4
+    }
+  },
+  {
+    "userAgent": "TLM-Audit-Scanner/1.0",
+    "bot": {
+      "name": "TLM-Audit-Scanner",
+      "category": 6
+    }
+  },
+  {
+    "userAgent": "RootEvidence/1.0",
+    "bot": {
+      "name": "RootEvidence",
+      "category": 6,
+      "url": "https://www.rootevidence.com/",
+      "producer": {
+        "name": "Root Evidence, Inc.",
+        "url": "https://www.rootevidence.com/"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (compatible; UdV-AI-Research/1.0)",
+    "bot": {
+      "name": "UdV-AI-Research",
+      "category": 19
+    }
+  },
+  {
+    "userAgent": "nsfw-go-placeholder-filter/1.0",
+    "bot": {
+      "name": "Generic Bot"
+    }
+  },
+  {
+    "userAgent": "Intently.co",
+    "bot": {
+      "name": "Generic Bot"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) KarnoProspectingStudio/0.1 Safari/537.36",
+    "bot": {
+      "name": "Generic Bot"
+    }
+  },
+  {
+    "userAgent": "TrustBot/1.0 (+https://truster.info/bot)",
+    "bot": {
+      "name": "TrustBot",
+      "category": 4,
+      "url": "https://truster.info/en/"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko; GeedoShopProductFinder) Chrome/142.0.0.0 Safari/537.36",
+    "bot": {
+      "name": "GeedoShopProductFinder",
+      "category": 4,
+      "url": "https://geedo.com/product-finder/"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (compatible; NetScope-DomainScanner/1.0; security research scanner)",
+    "bot": {
+      "name": "NetScope-DomainScanner",
+      "category": 6
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; SleepBot/1.0; +http://sleepbot.com/) Chrome/131.0.0.0 Safari/537.36",
+    "bot": {
+      "name": "SleepBot",
+      "category": 4
+    }
+  },
+  {
+    "userAgent": "recon-engine/0.2 (large-cms-survey; contact: ops@recon-engine.example)",
+    "bot": {
+      "name": "Generic Bot"
+    }
+  },
+  {
+    "userAgent": "recon-engine/0.4 (cluster-8w; contact: ops@recon-engine.example)",
+    "bot": {
+      "name": "Generic Bot"
+    }
+  },
+  {
+    "userAgent": "recon-engine/0.1 (public-internet survey; contact: recon-engine-test@vps-alpha.invalid)",
+    "bot": {
+      "name": "Generic Bot"
+    }
+  },
+  {
+    "userAgent": "recon-crawler/0.1 (+ray@ringsix.com)",
+    "bot": {
+      "name": "Generic Bot"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (compatible; EFF DNT policy checker +https://www.eff.org/dnt-policy) for questions or concerns email dnt-policy at eff.org",
+    "bot": {
+      "name": "EFF Do Not Track Policy Checker",
+      "category": 4,
+      "url": "https://www.eff.org/dnt-policy",
+      "producer": {
+        "name": "Electronic Frontier Foundation",
+        "url": "https://www.eff.org/"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (compatible; SitemapCrawler.de crawler)",
+    "bot": {
+      "name": "SitemapCrawler.de",
+      "category": 4
+    }
+  },
+  {
+    "userAgent": "SentiBot www.sentibot.eu (compatible with Googlebot)",
+    "bot": {
+      "name": "SentiBot",
+      "category": 19,
+      "url": "https://sites.google.com/senti1.com/sentibot-eu/home/",
+      "producer": {
+        "name": "SentiOne S.A.",
+        "url": "https://sentione.com/"
+      }
     }
   }
 ]
