@@ -2,6 +2,11 @@ namespace UaDetector.Benchmarks;
 
 public static class TestUserAgents
 {
+    // Number of entries in <see cref="All"/>. Must stay in sync with the array. It
+    // exists because BenchmarkDotNet's OperationsPerInvoke needs a compile-time
+    // constant. A guard in the benchmark's setup asserts they match.
+    public const int Count = 38;
+
     public static readonly string[] All =
     [
         "Mozilla/5.0 (AmigaOS; U; AmigaOS 1.3; en-US; rv:1.8.1.21) Gecko/20090303 SeaMonkey/1.1.15",

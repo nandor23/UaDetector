@@ -21,7 +21,6 @@ public sealed class UaDetector : IUaDetector
     private readonly BrowserParser _browserParser;
     private readonly ClientParser _clientParser;
     private readonly BotParser _botParser;
-    private static readonly Regex ContainsLetterRegex;
     private static readonly Regex AndroidVrFragmentRegex;
     private static readonly Regex ChromeRegex;
     private static readonly Regex MobileRegex;
@@ -57,7 +56,6 @@ public sealed class UaDetector : IUaDetector
 
     static UaDetector()
     {
-        ContainsLetterRegex = new Regex("[a-zA-Z]", RegexOptions.Compiled);
         AndroidVrFragmentRegex = BuildRegex("Android( [.0-9]+)?; Mobile VR;| VR ");
         ChromeRegex = BuildRegex("Chrome/[.0-9]*");
         MobileRegex = BuildRegex("(?:Mobile|eliboM)");
@@ -134,6 +132,19 @@ public sealed class UaDetector : IUaDetector
             $"(?:^|[^A-Z_-])(?:{pattern})",
             RegexOptions.IgnoreCase | RegexOptions.Compiled
         );
+    }
+
+    private static bool ContainsLetter(string value)
+    {
+        foreach (char c in value)
+        {
+            if (c is >= 'a' and <= 'z' or >= 'A' and <= 'Z')
+            {
+                return true;
+            }
+        }
+
+        return false;
     }
 
     private static bool IsWindows8OrLater(OsInfo os)
@@ -458,10 +469,7 @@ public sealed class UaDetector : IUaDetector
         [NotNullWhen(true)] out UserAgentInfo? result
     )
     {
-        if (
-            (userAgent.Length == 0 || !ContainsLetterRegex.IsMatch(userAgent))
-            && headers.Count == 0
-        )
+        if ((userAgent.Length == 0 || !ContainsLetter(userAgent)) && headers.Count == 0)
         {
             result = null;
             return false;
@@ -476,13 +484,30 @@ public sealed class UaDetector : IUaDetector
             restoredUserAgent = userAgent;
         }
 
+        if (_cache is null)
+        {
+            return TryParseUncached(userAgent, restoredUserAgent, clientHints, out result);
+        }
+
         var cacheKey = $"{CacheKeyPrefix}:{restoredUserAgent}";
 
-        if (_cache is not null && _cache.TryGet(cacheKey, out result))
+        if (_cache.TryGet(cacheKey, out result))
         {
             return result is not null;
         }
 
+        var found = TryParseUncached(userAgent, restoredUserAgent, clientHints, out result);
+        _cache.Set(cacheKey, result);
+        return found;
+    }
+
+    private bool TryParseUncached(
+        string userAgent,
+        string restoredUserAgent,
+        ClientHints clientHints,
+        [NotNullWhen(true)] out UserAgentInfo? result
+    )
+    {
         if (
             !_uaDetectorOptions.DisableBotDetection
             && _botParser.TryParse(restoredUserAgent, out BotInfo? bot)
@@ -497,7 +522,6 @@ public sealed class UaDetector : IUaDetector
                 Device = null,
             };
 
-            _cache?.Set(cacheKey, result);
             return true;
         }
 
@@ -536,7 +560,6 @@ public sealed class UaDetector : IUaDetector
             };
         }
 
-        _cache?.Set(cacheKey, result);
         return result is not null;
     }
 

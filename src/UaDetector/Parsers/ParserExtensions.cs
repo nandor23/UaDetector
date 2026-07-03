@@ -89,6 +89,11 @@ internal static class ParserExtensions
 
     public static string FormatWithMatch(string value, Match match)
     {
+        if (value.IndexOf('$') < 0)
+        {
+            return value.Trim();
+        }
+
         for (int i = 1; i <= match.Groups.Count; i++)
         {
             value = value.Replace($"${i}", match.Groups[i].Value);
@@ -104,7 +109,10 @@ internal static class ParserExtensions
             return null;
         }
 
-        version = version.Replace('_', '.');
+        if (version.IndexOf('_') >= 0)
+        {
+            version = version.Replace('_', '.');
+        }
 
         if (versionTruncation != VersionTruncation.None)
         {
@@ -155,40 +163,39 @@ internal static class ParserExtensions
         [NotNullWhen(true)] out int? result
     )
     {
-        string[] segments1 = first.Split('.');
-        string[] segments2 = second.Split('.');
+        ReadOnlySpan<char> firstSpan = first.AsSpan();
+        ReadOnlySpan<char> secondSpan = second.AsSpan();
 
-        int maxSegments = Math.Max(segments1.Length, segments2.Length);
+        int offset1 = 0,
+            offset2 = 0;
+        bool hasSegment1 = true,
+            hasSegment2 = true;
 
-        for (int i = 0; i < maxSegments; i++)
+        while (hasSegment1 || hasSegment2)
         {
-            int value1,
-                value2;
-
-            if (i < segments1.Length)
-            {
-                if (!int.TryParse(segments1[i], out value1))
-                {
-                    result = null;
-                    return false;
-                }
-            }
-            else
-            {
-                value1 = 0;
-            }
-
-            if (i < segments2.Length)
-            {
-                if (!int.TryParse(segments2[i], out value2))
-                {
-                    result = null;
-                    return false;
-                }
-            }
-            else
-            {
+            int value1 = 0,
                 value2 = 0;
+
+            if (hasSegment1)
+            {
+                var segment = NextVersionSegment(firstSpan, ref offset1, out hasSegment1);
+
+                if (hasSegment1 && !TryParseVersionSegment(segment, out value1))
+                {
+                    result = null;
+                    return false;
+                }
+            }
+
+            if (hasSegment2)
+            {
+                var segment = NextVersionSegment(secondSpan, ref offset2, out hasSegment2);
+
+                if (hasSegment2 && !TryParseVersionSegment(segment, out value2))
+                {
+                    result = null;
+                    return false;
+                }
             }
 
             result = value1.CompareTo(value2);
@@ -201,5 +208,45 @@ internal static class ParserExtensions
 
         result = 0;
         return true;
+    }
+
+    /// <summary>
+    /// Returns the next '.'-delimited segment starting at <paramref name="offset"/>, mirroring
+    /// <see cref="string.Split(char[])"/> semantics without allocating. <paramref name="hasSegment"/>
+    /// is set to false once the string has been fully consumed.
+    /// </summary>
+    private static ReadOnlySpan<char> NextVersionSegment(
+        ReadOnlySpan<char> text,
+        ref int offset,
+        out bool hasSegment
+    )
+    {
+        if (offset > text.Length)
+        {
+            hasSegment = false;
+            return default;
+        }
+
+        hasSegment = true;
+        var remaining = text.Slice(offset);
+        int dotIndex = remaining.IndexOf('.');
+
+        if (dotIndex < 0)
+        {
+            offset = text.Length + 1;
+            return remaining;
+        }
+
+        offset += dotIndex + 1;
+        return remaining.Slice(0, dotIndex);
+    }
+
+    private static bool TryParseVersionSegment(ReadOnlySpan<char> segment, out int value)
+    {
+#if NET6_0_OR_GREATER
+        return int.TryParse(segment, out value);
+#else
+        return int.TryParse(segment.ToString(), out value);
+#endif
     }
 }

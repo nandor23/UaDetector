@@ -26,13 +26,25 @@ public sealed partial class BotParser : IBotParser
 
     public bool TryParse(string userAgent, [NotNullWhen(true)] out BotInfo? result)
     {
+        if (_cache is null)
+        {
+            return TryParseUncached(userAgent, out result);
+        }
+
         var cacheKey = $"{ParseCacheKeyPrefix}:{userAgent}";
 
-        if (_cache is not null && _cache.TryGet(cacheKey, out result))
+        if (_cache.TryGet(cacheKey, out result))
         {
             return result is not null;
         }
 
+        var found = TryParseUncached(userAgent, out result);
+        _cache.Set(cacheKey, result);
+        return found;
+    }
+
+    private static bool TryParseUncached(string userAgent, [NotNullWhen(true)] out BotInfo? result)
+    {
         if (CombinedRegex.IsMatch(userAgent))
         {
             foreach (var bot in Bots)
@@ -56,27 +68,30 @@ public sealed partial class BotParser : IBotParser
                         : new ProducerInfo { Name = bot.Producer?.Name, Url = bot.Producer?.Url },
                 };
 
-                _cache?.Set(cacheKey, result);
                 return true;
             }
         }
 
         result = null;
-        _cache?.Set(cacheKey, result);
         return false;
     }
 
     public bool IsBot(string userAgent)
     {
+        if (_cache is null)
+        {
+            return CombinedRegex.IsMatch(userAgent);
+        }
+
         var cacheKey = $"{IsBotCacheKeyPrefix}:{userAgent}";
 
-        if (_cache is not null && _cache.TryGet(cacheKey, out bool result))
+        if (_cache.TryGet(cacheKey, out bool result))
         {
             return result;
         }
 
         result = CombinedRegex.IsMatch(userAgent);
-        _cache?.Set(cacheKey, result);
+        _cache.Set(cacheKey, result);
         return result;
     }
 }

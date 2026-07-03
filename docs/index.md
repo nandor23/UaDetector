@@ -8,7 +8,7 @@
 <h4 align="center">A powerful user agent parser built on <a href="https://github.com/matomo-org/device-detector" target="_blank">Device Detector</a></h4>
 
 <p align="center">
-Fast and precise user agent parser for .NET, built on top of the largest and most up-to-date user agent database. Identifies browsers, operating systems, devices, clients, and bots.
+Fast and precise user agent parser for .NET, built on top of the largest and most up-to-date user agent database from the <a href="https://github.com/matomo-org/device-detector" target="_blank">Matomo Device Detector</a> project. It identifies browsers, operating systems, devices, clients, and bots.
 </p>
 
 <div style="text-align: center; margin: 2rem 0;">
