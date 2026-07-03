@@ -7766,6 +7766,44 @@
     }
   },
   {
+    "userAgent": "CitrixReceiver/18.12.0.65534 (X11; Linux x86_64) Warthog/9.0.8024 (Release) X1Class CWACapable",
+    "os": {
+      "name": "ThinOS",
+      "code": 207,
+      "version": "9.0.8024",
+      "cpuArchitecture": "x64",
+      "family": "Unix"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Warthog/9.0 Safari/537",
+    "os": {
+      "name": "ThinOS",
+      "code": 207,
+      "version": "9.0",
+      "cpuArchitecture": "x64",
+      "family": "Unix"
+    }
+  },
+  {
+    "userAgent": "CitrixReceiver/18.12.0.65534 (X11; Linux x86_64) WTOS/9 (Release) X1Class CWACapable",
+    "os": {
+      "name": "ThinOS",
+      "code": 207,
+      "version": "9",
+      "cpuArchitecture": "x64",
+      "family": "Unix"
+    }
+  },
+  {
+    "userAgent": "CitrixReceiver WTOS/1.0",
+    "os": {
+      "name": "ThinOS",
+      "code": 207,
+      "family": "Unix"
+    }
+  },
+  {
     "userAgent": "Mozilla/5.0 (Linux; U; Android 2.0; en-us;) AppleWebKit/538.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/538.1 (Kobo Touch 0390/4.45.23697)",
     "os": {
       "name": "KoboOS",

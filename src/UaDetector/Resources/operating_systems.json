@@ -2431,6 +2431,11 @@
     "version": "$1"
   },
   {
+    "regex": "(?:Warthog|WTOS)(?:/((?!1\\.)\\d+(?:\\.\\d+)*))?",
+    "name": "ThinOS",
+    "version": "$1"
+  },
+  {
     "regex": "Nintendo (Wii|Switch)",
     "name": "Nintendo",
     "version": "$1"

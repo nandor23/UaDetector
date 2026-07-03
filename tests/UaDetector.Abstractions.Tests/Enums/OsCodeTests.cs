@@ -226,7 +226,8 @@ public class OsCodeTests
             { OsCode.HarmonyOsNext, 203 },
             { OsCode.AndroidGo, 204 },
             { OsCode.VegaOs, 205 },
-            { OsCode.KoboOS, 206 },
+            { OsCode.KoboOs, 206 },
+            { OsCode.ThinOs, 207 },
         };
 
         expectedValues.Count.ShouldBe(Enum.GetValues<OsCode>().Length);

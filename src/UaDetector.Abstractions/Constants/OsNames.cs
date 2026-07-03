@@ -207,5 +207,6 @@ public static class OsNames
     public const string HarmonyOsNext = "HarmonyOS NEXT";
     public const string AndroidGo = "Android Go";
     public const string VegaOs = "Vega OS";
-    public const string KoboOS = "KoboOS";
+    public const string KoboOs = "KoboOS";
+    public const string ThinOs = "ThinOS";
 }

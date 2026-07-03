@@ -212,6 +212,25 @@
     }
   },
   {
+    "userAgent": "CitrixReceiver WTOS/1.0",
+    "os": {
+      "name": "ThinOS",
+      "code": 207,
+      "family": "Unix"
+    },
+    "client": {
+      "type": 1,
+      "name": "Citrix Workspace"
+    },
+    "device": {
+      "type": 1,
+      "brand": {
+        "name": "Dell",
+        "code": 362
+      }
+    }
+  },
+  {
     "userAgent": "Mozilla/5.0 (Wayland; Ubuntu; Linux x86_64; Touch; Tablet PC 4.1; Microsoft Corporation/Surface Pro 7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.245 Safari/537.36 Ubuntu/23.10 (6.1.3035.204-1) Vivaldi/6.1.3035.204",
     "os": {
       "name": "Ubuntu",

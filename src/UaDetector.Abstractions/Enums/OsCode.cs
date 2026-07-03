@@ -207,5 +207,6 @@ public enum OsCode
     HarmonyOsNext = 203,
     AndroidGo = 204,
     VegaOs = 205,
-    KoboOS = 206,
+    KoboOs = 206,
+    ThinOs = 207,
 }
