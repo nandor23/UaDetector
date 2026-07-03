@@ -1,5 +1,12 @@
 [
   {
+    "regex": "Quiche%20Browser",
+    "name": "Quiche Browser",
+    "engine": {
+      "default": "WebKit"
+    }
+  },
+  {
     "regex": "MySudo Browser",
     "name": "MySudo"
   },

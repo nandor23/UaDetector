@@ -721,4 +721,5 @@ public static class BrowserNames
     public const string MySudo = "MySudo";
     public const string PrivateBrowsing = "PrivateBrowsing";
     public const string SafeBrowser = "SafeBrowser";
+    public const string QuicheBrowser = "Quiche Browser";
 }

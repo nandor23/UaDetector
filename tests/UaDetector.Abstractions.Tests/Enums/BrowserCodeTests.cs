@@ -740,6 +740,7 @@ public class BrowserCodeTests
             { BrowserCode.MySudo, 717 },
             { BrowserCode.PrivateBrowsing, 718 },
             { BrowserCode.SafeBrowser, 719 },
+            { BrowserCode.QuicheBrowser, 720 },
         };
 
         expectedValues.Count.ShouldBe(Enum.GetValues<BrowserCode>().Length);

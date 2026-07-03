@@ -752,6 +752,7 @@ public static class BrowserRegistry
             { BrowserCode.MySudo, BrowserNames.MySudo },
             { BrowserCode.PrivateBrowsing, BrowserNames.PrivateBrowsing },
             { BrowserCode.SafeBrowser, BrowserNames.SafeBrowser },
+            { BrowserCode.QuicheBrowser, BrowserNames.QuicheBrowser },
         }.ToFrozenDictionary();
 
     internal static readonly FrozenDictionary<string, BrowserCode> BrowserNameMappings =

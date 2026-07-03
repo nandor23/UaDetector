@@ -721,4 +721,5 @@ public enum BrowserCode
     MySudo = 717,
     PrivateBrowsing = 718,
     SafeBrowser = 719,
+    QuicheBrowser = 720,
 }
