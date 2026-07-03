@@ -2122,4 +2122,5 @@ public enum BrandCode
     Coles = 2118,
     Elco = 2119,
     Ioplee = 2120,
+    Kobo = 2121,
 }

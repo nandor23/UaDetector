@@ -1,5 +1,9 @@
 [
   {
+    "regex": "Kobo",
+    "name": "KoboOS"
+  },
+  {
     "regex": "NuttX(?:/(\\d+[.\\d]+))?",
     "name": "NuttX",
     "version": "$1"

@@ -9396,6 +9396,26 @@
     }
   },
   {
+    "userAgent": "Mozilla/5.0 (Linux; U; Android 2.0; en-us;) AppleWebKit/538.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/538.1 (Kobo Touch 0390/4.45.23697)",
+    "os": {
+      "name": "KoboOS",
+      "code": 206,
+      "family": "GNU/Linux"
+    },
+    "client": {
+      "type": 1,
+      "name": "Kobo eReader",
+      "version": "4.45.23697"
+    },
+    "device": {
+      "type": 3,
+      "brand": {
+        "name": "Kobo",
+        "code": 2121
+      }
+    }
+  },
+  {
     "userAgent": "Mozilla/5.0 (Linux; Android 16; SM-X930 Build/BP2A.250605.031.A3; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/147.0.7727.137 Safari/537.36",
     "os": {
       "name": "Android",

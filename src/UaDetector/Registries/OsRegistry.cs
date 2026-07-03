@@ -234,6 +234,7 @@ public static class OsRegistry
         { OsCode.HarmonyOsNext, OsNames.HarmonyOsNext },
         { OsCode.AndroidGo, OsNames.AndroidGo },
         { OsCode.VegaOs, OsNames.VegaOs },
+        { OsCode.KoboOS, OsNames.KoboOS },
     }.ToFrozenDictionary();
 
     internal static readonly FrozenDictionary<string, OsCode> OsNameMappings = OsCodeMappings
