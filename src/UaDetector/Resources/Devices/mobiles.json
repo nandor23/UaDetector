@@ -65105,7 +65105,7 @@
     "model": "$1"
   },
   {
-    "regex": "(CYGNUSX?|Gravity Z2|ChampionPro)(?:[);/ ]|$)",
+    "regex": "AfriOne|(CYGNUSX?|Gravity Z2|ChampionPro)(?:[);/ ]|$)",
     "brand": "AfriOne",
     "type": 11,
     "modelVariants": [
@@ -65126,6 +65126,11 @@
         "regex": "ChampionPro(?:[);/ ]|$)",
         "type": 2,
         "name": "Champion Pro"
+      },
+      {
+        "regex": "AfriOne 2in1(?:[);/ ]|$)",
+        "type": 1,
+        "name": "Transformer"
       }
     ]
   },

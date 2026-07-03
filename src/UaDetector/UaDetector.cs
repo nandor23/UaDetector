@@ -75,7 +75,7 @@ public sealed class UaDetector : IUaDetector
         AndroidRegex = BuildRegex(
             @"Andr0id|(?:Android(?: UHD)?|Google) TV|\(lite\) TV|BRAVIA|Firebolt| TV$"
         );
-        DesktopFragmentRegex = BuildRegex("Desktop(?: (x(?:32|64)|WOW64))?;");
+        DesktopFragmentRegex = BuildRegex("(?:Desktop|PC)(?: (x(?:32|64)|WOW64))?;");
 
         AppleOsNames = new[]
         {
@@ -430,11 +430,7 @@ public sealed class UaDetector : IUaDetector
         }
 
         // User agents containing the "Desktop" fragment are assumed to be desktops.
-        if (
-            deviceType != DeviceType.Desktop
-            && userAgent.Contains("Desktop")
-            && DesktopFragmentRegex.IsMatch(userAgent)
-        )
+        if (deviceType != DeviceType.Desktop && DesktopFragmentRegex.IsMatch(userAgent))
         {
             deviceType = DeviceType.Desktop;
         }

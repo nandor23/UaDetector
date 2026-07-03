@@ -14965,6 +14965,31 @@
     }
   },
   {
+    "userAgent": "Mozilla/5.0 (PC; OpenHarmony 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 ArkWeb/6.1.0.115",
+    "browser": {
+      "name": "Huawei Browser",
+      "code": 266,
+      "family": "Chrome",
+      "engine": {
+        "name": "ArkWeb",
+        "version": "6.1.0.115"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (PC; OpenHarmony 6.1; Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 ArkWeb/6.1.0.100 HuaweiBrowser/6.1.3.321",
+    "browser": {
+      "name": "Huawei Browser",
+      "code": 266,
+      "version": "6.1.3.321",
+      "family": "Chrome",
+      "engine": {
+        "name": "ArkWeb",
+        "version": "6.1.0.100"
+      }
+    }
+  },
+  {
     "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36",
     "headers": {
       "Sec-CH-UA": "\"Island\";v=\"147\", \"Not.A/Brand\";v=\"8\", \"Chromium\";v=\"147\""
