@@ -1067,5 +1067,21 @@
       "name": "Hubot",
       "version": "13.1.4"
     }
+  },
+  {
+    "userAgent": "PHP-SOAP/8.5.6",
+    "client": {
+      "type": 3,
+      "name": "PHP-SOAP",
+      "version": "8.5.6"
+    }
+  },
+  {
+    "userAgent": "KlHttpClientCurl/30.1895.0.970",
+    "client": {
+      "type": 3,
+      "name": "KlHttpClientCurl",
+      "version": "30.1895.0.970"
+    }
   }
 ]
