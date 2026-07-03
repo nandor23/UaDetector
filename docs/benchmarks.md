@@ -2,11 +2,12 @@ Both UaDetector and UaDetector.Lite load regular expressions into memory for par
 If memory usage is a concern, UaDetector.Lite uses **5.6 times less memory** (32.38 MB vs 181.88 MB)
 than UaDetector while maintaining the same functionality at the cost of parsing speed.
 
-> [!NOTE]
-> UAParser is faster because it matches against a smaller set of regular expressions. UaDetector
-> uses the larger [Matomo Device Detector](https://github.com/matomo-org/device-detector) ruleset,
-> trading some speed for broader and more precise detection.
-> Detection rules: [Device Detector](https://github.com/matomo-org/device-detector/tree/master/regexes) (used by UaDetector) · [uap-core](https://github.com/ua-parser/uap-core/blob/master/regexes.yaml) (used by UAParser)
+!!! note
+    UAParser is faster because it matches against a smaller set of regular expressions. UaDetector
+    uses the larger [Matomo Device Detector](https://github.com/matomo-org/device-detector) ruleset,
+    trading some speed for broader and more precise detection.
+
+    Detection rules: [Device Detector](https://github.com/matomo-org/device-detector/tree/master/regexes) (used by UaDetector) · [uap-core](https://github.com/ua-parser/uap-core/blob/master/regexes.yaml) (used by UAParser)
 
 ### Library Comparison
 
