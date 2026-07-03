@@ -226,7 +226,7 @@ public class OsCodeTests
             { OsCode.HarmonyOsNext, 203 },
             { OsCode.AndroidGo, 204 },
             { OsCode.VegaOs, 205 },
-it c            { OsCode.KoboOs, 206 },
+            { OsCode.KoboOs, 206 },
             { OsCode.ThinOs, 207 },
         };
 
