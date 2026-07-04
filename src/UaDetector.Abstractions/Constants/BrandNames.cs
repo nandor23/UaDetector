@@ -1171,7 +1171,7 @@ public static class BrandNames
     public const string Nedaphone = "Nedaphone";
     public const string Necnot = "Necnot";
     public const string Neffos = "Neffos";
-    public const string Neo = "Neo";
+    public const string Neo = "NEO";
     public const string Neko = "NEKO";
     public const string Neomi = "Neomi";
     public const string NeonIq = "Neon IQ";
@@ -2126,4 +2126,17 @@ public static class BrandNames
     public const string Rokid = "Rokid";
     public const string Bulsatcom = "Bulsatcom";
     public const string Yutmart = "Yutmart";
+    public const string Atlantic = "ATLANTIC";
+    public const string Dual = "Dual";
+    public const string Durabase = "Durabase";
+    public const string Eversteel = "Eversteel";
+    public const string Grandin = "Grandin";
+    public const string Heider = "Heider";
+    public const string Ixi = "IXI";
+    public const string Johnson = "johnson";
+    public const string Ocean = "OCEAN";
+    public const string ProCaster = "ProCaster";
+    public const string Quart = "Quart";
+    public const string SurfTv = "SURFTV";
+    public const string Technical = "Technical";
 }

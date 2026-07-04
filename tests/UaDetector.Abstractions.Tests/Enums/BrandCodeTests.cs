@@ -2145,6 +2145,19 @@ public class BrandCodeTests
             { BrandCode.Rokid, 2122 },
             { BrandCode.Bulsatcom, 2123 },
             { BrandCode.Yutmart, 2124 },
+            { BrandCode.Atlantic, 2125 },
+            { BrandCode.Dual, 2126 },
+            { BrandCode.Durabase, 2127 },
+            { BrandCode.Eversteel, 2128 },
+            { BrandCode.Grandin, 2129 },
+            { BrandCode.Heider, 2130 },
+            { BrandCode.Ixi, 2131 },
+            { BrandCode.Johnson, 2132 },
+            { BrandCode.Ocean, 2133 },
+            { BrandCode.ProCaster, 2134 },
+            { BrandCode.Quart, 2135 },
+            { BrandCode.SurfTv, 2136 },
+            { BrandCode.Technical, 2137 },
         };
 
         expectedValues.Count.ShouldBe(Enum.GetValues<BrandCode>().Length);

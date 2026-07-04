@@ -116,6 +116,17 @@
     ]
   },
   {
+    "regex": "ATLANTIC [;,)]",
+    "brand": "ATLANTIC",
+    "type": 6,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
     "regex": "ATLANTIC[;,)]",
     "brand": "Atlantic Electrics",
     "type": 6,
@@ -357,6 +368,28 @@
     "model": "Dreambox"
   },
   {
+    "regex": "Dual[;,)]",
+    "brand": "Dual",
+    "type": 6,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "regex": "Durabase[;,)]",
+    "brand": "Durabase",
+    "type": 6,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
     "regex": "EGL[;,)]",
     "brand": "EGL",
     "type": 6,
@@ -414,6 +447,17 @@
   {
     "regex": "ESSENTIELB[;,)]",
     "brand": "Essentielb",
+    "type": 6,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "regex": "Eversteel[;,)]",
+    "brand": "Eversteel",
     "type": 6,
     "modelVariants": [
       {
@@ -532,6 +576,17 @@
     ]
   },
   {
+    "regex": "Grandin[;,)]",
+    "brand": "Grandin",
+    "type": 6,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
     "regex": "(OWB|(?:Amazon.+)?Grundig)",
     "brand": "Grundig",
     "type": 6,
@@ -560,6 +615,17 @@
   {
     "regex": "HANSEATIC[;,)]",
     "brand": "Hanseatic",
+    "type": 6,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "regex": "Heider[;,)]",
+    "brand": "Heider",
     "type": 6,
     "modelVariants": [
       {
@@ -807,6 +873,28 @@
     "modelVariants": [
       {
         "regex": "LaTivu_(?:\\d+[.\\d]+)_([0-9]{4})",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "regex": "IXI[;,)]",
+    "brand": "IXI",
+    "type": 6,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "regex": "johnson[;,)]",
+    "brand": "johnson",
+    "type": 6,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
         "name": "Smart TV ($1)"
       }
     ]
@@ -1427,9 +1515,15 @@
     ]
   },
   {
-    "regex": "NEO, ([a-z0-9_ -]+), (?:wired|wireless)",
-    "brand": "Neo",
-    "type": 6
+    "regex": "NEO[;,)]",
+    "brand": "NEO",
+    "type": 6,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
   },
   {
     "regex": "NEXON[;,)]",
@@ -1493,6 +1587,17 @@
   {
     "regex": "NORMANDE[;,)]",
     "brand": "NORMANDE",
+    "type": 6,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "regex": "OCEAN[;,)]",
+    "brand": "OCEAN",
     "type": 6,
     "modelVariants": [
       {
@@ -1641,6 +1746,17 @@
     ]
   },
   {
+    "regex": "ProCaster[;,)]",
+    "brand": "ProCaster",
+    "type": 6,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
     "regex": "PROFILO[;,)]",
     "brand": "PROFiLO",
     "type": 6,
@@ -1669,6 +1785,17 @@
   {
     "regex": "QILIVE[;,)]",
     "brand": "Qilive",
+    "type": 6,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "regex": "Quart[;,)]",
+    "brand": "Quart",
     "type": 6,
     "modelVariants": [
       {
@@ -1939,6 +2066,17 @@
     "type": 6
   },
   {
+    "regex": "SURFTV",
+    "brand": "SURFTV",
+    "type": 6,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
     "regex": "SULPICE_TV[;,)]",
     "brand": "SULPICE TV",
     "type": 6,
@@ -1967,6 +2105,17 @@
     "modelVariants": [
       {
         "regex": "SmartTV(2019|2020)",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "regex": "Technical",
+    "brand": "Technical",
+    "type": 6,
+    "modelVariants": [
+      {
+        "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
         "name": "Smart TV ($1)"
       }
     ]
