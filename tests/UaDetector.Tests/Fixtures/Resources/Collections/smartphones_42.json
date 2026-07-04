@@ -13925,5 +13925,167 @@
         "code": 1974
       }
     }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 15; TECNO KM8n) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.118 YaBrowser/25.10.1.118.00 SA/3 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "15",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 654,
+      "version": "25.10.1.118.00",
+      "engine": {
+        "name": "Blink",
+        "version": "140.0.7339.118"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "Spark 40 5G",
+      "brand": {
+        "name": "Tecno Mobile",
+        "code": 1685
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 15; TECNO KM6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.7204.118 YaBrowser/25.8.6.118.00 SA/3 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "15",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 654,
+      "version": "25.8.6.118.00",
+      "engine": {
+        "name": "Blink",
+        "version": "138.0.7204.118"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "Spark 40 Pro",
+      "brand": {
+        "name": "Tecno Mobile",
+        "code": 1685
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 15; TECNO KM5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.114 YaBrowser/25.10.1.114.00 SA/3 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "15",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 654,
+      "version": "25.10.1.114.00",
+      "engine": {
+        "name": "Blink",
+        "version": "140.0.7339.114"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "Spark 40",
+      "brand": {
+        "name": "Tecno Mobile",
+        "code": 1685
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 15; TECNO KM4n) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.7204.64 YaBrowser/25.8.8.64.00 SA/3 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "15",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 654,
+      "version": "25.8.8.64.00",
+      "engine": {
+        "name": "Blink",
+        "version": "138.0.7204.64"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "Pop 10",
+      "brand": {
+        "name": "Tecno Mobile",
+        "code": 1685
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 15; TECNO CM7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.6613.692 YaSearchBrowser/24.102.1 BroPP/1.0 YaSearchApp/24.102.1 webOmni SA/3 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "15",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 654,
+      "version": "24.102.1",
+      "engine": {
+        "name": "Blink",
+        "version": "128.0.6613.692"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "Camon 40 Pro 5G",
+      "brand": {
+        "name": "Tecno Mobile",
+        "code": 1685
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 15; X2034) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.854 YaSearchBrowser/25.101.1 BroPP/1.0 YaSearchApp/25.101.1 webOmni SA/3 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "15",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 654,
+      "version": "25.101.1",
+      "engine": {
+        "name": "Blink",
+        "version": "140.0.7339.854"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "X2034",
+      "brand": {
+        "name": "OMIX",
+        "code": 1291
+      }
+    }
   }
 ]
