@@ -309,6 +309,10 @@
     "version": "$1"
   },
   {
+    "regex": "VIDAA",
+    "name": "VIDAA"
+  },
+  {
     "regex": "PICO.+OS(\\d+[.\\d]*)",
     "name": "PICO OS",
     "version": "$1"
