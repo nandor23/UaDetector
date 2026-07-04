@@ -949,10 +949,9 @@ public sealed partial class BrowserParser : IBrowserParser
 
         foreach (var engineBrand in EngineBrands)
         {
-            if (clientHints.FullVersionList.TryGetValue(engineBrand, out var brandVersion))
+            if (clientHints.FullVersionList.TryGetValue(engineBrand, out engineVersion))
             {
                 engine = BrowserEngines.Blink;
-                engineVersion = brandVersion;
                 break;
             }
         }
