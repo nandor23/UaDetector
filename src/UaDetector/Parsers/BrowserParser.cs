@@ -931,7 +931,7 @@ public sealed partial class BrowserParser : IBrowserParser
 
     private bool TryParseBrowserFromClientHints(
         ClientHints clientHints,
-        [NotNullWhen(true)] out ClientHintsBrowserInfo? result
+        [NotNullWhen(true)] out ParsedBrowserInfo? result
     )
     {
         if (clientHints.FullVersionList.Count == 0)
@@ -989,7 +989,7 @@ public sealed partial class BrowserParser : IBrowserParser
             version = clientHints.UaFullVersion;
         }
 
-        result = new ClientHintsBrowserInfo
+        result = new ParsedBrowserInfo
         {
             Name = name,
             Code = code.Value,
@@ -1003,7 +1003,7 @@ public sealed partial class BrowserParser : IBrowserParser
 
     private bool TryParseBrowserFromUserAgent(
         string userAgent,
-        [NotNullWhen(true)] out UserAgentBrowserInfo? result
+        [NotNullWhen(true)] out ParsedBrowserInfo? result
     )
     {
         Match? match = null;
@@ -1038,7 +1038,7 @@ public sealed partial class BrowserParser : IBrowserParser
             var engine = BuildEngine(userAgent, browser.Engine, version);
             var engineVersion = BuildEngineVersion(userAgent, engine);
 
-            result = new UserAgentBrowserInfo
+            result = new ParsedBrowserInfo
             {
                 Name = name,
                 Code = code,
@@ -1378,16 +1378,7 @@ public sealed partial class BrowserParser : IBrowserParser
         return true;
     }
 
-    private sealed class ClientHintsBrowserInfo
-    {
-        public required string Name { get; init; }
-        public required BrowserCode Code { get; init; }
-        public required string? Version { get; init; }
-        public required string? Engine { get; init; }
-        public required string? EngineVersion { get; init; }
-    }
-
-    private sealed class UserAgentBrowserInfo
+    private sealed class ParsedBrowserInfo
     {
         public required string Name { get; init; }
         public required BrowserCode Code { get; init; }
