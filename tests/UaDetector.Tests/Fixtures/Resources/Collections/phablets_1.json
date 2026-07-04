@@ -9480,5 +9480,140 @@
         "code": 1865
       }
     }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 16; 25080RABDT) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.49 YaBrowser/26.4.7.49.00 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "16",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 654,
+      "version": "26.4.7.49.00",
+      "engine": {
+        "name": "Blink",
+        "version": "146.0.7680.49"
+      }
+    },
+    "device": {
+      "type": 11,
+      "model": "Redmi Note 15 Pro 5G",
+      "brand": {
+        "name": "Xiaomi",
+        "code": 1974
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 16; 2510ERA8BG) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.59 YaSearchBrowser/26.61.1 BroPP/1.0 YaSearchApp/26.61.1 webOmni Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "16",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 654,
+      "version": "26.61.1",
+      "engine": {
+        "name": "Blink",
+        "version": "148.0.7778.59"
+      }
+    },
+    "device": {
+      "type": 11,
+      "model": "Redmi Note 15 Pro+ 5G",
+      "brand": {
+        "name": "Xiaomi",
+        "code": 1974
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 16; 2510ERA8BC) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.70 YaSearchBrowser/26.44.1 BroPP/1.0 YaSearchApp/26.44.1 webOmni Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "16",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 654,
+      "version": "26.44.1",
+      "engine": {
+        "name": "Blink",
+        "version": "146.0.7680.70"
+      }
+    },
+    "device": {
+      "type": 11,
+      "model": "Redmi Note 15 Pro+ 5G",
+      "brand": {
+        "name": "Xiaomi",
+        "code": 1974
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 16; 2510DRA23G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.59 YaSearchBrowser/26.61.1 BroPP/1.0 YaSearchApp/26.61.1 webOmni Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "16",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 654,
+      "version": "26.61.1",
+      "engine": {
+        "name": "Blink",
+        "version": "148.0.7778.59"
+      }
+    },
+    "device": {
+      "type": 11,
+      "model": "Redmi Note 15",
+      "brand": {
+        "name": "Xiaomi",
+        "code": 1974
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 16; 2510DRA23E) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.59 YaSearchBrowser/26.61.1 BroPP/1.0 YaSearchApp/26.61.1 webOmni Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "16",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 654,
+      "version": "26.61.1",
+      "engine": {
+        "name": "Blink",
+        "version": "148.0.7778.59"
+      }
+    },
+    "device": {
+      "type": 11,
+      "model": "Redmi Note 15",
+      "brand": {
+        "name": "Xiaomi",
+        "code": 1974
+      }
+    }
   }
 ]

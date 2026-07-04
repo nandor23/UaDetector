@@ -9805,5 +9805,59 @@
         "code": 98
       }
     }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 16; 2604ERP4DG) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.6998.574 YaSearchBrowser/25.45/apad BroPP/1.0 YaSearchApp/25.45/apad webOmni SA/3 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "16",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 654,
+      "version": "25.45",
+      "engine": {
+        "name": "Blink",
+        "version": "134.0.6998.574"
+      }
+    },
+    "device": {
+      "type": 3,
+      "model": "Redmi Pad 2 9.7\" 4G",
+      "brand": {
+        "name": "Xiaomi",
+        "code": 1974
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 16; 2603ARP14G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.307 YaBrowser/26.6.0.307.01 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "16",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 654,
+      "version": "26.6.0.307.01",
+      "engine": {
+        "name": "Blink",
+        "version": "148.0.7778.307"
+      }
+    },
+    "device": {
+      "type": 3,
+      "model": "Redmi Pad 2 9.7\"",
+      "brand": {
+        "name": "Xiaomi",
+        "code": 1974
+      }
+    }
   }
 ]

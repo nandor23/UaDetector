@@ -2124,4 +2124,6 @@ public enum BrandCode
     Ioplee = 2120,
     Kobo = 2121,
     Rokid = 2122,
+    Bulsatcom = 2123,
+    Yutmart = 2124,
 }

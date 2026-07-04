@@ -2124,4 +2124,6 @@ public static class BrandNames
     public const string Ioplee = "ioplee";
     public const string Kobo = "Kobo";
     public const string Rokid = "Rokid";
+    public const string Bulsatcom = "Bulsatcom";
+    public const string Yutmart = "Yutmart";
 }
