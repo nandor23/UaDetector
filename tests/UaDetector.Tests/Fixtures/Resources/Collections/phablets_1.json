@@ -9345,5 +9345,140 @@
         "code": 1974
       }
     }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 15; TECNO LJ9) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.7204.108 YaBrowser/25.8.3.108.00 SA/3 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "15",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 654,
+      "version": "25.8.3.108.00",
+      "engine": {
+        "name": "Blink",
+        "version": "138.0.7204.108"
+      }
+    },
+    "device": {
+      "type": 11,
+      "model": "Pova 7 Ultra 5G",
+      "brand": {
+        "name": "Tecno Mobile",
+        "code": 1685
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 15; TECNO LJ8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.118 YaBrowser/25.10.1.118.00 SA/3 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "15",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 654,
+      "version": "25.10.1.118.00",
+      "engine": {
+        "name": "Blink",
+        "version": "140.0.7339.118"
+      }
+    },
+    "device": {
+      "type": 11,
+      "model": "Pova 7 Pro 5G",
+      "brand": {
+        "name": "Tecno Mobile",
+        "code": 1685
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 15; TECNO LJ7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.7204.566 YaSearchBrowser/25.84.1 BroPP/1.0 YaSearchApp/25.84.1 webOmni SA/3 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "15",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 654,
+      "version": "25.84.1",
+      "engine": {
+        "name": "Blink",
+        "version": "138.0.7204.566"
+      }
+    },
+    "device": {
+      "type": 11,
+      "model": "Pova 7 5G",
+      "brand": {
+        "name": "Tecno Mobile",
+        "code": 1685
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 15; TECNO LJ6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.7204.728 YaSearchBrowser/25.86.1 BroPP/1.0 YaSearchApp/25.86.1 webOmni (beta) SA/3 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "15",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 654,
+      "version": "25.86.1",
+      "engine": {
+        "name": "Blink",
+        "version": "138.0.7204.728"
+      }
+    },
+    "device": {
+      "type": 11,
+      "model": "Pova 7",
+      "brand": {
+        "name": "Tecno Mobile",
+        "code": 1685
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 15; V2429) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.118 YaBrowser/25.10.1.118.00 SA/3 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "15",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 654,
+      "version": "25.10.1.118.00",
+      "engine": {
+        "name": "Blink",
+        "version": "140.0.7339.118"
+      }
+    },
+    "device": {
+      "type": 11,
+      "model": "X Fold 5",
+      "brand": {
+        "name": "Vivo",
+        "code": 1865
+      }
+    }
   }
 ]
