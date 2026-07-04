@@ -6306,8 +6306,8 @@
   {
     "userAgent": "Mozilla/5.0 (X11; Linux aarch64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Odin/100.4896.4.10 Safari/537.36 HbbTV/1.6.1 (+DRM;VIDAA;2023_VS1240FE2_0101_AKAI;V0101.07.00T.O0312;;c6cc38aa-4204-4627-a650-d6faf031725f;) FVC/8.0 (VIDAA;c6cc38aa-4204-4627-a650-d6faf031725f;) LaTivu_2.0_2023",
     "os": {
-      "name": "GNU/Linux",
-      "code": 73,
+      "name": "VIDAA",
+      "code": 165,
       "cpuArchitecture": "ARM",
       "family": "GNU/Linux"
     },
@@ -6333,8 +6333,8 @@
   {
     "userAgent": "Mozilla/5.0 (X11; Linux aarch64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Odin/100.4896.4.10 Safari/537.36 HbbTV/1.6.1 (+DRM;VIDAA;2023_VS0643FD2_0104_COLES;V0104.07.00W.N1116;;c6cc38aa-4204-4627-a650-d6faf031725f;) FVC/8.0 (VIDAA;c6cc38aa-4204-4627-a650-d6faf031725f;) LaTivu_2.0_2023",
     "os": {
-      "name": "GNU/Linux",
-      "code": 73,
+      "name": "VIDAA",
+      "code": 165,
       "cpuArchitecture": "ARM",
       "family": "GNU/Linux"
     },
@@ -6360,8 +6360,8 @@
   {
     "userAgent": "Mozilla/5.0 (X11; Linux aarch64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Odin/100.4896.4.10 Safari/537.36 HbbTV/1.6.1 (+DRM;VIDAA;2023_VS1024FE2_0100_DYON;V0100.07.00C.O0712;;c6cc38aa-4204-4627-a650-d6faf031725f;) FVC/8.0 (VIDAA;c6cc38aa-4204-4627-a650-d6faf031725f;) LaTivu_2.0_2023",
     "os": {
-      "name": "GNU/Linux",
-      "code": 73,
+      "name": "VIDAA",
+      "code": 165,
       "cpuArchitecture": "ARM",
       "family": "GNU/Linux"
     },
@@ -6387,8 +6387,8 @@
   {
     "userAgent": "Mozilla/5.0 (X11; Linux aarch64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Odin/100.4896.4.10 Safari/537.36 HbbTV/1.6.1 (+DRM;VIDAA;2023_VS0340FD2_0100_EDENWOOD;V0100.07.00Q.N0928;;c6cc38aa-4204-4627-a650-d6faf031725f;) FVC/8.0 (VIDAA;c6cc38aa-4204-4627-a650-d6faf031725f;) LaTivu_2.0_2023",
     "os": {
-      "name": "GNU/Linux",
-      "code": 73,
+      "name": "VIDAA",
+      "code": 165,
       "cpuArchitecture": "ARM",
       "family": "GNU/Linux"
     },
@@ -6414,8 +6414,8 @@
   {
     "userAgent": "Mozilla/5.0 (X11; Linux aarch64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Odin/100.4896.4.10 Safari/537.36 HbbTV/1.6.1 (+DRM;VIDAA;2023_VS1332FE2_0206_Ioplee;V0206.07.00P.O0408;;c6cc38aa-4204-4627-a650-d6faf031725f;) FVC/8.0 (VIDAA;c6cc38aa-4204-4627-a650-d6faf031725f;) LaTivu_2.0_2023",
     "os": {
-      "name": "GNU/Linux",
-      "code": 73,
+      "name": "VIDAA",
+      "code": 165,
       "cpuArchitecture": "ARM",
       "family": "GNU/Linux"
     },
@@ -6826,6 +6826,33 @@
       "brand": {
         "name": "Formuler",
         "code": 578
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (X11; Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.5563.146 Odin/111.5563.5.1 Safari/537.36 Model/VIDAA-MT9602 VIDAA/9.0(noblex;SmartTV;50A7200FSVI;MTK9602/V0000.09.09S.P1107;UHD;50A7FS;)",
+    "os": {
+      "name": "VIDAA",
+      "code": 165,
+      "version": "9.0",
+      "cpuArchitecture": "ARM",
+      "family": "GNU/Linux"
+    },
+    "browser": {
+      "name": "Odin",
+      "code": 404,
+      "version": "111.5563.5.1",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "111.0.5563.146"
+      }
+    },
+    "device": {
+      "type": 6,
+      "brand": {
+        "name": "Noblex",
+        "code": 1218
       }
     }
   },
