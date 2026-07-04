@@ -22,7 +22,10 @@ public class VersionComparerTests
 
     [Test]
     [MethodDataSource(nameof(NotComparableVersionData))]
-    public void VersionComparer_WithNullOrEmptyVersion_AlwaysReturnsFalse(string? first, string? second)
+    public void VersionComparer_WithNullOrEmptyVersion_AlwaysReturnsFalse(
+        string? first,
+        string? second
+    )
     {
         // A null or empty version is not comparable, so every comparison returns false.
         VersionComparer.IsLessThan(first, second).ShouldBeFalse();

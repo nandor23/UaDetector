@@ -8,7 +8,8 @@ namespace UaDetector.Parsers;
 /// </summary>
 internal static class VersionComparer
 {
-    public static bool IsGreaterThan(string? first, string? second) => Compare(first, second) is > 0;
+    public static bool IsGreaterThan(string? first, string? second) =>
+        Compare(first, second) is > 0;
 
     public static bool IsGreaterThanOrEqual(string? first, string? second) =>
         Compare(first, second) is >= 0;
