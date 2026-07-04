@@ -10106,7 +10106,7 @@
       "family": "Chrome",
       "engine": {
         "name": "Blink",
-        "version": "114.0.0.0"
+        "version": "114.0.5735.245"
       }
     }
   },
@@ -10163,7 +10163,7 @@
     "browser": {
       "name": "ALVA",
       "code": 43,
-      "version": "113.0.0.0",
+      "version": "113.0.5643.0",
       "family": "Chrome",
       "engine": {
         "name": "Blink",
@@ -11745,7 +11745,11 @@
       "name": "Edge WebView",
       "code": 189,
       "version": "115.0.1901.200",
-      "family": "Chrome"
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "115.0.5790.171"
+      }
     }
   },
   {
@@ -11758,7 +11762,11 @@
       "name": "Chrome Webview",
       "code": 162,
       "version": "117.0.5938.140",
-      "family": "Chrome"
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "117.0.5938.140"
+      }
     }
   },
   {
@@ -14242,7 +14250,11 @@
       "name": "Opera GX",
       "code": 416,
       "version": "3.0.2.2237",
-      "family": "Opera"
+      "family": "Opera",
+      "engine": {
+        "name": "Blink",
+        "version": "140.0.7339.155"
+      }
     }
   },
   {
@@ -14316,7 +14328,7 @@
       "version": "24.1.5.390",
       "engine": {
         "name": "Blink",
-        "version": "120.0.0.0"
+        "version": "120.0.6099.234"
       }
     }
   },
@@ -14887,6 +14899,38 @@
       "engine": {
         "name": "Blink",
         "version": "136.0.0.0"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36 Edg/100.0.1185.39",
+    "headers": {
+      "Sec-CH-UA": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"100\", \"Microsoft Edge\";v=\"100\", \"Microsoft Edge WebView2\";v=\"100\""
+    },
+    "browser": {
+      "name": "Edge WebView",
+      "code": 189,
+      "version": "100.0.1185.39",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "100.0.4896.75"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Iron Safari/537.36",
+    "headers": {
+      "Sec-CH-UA": "\"Not;A=Brand\";v=\"99.0.0.0\", \"Chromium\";v=\"106.0.5400.0\""
+    },
+    "browser": {
+      "name": "Iron",
+      "code": 294,
+      "version": "106.0.5400.0",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "106.0.5400.0"
       }
     }
   },

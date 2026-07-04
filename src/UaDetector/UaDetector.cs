@@ -150,8 +150,7 @@ public sealed class UaDetector : IUaDetector
     private static bool IsWindows8OrLater(OsInfo os)
     {
         return os is { Name: OsNames.Windows, Version.Length: > 0 }
-            && ParserExtensions.TryCompareVersions(os.Version, "8", out var comparisonResult)
-            && comparisonResult >= 0;
+            && VersionComparer.IsGreaterThanOrEqual(os.Version, "8");
     }
 
     private static bool IsDesktop(OsInfo? os, BrowserInfo? browser)
@@ -314,18 +313,13 @@ public sealed class UaDetector : IUaDetector
         // - Devices running Android 2.x and 4.x+ have an unknown device type.
         if (deviceType is null && os is { Name: OsNames.Android, Version.Length: > 0 })
         {
-            if (
-                ParserExtensions.TryCompareVersions(os.Version, "2.0", out var comparisonResult)
-                && comparisonResult == -1
-            )
+            if (VersionComparer.IsLessThan(os.Version, "2.0"))
             {
                 deviceType = DeviceType.Smartphone;
             }
             else if (
-                ParserExtensions.TryCompareVersions(os.Version, "3.0", out comparisonResult)
-                && comparisonResult >= 0
-                && ParserExtensions.TryCompareVersions(os.Version, "4.0", out comparisonResult)
-                && comparisonResult == -1
+                VersionComparer.IsGreaterThanOrEqual(os.Version, "3.0")
+                && VersionComparer.IsLessThan(os.Version, "4.0")
             )
             {
                 deviceType = DeviceType.Tablet;
