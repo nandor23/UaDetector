@@ -1171,7 +1171,7 @@ public static class BrandNames
     public const string Nedaphone = "Nedaphone";
     public const string Necnot = "Necnot";
     public const string Neffos = "Neffos";
-    public const string Neo = "Neo";
+    public const string Neo = "NEO";
     public const string Neko = "NEKO";
     public const string Neomi = "Neomi";
     public const string NeonIq = "Neon IQ";
