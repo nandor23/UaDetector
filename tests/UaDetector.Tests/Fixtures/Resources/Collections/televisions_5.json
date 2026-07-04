@@ -7193,5 +7193,32 @@
         "code": 1170
       }
     }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36 OPR/46.0.2207.0 OMI/4.11.3.57.Martell-3.118 Model/Hisense-MT5659-SDK4-11 (;Hisense;SmartTV;V0000.01.00A.J1105;43E5600EE) FXM-U2FsdGVkX19sJrRWrVZFrf/K+E/dzfyWCMhSEl8JhDq0LNWUZdyzRj9LbDplLH+E-END",
+    "os": {
+      "name": "GNU/Linux",
+      "code": 73,
+      "cpuArchitecture": "ARM",
+      "family": "GNU/Linux"
+    },
+    "browser": {
+      "name": "Opera Devices",
+      "code": 418,
+      "version": "4.11.3.57",
+      "family": "Opera",
+      "engine": {
+        "name": "Blink",
+        "version": "59.0.3071.115"
+      }
+    },
+    "device": {
+      "type": 6,
+      "model": "43E5600EE",
+      "brand": {
+        "name": "Hisense",
+        "code": 720
+      }
+    }
   }
 ]
