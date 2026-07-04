@@ -74489,7 +74489,7 @@
         "name": "Smart TV ($1)"
       },
       {
-        "regex": "(HE43A6500UWTS)",
+        "regex": "((?:43|55)[EHJPR][0-9]{4}[A-E]+)",
         "type": 6,
         "name": "$1"
       },
