@@ -2123,4 +2123,5 @@ public enum BrandCode
     Elco = 2119,
     Ioplee = 2120,
     Kobo = 2121,
+    Rokid = 2122,
 }

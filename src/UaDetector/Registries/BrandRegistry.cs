@@ -2156,6 +2156,7 @@ public static class BrandRegistry
         { BrandCode.Elco, BrandNames.Elco },
         { BrandCode.Ioplee, BrandNames.Ioplee },
         { BrandCode.Kobo, BrandNames.Kobo },
+        { BrandCode.Rokid, BrandNames.Rokid },
     }.ToFrozenDictionary();
 
     internal static readonly FrozenDictionary<string, BrandCode> BrandNameMappings =
