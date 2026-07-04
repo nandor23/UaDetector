@@ -2142,6 +2142,7 @@ public class BrandCodeTests
             { BrandCode.Elco, 2119 },
             { BrandCode.Ioplee, 2120 },
             { BrandCode.Kobo, 2121 },
+            { BrandCode.Rokid, 2122 },
         };
 
         expectedValues.Count.ShouldBe(Enum.GetValues<BrandCode>().Length);

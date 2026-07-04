@@ -395,6 +395,7 @@ public sealed class UaDetector : IUaDetector
         // Devices containing "Andr0id" in the user agent string are assumed to be TVs.
         if (
             deviceType != DeviceType.Television
+            && deviceType != DeviceType.Wearable
             && deviceType != DeviceType.Peripheral
             && AndroidRegex.IsMatch(userAgent)
         )
