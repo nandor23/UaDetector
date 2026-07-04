@@ -6585,5 +6585,248 @@
         "code": 73
       }
     }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 11; Vodafone TV 3 Build/RTT4.250619.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.93 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "11",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Webview",
+      "code": 162,
+      "version": "149.0.7827.93",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "149.0.7827.93"
+      }
+    },
+    "device": {
+      "type": 6,
+      "model": "TV 3",
+      "brand": {
+        "name": "Vodafone",
+        "code": 1886
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 7.1.2; YUTMART-MXQPRO Build/YUTMART-MXQPRO; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/119.0.6045.193 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "7.1.2",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Webview",
+      "code": 162,
+      "version": "119.0.6045.193",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "119.0.6045.193"
+      }
+    },
+    "device": {
+      "type": 6,
+      "model": "MXQ Pro",
+      "brand": {
+        "name": "Yutmart",
+        "code": 2124
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 12; IMTM741 Build/STTC.230104.002) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "12",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Webview",
+      "code": 162,
+      "version": "149.0.7827.91",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "149.0.7827.91"
+      }
+    },
+    "device": {
+      "type": 6,
+      "model": "IMTM741",
+      "brand": {
+        "name": "Bulsatcom",
+        "code": 2123
+      }
+    }
+  },
+  {
+    "userAgent": "TV Bro/1.0 Mozilla/5.0 (Linux; Android 11; Formuler Z11 Pro MAX Build/RVC; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "11",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "TV Bro",
+      "code": 601,
+      "version": "1.0",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "149.0.7827.91"
+      }
+    },
+    "device": {
+      "type": 6,
+      "model": "Z11 Pro Max",
+      "brand": {
+        "name": "Formuler",
+        "code": 578
+      }
+    }
+  },
+  {
+    "userAgent": "TV Bro/1.0 Mozilla/5.0 (Linux; Android 11; Formuler Z11 Pro Build/RVC; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "11",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "TV Bro",
+      "code": 601,
+      "version": "1.0",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "149.0.7827.91"
+      }
+    },
+    "device": {
+      "type": 6,
+      "model": "Z11 Pro",
+      "brand": {
+        "name": "Formuler",
+        "code": 578
+      }
+    }
+  },
+  {
+    "userAgent": "TV Bro/1.0 Mozilla/5.0 (Linux; Android 10; Formuler Z10 Neo Build/QT; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/147.0.7727.55 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "10",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "TV Bro",
+      "code": 601,
+      "version": "1.0",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "147.0.7727.55"
+      }
+    },
+    "device": {
+      "type": 6,
+      "model": "Z10 Neo",
+      "brand": {
+        "name": "Formuler",
+        "code": 578
+      }
+    }
+  },
+  {
+    "userAgent": "TV Bro/1.0 Mozilla/5.0 (Linux; Android 10; Formuler Z10 SE Build/QT; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/148.0.7778.215 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "10",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "TV Bro",
+      "code": 601,
+      "version": "1.0",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "148.0.7778.215"
+      }
+    },
+    "device": {
+      "type": 6,
+      "model": "Z10 SE",
+      "brand": {
+        "name": "Formuler",
+        "code": 578
+      }
+    }
+  },
+  {
+    "userAgent": "TV Bro/1.0 Mozilla/5.0 (Linux; Android 12; Formuler Z12 Ultra Build/STTB.220726.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.132 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "12",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "TV Bro",
+      "code": 601,
+      "version": "1.0",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "144.0.7559.132"
+      }
+    },
+    "device": {
+      "type": 6,
+      "model": "Z12 Ultra",
+      "brand": {
+        "name": "Formuler",
+        "code": 578
+      }
+    }
+  },
+  {
+    "userAgent": "TV Bro/1.0 Mozilla/5.0 (Linux; Android 12; Formuler Z mini Build/STTB.220726.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "12",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "TV Bro",
+      "code": 601,
+      "version": "1.0",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "149.0.7827.91"
+      }
+    },
+    "device": {
+      "type": 6,
+      "model": "Z Mini",
+      "brand": {
+        "name": "Formuler",
+        "code": 578
+      }
+    }
   }
 ]
