@@ -3,7 +3,7 @@ namespace UaDetector.Parsers;
 /// <summary>
 /// Compares dot-separated numeric version strings. A longer version outranks a shorter one that
 /// shares its prefix (e.g. "1.0" is greater than "1"). A null or empty version is treated as not
-/// comparable, so every comparison against one returns false and callers don't need to pre-check.
+/// comparable, so every comparison against one returns false.
 /// </summary>
 internal static class VersionComparer
 {
@@ -48,10 +48,7 @@ internal static class VersionComparer
                 return hasSegment1 == hasSegment2 ? 0 : (hasSegment1 ? 1 : -1);
             }
 
-            TryParseVersionSegment(segment1, out int value1);
-            TryParseVersionSegment(segment2, out int value2);
-
-            int comparison = value1.CompareTo(value2);
+            int comparison = ParseSegment(segment1).CompareTo(ParseSegment(segment2));
 
             if (comparison != 0)
             {
@@ -91,12 +88,13 @@ internal static class VersionComparer
         return remaining[..dotIndex];
     }
 
-    private static bool TryParseVersionSegment(ReadOnlySpan<char> segment, out int value)
+    private static int ParseSegment(ReadOnlySpan<char> segment)
     {
 #if NET6_0_OR_GREATER
-        return int.TryParse(segment, out value);
+        _ = int.TryParse(segment, out int value);
 #else
-        return int.TryParse(segment.ToString(), out value);
+        _ = int.TryParse(segment.ToString(), out int value);
 #endif
+        return value;
     }
 }
