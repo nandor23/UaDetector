@@ -33,10 +33,19 @@
     ]
   },
   {
-    "regex": "Nintendo (([3]?DS[i]?)|Wii[U]?|Switch|GameBoy)",
+    "regex": "Nintendo (([3]?DS[i]?)|Wii[U]?|Switch|GameBoy)|Switch(?: Lite| OLED)?\\)",
     "brand": "Nintendo",
     "type": 5,
-    "model": "$1"
+    "modelVariants": [
+      {
+        "regex": "Nintendo (([3]?DS[i]?)|Wii[U]?|Switch|GameBoy)",
+        "name": "$1"
+      },
+      {
+        "regex": "(Switch(?: Lite| OLED)?)",
+        "name": "Nintendo $1"
+      }
+    ]
   },
   {
     "regex": "OUYA",

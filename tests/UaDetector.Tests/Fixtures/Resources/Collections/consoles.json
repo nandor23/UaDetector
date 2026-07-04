@@ -1108,5 +1108,86 @@
         "code": 84
       }
     }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 15; Switch OLED) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.122 YaBrowser/25.10.1.122.01 Safari/537.36",
+    "os": {
+      "name": "Lineage OS",
+      "code": 77,
+      "version": "22",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 654,
+      "version": "25.10.1.122.01",
+      "engine": {
+        "name": "Blink",
+        "version": "140.0.7339.122"
+      }
+    },
+    "device": {
+      "type": 5,
+      "model": "Nintendo Switch OLED",
+      "brand": {
+        "name": "Nintendo",
+        "code": 1206
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 15; Switch Lite) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.854 YaSearchBrowser/25.101.1/apad BroPP/1.0 YaSearchApp/25.101.1/apad webOmni SA/3 Mobile Safari/537.36",
+    "os": {
+      "name": "Lineage OS",
+      "code": 77,
+      "version": "22",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 654,
+      "version": "25.101.1",
+      "engine": {
+        "name": "Blink",
+        "version": "140.0.7339.854"
+      }
+    },
+    "device": {
+      "type": 5,
+      "model": "Nintendo Switch Lite",
+      "brand": {
+        "name": "Nintendo",
+        "code": 1206
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 15; Switch) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.7204.405 YaSearchBrowser/25.89.1/apad BroPP/1.0 YaSearchApp/25.89.1/apad webOmni SA/3 Safari/537.36",
+    "os": {
+      "name": "Lineage OS",
+      "code": 77,
+      "version": "22",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 654,
+      "version": "25.89.1",
+      "engine": {
+        "name": "Blink",
+        "version": "138.0.7204.405"
+      }
+    },
+    "device": {
+      "type": 5,
+      "model": "Nintendo Switch",
+      "brand": {
+        "name": "Nintendo",
+        "code": 1206
+      }
+    }
   }
 ]
