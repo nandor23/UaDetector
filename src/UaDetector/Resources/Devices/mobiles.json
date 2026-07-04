@@ -2462,6 +2462,11 @@
         "type": 1
       },
       {
+        "regex": "CitrixReceiver-iPhone",
+        "type": 2,
+        "name": "iPhone"
+      },
+      {
         "regex": "(?:MDCR_|ICRU_|Apple-)?iPh(?:one)?1[C,_]1",
         "type": 2,
         "name": "iPhone"
@@ -3072,7 +3077,7 @@
         "name": "iPad $1"
       },
       {
-        "regex": "(?:MDCR_|ICRU_|Apple-)?iPad",
+        "regex": "(?:MDCR_|ICRU_|Apple-|CitrixReceiver-)?iPad",
         "type": 3,
         "name": "iPad"
       },

@@ -9783,5 +9783,27 @@
         "code": 202
       }
     }
+  },
+  {
+    "userAgent": "CitrixReceiver/21.5.1 iOS/14.5.1 CitrixReceiver-iPad X1Class CWACapable 302RedirectionCapable CFNetwork Darwin",
+    "os": {
+      "name": "iPadOS",
+      "code": 58,
+      "version": "14.5.1",
+      "family": "iOS"
+    },
+    "client": {
+      "type": 1,
+      "name": "Citrix Workspace",
+      "version": "21.5.1"
+    },
+    "device": {
+      "type": 3,
+      "model": "iPad",
+      "brand": {
+        "name": "Apple",
+        "code": 98
+      }
+    }
   }
 ]
