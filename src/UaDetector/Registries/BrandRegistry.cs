@@ -2159,7 +2159,19 @@ public static class BrandRegistry
         { BrandCode.Rokid, BrandNames.Rokid },
         { BrandCode.Bulsatcom, BrandNames.Bulsatcom },
         { BrandCode.Yutmart, BrandNames.Yutmart },
-
+        { BrandCode.Atlantic, BrandNames.Atlantic },
+        { BrandCode.Dual, BrandNames.Dual },
+        { BrandCode.Durabase, BrandNames.Durabase },
+        { BrandCode.Eversteel, BrandNames.Eversteel },
+        { BrandCode.Grandin, BrandNames.Grandin },
+        { BrandCode.Heider, BrandNames.Heider },
+        { BrandCode.Ixi, BrandNames.Ixi },
+        { BrandCode.Johnson, BrandNames.Johnson },
+        { BrandCode.Ocean, BrandNames.Ocean },
+        { BrandCode.ProCaster, BrandNames.ProCaster },
+        { BrandCode.Quart, BrandNames.Quart },
+        { BrandCode.SurfTv, BrandNames.SurfTv },
+        { BrandCode.Technical, BrandNames.Technical },
     }.ToFrozenDictionary();
 
     internal static readonly FrozenDictionary<string, BrandCode> BrandNameMappings =
