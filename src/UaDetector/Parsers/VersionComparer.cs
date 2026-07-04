@@ -1,9 +1,10 @@
 namespace UaDetector.Parsers;
 
 /// <summary>
-/// Compares dot-separated numeric version strings. A longer version outranks a shorter one that
-/// shares its prefix (e.g. "1.0" is greater than "1"). A null or empty version is treated as not
-/// comparable, so every comparison against one returns false.
+/// Compares dot-separated version strings segment by segment. Numeric segments compare by value, and
+/// a numeric segment always outranks a non-numeric one (e.g. "8" is greater than "XP"). A longer
+/// version outranks a shorter one that shares its prefix (e.g. "1.0" is greater than "1"). A null or
+/// empty version is treated as not comparable, so every comparison against one returns false.
 /// </summary>
 internal static class VersionComparer
 {
@@ -48,7 +49,7 @@ internal static class VersionComparer
                 return hasSegment1 == hasSegment2 ? 0 : (hasSegment1 ? 1 : -1);
             }
 
-            int comparison = ParseSegment(segment1).CompareTo(ParseSegment(segment2));
+            int comparison = CompareSegments(segment1, segment2);
 
             if (comparison != 0)
             {
@@ -88,13 +89,43 @@ internal static class VersionComparer
         return remaining[..dotIndex];
     }
 
-    private static int ParseSegment(ReadOnlySpan<char> segment)
+    private static int CompareSegments(ReadOnlySpan<char> first, ReadOnlySpan<char> second)
+    {
+        bool firstIsNumeric = TryParseInt(first, out int firstValue);
+        bool secondIsNumeric = TryParseInt(second, out int secondValue);
+
+        // Both numeric: compare by value so "9" ranks below "10".
+        if (firstIsNumeric && secondIsNumeric)
+        {
+            return firstValue.CompareTo(secondValue);
+        }
+
+        // A numeric segment outranks a non-numeric one, so "8" is greater than "XP" and a named
+        // version like "Vista" is never treated as equal to "0".
+        if (firstIsNumeric != secondIsNumeric)
+        {
+            return firstIsNumeric ? 1 : -1;
+        }
+
+        // Both non-numeric: compare textually for a stable, predictable ordering.
+        return CompareOrdinal(first, second);
+    }
+
+    private static bool TryParseInt(ReadOnlySpan<char> segment, out int value)
     {
 #if NET6_0_OR_GREATER
-        _ = int.TryParse(segment, out int value);
+        return int.TryParse(segment, out value);
 #else
-        _ = int.TryParse(segment.ToString(), out int value);
+        return int.TryParse(segment.ToString(), out value);
 #endif
-        return value;
+    }
+
+    private static int CompareOrdinal(ReadOnlySpan<char> first, ReadOnlySpan<char> second)
+    {
+#if NET6_0_OR_GREATER
+        return first.CompareTo(second, StringComparison.Ordinal);
+#else
+        return string.CompareOrdinal(first.ToString(), second.ToString());
+#endif
     }
 }
