@@ -9859,5 +9859,140 @@
         "code": 1974
       }
     }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 16; RugKing Pad Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.55 YaBrowser/26.4.7.55.00 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "16",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 654,
+      "version": "26.4.7.55.00",
+      "engine": {
+        "name": "Blink",
+        "version": "146.0.7680.55"
+      }
+    },
+    "device": {
+      "type": 3,
+      "model": "RugKing Pad Pro",
+      "brand": {
+        "name": "Ulefone",
+        "code": 1784
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 16; RugKing Pad 2 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.304 YaBrowser/26.6.0.304.00 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "16",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 654,
+      "version": "26.6.0.304.00",
+      "engine": {
+        "name": "Blink",
+        "version": "148.0.7778.304"
+      }
+    },
+    "device": {
+      "type": 3,
+      "model": "RugKing Pad 2 Pro",
+      "brand": {
+        "name": "Ulefone",
+        "code": 1784
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 16; MEGA 12) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.307 YaBrowser/26.6.0.307.01 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "16",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 654,
+      "version": "26.6.0.307.01",
+      "engine": {
+        "name": "Blink",
+        "version": "148.0.7778.307"
+      }
+    },
+    "device": {
+      "type": 3,
+      "model": "Mega 12",
+      "brand": {
+        "name": "Blackview",
+        "code": 202
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 16; BPad T1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.2132 YaApp_Android/26.40.1/apad YaSearchBrowser/26.40.1/apad BroPP/1.0 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "16",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 654,
+      "version": "26.40.1",
+      "engine": {
+        "name": "Blink",
+        "version": "146.0.7680.2132"
+      }
+    },
+    "device": {
+      "type": 3,
+      "model": "BPad T1",
+      "brand": {
+        "name": "BNCF",
+        "code": 2099
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 16; iPlay80miniUltra) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.55 YaBrowser/26.4.7.55.01 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "16",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 654,
+      "version": "26.4.7.55.01",
+      "engine": {
+        "name": "Blink",
+        "version": "146.0.7680.55"
+      }
+    },
+    "device": {
+      "type": 3,
+      "model": "iPlay 80 Mini Ultra",
+      "brand": {
+        "name": "AllDocube",
+        "code": 61
+      }
+    }
   }
 ]
