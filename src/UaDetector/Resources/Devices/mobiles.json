@@ -12506,6 +12506,11 @@
     ]
   },
   {
+    "regex": "COPA[;,)]",
+    "brand": "copa",
+    "type": 6
+  },
+  {
     "regex": "CORN[_ ]|(?:C55 Pro|C60 Ultra|Fenix8_3G|Note1|Tronik_(?:[123]|12S)|Star7 3G|Coco10_Ultra_4G|Play25_Pro_4G)(?:[);/ ]|$)",
     "brand": "CORN",
     "type": 2,
@@ -12750,6 +12755,11 @@
         "name": "Blossom B902"
       }
     ]
+  },
+  {
+    "regex": "CRUA[;,)]",
+    "brand": "CRUA",
+    "type": 6
   },
   {
     "regex": "(?:T1001XS?|T1006S?|T1001|T811|iPlay[_ ][2345]0|U1006H?|U1005E|U63PLUS|iPlay8|iPlay_?[89]T|iPlay[134]0|iPlay_40H|iPlay50_mini_Pro|iPlay50 (?:Pro|Mini)|iPlay_?[25]0[SP]|iPlay50(?:Pro|_Lite)?|iPlay60(?:[_ ]mini)?[_ ](?:Pro|Turbo)|kPad|X_Game|T806MHE?|Power M3|Smile_X|iPlay_60_Lite|iPlay_60|T1201)(?:[);/ ]|$)",
@@ -13499,6 +13509,11 @@
         "name": "$1"
       }
     ]
+  },
+  {
+    "regex": "devant[;,)]",
+    "brand": "Devant",
+    "type": 6
   },
   {
     "regex": "DEXP|(?:Ursus|Ixion)[ _]([^;/)]+)|H135[ _]Build|Larus_TV1|Ixion(?:ML4\\.7|ES250)|M150Storm|(?:SENIOR|F4[38]D8000K|VA(?:[12]10|170)|ML450|MS[56]50|BL(?:[123]50|160|155)|BS(?:155|160|[1256]50)|(?<!ILIUM )S(?:3[78]0|2[89]0|670)|AL(?:[12]40|[23]50)|AS(?:155|[123]60)| (?:B260|B245|H[12]10|H270|L470|N280i|P310|P380i?|R1[18]0|Q110|E1[78]0|E[12]10|B(?:450|340|35[05])|M170|M445|M[12]10|T155|H32F8000CG?|U43F8000Q|A(?:1[456]0|340|[34]55)|GS15[035]|GL[23]55|G25[035]|G355|G550|G15[05]|ES750|XL150|Z[1-4]55|H[13]70|H[34]10|P[45]10|L2[17]0)|Z250|A440|(?<!MITO )A350(?! TV)|N[13]80i|(?<!Blade )L1[178]0|L3[17]0i|(?<!VOX )G450|G660|Q[123]10|Q[12]80|N[234]10|N[35]70|EX111|S[245]70|S[127]70i|S169|S110|S180i?|S770|A555(?! Universe)|(?:U75H8000K|U50H8000E|U65H8000K|F43H8000QG|U50G8000QG|U55H8050E|U43G9000CG|U43F8100QG|U55G8000QG|U50G9000CG|H32H800(?:1C|0[KQ])|H32G8000(?:CG|KW|Q)|H32F8000QG?(?:-[abc])?|H32F8[01]00Q|H39F8000Q|F43H8000K|U43H8000E|F(?:32|43)H8050C|U43F8000EG|F43F8000[CQ]G?|F32[FG]8000C|F43G8000C|H24H8000C|H24F8000Q|F43F8000Q-G)(?:-[AbcfedH])?|Android 8(?:[\\d.]*);(?: [\\w-]+;)? A240|android 10(?:[\\d.]*);(?: [\\w-]+;)? (?:B[23]1|B38|B1[87]|K28|K[34]1)|android 9(?:[\\d.]*);(?: [\\w-]+;)? (?:K18|K21|B11)|Android 11(?:[\\d.]*);(?: [\\w-]+;)? (?:D[12]1|T21|K[345]1|K[342]8|K61|C3[78]|B28|B27|H28)|43UCY[123](?:-[GB])?|32FCY[12]|U43H8050EG|H32H8051C-G|H32H8050CG|65UCY(?:1-[GB]|3)|55UCY1-[BG]|50UCY[12]-G|75UCY1-G|40FCY1|43FCY[12]|24HEY1|55UCY1|U5[05]E9100Q|H24F8000C|H3218000K|U5[05]F8000QG?|U50H8050EG|H32I8000K|U65G8000Q|U43G8100QG|U50F8000EG?|F40H8000E|Android 11(?:[\\d.]*);(?: [\\w-]+;)? P11)(?:[);/ ]|$)",
@@ -19116,7 +19131,7 @@
     ]
   },
   {
-    "regex": "JVC[;, ]|JVC-CVTE|AV-10NT310|(?:smarttv_)?(?:AFTSO001|AFTJULI1|AFTWMST22|LT-98N7125)",
+    "regex": "JVC[;, ]|JVC-CVTE|JVC_NWI|AV-10NT310|(?:smarttv_)?(?:AFTSO001|AFTJULI1|AFTWMST22|LT-98N7125)",
     "brand": "JVC",
     "type": 6,
     "modelVariants": [
@@ -25296,6 +25311,11 @@
         "name": "$1"
       }
     ]
+  },
+  {
+    "regex": "IMPEX[;,)]",
+    "brand": "Impex",
+    "type": 6
   },
   {
     "regex": "(?:Impression[ _-]?([^/;]+)|A502|I10\\-LE|ImPad[ _]?(.*)|ImSmart[ _]?(.*))(?:[);/ ]|$)",
@@ -34621,6 +34641,11 @@
     ]
   },
   {
+    "regex": "NEI[;,)]",
+    "brand": "NEI",
+    "type": 6
+  },
+  {
     "regex": "Nextbit|(?:Robin)(?: Build|\\))",
     "brand": "Nextbit",
     "type": 2,
@@ -38972,12 +38997,12 @@
     ]
   },
   {
-    "regex": "ORION, ([a-z0-9_ -]+), (?:wired|wireless)|CRANE-EVB",
+    "regex": "ORION[;,)]|CRANE-EVB",
     "brand": "Orion",
     "type": 6,
     "modelVariants": [
       {
-        "regex": "ORION, ([a-z0-9_ -]+), (?:wired|wireless)"
+        "regex": "ORION[;,)]"
       },
       {
         "regex": "(CRANE-EVB)",
@@ -40707,6 +40732,11 @@
         "name": "$1"
       }
     ]
+  },
+  {
+    "regex": "Siera[;,)]",
+    "brand": "Siera",
+    "type": 6
   },
   {
     "regex": "((?:SM-LED32M(?:1[0214]|0[479])S)|SM-QLED(?:50T2|50T21|55T21)SU|SM-LED(?:24M(?:0[69]|11)S|43M02S|40M04S|(?:5[05]|43)M0[1234]SU|32M1[35]S|65M0[12]SU))(?:_-Ver01)?(?:[);/ ]|$)",
@@ -46856,6 +46886,11 @@
     ]
   },
   {
+    "regex": "SONASHI[;,)]",
+    "brand": "SONASHI",
+    "type": 6
+  },
+  {
     "regex": "Sonim[ -]|XP(?:[67]7|[358]8|99)00(?:[);/ ]|$)",
     "brand": "Sonim",
     "type": 2,
@@ -49870,6 +49905,11 @@
     "model": "$1"
   },
   {
+    "regex": "UNITED[;,)]",
+    "brand": "UNITED",
+    "type": 6
+  },
+  {
     "regex": "(?:SDOTT0202|SDSTB02)(?:[;/) ]|$)",
     "brand": "United Group",
     "type": 6,
@@ -50631,7 +50671,7 @@
     ]
   },
   {
-    "regex": "Videocon[_ -]|(?:VT75C|V50DC|V406018|V512930|V50(?:2430|3630|4730|5024|5430|4630|5[98]20)|Z45_(?:Dazzle|Amaze)|Z45Q Star|Z50 Nova)(?:[);/ ]|$)",
+    "regex": "Videocon[_ -;]|(?:VT75C|V50DC|V406018|V512930|V50(?:2430|3630|4730|5024|5430|4630|5[98]20)|Z45_(?:Dazzle|Amaze)|Z45Q Star|Z50 Nova)(?:[);/ ]|$)",
     "brand": "Videocon",
     "type": 2,
     "modelVariants": [
@@ -66433,6 +66473,11 @@
     ]
   },
   {
+    "regex": "EUROVIEW[;,)]",
+    "brand": "EUROVIEW",
+    "type": 6
+  },
+  {
     "regex": "TORNADO[;,)]",
     "brand": "TORNADO",
     "type": 6,
@@ -71885,6 +71930,11 @@
     "model": "Phone $1"
   },
   {
+    "regex": "NIKAI[;,)]",
+    "brand": "NIKAI",
+    "type": 6
+  },
+  {
     "regex": "NINETOLOGY[_ ]([^/;)]+)(?: Build|[);])",
     "brand": "NINETOLOGY",
     "type": 2,
@@ -73882,6 +73932,11 @@
     "model": "$1"
   },
   {
+    "regex": "MultiSmart[;,)]",
+    "brand": "MultiSmart",
+    "type": 6
+  },
+  {
     "regex": "BAFF\\d{2}|(?:32YSTV-R|32Y-HD-R)(?:[);/ ]|$)",
     "brand": "BAFF",
     "type": 6,
@@ -75482,7 +75537,7 @@
     "model": "CarPad"
   },
   {
-    "regex": "(RH-LE\\d{2}DSY-C)(?:[);/ ]|$)",
+    "regex": "ROCH[;,)]|(RH-LE\\d{2}DSY-C)(?:[);/ ]|$)",
     "brand": "ROCH",
     "type": 6,
     "model": "$1"

@@ -2172,6 +2172,16 @@ public static class BrandRegistry
         { BrandCode.Quart, BrandNames.Quart },
         { BrandCode.SurfTv, BrandNames.SurfTv },
         { BrandCode.Technical, BrandNames.Technical },
+        { BrandCode.Copa, BrandNames.Copa },
+        { BrandCode.Crua, BrandNames.Crua },
+        { BrandCode.Devant, BrandNames.Devant },
+        { BrandCode.Euroview, BrandNames.Euroview },
+        { BrandCode.Impex, BrandNames.Impex },
+        { BrandCode.MultiSmart, BrandNames.MultiSmart },
+        { BrandCode.Nei, BrandNames.Nei },
+        { BrandCode.Nikai, BrandNames.Nikai },
+        { BrandCode.Siera, BrandNames.Siera },
+        { BrandCode.Sonashi, BrandNames.Sonashi },
     }.ToFrozenDictionary();
 
     internal static readonly FrozenDictionary<string, BrandCode> BrandNameMappings =
