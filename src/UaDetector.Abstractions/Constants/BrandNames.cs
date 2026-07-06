@@ -2139,4 +2139,14 @@ public static class BrandNames
     public const string Quart = "Quart";
     public const string SurfTv = "SURFTV";
     public const string Technical = "Technical";
+    public const string Copa = "copa";
+    public const string Crua = "CRUA";
+    public const string Devant = "Devant";
+    public const string Euroview = "EUROVIEW";
+    public const string Impex = "Impex";
+    public const string MultiSmart = "MultiSmart";
+    public const string Nei = "NEI";
+    public const string Nikai = "NIKAI";
+    public const string Siera = "Siera";
+    public const string Sonashi = "SONASHI";
 }

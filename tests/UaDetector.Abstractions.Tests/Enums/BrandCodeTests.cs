@@ -2158,6 +2158,16 @@ public class BrandCodeTests
             { BrandCode.Quart, 2135 },
             { BrandCode.SurfTv, 2136 },
             { BrandCode.Technical, 2137 },
+            { BrandCode.Copa, 2138 },
+            { BrandCode.Crua, 2139 },
+            { BrandCode.Devant, 2140 },
+            { BrandCode.Euroview, 2141 },
+            { BrandCode.Impex, 2142 },
+            { BrandCode.MultiSmart, 2143 },
+            { BrandCode.Nei, 2144 },
+            { BrandCode.Nikai, 2145 },
+            { BrandCode.Siera, 2146 },
+            { BrandCode.Sonashi, 2147 },
         };
 
         expectedValues.Count.ShouldBe(Enum.GetValues<BrandCode>().Length);

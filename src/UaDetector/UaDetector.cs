@@ -100,7 +100,7 @@ public sealed class UaDetector : IUaDetector
             BrowserNames.QuickSearchTv,
             BrowserNames.QjyTvBrowser,
             BrowserNames.TvBro,
-            BrowserNames.Odin
+            BrowserNames.Odin,
         }.ToFrozenSet();
 
         TvClients = new[] { "TiviMate", "Redline" }.ToFrozenSet();
@@ -392,7 +392,7 @@ public sealed class UaDetector : IUaDetector
             deviceType = DeviceType.Television;
             brand = BrandNames.Coocaa;
         }
-        
+
         // Devices running VIDAA are assumed to be TVs.
         if (os?.Name == OsNames.Vidaa)
         {
