@@ -2182,6 +2182,21 @@ public static class BrandRegistry
         { BrandCode.Nikai, BrandNames.Nikai },
         { BrandCode.Siera, BrandNames.Siera },
         { BrandCode.Sonashi, BrandNames.Sonashi },
+        { BrandCode.Flexy, BrandNames.Flexy },
+        { BrandCode.Geepas, BrandNames.Geepas },
+        { BrandCode.GoldSky, BrandNames.GoldSky },
+        { BrandCode.Haam, BrandNames.Haam },
+        { BrandCode.Idea, BrandNames.Idea },
+        { BrandCode.Kiwi, BrandNames.Kiwi },
+        { BrandCode.Miral, BrandNames.Miral },
+        { BrandCode.NationalPro, BrandNames.NationalPro },
+        { BrandCode.Nobel, BrandNames.Nobel },
+        { BrandCode.Northway, BrandNames.Northway },
+        { BrandCode.Ollz, BrandNames.Ollz },
+        { BrandCode.Roadstar, BrandNames.Roadstar },
+        { BrandCode.StarwaySa, BrandNames.StarwaySa },
+        { BrandCode.TeleSystem, BrandNames.TeleSystem },
+        { BrandCode.VG, BrandNames.VG },
     }.ToFrozenDictionary();
 
     internal static readonly FrozenDictionary<string, BrandCode> BrandNameMappings =

@@ -149,7 +149,7 @@ internal static class ParserExtensions
     /// <returns>The major version, or 0 if <paramref name="version"/> is null, empty, or has no leading digits.</returns>
     public static int GetMajorVersion(string? version)
     {
-        if (string.IsNullOrEmpty(version))
+        if (version is null or { Length: 0 })
         {
             return 0;
         }
