@@ -2168,6 +2168,21 @@ public class BrandCodeTests
             { BrandCode.Nikai, 2145 },
             { BrandCode.Siera, 2146 },
             { BrandCode.Sonashi, 2147 },
+            { BrandCode.Flexy, 2148 },
+            { BrandCode.Geepas, 2149 },
+            { BrandCode.GoldSky, 2150 },
+            { BrandCode.Haam, 2151 },
+            { BrandCode.Idea, 2152 },
+            { BrandCode.Kiwi, 2153 },
+            { BrandCode.Miral, 2154 },
+            { BrandCode.NationalPro, 2155 },
+            { BrandCode.Nobel, 2156 },
+            { BrandCode.Northway, 2157 },
+            { BrandCode.Ollz, 2158 },
+            { BrandCode.Roadstar, 2159 },
+            { BrandCode.StarwaySa, 2160 },
+            { BrandCode.TeleSystem, 2161 },
+            { BrandCode.VG, 2162 },
         };
 
         expectedValues.Count.ShouldBe(Enum.GetValues<BrandCode>().Length);

@@ -149,13 +149,17 @@
     ]
   },
   {
-    "regex": "AWOX[;,)]",
+    "regex": ".+AWOX[;,)]",
     "brand": "AWOX",
     "type": 6,
     "modelVariants": [
       {
         "regex": "LGE/[^/]+/AWOX; ([a-z0-9]+);",
         "name": "$1"
+      },
+      {
+        "regex": "LaTivu_(?:\\d+[.\\d]+)_([0-9]{4})",
+        "name": "Smart TV ($1)"
       }
     ]
   },
@@ -657,6 +661,28 @@
     ]
   },
   {
+    "regex": ".+Telesystem[;,)]",
+    "brand": "TELE System",
+    "type": 6,
+    "modelVariants": [
+      {
+        "regex": "LaTivu_(?:\\d+[.\\d]+)_([0-9]{4})",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
+    "regex": ".+KIWI[;,)]",
+    "brand": "KIWI",
+    "type": 6,
+    "modelVariants": [
+      {
+        "regex": "LaTivu_(?:\\d+[.\\d]+)_([0-9]{4})",
+        "name": "Smart TV ($1)"
+      }
+    ]
+  },
+  {
     "regex": "Hisense|Eurofins_Digital_Testing",
     "brand": "Hisense",
     "type": 6,
@@ -1134,13 +1160,17 @@
     ]
   },
   {
-    "regex": "SMARTTECH[;,)]",
+    "regex": ".+SMARTTECH[;,)]",
     "brand": "Smart Tech",
     "type": 6,
     "modelVariants": [
       {
         "regex": "LGE/[^/]+/SMARTTECH; ([a-z0-9]+);",
         "name": "$1"
+      },
+      {
+        "regex": "LaTivu_(?:\\d+[.\\d]+)_([0-9]{4})",
+        "name": "Smart TV ($1)"
       }
     ]
   },
@@ -1827,12 +1857,16 @@
     ]
   },
   {
-    "regex": "Saba[;,)]",
+    "regex": ".+Saba[;,)]",
     "brand": "Saba",
     "type": 6,
     "modelVariants": [
       {
         "regex": "_TV_[A-Z0-9]+_([0-9]{4});",
+        "name": "Smart TV ($1)"
+      },
+      {
+        "regex": "LaTivu_(?:\\d+[.\\d]+)_([0-9]{4})",
         "name": "Smart TV ($1)"
       }
     ]
@@ -2061,9 +2095,15 @@
     ]
   },
   {
-    "regex": "STAR LIGHT[;,)]",
+    "regex": ".+STAR ?LIGHT[;,)]",
     "brand": "Star-Light",
-    "type": 6
+    "type": 6,
+    "modelVariants": [
+      {
+        "regex": "LaTivu_(?:\\d+[.\\d]+)_([0-9]{4})",
+        "name": "Smart TV ($1)"
+      }
+    ]
   },
   {
     "regex": "SURFTV",

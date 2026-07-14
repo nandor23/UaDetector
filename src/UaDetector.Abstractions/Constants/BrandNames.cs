@@ -2149,4 +2149,19 @@ public static class BrandNames
     public const string Nikai = "NIKAI";
     public const string Siera = "Siera";
     public const string Sonashi = "SONASHI";
+    public const string Flexy = "FLEXY";
+    public const string Geepas = "GEEPAS";
+    public const string GoldSky = "GoldSky";
+    public const string Haam = "HAAM";
+    public const string Idea = "iDEA";
+    public const string Kiwi = "KIWI";
+    public const string Miral = "MIRAL";
+    public const string NationalPro = "National PRO";
+    public const string Nobel = "Nobel";
+    public const string Northway = "NORTHWAY";
+    public const string Ollz = "ollz";
+    public const string Roadstar = "Roadstar";
+    public const string StarwaySa = "Starway (SA)";
+    public const string TeleSystem = "TELE System";
+    public const string VG = "VG";
 }

@@ -8134,6 +8134,11 @@
     ]
   },
   {
+    "regex": "VG[;,)]",
+    "brand": "VG",
+    "type": 6
+  },
+  {
     "regex": "VGOTEL|(?:Flex 2|Venture V(?:[278]|12)|VentureV10|Ocean[_ ][689]|Ocean9L|NEW (?:1[01256]|2[02456]|[57])|V TAB 2|i_Smart)(?:[);/ ]|$)",
     "brand": "VGO TEL",
     "type": 2,
@@ -32075,6 +32080,11 @@
     ]
   },
   {
+    "regex": "MIRAL[;,)]",
+    "brand": "MIRAL",
+    "type": 6
+  },
+  {
     "regex": "MIRAY[;,]|MIDM[_-]|MPM[_-]|TPM4G_WT8",
     "brand": "Miray",
     "type": 2,
@@ -34512,6 +34522,11 @@
     "brand": "Nobby",
     "type": 2,
     "model": "$1"
+  },
+  {
+    "regex": "NOBEL[;,)]",
+    "brand": "Nobel",
+    "type": 6
   },
   {
     "regex": "NoviSea[ _](A10)(?:[);/ ]|$)",
@@ -55383,6 +55398,11 @@
     ]
   },
   {
+    "regex": "FLEXY_HK[;,)]",
+    "brand": "FLEXY",
+    "type": 6
+  },
+  {
     "regex": "FLYCAT",
     "brand": "FLYCAT",
     "type": 2,
@@ -57880,7 +57900,7 @@
     "model": "$1"
   },
   {
-    "regex": "MTC[ _](968|97[82]|970|982[OT]?|1078)|(?:MTC[_ ])?SMART[ _]?(?:Race[2]?|Sprint|Run|Turbo|Surf[2]?)[ _]4G|MTC975|Smart Bit|Smart_(?:LINE|Light)|(?:MTC[ _])?SMART[ _](?:Run|Start[_ ][23])|Redbox Mini 5\\(MTS\\)|MTS TV|DV8235|DV9135|DV9157-C|DV8304-C|Osmartphona",
+    "regex": "MTC[;,)]|MTC[ _](968|97[82]|970|982[OT]?|1078)|(?:MTC[_ ])?SMART[ _]?(?:Race[2]?|Sprint|Run|Turbo|Surf[2]?)[ _]4G|MTC975|Smart Bit|Smart_(?:LINE|Light)|(?:MTC[ _])?SMART[ _](?:Run|Start[_ ][23])|Redbox Mini 5\\(MTS\\)|MTS TV|DV8235|DV9135|DV9157-C|DV8304-C|Osmartphona|MTC([a-z0-9-]+)",
     "brand": "MTC",
     "type": 2,
     "modelVariants": [
@@ -57958,6 +57978,11 @@
       },
       {
         "regex": "(DV8235|DV9135|DV9157)",
+        "type": 6,
+        "name": "$1"
+      },
+      {
+        "regex": "LGE; ([a-z0-9-]+);",
         "type": 6,
         "name": "$1"
       }
@@ -58160,6 +58185,11 @@
     "brand": "Starway",
     "type": 3,
     "model": "Andromeda S$1"
+  },
+  {
+    "regex": "Starway[;,)]",
+    "brand": "Starway (SA)",
+    "type": 6
   },
   {
     "regex": " (TB-PO1|TB-B01|TB-G01)(?:[);/ ]|$)",
@@ -59712,6 +59742,11 @@
     "brand": "National",
     "type": 6,
     "model": "$1"
+  },
+  {
+    "regex": "NATIONAL PRO[;,)]",
+    "brand": "National PRO",
+    "type": 6
   },
   {
     "regex": "(SHIFT6mq?)(?:[);/ ]|$)",
@@ -62354,6 +62389,11 @@
     ]
   },
   {
+    "regex": "IDEA[;,)]",
+    "brand": "iDEA",
+    "type": 6
+  },
+  {
     "regex": "(?:APACHE G6|iDroid Royal V5|BALR_?X7(?:_PAK)?)(?:[);/ ]|$)",
     "brand": "iDroid",
     "type": 2,
@@ -63825,6 +63865,11 @@
     "brand": "NorthTech",
     "type": 3,
     "model": "TouchPad 10.0\""
+  },
+  {
+    "regex": "NORTHWAY[;,)]",
+    "brand": "NORTHWAY",
+    "type": 6
   },
   {
     "regex": "UNIWA[ _]|(?:W888)(?:[);/ ]|$)",
@@ -69842,10 +69887,19 @@
     ]
   },
   {
-    "regex": "(IK-102[58]|IK-1106|IK-7108|IK-787)(?:[);/ ]|$)",
+    "regex": "IKON[;,)]|(?:IK-102[58]|IK-1106|IK-7108|IK-787)(?:[);/ ]|$)",
     "brand": "iKon",
     "type": 3,
-    "model": "$1"
+    "modelVariants": [
+      {
+        "regex": "(IK-102[58]|IK-1106|IK-7108|IK-787)",
+        "name": "$1"
+      },
+      {
+        "regex": "IKON[;,)]",
+        "type": 6
+      }
+    ]
   },
   {
     "regex": "(?:Jarvis7_85)(?:[);/ ]|$)",
@@ -70453,6 +70507,11 @@
     ]
   },
   {
+    "regex": "ROADSTAR[;,)]",
+    "brand": "Roadstar",
+    "type": 6
+  },
+  {
     "regex": "BDS2 Plus",
     "brand": "BDsharing",
     "type": 2,
@@ -70510,6 +70569,11 @@
     "brand": "TENPLUS",
     "type": 3,
     "model": "$1"
+  },
+  {
+    "regex": "HAAM[;,)]",
+    "brand": "HAAM",
+    "type": 6
   },
   {
     "regex": "(T2000)(?: Build|[);])",
@@ -72040,6 +72104,11 @@
     "brand": "Ollee",
     "type": 3,
     "model": "008 TwoA"
+  },
+  {
+    "regex": "OLLZ[;,)]",
+    "brand": "ollz",
+    "type": 6
   },
   {
     "regex": "Dtac[_ ]?Phone[_ ]?([^/;)]+)(?: Build|[);])",
@@ -73726,10 +73795,24 @@
     "model": "$1"
   },
   {
-    "regex": "GEANT[_ ](T\\d)(?:[);/ ]|$)",
+    "regex": "GEANT[;,)_ ]",
     "brand": "Geant",
     "type": 2,
-    "model": "$1"
+    "modelVariants": [
+      {
+        "regex": "GEANT[_ ](T\\d)(?:[);/ ]|$)",
+        "name": "$1"
+      },
+      {
+        "regex": "GEANT[;,)]",
+        "type": 6
+      }
+    ]
+  },
+  {
+    "regex": "GEEPAS[;,)]",
+    "brand": "GEEPAS",
+    "type": 6
   },
   {
     "regex": "Galactic[_ ](Astro)(?:[);/ ]|$)",
@@ -75347,6 +75430,11 @@
     "model": "$1"
   },
   {
+    "regex": "Goldsky[;,)]",
+    "brand": "GoldSky",
+    "type": 6
+  },
+  {
     "regex": "(LT-55U900)(?:[);/ ]|$)",
     "brand": "GoldStar",
     "type": 6,
@@ -75958,7 +76046,7 @@
     "model": "$1"
   },
   {
-    "regex": "(65DYW60)(?:[);/ ]|$)",
+    "regex": "DORA_jpe[;,)]|(65DYW60)(?:[);/ ]|$)",
     "brand": "Dora",
     "type": 6,
     "model": "$1"
@@ -76084,7 +76172,7 @@
     "model": "$1"
   },
   {
-    "regex": "(SWU-6522)(?:[);/ ]|$)",
+    "regex": "ICONEGOLD[;,)]|(SWU-6522)(?:[);/ ]|$)",
     "brand": "Icone Gold",
     "type": 6,
     "model": "$1"
