@@ -7921,5 +7921,14 @@
       "cpuArchitecture": "ARM",
       "family": "GNU/Linux"
     }
+  },
+  {
+    "userAgent": "DMRegister/64 CFNetwork/3826.400.120 Darwin/24.3.0",
+    "os": {
+      "name": "iOS",
+      "code": 183,
+      "version": "18.3",
+      "family": "iOS"
+    }
   }
 ]
