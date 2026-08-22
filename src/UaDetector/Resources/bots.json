@@ -1213,8 +1213,8 @@
     }
   },
   {
-    "regex": "Google-NotebookLM",
-    "name": "Google-NotebookLM",
+    "regex": "(Google-(?:GeminiNotebook|NotebookLM))",
+    "name": "$1",
     "category": 18,
     "url": "https://developers.google.com/crawling/docs/crawlers-fetchers/google-user-triggered-fetchers",
     "producer": {
