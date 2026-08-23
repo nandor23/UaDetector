@@ -644,9 +644,9 @@
     "version": "$1"
   },
   {
-    "regex": "(.*)Vast Browser/(\\d+\\.[.\\d]+)",
+    "regex": ".+Vast Browser/(\\d+\\.[.\\d]+)",
     "name": "Vast Browser",
-    "version": "$2",
+    "version": "$1",
     "engine": {
       "default": "Blink"
     }
@@ -659,9 +659,9 @@
     }
   },
   {
-    "regex": "(.*)U Browser(\\d+\\.[.\\d]+)",
+    "regex": ".+U Browser(\\d+\\.[.\\d]+)",
     "name": "U Browser",
-    "version": "$2",
+    "version": "$1",
     "engine": {
       "default": "Blink"
     }
