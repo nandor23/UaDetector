@@ -741,6 +741,7 @@ public class BrowserCodeTests
             { BrowserCode.PrivateBrowsing, 718 },
             { BrowserCode.SafeBrowser, 719 },
             { BrowserCode.QuicheBrowser, 720 },
+            { BrowserCode.Lightpanda, 721 },
         };
 
         expectedValues.Count.ShouldBe(Enum.GetValues<BrowserCode>().Length);

@@ -722,4 +722,5 @@ public enum BrowserCode
     PrivateBrowsing = 718,
     SafeBrowser = 719,
     QuicheBrowser = 720,
+    Lightpanda = 721,
 }
