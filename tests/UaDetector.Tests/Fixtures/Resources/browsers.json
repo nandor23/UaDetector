@@ -15147,5 +15147,17 @@
         "version": "132.0.6834.210"
       }
     }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 15; en-US; Z2469N Build/AP3A.240905.015.A2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.6312.80 UCMobile/15.0.6.1382 Mobile Safari/537.36",
+    "browser": {
+      "name": "UC Browser",
+      "code": 605,
+      "version": "15.0.6.1382",
+      "engine": {
+        "name": "Blink",
+        "version": "123.0.6312.80"
+      }
+    }
   }
 ]

@@ -2165,4 +2165,6 @@ public enum BrandCode
     TeleSystem = 2161,
     VG = 2162,
     Hoobart = 2163,
+    SunKing = 2164,
+    Telstra = 2165
 }

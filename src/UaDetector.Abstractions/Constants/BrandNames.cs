@@ -2165,4 +2165,7 @@ public static class BrandNames
     public const string TeleSystem = "TELE System";
     public const string VG = "VG";
     public const string Hoobart = "Hoobart";
+    public const string SunKing = "Sun King";
+    public const string Telstra = "Telstra";
+
 }

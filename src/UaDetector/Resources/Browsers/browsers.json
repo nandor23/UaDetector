@@ -2406,7 +2406,7 @@
     }
   },
   {
-    "regex": "UC[ ]?Browser(?:[ /]?(\\d+[.\\d]+))?",
+    "regex": "UC ?(?:Browser|Mobile)(?:[ /]?(\\d+[.\\d]+))?",
     "name": "UC Browser",
     "version": "$1"
   },
