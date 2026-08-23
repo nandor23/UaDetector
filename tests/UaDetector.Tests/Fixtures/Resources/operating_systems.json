@@ -8042,5 +8042,38 @@
       "version": "27",
       "family": "iOS"
     }
+  },
+  {
+    "userAgent": "test-user-agent-1",
+    "headers": {
+      "Sec-CH-UA-Platform": "Win32"
+    },
+    "os": {
+      "name": "Windows",
+      "code": 171,
+      "family": "Windows"
+    }
+  },
+  {
+    "userAgent": "test-user-agent-2",
+    "headers": {
+      "Sec-CH-UA-Platform": "MacIntel"
+    },
+    "os": {
+      "name": "Mac",
+      "code": 84,
+      "family": "Mac"
+    }
+  },
+  {
+    "userAgent": "test-user-agent-3",
+    "headers": {
+      "Sec-CH-UA-Platform": "Mac OS X"
+    },
+    "os": {
+      "name": "Mac",
+      "code": 84,
+      "family": "Mac"
+    }
   }
 ]
