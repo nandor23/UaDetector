@@ -754,7 +754,6 @@ public static class BrowserRegistry
             { BrowserCode.SafeBrowser, BrowserNames.SafeBrowser },
             { BrowserCode.QuicheBrowser, BrowserNames.QuicheBrowser },
             { BrowserCode.Lightpanda, BrowserNames.Lightpanda },
-
         }.ToFrozenDictionary();
 
     internal static readonly FrozenDictionary<string, BrowserCode> BrowserNameMappings =
