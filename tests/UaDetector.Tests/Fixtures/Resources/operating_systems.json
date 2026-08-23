@@ -7932,6 +7932,15 @@
     }
   },
   {
+    "userAgent": "curl/7.8 (i386-redhat-linux-gnu) libcurl/7.8",
+    "os": {
+      "name": "Red Hat",
+      "code": 125,
+      "cpuArchitecture": "x86",
+      "family": "GNU/Linux"
+    }
+  },
+  {
     "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.0 Mobile/15E148 Safari/604.1",
     "os": {
       "name": "iOS",
