@@ -320,11 +320,12 @@ public sealed partial class OsParser : IOsParser
         ClientHintPlatformMappings = new Dictionary<string, FrozenSet<string>>
         {
             { OsNames.GnuLinux, new[] { "Linux" }.ToFrozenSet(StringComparer.OrdinalIgnoreCase) },
-            { OsNames.Mac, new[] { "MacOS" }.ToFrozenSet(StringComparer.OrdinalIgnoreCase) },
+            { OsNames.Mac, new[] { "MacOS", "Mac OS X", "MacIntel" }.ToFrozenSet(StringComparer.OrdinalIgnoreCase) },
             {
                 OsNames.PuffinOs,
                 new[] { "Cloud Phone 2.4" }.ToFrozenSet(StringComparer.OrdinalIgnoreCase)
             },
+            { OsNames.Windows, new[] { "Win32" }.ToFrozenSet(StringComparer.OrdinalIgnoreCase) },
         }.ToFrozenDictionary(StringComparer.OrdinalIgnoreCase);
 
         FireOsVersionMappings = new Dictionary<string, string>
