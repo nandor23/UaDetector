@@ -2183,6 +2183,7 @@ public class BrandCodeTests
             { BrandCode.StarwaySa, 2160 },
             { BrandCode.TeleSystem, 2161 },
             { BrandCode.VG, 2162 },
+            { BrandCode.Hoobart, 2163 },
         };
 
         expectedValues.Count.ShouldBe(Enum.GetValues<BrandCode>().Length);

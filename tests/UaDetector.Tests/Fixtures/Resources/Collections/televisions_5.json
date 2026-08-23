@@ -8299,5 +8299,57 @@
         "code": 2153
       }
     }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 14; 43DS620ANDT Build/UP1A.231105.003.A1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.136 YaBrowser/25.10.1.638 (lite) Safari/537.36 TV",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "14",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser Lite",
+      "code": 656,
+      "version": "25.10.1.638",
+      "engine": {
+        "name": "Blink",
+        "version": "113.0.5672.136"
+      }
+    },
+    "device": {
+      "type": 6,
+      "model": "43DS620ANDT",
+      "brand": {
+        "name": "Hoobart",
+        "code": 2163
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 14; 40FLES907T2SM Build/UP1A.231105.003.A1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.136 YaBrowser/24.12.0.453 (lite) Safari/537.36 TV",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "14",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser Lite",
+      "code": 656,
+      "version": "24.12.0.453",
+      "engine": {
+        "name": "Blink",
+        "version": "113.0.5672.136"
+      }
+    },
+    "device": {
+      "type": 6,
+      "model": "40FLES907T2SM",
+      "brand": {
+        "name": "Erisson",
+        "code": 497
+      }
+    }
   }
 ]

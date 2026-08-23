@@ -2164,4 +2164,5 @@ public static class BrandNames
     public const string StarwaySa = "Starway (SA)";
     public const string TeleSystem = "TELE System";
     public const string VG = "VG";
+    public const string Hoobart = "Hoobart";
 }

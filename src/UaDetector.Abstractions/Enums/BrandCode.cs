@@ -2164,4 +2164,5 @@ public enum BrandCode
     StarwaySa = 2160,
     TeleSystem = 2161,
     VG = 2162,
+    Hoobart = 2163,
 }
