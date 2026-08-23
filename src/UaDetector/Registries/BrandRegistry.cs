@@ -2198,6 +2198,8 @@ public static class BrandRegistry
         { BrandCode.TeleSystem, BrandNames.TeleSystem },
         { BrandCode.VG, BrandNames.VG },
         { BrandCode.Hoobart, BrandNames.Hoobart },
+        { BrandCode.SunKing, BrandNames.SunKing },
+        { BrandCode.Telstra, BrandNames.Telstra },
     }.ToFrozenDictionary();
 
     internal static readonly FrozenDictionary<string, BrandCode> BrandNameMappings =

@@ -1523,5 +1523,407 @@
         "code": 2096
       }
     }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; U; Android 15; es-us; 26020RNB4L Build/AP3A.240905.015.A2) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36 Lite Browser/4.24",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "15",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Webview",
+      "code": 162,
+      "version": "149.0.7827.91",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "149.0.7827.91"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "Redmi A7",
+      "brand": {
+        "name": "Xiaomi",
+        "code": 1974
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 16; 2602DPT53G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.83 YaBrowser/26.6.2.83.00 (beta) Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "16",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 654,
+      "version": "26.6.2.83.00 beta",
+      "engine": {
+        "name": "Blink",
+        "version": "148.0.7778.83"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "17T",
+      "brand": {
+        "name": "Xiaomi",
+        "code": 1974
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 16; RMX3963 Build/BP2A.250605.015; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "16",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Webview",
+      "code": 162,
+      "version": "149.0.7827.91",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "149.0.7827.91"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "C75 5G",
+      "brand": {
+        "name": "Realme",
+        "code": 1431
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; U; Android 15; en-US; 25057RN09G Build/AQ3A.250226.002) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/123.0.6312.80 UCBrowser/15.1.7.1393 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "15",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "code": 605,
+      "version": "15.1.7.1393",
+      "engine": {
+        "name": "Blink",
+        "version": "123.0.6312.80"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "Redmi 15 5G",
+      "brand": {
+        "name": "Xiaomi",
+        "code": 1974
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 15; 25057RN09E Build/AQ3A.250226.002; ) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/131.0.6778.260 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "15",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Webview",
+      "code": 162,
+      "version": "131.0.6778.260",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "131.0.6778.260"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "Redmi 15 5G",
+      "brand": {
+        "name": "Xiaomi",
+        "code": 1974
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 15; 25057RN09I) AppleWebKit/537.36 (KHTML, like Gecko) JioSphere/6.0.2 Chrome/136.0.7103.125 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "15",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "JioSphere",
+      "code": 301,
+      "version": "6.0.2",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "136.0.7103.125"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "Redmi 15 5G",
+      "brand": {
+        "name": "Xiaomi",
+        "code": 1974
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 16; 25128RN17L Build/BP2A.250605.031.A3; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/148.0.7778.178 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "16",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Webview",
+      "code": 162,
+      "version": "148.0.7778.178",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "148.0.7778.178"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "Redmi A7 Pro",
+      "brand": {
+        "name": "Xiaomi",
+        "code": 1974
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; U; Android 15; en-us; 26020RNB4A Build/AP3A.240905.015.A2) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/150.0.7871.46 Mobile Safari/537.36 Lite Browser/4.24",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "15",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Webview",
+      "code": 162,
+      "version": "150.0.7871.46",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "150.0.7871.46"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "Redmi A7",
+      "brand": {
+        "name": "Xiaomi",
+        "code": 1974
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 15; T450H Build/AP3A.240905.015.A2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.6778.260 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "15",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 141,
+      "version": "131.0.6778.260",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "131.0.6778.260"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "T-Inspire 2",
+      "brand": {
+        "name": "Telstra",
+        "code": 2165
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; U; Android 15; Z2473 Build/AP3A.240905.015.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/143.0.7499.115 Mobile Safari/537.36 OPR/97.1.2254.80849",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "15",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Opera Mobile",
+      "code": 420,
+      "version": "97.1.2254.80849",
+      "family": "Opera",
+      "engine": {
+        "name": "Blink",
+        "version": "143.0.7499.115"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "Blade A56",
+      "brand": {
+        "name": "ZTE",
+        "code": 2040
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 15; Z2474 Build/AP3A.240905.015.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/147.0.7727.55 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "15",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Webview",
+      "code": 162,
+      "version": "147.0.7727.55",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "147.0.7727.55"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "Blade A76",
+      "brand": {
+        "name": "ZTE",
+        "code": 2040
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 15; en-US; Z2469N Build/AP3A.240905.015.A2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.6312.80 UCMobile/15.0.6.1382 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "15",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "code": 605,
+      "version": "15.0.6.1382",
+      "engine": {
+        "name": "Blink",
+        "version": "123.0.6312.80"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "Blade A76 5G",
+      "brand": {
+        "name": "ZTE",
+        "code": 2040
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 14; Z2459 Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/138.0.7204.179 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "14",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Webview",
+      "code": 162,
+      "version": "138.0.7204.179",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "138.0.7204.179"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "Blade V70",
+      "brand": {
+        "name": "ZTE",
+        "code": 2040
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; U; Android 16; es-LA; Z2577 Build/BP2A.250605.031.A3) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/123.0.6312.80 UCBrowser/15.2.0.1396 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "16",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "code": 605,
+      "version": "15.2.0.1396",
+      "engine": {
+        "name": "Blink",
+        "version": "123.0.6312.80"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "Blade V80 Max",
+      "brand": {
+        "name": "ZTE",
+        "code": 2040
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 14; Z2460 Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/150.0.7871.124 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "14",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Webview",
+      "code": 162,
+      "version": "150.0.7871.124",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "150.0.7871.124"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "Music 2",
+      "brand": {
+        "name": "Nubia",
+        "code": 1216
+      }
+    }
   }
 ]
