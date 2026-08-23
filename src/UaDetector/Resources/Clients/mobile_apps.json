@@ -2969,6 +2969,11 @@
     "version": "$1"
   },
   {
+    "regex": "Latina/([\\d.]+)",
+    "name": "Latina",
+    "version": "$1"
+  },
+  {
     "regex": "HuffPost/ios/([\\d.]+)",
     "name": "HuffPost",
     "version": "$1"

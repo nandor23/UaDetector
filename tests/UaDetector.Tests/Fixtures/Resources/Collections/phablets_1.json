@@ -9615,5 +9615,32 @@
         "code": 1974
       }
     }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 16; PNM-N49) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.110 YaBrowser/26.6.4.110.00 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "16",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 654,
+      "version": "26.6.4.110.00",
+      "engine": {
+        "name": "Blink",
+        "version": "148.0.7778.110"
+      }
+    },
+    "device": {
+      "type": 11,
+      "model": "Magic V6",
+      "brand": {
+        "name": "Honor",
+        "code": 2096
+      }
+    }
   }
 ]
