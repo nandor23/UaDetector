@@ -79,8 +79,9 @@
     "name": "LeafOS"
   },
   {
-    "regex": "Cloud Phone",
-    "name": "Puffin OS"
+    "regex": "Cloud Phone(?: (\\d+[.\\d]+))?",
+    "name": "Puffin OS",
+    "version": "$1"
   },
   {
     "regex": "RisingOS",

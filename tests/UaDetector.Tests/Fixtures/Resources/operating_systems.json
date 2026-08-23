@@ -7930,5 +7930,18 @@
       "version": "18.3",
       "family": "iOS"
     }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Cloud Phone 2.4; Nokia 225 4G; UNISOC) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.6834.210 Mobile Safari/537.36 Puffin/132.0.8.80800FP",
+    "headers": {
+      "Sec-CH-UA-Platform": "Cloud Phone 2.4",
+      "Sec-CH-UA-Platform-Version": "132"
+    },
+    "os": {
+      "name": "Puffin OS",
+      "code": 120,
+      "version": "2.4",
+      "family": "Android"
+    }
   }
 ]

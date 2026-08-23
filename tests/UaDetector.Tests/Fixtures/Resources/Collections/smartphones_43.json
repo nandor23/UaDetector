@@ -1186,5 +1186,32 @@
         "code": 1274
       }
     }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Cloud Phone 2.4; Nokia 225 4G; UNISOC) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.6834.210 Mobile Safari/537.36 Puffin/132.0.8.80800FP",
+    "os": {
+      "name": "Puffin OS",
+      "code": 120,
+      "version": "2.4",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Puffin Cloud Browser",
+      "code": 450,
+      "version": "132.0.8.80800",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "132.0.6834.210"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "225 4G",
+      "brand": {
+        "name": "Nokia",
+        "code": 1220
+      }
+    }
   }
 ]

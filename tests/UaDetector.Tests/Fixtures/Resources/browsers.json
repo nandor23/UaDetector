@@ -15108,5 +15108,21 @@
         "name": "WebKit"
       }
     }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Cloud Phone 2.4; Nokia 225 4G; UNISOC) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.6834.210 Mobile Safari/537.36 Puffin/132.0.8.80800FP",
+    "headers": {
+      "Sec-CH-UA": "\"Not/A)Brand\";v=\"99.0.0.0\", \"Google Chrome\";v=\"132.0.6834.210\", \"Chromium\";v=\"132.0.6834.210\", \"Puffin\";v=\"132.0.8.80800\""
+    },
+    "browser": {
+      "name": "Puffin Cloud Browser",
+      "code": 450,
+      "version": "132.0.8.80800",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "132.0.6834.210"
+      }
+    }
   }
 ]
