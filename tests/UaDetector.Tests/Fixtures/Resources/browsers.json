@@ -15110,6 +15110,29 @@
     }
   },
   {
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 UCPC/1.1.0.12",
+    "browser": {
+      "name": "UC Browser",
+      "code": 605,
+      "version": "1.1.0.12",
+      "engine": {
+        "name": "Blink",
+        "version": "130.0.0.0"
+      }
+    }
+  },
+  {
+    "userAgent": "Lightpanda/1.0",
+    "headers": {
+      "Sec-CH-UA": "\"Lightpanda\";v=\"1\""
+    },
+    "browser": {
+      "name": "Lightpanda",
+      "code": 721,
+      "version": "1.0"
+    }
+  },
+  {
     "userAgent": "Mozilla/5.0 (Cloud Phone 2.4; Nokia 225 4G; UNISOC) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.6834.210 Mobile Safari/537.36 Puffin/132.0.8.80800FP",
     "headers": {
       "Sec-CH-UA": "\"Not/A)Brand\";v=\"99.0.0.0\", \"Google Chrome\";v=\"132.0.6834.210\", \"Chromium\";v=\"132.0.6834.210\", \"Puffin\";v=\"132.0.8.80800\""
