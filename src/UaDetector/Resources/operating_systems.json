@@ -1518,7 +1518,12 @@
     "version": "$1.$2"
   },
   {
-    "regex": "iPad; CPU OS 18_7.+Version/(\\d+[.\\d]+)",
+    "regex": "iPad; CPU OS 18_[67].+\\) Version/(\\d+[.\\d]+)",
+    "name": "iPadOS",
+    "version": "$1"
+  },
+  {
+    "regex": "iPad; CPU OS 18_[67].+Version/(2[67]+[.\\d]+)",
     "name": "iPadOS",
     "version": "$1"
   },
@@ -1583,7 +1588,12 @@
     "version": "26.$1"
   },
   {
-    "regex": "iPhone OS 18_7.+Version/(\\d+[.\\d]+)",
+    "regex": "iPhone OS 18_[67].+\\) Version/(\\d+[.\\d]+)",
+    "name": "iOS",
+    "version": "$1"
+  },
+  {
+    "regex": "iPhone OS 18_[67].+Version/(2[67]+[.\\d]+)",
     "name": "iOS",
     "version": "$1"
   },
@@ -1931,7 +1941,7 @@
     "version": "$1"
   },
   {
-    "regex": "Mac OS X 10_15_7.+Version/(2[67]+[.\\d]+)",
+    "regex": "Mac OS X 10_15.+Version/(2[67]+[.\\d]+)",
     "name": "Mac",
     "version": "$1"
   },
