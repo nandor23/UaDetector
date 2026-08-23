@@ -751,6 +751,11 @@
     "name": "Yandex"
   },
   {
+    "regex": "YaBrowser/([\\d.]+).+YazekaApp/",
+    "name": "Yandex AI",
+    "version": "$1"
+  },
+  {
     "regex": "ZenKit/([\\d.]+)",
     "name": "Zen",
     "version": "$1"
@@ -2946,6 +2951,16 @@
   {
     "regex": "Kobo.+/(\\d+[.\\d]+)",
     "name": "Kobo eReader",
+    "version": "$1"
+  },
+  {
+    "regex": "GrokApp/([\\d.]+)",
+    "name": "Grok",
+    "version": "$1"
+  },
+  {
+    "regex": "QuickBooks/([\\d.]+)",
+    "name": "QuickBooks",
     "version": "$1"
   },
   {
