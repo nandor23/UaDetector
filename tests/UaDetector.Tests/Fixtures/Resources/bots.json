@@ -13844,5 +13844,263 @@
         "url": "https://sentione.com/"
       }
     }
+  },
+  {
+    "userAgent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Centurybot/1.0; +http://www.rightdao.com/bot.html) Chrome/131.0.0.0 Safari/537.36",
+    "bot": {
+      "name": "Centurybot",
+      "category": 1,
+      "url": "https://rightdao.com/bot.html"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (compatible; centurybot/1.0)",
+    "bot": {
+      "name": "Centurybot",
+      "category": 1,
+      "url": "https://rightdao.com/bot.html"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; KimiBot/1.0; +https://www.kimi.com/policies/kimi-crawlers",
+    "bot": {
+      "name": "KimiBot",
+      "category": 19,
+      "url": "https://www.kimi.com/policies/kimi-crawlers",
+      "producer": {
+        "name": "Moonshot AI Pte. Ltd.",
+        "url": "https://www.moonshot.ai/"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; Kimi-SearchBot/1.0; +https://www.kimi.com/policies/kimi-crawlers",
+    "bot": {
+      "name": "Kimi-SearchBot",
+      "category": 20,
+      "url": "https://www.kimi.com/policies/kimi-crawlers",
+      "producer": {
+        "name": "Moonshot AI Pte. Ltd.",
+        "url": "https://www.moonshot.ai/"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; Kimi-User/1.0; +https://www.kimi.com/policies/kimi-crawlers",
+    "bot": {
+      "name": "Kimi-User",
+      "category": 18,
+      "url": "https://www.kimi.com/policies/kimi-crawlers",
+      "producer": {
+        "name": "Moonshot AI Pte. Ltd.",
+        "url": "https://www.moonshot.ai/"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; MistralAI-Index/1.0; +https://docs.mistral.ai/robots)",
+    "bot": {
+      "name": "MistralAI-Index",
+      "category": 20,
+      "url": "https://docs.mistral.ai/robots",
+      "producer": {
+        "name": "Mistral AI",
+        "url": "https://mistral.ai/"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (compatible; AffsignalCrawler/1.0; +https://affsignal.com/bot)",
+    "bot": {
+      "name": "AffsignalCrawler",
+      "category": 4,
+      "url": "https://affsignal.com/bot"
+    }
+  },
+  {
+    "userAgent": "GoGuidesCrawler/2.0",
+    "bot": {
+      "name": "GoGuidesCrawler",
+      "category": 20,
+      "url": "https://www.goguides.com/crawler",
+      "producer": {
+        "name": "GoGuides, LLC",
+        "url": "https://www.goguides.com/"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (compatible; GoGuidesCrawler/2.0; +https://www.goguides.com/crawler)",
+    "bot": {
+      "name": "GoGuidesCrawler",
+      "category": 20,
+      "url": "https://www.goguides.com/crawler",
+      "producer": {
+        "name": "GoGuides, LLC",
+        "url": "https://www.goguides.com/"
+      }
+    }
+  },
+  {
+    "userAgent": "GoGuidesDiscoveryBot/1.0 (+https://www.goguides.com/crawler)",
+    "bot": {
+      "name": "GoGuidesDiscoveryBot",
+      "category": 20,
+      "url": "https://www.goguides.com/crawler",
+      "producer": {
+        "name": "GoGuides, LLC",
+        "url": "https://www.goguides.com/"
+      }
+    }
+  },
+  {
+    "userAgent": "GoGuidesCrawler/2.0 (trust-transparency; +https://www.goguides.com/crawler)",
+    "bot": {
+      "name": "GoGuidesCrawler",
+      "category": 20,
+      "url": "https://www.goguides.com/crawler",
+      "producer": {
+        "name": "GoGuides, LLC",
+        "url": "https://www.goguides.com/"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (compatible; crawlora-research/1.0; +https://crawlora.net/anti-bot-index)",
+    "bot": {
+      "name": "crawlora-research",
+      "category": 6,
+      "url": "https://crawlora.net/anti-bot-index"
+    }
+  },
+  {
+    "userAgent": "RankPulseBot/0.1 (+https://github.com/rankpulse/rankpulse)",
+    "bot": {
+      "name": "RankPulseBot",
+      "category": 4,
+      "url": "https://rankpulse.app/"
+    }
+  },
+  {
+    "userAgent": "PipericBot/1.0 (+https://piperic.com/bot)",
+    "bot": {
+      "name": "PipericBot",
+      "category": 4,
+      "url": "https://piperic.com/bot"
+    }
+  },
+  {
+    "userAgent": "OrlightBot/1.0 (+https://orlight.net/bot)",
+    "bot": {
+      "name": "OrlightBot",
+      "category": 1,
+      "url": "https://orlight.net/"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (compatible; urlsuma/2.0; +https://urlsuma.de/bot.html)",
+    "bot": {
+      "name": "urlsuma",
+      "category": 1,
+      "url": "https://urlsuma.de/bot.html"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (compatible; SocialPushBot/1.0; +https://socialpush.com/bot)",
+    "bot": {
+      "name": "SocialPushBot",
+      "category": 4,
+      "url": "https://socialpush.com/",
+      "producer": {
+        "name": "RP NET MEDIA SRL"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (compatible; PriEcoBot/1.0.0; +https://prieco.net)",
+    "bot": {
+      "name": "PriEcoBot",
+      "category": 1,
+      "url": "https://prieco.net"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (compatible; DnesAkceBot/1.0; +https://dnesakce.cz)",
+    "bot": {
+      "name": "DnesAkceBot",
+      "category": 4,
+      "url": "https://dnesakce.cz/",
+      "producer": {
+        "name": "Easy Call 09, s.r.o."
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (compatible; cl0q-crawler/1.0; +https://cl0q.com/bot)",
+    "bot": {
+      "name": "cl0q-crawler",
+      "category": 1,
+      "url": "https://cl0q.com/bot/"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 cl0q-crawler/1.0 (+https://cl0q.com/bot)",
+    "bot": {
+      "name": "cl0q-crawler",
+      "category": 1,
+      "url": "https://cl0q.com/bot/"
+    }
+  },
+  {
+    "userAgent": "InfoGuardDisclosureResearch/1.0 (https://www.infoguard.ch; +mailto:redteam@infoguard.ch) security.txt-discovery",
+    "bot": {
+      "name": "InfoGuardDisclosureResearch",
+      "category": 6,
+      "url": "https://www.infoguard.ch/",
+      "producer": {
+        "name": "InfoGuard AG",
+        "url": "https://www.infoguard.ch/"
+      }
+    }
+  },
+  {
+    "userAgent": "FindiseBot/1.0 (+https://findise.net/bot)",
+    "bot": {
+      "name": "FindiseBot",
+      "category": 1,
+      "url": "https://findise.net/"
+    }
+  },
+  {
+    "userAgent": "gwf-carbon-txt-crawler/1.0 (Web Crawler for the Green Web Foundation to measure the adoption of the carbon.txt initiative; https://www.thegreenwebfoundation.org/green-web-checker-faq/; support@greenweb.org)",
+    "bot": {
+      "name": "gwf-carbon-txt-crawler",
+      "category": 4,
+      "url": "https://www.thegreenwebfoundation.org/green-web-checker-faq/",
+      "producer": {
+        "name": "Green Web Foundation",
+        "url": "https://www.thegreenwebfoundation.org/"
+      }
+    }
+  },
+  {
+    "userAgent": "GreenWebChecker/1.0.0",
+    "bot": {
+      "name": "GreenWebChecker",
+      "category": 4,
+      "url": "https://www.thegreenwebfoundation.org/green-web-checker-faq/",
+      "producer": {
+        "name": "Green Web Foundation",
+        "url": "https://www.thegreenwebfoundation.org/"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (compatible; WebatlaBot/1.0; +https://bot.webatla.com; abuse@webatla.com)",
+    "bot": {
+      "name": "WebatlaBot",
+      "category": 4,
+      "url": "https://bot.webatla.com/"
+    }
   }
 ]

@@ -6887,6 +6887,16 @@
     }
   },
   {
+    "regex": "MistralAI-Index",
+    "name": "MistralAI-Index",
+    "category": 20,
+    "url": "https://docs.mistral.ai/robots",
+    "producer": {
+      "name": "Mistral AI",
+      "url": "https://mistral.ai/"
+    }
+  },
+  {
     "regex": "MistralAI-User",
     "name": "MistralAI-User",
     "category": 18,
@@ -7270,6 +7280,150 @@
     "name": "TrustBot",
     "category": 4,
     "url": "https://truster.info/en/"
+  },
+  {
+    "regex": "Centurybot",
+    "name": "Centurybot",
+    "category": 1,
+    "url": "https://rightdao.com/bot.html"
+  },
+  {
+    "regex": "KimiBot",
+    "name": "KimiBot",
+    "category": 19,
+    "url": "https://www.kimi.com/policies/kimi-crawlers",
+    "producer": {
+      "name": "Moonshot AI Pte. Ltd.",
+      "url": "https://www.moonshot.ai/"
+    }
+  },
+  {
+    "regex": "Kimi-SearchBot",
+    "name": "Kimi-SearchBot",
+    "category": 20,
+    "url": "https://www.kimi.com/policies/kimi-crawlers",
+    "producer": {
+      "name": "Moonshot AI Pte. Ltd.",
+      "url": "https://www.moonshot.ai/"
+    }
+  },
+  {
+    "regex": "Kimi-User",
+    "name": "Kimi-User",
+    "category": 18,
+    "url": "https://www.kimi.com/policies/kimi-crawlers",
+    "producer": {
+      "name": "Moonshot AI Pte. Ltd.",
+      "url": "https://www.moonshot.ai/"
+    }
+  },
+  {
+    "regex": "AffsignalCrawler",
+    "name": "AffsignalCrawler",
+    "category": 4,
+    "url": "https://affsignal.com/bot"
+  },
+  {
+    "regex": "(GoGuides(?:Crawler|DiscoveryBot))",
+    "name": "$1",
+    "category": 20,
+    "url": "https://www.goguides.com/crawler",
+    "producer": {
+      "name": "GoGuides, LLC",
+      "url": "https://www.goguides.com/"
+    }
+  },
+  {
+    "regex": "crawlora-research",
+    "name": "crawlora-research",
+    "category": 6,
+    "url": "https://crawlora.net/anti-bot-index"
+  },
+  {
+    "regex": "RankPulseBot",
+    "name": "RankPulseBot",
+    "category": 4,
+    "url": "https://rankpulse.app/"
+  },
+  {
+    "regex": "PipericBot",
+    "name": "PipericBot",
+    "category": 4,
+    "url": "https://piperic.com/bot"
+  },
+  {
+    "regex": "OrlightBot",
+    "name": "OrlightBot",
+    "category": 1,
+    "url": "https://orlight.net/"
+  },
+  {
+    "regex": "urlsuma",
+    "name": "urlsuma",
+    "category": 1,
+    "url": "https://urlsuma.de/bot.html"
+  },
+  {
+    "regex": "SocialPushBot",
+    "name": "SocialPushBot",
+    "category": 4,
+    "url": "https://socialpush.com/",
+    "producer": {
+      "name": "RP NET MEDIA SRL"
+    }
+  },
+  {
+    "regex": "PriEcoBot",
+    "name": "PriEcoBot",
+    "category": 1,
+    "url": "https://prieco.net"
+  },
+  {
+    "regex": "DnesAkceBot",
+    "name": "DnesAkceBot",
+    "category": 4,
+    "url": "https://dnesakce.cz/",
+    "producer": {
+      "name": "Easy Call 09, s.r.o."
+    }
+  },
+  {
+    "regex": "cl0q-crawler",
+    "name": "cl0q-crawler",
+    "category": 1,
+    "url": "https://cl0q.com/bot/"
+  },
+  {
+    "regex": "InfoGuardDisclosureResearch",
+    "name": "InfoGuardDisclosureResearch",
+    "category": 6,
+    "url": "https://www.infoguard.ch/",
+    "producer": {
+      "name": "InfoGuard AG",
+      "url": "https://www.infoguard.ch/"
+    }
+  },
+  {
+    "regex": "FindiseBot",
+    "name": "FindiseBot",
+    "category": 1,
+    "url": "https://findise.net/"
+  },
+  {
+    "regex": "(GreenWebChecker|gwf-carbon-txt-crawler)",
+    "name": "$1",
+    "category": 4,
+    "url": "https://www.thegreenwebfoundation.org/green-web-checker-faq/",
+    "producer": {
+      "name": "Green Web Foundation",
+      "url": "https://www.thegreenwebfoundation.org/"
+    }
+  },
+  {
+    "regex": "WebatlaBot",
+    "name": "WebatlaBot",
+    "category": 4,
+    "url": "https://bot.webatla.com/"
   },
   {
     "regex": "(ABEvalBot|AdsTxtCrawlerTP|ArtelLeadRadar|DNSResearchBot|Dormouse|FinderGo|FormFinder|GitCrawlerBot|HanaleiBot|HubSeedsBot|ImportDomains|KenyaDomainScorer|LetrixLabs|PhishBucketRust|PostitLeadDiscovery|PrivacyPolicyBot|ProductLookoutBot|Robozilla|Secweb-Sectxt|SeoCherryBot|ShopifyChecker|SitemapCrawler\\.de|SleepBot|StudyBot|The Knowledge AI|Thinkbot|ThinkChaos|TprAdsTxtCrawler|WATCrawler)",
