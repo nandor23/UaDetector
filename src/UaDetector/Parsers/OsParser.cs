@@ -321,6 +321,7 @@ public sealed partial class OsParser : IOsParser
         {
             { OsNames.GnuLinux, new[] { "Linux" }.ToFrozenSet(StringComparer.OrdinalIgnoreCase) },
             { OsNames.Mac, new[] { "MacOS" }.ToFrozenSet(StringComparer.OrdinalIgnoreCase) },
+            { OsNames.PuffinOs, new[] { "Cloud Phone 2.4" }.ToFrozenSet(StringComparer.OrdinalIgnoreCase) },
         }.ToFrozenDictionary(StringComparer.OrdinalIgnoreCase);
 
         FireOsVersionMappings = new Dictionary<string, string>
@@ -776,6 +777,11 @@ public sealed partial class OsParser : IOsParser
                 if (name == OsNames.Windows && version == "0.0.0")
                 {
                     version = osFromUserAgent.Version == "10" ? null : osFromUserAgent.Version;
+                }
+
+                if (name == OsNames.PuffinOs)
+                {
+                    version = osFromUserAgent.Version;
                 }
 
                 // If the OS name from client hints matches the OS family from the user agent but differs in detail,

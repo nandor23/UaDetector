@@ -767,6 +767,7 @@ public sealed partial class BrowserParser : IBrowserParser
             { BrowserNames.NortonPrivateBrowser, new[] { "Norton Secure Browser" }.ToFrozenSet() },
             { BrowserNames.OperaGx, new[] { "Opera GX Android" }.ToFrozenSet() },
             { BrowserNames.OperaMini, new[] { "Opera Mini Android" }.ToFrozenSet() },
+            { BrowserNames.PuffinCloudBrowser, new[] { "Puffin" }.ToFrozenSet() },
             { BrowserNames.VewdBrowser, new[] { "Vewd Core" }.ToFrozenSet() },
             { BrowserNames.YandexBrowser, new[] { "YaSearchBrowser" }.ToFrozenSet() },
         }.ToFrozenDictionary();
@@ -962,19 +963,28 @@ public sealed partial class BrowserParser : IBrowserParser
 
             if (TryGetBrowserCode(browserName, out var browserCode))
             {
+                if (
+                    name == BrowserNames.Chrome
+                    && BrowserRegistry.BrowserCodeMappings[browserCode.Value]
+                        == BrowserNames.Chromium
+                )
+                {
+                    continue;
+                }
+
                 name = BrowserRegistry.BrowserCodeMappings[browserCode.Value];
                 code = browserCode;
                 version = fullVersion.Value;
-            }
 
-            // Exit if the detected browser brand is not Chromium or Microsoft Edge, otherwise, continue searching.
-            if (
-                name?.Length > 0
-                && name != BrowserNames.Chromium
-                && name != BrowserNames.MicrosoftEdge
-            )
-            {
-                break;
+                // Exit if the detected browser brand is not Chrome, Chromium or Microsoft Edge, otherwise, continue searching.
+                if (
+                    name != BrowserNames.Chrome
+                    && name != BrowserNames.Chromium
+                    && name != BrowserNames.MicrosoftEdge
+                )
+                {
+                    break;
+                }
             }
         }
 
