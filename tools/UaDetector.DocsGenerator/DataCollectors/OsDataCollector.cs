@@ -10,6 +10,8 @@ public class OsDataCollector : IDataCollector
 
     public IEnumerable<string> CollectData()
     {
-        return OsRegistry.OsNameMappings.Keys;
+        return OsRegistry.OsCodeMappings
+            .Values
+            .OrderBy(x => x, StringComparer.OrdinalIgnoreCase);
     }
 }

@@ -240,7 +240,7 @@ public static class OsRegistry
         { OsCode.HyperOS, OsNames.HyperOS },
     }.ToFrozenDictionary();
 
-    internal static readonly FrozenDictionary<string, OsCode> OsNameMappings = OsCodeMappings
+    private static readonly FrozenDictionary<string, OsCode> OsNameMappings = OsCodeMappings
         .ToDictionary(e => e.Value.RemoveSpaces(), e => e.Key)
         .ToFrozenDictionary(StringComparer.OrdinalIgnoreCase);
 }
