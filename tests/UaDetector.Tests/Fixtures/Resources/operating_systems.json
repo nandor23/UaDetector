@@ -8083,5 +8083,22 @@
       "code": 84,
       "family": "Mac"
     }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Nintendo Switch; LoginApplet; Nintendo Switch Lite) AppleWebKit/613.0 (KHTML, like Gecko) NF/6.0.3.28.8 NintendoBrowser/5.1.0.36948",
+    "os": {
+      "name": "Nintendo",
+      "code": 101,
+      "version": "Switch",
+      "family": "Gaming Console"
+    }
+  },
+  {
+    "userAgent": "Nokia 2660 Flip;Dorado WAP-Browser/1.0.0",
+    "os": {
+      "name": "Mocor OS",
+      "code": 197,
+      "family": "Real-time OS"
+    }
   }
 ]
