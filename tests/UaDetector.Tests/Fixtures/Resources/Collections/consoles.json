@@ -1129,7 +1129,7 @@
     },
     "device": {
       "type": 5,
-      "model": "Nintendo Switch OLED",
+      "model": "Switch OLED",
       "brand": {
         "name": "Nintendo",
         "code": 1206
@@ -1156,7 +1156,7 @@
     },
     "device": {
       "type": 5,
-      "model": "Nintendo Switch Lite",
+      "model": "Switch Lite",
       "brand": {
         "name": "Nintendo",
         "code": 1206
@@ -1183,7 +1183,34 @@
     },
     "device": {
       "type": 5,
-      "model": "Nintendo Switch",
+      "model": "Switch",
+      "brand": {
+        "name": "Nintendo",
+        "code": 1206
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Nintendo Switch; LoginApplet; Nintendo Switch Lite) AppleWebKit/613.0 (KHTML, like Gecko) NF/6.0.3.28.8 NintendoBrowser/5.1.0.36948",
+    "os": {
+      "name": "Nintendo",
+      "code": 101,
+      "version": "Switch",
+      "family": "Gaming Console"
+    },
+    "browser": {
+      "name": "Nintendo Browser",
+      "code": 708,
+      "version": "5.1.0.36948",
+      "family": "NetFront",
+      "engine": {
+        "name": "WebKit",
+        "version": "613.0"
+      }
+    },
+    "device": {
+      "type": 5,
+      "model": "Switch Lite",
       "brand": {
         "name": "Nintendo",
         "code": 1206

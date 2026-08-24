@@ -357,6 +357,7 @@ public sealed partial class OsParser : IOsParser
 
         LineageOsVersionMappings = new Dictionary<string, string>
         {
+            { "17", "24" },
             { "16", "23" },
             { "15", "22" },
             { "14", "21" },

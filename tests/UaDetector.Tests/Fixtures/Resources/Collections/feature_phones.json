@@ -306,6 +306,11 @@
   },
   {
     "userAgent": "lephone K10/Dorado WAP-Browser/1.0.0",
+    "os": {
+      "name": "Mocor OS",
+      "code": 197,
+      "family": "Real-time OS"
+    },
     "browser": {
       "name": "Dorado",
       "code": 181,
@@ -323,6 +328,11 @@
   },
   {
     "userAgent": "lephone K7/Dorado WAP-Browser/1.0.0",
+    "os": {
+      "name": "Mocor OS",
+      "code": 197,
+      "family": "Real-time OS"
+    },
     "browser": {
       "name": "Dorado",
       "code": 181,
@@ -2007,6 +2017,11 @@
   },
   {
     "userAgent": "B30_Dorado WAP-Browser/1.0.0",
+    "os": {
+      "name": "Mocor OS",
+      "code": 197,
+      "family": "Real-time OS"
+    },
     "browser": {
       "name": "Dorado",
       "code": 181,
