@@ -1,5 +1,10 @@
 [
   {
+    "regex": "[\\d\\s]+Lite Browser/(\\d+\\.\\d+)$",
+    "name": "GO Browser",
+    "version": "$1"
+  },
+  {
     "regex": "Startpage(?:/(\\d+[.\\d]+))?",
     "name": "Startpage",
     "version": "$1"
