@@ -19,7 +19,6 @@ public static class DocsGenerator
         {
             var itemsList = collector
                 .CollectData()
-                .OrderBy(x => x, StringComparer.OrdinalIgnoreCase)
                 .ToList();
 
             var count = itemsList.Count;

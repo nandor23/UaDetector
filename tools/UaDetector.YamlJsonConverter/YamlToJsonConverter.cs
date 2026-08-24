@@ -236,7 +236,9 @@ public static class YamlToJsonConverter
             Os = new OsInfo
             {
                 Name = x.Os.Name,
-                Code = OsRegistry.OsNameMappings[x.Os.Name],
+                Code = OsRegistry.TryGetOsCode(x.Os.Name, out var code)
+                    ? code.Value
+                    : throw new InvalidOperationException($"No OS code for '{x.Os.Name}'"),
                 Version = x.Os.Version,
                 CpuArchitecture = x.Os.Platform,
                 Family = x.Os.Family,
@@ -264,7 +266,9 @@ public static class YamlToJsonConverter
                 : new OsInfo
                 {
                     Name = x.Os.Name,
-                    Code = OsRegistry.OsNameMappings[x.Os.Name],
+                    Code = OsRegistry.TryGetOsCode(x.Os.Name, out var code)
+                        ? code.Value
+                        : throw new InvalidOperationException($"No OS code for '{x.Os.Name}'"),
                     Version = x.Os.Version,
                     CpuArchitecture = x.Os.Platform,
                     Family = x.OsFamily == "Unknown" ? null : x.OsFamily,

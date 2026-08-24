@@ -2,6 +2,7 @@ using System.Collections.Frozen;
 using System.Diagnostics.CodeAnalysis;
 using UaDetector.Abstractions.Constants;
 using UaDetector.Abstractions.Enums;
+using UaDetector.Utilities;
 
 namespace UaDetector.Registries;
 
@@ -14,7 +15,7 @@ public static class OsRegistry
 
     public static bool TryGetOsCode(string osName, [NotNullWhen(true)] out OsCode? result)
     {
-        if (OsNameMappings.TryGetValue(osName, out var osCode))
+        if (OsNameMappings.TryGetValue(osName.RemoveSpaces(), out var osCode))
         {
             result = osCode;
             return true;
@@ -239,7 +240,7 @@ public static class OsRegistry
         { OsCode.HyperOS, OsNames.HyperOS },
     }.ToFrozenDictionary();
 
-    internal static readonly FrozenDictionary<string, OsCode> OsNameMappings = OsCodeMappings
-        .ToDictionary(e => e.Value, e => e.Key)
+    private static readonly FrozenDictionary<string, OsCode> OsNameMappings = OsCodeMappings
+        .ToDictionary(e => e.Value.RemoveSpaces(), e => e.Key)
         .ToFrozenDictionary(StringComparer.OrdinalIgnoreCase);
 }
