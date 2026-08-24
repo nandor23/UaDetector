@@ -73,25 +73,29 @@ public class BrowserParserTests
             new UaDetectorOptions { VersionTruncation = VersionTruncation.None }
         );
 
-        foreach (var fixture in fixtures)
-        {
-            BrowserInfo? result;
-
-            if (fixture.Headers is null)
+        FixtureAssert.ForEach(
+            fixturePath,
+            fixtures,
+            fixture =>
             {
-                parser.TryParse(fixture.UserAgent, out result).ShouldBeTrue();
-            }
-            else
-            {
-                parser.TryParse(fixture.UserAgent, fixture.Headers, out result).ShouldBeTrue();
-            }
+                BrowserInfo? result;
 
-            result.ShouldNotBeNull();
-            result.Name.ShouldBe(fixture.Browser.Name);
-            result.Code.ShouldBe(fixture.Browser.Code);
-            result.Version.ShouldBe(fixture.Browser.Version);
-            result.Family.ShouldBe(fixture.Browser.Family);
-        }
+                if (fixture.Headers is null)
+                {
+                    parser.TryParse(fixture.UserAgent, out result).ShouldBeTrue();
+                }
+                else
+                {
+                    parser.TryParse(fixture.UserAgent, fixture.Headers, out result).ShouldBeTrue();
+                }
+
+                result.ShouldNotBeNull();
+                result.Name.ShouldBe(fixture.Browser.Name);
+                result.Code.ShouldBe(fixture.Browser.Code);
+                result.Version.ShouldBe(fixture.Browser.Version);
+                result.Family.ShouldBe(fixture.Browser.Family);
+            }
+        );
     }
 
     [Test]

@@ -2166,5 +2166,5 @@ public enum BrandCode
     VG = 2162,
     Hoobart = 2163,
     SunKing = 2164,
-    Telstra = 2165
+    Telstra = 2165,
 }

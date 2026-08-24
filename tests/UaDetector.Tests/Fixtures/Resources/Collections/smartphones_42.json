@@ -11992,7 +11992,7 @@
     "browser": {
       "name": "Yandex Browser",
       "code": 654,
-      "version": "7.54",
+      "version": "24.40.1",
       "engine": {
         "name": "Blink",
         "version": "122.0.6261.2435"

@@ -3167,10 +3167,9 @@
       "family": "Android"
     },
     "browser": {
-      "name": "Chrome Webview",
-      "code": 162,
-      "version": "88.0.4324.93",
-      "family": "Chrome",
+      "name": "Yandex Browser",
+      "code": 654,
+      "version": "7.80",
       "engine": {
         "name": "Blink",
         "version": "88.0.4324.93"
@@ -6983,10 +6982,9 @@
       "family": "Android"
     },
     "browser": {
-      "name": "Chrome Webview",
-      "code": 162,
-      "version": "80.0.3987.99",
-      "family": "Chrome",
+      "name": "Yandex Browser",
+      "code": 654,
+      "version": "9.20",
       "engine": {
         "name": "Blink",
         "version": "80.0.3987.99"

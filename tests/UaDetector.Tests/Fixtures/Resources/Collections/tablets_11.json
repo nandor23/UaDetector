@@ -9027,10 +9027,9 @@
       "family": "Android"
     },
     "browser": {
-      "name": "Chrome Webview",
-      "code": 162,
-      "version": "83.0.4103.106",
-      "family": "Chrome",
+      "name": "Yandex Browser",
+      "code": 654,
+      "version": "11.10",
       "engine": {
         "name": "Blink",
         "version": "83.0.4103.106"

@@ -31,14 +31,18 @@ public class MobileAppParserTests
         var clientHints = ClientHints.Create(ImmutableDictionary<string, string?>.Empty);
         var parser = new MobileAppParser(VersionTruncation.None);
 
-        foreach (var fixture in fixtures)
-        {
-            parser.TryParse(fixture.UserAgent, clientHints, out var result).ShouldBeTrue();
+        FixtureAssert.ForEach(
+            fixturePath,
+            fixtures,
+            fixture =>
+            {
+                parser.TryParse(fixture.UserAgent, clientHints, out var result).ShouldBeTrue();
 
-            result.ShouldNotBeNull();
-            result.Type.ShouldBe(ClientType.MobileApp);
-            result.Name.ShouldBe(fixture.Client.Name);
-            result.Version.ShouldBe(fixture.Client.Version);
-        }
+                result.ShouldNotBeNull();
+                result.Type.ShouldBe(ClientType.MobileApp);
+                result.Name.ShouldBe(fixture.Client.Name);
+                result.Version.ShouldBe(fixture.Client.Version);
+            }
+        );
     }
 }

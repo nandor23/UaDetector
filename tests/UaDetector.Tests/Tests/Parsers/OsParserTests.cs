@@ -64,26 +64,30 @@ public class OsParserTests
             new UaDetectorOptions { VersionTruncation = VersionTruncation.None }
         );
 
-        foreach (var fixture in fixtures)
-        {
-            OsInfo? result;
-
-            if (fixture.Headers is null)
+        FixtureAssert.ForEach(
+            fixturePath,
+            fixtures,
+            fixture =>
             {
-                parser.TryParse(fixture.UserAgent, out result).ShouldBeTrue();
-            }
-            else
-            {
-                parser.TryParse(fixture.UserAgent, fixture.Headers, out result).ShouldBeTrue();
-            }
+                OsInfo? result;
 
-            result.ShouldNotBeNull();
-            result.Name.ShouldBe(fixture.Os.Name);
-            result.Code.ShouldBe(fixture.Os.Code);
-            result.Version.ShouldBe(fixture.Os.Version);
-            result.CpuArchitecture.ShouldBe(fixture.Os.CpuArchitecture);
-            result.Family.ShouldBe(fixture.Os.Family);
-        }
+                if (fixture.Headers is null)
+                {
+                    parser.TryParse(fixture.UserAgent, out result).ShouldBeTrue();
+                }
+                else
+                {
+                    parser.TryParse(fixture.UserAgent, fixture.Headers, out result).ShouldBeTrue();
+                }
+
+                result.ShouldNotBeNull();
+                result.Name.ShouldBe(fixture.Os.Name);
+                result.Code.ShouldBe(fixture.Os.Code);
+                result.Version.ShouldBe(fixture.Os.Version);
+                result.CpuArchitecture.ShouldBe(fixture.Os.CpuArchitecture);
+                result.Family.ShouldBe(fixture.Os.Family);
+            }
+        );
     }
 
     [Test]

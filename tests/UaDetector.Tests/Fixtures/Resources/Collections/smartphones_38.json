@@ -678,10 +678,9 @@
       "family": "Android"
     },
     "browser": {
-      "name": "Chrome Webview",
-      "code": 162,
-      "version": "122.0.6261.64",
-      "family": "Chrome",
+      "name": "Yandex Browser",
+      "code": 654,
+      "version": "7.52",
       "engine": {
         "name": "Blink",
         "version": "122.0.6261.64"
@@ -2841,10 +2840,9 @@
       "family": "Android"
     },
     "browser": {
-      "name": "Chrome Webview",
-      "code": 162,
-      "version": "122.0.6261.119",
-      "family": "Chrome",
+      "name": "Yandex Browser",
+      "code": 654,
+      "version": "7.53",
       "engine": {
         "name": "Blink",
         "version": "122.0.6261.119"
@@ -6458,10 +6456,9 @@
       "family": "Android"
     },
     "browser": {
-      "name": "Chrome",
-      "code": 138,
-      "version": "84.0.4147.135",
-      "family": "Chrome",
+      "name": "Yandex Browser",
+      "code": 654,
+      "version": "20.85.1",
       "engine": {
         "name": "Blink",
         "version": "84.0.4147.135"
@@ -8178,10 +8175,9 @@
       "family": "Android"
     },
     "browser": {
-      "name": "Chrome Webview",
-      "code": 162,
-      "version": "51.0.2704.81",
-      "family": "Chrome",
+      "name": "Yandex Browser",
+      "code": 654,
+      "version": "5.40",
       "engine": {
         "name": "Blink",
         "version": "51.0.2704.81"

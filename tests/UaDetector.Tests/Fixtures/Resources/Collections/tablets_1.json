@@ -2015,10 +2015,9 @@
       "family": "Android"
     },
     "browser": {
-      "name": "Chrome Webview",
-      "code": 162,
-      "version": "63.0.3239.111",
-      "family": "Chrome",
+      "name": "Yandex Browser",
+      "code": 654,
+      "version": "7.21",
       "engine": {
         "name": "Blink",
         "version": "63.0.3239.111"
@@ -8825,7 +8824,7 @@
     }
   },
   {
-    "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.4; en-gb; GoTab GBT9 Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30 ",
+    "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.4; en-gb; GoTab GBT9 Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30",
     "os": {
       "name": "Android",
       "code": 2,

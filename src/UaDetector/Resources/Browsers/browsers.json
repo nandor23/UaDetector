@@ -1,5 +1,10 @@
 [
   {
+    "regex": "Startpage(?:/(\\d+[.\\d]+))?",
+    "name": "Startpage",
+    "version": "$1"
+  },
+  {
     "regex": "Lightpanda/([\\d.]+)",
     "name": "Lightpanda",
     "version": "$1"
@@ -2768,7 +2773,7 @@
     }
   },
   {
-    "regex": "bdhonorbrowser/(\\d+[.\\d]+)",
+    "regex": "(?:bd)?honorbrowser/(\\d+[.\\d]+)",
     "name": "HONOR Browser",
     "version": "$1"
   },
@@ -2823,12 +2828,9 @@
     }
   },
   {
-    "regex": "Ya(?:ndex)?SearchBrowser(?:/(\\d+[.\\d]*))",
+    "regex": "Ya(?:ndex)?Search(?:App|Browser)?(?:/(\\d+[.\\d]*))",
     "name": "Yandex Browser",
-    "version": "$1",
-    "engine": {
-      "default": "Blink"
-    }
+    "version": "$1"
   },
   {
     "regex": "Viv(?:aldi)?/(\\d+[.\\d]+)",
