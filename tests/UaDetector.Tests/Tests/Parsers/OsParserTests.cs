@@ -31,7 +31,8 @@ public class OsParserTests
 
         foreach (var osName in osNames)
         {
-            OsRegistry.OsNameMappings.ShouldContainKey(osName);
+            OsRegistry.TryGetOsCode(osName, out var osCode).ShouldBeTrue();
+            osCode.ShouldNotBeNull();
         }
     }
 

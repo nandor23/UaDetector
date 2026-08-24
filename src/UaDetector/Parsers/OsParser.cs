@@ -456,11 +456,11 @@ public sealed partial class OsParser : IOsParser
 
     private static bool TryMapNameToFamily(string name, [NotNullWhen((true))] out string? result)
     {
-        if (OsRegistry.OsNameMappings.TryGetValue(name, out var code))
+        if (OsRegistry.TryGetOsCode(name, out var code))
         {
             foreach (var osFamily in OsFamilyMappings)
             {
-                if (osFamily.Value.Contains(code))
+                if (osFamily.Value.Contains(code.Value))
                 {
                     result = osFamily.Key;
                     return true;
@@ -591,11 +591,10 @@ public sealed partial class OsParser : IOsParser
         }
 
         string name = ApplyClientHintPlatformMapping(clientHints.Platform);
-        name = name.CollapseSpaces();
 
-        if (OsRegistry.OsNameMappings.TryGetValue(name, out var code))
+        if (OsRegistry.TryGetOsCode(name, out var code))
         {
-            name = OsRegistry.OsCodeMappings[code];
+            name = OsRegistry.OsCodeMappings[code.Value];
         }
         else
         {
@@ -641,6 +640,7 @@ public sealed partial class OsParser : IOsParser
         result = new CommonOsInfo
         {
             Name = name,
+            Code = code.Value,
             Version = ParserExtensions.BuildVersion(version, _uaDetectorOptions.VersionTruncation),
         };
 
@@ -674,9 +674,9 @@ public sealed partial class OsParser : IOsParser
 
         string name = ParserExtensions.FormatWithMatch(os.Name, match);
 
-        if (OsRegistry.OsNameMappings.TryGetValue(name, out var code))
+        if (OsRegistry.TryGetOsCode(name, out var code))
         {
-            name = OsRegistry.OsCodeMappings[code];
+            name = OsRegistry.OsCodeMappings[code.Value];
         }
         else
         {
@@ -708,7 +708,12 @@ public sealed partial class OsParser : IOsParser
             }
         }
 
-        result = new CommonOsInfo { Name = name, Version = version };
+        result = new CommonOsInfo
+        {
+            Name = name,
+            Code = code.Value,
+            Version = version,
+        };
         return true;
     }
 
@@ -760,6 +765,7 @@ public sealed partial class OsParser : IOsParser
     )
     {
         string name;
+        OsCode code;
         string? version;
 
         TryParseOsFromUserAgent(userAgent, out var osFromUserAgent);
@@ -767,6 +773,7 @@ public sealed partial class OsParser : IOsParser
         if (TryParseOsFromClientHints(clientHints, out var osFromClientHints))
         {
             name = osFromClientHints.Name;
+            code = osFromClientHints.Code;
             version = osFromClientHints.Version;
 
             if (osFromUserAgent is not null)
@@ -800,6 +807,7 @@ public sealed partial class OsParser : IOsParser
                 if (familyFromUserAgent == name && osFromUserAgent.Name != name)
                 {
                     name = osFromUserAgent.Name;
+                    code = osFromUserAgent.Code;
 
                     switch (name)
                     {
@@ -826,15 +834,18 @@ public sealed partial class OsParser : IOsParser
                         when osFromUserAgent.Name == OsNames.ChromeOs
                             && osFromClientHints.Version == osFromUserAgent.Version:
                         name = osFromUserAgent.Name;
+                        code = osFromUserAgent.Code;
                         break;
                     // In some cases, Chrome OS is incorrectly reported as Android in client hints.
                     case OsNames.Android when osFromUserAgent.Name == OsNames.ChromeOs:
                         name = osFromUserAgent.Name;
+                        code = osFromUserAgent.Code;
                         version = null;
                         break;
                     // Meta Horizon is reported as Linux in client hints.
                     case OsNames.GnuLinux when osFromUserAgent.Name == OsNames.MetaHorizon:
                         name = osFromUserAgent.Name;
+                        code = osFromUserAgent.Code;
                         break;
                 }
             }
@@ -842,6 +853,7 @@ public sealed partial class OsParser : IOsParser
         else if (osFromUserAgent is not null)
         {
             name = osFromUserAgent.Name;
+            code = osFromUserAgent.Code;
             version = osFromUserAgent.Version;
         }
         else
@@ -857,12 +869,14 @@ public sealed partial class OsParser : IOsParser
             if (name != OsNames.Android && AndroidApps.Contains(clientHints.App))
             {
                 name = OsNames.Android;
+                code = OsCode.Android;
                 family = OsFamilies.Android;
                 version = null;
             }
             else if (name != OsNames.LineageOs && clientHints.App == "org.lineageos.jelly")
             {
                 name = OsNames.LineageOs;
+                code = OsCode.LineageOs;
                 family = OsFamilies.Android;
 
                 if (version?.Length > 0)
@@ -873,6 +887,7 @@ public sealed partial class OsParser : IOsParser
             else if (name != OsNames.FireOs && clientHints.App == "org.mozilla.tv.firefox")
             {
                 name = OsNames.FireOs;
+                code = OsCode.FireOs;
                 family = OsFamilies.Android;
 
                 if (version?.Length > 0)
@@ -887,7 +902,7 @@ public sealed partial class OsParser : IOsParser
         result = new OsInfo
         {
             Name = name,
-            Code = OsRegistry.OsNameMappings[name],
+            Code = code,
             Version = version,
             CpuArchitecture = cpuArchitecture,
             Family = family,
@@ -899,6 +914,7 @@ public sealed partial class OsParser : IOsParser
     private sealed class CommonOsInfo
     {
         public required string Name { get; init; }
+        public required OsCode Code { get; init; }
         public required string? Version { get; init; }
     }
 }
