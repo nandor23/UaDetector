@@ -407,6 +407,7 @@ public sealed partial class BrowserParser : IBrowserParser
                     BrowserCode.ITopPrivateBrowser,
                     BrowserCode.Island,
                     BrowserCode.PrivateBrowsing,
+                    BrowserCode.Startpage,
                 }.ToFrozenSet()
             },
             {
@@ -754,6 +755,7 @@ public sealed partial class BrowserParser : IBrowserParser
             BrowserCode.MySudo,
             BrowserCode.SafeBrowser,
             BrowserCode.QuicheBrowser,
+            BrowserCode.Startpage,
         }.ToFrozenSet();
 
         ClientHintBrandMappings = new Dictionary<string, FrozenSet<string>>
@@ -1204,6 +1206,7 @@ public sealed partial class BrowserParser : IBrowserParser
                 if (
                     engine == BrowserEngines.Blink
                     && name != BrowserNames.Iridium
+                    && engine == browserFromUserAgent.Engine
                     && VersionComparer.IsLessThan(engineVersion, browserFromUserAgent.EngineVersion)
                 )
                 {

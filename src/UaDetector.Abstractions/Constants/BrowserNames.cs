@@ -723,4 +723,5 @@ public static class BrowserNames
     public const string SafeBrowser = "SafeBrowser";
     public const string QuicheBrowser = "Quiche Browser";
     public const string Lightpanda = "Lightpanda";
+    public const string Startpage = "Startpage";
 }

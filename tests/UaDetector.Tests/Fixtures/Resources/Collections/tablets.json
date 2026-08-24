@@ -2924,7 +2924,7 @@
     }
   },
   {
-    "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.3; en-au; VM1017A Build/IML74K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile ",
+    "userAgent": "Mozilla/5.0 (Linux; U; Android 4.0.3; en-au; VM1017A Build/IML74K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile",
     "os": {
       "name": "Android",
       "code": 2,

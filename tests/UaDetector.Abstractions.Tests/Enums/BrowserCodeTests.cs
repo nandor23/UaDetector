@@ -742,6 +742,7 @@ public class BrowserCodeTests
             { BrowserCode.SafeBrowser, 719 },
             { BrowserCode.QuicheBrowser, 720 },
             { BrowserCode.Lightpanda, 721 },
+            { BrowserCode.Startpage, 722 },
         };
 
         expectedValues.Count.ShouldBe(Enum.GetValues<BrowserCode>().Length);

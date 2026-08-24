@@ -343,9 +343,9 @@
       "family": "Android"
     },
     "browser": {
-      "name": "Android Browser",
-      "code": 49,
-      "family": "Android Browser",
+      "name": "Yandex Browser",
+      "code": 654,
+      "version": "7.16",
       "engine": {
         "name": "WebKit",
         "version": "534.30"
