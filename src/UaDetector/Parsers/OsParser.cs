@@ -69,6 +69,7 @@ public sealed partial class OsParser : IOsParser
                     OsCode.MetaHorizon,
                     OsCode.SmartisanOs,
                     OsCode.AndroidGo,
+                    OsCode.HyperOS,
                 }.ToFrozenSet()
             },
             {

@@ -228,6 +228,7 @@ public class OsCodeTests
             { OsCode.VegaOs, 205 },
             { OsCode.KoboOs, 206 },
             { OsCode.ThinOs, 207 },
+            { OsCode.HyperOS, 208 },
         };
 
         expectedValues.Count.ShouldBe(Enum.GetValues<OsCode>().Length);

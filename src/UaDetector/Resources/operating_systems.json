@@ -485,6 +485,10 @@
     "version": "$1"
   },
   {
+    "regex": "[\\d\\s]+Lite Browser/(\\d+\\.\\d+)$",
+    "name": "HyperOS"
+  },
+  {
     "regex": "(?:HarmonyOS|hmos.+OpenHarmony)[-/ ]([56][.\\d]+)",
     "name": "HarmonyOS NEXT",
     "version": "$1"
