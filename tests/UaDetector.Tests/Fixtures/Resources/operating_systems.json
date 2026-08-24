@@ -8100,5 +8100,116 @@
       "code": 197,
       "family": "Real-time OS"
     }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (X11; CrOS x86_64 14388.61.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.107 Safari/537.36",
+    "headers": {
+      "Sec-CH-UA-Platform": "Chrome OS"
+    },
+    "os": {
+      "name": "Chrome OS",
+      "code": 29,
+      "version": "14388.61.0",
+      "cpuArchitecture": "x64",
+      "family": "Chrome OS"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (X11; CrOS x86_64 14695.11.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36",
+    "headers": {
+      "Sec-CH-UA-Platform": "ChromeOS"
+    },
+    "os": {
+      "name": "Chrome OS",
+      "code": 29,
+      "version": "14695.11.0",
+      "cpuArchitecture": "x64",
+      "family": "Chrome OS"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (X11; CrOS x86_64 14695.91.15) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.90 Safari/537.36",
+    "headers": {
+      "Sec-CH-UA-Platform": "ChromiumOS"
+    },
+    "os": {
+      "name": "Chromium OS",
+      "code": 30,
+      "version": "14695.91.15",
+      "cpuArchitecture": "x64",
+      "family": "Chrome OS"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64; FreeBSD amd64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36",
+    "headers": {
+      "Sec-CH-UA-Platform": "FreeBSD"
+    },
+    "os": {
+      "name": "FreeBSD",
+      "code": 46,
+      "cpuArchitecture": "x64",
+      "family": "Unix"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Fuchsia) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 CrKey/1.56.500000",
+    "headers": {
+      "Sec-CH-UA-Platform": "Fuchsia"
+    },
+    "os": {
+      "name": "Fuchsia",
+      "code": 49,
+      "family": "GNU/Linux"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1",
+    "headers": {
+      "Sec-CH-UA-Platform": "iOS"
+    },
+    "os": {
+      "name": "iOS",
+      "code": 183,
+      "version": "16.6",
+      "family": "iOS"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.5927.87 Safari/537.36 OPR/84.0.3004.93",
+    "headers": {
+      "Sec-CH-UA-Platform": "Ios"
+    },
+    "os": {
+      "name": "iOS",
+      "code": 183,
+      "version": "14.6",
+      "family": "iOS"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64; OpenBSD amd64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
+    "headers": {
+      "Sec-CH-UA-Platform": "OpenBSD"
+    },
+    "os": {
+      "name": "OpenBSD",
+      "code": 106,
+      "cpuArchitecture": "x64",
+      "family": "Unix"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/535.11 (KHTML, like Gecko) Ubuntu/14.04.6 Chrome/81.0.3990.0 Safari/537.36",
+    "headers": {
+      "Sec-CH-UA-Platform": "Ubuntu"
+    },
+    "os": {
+      "name": "Ubuntu",
+      "code": 162,
+      "version": "14.04.6",
+      "cpuArchitecture": "x64",
+      "family": "GNU/Linux"
+    }
   }
 ]
