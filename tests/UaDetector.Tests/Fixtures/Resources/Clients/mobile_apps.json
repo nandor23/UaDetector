@@ -3427,5 +3427,117 @@
       "name": "Yahoo Search",
       "version": "10.4.0"
     }
+  },
+  {
+    "userAgent": "Azul 6.0.1 rv:6.0 (iPad; iPhone OS 15.6.1; en_US)",
+    "client": {
+      "type": 1,
+      "name": "Azul",
+      "version": "6.0.1"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Safari/604.1 KAKAOTALK/10.7.1 (INAPP)",
+    "client": {
+      "type": 1,
+      "name": "KakaoTalk",
+      "version": "10.7.1"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Swisscom/19.1.283301 Mobile/15E148 Safari/605.1.15",
+    "client": {
+      "type": 1,
+      "name": "Swisscom Internet Security",
+      "version": "19.1.283301"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Telia_swe/19.0.281503 Mobile/15E148 Safari/605.1.15",
+    "client": {
+      "type": 1,
+      "name": "Telia Trygg",
+      "version": "19.0.281503"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) elisaya/21.1.294227 Mobile/15E148 Version/17.6.1 Safari/605.1.15",
+    "client": {
+      "type": 1,
+      "name": "Elisa Turvapaketti",
+      "version": "21.1.294227"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) DNA/24.9.304103 Mobile/15E148 Version/18.2 Safari/605.1.15",
+    "client": {
+      "type": 1,
+      "name": "DNA Digiturva",
+      "version": "24.9.304103"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Tokai/21.1.294403 Version/17.2 Safari/605.1.15",
+    "client": {
+      "type": 1,
+      "name": "TOKAI SAFE",
+      "version": "21.1.294403"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) VandenBorre/20.0.291005 Mobile/15E148 Version/16.3.1 Safari/605.1.15",
+    "client": {
+      "type": 1,
+      "name": "Vanden Borre My Security",
+      "version": "20.0.291005"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPad; CPU OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) BNK48_101/1.58.0",
+    "client": {
+      "type": 1,
+      "name": "iAM48",
+      "version": "1.58.0"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148;super/4.21.4/iOS/26.1",
+    "client": {
+      "type": 1,
+      "name": "Yahoo",
+      "version": "4.21.4"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148;superhk/4.21.0/iOS/18.5",
+    "client": {
+      "type": 1,
+      "name": "Yahoo Hong Kong",
+      "version": "4.21.0"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) LoiLoNote/19.0.0 Version/17.1.2 Safari/605.1.15",
+    "client": {
+      "type": 1,
+      "name": "LoiLoNote",
+      "version": "19.0.0"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 DelfiEEwww/613.0.0 EmbeddedBrowser (iPhone; CPU iPhone OS 17_3_1 like Mac OS X) AppleWebKit (KHTML, like Gecko) Mobile DeviceUID:  VendorUID:  AppPkgID: ee.delfi.delfi",
+    "client": {
+      "type": 1,
+      "name": "Delfi EE",
+      "version": "613.0.0"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 _sol_ _app_ __v8.0.2__",
+    "client": {
+      "type": 1,
+      "name": "Sol Nyheter",
+      "version": "8.0.2"
+    }
   }
 ]
