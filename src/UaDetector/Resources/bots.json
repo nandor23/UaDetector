@@ -7426,12 +7426,48 @@
     "url": "https://bot.webatla.com/"
   },
   {
-    "regex": "(ABEvalBot|AdsTxtCrawlerTP|ArtelLeadRadar|DNSResearchBot|Dormouse|FinderGo|FormFinder|GitCrawlerBot|HanaleiBot|HubSeedsBot|ImportDomains|KenyaDomainScorer|LetrixLabs|PhishBucketRust|PostitLeadDiscovery|PrivacyPolicyBot|ProductLookoutBot|Robozilla|Secweb-Sectxt|SeoCherryBot|ShopifyChecker|SitemapCrawler\\.de|SleepBot|StudyBot|The Knowledge AI|Thinkbot|ThinkChaos|TprAdsTxtCrawler|WATCrawler)",
+    "regex": "Kaupr",
+    "name": "Kaupr",
+    "category": 4,
+    "url": "https://kaupr.com/",
+    "producer": {
+      "name": "Kaupr Limited",
+      "url": "https://kaupr.com/"
+    }
+  },
+  {
+    "regex": "WRTNBot",
+    "name": "WRTNBot",
+    "category": 19,
+    "url": "https://wrtn.ai/",
+    "producer": {
+      "name": "Rutten Technologies Co., Ltd",
+      "url": "https://wrtn.ai/"
+    }
+  },
+  {
+    "regex": "DomainDrift",
+    "name": "DomainDrift",
+    "category": 6,
+    "url": "https://domaindrift.io/",
+    "producer": {
+      "name": "DRM3 Labs Corp.",
+      "url": "https://drm3.io/"
+    }
+  },
+  {
+    "regex": "MyCellar",
+    "name": "MyCellar",
+    "category": 4,
+    "url": "https://www.mycellar.world/"
+  },
+  {
+    "regex": "(ABEvalBot|AdsTxtCrawlerTP|ArtelLeadRadar|DNSResearchBot|Dormouse|FinderGo|FormFinder|GitCrawlerBot|HanaleiBot|HubSeedsBot|ImportDomains|KenyaDomainScorer|LetrixLabs|PhishBucketRust|PostitLeadDiscovery|PrivacyPolicyBot|ProductLookoutBot|Robozilla|Secweb-Sectxt|SeoCherryBot|ShopifyChecker|SitemapCrawler\\.de|SleepBot|StudyBot|The Knowledge AI|Thinkbot|ThinkChaos|TprAdsTxtCrawler|WATCrawler|ProspectorBR)",
     "name": "$1",
     "category": 4
   },
   {
-    "regex": "(CheckerProxy|CMSLookup|CSE-Scanner|DomainProbe|FreePBX-Scanner|Goosee-Audit|NetScope-DomainScanner|SecurityScanner|Shodan-Pull|TLM-Audit-Scanner)",
+    "regex": "(CheckerProxy|CMSLookup|CSE-Scanner|DomainProbe|FreePBX-Scanner|Goosee-Audit|NetScope-DomainScanner|SecurityScanner|Shodan-Pull|TLM-Audit-Scanner|wp2shell-check)",
     "name": "$1",
     "category": 6
   },
@@ -7440,7 +7476,7 @@
     "name": "Generic Bot"
   },
   {
-    "regex": "[a-z0-9_-]*(?:(?<!cu|Hu|power[ _]|m[ _])bot(?![ _]TAB|[ _]?5[0-9]|[ _]Senior|[ _]Junior)|analyzer|appengine|archiver?|checker|collector|crawl|crawler|(?<!node-|uclient-|Mikrotik/\\d\\.[x\\d] |electron-)fetch(?:er)?|(?<!url)grabber|indexer|inspector|lookup|monitor|^parser|probe|(?<!Microsoft |banshee-)project(?!or)|(?<!Google Wap |Blue |SpeedMode; )proxy|(?<!P)research|resolver|robots|(?<!Cam)scanner|scraper|script|searcher|(?<!-)security|spider(?! 8)|study|transcoder|uptime|user[ _]?agent|validator|-(?:AI|Extended|User)/)(?:[^a-z]|$)",
+    "regex": "[a-z0-9_-]*(?:(?<!cu|Hu|power[ _]|m[ _])bot(?![ _]TAB|[ _]?5[0-9]|[ _]Senior|[ _]Junior)|analyzer|appengine|archiver?|check(?:er)?|collector|crawl|crawler|(?<!node-|uclient-|Mikrotik/\\d\\.[x\\d] |electron-)fetch(?:er)?|(?<!url)grabber|indexer|inspector|lookup|monitor|^parser|probe|(?<!Microsoft |banshee-)project(?!or)|(?<!Google Wap |Blue |SpeedMode; )proxy|(?<!P)research|resolver|robots|(?<!Cam)scanner|scraper|script|searcher|(?<!-)security|spider(?! 8)|study|transcoder|uptime|user[ _]?agent|validator|-(?:AI|Extended|User)/)(?:[^a-z]|$)",
     "name": "Generic Bot"
   }
 ]
