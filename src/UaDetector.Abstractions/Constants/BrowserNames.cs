@@ -724,4 +724,8 @@ public static class BrowserNames
     public const string QuicheBrowser = "Quiche Browser";
     public const string Lightpanda = "Lightpanda";
     public const string Startpage = "Startpage";
+    public const string SpeedBrowser360 = "360 Speed Browser";
+    public const string MullvadBrowser = "Mullvad Browser";
+    public const string Stadium = "Stadium";
+    public const string TeakBrowser = "Teak Browser";
 }

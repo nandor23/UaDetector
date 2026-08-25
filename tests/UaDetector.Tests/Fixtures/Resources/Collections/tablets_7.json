@@ -1057,9 +1057,9 @@
       "family": "Android"
     },
     "browser": {
-      "name": "Chrome Webview",
-      "code": 162,
-      "version": "74.0.3729.186",
+      "name": "360 Speed Browser",
+      "code": 723,
+      "version": "1.5.0.99",
       "family": "Chrome",
       "engine": {
         "name": "Blink",

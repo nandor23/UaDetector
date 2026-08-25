@@ -11566,6 +11566,7 @@
     "browser": {
       "name": "UC Browser Mini",
       "code": 607,
+      "version": "11.5.2.1188",
       "engine": {
         "name": "Blink",
         "version": "30.0.0.0"

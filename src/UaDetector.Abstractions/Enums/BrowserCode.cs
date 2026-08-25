@@ -724,4 +724,8 @@ public enum BrowserCode
     QuicheBrowser = 720,
     Lightpanda = 721,
     Startpage = 722,
+    SpeedBrowser360 = 723,
+    MullvadBrowser = 724,
+    Stadium = 725,
+    TeakBrowser = 726
 }

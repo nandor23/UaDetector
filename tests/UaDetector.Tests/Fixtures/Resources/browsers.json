@@ -232,8 +232,8 @@
       "version": "0.7.9",
       "family": "Chrome",
       "engine": {
-        "name": "Blink",
-        "version": "47.0.2526.73"
+        "name": "WebKit",
+        "version": "537.36"
       }
     }
   },
@@ -15333,6 +15333,379 @@
       "engine": {
         "name": "WebKit",
         "version": "605.1.15"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; Chromium GOST) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36",
+    "browser": {
+      "name": "Chromium GOST",
+      "code": 153,
+      "version": "148.0.0.0",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "148.0.0.0"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.4.2 Mobile/15E148 Safari/604.1 Brave",
+    "browser": {
+      "name": "Brave",
+      "code": 104,
+      "family": "Chrome",
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPad; CPU OS 18_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Brave/1 Mobile/15E148 Safari/604.1",
+    "browser": {
+      "name": "Brave",
+      "code": 104,
+      "version": "1",
+      "family": "Chrome",
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.6511.3 Safari/537.36 Brave/1.62.158",
+    "browser": {
+      "name": "Brave",
+      "code": 104,
+      "version": "1.62.158",
+      "family": "Chrome",
+      "engine": {
+        "name": "WebKit",
+        "version": "537.36"
+      }
+    }
+  },
+  {
+    "userAgent": "Brave Browser Nightly/93.1.31.33 Mac OS X",
+    "browser": {
+      "name": "Brave",
+      "code": 104,
+      "version": "93.1.31.33",
+      "family": "Chrome",
+      "engine": {
+        "name": "WebKit"
+      }
+    }
+  },
+  {
+    "userAgent": "Brave Browser/93.1.31.30 Linux",
+    "browser": {
+      "name": "Brave",
+      "code": 104,
+      "version": "93.1.31.30",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 11; SM-G991B Build/RP1A.200720.012) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.7204.49 Mobile Safari/537.36 Brave/1.80.122",
+    "browser": {
+      "name": "Brave",
+      "code": 104,
+      "version": "1.80.122",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "138.0.7204.49"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 11; SM-G991B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Mobile Safari/537.36 Brave/132.0",
+    "browser": {
+      "name": "Brave",
+      "code": 104,
+      "version": "132.0",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "132.0.0.0"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; U; Android 10; BRAVE Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/81.0.4044.138 Mobile Safari/537.36 OPR/63.0.2254.62069",
+    "browser": {
+      "name": "Opera Mobile",
+      "code": 420,
+      "version": "63.0.2254.62069",
+      "family": "Opera",
+      "engine": {
+        "name": "Blink",
+        "version": "81.0.4044.138"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Windows; U; Win98; en-US; rv:x.xx) Gecko/20030423 Firebird Browser/0.6",
+    "browser": {
+      "name": "Firebird",
+      "code": 210,
+      "version": "0.6",
+      "family": "Firefox",
+      "engine": {
+        "name": "Gecko"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPad; CPU OS 15_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MQBHD/6.9.4 Safari/537.22",
+    "browser": {
+      "name": "QQ Browser",
+      "code": 497,
+      "version": "6.9.4",
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15"
+      }
+    }
+  },
+  {
+    "userAgent": "OmniWeb 622.8.0.112916",
+    "browser": {
+      "name": "OmniWeb",
+      "code": 438,
+      "version": "622.8.0.112916",
+      "engine": {
+        "name": "WebKit"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Safari/605.1.15 Midori/6",
+    "browser": {
+      "name": "Midori",
+      "code": 357,
+      "version": "6",
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15"
+      }
+    }
+  },
+  {
+    "userAgent": "NCSA_Mosaic 1.0",
+    "browser": {
+      "name": "NCSA Mosaic",
+      "code": 352,
+      "version": "1.0"
+    }
+  },
+  {
+    "userAgent": "ELinks (0.4.3; NetBSD 3.0.2PATCH sparc64; 141x19)",
+    "browser": {
+      "name": "Elinks",
+      "code": 192,
+      "version": "0.4.3",
+      "engine": {
+        "name": "Text-based"
+      }
+    }
+  },
+  {
+    "userAgent": "Dalvik/2.1.0 (Linux; U; Android 10; NOBU_A55_PRO Build/QP1A.190711.020) AppleWebKit [PB/63] (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36",
+    "browser": {
+      "name": "SecureX",
+      "code": 549,
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "108.0.0.0"
+      }
+    }
+  },
+  {
+    "userAgent": "Dalvik/2.1.0 (Linux; U; Android 10; moto e(7i) power Build/QOJ30.506-21) AppleWebKit [PB/108] (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36",
+    "browser": {
+      "name": "SecureX",
+      "code": 549,
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "108.0.0.0"
+      }
+    }
+  },
+  {
+    "userAgent": "Dalvik/2.1.0 (Linux; U; Android 10; 5002E Build/QKQ1.200623.002) AppleWebKit [PB/115] (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36",
+    "browser": {
+      "name": "SecureX",
+      "code": 549,
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "108.0.0.0"
+      }
+    }
+  },
+  {
+    "userAgent": "Dalvik/2.1.0 (Linux; U; Android 14; SM-S911B Build/UP1A.231005.007) AppleWebKit [PB/128] (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36",
+    "browser": {
+      "name": "SecureX",
+      "code": 549,
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "108.0.0.0"
+      }
+    }
+  },
+  {
+    "userAgent": "Dalvik/2.1.0 (Linux; U; Android 12; VNE-LX3 Build/HONORVNE-L43CM) AppleWebKit [PB/149] (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36",
+    "browser": {
+      "name": "SecureX",
+      "code": 549,
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "108.0.0.0"
+      }
+    }
+  },
+  {
+    "userAgent": "Dalvik/2.1.0 (Linux; U; Android 10; LM-K200 Build/QKQ1.200311.002) AppleWebKit [SX/135] (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36",
+    "browser": {
+      "name": "SecureX",
+      "code": 549,
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "108.0.0.0"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64; rv:115.0) Gecko/20100101 MullvadBrowser/115.8.0",
+    "browser": {
+      "name": "Mullvad Browser",
+      "code": 724,
+      "version": "115.8.0",
+      "family": "Firefox",
+      "engine": {
+        "name": "Gecko",
+        "version": "115.0"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 7.1.1; OPPO R9sk Build/NMF26F) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/70.0.3538.80 Mobile Safari/537.36 360 Alitephone Browser (1.5.0.90/1.0.100.1078) mso_sdk(1.0.0)",
+    "browser": {
+      "name": "360 Speed Browser",
+      "code": 723,
+      "version": "1.5.0.90",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "70.0.3538.80"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Stadium/1.2.1 Safari/605.1.15",
+    "browser": {
+      "name": "Stadium",
+      "code": 725,
+      "version": "1.2.1",
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Teak/4.3.1 Version/17.4.1 Safari/605.1.15",
+    "browser": {
+      "name": "Teak Browser",
+      "code": 726,
+      "version": "4.3.1",
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (iPad; CPU OS 16_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) diigobrowser/3.9.1.0 Mobile/15E148 Safari/604.1",
+    "browser": {
+      "name": "Diigo Browser",
+      "code": 177,
+      "version": "3.9.1.0",
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Haiku R1) AppleWebKit/605.1.15 (KHTML, like Gecko) WebPositive/1.3 Version/14.1.2 Safari/605.1.15",
+    "browser": {
+      "name": "WebPositive",
+      "code": 637,
+      "version": "1.3",
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 11; SM-A715F Build/RP1A.200720.012) AppleWebKit/537.36 (KHTML, like Gecko) FulldiveBrowser/5.5.0 Chrome/98.0.4758.87 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.fulldive.mobile"
+    },
+    "browser": {
+      "name": "Fulldive",
+      "code": 234,
+      "version": "5.5.0",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "98.0.4758.87"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 9; SM-N950F Build/PPR1.180610.011; rv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 LexiBrowser/4.0.0 Chrome/122.0.6261.119 Mobile Safari/537.36",
+    "headers": {
+      "http-x-requested-with": "com.lexi.browser"
+    },
+    "browser": {
+      "name": "Lexi Browser",
+      "code": 325,
+      "version": "4.0.0",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "122.0.6261.119"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 11; RMX3231 Build/RP1A.201005.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/90.0.4430.210 Mobile Safari/537.36 UCBrowser/11.5.2.1188 (UCMini) Mobile",
+    "headers": {
+      "http-x-requested-with": "com.uc.browser.en"
+    },
+    "browser": {
+      "name": "UC Browser Mini",
+      "code": 607,
+      "version": "11.5.2.1188",
+      "engine": {
+        "name": "Blink",
+        "version": "90.0.4430.210"
       }
     }
   },
