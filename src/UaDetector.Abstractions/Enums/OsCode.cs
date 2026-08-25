@@ -209,5 +209,6 @@ public enum OsCode
     VegaOs = 205,
     KoboOs = 206,
     ThinOs = 207,
-    HyperOS = 208,
+    HyperOs = 208,
+    MyOs = 209,
 }

@@ -209,5 +209,6 @@ public static class OsNames
     public const string VegaOs = "Vega OS";
     public const string KoboOs = "KoboOS";
     public const string ThinOs = "ThinOS";
-    public const string HyperOS = "HyperOS";
+    public const string HyperOs = "HyperOS";
+    public const string MyOs = "MyOS";
 }
