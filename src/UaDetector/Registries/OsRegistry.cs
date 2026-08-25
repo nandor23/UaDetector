@@ -237,7 +237,8 @@ public static class OsRegistry
         { OsCode.VegaOs, OsNames.VegaOs },
         { OsCode.KoboOs, OsNames.KoboOs },
         { OsCode.ThinOs, OsNames.ThinOs },
-        { OsCode.HyperOS, OsNames.HyperOS },
+        { OsCode.HyperOs, OsNames.HyperOs },
+        { OsCode.MyOs, OsNames.MyOs },
     }.ToFrozenDictionary();
 
     private static readonly FrozenDictionary<string, OsCode> OsNameMappings = OsCodeMappings

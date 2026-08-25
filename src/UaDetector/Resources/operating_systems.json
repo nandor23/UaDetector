@@ -485,6 +485,11 @@
     "version": "$1"
   },
   {
+    "regex": "MyOS(\\d+[.\\d]*)",
+    "name": "MyOS",
+    "version": "$1"
+  },
+  {
     "regex": "[\\d\\s]+Lite Browser/(\\d+\\.\\d+)$",
     "name": "HyperOS"
   },
