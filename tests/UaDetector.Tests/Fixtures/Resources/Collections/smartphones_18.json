@@ -5528,5 +5528,227 @@
         "code": 1044
       }
     }
+  },
+  {
+    "userAgent": "com.google.android.youtube/21.29.366(Linux; U; Android 14; pt_BR; ums9230_latte_Natv Build/UP1A.231005.007) gzip",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "14",
+      "family": "Android"
+    },
+    "client": {
+      "type": 1,
+      "name": "YouTube",
+      "version": "21.29.366"
+    },
+    "device": {
+      "type": 2,
+      "brand": {
+        "name": "Realme",
+        "code": 1431
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; U; Android 14; en-us; T433E Build/JOP24G) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.198 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "14",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Webview",
+      "code": 162,
+      "version": "86.0.4240.198",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "86.0.4240.198"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "501",
+      "brand": {
+        "name": "TCL",
+        "code": 1668
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 14; T442A Build/UP1A.231005.007) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.215 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "14",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 141,
+      "version": "148.0.7778.215",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "148.0.7778.215"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "503",
+      "brand": {
+        "name": "TCL",
+        "code": 1668
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 14; T442M Build/UP1A.231005.007) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.7632.80 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "14",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 141,
+      "version": "145.0.7632.80",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "145.0.7632.80"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "503",
+      "brand": {
+        "name": "TCL",
+        "code": 1668
+      }
+    }
+  },
+  {
+    "userAgent": "com.google.android.youtube/21.31.525(Linux; U; Android 12; es_US; T431A Build/SP1A.210812.016) gzip",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "12",
+      "family": "Android"
+    },
+    "client": {
+      "type": 1,
+      "name": "YouTube",
+      "version": "21.31.525"
+    },
+    "device": {
+      "type": 2,
+      "model": "403",
+      "brand": {
+        "name": "TCL",
+        "code": 1668
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 14; T434D Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/140.0.7339.51 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "14",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Webview",
+      "code": 162,
+      "version": "140.0.7339.51",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "140.0.7339.51"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "K24",
+      "brand": {
+        "name": "TCL",
+        "code": 1668
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; U; Android 16; en; Z2581 Build/MyOS16.0.1_Z2581_GEN_KE_V) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/110.0.0.0 Mobile Safari/537.36,gzip(gfe);GoogleHypersonic",
+    "os": {
+      "name": "MyOS",
+      "code": 209,
+      "version": "16.0.1",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Webview",
+      "code": 162,
+      "version": "110.0.0.0",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "110.0.0.0"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "Blade A57 Pro",
+      "brand": {
+        "name": "ZTE",
+        "code": 2040
+      }
+    }
+  },
+  {
+    "userAgent": "com.google.android.apps.youtube.music/9.29.54(Linux; U; Android 15; es_US; T452B Build/AP3A.240905.015.A2) gzip",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "15",
+      "family": "Android"
+    },
+    "client": {
+      "type": 1,
+      "name": "Youtube Music",
+      "version": "9.29.54"
+    },
+    "device": {
+      "type": 2,
+      "model": "A11",
+      "brand": {
+        "name": "Alcatel",
+        "code": 49
+      }
+    }
+  },
+  {
+    "userAgent": "com.google.android.youtube/21.31.525(Linux; U; Android 13; en_US; T430WS Build/TP1A.220624.014) gzip",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "13",
+      "family": "Android"
+    },
+    "client": {
+      "type": 1,
+      "name": "YouTube",
+      "version": "21.31.525"
+    },
+    "device": {
+      "type": 2,
+      "model": "Ion X",
+      "brand": {
+        "name": "TCL",
+        "code": 1668
+      }
+    }
   }
 ]
