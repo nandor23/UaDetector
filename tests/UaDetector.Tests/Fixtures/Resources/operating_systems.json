@@ -8220,5 +8220,23 @@
       "cpuArchitecture": "x64",
       "family": "GNU/Linux"
     }
+  },
+  {
+    "userAgent": "Self Service+/7570 CFNetwork/macOS/3860.600.21 Darwin/25.5.0",
+    "os": {
+      "name": "Mac",
+      "code": 84,
+      "version": "26.5",
+      "family": "Mac"
+    }
+  },
+  {
+    "userAgent": "ArcMobile2/53382.2 CFNetwork/3892.100.1 Darwin/27.0.0",
+    "os": {
+      "name": "iOS",
+      "code": 183,
+      "version": "27.0",
+      "family": "iOS"
+    }
   }
 ]
