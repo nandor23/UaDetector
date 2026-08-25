@@ -743,6 +743,10 @@ public class BrowserCodeTests
             { BrowserCode.QuicheBrowser, 720 },
             { BrowserCode.Lightpanda, 721 },
             { BrowserCode.Startpage, 722 },
+            { BrowserCode.SpeedBrowser360, 723 },
+            { BrowserCode.MullvadBrowser, 724 },
+            { BrowserCode.Stadium, 725 },
+            { BrowserCode.TeakBrowser, 726 },
         };
 
         expectedValues.Count.ShouldBe(Enum.GetValues<BrowserCode>().Length);
