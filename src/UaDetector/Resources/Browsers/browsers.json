@@ -627,6 +627,13 @@
     }
   },
   {
+    "regex": "Norton%20Private%20Browser",
+    "name": "Norton Private Browser",
+    "engine": {
+      "default": "WebKit"
+    }
+  },
+  {
     "regex": "Odd/(\\d+\\.[.\\d]+)",
     "name": "Odd Browser",
     "version": "$1",
@@ -1625,9 +1632,12 @@
     "version": "$1"
   },
   {
-    "regex": "Atlas/(\\d+[.\\d]+)$",
+    "regex": "(?:ChatGPT%20)?Atlas/(\\d+[.\\d]+)",
     "name": "ChatGPT Atlas",
-    "version": "$1"
+    "version": "$1",
+    "engine": {
+      "default": "Blink"
+    }
   },
   {
     "regex": "Falkon(?:/(\\d+[.\\d]+))?",
