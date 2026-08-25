@@ -10150,5 +10150,27 @@
         "code": 2096
       }
     }
+  },
+  {
+    "userAgent": "com.google.android.youtube/20.26.40(Linux; U; Android 8.1.0; pt_BR; T470 Build/O11019) gzip",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "8.1.0",
+      "family": "Android"
+    },
+    "client": {
+      "type": 1,
+      "name": "YouTube",
+      "version": "20.26.40"
+    },
+    "device": {
+      "type": 3,
+      "model": "Genius Tab",
+      "brand": {
+        "name": "Dany",
+        "code": 349
+      }
+    }
   }
 ]
