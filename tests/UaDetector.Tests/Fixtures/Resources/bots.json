@@ -14102,5 +14102,63 @@
       "category": 4,
       "url": "https://bot.webatla.com/"
     }
+  },
+  {
+    "userAgent": "MyCellar/1.0 (https://www.mycellar.world)",
+    "bot": {
+      "name": "MyCellar",
+      "category": 4,
+      "url": "https://www.mycellar.world/"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (compatible; wp2shell-check/1.0)",
+    "bot": {
+      "name": "wp2shell-check",
+      "category": 6
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (compatible; Kaupr/1.0)",
+    "bot": {
+      "name": "Kaupr",
+      "category": 4,
+      "url": "https://kaupr.com/",
+      "producer": {
+        "name": "Kaupr Limited",
+        "url": "https://kaupr.com/"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; WRTNBot; +https://wrtn.ai/wrtnbot)",
+    "bot": {
+      "name": "WRTNBot",
+      "category": 19,
+      "url": "https://wrtn.ai/",
+      "producer": {
+        "name": "Rutten Technologies Co., Ltd",
+        "url": "https://wrtn.ai/"
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (compatible; ProspectorBR/1.0; +prospeccao-adtech; contato via site) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36",
+    "bot": {
+      "name": "ProspectorBR",
+      "category": 4
+    }
+  },
+  {
+    "userAgent": "DomainDrift/0.3 (Internet Telemetry; +https://domaindrift.io)",
+    "bot": {
+      "name": "DomainDrift",
+      "category": 6,
+      "url": "https://domaindrift.io/",
+      "producer": {
+        "name": "DRM3 Labs Corp.",
+        "url": "https://drm3.io/"
+      }
+    }
   }
 ]
