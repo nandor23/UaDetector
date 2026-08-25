@@ -8664,8 +8664,9 @@
       "family": "Android"
     },
     "browser": {
-      "name": "Brave",
-      "code": 104,
+      "name": "Chrome Mobile",
+      "code": 141,
+      "version": "101.0.4951.61",
       "family": "Chrome",
       "engine": {
         "name": "Blink",

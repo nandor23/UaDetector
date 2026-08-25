@@ -8103,6 +8103,7 @@
     "browser": {
       "name": "UC Browser Mini",
       "code": 607,
+      "version": "11.4.1.1138",
       "engine": {
         "name": "Blink",
         "version": "30.0.0.0"

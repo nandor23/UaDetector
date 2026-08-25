@@ -4717,8 +4717,8 @@
       "version": "0.7.9",
       "family": "Chrome",
       "engine": {
-        "name": "Blink",
-        "version": "47.0.2526.73"
+        "name": "WebKit",
+        "version": "537.36"
       }
     },
     "device": {
