@@ -200,6 +200,7 @@ public sealed partial class OsParser : IOsParser
                     OsCode.Linpus,
                     OsCode.OpenSuse,
                     OsCode.KoboOs,
+                    OsCode.FortiOs
                 }.ToFrozenSet()
             },
             { OsFamilies.Mac, new[] { OsCode.Mac }.ToFrozenSet() },

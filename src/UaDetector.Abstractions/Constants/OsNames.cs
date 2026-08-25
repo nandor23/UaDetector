@@ -211,4 +211,5 @@ public static class OsNames
     public const string ThinOs = "ThinOS";
     public const string HyperOs = "HyperOS";
     public const string MyOs = "MyOS";
+    public const string FortiOs = "FortiOS";
 }

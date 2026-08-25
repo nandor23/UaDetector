@@ -230,6 +230,7 @@ public class OsCodeTests
             { OsCode.ThinOs, 207 },
             { OsCode.HyperOs, 208 },
             { OsCode.MyOs, 209 },
+            { OsCode.FortiOs, 210 },
         };
 
         expectedValues.Count.ShouldBe(Enum.GetValues<OsCode>().Length);

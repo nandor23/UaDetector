@@ -211,4 +211,5 @@ public enum OsCode
     ThinOs = 207,
     HyperOs = 208,
     MyOs = 209,
+    FortiOs = 210,
 }
