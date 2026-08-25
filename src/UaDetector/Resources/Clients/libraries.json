@@ -707,5 +707,9 @@
     "regex": "KlHttpClientCurl(?:/(\\d+[.\\d]+))?",
     "name": "KlHttpClientCurl",
     "version": "$1"
+  },
+  {
+    "regex": "nscurl",
+    "name": "nscurl"
   }
 ]
