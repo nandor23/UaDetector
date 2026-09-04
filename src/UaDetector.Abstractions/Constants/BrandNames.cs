@@ -2167,4 +2167,5 @@ public static class BrandNames
     public const string Hoobart = "Hoobart";
     public const string SunKing = "Sun King";
     public const string Telstra = "Telstra";
+    public const string ValveCorporation = "Valve Corporation";
 }

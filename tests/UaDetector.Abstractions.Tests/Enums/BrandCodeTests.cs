@@ -2186,6 +2186,7 @@ public class BrandCodeTests
             { BrandCode.Hoobart, 2163 },
             { BrandCode.SunKing, 2164 },
             { BrandCode.Telstra, 2165 },
+            { BrandCode.ValveCorporation, 2166 },
         };
 
         expectedValues.Count.ShouldBe(Enum.GetValues<BrandCode>().Length);

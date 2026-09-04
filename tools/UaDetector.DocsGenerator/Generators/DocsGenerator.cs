@@ -17,9 +17,7 @@ public static class DocsGenerator
 
         foreach (var collector in collectors)
         {
-            var itemsList = collector
-                .CollectData()
-                .ToList();
+            var itemsList = collector.CollectData().ToList();
 
             var count = itemsList.Count;
             var content = string.Join(", ", itemsList);

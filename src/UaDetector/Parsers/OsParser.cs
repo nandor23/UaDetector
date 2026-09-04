@@ -70,7 +70,7 @@ public sealed partial class OsParser : IOsParser
                     OsCode.SmartisanOs,
                     OsCode.AndroidGo,
                     OsCode.HyperOs,
-                    OsCode.MyOs
+                    OsCode.MyOs,
                 }.ToFrozenSet()
             },
             {
@@ -200,7 +200,7 @@ public sealed partial class OsParser : IOsParser
                     OsCode.Linpus,
                     OsCode.OpenSuse,
                     OsCode.KoboOs,
-                    OsCode.FortiOs
+                    OsCode.FortiOs,
                 }.ToFrozenSet()
             },
             { OsFamilies.Mac, new[] { OsCode.Mac }.ToFrozenSet() },
@@ -211,6 +211,7 @@ public sealed partial class OsParser : IOsParser
                     OsCode.PlayStationPortable,
                     OsCode.NintendoMobile,
                     OsCode.Xbox,
+                    OsCode.SteamOs,
                 }.ToFrozenSet()
             },
             {

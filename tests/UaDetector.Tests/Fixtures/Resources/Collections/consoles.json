@@ -1216,5 +1216,57 @@
         "code": 1206
       }
     }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 SteamDeck",
+    "os": {
+      "name": "SteamOS",
+      "code": 211,
+      "cpuArchitecture": "x64",
+      "family": "Mobile Gaming Console"
+    },
+    "browser": {
+      "name": "Chrome",
+      "code": 138,
+      "version": "131.0.0.0",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "131.0.0.0"
+      }
+    },
+    "device": {
+      "type": 5,
+      "model": "Steam Deck",
+      "brand": {
+        "name": "Valve Corporation",
+        "code": 2166
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64; Valve Steam GameOverlay; ) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36",
+    "os": {
+      "name": "SteamOS",
+      "code": 211,
+      "cpuArchitecture": "x64",
+      "family": "Mobile Gaming Console"
+    },
+    "browser": {
+      "name": "Steam In-Game Overlay",
+      "code": 573,
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "85.0.4183.102"
+      }
+    },
+    "device": {
+      "type": 5,
+      "brand": {
+        "name": "Valve Corporation",
+        "code": 2166
+      }
+    }
   }
 ]
