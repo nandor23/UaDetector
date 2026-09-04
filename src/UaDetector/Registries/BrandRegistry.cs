@@ -2220,6 +2220,7 @@ public static class BrandRegistry
             { BrandCode.Mmi, BrandNames.Mmi },
             { BrandCode.Twoe, BrandNames.Twoe },
             { BrandCode.WhiteMobile, BrandNames.WhiteMobile },
+            { BrandCode.ValveCorporation, BrandNames.ValveCorporation },
         }.ToFrozenDictionary();
 
     internal static readonly FrozenDictionary<string, BrandCode> LegacyBrandNameMappings =

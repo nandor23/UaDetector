@@ -1571,7 +1571,7 @@
     "version": "$1"
   },
   {
-    "regex": "Valve Steam GameOverlay/(?:(\\d+[.\\d]+))?",
+    "regex": "Valve Steam GameOverlay(?:/(\\d+[.\\d]+))?",
     "name": "Steam In-Game Overlay",
     "version": "$1"
   },

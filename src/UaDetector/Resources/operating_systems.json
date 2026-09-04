@@ -1,5 +1,9 @@
 [
   {
+    "regex": "Steam",
+    "name": "SteamOS"
+  },
+  {
     "regex": "FortiOS (\\d+[.\\d]+)",
     "name": "FortiOS",
     "version": "$1"

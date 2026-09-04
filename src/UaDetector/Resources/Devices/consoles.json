@@ -121,5 +121,16 @@
         "name": "$1"
       }
     ]
+  },
+  {
+    "regex": "Steam",
+    "brand": "Valve Corporation",
+    "type": 5,
+    "modelVariants": [
+      {
+        "regex": "SteamDeck",
+        "name": "Steam Deck"
+      }
+    ]
   }
 ]

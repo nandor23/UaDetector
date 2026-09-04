@@ -2167,4 +2167,5 @@ public enum BrandCode
     Hoobart = 2163,
     SunKing = 2164,
     Telstra = 2165,
+    ValveCorporation = 2166,
 }

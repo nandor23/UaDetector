@@ -212,4 +212,5 @@ public enum OsCode
     HyperOs = 208,
     MyOs = 209,
     FortiOs = 210,
+    SteamOs = 211,
 }

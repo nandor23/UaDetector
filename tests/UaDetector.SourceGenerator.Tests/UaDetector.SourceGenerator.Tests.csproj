@@ -5,7 +5,6 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <EnableTUnitSourceGeneration>false</EnableTUnitSourceGeneration>
-    <NoWarn>NU1903</NoWarn>
   </PropertyGroup>
 
   <ItemGroup>

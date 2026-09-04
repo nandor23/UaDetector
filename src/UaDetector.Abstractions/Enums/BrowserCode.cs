@@ -727,5 +727,5 @@ public enum BrowserCode
     SpeedBrowser360 = 723,
     MullvadBrowser = 724,
     Stadium = 725,
-    TeakBrowser = 726
+    TeakBrowser = 726,
 }

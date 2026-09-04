@@ -409,7 +409,7 @@ public sealed partial class BrowserParser : IBrowserParser
                     BrowserCode.PrivateBrowsing,
                     BrowserCode.Startpage,
                     BrowserCode.SpeedBrowser360,
-                    BrowserCode.Fulldive
+                    BrowserCode.Fulldive,
                 }.ToFrozenSet()
             },
             {
@@ -463,7 +463,7 @@ public sealed partial class BrowserParser : IBrowserParser
                     BrowserCode.Classilla,
                     BrowserCode.NaenaraBrowser,
                     BrowserCode.Swiftweasel,
-                    BrowserCode.MullvadBrowser
+                    BrowserCode.MullvadBrowser,
                 }.ToFrozenSet()
             },
             {
@@ -761,7 +761,7 @@ public sealed partial class BrowserParser : IBrowserParser
             BrowserCode.Startpage,
             BrowserCode.SpeedBrowser360,
             BrowserCode.Stadium,
-            BrowserCode.Fulldive
+            BrowserCode.Fulldive,
         }.ToFrozenSet();
 
         ClientHintBrandMappings = new Dictionary<string, FrozenSet<string>>
