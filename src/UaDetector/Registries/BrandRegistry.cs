@@ -1571,7 +1571,7 @@ public static class BrandRegistry
         { BrandCode.Sgin, BrandNames.Sgin },
         { BrandCode.Sharp, BrandNames.Sharp },
         { BrandCode.Shanling, BrandNames.Shanling },
-        { BrandCode.ShiftPhones, BrandNames.ShiftPhones },
+        { BrandCode.Shift, BrandNames.Shift },
         { BrandCode.Shivaki, BrandNames.Shivaki },
         { BrandCode.ShtrikhM, BrandNames.ShtrikhM },
         { BrandCode.Shuttle, BrandNames.Shuttle },
@@ -2200,6 +2200,19 @@ public static class BrandRegistry
         { BrandCode.Hoobart, BrandNames.Hoobart },
         { BrandCode.SunKing, BrandNames.SunKing },
         { BrandCode.Telstra, BrandNames.Telstra },
+        { BrandCode.Artfone, BrandNames.Artfone },
+        { BrandCode.Astech, BrandNames.Astech },
+        { BrandCode.BastyonMobi, BrandNames.BastyonMobi },
+        { BrandCode.Damasco, BrandNames.Damasco },
+        { BrandCode.Flow, BrandNames.Flow },
+        { BrandCode.Haitech, BrandNames.Haitech},
+        { BrandCode.Lenix, BrandNames.Lenix },
+        { BrandCode.LoopDl, BrandNames.LoopDl },
+        { BrandCode.Redbeat, BrandNames.Redbeat },
+        { BrandCode.Spectra, BrandNames.Spectra },
+        { BrandCode.Tiok, BrandNames.Tiok },
+        { BrandCode.TwlMobile, BrandNames.TwlMobile },
+        { BrandCode.UltraXPrivacy, BrandNames.UltraXPrivacy },
     }.ToFrozenDictionary();
 
     internal static readonly FrozenDictionary<string, BrandCode> BrandNameMappings =

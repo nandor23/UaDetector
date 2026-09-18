@@ -5469,7 +5469,7 @@
     },
     "device": {
       "type": 2,
-      "model": "FP1",
+      "model": "1",
       "brand": {
         "name": "Fairphone",
         "code": 542
@@ -5495,7 +5495,7 @@
     },
     "device": {
       "type": 2,
-      "model": "FP1U",
+      "model": "1U",
       "brand": {
         "name": "Fairphone",
         "code": 542
@@ -5522,7 +5522,7 @@
     },
     "device": {
       "type": 2,
-      "model": "FP2",
+      "model": "2",
       "brand": {
         "name": "Fairphone",
         "code": 542

@@ -1536,7 +1536,7 @@ public static class BrandNames
     public const string Sgin = "SGIN";
     public const string Sharp = "Sharp";
     public const string Shanling = "Shanling";
-    public const string ShiftPhones = "Shift Phones";
+    public const string Shift = "SHIFT";
     public const string Shivaki = "Shivaki";
     public const string ShtrikhM = "Shtrikh-M";
     public const string Shuttle = "Shuttle";
@@ -2168,4 +2168,17 @@ public static class BrandNames
     public const string SunKing = "Sun King";
     public const string Telstra = "Telstra";
     public const string ValveCorporation = "Valve Corporation";
+    public const string Artfone = "artfone";
+    public const string Astech = "ASTECH";
+    public const string BastyonMobi = "Bastyon Mobi";
+    public const string Damasco = "DAMASCO";
+    public const string Flow = "flow";
+    public const string Haitech = "Haitech";
+    public const string Lenix = "LENIX";
+    public const string LoopDl = "LoopDL";
+    public const string Redbeat = "redbeat";
+    public const string Spectra = "SPECTRA";
+    public const string Tiok = "TIOK";
+    public const string TwlMobile = "TWL Mobile";
+    public const string UltraXPrivacy = "UltraX Privacy";
 }

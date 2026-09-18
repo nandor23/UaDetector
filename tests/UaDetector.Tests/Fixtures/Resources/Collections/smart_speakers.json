@@ -1466,5 +1466,37 @@
         "code": 1594
       }
     }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36",
+    "headers": {
+      "Sec-CH-UA": "\"Google Chrome\";v=\"137.0.7151.115\", \"Chromium\";v=\"137.0.7151.115\", \"Not/A)Brand\";v=\"24.0.0.0\"",
+      "Sec-CH-UA-Platform-Version": "15.0.0",
+      "Sec-CH-UA-Model": "theloop_ROW"
+    },
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "15.0.0",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 141,
+      "version": "137.0.7151.115",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "137.0.7151.115"
+      }
+    },
+    "device": {
+      "type": 12,
+      "model": "loop",
+      "brand": {
+        "name": "LoopDL",
+        "code": 2174
+      }
+    }
   }
 ]

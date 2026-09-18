@@ -1555,7 +1555,7 @@ public class BrandCodeTests
             { BrandCode.Sgin, 1532 },
             { BrandCode.Sharp, 1533 },
             { BrandCode.Shanling, 1534 },
-            { BrandCode.ShiftPhones, 1535 },
+            { BrandCode.Shift, 1535 },
             { BrandCode.Shivaki, 1536 },
             { BrandCode.ShtrikhM, 1537 },
             { BrandCode.Shuttle, 1538 },
@@ -2187,6 +2187,19 @@ public class BrandCodeTests
             { BrandCode.SunKing, 2164 },
             { BrandCode.Telstra, 2165 },
             { BrandCode.ValveCorporation, 2166 },
+            { BrandCode.Artfone, 2167 },
+            { BrandCode.Astech, 2168 },
+            { BrandCode.BastyonMobi, 2169 },
+            { BrandCode.Damasco, 2170 },
+            { BrandCode.Flow, 2171 },
+            { BrandCode.Haitech, 2172 },
+            { BrandCode.Lenix, 2173 },
+            { BrandCode.LoopDl, 2174 },
+            { BrandCode.Redbeat, 2175 },
+            { BrandCode.Spectra, 2176 },
+            { BrandCode.Tiok, 2177 },
+            { BrandCode.TwlMobile, 2178 },
+            { BrandCode.UltraXPrivacy, 2179 },
         };
 
         expectedValues.Count.ShouldBe(Enum.GetValues<BrandCode>().Length);

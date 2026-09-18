@@ -3138,7 +3138,7 @@
     },
     "device": {
       "type": 2,
-      "model": "FP3",
+      "model": "3",
       "brand": {
         "name": "Fairphone",
         "code": 542
