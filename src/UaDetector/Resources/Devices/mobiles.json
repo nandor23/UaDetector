@@ -1777,6 +1777,16 @@
         "name": "Watch SE (Gen 2) 44mm"
       },
       {
+        "regex": "Watch7,1[35]",
+        "type": 13,
+        "name": "Watch SE (Gen 3) 40mm"
+      },
+      {
+        "regex": "Watch7,1[46]",
+        "type": 13,
+        "name": "Watch SE (Gen 3) 44mm"
+      },
+      {
         "regex": "Watch6,1[46]",
         "type": 13,
         "name": "Watch Series 8 41mm"
@@ -1795,6 +1805,16 @@
         "regex": "Watch7,5",
         "type": 13,
         "name": "Watch Ultra 2"
+      },
+      {
+        "regex": "Watch7,12",
+        "type": 13,
+        "name": "Watch Ultra 3"
+      },
+      {
+        "regex": "Watch8,1",
+        "type": 13,
+        "name": "Watch Ultra 4"
       },
       {
         "regex": "Watch([456]),[13]",
@@ -1817,44 +1837,44 @@
         "name": "Watch Series 7 45mm"
       },
       {
-        "regex": "Watch7,8",
+        "regex": "Watch7,(?:8|10)",
         "type": 13,
         "name": "Watch Series 10 42mm"
       },
       {
-        "regex": "Watch7,9",
+        "regex": "Watch7,(?:9|11)",
         "type": 13,
         "name": "Watch Series 10 46mm"
       },
       {
-        "regex": "Watch7,10",
+        "regex": "Watch7,1[79]",
         "type": 13,
-        "name": "Watch Series 10 42mm"
+        "name": "Watch Series 11 42mm"
       },
       {
-        "regex": "Watch7,11",
+        "regex": "Watch7,(?:18|20)",
         "type": 13,
-        "name": "Watch Series 10 46mm"
+        "name": "Watch Series 11 46mm"
       },
       {
-        "regex": "Watch7,1",
+        "regex": "Watch7,[13]",
         "type": 13,
         "name": "Watch Series 9 41mm"
       },
       {
-        "regex": "Watch7,3",
-        "type": 13,
-        "name": "Watch Series 9 41mm"
-      },
-      {
-        "regex": "Watch7,2",
+        "regex": "Watch7,[24]",
         "type": 13,
         "name": "Watch Series 9 45mm"
       },
       {
-        "regex": "Watch7,4",
+        "regex": "Watch8,[24]",
         "type": 13,
-        "name": "Watch Series 9 45mm"
+        "name": "Watch Series 12 42mm"
+      },
+      {
+        "regex": "Watch8,[35]",
+        "type": 13,
+        "name": "Watch Series 12 46mm"
       },
       {
         "regex": "(:?Apple Watch|watchOS)",

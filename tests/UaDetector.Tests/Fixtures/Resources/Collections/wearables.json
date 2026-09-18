@@ -3953,5 +3953,327 @@
         "code": 2122
       }
     }
+  },
+  {
+    "userAgent": "Darwin/25.6.0 (Watch7,13; watchOS 26.6) MatomoTrackerSDK/7.8.0",
+    "os": {
+      "name": "watchOS",
+      "code": 167,
+      "version": "26.6",
+      "cpuArchitecture": "ARM",
+      "family": "iOS"
+    },
+    "client": {
+      "type": 3,
+      "name": "MatomoTracker",
+      "version": "7.8.0"
+    },
+    "device": {
+      "type": 13,
+      "model": "Watch SE (Gen 3) 40mm",
+      "brand": {
+        "name": "Apple",
+        "code": 98
+      }
+    }
+  },
+  {
+    "userAgent": "Darwin/25.6.0 (Watch7,14; watchOS 26.6) MatomoTrackerSDK/7.8.0",
+    "os": {
+      "name": "watchOS",
+      "code": 167,
+      "version": "26.6",
+      "cpuArchitecture": "ARM",
+      "family": "iOS"
+    },
+    "client": {
+      "type": 3,
+      "name": "MatomoTracker",
+      "version": "7.8.0"
+    },
+    "device": {
+      "type": 13,
+      "model": "Watch SE (Gen 3) 44mm",
+      "brand": {
+        "name": "Apple",
+        "code": 98
+      }
+    }
+  },
+  {
+    "userAgent": "Darwin/25.6.0 (Watch7,15; watchOS 26.6) MatomoTrackerSDK/7.8.0",
+    "os": {
+      "name": "watchOS",
+      "code": 167,
+      "version": "26.6",
+      "cpuArchitecture": "ARM",
+      "family": "iOS"
+    },
+    "client": {
+      "type": 3,
+      "name": "MatomoTracker",
+      "version": "7.8.0"
+    },
+    "device": {
+      "type": 13,
+      "model": "Watch SE (Gen 3) 40mm",
+      "brand": {
+        "name": "Apple",
+        "code": 98
+      }
+    }
+  },
+  {
+    "userAgent": "Darwin/25.6.0 (Watch7,16; watchOS 26.6) MatomoTrackerSDK/7.8.0",
+    "os": {
+      "name": "watchOS",
+      "code": 167,
+      "version": "26.6",
+      "cpuArchitecture": "ARM",
+      "family": "iOS"
+    },
+    "client": {
+      "type": 3,
+      "name": "MatomoTracker",
+      "version": "7.8.0"
+    },
+    "device": {
+      "type": 13,
+      "model": "Watch SE (Gen 3) 44mm",
+      "brand": {
+        "name": "Apple",
+        "code": 98
+      }
+    }
+  },
+  {
+    "userAgent": "Darwin/25.6.0 (Watch7,17; watchOS 26.6) MatomoTrackerSDK/7.8.0",
+    "os": {
+      "name": "watchOS",
+      "code": 167,
+      "version": "26.6",
+      "cpuArchitecture": "ARM",
+      "family": "iOS"
+    },
+    "client": {
+      "type": 3,
+      "name": "MatomoTracker",
+      "version": "7.8.0"
+    },
+    "device": {
+      "type": 13,
+      "model": "Watch Series 11 42mm",
+      "brand": {
+        "name": "Apple",
+        "code": 98
+      }
+    }
+  },
+  {
+    "userAgent": "Darwin/25.6.0 (Watch7,18; watchOS 26.6) MatomoTrackerSDK/7.8.0",
+    "os": {
+      "name": "watchOS",
+      "code": 167,
+      "version": "26.6",
+      "cpuArchitecture": "ARM",
+      "family": "iOS"
+    },
+    "client": {
+      "type": 3,
+      "name": "MatomoTracker",
+      "version": "7.8.0"
+    },
+    "device": {
+      "type": 13,
+      "model": "Watch Series 11 46mm",
+      "brand": {
+        "name": "Apple",
+        "code": 98
+      }
+    }
+  },
+  {
+    "userAgent": "Darwin/25.6.0 (Watch7,19; watchOS 26.6) MatomoTrackerSDK/7.8.0",
+    "os": {
+      "name": "watchOS",
+      "code": 167,
+      "version": "26.6",
+      "cpuArchitecture": "ARM",
+      "family": "iOS"
+    },
+    "client": {
+      "type": 3,
+      "name": "MatomoTracker",
+      "version": "7.8.0"
+    },
+    "device": {
+      "type": 13,
+      "model": "Watch Series 11 42mm",
+      "brand": {
+        "name": "Apple",
+        "code": 98
+      }
+    }
+  },
+  {
+    "userAgent": "Darwin/25.6.0 (Watch7,20; watchOS 26.6) MatomoTrackerSDK/7.8.0",
+    "os": {
+      "name": "watchOS",
+      "code": 167,
+      "version": "26.6",
+      "cpuArchitecture": "ARM",
+      "family": "iOS"
+    },
+    "client": {
+      "type": 3,
+      "name": "MatomoTracker",
+      "version": "7.8.0"
+    },
+    "device": {
+      "type": 13,
+      "model": "Watch Series 11 46mm",
+      "brand": {
+        "name": "Apple",
+        "code": 98
+      }
+    }
+  },
+  {
+    "userAgent": "Darwin/25.6.0 (Watch7,12; watchOS 26.6) MatomoTrackerSDK/7.8.0",
+    "os": {
+      "name": "watchOS",
+      "code": 167,
+      "version": "26.6",
+      "cpuArchitecture": "ARM",
+      "family": "iOS"
+    },
+    "client": {
+      "type": 3,
+      "name": "MatomoTracker",
+      "version": "7.8.0"
+    },
+    "device": {
+      "type": 13,
+      "model": "Watch Ultra 3",
+      "brand": {
+        "name": "Apple",
+        "code": 98
+      }
+    }
+  },
+  {
+    "userAgent": "Darwin/27.0.0 (Watch8,1; watchOS 27.0) MatomoTrackerSDK/7.8.0",
+    "os": {
+      "name": "watchOS",
+      "code": 167,
+      "version": "27.0",
+      "cpuArchitecture": "ARM",
+      "family": "iOS"
+    },
+    "client": {
+      "type": 3,
+      "name": "MatomoTracker",
+      "version": "7.8.0"
+    },
+    "device": {
+      "type": 13,
+      "model": "Watch Ultra 4",
+      "brand": {
+        "name": "Apple",
+        "code": 98
+      }
+    }
+  },
+  {
+    "userAgent": "Darwin/27.0.0 (Watch8,2; watchOS 27.0) MatomoTrackerSDK/7.8.0",
+    "os": {
+      "name": "watchOS",
+      "code": 167,
+      "version": "27.0",
+      "cpuArchitecture": "ARM",
+      "family": "iOS"
+    },
+    "client": {
+      "type": 3,
+      "name": "MatomoTracker",
+      "version": "7.8.0"
+    },
+    "device": {
+      "type": 13,
+      "model": "Watch Series 12 42mm",
+      "brand": {
+        "name": "Apple",
+        "code": 98
+      }
+    }
+  },
+  {
+    "userAgent": "Darwin/27.0.0 (Watch8,3; watchOS 27.0) MatomoTrackerSDK/7.8.0",
+    "os": {
+      "name": "watchOS",
+      "code": 167,
+      "version": "27.0",
+      "cpuArchitecture": "ARM",
+      "family": "iOS"
+    },
+    "client": {
+      "type": 3,
+      "name": "MatomoTracker",
+      "version": "7.8.0"
+    },
+    "device": {
+      "type": 13,
+      "model": "Watch Series 12 46mm",
+      "brand": {
+        "name": "Apple",
+        "code": 98
+      }
+    }
+  },
+  {
+    "userAgent": "Darwin/27.0.0 (Watch8,4; watchOS 27.0) MatomoTrackerSDK/7.8.0",
+    "os": {
+      "name": "watchOS",
+      "code": 167,
+      "version": "27.0",
+      "cpuArchitecture": "ARM",
+      "family": "iOS"
+    },
+    "client": {
+      "type": 3,
+      "name": "MatomoTracker",
+      "version": "7.8.0"
+    },
+    "device": {
+      "type": 13,
+      "model": "Watch Series 12 42mm",
+      "brand": {
+        "name": "Apple",
+        "code": 98
+      }
+    }
+  },
+  {
+    "userAgent": "Darwin/27.0.0 (Watch8,5; watchOS 27.0) MatomoTrackerSDK/7.8.0",
+    "os": {
+      "name": "watchOS",
+      "code": 167,
+      "version": "27.0",
+      "cpuArchitecture": "ARM",
+      "family": "iOS"
+    },
+    "client": {
+      "type": 3,
+      "name": "MatomoTracker",
+      "version": "7.8.0"
+    },
+    "device": {
+      "type": 13,
+      "model": "Watch Series 12 46mm",
+      "brand": {
+        "name": "Apple",
+        "code": 98
+      }
+    }
   }
 ]
