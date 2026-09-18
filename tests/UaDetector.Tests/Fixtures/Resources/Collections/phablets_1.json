@@ -9824,5 +9824,58 @@
         "code": 1974
       }
     }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 16; TECNO LK7k Build/BP2A.250605.031.A3; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.93 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "16",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Webview",
+      "code": 162,
+      "version": "149.0.7827.93",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "149.0.7827.93"
+      }
+    },
+    "device": {
+      "type": 11,
+      "model": "Pova Curve 2 5G",
+      "brand": {
+        "name": "Tecno Mobile",
+        "code": 1685
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 16; V2436A) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.6778.200 Mobile Safari/537.36 VivoBrowser/28.8.4.0",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "16",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "vivo Browser",
+      "code": 624,
+      "version": "28.8.4.0",
+      "engine": {
+        "name": "Blink",
+        "version": "131.0.6778.200"
+      }
+    },
+    "device": {
+      "type": 11,
+      "model": "X Fold 5",
+      "brand": {
+        "name": "Vivo",
+        "code": 1865
+      }
+    }
   }
 ]
