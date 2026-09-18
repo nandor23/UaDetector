@@ -13684,7 +13684,7 @@
     },
     "device": {
       "type": 2,
-      "model": "FP4",
+      "model": "4",
       "brand": {
         "name": "Fairphone",
         "code": 542

@@ -1602,5 +1602,33 @@
         "code": 430
       }
     }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36",
+    "headers": {
+      "Sec-CH-UA": "\"Chromium\";v=\"148.0.7778.167\", \"Google Chrome\";v=\"148.0.7778.167\", \"Not/A)Brand\";v=\"99.0.0.0\"",
+      "Sec-CH-UA-Platform-Version": "12.0.0",
+      "Sec-CH-UA-Model": "uis8581a2h10_Automotive"
+    },
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "12.0.0",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome",
+      "code": 138,
+      "version": "148.0.7778.167",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "148.0.7778.167"
+      }
+    },
+    "device": {
+      "type": 7,
+      "model": "uis8581a2h10_Automotive"
+    }
   }
 ]
