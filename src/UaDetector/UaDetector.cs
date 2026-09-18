@@ -533,9 +533,9 @@ public sealed class UaDetector : IUaDetector
 
         _osParser.TryParse(restoredUserAgent, clientHints, out var os);
 
-        if (!_clientParser.TryParse(restoredUserAgent, clientHints, out ClientInfo? client))
+        if (!_clientParser.TryParse(userAgent, clientHints, out ClientInfo? client))
         {
-            _browserParser.TryParse(restoredUserAgent, clientHints, out browser);
+            _browserParser.TryParse(userAgent, clientHints, out browser);
         }
 
         TryParseDevice(

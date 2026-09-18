@@ -1125,11 +1125,6 @@ public sealed partial class BrowserParser : IBrowserParser
             return false;
         }
 
-        if (ParserExtensions.TryRestoreUserAgent(userAgent, clientHints, out var restoredUserAgent))
-        {
-            userAgent = restoredUserAgent;
-        }
-
         if (_cache is null)
         {
             return TryParse(userAgent, clientHints, out result);
