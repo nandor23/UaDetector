@@ -1950,5 +1950,36 @@
         "code": 2096
       }
     }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 14; KNgiKwqEVT; U; en) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.7204.63 Mobile Safari/537.36",
+    "headers": {
+      "Sec-CH-UA": "\"Not)A;Brand\";v=\"8.0.0.0\", \"Chromium\";v=\"138.0.7204.63\"",
+      "Sec-CH-UA-Platform-Version": "14.0.0",
+      "Sec-CH-UA-Model": "HMD Fusion"
+    },
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "14.0.0",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Avast Secure Browser",
+      "code": 72,
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "138.0.7204.63"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "Fusion",
+      "brand": {
+        "name": "HMD",
+        "code": 728
+      }
+    }
   }
 ]
