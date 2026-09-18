@@ -3786,5 +3786,459 @@
         "code": 120
       }
     }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 16; V2509A Build/BP2A.250605.031.A3_V000L1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "16",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Webview",
+      "code": 162,
+      "version": "149.0.7827.91",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "149.0.7827.91"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "X300",
+      "brand": {
+        "name": "Vivo",
+        "code": 1865
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 16; SOG16 Build/72.1.A.2.184; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "16",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Webview",
+      "code": 162,
+      "version": "149.0.7827.91",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "149.0.7827.91"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "Xperia 10 VII",
+      "brand": {
+        "name": "Sony",
+        "code": 1589
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 16; SOG15 Build/71.1.A.2.210; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "16",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Webview",
+      "code": 162,
+      "version": "149.0.7827.91",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "149.0.7827.91"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "Xperia 1 VII",
+      "brand": {
+        "name": "Sony",
+        "code": 1589
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 16; SOG14 Build/70.2.A.4.22; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/148.0.7778.217 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "16",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Webview",
+      "code": 162,
+      "version": "148.0.7778.217",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "148.0.7778.217"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "Xperia 10 VI",
+      "brand": {
+        "name": "Sony",
+        "code": 1589
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 16; SO-52F Build/72.1.A.2.160; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "16",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Webview",
+      "code": 162,
+      "version": "149.0.7827.91",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "149.0.7827.91"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "Xperia 10 VII",
+      "brand": {
+        "name": "Sony",
+        "code": 1589
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 16; SO-51F Build/71.1.A.2.169; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36 YJApp-ANDROID jp.co.yahoo.android.yjtop/3.221.0",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "16",
+      "family": "Android"
+    },
+    "client": {
+      "type": 1,
+      "name": "Yahoo! Japan",
+      "version": "3.221.0"
+    },
+    "device": {
+      "type": 2,
+      "model": "Xperia 1 VII",
+      "brand": {
+        "name": "Sony",
+        "code": 1589
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 16; SCG38) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.7827.91 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "16",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 141,
+      "version": "149.0.7827.91",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "149.0.7827.91"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "Galaxy S26+",
+      "brand": {
+        "name": "Samsung",
+        "code": 1497
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 16; SCG33 Build/BP4A.251205.006; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "16",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Webview",
+      "code": 162,
+      "version": "149.0.7827.91",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "149.0.7827.91"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "Galaxy A25 5G",
+      "brand": {
+        "name": "Samsung",
+        "code": 1497
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 16; SCG30 Build/BP2A.250605.031.A3; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.159 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "16",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Webview",
+      "code": 162,
+      "version": "149.0.7827.159",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "149.0.7827.159"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "Galaxy S24 FE",
+      "brand": {
+        "name": "Samsung",
+        "code": 1497
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 16; SCG31 Build/BP4A.251205.006; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "16",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Webview",
+      "code": 162,
+      "version": "149.0.7827.91",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "149.0.7827.91"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "Galaxy S25",
+      "brand": {
+        "name": "Samsung",
+        "code": 1497
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 16; SCG32 Build/BP4A.251205.006; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/148.0.7778.215 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "16",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Webview",
+      "code": 162,
+      "version": "148.0.7778.215",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "148.0.7778.215"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "Galaxy S25 Ultra",
+      "brand": {
+        "name": "Samsung",
+        "code": 1497
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 14; STYLO MARVEL Build/UP1A.231005.007) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.7827.91 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "14",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 141,
+      "version": "149.0.7827.91",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "149.0.7827.91"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "Marvel",
+      "brand": {
+        "name": "Stylo",
+        "code": 1621
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 14; FLAT 2C Build/UP1A.231005.007) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.7827.93 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "14",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 141,
+      "version": "149.0.7827.93",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "149.0.7827.93"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "Flat 2C",
+      "brand": {
+        "name": "OSCAL",
+        "code": 1299
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 14; COOLMINTT NIU Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/148.0.7778.215 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "14",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Webview",
+      "code": 162,
+      "version": "148.0.7778.215",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "148.0.7778.215"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "CoolMintt NIU",
+      "brand": {
+        "name": "Mintt",
+        "code": 1090
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; arm_64; Android 15; SO-53D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.148 YaApp_Android/26.60.1 YaSearchBrowser/26.60.1 BroPP/1.0 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "15",
+      "cpuArchitecture": "ARM",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "code": 654,
+      "version": "26.60.1",
+      "engine": {
+        "name": "Blink",
+        "version": "148.0.7778.148"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "Xperia 5 V",
+      "brand": {
+        "name": "Sony",
+        "code": 1589
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; U; Android 16; zh-CN; V2571A Build/BP2A.250605.031.A3_V000L1) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.86 Quark/10.11.5.1090 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "16",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Quark",
+      "code": 500,
+      "version": "10.11.5.1090",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "144.0.7559.86"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "S60",
+      "brand": {
+        "name": "Vivo",
+        "code": 1865
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; U; Android 16; zh-CN; V2520A Build/BP2A.250605.031.A3_V000L1) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/100.0.4896.58 Quark/10.12.3.1098 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "16",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Quark",
+      "code": 500,
+      "version": "10.12.3.1098",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "100.0.4896.58"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "iQOO Neo 11",
+      "brand": {
+        "name": "Vivo",
+        "code": 1865
+      }
+    }
   }
 ]

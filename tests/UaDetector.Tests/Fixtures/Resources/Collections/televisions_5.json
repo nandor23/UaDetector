@@ -8611,5 +8611,113 @@
         "code": 2145
       }
     }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 12; MOBO-Edition Build/SP1A.211105.004; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "12",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Webview",
+      "code": 162,
+      "version": "149.0.7827.91",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "149.0.7827.91"
+      }
+    },
+    "device": {
+      "type": 6,
+      "model": "Mobo Edition",
+      "brand": {
+        "name": "NetBox",
+        "code": 1175
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 11; FlowBox-S2 Build/RTT0.211009.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.159 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "11",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Webview",
+      "code": 162,
+      "version": "149.0.7827.159",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "149.0.7827.159"
+      }
+    },
+    "device": {
+      "type": 6,
+      "model": "FlowBox-S2",
+      "brand": {
+        "name": "flow",
+        "code": 2171
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 14; FlowBox-Z4 Build/UKG3.250826.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "14",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Webview",
+      "code": 162,
+      "version": "149.0.7827.91",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "149.0.7827.91"
+      }
+    },
+    "device": {
+      "type": 6,
+      "model": "FlowBox-Z4",
+      "brand": {
+        "name": "flow",
+        "code": 2171
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 14; FlowBox-Z3 Build/UKG3.250826.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "14",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Webview",
+      "code": 162,
+      "version": "149.0.7827.91",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "149.0.7827.91"
+      }
+    },
+    "device": {
+      "type": 6,
+      "model": "FlowBox-Z3",
+      "brand": {
+        "name": "flow",
+        "code": 2171
+      }
+    }
   }
 ]
