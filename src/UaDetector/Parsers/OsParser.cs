@@ -71,6 +71,8 @@ public sealed partial class OsParser : IOsParser
                     OsCode.AndroidGo,
                     OsCode.HyperOs,
                     OsCode.MyOs,
+                    OsCode.YaOs,
+                    OsCode.YodaOsMaster
                 }.ToFrozenSet()
             },
             {

@@ -4368,9 +4368,8 @@
   {
     "userAgent": "Mozilla/5.0 (Linux; Android 11; YNDX-00095 Build/RD2A.211001.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/24.12.0.453 (lite) TV Safari/537.36",
     "os": {
-      "name": "Android",
-      "code": 2,
-      "version": "11",
+      "name": "YaOS",
+      "code": 212,
       "family": "Android"
     },
     "browser": {
@@ -4394,9 +4393,8 @@
   {
     "userAgent": "Mozilla/5.0 (Linux; Android 11; YNDX-00094 Build/RD2A.211001.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/24.12.0.453 (lite) TV Safari/537.36",
     "os": {
-      "name": "Android",
-      "code": 2,
-      "version": "11",
+      "name": "YaOS",
+      "code": 212,
       "family": "Android"
     },
     "browser": {
@@ -4420,9 +4418,8 @@
   {
     "userAgent": "Mozilla/5.0 (Linux; Android 11; YNDX-00093 Build/RD2A.211001.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/24.12.0.453 (lite) TV Safari/537.36",
     "os": {
-      "name": "Android",
-      "code": 2,
-      "version": "11",
+      "name": "YaOS",
+      "code": 212,
       "family": "Android"
     },
     "browser": {
@@ -8609,6 +8606,38 @@
       "brand": {
         "name": "NIKAI",
         "code": 2145
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 14; FlowBox-F2 Build/UKG3.250518.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/150.0.7871.46 Mobile Safari/537.36",
+    "headers": {
+      "Sec-CH-UA": "\"Not;A=Brand\";v=\"8.0.0.0\", \"Chromium\";v=\"150.0.7871.46\", \"Android WebView\";v=\"150.0.7871.46\"",
+      "Sec-CH-UA-Platform-Version": "14.0.0",
+      "Sec-CH-UA-Model": "FlowBox-F2",
+      "http-x-requested-with": "com.tcl.browser"
+    },
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "14",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "BrowseHere",
+      "code": 83,
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "150.0.7871.46"
+      }
+    },
+    "device": {
+      "type": 6,
+      "model": "FlowBox-F2",
+      "brand": {
+        "name": "flow",
+        "code": 2171
       }
     }
   },

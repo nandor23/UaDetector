@@ -622,9 +622,8 @@
   {
     "userAgent": "Mozilla/5.0 (Linux; Android 9; YandexModule2-00001 Build/PI; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.120 YaBrowser/22.8.0.15 (lite) TV Safari/537.36",
     "os": {
-      "name": "Android",
-      "code": 2,
-      "version": "9",
+      "name": "YaOS",
+      "code": 212,
       "family": "Android"
     },
     "browser": {
@@ -6542,9 +6541,8 @@
   {
     "userAgent": "Mozilla/5.0 (Linux; Android 9; YNDX-00071 Build/PPR2.180905.006.A1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/109.0.5414.117 YaBrowser/22.8.0.15 (lite) TV Safari/537.36",
     "os": {
-      "name": "Android",
-      "code": 2,
-      "version": "9",
+      "name": "YaOS",
+      "code": 212,
       "family": "Android"
     },
     "browser": {
@@ -6568,9 +6566,8 @@
   {
     "userAgent": "Mozilla/5.0 (Linux; Android 9; YNDX-00072 Build/PPR2.180905.006.A1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/109.0.5414.117 YaBrowser/23.1.0.29 (lite) TV Safari/537.36",
     "os": {
-      "name": "Android",
-      "code": 2,
-      "version": "9",
+      "name": "YaOS",
+      "code": 212,
       "family": "Android"
     },
     "browser": {
@@ -14504,9 +14501,8 @@
   {
     "userAgent": "Mozilla/5.0 (Linux; Android 9; YNDX-00073 Build/PPR2.180905.006.A1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/24.1.2.86 (lite) TV Safari/537.36",
     "os": {
-      "name": "Android",
-      "code": 2,
-      "version": "9",
+      "name": "YaOS",
+      "code": 212,
       "family": "Android"
     },
     "browser": {

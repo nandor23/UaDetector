@@ -213,4 +213,7 @@ public static class OsNames
     public const string MyOs = "MyOS";
     public const string FortiOs = "FortiOS";
     public const string SteamOs = "SteamOS";
+    public const string YaOs = "YaOS";
+    public const string YodaOsMaster = "YodaOS-Master";
+
 }
