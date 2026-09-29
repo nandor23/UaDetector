@@ -541,8 +541,8 @@
     "name": "Libsyn"
   },
   {
-    "regex": "AppleCoreMedia/1\\.0\\.0",
-    "name": "iOS Application"
+    "regex": "AppleCoreMedia",
+    "name": "Apple Core Media"
   },
   {
     "regex": "cpp-httplib(?:/(\\d+[.\\d]+))?",

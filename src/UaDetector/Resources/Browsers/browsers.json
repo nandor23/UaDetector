@@ -4037,7 +4037,7 @@
     }
   },
   {
-    "regex": "(?!^AppleCoreMedia/1\\.0\\.0)(?:iPod|(?<!Apple TV; U; CPU )iPhone|iPad)",
+    "regex": "^(?!AppleCoreMedia).*?\\b(?<!Apple-)(?:iPod|(?<!Apple TV; U; CPU )iPhone|iPad)",
     "name": "Mobile Safari",
     "engine": {
       "default": "WebKit"
@@ -4060,7 +4060,7 @@
     }
   },
   {
-    "regex": "Macintosh",
+    "regex": "^(?!AppleCoreMedia).*?\\bMacintosh",
     "name": "Safari",
     "engine": {
       "default": "WebKit"
