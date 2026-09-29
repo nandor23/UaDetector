@@ -8719,5 +8719,100 @@
         "code": 2171
       }
     }
+  },
+  {
+    "userAgent": "H443NM7F8H.CBSSportsApp/1.0 iOS/9.0 model/AppleTV5,3 build/13T393",
+    "os": {
+      "name": "tvOS",
+      "code": 9,
+      "version": "9.0",
+      "cpuArchitecture": "ARM",
+      "family": "iOS"
+    },
+    "device": {
+      "type": 6,
+      "model": "Apple TV 4 HD",
+      "brand": {
+        "name": "Apple",
+        "code": 98
+      }
+    }
+  },
+  {
+    "userAgent": "PrimeVideo/2.9.1 (AppleTV6,2; tvOS 26.4; Scale/2.0)",
+    "os": {
+      "name": "tvOS",
+      "code": 9,
+      "version": "26.4",
+      "cpuArchitecture": "ARM",
+      "family": "iOS"
+    },
+    "client": {
+      "type": 1,
+      "name": "Amazon Prime Video",
+      "version": "2.9.1"
+    },
+    "device": {
+      "type": 6,
+      "model": "Apple TV 4K",
+      "brand": {
+        "name": "Apple",
+        "code": 98
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (AppleTV3,1; CPU OS 11.1 like Mac OS X; en-US)",
+    "os": {
+      "name": "tvOS",
+      "code": 9,
+      "version": "11.1",
+      "cpuArchitecture": "ARM",
+      "family": "iOS"
+    },
+    "device": {
+      "type": 6,
+      "model": "Apple TV 3",
+      "brand": {
+        "name": "Apple",
+        "code": 98
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (AppleTV3,2; CPU OS 11.1 like Mac OS X; en-US)",
+    "os": {
+      "name": "tvOS",
+      "code": 9,
+      "version": "11.1",
+      "cpuArchitecture": "ARM",
+      "family": "iOS"
+    },
+    "device": {
+      "type": 6,
+      "model": "Apple TV 3",
+      "brand": {
+        "name": "Apple",
+        "code": 98
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (AppleTV14,1; CPU OS 26.6 like Mac OS X; en-US)",
+    "os": {
+      "name": "tvOS",
+      "code": 9,
+      "version": "26.6",
+      "cpuArchitecture": "ARM",
+      "family": "iOS"
+    },
+    "device": {
+      "type": 6,
+      "model": "Apple TV 3 4K",
+      "brand": {
+        "name": "Apple",
+        "code": 98
+      }
+    }
   }
 ]

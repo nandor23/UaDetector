@@ -8256,5 +8256,183 @@
       "cpuArchitecture": "x64",
       "family": "Mobile Gaming Console"
     }
+  },
+  {
+    "userAgent": "Safari5525.28.3 CFNetwork/438.12 Darwin/9.7.0 (Power%20Macintosh) (PowerMac10%2C1)",
+    "os": {
+      "name": "Mac",
+      "code": 84,
+      "version": "10.5.7",
+      "family": "Mac"
+    }
+  },
+  {
+    "userAgent": "Safari5525.28.3 CFNetwork/438.12 Darwin/9.7.1 (Power%20Macintosh) (PowerMac10%2C1)",
+    "os": {
+      "name": "Mac",
+      "code": 84,
+      "version": "10.5.7",
+      "family": "Mac"
+    }
+  },
+  {
+    "userAgent": "Safari5525.27.1 CFNetwork/422.15.2 Darwin/9.6.0 (i386) (MacBookPro5%2C1)",
+    "os": {
+      "name": "Mac",
+      "code": 84,
+      "version": "10.5.6",
+      "cpuArchitecture": "x86",
+      "family": "Mac"
+    }
+  },
+  {
+    "userAgent": "Safari5525.27.1 CFNetwork/422.15.2 Darwin/9.6.1 (i386) (MacBookPro5%2C1)",
+    "os": {
+      "name": "Mac",
+      "code": 84,
+      "version": "10.5.6",
+      "cpuArchitecture": "x86",
+      "family": "Mac"
+    }
+  },
+  {
+    "userAgent": "Safari5525.27.1 CFNetwork/422.15.2 Darwin/9.6.2 (i386) (MacBookPro5%2C1)",
+    "os": {
+      "name": "Mac",
+      "code": 84,
+      "version": "10.5.6",
+      "cpuArchitecture": "x86",
+      "family": "Mac"
+    }
+  },
+  {
+    "userAgent": "Safari5525.27.1 CFNetwork/422.15.2 Darwin/9.6.3 (i386) (MacBookPro5%2C1)",
+    "os": {
+      "name": "Mac",
+      "code": 84,
+      "version": "10.5.6",
+      "cpuArchitecture": "x86",
+      "family": "Mac"
+    }
+  },
+  {
+    "userAgent": "Safari/5525.26.12 CFNetwork/339.5 Darwin/9.5.0 (i386) (MacBookPro3,1)",
+    "os": {
+      "name": "Mac",
+      "code": 84,
+      "version": "10.5.5",
+      "cpuArchitecture": "x86",
+      "family": "Mac"
+    }
+  },
+  {
+    "userAgent": "Safari/5525.26.12 CFNetwork/339.5 Darwin/9.5.1 (i386) (MacBookPro3,1)",
+    "os": {
+      "name": "Mac",
+      "code": 84,
+      "version": "10.5.5",
+      "cpuArchitecture": "x86",
+      "family": "Mac"
+    }
+  },
+  {
+    "userAgent": "Safari/5525.26.12 CFNetwork/339.5 Darwin/9.5.2 (i386) (MacBookPro3,1)",
+    "os": {
+      "name": "Mac",
+      "code": 84,
+      "version": "10.5.5",
+      "cpuArchitecture": "x86",
+      "family": "Mac"
+    }
+  },
+  {
+    "userAgent": "Delibar/180 CFNetwork/454.5 Darwin/10.2.0 (i386) (iMac10%2C1)",
+    "os": {
+      "name": "Mac",
+      "code": 84,
+      "version": "10.6.2",
+      "cpuArchitecture": "x86",
+      "family": "Mac"
+    }
+  },
+  {
+    "userAgent": "Integrity/v1.6.2 CFNetwork/454.9.7 Darwin/10.4.0 (i386) (MacBook5%2C2)",
+    "os": {
+      "name": "Mac",
+      "code": 84,
+      "version": "10.6.4",
+      "cpuArchitecture": "x86",
+      "family": "Mac"
+    }
+  },
+  {
+    "userAgent": "Integrity/v1.6.2 CFNetwork/454.9.7 Darwin/10.4.1 (i386) (MacBook5%2C2)",
+    "os": {
+      "name": "Mac",
+      "code": 84,
+      "version": "10.6.4",
+      "cpuArchitecture": "x86",
+      "family": "Mac"
+    }
+  },
+  {
+    "userAgent": "Integrity/v1.6.2 CFNetwork/454.9.7 Darwin/10.4.2 (i386) (MacBook5%2C2)",
+    "os": {
+      "name": "Mac",
+      "code": 84,
+      "version": "10.6.4",
+      "cpuArchitecture": "x86",
+      "family": "Mac"
+    }
+  },
+  {
+    "userAgent": "Integrity/v1.6.2 CFNetwork/454.9.7 Darwin/10.4.3 (i386) (MacBook5%2C2)",
+    "os": {
+      "name": "Mac",
+      "code": 84,
+      "version": "10.6.4",
+      "cpuArchitecture": "x86",
+      "family": "Mac"
+    }
+  },
+  {
+    "userAgent": "Colloquy/4617 CFNetwork/454.11.5 Darwin/10.6.0 (i386) (MacBookPro5%2C2)",
+    "os": {
+      "name": "Mac",
+      "code": 84,
+      "version": "10.6.6",
+      "cpuArchitecture": "x86",
+      "family": "Mac"
+    }
+  },
+  {
+    "userAgent": "Safari/6533.18.5 CFNetwork/454.11.5 Darwin/10.5.0 (i386) (iMac11%2C1)",
+    "os": {
+      "name": "Mac",
+      "code": 84,
+      "version": "10.6.5",
+      "cpuArchitecture": "x86",
+      "family": "Mac"
+    }
+  },
+  {
+    "userAgent": "Leech/2072 CFNetwork/454.11.12 Darwin/10.7.0 (i386) (MacBookAir3%2C2)",
+    "os": {
+      "name": "Mac",
+      "code": 84,
+      "version": "10.6.7",
+      "cpuArchitecture": "x86",
+      "family": "Mac"
+    }
+  },
+  {
+    "userAgent": "Links (0.99; Darwin 11.0.0 x86_64; 77x47)",
+    "os": {
+      "name": "Mac",
+      "code": 84,
+      "version": "10.7",
+      "cpuArchitecture": "x64",
+      "family": "Mac"
+    }
   }
 ]
