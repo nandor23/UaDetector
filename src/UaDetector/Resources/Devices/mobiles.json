@@ -1704,7 +1704,7 @@
     ]
   },
   {
-    "regex": "(?:iTunes-)?Apple[ _]?TV|Apple/|(?:Apple-|iTunes-)?(?<!like )(?:iPad|iPhone)(?!\\: Build/)|iPh(?:[0-9]|1[0-7]),[0-9]|CFNetwork|HomePod|AirPlay|AirPodcasts/|Watch ?OS|Watch1,[12]|MDCR_i?Mac|ICRU_iP(?:ad|hone)|Mac OS X[,;]|OSX/|macOS,|for Apple Watch|nook browser",
+    "regex": "(?:iTunes-)?Apple[ _]?TV|Apple/|(?:Apple-|iTunes-)?(?<!like )(?:iPad|iPhone)(?!\\: Build/)|iPh1?[0-9],[0-9]|CFNetwork|HomePod|AirPlay|AirPodcasts/|Watch ?OS|Watch1,[12]|MDCR_i?Mac|ICRU_iP(?:ad|hone)|Mac OS X[,;]|OSX/|macOS,|for Apple Watch|nook browser",
     "brand": "Apple",
     "modelVariants": [
       {
@@ -1907,17 +1907,27 @@
         "name": "Mac Pro (2010-2012)"
       },
       {
-        "regex": "(?:MDCR_|ICRU_|Apple-)?Mac14(?:%2C|,)8",
+        "regex": "(?:MDCR_|ICRU_|Apple-)?MacPro6(?:%2C|,)1",
         "type": 1,
-        "name": "Mac Pro (2023)"
+        "name": "Mac Pro (2013)"
       },
       {
-        "regex": "(?:MDCR_|ICRU_|Apple-)?iMac5(?:%2C|,)1",
+        "regex": "(?:MDCR_|ICRU_|Apple-)?MacPro7(?:%2C|,)1",
+        "type": 1,
+        "name": "Mac Pro (2019)"
+      },
+      {
+        "regex": "(?:MDCR_|ICRU_|Apple-)?Mac14(?:%2C|,)8",
+        "type": 1,
+        "name": "Mac Pro M2 Ultra (2023)"
+      },
+      {
+        "regex": "(?:MDCR_|ICRU_|Apple-)?iMac[45](?:%2C|,)1",
         "type": 1,
         "name": "iMac (2006)"
       },
       {
-        "regex": "(?:MDCR_|ICRU_|Apple-)?iMac5(?:%2C|,)2",
+        "regex": "(?:MDCR_|ICRU_|Apple-)?iMac[45](?:%2C|,)2",
         "type": 1,
         "name": "iMac 17\" (2006)"
       },
@@ -1997,6 +2007,16 @@
         "name": "iMac 21.5\" (2014)"
       },
       {
+        "regex": "(?:MDCR_|ICRU_|Apple-)?iMac15(?:%2C|,)1",
+        "type": 1,
+        "name": "iMac 27\" (2014-2015)"
+      },
+      {
+        "regex": "(?:MDCR_|ICRU_|Apple-)?iMac16(?:%2C|,)[12]",
+        "type": 1,
+        "name": "iMac 21.5\" (2015)"
+      },
+      {
         "regex": "(?:MDCR_|ICRU_|Apple-)?iMac17(?:%2C|,)1",
         "type": 1,
         "name": "iMac 27\" (2015)"
@@ -2029,12 +2049,17 @@
       {
         "regex": "(?:MDCR_|ICRU_|Apple-)?iMac21(?:%2C|,)[12]",
         "type": 1,
-        "name": "iMac 24\" (2021)"
+        "name": "iMac M1 24\" (2021)"
       },
       {
         "regex": "(?:MDCR_|ICRU_|Apple-)?Mac15(?:%2C|,)[45]",
         "type": 1,
-        "name": "iMac 24\" (2023)"
+        "name": "iMac M3 24\" (2023)"
+      },
+      {
+        "regex": "(?:MDCR_|ICRU_|Apple-)?Mac16(?:%2C|,)[23]",
+        "type": 1,
+        "name": "iMac M4 24\" (2024)"
       },
       {
         "regex": "(?:MDCR_|ICRU_|Apple-)?iMacPro1(?:%2C|,)1",
@@ -2085,6 +2110,11 @@
         "regex": "(?:MDCR_|ICRU_|Apple-)?MacBook9(?:%2C|,)1",
         "type": 1,
         "name": "MacBook 12\" (2016)"
+      },
+      {
+        "regex": "(?:MDCR_|ICRU_|Apple-)?MacBook10(?:%2C|,)1",
+        "type": 1,
+        "name": "MacBook 12\" (2017)"
       },
       {
         "regex": "(?:MDCR_|ICRU_|Apple-)?MacBookAir1(?:%2C|,)1",
@@ -2164,22 +2194,52 @@
       {
         "regex": "(?:MDCR_|ICRU_|Apple-)?MacBookAir10(?:%2C|,)1",
         "type": 1,
-        "name": "MacBook Air 13\" (2020)"
+        "name": "MacBook Air M1 13\" (2020)"
       },
       {
         "regex": "(?:MDCR_|ICRU_|Apple-)?Mac14(?:%2C|,)2",
         "type": 1,
-        "name": "MacBook Air 13\" (2022)"
+        "name": "MacBook Air M2 13\" (2022)"
       },
       {
         "regex": "(?:MDCR_|ICRU_|Apple-)?Mac14(?:%2C|,)15",
         "type": 1,
-        "name": "MacBook Air 15\" (2023)"
+        "name": "MacBook Air M2 15\" (2023)"
       },
       {
         "regex": "(?:MDCR_|ICRU_|Apple-)?Mac15(?:%2C|,)12",
         "type": 1,
-        "name": "MacBook Air 13\" (2024)"
+        "name": "MacBook Air M3 13\" (2024)"
+      },
+      {
+        "regex": "(?:MDCR_|ICRU_|Apple-)?Mac15(?:%2C|,)13",
+        "type": 1,
+        "name": "MacBook Air M3 15\" (2024)"
+      },
+      {
+        "regex": "(?:MDCR_|ICRU_|Apple-)?Mac16(?:%2C|,)12",
+        "type": 1,
+        "name": "MacBook Air M4 13\" (2025)"
+      },
+      {
+        "regex": "(?:MDCR_|ICRU_|Apple-)?Mac16(?:%2C|,)13",
+        "type": 1,
+        "name": "MacBook Air M4 15\" (2025)"
+      },
+      {
+        "regex": "(?:MDCR_|ICRU_|Apple-)?Mac17(?:%2C|,)3",
+        "type": 1,
+        "name": "MacBook Air M5 13\" (2026)"
+      },
+      {
+        "regex": "(?:MDCR_|ICRU_|Apple-)?Mac17(?:%2C|,)4",
+        "type": 1,
+        "name": "MacBook Air M5 15\" (2026)"
+      },
+      {
+        "regex": "(?:MDCR_|ICRU_|Apple-)?Mac17(?:%2C|,)5",
+        "type": 1,
+        "name": "MacBook Neo 13\" (2026)"
       },
       {
         "regex": "(?:MDCR_|ICRU_|Apple-)?MacBookPro1(?:%2C|,)1",
@@ -2329,7 +2389,7 @@
       {
         "regex": "(?:MDCR_|ICRU_|Apple-)?MacBookPro15(?:%2C|,)3",
         "type": 1,
-        "name": "MacBook Pro 15\" (2019)"
+        "name": "MacBook Pro 15\" (2018-2019)"
       },
       {
         "regex": "(?:MDCR_|ICRU_|Apple-)?MacBookPro15(?:%2C|,)4",
@@ -2349,92 +2409,192 @@
       {
         "regex": "(?:MDCR_|ICRU_|Apple-)?MacBookPro17(?:%2C|,)1",
         "type": 1,
-        "name": "MacBook Pro 13\" (2020)"
+        "name": "MacBook Pro M1 13\" (2020)"
       },
       {
         "regex": "(?:MDCR_|ICRU_|Apple-)?Mac14(?:%2C|,)7",
         "type": 1,
-        "name": "MacBook Pro 13\" (2022)"
+        "name": "MacBook Pro M2 13\" (2022)"
       },
       {
-        "regex": "(?:MDCR_|ICRU_|Apple-)?MacBookPro18(?:%2C|,)[12]",
+        "regex": "(?:MDCR_|ICRU_|Apple-)?MacBookPro18(?:%2C|,)1",
         "type": 1,
-        "name": "MacBook Pro 16\" (2021)"
+        "name": "MacBook Pro M1 Pro 16\" (2021)"
       },
       {
-        "regex": "(?:MDCR_|ICRU_|Apple-)?Mac14(?:%2C|,)(?:6|10)",
+        "regex": "(?:MDCR_|ICRU_|Apple-)?MacBookPro18(?:%2C|,)2",
         "type": 1,
-        "name": "MacBook Pro 16\" (2023)"
+        "name": "MacBook Pro M1 Max 16\" (2021)"
       },
       {
-        "regex": "(?:MDCR_|ICRU_|Apple-)?Mac15(?:%2C|,)(?:[79]|11)",
+        "regex": "(?:MDCR_|ICRU_|Apple-)?Mac14(?:%2C|,)10",
         "type": 1,
-        "name": "MacBook Pro 16\" (2023-2024)"
+        "name": "MacBook Pro M2 Pro 16\" (2023)"
       },
       {
-        "regex": "(?:MDCR_|ICRU_|Apple-)?MacBookPro18(?:%2C|,)[34]",
+        "regex": "(?:MDCR_|ICRU_|Apple-)?Mac14(?:%2C|,)6",
         "type": 1,
-        "name": "MacBook Pro 14\" (2021)"
+        "name": "MacBook Pro M2 Max 16\" (2023)"
       },
       {
-        "regex": "(?:MDCR_|ICRU_|Apple-)?Mac14(?:%2C|,)[59]",
+        "regex": "(?:MDCR_|ICRU_|Apple-)?Mac15(?:%2C|,)7",
         "type": 1,
-        "name": "MacBook Pro 14\" (2023)"
+        "name": "MacBook Pro M3 Pro 16\" (2023-2024)"
       },
       {
-        "regex": "(?:MDCR_|ICRU_|Apple-)?Mac15(?:%2C|,)(?:[368]|10)",
+        "regex": "(?:MDCR_|ICRU_|Apple-)?Mac15(?:%2C|,)(?:9|11)",
         "type": 1,
-        "name": "MacBook Pro 14\" (2023-2024)"
+        "name": "MacBook Pro M3 Max 16\" (2023-2024)"
+      },
+      {
+        "regex": "(?:MDCR_|ICRU_|Apple-)?MacBookPro18(?:%2C|,)3",
+        "type": 1,
+        "name": "MacBook Pro M1 Pro 14\" (2021)"
+      },
+      {
+        "regex": "(?:MDCR_|ICRU_|Apple-)?MacBookPro18(?:%2C|,)4",
+        "type": 1,
+        "name": "MacBook Pro M1 Max 14\" (2021)"
+      },
+      {
+        "regex": "(?:MDCR_|ICRU_|Apple-)?Mac14(?:%2C|,)9",
+        "type": 1,
+        "name": "MacBook Pro M2 Pro 14\" (2023)"
+      },
+      {
+        "regex": "(?:MDCR_|ICRU_|Apple-)?Mac14(?:%2C|,)5",
+        "type": 1,
+        "name": "MacBook Pro M2 Max 14\" (2023)"
+      },
+      {
+        "regex": "(?:MDCR_|ICRU_|Apple-)?Mac15(?:%2C|,)3",
+        "type": 1,
+        "name": "MacBook Pro M3 14\" (2023-2024)"
+      },
+      {
+        "regex": "(?:MDCR_|ICRU_|Apple-)?Mac15(?:%2C|,)6",
+        "type": 1,
+        "name": "MacBook Pro M3 Pro 14\" (2023-2024)"
+      },
+      {
+        "regex": "(?:MDCR_|ICRU_|Apple-)?Mac15(?:%2C|,)(?:8|10)",
+        "type": 1,
+        "name": "MacBook Pro M3 Max 14\" (2023-2024)"
+      },
+      {
+        "regex": "(?:MDCR_|ICRU_|Apple-)?Mac16(?:%2C|,)1(?:[);/ ]|$)",
+        "type": 1,
+        "name": "MacBook Pro M4 14\" (2024)"
+      },
+      {
+        "regex": "(?:MDCR_|ICRU_|Apple-)?Mac16(?:%2C|,)8",
+        "type": 1,
+        "name": "MacBook Pro M4 Pro 14\" (2024)"
+      },
+      {
+        "regex": "(?:MDCR_|ICRU_|Apple-)?Mac16(?:%2C|,)7",
+        "type": 1,
+        "name": "MacBook Pro M4 Pro 16\" (2024)"
+      },
+      {
+        "regex": "(?:MDCR_|ICRU_|Apple-)?Mac16(?:%2C|,)6",
+        "type": 1,
+        "name": "MacBook Pro M4 Max 14\" (2024)"
+      },
+      {
+        "regex": "(?:MDCR_|ICRU_|Apple-)?Mac16(?:%2C|,)5",
+        "type": 1,
+        "name": "MacBook Pro M4 Max 16\" (2024)"
+      },
+      {
+        "regex": "(?:MDCR_|ICRU_|Apple-)?Mac17(?:%2C|,)2",
+        "type": 1,
+        "name": "MacBook Pro M5 14\" (2025)"
+      },
+      {
+        "regex": "(?:MDCR_|ICRU_|Apple-)?Mac17(?:%2C|,)9",
+        "type": 1,
+        "name": "MacBook Pro M5 Pro 14\" (2026)"
+      },
+      {
+        "regex": "(?:MDCR_|ICRU_|Apple-)?Mac17(?:%2C|,)8",
+        "type": 1,
+        "name": "MacBook Pro M5 Pro 16\" (2026)"
+      },
+      {
+        "regex": "(?:MDCR_|ICRU_|Apple-)?Mac17(?:%2C|,)7",
+        "type": 1,
+        "name": "MacBook Pro M5 Max 14\" (2026)"
+      },
+      {
+        "regex": "(?:MDCR_|ICRU_|Apple-)?Mac17(?:%2C|,)6",
+        "type": 1,
+        "name": "MacBook Pro M5 Max 16\" (2026)"
       },
       {
         "regex": "(?:MDCR_|ICRU_|Apple-)?Macmini1(?:%2C|,)1",
         "type": 1,
-        "name": "Mac Mini (2006)"
+        "name": "Mac mini (2006)"
       },
       {
         "regex": "(?:MDCR_|ICRU_|Apple-)?Macmini2(?:%2C|,)1",
         "type": 1,
-        "name": "Mac Mini (2007)"
+        "name": "Mac mini (2007)"
       },
       {
         "regex": "(?:MDCR_|ICRU_|Apple-)?Macmini3(?:%2C|,)1",
         "type": 1,
-        "name": "Mac Mini (2009)"
+        "name": "Mac mini (2009)"
       },
       {
         "regex": "(?:MDCR_|ICRU_|Apple-)?Macmini4(?:%2C|,)1",
         "type": 1,
-        "name": "Mac Mini (2010)"
+        "name": "Mac mini (2010)"
       },
       {
         "regex": "(?:MDCR_|ICRU_|Apple-)?Macmini5(?:%2C|,)[123]",
         "type": 1,
-        "name": "Mac Mini (2011)"
+        "name": "Mac mini (2011)"
       },
       {
         "regex": "(?:MDCR_|ICRU_|Apple-)?Macmini6(?:%2C|,)[12]",
         "type": 1,
-        "name": "Mac Mini (2012)"
+        "name": "Mac mini (2012)"
       },
       {
         "regex": "(?:MDCR_|ICRU_|Apple-)?Macmini7(?:%2C|,)1",
         "type": 1,
-        "name": "Mac Mini (2014)"
+        "name": "Mac mini (2014)"
       },
       {
         "regex": "(?:MDCR_|ICRU_|Apple-)?Macmini8(?:%2C|,)1",
         "type": 1,
-        "name": "Mac Mini (2018)"
+        "name": "Mac mini (2018)"
       },
       {
         "regex": "(?:MDCR_|ICRU_|Apple-)?Macmini9(?:%2C|,)1",
         "type": 1,
-        "name": "Mac Mini (2020)"
+        "name": "Mac mini M1 (2020)"
       },
       {
-        "regex": "(?:MDCR_|ICRU_|Apple-)?Mac14(?:%2C|,)(?:3|12)",
+        "regex": "(?:MDCR_|ICRU_|Apple-)?Mac14(?:%2C|,)3",
         "type": 1,
-        "name": "Mac mini (2023)"
+        "name": "Mac mini M2 (2023)"
+      },
+      {
+        "regex": "(?:MDCR_|ICRU_|Apple-)?Mac14(?:%2C|,)12",
+        "type": 1,
+        "name": "Mac mini M2 Pro (2023)"
+      },
+      {
+        "regex": "(?:MDCR_|ICRU_|Apple-)?Mac16(?:%2C|,)10",
+        "type": 1,
+        "name": "Mac mini M4 (2024)"
+      },
+      {
+        "regex": "(?:MDCR_|ICRU_|Apple-)?Mac16(?:%2C|,)11",
+        "type": 1,
+        "name": "Mac mini M4 Pro (2024)"
       },
       {
         "regex": "(?:MDCR_|ICRU_|Apple-)?PowerMac7(?:%2C|,)2",
@@ -2447,14 +2607,19 @@
         "name": "Power Macintosh G5 (2004-2005)"
       },
       {
+        "regex": "(?:MDCR_|ICRU_|Apple-)?PowerMac8(?:%2C|,)1",
+        "type": 1,
+        "name": "iMac G5 (2004)"
+      },
+      {
         "regex": "(?:MDCR_|ICRU_|Apple-)?PowerMac8(?:%2C|,)2",
         "type": 1,
         "name": "iMac G5 (2005)"
       },
       {
-        "regex": "(?:MDCR_|ICRU_|Apple-)?PowerMac10(?:%2C|,)1",
+        "regex": "(?:MDCR_|ICRU_|Apple-)?PowerMac10(?:%2C|,)[12]",
         "type": 1,
-        "name": "Mac Mini G4 (2005)"
+        "name": "Mac mini G4 (2005)"
       },
       {
         "regex": "(?:MDCR_|ICRU_|Apple-)?PowerMac12(?:%2C|,)1",
@@ -2472,14 +2637,34 @@
         "name": "iBook G4 (2005)"
       },
       {
-        "regex": "(?:MDCR_|ICRU_|Apple-)?Mac13(?:%2C|,)[12]",
+        "regex": "(?:MDCR_|ICRU_|Apple-)?Mac13(?:%2C|,)1",
         "type": 1,
-        "name": "Mac Studio (2022)"
+        "name": "Mac Studio M1 Max (2022)"
       },
       {
-        "regex": "(?:MDCR_|ICRU_|Apple-)?Mac14(?:%2C|,)1[34]",
+        "regex": "(?:MDCR_|ICRU_|Apple-)?Mac13(?:%2C|,)2",
         "type": 1,
-        "name": "Mac Studio (2023)"
+        "name": "Mac Studio M1 Ultra (2022)"
+      },
+      {
+        "regex": "(?:MDCR_|ICRU_|Apple-)?Mac14(?:%2C|,)13",
+        "type": 1,
+        "name": "Mac Studio M2 Max (2023)"
+      },
+      {
+        "regex": "(?:MDCR_|ICRU_|Apple-)?Mac14(?:%2C|,)14",
+        "type": 1,
+        "name": "Mac Studio M2 Ultra (2023)"
+      },
+      {
+        "regex": "(?:MDCR_|ICRU_|Apple-)?Mac15(?:%2C|,)14",
+        "type": 1,
+        "name": "Mac Studio M3 Ultra (2025)"
+      },
+      {
+        "regex": "(?:MDCR_|ICRU_|Apple-)?Mac16(?:%2C|,)9",
+        "type": 1,
+        "name": "Mac Studio M4 Max (2025)"
       },
       {
         "regex": "nook browser",
@@ -3078,7 +3263,7 @@
       {
         "regex": "Apple-?TV5[C,_]3|Apple TV 4",
         "type": 6,
-        "name": "Apple TV 4"
+        "name": "Apple TV 4 HD"
       },
       {
         "regex": "Apple-?TV6[C,_]2",
@@ -3088,7 +3273,12 @@
       {
         "regex": "Apple-?TV11[C,_]1",
         "type": 6,
-        "name": "Apple TV 4K (2021)"
+        "name": "Apple TV 2 4K"
+      },
+      {
+        "regex": "Apple-?TV14[C,_]1",
+        "type": 6,
+        "name": "Apple TV 3 4K"
       },
       {
         "regex": "(?:iTunes-)?Apple[ _]?TV",

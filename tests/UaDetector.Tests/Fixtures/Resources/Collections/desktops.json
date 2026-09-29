@@ -7701,7 +7701,7 @@
     },
     "device": {
       "type": 1,
-      "model": "MacBook Air 13\" (2020)",
+      "model": "MacBook Air M1 13\" (2020)",
       "brand": {
         "name": "Apple",
         "code": 98
@@ -8408,7 +8408,7 @@
     },
     "device": {
       "type": 1,
-      "model": "MacBook Pro 15\" (2019)",
+      "model": "MacBook Pro 15\" (2018-2019)",
       "brand": {
         "name": "Apple",
         "code": 98
@@ -8562,7 +8562,7 @@
     },
     "device": {
       "type": 1,
-      "model": "MacBook Pro 13\" (2020)",
+      "model": "MacBook Pro M1 13\" (2020)",
       "brand": {
         "name": "Apple",
         "code": 98
@@ -8734,7 +8734,7 @@
     },
     "device": {
       "type": 1,
-      "model": "Mac Mini (2018)",
+      "model": "Mac mini (2018)",
       "brand": {
         "name": "Apple",
         "code": 98
@@ -8779,7 +8779,7 @@
     },
     "device": {
       "type": 1,
-      "model": "Mac Mini (2014)",
+      "model": "Mac mini (2014)",
       "brand": {
         "name": "Apple",
         "code": 98
@@ -9090,7 +9090,7 @@
     },
     "device": {
       "type": 1,
-      "model": "Mac Mini (2020)",
+      "model": "Mac mini M1 (2020)",
       "brand": {
         "name": "Apple",
         "code": 98
@@ -9744,7 +9744,7 @@
     },
     "device": {
       "type": 1,
-      "model": "MacBook Pro 16\" (2021)",
+      "model": "MacBook Pro M1 Pro 16\" (2021)",
       "brand": {
         "name": "Apple",
         "code": 98
@@ -9766,7 +9766,7 @@
     },
     "device": {
       "type": 1,
-      "model": "MacBook Pro 14\" (2021)",
+      "model": "MacBook Pro M1 Pro 14\" (2021)",
       "brand": {
         "name": "Apple",
         "code": 98
@@ -9788,7 +9788,7 @@
     },
     "device": {
       "type": 1,
-      "model": "MacBook Pro 16\" (2021)",
+      "model": "MacBook Pro M1 Max 16\" (2021)",
       "brand": {
         "name": "Apple",
         "code": 98
@@ -9810,7 +9810,7 @@
     },
     "device": {
       "type": 1,
-      "model": "MacBook Pro 14\" (2021)",
+      "model": "MacBook Pro M1 Max 14\" (2021)",
       "brand": {
         "name": "Apple",
         "code": 98
@@ -9898,7 +9898,7 @@
     },
     "device": {
       "type": 1,
-      "model": "iMac 24\" (2021)",
+      "model": "iMac M1 24\" (2021)",
       "brand": {
         "name": "Apple",
         "code": 98
@@ -9920,7 +9920,7 @@
     },
     "device": {
       "type": 1,
-      "model": "iMac 24\" (2021)",
+      "model": "iMac M1 24\" (2021)",
       "brand": {
         "name": "Apple",
         "code": 98
@@ -10109,6 +10109,7 @@
     "os": {
       "name": "Mac",
       "code": 84,
+      "version": "10.5.7",
       "cpuArchitecture": "x86",
       "family": "Mac"
     },
@@ -10324,7 +10325,7 @@
     },
     "device": {
       "type": 1,
-      "model": "Mac Mini (2006)",
+      "model": "Mac mini (2006)",
       "brand": {
         "name": "Apple",
         "code": 98
@@ -10350,7 +10351,7 @@
     },
     "device": {
       "type": 1,
-      "model": "Mac Mini (2010)",
+      "model": "Mac mini (2010)",
       "brand": {
         "name": "Apple",
         "code": 98
@@ -10376,7 +10377,7 @@
     },
     "device": {
       "type": 1,
-      "model": "Mac Mini (2011)",
+      "model": "Mac mini (2011)",
       "brand": {
         "name": "Apple",
         "code": 98
@@ -10402,7 +10403,7 @@
     },
     "device": {
       "type": 1,
-      "model": "Mac Mini (2012)",
+      "model": "Mac mini (2012)",
       "brand": {
         "name": "Apple",
         "code": 98
@@ -10492,6 +10493,7 @@
     "os": {
       "name": "Mac",
       "code": 84,
+      "version": "10.6.6",
       "cpuArchitecture": "x86",
       "family": "Mac"
     },
@@ -10517,6 +10519,7 @@
     "os": {
       "name": "Mac",
       "code": 84,
+      "version": "10.6.6",
       "cpuArchitecture": "x86",
       "family": "Mac"
     },
@@ -10534,6 +10537,7 @@
     "os": {
       "name": "Mac",
       "code": 84,
+      "version": "10.6.5",
       "cpuArchitecture": "x86",
       "family": "Mac"
     },
@@ -10573,7 +10577,7 @@
     },
     "device": {
       "type": 1,
-      "model": "Mac Mini (2007)",
+      "model": "Mac mini (2007)",
       "brand": {
         "name": "Apple",
         "code": 98
@@ -10585,6 +10589,7 @@
     "os": {
       "name": "Mac",
       "code": 84,
+      "version": "10.6.6",
       "cpuArchitecture": "x86",
       "family": "Mac"
     },
@@ -10598,7 +10603,7 @@
     },
     "device": {
       "type": 1,
-      "model": "Mac Mini (2009)",
+      "model": "Mac mini (2009)",
       "brand": {
         "name": "Apple",
         "code": 98
@@ -10610,6 +10615,7 @@
     "os": {
       "name": "Mac",
       "code": 84,
+      "version": "10.6.2",
       "cpuArchitecture": "x86",
       "family": "Mac"
     },
@@ -10763,6 +10769,7 @@
     "os": {
       "name": "Mac",
       "code": 84,
+      "version": "10.5.7",
       "cpuArchitecture": "x86",
       "family": "Mac"
     },
@@ -10876,7 +10883,7 @@
     },
     "device": {
       "type": 1,
-      "model": "Mac Mini (2011)",
+      "model": "Mac mini (2011)",
       "brand": {
         "name": "Apple",
         "code": 98
@@ -10899,7 +10906,7 @@
     },
     "device": {
       "type": 1,
-      "model": "Mac Mini (2012)",
+      "model": "Mac mini (2012)",
       "brand": {
         "name": "Apple",
         "code": 98
@@ -10935,6 +10942,7 @@
     "os": {
       "name": "Mac",
       "code": 84,
+      "version": "10.5.6",
       "family": "Mac"
     },
     "browser": {
@@ -10959,6 +10967,7 @@
     "os": {
       "name": "Mac",
       "code": 84,
+      "version": "10.5.7",
       "family": "Mac"
     },
     "browser": {
@@ -10971,7 +10980,7 @@
     },
     "device": {
       "type": 1,
-      "model": "Mac Mini G4 (2005)",
+      "model": "Mac mini G4 (2005)",
       "brand": {
         "name": "Apple",
         "code": 98
@@ -10989,7 +10998,7 @@
     },
     "device": {
       "type": 1,
-      "model": "Mac Mini (2011)",
+      "model": "Mac mini (2011)",
       "brand": {
         "name": "Apple",
         "code": 98
@@ -12070,7 +12079,7 @@
     },
     "device": {
       "type": 1,
-      "model": "Mac mini (2023)",
+      "model": "Mac mini M2 (2023)",
       "brand": {
         "name": "Apple",
         "code": 98
@@ -12092,7 +12101,7 @@
     },
     "device": {
       "type": 1,
-      "model": "MacBook Pro 14\" (2023)",
+      "model": "MacBook Pro M2 Pro 14\" (2023)",
       "brand": {
         "name": "Apple",
         "code": 98
@@ -12114,7 +12123,7 @@
     },
     "device": {
       "type": 1,
-      "model": "MacBook Air 13\" (2022)",
+      "model": "MacBook Air M2 13\" (2022)",
       "brand": {
         "name": "Apple",
         "code": 98
@@ -12136,7 +12145,7 @@
     },
     "device": {
       "type": 1,
-      "model": "Mac Studio (2022)",
+      "model": "Mac Studio M1 Max (2022)",
       "brand": {
         "name": "Apple",
         "code": 98
@@ -12158,7 +12167,7 @@
     },
     "device": {
       "type": 1,
-      "model": "Mac Studio (2022)",
+      "model": "Mac Studio M1 Ultra (2022)",
       "brand": {
         "name": "Apple",
         "code": 98
@@ -12180,7 +12189,7 @@
     },
     "device": {
       "type": 1,
-      "model": "Mac Studio (2023)",
+      "model": "Mac Studio M2 Ultra (2023)",
       "brand": {
         "name": "Apple",
         "code": 98
@@ -12202,7 +12211,7 @@
     },
     "device": {
       "type": 1,
-      "model": "MacBook Pro 13\" (2022)",
+      "model": "MacBook Pro M2 13\" (2022)",
       "brand": {
         "name": "Apple",
         "code": 98
@@ -12245,7 +12254,7 @@
     },
     "device": {
       "type": 1,
-      "model": "MacBook Pro 14\" (2023)",
+      "model": "MacBook Pro M2 Max 14\" (2023)",
       "brand": {
         "name": "Apple",
         "code": 98
@@ -12267,7 +12276,7 @@
     },
     "device": {
       "type": 1,
-      "model": "MacBook Pro 16\" (2023)",
+      "model": "MacBook Pro M2 Max 16\" (2023)",
       "brand": {
         "name": "Apple",
         "code": 98
@@ -12289,7 +12298,7 @@
     },
     "device": {
       "type": 1,
-      "model": "MacBook Pro 16\" (2023)",
+      "model": "MacBook Pro M2 Pro 16\" (2023)",
       "brand": {
         "name": "Apple",
         "code": 98
@@ -12311,7 +12320,7 @@
     },
     "device": {
       "type": 1,
-      "model": "Mac mini (2023)",
+      "model": "Mac mini M2 Pro (2023)",
       "brand": {
         "name": "Apple",
         "code": 98
@@ -12333,7 +12342,7 @@
     },
     "device": {
       "type": 1,
-      "model": "MacBook Air 15\" (2023)",
+      "model": "MacBook Air M2 15\" (2023)",
       "brand": {
         "name": "Apple",
         "code": 98
@@ -12355,7 +12364,7 @@
     },
     "device": {
       "type": 1,
-      "model": "Mac Studio (2023)",
+      "model": "Mac Studio M2 Max (2023)",
       "brand": {
         "name": "Apple",
         "code": 98
@@ -12377,7 +12386,7 @@
     },
     "device": {
       "type": 1,
-      "model": "Mac Pro (2023)",
+      "model": "Mac Pro M2 Ultra (2023)",
       "brand": {
         "name": "Apple",
         "code": 98
@@ -12399,7 +12408,7 @@
     },
     "device": {
       "type": 1,
-      "model": "iMac 24\" (2023)",
+      "model": "iMac M3 24\" (2023)",
       "brand": {
         "name": "Apple",
         "code": 98
@@ -12421,7 +12430,7 @@
     },
     "device": {
       "type": 1,
-      "model": "iMac 24\" (2023)",
+      "model": "iMac M3 24\" (2023)",
       "brand": {
         "name": "Apple",
         "code": 98
@@ -12443,7 +12452,7 @@
     },
     "device": {
       "type": 1,
-      "model": "MacBook Pro 16\" (2023-2024)",
+      "model": "MacBook Pro M3 Pro 16\" (2023-2024)",
       "brand": {
         "name": "Apple",
         "code": 98
@@ -12465,7 +12474,7 @@
     },
     "device": {
       "type": 1,
-      "model": "MacBook Pro 16\" (2023-2024)",
+      "model": "MacBook Pro M3 Max 16\" (2023-2024)",
       "brand": {
         "name": "Apple",
         "code": 98
@@ -12487,7 +12496,7 @@
     },
     "device": {
       "type": 1,
-      "model": "MacBook Pro 16\" (2023-2024)",
+      "model": "MacBook Pro M3 Max 16\" (2023-2024)",
       "brand": {
         "name": "Apple",
         "code": 98
@@ -12509,7 +12518,7 @@
     },
     "device": {
       "type": 1,
-      "model": "MacBook Pro 14\" (2023-2024)",
+      "model": "MacBook Pro M3 14\" (2023-2024)",
       "brand": {
         "name": "Apple",
         "code": 98
@@ -12531,7 +12540,7 @@
     },
     "device": {
       "type": 1,
-      "model": "MacBook Pro 14\" (2023-2024)",
+      "model": "MacBook Pro M3 Pro 14\" (2023-2024)",
       "brand": {
         "name": "Apple",
         "code": 98
@@ -12553,7 +12562,7 @@
     },
     "device": {
       "type": 1,
-      "model": "MacBook Pro 14\" (2023-2024)",
+      "model": "MacBook Pro M3 Max 14\" (2023-2024)",
       "brand": {
         "name": "Apple",
         "code": 98
@@ -12575,7 +12584,7 @@
     },
     "device": {
       "type": 1,
-      "model": "MacBook Pro 14\" (2023-2024)",
+      "model": "MacBook Pro M3 Max 14\" (2023-2024)",
       "brand": {
         "name": "Apple",
         "code": 98
@@ -13002,7 +13011,701 @@
     },
     "device": {
       "type": 1,
-      "model": "MacBook Air 13\" (2024)",
+      "model": "MacBook Air M3 13\" (2024)",
+      "brand": {
+        "name": "Apple",
+        "code": 98
+      }
+    }
+  },
+  {
+    "userAgent": "Microsoft Office Excel/16.43.1108 (Mac OS/12.7.6; Desktop; es-MX; NonAppStore; Apple/MacPro6,1)",
+    "os": {
+      "name": "Mac",
+      "code": 84,
+      "version": "12.7.6",
+      "family": "Mac"
+    },
+    "client": {
+      "type": 1,
+      "name": "Microsoft Office Excel",
+      "version": "16.43.1108"
+    },
+    "device": {
+      "type": 1,
+      "model": "Mac Pro (2013)",
+      "brand": {
+        "name": "Apple",
+        "code": 98
+      }
+    }
+  },
+  {
+    "userAgent": "Microsoft Office Excel/16.43.1108 (Mac OS/26.7.0; Desktop; es-MX; NonAppStore; Apple/MacPro7,1)",
+    "os": {
+      "name": "Mac",
+      "code": 84,
+      "version": "26.7.0",
+      "family": "Mac"
+    },
+    "client": {
+      "type": 1,
+      "name": "Microsoft Office Excel",
+      "version": "16.43.1108"
+    },
+    "device": {
+      "type": 1,
+      "model": "Mac Pro (2019)",
+      "brand": {
+        "name": "Apple",
+        "code": 98
+      }
+    }
+  },
+  {
+    "userAgent": "Microsoft Office Excel/16.98.608 (Mac OS/26.5.2; Desktop; en-US; AppStore; Apple/Mac15,13)",
+    "os": {
+      "name": "Mac",
+      "code": 84,
+      "version": "26.5.2",
+      "family": "Mac"
+    },
+    "client": {
+      "type": 1,
+      "name": "Microsoft Office Excel",
+      "version": "16.98.608"
+    },
+    "device": {
+      "type": 1,
+      "model": "MacBook Air M3 15\" (2024)",
+      "brand": {
+        "name": "Apple",
+        "code": 98
+      }
+    }
+  },
+  {
+    "userAgent": "Microsoft Office Excel/16.98.608 (Mac OS/26.5.2; Desktop; en-US; AppStore; Apple/Mac15,14)",
+    "os": {
+      "name": "Mac",
+      "code": 84,
+      "version": "26.5.2",
+      "family": "Mac"
+    },
+    "client": {
+      "type": 1,
+      "name": "Microsoft Office Excel",
+      "version": "16.98.608"
+    },
+    "device": {
+      "type": 1,
+      "model": "Mac Studio M3 Ultra (2025)",
+      "brand": {
+        "name": "Apple",
+        "code": 98
+      }
+    }
+  },
+  {
+    "userAgent": "Microsoft Office Excel/16.106.302 (Mac OS/15.7.3; Desktop; en-US; AppStore; Apple/Mac16,1)",
+    "os": {
+      "name": "Mac",
+      "code": 84,
+      "version": "15.7.3",
+      "family": "Mac"
+    },
+    "client": {
+      "type": 1,
+      "name": "Microsoft Office Excel",
+      "version": "16.106.302"
+    },
+    "device": {
+      "type": 1,
+      "model": "MacBook Pro M4 14\" (2024)",
+      "brand": {
+        "name": "Apple",
+        "code": 98
+      }
+    }
+  },
+  {
+    "userAgent": "Microsoft Office PowerPoint/16.112.821 (Mac OS/26.5.2; Desktop; en-US; AppStore; Apple/Mac16,2)",
+    "os": {
+      "name": "Mac",
+      "code": 84,
+      "version": "26.5.2",
+      "family": "Mac"
+    },
+    "client": {
+      "type": 1,
+      "name": "Microsoft Office PowerPoint",
+      "version": "16.112.821"
+    },
+    "device": {
+      "type": 1,
+      "model": "iMac M4 24\" (2024)",
+      "brand": {
+        "name": "Apple",
+        "code": 98
+      }
+    }
+  },
+  {
+    "userAgent": "Microsoft Office Excel/16.112.817 (Mac OS/15.3.1; Desktop; en-US; NonAppStore; Apple/Mac16,3)",
+    "os": {
+      "name": "Mac",
+      "code": 84,
+      "version": "15.3.1",
+      "family": "Mac"
+    },
+    "client": {
+      "type": 1,
+      "name": "Microsoft Office Excel",
+      "version": "16.112.817"
+    },
+    "device": {
+      "type": 1,
+      "model": "iMac M4 24\" (2024)",
+      "brand": {
+        "name": "Apple",
+        "code": 98
+      }
+    }
+  },
+  {
+    "userAgent": "Microsoft Office PowerPoint/16.112.821 (Mac OS/26.5.2; Desktop; en-US; AppStore; Apple/Mac16,5)",
+    "os": {
+      "name": "Mac",
+      "code": 84,
+      "version": "26.5.2",
+      "family": "Mac"
+    },
+    "client": {
+      "type": 1,
+      "name": "Microsoft Office PowerPoint",
+      "version": "16.112.821"
+    },
+    "device": {
+      "type": 1,
+      "model": "MacBook Pro M4 Max 16\" (2024)",
+      "brand": {
+        "name": "Apple",
+        "code": 98
+      }
+    }
+  },
+  {
+    "userAgent": "Microsoft Office PowerPoint/16.111.726 (Mac OS/26.6.2; Desktop; en-US; AppStore; Apple/Mac16,6)",
+    "os": {
+      "name": "Mac",
+      "code": 84,
+      "version": "26.6.2",
+      "family": "Mac"
+    },
+    "client": {
+      "type": 1,
+      "name": "Microsoft Office PowerPoint",
+      "version": "16.111.726"
+    },
+    "device": {
+      "type": 1,
+      "model": "MacBook Pro M4 Max 14\" (2024)",
+      "brand": {
+        "name": "Apple",
+        "code": 98
+      }
+    }
+  },
+  {
+    "userAgent": "Microsoft Office Outlook/16.100.824 (Mac OS/15.6.1; Desktop; en-US; NonAppStore; Apple/Mac16,7)",
+    "os": {
+      "name": "Mac",
+      "code": 84,
+      "version": "15.6.1",
+      "family": "Mac"
+    },
+    "client": {
+      "type": 5,
+      "name": "Microsoft Outlook",
+      "version": "16.100.824"
+    },
+    "device": {
+      "type": 1,
+      "model": "MacBook Pro M4 Pro 16\" (2024)",
+      "brand": {
+        "name": "Apple",
+        "code": 98
+      }
+    }
+  },
+  {
+    "userAgent": "Microsoft Office PowerPoint/16.111.726 (Mac OS/26.6.2; Desktop; en-US; AppStore; Apple/Mac16,8)",
+    "os": {
+      "name": "Mac",
+      "code": 84,
+      "version": "26.6.2",
+      "family": "Mac"
+    },
+    "client": {
+      "type": 1,
+      "name": "Microsoft Office PowerPoint",
+      "version": "16.111.726"
+    },
+    "device": {
+      "type": 1,
+      "model": "MacBook Pro M4 Pro 14\" (2024)",
+      "brand": {
+        "name": "Apple",
+        "code": 98
+      }
+    }
+  },
+  {
+    "userAgent": "Microsoft Office PowerPoint/16.111.726 (Mac OS/26.6.2; Desktop; en-US; AppStore; Apple/Mac16,9)",
+    "os": {
+      "name": "Mac",
+      "code": 84,
+      "version": "26.6.2",
+      "family": "Mac"
+    },
+    "client": {
+      "type": 1,
+      "name": "Microsoft Office PowerPoint",
+      "version": "16.111.726"
+    },
+    "device": {
+      "type": 1,
+      "model": "Mac Studio M4 Max (2025)",
+      "brand": {
+        "name": "Apple",
+        "code": 98
+      }
+    }
+  },
+  {
+    "userAgent": "Microsoft Office Excel/16.103.1109 (Mac OS/26.3.1; Desktop; en-US; AppStore; Apple/Mac16,10)",
+    "os": {
+      "name": "Mac",
+      "code": 84,
+      "version": "26.3.1",
+      "family": "Mac"
+    },
+    "client": {
+      "type": 1,
+      "name": "Microsoft Office Excel",
+      "version": "16.103.1109"
+    },
+    "device": {
+      "type": 1,
+      "model": "Mac mini M4 (2024)",
+      "brand": {
+        "name": "Apple",
+        "code": 98
+      }
+    }
+  },
+  {
+    "userAgent": "Microsoft Office Excel/16.112.817 (Mac OS/26.5.1; Desktop; en-US; AppStore; Apple/Mac16,11)",
+    "os": {
+      "name": "Mac",
+      "code": 84,
+      "version": "26.5.1",
+      "family": "Mac"
+    },
+    "client": {
+      "type": 1,
+      "name": "Microsoft Office Excel",
+      "version": "16.112.817"
+    },
+    "device": {
+      "type": 1,
+      "model": "Mac mini M4 Pro (2024)",
+      "brand": {
+        "name": "Apple",
+        "code": 98
+      }
+    }
+  },
+  {
+    "userAgent": "Microsoft Office Excel/16.112.817 (Mac OS/26.5.2; Desktop; en-US; AppStore; Apple/Mac16,12)",
+    "os": {
+      "name": "Mac",
+      "code": 84,
+      "version": "26.5.2",
+      "family": "Mac"
+    },
+    "client": {
+      "type": 1,
+      "name": "Microsoft Office Excel",
+      "version": "16.112.817"
+    },
+    "device": {
+      "type": 1,
+      "model": "MacBook Air M4 13\" (2025)",
+      "brand": {
+        "name": "Apple",
+        "code": 98
+      }
+    }
+  },
+  {
+    "userAgent": "Microsoft Office Excel/16.112.817 (Mac OS/26.6.2; Desktop; en-US; AppStore; Apple/Mac16,13)",
+    "os": {
+      "name": "Mac",
+      "code": 84,
+      "version": "26.6.2",
+      "family": "Mac"
+    },
+    "client": {
+      "type": 1,
+      "name": "Microsoft Office Excel",
+      "version": "16.112.817"
+    },
+    "device": {
+      "type": 1,
+      "model": "MacBook Air M4 15\" (2025)",
+      "brand": {
+        "name": "Apple",
+        "code": 98
+      }
+    }
+  },
+  {
+    "userAgent": "Microsoft Office Excel/16.112.821 (Mac OS/27.0; Desktop; en-US; AppStore; Apple/Mac17,2)",
+    "os": {
+      "name": "Mac",
+      "code": 84,
+      "version": "27.0",
+      "family": "Mac"
+    },
+    "client": {
+      "type": 1,
+      "name": "Microsoft Office Excel",
+      "version": "16.112.821"
+    },
+    "device": {
+      "type": 1,
+      "model": "MacBook Pro M5 14\" (2025)",
+      "brand": {
+        "name": "Apple",
+        "code": 98
+      }
+    }
+  },
+  {
+    "userAgent": "Microsoft Office Excel/16.112.821 (Mac OS/26.4; Desktop; en-US; AppStore; Apple/Mac17,3)",
+    "os": {
+      "name": "Mac",
+      "code": 84,
+      "version": "26.4",
+      "family": "Mac"
+    },
+    "client": {
+      "type": 1,
+      "name": "Microsoft Office Excel",
+      "version": "16.112.821"
+    },
+    "device": {
+      "type": 1,
+      "model": "MacBook Air M5 13\" (2026)",
+      "brand": {
+        "name": "Apple",
+        "code": 98
+      }
+    }
+  },
+  {
+    "userAgent": "Microsoft Office Excel/16.112.821 (Mac OS/26.5.2; Desktop; en-US; AppStore; Apple/Mac17,4)",
+    "os": {
+      "name": "Mac",
+      "code": 84,
+      "version": "26.5.2",
+      "family": "Mac"
+    },
+    "client": {
+      "type": 1,
+      "name": "Microsoft Office Excel",
+      "version": "16.112.821"
+    },
+    "device": {
+      "type": 1,
+      "model": "MacBook Air M5 15\" (2026)",
+      "brand": {
+        "name": "Apple",
+        "code": 98
+      }
+    }
+  },
+  {
+    "userAgent": "Microsoft Office PowerPoint/16.112.817 (Mac OS/26.4.1; Desktop; en-US; NonAppStore; Apple/Mac17,5)",
+    "os": {
+      "name": "Mac",
+      "code": 84,
+      "version": "26.4.1",
+      "family": "Mac"
+    },
+    "client": {
+      "type": 1,
+      "name": "Microsoft Office PowerPoint",
+      "version": "16.112.817"
+    },
+    "device": {
+      "type": 1,
+      "model": "MacBook Neo 13\" (2026)",
+      "brand": {
+        "name": "Apple",
+        "code": 98
+      }
+    }
+  },
+  {
+    "userAgent": "Microsoft Office Excel/16.111.719 (Mac OS/26.4; Desktop; en-US; AppStore; Apple/Mac17,6)",
+    "os": {
+      "name": "Mac",
+      "code": 84,
+      "version": "26.4",
+      "family": "Mac"
+    },
+    "client": {
+      "type": 1,
+      "name": "Microsoft Office Excel",
+      "version": "16.111.719"
+    },
+    "device": {
+      "type": 1,
+      "model": "MacBook Pro M5 Max 16\" (2026)",
+      "brand": {
+        "name": "Apple",
+        "code": 98
+      }
+    }
+  },
+  {
+    "userAgent": "Microsoft Office Excel/16.111.719 (Mac OS/26.4; Desktop; en-US; AppStore; Apple/Mac17,7)",
+    "os": {
+      "name": "Mac",
+      "code": 84,
+      "version": "26.4",
+      "family": "Mac"
+    },
+    "client": {
+      "type": 1,
+      "name": "Microsoft Office Excel",
+      "version": "16.111.719"
+    },
+    "device": {
+      "type": 1,
+      "model": "MacBook Pro M5 Max 14\" (2026)",
+      "brand": {
+        "name": "Apple",
+        "code": 98
+      }
+    }
+  },
+  {
+    "userAgent": "Microsoft Office Excel/16.111.719 (Mac OS/26.4; Desktop; en-US; AppStore; Apple/Mac17,8)",
+    "os": {
+      "name": "Mac",
+      "code": 84,
+      "version": "26.4",
+      "family": "Mac"
+    },
+    "client": {
+      "type": 1,
+      "name": "Microsoft Office Excel",
+      "version": "16.111.719"
+    },
+    "device": {
+      "type": 1,
+      "model": "MacBook Pro M5 Pro 16\" (2026)",
+      "brand": {
+        "name": "Apple",
+        "code": 98
+      }
+    }
+  },
+  {
+    "userAgent": "Microsoft Office Excel/16.111.719 (Mac OS/26.4; Desktop; en-US; AppStore; Apple/Mac17,9)",
+    "os": {
+      "name": "Mac",
+      "code": 84,
+      "version": "26.4",
+      "family": "Mac"
+    },
+    "client": {
+      "type": 1,
+      "name": "Microsoft Office Excel",
+      "version": "16.111.719"
+    },
+    "device": {
+      "type": 1,
+      "model": "MacBook Pro M5 Pro 14\" (2026)",
+      "brand": {
+        "name": "Apple",
+        "code": 98
+      }
+    }
+  },
+  {
+    "userAgent": "Microsoft Office Excel/16.46.212 (Mac OS/11.7.11; Desktop; en-US; NonAppStore; Apple/iMac15,1)",
+    "os": {
+      "name": "Mac",
+      "code": 84,
+      "version": "11.7.11",
+      "family": "Mac"
+    },
+    "client": {
+      "type": 1,
+      "name": "Microsoft Office Excel",
+      "version": "16.46.212"
+    },
+    "device": {
+      "type": 1,
+      "model": "iMac 27\" (2014-2015)",
+      "brand": {
+        "name": "Apple",
+        "code": 98
+      }
+    }
+  },
+  {
+    "userAgent": "Microsoft Office Excel/16.46.212 (Mac OS/12.7.6; Desktop; en-US; NonAppStore; Apple/iMac16,1)",
+    "os": {
+      "name": "Mac",
+      "code": 84,
+      "version": "12.7.6",
+      "family": "Mac"
+    },
+    "client": {
+      "type": 1,
+      "name": "Microsoft Office Excel",
+      "version": "16.46.212"
+    },
+    "device": {
+      "type": 1,
+      "model": "iMac 21.5\" (2015)",
+      "brand": {
+        "name": "Apple",
+        "code": 98
+      }
+    }
+  },
+  {
+    "userAgent": "Microsoft Office Excel/16.46.212 (Mac OS/12.7.6; Desktop; en-US; NonAppStore; Apple/iMac16,2)",
+    "os": {
+      "name": "Mac",
+      "code": 84,
+      "version": "12.7.6",
+      "family": "Mac"
+    },
+    "client": {
+      "type": 1,
+      "name": "Microsoft Office Excel",
+      "version": "16.46.212"
+    },
+    "device": {
+      "type": 1,
+      "model": "iMac 21.5\" (2015)",
+      "brand": {
+        "name": "Apple",
+        "code": 98
+      }
+    }
+  },
+  {
+    "userAgent": "Microsoft Office Excel/16.46.212 (Mac OS/10.6.8; Desktop; en-US; NonAppStore; Apple/iMac4,1)",
+    "os": {
+      "name": "Mac",
+      "code": 84,
+      "version": "10.6.8",
+      "family": "Mac"
+    },
+    "client": {
+      "type": 1,
+      "name": "Microsoft Office Excel",
+      "version": "16.46.212"
+    },
+    "device": {
+      "type": 1,
+      "model": "iMac (2006)",
+      "brand": {
+        "name": "Apple",
+        "code": 98
+      }
+    }
+  },
+  {
+    "userAgent": "Microsoft Office Excel/16.46.212 (Mac OS/10.6.8; Desktop; en-US; NonAppStore; Apple/iMac4,2)",
+    "os": {
+      "name": "Mac",
+      "code": 84,
+      "version": "10.6.8",
+      "family": "Mac"
+    },
+    "client": {
+      "type": 1,
+      "name": "Microsoft Office Excel",
+      "version": "16.46.212"
+    },
+    "device": {
+      "type": 1,
+      "model": "iMac 17\" (2006)",
+      "brand": {
+        "name": "Apple",
+        "code": 98
+      }
+    }
+  },
+  {
+    "userAgent": "Microsoft Office PowerPoint/16.93.112 (Mac OS/13.7.2; Desktop; en-US; AppStore; Apple/MacBook10,1)",
+    "os": {
+      "name": "Mac",
+      "code": 84,
+      "version": "13.7.2",
+      "family": "Mac"
+    },
+    "client": {
+      "type": 1,
+      "name": "Microsoft Office PowerPoint",
+      "version": "16.93.112"
+    },
+    "device": {
+      "type": 1,
+      "model": "MacBook 12\" (2017)",
+      "brand": {
+        "name": "Apple",
+        "code": 98
+      }
+    }
+  },
+  {
+    "userAgent": "Integrityv1.4.2 CFNetwork/438.12 Darwin/9.7.0 (Power%20Macintosh) (PowerMac10%2C2)",
+    "os": {
+      "name": "Mac",
+      "code": 84,
+      "version": "10.5.7",
+      "family": "Mac"
+    },
+    "device": {
+      "type": 1,
+      "model": "Mac mini G4 (2005)",
+      "brand": {
+        "name": "Apple",
+        "code": 98
+      }
+    }
+  },
+  {
+    "userAgent": "BusyCal1.640 CFNetwork/438.16 Darwin/9.8.0 (Power%20Macintosh) (PowerMac8%2C1)",
+    "os": {
+      "name": "Mac",
+      "code": 84,
+      "version": "10.5.8",
+      "family": "Mac"
+    },
+    "device": {
+      "type": 1,
+      "model": "iMac G5 (2004)",
       "brand": {
         "name": "Apple",
         "code": 98
