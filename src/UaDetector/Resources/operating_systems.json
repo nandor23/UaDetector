@@ -1,5 +1,13 @@
 [
   {
+    "regex": "RES102(?:[);/ ]|$)",
+    "name": "YodaOS-Master"
+  },
+  {
+    "regex": "(?:YNDX-|Yandex).+ TV",
+    "name": "YaOS"
+  },
+  {
     "regex": "Steam",
     "name": "SteamOS"
   },

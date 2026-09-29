@@ -241,6 +241,9 @@ public static class OsRegistry
         { OsCode.MyOs, OsNames.MyOs },
         { OsCode.FortiOs, OsNames.FortiOs },
         { OsCode.SteamOs, OsNames.SteamOs },
+        { OsCode.YaOs, OsNames.YaOs },
+        { OsCode.YodaOsMaster, OsNames.YodaOsMaster },
+
     }.ToFrozenDictionary();
 
     private static readonly FrozenDictionary<string, OsCode> OsNameMappings = OsCodeMappings

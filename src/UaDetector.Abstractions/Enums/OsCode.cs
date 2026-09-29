@@ -213,4 +213,6 @@ public enum OsCode
     MyOs = 209,
     FortiOs = 210,
     SteamOs = 211,
+    YaOs = 212,
+    YodaOsMaster = 213,
 }

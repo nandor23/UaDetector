@@ -6372,9 +6372,8 @@
   {
     "userAgent": "Mozilla/5.0 (Linux; Android 11; YNDX-00076 Build/RD2A.211001.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/24.1.2.279 (lite) TV Safari/537.36",
     "os": {
-      "name": "Android",
-      "code": 2,
-      "version": "11",
+      "name": "YaOS",
+      "code": 212,
       "family": "Android"
     },
     "browser": {
@@ -6398,9 +6397,8 @@
   {
     "userAgent": "Mozilla/5.0 (Linux; Android 11; YNDX-00074 Build/RD2A.211001.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/24.1.2.279 (lite) TV Safari/537.36",
     "os": {
-      "name": "Android",
-      "code": 2,
-      "version": "11",
+      "name": "YaOS",
+      "code": 212,
       "family": "Android"
     },
     "browser": {
