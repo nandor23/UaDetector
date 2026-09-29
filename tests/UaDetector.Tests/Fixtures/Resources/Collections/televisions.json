@@ -1652,7 +1652,7 @@
     },
     "client": {
       "type": 3,
-      "name": "iOS Application"
+      "name": "Apple Core Media"
     },
     "device": {
       "type": 6,
@@ -9598,7 +9598,7 @@
     },
     "client": {
       "type": 3,
-      "name": "iOS Application"
+      "name": "Apple Core Media"
     },
     "device": {
       "type": 6,
@@ -9620,7 +9620,7 @@
     },
     "client": {
       "type": 3,
-      "name": "iOS Application"
+      "name": "Apple Core Media"
     },
     "device": {
       "type": 6,
