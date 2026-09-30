@@ -2205,7 +2205,7 @@ public static class BrandRegistry
         { BrandCode.BastyonMobi, BrandNames.BastyonMobi },
         { BrandCode.Damasco, BrandNames.Damasco },
         { BrandCode.Flow, BrandNames.Flow },
-        { BrandCode.Haitech, BrandNames.Haitech},
+        { BrandCode.Haitech, BrandNames.Haitech },
         { BrandCode.Lenix, BrandNames.Lenix },
         { BrandCode.LoopDl, BrandNames.LoopDl },
         { BrandCode.Redbeat, BrandNames.Redbeat },
@@ -2213,6 +2213,11 @@ public static class BrandRegistry
         { BrandCode.Tiok, BrandNames.Tiok },
         { BrandCode.TwlMobile, BrandNames.TwlMobile },
         { BrandCode.UltraXPrivacy, BrandNames.UltraXPrivacy },
+        { BrandCode.Homez, BrandNames.Homez },
+        { BrandCode.Nadco, BrandNames.Nadco },
+        { BrandCode.StarTrack, BrandNames.StarTrack },
+        { BrandCode.Telezone, BrandNames.Telezone },
+        { BrandCode.Von, BrandNames.Von },
     }.ToFrozenDictionary();
 
     internal static readonly FrozenDictionary<string, BrandCode> BrandNameMappings =

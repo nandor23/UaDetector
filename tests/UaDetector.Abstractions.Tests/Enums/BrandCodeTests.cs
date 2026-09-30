@@ -2200,6 +2200,11 @@ public class BrandCodeTests
             { BrandCode.Tiok, 2177 },
             { BrandCode.TwlMobile, 2178 },
             { BrandCode.UltraXPrivacy, 2179 },
+            { BrandCode.Homez, 2180 },
+            { BrandCode.Nadco, 2181 },
+            { BrandCode.StarTrack, 2182 },
+            { BrandCode.Telezone, 2183 },
+            { BrandCode.Von, 2184 },
         };
 
         expectedValues.Count.ShouldBe(Enum.GetValues<BrandCode>().Length);

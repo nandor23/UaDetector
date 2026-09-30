@@ -2181,4 +2181,9 @@ public enum BrandCode
     Tiok = 2177,
     TwlMobile = 2178,
     UltraXPrivacy = 2179,
+    Homez = 2180,
+    Nadco = 2181,
+    StarTrack = 2182,
+    Telezone = 2183,
+    Von = 2184,
 }

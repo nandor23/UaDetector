@@ -72,7 +72,7 @@ public sealed partial class OsParser : IOsParser
                     OsCode.HyperOs,
                     OsCode.MyOs,
                     OsCode.YaOs,
-                    OsCode.YodaOsMaster
+                    OsCode.YodaOsMaster,
                 }.ToFrozenSet()
             },
             {
