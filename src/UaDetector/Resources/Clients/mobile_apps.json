@@ -683,7 +683,7 @@
   },
   {
     "regex": "RoboForm/(\\d+[.\\d]+) CFNetwork",
-    "name": "RoboForm"
+    "name": "RoboForm Passwort Manager"
   },
   {
     "regex": "Slack/(\\d+[.\\d]+) CFNetwork",
@@ -3082,6 +3082,10 @@
     "regex": "boohee/([\\d.]+)",
     "name": "boohee",
     "version": "$1"
+  },
+  {
+    "regex": "dogtorance/[\\d.]+",
+    "name": "Dogtorance"
   },
   {
     "regex": " (?!(?:AppleWebKit|brave|Cypress|Franz|Mailspring|Notion|Basecamp|Evernote|catalyst|ramboxpro|BlueMail|BeakerBrowser|Dezor|TweakStyle|Colibri|Polypane|Singlebox|Skye|VibeMate|(?:d|LT|Glass|Sushi|Flash|OhHai)Browser|Sizzy))([a-z0-9]*)(?:-desktop|-electron-app)?/(\\d+\\.[\\d.]+).*Electron/",
