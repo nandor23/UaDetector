@@ -10627,5 +10627,30 @@
         "code": 202
       }
     }
+  },
+  {
+    "userAgent": "Dalvik/2.1.0 (Linux; U; Android 13; Pulla Build/TP1A.220624.014)",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "13",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Android Browser",
+      "code": 49,
+      "family": "Android Browser",
+      "engine": {
+        "name": "WebKit"
+      }
+    },
+    "device": {
+      "type": 3,
+      "model": "Pulla",
+      "brand": {
+        "name": "Hot Pepper",
+        "code": 745
+      }
+    }
   }
 ]

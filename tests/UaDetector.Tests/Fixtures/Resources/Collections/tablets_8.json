@@ -14460,7 +14460,7 @@
     },
     "device": {
       "type": 3,
-      "model": "Ares A8",
+      "model": "Ares 8",
       "brand": {
         "name": "NextBook",
         "code": 1195
@@ -14487,7 +14487,7 @@
     },
     "device": {
       "type": 3,
-      "model": "Ares A10",
+      "model": "Ares 10A",
       "brand": {
         "name": "NextBook",
         "code": 1195

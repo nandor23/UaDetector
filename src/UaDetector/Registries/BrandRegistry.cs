@@ -2218,6 +2218,7 @@ public static class BrandRegistry
         { BrandCode.StarTrack, BrandNames.StarTrack },
         { BrandCode.Telezone, BrandNames.Telezone },
         { BrandCode.Von, BrandNames.Von },
+        { BrandCode.Kaicom, BrandNames.Kaicom },
     }.ToFrozenDictionary();
 
     internal static readonly FrozenDictionary<string, BrandCode> BrandNameMappings =

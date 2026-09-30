@@ -2186,4 +2186,5 @@ public static class BrandNames
     public const string StarTrack = "Star Track";
     public const string Telezone = "Telezone";
     public const string Von = "Von";
+    public const string Kaicom = "Kaicom";
 }

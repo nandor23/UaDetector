@@ -2186,4 +2186,5 @@ public enum BrandCode
     StarTrack = 2182,
     Telezone = 2183,
     Von = 2184,
+    Kaicom = 2185,
 }
