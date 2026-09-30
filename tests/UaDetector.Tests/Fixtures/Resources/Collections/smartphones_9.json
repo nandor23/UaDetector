@@ -6502,10 +6502,10 @@
     },
     "device": {
       "type": 2,
-      "model": "PH350",
+      "model": "PH350B",
       "brand": {
-        "name": "Mpman",
-        "code": 1129
+        "name": "Philco",
+        "code": 1336
       }
     }
   },
