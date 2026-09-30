@@ -683,7 +683,7 @@
   },
   {
     "regex": "RoboForm/(\\d+[.\\d]+) CFNetwork",
-    "name": "RoboForm"
+    "name": "RoboForm Passwort Manager"
   },
   {
     "regex": "Slack/(\\d+[.\\d]+) CFNetwork",
