@@ -255,7 +255,7 @@
     "name": "AOSC OS"
   },
   {
-    "regex": "SerenityOS|Ladybird/",
+    "regex": "SerenityOS",
     "name": "SerenityOS"
   },
   {

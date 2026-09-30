@@ -5204,10 +5204,19 @@
   {
     "userAgent": "Mozilla/5.0 (Linux; x86_64) Ladybird/1.0",
     "os": {
-      "name": "SerenityOS",
-      "code": 145,
+      "name": "GNU/Linux",
+      "code": 73,
       "cpuArchitecture": "x64",
       "family": "GNU/Linux"
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Ladybird/1.0 Chrome/146.0.0.0 AppleWebKit/537.36 Safari/537.36",
+    "os": {
+      "name": "Mac",
+      "code": 84,
+      "version": "10.15.7",
+      "family": "Mac"
     }
   },
   {
