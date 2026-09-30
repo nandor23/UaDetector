@@ -9877,5 +9877,416 @@
         "code": 1865
       }
     }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 17; SCG41) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.7922.200 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "17",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 141,
+      "version": "151.0.7922.200",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "151.0.7922.200"
+      }
+    },
+    "device": {
+      "type": 11,
+      "model": "Galaxy Z Fold 8",
+      "brand": {
+        "name": "Samsung",
+        "code": 1497
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 17; SM-F9710 Build/CP2A.260605.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/147.0.7727.137 Mobile Safari/537.36 Lark/7.73.11 LarkLocale/zh_CN ChannelName/Feishu appid/482431; appname/Feishu;",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "17",
+      "family": "Android"
+    },
+    "client": {
+      "type": 1,
+      "name": "Lark",
+      "version": "7.73.11"
+    },
+    "device": {
+      "type": 11,
+      "model": "Galaxy Z Fold 8",
+      "brand": {
+        "name": "Samsung",
+        "code": 1497
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 17; SM-F971B Build/CP2A.260605.016; en-in) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.66 Mobile Safari/537.36 Puffin/10.5.1.70541AP",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "17",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Puffin Web Browser",
+      "code": 453,
+      "version": "10.5.1.70541",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "87.0.4280.66"
+      }
+    },
+    "device": {
+      "type": 11,
+      "model": "Galaxy Z Fold 8",
+      "brand": {
+        "name": "Samsung",
+        "code": 1497
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 17; SM-F971N Build/CP2A.260605.016; ko-kr) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.66 Mobile Safari/537.36 Puffin/10.5.1.70541AP",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "17",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Puffin Web Browser",
+      "code": 453,
+      "version": "10.5.1.70541",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "87.0.4280.66"
+      }
+    },
+    "device": {
+      "type": 11,
+      "model": "Galaxy Z Fold 8",
+      "brand": {
+        "name": "Samsung",
+        "code": 1497
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 17; SM-F971Q Build/CP2A.260605.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/151.0.7922.199 Mobile Safari/537.36 Sleipnir/3.8.5",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "17",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Sleipnir",
+      "code": 543,
+      "version": "3.8.5",
+      "engine": {
+        "name": "Blink",
+        "version": "151.0.7922.199"
+      }
+    },
+    "device": {
+      "type": 11,
+      "model": "Galaxy Z Fold 8",
+      "brand": {
+        "name": "Samsung",
+        "code": 1497
+      }
+    }
+  },
+  {
+    "userAgent": "Callpod Keeper for Android 1.0 (app 18.0.10.147101/14710101) Dalvik/2.1.0 (Linux; U; Android 17; SM-F971U Build/CP2A.260605.016)",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "17",
+      "family": "Android"
+    },
+    "client": {
+      "type": 1,
+      "name": "Keeper",
+      "version": "18.0.10.147101"
+    },
+    "device": {
+      "type": 11,
+      "model": "Galaxy Z Fold 8",
+      "brand": {
+        "name": "Samsung",
+        "code": 1497
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 17; SM-F971U1 Build/CP2A.260605.016; en-us) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.66 Mobile Safari/537.36 Puffin/10.5.1.70541AP",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "17",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Puffin Web Browser",
+      "code": 453,
+      "version": "10.5.1.70541",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "87.0.4280.66"
+      }
+    },
+    "device": {
+      "type": 11,
+      "model": "Galaxy Z Fold 8",
+      "brand": {
+        "name": "Samsung",
+        "code": 1497
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 17; SM-F971W Build/CP2A.260605.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/150.0.7871.181 Safari/537.36 Flipboard/4.3.61/5514,4.3.61.5514",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "17",
+      "family": "Android"
+    },
+    "client": {
+      "type": 1,
+      "name": "Flipboard App",
+      "version": "4.3.61"
+    },
+    "device": {
+      "type": 11,
+      "model": "Galaxy Z Fold 8",
+      "brand": {
+        "name": "Samsung",
+        "code": 1497
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 17; SM-F971C Build/CP2A.260605.016) AppleWebKit/537.36 (KHTML, like Gecko) Ojxvms/4.0 Chrome/150.0.7871.182 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "17",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Webview",
+      "code": 162,
+      "version": "150.0.7871.182",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "150.0.7871.182"
+      }
+    },
+    "device": {
+      "type": 11,
+      "model": "Galaxy Z Fold 8",
+      "brand": {
+        "name": "Samsung",
+        "code": 1497
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 16; SM-F9660 Build/BP2A.250605.031.A3; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.21 Safari/537.36 Xiaoyuzhou/2.99.1 Android/16 StatusBarHeight/89 xyzTheme/defaultLight",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "16",
+      "family": "Android"
+    },
+    "client": {
+      "type": 1,
+      "name": "XiaoYuZhou",
+      "version": "2.99.1"
+    },
+    "device": {
+      "type": 11,
+      "model": "Galaxy Z Fold 7",
+      "brand": {
+        "name": "Samsung",
+        "code": 1497
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 16; SM-F966B Build/BP2A.250605.031.A3; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.109 Mobile Grindr/26.1.0",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "16",
+      "family": "Android"
+    },
+    "client": {
+      "type": 1,
+      "name": "Grindr",
+      "version": "26.1.0"
+    },
+    "device": {
+      "type": 11,
+      "model": "Galaxy Z Fold 7",
+      "brand": {
+        "name": "Samsung",
+        "code": 1497
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 16; SM-F966N; BP2A.250605.031.A3; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/145.0.7632.120 Mobile Safari/537.36 Viber/27.4.0.0",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "16",
+      "family": "Android"
+    },
+    "client": {
+      "type": 1,
+      "name": "Viber",
+      "version": "27.4.0.0"
+    },
+    "device": {
+      "type": 11,
+      "model": "Galaxy Z Fold 7",
+      "brand": {
+        "name": "Samsung",
+        "code": 1497
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 16; SM-F966Q Build/BP4A.251205.006; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/151.0.7922.85 Mobile Safari/537.36 Sleipnir/3.8.5",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "16",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Sleipnir",
+      "code": 543,
+      "version": "3.8.5",
+      "engine": {
+        "name": "Blink",
+        "version": "151.0.7922.85"
+      }
+    },
+    "device": {
+      "type": 11,
+      "model": "Galaxy Z Fold 7",
+      "brand": {
+        "name": "Samsung",
+        "code": 1497
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 16; SM-F966U Build/BP2A.250605.031.A3; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.90 Mobile Grindr/26.0.1",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "16",
+      "family": "Android"
+    },
+    "client": {
+      "type": 1,
+      "name": "Grindr",
+      "version": "26.0.1"
+    },
+    "device": {
+      "type": 11,
+      "model": "Galaxy Z Fold 7",
+      "brand": {
+        "name": "Samsung",
+        "code": 1497
+      }
+    }
+  },
+  {
+    "userAgent": "iHeartRadio/10.59.0 (Android 16; SM-F966U1 Build/BP2A.250605.031.A3)",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "16",
+      "family": "Android"
+    },
+    "client": {
+      "type": 1,
+      "name": "iHeartRadio",
+      "version": "10.59.0"
+    },
+    "device": {
+      "type": 11,
+      "model": "Galaxy Z Fold 7",
+      "brand": {
+        "name": "Samsung",
+        "code": 1497
+      }
+    }
+  },
+  {
+    "userAgent": "Callpod Keeper for Android 1.0 (app 17.5.10.146301/14630101) Dalvik/2.1.0 (Linux; U; Android 16; SM-F966W Build/BP4A.251205.006)",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "16",
+      "family": "Android"
+    },
+    "client": {
+      "type": 1,
+      "name": "Keeper",
+      "version": "17.5.10.146301"
+    },
+    "device": {
+      "type": 11,
+      "model": "Galaxy Z Fold 7",
+      "brand": {
+        "name": "Samsung",
+        "code": 1497
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 16; SM-F966Z Build/BP4A.251205.006; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/151.0.7922.199 Mobile Safari/537.36 Sleipnir/3.8.5",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "16",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Sleipnir",
+      "code": 543,
+      "version": "3.8.5",
+      "engine": {
+        "name": "Blink",
+        "version": "151.0.7922.199"
+      }
+    },
+    "device": {
+      "type": 11,
+      "model": "Galaxy Z Fold 7",
+      "brand": {
+        "name": "Samsung",
+        "code": 1497
+      }
+    }
   }
 ]

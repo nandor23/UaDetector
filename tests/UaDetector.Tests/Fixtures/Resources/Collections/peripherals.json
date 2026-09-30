@@ -2651,5 +2651,27 @@
         "code": 2174
       }
     }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 9; K901 Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/138.0.7204.179 Mobile Safari/537.36 Line/15.2.1/IAB",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "9",
+      "family": "Android"
+    },
+    "client": {
+      "type": 1,
+      "name": "Line",
+      "version": "15.2.1"
+    },
+    "device": {
+      "type": 14,
+      "model": "K901",
+      "brand": {
+        "name": "Kaicom",
+        "code": 2185
+      }
+    }
   }
 ]

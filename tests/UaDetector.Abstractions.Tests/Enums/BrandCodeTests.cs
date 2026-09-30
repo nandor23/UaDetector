@@ -2205,6 +2205,7 @@ public class BrandCodeTests
             { BrandCode.StarTrack, 2182 },
             { BrandCode.Telezone, 2183 },
             { BrandCode.Von, 2184 },
+            { BrandCode.Kaicom, 2185 },
         };
 
         expectedValues.Count.ShouldBe(Enum.GetValues<BrandCode>().Length);
