@@ -385,5 +385,21 @@
       "name": "Mail Master",
       "version": "6.22.1"
     }
+  },
+  {
+    "userAgent": "Apple-iPhone WorxMail/19.5.5-29 (LENOVOLENOVOTBX704L; 7.1.1)",
+    "client": {
+      "type": 5,
+      "name": "Citrix Secure Mail",
+      "version": "19.5.5"
+    }
+  },
+  {
+    "userAgent": "Android/4.4.4 BLACKBERRY-WorkConnect/3.0",
+    "client": {
+      "type": 5,
+      "name": "BlackBerry Work",
+      "version": "3.0"
+    }
   }
 ]

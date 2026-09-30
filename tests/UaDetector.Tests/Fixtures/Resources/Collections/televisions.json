@@ -9640,6 +9640,10 @@
       "cpuArchitecture": "ARM",
       "family": "iOS"
     },
+    "client": {
+      "type": 1,
+      "name": "FOX Sports GO"
+    },
     "device": {
       "type": 6,
       "model": "Apple TV",

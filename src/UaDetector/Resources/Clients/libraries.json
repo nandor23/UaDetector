@@ -315,7 +315,7 @@
     "version": "$1"
   },
   {
-    "regex": "aria2(?:/(\\d+[.\\d]+))?",
+    "regex": "aria2(?!App)(?:/(\\d+[.\\d]+))?",
     "name": "Aria2",
     "version": "$1"
   },
