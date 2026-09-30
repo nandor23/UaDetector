@@ -526,6 +526,11 @@
     "version": "$1"
   },
   {
+    "regex": "Callpod Keeper for Android 1.0 \\((?:app )?([\\d.]+)/",
+    "name": "Keeper",
+    "version": "$1"
+  },
+  {
     "regex": "Skyeng Teachers/([\\d.]+)",
     "name": "Skyeng Teachers",
     "version": "$1"
@@ -3081,6 +3086,39 @@
   {
     "regex": "boohee/([\\d.]+)",
     "name": "boohee",
+    "version": "$1"
+  },
+  {
+    "regex": "FOX Sports GO",
+    "name": "FOX Sports GO"
+  },
+  {
+    "regex": "Lotus Notes Traveler (?:Nokia|WM) ([\\d.]+)|SyncML(?: HTTP)? Client",
+    "name": "Lotus Notes Traveler",
+    "version": "$1"
+  },
+  {
+    "regex": "newsbreak/([\\d.]+)",
+    "name": "NewsBreak",
+    "version": "$1"
+  },
+  {
+    "regex": "Grindr/([\\d.]+)",
+    "name": "Grindr",
+    "version": "$1"
+  },
+  {
+    "regex": "Aria2App/([\\d.]+)",
+    "name": "Aria2App",
+    "version": "$1"
+  },
+  {
+    "regex": "com\\.sidhbalitech\\.ninexplayer",
+    "name": "XP IPTV"
+  },
+  {
+    "regex": "Xiaoyuzhou/([\\d.]+)",
+    "name": "XiaoYuZhou",
     "version": "$1"
   },
   {
