@@ -711,5 +711,10 @@
   {
     "regex": "nscurl",
     "name": "nscurl"
+  },
+  {
+    "regex": "ocaml-cohttp/(\\d+[.\\d]+)",
+    "name": "ocaml-cohttp",
+    "version": "$1"
   }
 ]
