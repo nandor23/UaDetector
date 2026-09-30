@@ -8843,5 +8843,213 @@
         "code": 98
       }
     }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) Chr0me/68.0.3440.106 Safari/537.36 LG Browser/8.00.00(LGE; HZ50UHDWOS; 04.50.63; 0x00000001; DTV_C20P); webOS.TV-2020; LG NetCast.TV-2013 Compatible (LGE, HZ50UHDWOS, wireless)",
+    "os": {
+      "name": "webOS",
+      "code": 186,
+      "version": "5",
+      "family": "Other Mobile"
+    },
+    "browser": {
+      "name": "LG Browser",
+      "code": 328,
+      "version": "8.00.00",
+      "engine": {
+        "name": "Blink",
+        "version": "68.0.3440.106"
+      }
+    },
+    "device": {
+      "type": 6,
+      "model": "HZ50UHDWOS",
+      "brand": {
+        "name": "Homez",
+        "code": 2180
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) Chr0me/68.0.3440.106 Safari/537.36 LG Browser/8.00.00(LGE; LS75UHDNF; 04.50.63; 0x00000001; DTV_C20P); webOS.TV-2020; LG NetCast.TV-2013 Compatible (LGE, LS75UHDNF, wired)",
+    "os": {
+      "name": "webOS",
+      "code": 186,
+      "version": "5",
+      "family": "Other Mobile"
+    },
+    "browser": {
+      "name": "LG Browser",
+      "code": 328,
+      "version": "8.00.00",
+      "engine": {
+        "name": "Blink",
+        "version": "68.0.3440.106"
+      }
+    },
+    "device": {
+      "type": 6,
+      "model": "LS75UHDNF",
+      "brand": {
+        "name": "Linsar",
+        "code": 987
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) Chr0me/87.0.4280.88 Safari/537.36 LG Browser/8.00.00(LGE; NC-65T4K-SMART; 04.42.26; 0x00000001; DTV_C22P); webOS.TV-2022; LG NetCast.TV-2013 Compatible (LGE, NC-65T4K-SMART, wireless)",
+    "os": {
+      "name": "webOS",
+      "code": 186,
+      "version": "22",
+      "family": "Other Mobile"
+    },
+    "browser": {
+      "name": "LG Browser",
+      "code": 328,
+      "version": "8.00.00",
+      "engine": {
+        "name": "Blink",
+        "version": "87.0.4280.88"
+      }
+    },
+    "device": {
+      "type": 6,
+      "model": "NC-65T4K-SMART",
+      "brand": {
+        "name": "Nadco",
+        "code": 2181
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) Chr0me/94.0.4606.128 Safari/537.36 LG Browser/8.00.00(LGE; 43FSV22; 03.11.77; 0x00000001; DTV_C23L); webOS.TV-2022; LG NetCast.TV-2013 Compatible (LGE, 43FSV22, wireless)",
+    "os": {
+      "name": "webOS",
+      "code": 186,
+      "version": "23",
+      "family": "Other Mobile"
+    },
+    "browser": {
+      "name": "LG Browser",
+      "code": 328,
+      "version": "8.00.00",
+      "engine": {
+        "name": "Blink",
+        "version": "94.0.4606.128"
+      }
+    },
+    "device": {
+      "type": 6,
+      "model": "43FSV22",
+      "brand": {
+        "name": "Ssmart",
+        "code": 2110
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) Chr0me/87.0.4280.88 Safari/537.36 LG Browser/8.00.00(LGE; ST50K-LG2200WEB; 04.42.26; 0x00000001; DTV_C22P); webOS.TV-2022; LG NetCast.TV-2013 Compatible (LGE, ST50K-LG2200WEB, wireless)",
+    "os": {
+      "name": "webOS",
+      "code": 186,
+      "version": "22",
+      "family": "Other Mobile"
+    },
+    "browser": {
+      "name": "LG Browser",
+      "code": 328,
+      "version": "8.00.00",
+      "engine": {
+        "name": "Blink",
+        "version": "87.0.4280.88"
+      }
+    },
+    "device": {
+      "type": 6,
+      "model": "ST50K-LG2200WEB",
+      "brand": {
+        "name": "Star Track",
+        "code": 2182
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) Chr0me/87.0.4280.88 Safari/537.36 LG Browser/8.00.00(LGE; TZ50WF1; 04.42.26; 0x00000001; DTV_C22P); webOS.TV-2022; LG NetCast.TV-2013 Compatible (LGE, TZ50WF1, wireless)",
+    "os": {
+      "name": "webOS",
+      "code": 186,
+      "version": "22",
+      "family": "Other Mobile"
+    },
+    "browser": {
+      "name": "LG Browser",
+      "code": 328,
+      "version": "8.00.00",
+      "engine": {
+        "name": "Blink",
+        "version": "87.0.4280.88"
+      }
+    },
+    "device": {
+      "type": 6,
+      "model": "TZ50WF1",
+      "brand": {
+        "name": "Telezone",
+        "code": 2183
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) Chr0me/94.0.4606.128 Safari/537.36 LG Browser/8.00.00(LGE; TVTOKHF32WB; 03.11.77; 0x00000001; DTV_C23L); webOS.TV-2022; LG NetCast.TV-2013 Compatible (LGE, TVTOKHF32WB, wireless)",
+    "os": {
+      "name": "webOS",
+      "code": 186,
+      "version": "23",
+      "family": "Other Mobile"
+    },
+    "browser": {
+      "name": "LG Browser",
+      "code": 328,
+      "version": "8.00.00",
+      "engine": {
+        "name": "Blink",
+        "version": "94.0.4606.128"
+      }
+    },
+    "device": {
+      "type": 6,
+      "model": "TVTOKHF32WB",
+      "brand": {
+        "name": "TOKYO",
+        "code": 1723
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) Chr0me/87.0.4280.88 Safari/537.36 LG Browser/8.00.00(LGE; VEL55USVW; 04.42.26; 0x00000001; DTV_C22P); webOS.TV-2022; LG NetCast.TV-2013 Compatible (LGE, VEL55USVW, wireless)",
+    "os": {
+      "name": "webOS",
+      "code": 186,
+      "version": "22",
+      "family": "Other Mobile"
+    },
+    "browser": {
+      "name": "LG Browser",
+      "code": 328,
+      "version": "8.00.00",
+      "engine": {
+        "name": "Blink",
+        "version": "87.0.4280.88"
+      }
+    },
+    "device": {
+      "type": 6,
+      "model": "VEL55USVW",
+      "brand": {
+        "name": "Von",
+        "code": 2184
+      }
+    }
   }
 ]

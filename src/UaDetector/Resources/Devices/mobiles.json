@@ -76964,6 +76964,54 @@
     "model": "$1"
   },
   {
+    "regex": "(HZ50UHDWOS)(?:[);/ ]|$)",
+    "brand": "Homez",
+    "type": 6,
+    "model": "$1"
+  },
+  {
+    "regex": "(LS75UHDNF)(?:[);/ ]|$)",
+    "brand": "Linsar",
+    "type": 6,
+    "model": "$1"
+  },
+  {
+    "regex": "(NC-65T4K-SMART)(?:[);/ ]|$)",
+    "brand": "Nadco",
+    "type": 6,
+    "model": "$1"
+  },
+  {
+    "regex": "(43FSV22)(?:[);/ ]|$)",
+    "brand": "Ssmart",
+    "type": 6,
+    "model": "$1"
+  },
+  {
+    "regex": "(ST50K-LG2200WEB)(?:[);/ ]|$)",
+    "brand": "Star Track",
+    "type": 6,
+    "model": "$1"
+  },
+  {
+    "regex": "(TZ50WF1)(?:[);/ ]|$)",
+    "brand": "Telezone",
+    "type": 6,
+    "model": "$1"
+  },
+  {
+    "regex": "(TVTOKHF32WB)(?:[);/ ]|$)",
+    "brand": "TOKYO",
+    "type": 6,
+    "model": "$1"
+  },
+  {
+    "regex": "(VEL55USVW)(?:[);/ ]|$)",
+    "brand": "Von",
+    "type": 6,
+    "model": "$1"
+  },
+  {
     "regex": "CUD (GO) (2024)",
     "brand": "CUD",
     "type": 2,

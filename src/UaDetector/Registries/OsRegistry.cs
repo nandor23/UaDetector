@@ -243,7 +243,6 @@ public static class OsRegistry
         { OsCode.SteamOs, OsNames.SteamOs },
         { OsCode.YaOs, OsNames.YaOs },
         { OsCode.YodaOsMaster, OsNames.YodaOsMaster },
-
     }.ToFrozenDictionary();
 
     private static readonly FrozenDictionary<string, OsCode> OsNameMappings = OsCodeMappings

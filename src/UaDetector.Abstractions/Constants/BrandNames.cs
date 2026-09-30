@@ -2181,4 +2181,9 @@ public static class BrandNames
     public const string Tiok = "TIOK";
     public const string TwlMobile = "TWL Mobile";
     public const string UltraXPrivacy = "UltraX Privacy";
+    public const string Homez = "Homez";
+    public const string Nadco = "Nadco";
+    public const string StarTrack = "Star Track";
+    public const string Telezone = "Telezone";
+    public const string Von = "Von";
 }
