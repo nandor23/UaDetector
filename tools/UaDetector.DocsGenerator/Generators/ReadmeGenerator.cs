@@ -14,7 +14,7 @@ public static class ReadmeGenerator
         foreach (var collector in collectors)
         {
             var data = collector.CollectData();
-            var section = SupportedListGenerator.Generate(collector.Title, data);
+            var section = SupportedListGenerator.Generate(data);
             modifiedReadme = modifiedReadme.ReplaceMarkerContent(collector.MarkerName, section);
         }
 

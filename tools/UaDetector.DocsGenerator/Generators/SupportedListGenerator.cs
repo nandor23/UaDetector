@@ -2,7 +2,7 @@ namespace UaDetector.DocsGenerator.Generators;
 
 public static class SupportedListGenerator
 {
-    public static string Generate(string title, IEnumerable<string> items)
+    public static string Generate(IEnumerable<string> items)
     {
         var itemsList = items.OrderBy(x => x, StringComparer.OrdinalIgnoreCase).ToList();
         var count = itemsList.Count;
@@ -11,7 +11,7 @@ public static class SupportedListGenerator
         return $"""
 
 
-            **{count}** {title.ToLower()} supported:
+            **{count}** supported
 
             {content}
 
