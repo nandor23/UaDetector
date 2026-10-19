@@ -1,6 +1,6 @@
 namespace UaDetector.DocsGenerator.Generators;
 
-public static class CollapsibleSectionGenerator
+public static class SupportedListGenerator
 {
     public static string Generate(string title, IEnumerable<string> items)
     {
@@ -9,13 +9,13 @@ public static class CollapsibleSectionGenerator
         var content = string.Join(", ", itemsList);
 
         return $"""
-            <details>
-            <summary><strong>{count}</strong> {title.ToLower()} supported (click to expand)</summary>
-            <br>
+
+
+            **{count}** {title.ToLower()} supported:
 
             {content}
 
-            </details>
+
             """;
     }
 }
