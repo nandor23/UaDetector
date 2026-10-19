@@ -16,6 +16,8 @@
       Include="Microsoft.CodeAnalysis.CSharp.SourceGenerators.Testing"
       Version="1.1.4"
     />
+    <!-- Overrides vulnerable transitive version from Microsoft.CodeAnalysis.Analyzer.Testing -->
+    <PackageVersion Include="System.Security.Cryptography.Pkcs" Version="10.0.13" />
   </ItemGroup>
   <ItemGroup Label="STJ runtime dependencies for source generator">
     <PackageVersion Include="System.Text.Json" Version="10.0.11" />
