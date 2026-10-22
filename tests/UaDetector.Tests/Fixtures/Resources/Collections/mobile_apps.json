@@ -36,7 +36,7 @@
     },
     "device": {
       "type": 2,
-      "model": "iPhone",
+      "model": "iPhone 4",
       "brand": {
         "name": "Apple",
         "code": 98
