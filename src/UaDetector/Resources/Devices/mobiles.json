@@ -2691,7 +2691,7 @@
         "name": "iPhone 3GS"
       },
       {
-        "regex": "(?:MDCR_|ICRU_|Apple-)?iPh(?:one)?3[C,_][123]",
+        "regex": "(?:MDCR_|ICRU_|Apple-)?iPh(?:one)?3[C,_][123]|iPhone_4$",
         "type": 2,
         "name": "iPhone 4"
       },
