@@ -238,6 +238,11 @@
     "version": "$1"
   },
   {
+    "regex": "WhatsApp/([\\d.]+) N$",
+    "name": "WhatsApp Web",
+    "version": "$1"
+  },
+  {
     "regex": "WhatsApp(?:Electron|\\-app|\\-linux-app)?(?:[ /]([\\d.]+))?",
     "name": "WhatsApp",
     "version": "$1"

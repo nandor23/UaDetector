@@ -3670,5 +3670,13 @@
       "type": 1,
       "name": "Dogtorance"
     }
+  },
+  {
+    "userAgent": "WhatsApp/2.2236.3 N",
+    "client": {
+      "type": 1,
+      "name": "WhatsApp Web",
+      "version": "2.2236.3"
+    }
   }
 ]
