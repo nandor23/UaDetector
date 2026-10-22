@@ -46940,7 +46940,7 @@
     ]
   },
   {
-    "regex": "SHARP(?!_2|1)|SBM|SH-?[0-9]+[a-z]?(?:[);/ ]|$)|AQUOS|(?:SH-T01|SH-(?:M0[14-9]|M1[1-7]|M19s|M2[4569]|M33)(?:-y)?|S[357]-SH|SH-[MZ]([12]0|01|22)|SH-C0[3-6]|SH-[CL]02|SH-RM(?:1[1258]|02)|SH-R?M19s?|SH-R10A|[34]04SH|401SH|[45]02SH|306SH|[36]05SH|70[1246]SH|80[138]SH|90[1678]SH|50[3679]SH|SHL2[1235]|SHV4[0-8]|SHV3[1-9](?:[-_]u)?|FS80(?:1[08]|32|28|0[29])|TG-L900S|NP601SH|403SH|603SH|SHF3[1-4]|SHV4[035][-_]u|SW001SH|SHG0[1-9]|X4-SH|A002SH|DM-01[JH]|A[01]01SH|606SH|FS801[56]|d-41A|d-51C|NP80[567]SH|NP501SH|A00[34]SH|A102SH|IS05|SH-(?:S50|53A|51B|[HDA]01|01FDQ|S40P)|LP-0[12]|FS8014|SBM00[35]SH|SBM103SH|A10[345]SH|lineage_ss2|LCD_xxSUFOC475A|A20[1248]SH|FS802[56]|ADS1|STTM21VAPP|NPA205SH|SHG10|SHT21|A30[12]SH)(?:[);/ ]|$)",
+    "regex": "SHARP(?!_2|1)|SBM(?!-safety)|SH-?[0-9]+[a-z]?(?:[);/ ]|$)|AQUOS|(?:SH-T01|SH-(?:M0[14-9]|M1[1-7]|M19s|M2[4569]|M33)(?:-y)?|S[357]-SH|SH-[MZ]([12]0|01|22)|SH-C0[3-6]|SH-[CL]02|SH-RM(?:1[1258]|02)|SH-R?M19s?|SH-R10A|[34]04SH|401SH|[45]02SH|306SH|[36]05SH|70[1246]SH|80[138]SH|90[1678]SH|50[3679]SH|SHL2[1235]|SHV4[0-8]|SHV3[1-9](?:[-_]u)?|FS80(?:1[08]|32|28|0[29])|TG-L900S|NP601SH|403SH|603SH|SHF3[1-4]|SHV4[035][-_]u|SW001SH|SHG0[1-9]|X4-SH|A002SH|DM-01[JH]|A[01]01SH|606SH|FS801[56]|d-41A|d-51C|NP80[567]SH|NP501SH|A00[34]SH|A102SH|IS05|SH-(?:S50|53A|51B|[HDA]01|01FDQ|S40P)|LP-0[12]|FS8014|SBM00[35]SH|SBM103SH|A10[345]SH|lineage_ss2|LCD_xxSUFOC475A|A20[1248]SH|FS802[56]|ADS1|STTM21VAPP|NPA205SH|SHG10|SHT21|A30[12]SH)(?:[);/ ]|$)",
     "brand": "Sharp",
     "type": 2,
     "modelVariants": [
@@ -53177,7 +53177,7 @@
     ]
   },
   {
-    "regex": "Xiaomi(?!/(?:Miui|Mint )Browser)| ONC(?: Build|[;)])|MiTV-\\w|Mi9 ?(?:Lite|SE)|MiProj(?:A1|M05)|Mi9 Pro 5G|(?:Mi5X|MI [a-z0-9]+|Mi-4c|MI-One[ _]?[a-z0-9]+|MIX(?: 2S?)?|MIX 2S ART|pomelo|rubyplus|AFTBTX4)(?:[);/ ]|$)|HM (?:[^/;]+) (?:Build|MIUI)|(?:2014501|2014011|201481[12378]|201302[23]|2013061) Build|Redmi|POCOPHONE|(?:SHARK )?KTUS-[AH]0|(?:SHARK )?(KLE|KSR|MBU|PAR)-[AH]0|SK[RW]-[AH]0|PRS-[AH]0|POCO F1|DLT-[AH]0|MIBOX[234]([_ ]PRO)?|MiTV4[ACSX]?|AWM-A0|MI CC 9 Meitu Edition|MiBOX1S|M2006J10C|M2006C3(?:L[IGC]|LVG|MN?G|MT)|M2007J1(?:7[CGI]|SC)|M2002(?:J9[SEG]|F4LG)|HM2014819|WT88047|210611(?:8C|19(?:BI|[AD]G|AL))|M2001(?:J[12]G|J2I|C3K3I)|M2004J1(?:5SC|9AG)|M2004J(?:7[AB]|19)[CG]|M2012K11(?:[CGI]|A[CI])|M2011K2[CG]|M2011J18C|M2006C3[ML]II|M2003J(?:15SC|15SS|6B2G|6A1G|6[AB]1I)|M2007J3S[ICYGP]|M2007J22[CG]|M2103K19[CGYI]|M2101K(?:[79]AG|7AI|7B[GI]|6[GIRP]|7BNY|9[GCR])|M2010J19S[CGYIL]|M2102(?:K1AC|K1[CG]|J2SC)|HM NOTE 1(?:LTE|W)|MI[_ ]PLAY|Qin 1s\\+|Qin ?2(?: Pro)?|MI_(NOTE_Pro|5X|4i|(?:A2|8)_Lite)|A001XM|lancelot|XIG0[1-57]|2107119DC|M1810(?:F6LI|F6[GI])|M2101K(?:7BL|9AI)|A101XM|M2012K10C|M2104K10AC|M19(?:01F7[1S]|10F4S|08(?:F1XE|C3JGG)|08C3J[IH]|06F9S[IH]|02F1G|03C3GI)|21051182[CG]|21081111RG|2109119D[GI]|21091116(?:AI|[AU]?C|i|U[GI])|220111(?:7T[LGIY]|19TI|19UY|6S[IRC]|6TG|[67]SG|7SL)|21121(?:119S[CG]|23A[CG]|119VL|210C)|2204121(?:6[CI]|6UC|9[CGI]|9NY|1AC)|220333Q(?:AG|NY|L|BI)|2107113S[IGR]|22031(?:29G|116BG|21C)|PAR-H0|M2105K81A?C|2109119BC|2202(?:1119KR|1211RC|33L2[CGI])|22011(?:2[23][CG]|211C|16TI|17S[YI])|joyeuse|galahad|hydrogen|begonia|kenzo|willow|beryllium|rosemary|biloba| MD(?:G1|E5)|KLE-AO|Mi ?Pad ?\\d|220612(?:18C|[23]SC)|2207(?:12(?:2MC|12AG|19AI)|33S(?:F?G|[ILH])|43FI)|2208(?:7RA4DI|1212(?:U?G|[CR])|128(?:1AC|3[GC]))|Black Shark|MZB82(?:98|5[57])IN|MZB0A5[HE]IN|2210(?:1317C|1320C|1316(?:U[PG]|UCP?|[CIG])|1(?:29SG|32[CG]))|2211(?:13(?:3[CG]|17I)|1317G)|23013RK75C|2305(?:3RN02[AYLI]|4RA19C)|2209(?:5RA98C|116AG|129SC)|2212(?:0RN86[CGIH]|6RN91Y|ARNC4L|2RK93C|7RK46C)|2302(?:6RN54G|1RAA(?:EI|EG|2[YG])|7RAD4I|8R(?:N4D[GI]|A60L|NCA[GI]))|angelican|vnd_camellia|2304(?:9RAD8C|FPN6D[GC]|6RP50C|3RP34[CGI]|6PNC9C)|2303(?:0RAC7Y|CRA44A|ERA42L)|M1908C3(?:[KJI]G|KH|I[CH])|M1906G7G|M1901F7G|M1903(?:F10I|C3GG|C3E[IG])|M1904F3BG|Hongmi [45]A?|M1912G7B[CE]|2307(?:7RABDC|6RN4BI|6RA4BR|6RN8DY|8PND5G|8RKD5C|6RA4BC|3RPBF[GCL]|BRPDCC)|2310(?:6RN0DA|8RN04Y)|2312(?:CRNCCL|DRA50G|9RAA4G|9RA5FL|9RN51[HX]|CRAD3C|DRAAB[CGI]|7PN0C[CG]|DRA50[CI]|4RA7EO|4RN87[CIG])|2311(?:6PN5B[CG]|BPN23C|7RA68G|DRN14I|7RK66C|FRAFDC|DRK48C|3RKC6C)|2308(?:CPXD0C|8PND5R)|24018RPAC[CG]|2404(?:ARN45A|8RN6C[GI]|0RN64Y|4RN32L|9RN28L)|2405(?:3PY09[CI]|CRPFD[CGL]|CPX3D[CG])|2306EPN60G|23090(?:RA98[CGI])|23100RN82L|2406(?:9RA21C|ERN9C[IC]|APNFAG)|2403(?:1PN0DC|0PN60G)|QIN3ULTRA|FengMiProjA2|A401XM|MZB8458IN|M1805E10A|M1803D5XA|2407(?:6RP19[GI]|FPN8E[GR]|2PX77C|FRK8EC|4RPD2[GI]|5RP89G)|2410CRP4C[CGI]|2411(?:DRN47[CI]|6RACCG|6RNC1I|5RA8E[CGI]|7RK2CC|7RN76[OLEG])|A201XM|2409(?:0RA29[CGI]|BRN2C[ACILGY]|4RAD4[CIG]|1RPAD[CG])| Mi8|MDE40|A301XM|2410DPN6CC|2412(?:9PN74[CGI]|9RT7CC|7RK2CC|2RKC7C)|2501(?:0PN30[CGI]|9PNF3C)|2502(?:8RN03[ALIY]|FRA65G)|2504(?:2PN24C|0RP0A[EG])|2505(3RT47C|7RN09[EIG]|DRP06[EGI])|2506(?:7PYE3C|0RK16C|BPN68G|9PTEBG|2RN2D[AELY])|25078RA3E[AEYL]|2508(?:CRN2BE|0RABD[CG]|0RABDT)|2509(?:8PN5AC|8RA98[GIT]|FPN0BC|9RP13G|BRP2DG)|2511(?:3PN0E[CGI]|FRT34[CG])|2510(?:0RA69G|4RADAC|ERA8B[CGT]|DRK44C|DRA23[EGL]|2RKBEC)|2512(?:BPNDA[CG]|8RN17[ALY]|8PNA1[CG])|2602(?:0RNB4[AL]|DPT53G|EPTC0G|BRT18C)|2603ARP14G|2604(?:ERP4DG|FRK1EC)|2605EPN8EC",
+    "regex": "Xiaomi(?!/(?:Miui|Mint )Browser)| ONC(?: Build|[;)])|MiTV-\\w|Mi9 ?(?:Lite|SE)|MiProj(?:A1|M05)|Mi9 Pro 5G|(?:Mi5X|MI [a-z0-9]+|Mi-4c|MI-One[ _]?[a-z0-9]+|MIX(?: 2S?)?|MIX 2S ART|pomelo|rubyplus|AFTBTX4)(?:[);/ ]|$)|HM (?:[^/;]+) (?:Build|MIUI)|(?:2014501|2014011|201481[12378]|201302[23]|2013061) Build|Redmi|POCOPHONE|(?:SHARK )?KTUS-[AH]0|(?:SHARK )?(KLE|KSR|MBU|PAR)-[AH]0|SK[RW]-[AH]0|PRS-[AH]0|POCO F1|DLT-[AH]0|MIBOX[234]([_ ]PRO)?|MiTV4[ACSX]?|AWM-A0|MI CC 9 Meitu Edition|MiBOX1S|M2006J10C|M2006C3(?:L[IGC]|LVG|MN?G|MT)|M2007J1(?:7[CGI]|SC)|M2002(?:J9[SEG]|F4LG)|HM2014819|WT88047|210611(?:8C|19(?:BI|[AD]G|AL))|M2001(?:J[12]G|J2I|C3K3I)|M2004J1(?:5SC|9AG)|M2004J(?:7[AB]|19)[CG]|M2012K11(?:[CGI]|A[CI])|M2011K2[CG]|M2011J18C|M2006C3[ML]II|M2003J(?:15SC|15SS|6B2G|6A1G|6[AB]1I)|M2007J3S[ICYGP]|M2007J22[CG]|M2103K19[CGYI]|M2101K(?:[79]AG|7AI|7B[GI]|6[GIRP]|7BNY|9[GCR])|M2010J19S[CGYIL]|M2102(?:K1AC|K1[CG]|J2SC)|HM NOTE 1(?:LTE|W)|MI[_ ]PLAY|Qin 1s\\+|Qin ?2(?: Pro)?|MI_(NOTE_Pro|5X|4i|(?:A2|8)_Lite)|A001XM|lancelot|XIG0[1-57]|2107119DC|M1810(?:F6LI|F6[GI])|M2101K(?:7BL|9AI)|A101XM|M2012K10C|M2104K10AC|M19(?:01F7[1S]|10F4S|08(?:F1XE|C3JGG)|08C3J[IH]|06F9S[IH]|02F1G|03C3GI)|21051182[CG]|21081111RG|2109119D[GI]|21091116(?:AI|[AU]?C|i|U[GI])|220111(?:7T[LGIY]|19TI|19UY|6S[IRC]|6TG|[67]SG|7SL)|21121(?:119S[CG]|23A[CG]|119VL|210C)|2204121(?:6[CI]|6UC|9[CGI]|9NY|1AC)|220333Q(?:AG|NY|L|BI)|2107113S[IGR]|22031(?:29G|116BG|21C)|PAR-H0|M2105K81A?C|2109119BC|2202(?:1119KR|1211RC|33L2[CGI])|22011(?:2[23][CG]|211C|16TI|17S[YI])|joyeuse|galahad|hydrogen|begonia|kenzo|willow|beryllium|rosemary|biloba| MD(?:G1|E5)|KLE-AO|Mi ?Pad ?\\d|220612(?:18C|[23]SC)|2207(?:12(?:2MC|12AG|19AI)|33S(?:F?G|[ILH])|43FI)|2208(?:7RA4DI|1212(?:U?G|[CR])|128(?:1AC|3[GC]))|Black Shark|MZB82(?:98|5[57])IN|MZB0A5[HE]IN|2210(?:1317C|1320C|1316(?:U[PG]|UCP?|[CIG])|1(?:29SG|32[CG]))|2211(?:13(?:3[CG]|17I)|1317G)|23013RK75C|2305(?:3RN02[AYLI]|4RA19C)|2209(?:5RA98C|116AG|129SC)|2212(?:0RN86[CGIH]|6RN91Y|ARNC4L|2RK93C|7RK46C)|2302(?:6RN54G|1RAA(?:EI|EG|2[YG])|7RAD4I|8R(?:N4D[GI]|A60L|NCA[GI]))|angelican|vnd_camellia|2304(?:9RAD8C|FPN6D[GC]|6RP50C|3RP34[CGI]|6PNC9C)|2303(?:0RAC7Y|CRA44A|ERA42L)|M1908C3(?:[KJI]G|KH|I[CH])|M1906G7G|M1901F7G|M1903(?:F10I|C3GG|C3E[IG])|M1904F3BG|Hongmi [45]A?|M1912G7B[CE]|2307(?:7RABDC|6RN4BI|6RA4BR|6RN8DY|8PND5G|8RKD5C|6RA4BC|3RPBF[GCL]|BRPDCC)|2310(?:6RN0DA|8RN04Y)|2312(?:CRNCCL|DRA50G|9RAA4G|9RA5FL|9RN51[HX]|CRAD3C|DRAAB[CGI]|7PN0C[CG]|DRA50[CI]|4RA7EO|4RN87[CIG])|2311(?:6PN5B[CG]|BPN23C|7RA68G|DRN14I|7RK66C|FRAFDC|DRK48C|3RKC6C)|2308(?:CPXD0C|8PND5R)|24018RPAC[CG]|2404(?:ARN45A|8RN6C[GI]|0RN64Y|4RN32L|9RN28L)|2405(?:3PY09[CI]|CRPFD[CGL]|CPX3D[CG])|2306EPN60G|23090(?:RA98[CGI])|23100RN82L|2406(?:9RA21C|ERN9C[IC]|APNFAG)|2403(?:1PN0DC|0PN60G)|QIN3ULTRA|FengMiProjA2|A401XM|MZB8458IN|M1805E10A|M1803D5XA|2407(?:6RP19[GI]|FPN8E[GR]|2PX77C|FRK8EC|4RPD2[GI]|5RP89G)|2410CRP4C[CGI]|2411(?:DRN47[CI]|6RACCG|6RNC1I|5RA8E[CGI]|7RK2CC|7RN76[OLEG])|A201XM|2409(?:0RA29[CGI]|BRN2C[ACILGY]|4RAD4[CIG]|1RPAD[CG])| Mi8|MDE40|A301XM|2410DPN6CC|2412(?:9PN74[CGI]|9RT7CC|7RK2CC|2RKC7C)|2501(?:0PN30[CGI]|9PNF3C)|2502(?:8RN03[ALIY]|FRA65G)|2504(?:2PN24C|0RP0A[EG])|2505(3RT47C|7RN09[EIG]|DRP06[EGI])|2506(?:7PYE3C|0RK16C|BPN68G|9PTEBG|2RN2D[AELY])|25078RA3E[AEYL]|2508(?:CRN2BE|0RABD[CG]|0RABDT)|2509(?:8PN5AC|8RA98[GIT]|FPN0BC|9RP13G|BRP2DG)|2511(?:3PN0E[CGI]|FRT34[CG])|2510(?:0RA69G|4RADAC|ERA8B[CGT]|DRK44C|DRA23[EGL]|2RKBEC)|2512(?:BPNDA[CG]|8RN17[ALY]|8PNA1[CG])|2602(?:0RNB4[AL]|DPT53G|EPTC0G|BRT18C)|2603ARP14G|2604(?:ERP4DG|FRK1EC)|2605EPN8EC|A402XM|25097RP43C|25079RPDCC|C045RGN",
     "brand": "Xiaomi",
     "type": 2,
     "modelVariants": [
@@ -53338,7 +53338,11 @@
         "name": "Mi 10S"
       },
       {
-        "regex": "(?:M2002J9[EGS]|XIG01|Mi 10 Lite 5G)(?:[);/ ]|$)",
+        "regex": "Mi 10 Lite Zoom",
+        "name": "Mi 10 Lite Zoom"
+      },
+      {
+        "regex": "(?:M2002J9[EGS]|XIG01|Mi 10 Lite(?: 5G)?)(?:[);/ ]|$)",
         "name": "Mi 10 Lite 5G"
       },
       {
@@ -53350,7 +53354,7 @@
         "name": "Mi 11i"
       },
       {
-        "regex": "(?:2107113S[IGR]|Xiaomi 11T Pro)(?:[);/ ]|$)",
+        "regex": "(?:2107113S[IGR]|(?:Xiao)?mi 11T Pro)(?:[);/ ]|$)",
         "name": "Mi 11T Pro"
       },
       {
@@ -53370,7 +53374,7 @@
         "name": "Mi 11 Lite"
       },
       {
-        "regex": "M2102K1[CG](?:[);/ ]|$)",
+        "regex": "M2102K1[CG](?:[);/ ]|$)|Mi 11 Ultra",
         "name": "Mi 11 Ultra"
       },
       {
@@ -53910,6 +53914,10 @@
         "name": "Redmi K$1 Pro"
       },
       {
+        "regex": "Redmi K30 5G Speed",
+        "name": "Redmi K30 5G Speed"
+      },
+      {
         "regex": "Redmi K30 5G(?:[);/ ]|$)",
         "name": "Redmi K30 5G"
       },
@@ -54078,7 +54086,7 @@
         "name": "Redmi A3"
       },
       {
-        "regex": "2409BRN2CG",
+        "regex": "2409BRN2CG|Redmi A3 Pro",
         "name": "Redmi A3 Pro"
       },
       {
@@ -54138,19 +54146,23 @@
         "name": "Civi 1S"
       },
       {
-        "regex": "(?:M2105K81AC|22081281AC|(?:Xiao)?mi Pad 5 Pro)(?:[);/ ]|$)",
+        "regex": "A402XM",
+        "name": "Mi 14T Pro 5G"
+      },
+      {
+        "regex": "M2105K81C(?:[);/ ]|$)|Mi Pad5 Pro 5G",
+        "type": 3,
+        "name": "Mi Pad 5 Pro 5G"
+      },
+      {
+        "regex": "(?:M2105K81AC|22081281AC|(?:Xiao)?mi Pad 5 Pro|Mi Pad5 Pro Wi-Fi)(?:[);/ ]|$)",
         "type": 3,
         "name": "Mi Pad 5 Pro"
       },
       {
-        "regex": "(?:21051182[CG]|(?:Xiao)?mi Pad 5)(?:[);/ ]|$)",
+        "regex": "(?:21051182[CG]|(?:Xiao)?mi Pad 5|Mi Pad5 Wi-Fi)(?:[);/ ]|$)",
         "type": 3,
         "name": "Mi Pad 5"
-      },
-      {
-        "regex": "M2105K81C(?:[);/ ]|$)",
-        "type": 3,
-        "name": "Mi Pad 5 Pro 5G"
       },
       {
         "regex": "(?:23046RP50C|Pad 6 Pro)(?:[);/ ]|$)",
@@ -54158,7 +54170,7 @@
         "name": "Pad 6 Pro"
       },
       {
-        "regex": "24091RPAD[CG]",
+        "regex": "24091RPAD[CG]|Pad 7 Pro",
         "type": 3,
         "name": "Pad 7 Pro"
       },
@@ -54181,6 +54193,16 @@
         "regex": "(?:24018RPAC[CG]|Xiaomi Pad 6S Pro 12\\.4)(?:[);/ ]|$)",
         "type": 3,
         "name": "Pad 6S Pro 12.4\""
+      },
+      {
+        "regex": "25097RP43C",
+        "type": 3,
+        "name": "Redmi Pad 8 11.2\" WiFi"
+      },
+      {
+        "regex": "25079RPDCC",
+        "type": 3,
+        "name": "Redmi K Pad 8.8\" WiFi"
       },
       {
         "regex": "MI (?:PAD ?4 ?PLUS|Pad4\\+)(?:[);/ ]|$)",
@@ -54238,12 +54260,12 @@
         "name": "Redmi Pad Pro 5G"
       },
       {
-        "regex": "2505DRP06[EG]",
+        "regex": "2505DRP06[EGI]|Redmi Pad 2 4G",
         "type": 3,
         "name": "Redmi Pad 2 4G"
       },
       {
-        "regex": "25040RP0A[EG]",
+        "regex": "25040RP0A[EG]|Redmi Pad 2",
         "type": 3,
         "name": "Redmi Pad 2"
       },
@@ -54276,6 +54298,11 @@
         "regex": "MiProjM05",
         "type": 14,
         "name": "Mi Smart Compact Projector"
+      },
+      {
+        "regex": "C045RGN",
+        "type": 14,
+        "name": "Smart Projector L1 Pro"
       },
       {
         "regex": "FengMiProjA2(?:[);/ ]|$)",
@@ -54418,9 +54445,9 @@
         "name": "Redmi Note 5A Lite"
       },
       {
-        "regex": "(?:M2010J19SC|M2003J15SS|Redmi Note 9 4G)(?:[);/ ]|$)",
+        "regex": "Redmi Note9S Pro",
         "type": 11,
-        "name": "Redmi Note 9"
+        "name": "Redmi Note 9S Pro"
       },
       {
         "regex": "M2003J6A1G(?:[);/ ]|$)",
@@ -54443,29 +54470,34 @@
         "name": "Redmi Note 9T 5G"
       },
       {
-        "regex": "M2007J22C(?:[);/ ]|$)",
+        "regex": "M2007J22C(?:[);/ ]|$)|Redmi Note ?9 5G",
         "type": 11,
         "name": "Redmi Note 9 5G"
       },
       {
-        "regex": "M2007J17C(?:[);/ ]|$)",
+        "regex": "M2007J17C(?:[);/ ]|$)|Redmi Note ?9 Pro 5G",
         "type": 11,
         "name": "Redmi Note 9 Pro 5G"
-      },
-      {
-        "regex": "(?:joyeuse|M2003J6(?:B2G|A1I))(?:[);/ ]|$)",
-        "type": 11,
-        "name": "Redmi Note 9 Pro"
-      },
-      {
-        "regex": "Redmi Note 10 Lite|M2002F4LG(?:[);/ ]|$)",
-        "type": 11,
-        "name": "Redmi Note 10 Lite"
       },
       {
         "regex": "(?:Redmi Note ?9 Pro Max|M2003J6B1I)(?:[);/ ]|$)",
         "type": 11,
         "name": "Redmi Note 9 Pro Max"
+      },
+      {
+        "regex": "(?:joyeuse|M2003J6(?:B2G|A1I)|Redmi Note ?9 Pro)(?:[);/ ]|$)",
+        "type": 11,
+        "name": "Redmi Note 9 Pro"
+      },
+      {
+        "regex": "(?:M2010J19SC|M2003J15SS|Redmi Note ?9(?: 4G)?)(?:[);/ ]|$)",
+        "type": 11,
+        "name": "Redmi Note 9"
+      },
+      {
+        "regex": "Redmi Note ?10 Lite|M2002F4LG(?:[);/ ]|$)",
+        "type": 11,
+        "name": "Redmi Note 10 Lite"
       },
       {
         "regex": "M2101K7A[GI]",
@@ -54483,7 +54515,7 @@
         "name": "Redmi Note 10S"
       },
       {
-        "regex": "(?:M2103K19[GC]|Redmi Note 10 5G|vnd_camellia)(?:[);/ ]|$)",
+        "regex": "(?:M2103K19[GC]|Redmi Note ?10 5G|vnd_camellia)(?:[);/ ]|$)",
         "type": 11,
         "name": "Redmi Note 10 5G"
       },
@@ -54493,12 +54525,17 @@
         "name": "Redmi Note 10T 5G"
       },
       {
-        "regex": "XIG02(?:[);/ ]|$)",
+        "regex": "XIG02(?:[);/ ]|$)|Redmi Note ?10 JE",
         "type": 11,
         "name": "Redmi Note 10 JE"
       },
       {
-        "regex": "(?:M2101K6[GIRP]|M2104K10AC|Redmi Note 10 Pro(?! Max))(?:[);/ ]|$)",
+        "regex": "Redmi Note ?10 Pro Max",
+        "type": 11,
+        "name": "Redmi Note 10 Pro Max"
+      },
+      {
+        "regex": "(?:M2101K6[GIRP]|M2104K10AC|Redmi Note ?10 Pro)(?:[);/ ]|$)",
         "type": 11,
         "name": "Redmi Note 10 Pro"
       },
@@ -54568,9 +54605,14 @@
         "name": "Redmi Note 12 Discovery"
       },
       {
-        "regex": "22101316UCP(?:[);/ ]|$)",
+        "regex": "22101316UCP(?:[);/ ]|$)|Redmi Note 12 Pro\\+",
         "type": 11,
         "name": "Redmi Note 12 Pro+"
+      },
+      {
+        "regex": "Redmi Note 12 Turbo",
+        "type": 11,
+        "name": "Redmi Note 12 Turbo"
       },
       {
         "regex": "22111317I(?:[);/ ]|$)",
@@ -54593,7 +54635,7 @@
         "name": "Redmi Note 13R"
       },
       {
-        "regex": "2311FRAFDC(?:[);/ ]|$)",
+        "regex": "2311FRAFDC(?:[);/ ]|$)|Redmi Note 13R Pro",
         "type": 11,
         "name": "Redmi Note 13R Pro"
       },
@@ -54606,11 +54648,6 @@
         "regex": "2312(?:4RA7EO|9RAA4G|9RA5FL)(?:[);/ ]|$)",
         "type": 11,
         "name": "Redmi Note 13"
-      },
-      {
-        "regex": "23090RA98C(?:[);/ ]|$)",
-        "type": 11,
-        "name": "Redmi Note 13 Pro+"
       },
       {
         "regex": "Redmi Note 14 Pro\\+ 5G(?:[);/ ]|$)",
@@ -54648,14 +54685,14 @@
         "name": "Redmi Note 14S"
       },
       {
+        "regex": "2510ERA8B[CGT]|REDMI Note 15 Pro\\+ 5G",
+        "type": 11,
+        "name": "Redmi Note 15 Pro+ 5G"
+      },
+      {
         "regex": "25104RADAC",
         "type": 11,
         "name": "Redmi Note 15 Pro+"
-      },
-      {
-        "regex": "2510ERA8B[CGT]",
-        "type": 11,
-        "name": "Redmi Note 15 Pro+ 5G"
       },
       {
         "regex": "25080RABDC|25100RA69G",
@@ -54681,6 +54718,11 @@
         "regex": "(?:23090RA98[GI]|Redmi Note 13 Pro\\+ 5G)(?:[);/ ]|$)",
         "type": 11,
         "name": "Redmi Note 13 Pro+ 5G"
+      },
+      {
+        "regex": "23090RA98C(?:[);/ ]|$)|Redmi Note 13 Pro\\+",
+        "type": 11,
+        "name": "Redmi Note 13 Pro+"
       },
       {
         "regex": "(?:2312DRAAB[CGI]|Redmi Note 13 5G)(?:[);/ ]|$)",
@@ -54718,7 +54760,7 @@
         "name": "Redmi Note 11 Pro+ 5G"
       },
       {
-        "regex": "(?:21091116U[CG]|Redmi Note 11 Pro\\+)(?:[);/ ]|$)",
+        "regex": "(?:21091116U[CG]|Redmi Note 11 Pro\\+|Redmi Note 11 Pro Plus)(?:[);/ ]|$)",
         "type": 11,
         "name": "Redmi Note 11 Pro+"
       },
@@ -54758,7 +54800,7 @@
         "name": "Redmi Note 11T 5G"
       },
       {
-        "regex": "23013RK75C",
+        "regex": "23013RK75C|Redmi Note12 Pro 5G",
         "type": 11,
         "name": "Redmi Note 12 Pro 5G"
       },
@@ -54827,12 +54869,12 @@
         "name": "Mi Note 10 Pro"
       },
       {
-        "regex": "Mi Note 10 Lite",
+        "regex": "Mi Note ?10 Lite",
         "type": 11,
         "name": "Mi Note 10 Lite"
       },
       {
-        "regex": "Mi Note 10|M1910F4G(?:[);/ ]|$)",
+        "regex": "Mi Note ?10|M1910F4G(?:[);/ ]|$)",
         "type": 11,
         "name": "Mi Note 10"
       },
