@@ -7,6 +7,7 @@ on:
 
 env:
   DOTNET_VERSION: 10.0.x
+  NODE_VERSION: 24
 
 jobs:
   build:
@@ -58,3 +59,26 @@ jobs:
           token: ${{ secrets.CODECOV_TOKEN }}
           directory: ${{ github.workspace }}/coverage
           fail_ci_if_error: true
+
+  icons:
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: icons
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: npm
+          cache-dependency-path: icons/package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build icons package
+        run: npm run build

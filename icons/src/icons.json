@@ -1,0 +1,1149 @@
+{
+  "browsers": {
+    "115-browser.png": [
+      "115 Browser"
+    ],
+    "18-privacy-browser.png": [
+      "18+ Privacy Browser"
+    ],
+    "1dm-browser.png": [
+      "1DM Browser"
+    ],
+    "1dm-plus-browser.png": [
+      "1DM+ Browser"
+    ],
+    "2345-browser.png": [
+      "2345 Browser"
+    ],
+    "360-phone-browser.png": [
+      "360 Phone Browser"
+    ],
+    "abrowse.png": [
+      "ABrowse"
+    ],
+    "airfind-secure-browser.png": [
+      "Airfind Secure Browser"
+    ],
+    "aloha-browser-lite.png": [
+      "Aloha Browser Lite"
+    ],
+    "aloha-browser.png": [
+      "Aloha Browser"
+    ],
+    "amaya.png": [
+      "Amaya"
+    ],
+    "amerigo.png": [
+      "Amerigo"
+    ],
+    "amiga-voyager.png": [
+      "Amiga Voyager"
+    ],
+    "aol.png": [
+      "AOL Desktop",
+      "AOL Shield",
+      "AOL Shield Pro",
+      "AOL Explorer"
+    ],
+    "apus-browser.png": [
+      "APUS Browser"
+    ],
+    "arc-search.png": [
+      "Arc Search"
+    ],
+    "arora.png": [
+      "Arora"
+    ],
+    "arvin.png": [
+      "Arvin"
+    ],
+    "ask-browser.png": [
+      "Ask Browser"
+    ],
+    "avast-secure-browser.png": [
+      "Avast Secure Browser"
+    ],
+    "avg-secure-browser.png": [
+      "AVG Secure Browser"
+    ],
+    "baidu-browser.png": [
+      "Baidu Browser"
+    ],
+    "basic-web-browser.png": [
+      "Basic Web Browser"
+    ],
+    "basilisk.png": [
+      "Basilisk"
+    ],
+    "beaker-browser.png": [
+      "Beaker Browser"
+    ],
+    "belva-browser.png": [
+      "Belva Browser"
+    ],
+    "berry-browser.png": [
+      "Berry Browser"
+    ],
+    "bf-browser.png": [
+      "BF Browser"
+    ],
+    "black-browser.png": [
+      "Black Browser"
+    ],
+    "black-lion-browser.png": [
+      "Black Lion Browser"
+    ],
+    "blackberry-browser.png": [
+      "BlackBerry Browser"
+    ],
+    "bluefy.png": [
+      "Bluefy"
+    ],
+    "brave.png": [
+      "Brave"
+    ],
+    "browsehere.png": [
+      "BrowseHere"
+    ],
+    "browser-mini.png": [
+      "Browser Mini"
+    ],
+    "bxe-browser.png": [
+      "BXE Browser"
+    ],
+    "camino.png": [
+      "Camino"
+    ],
+    "cave-browser.png": [
+      "Cave Browser"
+    ],
+    "cg-browser.png": [
+      "CG Browser"
+    ],
+    "chrome.png": [
+      "Chrome",
+      "Chrome Frame",
+      "Chrome Mobile",
+      "Chrome Mobile iOS",
+      "Chrome Webview",
+      "Headless Chrome"
+    ],
+    "chromium.png": [
+      "Chromium",
+      "Raspbian Chromium"
+    ],
+    "clario-browser.png": [
+      "Clario Browser"
+    ],
+    "clear-tv-browser.png": [
+      "Clear TV Browser"
+    ],
+    "coc-coc.png": [
+      "Coc Coc"
+    ],
+    "comet.png": [
+      "Comet"
+    ],
+    "comodo-dragon.png": [
+      "Comodo Dragon"
+    ],
+    "cyberfox.png": [
+      "Cyberfox"
+    ],
+    "dark-web-private.png": [
+      "Dark Web Private"
+    ],
+    "dark-web.png": [
+      "Dark Web"
+    ],
+    "ddu-browser.png": [
+      "DDU Browser"
+    ],
+    "debuggable-browser.png": [
+      "Debuggable Browser"
+    ],
+    "delta-browser.png": [
+      "Delta Browser"
+    ],
+    "dolphin-zero.png": [
+      "Dolphin Zero"
+    ],
+    "dolphin.png": [
+      "Dolphin"
+    ],
+    "duckduckgo-privacy-browser.png": [
+      "DuckDuckGo Privacy Browser"
+    ],
+    "ecosia.png": [
+      "Ecosia"
+    ],
+    "epic.png": [
+      "Epic"
+    ],
+    "fast-explorer.png": [
+      "Fast Explorer"
+    ],
+    "fiery-browser.png": [
+      "Fiery Browser"
+    ],
+    "firefox-focus.png": [
+      "Firefox Focus",
+      "Firefox Klar"
+    ],
+    "firefox-reality.png": [
+      "Firefox Reality"
+    ],
+    "firefox-rocket.png": [
+      "Firefox Rocket"
+    ],
+    "firefox.png": [
+      "Firefox",
+      "Firefox Mobile",
+      "Firefox Mobile iOS"
+    ],
+    "float-browser.png": [
+      "Float Browser"
+    ],
+    "floorp.png": [
+      "Floorp"
+    ],
+    "frost-plus.png": [
+      "Frost+"
+    ],
+    "frost.png": [
+      "Frost"
+    ],
+    "ghostery-privacy-browser.png": [
+      "Ghostery Privacy Browser"
+    ],
+    "ginxdroid-browser.png": [
+      "GinxDroid Browser"
+    ],
+    "google-earth.png": [
+      "Google Earth",
+      "Google Earth Pro"
+    ],
+    "herond-browser.png": [
+      "Herond Browser"
+    ],
+    "heytapbrowser.png": [
+      "HeyTapBrowser"
+    ],
+    "icab.png": [
+      "iCab",
+      "iCab Mobile"
+    ],
+    "icedragon.png": [
+      "IceDragon"
+    ],
+    "iceweasel.png": [
+      "Iceweasel"
+    ],
+    "idesktop-pc-browser.png": [
+      "iDesktop PC Browser"
+    ],
+    "ifbrowser.png": [
+      "Ifbrowser"
+    ],
+    "inbrowser.png": [
+      "InBrowser"
+    ],
+    "incognito-browser.png": [
+      "Incognito Browser"
+    ],
+    "internet-explorer.png": [
+      "Internet Explorer",
+      "IE Mobile",
+      "Pocket Internet Explorer"
+    ],
+    "internet-webbrowser.png": [
+      "Internet Webbrowser"
+    ],
+    "involta-go.png": [
+      "Involta Go"
+    ],
+    "iridium.png": [
+      "Iridium"
+    ],
+    "iron.png": [
+      "Iron",
+      "Iron Mobile"
+    ],
+    "island.png": [
+      "Island"
+    ],
+    "jiosphere.png": [
+      "JioSphere"
+    ],
+    "keepsolid-browser.png": [
+      "KeepSolid Browser"
+    ],
+    "keyboard-browser.png": [
+      "Keyboard Browser"
+    ],
+    "kids-safe-browser.png": [
+      "Kids Safe Browser"
+    ],
+    "kiwi.png": [
+      "Kiwi"
+    ],
+    "kuto-mini-browser.png": [
+      "KUTO Mini Browser"
+    ],
+    "ladybird.png": [
+      "Ladybird"
+    ],
+    "lemur-browser.png": [
+      "Lemur Browser"
+    ],
+    "lilo.png": [
+      "Lilo"
+    ],
+    "logicui-tv-browser.png": [
+      "LogicUI TV Browser"
+    ],
+    "lotus.png": [
+      "Lotus"
+    ],
+    "lunascape.png": [
+      "Lunascape",
+      "Lunascape Lite"
+    ],
+    "maxthon.png": [
+      "Maxthon"
+    ],
+    "me-browser.png": [
+      "Me Browser"
+    ],
+    "microsoft-edge.png": [
+      "Microsoft Edge",
+      "Edge WebView",
+      "Headless Edge"
+    ],
+    "mint-browser.png": [
+      "Mint Browser"
+    ],
+    "mises.png": [
+      "Mises"
+    ],
+    "mobicip.png": [
+      "Mobicip"
+    ],
+    "mullvad-browser.png": [
+      "Mullvad Browser"
+    ],
+    "netscape.png": [
+      "Netscape"
+    ],
+    "netsurf.png": [
+      "NetSurf"
+    ],
+    "nextword-browser.png": [
+      "NextWord Browser"
+    ],
+    "nintendo-browser.png": [
+      "Nintendo Browser"
+    ],
+    "norton-private-browser.png": [
+      "Norton Private Browser"
+    ],
+    "oceanhero.png": [
+      "OceanHero"
+    ],
+    "oh-browser.png": [
+      "OH Browser"
+    ],
+    "oh-private-browser.png": [
+      "OH Private Browser"
+    ],
+    "ojr-browser.png": [
+      "OJR Browser"
+    ],
+    "onion-browser.png": [
+      "Onion Browser"
+    ],
+    "open-browser-lite.png": [
+      "Open Browser Lite"
+    ],
+    "open-browser.png": [
+      "Open Browser"
+    ],
+    "opera-gx.png": [
+      "Opera GX"
+    ],
+    "opera-mini.png": [
+      "Opera Mini",
+      "Opera Mini iOS"
+    ],
+    "opera-neon.png": [
+      "Opera Neon"
+    ],
+    "opera-touch.png": [
+      "Opera Touch"
+    ],
+    "opera.png": [
+      "Opera",
+      "Opera Mobile",
+      "Opera Next",
+      "Opera Devices"
+    ],
+    "ordissimo.png": [
+      "Ordissimo"
+    ],
+    "ornet-browser.png": [
+      "OrNET Browser"
+    ],
+    "palm.png": [
+      "Palm Blazer",
+      "Palm WebPro",
+      "Palm Pre",
+      "Blazer"
+    ],
+    "pawxy.png": [
+      "Pawxy"
+    ],
+    "phoenix-browser.png": [
+      "Phoenix Browser"
+    ],
+    "phoenix.png": [
+      "Phoenix"
+    ],
+    "pi-browser.png": [
+      "Pi Browser"
+    ],
+    "pico-browser.png": [
+      "PICO Browser"
+    ],
+    "pluma.png": [
+      "Pluma"
+    ],
+    "polarity.png": [
+      "Polarity"
+    ],
+    "polypane.png": [
+      "Polypane"
+    ],
+    "private-internet-browser.png": [
+      "Private Internet Browser"
+    ],
+    "proxy-browser.png": [
+      "Proxy Browser"
+    ],
+    "proxymax.png": [
+      "ProxyMax"
+    ],
+    "proxynet.png": [
+      "Proxynet"
+    ],
+    "puffin-incognito-browser.png": [
+      "Puffin Incognito Browser"
+    ],
+    "puffin.png": [
+      "Puffin Cloud Browser",
+      "Puffin Web Browser"
+    ],
+    "pure-lite-browser.png": [
+      "Pure Lite Browser"
+    ],
+    "qmamu.png": [
+      "Qmamu"
+    ],
+    "qq-browser.png": [
+      "QQ Browser",
+      "QQ Browser Lite",
+      "QQ Browser Mini"
+    ],
+    "qtwebengine.png": [
+      "QtWebEngine"
+    ],
+    "quark.png": [
+      "Quark",
+      "QuarkPC"
+    ],
+    "quetta.png": [
+      "Quetta"
+    ],
+    "quick-search-tv.png": [
+      "Quick Search TV"
+    ],
+    "qwant-mobile.png": [
+      "Qwant Mobile"
+    ],
+    "roku-browser.png": [
+      "Roku Browser"
+    ],
+    "safari-technology-preview.png": [
+      "Safari Technology Preview"
+    ],
+    "safari.png": [
+      "Safari",
+      "Mobile Safari"
+    ],
+    "safe-exam-browser.png": [
+      "Safe Exam Browser"
+    ],
+    "sailfish-browser.png": [
+      "Sailfish Browser"
+    ],
+    "salamweb.png": [
+      "SalamWeb"
+    ],
+    "samsung-browser.png": [
+      "Samsung Browser",
+      "Samsung Browser Lite"
+    ],
+    "savannah-browser.png": [
+      "Savannah Browser"
+    ],
+    "savysoda.png": [
+      "SavySoda"
+    ],
+    "seekee.png": [
+      "Seekee"
+    ],
+    "seewo-browser.png": [
+      "Seewo Browser"
+    ],
+    "seznam-browser.png": [
+      "Seznam Browser"
+    ],
+    "shiira.png": [
+      "Shiira"
+    ],
+    "sizzy.png": [
+      "Sizzy"
+    ],
+    "sleipnir.png": [
+      "Sleipnir"
+    ],
+    "smart-search-web-browser.png": [
+      "Smart Search & Web Browser"
+    ],
+    "snap-browser.png": [
+      "Snap Browser"
+    ],
+    "sogou-browser.png": [
+      "Sogou Explorer",
+      "Sogou Mobile Browser"
+    ],
+    "soti-surf.png": [
+      "SOTI Surf"
+    ],
+    "soul-browser.png": [
+      "Soul Browser"
+    ],
+    "stargon.png": [
+      "Stargon"
+    ],
+    "startpage.png": [
+      "Startpage"
+    ],
+    "stay-browser.png": [
+      "Stay Browser"
+    ],
+    "steam.png": [
+      "Steam In-Game Overlay"
+    ],
+    "surfy-browser.png": [
+      "Surfy Browser"
+    ],
+    "t-online-de-browser.png": [
+      "t-online.de Browser"
+    ],
+    "talkto.png": [
+      "TalkTo"
+    ],
+    "tararia.png": [
+      "tararia"
+    ],
+    "tizen-browser.png": [
+      "Tizen Browser"
+    ],
+    "togate.png": [
+      "ToGate"
+    ],
+    "tor-browser.png": [
+      "Tor Browser"
+    ],
+    "tusk.png": [
+      "TUSK"
+    ],
+    "tv-browser-internet.png": [
+      "TV-Browser Internet"
+    ],
+    "u-browser.png": [
+      "U Browser"
+    ],
+    "uc-browser-mini.png": [
+      "UC Browser Mini"
+    ],
+    "uc-browser-turbo.png": [
+      "UC Browser Turbo"
+    ],
+    "uc-browser.png": [
+      "UC Browser",
+      "UC Browser HD"
+    ],
+    "ui-browser-mini.png": [
+      "Ui Browser Mini"
+    ],
+    "ume-browser.png": [
+      "Ume Browser"
+    ],
+    "vc-browser-mini-pro.png": [
+      "VC Browser Mini Pro"
+    ],
+    "vegas-browser.png": [
+      "Vegas Browser"
+    ],
+    "vewd-browser.png": [
+      "Vewd Browser"
+    ],
+    "via.png": [
+      "Via"
+    ],
+    "vibemate.png": [
+      "VibeMate"
+    ],
+    "vivaldi.png": [
+      "Vivaldi",
+      "Vivaldi Mobile iOS"
+    ],
+    "vivo-browser.png": [
+      "vivo Browser"
+    ],
+    "vmware-airwatch.png": [
+      "VMware AirWatch"
+    ],
+    "vuhuv.png": [
+      "Vuhuv"
+    ],
+    "waterfox.png": [
+      "Waterfox"
+    ],
+    "wave-browser.png": [
+      "Wave Browser"
+    ],
+    "web-browser-explorer.png": [
+      "Web Browser & Explorer"
+    ],
+    "web-explorer.png": [
+      "Web Explorer"
+    ],
+    "webian-shell.png": [
+      "Webian Shell"
+    ],
+    "webpositive.png": [
+      "WebPositive"
+    ],
+    "wexond.png": [
+      "Wexond"
+    ],
+    "whale-browser.png": [
+      "Whale Browser"
+    ],
+    "whale-tv-browser.png": [
+      "Whale TV Browser"
+    ],
+    "x-vpn.png": [
+      "X-VPN"
+    ],
+    "xbrowser-mini.png": [
+      "XBrowser Mini"
+    ],
+    "xnbrowse.png": [
+      "XnBrowse"
+    ],
+    "xooloo-internet.png": [
+      "Xooloo Internet"
+    ],
+    "xplay-browser.png": [
+      "XPlay Browser"
+    ],
+    "yahoo-japan-browser.png": [
+      "Yahoo! Japan Browser"
+    ],
+    "yandex-browser-corp.png": [
+      "Yandex Browser Corp"
+    ],
+    "yandex-browser-lite.png": [
+      "Yandex Browser Lite"
+    ],
+    "yandex-browser.png": [
+      "Yandex Browser"
+    ],
+    "zordo-browser.png": [
+      "Zordo Browser"
+    ]
+  },
+  "os": {
+    "aix.png": [
+      "AIX"
+    ],
+    "alpine-linux.png": [
+      "Alpine Linux"
+    ],
+    "amazon-linux.png": [
+      "Amazon Linux"
+    ],
+    "amigaos.png": [
+      "AmigaOS"
+    ],
+    "android.png": [
+      "Android",
+      "Android Go",
+      "Android TV"
+    ],
+    "aosc-os.png": [
+      "AOSC OS"
+    ],
+    "apple.png": [
+      "iOS",
+      "iPadOS",
+      "Mac",
+      "tvOS",
+      "watchOS"
+    ],
+    "arcaos.png": [
+      "ArcaOS"
+    ],
+    "arch-linux.png": [
+      "Arch Linux"
+    ],
+    "azure-linux.png": [
+      "Azure Linux"
+    ],
+    "bada.png": [
+      "Bada"
+    ],
+    "baidu-yi.png": [
+      "Baidu Yi"
+    ],
+    "beos.png": [
+      "BeOS"
+    ],
+    "blackberry-os.png": [
+      "BlackBerry OS",
+      "BlackBerry Tablet OS"
+    ],
+    "bliss-os.png": [
+      "Bliss OS"
+    ],
+    "brew.png": [
+      "Brew"
+    ],
+    "brightsignos.png": [
+      "BrightSignOS"
+    ],
+    "bsd.png": [
+      "BSD"
+    ],
+    "centos.png": [
+      "CentOS",
+      "CentOS Stream"
+    ],
+    "chrome-os.png": [
+      "Chrome OS"
+    ],
+    "chromium-os.png": [
+      "Chromium OS"
+    ],
+    "clear-linux-os.png": [
+      "Clear Linux OS"
+    ],
+    "cyanogenmod.png": [
+      "CyanogenMod"
+    ],
+    "debian.png": [
+      "Debian"
+    ],
+    "dragonfly.png": [
+      "DragonFly"
+    ],
+    "elementary-os.png": [
+      "elementary OS"
+    ],
+    "fedora.png": [
+      "Fedora"
+    ],
+    "fire-os.png": [
+      "Fire OS"
+    ],
+    "firefox-os.png": [
+      "Firefox OS"
+    ],
+    "foresight-linux.png": [
+      "Foresight Linux"
+    ],
+    "fortios.png": [
+      "FortiOS"
+    ],
+    "freebox.png": [
+      "Freebox"
+    ],
+    "freebsd.png": [
+      "FreeBSD"
+    ],
+    "fritz-os.png": [
+      "FRITZ!OS"
+    ],
+    "fuchsia.png": [
+      "Fuchsia"
+    ],
+    "fydeos.png": [
+      "FydeOS"
+    ],
+    "gentoo.png": [
+      "Gentoo"
+    ],
+    "ghostbsd.png": [
+      "GhostBSD"
+    ],
+    "gnewsense.png": [
+      "gNewSense"
+    ],
+    "gnu-linux.png": [
+      "GNU/Linux"
+    ],
+    "google-tv.png": [
+      "Google TV"
+    ],
+    "haiku-os.png": [
+      "Haiku OS"
+    ],
+    "harmonyos.png": [
+      "HarmonyOS",
+      "HarmonyOS NEXT"
+    ],
+    "hp-ux.png": [
+      "HP-UX"
+    ],
+    "hyperos.png": [
+      "HyperOS"
+    ],
+    "irix.png": [
+      "IRIX"
+    ],
+    "java-me.png": [
+      "Java ME"
+    ],
+    "joli-os.png": [
+      "Joli OS"
+    ],
+    "kaios.png": [
+      "KaiOS"
+    ],
+    "kali.png": [
+      "Kali"
+    ],
+    "kin-os.png": [
+      "KIN OS"
+    ],
+    "koboos.png": [
+      "KoboOS"
+    ],
+    "kolibrios.png": [
+      "KolibriOS"
+    ],
+    "kubuntu.png": [
+      "Kubuntu"
+    ],
+    "leafos.png": [
+      "LeafOS"
+    ],
+    "lineage-os.png": [
+      "Lineage OS"
+    ],
+    "linpus.png": [
+      "Linpus"
+    ],
+    "linspire.png": [
+      "LindowsOS",
+      "Linspire"
+    ],
+    "liri-os.png": [
+      "Liri OS"
+    ],
+    "lubuntu.png": [
+      "Lubuntu"
+    ],
+    "luneos.png": [
+      "LuneOS"
+    ],
+    "maemo.png": [
+      "Maemo"
+    ],
+    "mageia.png": [
+      "Mageia"
+    ],
+    "mandriva.png": [
+      "Mandriva"
+    ],
+    "mediatek.png": [
+      "MRE",
+      "MTK / Nucleus"
+    ],
+    "meego.png": [
+      "MeeGo"
+    ],
+    "meta-horizon.png": [
+      "Meta Horizon"
+    ],
+    "minix.png": [
+      "MINIX"
+    ],
+    "mint.png": [
+      "Mint"
+    ],
+    "mocor-os.png": [
+      "Mocor OS",
+      "MocorDroid"
+    ],
+    "motorola-ezx.png": [
+      "Motorola EZX"
+    ],
+    "netbsd.png": [
+      "NetBSD"
+    ],
+    "nextstep.png": [
+      "NeXTSTEP"
+    ],
+    "nintendo.png": [
+      "Nintendo",
+      "Nintendo Mobile"
+    ],
+    "nova.png": [
+      "Nova"
+    ],
+    "nuttx.png": [
+      "NuttX"
+    ],
+    "openbsd.png": [
+      "OpenBSD"
+    ],
+    "openharmony.png": [
+      "OpenHarmony"
+    ],
+    "opensuse.png": [
+      "openSUSE"
+    ],
+    "openvms.png": [
+      "OpenVMS"
+    ],
+    "openvz.png": [
+      "OpenVZ"
+    ],
+    "openwrt.png": [
+      "OpenWrt"
+    ],
+    "opera-tv.png": [
+      "Opera TV"
+    ],
+    "oracle-linux.png": [
+      "Oracle Linux"
+    ],
+    "ordissimo.png": [
+      "Ordissimo"
+    ],
+    "orsay.png": [
+      "Orsay"
+    ],
+    "os-2.png": [
+      "OS/2"
+    ],
+    "osf1.png": [
+      "OSF1"
+    ],
+    "palmos.png": [
+      "palmOS"
+    ],
+    "pardus.png": [
+      "Pardus"
+    ],
+    "pclinuxos.png": [
+      "PCLinuxOS"
+    ],
+    "pico-os.png": [
+      "PICO OS"
+    ],
+    "plan-9.png": [
+      "Plan 9"
+    ],
+    "playstation-portable.png": [
+      "PlayStation Portable"
+    ],
+    "playstation.png": [
+      "PlayStation"
+    ],
+    "proxmox-ve.png": [
+      "Proxmox VE"
+    ],
+    "puffin-os.png": [
+      "Puffin OS"
+    ],
+    "pureos.png": [
+      "PureOS"
+    ],
+    "raspberry-pi-os.png": [
+      "Raspberry Pi OS",
+      "Raspbian"
+    ],
+    "red-hat.png": [
+      "Red Hat"
+    ],
+    "red-star.png": [
+      "Red Star"
+    ],
+    "redos.png": [
+      "RedOS"
+    ],
+    "remix-os.png": [
+      "Remix OS"
+    ],
+    "resurrection-remix-os.png": [
+      "Resurrection Remix OS"
+    ],
+    "revenge-os.png": [
+      "Revenge OS"
+    ],
+    "risc-os.png": [
+      "RISC OS"
+    ],
+    "rocky-linux.png": [
+      "Rocky Linux"
+    ],
+    "roku-os.png": [
+      "Roku OS"
+    ],
+    "rosa.png": [
+      "Rosa"
+    ],
+    "routeros.png": [
+      "RouterOS"
+    ],
+    "sabayon.png": [
+      "Sabayon"
+    ],
+    "sailfish-os.png": [
+      "Sailfish OS"
+    ],
+    "seewoos.png": [
+      "SeewoOS"
+    ],
+    "serenityos.png": [
+      "SerenityOS"
+    ],
+    "sirin-os.png": [
+      "Sirin OS"
+    ],
+    "slackware.png": [
+      "Slackware"
+    ],
+    "smartisan-os.png": [
+      "Smartisan OS"
+    ],
+    "solaris.png": [
+      "Solaris"
+    ],
+    "steamos.png": [
+      "SteamOS"
+    ],
+    "suse.png": [
+      "SUSE"
+    ],
+    "syllable.png": [
+      "Syllable"
+    ],
+    "symbian.png": [
+      "Symbian",
+      "Symbian OS",
+      "Symbian OS Series 40",
+      "Symbian OS Series 60",
+      "Symbian^3"
+    ],
+    "tencentos.png": [
+      "TencentOS"
+    ],
+    "thinos.png": [
+      "ThinOS"
+    ],
+    "threadx.png": [
+      "ThreadX"
+    ],
+    "titan-os.png": [
+      "Titan OS"
+    ],
+    "tivo-os.png": [
+      "TiVo OS"
+    ],
+    "tizen.png": [
+      "Tizen"
+    ],
+    "tmaxos.png": [
+      "TmaxOS"
+    ],
+    "turbolinux.png": [
+      "Turbolinux"
+    ],
+    "ubuntu.png": [
+      "Ubuntu"
+    ],
+    "ultrix.png": [
+      "ULTRIX"
+    ],
+    "uos.png": [
+      "UOS"
+    ],
+    "vectorlinux.png": [
+      "VectorLinux"
+    ],
+    "vega-os.png": [
+      "Vega OS"
+    ],
+    "vidaa.png": [
+      "VIDAA"
+    ],
+    "vizios.png": [
+      "ViziOS"
+    ],
+    "wear-os.png": [
+      "Wear OS"
+    ],
+    "webian.png": [
+      "Webian"
+    ],
+    "webos.png": [
+      "webOS"
+    ],
+    "whale-os.png": [
+      "Whale OS"
+    ],
+    "windows-mobile.png": [
+      "Windows CE",
+      "Windows Mobile"
+    ],
+    "windows-phone.png": [
+      "Windows Phone"
+    ],
+    "windows.png": [
+      "Windows",
+      "Windows IoT",
+      "Windows RT"
+    ],
+    "xbox.png": [
+      "Xbox"
+    ],
+    "xubuntu.png": [
+      "Xubuntu"
+    ],
+    "yodaos-master.png": [
+      "YodaOS-Master"
+    ],
+    "yunos.png": [
+      "YunOS"
+    ],
+    "zorin-os.png": [
+      "ZorinOS"
+    ]
+  }
+}

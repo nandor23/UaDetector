@@ -38,6 +38,7 @@ the user agent string.
 | [UaDetector.Lite](https://www.nuget.org/packages/UaDetector.Lite)                   | Memory-optimized variant with slower parsing speed        |
 | [UaDetector.Abstractions](https://www.nuget.org/packages/UaDetector.Abstractions)   | Shared models, enums, and constants                       |
 | [UaDetector.MemoryCache](https://www.nuget.org/packages/UaDetector.MemoryCache)     | Memory cache built on Microsoft.Extensions.Caching.Memory |
+| [@uadetector/icons](https://www.npmjs.com/package/@uadetector/icons)                | Browser and OS icons for frontends (npm, MIT License)     |
 
 ## Features
 
