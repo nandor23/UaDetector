@@ -1,0 +1,42 @@
+{
+  "name": "@uadetector/icons",
+  "version": "0.0.0",
+  "description": "Browser and operating system icons for the names returned by UaDetector.",
+  "keywords": [
+    "uadetector",
+    "user-agent",
+    "browser",
+    "operating-system",
+    "icons"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nandor23/UaDetector.git",
+    "directory": "icons"
+  },
+  "type": "module",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./browsers/*": "./browsers/*",
+    "./os/*": "./os/*"
+  },
+  "files": [
+    "dist",
+    "browsers",
+    "os",
+    "NOTICE.md"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsc",
+    "prepack": "npm run build"
+  },
+  "devDependencies": {
+    "typescript": "^7.0.2"
+  }
+}

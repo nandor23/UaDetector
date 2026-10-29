@@ -30,6 +30,18 @@
   <Folder Name="/.solution/docs/stylesheets/">
     <File Path="docs\stylesheets\extra.css" />
   </Folder>
+  <Folder Name="/icons/">
+    <File Path="icons\package.json" />
+    <File Path="icons\tsconfig.json" />
+    <File Path="icons\README.md" />
+    <File Path="icons\CONTRIBUTING.md" />
+    <File Path="icons\NOTICE.md" />
+    <File Path="icons\SOURCES.md" />
+  </Folder>
+  <Folder Name="/icons/src/">
+    <File Path="icons\src\index.ts" />
+    <File Path="icons\src\icons.json" />
+  </Folder>
   <Folder Name="/benchmarks/">
     <Project Path="benchmarks/UaDetector.MemoryUsage/UaDetector.MemoryUsage.csproj" />
     <Project Path="benchmarks/UaDetector.Benchmarks/UaDetector.Benchmarks.csproj" />

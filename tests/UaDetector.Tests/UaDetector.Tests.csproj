@@ -16,6 +16,10 @@
     <None Update="Fixtures\Resources\**\*">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Include="..\..\icons\**\*.png;..\..\icons\src\icons.json" Exclude="..\..\icons\node_modules\**">
+      <Link>Icons\%(RecursiveDir)%(Filename)%(Extension)</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
   <ItemGroup>

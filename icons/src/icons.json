@@ -1,0 +1,70 @@
+{
+  "browsers": {
+    "115-browser.png": [
+      "115 Browser"
+    ],
+    "2345-browser.png": [
+      "2345 Browser"
+    ],
+    "abrowse.png": [
+      "ABrowse"
+    ],
+    "arc-search.png": [
+      "Arc Search"
+    ],
+    "bluefy.png": [
+      "Bluefy"
+    ],
+    "ghostery-privacy-browser.png": [
+      "Ghostery Privacy Browser"
+    ],
+    "ladybird.png": [
+      "Ladybird"
+    ],
+    "lunascape.png": [
+      "Lunascape"
+    ],
+    "onion-browser.png": [
+      "Onion Browser"
+    ],
+    "ornet-browser.png": [
+      "OrNET Browser"
+    ],
+    "salamweb.png": [
+      "SalamWeb"
+    ],
+    "t-online-de-browser.png": [
+      "t-online.de Browser"
+    ],
+    "togate.png": [
+      "ToGate"
+    ],
+    "vivo-browser.png": [
+      "vivo Browser"
+    ],
+    "vmware-airwatch.png": [
+      "VMware AirWatch"
+    ],
+    "whale-browser.png": [
+      "Whale Browser"
+    ]
+  },
+  "os": {
+    "harmonyos.png": [
+      "HarmonyOS",
+      "HarmonyOS NEXT"
+    ],
+    "openharmony.png": [
+      "OpenHarmony"
+    ],
+    "openwrt.png": [
+      "OpenWrt"
+    ],
+    "osf1.png": [
+      "OSF1"
+    ],
+    "tmaxos.png": [
+      "TmaxOS"
+    ]
+  }
+}

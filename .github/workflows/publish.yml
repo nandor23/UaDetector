@@ -1,4 +1,4 @@
-name: Publish to NuGet
+name: Publish to NuGet and npm
 
 on:
   push:
@@ -7,14 +7,15 @@ on:
 
 env:
   DOTNET_VERSION: 10.0.x
+  NODE_VERSION: 24
 
 jobs:
-  publish:
+  pack-nuget:
     runs-on: ubuntu-latest
-    
+
     env:
       PACKAGES_OUTPUT_DIR: ${{ github.workspace }}/packages
-    
+
     steps:
       - uses: actions/checkout@v4
         with:
@@ -35,7 +36,7 @@ jobs:
             --configuration Release \
             --output "$PACKAGES_OUTPUT_DIR" \
             -p:PackageVersion=${{ steps.extract_tag.outputs.tag }}
-          
+
       - name: Pack UaDetector.Lite
         run: |
           dotnet pack src/UaDetector \
@@ -43,23 +44,103 @@ jobs:
             --property:LiteMode=true \
             --output "$PACKAGES_OUTPUT_DIR" \
             -p:PackageVersion=${{ steps.extract_tag.outputs.tag }}
-          
+
       - name: Pack UaDetector.MemoryCache
         run: |
           dotnet pack src/UaDetector.MemoryCache \
             --configuration Release \
             --output "$PACKAGES_OUTPUT_DIR" \
             -p:PackageVersion=${{ steps.extract_tag.outputs.tag }}
-          
+
       - name: Pack UaDetector.Abstractions
         run: |
           dotnet pack src/UaDetector.Abstractions \
             --configuration Release \
             --output "$PACKAGES_OUTPUT_DIR" \
             -p:PackageVersion=${{ steps.extract_tag.outputs.tag }}
-          
+
+      - name: Upload packages
+        uses: actions/upload-artifact@v4
+        with:
+          name: nuget-packages
+          path: ${{ env.PACKAGES_OUTPUT_DIR }}/*.nupkg
+
+  pack-npm:
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: icons
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+
+      - name: Get version tag
+        id: extract_tag
+        run: echo "tag=${GITHUB_REF#refs/tags/v}" >> $GITHUB_OUTPUT
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Pack @uadetector/icons
+        run: |
+          npm pkg set version=${{ steps.extract_tag.outputs.tag }}
+          npm pack
+
+      - name: Upload package
+        uses: actions/upload-artifact@v4
+        with:
+          name: npm-package
+          path: icons/*.tgz
+
+  publish-nuget:
+    needs: [pack-nuget, pack-npm]
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: ${{ env.DOTNET_VERSION }}
+
+      - name: Download packages
+        uses: actions/download-artifact@v4
+        with:
+          name: nuget-packages
+
       - name: Publish to NuGet
         run: |
-          dotnet nuget push "$PACKAGES_OUTPUT_DIR"/*.nupkg \
+          dotnet nuget push *.nupkg \
             --api-key ${{ secrets.UADETECTOR_API_KEY }} \
-            --source https://api.nuget.org/v3/index.json
+            --source https://api.nuget.org/v3/index.json \
+            --skip-duplicate
+
+  publish-npm:
+    needs: [pack-nuget, pack-npm]
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+      id-token: write
+
+    steps:
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          registry-url: https://registry.npmjs.org
+
+      - name: Download package
+        uses: actions/download-artifact@v4
+        with:
+          name: npm-package
+
+      - name: Publish to npm
+        run: npm publish *.tgz --provenance --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

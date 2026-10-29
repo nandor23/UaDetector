@@ -484,3 +484,6 @@ $RECYCLE.BIN/
 
 # Vim temporary swap files
 *.swp
+
+# Icons package build output
+icons/dist/
