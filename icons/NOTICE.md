@@ -52,6 +52,15 @@ Its copyright notice is:
 Copyright (c) 2008, SRWare. All rights reserved.
 ```
 
+`browsers/kiwi.png` is resized from [kiwi_logo_circle.svg](https://github.com/kiwibrowser/src.next/blob/kiwi/kiwi_logo_circle.svg)
+in the Kiwi Browser GitHub repository, by Geometry OU, and is licensed under the
+[BSD 3-Clause License](LICENSES/BSD-3-Clause.txt). Its copyright notice is:
+
+```text
+Copyright (c) 2022, Geometry OU (Kiwi Browser)
+All rights reserved.
+```
+
 `browsers/ladybird.png` is resized from [Ladybird icon png.png](https://commons.wikimedia.org/wiki/File:Ladybird_icon_png.png)
 on Wikimedia Commons, by the Ladybird developers, and is licensed under the [BSD 2-Clause License](LICENSES/BSD-2-Clause.txt).
 Its copyright notice is:
@@ -135,7 +144,11 @@ Copyright (c) Microsoft Corporation.
 ```
 
 `os/bsd.png` is resized from [Bsd Daemon.svg](https://commons.wikimedia.org/wiki/File:Bsd_Daemon.svg) on Wikimedia
-Commons. The BSD Daemon is copyright 1988 by Marshall Kirk McKusick.
+Commons. Its copyright notice is:
+
+```text
+BSD Daemon Copyright 1988 by Marshall Kirk McKusick. All Rights Reserved.
+```
 
 `os/firefox-os.png` is cropped from [Firefox OS Vertical SVG Logo.svg](https://commons.wikimedia.org/wiki/File:Firefox_OS_Vertical_SVG_Logo.svg)
 on Wikimedia Commons, by Sean Martell for Mozilla, and is licensed under
@@ -157,8 +170,14 @@ Copyright (c) Luis Felipe López Acevedo.
 ```
 
 `os/gnu-linux.png` is resized from [Tux.svg](https://commons.wikimedia.org/wiki/File:Tux.svg) on Wikimedia
-Commons. Tux was created by Larry Ewing with The GIMP, and the SVG version is by Simon Budig and
-Garrett LeSage.
+Commons. Tux was created by Larry Ewing (lewing@isc.tamu.edu) with The GIMP, and the SVG version is by
+Simon Budig and Garrett LeSage. Simon Budig's [copyright notice](http://www.home.unix-ag.org/simon/penguin/README) is:
+
+```text
+These drawings are copyrighted by Larry Ewing and Simon Budig
+(penguin-variant.sk also by Anja Gerwinski), redistribution is free but
+has to include this README/Copyright notice.
+```
 
 `os/kali.png` is resized from [Kali-dragon-icon.svg](https://commons.wikimedia.org/wiki/File:Kali-dragon-icon.svg)
 on Wikimedia Commons, by Abiss21, and is licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).

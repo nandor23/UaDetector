@@ -95,7 +95,7 @@ Where each icon was taken from. Every icon is the original image resized to 48×
 | `keepsolid-browser.png`          | [Google Play](https://play.google.com/store/apps/details?id=com.keepsolid.privatebrowser)                                                     | Brand asset   |
 | `keyboard-browser.png`           | [Google Play](https://play.google.com/store/apps/details?id=fr.agrange.bbbrowser)                                                             | Brand asset   |
 | `kids-safe-browser.png`          | [Google Play](https://play.google.com/store/apps/details?id=com.kiddoware.kidsafebrowser)                                                     | Brand asset   |
-| `kiwi.png`                       | [Kiwi Browser GitHub repository](https://github.com/kiwibrowser/src.next/blob/kiwi/kiwi_logo_circle.svg)                                      | Brand asset   |
+| `kiwi.png`                       | [Kiwi Browser GitHub repository](https://github.com/kiwibrowser/src.next/blob/kiwi/kiwi_logo_circle.svg)                                      | BSD 3-Clause  |
 | `kuto-mini-browser.png`          | [Google Play](https://play.google.com/store/apps/details?id=com.kuto.browser)                                                                 | Brand asset   |
 | `ladybird.png`                   | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Ladybird_icon_png.png)                                                            | BSD 2-Clause  |
 | `lemur-browser.png`              | [Google Play](https://play.google.com/store/apps/details?id=com.lemurbrowser.exts)                                                            | Brand asset   |
@@ -164,7 +164,7 @@ Where each icon was taken from. Every icon is the original image resized to 48×
 | `seekee.png`                     | [Google Play](https://play.google.com/store/apps/details?id=com.enzo.paulo)                                                                   | Brand asset   |
 | `seewo-browser.png`              | [Seewo website](https://www.seewo.com/images/logo1.svg)                                                                                       | Brand asset   |
 | `seznam-browser.png`             | [Google Play](https://play.google.com/store/apps/details?id=cz.seznam.sbrowser)                                                               | Brand asset   |
-| `shiira.png`                     | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Shiira.png)                                                                       | BSD           |
+| `shiira.png`                     | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Shiira.png)                                                                       | BSD 3-Clause  |
 | `sizzy.png`                      | [Sizzy website icon](https://sizzy.co/apple-touch-icon.png)                                                                                   | Brand asset   |
 | `sleipnir.png`                   | [App Store](https://apps.apple.com/us/app/sleipnir-mobile/id404732112)                                                                        | Brand asset   |
 | `smart-search-web-browser.png`   | [Google Play](https://play.google.com/store/apps/details?id=reactivephone.msearch)                                                            | Brand asset   |
@@ -257,7 +257,7 @@ Where each icon was taken from. Every icon is the original image resized to 48×
 | `fortios.png`               | [Fortinet favicon](https://www.fortinet.com/favicon.ico), 48×48 frame                                                                                             | Brand asset   |
 | `freebox.png`               | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Logogram_Freebox.jpg), cropped to the symbol                                                          | CC BY-SA 4.0  |
 | `freebsd.png`               | [FreeBSD GitHub avatar](https://github.com/freebsd.png), cropped to the symbol                                                                                    | Brand asset   |
-| `fritz-os.png`              | [FRITZ! favicon](https://frit<br/>z.com/cdn/shop/files/Favicon_FRITZ.svg)                                                                                         | Brand asset   |
+| `fritz-os.png`              | [FRITZ! favicon](https://fritz.com/cdn/shop/files/Favicon_FRITZ.svg)                                                                                              | Brand asset   |
 | `fuchsia.png`               | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Google_Fuchsia_Logo.svg)                                                                              | Public domain |
 | `fydeos.png`                | [FydeOS GitHub avatar](https://github.com/fydeos.png)                                                                                                             | Brand asset   |
 | `gentoo.png`                | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Gentoo_Linux_Signet.svg)                                                                              | CC BY-SA 2.5  |
@@ -291,7 +291,7 @@ Where each icon was taken from. Every icon is the original image resized to 48×
 | `mediatek.png`              | [MediaTek website](https://www.mediatek.com/hubfs/raw_assets/public/MediaTek_Mar_2024/images/mediatek-logo.svg)                                                   | Brand asset   |
 | `meego.png`                 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:MeeGo_logo.svg)                                                                                       | Public domain |
 | `meta-horizon.png`          | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Meta_Platforms_Inc._logo_%28cropped%29.svg)                                                           | Public domain |
-| `minix.png`                 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Minix3_Logo.png)                                                                                      | BSD           |
+| `minix.png`                 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Minix3_Logo.png)                                                                                      | MINIX 3       |
 | `mint.png`                  | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:New_Linux_Mint_logo.svg), cropped to the symbol                                                       | Public domain |
 | `mocor-os.png`              | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Unisoc_Logo.png), cropped to the symbol                                                               | Public domain |
 | `motorola-ezx.png`          | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Motorola-Logo.svg), cropped to the symbol                                                             | Public domain |
