@@ -15,6 +15,9 @@
     "2345-browser.png": [
       "2345 Browser"
     ],
+    "360-phone-browser.png": [
+      "360 Phone Browser"
+    ],
     "abrowse.png": [
       "ABrowse"
     ],
@@ -27,14 +30,28 @@
     "aloha-browser.png": [
       "Aloha Browser"
     ],
+    "amaya.png": [
+      "Amaya"
+    ],
     "amerigo.png": [
       "Amerigo"
+    ],
+    "amiga-voyager.png": [
+      "Amiga Voyager"
+    ],
+    "aol.png": [
+      "AOL Desktop",
+      "AOL Shield",
+      "AOL Shield Pro"
     ],
     "apus-browser.png": [
       "APUS Browser"
     ],
     "arc-search.png": [
       "Arc Search"
+    ],
+    "arora.png": [
+      "Arora"
     ],
     "arvin.png": [
       "Arvin"
@@ -75,6 +92,9 @@
     "black-lion-browser.png": [
       "Black Lion Browser"
     ],
+    "blackberry-browser.png": [
+      "BlackBerry Browser"
+    ],
     "bluefy.png": [
       "Bluefy"
     ],
@@ -89,6 +109,9 @@
     ],
     "bxe-browser.png": [
       "BXE Browser"
+    ],
+    "camino.png": [
+      "Camino"
     ],
     "cave-browser.png": [
       "Cave Browser"
@@ -119,6 +142,12 @@
     ],
     "comet.png": [
       "Comet"
+    ],
+    "comodo-dragon.png": [
+      "Comodo Dragon"
+    ],
+    "cyberfox.png": [
+      "Cyberfox"
     ],
     "dark-web-private.png": [
       "Dark Web Private"
@@ -163,6 +192,9 @@
     "firefox-reality.png": [
       "Firefox Reality"
     ],
+    "firefox-rocket.png": [
+      "Firefox Rocket"
+    ],
     "firefox.png": [
       "Firefox",
       "Firefox Mobile",
@@ -186,14 +218,25 @@
     "ginxdroid-browser.png": [
       "GinxDroid Browser"
     ],
+    "google-earth.png": [
+      "Google Earth",
+      "Google Earth Pro"
+    ],
     "herond-browser.png": [
       "Herond Browser"
     ],
     "heytapbrowser.png": [
       "HeyTapBrowser"
     ],
-    "icab-mobile.png": [
+    "icab.png": [
+      "iCab",
       "iCab Mobile"
+    ],
+    "icedragon.png": [
+      "IceDragon"
+    ],
+    "iceweasel.png": [
+      "Iceweasel"
     ],
     "idesktop-pc-browser.png": [
       "iDesktop PC Browser"
@@ -217,6 +260,9 @@
     "involta-go.png": [
       "Involta Go"
     ],
+    "iridium.png": [
+      "Iridium"
+    ],
     "iron.png": [
       "Iron",
       "Iron Mobile"
@@ -235,6 +281,9 @@
     ],
     "kids-safe-browser.png": [
       "Kids Safe Browser"
+    ],
+    "kiwi.png": [
+      "Kiwi"
     ],
     "kuto-mini-browser.png": [
       "KUTO Mini Browser"
@@ -273,6 +322,9 @@
     ],
     "mises.png": [
       "Mises"
+    ],
+    "mobicip.png": [
+      "Mobicip"
     ],
     "mullvad-browser.png": [
       "Mullvad Browser"
@@ -326,10 +378,18 @@
     "opera.png": [
       "Opera",
       "Opera Mobile",
-      "Opera Next"
+      "Opera Next",
+      "Opera Devices"
+    ],
+    "ordissimo.png": [
+      "Ordissimo"
     ],
     "ornet-browser.png": [
       "OrNET Browser"
+    ],
+    "palm.png": [
+      "Palm Blazer",
+      "Palm WebPro"
     ],
     "pawxy.png": [
       "Pawxy"
@@ -337,11 +397,20 @@
     "phoenix-browser.png": [
       "Phoenix Browser"
     ],
+    "phoenix.png": [
+      "Phoenix"
+    ],
     "pi-browser.png": [
       "Pi Browser"
     ],
     "pluma.png": [
       "Pluma"
+    ],
+    "polarity.png": [
+      "Polarity"
+    ],
+    "polypane.png": [
+      "Polypane"
     ],
     "private-internet-browser.png": [
       "Private Internet Browser"
@@ -371,11 +440,21 @@
     "qq-browser.png": [
       "QQ Browser"
     ],
+    "qtwebengine.png": [
+      "QtWebEngine"
+    ],
+    "quark.png": [
+      "Quark",
+      "QuarkPC"
+    ],
     "quetta.png": [
       "Quetta"
     ],
     "quick-search-tv.png": [
       "Quick Search TV"
+    ],
+    "qwant-mobile.png": [
+      "Qwant Mobile"
     ],
     "safari-technology-preview.png": [
       "Safari Technology Preview"
@@ -383,6 +462,12 @@
     "safari.png": [
       "Safari",
       "Mobile Safari"
+    ],
+    "safe-exam-browser.png": [
+      "Safe Exam Browser"
+    ],
+    "sailfish-browser.png": [
+      "Sailfish Browser"
     ],
     "salamweb.png": [
       "SalamWeb"
@@ -402,6 +487,12 @@
     "seznam-browser.png": [
       "Seznam Browser"
     ],
+    "shiira.png": [
+      "Shiira"
+    ],
+    "sizzy.png": [
+      "Sizzy"
+    ],
     "sleipnir.png": [
       "Sleipnir"
     ],
@@ -410,6 +501,10 @@
     ],
     "snap-browser.png": [
       "Snap Browser"
+    ],
+    "sogou-browser.png": [
+      "Sogou Explorer",
+      "Sogou Mobile Browser"
     ],
     "soti-surf.png": [
       "SOTI Surf"
@@ -426,6 +521,9 @@
     "stay-browser.png": [
       "Stay Browser"
     ],
+    "steam.png": [
+      "Steam In-Game Overlay"
+    ],
     "surfy-browser.png": [
       "Surfy Browser"
     ],
@@ -437,6 +535,9 @@
     ],
     "tararia.png": [
       "tararia"
+    ],
+    "tizen-browser.png": [
+      "Tizen Browser"
     ],
     "togate.png": [
       "ToGate"
@@ -507,6 +608,12 @@
     ],
     "web-explorer.png": [
       "Web Explorer"
+    ],
+    "webpositive.png": [
+      "WebPositive"
+    ],
+    "wexond.png": [
+      "Wexond"
     ],
     "whale-browser.png": [
       "Whale Browser"

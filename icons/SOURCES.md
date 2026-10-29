@@ -11,13 +11,18 @@ Where each icon was taken from. Every icon is the original image resized to 48×
 | `1dm-browser.png`                | [Google Play](https://play.google.com/store/apps/details?id=idm.internet.download.manager)                                                    | Brand asset   |
 | `1dm-plus-browser.png`           | [Google Play](https://play.google.com/store/apps/details?id=idm.internet.download.manager.plus)                                               | Brand asset   |
 | `2345-browser.png`               | [Tencent MyApp](https://sj.qq.com/appdetail/com.browser2345)                                                                                  | Brand asset   |
+| `360-phone-browser.png`          | [App Store](https://apps.apple.com/cn/app/id892311054)                                                                                        | Brand asset   |
 | `abrowse.png`                    | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Logo_Abrowse.gif)                                                                 | Public domain |
 | `airfind-secure-browser.png`     | [Google Play](https://play.google.com/store/apps/details?id=com.airfind.browser)                                                              | Brand asset   |
 | `aloha-browser-lite.png`         | [Google Play](https://play.google.com/store/apps/details?id=com.alohamobile.browser.lite)                                                     | Brand asset   |
 | `aloha-browser.png`              | [App Store](https://apps.apple.com/us/app/aloha-browser-private-vpn/id1105317682)                                                             | Brand asset   |
+| `amaya.png`                      | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Amaya_logo_65x50.png)                                                             | Brand asset   |
 | `amerigo.png`                    | [Google Play](https://play.google.com/store/apps/details?id=it.ideasolutions.amerigo)                                                         | Brand asset   |
+| `amiga-voyager.png`              | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Voyager_browser_logo.png)                                                         | Public domain |
+| `aol.png`                        | [Google Play](https://play.google.com/store/apps/details?id=com.aol.mobile.aolapp)                                                            | Brand asset   |
 | `apus-browser.png`               | [Google Play](https://play.google.com/store/apps/details?id=com.apusapps.browser)                                                             | Brand asset   |
 | `arc-search.png`                 | [App Store](https://apps.apple.com/us/app/arc-search-find-it-faster/id6472513080)                                                             | Brand asset   |
+| `arora.png`                      | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Arora_logo.svg)                                                                   | CC BY-SA 3.0  |
 | `arvin.png`                      | [Google Play](https://play.google.com/store/apps/details?id=com.arvin.browser)                                                                | Brand asset   |
 | `ask-browser.png`                | [Google Play](https://play.google.com/store/apps/details?id=com.easy.ask.browser)                                                             | Brand asset   |
 | `avast-secure-browser.png`       | [App Store](https://apps.apple.com/us/app/avast-secure-browser/id1517761023)                                                                  | Brand asset   |
@@ -31,11 +36,13 @@ Where each icon was taken from. Every icon is the original image resized to 48×
 | `bf-browser.png`                 | [Google Play](https://play.google.com/store/apps/details?id=com.befaster.bfbrowser)                                                           | Brand asset   |
 | `black-browser.png`              | [Google Play](https://play.google.com/store/apps/details?id=com.saigopal.browser)                                                             | Brand asset   |
 | `black-lion-browser.png`         | [Google Play](https://play.google.com/store/apps/details?id=com.blacklion.browser)                                                            | Brand asset   |
+| `blackberry-browser.png`         | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Blackberry_Logo_without_wordmark.svg)                                             | Public domain |
 | `bluefy.png`                     | [App Store](https://apps.apple.com/us/app/bluefy-web-ble-browser/id1492822055)                                                                | Brand asset   |
 | `brave.png`                      | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Brave_lion_icon.svg)                                                              | MPL 2.0       |
 | `browsehere.png`                 | [Google Play](https://play.google.com/store/apps/details?id=com.tcl.browser)                                                                  | Brand asset   |
 | `browser-mini.png`               | [Google Play](https://play.google.com/store/apps/details?id=com.ucimini.internetbrowser)                                                      | Brand asset   |
 | `bxe-browser.png`                | [Google Play](https://play.google.com/store/apps/details?id=com.bf.browser)                                                                   | Brand asset   |
+| `camino.png`                     | [Camino website](https://caminobrowser.org/camino-logo.png)                                                                                   | Brand asset   |
 | `cave-browser.png`               | [Google Play](https://play.google.com/store/apps/details?id=com.cavebrowser)                                                                  | Brand asset   |
 | `cg-browser.png`                 | [Google Play](https://play.google.com/store/apps/details?id=com.cgbrowser.rn)                                                                 | Brand asset   |
 | `chrome.png`                     | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Google_Chrome_icon_%28February_2022%29.svg)                                       | Public domain |
@@ -44,6 +51,8 @@ Where each icon was taken from. Every icon is the original image resized to 48×
 | `clear-tv-browser.png`           | [Google Play](https://play.google.com/store/apps/details?id=com.iberapps.cleartvwebbrowser)                                                   | Brand asset   |
 | `coc-coc.png`                    | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:C%E1%BB%91c_C%E1%BB%91c_logo.svg)                                                 | Public domain |
 | `comet.png`                      | [App Store](https://apps.apple.com/us/app/comet-ai-browser-assistant/id6748622471)                                                            | Brand asset   |
+| `comodo-dragon.png`              | [Comodo website](https://www.comodo.com/home/browsers-toolbars/images/dragon-new.png)                                                         | Brand asset   |
+| `cyberfox.png`                   | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Cyberfox_logo.png)                                                                | MPL 2.0       |
 | `dark-web-private.png`           | [Google Play](https://play.google.com/store/apps/details?id=birapp.dark.web.private)                                                          | Brand asset   |
 | `dark-web.png`                   | [Google Play](https://play.google.com/store/apps/details?id=birapp.dark.web)                                                                  | Brand asset   |
 | `ddu-browser.png`                | [Google Play](https://play.google.com/store/apps/details?id=com.ddu.browser.oversea)                                                          | Brand asset   |
@@ -58,6 +67,7 @@ Where each icon was taken from. Every icon is the original image resized to 48×
 | `fiery-browser.png`              | [Google Play](https://play.google.com/store/apps/details?id=hot.fiery.browser)                                                                | Brand asset   |
 | `firefox-focus.png`              | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Firefox_Focus_2021_Icon.svg)                                                      | MPL 2.0       |
 | `firefox-reality.png`            | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Firefox_Reality_Logo.png)                                                         | Brand asset   |
+| `firefox-rocket.png`             | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Firefox_Lite_logo%2C_2019.svg)                                                    | MPL 2.0       |
 | `firefox.png`                    | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Firefox_logo%2C_2019.svg)                                                         | MPL 2.0       |
 | `float-browser.png`              | [Google Play](https://play.google.com/store/apps/details?id=com.xpp.floatbrowser)                                                             | Brand asset   |
 | `floorp.png`                     | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Floorp_logo_without_text.svg)                                                     | Brand asset   |
@@ -65,9 +75,12 @@ Where each icon was taken from. Every icon is the original image resized to 48×
 | `frost.png`                      | [Google Play](https://play.google.com/store/apps/details?id=com.crowbar.beaverlite)                                                           | Brand asset   |
 | `ghostery-privacy-browser.png`   | [App Store](https://apps.apple.com/us/app/ghostery-adblocker-for-privacy/id6504861501)                                                        | Brand asset   |
 | `ginxdroid-browser.png`          | [Google Play](https://play.google.com/store/apps/details?id=ginxdroid.gdm)                                                                    | Brand asset   |
+| `google-earth.png`               | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Google_Earth_icon.svg)                                                            | Public domain |
 | `herond-browser.png`             | [Google Play](https://play.google.com/store/apps/details?id=com.herond.android.browser)                                                       | Brand asset   |
 | `heytapbrowser.png`              | [Google Play](https://play.google.com/store/apps/details?id=com.heytap.browser)                                                               | Brand asset   |
-| `icab-mobile.png`                | [App Store](https://apps.apple.com/us/app/icab-mobile-web-browser/id308111628)                                                                | Brand asset   |
+| `icab.png`                       | [App Store](https://apps.apple.com/us/app/icab-mobile-web-browser/id308111628)                                                                | Brand asset   |
+| `icedragon.png`                  | [Comodo website](https://www.comodo.com/home/browsers-toolbars/images/icedragon-new.png)                                                      | Brand asset   |
+| `iceweasel.png`                  | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Iceweasel_icon.svg)                                                               | MPL 1.1       |
 | `idesktop-pc-browser.png`        | [Google Play](https://play.google.com/store/apps/details?id=com.appssppa.idesktoppcbrowser)                                                   | Brand asset   |
 | `ifbrowser.png`                  | [Google Play](https://play.google.com/store/apps/details?id=com.ltd.ifbrowser)                                                                | Brand asset   |
 | `inbrowser.png`                  | [Google Play](https://play.google.com/store/apps/details?id=nu.tommie.inbrowser)                                                              | Brand asset   |
@@ -75,12 +88,14 @@ Where each icon was taken from. Every icon is the original image resized to 48×
 | `internet-explorer.png`          | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Internet_Explorer_10%2B11_logo.svg)                                               | Public domain |
 | `internet-webbrowser.png`        | [Google Play](https://play.google.com/store/apps/details?id=miada.tv.webbrowser)                                                              | Brand asset   |
 | `involta-go.png`                 | [Google Play](https://play.google.com/store/apps/details?id=com.involta.involtago)                                                            | Brand asset   |
+| `iridium.png`                    | [Iridium website icon](https://iridiumbrowser.de/assets/images/app-icons/android_512x512.png)                                                 | Brand asset   |
 | `iron.png`                       | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Iron_logo.png)                                                                    | Brand asset   |
 | `island.png`                     | [App Store](https://apps.apple.com/us/app/island-enterprise-browser/id1661957370)                                                             | Brand asset   |
 | `jiosphere.png`                  | [Google Play](https://play.google.com/store/apps/details?id=com.jio.web)                                                                      | Brand asset   |
 | `keepsolid-browser.png`          | [Google Play](https://play.google.com/store/apps/details?id=com.keepsolid.privatebrowser)                                                     | Brand asset   |
 | `keyboard-browser.png`           | [Google Play](https://play.google.com/store/apps/details?id=fr.agrange.bbbrowser)                                                             | Brand asset   |
 | `kids-safe-browser.png`          | [Google Play](https://play.google.com/store/apps/details?id=com.kiddoware.kidsafebrowser)                                                     | Brand asset   |
+| `kiwi.png`                       | [Kiwi Browser GitHub repository](https://github.com/kiwibrowser/src.next/blob/kiwi/kiwi_logo_circle.svg)                                      | Brand asset   |
 | `kuto-mini-browser.png`          | [Google Play](https://play.google.com/store/apps/details?id=com.kuto.browser)                                                                 | Brand asset   |
 | `ladybird.png`                   | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Ladybird_icon_png.png)                                                            | BSD 2-Clause  |
 | `lemur-browser.png`              | [Google Play](https://play.google.com/store/apps/details?id=com.lemurbrowser.exts)                                                            | Brand asset   |
@@ -93,6 +108,7 @@ Where each icon was taken from. Every icon is the original image resized to 48×
 | `microsoft-edge.png`             | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Microsoft_Edge_logo_%282019%29.svg)                                               | MIT           |
 | `mint-browser.png`               | [Google Play](https://play.google.com/store/apps/details?id=com.mi.globalbrowser.mini)                                                        | Brand asset   |
 | `mises.png`                      | [Google Play](https://play.google.com/store/apps/details?id=site.mises.browser_stable)                                                        | Brand asset   |
+| `mobicip.png`                    | [Google Play](https://play.google.com/store/apps/details?id=mobicip.com.safeBrowserff)                                                        | Brand asset   |
 | `mullvad-browser.png`            | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Mullvad_Browser_logo.svg)                                                         | MPL 2.0       |
 | `netscape.png`                   | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Netscape_icon.svg)                                                                | Public domain |
 | `netsurf.png`                    | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:NetSurf-logo.svg)                                                                 | MIT           |
@@ -110,11 +126,16 @@ Where each icon was taken from. Every icon is the original image resized to 48×
 | `opera-neon.png`                 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Opera_Neon_Icon.svg)                                                              | Public domain |
 | `opera-touch.png`                | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Opera_Touch_icon.svg)                                                             | Public domain |
 | `opera.png`                      | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Opera_2015_icon.svg)                                                              | Public domain |
+| `ordissimo.png`                  | [Ordissimo GitHub avatar](https://github.com/Ordissimo.png), cropped to the symbol                                                            | Brand asset   |
 | `ornet-browser.png`              | [App Store](https://apps.apple.com/us/app/tor-browser-ornet-onion-vpn/id1177964608)                                                           | Brand asset   |
+| `palm.png`                       | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Logo_of_the_Palm_Computing_Platform.svg), cropped to the symbol                   | Public domain |
 | `pawxy.png`                      | [Google Play](https://play.google.com/store/apps/details?id=com.pawxy.browser)                                                                | Brand asset   |
 | `phoenix-browser.png`            | [Google Play](https://play.google.com/store/apps/details?id=com.transsion.phoenix)                                                            | Brand asset   |
+| `phoenix.png`                    | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Mozilla_Phoenix_icon.svg)                                                         | MPL 1.1       |
 | `pi-browser.png`                 | [Google Play](https://play.google.com/store/apps/details?id=pi.browser)                                                                       | Brand asset   |
 | `pluma.png`                      | [Google Play](https://play.google.com/store/apps/details?id=com.qflair.browserq)                                                              | Brand asset   |
+| `polarity.png`                   | [Polarity GitHub avatar](https://github.com/Polarity-Browser.png)                                                                             | Brand asset   |
+| `polypane.png`                   | [Polypane website icon](https://polypane.app/icons/icon-512x512.png)                                                                          | Brand asset   |
 | `private-internet-browser.png`   | [Google Play](https://play.google.com/store/apps/details?id=com.lechneralexander.privatebrowser)                                              | Brand asset   |
 | `proxy-browser.png`              | [Google Play](https://play.google.com/store/apps/details?id=proxy.browser.unblock.sites.proxybrowser.unblocksites)                            | Brand asset   |
 | `proxymax.png`                   | [Google Play](https://play.google.com/store/apps/details?id=com.vielianztlabs.browser)                                                        | Brand asset   |
@@ -124,28 +145,38 @@ Where each icon was taken from. Every icon is the original image resized to 48×
 | `pure-lite-browser.png`          | [Google Play](https://play.google.com/store/apps/details?id=pure.lite.browser)                                                                | Brand asset   |
 | `qmamu.png`                      | [Google Play](https://play.google.com/store/apps/details?id=com.qmamu.browser)                                                                | Brand asset   |
 | `qq-browser.png`                 | [App Store](https://apps.apple.com/us/app/id370139302)                                                                                        | Brand asset   |
+| `qtwebengine.png`                | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Qt_logo_2016.svg)                                                                 | Public domain |
+| `quark.png`                      | [App Store](https://apps.apple.com/cn/app/id1160172628)                                                                                       | Brand asset   |
 | `quetta.png`                     | [Google Play](https://play.google.com/store/apps/details?id=net.quetta.browser)                                                               | Brand asset   |
 | `quick-search-tv.png`            | [Google Play](https://play.google.com/store/apps/details?id=com.aospstudio.tvsearch)                                                          | Brand asset   |
+| `qwant-mobile.png`               | [App Store](https://apps.apple.com/us/app/qwant-private-search/id924470452)                                                                   | Brand asset   |
 | `safari-technology-preview.png`  | [Apple Developer website](https://developer.apple.com/assets/elements/icons/safari-technology-preview/safari-technology-preview-96x96_2x.png) | Brand asset   |
 | `safari.png`                     | [Apple Developer website](https://developer.apple.com/assets/elements/icons/safari/safari-128x128_2x.png)                                     | Brand asset   |
+| `safe-exam-browser.png`          | [Safe Exam Browser website icon](https://safeexambrowser.org/apple-touch-icon.png)                                                            | Brand asset   |
+| `sailfish-browser.png`           | [Sailfish OS website icon](https://sailfishos.org/content/uploads/fbrfg/apple-touch-icon.png)                                                 | Brand asset   |
 | `salamweb.png`                   | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:SalamWeb_Browser.jpg)                                                             | Public domain |
 | `samsung-browser.png`            | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Samsung_Internet_logo_2025.svg)                                                   | Public domain |
 | `savannah-browser.png`           | [Google Play](https://play.google.com/store/apps/details?id=savannah.internet.web.browser)                                                    | Brand asset   |
 | `savysoda.png`                   | [Google Play](https://play.google.com/store/apps/details?id=SavySoda.PrivateBrowsing)                                                         | Brand asset   |
 | `seekee.png`                     | [Google Play](https://play.google.com/store/apps/details?id=com.enzo.paulo)                                                                   | Brand asset   |
 | `seznam-browser.png`             | [Google Play](https://play.google.com/store/apps/details?id=cz.seznam.sbrowser)                                                               | Brand asset   |
+| `shiira.png`                     | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Shiira.png)                                                                       | BSD           |
+| `sizzy.png`                      | [Sizzy website icon](https://sizzy.co/apple-touch-icon.png)                                                                                   | Brand asset   |
 | `sleipnir.png`                   | [App Store](https://apps.apple.com/us/app/sleipnir-mobile/id404732112)                                                                        | Brand asset   |
 | `smart-search-web-browser.png`   | [Google Play](https://play.google.com/store/apps/details?id=reactivephone.msearch)                                                            | Brand asset   |
 | `snap-browser.png`               | [Google Play](https://play.google.com/store/apps/details?id=com.snapbrowser.app)                                                              | Brand asset   |
+| `sogou-browser.png`              | [App Store](https://apps.apple.com/cn/app/id548608066)                                                                                        | Brand asset   |
 | `soti-surf.png`                  | [Google Play](https://play.google.com/store/apps/details?id=net.soti.surf)                                                                    | Brand asset   |
 | `soul-browser.png`               | [Google Play](https://play.google.com/store/apps/details?id=com.mycompany.app.soulbrowser)                                                    | Brand asset   |
 | `stargon.png`                    | [Google Play](https://play.google.com/store/apps/details?id=net.onecook.browser)                                                              | Brand asset   |
 | `startpage.png`                  | [App Store](https://apps.apple.com/us/app/startpage-private-browser/id6478921430)                                                             | Brand asset   |
 | `stay-browser.png`               | [Google Play](https://play.google.com/store/apps/details?id=com.dajiu.stay)                                                                   | Brand asset   |
+| `steam.png`                      | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Steam_icon_logo.svg)                                                              | Public domain |
 | `surfy-browser.png`              | [Google Play](https://play.google.com/store/apps/details?id=com.outcoder.browser)                                                             | Brand asset   |
 | `t-online-de-browser.png`        | [t-online.de favicon](https://www.t-online.de/favicon.ico), 48×48 frame                                                                       | Brand asset   |
 | `talkto.png`                     | [Google Play](https://play.google.com/store/apps/details?id=com.wcd.talkto)                                                                   | Brand asset   |
 | `tararia.png`                    | [App Store](https://apps.apple.com/us/app/tararia-multi-tab-webbrowser/id1599928209)                                                          | Brand asset   |
+| `tizen-browser.png`              | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Tizen_Logo.png)                                                                   | CC BY-SA 3.0  |
 | `togate.png`                     | [TmaxSoft favicon](https://www.tmaxsoft.com/common/en/pc/images/common/favicon.png)                                                           | Brand asset   |
 | `tor-browser.png`                | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Tor_Browser_icon_%28New%29.png)                                                   | BSD 3-Clause  |
 | `tusk.png`                       | [Google Play](https://play.google.com/store/apps/details?id=com.vworldc.tusk)                                                                 | Brand asset   |
@@ -169,6 +200,8 @@ Where each icon was taken from. Every icon is the original image resized to 48×
 | `wave-browser.png`               | [Google Play](https://play.google.com/store/apps/details?id=com.wavesorsoftware.wavebrowser)                                                  | Brand asset   |
 | `web-browser-explorer.png`       | [Google Play](https://play.google.com/store/apps/details?id=com.explore.web.browser)                                                          | Brand asset   |
 | `web-explorer.png`               | [Google Play](https://play.google.com/store/apps/details?id=com.kaweapp.webexplorer)                                                          | Brand asset   |
+| `webpositive.png`                | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:WebPositiveIcon.png)                                                              | Brand asset   |
+| `wexond.png`                     | [Wexond GitHub avatar](https://github.com/wexond.png)                                                                                         | Brand asset   |
 | `whale-browser.png`              | [Google Play](https://play.google.com/store/apps/details?id=com.naver.whale)                                                                  | Brand asset   |
 | `x-vpn.png`                      | [Google Play](https://play.google.com/store/apps/details?id=com.security.xvpn.z35kb)                                                          | Brand asset   |
 | `xbrowser-mini.png`              | [Google Play](https://play.google.com/store/apps/details?id=com.xbrowser.play)                                                                | Brand asset   |
