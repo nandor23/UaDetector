@@ -3,9 +3,39 @@
 The MIT license in [LICENSE](LICENSE) covers the code and the mapping in this package. It does not cover
 the icons. The icons are logos of third-party products and are used only to identify those products.
 
+`browsers/brave.png` is resized from [Brave lion icon.svg](https://commons.wikimedia.org/wiki/File:Brave_lion_icon.svg)
+on Wikimedia Commons, by Brave Software, Inc., and is licensed under the
+[Mozilla Public License 2.0](https://www.mozilla.org/en-US/MPL/2.0/). The source form is the linked SVG.
+
+`browsers/firefox.png` is resized from [Firefox logo, 2019.svg](https://commons.wikimedia.org/wiki/File:Firefox_logo,_2019.svg)
+on Wikimedia Commons, by Mozilla Corporation, and is licensed under the
+[Mozilla Public License 2.0](https://www.mozilla.org/en-US/MPL/2.0/). The source form is the linked SVG.
+
+`browsers/firefox-focus.png` is resized from [Firefox Focus 2021 Icon.svg](https://commons.wikimedia.org/wiki/File:Firefox_Focus_2021_Icon.svg)
+on Wikimedia Commons, by Mozilla Corporation, and is licensed under the
+[Mozilla Public License 2.0](https://www.mozilla.org/en-US/MPL/2.0/). The source form is the linked SVG.
+
 `browsers/ladybird.png` is resized from [Ladybird icon png.png](https://commons.wikimedia.org/wiki/File:Ladybird_icon_png.png)
 on Wikimedia Commons, copyright the Ladybird developers, and is licensed under the
 [BSD 2-Clause License](https://github.com/LadybirdBrowser/ladybird/blob/master/LICENSE).
+
+`browsers/microsoft-edge.png` is resized from [Microsoft Edge logo (2019).svg](https://commons.wikimedia.org/wiki/File:Microsoft_Edge_logo_%282019%29.svg)
+on Wikimedia Commons, copyright Microsoft, and is licensed under the [MIT License](https://opensource.org/licenses/mit-license.php).
+
+`browsers/mullvad-browser.png` is resized from [Mullvad Browser logo.svg](https://commons.wikimedia.org/wiki/File:Mullvad_Browser_logo.svg)
+on Wikimedia Commons, by Mullvad VPN AB, and is licensed under the
+[Mozilla Public License 2.0](https://www.mozilla.org/en-US/MPL/2.0/). The source form is the linked SVG.
+
+`browsers/netsurf.png` is resized from [NetSurf-logo.svg](https://commons.wikimedia.org/wiki/File:NetSurf-logo.svg)
+on Wikimedia Commons, copyright the NetSurf developers, and is licensed under the
+[MIT License](https://opensource.org/licenses/mit-license.php).
+
+`browsers/tor-browser.png` is resized from [Tor Browser icon (New).png](https://commons.wikimedia.org/wiki/File:Tor_Browser_icon_%28New%29.png)
+on Wikimedia Commons, copyright The Tor Project, and is licensed under the
+[BSD 3-Clause License](https://opensource.org/license/bsd-3-clause).
+
+`browsers/vivaldi.png` is resized from [Vivaldi web browser logo.svg](https://commons.wikimedia.org/wiki/File:Vivaldi_web_browser_logo.svg)
+on Wikimedia Commons, by Vivaldi Technologies, and is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 
 `os/amigaos.png` is resized from [Boing Ball.svg](https://commons.wikimedia.org/wiki/File:Boing_Ball.svg) on Wikimedia
 Commons, by Berdajeno, and is licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
