@@ -42,7 +42,8 @@
     "aol.png": [
       "AOL Desktop",
       "AOL Shield",
-      "AOL Shield Pro"
+      "AOL Shield Pro",
+      "AOL Explorer"
     ],
     "apus-browser.png": [
       "APUS Browser"
@@ -252,7 +253,8 @@
     ],
     "internet-explorer.png": [
       "Internet Explorer",
-      "IE Mobile"
+      "IE Mobile",
+      "Pocket Internet Explorer"
     ],
     "internet-webbrowser.png": [
       "Internet Webbrowser"
@@ -389,7 +391,8 @@
     ],
     "palm.png": [
       "Palm Blazer",
-      "Palm WebPro"
+      "Palm WebPro",
+      "Palm Pre"
     ],
     "pawxy.png": [
       "Pawxy"
