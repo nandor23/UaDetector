@@ -83,12 +83,6 @@
     "arch-linux.png": [
       "Arch Linux"
     ],
-    "aros.png": [
-      "AROS"
-    ],
-    "asplinux.png": [
-      "ASPLinux"
-    ],
     "azure-linux.png": [
       "Azure Linux"
     ],
@@ -117,9 +111,6 @@
     "bsd.png": [
       "BSD"
     ],
-    "caixa-magica.png": [
-      "Caixa Mágica"
-    ],
     "centos.png": [
       "CentOS",
       "CentOS Stream"
@@ -138,9 +129,6 @@
     ],
     "debian.png": [
       "Debian"
-    ],
-    "deepin.png": [
-      "Deepin"
     ],
     "dragonfly.png": [
       "DragonFly"
@@ -230,9 +218,6 @@
     "kolibrios.png": [
       "KolibriOS"
     ],
-    "kreatv.png": [
-      "KreaTV"
-    ],
     "kubuntu.png": [
       "Kubuntu"
     ],
@@ -252,14 +237,8 @@
     "liri-os.png": [
       "Liri OS"
     ],
-    "loongnix.png": [
-      "Loongnix"
-    ],
     "lubuntu.png": [
       "Lubuntu"
-    ],
-    "lumin-os.png": [
-      "Lumin OS"
     ],
     "luneos.png": [
       "LuneOS"
@@ -292,9 +271,6 @@
     "mocor-os.png": [
       "Mocor OS",
       "MocorDroid"
-    ],
-    "morphos.png": [
-      "MorphOS"
     ],
     "motorola-ezx.png": [
       "Motorola EZX"
@@ -381,9 +357,6 @@
     "pureos.png": [
       "PureOS"
     ],
-    "qtopia.png": [
-      "Qtopia"
-    ],
     "raspberry-pi-os.png": [
       "Raspberry Pi OS",
       "Raspbian"
@@ -451,6 +424,9 @@
     "suse.png": [
       "SUSE"
     ],
+    "syllable.png": [
+      "Syllable"
+    ],
     "symbian.png": [
       "Symbian",
       "Symbian OS",
@@ -515,15 +491,17 @@
     "whale-os.png": [
       "Whale OS"
     ],
+    "windows-mobile.png": [
+      "Windows CE",
+      "Windows Mobile"
+    ],
     "windows-phone.png": [
       "Windows Phone"
     ],
     "windows.png": [
       "Windows",
       "Windows IoT",
-      "Windows RT",
-      "Windows CE",
-      "Windows Mobile"
+      "Windows RT"
     ],
     "xbox.png": [
       "Xbox"
