@@ -23,18 +23,6 @@ getBrowserIcon("Not A Browser"); // undefined
 
 Not every browser and operating system has an icon, so handle `undefined` with a fallback of your own.
 
-The returned path points into the package's `browsers` and `os` folders. Serve those folders with your
-static assets, or load the icons from a CDN:
-
-```ts
-const iconUrl = `https://cdn.jsdelivr.net/npm/@uadetector/icons@<version>/${icon}`;
-```
-
-## Contributing
-
-To add an icon or map a name to an existing one, see
-[CONTRIBUTING.md](https://github.com/nandor23/UaDetector/blob/main/icons/CONTRIBUTING.md).
-
 ## License
 
 The code and the mapping are licensed under the
