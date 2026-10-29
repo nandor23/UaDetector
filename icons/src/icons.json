@@ -50,12 +50,25 @@
     ]
   },
   "os": {
+    "aix.png": [
+      "AIX"
+    ],
     "alpine-linux.png": [
       "Alpine Linux"
     ],
+    "amazon-linux.png": [
+      "Amazon Linux"
+    ],
+    "amigaos.png": [
+      "AmigaOS"
+    ],
     "android.png": [
       "Android",
-      "Android Go"
+      "Android Go",
+      "Android TV"
+    ],
+    "aosc-os.png": [
+      "AOSC OS"
     ],
     "apple.png": [
       "iOS",
@@ -64,15 +77,48 @@
       "tvOS",
       "watchOS"
     ],
+    "arcaos.png": [
+      "ArcaOS"
+    ],
     "arch-linux.png": [
       "Arch Linux"
+    ],
+    "aros.png": [
+      "AROS"
+    ],
+    "asplinux.png": [
+      "ASPLinux"
+    ],
+    "azure-linux.png": [
+      "Azure Linux"
     ],
     "bada.png": [
       "Bada"
     ],
+    "baidu-yi.png": [
+      "Baidu Yi"
+    ],
+    "beos.png": [
+      "BeOS"
+    ],
     "blackberry-os.png": [
       "BlackBerry OS",
       "BlackBerry Tablet OS"
+    ],
+    "bliss-os.png": [
+      "Bliss OS"
+    ],
+    "brew.png": [
+      "Brew"
+    ],
+    "brightsignos.png": [
+      "BrightSignOS"
+    ],
+    "bsd.png": [
+      "BSD"
+    ],
+    "caixa-magica.png": [
+      "Caixa Mágica"
     ],
     "centos.png": [
       "CentOS",
@@ -84,8 +130,20 @@
     "chromium-os.png": [
       "Chromium OS"
     ],
+    "clear-linux-os.png": [
+      "Clear Linux OS"
+    ],
+    "cyanogenmod.png": [
+      "CyanogenMod"
+    ],
     "debian.png": [
       "Debian"
+    ],
+    "deepin.png": [
+      "Deepin"
+    ],
+    "dragonfly.png": [
+      "DragonFly"
     ],
     "elementary-os.png": [
       "elementary OS"
@@ -99,11 +157,35 @@
     "firefox-os.png": [
       "Firefox OS"
     ],
+    "foresight-linux.png": [
+      "Foresight Linux"
+    ],
+    "fortios.png": [
+      "FortiOS"
+    ],
+    "freebox.png": [
+      "Freebox"
+    ],
+    "freebsd.png": [
+      "FreeBSD"
+    ],
+    "fritz-os.png": [
+      "FRITZ!OS"
+    ],
     "fuchsia.png": [
       "Fuchsia"
     ],
+    "fydeos.png": [
+      "FydeOS"
+    ],
     "gentoo.png": [
       "Gentoo"
+    ],
+    "ghostbsd.png": [
+      "GhostBSD"
+    ],
+    "gnewsense.png": [
+      "gNewSense"
     ],
     "gnu-linux.png": [
       "GNU/Linux"
@@ -111,12 +193,27 @@
     "google-tv.png": [
       "Google TV"
     ],
+    "haiku-os.png": [
+      "Haiku OS"
+    ],
     "harmonyos.png": [
       "HarmonyOS",
       "HarmonyOS NEXT"
     ],
+    "hp-ux.png": [
+      "HP-UX"
+    ],
     "hyperos.png": [
       "HyperOS"
+    ],
+    "irix.png": [
+      "IRIX"
+    ],
+    "java-me.png": [
+      "Java ME"
+    ],
+    "joli-os.png": [
+      "Joli OS"
     ],
     "kaios.png": [
       "KaiOS"
@@ -124,14 +221,51 @@
     "kali.png": [
       "Kali"
     ],
+    "kin-os.png": [
+      "KIN OS"
+    ],
+    "koboos.png": [
+      "KoboOS"
+    ],
+    "kolibrios.png": [
+      "KolibriOS"
+    ],
+    "kreatv.png": [
+      "KreaTV"
+    ],
     "kubuntu.png": [
       "Kubuntu"
+    ],
+    "leafos.png": [
+      "LeafOS"
     ],
     "lineage-os.png": [
       "Lineage OS"
     ],
+    "linpus.png": [
+      "Linpus"
+    ],
+    "linspire.png": [
+      "LindowsOS",
+      "Linspire"
+    ],
+    "liri-os.png": [
+      "Liri OS"
+    ],
+    "loongnix.png": [
+      "Loongnix"
+    ],
     "lubuntu.png": [
       "Lubuntu"
+    ],
+    "lumin-os.png": [
+      "Lumin OS"
+    ],
+    "luneos.png": [
+      "LuneOS"
+    ],
+    "maemo.png": [
+      "Maemo"
     ],
     "mageia.png": [
       "Mageia"
@@ -139,11 +273,50 @@
     "mandriva.png": [
       "Mandriva"
     ],
+    "mediatek.png": [
+      "MRE",
+      "MTK / Nucleus"
+    ],
+    "meego.png": [
+      "MeeGo"
+    ],
+    "meta-horizon.png": [
+      "Meta Horizon"
+    ],
     "minix.png": [
       "MINIX"
     ],
     "mint.png": [
       "Mint"
+    ],
+    "mocor-os.png": [
+      "Mocor OS",
+      "MocorDroid"
+    ],
+    "morphos.png": [
+      "MorphOS"
+    ],
+    "motorola-ezx.png": [
+      "Motorola EZX"
+    ],
+    "netbsd.png": [
+      "NetBSD"
+    ],
+    "nextstep.png": [
+      "NeXTSTEP"
+    ],
+    "nintendo.png": [
+      "Nintendo",
+      "Nintendo Mobile"
+    ],
+    "nova.png": [
+      "Nova"
+    ],
+    "nuttx.png": [
+      "NuttX"
+    ],
+    "openbsd.png": [
+      "OpenBSD"
     ],
     "openharmony.png": [
       "OpenHarmony"
@@ -151,8 +324,26 @@
     "opensuse.png": [
       "openSUSE"
     ],
+    "openvms.png": [
+      "OpenVMS"
+    ],
+    "openvz.png": [
+      "OpenVZ"
+    ],
     "openwrt.png": [
       "OpenWrt"
+    ],
+    "opera-tv.png": [
+      "Opera TV"
+    ],
+    "oracle-linux.png": [
+      "Oracle Linux"
+    ],
+    "ordissimo.png": [
+      "Ordissimo"
+    ],
+    "orsay.png": [
+      "Orsay"
     ],
     "os-2.png": [
       "OS/2"
@@ -160,8 +351,23 @@
     "osf1.png": [
       "OSF1"
     ],
+    "palmos.png": [
+      "palmOS"
+    ],
+    "pardus.png": [
+      "Pardus"
+    ],
     "pclinuxos.png": [
       "PCLinuxOS"
+    ],
+    "pico-os.png": [
+      "PICO OS"
+    ],
+    "plan-9.png": [
+      "Plan 9"
+    ],
+    "playstation-portable.png": [
+      "PlayStation Portable"
     ],
     "playstation.png": [
       "PlayStation"
@@ -169,8 +375,39 @@
     "proxmox-ve.png": [
       "Proxmox VE"
     ],
+    "puffin-os.png": [
+      "Puffin OS"
+    ],
+    "pureos.png": [
+      "PureOS"
+    ],
+    "qtopia.png": [
+      "Qtopia"
+    ],
+    "raspberry-pi-os.png": [
+      "Raspberry Pi OS",
+      "Raspbian"
+    ],
     "red-hat.png": [
       "Red Hat"
+    ],
+    "red-star.png": [
+      "Red Star"
+    ],
+    "redos.png": [
+      "RedOS"
+    ],
+    "remix-os.png": [
+      "Remix OS"
+    ],
+    "resurrection-remix-os.png": [
+      "Resurrection Remix OS"
+    ],
+    "revenge-os.png": [
+      "Revenge OS"
+    ],
+    "risc-os.png": [
+      "RISC OS"
     ],
     "rocky-linux.png": [
       "Rocky Linux"
@@ -178,20 +415,63 @@
     "roku-os.png": [
       "Roku OS"
     ],
+    "rosa.png": [
+      "Rosa"
+    ],
+    "routeros.png": [
+      "RouterOS"
+    ],
     "sabayon.png": [
       "Sabayon"
     ],
     "sailfish-os.png": [
       "Sailfish OS"
     ],
+    "seewoos.png": [
+      "SeewoOS"
+    ],
+    "serenityos.png": [
+      "SerenityOS"
+    ],
+    "sirin-os.png": [
+      "Sirin OS"
+    ],
     "slackware.png": [
       "Slackware"
+    ],
+    "smartisan-os.png": [
+      "Smartisan OS"
     ],
     "solaris.png": [
       "Solaris"
     ],
+    "steamos.png": [
+      "SteamOS"
+    ],
     "suse.png": [
       "SUSE"
+    ],
+    "symbian.png": [
+      "Symbian",
+      "Symbian OS",
+      "Symbian OS Series 40",
+      "Symbian OS Series 60",
+      "Symbian^3"
+    ],
+    "tencentos.png": [
+      "TencentOS"
+    ],
+    "thinos.png": [
+      "ThinOS"
+    ],
+    "threadx.png": [
+      "ThreadX"
+    ],
+    "titan-os.png": [
+      "Titan OS"
+    ],
+    "tivo-os.png": [
+      "TiVo OS"
     ],
     "tizen.png": [
       "Tizen"
@@ -199,14 +479,41 @@
     "tmaxos.png": [
       "TmaxOS"
     ],
+    "turbolinux.png": [
+      "Turbolinux"
+    ],
     "ubuntu.png": [
       "Ubuntu"
+    ],
+    "ultrix.png": [
+      "ULTRIX"
+    ],
+    "uos.png": [
+      "UOS"
+    ],
+    "vectorlinux.png": [
+      "VectorLinux"
+    ],
+    "vega-os.png": [
+      "Vega OS"
+    ],
+    "vidaa.png": [
+      "VIDAA"
+    ],
+    "vizios.png": [
+      "ViziOS"
     ],
     "wear-os.png": [
       "Wear OS"
     ],
+    "webian.png": [
+      "Webian"
+    ],
     "webos.png": [
       "webOS"
+    ],
+    "whale-os.png": [
+      "Whale OS"
     ],
     "windows-phone.png": [
       "Windows Phone"
@@ -214,13 +521,21 @@
     "windows.png": [
       "Windows",
       "Windows IoT",
-      "Windows RT"
+      "Windows RT",
+      "Windows CE",
+      "Windows Mobile"
     ],
     "xbox.png": [
       "Xbox"
     ],
     "xubuntu.png": [
       "Xubuntu"
+    ],
+    "yodaos-master.png": [
+      "YodaOS-Master"
+    ],
+    "yunos.png": [
+      "YunOS"
     ],
     "zorin-os.png": [
       "ZorinOS"
