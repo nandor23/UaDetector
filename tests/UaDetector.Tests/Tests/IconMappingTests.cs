@@ -1,4 +1,5 @@
 using System.Buffers.Binary;
+using System.Collections.Immutable;
 using System.Text.Json;
 using Shouldly;
 using UaDetector.Registries;
@@ -91,7 +92,7 @@ public class IconMappingTests
         return Mapping[category].Values.SelectMany(names => names);
     }
 
-    private static IEnumerable<string> GetKnownNames(string category)
+    private static ImmutableArray<string> GetKnownNames(string category)
     {
         return category switch
         {

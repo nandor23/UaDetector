@@ -50,12 +50,64 @@
     ]
   },
   "os": {
+    "android.png": [
+      "Android",
+      "Android Go"
+    ],
+    "apple.png": [
+      "iOS",
+      "iPadOS",
+      "Mac",
+      "tvOS",
+      "watchOS"
+    ],
+    "arch-linux.png": [
+      "Arch Linux"
+    ],
+    "blackberry-os.png": [
+      "BlackBerry OS",
+      "BlackBerry Tablet OS"
+    ],
+    "centos.png": [
+      "CentOS",
+      "CentOS Stream"
+    ],
+    "chrome-os.png": [
+      "Chrome OS"
+    ],
+    "chromium-os.png": [
+      "Chromium OS"
+    ],
+    "debian.png": [
+      "Debian"
+    ],
+    "fedora.png": [
+      "Fedora"
+    ],
+    "gentoo.png": [
+      "Gentoo"
+    ],
+    "gnu-linux.png": [
+      "GNU/Linux"
+    ],
     "harmonyos.png": [
       "HarmonyOS",
       "HarmonyOS NEXT"
     ],
+    "kubuntu.png": [
+      "Kubuntu"
+    ],
+    "lubuntu.png": [
+      "Lubuntu"
+    ],
+    "mint.png": [
+      "Mint"
+    ],
     "openharmony.png": [
       "OpenHarmony"
+    ],
+    "opensuse.png": [
+      "openSUSE"
     ],
     "openwrt.png": [
       "OpenWrt"
@@ -63,8 +115,40 @@
     "osf1.png": [
       "OSF1"
     ],
+    "playstation.png": [
+      "PlayStation"
+    ],
+    "red-hat.png": [
+      "Red Hat"
+    ],
+    "rocky-linux.png": [
+      "Rocky Linux"
+    ],
+    "slackware.png": [
+      "Slackware"
+    ],
+    "tizen.png": [
+      "Tizen"
+    ],
     "tmaxos.png": [
       "TmaxOS"
+    ],
+    "ubuntu.png": [
+      "Ubuntu"
+    ],
+    "wear-os.png": [
+      "Wear OS"
+    ],
+    "windows-phone.png": [
+      "Windows Phone"
+    ],
+    "windows.png": [
+      "Windows",
+      "Windows IoT",
+      "Windows RT"
+    ],
+    "xbox.png": [
+      "Xbox"
     ]
   }
 }
