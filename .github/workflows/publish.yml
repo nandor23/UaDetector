@@ -141,6 +141,4 @@ jobs:
           name: npm-package
 
       - name: Publish to npm
-        run: npm publish *.tgz --provenance --access public
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: npm publish *.tgz --access public
