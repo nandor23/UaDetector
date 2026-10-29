@@ -50,6 +50,9 @@
     ]
   },
   "os": {
+    "alpine-linux.png": [
+      "Alpine Linux"
+    ],
     "android.png": [
       "Android",
       "Android Go"
@@ -63,6 +66,9 @@
     ],
     "arch-linux.png": [
       "Arch Linux"
+    ],
+    "bada.png": [
+      "Bada"
     ],
     "blackberry-os.png": [
       "BlackBerry OS",
@@ -81,8 +87,20 @@
     "debian.png": [
       "Debian"
     ],
+    "elementary-os.png": [
+      "elementary OS"
+    ],
     "fedora.png": [
       "Fedora"
+    ],
+    "fire-os.png": [
+      "Fire OS"
+    ],
+    "firefox-os.png": [
+      "Firefox OS"
+    ],
+    "fuchsia.png": [
+      "Fuchsia"
     ],
     "gentoo.png": [
       "Gentoo"
@@ -90,15 +108,39 @@
     "gnu-linux.png": [
       "GNU/Linux"
     ],
+    "google-tv.png": [
+      "Google TV"
+    ],
     "harmonyos.png": [
       "HarmonyOS",
       "HarmonyOS NEXT"
     ],
+    "hyperos.png": [
+      "HyperOS"
+    ],
+    "kaios.png": [
+      "KaiOS"
+    ],
+    "kali.png": [
+      "Kali"
+    ],
     "kubuntu.png": [
       "Kubuntu"
     ],
+    "lineage-os.png": [
+      "Lineage OS"
+    ],
     "lubuntu.png": [
       "Lubuntu"
+    ],
+    "mageia.png": [
+      "Mageia"
+    ],
+    "mandriva.png": [
+      "Mandriva"
+    ],
+    "minix.png": [
+      "MINIX"
     ],
     "mint.png": [
       "Mint"
@@ -112,11 +154,20 @@
     "openwrt.png": [
       "OpenWrt"
     ],
+    "os-2.png": [
+      "OS/2"
+    ],
     "osf1.png": [
       "OSF1"
     ],
+    "pclinuxos.png": [
+      "PCLinuxOS"
+    ],
     "playstation.png": [
       "PlayStation"
+    ],
+    "proxmox-ve.png": [
+      "Proxmox VE"
     ],
     "red-hat.png": [
       "Red Hat"
@@ -124,8 +175,23 @@
     "rocky-linux.png": [
       "Rocky Linux"
     ],
+    "roku-os.png": [
+      "Roku OS"
+    ],
+    "sabayon.png": [
+      "Sabayon"
+    ],
+    "sailfish-os.png": [
+      "Sailfish OS"
+    ],
     "slackware.png": [
       "Slackware"
+    ],
+    "solaris.png": [
+      "Solaris"
+    ],
+    "suse.png": [
+      "SUSE"
     ],
     "tizen.png": [
       "Tizen"
@@ -139,6 +205,9 @@
     "wear-os.png": [
       "Wear OS"
     ],
+    "webos.png": [
+      "webOS"
+    ],
     "windows-phone.png": [
       "Windows Phone"
     ],
@@ -149,6 +218,12 @@
     ],
     "xbox.png": [
       "Xbox"
+    ],
+    "xubuntu.png": [
+      "Xubuntu"
+    ],
+    "zorin-os.png": [
+      "ZorinOS"
     ]
   }
 }
