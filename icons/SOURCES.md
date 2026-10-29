@@ -16,7 +16,7 @@ Where each icon was taken from. Every icon is the original image resized to 48×
 | `airfind-secure-browser.png`     | [Google Play](https://play.google.com/store/apps/details?id=com.airfind.browser)                                                              | Brand asset   |
 | `aloha-browser-lite.png`         | [Google Play](https://play.google.com/store/apps/details?id=com.alohamobile.browser.lite)                                                     | Brand asset   |
 | `aloha-browser.png`              | [App Store](https://apps.apple.com/us/app/aloha-browser-private-vpn/id1105317682)                                                             | Brand asset   |
-| `amaya.png`                      | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Amaya_logo_65x50.png)                                                             | Brand asset   |
+| `amaya.png`                      | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Amaya_logo_65x50.png)                                                             | CC BY-SA 3.0  |
 | `amerigo.png`                    | [Google Play](https://play.google.com/store/apps/details?id=it.ideasolutions.amerigo)                                                         | Brand asset   |
 | `amiga-voyager.png`              | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Voyager_browser_logo.png)                                                         | Public domain |
 | `aol.png`                        | [Google Play](https://play.google.com/store/apps/details?id=com.aol.mobile.aolapp)                                                            | Brand asset   |
@@ -29,7 +29,7 @@ Where each icon was taken from. Every icon is the original image resized to 48×
 | `avg-secure-browser.png`         | [Google Play](https://play.google.com/store/apps/details?id=com.avg.android.secure.browser)                                                   | Brand asset   |
 | `baidu-browser.png`              | [App Store](https://apps.apple.com/us/app/id789634484)                                                                                        | Brand asset   |
 | `basic-web-browser.png`          | [Google Play](https://play.google.com/store/apps/details?id=com.apgsolutionsllc.APGSOLUTIONSLLC0007)                                          | Brand asset   |
-| `basilisk.png`                   | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Basilisk_Web_Browser_Logo.png), cropped to the symbol                             | Brand asset   |
+| `basilisk.png`                   | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Basilisk_Web_Browser_Logo.png), cropped to the symbol                             | CC BY-SA 4.0  |
 | `beaker-browser.png`             | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Beaker-Browser-Logo.png)                                                          | Public domain |
 | `belva-browser.png`              | [Google Play](https://play.google.com/store/apps/details?id=com.belva.browser)                                                                | Brand asset   |
 | `berry-browser.png`              | [Google Play](https://play.google.com/store/apps/details?id=jp.ejimax.berrybrowser)                                                           | Brand asset   |
@@ -66,11 +66,11 @@ Where each icon was taken from. Every icon is the original image resized to 48×
 | `fast-explorer.png`              | [Google Play](https://play.google.com/store/apps/details?id=fast.explorer.web.browser)                                                        | Brand asset   |
 | `fiery-browser.png`              | [Google Play](https://play.google.com/store/apps/details?id=hot.fiery.browser)                                                                | Brand asset   |
 | `firefox-focus.png`              | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Firefox_Focus_2021_Icon.svg)                                                      | MPL 2.0       |
-| `firefox-reality.png`            | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Firefox_Reality_Logo.png)                                                         | Brand asset   |
+| `firefox-reality.png`            | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Firefox_Reality_Logo.png)                                                         | CC BY-SA 4.0  |
 | `firefox-rocket.png`             | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Firefox_Lite_logo%2C_2019.svg)                                                    | MPL 2.0       |
 | `firefox.png`                    | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Firefox_logo%2C_2019.svg)                                                         | MPL 2.0       |
 | `float-browser.png`              | [Google Play](https://play.google.com/store/apps/details?id=com.xpp.floatbrowser)                                                             | Brand asset   |
-| `floorp.png`                     | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Floorp_logo_without_text.svg)                                                     | Brand asset   |
+| `floorp.png`                     | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Floorp_logo_without_text.svg)                                                     | CC BY-SA 4.0  |
 | `frost-plus.png`                 | [Google Play](https://play.google.com/store/apps/details?id=com.crowbar.beaverbrowser)                                                        | Brand asset   |
 | `frost.png`                      | [Google Play](https://play.google.com/store/apps/details?id=com.crowbar.beaverlite)                                                           | Brand asset   |
 | `ghostery-privacy-browser.png`   | [App Store](https://apps.apple.com/us/app/ghostery-adblocker-for-privacy/id6504861501)                                                        | Brand asset   |
@@ -89,7 +89,7 @@ Where each icon was taken from. Every icon is the original image resized to 48×
 | `internet-webbrowser.png`        | [Google Play](https://play.google.com/store/apps/details?id=miada.tv.webbrowser)                                                              | Brand asset   |
 | `involta-go.png`                 | [Google Play](https://play.google.com/store/apps/details?id=com.involta.involtago)                                                            | Brand asset   |
 | `iridium.png`                    | [Iridium website icon](https://iridiumbrowser.de/assets/images/app-icons/android_512x512.png)                                                 | Brand asset   |
-| `iron.png`                       | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Iron_logo.png)                                                                    | Brand asset   |
+| `iron.png`                       | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Iron_logo.png)                                                                    | BSD 2-Clause  |
 | `island.png`                     | [App Store](https://apps.apple.com/us/app/island-enterprise-browser/id1661957370)                                                             | Brand asset   |
 | `jiosphere.png`                  | [Google Play](https://play.google.com/store/apps/details?id=com.jio.web)                                                                      | Brand asset   |
 | `keepsolid-browser.png`          | [Google Play](https://play.google.com/store/apps/details?id=com.keepsolid.privatebrowser)                                                     | Brand asset   |
@@ -103,7 +103,7 @@ Where each icon was taken from. Every icon is the original image resized to 48×
 | `logicui-tv-browser.png`         | [Google Play](https://play.google.com/store/apps/details?id=com.logicui.tvbrowser2)                                                           | Brand asset   |
 | `lotus.png`                      | [Google Play](https://play.google.com/store/apps/details?id=dev.sect.lotus.browser.videoapp)                                                  | Brand asset   |
 | `lunascape.png`                  | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Lunascape_browser_logo_2015.jpg)                                                  | Public domain |
-| `maxthon.png`                    | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Logo_maxthon.png)                                                                 | Brand asset   |
+| `maxthon.png`                    | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Logo_maxthon.png)                                                                 | CC BY-SA 4.0  |
 | `me-browser.png`                 | [Google Play](https://play.google.com/store/apps/details?id=com.mebrowser.webapp)                                                             | Brand asset   |
 | `microsoft-edge.png`             | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Microsoft_Edge_logo_%282019%29.svg)                                               | MIT           |
 | `mint-browser.png`               | [Google Play](https://play.google.com/store/apps/details?id=com.mi.globalbrowser.mini)                                                        | Brand asset   |
@@ -200,12 +200,12 @@ Where each icon was taken from. Every icon is the original image resized to 48×
 | `vivo-browser.png`               | [Google Play](https://play.google.com/store/apps/details?id=com.vivo.browser)                                                                 | Brand asset   |
 | `vmware-airwatch.png`            | [Google Play](https://play.google.com/store/apps/details?id=com.airwatch.browser)                                                             | Brand asset   |
 | `vuhuv.png`                      | [Google Play](https://play.google.com/store/apps/details?id=com.vuhuv)                                                                        | Brand asset   |
-| `waterfox.png`                   | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Waterfox_logo_2020_%28vectorized%29.svg)                                          | Brand asset   |
+| `waterfox.png`                   | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Waterfox_logo_2020_%28vectorized%29.svg)                                          | CC BY-SA 4.0  |
 | `wave-browser.png`               | [Google Play](https://play.google.com/store/apps/details?id=com.wavesorsoftware.wavebrowser)                                                  | Brand asset   |
 | `web-browser-explorer.png`       | [Google Play](https://play.google.com/store/apps/details?id=com.explore.web.browser)                                                          | Brand asset   |
 | `web-explorer.png`               | [Google Play](https://play.google.com/store/apps/details?id=com.kaweapp.webexplorer)                                                          | Brand asset   |
 | `webian-shell.png`               | [Webian GitHub avatar](https://github.com/webianproject.png)                                                                                  | Brand asset   |
-| `webpositive.png`                | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:WebPositiveIcon.png)                                                              | Brand asset   |
+| `webpositive.png`                | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:WebPositiveIcon.png)                                                              | CC BY-SA 3.0  |
 | `wexond.png`                     | [Wexond GitHub avatar](https://github.com/wexond.png)                                                                                         | Brand asset   |
 | `whale-browser.png`              | [Google Play](https://play.google.com/store/apps/details?id=com.naver.whale)                                                                  | Brand asset   |
 | `whale-tv-browser.png`           | [Whale TV website](https://www.whaletv.com/)                                                                                                  | Brand asset   |
@@ -217,7 +217,7 @@ Where each icon was taken from. Every icon is the original image resized to 48×
 | `yahoo-japan-browser.png`        | [Google Play](https://play.google.com/store/apps/details?id=jp.co.yahoo.android.ybrowser)                                                     | Brand asset   |
 | `yandex-browser-corp.png`        | [Google Play](https://play.google.com/store/apps/details?id=com.yandex.browser.corp)                                                          | Brand asset   |
 | `yandex-browser-lite.png`        | [Google Play](https://play.google.com/store/apps/details?id=com.yandex.browser.lite)                                                          | Brand asset   |
-| `yandex-browser.png`             | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Yandex_Browser_logo.svg)                                                          | Brand asset   |
+| `yandex-browser.png`             | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Yandex_Browser_logo.svg)                                                          | CC BY-SA 4.0  |
 | `zordo-browser.png`              | [Google Play](https://play.google.com/store/apps/details?id=com.zordo.browser)                                                                | Brand asset   |
 
 ## Operating systems
@@ -255,7 +255,7 @@ Where each icon was taken from. Every icon is the original image resized to 48×
 | `firefox-os.png`            | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Firefox_OS_Vertical_SVG_Logo.svg), cropped to the symbol                                              | CC BY 3.0     |
 | `foresight-linux.png`       | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Foresight_Linux_Logo_2.png), cropped to the symbol                                                    | Public domain |
 | `fortios.png`               | [Fortinet favicon](https://www.fortinet.com/favicon.ico), 48×48 frame                                                                                             | Brand asset   |
-| `freebox.png`               | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Logogram_Freebox.jpg), cropped to the symbol                                                          | Brand asset   |
+| `freebox.png`               | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Logogram_Freebox.jpg), cropped to the symbol                                                          | CC BY-SA 4.0  |
 | `freebsd.png`               | [FreeBSD GitHub avatar](https://github.com/freebsd.png), cropped to the symbol                                                                                    | Brand asset   |
 | `fritz-os.png`              | [FRITZ! favicon](https://frit<br/>z.com/cdn/shop/files/Favicon_FRITZ.svg)                                                                                         | Brand asset   |
 | `fuchsia.png`               | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Google_Fuchsia_Logo.svg)                                                                              | Public domain |
@@ -327,7 +327,7 @@ Where each icon was taken from. Every icon is the original image resized to 48×
 | `red-star.png`              | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Red_Star_OS_Logo_2020.svg), cropped to the symbol                                                     | Public domain |
 | `redos.png`                 | [RED OS favicon](https://redos.red-soft.ru/favicon.svg)                                                                                                           | Brand asset   |
 | `remix-os.png`              | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Remix_OS_logo.jpg)                                                                                    | CC BY-SA 4.0  |
-| `resurrection-remix-os.png` | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Resurrection_Remix_OS_logo.png)                                                                       | Brand asset   |
+| `resurrection-remix-os.png` | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Resurrection_Remix_OS_logo.png)                                                                       | CC BY-SA 3.0  |
 | `revenge-os.png`            | [RevengeOS GitHub avatar](https://github.com/RevengeOS.png)                                                                                                       | Brand asset   |
 | `risc-os.png`               | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Risc_os_logo.svg), cropped to the symbol                                                              | Public domain |
 | `rocky-linux.png`           | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Rocky_Linux_logo.svg)                                                                                 | CC BY-SA 4.0  |
@@ -350,7 +350,7 @@ Where each icon was taken from. Every icon is the original image resized to 48×
 | `thinos.png`                | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Dell_Logo.svg)                                                                                        | Public domain |
 | `threadx.png`               | [Eclipse ThreadX GitHub avatar](https://github.com/eclipse-threadx.png)                                                                                           | Brand asset   |
 | `titan-os.png`              | [Titan OS website](https://framerusercontent.com/assets/mv0iIYuPPZRRDjzvd1c6FvYNU.png), cropped to the symbol                                                     | Brand asset   |
-| `tivo-os.png`               | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:TiVo_2015.svg)                                                                                        | Brand asset   |
+| `tivo-os.png`               | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:TiVo_2015.svg)                                                                                        | CC BY-SA 4.0  |
 | `tizen.png`                 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Tizen_Logo.png)                                                                                       | CC BY-SA 3.0  |
 | `tmaxos.png`                | [TmaxSoft favicon](https://www.tmaxsoft.com/common/en/pc/images/common/favicon.png)                                                                               | Brand asset   |
 | `turbolinux.png`            | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Turbolinux_logo.png)                                                                                  | Public domain |

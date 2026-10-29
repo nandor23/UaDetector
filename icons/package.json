@@ -29,6 +29,7 @@
     "dist",
     "browsers",
     "os",
+    "LICENSES",
     "NOTICE.md"
   ],
   "sideEffects": false,

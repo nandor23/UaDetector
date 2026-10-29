@@ -34,10 +34,11 @@ or add a new icon:
 
 3. Add the file name and the names that use it to `src/icons.json`.
 4. Record where the image came from in [SOURCES.md](SOURCES.md). Use the license of the source, or
-   "Brand asset" for an image taken from the owner, such as their website or app store listing. A
-   company logo on Wikimedia Commons marked as CC BY-SA or "own work" is usually mislabeled, so record
-   it as a brand asset too. If the license requires attribution, such as CC BY or MIT, also add it to
-   [NOTICE.md](NOTICE.md).
+   "Brand asset" for an image taken from the owner, such as their website or app store listing. For an
+   image on Wikimedia Commons, use the license on its file page even if it looks mislabeled, since
+   following it costs nothing. If the license requires attribution, such as CC BY or MIT, also add it to
+   [NOTICE.md](NOTICE.md). Licenses that must be shipped in full, such as MIT, BSD or Apache, also need
+   the icon's copyright notice in its NOTICE.md entry and the license text in [LICENSES](LICENSES).
 
 A test in `UaDetector.Tests` checks that every name exists in UaDetector, that no name appears twice,
 that every referenced file exists and that every icon is 48×48.
