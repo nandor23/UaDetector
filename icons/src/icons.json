@@ -306,7 +306,8 @@
       "Lotus"
     ],
     "lunascape.png": [
-      "Lunascape"
+      "Lunascape",
+      "Lunascape Lite"
     ],
     "maxthon.png": [
       "Maxthon"
@@ -339,6 +340,9 @@
     ],
     "nextword-browser.png": [
       "NextWord Browser"
+    ],
+    "nintendo-browser.png": [
+      "Nintendo Browser"
     ],
     "norton-private-browser.png": [
       "Norton Private Browser"
@@ -392,7 +396,8 @@
     "palm.png": [
       "Palm Blazer",
       "Palm WebPro",
-      "Palm Pre"
+      "Palm Pre",
+      "Blazer"
     ],
     "pawxy.png": [
       "Pawxy"
@@ -405,6 +410,9 @@
     ],
     "pi-browser.png": [
       "Pi Browser"
+    ],
+    "pico-browser.png": [
+      "PICO Browser"
     ],
     "pluma.png": [
       "Pluma"
@@ -441,7 +449,9 @@
       "Qmamu"
     ],
     "qq-browser.png": [
-      "QQ Browser"
+      "QQ Browser",
+      "QQ Browser Lite",
+      "QQ Browser Mini"
     ],
     "qtwebengine.png": [
       "QtWebEngine"
@@ -458,6 +468,9 @@
     ],
     "qwant-mobile.png": [
       "Qwant Mobile"
+    ],
+    "roku-browser.png": [
+      "Roku Browser"
     ],
     "safari-technology-preview.png": [
       "Safari Technology Preview"
@@ -476,7 +489,8 @@
       "SalamWeb"
     ],
     "samsung-browser.png": [
-      "Samsung Browser"
+      "Samsung Browser",
+      "Samsung Browser Lite"
     ],
     "savannah-browser.png": [
       "Savannah Browser"
@@ -486,6 +500,9 @@
     ],
     "seekee.png": [
       "Seekee"
+    ],
+    "seewo-browser.png": [
+      "Seewo Browser"
     ],
     "seznam-browser.png": [
       "Seznam Browser"
@@ -564,7 +581,8 @@
       "UC Browser Turbo"
     ],
     "uc-browser.png": [
-      "UC Browser"
+      "UC Browser",
+      "UC Browser HD"
     ],
     "ui-browser-mini.png": [
       "Ui Browser Mini"
@@ -612,6 +630,9 @@
     "web-explorer.png": [
       "Web Explorer"
     ],
+    "webian-shell.png": [
+      "Webian Shell"
+    ],
     "webpositive.png": [
       "WebPositive"
     ],
@@ -620,6 +641,9 @@
     ],
     "whale-browser.png": [
       "Whale Browser"
+    ],
+    "whale-tv-browser.png": [
+      "Whale TV Browser"
     ],
     "x-vpn.png": [
       "X-VPN"

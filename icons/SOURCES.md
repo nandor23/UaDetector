@@ -113,6 +113,7 @@ Where each icon was taken from. Every icon is the original image resized to 48×
 | `netscape.png`                   | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Netscape_icon.svg)                                                                | Public domain |
 | `netsurf.png`                    | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:NetSurf-logo.svg)                                                                 | MIT           |
 | `nextword-browser.png`           | [Google Play](https://play.google.com/store/apps/details?id=com.wordly.translate.browser)                                                     | Brand asset   |
+| `nintendo-browser.png`           | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Nintendo_red_logo.svg)                                                            | Public domain |
 | `norton-private-browser.png`     | [App Store](https://apps.apple.com/us/app/norton-private-browser/id6670603868)                                                                | Brand asset   |
 | `oceanhero.png`                  | [Google Play](https://play.google.com/store/apps/details?id=com.oceanhero.search)                                                             | Brand asset   |
 | `oh-browser.png`                 | [Google Play](https://play.google.com/store/apps/details?id=com.oh.bro)                                                                       | Brand asset   |
@@ -133,6 +134,7 @@ Where each icon was taken from. Every icon is the original image resized to 48×
 | `phoenix-browser.png`            | [Google Play](https://play.google.com/store/apps/details?id=com.transsion.phoenix)                                                            | Brand asset   |
 | `phoenix.png`                    | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Mozilla_Phoenix_icon.svg)                                                         | MPL 1.1       |
 | `pi-browser.png`                 | [Google Play](https://play.google.com/store/apps/details?id=pi.browser)                                                                       | Brand asset   |
+| `pico-browser.png`               | [PICO GitHub avatar](https://github.com/picoxr.png)                                                                                           | Brand asset   |
 | `pluma.png`                      | [Google Play](https://play.google.com/store/apps/details?id=com.qflair.browserq)                                                              | Brand asset   |
 | `polarity.png`                   | [Polarity GitHub avatar](https://github.com/Polarity-Browser.png)                                                                             | Brand asset   |
 | `polypane.png`                   | [Polypane website icon](https://polypane.app/icons/icon-512x512.png)                                                                          | Brand asset   |
@@ -150,6 +152,7 @@ Where each icon was taken from. Every icon is the original image resized to 48×
 | `quetta.png`                     | [Google Play](https://play.google.com/store/apps/details?id=net.quetta.browser)                                                               | Brand asset   |
 | `quick-search-tv.png`            | [Google Play](https://play.google.com/store/apps/details?id=com.aospstudio.tvsearch)                                                          | Brand asset   |
 | `qwant-mobile.png`               | [App Store](https://apps.apple.com/us/app/qwant-private-search/id924470452)                                                                   | Brand asset   |
+| `roku-browser.png`               | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Roku_logo.svg)                                                                    | Public domain |
 | `safari-technology-preview.png`  | [Apple Developer website](https://developer.apple.com/assets/elements/icons/safari-technology-preview/safari-technology-preview-96x96_2x.png) | Brand asset   |
 | `safari.png`                     | [Apple Developer website](https://developer.apple.com/assets/elements/icons/safari/safari-128x128_2x.png)                                     | Brand asset   |
 | `safe-exam-browser.png`          | [Safe Exam Browser website icon](https://safeexambrowser.org/apple-touch-icon.png)                                                            | Brand asset   |
@@ -159,6 +162,7 @@ Where each icon was taken from. Every icon is the original image resized to 48×
 | `savannah-browser.png`           | [Google Play](https://play.google.com/store/apps/details?id=savannah.internet.web.browser)                                                    | Brand asset   |
 | `savysoda.png`                   | [Google Play](https://play.google.com/store/apps/details?id=SavySoda.PrivateBrowsing)                                                         | Brand asset   |
 | `seekee.png`                     | [Google Play](https://play.google.com/store/apps/details?id=com.enzo.paulo)                                                                   | Brand asset   |
+| `seewo-browser.png`              | [Seewo website](https://www.seewo.com/images/logo1.svg)                                                                                       | Brand asset   |
 | `seznam-browser.png`             | [Google Play](https://play.google.com/store/apps/details?id=cz.seznam.sbrowser)                                                               | Brand asset   |
 | `shiira.png`                     | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Shiira.png)                                                                       | BSD           |
 | `sizzy.png`                      | [Sizzy website icon](https://sizzy.co/apple-touch-icon.png)                                                                                   | Brand asset   |
@@ -200,9 +204,11 @@ Where each icon was taken from. Every icon is the original image resized to 48×
 | `wave-browser.png`               | [Google Play](https://play.google.com/store/apps/details?id=com.wavesorsoftware.wavebrowser)                                                  | Brand asset   |
 | `web-browser-explorer.png`       | [Google Play](https://play.google.com/store/apps/details?id=com.explore.web.browser)                                                          | Brand asset   |
 | `web-explorer.png`               | [Google Play](https://play.google.com/store/apps/details?id=com.kaweapp.webexplorer)                                                          | Brand asset   |
+| `webian-shell.png`               | [Webian GitHub avatar](https://github.com/webianproject.png)                                                                                  | Brand asset   |
 | `webpositive.png`                | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:WebPositiveIcon.png)                                                              | Brand asset   |
 | `wexond.png`                     | [Wexond GitHub avatar](https://github.com/wexond.png)                                                                                         | Brand asset   |
 | `whale-browser.png`              | [Google Play](https://play.google.com/store/apps/details?id=com.naver.whale)                                                                  | Brand asset   |
+| `whale-tv-browser.png`           | [Whale TV website](https://www.whaletv.com/)                                                                                                  | Brand asset   |
 | `x-vpn.png`                      | [Google Play](https://play.google.com/store/apps/details?id=com.security.xvpn.z35kb)                                                          | Brand asset   |
 | `xbrowser-mini.png`              | [Google Play](https://play.google.com/store/apps/details?id=com.xbrowser.play)                                                                | Brand asset   |
 | `xnbrowse.png`                   | [Google Play](https://play.google.com/store/apps/details?id=xnx.browser.browse.Xnxnewx)                                                       | Brand asset   |
