@@ -8,6 +8,9 @@ Browser and operating system icons for the names returned by [UaDetector](https:
 npm install @uadetector/icons
 ```
 
+The package is released together with UaDetector under the same version number. Use the same version as
+the UaDetector package your backend uses, since names can change between releases.
+
 ## Usage
 
 `getBrowserIcon` and `getOsIcon` take a name exactly as UaDetector returns it and return the icon's
