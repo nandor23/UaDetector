@@ -35,6 +35,16 @@
     }
   },
   {
+    "regex": "9bot/",
+    "name": "9bot",
+    "category": 4,
+    "url": "https://9bot.com.br/en/9bot-docs",
+    "producer": {
+      "name": "9bot",
+      "url": "https://9bot.com.br"
+    }
+  },
+  {
     "regex": "Aboundex",
     "name": "Aboundexbot",
     "category": 1,
