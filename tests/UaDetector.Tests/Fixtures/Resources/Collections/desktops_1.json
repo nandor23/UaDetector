@@ -339,5 +339,32 @@
         "code": 1086
       }
     }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 12; HAD-W32 Build/HUAWEIHAD-W32) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/114.0.5735.196 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "12",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Webview",
+      "code": 162,
+      "version": "114.0.5735.196",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "114.0.5735.196"
+      }
+    },
+    "device": {
+      "type": 1,
+      "model": "MateBook Pro",
+      "brand": {
+        "name": "Huawei",
+        "code": 758
+      }
+    }
   }
 ]
