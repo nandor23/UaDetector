@@ -67,6 +67,18 @@
     }
   },
   {
+    "userAgent": "9bot/1.0 (+https://9bot.com.br/en/9bot-docs)",
+    "bot": {
+      "name": "9bot",
+      "category": 4,
+      "url": "https://9bot.com.br/en/9bot-docs",
+      "producer": {
+        "name": "9bot",
+        "url": "https://9bot.com.br"
+      }
+    }
+  },
+  {
     "userAgent": "ADmantX Platform Semantic Analyzer - ADmantX Inc. - www.admantx.com - support@admantx.com",
     "bot": {
       "name": "ADMantX"
