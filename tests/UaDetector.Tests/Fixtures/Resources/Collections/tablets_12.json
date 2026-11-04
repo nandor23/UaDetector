@@ -10863,5 +10863,367 @@
         "code": 1974
       }
     }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 16; CHG-W60 Build/HONORCGL-W60; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/124.0.6367.82 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "16",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Webview",
+      "code": 162,
+      "version": "124.0.6367.82",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "124.0.6367.82"
+      }
+    },
+    "device": {
+      "type": 3,
+      "model": "Pad GT2 Pro 12.5\" WiFi",
+      "brand": {
+        "name": "Honor",
+        "code": 2096
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 16; ELN2-W09 Build/HONORELN2-W09; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/13.40 SP-engine/3.58.0 bd_dvt/1 baiduboxapp/15.63.0.10 (Baidu; P1 16) NABar/1.0",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "16",
+      "family": "Android"
+    },
+    "client": {
+      "type": 1,
+      "name": "Baidu Box App",
+      "version": "15.63.0.10"
+    },
+    "device": {
+      "type": 3,
+      "model": "Pad X9 Pro 11.5\" WiFi",
+      "brand": {
+        "name": "Honor",
+        "code": 2096
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 12; TXZ-W09 Build/HUAWEITXZ-W09; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/114.0.5735.196 YaBrowser/25.2.0.51 (lite) Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "12",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser Lite",
+      "code": 656,
+      "version": "25.2.0.51",
+      "engine": {
+        "name": "Blink",
+        "version": "114.0.5735.196"
+      }
+    },
+    "device": {
+      "type": 3,
+      "model": "MatePad 11.5\" (2025) WiFi",
+      "brand": {
+        "name": "Huawei",
+        "code": 758
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 12; MRDI-W09 Build/HUAWEIMRDI-W09; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.196 Safari/537.36 HuaweiBrowser/16.0.9.302 HMSCore/6.15.6.332",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "12",
+      "family": "Android"
+    },
+    "client": {
+      "type": 1,
+      "name": "Huawei Mobile Services",
+      "version": "6.15.6.332"
+    },
+    "device": {
+      "type": 3,
+      "model": "MatePad Pro 12.2\" (2025) WiFi",
+      "brand": {
+        "name": "Huawei",
+        "code": 758
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 12; MRDI-W00 Build/HUAWEIMRDI-W00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/114.0.5735.196 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "12",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Webview",
+      "code": 162,
+      "version": "114.0.5735.196",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "114.0.5735.196"
+      }
+    },
+    "device": {
+      "type": 3,
+      "model": "MatePad Pro 12.2\" (2025) WiFi",
+      "brand": {
+        "name": "Huawei",
+        "code": 758
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 12; BTK-W00) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5013.1 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "12",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 141,
+      "version": "103.0.5013.1",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "103.0.5013.1"
+      }
+    },
+    "device": {
+      "type": 3,
+      "model": "MatePad 11.5\" WiFi",
+      "brand": {
+        "name": "Huawei",
+        "code": 758
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 12; BAH4-W19 Build/HUAWEIBAH4-W19; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/13.40 BDOS/1.0 (HarmonyOS 3.0.0) SP-engine/3.58.0 bd_dvt/1 baiduboxapp/15.63.0.10 (Baidu; P1 12) NABar/1.0",
+    "os": {
+      "name": "HarmonyOS",
+      "code": 59,
+      "version": "3.0.0",
+      "family": "Android"
+    },
+    "client": {
+      "type": 1,
+      "name": "Baidu Box App",
+      "version": "15.63.0.10"
+    },
+    "device": {
+      "type": 3,
+      "model": "MatePad 10.4\" (2022) WiFi",
+      "brand": {
+        "name": "Huawei",
+        "code": 758
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; MatePad Wi-Fi) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "10",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 141,
+      "version": "91.0.4472.101",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "91.0.4472.101"
+      }
+    },
+    "device": {
+      "type": 3,
+      "model": "MatePad 10.4\" WiFi",
+      "brand": {
+        "name": "Huawei",
+        "code": 758
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; MatePad Pro Wi-Fi) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Mobile Safari/537.36 EdgA/91.0.864.48",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "10",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Microsoft Edge",
+      "code": 489,
+      "version": "91.0.864.48",
+      "family": "Internet Explorer",
+      "engine": {
+        "name": "Blink",
+        "version": "91.0.4472.101"
+      }
+    },
+    "device": {
+      "type": 3,
+      "model": "MatePad Pro 10.8\" (2019) WiFi",
+      "brand": {
+        "name": "Huawei",
+        "code": 758
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; MatePad Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "10",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 141,
+      "version": "91.0.4472.101",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "91.0.4472.101"
+      }
+    },
+    "device": {
+      "type": 3,
+      "model": "MatePad Pro 10.8\" (2019) LTE",
+      "brand": {
+        "name": "Huawei",
+        "code": 758
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; MatePad LTE) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.72 Mobile Safari/537.36 EdgA/90.0.818.39",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "10",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Microsoft Edge",
+      "code": 489,
+      "version": "90.0.818.39",
+      "family": "Internet Explorer",
+      "engine": {
+        "name": "Blink",
+        "version": "90.0.4430.72"
+      }
+    },
+    "device": {
+      "type": 3,
+      "model": "MatePad 10.4\" LTE",
+      "brand": {
+        "name": "Huawei",
+        "code": 758
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; MatePad 5G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "10",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 141,
+      "version": "90.0.4430.93",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "90.0.4430.93"
+      }
+    },
+    "device": {
+      "type": 3,
+      "model": "MatePad 10.4\" 5G",
+      "brand": {
+        "name": "Huawei",
+        "code": 758
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; MatePad 10.8 Wi-Fi) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Mobile Safari/537.36 OPR/76.0.4017.107",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "10",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Opera Mobile",
+      "code": 420,
+      "version": "76.0.4017.107",
+      "family": "Opera",
+      "engine": {
+        "name": "Blink",
+        "version": "90.0.4430.93"
+      }
+    },
+    "device": {
+      "type": 3,
+      "model": "MatePad 10.8\" WiFi",
+      "brand": {
+        "name": "Huawei",
+        "code": 758
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; MatePad 10.8 LTE) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Mobile Safari/537.36 OPR/76.0.4017.208",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "10",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Opera Mobile",
+      "code": 420,
+      "version": "76.0.4017.208",
+      "family": "Opera",
+      "engine": {
+        "name": "Blink",
+        "version": "90.0.4430.212"
+      }
+    },
+    "device": {
+      "type": 3,
+      "model": "MatePad 10.8\" LTE",
+      "brand": {
+        "name": "Huawei",
+        "code": 758
+      }
+    }
   }
 ]

@@ -6224,5 +6224,354 @@
         "code": 1974
       }
     }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 16; BKQ-AN00 Build/HONORBKQ-ANXX) AppleWebKit/537.36 (KHTML, like Gecko) Sssofmlcg/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "16",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 141,
+      "version": "149.0.7827.91",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "149.0.7827.91"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "Magic 8 Pro",
+      "brand": {
+        "name": "Honor",
+        "code": 2096
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 16; AAP-AN00 Build/HONORAAP-AN00; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/148.0.7778.217 YaBrowser/25.12.0.63 (lite) Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "16",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Yandex Browser Lite",
+      "code": 656,
+      "version": "25.12.0.63",
+      "engine": {
+        "name": "Blink",
+        "version": "148.0.7778.217"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "Win",
+      "brand": {
+        "name": "Honor",
+        "code": 2096
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 16; AAK-AN00; GMSCore 26.23.34 (260400-933906539)) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/116.0.5845.114 HonorBrowser/3.5.3.300  Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "16",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "HONOR Browser",
+      "code": 263,
+      "version": "3.5.3.300",
+      "family": "Baidu",
+      "engine": {
+        "name": "Blink",
+        "version": "116.0.5845.114"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "Win RT",
+      "brand": {
+        "name": "Honor",
+        "code": 2096
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 16; BKQ-AN90 Build/HONORBKQ-ANXX; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/124.0.6367.82 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "16",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Webview",
+      "code": 162,
+      "version": "124.0.6367.82",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "124.0.6367.82"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "Magic 8 Pro",
+      "brand": {
+        "name": "Honor",
+        "code": 2096
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 16; JDY-LX3P Build/HONORJDY-L43P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.7827.91 Mobile Safari/537.36 OPX/3.3",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "16",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Opera GX",
+      "code": 416,
+      "version": "3.3",
+      "family": "Opera",
+      "engine": {
+        "name": "Blink",
+        "version": "149.0.7827.91"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "X6b",
+      "brand": {
+        "name": "Honor",
+        "code": 2096
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 15; ALI-NX3P Build/HONORALI-N23P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.159 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "15",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Webview",
+      "code": 162,
+      "version": "149.0.7827.159",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "149.0.7827.159"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "X9b 5G",
+      "brand": {
+        "name": "Honor",
+        "code": 2096
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 14; Honor Magic6 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Firefox/120.0 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "14",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Firefox",
+      "code": 213,
+      "version": "120.0",
+      "family": "Firefox",
+      "engine": {
+        "name": "Gecko"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "Magic 6 Pro",
+      "brand": {
+        "name": "Honor",
+        "code": 2096
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 12; TLR-LX9) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Atom/1.6.2.3 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "12",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Atom",
+      "code": 69,
+      "version": "1.6.2.3",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "96.0.4664.110"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "Nova 14",
+      "brand": {
+        "name": "Huawei",
+        "code": 758
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 12; SGT-AL00 Build/HUAWEISGT-AL00B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.196 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "12",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 141,
+      "version": "114.0.5735.196",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "114.0.5735.196"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "Mate 80 Pro",
+      "brand": {
+        "name": "Huawei",
+        "code": 758
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 12; LMR-LX9) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Atom/1.6.2.3 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "12",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Atom",
+      "code": 69,
+      "version": "1.6.2.3",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "96.0.4664.110"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "Pura 80 Pro",
+      "brand": {
+        "name": "Huawei",
+        "code": 758
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 11; Huawei Mate X9) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "11",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome Mobile",
+      "code": 141,
+      "version": "148.0.0.0",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "148.0.0.0"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "Mate X9",
+      "brand": {
+        "name": "Huawei",
+        "code": 758
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; HRY-LX1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Atom/1.6.2.3 Mobile Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "10",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Atom",
+      "code": 69,
+      "version": "1.6.2.3",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "96.0.4664.110"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "Honor 10 Lite",
+      "brand": {
+        "name": "Huawei",
+        "code": 758
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; Honor 30 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.6998.196 Mobile Safari/537.36 OPR/119.0.5497.131",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "10",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Opera Mobile",
+      "code": 420,
+      "version": "119.0.5497.131",
+      "family": "Opera",
+      "engine": {
+        "name": "Blink",
+        "version": "134.0.6998.196"
+      }
+    },
+    "device": {
+      "type": 2,
+      "model": "Honor 30 Pro",
+      "brand": {
+        "name": "Huawei",
+        "code": 758
+      }
+    }
   }
 ]
