@@ -11225,5 +11225,124 @@
         "code": 758
       }
     }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "headers": {
+      "sec-ch-ua-model": "\"2509ARPBDG\"",
+      "x-requested-with": "com.duckduckgo.mobile.android",
+      "sec-ch-ua": "\"Chromium\";v=\"154\", \"DuckDuckGo\";v=\"154\", \"Not A(Brand\";v=\"99\"",
+      "sec-ch-ua-full-version": "\"154.0.8037.106\""
+    },
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "10",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "DuckDuckGo Privacy Browser",
+      "code": 186,
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "154.0.8037.106"
+      }
+    },
+    "device": {
+      "type": 3,
+      "model": "Pad M1 WiFi",
+      "brand": {
+        "name": "POCO",
+        "code": 1357
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "headers": {
+      "sec-ch-ua-model": "\"Z168_U_EEA\""
+    },
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "10",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome",
+      "code": 138,
+      "version": "154.0.0.0",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "154.0.0.0"
+      }
+    },
+    "device": {
+      "type": 3,
+      "model": "Z168 U",
+      "brand": {
+        "name": "ZIOVO",
+        "code": 2083
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "headers": {
+      "sec-ch-ua-model": "\"9445X\""
+    },
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "10",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome",
+      "code": 138,
+      "version": "154.0.0.0",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "154.0.0.0"
+      }
+    },
+    "device": {
+      "type": 3,
+      "model": "Tab A1 Plus",
+      "brand": {
+        "name": "TCL",
+        "code": 1668
+      }
+    }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Linux; Android 6.0; Archos 101b Oxygen) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.117 Safari/537.36",
+    "os": {
+      "name": "Android",
+      "code": 2,
+      "version": "6.0",
+      "family": "Android"
+    },
+    "browser": {
+      "name": "Chrome",
+      "code": 138,
+      "version": "81.0.4044.117",
+      "family": "Chrome",
+      "engine": {
+        "name": "Blink",
+        "version": "81.0.4044.117"
+      }
+    },
+    "device": {
+      "type": 3,
+      "model": "101b Oxygen 4G",
+      "brand": {
+        "name": "Archos",
+        "code": 100
+      }
+    }
   }
 ]
