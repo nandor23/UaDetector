@@ -14219,5 +14219,17 @@
         "url": "https://www.epithre.com/"
       }
     }
+  },
+  {
+    "userAgent": "TuneIn-DirMon/1.0",
+    "bot": {
+      "name": "TuneIn-DirMon",
+      "category": 12,
+      "url": "https://tunein.com/",
+      "producer": {
+        "name": "TuneIn, Inc.",
+        "url": "https://tunein.com/"
+      }
+    }
   }
 ]
