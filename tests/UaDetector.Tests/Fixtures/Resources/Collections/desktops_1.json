@@ -366,5 +366,27 @@
         "code": 758
       }
     }
+  },
+  {
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) RockstarGames/2.4.0.240/5.0.0.0/launcher/Steam Safari/537.36",
+    "os": {
+      "name": "Windows",
+      "code": 171,
+      "version": "10",
+      "cpuArchitecture": "x64",
+      "family": "Windows"
+    },
+    "browser": {
+      "name": "Safari",
+      "code": 524,
+      "family": "Safari",
+      "engine": {
+        "name": "WebKit",
+        "version": "537.36"
+      }
+    },
+    "device": {
+      "type": 1
+    }
   }
 ]

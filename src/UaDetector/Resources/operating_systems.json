@@ -8,7 +8,7 @@
     "name": "YaOS"
   },
   {
-    "regex": "Steam",
+    "regex": "SteamDeck|Valve Steam",
     "name": "SteamOS"
   },
   {
