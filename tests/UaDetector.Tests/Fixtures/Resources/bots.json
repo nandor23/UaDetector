@@ -14207,5 +14207,17 @@
         "url": "https://www.epithre.com/"
       }
     }
+  },
+  {
+    "userAgent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; IsonAI-User/1.0; +https://www.isonai.com/bot",
+    "bot": {
+      "name": "IsonAI-User",
+      "category": 18,
+      "url": "https://docs.isonai.com/en/bots/",
+      "producer": {
+        "name": "PT Epithre Teknologi Indonesia",
+        "url": "https://www.epithre.com/"
+      }
+    }
   }
 ]
