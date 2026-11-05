@@ -3708,7 +3708,7 @@
     },
     "device": {
       "type": 2,
-      "model": "Y67",
+      "model": "Y67L",
       "brand": {
         "name": "Vivo",
         "code": 1865
@@ -3869,7 +3869,7 @@
     },
     "device": {
       "type": 2,
-      "model": "X9",
+      "model": "X9L",
       "brand": {
         "name": "Vivo",
         "code": 1865
