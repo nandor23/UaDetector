@@ -3,7 +3,7 @@
     <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
   </PropertyGroup>
   <ItemGroup>
-    <PackageVersion Include="Microsoft.Extensions.DependencyInjection" Version="10.0.11" />
+    <PackageVersion Include="Microsoft.Extensions.DependencyInjection" Version="11.0.0" />
     <PackageVersion Include="PolySharp" Version="1.16.0" />
     <PackageVersion Include="Microsoft.Testing.Extensions.CodeCoverage" Version="18.10.0" />
     <PackageVersion Include="Shouldly" Version="4.3.0" />
@@ -32,44 +32,31 @@
     <PackageVersion Include="System.Threading.Tasks.Extensions" Version="4.6.3" />
     <PackageVersion Include="System.Numerics.Vectors" Version="4.6.1" />
   </ItemGroup>
-  <ItemGroup>
-    <!-- .NET 10 -->
-    <PackageVersion
-      Include="Microsoft.Extensions.DependencyInjection.Abstractions"
-      Version="10.0.11"
-      Condition="$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', 'net10.0'))"
-    />
-    <PackageVersion
-      Include="Microsoft.Extensions.Caching.Memory"
-      Version="10.0.11"
-      Condition="$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', 'net10.0'))"
-    />
-    <!-- .NET 9 only -->
-    <PackageVersion
-      Include="Microsoft.Extensions.DependencyInjection.Abstractions"
-      Version="9.0.19"
-      Condition="$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', 'net9.0')) And !$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', 'net10.0'))"
-    />
-    <PackageVersion
-      Include="Microsoft.Extensions.Caching.Memory"
-      Version="9.0.19"
-      Condition="$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', 'net9.0')) And !$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', 'net10.0'))"
-    />
-    <!-- .NET 8 and below -->
-    <PackageVersion
-      Include="Microsoft.Extensions.DependencyInjection.Abstractions"
-      Version="8.0.2"
-      Condition="!$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', 'net9.0'))"
-    />
-    <PackageVersion
-      Include="Microsoft.Extensions.Caching.Memory"
-      Version="8.0.1"
-      Condition="!$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', 'net9.0'))"
-    />
-    <PackageVersion
-      Include="System.Collections.Immutable"
-      Version="8.0.0"
-      Condition="!$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', 'net9.0'))"
-    />
-  </ItemGroup>
+  <Choose>
+    <When Condition="'$(TargetFramework)' == 'net11.0'">
+      <ItemGroup>
+        <PackageVersion Include="Microsoft.Extensions.Caching.Memory" Version="11.0.0" />
+      </ItemGroup>
+    </When>
+    <When Condition="'$(TargetFramework)' == 'net10.0'">
+      <ItemGroup>
+        <PackageVersion Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="10.0.11" />
+        <PackageVersion Include="Microsoft.Extensions.Caching.Memory" Version="10.0.11" />
+      </ItemGroup>
+    </When>
+    <When Condition="'$(TargetFramework)' == 'net9.0'">
+      <ItemGroup>
+        <PackageVersion Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.19" />
+        <PackageVersion Include="Microsoft.Extensions.Caching.Memory" Version="9.0.19" />
+      </ItemGroup>
+    </When>
+    <!-- netstandard2.0, net462 -->
+    <Otherwise>
+      <ItemGroup>
+        <PackageVersion Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.2" />
+        <PackageVersion Include="Microsoft.Extensions.Caching.Memory" Version="8.0.1" />
+        <PackageVersion Include="System.Collections.Immutable" Version="8.0.0" />
+      </ItemGroup>
+    </Otherwise>
+  </Choose>
 </Project>
