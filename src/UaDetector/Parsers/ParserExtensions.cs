@@ -79,9 +79,8 @@ internal static class ParserExtensions
 
         if (HasUserAgentDesktopFragment(userAgent))
         {
-            result = DesktopFragmentReplacementRegex.Replace(
-                userAgent,
-                match => $"{match.Value}; {clientHints.Model}"
+            result = DesktopFragmentReplacementRegex.Replace(userAgent, match =>
+                $"{match.Value}; {clientHints.Model}"
             );
         }
 

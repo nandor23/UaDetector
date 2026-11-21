@@ -49,8 +49,8 @@ public class ClientHintsTests
             {
                 "Sec-CH-UA-Full-Version-List",
                 """
-                    " Not A;Brand";v="99.0.0.0", "Chromium";v="99.0.4844.51", v="98.0.4758.109"
-                    """
+                " Not A;Brand";v="99.0.0.0", "Chromium";v="99.0.4844.51", v="98.0.4758.109"
+                """
             },
         };
 

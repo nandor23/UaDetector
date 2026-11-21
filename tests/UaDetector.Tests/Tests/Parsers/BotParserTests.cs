@@ -28,20 +28,16 @@ public class BotParserTests
         var fixtures = (await FixtureLoader.LoadAsync<BotFixture>(fixturePath));
         var parser = new BotParser();
 
-        FixtureAssert.ForEach(
-            fixturePath,
-            fixtures,
-            fixture =>
-            {
-                parser.TryParse(fixture.UserAgent, out var result).ShouldBeTrue();
+        FixtureAssert.ForEach(fixturePath, fixtures, fixture =>
+        {
+            parser.TryParse(fixture.UserAgent, out var result).ShouldBeTrue();
 
-                result.ShouldNotBeNull();
-                result.Name.ShouldBe(fixture.Bot.Name);
-                result.Category.ShouldBe(fixture.Bot.Category);
-                result.Url.ShouldBe(fixture.Bot.Url);
-                result.Producer.ShouldBeEquivalentTo(fixture.Bot.Producer);
-            }
-        );
+            result.ShouldNotBeNull();
+            result.Name.ShouldBe(fixture.Bot.Name);
+            result.Category.ShouldBe(fixture.Bot.Category);
+            result.Url.ShouldBe(fixture.Bot.Url);
+            result.Producer.ShouldBeEquivalentTo(fixture.Bot.Producer);
+        });
     }
 
     [Test]

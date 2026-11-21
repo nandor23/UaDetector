@@ -15,16 +15,13 @@ builder.Services.AddUaDetector(options =>
 var app = builder.Build();
 
 app.MapOpenApi();
-app.MapScalarApiReference(
-    "scalar",
-    cfg =>
-    {
-        cfg.Title = "UaDetector";
-        cfg.Theme = ScalarTheme.Moon;
-        cfg.ShowSidebar = true;
-        cfg.HideDarkModeToggle = true;
-    }
-);
+app.MapScalarApiReference("scalar", cfg =>
+{
+    cfg.Title = "UaDetector";
+    cfg.Theme = ScalarTheme.Moon;
+    cfg.ShowSidebar = true;
+    cfg.HideDarkModeToggle = true;
+});
 
 app.MapGet("/", () => Results.Redirect("/scalar")).ExcludeFromDescription();
 

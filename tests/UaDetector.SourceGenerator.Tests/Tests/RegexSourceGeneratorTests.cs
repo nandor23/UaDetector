@@ -6,40 +6,38 @@ namespace UaDetector.SourceGenerator.Tests.Tests;
 
 public class RegexSourceGeneratorTests
 {
-    static string GetSourceCodeWithCombinedRegex(string modelTypeName) =>
-        $$"""
-            using System.Text.RegularExpressions;
-            using System.Collections.Generic;
-            using UaDetector.Attributes;
-            using UaDetector.Models;
+    static string GetSourceCodeWithCombinedRegex(string modelTypeName) => $$"""
+        using System.Text.RegularExpressions;
+        using System.Collections.Generic;
+        using UaDetector.Attributes;
+        using UaDetector.Models;
 
-            namespace UaDetector;
+        namespace UaDetector;
 
-            internal sealed partial class Parser
-            {
-                [RegexSource("Resources/regexes.json")]
-                internal static partial IReadOnlyList<{{modelTypeName}}> Regexes { get; }
+        internal sealed partial class Parser
+        {
+            [RegexSource("Resources/regexes.json")]
+            internal static partial IReadOnlyList<{{modelTypeName}}> Regexes { get; }
 
-                [CombinedRegex]
-                private static partial Regex CombinedRegex { get; }
-            }
-            """;
+            [CombinedRegex]
+            private static partial Regex CombinedRegex { get; }
+        }
+        """;
 
-    static string GetSourceCodeWithoutCombinedRegex(string modelTypeName) =>
-        $$"""
-            using System.Text.RegularExpressions;
-            using System.Collections.Generic;
-            using UaDetector.Attributes;
-            using UaDetector.Models;
+    static string GetSourceCodeWithoutCombinedRegex(string modelTypeName) => $$"""
+        using System.Text.RegularExpressions;
+        using System.Collections.Generic;
+        using UaDetector.Attributes;
+        using UaDetector.Models;
 
-            namespace UaDetector;
+        namespace UaDetector;
 
-            internal sealed partial class Parser
-            {
-                [RegexSource("Resources/regexes.json")]
-                internal static partial IReadOnlyList<{{modelTypeName}}> Regexes { get; }
-            }
-            """;
+        internal sealed partial class Parser
+        {
+            [RegexSource("Resources/regexes.json")]
+            internal static partial IReadOnlyList<{{modelTypeName}}> Regexes { get; }
+        }
+        """;
 
     private const string RegexSourceAttributeCode = """
         namespace UaDetector.Attributes;
@@ -247,17 +245,17 @@ public class RegexSourceGeneratorTests
                 ModelSourceCodes =
                 [
                     """
-                        using System.Text.RegularExpressions;
+                    using System.Text.RegularExpressions;
 
-                        namespace UaDetector.Models;
+                    namespace UaDetector.Models;
 
-                        public sealed class Client
-                        {
-                            public required Regex Regex { get; init; }
-                            public required string Name { get; init; }
-                            public required string Version { get; init; }
-                        }
-                        """,
+                    public sealed class Client
+                    {
+                        public required Regex Regex { get; init; }
+                        public required string Name { get; init; }
+                        public required string Version { get; init; }
+                    }
+                    """,
                 ],
                 ExpectedDiagnostics =
                 [
@@ -311,29 +309,29 @@ public class RegexSourceGeneratorTests
                 ModelSourceCodes =
                 [
                     """
-                        using System.Text.RegularExpressions;
+                    using System.Text.RegularExpressions;
 
-                        namespace UaDetector.Models;
+                    namespace UaDetector.Models;
 
-                        internal sealed class Browser
-                        {
-                            public required Regex Regex { get; init; }
-                            public required string Name { get; init; }
-                            public string? Version { get; init; }
-                            public BrowserEngine? Engine { get; init; }
-                        }
-                        """,
+                    internal sealed class Browser
+                    {
+                        public required Regex Regex { get; init; }
+                        public required string Name { get; init; }
+                        public string? Version { get; init; }
+                        public BrowserEngine? Engine { get; init; }
+                    }
+                    """,
                     """
-                        namespace UaDetector.Models;
+                    namespace UaDetector.Models;
 
-                        using System.Collections.Generic;
+                    using System.Collections.Generic;
 
-                        internal sealed class BrowserEngine
-                        {
-                            public string? Default { get; init; }
-                            public IReadOnlyDictionary<string, string>? Versions { get; init; }
-                        }
-                        """,
+                    internal sealed class BrowserEngine
+                    {
+                        public string? Default { get; init; }
+                        public IReadOnlyDictionary<string, string>? Versions { get; init; }
+                    }
+                    """,
                 ],
                 ExpectedDiagnostics =
                 [
@@ -371,16 +369,16 @@ public class RegexSourceGeneratorTests
                 ModelSourceCodes =
                 [
                     """
-                        using System.Text.RegularExpressions;
+                    using System.Text.RegularExpressions;
 
-                        namespace UaDetector.Models;
+                    namespace UaDetector.Models;
 
-                        internal sealed class Engine
-                        {
-                            public required Regex Regex { get; init; }
-                            public required string Name { get; init; }
-                        }
-                        """,
+                    internal sealed class Engine
+                    {
+                        public required Regex Regex { get; init; }
+                        public required string Name { get; init; }
+                    }
+                    """,
                 ],
                 ExpectedDiagnostics =
                 [
@@ -420,30 +418,30 @@ public class RegexSourceGeneratorTests
                 ModelSourceCodes =
                 [
                     """
-                        using System.Text.RegularExpressions;
-                        using System.Collections.Generic;
+                    using System.Text.RegularExpressions;
+                    using System.Collections.Generic;
 
-                        namespace UaDetector.Models;
+                    namespace UaDetector.Models;
 
-                        internal sealed class Os
-                        {
-                            public required Regex Regex { get; init; }
-                            public required string Name { get; init; }
-                            public string? Version { get; init; }
-                            public IReadOnlyList<OsVersion>? Versions { get; init; }
-                        }
-                        """,
+                    internal sealed class Os
+                    {
+                        public required Regex Regex { get; init; }
+                        public required string Name { get; init; }
+                        public string? Version { get; init; }
+                        public IReadOnlyList<OsVersion>? Versions { get; init; }
+                    }
+                    """,
                     """
-                        using System.Text.RegularExpressions;
+                    using System.Text.RegularExpressions;
 
-                        namespace UaDetector.Models;
+                    namespace UaDetector.Models;
 
-                        internal sealed class OsVersion
-                        {
-                            public required Regex Regex { get; init; }
-                            public required string Version { get; init; }
-                        }
-                        """,
+                    internal sealed class OsVersion
+                    {
+                        public required Regex Regex { get; init; }
+                        public required string Version { get; init; }
+                    }
+                    """,
                 ],
                 ExpectedDiagnostics =
                 [
@@ -483,40 +481,40 @@ public class RegexSourceGeneratorTests
                 ModelSourceCodes =
                 [
                     """
-                        using System.Text.RegularExpressions;
-                        using UaDetector.Abstractions.Enums;
-                        using System.Collections.Generic;
+                    using System.Text.RegularExpressions;
+                    using UaDetector.Abstractions.Enums;
+                    using System.Collections.Generic;
 
-                        namespace UaDetector.Models;
+                    namespace UaDetector.Models;
 
-                        internal sealed class Device
-                        {
-                            public required Regex Regex { get; init; }
-                            public required string Brand { get; init; }
-                            public DeviceType? Type { get; init; }
-                            public string? Model { get; init; }
-                            public IReadOnlyList<DeviceModel>? ModelVariants { get; init; }
-                        }
-                        """,
+                    internal sealed class Device
+                    {
+                        public required Regex Regex { get; init; }
+                        public required string Brand { get; init; }
+                        public DeviceType? Type { get; init; }
+                        public string? Model { get; init; }
+                        public IReadOnlyList<DeviceModel>? ModelVariants { get; init; }
+                    }
+                    """,
                     """
-                        using System.Text.RegularExpressions;
-                        using UaDetector.Abstractions.Enums;
+                    using System.Text.RegularExpressions;
+                    using UaDetector.Abstractions.Enums;
 
-                        namespace UaDetector.Models;
+                    namespace UaDetector.Models;
 
-                        internal sealed class DeviceModel
-                        {
-                            public required Regex Regex { get; init; }
-                            public DeviceType? Type { get; init; }
-                            public string? Brand { get; init; }
-                            public string? Name { get; init; }
-                        }
-                        """,
+                    internal sealed class DeviceModel
+                    {
+                        public required Regex Regex { get; init; }
+                        public DeviceType? Type { get; init; }
+                        public string? Brand { get; init; }
+                        public string? Name { get; init; }
+                    }
+                    """,
                     """
-                        namespace UaDetector.Abstractions.Enums;
+                    namespace UaDetector.Abstractions.Enums;
 
-                        public enum DeviceType;
-                        """,
+                    public enum DeviceType;
+                    """,
                 ],
                 ExpectedDiagnostics =
                 [
@@ -567,34 +565,34 @@ public class RegexSourceGeneratorTests
                 ModelSourceCodes =
                 [
                     """
-                        using System.Text.RegularExpressions;
-                        using UaDetector.Abstractions.Enums;
+                    using System.Text.RegularExpressions;
+                    using UaDetector.Abstractions.Enums;
 
-                        namespace UaDetector.Models;
+                    namespace UaDetector.Models;
 
-                        internal sealed class Bot
-                        {
-                            public required Regex Regex { get; init; }
-                            public required string Name { get; init; }
-                            public BotCategory? Category { get; init; }
-                            public string? Url { get; init; }
-                            public BotProducer? Producer { get; init; }
-                        }
-                        """,
+                    internal sealed class Bot
+                    {
+                        public required Regex Regex { get; init; }
+                        public required string Name { get; init; }
+                        public BotCategory? Category { get; init; }
+                        public string? Url { get; init; }
+                        public BotProducer? Producer { get; init; }
+                    }
+                    """,
                     """
-                        namespace UaDetector.Models;
+                    namespace UaDetector.Models;
 
-                        internal sealed class BotProducer
-                        {
-                            public string? Name { get; init; }
-                            public string? Url { get; init; }
-                        }
-                        """,
+                    internal sealed class BotProducer
+                    {
+                        public string? Name { get; init; }
+                        public string? Url { get; init; }
+                    }
+                    """,
                     """
-                        namespace UaDetector.Abstractions.Enums;
+                    namespace UaDetector.Abstractions.Enums;
 
-                        public enum BotCategory;
-                        """,
+                    public enum BotCategory;
+                    """,
                 ],
                 ExpectedDiagnostics =
                 [
@@ -637,17 +635,17 @@ public class RegexSourceGeneratorTests
                 ModelSourceCodes =
                 [
                     """
-                        using System.Text.RegularExpressions;
-                        using System.Collections.Generic;
+                    using System.Text.RegularExpressions;
+                    using System.Collections.Generic;
 
-                        namespace UaDetector.Models;
+                    namespace UaDetector.Models;
 
-                        internal sealed class VendorFragment
-                        {
-                            public required string Brand { get; init; }
-                            public required IReadOnlyList<Regex> Regexes { get; init; }
-                        }
-                        """,
+                    internal sealed class VendorFragment
+                    {
+                        public required string Brand { get; init; }
+                        public required IReadOnlyList<Regex> Regexes { get; init; }
+                    }
+                    """,
                 ],
                 ExpectedDiagnostics =
                 [

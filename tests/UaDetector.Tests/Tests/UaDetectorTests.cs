@@ -50,38 +50,34 @@ public class UaDetectorTests
             new UaDetectorOptions { VersionTruncation = VersionTruncation.None }
         );
 
-        FixtureAssert.ForEach(
-            fixturePath,
-            fixtures,
-            fixture =>
-            {
-                bool isParsed = fixture.Headers is null
-                    ? uaDetector.TryParse(fixture.UserAgent, out var result)
-                    : uaDetector.TryParse(fixture.UserAgent, fixture.Headers, out result);
+        FixtureAssert.ForEach(fixturePath, fixtures, fixture =>
+        {
+            bool isParsed = fixture.Headers is null
+                ? uaDetector.TryParse(fixture.UserAgent, out var result)
+                : uaDetector.TryParse(fixture.UserAgent, fixture.Headers, out result);
 
-                if (
-                    fixture.Os is null
-                    && fixture.Browser is null
-                    && fixture.Client is null
-                    && fixture.Device is null
-                    && fixture.Bot is null
-                )
-                {
-                    isParsed.ShouldBeFalse();
-                    result.ShouldBeNull();
-                }
-                else
-                {
-                    isParsed.ShouldBeTrue();
-                    result.ShouldNotBeNull();
-                    result.Os.ShouldBeEquivalentTo(fixture.Os);
-                    result.Browser.ShouldBeEquivalentTo(fixture.Browser);
-                    result.Client.ShouldBeEquivalentTo(fixture.Client);
-                    result.Device.ShouldBeEquivalentTo(fixture.Device);
-                    result.Bot.ShouldBeEquivalentTo(fixture.Bot);
-                }
+            if (
+                fixture.Os is null
+                && fixture.Browser is null
+                && fixture.Client is null
+                && fixture.Device is null
+                && fixture.Bot is null
+            )
+            {
+                isParsed.ShouldBeFalse();
+                result.ShouldBeNull();
             }
-        );
+            else
+            {
+                isParsed.ShouldBeTrue();
+                result.ShouldNotBeNull();
+                result.Os.ShouldBeEquivalentTo(fixture.Os);
+                result.Browser.ShouldBeEquivalentTo(fixture.Browser);
+                result.Client.ShouldBeEquivalentTo(fixture.Client);
+                result.Device.ShouldBeEquivalentTo(fixture.Device);
+                result.Bot.ShouldBeEquivalentTo(fixture.Bot);
+            }
+        });
     }
 
     [Test]
@@ -98,36 +94,32 @@ public class UaDetectorTests
         var browserParser = new BrowserParser(uaDetectorOptions);
         var clientParser = new ClientParser(uaDetectorOptions);
 
-        FixtureAssert.ForEach(
-            fixturePath,
-            fixtures,
-            fixture =>
+        FixtureAssert.ForEach(fixturePath, fixtures, fixture =>
+        {
+            UserAgentInfo? userAgentInfo;
+            OsInfo? osInfo;
+            BrowserInfo? browserInfo;
+            ClientInfo? clientInfo;
+
+            if (fixture.Headers is null)
             {
-                UserAgentInfo? userAgentInfo;
-                OsInfo? osInfo;
-                BrowserInfo? browserInfo;
-                ClientInfo? clientInfo;
-
-                if (fixture.Headers is null)
-                {
-                    uaDetector.TryParse(fixture.UserAgent, out userAgentInfo);
-                    osParser.TryParse(fixture.UserAgent, out osInfo);
-                    browserParser.TryParse(fixture.UserAgent, out browserInfo);
-                    clientParser.TryParse(fixture.UserAgent, out clientInfo);
-                }
-                else
-                {
-                    uaDetector.TryParse(fixture.UserAgent, fixture.Headers, out userAgentInfo);
-                    osParser.TryParse(fixture.UserAgent, fixture.Headers, out osInfo);
-                    browserParser.TryParse(fixture.UserAgent, fixture.Headers, out browserInfo);
-                    clientParser.TryParse(fixture.UserAgent, fixture.Headers, out clientInfo);
-                }
-
-                userAgentInfo?.Os.ShouldBeEquivalentTo(osInfo);
-                userAgentInfo?.Browser.ShouldBeEquivalentTo(browserInfo);
-                userAgentInfo?.Client.ShouldBeEquivalentTo(clientInfo);
+                uaDetector.TryParse(fixture.UserAgent, out userAgentInfo);
+                osParser.TryParse(fixture.UserAgent, out osInfo);
+                browserParser.TryParse(fixture.UserAgent, out browserInfo);
+                clientParser.TryParse(fixture.UserAgent, out clientInfo);
             }
-        );
+            else
+            {
+                uaDetector.TryParse(fixture.UserAgent, fixture.Headers, out userAgentInfo);
+                osParser.TryParse(fixture.UserAgent, fixture.Headers, out osInfo);
+                browserParser.TryParse(fixture.UserAgent, fixture.Headers, out browserInfo);
+                clientParser.TryParse(fixture.UserAgent, fixture.Headers, out clientInfo);
+            }
+
+            userAgentInfo?.Os.ShouldBeEquivalentTo(osInfo);
+            userAgentInfo?.Browser.ShouldBeEquivalentTo(browserInfo);
+            userAgentInfo?.Client.ShouldBeEquivalentTo(clientInfo);
+        });
     }
 
     [Test]
