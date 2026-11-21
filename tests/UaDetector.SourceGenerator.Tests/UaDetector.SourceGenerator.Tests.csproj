@@ -4,7 +4,6 @@
     <TargetFramework>net11.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <EnableTUnitSourceGeneration>false</EnableTUnitSourceGeneration>
   </PropertyGroup>
 
   <ItemGroup>
@@ -18,4 +17,18 @@
   <ItemGroup>
     <ProjectReference Include="..\..\src\UaDetector.SourceGenerator\UaDetector.SourceGenerator.csproj" />
   </ItemGroup>
+
+  <!--
+    The generator returns its netstandard2.0 dependencies (System.Memory, System.Text.Json, ...) from
+    GetTargetPath so they load beside it as analyzers. As references here they clash with the
+    in-box net11.0 assemblies, so keep only the generator assembly itself.
+  -->
+  <Target Name="ReferenceOnlyGeneratorAssembly" AfterTargets="ResolveProjectReferences">
+    <ItemGroup>
+      <_ResolvedProjectReferencePaths
+        Remove="@(_ResolvedProjectReferencePaths)"
+        Condition="'%(Filename)' != 'UaDetector.SourceGenerator'"
+      />
+    </ItemGroup>
+  </Target>
 </Project>

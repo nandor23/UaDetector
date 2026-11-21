@@ -13,18 +13,12 @@ public class VendorFragmentParserTests
         var fixturePath = Path.Combine("Fixtures", "Resources", "vendor_fragments.json");
         var fixtures = await FixtureLoader.LoadAsync<VendorFragmentFixture>(fixturePath);
 
-        FixtureAssert.ForEach(
-            fixturePath,
-            fixtures,
-            fixture =>
-            {
-                VendorFragmentParser
-                    .TryParseBrand(fixture.UserAgent, out var result)
-                    .ShouldBeTrue();
+        FixtureAssert.ForEach(fixturePath, fixtures, fixture =>
+        {
+            VendorFragmentParser.TryParseBrand(fixture.UserAgent, out var result).ShouldBeTrue();
 
-                result.ShouldNotBeNull();
-                result.ShouldBe(fixture.Vendor);
-            }
-        );
+            result.ShouldNotBeNull();
+            result.ShouldBe(fixture.Vendor);
+        });
     }
 }

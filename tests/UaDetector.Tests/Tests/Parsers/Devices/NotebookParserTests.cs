@@ -28,20 +28,14 @@ public class NotebookParserTests
 
         var parser = new NotebookParser();
 
-        FixtureAssert.ForEach(
-            fixturePath,
-            fixtures,
-            fixture =>
-            {
-                parser
-                    .TryParse(fixture.UserAgent, fixture.UserAgent, out var result)
-                    .ShouldBeTrue();
+        FixtureAssert.ForEach(fixturePath, fixtures, fixture =>
+        {
+            parser.TryParse(fixture.UserAgent, fixture.UserAgent, out var result).ShouldBeTrue();
 
-                result.ShouldNotBeNull();
-                result.Type.ShouldBe(fixture.Device.Type);
-                result.Brand.ShouldBe(fixture.Device.Brand);
-                result.Model.ShouldBe(fixture.Device.Model);
-            }
-        );
+            result.ShouldNotBeNull();
+            result.Type.ShouldBe(fixture.Device.Type);
+            result.Brand.ShouldBe(fixture.Device.Brand);
+            result.Model.ShouldBe(fixture.Device.Model);
+        });
     }
 }

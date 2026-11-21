@@ -269,11 +269,6 @@ than UaDetector while maintaining the same functionality at the cost of parsing 
 | BotParser_TryParse     |   297.8 us |   3.66 us |   3.06 us |      51 B |
 | BotParser_IsBot        |   282.9 us |   3.83 us |   3.39 us |         - |
 
-## Building from Source
-
-- **.NET 9 SDK** or newer for compilation. Projects can target earlier .NET versions.
-- **Visual Studio 2022** (version 17.12 or later)
-- **JetBrains Rider** (version 2024.3 or later)
 
 ## 🔍 Detection Capabilities
 

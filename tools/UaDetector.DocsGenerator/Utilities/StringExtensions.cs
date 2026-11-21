@@ -36,9 +36,8 @@ public static class StringExtensions
 
         if (regex.IsMatch(content))
         {
-            return regex.Replace(
-                content,
-                m => $"{m.Groups[1].Value}{newContent}{m.Groups[3].Value}"
+            return regex.Replace(content, m =>
+                $"{m.Groups[1].Value}{newContent}{m.Groups[3].Value}"
             );
         }
 

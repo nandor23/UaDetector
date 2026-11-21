@@ -3,11 +3,15 @@
     <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
   </PropertyGroup>
   <ItemGroup>
+    <PackageVersion Include="PolySharp" Version="1.17.1" />
+  </ItemGroup>
+  <ItemGroup Label="Tests">
     <PackageVersion Include="Microsoft.Extensions.DependencyInjection" Version="11.0.0" />
-    <PackageVersion Include="PolySharp" Version="1.16.0" />
-    <PackageVersion Include="Microsoft.Testing.Extensions.CodeCoverage" Version="18.10.0" />
+    <PackageVersion Include="Microsoft.Testing.Extensions.CodeCoverage" Version="18.12.0" />
     <PackageVersion Include="Shouldly" Version="4.3.0" />
-    <PackageVersion Include="TUnit" Version="1.65.63" />
+    <PackageVersion Include="TUnit" Version="1.87.12" />
+  </ItemGroup>
+  <ItemGroup Label="Source generator">
     <PackageVersion Include="Microsoft.CodeAnalysis.Analyzers" Version="4.14.0" />
     <PackageVersion Include="Microsoft.CodeAnalysis.CSharp" Version="4.14.0" />
     <PackageVersion Include="Microsoft.CodeAnalysis.CSharp.Workspaces" Version="4.14.0" />
@@ -17,14 +21,14 @@
       Version="1.1.4"
     />
     <!-- Overrides vulnerable transitive version from Microsoft.CodeAnalysis.Analyzer.Testing -->
-    <PackageVersion Include="System.Security.Cryptography.Pkcs" Version="10.0.13" />
+    <PackageVersion Include="System.Security.Cryptography.Pkcs" Version="11.0.0" />
   </ItemGroup>
   <ItemGroup Label="STJ runtime dependencies for source generator">
-    <PackageVersion Include="System.Text.Json" Version="10.0.11" />
-    <PackageVersion Include="System.Reflection.Metadata" Version="10.0.11" />
-    <PackageVersion Include="System.Text.Encodings.Web" Version="10.0.11" />
-    <PackageVersion Include="System.Text.Encoding.CodePages" Version="10.0.11" />
-    <PackageVersion Include="Microsoft.Bcl.AsyncInterfaces" Version="10.0.11" />
+    <PackageVersion Include="System.Text.Json" Version="11.0.0" />
+    <PackageVersion Include="System.Reflection.Metadata" Version="11.0.0" />
+    <PackageVersion Include="System.Text.Encodings.Web" Version="11.0.0" />
+    <PackageVersion Include="System.Text.Encoding.CodePages" Version="11.0.0" />
+    <PackageVersion Include="Microsoft.Bcl.AsyncInterfaces" Version="11.0.0" />
     <PackageVersion Include="Microsoft.Bcl.HashCode" Version="6.0.0" />
     <PackageVersion Include="System.Buffers" Version="4.6.1" />
     <PackageVersion Include="System.Memory" Version="4.6.3" />
@@ -40,22 +44,30 @@
     </When>
     <When Condition="'$(TargetFramework)' == 'net10.0'">
       <ItemGroup>
-        <PackageVersion Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="10.0.11" />
-        <PackageVersion Include="Microsoft.Extensions.Caching.Memory" Version="10.0.11" />
+        <PackageVersion
+          Include="Microsoft.Extensions.DependencyInjection.Abstractions"
+          Version="10.0.15"
+        />
+        <PackageVersion Include="Microsoft.Extensions.Caching.Memory" Version="10.0.15" />
       </ItemGroup>
     </When>
     <When Condition="'$(TargetFramework)' == 'net9.0'">
       <ItemGroup>
-        <PackageVersion Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.19" />
-        <PackageVersion Include="Microsoft.Extensions.Caching.Memory" Version="9.0.19" />
+        <PackageVersion
+          Include="Microsoft.Extensions.DependencyInjection.Abstractions"
+          Version="9.0.23"
+        />
+        <PackageVersion Include="Microsoft.Extensions.Caching.Memory" Version="9.0.23" />
       </ItemGroup>
     </When>
-    <!-- netstandard2.0, net462 -->
     <Otherwise>
       <ItemGroup>
-        <PackageVersion Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.2" />
-        <PackageVersion Include="Microsoft.Extensions.Caching.Memory" Version="8.0.1" />
-        <PackageVersion Include="System.Collections.Immutable" Version="8.0.0" />
+        <PackageVersion
+          Include="Microsoft.Extensions.DependencyInjection.Abstractions"
+          Version="11.0.0"
+        />
+        <PackageVersion Include="Microsoft.Extensions.Caching.Memory" Version="11.0.0" />
+        <PackageVersion Include="System.Collections.Immutable" Version="11.0.0" />
       </ItemGroup>
     </Otherwise>
   </Choose>
