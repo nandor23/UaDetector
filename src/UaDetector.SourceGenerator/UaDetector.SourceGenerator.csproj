@@ -14,37 +14,38 @@
     <PackageReference Include="PolySharp" PrivateAssets="All" />
   </ItemGroup>
 
-  <ItemGroup Label="Package References">
-    <PackageReference Include="System.Text.Json" PrivateAssets="All" GeneratePathProperty="true" />
-    <PackageReference Include="System.Text.Encodings.Web" PrivateAssets="All" GeneratePathProperty="true" />
-    <PackageReference Include="System.Text.Encoding.CodePages" PrivateAssets="All" GeneratePathProperty="true" />
-    <PackageReference Include="Microsoft.Bcl.HashCode" PrivateAssets="All" GeneratePathProperty="true" />
-    <PackageReference Include="Microsoft.Bcl.AsyncInterfaces" PrivateAssets="All" GeneratePathProperty="true" />
-    <PackageReference Include="System.Buffers" PrivateAssets="All" GeneratePathProperty="true" />
-    <PackageReference Include="System.Memory" PrivateAssets="All" GeneratePathProperty="true" />
-    <PackageReference Include="System.Runtime.CompilerServices.Unsafe" PrivateAssets="All" GeneratePathProperty="true" />
-    <PackageReference Include="System.Threading.Tasks.Extensions" PrivateAssets="All" GeneratePathProperty="true" />
-    <PackageReference Include="System.Numerics.Vectors" PrivateAssets="All" GeneratePathProperty="true" />
-    <PackageReference Include="System.Reflection.Metadata" PrivateAssets="All" GeneratePathProperty="true" />
+  <ItemGroup Label="Runtime dependencies">
+    <PackageReference Include="System.Text.Json" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.Bcl.HashCode" PrivateAssets="All" />
   </ItemGroup>
 
+  <!--
+    The compiler loads the generator together with the runtime assemblies returned here, so ship
+    every resolved package dependency (transitive ones included) except Roslyn and its own
+    dependencies, which the compiler provides.
+  -->
   <PropertyGroup>
     <GetTargetPathDependsOn>$(GetTargetPathDependsOn);GetDependencyTargetPaths</GetTargetPathDependsOn>
   </PropertyGroup>
 
-  <Target Name="GetDependencyTargetPaths">
+  <ItemGroup>
+    <CompilerProvidedPackage
+      Include="Microsoft.CodeAnalysis.Common;Microsoft.CodeAnalysis.CSharp;System.Collections.Immutable;System.Reflection.Metadata;System.Text.Encoding.CodePages"
+      NuGetPackageId="%(Identity)"
+    />
+  </ItemGroup>
+
+  <Target Name="GetDependencyTargetPaths" DependsOnTargets="ResolvePackageAssets">
     <ItemGroup>
-      <TargetPathWithTargetPlatformMoniker Include="$(PkgSystem_Text_Json)\lib\netstandard2.0\System.Text.Json.dll" IncludeRuntimeDependency="false" />
-      <TargetPathWithTargetPlatformMoniker Include="$(PkgSystem_Text_Encodings_Web)\lib\netstandard2.0\System.Text.Encodings.Web.dll" IncludeRuntimeDependency="false" />
-      <TargetPathWithTargetPlatformMoniker Include="$(PkgSystem_Text_Encoding_CodePages)\lib\netstandard2.0\System.Text.Encoding.CodePages.dll" IncludeRuntimeDependency="false" />
-      <TargetPathWithTargetPlatformMoniker Include="$(PkgMicrosoft_Bcl_HashCode)\lib\netstandard2.0\Microsoft.Bcl.HashCode.dll" IncludeRuntimeDependency="false" />
-      <TargetPathWithTargetPlatformMoniker Include="$(PkgMicrosoft_Bcl_AsyncInterfaces)\lib\netstandard2.0\Microsoft.Bcl.AsyncInterfaces.dll" IncludeRuntimeDependency="false" />
-      <TargetPathWithTargetPlatformMoniker Include="$(PkgSystem_Buffers)\lib\netstandard2.0\System.Buffers.dll" IncludeRuntimeDependency="false" />
-      <TargetPathWithTargetPlatformMoniker Include="$(PkgSystem_Memory)\lib\netstandard2.0\System.Memory.dll" IncludeRuntimeDependency="false" />
-      <TargetPathWithTargetPlatformMoniker Include="$(PkgSystem_Runtime_CompilerServices_Unsafe)\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll" IncludeRuntimeDependency="false" />
-      <TargetPathWithTargetPlatformMoniker Include="$(PkgSystem_Threading_Tasks_Extensions)\lib\netstandard2.0\System.Threading.Tasks.Extensions.dll" IncludeRuntimeDependency="false" />
-      <TargetPathWithTargetPlatformMoniker Include="$(PkgSystem_Numerics_Vectors)\lib\netstandard2.0\System.Numerics.Vectors.dll" IncludeRuntimeDependency="false" />
-      <TargetPathWithTargetPlatformMoniker Include="$(PkgSystem_Reflection_Metadata)\lib\netstandard2.0\System.Reflection.Metadata.dll" IncludeRuntimeDependency="false" />
+      <_GeneratorDependency
+        Include="@(RuntimeCopyLocalItems)"
+        Condition="'%(Extension)' == '.dll'"
+      />
+      <_GeneratorDependency Remove="@(CompilerProvidedPackage)" MatchOnMetadata="NuGetPackageId" />
+      <TargetPathWithTargetPlatformMoniker
+        Include="@(_GeneratorDependency)"
+        IncludeRuntimeDependency="false"
+      />
     </ItemGroup>
   </Target>
 </Project>

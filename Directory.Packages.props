@@ -23,18 +23,9 @@
     <!-- Overrides vulnerable transitive version from Microsoft.CodeAnalysis.Analyzer.Testing -->
     <PackageVersion Include="System.Security.Cryptography.Pkcs" Version="11.0.0" />
   </ItemGroup>
-  <ItemGroup Label="STJ runtime dependencies for source generator">
+  <ItemGroup Label="Source generator runtime dependencies">
     <PackageVersion Include="System.Text.Json" Version="11.0.0" />
-    <PackageVersion Include="System.Reflection.Metadata" Version="11.0.0" />
-    <PackageVersion Include="System.Text.Encodings.Web" Version="11.0.0" />
-    <PackageVersion Include="System.Text.Encoding.CodePages" Version="11.0.0" />
-    <PackageVersion Include="Microsoft.Bcl.AsyncInterfaces" Version="11.0.0" />
     <PackageVersion Include="Microsoft.Bcl.HashCode" Version="6.0.0" />
-    <PackageVersion Include="System.Buffers" Version="4.6.1" />
-    <PackageVersion Include="System.Memory" Version="4.6.3" />
-    <PackageVersion Include="System.Runtime.CompilerServices.Unsafe" Version="6.1.2" />
-    <PackageVersion Include="System.Threading.Tasks.Extensions" Version="4.6.3" />
-    <PackageVersion Include="System.Numerics.Vectors" Version="4.6.1" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(TargetFramework)' == 'net11.0'">
